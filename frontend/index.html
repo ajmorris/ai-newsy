@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Newsy - Your Daily AI News Digest</title>
+    <meta name="description" content="Get the latest AI news delivered to your inbox daily. Curated and summarized by AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">AI Newsy</span>
+                </div>
+                
+                <h1>Stay Ahead of the AI Revolution</h1>
+                <p class="tagline">
+                    The most important AI news, curated and summarized daily. 
+                    <span class="highlight">Free, straight to your inbox.</span>
+                </p>
+
+                <!-- Subscription Form -->
+                <form id="subscribe-form" class="subscribe-form">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email"
+                            required
+                            autocomplete="email"
+                        >
+                        <button type="submit" id="submit-btn">
+                            <span class="btn-text">Subscribe</span>
+                            <span class="btn-loading">
+                                <svg viewBox="0 0 24 24" class="spinner">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="60" stroke-dashoffset="20"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+
+                <p class="trust-line">
+                    Join <span class="subscriber-count">500+</span> subscribers • No spam, ever
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>What You Get</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📰</div>
+                    <h3>Curated Sources</h3>
+                    <p>News from TechCrunch, The Verge, MIT Tech Review, and top AI researchers on X.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI Summaries</h3>
+                    <p>Each story summarized in 2-3 sentences so you get the key insights in minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🕐</div>
+                    <h3>Daily Delivery</h3>
+                    <p>One email, every morning, with everything you need to know about AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sample Preview -->
+        <section class="preview">
+            <h2>Sample Digest</h2>
+            <div class="email-preview">
+                <div class="preview-header">
+                    <span class="preview-subject">🤖 AI Newsy • Jan 16 • 5 Stories</span>
+                </div>
+                <div class="preview-article">
+                    <h4>OpenAI releases a cheaper ChatGPT subscription</h4>
+                    <span class="preview-source">The Verge</span>
+                    <p>OpenAI announced ChatGPT Pro Mini at $20/month, offering GPT-4o access with limited features. This move targets users who want premium AI without the full $200 Pro price tag.</p>
+                </div>
+                <div class="preview-article">
+                    <h4>TSMC says AI demand is "endless" after record Q4</h4>
+                    <span class="preview-source">Ars Technica</span>
+                    <p>Taiwan Semiconductor reported record earnings driven by AI chip demand. CEO C.C. Wei says they can't build fabs fast enough to meet the appetite for AI silicon.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Built with ❤️ for the AI curious</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

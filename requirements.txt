@@ -1,0 +1,20 @@
+# AI Newsy - Python Dependencies
+
+# Database
+supabase>=2.0.0
+python-dotenv>=1.0.0
+
+# News Fetching
+feedparser>=6.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# AI Summarization (Google Gemini)
+google-generativeai>=0.3.0
+# google-generativeai>=0.3.0  # Uncomment for Gemini
+
+# Email
+sendgrid>=6.10.0
+
+# Utilities
+python-dateutil>=2.8.0
