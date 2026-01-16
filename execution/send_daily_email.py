@@ -1,6 +1,7 @@
 """
 Send daily email digest to subscribers.
 Compiles summarized articles and sends via SendGrid.
+Includes AI-generated introduction synthesizing all stories.
 """
 
 import os
@@ -9,6 +10,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To, Content, HtmlContent
+import google.generativeai as genai
 
 import sys
 sys.path.insert(0, '.')
@@ -21,30 +23,62 @@ SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 EMAIL_FROM = os.getenv("EMAIL_FROM", "newsletter@example.com")
 APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 
+# Initialize Gemini for intro generation
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+model = genai.GenerativeModel('gemini-2.0-flash')
 
-def generate_email_html(articles: list, unsubscribe_token: str = "") -> str:
-    """Generate HTML email content from articles."""
+
+def generate_intro(articles: list) -> str:
+    """Generate an AI introduction synthesizing all articles."""
+    try:
+        # Build context from all articles
+        article_summaries = "\n".join([
+            f"- {a.get('title', '')}: {a.get('summary', '')}" 
+            for a in articles
+        ])
+        
+        prompt = f"""You are writing the opening paragraph for a daily AI news digest email. 
+Given these article summaries, write a 2-3 sentence engaging introduction that:
+1. Highlights the most significant theme or story of the day
+2. Gives readers a preview of what to expect
+3. Uses a friendly, conversational tone
+
+Keep it concise and hook the reader. No greeting or sign-off, just the intro paragraph.
+
+Today's stories:
+{article_summaries}"""
+
+        response = model.generate_content(prompt)
+        return response.text.strip()
+    except Exception as e:
+        print(f"    Error generating intro: {e}")
+        return "Here's what's making waves in AI today."
+
+
+def generate_email_html(articles: list, intro: str, unsubscribe_token: str = "") -> str:
+    """Generate HTML email content with minimal light design."""
     
     today = datetime.now().strftime("%B %d, %Y")
     
-    # Build article cards
+    # Build article cards - minimal design
     article_cards = ""
     for article in articles:
+        source = article.get('source', 'Unknown Source')
         article_cards += f"""
-        <div style="background: #1a1a2e; border-radius: 12px; padding: 20px; margin-bottom: 16px; border-left: 4px solid #6366f1;">
-            <h3 style="margin: 0 0 8px 0; color: #e0e0e0; font-size: 16px;">
-                <a href="{article.get('url', '#')}" style="color: #818cf8; text-decoration: none;">{article.get('title', 'Untitled')}</a>
-            </h3>
-            <p style="margin: 0 0 8px 0; color: #9ca3af; font-size: 12px;">
-                {article.get('source', 'Unknown Source')}
+        <div style="padding: 20px 0; border-bottom: 1px solid #e5e7eb;">
+            <p style="margin: 0 0 6px 0; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">
+                {source}
             </p>
-            <p style="margin: 0; color: #d1d5db; font-size: 14px; line-height: 1.5;">
+            <h3 style="margin: 0 0 8px 0; font-size: 17px; font-weight: 600;">
+                <a href="{article.get('url', '#')}" style="color: #111827; text-decoration: none;">{article.get('title', 'Untitled')}</a>
+            </h3>
+            <p style="margin: 0; color: #4b5563; font-size: 15px; line-height: 1.6;">
                 {article.get('summary', 'No summary available.')}
             </p>
         </div>
         """
     
-    # Full email template
+    # Full email template - minimal light design
     html = f"""
     <!DOCTYPE html>
     <html>
@@ -52,16 +86,23 @@ def generate_email_html(articles: list, unsubscribe_token: str = "") -> str:
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="margin: 0; padding: 0; background-color: #0f0f1a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-        <div style="max-width: 600px; margin: 0 auto; padding: 40px 20px;">
+    <body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;">
+        <div style="max-width: 560px; margin: 0 auto; padding: 48px 24px;">
             
             <!-- Header -->
-            <div style="text-align: center; margin-bottom: 32px;">
-                <h1 style="color: #ffffff; font-size: 28px; margin: 0;">
-                    🤖 AI Newsy
+            <div style="margin-bottom: 32px;">
+                <h1 style="color: #111827; font-size: 24px; margin: 0; font-weight: 700;">
+                    AI Newsy
                 </h1>
-                <p style="color: #9ca3af; margin: 8px 0 0 0; font-size: 14px;">
-                    Your Daily AI News Digest • {today}
+                <p style="color: #6b7280; margin: 4px 0 0 0; font-size: 14px;">
+                    {today}
+                </p>
+            </div>
+            
+            <!-- Introduction -->
+            <div style="margin-bottom: 32px; padding: 20px; background-color: #f9fafb; border-radius: 8px;">
+                <p style="margin: 0; color: #374151; font-size: 16px; line-height: 1.7;">
+                    {intro}
                 </p>
             </div>
             
@@ -71,13 +112,11 @@ def generate_email_html(articles: list, unsubscribe_token: str = "") -> str:
             </div>
             
             <!-- Footer -->
-            <div style="text-align: center; padding-top: 24px; border-top: 1px solid #2d2d44;">
-                <p style="color: #6b7280; font-size: 12px; margin: 0;">
+            <div style="padding-top: 24px; border-top: 1px solid #e5e7eb;">
+                <p style="color: #9ca3af; font-size: 13px; margin: 0; line-height: 1.6;">
                     You're receiving this because you subscribed to AI Newsy.
-                </p>
-                <p style="margin: 8px 0 0 0;">
                     <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" 
-                       style="color: #6b7280; font-size: 12px; text-decoration: underline;">
+                       style="color: #9ca3af; text-decoration: underline;">
                         Unsubscribe
                     </a>
                 </p>
@@ -136,9 +175,14 @@ def send_daily_digest(dry_run: bool = False) -> dict:
     
     print(f"👥 {len(subscribers)} active subscribers")
     
+    # Generate AI introduction (once for all subscribers)
+    print("✨ Generating AI introduction...")
+    intro = generate_intro(articles)
+    print(f"   Intro: {intro[:80]}...")
+    
     # Subject line
     today = datetime.now().strftime("%b %d")
-    subject = f"🤖 AI Newsy • {today} • {len(articles)} Stories"
+    subject = f"AI Newsy • {today} • {len(articles)} Stories"
     
     sent = 0
     failed = 0
@@ -154,7 +198,7 @@ def send_daily_digest(dry_run: bool = False) -> dict:
             sent += 1
             continue
         
-        html = generate_email_html(articles, unsubscribe_token=token)
+        html = generate_email_html(articles, intro=intro, unsubscribe_token=token)
         
         if send_email(email, html, subject):
             print(f"    ✓ Sent!")
