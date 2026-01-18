@@ -60,21 +60,34 @@ def generate_email_html(articles: list, intro: str, unsubscribe_token: str = "")
     
     today = datetime.now().strftime("%B %d, %Y")
     
-    # Build article cards - minimal design
+    # Build article cards - minimal design with opinions
     article_cards = ""
     for article in articles:
         source = article.get('source', 'Unknown Source')
+        opinion = article.get('opinion', '')
+        
+        opinion_html = ""
+        if opinion:
+            opinion_html = f"""
+            <div style="margin-top: 12px; padding-left: 12px; border-left: 2px solid #e5e7eb;">
+                <p style="margin: 0; color: #6b7280; font-size: 13px; font-style: italic; line-height: 1.5;">
+                    Takeaway: {opinion}
+                </p>
+            </div>
+            """
+            
         article_cards += f"""
-        <div style="padding: 20px 0; border-bottom: 1px solid #e5e7eb;">
-            <p style="margin: 0 0 6px 0; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">
+        <div style="padding: 24px 0; border-bottom: 1px solid #f3f4f6;">
+            <p style="margin: 0 0 6px 0; color: #9ca3af; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">
                 {source}
             </p>
-            <h3 style="margin: 0 0 8px 0; font-size: 17px; font-weight: 600;">
+            <h3 style="margin: 0 0 8px 0; font-size: 18px; font-weight: 600; line-height: 1.4;">
                 <a href="{article.get('url', '#')}" style="color: #111827; text-decoration: none;">{article.get('title', 'Untitled')}</a>
             </h3>
             <p style="margin: 0; color: #4b5563; font-size: 15px; line-height: 1.6;">
                 {article.get('summary', 'No summary available.')}
             </p>
+            {opinion_html}
         </div>
         """
     

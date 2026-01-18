@@ -53,7 +53,7 @@ def get_user_tweets(user_id: str, username: str, max_results: int = 10) -> list:
     url = f"{BASE_URL}/users/{user_id}/tweets"
     params = {
         "max_results": min(max_results, 100),
-        "tweet.fields": "created_at,text,public_metrics",
+        "tweet.fields": "created_at,text,public_metrics,entities",
         "exclude": "retweets,replies"
     }
     
@@ -67,18 +67,29 @@ def get_user_tweets(user_id: str, username: str, max_results: int = 10) -> list:
         for tweet in tweets:
             tweet_id = tweet.get("id")
             text = tweet.get("text", "")
-            created_at = tweet.get("created_at", "")
             
-            # Create tweet URL
-            url = f"https://twitter.com/{username}/status/{tweet_id}"
+            # Extract links from entities
+            links = tweet.get("entities", {}).get("urls", [])
+            primary_url = f"https://twitter.com/{username}/status/{tweet_id}"
+            
+            # If there's an external link, prioritize it
+            if links:
+                # Find the first link that isn't a twitter image/video
+                for link in links:
+                    expanded_url = link.get("expanded_url", "")
+                    if "twitter.com" not in expanded_url and "t.co" not in expanded_url:
+                        primary_url = expanded_url
+                        break
             
             # Use first line or first 100 chars as title
-            title = text.split('\n')[0][:100]
-            if len(text) > 100:
+            title = text.split('\n')[0][:100].strip()
+            if not title:
+                title = "Update from X"
+            elif len(text) > 100:
                 title += "..."
             
             articles.append({
-                "url": url,
+                "url": primary_url,
                 "title": f"@{username}: {title}",
                 "source": f"X (@{username})",
                 "content": text
