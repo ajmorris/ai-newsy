@@ -251,6 +251,17 @@ def get_article_count() -> int:
     return result.count or 0
 
 
+def delete_articles_older_than(days: int) -> int:
+    """
+    Delete articles whose fetched_at is older than the given number of days.
+    Returns the number of rows deleted.
+    """
+    from datetime import timedelta
+    cutoff = (datetime.utcnow() - timedelta(days=days)).isoformat()
+    result = supabase.table("articles").delete().lt("fetched_at", cutoff).execute()
+    return len(result.data) if result.data else 0
+
+
 if __name__ == "__main__":
     # Quick test
     print(f"Connected to Supabase: {os.getenv('SUPABASE_URL', 'NOT SET')[:30]}...")

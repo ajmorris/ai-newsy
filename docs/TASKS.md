@@ -31,3 +31,13 @@ Phases 1–6 are **done**. Phase 7 is **future** (not in scope).
 5. `python execution/send_daily_email.py`
 
 GitHub Actions (`.github/workflows/daily_digest.yml`) runs this sequence on schedule and on workflow_dispatch.
+
+---
+
+## Article cleanup (30-day retention)
+
+Articles older than **30 days** (by `fetched_at`) are deleted to keep the database lean.
+
+- **Script**: `python execution/cleanup_old_articles.py` (default 30 days; override with `--days N` or env `ARTICLE_RETENTION_DAYS`).
+- **Dry run**: `python execution/cleanup_old_articles.py --dry-run` to see how many would be deleted.
+- **Schedule**: GitHub Action `.github/workflows/cleanup_old_articles.yml` runs **weekly** (Sunday 1:00 UTC). Set `SUPABASE_URL` and `SUPABASE_KEY` in repo secrets; optional repo variable `ARTICLE_RETENTION_DAYS` (default 30).
