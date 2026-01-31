@@ -30,3 +30,6 @@ Thumbs.db
 # Database (local dev)
 *.db
 *.sqlite
+
+# Supabase CLI
+supabase/.temp/

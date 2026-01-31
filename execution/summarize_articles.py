@@ -1,6 +1,7 @@
 import os
 import argparse
 import time
+from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -8,7 +9,12 @@ import google.generativeai as genai
 
 import sys
 sys.path.insert(0, '.')
-from execution.database import get_unsummarized_articles, update_article_summary, supabase
+from execution.database import (
+    get_unsummarized_articles,
+    update_article_summary,
+    update_article_image,
+    supabase,
+)
 
 load_dotenv()
 
@@ -32,7 +38,7 @@ def scrape_url(url: str) -> str:
     """Attempt to scrape text content from a URL."""
     if "twitter.com" in url or "x.com" in url:
         return "" # Don't try to scrape X itself, just use the tweet text
-        
+
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
         response = requests.get(url, headers=headers, timeout=10)
@@ -51,6 +57,26 @@ def scrape_url(url: str) -> str:
     except Exception as e:
         print(f"    Warning: Scrape failed for {url}: {e}")
         return ""
+
+
+def extract_og_image(url: str) -> Optional[str]:
+    """Extract og:image or twitter:image from a page. Returns URL or None."""
+    if "twitter.com" in url or "x.com" in url:
+        return None
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        response = requests.get(url, headers=headers, timeout=8)
+        if response.status_code != 200:
+            return None
+        soup = BeautifulSoup(response.content, 'html.parser')
+        meta = soup.find('meta', property='og:image') or soup.find('meta', attrs={'name': 'twitter:image'})
+        if meta and meta.get('content'):
+            content = meta.get('content', '').strip()
+            if content.startswith('http'):
+                return content
+        return None
+    except Exception:
+        return None
 
 
 def summarize_article(title: str, content: str, url: str) -> tuple:
@@ -140,6 +166,17 @@ def summarize_all(dry_run: bool = False, limit: int = None) -> int:
             print(f"    ✓ Summary: {summary[:60]}...")
             if opinion:
                 print(f"    💭 Opinion: {opinion[:60]}...")
+            # Extract and store og:image for email (skip if image_url column not in DB yet)
+            img_url = extract_og_image(url)
+            if img_url:
+                try:
+                    update_article_image(article_id, img_url)
+                    print(f"    🖼 Image: extracted")
+                except Exception as e:
+                    if "image_url" in str(e) or "PGRST204" in str(e):
+                        pass  # Column not in schema yet
+                    else:
+                        raise
             summarized += 1
         else:
             print(f"    ✗ Failed to analyze")
@@ -151,6 +188,40 @@ def summarize_all(dry_run: bool = False, limit: int = None) -> int:
     print(f"Analyzed {summarized} of {len(articles)} articles")
     print(f"{'='*50}\n")
     
+    return summarized
+
+
+def summarize_selected(article_list: list, dry_run: bool = False) -> int:
+    """
+    Just-in-time summarization for articles selected for the digest.
+    For each article in the list with null summary, run full summarization + image extraction
+    and update the article dict in place (and DB). Returns count summarized.
+    """
+    summarized = 0
+    for article in article_list:
+        if article.get("summary"):
+            continue
+        article_id = article.get("id")
+        title = article.get("title", "")
+        content = article.get("content") or title
+        url = article.get("url", "")
+        if dry_run:
+            summarized += 1
+            continue
+        summary, opinion = summarize_article(title, content, url)
+        if summary:
+            update_article_analysis(article_id, summary, opinion)
+            article["summary"] = summary
+            article["opinion"] = opinion or ""
+            img_url = extract_og_image(url)
+            if img_url:
+                try:
+                    update_article_image(article_id, img_url)
+                    article["image_url"] = img_url
+                except Exception:
+                    pass
+            summarized += 1
+        time.sleep(0.5)
     return summarized
 
 

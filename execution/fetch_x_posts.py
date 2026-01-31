@@ -51,8 +51,10 @@ def get_user_tweets(user_id: str, username: str, max_results: int = 10) -> list:
     Returns list of tweet dicts.
     """
     url = f"{BASE_URL}/users/{user_id}/tweets"
+    # X API requires max_results between 5 and 100
+    api_max = min(100, max(5, max_results))
     params = {
-        "max_results": min(max_results, 100),
+        "max_results": api_max,
         "tweet.fields": "created_at,text,public_metrics,entities",
         "exclude": "retweets,replies"
     }
@@ -64,7 +66,7 @@ def get_user_tweets(user_id: str, username: str, max_results: int = 10) -> list:
         tweets = data.get("data", [])
         
         articles = []
-        for tweet in tweets:
+        for tweet in tweets[:max_results]:  # respect limit after API returns up to api_max
             tweet_id = tweet.get("id")
             text = tweet.get("text", "")
             

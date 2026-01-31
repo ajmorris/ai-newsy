@@ -15,6 +15,8 @@ Options:
 - `--limit N` - Limit to N articles per source
 
 ## Sources
+Primary list is this directive. [feed_urls.md](../feed_urls.md) is used as fallback when a feed is inaccessible and for additional sources. The fetch script loads from both files and de-dupes; do not duplicate the same logical source in both.
+
 Current RSS feeds:
 - Science Daily: https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml
 - TechCrunch AI: https://techcrunch.com/category/artificial-intelligence/feed/
@@ -37,3 +39,5 @@ Current RSS feeds:
 - Feed unavailable: Log warning, continue with other feeds
 - Malformed entry: Skip and log
 - Rate limiting: Built-in delays between fetches
+- Digest caps articles per source (default 2; set DIGEST_MAX_PER_SOURCE) and interleaves by source so no publication appears consecutively; see send_daily_email and get_unsent_articles_for_digest.
+- Topic-based digest: run `python3 execution/assign_topics.py` after fetch to assign topics to new articles (topic only; no summary at ingest). Daily send chooses one topic (rotation: DIGEST_TOPIC_COOLDOWN_DAYS), JIT-summarizes selected articles, then sends and records topic for rotation.
