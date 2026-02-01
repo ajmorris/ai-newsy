@@ -38,7 +38,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PROMPT_TOPIC: ${{ secrets.PROMPT_TOPIC }}
+          PROMPT_TOPIC: ${{ vars.PROMPT_TOPIC }}
         run: python execution/assign_topics.py
 
       - name: Send daily email digest
@@ -49,6 +49,6 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PROMPT_SUMMARIZE: ${{ secrets.PROMPT_SUMMARIZE }}
-          PROMPT_INTRO: ${{ secrets.PROMPT_INTRO }}
+          PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
+          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: python execution/send_daily_email.py
