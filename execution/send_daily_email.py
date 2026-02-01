@@ -11,7 +11,7 @@ from typing import Optional
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To, Content, HtmlContent
-import google.generativeai as genai
+from google import genai
 
 import sys
 sys.path.insert(0, '.')
@@ -32,9 +32,8 @@ SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 EMAIL_FROM = os.getenv("EMAIL_FROM", "newsletter@example.com")
 APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 
-# Initialize Gemini for intro generation
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-2.0-flash')
+# Initialize Gemini client (auto-reads GEMINI_API_KEY env var)
+client = genai.Client()
 
 # Intro prompt (override via PROMPT_INTRO env var)
 DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for a daily AI news digest email. 
@@ -62,7 +61,10 @@ def generate_intro(articles: list) -> str:
         
         prompt = INTRO_PROMPT.format(article_summaries=article_summaries)
 
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=prompt
+        )
         return response.text.strip()
     except Exception as e:
         print(f"    Error generating intro: {e}")

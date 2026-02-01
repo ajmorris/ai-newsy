@@ -5,7 +5,7 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
 
 import sys
 sys.path.insert(0, '.')
@@ -18,9 +18,8 @@ from execution.database import (
 
 load_dotenv()
 
-# Initialize Gemini client
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-2.0-flash')
+# Initialize Gemini client (auto-reads GEMINI_API_KEY env var)
+client = genai.Client()
 
 # Summarization prompt (override via PROMPT_SUMMARIZE env var)
 DEFAULT_SUMMARIZE_PROMPT = """You are an expert AI news analyst. Given an article title and content, you will provide:
@@ -86,7 +85,10 @@ def summarize_article(title: str, content: str, url: str) -> tuple:
         context = f"Title: {title}\nURL: {url}\nContent: {content}"
         
         prompt = f"{SYSTEM_PROMPT}\n\n{context}"
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=prompt
+        )
         text = response.text.strip()
         
         summary = ""

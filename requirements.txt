@@ -9,9 +9,8 @@ feedparser>=6.0.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
-# AI Summarization (Google Gemini)
-google-generativeai>=0.3.0
-# google-generativeai>=0.3.0  # Uncomment for Gemini
+# AI Summarization (Google Gemini - new unified SDK)
+google-genai
 
 # Email
 sendgrid>=6.10.0

@@ -7,7 +7,7 @@ import os
 import argparse
 import time
 from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
 
 import sys
 sys.path.insert(0, '.')
@@ -15,8 +15,8 @@ from execution.database import get_articles_without_topic, update_article_topic
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-2.0-flash')
+# Initialize Gemini client (auto-reads GEMINI_API_KEY env var)
+client = genai.Client()
 
 TOPICS = [
     "Models",
@@ -47,7 +47,10 @@ def assign_topic_for_article(title: str, content_snippet: str = "") -> str:
         context = f"Title: {title}"
         if content_snippet:
             context += f"\nSnippet: {content_snippet[:500]}"
-        response = model.generate_content(f"{TOPIC_PROMPT}\n\n{context}")
+        response = client.models.generate_content(
+            model='gemini-2.0-flash',
+            contents=f"{TOPIC_PROMPT}\n\n{context}"
+        )
         text = (response.text or "").strip()
         for t in TOPICS:
             if t.lower() in text.lower() or text == t:
