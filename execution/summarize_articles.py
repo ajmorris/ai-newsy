@@ -22,8 +22,8 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel('gemini-2.0-flash')
 
-# Summarization prompt
-SYSTEM_PROMPT = """You are an expert AI news analyst. Given an article title and content, you will provide:
+# Summarization prompt (override via PROMPT_SUMMARIZE env var)
+DEFAULT_SUMMARIZE_PROMPT = """You are an expert AI news analyst. Given an article title and content, you will provide:
 1. SUMMARY: A concise 2-3 sentence summary capturing the key news and why it matters.
 2. OPINION: A sharp, insightful 1-2 sentence "takeaway" or opinion on the implications, relevance, or quality of the news. 
 
@@ -33,12 +33,11 @@ Format your response exactly like this:
 SUMMARY: [Your summary here]
 OPINION: [Your opinion here]"""
 
+SYSTEM_PROMPT = os.getenv("PROMPT_SUMMARIZE", DEFAULT_SUMMARIZE_PROMPT)
+
 
 def scrape_url(url: str) -> str:
     """Attempt to scrape text content from a URL."""
-    if "twitter.com" in url or "x.com" in url:
-        return "" # Don't try to scrape X itself, just use the tweet text
-
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
         response = requests.get(url, headers=headers, timeout=10)
@@ -61,8 +60,6 @@ def scrape_url(url: str) -> str:
 
 def extract_og_image(url: str) -> Optional[str]:
     """Extract og:image or twitter:image from a page. Returns URL or None."""
-    if "twitter.com" in url or "x.com" in url:
-        return None
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         response = requests.get(url, headers=headers, timeout=8)
@@ -85,17 +82,8 @@ def summarize_article(title: str, content: str, url: str) -> tuple:
     Returns (summary, opinion).
     """
     try:
-        # If it's an external link from X, try to get more context
-        scraped_content = ""
-        if "X (@" in title and url and "twitter.com" not in url:
-            print(f"    Scraping external link: {url}...")
-            scraped_content = scrape_url(url)
-        
         # Combine content for Gemini
-        context = f"Title: {title}\nURL: {url}\n"
-        if scraped_content:
-            context += f"Scraped Page Content: {scraped_content[:3000]}\n"
-        context += f"Original Source Content: {content}"
+        context = f"Title: {title}\nURL: {url}\nContent: {content}"
         
         prompt = f"{SYSTEM_PROMPT}\n\n{context}"
         response = model.generate_content(prompt)

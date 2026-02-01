@@ -26,12 +26,19 @@ TOPICS = [
     "Industry",
 ]
 
-TOPIC_PROMPT = f"""You are classifying AI news articles into exactly one topic for a daily newsletter.
+# Topic classification prompt (override via PROMPT_TOPIC env var)
+DEFAULT_TOPIC_PROMPT = """You are classifying AI news articles into exactly one topic for a daily newsletter.
 
 Topics (respond with ONLY one of these exact labels):
-{chr(10).join('- ' + t for t in TOPICS)}
+- Models
+- Agents & Tools
+- MCP & SKILLs
+- Safety
+- Industry
 
 Given the article title and optionally a short snippet, respond with exactly one topic label from the list above. No explanation, just the topic."""
+
+TOPIC_PROMPT = os.getenv("PROMPT_TOPIC", DEFAULT_TOPIC_PROMPT)
 
 
 def assign_topic_for_article(title: str, content_snippet: str = "") -> str:

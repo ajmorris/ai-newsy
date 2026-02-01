@@ -16,15 +16,11 @@ echo "=== 1. Fetch AI news (limit 3 per feed) ==="
 python3 execution/fetch_ai_news.py --limit 3
 
 echo ""
-echo "=== 2. Fetch X posts (limit 2 per account) ==="
-python3 execution/fetch_x_posts.py --limit 2 || true
+echo "=== 2. Assign topics ==="
+python3 execution/assign_topics.py
 
 echo ""
-echo "=== 3. Summarize articles (limit 5) ==="
-python3 execution/summarize_articles.py --limit 5
-
-echo ""
-echo "=== 4. Send test email to $TEST_EMAIL ==="
+echo "=== 3. Send test email to $TEST_EMAIL ==="
 python3 execution/send_daily_email.py --test-email "$TEST_EMAIL"
 
 echo ""

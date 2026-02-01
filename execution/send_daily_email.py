@@ -36,17 +36,8 @@ APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel('gemini-2.0-flash')
 
-
-def generate_intro(articles: list) -> str:
-    """Generate an AI introduction synthesizing all articles."""
-    try:
-        # Build context from all articles
-        article_summaries = "\n".join([
-            f"- {a.get('title', '')}: {a.get('summary', '')}" 
-            for a in articles
-        ])
-        
-        prompt = f"""You are writing the opening paragraph for a daily AI news digest email. 
+# Intro prompt (override via PROMPT_INTRO env var)
+DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for a daily AI news digest email. 
 Given these article summaries, write a 2-3 sentence engaging introduction that:
 1. Highlights the most significant theme or story of the day
 2. Gives readers a preview of what to expect
@@ -57,6 +48,20 @@ Keep it concise and hook the reader. No greeting or sign-off, just the intro par
 Today's stories:
 {article_summaries}"""
 
+INTRO_PROMPT = os.getenv("PROMPT_INTRO", DEFAULT_INTRO_PROMPT)
+
+
+def generate_intro(articles: list) -> str:
+    """Generate an AI introduction synthesizing all articles."""
+    try:
+        # Build context from all articles
+        article_summaries = "\n".join([
+            f"- {a.get('title', '')}: {a.get('summary', '')}" 
+            for a in articles
+        ])
+        
+        prompt = INTRO_PROMPT.format(article_summaries=article_summaries)
+
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:
@@ -65,17 +70,16 @@ Today's stories:
 
 
 def generate_email_html(
-    articles_rss: list,
-    articles_x: list,
+    articles: list,
     intro: str,
     unsubscribe_token: str = "",
 ) -> str:
-    """Generate HTML email: articles section + Latest from socials (X). Links and takeaways styled for clarity."""
+    """Generate HTML email with articles section. Links and takeaways styled for clarity."""
     today = datetime.now().strftime("%B %d, %Y")
 
-    # ---- Articles section (RSS): prominent links, takeaway block, optional image ----
+    # ---- Articles section: prominent links, takeaway block, optional image ----
     article_cards = ""
-    for article in articles_rss:
+    for article in articles:
         source = article.get("source", "Unknown Source")
         opinion = article.get("opinion", "")
         image_url = article.get("image_url") or ""
@@ -83,9 +87,9 @@ def generate_email_html(
         opinion_html = ""
         if opinion:
             opinion_html = f"""
-            <div style="margin-top: 12px; padding: 12px 14px; background-color: #f8fafc; border-left: 3px solid #0f172a; border-radius: 0 4px 4px 0;">
-                <p style="margin: 0 0 4px 0; color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>
-                <p style="margin: 0; color: #334155; font-size: 14px; line-height: 1.5;">{opinion}</p>
+            <div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">
+                <p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>
+                <p style="margin: 0; color: #2b2c34; font-size: 14px; line-height: 1.5;">{opinion}</p>
             </div>
             """
 
@@ -95,44 +99,22 @@ def generate_email_html(
             image_html = f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{title_esc}" style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; border-radius: 6px;" width="560" /></div>'
 
         article_cards += f"""
-        <div style="padding: 24px 0; border-bottom: 1px solid #f3f4f6;">
-            <p style="margin: 0 0 6px 0; color: #9ca3af; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">
+        <div style="padding: 24px 0; border-bottom: 1px solid #d1d1e9;">
+            <p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">
                 {source}
             </p>
             {image_html}
             <h3 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">
-                <a href="{article.get("url", "#")}" style="color: #0f172a; text-decoration: none; padding: 4px 0; display: inline-block;">{article.get("title", "Untitled")}</a>
+                <a href="{article.get("url", "#")}" style="color: #6246ea; text-decoration: none; padding: 4px 0; display: inline-block;">{article.get("title", "Untitled")}</a>
             </h3>
-            <p style="margin: 0; color: #4b5563; font-size: 15px; line-height: 1.6;">
+            <p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">
                 {article.get("summary", "No summary available.")}
             </p>
             {opinion_html}
         </div>
         """
 
-    # ---- Latest from socials (X) ----
-    socials_html = ""
-    if articles_x:
-        social_cards = ""
-        for item in articles_x:
-            source = item.get("source", "X")
-            content = (item.get("content") or "").replace("\n", "<br />")
-            url = item.get("url", "#")
-            social_cards += f"""
-            <div style="padding: 16px; margin-bottom: 12px; background-color: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
-                <p style="margin: 0 0 8px 0; color: #64748b; font-size: 12px; font-weight: 600;">{source}</p>
-                <p style="margin: 0 0 10px 0; color: #334155; font-size: 14px; line-height: 1.5;">{content}</p>
-                <a href="{url}" style="color: #0f172a; font-size: 13px; font-weight: 500;">View on X →</a>
-            </div>
-            """
-        socials_html = f"""
-            <div style="margin-top: 32px; margin-bottom: 32px;">
-                <h2 style="color: #0f172a; font-size: 18px; font-weight: 600; margin: 0 0 16px 0;">Latest from socials</h2>
-                {social_cards}
-            </div>
-        """
-
-    # Full email template
+    # Full email template (colors from Happy Hues palette 6)
     html = f"""
     <!DOCTYPE html>
     <html>
@@ -140,23 +122,22 @@ def generate_email_html(
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;">
+    <body style="margin: 0; padding: 0; background-color: #fffffe; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;">
         <div style="max-width: 560px; margin: 0 auto; padding: 48px 24px;">
             <div style="margin-bottom: 32px;">
-                <h1 style="color: #111827; font-size: 24px; margin: 0; font-weight: 700;">AI Newsy</h1>
-                <p style="color: #6b7280; margin: 4px 0 0 0; font-size: 14px;">{today}</p>
+                <h1 style="color: #2b2c34; font-size: 24px; margin: 0; font-weight: 700;">AI Newsy</h1>
+                <p style="color: #6246ea; margin: 4px 0 0 0; font-size: 14px;">{today}</p>
             </div>
-            <div style="margin-bottom: 32px; padding: 20px; background-color: #f9fafb; border-radius: 8px;">
-                <p style="margin: 0; color: #374151; font-size: 16px; line-height: 1.7;">{intro}</p>
+            <div style="margin-bottom: 32px; padding: 20px; background-color: #d1d1e9; border-radius: 8px;">
+                <p style="margin: 0; color: #2b2c34; font-size: 16px; line-height: 1.7;">{intro}</p>
             </div>
             <div style="margin-bottom: 32px;">
                 {article_cards}
             </div>
-            {socials_html}
-            <div style="padding-top: 24px; border-top: 1px solid #e5e7eb;">
-                <p style="color: #9ca3af; font-size: 13px; margin: 0; line-height: 1.6;">
+            <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
+                <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
                     You're receiving this because you subscribed to AI Newsy.
-                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #9ca3af; text-decoration: underline;">Unsubscribe</a>
+                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #6246ea; text-decoration: underline;">Unsubscribe</a>
                 </p>
             </div>
         </div>
@@ -254,14 +235,10 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             print("No active subscribers.")
             return {"articles": len(articles), "sent": 0, "failed": 0}
         print(f"👥 {len(subscribers)} active subscribers")
-    
-    # Split into RSS articles and X/socials for two sections
-    articles_rss = [a for a in articles if not (a.get("source") or "").startswith("X (")]
-    articles_x = [a for a in articles if (a.get("source") or "").startswith("X (")]
 
-    # Generate AI introduction from RSS articles only (topic narrative)
+    # Generate AI introduction
     print("✨ Generating AI introduction...")
-    intro = generate_intro(articles_rss if articles_rss else articles)
+    intro = generate_intro(articles)
     print(f"   Intro: {intro[:80]}...")
 
     # Subject line (include topic when topic-based)
@@ -285,7 +262,7 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             sent += 1
             continue
 
-        html = generate_email_html(articles_rss, articles_x, intro=intro, unsubscribe_token=token)
+        html = generate_email_html(articles, intro=intro, unsubscribe_token=token)
         
         if send_email(email, html, subject):
             print(f"    ✓ Sent!")
