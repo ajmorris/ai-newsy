@@ -29,6 +29,7 @@ Current RSS feeds:
 - Ars Technica AI: https://feeds.arstechnica.com/arstechnica/technology-lab
 - MIT Tech Review AI: https://www.technologyreview.com/topic/artificial-intelligence/feed
 - OpenAI: https://openai.com/news/rss.xml
+- Nate's Newsletter: https://natesnewsletter.substack.com/feed
 
 ## Output
 - New articles inserted into `articles` table
