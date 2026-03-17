@@ -125,17 +125,27 @@ def update_article_image(article_id: int, image_url: str) -> None:
     }).eq("id", article_id).execute()
 
 
-def get_unsent_articles(topic: Optional[str] = None, require_summary: bool = True) -> list:
+def get_unsent_articles(
+    topic: Optional[str] = None,
+    require_summary: bool = True,
+    since: Optional[datetime] = None,
+    until: Optional[datetime] = None,
+) -> list:
     """
     Get articles that haven't been sent yet.
     If topic is set, filter to that topic only.
     If require_summary is True, only return articles that have been summarized.
+    If since/until are provided, constrain by fetched_at time window (UTC).
     """
     query = supabase.table("articles").select("*").is_("sent_at", "null")
     if require_summary:
         query = query.not_.is_("summary", "null")
     if topic is not None:
         query = query.eq("topic", topic)
+    if since is not None:
+        query = query.gte("fetched_at", since.isoformat())
+    if until is not None:
+        query = query.lte("fetched_at", until.isoformat())
     result = query.execute()
     return result.data or []
 
@@ -166,17 +176,25 @@ def get_unsent_articles_for_digest(
     max_per_source: int = 2,
     interleave: bool = True,
     topic: Optional[str] = None,
+    since: Optional[datetime] = None,
+    until: Optional[datetime] = None,
 ) -> list:
     """
     Get unsent articles with a cap per source for variety.
     When topic is set: returns articles with that topic (summary optional; use for JIT flow).
     When topic is None: returns only summarized articles (current behavior).
+    Time window filters can be applied via since/until on fetched_at.
     Groups by source, takes at most max_per_source per source (newest by fetched_at).
     If interleave is True, returns articles in round-robin order by source.
     """
     from collections import defaultdict
     require_summary = topic is None
-    all_articles = get_unsent_articles(topic=topic, require_summary=require_summary)
+    all_articles = get_unsent_articles(
+        topic=topic,
+        require_summary=require_summary,
+        since=since,
+        until=until,
+    )
     by_source = defaultdict(list)
     for a in all_articles:
         by_source[a.get("source", "Unknown")].append(a)

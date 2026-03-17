@@ -2,40 +2,44 @@
 
 ## Step-by-step logic
 
-1. **Pool: unsent, summarized articles only**
+1. **Pool: recent, unsent, summarized articles only**
    - `get_unsent_articles()` returns every article where:
      - `summary` is not null (has been summarized), and
      - `sent_at` is null (has not been sent in any digest yet).
-   - There is **no “today only” filter**. The pool is all unsent articles, which can span multiple days if the digest hasn’t run or if we’re backlogged.
+   - The daily digest caller now passes a **time window** (by default, the last 24 hours) using a `since` value on `fetched_at`. That means the pool is effectively “unsent articles fetched in the last N hours.”
 
 2. **Cap per source**
-   - `get_unsent_articles_for_digest(max_per_source=3)`:
-     - Groups the pool by `source` (e.g. "Guardian AI", "NY Times").
+   - `get_unsent_articles_for_digest(max_per_source=3, since=...)`:
+     - Groups the time-windowed pool by `source` (e.g. "Guardian AI", "NY Times").
      - For each source, keeps only the **newest** `max_per_source` articles (by `fetched_at`).
-     - So each source can contribute at most 3 articles (with the current default).
+     - So each source can contribute at most `max_per_source` articles (2 by default).
 
-3. **Final order**
-   - All capped articles are merged and sorted by **`fetched_at` descending** (newest first).
-   - There is **no interleaving by source**. So if NY Times had 3 articles fetched close together, all 3 can appear back-to-back in the email.
+3. **Interleaving by source**
+   - All capped articles are merged using **round-robin by source** so the same publication does not appear back-to-back (e.g. Guardian, NYT, Science Daily, DeepMind, Guardian, …).
 
-## Why one publication can dominate
+4. **Grouping into sections**
+   - The flat list from `get_unsent_articles_for_digest` is grouped in memory by topic/category before rendering:
+     - Each article’s `topic` is mapped to a reader-facing category (for example, `"Models"` → `"Model Releases & Capabilities"`).
+     - Articles without a recognized topic fall into an `"Other AI News"` bucket.
+   - The email template renders one section per category, with a heading and that category’s articles beneath.
 
-- **Yes, it’s “articles that had not been sent yet”**  
-  Only unsent, summarized articles are considered. So the mix you see is exactly “whatever was unsent at send time.”
+## Why one publication is less likely to dominate
 
-- **High-volume feeds accumulate in the pool**  
-  Feeds that publish a lot (e.g. NY Times, Guardian) tend to have more unsent articles. After capping at 3 per source, they can still contribute 3 each. With **global sort by `fetched_at`**, articles from the same source often sit next to each other, so the email can feel dominated by one or two publications.
+- **“Recent and unsent” instead of “all unsent”**  
+  Only unsent articles fetched within the configured time window (typically 24h) are considered. This keeps the digest focused on what’s new.
 
-- **No “latest today” filter**  
-  We don’t restrict to “today’s” or “last 24h” articles. So the digest reflects “all unsent so far,” not “only what’s new today.” That can make high-output feeds look even more dominant.
+- **Per-source caps still apply**  
+  High-volume feeds can still contribute multiple pieces, but the cap (default 2) prevents them from flooding the digest.
 
-## Summary (after fix)
+- **Round-robin ordering across sources**  
+  Because the final list is interleaved by source, you won’t see long runs of the same publication even when it has many recent stories.
+
+## Summary
 
 | Factor | Behavior |
 |--------|----------|
-| Pool | All unsent, summarized articles (any age) |
+| Pool | Unsent, summarized articles fetched within the configured time window (default 24h) |
 | Cap | Up to 2 per source by default; override with env `DIGEST_MAX_PER_SOURCE` |
-| Order | **Round-robin by source** so the same publication does not appear consecutively (e.g. Guardian, NYT, Science Daily, DeepMind, Guardian, …) |
-| “Today only” | Not applied |
-
-So no single source can contribute more than 2 articles (unless you raise `DIGEST_MAX_PER_SOURCE`), and the email order alternates across sources to avoid runs of the same publication.
+| Order | **Round-robin by source** so the same publication does not appear consecutively |
+| Time window | Applied via `since` on `fetched_at` (UTC) |
+| Grouping | Articles are grouped into topic-based sections in the email based on their `topic` → category mapping |

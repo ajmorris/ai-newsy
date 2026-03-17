@@ -6,8 +6,8 @@ Includes AI-generated introduction synthesizing all stories.
 
 import os
 import argparse
-from datetime import datetime
-from typing import Optional
+from datetime import datetime, timedelta
+from typing import Optional, Dict, List
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To, Content, HtmlContent
@@ -19,9 +19,6 @@ from execution.database import (
     get_unsent_articles_for_digest,
     get_active_subscribers,
     mark_articles_sent,
-    get_unsent_articles_with_topic_set,
-    get_topics_used_in_last_k_days,
-    insert_digest_log,
 )
 from execution.summarize_articles import summarize_selected
 
@@ -49,6 +46,17 @@ Today's stories:
 
 INTRO_PROMPT = os.getenv("PROMPT_INTRO", DEFAULT_INTRO_PROMPT)
 
+# Mapping from internal topic labels to reader-facing categories
+TOPIC_TO_CATEGORY: Dict[str, str] = {
+    "Models": "Model Releases & Capabilities",
+    "Agents & Tools": "Tools, Infrastructure & Open Source",
+    "MCP & SKILLs": "Tools, Infrastructure & Open Source",
+    "Safety": "Safety, Policy & Regulation",
+    "Industry": "Business, Deals & Funding",
+}
+
+DEFAULT_CATEGORY = "Other AI News"
+
 
 def generate_intro(articles: list) -> str:
     """Generate an AI introduction synthesizing all articles."""
@@ -72,47 +80,61 @@ def generate_intro(articles: list) -> str:
 
 
 def generate_email_html(
-    articles: list,
+    sections: List[dict],
     intro: str,
     unsubscribe_token: str = "",
 ) -> str:
-    """Generate HTML email with articles section. Links and takeaways styled for clarity."""
+    """Generate HTML email with grouped sections. Links and takeaways styled for clarity."""
     today = datetime.now().strftime("%B %d, %Y")
 
-    # ---- Articles section: prominent links, takeaway block, optional image ----
-    article_cards = ""
-    for article in articles:
-        source = article.get("source", "Unknown Source")
-        opinion = article.get("opinion", "")
-        image_url = article.get("image_url") or ""
+    # ---- Sections and article cards ----
+    section_blocks = ""
+    for section in sections:
+        name = section.get("name", DEFAULT_CATEGORY)
+        articles = section.get("articles", [])
 
-        opinion_html = ""
-        if opinion:
-            opinion_html = f"""
-            <div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">
-                <p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>
-                <p style="margin: 0; color: #2b2c34; font-size: 14px; line-height: 1.5;">{opinion}</p>
+        article_cards = ""
+        for article in articles:
+            source = article.get("source", "Unknown Source")
+            opinion = article.get("opinion", "")
+            image_url = article.get("image_url") or ""
+
+            opinion_html = ""
+            if opinion:
+                opinion_html = f"""
+                <div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">
+                    <p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>
+                    <p style="margin: 0; color: #2b2c34; font-size: 14px; line-height: 1.5;">{opinion}</p>
+                </div>
+                """
+
+            image_html = ""
+            if image_url:
+                title_esc = (article.get("title") or "Article").replace('"', "&quot;")
+                image_html = f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{title_esc}" style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; border-radius: 6px;" width="560" /></div>'
+
+            article_cards += f"""
+            <div style="padding: 24px 0; border-bottom: 1px solid #d1d1e9;">
+                <p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">
+                    {source}
+                </p>
+                {image_html}
+                <h3 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">
+                    <a href="{article.get("url", "#")}" style="color: #6246ea; text-decoration: none; padding: 4px 0; display: inline-block;">{article.get("title", "Untitled")}</a>
+                </h3>
+                <p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">
+                    {article.get("summary", "No summary available.")}
+                </p>
+                {opinion_html}
             </div>
             """
 
-        image_html = ""
-        if image_url:
-            title_esc = (article.get("title") or "Article").replace('"', "&quot;")
-            image_html = f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{title_esc}" style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; border-radius: 6px;" width="560" /></div>'
-
-        article_cards += f"""
-        <div style="padding: 24px 0; border-bottom: 1px solid #d1d1e9;">
-            <p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">
-                {source}
-            </p>
-            {image_html}
-            <h3 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">
-                <a href="{article.get("url", "#")}" style="color: #6246ea; text-decoration: none; padding: 4px 0; display: inline-block;">{article.get("title", "Untitled")}</a>
-            </h3>
-            <p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">
-                {article.get("summary", "No summary available.")}
-            </p>
-            {opinion_html}
+        section_blocks += f"""
+        <div style="margin-bottom: 32px;">
+            <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
+                {name}
+            </h2>
+            {article_cards}
         </div>
         """
 
@@ -134,7 +156,7 @@ def generate_email_html(
                 <p style="margin: 0; color: #2b2c34; font-size: 16px; line-height: 1.7;">{intro}</p>
             </div>
             <div style="margin-bottom: 32px;">
-                {article_cards}
+                {section_blocks}
             </div>
             <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
                 <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
@@ -169,26 +191,26 @@ def send_email(to_email: str, html_content: str, subject: str) -> bool:
         return False
 
 
-def choose_topic_for_today() -> Optional[str]:
+def group_articles_by_category(articles: list) -> List[dict]:
     """
-    Pick today's digest topic: unsent articles with a topic, exclude topics used in last K days,
-    pick topic with most articles. Returns None if no topic-based pool or no eligible topic.
+    Group articles into reader-facing categories based on their topic.
+    Returns a list of sections with stable alphabetical ordering by category name.
     """
-    from collections import Counter
-    articles_with_topic = get_unsent_articles_with_topic_set()
-    if not articles_with_topic:
-        return None
-    cooldown_days = int(os.getenv("DIGEST_TOPIC_COOLDOWN_DAYS", "5"))
-    excluded = set(get_topics_used_in_last_k_days(cooldown_days))
-    counts = Counter(a.get("topic") for a in articles_with_topic if a.get("topic"))
-    eligible = {t: c for t, c in counts.items() if t not in excluded}
-    if not eligible:
-        # All topics used recently: pick the one with most articles (used longest ago would need extra query)
-        eligible = dict(counts)
-    if not eligible:
-        return None
-    chosen = max(eligible.items(), key=lambda x: x[1])[0]
-    return chosen
+    by_category: Dict[str, list] = {}
+    for article in articles:
+        raw_topic = (article.get("topic") or "").strip()
+        category = TOPIC_TO_CATEGORY.get(raw_topic, DEFAULT_CATEGORY)
+        by_category.setdefault(category, []).append(article)
+
+    sections = []
+    for category in sorted(by_category.keys()):
+        sections.append(
+            {
+                "name": category,
+                "articles": by_category[category],
+            }
+        )
+    return sections
 
 
 def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -> dict:
@@ -204,23 +226,17 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
     print(f"{'='*50}\n")
 
     max_per_source = int(os.getenv("DIGEST_MAX_PER_SOURCE", "2"))
+    window_hours = int(os.getenv("DIGEST_WINDOW_HOURS", "24"))
 
-    # Topic-based: choose topic, get candidates for that topic, JIT summarize if needed
-    chosen_topic = choose_topic_for_today()
-    if chosen_topic:
-        print(f"📌 Today's topic: {chosen_topic}")
-        articles = get_unsent_articles_for_digest(
-            max_per_source=max_per_source, interleave=True, topic=chosen_topic
-        )
-        if articles:
-            need_summary = [a for a in articles if not a.get("summary")]
-            if need_summary:
-                print(f"✨ Just-in-time summarizing {len(need_summary)} article(s)...")
-                summarize_selected(articles, dry_run=dry_run)
-    else:
-        articles = get_unsent_articles_for_digest(
-            max_per_source=max_per_source, interleave=True
-        )
+    since = datetime.utcnow() - timedelta(hours=window_hours)
+    print(f"Using time window: last {window_hours} hour(s) since {since.isoformat()}")
+
+    articles = get_unsent_articles_for_digest(
+        max_per_source=max_per_source,
+        interleave=True,
+        topic=None,
+        since=since,
+    )
 
     if not articles:
         print("No unsent articles to include in digest.")
@@ -243,12 +259,9 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
     intro = generate_intro(articles)
     print(f"   Intro: {intro[:80]}...")
 
-    # Subject line (include topic when topic-based)
+    # Subject line (no longer single-topic; reflect total story count)
     today = datetime.now().strftime("%b %d")
-    if chosen_topic:
-        subject = f"AI Newsy • {today} • {chosen_topic} • {len(articles)} Stories"
-    else:
-        subject = f"AI Newsy • {today} • {len(articles)} Stories"
+    subject = f"AI Newsy • {today} • {len(articles)} Stories"
 
     sent = 0
     failed = 0
@@ -264,7 +277,8 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             sent += 1
             continue
 
-        html = generate_email_html(articles, intro=intro, unsubscribe_token=token)
+        sections = group_articles_by_category(articles)
+        html = generate_email_html(sections, intro=intro, unsubscribe_token=token)
         
         if send_email(email, html, subject):
             print(f"    ✓ Sent!")
@@ -273,15 +287,11 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             print(f"    ✗ Failed")
             failed += 1
     
-    # Mark articles as sent and record topic for rotation (only if not dry run, not test mode, and we sent to at least one person)
+    # Mark articles as sent (only if not dry run, not test mode, and we sent to at least one person)
     if not dry_run and not test_email and sent > 0:
         article_ids = [a.get('id') for a in articles]
         mark_articles_sent(article_ids)
-        if chosen_topic:
-            insert_digest_log(chosen_topic)
-            print(f"\n📌 Marked {len(article_ids)} articles as sent; recorded topic '{chosen_topic}' for rotation")
-        else:
-            print(f"\n📌 Marked {len(article_ids)} articles as sent")
+        print(f"\n📌 Marked {len(article_ids)} articles as sent")
     
     print(f"\n{'='*50}")
     print(f"Summary: Sent to {sent}, Failed: {failed}")
