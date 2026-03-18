@@ -82,7 +82,13 @@ def subscriber_exists(email: str) -> bool:
 # ARTICLE OPERATIONS
 # ===========================================
 
-def add_article(url: str, title: str, source: str, content: str = "") -> Optional[dict]:
+def add_article(
+    url: str,
+    title: str,
+    source: str,
+    content: str = "",
+    published_at: Optional[str] = None,
+) -> Optional[dict]:
     """
     Add a new article if URL doesn't exist (deduplication).
     Returns the article or None if already exists.
@@ -91,13 +97,17 @@ def add_article(url: str, title: str, source: str, content: str = "") -> Optiona
     existing = supabase.table("articles").select("id").eq("url", url).execute()
     if existing.data:
         return None  # Already exists
-    
+
+    now_iso = datetime.utcnow().isoformat()
+    pub_iso = published_at or now_iso
+
     result = supabase.table("articles").insert({
         "url": url,
         "title": title,
         "source": source,
         "content": content,
-        "fetched_at": datetime.utcnow().isoformat()
+        "fetched_at": now_iso,
+        "published_at": pub_iso,
     }).execute()
     return result.data[0] if result.data else None
 
@@ -143,9 +153,9 @@ def get_unsent_articles(
     if topic is not None:
         query = query.eq("topic", topic)
     if since is not None:
-        query = query.gte("fetched_at", since.isoformat())
+        query = query.gte("published_at", since.isoformat())
     if until is not None:
-        query = query.lte("fetched_at", until.isoformat())
+        query = query.lte("published_at", until.isoformat())
     result = query.execute()
     return result.data or []
 
@@ -183,8 +193,8 @@ def get_unsent_articles_for_digest(
     Get unsent articles with a cap per source for variety.
     When topic is set: returns articles with that topic (summary optional; use for JIT flow).
     When topic is None: returns only summarized articles (current behavior).
-    Time window filters can be applied via since/until on fetched_at.
-    Groups by source, takes at most max_per_source per source (newest by fetched_at).
+    Time window filters can be applied via since/until on published_at.
+    Groups by source, takes at most max_per_source per source (newest by published_at).
     If interleave is True, returns articles in round-robin order by source.
     """
     from collections import defaultdict
@@ -204,7 +214,7 @@ def get_unsent_articles_for_digest(
     for source, articles in by_source.items():
         sorted_articles = sorted(
             articles,
-            key=lambda x: x.get("fetched_at") or "",
+            key=lambda x: x.get("published_at") or x.get("fetched_at") or "",
             reverse=True
         )
         capped[source] = sorted_articles[:max_per_source]
@@ -213,7 +223,7 @@ def get_unsent_articles_for_digest(
         result = []
         for articles in capped.values():
             result.extend(articles)
-        result.sort(key=lambda x: x.get("fetched_at") or "", reverse=True)
+        result.sort(key=lambda x: x.get("published_at") or x.get("fetched_at") or "", reverse=True)
         return result
 
     # Round-robin by source so the same publication does not appear back-to-back
@@ -276,7 +286,7 @@ def delete_articles_older_than(days: int) -> int:
     """
     from datetime import timedelta
     cutoff = (datetime.utcnow() - timedelta(days=days)).isoformat()
-    result = supabase.table("articles").delete().lt("fetched_at", cutoff).execute()
+    result = supabase.table("articles").delete().lt("published_at", cutoff).execute()
     return len(result.data) if result.data else 0
 
 

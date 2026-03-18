@@ -6,7 +6,8 @@ Feeds are loaded from directives/fetch_ai_news.md (primary) and feed_urls.md (fa
 
 import argparse
 import time
-from datetime import datetime
+from datetime import datetime, timezone
+import email.utils
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -57,6 +58,36 @@ def _entry_summary(entry) -> str:
             return first.get("value", "")
         return getattr(first, "value", "")
     return ""
+
+
+def _entry_published_datetime(entry):
+    """
+    Best-effort parsing of an entry's publish date.
+    Returns a timezone-aware UTC datetime or None if unavailable.
+    """
+    # Prefer structured tuples from feedparser (published_parsed / updated_parsed)
+    for key in ("published_parsed", "updated_parsed"):
+        dt_struct = entry.get(key)
+        if dt_struct:
+            try:
+                return datetime(*dt_struct[:6], tzinfo=timezone.utc)
+            except Exception:
+                continue
+
+    # Fallback to RFC 2822-style strings (published / updated)
+    for key in ("published", "updated"):
+        raw = (entry.get(key) or "").strip()
+        if not raw:
+            continue
+        try:
+            dt = email.utils.parsedate_to_datetime(raw)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt.astimezone(timezone.utc)
+        except Exception:
+            continue
+
+    return None
 
 
 def _parse_feed_url(url: str):
@@ -114,6 +145,7 @@ def fetch_feed(feed_config: dict, limit: int = 10) -> list:
                 title = (entry.get("title") or "").strip()
                 url = _entry_link(entry)
                 summary = _entry_summary(entry)
+                published_dt = _entry_published_datetime(entry)
 
                 if summary:
                     soup = BeautifulSoup(summary, "html.parser")
@@ -130,7 +162,8 @@ def fetch_feed(feed_config: dict, limit: int = 10) -> list:
                     'url': url,
                     'title': title,
                     'source': source,
-                    'content': summary
+                    'content': summary,
+                    'published_at': published_dt.isoformat() if published_dt else None,
                 })
 
             print(f"    Found {len(articles)} articles")
@@ -174,7 +207,8 @@ def fetch_all_feeds(limit_per_feed: int = 10, dry_run: bool = False) -> int:
                     url=article['url'],
                     title=article['title'],
                     source=article['source'],
-                    content=article['content']
+                    content=article['content'],
+                    published_at=article.get('published_at'),
                 )
                 if result:
                     print(f"    ✓ Added: {article['title'][:60]}...")
