@@ -40,7 +40,7 @@ Edit `.env` and set at least:
 | `SUPABASE_URL` | Fetch, DB, digest, cleanup            | [Supabase](https://supabase.com/dashboard) → Project → Settings → API |
 | `SUPABASE_KEY` | Same as above                        | Same (anon/public key) |
 | `GEMINI_API_KEY` | Topic assignment, summarization, email | [Google AI Studio](https://aistudio.google.com/apikey) |
-| `SENDGRID_API_KEY` | Sending the daily email            | [SendGrid](https://sendgrid.com/) |
+| `RESEND_API_KEY` | Sending the daily email            | [Resend](https://resend.com/api-keys) |
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
 | `APP_URL`      | Links in the email                   | Your app URL (e.g. Vercel URL or `http://localhost:3000`) |
 
@@ -76,7 +76,7 @@ python3 execution/fetch_ai_news.py --limit 10
 python3 execution/assign_topics.py
 ```
 
-**Summarize and send daily email:** see `execution/summarize_articles.py` and `execution/send_daily_email.py` (need Gemini + SendGrid + Supabase).
+**Summarize and send daily email:** see `execution/summarize_articles.py` and `execution/send_daily_email.py` (need Gemini + Resend + Supabase).
 
 ## 6. Frontend (optional)
 

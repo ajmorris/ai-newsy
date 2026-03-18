@@ -11,7 +11,7 @@ Phases 1–6 are **done**. Phase 7 (human-in-the-loop topic selection) is **futu
 - **Phase 3**: `get_unsent_articles_for_digest(max_per_source=2, interleave=True)`, used in send_daily_email; directive note.
 - **Phase 4**: Split RSS vs X, "Latest from socials" section, link/takeaway styling in `send_daily_email.py`.
 - **Phase 5**: `extract_og_image`, `update_article_image`, wired in summarization; images in email HTML.
-- **Phase 6**: Topic-based newsletter: `topic` on articles, `digests` table, `execution/assign_topics.py`, `choose_topic_for_today()` + rotation, JIT summarization (`summarize_selected`), send_daily_email wired (choose topic → get articles → JIT summarize → send → record topic).
+- **Phase 6**: Topic-based newsletter: `topic` on articles, `digests` table, `execution/assign_topics.py`, `choose_topic_for_today()` + rotation, JIT summarization (`summarize_selected`), send_daily_email wired (choose topic → get articles → JIT summarize → send → record topic). Email is sent via **Resend** (see `RESEND_API_KEY` in .env).
 
 **Max per source**: 2 (default in code and env `DIGEST_MAX_PER_SOURCE`).
 

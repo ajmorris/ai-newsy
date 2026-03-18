@@ -1,6 +1,6 @@
 """
 Send daily email digest to subscribers.
-Compiles summarized articles and sends via SendGrid.
+Compiles summarized articles and sends via Resend.
 Includes AI-generated introduction synthesizing all stories.
 """
 
@@ -9,8 +9,7 @@ import argparse
 from datetime import datetime, timedelta
 from typing import Optional, Dict, List
 from dotenv import load_dotenv
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail, Email, To, Content, HtmlContent
+import resend
 from google import genai
 
 import sys
@@ -25,8 +24,9 @@ from execution.summarize_articles import summarize_selected
 
 load_dotenv()
 
-# SendGrid configuration
-SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
+# Resend configuration
+RESEND_API_KEY = os.getenv("RESEND_API_KEY")
+resend.api_key = RESEND_API_KEY
 EMAIL_FROM = os.getenv("EMAIL_FROM", "newsletter@example.com")
 APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 
@@ -182,20 +182,16 @@ def generate_email_html(
 
 
 def send_email(to_email: str, html_content: str, subject: str) -> bool:
-    """Send a single email via SendGrid."""
+    """Send a single email via Resend."""
     try:
-        sg = SendGridAPIClient(SENDGRID_API_KEY)
-        
-        message = Mail(
-            from_email=Email(EMAIL_FROM, "AI Newsy"),
-            to_emails=To(to_email),
-            subject=subject,
-            html_content=HtmlContent(html_content)
-        )
-        
-        response = sg.send(message)
-        return response.status_code in [200, 201, 202]
-        
+        params = {
+            "from": f"AI Newsy <{EMAIL_FROM}>",
+            "to": [to_email],
+            "subject": subject,
+            "html": html_content,
+        }
+        resend.Emails.send(params)
+        return True
     except Exception as e:
         print(f"    Error sending to {to_email}: {e}")
         return False
@@ -276,6 +272,9 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
     sent = 0
     failed = 0
 
+    # Build sections once from article topics so each article appears only once
+    sections = group_articles_by_category(articles)
+
     for subscriber in subscribers:
         email = subscriber.get('email')
         token = subscriber.get('confirm_token', '')
@@ -287,14 +286,6 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             sent += 1
             continue
 
-        # Build fixed topic-based sections; each topic includes all selected articles
-        sections = [
-            {
-                "name": topic,
-                "articles": articles,
-            }
-            for topic in DIGEST_TOPICS
-        ]
         html = generate_email_html(sections, intro=intro, unsubscribe_token=token)
         
         if send_email(email, html, subject):
@@ -329,9 +320,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Check for API key
-    if not SENDGRID_API_KEY or SENDGRID_API_KEY == "your-sendgrid-api-key":
-        print("⚠️  SENDGRID_API_KEY not configured in .env")
-        print("   Get one at: https://sendgrid.com/")
+    if not RESEND_API_KEY or RESEND_API_KEY.strip() == "":
+        print("RESEND_API_KEY not configured in .env")
+        print("   Get one at: https://resend.com/api-keys")
         exit(1)
 
     result = send_daily_digest(dry_run=args.dry_run, test_email=args.test_email)
