@@ -16,9 +16,10 @@ from google import genai
 import sys
 sys.path.insert(0, '.')
 from execution.database import (
-    get_unsent_articles_for_digest,
+    get_unsent_articles,
     get_active_subscribers,
     mark_articles_sent,
+    insert_digest_log,
 )
 from execution.summarize_articles import summarize_selected
 
@@ -45,6 +46,15 @@ Today's stories:
 {article_summaries}"""
 
 INTRO_PROMPT = os.getenv("PROMPT_INTRO", DEFAULT_INTRO_PROMPT)
+
+# Fixed topics for daily digest sections
+DIGEST_TOPICS: List[str] = [
+    "Models",
+    "Agents & Tools",
+    "MCP & Skills",
+    "Safety",
+    "Industry",
+]
 
 # Mapping from internal topic labels to reader-facing categories
 TOPIC_TO_CATEGORY: Dict[str, str] = {
@@ -225,17 +235,17 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
         print(f"  [TEST MODE] Sending only to: {test_email}")
     print(f"{'='*50}\n")
 
-    max_per_source = int(os.getenv("DIGEST_MAX_PER_SOURCE", "2"))
     window_hours = int(os.getenv("DIGEST_WINDOW_HOURS", "24"))
 
     since = datetime.utcnow() - timedelta(hours=window_hours)
     print(f"Using time window: last {window_hours} hour(s) since {since.isoformat()}")
 
-    articles = get_unsent_articles_for_digest(
-        max_per_source=max_per_source,
-        interleave=True,
+    # Select all unsent, summarized articles within the time window
+    articles = get_unsent_articles(
         topic=None,
+        require_summary=True,
         since=since,
+        until=None,
     )
 
     if not articles:
@@ -277,7 +287,14 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             sent += 1
             continue
 
-        sections = group_articles_by_category(articles)
+        # Build fixed topic-based sections; each topic includes all selected articles
+        sections = [
+            {
+                "name": topic,
+                "articles": articles,
+            }
+            for topic in DIGEST_TOPICS
+        ]
         html = generate_email_html(sections, intro=intro, unsubscribe_token=token)
         
         if send_email(email, html, subject):
@@ -292,6 +309,9 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
         article_ids = [a.get('id') for a in articles]
         mark_articles_sent(article_ids)
         print(f"\n📌 Marked {len(article_ids)} articles as sent")
+        # Log each digest topic for this send
+        for topic in DIGEST_TOPICS:
+            insert_digest_log(topic)
     
     print(f"\n{'='*50}")
     print(f"Summary: Sent to {sent}, Failed: {failed}")
