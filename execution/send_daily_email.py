@@ -20,7 +20,6 @@ from execution.database import (
     mark_articles_sent,
     insert_digest_log,
 )
-from execution.summarize_articles import summarize_selected
 
 load_dotenv()
 

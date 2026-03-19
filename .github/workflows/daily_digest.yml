@@ -1,6 +1,5 @@
 # Daily AI Digest Workflow
-# Runs daily at 12:00 UTC: fetch RSS, assign topics, then send digest.
-# Summarization is JIT inside send_daily_email (only for articles selected for today's topic).
+# Runs daily at 12:00 UTC: send digest email from pre-prepared content.
 
 name: Daily AI Digest
 
@@ -27,20 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Fetch AI News from RSS
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python execution/fetch_ai_news.py --limit 10
-
-      - name: Assign topics to new articles
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PROMPT_TOPIC: ${{ vars.PROMPT_TOPIC }}
-        run: python execution/assign_topics.py
-
       - name: Send daily email digest
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -49,6 +34,5 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
           PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: python execution/send_daily_email.py
