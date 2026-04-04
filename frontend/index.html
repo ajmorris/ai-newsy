@@ -104,9 +104,50 @@
         <!-- Footer -->
         <footer>
             <p>Built with ❤️ for the AI curious</p>
+            <p class="feedback-link-wrapper">
+                <a href="#" id="feedback-link" class="feedback-link">Send Feedback</a>
+            </p>
         </footer>
     </main>
 
+    <!-- Feedback Modal -->
+    <div id="feedback-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-labelledby="feedback-title">
+            <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+            <h2 id="feedback-title">Send Us Feedback</h2>
+            <p class="modal-subtitle">We'd love to hear your thoughts, suggestions, or bug reports.</p>
+            <form id="feedback-form">
+                <div class="modal-field">
+                    <label for="feedback-name">Name</label>
+                    <input type="text" id="feedback-name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="modal-field">
+                    <label for="feedback-email">Email</label>
+                    <input type="email" id="feedback-email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="modal-field">
+                    <label for="feedback-message">Message</label>
+                    <textarea id="feedback-message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+                </div>
+                <p class="recaptcha-notice">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.
+                </p>
+                <button type="submit" id="feedback-submit" class="feedback-btn">
+                    <span class="btn-text">Send Feedback</span>
+                    <span class="btn-loading">
+                        <svg viewBox="0 0 24 24" class="spinner">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="60" stroke-dashoffset="20"/>
+                        </svg>
+                    </span>
+                </button>
+                <p id="feedback-message-status" class="form-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=RECAPTCHA_SITE_KEY_PLACEHOLDER" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>
