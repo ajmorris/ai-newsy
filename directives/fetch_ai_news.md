@@ -31,6 +31,7 @@ Current RSS feeds:
 - OpenAI: https://openai.com/news/rss.xml
 - Nate's Newsletter: https://natesnewsletter.substack.com/feed
 - Lenny's Newsletter: https://www.lennysnewsletter.com/feed
+- DATAVERSITY Smart Data: https://www.dataversity.net/resource-topic/smart-data/feed/
 
 ## Output
 - New articles inserted into `articles` table
