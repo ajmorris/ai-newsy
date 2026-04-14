@@ -45,3 +45,17 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
         run: python execution/summarize_articles.py
+
+      - name: Generate tweet headlines
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
+          TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS }}
+          TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT }}
+          TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES }}
+          TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL }}
+        run: python execution/generate_tweet_headlines.py

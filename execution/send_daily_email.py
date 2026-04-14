@@ -6,6 +6,8 @@ Includes AI-generated introduction synthesizing all stories.
 
 import os
 import argparse
+import html
+import re
 from datetime import datetime, timedelta
 from typing import Optional, Dict, List
 from dotenv import load_dotenv
@@ -16,9 +18,11 @@ import sys
 sys.path.insert(0, '.')
 from execution.database import (
     get_unsent_articles,
+    get_sent_articles,
     get_active_subscribers,
     mark_articles_sent,
     insert_digest_log,
+    get_digest_extra,
 )
 
 load_dotenv()
@@ -91,6 +95,7 @@ def generate_intro(articles: list) -> str:
 def generate_email_html(
     sections: List[dict],
     intro: str,
+    tweet_headlines: Optional[List[dict]] = None,
     unsubscribe_token: str = "",
 ) -> str:
     """Generate HTML email with grouped sections. Links and takeaways styled for clarity."""
@@ -147,6 +152,24 @@ def generate_email_html(
         </div>
         """
 
+    tweet_headlines = tweet_headlines or []
+
+    tweet_section_html = ""
+    if tweet_headlines:
+        tweet_items_html = "".join(
+            [f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #2b2c34;\">{render_tweet_headline_html(item)}</li>" for item in tweet_headlines]
+        )
+        tweet_section_html = f"""
+        <div style="margin-bottom: 32px;">
+            <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
+                From X
+            </h2>
+            <ul style="padding-left: 20px; margin: 0;">
+                {tweet_items_html}
+            </ul>
+        </div>
+        """
+
     # Full email template (colors from Happy Hues palette 6)
     html = f"""
     <!DOCTYPE html>
@@ -167,6 +190,7 @@ def generate_email_html(
             <div style="margin-bottom: 32px;">
                 {section_blocks}
             </div>
+            {tweet_section_html}
             <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
                 <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
                     You're receiving this because you subscribed to AI Newsy.
@@ -178,6 +202,33 @@ def generate_email_html(
     </html>
     """
     return html
+
+
+def render_tweet_headline_html(item: dict) -> str:
+    """
+    Convert headline text with markdown-style __anchor__ into HTML.
+    If URL exists and anchor is present, only the anchor phrase is linked.
+    """
+    headline = (item.get("headline") or "").strip()
+    url = (item.get("url") or "").strip()
+    if not headline:
+        return ""
+
+    if not url:
+        return html.escape(headline)
+
+    match = re.search(r"__(.+?)__", headline)
+    if not match:
+        title = html.escape(headline)
+        safe_url = html.escape(url, quote=True)
+        return f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">{title}</a>'
+
+    anchor_text = match.group(1)
+    safe_anchor = html.escape(anchor_text)
+    safe_url = html.escape(url, quote=True)
+    linked = f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">{safe_anchor}</a>'
+    replaced = headline[:match.start()] + linked + headline[match.end():]
+    return html.escape(replaced).replace(html.escape(linked), linked)
 
 
 def send_email(to_email: str, html_content: str, subject: str) -> bool:
@@ -218,7 +269,11 @@ def group_articles_by_category(articles: list) -> List[dict]:
     return sections
 
 
-def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -> dict:
+def send_daily_digest(
+    dry_run: bool = False,
+    test_email: Optional[str] = None,
+    sent_yesterday: bool = False,
+) -> dict:
     """
     Send daily digest to all active subscribers (or only to test_email if set).
     When test_email is set: send only to that address, do not mark articles as sent.
@@ -230,21 +285,33 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
         print(f"  [TEST MODE] Sending only to: {test_email}")
     print(f"{'='*50}\n")
 
-    window_hours = int(os.getenv("DIGEST_WINDOW_HOURS", "24"))
-
-    since = datetime.utcnow() - timedelta(hours=window_hours)
-    print(f"Using time window: last {window_hours} hour(s) since {since.isoformat()}")
-
-    # Select all unsent, summarized articles within the time window
-    articles = get_unsent_articles(
-        topic=None,
-        require_summary=True,
-        since=since,
-        until=None,
-    )
+    if sent_yesterday:
+        today_utc = datetime.utcnow().date()
+        yesterday_start = datetime.combine(today_utc - timedelta(days=1), datetime.min.time())
+        today_start = datetime.combine(today_utc, datetime.min.time())
+        print(
+            "Using SENT replay window: "
+            f"{yesterday_start.isoformat()} to {today_start.isoformat()} (UTC)"
+        )
+        articles = get_sent_articles(
+            require_summary=True,
+            since=yesterday_start,
+            until=today_start,
+        )
+    else:
+        window_hours = int(os.getenv("DIGEST_WINDOW_HOURS", "24"))
+        since = datetime.utcnow() - timedelta(hours=window_hours)
+        print(f"Using time window: last {window_hours} hour(s) since {since.isoformat()}")
+        # Select all unsent, summarized articles within the time window
+        articles = get_unsent_articles(
+            topic=None,
+            require_summary=True,
+            since=since,
+            until=None,
+        )
 
     if not articles:
-        print("No unsent articles to include in digest.")
+        print("No matching articles to include in digest.")
         return {"articles": 0, "sent": 0, "failed": 0}
 
     print(f"📰 {len(articles)} articles to include")
@@ -267,12 +334,20 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
     # Subject line (no longer single-topic; reflect total story count)
     today = datetime.now().strftime("%b %d")
     subject = f"AI Newsy • {today} • {len(articles)} Stories"
+    if sent_yesterday:
+        subject = f"[TEST Replay] {subject}"
 
     sent = 0
     failed = 0
 
     # Build sections once from article topics so each article appears only once
     sections = group_articles_by_category(articles)
+    digest_date = datetime.utcnow().date().isoformat()
+    extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines")
+    tweet_headlines = []
+    if extra and isinstance(extra.get("payload"), dict):
+        tweet_headlines = extra["payload"].get("headlines", []) or []
+    print(f"🐦 Tweet headlines loaded: {len(tweet_headlines)}")
 
     for subscriber in subscribers:
         email = subscriber.get('email')
@@ -285,7 +360,12 @@ def send_daily_digest(dry_run: bool = False, test_email: Optional[str] = None) -
             sent += 1
             continue
 
-        html = generate_email_html(sections, intro=intro, unsubscribe_token=token)
+        html = generate_email_html(
+            sections,
+            intro=intro,
+            tweet_headlines=tweet_headlines,
+            unsubscribe_token=token,
+        )
         
         if send_email(email, html, subject):
             print(f"    ✓ Sent!")
@@ -316,6 +396,8 @@ if __name__ == "__main__":
                         help="Process without sending emails")
     parser.add_argument('--test-email', type=str, default=None,
                         help="Send only to this email (e.g. for testing); does not mark articles as sent")
+    parser.add_argument('--sent-yesterday', action='store_true',
+                        help="Build digest from articles sent yesterday (UTC), for testing replay")
     args = parser.parse_args()
 
     # Check for API key
@@ -324,5 +406,9 @@ if __name__ == "__main__":
         print("   Get one at: https://resend.com/api-keys")
         exit(1)
 
-    result = send_daily_digest(dry_run=args.dry_run, test_email=args.test_email)
+    result = send_daily_digest(
+        dry_run=args.dry_run,
+        test_email=args.test_email,
+        sent_yesterday=args.sent_yesterday,
+    )
     print(f"Done! Sent digest with {result['articles']} articles to {result['sent']} subscribers.")

@@ -26,11 +26,14 @@ Phases 1–6 are **done**. Phase 7 is **future** (not in scope).
 
 1. `python execution/fetch_ai_news.py`
 2. `python execution/assign_topics.py`
-3. `python execution/send_daily_email.py` (chooses topic, JIT summarizes selected articles, sends)
+3. `python execution/generate_tweet_headlines.py` (pulls last 24h saved tweets from Notion and stores digest extras)
+4. `python execution/send_daily_email.py` (chooses topic, JIT summarizes selected articles, appends tweet bullets, sends)
 
 **No standalone summarize step**: Summarization runs only for articles selected for that day's digest (JIT inside send_daily_email), so Gemini is only used for the topic's articles.
 
 GitHub Actions (`.github/workflows/daily_digest.yml`) runs this sequence daily at 12:00 UTC and on workflow_dispatch.
+
+Tweet headlines are prepared by `.github/workflows/prepare_digest_content.yml` and persisted in `digest_extras` under key `tweet_headlines`.
 
 ---
 

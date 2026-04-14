@@ -111,8 +111,30 @@ Then run scripts with the venv active:
 ```bash
 python execution/fetch_ai_news.py --limit 5
 python execution/assign_topics.py
+python execution/generate_tweet_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
+
+## Tweet headline pipeline environment
+
+For Notion tweet ingestion + headline generation, configure:
+
+- `NOTION_API_KEY`: Notion integration token with read access to `Tweets` DB
+- `NOTION_TWEETS_DATABASE_ID`: the Notion database id for `Tweets`
+- `TWEET_LOOKBACK_HOURS` (optional, default `24`)
+- `TWEET_FETCH_LIMIT` (optional, default `100`)
+- `TWEET_MAX_HEADLINES` (optional, default `12`)
+- `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+
+GitHub Actions:
+
+- Add `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in repository **Secrets**
+- Add optional tweet settings as repository **Variables**
+
+Database:
+
+- Apply migration `supabase/migrations/20260414120000_add_digest_extras.sql`
+- This creates `digest_extras` used to persist per-day extras (key `tweet_headlines`)
 
 ## Matching GitHub
 

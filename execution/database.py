@@ -5,17 +5,62 @@ Uses Supabase (PostgreSQL) for persistent storage.
 
 import os
 import secrets
+import json
+import time
+import base64
+from pathlib import Path
 from datetime import datetime
-from typing import Optional
+from typing import Any, Dict, Optional
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
 load_dotenv()
 
+DEBUG_LOG_PATH = Path("/Users/ajmorris/ai-newsy/.cursor/debug-9f6bd3.log")
+DEBUG_SESSION_ID = "9f6bd3"
+
+
+def _debug_log(hypothesis_id: str, location: str, message: str, data: Dict[str, Any]) -> None:
+    # region agent log
+    payload = {
+        "sessionId": DEBUG_SESSION_ID,
+        "runId": "pre-fix-rls",
+        "hypothesisId": hypothesis_id,
+        "location": location,
+        "message": message,
+        "data": data,
+        "timestamp": int(time.time() * 1000),
+    }
+    with DEBUG_LOG_PATH.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(payload) + "\n")
+    # endregion
+
+
+def _jwt_role_from_key(key: str) -> str:
+    try:
+        parts = key.split(".")
+        if len(parts) != 3:
+            return "unknown"
+        payload_part = parts[1]
+        padding = "=" * (-len(payload_part) % 4)
+        decoded = base64.urlsafe_b64decode(payload_part + padding).decode("utf-8")
+        claims = json.loads(decoded)
+        return str(claims.get("role", "unknown"))
+    except Exception:
+        return "unknown"
+
+def _resolve_supabase_key() -> str:
+    """Prefer service role key for backend write operations."""
+    service_role = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
+    if service_role:
+        return service_role
+    return os.getenv("SUPABASE_KEY", "")
+
+
 # Initialize Supabase client
 supabase: Client = create_client(
     os.getenv("SUPABASE_URL", ""),
-    os.getenv("SUPABASE_KEY", "")
+    _resolve_supabase_key(),
 )
 
 
@@ -160,6 +205,27 @@ def get_unsent_articles(
     return result.data or []
 
 
+def get_sent_articles(
+    require_summary: bool = True,
+    since: Optional[datetime] = None,
+    until: Optional[datetime] = None,
+) -> list:
+    """
+    Get articles that have already been sent.
+    If require_summary is True, only return articles that have a summary.
+    Time window filters apply to sent_at.
+    """
+    query = supabase.table("articles").select("*").not_.is_("sent_at", "null")
+    if require_summary:
+        query = query.not_.is_("summary", "null")
+    if since is not None:
+        query = query.gte("sent_at", since.isoformat())
+    if until is not None:
+        query = query.lt("sent_at", until.isoformat())
+    result = query.execute()
+    return result.data or []
+
+
 def get_unsent_articles_with_topic_set() -> list:
     """Get unsent articles that have a topic set (for topic-based digest selection)."""
     result = supabase.table("articles").select("*").is_("sent_at", "null").not_.is_(
@@ -261,6 +327,63 @@ def insert_digest_log(topic: str) -> None:
         "topic": topic,
         "sent_at": datetime.utcnow().isoformat(),
     }).execute()
+
+
+def upsert_digest_extra(digest_date: str, key: str, payload: Dict[str, Any]) -> dict:
+    """
+    Upsert supplemental digest data for a date/key pair.
+    Example key: 'tweet_headlines'
+    """
+    _debug_log(
+        "H6",
+        "database.py:upsert_digest_extra:before_upsert",
+        "Attempting digest_extras upsert",
+        {
+            "digest_date": digest_date,
+            "key": key,
+            "payload_keys": sorted(payload.keys()) if isinstance(payload, dict) else [],
+            "supabase_key_role": _jwt_role_from_key(_resolve_supabase_key()),
+            "using_service_role_key": bool(os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")),
+        },
+    )
+    try:
+        result = supabase.table("digest_extras").upsert(
+            {
+                "digest_date": digest_date,
+                "key": key,
+                "payload": payload,
+                "updated_at": datetime.utcnow().isoformat(),
+            },
+            on_conflict="digest_date,key",
+        ).execute()
+        _debug_log(
+            "H8",
+            "database.py:upsert_digest_extra:upsert_success",
+            "digest_extras upsert succeeded",
+            {"row_count": len(result.data or [])},
+        )
+        return result.data[0] if result.data else {}
+    except Exception as exc:
+        _debug_log(
+            "H7",
+            "database.py:upsert_digest_extra:upsert_failure",
+            "digest_extras upsert failed",
+            {
+                "error_type": type(exc).__name__,
+                "error_message": str(exc),
+            },
+        )
+        raise
+
+
+def get_digest_extra(digest_date: str, key: str) -> Optional[dict]:
+    """Get supplemental digest data for a date/key pair."""
+    result = supabase.table("digest_extras").select("*").eq(
+        "digest_date", digest_date
+    ).eq("key", key).limit(1).execute()
+    if not result.data:
+        return None
+    return result.data[0]
 
 
 def get_topics_used_in_last_k_days(k: int) -> list:
