@@ -162,7 +162,7 @@ def generate_email_html(
         tweet_section_html = f"""
         <div style="margin-bottom: 32px;">
             <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
-                From X
+                From X/Twitter
             </h2>
             <ul style="padding-left: 20px; margin: 0;">
                 {tweet_items_html}
