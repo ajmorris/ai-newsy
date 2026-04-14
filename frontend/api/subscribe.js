@@ -8,6 +8,46 @@ const supabase = createClient(
     process.env.SUPABASE_KEY
 );
 
+async function sendSlackSignupNotification(email) {
+    const webhookUrl = process.env.SLACK_WEBHOOK_URL;
+
+    if (!webhookUrl) {
+        console.warn('SLACK_WEBHOOK_URL is not set. Skipping Slack notification.');
+        return;
+    }
+
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 1500);
+
+    try {
+        const response = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                text: `New newsletter signup: ${email}`,
+                blocks: [
+                    {
+                        type: 'section',
+                        text: {
+                            type: 'mrkdwn',
+                            text: `*New newsletter signup*\n• Email: ${email}\n• Source: AI Newsy signup API\n• Time: ${new Date().toISOString()}`
+                        }
+                    }
+                ]
+            }),
+            signal: controller.signal
+        });
+
+        if (!response.ok) {
+            console.error('Slack webhook failed with status:', response.status);
+        }
+    } catch (error) {
+        console.error('Slack notification error:', error);
+    } finally {
+        clearTimeout(timeoutId);
+    }
+}
+
 function generateToken() {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let token = '';
@@ -77,6 +117,9 @@ export default async function handler(req, res) {
             console.error('Supabase error:', error);
             return res.status(500).json({ error: 'Failed to subscribe. Please try again.' });
         }
+
+        // Best-effort side effect: never fail successful signup on Slack issues.
+        await sendSlackSignupNotification(normalizedEmail);
 
         return res.status(200).json({
             message: 'Successfully subscribed! Welcome to AI Newsy.',

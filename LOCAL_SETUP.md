@@ -43,10 +43,23 @@ Edit `.env` and set at least:
 | `RESEND_API_KEY` | Sending the daily email            | [Resend](https://resend.com/api-keys) |
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
 | `APP_URL`      | Links in the email                   | Your app URL (e.g. Vercel URL or `http://localhost:3000`) |
+| `SLACK_WEBHOOK_URL` | Slack alerts for new signups (optional) | Slack Incoming Webhooks app settings |
 
 - **RSS-only (no DB):** You can run `scripts/check_feeds.py` without any env vars (it only needs `feedparser` and `requests`).
 - **Fetch + DB:** You need `SUPABASE_URL` and `SUPABASE_KEY`.
 - **Full digest (assign topics, summarize, send email):** You need all of the above.
+- **Signup Slack alerts (optional):** Set `SLACK_WEBHOOK_URL` to post a message when a brand-new subscriber is created.
+
+### Slack webhook setup (optional)
+
+1. In Slack, create an Incoming Webhook for the channel where you want signup alerts.
+2. Copy the webhook URL into your `.env`:
+
+```bash
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXX/YYY/ZZZ
+```
+
+3. In production (Vercel), set the same `SLACK_WEBHOOK_URL` environment variable in Project Settings.
 
 ## 5. Run from repo root
 
