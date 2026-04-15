@@ -322,8 +322,9 @@ def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List
         return []
 
     prompt = _build_generation_prompt(skill_prompt, tweets)
+    model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
     response = client.models.generate_content(
-        model=os.getenv("TWEET_HEADLINES_MODEL", "gemini-2.0-flash"),
+        model=model_name,
         contents=prompt,
     )
     text = (response.text or "").strip()
@@ -371,6 +372,14 @@ def _env_int(name: str, default: int) -> int:
     except ValueError:
         print(f"Invalid {name}={raw!r}; using default {default}")
         return default
+
+
+def _env_str(name: str, default: str) -> str:
+    """
+    Read a string env var with fallback for empty values.
+    """
+    raw = (os.getenv(name) or "").strip()
+    return raw or default
 
 
 def persist_headlines(headlines: List[dict], source_count: int, digest_date: str) -> None:

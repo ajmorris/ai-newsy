@@ -60,5 +60,5 @@ jobs:
           TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS || '24' }}
           TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT || '100' }}
           TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES || '12' }}
-          TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL }}
+          TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL || 'gemini-2.0-flash' }}
         run: python execution/generate_tweet_headlines.py
