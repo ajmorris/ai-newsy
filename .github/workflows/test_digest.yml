@@ -1,0 +1,98 @@
+# Manual test workflow: send a single-recipient digest to verify
+# that GitHub Actions, secrets/vars, and the email pipeline are wired up
+# correctly without touching the real subscriber list.
+#
+# Trigger from: GitHub → Actions → "Test Digest (Single User)" → Run workflow
+# Inputs:
+#   test_email       (required) recipient for the test digest
+#   prepare_content  (optional, default false) run the full fetch/topic/
+#                    summarize/tweet-headline prep pipeline before sending.
+#                    Leave unchecked to exercise only the email send path
+#                    using whatever articles/headlines are already in the DB.
+#
+# Safety: send_daily_email.py --test-email does NOT call mark_articles_sent,
+# so articles stay available for the real daily digest run.
+
+name: Test Digest (Single User)
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_email:
+        description: 'Email address to send the test digest to'
+        required: true
+        type: string
+      prepare_content:
+        description: 'Run content prep (fetch RSS, assign topics, summarize, tweet headlines) before sending'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  send-test-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch AI News from RSS
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python execution/fetch_ai_news.py --limit 10
+
+      - name: Assign topics to new articles
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PROMPT_TOPIC: ${{ vars.PROMPT_TOPIC }}
+        run: python execution/assign_topics.py
+
+      - name: Summarize articles
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
+        run: python execution/summarize_articles.py
+
+      - name: Generate tweet headlines
+        if: ${{ inputs.prepare_content }}
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
+          TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS }}
+          TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT }}
+          TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES }}
+          TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL }}
+        run: python execution/generate_tweet_headlines.py
+
+      - name: Send test digest to single recipient
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          APP_URL: ${{ secrets.APP_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
+        run: python execution/send_daily_email.py --test-email "${{ inputs.test_email }}"

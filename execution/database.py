@@ -16,12 +16,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DEBUG_LOG_PATH = Path("/Users/ajmorris/ai-newsy/.cursor/debug-9f6bd3.log")
+# Debug log is opt-in via DEBUG_LOG_PATH env var. Absent/unwritable paths
+# become silent no-ops so the module still loads in GitHub Actions.
+_DEBUG_LOG_ENV = os.getenv("DEBUG_LOG_PATH", "").strip()
+DEBUG_LOG_PATH: Optional[Path] = Path(_DEBUG_LOG_ENV) if _DEBUG_LOG_ENV else None
 DEBUG_SESSION_ID = "9f6bd3"
 
 
 def _debug_log(hypothesis_id: str, location: str, message: str, data: Dict[str, Any]) -> None:
     # region agent log
+    if DEBUG_LOG_PATH is None:
+        return
     payload = {
         "sessionId": DEBUG_SESSION_ID,
         "runId": "pre-fix-rls",
@@ -31,8 +36,13 @@ def _debug_log(hypothesis_id: str, location: str, message: str, data: Dict[str, 
         "data": data,
         "timestamp": int(time.time() * 1000),
     }
-    with DEBUG_LOG_PATH.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(payload) + "\n")
+    try:
+        DEBUG_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with DEBUG_LOG_PATH.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(payload) + "\n")
+    except OSError:
+        # Swallow logging errors so they never break the pipeline.
+        pass
     # endregion
 
 
