@@ -28,12 +28,14 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: python execution/fetch_ai_news.py --limit 10
 
       - name: Assign topics to new articles
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PROMPT_TOPIC: ${{ vars.PROMPT_TOPIC }}
         run: python execution/assign_topics.py
@@ -42,15 +44,16 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
         run: python execution/summarize_articles.py
 
       - name: Generate tweet headlines
-        continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}

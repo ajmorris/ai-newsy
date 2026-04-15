@@ -345,9 +345,26 @@ def send_daily_digest(
     digest_date = datetime.utcnow().date().isoformat()
     extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines")
     tweet_headlines = []
-    if extra and isinstance(extra.get("payload"), dict):
-        tweet_headlines = extra["payload"].get("headlines", []) or []
-    print(f"🐦 Tweet headlines loaded: {len(tweet_headlines)}")
+    if not extra:
+        print(f"⚠️ No digest_extras row found for key=tweet_headlines on {digest_date}")
+    elif isinstance(extra.get("payload"), dict):
+        payload = extra["payload"]
+        source_count = payload.get("source_count", "unknown")
+        headline_count = payload.get("headline_count", "unknown")
+        tweet_headlines = payload.get("headlines", []) or []
+        print(
+            "🐦 Tweet headlines extra found: "
+            f"source_count={source_count}, payload_headline_count={headline_count}, "
+            f"loaded_for_email={len(tweet_headlines)}"
+        )
+    else:
+        print(f"⚠️ tweet_headlines payload is not a dict for digest_date={digest_date}")
+
+    if not tweet_headlines and not sent_yesterday:
+        print(
+            "⚠️ Tweet headlines are empty for this digest send. "
+            "Email will continue without the From X/Twitter section."
+        )
 
     for subscriber in subscribers:
         email = subscriber.get('email')
