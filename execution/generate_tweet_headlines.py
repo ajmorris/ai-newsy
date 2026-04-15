@@ -38,17 +38,24 @@ DEBUG_SESSION_ID = "9f6bd3"
 
 def _debug_log(hypothesis_id: str, location: str, message: str, data: Dict) -> None:
     # region agent log
-    payload = {
-        "sessionId": DEBUG_SESSION_ID,
-        "runId": "pre-fix",
-        "hypothesisId": hypothesis_id,
-        "location": location,
-        "message": message,
-        "data": data,
-        "timestamp": int(time.time() * 1000),
-    }
-    with DEBUG_LOG_PATH.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(payload) + "\n")
+    # Best-effort: DEBUG_LOG_PATH targets a developer machine and may not exist
+    # (or be writable) on CI. Silently drop failures so they do not break the
+    # production pipeline.
+    try:
+        payload = {
+            "sessionId": DEBUG_SESSION_ID,
+            "runId": "pre-fix",
+            "hypothesisId": hypothesis_id,
+            "location": location,
+            "message": message,
+            "data": data,
+            "timestamp": int(time.time() * 1000),
+        }
+        DEBUG_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with DEBUG_LOG_PATH.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(payload) + "\n")
+    except Exception:
+        pass
     # endregion
 
 

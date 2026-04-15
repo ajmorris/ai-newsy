@@ -98,9 +98,6 @@ ALTER TABLE articles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE digests ENABLE ROW LEVEL SECURITY;
 ALTER TABLE digest_extras ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Service role has full access to digest_extras" ON digest_extras
-    FOR ALL USING (auth.role() = 'service_role');
-
 CREATE POLICY "Allow all operations on subscribers" ON subscribers
     FOR ALL USING (true) WITH CHECK (true);
 
@@ -108,4 +105,7 @@ CREATE POLICY "Allow all operations on articles" ON articles
     FOR ALL USING (true) WITH CHECK (true);
 
 CREATE POLICY "Allow all operations on digests" ON digests
+    FOR ALL USING (true) WITH CHECK (true);
+
+CREATE POLICY "Allow all operations on digest_extras" ON digest_extras
     FOR ALL USING (true) WITH CHECK (true);
