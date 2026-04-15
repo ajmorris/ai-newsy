@@ -359,6 +359,20 @@ def _sanitize_date(value: Optional[str]) -> str:
     return datetime.now(timezone.utc).date().isoformat()
 
 
+def _env_int(name: str, default: int) -> int:
+    """
+    Read an integer env var with safe fallback for empty/invalid values.
+    """
+    raw = (os.getenv(name) or "").strip()
+    if not raw:
+        return default
+    try:
+        return int(raw)
+    except ValueError:
+        print(f"Invalid {name}={raw!r}; using default {default}")
+        return default
+
+
 def persist_headlines(headlines: List[dict], source_count: int, digest_date: str) -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -409,12 +423,12 @@ def main(hours: int, limit: int, max_headlines: int, digest_date: Optional[str],
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate tweet headlines from Notion rows")
-    parser.add_argument("--hours", type=int, default=int(os.getenv("TWEET_LOOKBACK_HOURS", "24")))
-    parser.add_argument("--limit", type=int, default=int(os.getenv("TWEET_FETCH_LIMIT", "100")))
+    parser.add_argument("--hours", type=int, default=_env_int("TWEET_LOOKBACK_HOURS", 24))
+    parser.add_argument("--limit", type=int, default=_env_int("TWEET_FETCH_LIMIT", 100))
     parser.add_argument(
         "--max-headlines",
         type=int,
-        default=int(os.getenv("TWEET_MAX_HEADLINES", "12")),
+        default=_env_int("TWEET_MAX_HEADLINES", 12),
     )
     parser.add_argument("--digest-date", type=str, default=None, help="YYYY-MM-DD (UTC)")
     parser.add_argument("--dry-run", action="store_true")

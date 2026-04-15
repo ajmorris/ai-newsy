@@ -83,9 +83,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
-          TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS }}
-          TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT }}
-          TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES }}
+          TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS || '24' }}
+          TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT || '100' }}
+          TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES || '12' }}
           TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL }}
         run: python execution/generate_tweet_headlines.py
 
