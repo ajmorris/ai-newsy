@@ -310,11 +310,23 @@ def _build_generation_prompt(skill_prompt: str, tweets: List[dict]) -> str:
         "Output requirements (strict):\n"
         "1. One line per included tweet.\n"
         "2. Format: TWEET_ID|HEADLINE\n"
-        "3. HEADLINE must include exactly one __bold anchor phrase__.\n"
+        "3. HEADLINE must include exactly one __anchor phrase__ wrapped in double underscores.\n"
+        "   Example: The __anchor phrase__ is the only part that will be linked.\n"
+        "   Do NOT use asterisks for emphasis (no **like this**).\n"
         "4. Omit low-signal tweets entirely.\n"
         "5. No markdown bullets, numbering, or preamble.\n\n"
         f"{rows_blob}"
     )
+
+
+def _normalize_headline_anchors(headline: str) -> str:
+    """
+    Normalize any markdown-style **anchor** into __anchor__ and strip leftover asterisks.
+    This keeps storage consistent and avoids resend rendering literal markdown.
+    """
+    normalized = re.sub(r"\*\*(.+?)\*\*", r"__\1__", headline)
+    normalized = normalized.replace("**", "")
+    return normalized.strip()
 
 
 def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List[dict]:
@@ -336,7 +348,7 @@ def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List
             continue
         tweet_id, raw_headline = line.split("|", 1)
         tweet_id = tweet_id.strip()
-        raw_headline = raw_headline.strip().lstrip("-").strip()
+        raw_headline = _normalize_headline_anchors(raw_headline.strip().lstrip("-").strip())
         if not tweet_id or not raw_headline:
             continue
         source = tweet_index.get(tweet_id)

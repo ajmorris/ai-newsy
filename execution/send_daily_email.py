@@ -221,7 +221,10 @@ def render_tweet_headline_html(item: dict) -> str:
     if not match:
         title = html.escape(headline)
         safe_url = html.escape(url, quote=True)
-        return f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">{title}</a>'
+        return (
+            f"{title} "
+            f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">Source</a>'
+        )
 
     anchor_text = match.group(1)
     safe_anchor = html.escape(anchor_text)
