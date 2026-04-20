@@ -96,7 +96,7 @@ Skip entirely. Do not include in output.
 ## Processing Instructions
 
 1. Read each tweet carefully. Identify: Who said it (real name)? What's the core claim/product/insight? Is there a specific number or metric?
-2. Write one headline per tweet. Skip low-signal tweets.
+2. Write one headline per distinct takeaway (not blindly one per tweet). Skip low-signal tweets.
 3. Choose the single best phrase to bold/link — the phrase someone would most want to click.
 4. After drafting all headlines, review the full list for:
    - Repetitive sentence starters → vary them
@@ -112,4 +112,8 @@ You will receive tweets in one of these formats:
 - Tweet text with a URL
 - A batch of tweets separated by line breaks or dividers
 
-For each tweet, produce exactly one bullet. Preserve any URLs provided — they will be mapped to the bold anchor text in the final newsletter rendering.
+If multiple tweets are saying nearly the same thing (same product launch, same claim, same thread recap), collapse them into one strongest headline by default.
+
+Only keep multiple headlines from the same broad theme when each one teaches something different (new metric, distinct workflow, opposing take, or materially different claim).
+
+Preserve any URLs provided — they will be mapped to the bold anchor text in the final newsletter rendering.

@@ -9,6 +9,7 @@ Pipeline:
 """
 
 import argparse
+from collections import Counter
 import inspect
 import json
 import os
@@ -16,7 +17,8 @@ import re
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from dotenv import load_dotenv
 from google import genai
@@ -150,6 +152,11 @@ def load_skill_prompt(skill_path: Path = SKILL_PATH) -> str:
     return skill_path.read_text(encoding="utf-8").strip()
 
 
+def _lookback_start(hours: int, now: Optional[datetime] = None) -> datetime:
+    anchor = now or datetime.now(timezone.utc)
+    return anchor - timedelta(hours=hours)
+
+
 def fetch_recent_tweets(limit: int = 100, hours: int = 24) -> List[dict]:
     notion_api_key = os.getenv("NOTION_API_KEY", "")
     notion_db_id = os.getenv("NOTION_TWEETS_DATABASE_ID", "")
@@ -179,7 +186,7 @@ def fetch_recent_tweets(limit: int = 100, hours: int = 24) -> List[dict]:
             "has_data_sources_query": hasattr(getattr(notion, "data_sources", None), "query"),
         },
     )
-    since = datetime.now(timezone.utc) - timedelta(hours=hours)
+    since = _lookback_start(hours=hours)
     cursor: Optional[str] = None
     rows: List[dict] = []
     query_mode = "unknown"
@@ -361,6 +368,7 @@ def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List
                 "url": source.get("url", ""),
                 "author": source.get("author", "Unknown"),
                 "created_time": source.get("created_time", ""),
+                "source_text": source.get("text", ""),
             }
         )
     return headlines
@@ -394,6 +402,156 @@ def _env_str(name: str, default: str) -> str:
     return raw or default
 
 
+def _env_float(name: str, default: float) -> float:
+    """
+    Read a float env var with safe fallback for empty/invalid values.
+    """
+    raw = (os.getenv(name) or "").strip()
+    if not raw:
+        return default
+    try:
+        return float(raw)
+    except ValueError:
+        print(f"Invalid {name}={raw!r}; using default {default}")
+        return default
+
+
+def _canonicalize_url(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        parsed = urlparse(url.strip())
+    except ValueError:
+        return url.strip().lower()
+
+    host = parsed.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    if host == "x.com":
+        host = "twitter.com"
+
+    clean_query = [
+        (k, v)
+        for k, v in parse_qsl(parsed.query, keep_blank_values=True)
+        if not k.lower().startswith("utm_") and k.lower() not in {"ref", "source"}
+    ]
+    query = urlencode(clean_query, doseq=True)
+    path = parsed.path.rstrip("/")
+    return urlunparse((parsed.scheme.lower() or "https", host, path, "", query, ""))
+
+
+def _parse_datetime(value: str) -> Optional[datetime]:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _tokenize(text: str) -> Set[str]:
+    words = re.findall(r"[a-z0-9]{3,}", (text or "").lower())
+    stop_words = {
+        "about", "after", "also", "been", "from", "have", "into", "just", "more",
+        "only", "over", "that", "their", "there", "they", "this", "very", "with",
+        "your", "what", "when", "will", "would", "than", "them", "were", "does",
+        "dont", "cant", "http", "https", "twitter", "thread",
+    }
+    return {word for word in words if word not in stop_words}
+
+
+def _jaccard_similarity(a: Set[str], b: Set[str]) -> float:
+    if not a and not b:
+        return 1.0
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def _learning_value_score(item: dict) -> int:
+    headline = (item.get("headline") or "").lower()
+    tweet_text = (item.get("source_text") or "").lower()
+    merged = f"{headline} {tweet_text}"
+    score = 0
+
+    if re.search(r"\d", merged):
+        score += 1
+    if len(_tokenize(merged)) >= 8:
+        score += 1
+
+    insight_keywords = {
+        "benchmark", "guide", "explain", "how", "lessons", "learned", "analysis",
+        "breakdown", "workflow", "case", "study", "mistake", "experiment", "result",
+        "prompt", "design", "tradeoff", "latency", "accuracy", "security",
+    }
+    if any(keyword in merged for keyword in insight_keywords):
+        score += 1
+
+    low_signal_patterns = [
+        "gm", "good morning", "follow me", "check this out", "big news", "coming soon",
+        "new post", "new blog", "just dropped", "read this", "watch this",
+    ]
+    if any(pattern in merged for pattern in low_signal_patterns):
+        score -= 2
+
+    return score
+
+
+def _cluster_theme_headlines(items: List[dict], similarity_threshold: float) -> List[List[dict]]:
+    clusters: List[List[dict]] = []
+    centroids: List[Set[str]] = []
+
+    for item in items:
+        tokens = _tokenize(f"{item.get('headline', '')} {item.get('source_text', '')}")
+        item["theme_tokens"] = tokens
+        placed = False
+        for idx, centroid in enumerate(centroids):
+            if _jaccard_similarity(tokens, centroid) >= similarity_threshold:
+                clusters[idx].append(item)
+                centroids[idx] = centroid | tokens
+                placed = True
+                break
+        if not placed:
+            clusters.append([item])
+            centroids.append(set(tokens))
+    return clusters
+
+
+def _distinct_take(candidate: dict, chosen: List[dict], threshold: float) -> bool:
+    candidate_tokens = candidate.get("theme_tokens", set())
+    if not candidate_tokens:
+        return False
+
+    chosen_tokens: Set[str] = set()
+    for item in chosen:
+        chosen_tokens |= item.get("theme_tokens", set())
+
+    novelty = len(candidate_tokens - chosen_tokens) / max(len(candidate_tokens), 1)
+    if novelty >= threshold:
+        return True
+
+    candidate_url = _canonicalize_url(candidate.get("url", ""))
+    chosen_urls = {_canonicalize_url(item.get("url", "")) for item in chosen}
+    return bool(candidate_url) and candidate_url not in chosen_urls and novelty >= (threshold * 0.6)
+
+
+def _log_tweet_window(tweets: List[dict], lookback_hours: int) -> None:
+    parsed_times = [
+        dt
+        for dt in (_parse_datetime(tweet.get("created_time", "")) for tweet in tweets)
+        if dt is not None
+    ]
+    if not parsed_times:
+        print(f"Lookback configured to {lookback_hours}h; no parseable tweet timestamps found.")
+        return
+    newest = max(parsed_times)
+    oldest = min(parsed_times)
+    print(
+        f"Lookback configured to {lookback_hours}h; fetched window spans "
+        f"{oldest.isoformat()} to {newest.isoformat()} ({len(parsed_times)} timestamped rows)."
+    )
+
+
 def persist_headlines(headlines: List[dict], source_count: int, digest_date: str) -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -404,16 +562,88 @@ def persist_headlines(headlines: List[dict], source_count: int, digest_date: str
     upsert_digest_extra(digest_date=digest_date, key="tweet_headlines", payload=payload)
 
 
-def remove_duplicate_headlines(headlines: List[dict]) -> List[dict]:
-    seen = set()
-    result = []
+def curate_headlines(
+    headlines: List[dict],
+    max_headlines: int,
+    min_learning_score: int,
+    theme_similarity_threshold: float,
+    max_per_theme: int,
+    distinctness_threshold: float,
+) -> List[dict]:
+    if not headlines:
+        return []
+
+    deduped: List[dict] = []
+    seen_headlines: Set[str] = set()
+    seen_urls: Set[str] = set()
     for item in headlines:
-        normalized = re.sub(r"\s+", " ", item.get("headline", "")).strip().lower()
-        if not normalized or normalized in seen:
+        normalized_headline = re.sub(r"\s+", " ", item.get("headline", "")).strip().lower()
+        canonical_url = _canonicalize_url(item.get("url", ""))
+        if not normalized_headline:
             continue
-        seen.add(normalized)
-        result.append(item)
-    return result
+        if normalized_headline in seen_headlines:
+            continue
+        if canonical_url and canonical_url in seen_urls:
+            continue
+        item["canonical_url"] = canonical_url
+        seen_headlines.add(normalized_headline)
+        if canonical_url:
+            seen_urls.add(canonical_url)
+        deduped.append(item)
+
+    learning_pass: List[dict] = []
+    learning_scores = Counter()
+    for item in deduped:
+        score = _learning_value_score(item)
+        item["learning_score"] = score
+        learning_scores[score] += 1
+        if score >= min_learning_score:
+            learning_pass.append(item)
+
+    clusters = _cluster_theme_headlines(
+        learning_pass,
+        similarity_threshold=theme_similarity_threshold,
+    )
+    selected: List[dict] = []
+    for cluster in clusters:
+        ranked = sorted(
+            cluster,
+            key=lambda item: (
+                item.get("learning_score", 0),
+                item.get("created_time", ""),
+            ),
+            reverse=True,
+        )
+        if not ranked:
+            continue
+
+        chosen = [ranked[0]]
+        for candidate in ranked[1:]:
+            if len(chosen) >= max_per_theme:
+                break
+            if _distinct_take(candidate, chosen, threshold=distinctness_threshold):
+                chosen.append(candidate)
+        selected.extend(chosen)
+
+    selected.sort(
+        key=lambda item: (
+            item.get("learning_score", 0),
+            item.get("created_time", ""),
+        ),
+        reverse=True,
+    )
+
+    print(
+        "Headline curation: "
+        f"raw={len(headlines)}, deduped={len(deduped)}, "
+        f"learning_pass={len(learning_pass)}, clusters={len(clusters)}, final={len(selected)}"
+    )
+    print(
+        "Learning score distribution: "
+        + ", ".join(f"{score}:{count}" for score, count in sorted(learning_scores.items()))
+    )
+
+    return selected[:max_headlines]
 
 
 def main(hours: int, limit: int, max_headlines: int, digest_date: Optional[str], dry_run: bool) -> None:
@@ -421,6 +651,7 @@ def main(hours: int, limit: int, max_headlines: int, digest_date: Optional[str],
     print(f"Generating tweet headlines for digest date: {safe_date}")
     tweets = fetch_recent_tweets(limit=limit, hours=hours)
     print(f"Fetched {len(tweets)} tweets from Notion")
+    _log_tweet_window(tweets, lookback_hours=hours)
 
     if not tweets:
         if not dry_run:
@@ -430,7 +661,14 @@ def main(hours: int, limit: int, max_headlines: int, digest_date: Optional[str],
 
     skill_prompt = load_skill_prompt()
     headlines = generate_headlines_for_tweets(tweets, skill_prompt=skill_prompt)
-    headlines = remove_duplicate_headlines(headlines)[:max_headlines]
+    headlines = curate_headlines(
+        headlines,
+        max_headlines=max_headlines,
+        min_learning_score=_env_int("TWEET_MIN_LEARNING_SCORE", 2),
+        theme_similarity_threshold=_env_float("TWEET_THEME_SIMILARITY_THRESHOLD", 0.38),
+        max_per_theme=_env_int("TWEET_MAX_PER_THEME", 2),
+        distinctness_threshold=_env_float("TWEET_DISTINCTNESS_THRESHOLD", 0.45),
+    )
     print(f"Generated {len(headlines)} curated headlines")
 
     if dry_run:

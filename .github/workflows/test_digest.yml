@@ -87,6 +87,10 @@ jobs:
           TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT || '100' }}
           TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES || '12' }}
           TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL || 'gemini-2.0-flash' }}
+          TWEET_MIN_LEARNING_SCORE: ${{ vars.TWEET_MIN_LEARNING_SCORE || '2' }}
+          TWEET_THEME_SIMILARITY_THRESHOLD: ${{ vars.TWEET_THEME_SIMILARITY_THRESHOLD || '0.38' }}
+          TWEET_MAX_PER_THEME: ${{ vars.TWEET_MAX_PER_THEME || '2' }}
+          TWEET_DISTINCTNESS_THRESHOLD: ${{ vars.TWEET_DISTINCTNESS_THRESHOLD || '0.45' }}
         run: python execution/generate_tweet_headlines.py
 
       - name: Verify tweet headlines persisted for digest date
