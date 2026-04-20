@@ -35,24 +35,34 @@ CREATE TABLE IF NOT EXISTS articles (
     image_url TEXT,
     topic TEXT,
     fetched_at TIMESTAMPTZ DEFAULT NOW(),
-    sent_at TIMESTAMPTZ
+    sent_at TIMESTAMPTZ,
+    is_duplicate_of BIGINT REFERENCES articles(id),
+    dedup_checked_at TIMESTAMPTZ,
+    dedup_reason TEXT
 );
 
 -- For existing deployments: add columns if missing (run in SQL Editor or migration)
 -- ALTER TABLE articles ADD COLUMN IF NOT EXISTS opinion TEXT;
 -- ALTER TABLE articles ADD COLUMN IF NOT EXISTS image_url TEXT;
 -- ALTER TABLE articles ADD COLUMN IF NOT EXISTS topic TEXT;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS is_duplicate_of BIGINT REFERENCES articles(id);
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS dedup_checked_at TIMESTAMPTZ;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS dedup_reason TEXT;
 
 -- Index for URL deduplication
 CREATE INDEX IF NOT EXISTS idx_articles_url ON articles(url);
 
 -- Index for unsent articles query
-CREATE INDEX IF NOT EXISTS idx_articles_unsent ON articles(sent_at) 
+CREATE INDEX IF NOT EXISTS idx_articles_unsent ON articles(sent_at)
     WHERE sent_at IS NULL;
 
 -- Index for topic-based digest
-CREATE INDEX IF NOT EXISTS idx_articles_topic ON articles(topic) 
+CREATE INDEX IF NOT EXISTS idx_articles_topic ON articles(topic)
     WHERE topic IS NOT NULL;
+
+-- Index to speed up "not a duplicate" filter used by digest selection
+CREATE INDEX IF NOT EXISTS idx_articles_not_duplicate ON articles(sent_at)
+    WHERE is_duplicate_of IS NULL;
 
 
 -- ===========================================

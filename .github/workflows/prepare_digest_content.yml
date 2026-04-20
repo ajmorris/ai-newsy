@@ -49,6 +49,17 @@ jobs:
           PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
         run: python execution/summarize_articles.py
 
+      - name: Deduplicate articles
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEDUP_LOOKBACK_HOURS: ${{ vars.DEDUP_LOOKBACK_HOURS || '24' }}
+          DEDUP_SIMILARITY_THRESHOLD: ${{ vars.DEDUP_SIMILARITY_THRESHOLD || '0.75' }}
+          PROMPT_DEDUP: ${{ vars.PROMPT_DEDUP }}
+        run: python execution/deduplicate_articles.py
+
       - name: Generate tweet headlines
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
