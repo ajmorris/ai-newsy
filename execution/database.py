@@ -202,7 +202,9 @@ def get_unsent_articles(
     If require_summary is True, only return articles that have been summarized.
     If since/until are provided, constrain by fetched_at time window (UTC).
     """
-    query = supabase.table("articles").select("*").is_("sent_at", "null")
+    query = supabase.table("articles").select("*").is_("sent_at", "null").is_(
+        "is_duplicate_of", "null"
+    )
     if require_summary:
         query = query.not_.is_("summary", "null")
     if topic is not None:
@@ -325,6 +327,52 @@ def mark_articles_sent(article_ids: list) -> None:
         supabase.table("articles").update({
             "sent_at": sent_time
         }).eq("id", article_id).execute()
+
+
+# ===========================================
+# SEMANTIC DEDUPLICATION
+# ===========================================
+
+def get_dedup_candidates(lookback_hours: int = 24) -> list:
+    """
+    Return summarized, unsent, not-yet-checked articles fetched within the
+    lookback window. These are the candidates a dedup pass will compare.
+    """
+    from datetime import timedelta
+    since = (datetime.utcnow() - timedelta(hours=lookback_hours)).isoformat()
+    query = (
+        supabase.table("articles")
+        .select("id, url, title, source, summary, opinion, published_at, fetched_at")
+        .is_("sent_at", "null")
+        .is_("is_duplicate_of", "null")
+        .is_("dedup_checked_at", "null")
+        .not_.is_("summary", "null")
+        .gte("fetched_at", since)
+    )
+    result = query.execute()
+    return result.data or []
+
+
+def mark_article_duplicate(loser_id: int, winner_id: int, reason: str = "") -> None:
+    """
+    Flag an article as a duplicate of the winner. Also stamps dedup_checked_at
+    so the loser is not re-evaluated on subsequent runs.
+    """
+    supabase.table("articles").update({
+        "is_duplicate_of": winner_id,
+        "dedup_reason": reason[:500] if reason else None,
+        "dedup_checked_at": datetime.utcnow().isoformat(),
+    }).eq("id", loser_id).execute()
+
+
+def mark_dedup_checked(article_ids: list) -> None:
+    """Stamp dedup_checked_at on articles that were evaluated (winners + singletons)."""
+    if not article_ids:
+        return
+    checked_at = datetime.utcnow().isoformat()
+    supabase.table("articles").update({
+        "dedup_checked_at": checked_at,
+    }).in_("id", list(article_ids)).execute()
 
 
 # ===========================================
