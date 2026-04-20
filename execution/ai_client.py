@@ -9,6 +9,17 @@ ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_ANTHROPIC_MODEL = "claude-3-5-haiku-latest"
 
 
+def _response_preview(response: requests.Response, max_len: int = 500) -> str:
+    try:
+        payload = response.json()
+    except ValueError:
+        payload = response.text or ""
+    text = str(payload).strip()
+    if len(text) <= max_len:
+        return text
+    return f"{text[:max_len]}..."
+
+
 def _is_rate_limit_error(error: Exception) -> bool:
     message = str(error).lower()
     return (
@@ -48,7 +59,12 @@ def _generate_with_anthropic(prompt: str, model: str, temperature: float = 0.2) 
         },
         timeout=45,
     )
-    response.raise_for_status()
+    if not response.ok:
+        detail = _response_preview(response)
+        raise RuntimeError(
+            "Anthropic request failed "
+            f"(status={response.status_code}, model={model}, url={ANTHROPIC_API_URL}, response={detail})"
+        )
     return _extract_anthropic_text(response.json())
 
 
