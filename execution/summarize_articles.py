@@ -5,7 +5,6 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from google import genai
 
 import sys
 sys.path.insert(0, '.')
@@ -15,11 +14,9 @@ from execution.database import (
     update_article_image,
     supabase,
 )
+from execution.ai_client import generate_text_with_fallback
 
 load_dotenv()
-
-# Initialize Gemini client (auto-reads GEMINI_API_KEY env var)
-client = genai.Client()
 
 # Summarization prompt (override via PROMPT_SUMMARIZE env var)
 DEFAULT_SUMMARIZE_PROMPT = """You are an expert AI news analyst. Given an article title and content, you will provide:
@@ -85,11 +82,10 @@ def summarize_article(title: str, content: str, url: str) -> tuple:
         context = f"Title: {title}\nURL: {url}\nContent: {content}"
         
         prompt = f"{SYSTEM_PROMPT}\n\n{context}"
-        response = client.models.generate_content(
-            model='gemini-2.0-flash',
-            contents=prompt
+        text = generate_text_with_fallback(
+            prompt=prompt,
+            gemini_model="gemini-2.0-flash",
         )
-        text = response.text.strip()
         
         summary = ""
         opinion = ""
@@ -224,9 +220,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Check for API key
-    if not os.getenv("GEMINI_API_KEY"):
-        print("⚠️  GEMINI_API_KEY not configured in .env")
-        print("   Get one at: https://aistudio.google.com/apikey")
+    if not os.getenv("GEMINI_API_KEY") and not os.getenv("ANTHROPIC_KEY"):
+        print("⚠️  No AI key configured. Set GEMINI_API_KEY and/or ANTHROPIC_KEY in .env")
         exit(1)
     
     count = summarize_all(dry_run=args.dry_run, limit=args.limit)

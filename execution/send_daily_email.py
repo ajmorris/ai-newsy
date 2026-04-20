@@ -12,7 +12,6 @@ from datetime import datetime, timedelta
 from typing import Optional, Dict, List
 from dotenv import load_dotenv
 import resend
-from google import genai
 
 import sys
 sys.path.insert(0, '.')
@@ -24,6 +23,7 @@ from execution.database import (
     insert_digest_log,
     get_digest_extra,
 )
+from execution.ai_client import generate_text_with_fallback
 
 load_dotenv()
 
@@ -32,9 +32,6 @@ RESEND_API_KEY = os.getenv("RESEND_API_KEY")
 resend.api_key = RESEND_API_KEY
 EMAIL_FROM = os.getenv("EMAIL_FROM", "newsletter@example.com")
 APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
-
-# Initialize Gemini client (auto-reads GEMINI_API_KEY env var)
-client = genai.Client()
 
 # Intro prompt (override via PROMPT_INTRO env var)
 DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for a daily AI news digest email. 
@@ -82,11 +79,10 @@ def generate_intro(articles: list) -> str:
         
         prompt = INTRO_PROMPT.format(article_summaries=article_summaries)
 
-        response = client.models.generate_content(
-            model='gemini-2.0-flash',
-            contents=prompt
+        return generate_text_with_fallback(
+            prompt=prompt,
+            gemini_model="gemini-2.0-flash",
         )
-        return response.text.strip()
     except Exception as e:
         print(f"    Error generating intro: {e}")
         return "Here's what's making waves in AI today."

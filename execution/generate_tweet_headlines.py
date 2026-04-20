@@ -17,21 +17,19 @@ import re
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from dotenv import load_dotenv
-from google import genai
 import notion_client
 from notion_client import Client as NotionClient
 
 import sys
 sys.path.insert(0, '.')
 from execution.database import upsert_digest_extra
+from execution.ai_client import generate_text_with_fallback
 
 load_dotenv()
-
-client = genai.Client()
 
 SKILL_PATH = Path(".skills/headlines-SKILL.md")
 # Debug log is opt-in via DEBUG_LOG_PATH env var. Absent/unwritable paths
@@ -342,11 +340,10 @@ def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List
 
     prompt = _build_generation_prompt(skill_prompt, tweets)
     model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
-    response = client.models.generate_content(
-        model=model_name,
-        contents=prompt,
+    text = generate_text_with_fallback(
+        prompt=prompt,
+        gemini_model=model_name,
     )
-    text = (response.text or "").strip()
 
     tweet_index = {tweet["tweet_id"]: tweet for tweet in tweets}
     headlines = []
@@ -552,12 +549,25 @@ def _log_tweet_window(tweets: List[dict], lookback_hours: int) -> None:
     )
 
 
+def _json_safe(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {str(key): _json_safe(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_json_safe(item) for item in value]
+    if isinstance(value, set):
+        return [_json_safe(item) for item in sorted(value)]
+    if isinstance(value, datetime):
+        return value.isoformat()
+    return value
+
+
 def persist_headlines(headlines: List[dict], source_count: int, digest_date: str) -> None:
+    safe_headlines = [_json_safe(headline) for headline in headlines]
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_count": source_count,
-        "headline_count": len(headlines),
-        "headlines": headlines,
+        "headline_count": len(safe_headlines),
+        "headlines": safe_headlines,
     }
     upsert_digest_extra(digest_date=digest_date, key="tweet_headlines", payload=payload)
 
@@ -643,7 +653,14 @@ def curate_headlines(
         + ", ".join(f"{score}:{count}" for score, count in sorted(learning_scores.items()))
     )
 
-    return selected[:max_headlines]
+    curated = []
+    for item in selected[:max_headlines]:
+        serialized_item = dict(item)
+        # Runtime clustering artifact; never persist in digest payloads.
+        serialized_item.pop("theme_tokens", None)
+        curated.append(serialized_item)
+
+    return curated
 
 
 def main(hours: int, limit: int, max_headlines: int, digest_date: Optional[str], dry_run: bool) -> None:
