@@ -60,11 +60,8 @@ def _jwt_role_from_key(key: str) -> str:
         return "unknown"
 
 def _resolve_supabase_key() -> str:
-    """Prefer service role key for backend write operations."""
-    service_role = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
-    if service_role:
-        return service_role
-    return os.getenv("SUPABASE_KEY", "")
+    """Use the canonical secret key for backend write operations."""
+    return os.getenv("SUPABASE_SECRET_KEY", "")
 
 
 # Initialize Supabase client
@@ -353,7 +350,7 @@ def upsert_digest_extra(digest_date: str, key: str, payload: Dict[str, Any]) -> 
             "key": key,
             "payload_keys": sorted(payload.keys()) if isinstance(payload, dict) else [],
             "supabase_key_role": _jwt_role_from_key(_resolve_supabase_key()),
-            "using_service_role_key": bool(os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")),
+            "using_secret_key": bool(os.getenv("SUPABASE_SECRET_KEY", "")),
         },
     )
     try:

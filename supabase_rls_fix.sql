@@ -8,8 +8,8 @@
 --   1. `npx supabase db push` (if your project is linked), or
 --   2. Copying the migration file's contents into the Supabase SQL Editor.
 --
--- Why: all Python scripts and Vercel API routes use SUPABASE_KEY, which is the
--- anon/public key. The original schema only granted service_role access, which
+-- Why: server-side scripts now use SUPABASE_SECRET_KEY and API routes use
+-- SUPABASE_PUBLISHABLE_KEY. The original schema only granted service_role access, which
 -- caused inserts from the "Prepare Digest Content" workflow to fail with:
 --     new row violates row-level security policy for table "articles"
 

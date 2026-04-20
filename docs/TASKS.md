@@ -43,4 +43,4 @@ Articles older than **30 days** (by `fetched_at`) are deleted to keep the databa
 
 - **Script**: `python execution/cleanup_old_articles.py` (default 30 days; override with `--days N` or env `ARTICLE_RETENTION_DAYS`).
 - **Dry run**: `python execution/cleanup_old_articles.py --dry-run` to see how many would be deleted.
-- **Schedule**: GitHub Action `.github/workflows/cleanup_old_articles.yml` runs **weekly** (Sunday 1:00 UTC). Set `SUPABASE_URL` and `SUPABASE_KEY` in repo secrets; optional repo variable `ARTICLE_RETENTION_DAYS` (default 30).
+- **Schedule**: GitHub Action `.github/workflows/cleanup_old_articles.yml` runs **weekly** (Sunday 1:00 UTC). Set `SUPABASE_URL` and `SUPABASE_SECRET_KEY` in repo secrets; optional repo variable `ARTICLE_RETENTION_DAYS` (default 30).

@@ -38,7 +38,8 @@ Edit `.env` and set at least:
 | Variable        | Required for                         | Where to get it |
 |----------------|--------------------------------------|------------------|
 | `SUPABASE_URL` | Fetch, DB, digest, cleanup            | [Supabase](https://supabase.com/dashboard) → Project → Settings → API |
-| `SUPABASE_KEY` | Same as above                        | Same (anon/public key) |
+| `SUPABASE_PUBLISHABLE_KEY` | Public/non-privileged client usage | Same (publishable key) |
+| `SUPABASE_SECRET_KEY` | Server-side writes/admin operations | Same (secret key) |
 | `GEMINI_API_KEY` | Topic assignment, summarization, email | [Google AI Studio](https://aistudio.google.com/apikey) |
 | `RESEND_API_KEY` | Sending the daily email            | [Resend](https://resend.com/api-keys) |
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
@@ -46,7 +47,7 @@ Edit `.env` and set at least:
 | `SLACK_WEBHOOK_URL` | Slack alerts for new signups (optional) | Slack Incoming Webhooks app settings |
 
 - **RSS-only (no DB):** You can run `scripts/check_feeds.py` without any env vars (it only needs `feedparser` and `requests`).
-- **Fetch + DB:** You need `SUPABASE_URL` and `SUPABASE_KEY`.
+- **Fetch + DB:** You need `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - **Full digest (assign topics, summarize, send email):** You need all of the above.
 - **Signup Slack alerts (optional):** Set `SLACK_WEBHOOK_URL` to post a message when a brand-new subscriber is created.
 
@@ -109,5 +110,9 @@ Check `frontend/package.json` for the exact dev command.
 - [ ] Repo cloned, `cd ai-newsy`  
 - [ ] `python3 -m venv .venv` and `source .venv/bin/activate`  
 - [ ] `pip install -r requirements.txt`  
-- [ ] `cp .env.example .env` and set `SUPABASE_URL`, `SUPABASE_KEY` (and others as needed)  
+- [ ] `cp .env.example .env` and set `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY` (and others as needed)  
+
+## Security note
+
+If you are rotating credentials after an exposure event, revoke and remove any legacy Supabase key variables from all environments. Do not keep legacy keys configured.
 - [ ] `python3 scripts/check_feeds.py` runs and shows feed status  

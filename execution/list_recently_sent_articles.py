@@ -11,9 +11,9 @@ from supabase import create_client, Client
 load_dotenv()
 
 SUPABASE_URL = os.getenv("SUPABASE_URL", "")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "")
+SUPABASE_SECRET_KEY = os.getenv("SUPABASE_SECRET_KEY", "")
 
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SECRET_KEY)
 
 
 def list_recently_sent(hours: int = 24) -> None:
@@ -48,8 +48,8 @@ def list_recently_sent(hours: int = 24) -> None:
 
 
 if __name__ == "__main__":
-    if not SUPABASE_URL or not SUPABASE_KEY:
-        print("SUPABASE_URL or SUPABASE_KEY not set in .env")
+    if not SUPABASE_URL or not SUPABASE_SECRET_KEY:
+        print("SUPABASE_URL or SUPABASE_SECRET_KEY not set in .env")
         raise SystemExit(1)
 
     list_recently_sent(hours=24)

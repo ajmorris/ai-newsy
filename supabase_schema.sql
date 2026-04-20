@@ -87,10 +87,9 @@ CREATE INDEX IF NOT EXISTS idx_digest_extras_key ON digest_extras(key);
 -- ===========================================
 -- ROW LEVEL SECURITY
 -- ===========================================
--- All scripts and Vercel API routes use SUPABASE_KEY (the anon/public key) from
--- server-side contexts only (GitHub Actions runners and Vercel Functions). The
--- anon key is never embedded in the browser bundle, so the policies below grant
--- broad access to the anon role, matching the intent of the original design.
+-- Server-side scripts use SUPABASE_SECRET_KEY and API routes use
+-- SUPABASE_PUBLISHABLE_KEY. Both run in server-side contexts only (GitHub Actions
+-- runners and Vercel Functions), never embedded in the browser bundle.
 -- See supabase/migrations/20260415000000_fix_rls_policies_for_anon_role.sql for
 -- the migration that applies this change to existing deployments.
 ALTER TABLE subscribers ENABLE ROW LEVEL SECURITY;

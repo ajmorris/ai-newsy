@@ -2,15 +2,15 @@
 --
 -- Background: every Python script (fetch_ai_news, assign_topics, summarize_articles,
 -- send_daily_email) and every Vercel API route (api/subscribe.js, api/unsubscribe.js)
--- connects to Supabase using SUPABASE_KEY, which .env.example documents as the
--- anon/public key. The original schema in supabase_schema.sql only created policies
+-- connects to Supabase using SUPABASE_SECRET_KEY for backend operations and
+-- SUPABASE_PUBLISHABLE_KEY for API routes. The original schema in supabase_schema.sql only created policies
 -- for auth.role() = 'service_role', so INSERTs failed with:
 --     new row violates row-level security policy for table "articles"
 -- when the "Prepare Digest Content" GitHub Action ran fetch_ai_news.py.
 --
--- The anon key is only ever used from server-side contexts (GitHub Actions runners
--- and Vercel Functions) and is never embedded in the browser bundle, so granting
--- broad access to the anon role is equivalent to the intent of the original schema.
+-- These keys are only used from server-side contexts (GitHub Actions runners and
+-- Vercel Functions) and are never embedded in the browser bundle, so granting
+-- broad access to the anon role matched the original schema intent.
 
 -- ARTICLES --
 DROP POLICY IF EXISTS "Service role has full access to articles" ON articles;
