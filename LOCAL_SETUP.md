@@ -103,12 +103,22 @@ The web frontend in this repo is a static site + Vercel serverless API routes:
 ```bash
 cd frontend
 npm install
-npx vercel dev --yes --local
+npm run dev:env
 ```
 
 This serves:
 - `http://localhost:3000/` for `index.html`
 - `http://localhost:3000/api/subscribe` and `/api/unsubscribe` for local API testing
+
+`npm run dev:env` explicitly loads the repo root `.env` (`../.env`) so local API routes can access server-only vars like `SUPABASE_SECRET_KEY`.
+Restart the dev server after changing `.env` values.
+
+Quick local verification:
+
+1. Ensure `.env` has `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
+2. Start frontend local dev with `npm run dev:env`.
+3. Open `http://localhost:3000/` and submit the subscribe form.
+4. Confirm you get either a success state or a specific API error message (not generic network failure).
 
 ## Quick checklist
 

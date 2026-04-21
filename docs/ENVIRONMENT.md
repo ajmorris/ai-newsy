@@ -214,6 +214,12 @@ Vercel configuration:
 - Add required values in **Project Settings → Environment Variables** for Production/Preview as needed.
 - Redeploy after changing env vars so serverless functions pick them up.
 
+Local Vercel dev with repo `.env`:
+
+- From `frontend/`, run `npm run dev:env`.
+- This command loads `../.env` before starting `vercel dev`, so local API routes receive `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
+- Restart local dev after editing `.env`.
+
 GitHub Actions configuration:
 
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
