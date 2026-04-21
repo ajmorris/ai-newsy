@@ -34,7 +34,13 @@ CREATE TABLE IF NOT EXISTS articles (
     opinion TEXT,
     image_url TEXT,
     topic TEXT,
+    analysis JSONB,
+    analyzed_at TIMESTAMPTZ,
+    analysis_model TEXT,
+    analysis_prompt_version TEXT,
+    analysis_run_id TEXT,
     fetched_at TIMESTAMPTZ DEFAULT NOW(),
+    published_at TIMESTAMPTZ DEFAULT NOW(),
     sent_at TIMESTAMPTZ
 );
 
@@ -42,6 +48,12 @@ CREATE TABLE IF NOT EXISTS articles (
 -- ALTER TABLE articles ADD COLUMN IF NOT EXISTS opinion TEXT;
 -- ALTER TABLE articles ADD COLUMN IF NOT EXISTS image_url TEXT;
 -- ALTER TABLE articles ADD COLUMN IF NOT EXISTS topic TEXT;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS analysis JSONB;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS analyzed_at TIMESTAMPTZ;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS analysis_model TEXT;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS analysis_prompt_version TEXT;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS analysis_run_id TEXT;
+-- ALTER TABLE articles ADD COLUMN IF NOT EXISTS published_at TIMESTAMPTZ DEFAULT NOW();
 
 -- Index for URL deduplication
 CREATE INDEX IF NOT EXISTS idx_articles_url ON articles(url);

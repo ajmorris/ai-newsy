@@ -10,7 +10,6 @@ on:
 concurrency:
   group: prepare-twitter-headlines-schedule
   cancel-in-progress: false
-
 jobs:
   prepare-twitter-headlines:
     runs-on: ubuntu-latest
@@ -25,7 +24,6 @@ jobs:
             echo "Outside target local time; exiting successfully."
             exit 0
           fi
-
       - name: Checkout repository
         uses: actions/checkout@v4
 

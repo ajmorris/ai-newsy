@@ -111,9 +111,50 @@ Then run scripts with the venv active:
 ```bash
 python execution/fetch_ai_news.py --limit 5
 python execution/assign_topics.py
+python execution/summarize_articles.py
 python execution/generate_tweet_headlines.py --dry-run
+python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
+
+## AI provider fallback chain
+
+All LLM scripts use `execution/ai_client.py` with a provider-chain fallback.
+
+- **Default order**: Anthropic -> Gemini -> OpenAI
+- **Override order** with `LLM_PROVIDER_CHAIN`:
+
+  ```bash
+  LLM_PROVIDER_CHAIN=anthropic,gemini,openai
+  ```
+
+Required API keys for full fallback coverage:
+
+- `ANTHROPIC_KEY` (primary provider)
+- `GEMINI_API_KEY` (first fallback)
+- `OPENAI_API_KEY` (second fallback)
+
+Provider model defaults (override with env vars):
+
+- `ANTHROPIC_MODEL` default: `claude-opus-4-6`
+- `GEMINI_MODEL` default: `gemini-2.0-flash`
+- `OPENAI_MODEL` default: `gpt-4o-mini`
+
+Per-task vars like `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
+`COMMUNITY_HEADLINES_MODEL` remain supported as logical model hints. If a hint
+does not match the active provider, the provider default model is used.
+
+### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
+
+Digest writing prompts should maintain the same editorial voice:
+
+- First-person and personal, like a coffee conversation.
+- Human Element + Honesty: candid, practical, and emotionally real.
+- Center on lived interpretation: what I'm learning, what I'm watching, what I'm seeing.
+- Avoid detached analyst phrasing, hype language, and fake certainty.
+
+If you override `PROMPT_INTRO` or `PROMPT_SUMMARIZE`, keep these constraints so
+newsletter tone stays consistent across runs and environments.
 
 ## Tweet headline pipeline environment
 
@@ -135,6 +176,23 @@ Database:
 
 - Apply migration `supabase/migrations/20260414120000_add_digest_extras.sql`
 - This creates `digest_extras` used to persist per-day extras (key `tweet_headlines`)
+
+## Community headline pipeline environment
+
+For Reddit/HN/YC ingestion + headline generation, configure:
+
+- `COMMUNITY_LOOKBACK_HOURS` (optional, default `24`)
+- `COMMUNITY_FETCH_LIMIT` (optional, default `120`)
+- `COMMUNITY_MAX_HEADLINES` (optional, default `12`)
+- `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+- `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
+- `REDDIT_USER_AGENT` (optional but recommended)
+- `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)
+
+GitHub Actions:
+
+- Add optional community settings as repository **Variables**
+- `prepare_community_headlines.yml` runs source extraction + persistence to `digest_extras` key `community_headlines`
 
 ## Signup API protection environment
 
@@ -159,6 +217,10 @@ Vercel configuration:
 GitHub Actions configuration:
 
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- Source-specific prep workflows are split by source:
+  - `prepare_digest_content.yml` (RSS)
+  - `prepare_twitter_headlines.yml` (Twitter/X extras)
+  - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
 

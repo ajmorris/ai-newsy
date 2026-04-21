@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('form-message');
     const captchaTokenInput = document.getElementById('captcha-token');
     const captchaProviderInput = document.getElementById('captcha-provider');
+    const latestIssueCallout = document.getElementById('new-issue-callout');
+    const recentIssuesList = document.getElementById('recent-issues-list');
+
+    loadRecentIssues();
 
     function setCaptchaToken(token, provider) {
         if (captchaTokenInput) {
@@ -104,6 +108,82 @@ document.addEventListener('DOMContentLoaded', () => {
                 countEl.style.transform = 'scale(1)';
             }, 200);
         }
+    }
+
+    async function loadRecentIssues() {
+        if (!latestIssueCallout || !recentIssuesList) {
+            return;
+        }
+
+        try {
+            const response = await fetch('/issues/index.json', {
+                headers: {
+                    Accept: 'application/json',
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to load archive manifest.');
+            }
+
+            const data = await response.json();
+            renderLatestIssue(data.latestIssue);
+            renderRecentIssues(data.recentIssues || []);
+        } catch (error) {
+            console.error('Issue archive load error:', error);
+            recentIssuesList.innerHTML = '<li class="issues-loading">No issues published yet. Check back soon.</li>';
+        }
+    }
+
+    function renderLatestIssue(latestIssue) {
+        if (!latestIssue || !latestIssue.urlPath) {
+            return;
+        }
+
+        const titleEl = latestIssueCallout.querySelector('h3');
+        const bodyEl = latestIssueCallout.querySelector('p:not(.issue-kicker)');
+        const readLinkEl = latestIssueCallout.querySelector('.issue-read-link');
+
+        if (titleEl) {
+            titleEl.textContent = latestIssue.subject || 'New issue out';
+        }
+        if (bodyEl) {
+            bodyEl.textContent = latestIssue.intro || 'Read the latest issue now, then subscribe to get tomorrow\'s edition by email.';
+        }
+        if (readLinkEl) {
+            readLinkEl.setAttribute('href', latestIssue.urlPath);
+        }
+    }
+
+    function renderRecentIssues(recentIssues) {
+        if (!Array.isArray(recentIssues) || recentIssues.length === 0) {
+            recentIssuesList.innerHTML = '<li class="issues-loading">No recent issues found yet.</li>';
+            return;
+        }
+
+        const items = recentIssues
+            .map((issue) => {
+                const subject = escapeHtml(issue.subject || 'Untitled issue');
+                const displayDate = escapeHtml(issue.displayDate || issue.digestDate || '');
+                const articleCount = Number.isFinite(issue.articleCount)
+                    ? `${issue.articleCount} stories`
+                    : '';
+                const meta = [displayDate, articleCount].filter(Boolean).join(' • ');
+                const safeUrl = issue.urlPath || '/issues/';
+                return `<li><a href="${safeUrl}">${subject}</a><span>${escapeHtml(meta)}</span></li>`;
+            })
+            .join('');
+
+        recentIssuesList.innerHTML = items;
+    }
+
+    function escapeHtml(value) {
+        return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
     }
 
     // Add email input focus effects
