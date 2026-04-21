@@ -117,6 +117,33 @@ python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
 
+## AI provider fallback chain
+
+All LLM scripts use `execution/ai_client.py` with a provider-chain fallback.
+
+- **Default order**: Anthropic -> Gemini -> OpenAI
+- **Override order** with `LLM_PROVIDER_CHAIN`:
+
+  ```bash
+  LLM_PROVIDER_CHAIN=anthropic,gemini,openai
+  ```
+
+Required API keys for full fallback coverage:
+
+- `ANTHROPIC_KEY` (primary provider)
+- `GEMINI_API_KEY` (first fallback)
+- `OPENAI_API_KEY` (second fallback)
+
+Provider model defaults (override with env vars):
+
+- `ANTHROPIC_MODEL` default: `claude-opus-4-6`
+- `GEMINI_MODEL` default: `gemini-2.0-flash`
+- `OPENAI_MODEL` default: `gpt-4o-mini`
+
+Per-task vars like `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
+`COMMUNITY_HEADLINES_MODEL` remain supported as logical model hints. If a hint
+does not match the active provider, the provider default model is used.
+
 ## Tweet headline pipeline environment
 
 For Notion tweet ingestion + headline generation, configure:
