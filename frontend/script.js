@@ -123,7 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 form.classList.add('form-success-state');
                 subscribeRow.hidden = true;
                 successPanel.hidden = false;
-                successBody.textContent = `Confirmation sent. Check your inbox. — ${email}`;
+                if (data && data.status === 'already-subscribed') {
+                    successBody.textContent = `Already subscribed. You are on the AI Newsy list. — ${email}`;
+                } else if (data && data.status === 'confirmed') {
+                    successBody.textContent = `Subscription confirmed. Welcome to AI Newsy. — ${email}`;
+                } else {
+                    successBody.textContent = `Confirmation sent. Check your inbox. — ${email}`;
+                }
                 if (websiteInput) {
                     websiteInput.value = '';
                 }
