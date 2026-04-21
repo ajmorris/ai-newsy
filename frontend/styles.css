@@ -139,6 +139,14 @@ h1 {
     margin: 0 auto;
 }
 
+.bot-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .form-group {
     display: flex;
     gap: 12px;

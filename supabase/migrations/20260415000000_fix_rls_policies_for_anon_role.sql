@@ -1,9 +1,11 @@
--- Fix RLS policies so the anon role can access articles, digests, and subscribers.
+-- Fix RLS policies so the anon role can access articles and digests.
+-- NOTE: subscriber anon access from this migration is later removed by
+-- 20260420100000_lock_down_subscribers_rls.sql.
 --
 -- Background: every Python script (fetch_ai_news, assign_topics, summarize_articles,
 -- send_daily_email) and every Vercel API route (api/subscribe.js, api/unsubscribe.js)
--- connects to Supabase using SUPABASE_SECRET_KEY for backend operations and
--- SUPABASE_PUBLISHABLE_KEY for API routes. The original schema in supabase_schema.sql only created policies
+-- connects to Supabase using SUPABASE_SECRET_KEY for backend operations. The
+-- original schema in supabase_schema.sql only created policies
 -- for auth.role() = 'service_role', so INSERTs failed with:
 --     new row violates row-level security policy for table "articles"
 -- when the "Prepare Digest Content" GitHub Action ran fetch_ai_news.py.

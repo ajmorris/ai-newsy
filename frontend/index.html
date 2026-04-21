@@ -50,6 +50,18 @@
                             </span>
                         </button>
                     </div>
+                    <div class="bot-field" aria-hidden="true">
+                        <label for="website">Leave this field empty</label>
+                        <input
+                            type="text"
+                            id="website"
+                            name="website"
+                            tabindex="-1"
+                            autocomplete="off"
+                        >
+                    </div>
+                    <input type="hidden" id="captcha-token" name="captchaToken" value="">
+                    <input type="hidden" id="captcha-provider" name="captchaProvider" value="">
                     <p id="form-message" class="form-message"></p>
                 </form>
 

@@ -136,6 +136,32 @@ Database:
 - Apply migration `supabase/migrations/20260414120000_add_digest_extras.sql`
 - This creates `digest_extras` used to persist per-day extras (key `tweet_headlines`)
 
+## Signup API protection environment
+
+Subscriber endpoints (`frontend/api/subscribe.js`, `frontend/api/unsubscribe.js`) now use server-side Supabase access.
+
+- **Required in Vercel project envs**: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`
+- **Optional rate limit tuning**:
+  - `SUBSCRIBE_RATE_LIMIT_WINDOW_MS` (default `600000`)
+  - `SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS` (default `5`)
+- **Optional captcha** (enable one provider):
+  - Cloudflare Turnstile: `TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`
+  - hCaptcha: `HCAPTCHA_SITE_KEY`, `HCAPTCHA_SECRET_KEY`
+
+If a captcha secret key is set, `/api/subscribe` requires a valid captcha token.
+Without captcha secrets, the endpoint still applies honeypot and rate limiting.
+
+Vercel configuration:
+
+- Add required values in **Project Settings → Environment Variables** for Production/Preview as needed.
+- Redeploy after changing env vars so serverless functions pick them up.
+
+GitHub Actions configuration:
+
+- Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
+- If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
+
 ## Matching GitHub
 
 - **CI**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.

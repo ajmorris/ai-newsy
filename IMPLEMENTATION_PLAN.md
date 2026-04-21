@@ -43,3 +43,27 @@ Phases 1–6 are **done**. Phase 7 (human-in-the-loop topic selection) is **futu
 
 - **Phase 7**: Slack bot or similar to choose tomorrow’s topic (human-in-the-loop). Add when you want to override automatic topic selection.
 - **Daily workflow**: Ensure GitHub Actions runs `assign_topics` after fetch so new articles get a topic before send (see `.github/workflows/daily_digest.yml`).
+
+---
+
+## Subscriber storage & signup API
+
+**Decision**: Keep subscribers in Supabase (system of record) and protect the public signup endpoint. Do not move canonical list storage to Resend Contacts/Segments by default.
+
+### Pricing guardrails
+
+- **Resend transactional** (already used for digest sends) bills on emails sent/month. The free tier is 3,000 emails/month with a 100/day cap, then paid tiers scale by volume.
+- **Resend marketing** bills on stored contacts. If signups move into Resend Contacts/Segments, contact-count pricing applies once list size exceeds free limits.
+- **Implication**: moving subscriber storage to Resend does not remove transactional send costs; it can add a second billing line for marketing contacts.
+
+### Chosen path
+
+- Keep `frontend/api/subscribe.js` and `frontend/api/unsubscribe.js` writing to Supabase.
+- Use `SUPABASE_SECRET_KEY` in API routes (server-side only) and tighten subscriber RLS to avoid broad anon write access.
+- Add abuse controls to `/api/subscribe`: rate limiting, captcha verification (Turnstile/hCaptcha), and honeypot checks.
+
+### Operational notes
+
+- Required secrets for protected signup: `SUPABASE_SECRET_KEY`, optional `TURNSTILE_SECRET_KEY`, optional `HCAPTCHA_SECRET_KEY`.
+- Optional public site keys for frontend widgets: `TURNSTILE_SITE_KEY`, `HCAPTCHA_SITE_KEY`.
+- If captcha secret keys are not configured, signup still relies on honeypot and rate limiting.

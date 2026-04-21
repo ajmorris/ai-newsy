@@ -87,11 +87,12 @@ CREATE INDEX IF NOT EXISTS idx_digest_extras_key ON digest_extras(key);
 -- ===========================================
 -- ROW LEVEL SECURITY
 -- ===========================================
--- Server-side scripts use SUPABASE_SECRET_KEY and API routes use
--- SUPABASE_PUBLISHABLE_KEY. Both run in server-side contexts only (GitHub Actions
--- runners and Vercel Functions), never embedded in the browser bundle.
--- See supabase/migrations/20260415000000_fix_rls_policies_for_anon_role.sql for
--- the migration that applies this change to existing deployments.
+-- Server-side scripts and API routes use SUPABASE_SECRET_KEY from server-only
+-- environments (GitHub Actions runners and Vercel Functions). Keys are never
+-- embedded in the browser bundle.
+-- See supabase/migrations/20260415000000_fix_rls_policies_for_anon_role.sql
+-- and supabase/migrations/20260420100000_lock_down_subscribers_rls.sql for
+-- migrations that apply this change to existing deployments.
 ALTER TABLE subscribers ENABLE ROW LEVEL SECURITY;
 ALTER TABLE articles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE digests ENABLE ROW LEVEL SECURITY;
@@ -100,8 +101,8 @@ ALTER TABLE digest_extras ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Service role has full access to digest_extras" ON digest_extras
     FOR ALL USING (auth.role() = 'service_role');
 
-CREATE POLICY "Allow all operations on subscribers" ON subscribers
-    FOR ALL USING (true) WITH CHECK (true);
+-- Subscribers are managed only by server-side API routes using SUPABASE_SECRET_KEY.
+-- Keep RLS enabled with no anon policies to avoid direct public-table writes.
 
 CREATE POLICY "Allow all operations on articles" ON articles
     FOR ALL USING (true) WITH CHECK (true);

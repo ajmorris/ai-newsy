@@ -3,9 +3,12 @@
 
 import { createClient } from '@supabase/supabase-js';
 
+const supabaseUrl = process.env.SUPABASE_URL || '';
+const supabaseSecretKey = process.env.SUPABASE_SECRET_KEY || '';
+
 const supabase = createClient(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_PUBLISHABLE_KEY
+    supabaseUrl,
+    supabaseSecretKey
 );
 
 export default async function handler(req, res) {
@@ -20,6 +23,11 @@ export default async function handler(req, res) {
     }
 
     try {
+        if (!supabaseUrl || !supabaseSecretKey) {
+            console.error('SUPABASE_URL or SUPABASE_SECRET_KEY not configured for unsubscribe API.');
+            return res.status(500).send(renderPage('Error', 'Unsubscribe service is not configured.', 'error'));
+        }
+
         const { data, error } = await supabase
             .from('subscribers')
             .update({ unsubscribed_at: new Date().toISOString() })

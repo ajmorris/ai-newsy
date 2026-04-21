@@ -3,13 +3,35 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('subscribe-form');
     const emailInput = document.getElementById('email');
+    const websiteInput = document.getElementById('website');
     const submitBtn = document.getElementById('submit-btn');
     const formMessage = document.getElementById('form-message');
+    const captchaTokenInput = document.getElementById('captcha-token');
+    const captchaProviderInput = document.getElementById('captcha-provider');
+
+    function setCaptchaToken(token, provider) {
+        if (captchaTokenInput) {
+            captchaTokenInput.value = token || '';
+        }
+
+        if (captchaProviderInput) {
+            captchaProviderInput.value = provider || '';
+        }
+    }
+
+    // Expose callbacks for captcha widgets if enabled in the page.
+    window.onTurnstileSuccess = (token) => setCaptchaToken(token, 'turnstile');
+    window.onTurnstileExpired = () => setCaptchaToken('', 'turnstile');
+    window.onHCaptchaSuccess = (token) => setCaptchaToken(token, 'hcaptcha');
+    window.onHCaptchaExpired = () => setCaptchaToken('', 'hcaptcha');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const email = emailInput.value.trim();
+        const honeypotValue = websiteInput ? websiteInput.value : '';
+        const captchaToken = captchaTokenInput ? captchaTokenInput.value : '';
+        const captchaProvider = captchaProviderInput ? captchaProviderInput.value : '';
 
         if (!email || !isValidEmail(email)) {
             showMessage('Please enter a valid email address.', 'error');
@@ -28,7 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({
+                    email,
+                    website: honeypotValue,
+                    captchaToken,
+                    captchaProvider,
+                }),
             });
 
             const data = await response.json();
@@ -36,6 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.ok) {
                 showMessage('🎉 Check your email to confirm your subscription!', 'success');
                 emailInput.value = '';
+                if (websiteInput) {
+                    websiteInput.value = '';
+                }
+                setCaptchaToken('', captchaProvider);
 
                 // Update subscriber count animation
                 updateSubscriberCount();
