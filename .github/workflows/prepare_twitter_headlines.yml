@@ -1,0 +1,81 @@
+name: Prepare Twitter Headlines
+
+on:
+  schedule:
+    # 3:30 AM America/New_York (covers EST and EDT candidate UTC slots)
+    - cron: '30 8 * * *'
+    - cron: '30 7 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: prepare-twitter-headlines-schedule
+  cancel-in-progress: false
+
+jobs:
+  prepare-twitter-headlines:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Guard scheduled run to 3:30 AM America/New_York
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          ny_time=$(TZ=America/New_York date +'%H:%M')
+          echo "Current America/New_York time: ${ny_time}"
+          if [ "${ny_time}" != "03:30" ]; then
+            echo "Outside target local time; exiting successfully."
+            exit 0
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate tweet headlines
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
+          TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS || '24' }}
+          TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT || '100' }}
+          TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES || '12' }}
+          TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL || 'gemini-2.0-flash' }}
+          TWEET_MIN_LEARNING_SCORE: ${{ vars.TWEET_MIN_LEARNING_SCORE || '2' }}
+          TWEET_THEME_SIMILARITY_THRESHOLD: ${{ vars.TWEET_THEME_SIMILARITY_THRESHOLD || '0.38' }}
+          TWEET_MAX_PER_THEME: ${{ vars.TWEET_MAX_PER_THEME || '2' }}
+          TWEET_DISTINCTNESS_THRESHOLD: ${{ vars.TWEET_DISTINCTNESS_THRESHOLD || '0.45' }}
+        run: python execution/generate_tweet_headlines.py
+
+      - name: Verify tweet headlines payload
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from execution.database import get_digest_extra
+
+          digest_date = datetime.utcnow().date().isoformat()
+          extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines")
+          payload = extra.get("payload", {}) if isinstance(extra, dict) else {}
+          headlines = payload.get("headlines", []) if isinstance(payload, dict) else []
+          print(
+              f"tweet_headlines verification for {digest_date}: "
+              f"source_count={payload.get('source_count', 0)}, headline_count={len(headlines)}"
+          )
+          PY

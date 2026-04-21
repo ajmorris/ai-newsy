@@ -1,0 +1,82 @@
+name: Prepare Community Headlines
+
+on:
+  schedule:
+    # 5:00 AM America/New_York (covers EST and EDT candidate UTC slots)
+    - cron: '0 10 * * *'
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: prepare-community-headlines-schedule
+  cancel-in-progress: false
+
+jobs:
+  prepare-community-headlines:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Guard scheduled run to 5:00 AM America/New_York
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          ny_time=$(TZ=America/New_York date +'%H:%M')
+          echo "Current America/New_York time: ${ny_time}"
+          if [ "${ny_time}" != "05:00" ]; then
+            echo "Outside target local time; exiting successfully."
+            exit 0
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate Reddit/HN/YC headlines
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          COMMUNITY_LOOKBACK_HOURS: ${{ vars.COMMUNITY_LOOKBACK_HOURS || '24' }}
+          COMMUNITY_FETCH_LIMIT: ${{ vars.COMMUNITY_FETCH_LIMIT || '120' }}
+          COMMUNITY_MAX_HEADLINES: ${{ vars.COMMUNITY_MAX_HEADLINES || '12' }}
+          COMMUNITY_HEADLINES_MODEL: ${{ vars.COMMUNITY_HEADLINES_MODEL || 'gemini-2.0-flash' }}
+          COMMUNITY_MIN_LEARNING_SCORE: ${{ vars.COMMUNITY_MIN_LEARNING_SCORE || '2' }}
+          COMMUNITY_THEME_SIMILARITY_THRESHOLD: ${{ vars.COMMUNITY_THEME_SIMILARITY_THRESHOLD || '0.38' }}
+          COMMUNITY_MAX_PER_THEME: ${{ vars.COMMUNITY_MAX_PER_THEME || '2' }}
+          COMMUNITY_DISTINCTNESS_THRESHOLD: ${{ vars.COMMUNITY_DISTINCTNESS_THRESHOLD || '0.45' }}
+          COMMUNITY_SUBREDDITS: ${{ vars.COMMUNITY_SUBREDDITS || 'MachineLearning,artificial,LocalLLaMA,OpenAI,singularity' }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT || 'ai-newsy-digest/1.0 (+https://github.com/ajmorris/ai-newsy)' }}
+          YC_RSS_URL: ${{ vars.YC_RSS_URL || 'https://www.ycombinator.com/blog/feed' }}
+        run: python execution/generate_community_headlines.py
+
+      - name: Verify community headlines payload
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from execution.database import get_digest_extra
+
+          digest_date = datetime.utcnow().date().isoformat()
+          extra = get_digest_extra(digest_date=digest_date, key="community_headlines")
+          payload = extra.get("payload", {}) if isinstance(extra, dict) else {}
+          headlines = payload.get("headlines", []) if isinstance(payload, dict) else []
+          print(
+              f"community_headlines verification for {digest_date}: "
+              f"source_count={payload.get('source_count', 0)}, headline_count={len(headlines)}"
+          )
+          PY
