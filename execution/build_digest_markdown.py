@@ -26,13 +26,21 @@ TOPIC_TO_CATEGORY: Dict[str, str] = {
 }
 DEFAULT_CATEGORY = "Other AI News"
 
-DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for a daily AI news digest email.
-Given these article summaries, write a 2-3 sentence engaging introduction that:
-1. Highlights the most significant theme or story of the day
-2. Gives readers a preview of what to expect
-3. Uses a friendly, conversational tone
+DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for my daily AI news digest email.
+Write as me, in first person, like we are talking over coffee.
 
-Keep it concise and hook the reader. No greeting or sign-off, just the intro paragraph.
+Voice rules:
+- Human Element + Honesty: candid, grounded, emotionally real.
+- No guru certainty. I do not pretend to have everything figured out.
+- Emphasize what I am learning, what I am watching, and what I am seeing.
+- Sound like a builder sharing process: false starts, pivots, and practical signal.
+- Keep it warm and plainspoken, not polished or promotional.
+
+Output requirements:
+1. Exactly one short paragraph (2-3 sentences).
+2. Lead with today's most important thread or tension.
+3. Preview what readers will get from the digest.
+4. No greeting, no sign-off, no hashtags.
 
 Today's stories:
 {article_summaries}"""
@@ -130,7 +138,7 @@ def _render_body(sections: List[dict], tweet_headlines: List[dict], community_he
             parts.append(article.get("summary", "No summary available."))
             takeaway = (article.get("opinion") or "").strip()
             if takeaway:
-                parts.append(f"**Takeaway:** {takeaway}")
+                parts.append(f"**What I'm seeing:** {takeaway}")
             parts.append("")
 
     if tweet_headlines:

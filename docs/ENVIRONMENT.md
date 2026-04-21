@@ -144,6 +144,18 @@ Per-task vars like `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
 `COMMUNITY_HEADLINES_MODEL` remain supported as logical model hints. If a hint
 does not match the active provider, the provider default model is used.
 
+### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
+
+Digest writing prompts should maintain the same editorial voice:
+
+- First-person and personal, like a coffee conversation.
+- Human Element + Honesty: candid, practical, and emotionally real.
+- Center on lived interpretation: what I'm learning, what I'm watching, what I'm seeing.
+- Avoid detached analyst phrasing, hype language, and fake certainty.
+
+If you override `PROMPT_INTRO` or `PROMPT_SUMMARIZE`, keep these constraints so
+newsletter tone stays consistent across runs and environments.
+
 ## Tweet headline pipeline environment
 
 For Notion tweet ingestion + headline generation, configure:
