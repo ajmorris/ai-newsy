@@ -7,6 +7,7 @@ Includes AI-generated introduction synthesizing all stories.
 import os
 import argparse
 import html
+import json
 import re
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -122,43 +123,136 @@ def _markdown_body_to_html(markdown_body: str) -> str:
     lines = markdown_body.splitlines()
     output: List[str] = []
     in_list = False
+    in_json_block = False
+    json_lines: List[str] = []
+    current_article: Optional[Dict[str, str]] = None
+
+    def close_list() -> None:
+        nonlocal in_list
+        if in_list:
+            output.append("</ul>")
+            in_list = False
+
+    def flush_article() -> None:
+        nonlocal current_article
+        if not current_article:
+            return
+
+        source = _md_inline_to_html(current_article.get("source", "Unknown Source"))
+        title = _md_inline_to_html(current_article.get("title", "Untitled"))
+        link = html.escape(current_article.get("url", "#"), quote=True)
+        summary = _md_inline_to_html(current_article.get("summary", "No summary available."))
+        opinion = _md_inline_to_html(current_article.get("opinion", ""))
+        image_url = html.escape(current_article.get("image_url", ""), quote=True)
+
+        image_html = ""
+        if image_url:
+            image_alt = html.escape(current_article.get("title", "Article"), quote=True)
+            image_html = (
+                f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{image_alt}" '
+                'style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; border-radius: 6px;" '
+                'width="560" /></div>'
+            )
+
+        opinion_html = ""
+        if opinion:
+            opinion_html = (
+                '<div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; '
+                'border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">'
+                '<p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>'
+                f'<p style="margin: 0; color: #2b2c34; font-size: 14px; line-height: 1.5;">{opinion}</p>'
+                "</div>"
+            )
+
+        output.append(
+            '<div style="padding: 24px 0; border-bottom: 1px solid #d1d1e9;">'
+            f'<p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">{source}</p>'
+            f"{image_html}"
+            f'<h3 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">'
+            f'<a href="{link}" style="color: #6246ea; text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
+            "</h3>"
+            f'<p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">{summary}</p>'
+            f"{opinion_html}"
+            "</div>"
+        )
+        current_article = None
 
     for line in lines:
         stripped = line.strip()
-        if not stripped:
-            if in_list:
-                output.append("</ul>")
-                in_list = False
+
+        if in_json_block:
+            if stripped == "```":
+                in_json_block = False
+                if current_article is not None:
+                    try:
+                        payload = json.loads("\n".join(json_lines))
+                        current_article["summary"] = str(payload.get("summary", "")).strip()
+                        current_article["opinion"] = str(payload.get("opinion", "")).strip()
+                        raw_image = payload.get("image_url")
+                        current_article["image_url"] = str(raw_image).strip() if raw_image else ""
+                    except json.JSONDecodeError:
+                        current_article["summary"] = "\n".join(json_lines).strip()
+                json_lines = []
+            else:
+                json_lines.append(line)
             continue
+
+        if not stripped:
+            continue
+
         if stripped.startswith("## "):
-            if in_list:
-                output.append("</ul>")
-                in_list = False
+            close_list()
+            flush_article()
             output.append(f'<h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">{_md_inline_to_html(stripped[3:])}</h2>')
             continue
+
         if stripped.startswith("### "):
-            if in_list:
-                output.append("</ul>")
-                in_list = False
-            output.append(f'<h3 style="margin: 18px 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">{_md_inline_to_html(stripped[4:])}</h3>')
+            close_list()
+            flush_article()
+            title_line = stripped[4:].strip()
+            match = re.match(r"\[(.+?)\]\((https?://[^\)]+)\)", title_line)
+            if match:
+                current_article = {
+                    "title": match.group(1),
+                    "url": match.group(2),
+                    "source": "Unknown Source",
+                    "summary": "",
+                    "opinion": "",
+                    "image_url": "",
+                }
+            else:
+                current_article = {
+                    "title": title_line,
+                    "url": "#",
+                    "source": "Unknown Source",
+                    "summary": "",
+                    "opinion": "",
+                    "image_url": "",
+                }
             continue
+
+        if stripped.startswith("*") and stripped.endswith("*") and len(stripped) > 2 and current_article is not None:
+            current_article["source"] = stripped[1:-1].strip()
+            continue
+
+        if stripped == "```json":
+            in_json_block = True
+            json_lines = []
+            continue
+
         if stripped.startswith("- "):
+            flush_article()
             if not in_list:
                 output.append('<ul style="padding-left: 20px; margin: 0 0 12px 0;">')
                 in_list = True
             output.append(f'<li style="margin-bottom: 10px; line-height: 1.6; color: #2b2c34;">{_md_inline_to_html(stripped[2:])}</li>')
             continue
 
-        tag = "p"
-        style = 'margin: 0 0 10px 0; color: #2b2c34; font-size: 15px; line-height: 1.6;'
-        if stripped.startswith("*") and stripped.endswith("*") and len(stripped) > 2:
-            stripped = stripped[1:-1]
-            tag = "p"
-            style = 'margin: 0 0 8px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;'
-        output.append(f"<{tag} style=\"{style}\">{_md_inline_to_html(stripped)}</{tag}>")
+        flush_article()
+        output.append(f'<p style="margin: 0 0 10px 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">{_md_inline_to_html(stripped)}</p>')
 
-    if in_list:
-        output.append("</ul>")
+    close_list()
+    flush_article()
     return "\n".join(output)
 
 

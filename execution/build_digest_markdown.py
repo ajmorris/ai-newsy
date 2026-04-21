@@ -3,6 +3,7 @@ Build a daily digest markdown file with YAML frontmatter from persisted storage.
 """
 
 import argparse
+import json
 import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -49,6 +50,19 @@ Today's stories:
 def _yaml_quote(value: str) -> str:
     safe = (value or "").replace("\\", "\\\\").replace('"', '\\"')
     return f"\"{safe}\""
+
+
+def _extract_embedded_payload(text: str) -> Dict[str, object]:
+    stripped = (text or "").strip()
+    if stripped.startswith("```json") and stripped.endswith("```"):
+        inner = stripped[len("```json") : -3].strip()
+        try:
+            payload = json.loads(inner)
+            if isinstance(payload, dict):
+                return payload
+        except json.JSONDecodeError:
+            return {}
+    return {}
 
 
 def _group_articles_by_category(articles: List[dict]) -> List[dict]:
@@ -133,12 +147,33 @@ def _render_body(sections: List[dict], tweet_headlines: List[dict], community_he
     for section in sections:
         parts.append(f"## {section['name']}\n")
         for article in section["articles"]:
+            embedded_payload = _extract_embedded_payload(str(article.get("summary", "")))
+            normalized_summary = (
+                str(embedded_payload.get("summary", "")).strip()
+                if embedded_payload
+                else str(article.get("summary", "No summary available.")).strip()
+            )
+            normalized_opinion = (
+                str(article.get("opinion", "")).strip()
+                or str(embedded_payload.get("opinion", "")).strip()
+            )
+            normalized_topic = (
+                str(article.get("topic", "")).strip()
+                or str(embedded_payload.get("topic", "")).strip()
+            )
+
             parts.append(f"### [{article.get('title', 'Untitled')}]({article.get('url', '#')})")
             parts.append(f"*{article.get('source', 'Unknown Source')}*")
-            parts.append(article.get("summary", "No summary available."))
-            takeaway = (article.get("opinion") or "").strip()
-            if takeaway:
-                parts.append(f"**What I'm seeing:** {takeaway}")
+            article_payload = {
+                "topic": normalized_topic,
+                "summary": normalized_summary or "No summary available.",
+                "opinion": normalized_opinion,
+                "confidence": article.get("confidence"),
+                "image_url": article.get("image_url") or "",
+            }
+            parts.append("```json")
+            parts.append(json.dumps(article_payload, ensure_ascii=False, indent=2))
+            parts.append("```")
             parts.append("")
 
     if tweet_headlines:
