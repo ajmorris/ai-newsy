@@ -16,6 +16,10 @@ from typing import Dict, List, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+# Prefer canonical secret key name; support legacy SUPABASE_KEY if set.
+if not os.getenv("SUPABASE_SECRET_KEY") and os.getenv("SUPABASE_KEY"):
+    os.environ["SUPABASE_SECRET_KEY"] = os.getenv("SUPABASE_KEY", "")
+
 from execution.send_daily_email import _md_inline_to_html, _parse_frontmatter  # noqa: PLC2701
 
 
