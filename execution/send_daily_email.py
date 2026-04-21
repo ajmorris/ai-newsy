@@ -92,6 +92,7 @@ def generate_email_html(
     sections: List[dict],
     intro: str,
     tweet_headlines: Optional[List[dict]] = None,
+    community_headlines: Optional[List[dict]] = None,
     unsubscribe_token: str = "",
 ) -> str:
     """Generate HTML email with grouped sections. Links and takeaways styled for clarity."""
@@ -149,6 +150,7 @@ def generate_email_html(
         """
 
     tweet_headlines = tweet_headlines or []
+    community_headlines = community_headlines or []
 
     tweet_section_html = ""
     if tweet_headlines:
@@ -162,6 +164,22 @@ def generate_email_html(
             </h2>
             <ul style="padding-left: 20px; margin: 0;">
                 {tweet_items_html}
+            </ul>
+        </div>
+        """
+
+    community_section_html = ""
+    if community_headlines:
+        community_items_html = "".join(
+            [f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #2b2c34;\">{render_tweet_headline_html(item)}</li>" for item in community_headlines]
+        )
+        community_section_html = f"""
+        <div style="margin-bottom: 32px;">
+            <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
+                From Reddit/HN/YC
+            </h2>
+            <ul style="padding-left: 20px; margin: 0;">
+                {community_items_html}
             </ul>
         </div>
         """
@@ -187,6 +205,7 @@ def generate_email_html(
                 {section_blocks}
             </div>
             {tweet_section_html}
+            {community_section_html}
             <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
                 <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
                     You're receiving this because you subscribed to AI Newsy.
@@ -365,6 +384,29 @@ def send_daily_digest(
             "Email will continue without the From X/Twitter section."
         )
 
+    community_extra = get_digest_extra(digest_date=digest_date, key="community_headlines")
+    community_headlines = []
+    if not community_extra:
+        print(f"⚠️ No digest_extras row found for key=community_headlines on {digest_date}")
+    elif isinstance(community_extra.get("payload"), dict):
+        payload = community_extra["payload"]
+        source_count = payload.get("source_count", "unknown")
+        headline_count = payload.get("headline_count", "unknown")
+        community_headlines = payload.get("headlines", []) or []
+        print(
+            "🌐 Community headlines extra found: "
+            f"source_count={source_count}, payload_headline_count={headline_count}, "
+            f"loaded_for_email={len(community_headlines)}"
+        )
+    else:
+        print(f"⚠️ community_headlines payload is not a dict for digest_date={digest_date}")
+
+    if not community_headlines and not sent_yesterday:
+        print(
+            "⚠️ Community headlines are empty for this digest send. "
+            "Email will continue without the From Reddit/HN/YC section."
+        )
+
     for subscriber in subscribers:
         email = subscriber.get('email')
         token = subscriber.get('confirm_token', '')
@@ -380,6 +422,7 @@ def send_daily_digest(
             sections,
             intro=intro,
             tweet_headlines=tweet_headlines,
+            community_headlines=community_headlines,
             unsubscribe_token=token,
         )
         

@@ -111,7 +111,9 @@ Then run scripts with the venv active:
 ```bash
 python execution/fetch_ai_news.py --limit 5
 python execution/assign_topics.py
+python execution/summarize_articles.py
 python execution/generate_tweet_headlines.py --dry-run
+python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
 
@@ -136,6 +138,23 @@ Database:
 - Apply migration `supabase/migrations/20260414120000_add_digest_extras.sql`
 - This creates `digest_extras` used to persist per-day extras (key `tweet_headlines`)
 
+## Community headline pipeline environment
+
+For Reddit/HN/YC ingestion + headline generation, configure:
+
+- `COMMUNITY_LOOKBACK_HOURS` (optional, default `24`)
+- `COMMUNITY_FETCH_LIMIT` (optional, default `120`)
+- `COMMUNITY_MAX_HEADLINES` (optional, default `12`)
+- `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+- `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
+- `REDDIT_USER_AGENT` (optional but recommended)
+- `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)
+
+GitHub Actions:
+
+- Add optional community settings as repository **Variables**
+- `prepare_community_headlines.yml` runs source extraction + persistence to `digest_extras` key `community_headlines`
+
 ## Signup API protection environment
 
 Subscriber endpoints (`frontend/api/subscribe.js`, `frontend/api/unsubscribe.js`) now use server-side Supabase access.
@@ -159,6 +178,10 @@ Vercel configuration:
 GitHub Actions configuration:
 
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- Source-specific prep workflows are split by source:
+  - `prepare_digest_content.yml` (RSS)
+  - `prepare_twitter_headlines.yml` (Twitter/X extras)
+  - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
 

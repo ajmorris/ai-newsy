@@ -1,4 +1,4 @@
-name: Prepare Digest Content
+name: Prepare RSS Content
 
 on:
   schedule:
@@ -53,22 +53,17 @@ jobs:
           PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
         run: python execution/summarize_articles.py
 
-      - name: Generate tweet headlines
+      - name: Verify RSS summaries available for digest
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest' }}
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
-          TWEET_LOOKBACK_HOURS: ${{ vars.TWEET_LOOKBACK_HOURS || '24' }}
-          TWEET_FETCH_LIMIT: ${{ vars.TWEET_FETCH_LIMIT || '100' }}
-          TWEET_MAX_HEADLINES: ${{ vars.TWEET_MAX_HEADLINES || '12' }}
-          TWEET_HEADLINES_MODEL: ${{ vars.TWEET_HEADLINES_MODEL || 'gemini-2.0-flash' }}
-          TWEET_MIN_LEARNING_SCORE: ${{ vars.TWEET_MIN_LEARNING_SCORE || '2' }}
-          TWEET_THEME_SIMILARITY_THRESHOLD: ${{ vars.TWEET_THEME_SIMILARITY_THRESHOLD || '0.38' }}
-          TWEET_MAX_PER_THEME: ${{ vars.TWEET_MAX_PER_THEME || '2' }}
-          TWEET_DISTINCTNESS_THRESHOLD: ${{ vars.TWEET_DISTINCTNESS_THRESHOLD || '0.45' }}
-        run: python execution/generate_tweet_headlines.py
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timedelta
+          from execution.database import get_unsent_articles
+
+          since = datetime.utcnow() - timedelta(hours=24)
+          rows = get_unsent_articles(topic=None, require_summary=True, since=since, until=None)
+          print(f"rss verification: summarized_unsent_last_24h={len(rows)}")
+          PY

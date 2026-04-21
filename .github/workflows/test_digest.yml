@@ -6,7 +6,7 @@
 # Inputs:
 #   test_email       (required) recipient for the test digest
 #   prepare_content  (optional, default false) run the full fetch/topic/
-#                    summarize/tweet-headline prep pipeline before sending.
+#                    summarize/twitter-headline/community-headline prep pipeline before sending.
 #                    Leave unchecked to exercise only the email send path
 #                    using whatever articles/headlines are already in the DB.
 #
@@ -23,7 +23,7 @@ on:
         required: true
         type: string
       prepare_content:
-        description: 'Run content prep (fetch RSS, assign topics, summarize, tweet headlines) before sending'
+        description: 'Run content prep (fetch RSS, assign topics, summarize, Twitter + Reddit/HN/YC headlines) before sending'
         required: false
         type: boolean
         default: false
@@ -99,6 +99,28 @@ jobs:
           TWEET_DISTINCTNESS_THRESHOLD: ${{ vars.TWEET_DISTINCTNESS_THRESHOLD || '0.45' }}
         run: python execution/generate_tweet_headlines.py
 
+      - name: Generate Reddit/HN/YC headlines
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest' }}
+          COMMUNITY_LOOKBACK_HOURS: ${{ vars.COMMUNITY_LOOKBACK_HOURS || '24' }}
+          COMMUNITY_FETCH_LIMIT: ${{ vars.COMMUNITY_FETCH_LIMIT || '120' }}
+          COMMUNITY_MAX_HEADLINES: ${{ vars.COMMUNITY_MAX_HEADLINES || '12' }}
+          COMMUNITY_HEADLINES_MODEL: ${{ vars.COMMUNITY_HEADLINES_MODEL || 'gemini-2.0-flash' }}
+          COMMUNITY_MIN_LEARNING_SCORE: ${{ vars.COMMUNITY_MIN_LEARNING_SCORE || '2' }}
+          COMMUNITY_THEME_SIMILARITY_THRESHOLD: ${{ vars.COMMUNITY_THEME_SIMILARITY_THRESHOLD || '0.38' }}
+          COMMUNITY_MAX_PER_THEME: ${{ vars.COMMUNITY_MAX_PER_THEME || '2' }}
+          COMMUNITY_DISTINCTNESS_THRESHOLD: ${{ vars.COMMUNITY_DISTINCTNESS_THRESHOLD || '0.45' }}
+          COMMUNITY_SUBREDDITS: ${{ vars.COMMUNITY_SUBREDDITS || 'MachineLearning,artificial,LocalLLaMA,OpenAI,singularity' }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT || 'ai-newsy-digest/1.0 (+https://github.com/ajmorris/ai-newsy)' }}
+          YC_RSS_URL: ${{ vars.YC_RSS_URL || 'https://www.ycombinator.com/blog/feed' }}
+        run: python execution/generate_community_headlines.py
+
       - name: Verify tweet headlines persisted for digest date
         if: ${{ inputs.prepare_content }}
         env:
@@ -123,6 +145,34 @@ jobs:
           source_count = payload.get("source_count", 0)
           print(
               f"tweet_headlines present for {digest_date}: "
+              f"source_count={source_count}, headline_count={headline_count}"
+          )
+          PY
+
+      - name: Verify community headlines persisted for digest date
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from execution.database import get_digest_extra
+
+          digest_date = datetime.utcnow().date().isoformat()
+          extra = get_digest_extra(digest_date=digest_date, key="community_headlines")
+          if not extra:
+              raise SystemExit(f"community_headlines missing for digest date {digest_date}")
+
+          payload = extra.get("payload") if isinstance(extra, dict) else None
+          if not isinstance(payload, dict):
+              raise SystemExit(f"community_headlines payload invalid for digest date {digest_date}")
+
+          headline_count = len(payload.get("headlines", []) or [])
+          source_count = payload.get("source_count", 0)
+          print(
+              f"community_headlines present for {digest_date}: "
               f"source_count={source_count}, headline_count={headline_count}"
           )
           PY
