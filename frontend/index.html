@@ -53,6 +53,12 @@
                             <p class="success-body">Confirmation sent. Check your inbox.</p>
                         </div>
                     </div>
+                    <input type="hidden" id="captcha-token" name="captchaToken" value="">
+                    <input type="hidden" id="captcha-provider" name="captchaProvider" value="">
+                    <div id="captcha-container" class="captcha-container" hidden>
+                        <div id="hcaptcha-widget" class="h-captcha-widget"></div>
+                    </div>
+                    <p id="form-message" class="form-message"></p>
                 </form>
 
                 <div class="stats mono">
@@ -151,6 +157,10 @@
         </footer>
     </main>
 
+    <script>
+        window.HCAPTCHA_SITE_KEY = document.querySelector('meta[name="hcaptcha-site-key"]')?.content || '';
+    </script>
     <script src="script.js"></script>
+    <script src="https://js.hcaptcha.com/1/api.js?render=explicit&onload=onHCaptchaApiLoad" async defer></script>
 </body>
 </html>

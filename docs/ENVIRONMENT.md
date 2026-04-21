@@ -202,12 +202,14 @@ Subscriber endpoints (`frontend/api/subscribe.js`, `frontend/api/unsubscribe.js`
 - **Optional rate limit tuning**:
   - `SUBSCRIBE_RATE_LIMIT_WINDOW_MS` (default `600000`)
   - `SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS` (default `5`)
-- **Optional captcha** (enable one provider):
+- **Optional captcha** (enable one provider; set both site and secret keys):
   - Cloudflare Turnstile: `TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`
   - hCaptcha: `HCAPTCHA_SITE_KEY`, `HCAPTCHA_SECRET_KEY`
 
-If a captcha secret key is set, `/api/subscribe` requires a valid captcha token.
-Without captcha secrets, the endpoint still applies honeypot and rate limiting.
+`/api/subscribe` verification behavior:
+- If captcha is configured and a token is provided, the token must verify successfully.
+- If captcha is configured but token is missing (for example widget load/init failure), signup continues with fail-open behavior and logs a warning.
+- Without captcha secrets, the endpoint still applies honeypot and rate limiting.
 
 Vercel configuration:
 

@@ -1,7 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const forms = Array.from(document.querySelectorAll('.subscribe-form'));
-    const navSubscribeButton = document.getElementById('nav-subscribe-btn');
+    const form = document.getElementById('subscribe-form');
+    const emailInput = document.getElementById('email');
+    const websiteInput = document.getElementById('website');
+    const submitBtn = document.getElementById('submit-btn');
+    const formMessage = document.getElementById('form-message');
+    const captchaTokenInput = document.getElementById('captcha-token');
+    const captchaProviderInput = document.getElementById('captcha-provider');
+    const captchaContainer = document.getElementById('captcha-container');
+    const hcaptchaWidget = document.getElementById('hcaptcha-widget');
+    const latestIssueCallout = document.getElementById('new-issue-callout');
     const recentIssuesList = document.getElementById('recent-issues-list');
+    const hcaptchaSiteKey = (
+        window.HCAPTCHA_SITE_KEY ||
+        document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
+        document.documentElement.getAttribute('data-hcaptcha-site-key') ||
+        ''
+    ).trim();
+    const captchaState = {
+        required: Boolean(hcaptchaSiteKey),
+        ready: false,
+        solved: false,
+        widgetId: null,
+        loadError: false,
+    };
 
     loadRecentIssues();
 
@@ -20,8 +41,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.onTurnstileSuccess = (token) => setCaptchaToken(token, 'turnstile');
     window.onTurnstileExpired = () => setCaptchaToken('', 'turnstile');
-    window.onHCaptchaSuccess = (token) => setCaptchaToken(token, 'hcaptcha');
-    window.onHCaptchaExpired = () => setCaptchaToken('', 'hcaptcha');
+    window.onHCaptchaSuccess = (token) => {
+        captchaState.solved = Boolean(token);
+        setCaptchaToken(token, 'hcaptcha');
+    };
+    window.onHCaptchaExpired = () => {
+        captchaState.solved = false;
+        setCaptchaToken('', 'hcaptcha');
+    };
+    window.onHCaptchaError = () => {
+        captchaState.loadError = true;
+        captchaState.solved = false;
+        setCaptchaToken('', 'hcaptcha');
+        showMessage('Captcha failed to load. You can still continue; anti-spam checks remain active.', 'error');
+    };
+    window.onHCaptchaApiLoad = () => {
+        if (!captchaState.required || !hcaptchaWidget || !window.hcaptcha) {
+            return;
+        }
+
+        if (captchaContainer) {
+            captchaContainer.hidden = false;
+        }
+
+        captchaState.widgetId = window.hcaptcha.render(hcaptchaWidget, {
+            sitekey: hcaptchaSiteKey,
+            callback: window.onHCaptchaSuccess,
+            'expired-callback': window.onHCaptchaExpired,
+            'error-callback': window.onHCaptchaError,
+        });
+        captchaState.ready = true;
+    };
+
+    // Fail-open: if no site key is configured, skip captcha on the frontend.
+    if (!captchaState.required && captchaContainer) {
+        captchaContainer.hidden = true;
+    }
 
     if (navSubscribeButton) {
         navSubscribeButton.addEventListener('click', () => {
@@ -44,9 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const successBody = form.querySelector('.success-body');
             const subscribeRow = form.querySelector('.subscribe-row');
 
-            if (!emailInput || !submitButton || !formMeta || !successPanel || !successBody || !subscribeRow) {
-                return;
-            }
+        if (captchaState.required && !captchaState.loadError && (!captchaState.ready || !captchaState.solved || !captchaToken)) {
+            showMessage('Please complete the captcha before subscribing.', 'error');
+            return;
+        }
+
+        // Show loading state
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+        formMessage.textContent = '';
+        formMessage.className = 'form-message';
 
             const email = emailInput.value.trim();
             const honeypotValue = websiteInput ? websiteInput.value : '';
@@ -59,91 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
             successPanel.hidden = true;
             subscribeRow.hidden = false;
 
-            if (!email) {
-                applyErrorState(form, formMeta, 'Field required.');
-                return;
-            }
-            if (!isValidEmail(email)) {
-                applyErrorState(form, formMeta, 'Invalid email format.');
-                return;
-            }
-
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-
-            try {
-                // #region agent log
-                fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'pre-fix',hypothesisId:'H1-H4',location:'frontend/script.js:74',message:'Subscribe submit started',data:{formVariant:form.dataset.formVariant || 'unknown',emailDomain:(email.split('@')[1] || '').toLowerCase(),hasCaptchaToken:Boolean(captchaToken),captchaProvider:captchaProvider || 'none',endpoint:'/api/subscribe'},timestamp:Date.now()})}).catch(()=>{});
-                // #endregion
-                const response = await fetch('/api/subscribe', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        email,
-                        website: honeypotValue,
-                        captchaToken,
-                        captchaProvider,
-                    }),
-                });
-                // #region agent log
-                fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'pre-fix',hypothesisId:'H2-H3',location:'frontend/script.js:87',message:'Subscribe response received',data:{ok:response.ok,status:response.status,contentType:response.headers.get('content-type') || 'missing'},timestamp:Date.now()})}).catch(()=>{});
-                // #endregion
-                const contentType = (response.headers.get('content-type') || '').toLowerCase();
-                let data = null;
-                let responseText = '';
-                if (contentType.includes('application/json')) {
-                    try {
-                        data = await response.json();
-                        // #region agent log
-                        fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H2',location:'frontend/script.js:97',message:'Subscribe response JSON parsed',data:{hasErrorField:Boolean(data && data.error),statusField:data && data.status ? data.status : 'missing'},timestamp:Date.now()})}).catch(()=>{});
-                        // #endregion
-                    } catch (parseError) {
-                        // #region agent log
-                        fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H2',location:'frontend/script.js:101',message:'Subscribe response JSON parse failed',data:{errorName:parseError?.name || 'unknown',errorMessage:parseError?.message || 'unknown'},timestamp:Date.now()})}).catch(()=>{});
-                        // #endregion
-                    }
+            if (response.ok) {
+                if (data.status === 'pending') {
+                    showMessage('🎉 Check your email to confirm your subscription!', 'success');
                 } else {
-                    responseText = await response.text();
-                    // #region agent log
-                    fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H3',location:'frontend/script.js:108',message:'Subscribe response was non-JSON',data:{status:response.status,textSnippet:responseText.slice(0,120)},timestamp:Date.now()})}).catch(()=>{});
-                    // #endregion
+                    showMessage('🎉 You are subscribed. Welcome to AI Newsy!', 'success');
                 }
-
-                if (!response.ok) {
-                    const errorMessage = (data && data.error) || responseText || `Request failed (${response.status}). Try again.`;
-                    // #region agent log
-                    fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H6',location:'frontend/script.js:117',message:'Subscribe API returned handled error',data:{status:response.status,errorMessage:errorMessage.slice(0,160)},timestamp:Date.now()})}).catch(()=>{});
-                    // #endregion
-                    applyErrorState(form, formMeta, errorMessage);
-                    return;
-                }
-
-                form.classList.add('form-success-state');
-                subscribeRow.hidden = true;
-                successPanel.hidden = false;
-                if (data && data.status === 'already-subscribed') {
-                    successBody.textContent = `Already subscribed. You are on the AI Newsy list. — ${email}`;
-                } else if (data && data.status === 'confirmed') {
-                    successBody.textContent = `Subscription confirmed. Welcome to AI Newsy. — ${email}`;
-                } else {
-                    successBody.textContent = `Confirmation sent. Check your inbox. — ${email}`;
-                }
+                emailInput.value = '';
                 if (websiteInput) {
                     websiteInput.value = '';
                 }
                 emailInput.value = '';
                 setCaptchaToken('', captchaProvider);
-            } catch (error) {
-                console.error('Subscription error:', error);
-                // #region agent log
-                fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H1-H5',location:'frontend/script.js:128',message:'Subscribe request threw',data:{errorName:error?.name || 'unknown',errorMessage:error?.message || 'unknown'},timestamp:Date.now()})}).catch(()=>{});
-                // #endregion
-                applyErrorState(form, formMeta, 'Network error. Try again.');
-            } finally {
-                submitButton.disabled = false;
-                submitButton.textContent = 'Subscribe ↵';
+                captchaState.solved = false;
+                if (window.hcaptcha && typeof captchaState.widgetId === 'number') {
+                    window.hcaptcha.reset(captchaState.widgetId);
+                }
+
+                // Update subscriber count animation
+                updateSubscriberCount();
+            } else {
+                showMessage(data.error || 'Something went wrong. Please try again.', 'error');
             }
         });
     });
