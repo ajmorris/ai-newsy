@@ -16,11 +16,7 @@ from typing import Dict, List, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-# Prefer canonical secret key name; support legacy SUPABASE_KEY if set.
-if not os.getenv("SUPABASE_SECRET_KEY") and os.getenv("SUPABASE_KEY"):
-    os.environ["SUPABASE_SECRET_KEY"] = os.getenv("SUPABASE_KEY", "")
-
-from execution.send_daily_email import _md_inline_to_html, _parse_frontmatter  # noqa: PLC2701
+from execution.markdown_utils import md_inline_to_html, parse_frontmatter
 
 
 ARCHIVE_DIR = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
@@ -69,7 +65,7 @@ class DigestIssue:
 
 def _read_issue(markdown_path: Path) -> Optional[DigestIssue]:
     raw = markdown_path.read_text(encoding="utf-8")
-    metadata, body = _parse_frontmatter(raw)
+    metadata, body = parse_frontmatter(raw)
 
     digest_date = metadata.get("digest_date", markdown_path.stem)
     subject = metadata.get("subject", f"{SITE_TITLE} • {digest_date}")
@@ -140,11 +136,11 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
         if not article:
             return
 
-        title_html = _md_inline_to_html(article.get("title", "Untitled"))
+        title_html = md_inline_to_html(article.get("title", "Untitled"))
         link = article.get("url", "#")
         source = html.escape(article.get("source", ""))
-        summary = _md_inline_to_html(article.get("summary", ""))
-        opinion = _md_inline_to_html(article.get("opinion", ""))
+        summary = md_inline_to_html(article.get("summary", ""))
+        opinion = md_inline_to_html(article.get("opinion", ""))
         image_url = html.escape(article.get("image_url", ""), quote=True)
         image_alt = html.escape(article.get("title", "Article"), quote=True)
 
@@ -213,7 +209,7 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
             current_section_open = True
             output.append(
                 f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #2b2c34;">'
-                f"{_md_inline_to_html(current_section_title)}</h2>"
+                f"{md_inline_to_html(current_section_title)}</h2>"
             )
             continue
 
@@ -262,7 +258,7 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
                 item = {"headline": source_match.group(1).strip(), "url": source_match.group(2).strip()}
                 bullet_html = _render_tweet_headline_html(item)
             else:
-                bullet_html = _md_inline_to_html(bullet_content)
+                bullet_html = md_inline_to_html(bullet_content)
             output.append(
                 '<li style="margin-bottom: 10px; color: #2b2c34; font-size: 15px; line-height: 1.6;">'
                 f"{bullet_html}</li>"
@@ -273,7 +269,7 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
         if current_section_open and current_section_title and article is None:
             output.append(
                 f'<p style="margin: 0 0 10px 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">'
-                f"{_md_inline_to_html(line)}</p>"
+                f"{md_inline_to_html(line)}</p>"
             )
 
     close_tweet_list()

@@ -17,6 +17,8 @@ import resend
 
 import sys
 sys.path.insert(0, '.')
+from execution.markdown_utils import md_inline_to_html as _md_inline_to_html
+from execution.markdown_utils import parse_frontmatter as _parse_frontmatter
 from execution.database import (
     get_unsent_articles,
     get_sent_articles,
@@ -88,35 +90,6 @@ def generate_intro(articles: list) -> str:
     except Exception as e:
         print(f"    Error generating intro: {e}")
         return "Here's what's making waves in AI today."
-
-
-def _parse_frontmatter(markdown_text: str) -> tuple:
-    """Parse very simple YAML frontmatter key/value pairs."""
-    if not markdown_text.startswith("---\n"):
-        return {}, markdown_text
-    end_idx = markdown_text.find("\n---\n", 4)
-    if end_idx == -1:
-        return {}, markdown_text
-
-    frontmatter_block = markdown_text[4:end_idx]
-    body = markdown_text[end_idx + 5 :]
-    metadata: Dict[str, str] = {}
-    for raw_line in frontmatter_block.splitlines():
-        line = raw_line.strip()
-        if not line or ":" not in line or line.startswith("-"):
-            continue
-        key, value = line.split(":", 1)
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-        metadata[key] = value
-    return metadata, body
-
-
-def _md_inline_to_html(text: str) -> str:
-    escaped = html.escape(text)
-    escaped = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
-    escaped = re.sub(r"\[(.+?)\]\((https?://[^\)]+)\)", r'<a href="\2" style="color: #6246ea; text-decoration: underline;">\1</a>', escaped)
-    return escaped
 
 
 def _markdown_body_to_html(markdown_body: str) -> str:
