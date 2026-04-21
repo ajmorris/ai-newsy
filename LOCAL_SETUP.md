@@ -98,15 +98,17 @@ python3 execution/assign_topics.py
 
 ## 6. Frontend (optional)
 
-If the project has a web frontend:
+The web frontend in this repo is a static site + Vercel serverless API routes:
 
 ```bash
 cd frontend
 npm install
-npm run dev
+npx vercel dev --yes --local
 ```
 
-Check `frontend/package.json` for the exact dev command.
+This serves:
+- `http://localhost:3000/` for `index.html`
+- `http://localhost:3000/api/subscribe` and `/api/unsubscribe` for local API testing
 
 ## Quick checklist
 
