@@ -1,0 +1,8 @@
+{
+  "name": "ai-newsy-emails",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "mjml": "^4.15.3"
+  }
+}

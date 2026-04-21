@@ -9,6 +9,8 @@ import argparse
 import html
 import json
 import re
+import subprocess
+import tempfile
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Optional, Dict, List
@@ -70,6 +72,7 @@ TOPIC_TO_CATEGORY: Dict[str, str] = {
 }
 
 DEFAULT_CATEGORY = "Other AI News"
+EMAIL_RENDERER_SCRIPT = Path("emails/render_email.mjs")
 
 
 def generate_intro(articles: list) -> str:
@@ -407,6 +410,83 @@ def generate_email_html(
     return html
 
 
+def _build_email_renderer_payload(
+    sections: List[dict],
+    intro: str,
+    subject: str,
+    unsubscribe_token: str,
+    digest_date: str,
+    tweet_headlines: Optional[List[dict]] = None,
+    community_headlines: Optional[List[dict]] = None,
+) -> Dict[str, object]:
+    stories: List[Dict[str, str]] = []
+    for section in sections:
+        section_name = section.get("name", DEFAULT_CATEGORY)
+        for article in section.get("articles", []):
+            stories.append(
+                {
+                    "tag": section_name,
+                    "source": article.get("source", "Unknown Source"),
+                    "read": article.get("reading_time", ""),
+                    "headline": article.get("title", "Untitled"),
+                    "summary": article.get("summary", ""),
+                    "why": article.get("opinion", ""),
+                    "url": article.get("url", "#"),
+                }
+            )
+
+    quick_hits: List[str] = []
+    for item in (tweet_headlines or [])[:6]:
+        if item.get("headline"):
+            quick_hits.append(str(item["headline"]))
+    for item in (community_headlines or [])[:6]:
+        if item.get("headline"):
+            quick_hits.append(str(item["headline"]))
+
+    issue_number = "".join(ch for ch in digest_date if ch.isdigit())[-5:] or "00137"
+    archive_url = f"{APP_URL}/issues/"
+    return {
+        "subject": subject,
+        "intro": intro,
+        "heroHeadline": "The AI feed, distilled.",
+        "dateLabel": digest_date,
+        "issueNumber": issue_number,
+        "stories": stories[:8],
+        "quickHits": quick_hits[:6],
+        "unsubscribeUrl": f"{APP_URL}/api/unsubscribe?token={unsubscribe_token}",
+        "viewInBrowserUrl": f"{APP_URL}/issues/{digest_date}.html",
+        "archiveUrl": archive_url,
+        "forwardUrl": archive_url,
+    }
+
+
+def _render_email_with_mjml(payload: Dict[str, object]) -> Optional[str]:
+    if not EMAIL_RENDERER_SCRIPT.exists():
+        return None
+
+    try:
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as payload_file:
+            json.dump(payload, payload_file)
+            payload_path = payload_file.name
+
+        result = subprocess.run(
+            ["node", str(EMAIL_RENDERER_SCRIPT), payload_path],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        return result.stdout
+    except subprocess.CalledProcessError as exc:
+        print(f"    MJML renderer failed: {exc.stderr.strip()}")
+        return None
+    except Exception as exc:
+        print(f"    Unexpected MJML renderer error: {exc}")
+        return None
+    finally:
+        if "payload_path" in locals() and os.path.exists(payload_path):
+            os.remove(payload_path)
+
+
 def render_tweet_headline_html(item: dict) -> str:
     """
     Convert headline text with markdown-style __anchor__ into HTML.
@@ -606,19 +686,34 @@ def send_daily_digest(
             sent += 1
             continue
 
-        compiled = _load_digest_markdown_email(digest_date=digest_date, unsubscribe_token=token)
-        if compiled:
-            html = compiled["html"]
-            subject_to_send = compiled["subject"]
-        else:
-            html = generate_email_html(
-                sections,
-                intro=intro,
-                tweet_headlines=tweet_headlines,
-                community_headlines=community_headlines,
-                unsubscribe_token=token,
-            )
+        payload = _build_email_renderer_payload(
+            sections=sections,
+            intro=intro,
+            subject=subject,
+            unsubscribe_token=token,
+            digest_date=digest_date,
+            tweet_headlines=tweet_headlines,
+            community_headlines=community_headlines,
+        )
+        rendered_html = _render_email_with_mjml(payload)
+
+        if rendered_html:
+            html = rendered_html
             subject_to_send = subject
+        else:
+            compiled = _load_digest_markdown_email(digest_date=digest_date, unsubscribe_token=token)
+            if compiled:
+                html = compiled["html"]
+                subject_to_send = compiled["subject"]
+            else:
+                html = generate_email_html(
+                    sections,
+                    intro=intro,
+                    tweet_headlines=tweet_headlines,
+                    community_headlines=community_headlines,
+                    unsubscribe_token=token,
+                )
+                subject_to_send = subject
         
         if send_email(email, html, subject_to_send):
             print(f"    ✓ Sent!")

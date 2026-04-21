@@ -52,10 +52,13 @@ class DigestIssue:
             return self.digest_date
 
     def to_manifest_item(self) -> Dict[str, object]:
+        digits = "".join(ch for ch in self.slug if ch.isdigit())
+        issue_number = digits[-5:] if digits else "00000"
         return {
             "slug": self.slug,
             "digestDate": self.digest_date,
             "displayDate": self.display_date,
+            "issueNumber": issue_number,
             "subject": self.subject,
             "intro": self.intro,
             "articleCount": self.article_count,
@@ -103,13 +106,13 @@ def _render_tweet_headline_html(item: Dict[str, object]) -> str:
     if not match:
         return (
             f"{html.escape(headline)} "
-            f'<a href="{html.escape(url, quote=True)}" style="color: #6246ea; text-decoration: underline;">Source</a>'
+            f'<a href="{html.escape(url, quote=True)}" style="color: #39ff88; text-decoration: underline;">Source</a>'
         )
 
     anchor_text = match.group(1)
     safe_anchor = html.escape(anchor_text)
     safe_url = html.escape(url, quote=True)
-    linked = f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">{safe_anchor}</a>'
+    linked = f'<a href="{safe_url}" style="color: #39ff88; text-decoration: underline;">{safe_anchor}</a>'
     replaced = headline[:match.start()] + linked + headline[match.end():]
     return html.escape(replaced).replace(html.escape(linked), linked)
 
@@ -156,23 +159,23 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
         opinion_html = ""
         if opinion:
             opinion_html = (
-                '<div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; '
-                'border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">'
-                '<p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; '
+                '<div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; '
+                'border-left: 3px solid #39ff88; border-radius: 0 4px 4px 0;">'
+                '<p style="margin: 0 0 4px 0; color: #39ff88; font-size: 11px; text-transform: uppercase; '
                 'letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>'
-                f'<p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">{opinion}</p>'
+                f'<p style="margin: 0; color: #f4f3ef; font-size: 15px; line-height: 1.6;">{opinion}</p>'
                 "</div>"
             )
 
         output.append(
             '<article style="padding: 22px 0; border-bottom: 1px solid #d1d1e9;">'
-            f'<p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; '
+            f'<p style="margin: 0 0 6px 0; color: #39ff88; font-size: 11px; text-transform: uppercase; '
             f'letter-spacing: 0.05em; font-weight: 600;">{source}</p>'
             f"{image_html}"
             f'<h3 style="margin: 0 0 8px 0; font-size: 24px; line-height: 1.3;">'
-            f'<a href="{html.escape(link, quote=True)}" style="color: #6246ea; text-decoration: underline;">{title_html}</a>'
+            f'<a href="{html.escape(link, quote=True)}" style="color: #39ff88; text-decoration: underline;">{title_html}</a>'
             "</h3>"
-            f'<p style="margin: 0; color: #2b2c34; font-size: 16px; line-height: 1.7;">{summary}</p>'
+            f'<p style="margin: 0; color: #a3a099; font-size: 16px; line-height: 1.7;">{summary}</p>'
             f"{opinion_html}"
             "</article>"
         )
@@ -208,7 +211,7 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
             current_section_title = line[3:].strip()
             current_section_open = True
             output.append(
-                f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #2b2c34;">'
+                f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">'
                 f"{md_inline_to_html(current_section_title)}</h2>"
             )
             continue
@@ -260,7 +263,7 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
             else:
                 bullet_html = md_inline_to_html(bullet_content)
             output.append(
-                '<li style="margin-bottom: 10px; color: #2b2c34; font-size: 15px; line-height: 1.6;">'
+                '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
                 f"{bullet_html}</li>"
             )
             continue
@@ -268,7 +271,7 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
         close_tweet_list()
         if current_section_open and current_section_title and article is None:
             output.append(
-                f'<p style="margin: 0 0 10px 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">'
+                f'<p style="margin: 0 0 10px 0; color: #a3a099; font-size: 15px; line-height: 1.6;">'
                 f"{md_inline_to_html(line)}</p>"
             )
 
@@ -279,62 +282,76 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
 
 def _render_issue_page(issue: DigestIssue) -> str:
     intro_text = html.escape(issue.intro)
+    issue_digits = "".join(ch for ch in issue.slug if ch.isdigit())
+    issue_number = issue_digits[-5:] if issue_digits else "00000"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{issue.subject} | {SITE_TITLE}</title>
+  <title>{issue.subject} | AI News Daily</title>
   <meta name="description" content="Read the {issue.display_date} issue of {SITE_TITLE}.">
   <style>
     :root {{
-      --bg: #fffffe;
-      --fg: #2b2c34;
-      --muted: #72757e;
-      --brand: #6246ea;
-      --card: #d1d1e9;
-      --line: #b8b8cf;
+      --bg: #0b0b0c;
+      --bg-raised: #121214;
+      --card: #17171a;
+      --line: #26262b;
+      --line-soft: #1d1d21;
+      --fg: #f4f3ef;
+      --muted: #a3a099;
+      --dim: #6b6a65;
+      --brand: #39ff88;
+      --brand-ink: #0b0b0c;
     }}
     * {{ box-sizing: border-box; }}
     body {{
       margin: 0;
       background: var(--bg);
       color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       line-height: 1.6;
     }}
     .page {{
-      max-width: 760px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 32px 20px 56px;
+      padding: 36px 20px 56px;
     }}
     .top-nav {{
       display: flex;
       justify-content: space-between;
       gap: 12px;
-      margin-bottom: 24px;
-      font-size: 14px;
+      margin-bottom: 28px;
+      font-size: 12px;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }}
     .top-nav a {{
       color: var(--brand);
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
     }}
     .issue-header h1 {{
       margin: 0;
-      font-size: 30px;
-      line-height: 1.2;
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -1.4px;
     }}
     .issue-header p {{
       margin: 6px 0 0;
-      color: var(--muted);
+      color: var(--dim);
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }}
     .cta {{
       margin: 24px 0;
-      padding: 18px;
-      border-radius: 10px;
-      background: var(--card);
+      padding: 18px 20px;
+      border-radius: 4px;
+      background: var(--bg-raised);
       border: 1px solid var(--line);
     }}
     .cta h2 {{
@@ -343,35 +360,52 @@ def _render_issue_page(issue: DigestIssue) -> str:
     }}
     .cta p {{
       margin: 0 0 12px;
+      color: var(--muted);
     }}
     .cta a {{
       display: inline-block;
       background: var(--brand);
-      color: #fff;
+      color: var(--brand-ink);
       text-decoration: none;
       padding: 10px 14px;
-      border-radius: 8px;
+      border-radius: 2px;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 12px;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }}
     .intro {{
       margin: 0 0 28px;
       padding: 20px;
-      border-radius: 10px;
-      background: var(--card);
+      border-radius: 4px;
+      background: var(--bg-raised);
       font-size: 16px;
+      color: var(--muted);
+      border: 1px solid var(--line);
     }}
     .content {{
       margin: 0 0 28px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--card);
+      padding: 0 24px;
     }}
     .issue-footer {{
-      border-top: 1px solid var(--line);
+      border-top: 1px solid var(--line-soft);
       padding-top: 20px;
-      color: var(--muted);
-      font-size: 14px;
+      color: var(--dim);
+      font-size: 12px;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }}
     .issue-footer a {{
       color: var(--brand);
+    }}
+    @media (max-width: 520px) {{
+      .issue-header h1 {{ font-size: 30px; }}
+      .content {{ padding: 0 14px; }}
     }}
   </style>
 </head>
@@ -382,8 +416,8 @@ def _render_issue_page(issue: DigestIssue) -> str:
       <a href="/issues/">All issues</a>
     </nav>
     <header class="issue-header">
-      <h1>{SITE_TITLE}</h1>
-      <p>{issue.display_date} • {issue.article_count} stories</p>
+      <h1>AI News Daily</h1>
+      <p>Issue #{issue_number} · {issue.display_date} · {issue.article_count} stories</p>
     </header>
 
     <section class="cta">
@@ -419,8 +453,13 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
     issue_items = "\n".join(
         [
             (
-                f'<li><a href="{issue.slug}.html">{issue.display_date}</a> '
-                f'<span>{issue.article_count} stories</span></li>'
+                f'<li>'
+                f'<span class="issue-id">#{("".join(ch for ch in issue.slug if ch.isdigit())[-5:] or "00000")}</span>'
+                f'<span class="issue-date">{issue.display_date}</span>'
+                f'<a href="{issue.slug}.html">{html.escape(issue.subject)}</a>'
+                f'<span>{issue.article_count} stories</span>'
+                f'<span class="chev">→</span>'
+                f'</li>'
             )
             for issue in issues
         ]
@@ -430,30 +469,51 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{SITE_TITLE} Archive</title>
+  <title>AI News Daily Archive</title>
   <style>
+    :root {{
+      --bg: #0b0b0c;
+      --bg-raised: #121214;
+      --card: #17171a;
+      --line: #26262b;
+      --line-soft: #1d1d21;
+      --fg: #f4f3ef;
+      --muted: #a3a099;
+      --dim: #6b6a65;
+      --brand: #39ff88;
+      --brand-ink: #0b0b0c;
+    }}
+    * {{ box-sizing: border-box; }}
     body {{
       margin: 0;
-      background: #fffffe;
-      color: #2b2c34;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }}
     main {{
-      max-width: 720px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 36px 20px 56px;
     }}
-    h1 {{ margin: 0 0 8px; }}
-    p {{ margin: 0 0 20px; color: #72757e; }}
+    h1 {{ margin: 0 0 8px; font-size: 56px; line-height: 1; letter-spacing: -2px; }}
+    p {{ margin: 0 0 20px; color: var(--muted); }}
+    .back-link {{
+      color: var(--brand);
+      text-decoration: none;
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+    }}
     .cta {{
       margin: 0 0 24px;
       padding: 16px;
-      border-radius: 10px;
-      border: 1px solid #b8b8cf;
-      background: #d1d1e9;
+      border-radius: 4px;
+      border: 1px solid var(--line);
+      background: var(--bg-raised);
     }}
     .cta a {{
-      color: #6246ea;
+      color: var(--brand);
       font-weight: 600;
       text-decoration: none;
     }}
@@ -461,26 +521,35 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
       list-style: none;
       margin: 0;
       padding: 0;
-      border: 1px solid #d1d1e9;
-      border-radius: 10px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
       overflow: hidden;
     }}
     li {{
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 100px 110px 1fr 90px 20px;
       gap: 12px;
-      padding: 14px 16px;
-      border-bottom: 1px solid #d1d1e9;
+      align-items: center;
+      padding: 16px 16px;
+      border-bottom: 1px solid var(--line-soft);
+      background: var(--card);
     }}
     li:last-child {{ border-bottom: 0; }}
-    a {{ color: #6246ea; text-decoration: none; font-weight: 600; }}
-    span {{ color: #72757e; font-size: 14px; }}
+    a {{ color: var(--fg); text-decoration: none; font-weight: 600; }}
+    span {{ color: var(--dim); font-size: 12px; font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: 1px; }}
+    .issue-id, .issue-date {{ color: var(--dim); }}
+    .chev {{ text-align: right; color: var(--muted); }}
+    @media (max-width: 640px) {{
+      h1 {{ font-size: 32px; letter-spacing: -1.2px; }}
+      li {{ grid-template-columns: 74px 1fr 20px; }}
+      .issue-date, li span:nth-child(4) {{ display: none; }}
+    }}
   </style>
 </head>
 <body>
   <main>
-    <a href="/">← Back to home</a>
-    <h1>{SITE_TITLE} Archive</h1>
+    <a class="back-link" href="/">← Back to home</a>
+    <h1>Recent editions.</h1>
     <p>Browse every published issue.</p>
     <div class="cta">
       Prefer this in your inbox? <a href="/#subscribe-form">Subscribe to AI Newsy</a>.

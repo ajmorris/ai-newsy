@@ -3,123 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Newsy - Your Daily AI News Digest</title>
-    <meta name="description" content="Get the latest AI news delivered to your inbox daily. Curated and summarized by AI.">
+    <title>AI News Daily</title>
+    <meta name="description" content="The AI feed, distilled. One concise briefing in your inbox every morning.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Animated background -->
-    <div class="bg-gradient"></div>
-    <div class="bg-grid"></div>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="logo">
-                    <span class="logo-icon">🤖</span>
-                    <span class="logo-text">AI Newsy</span>
+    <main class="landing">
+        <header class="site-nav">
+            <div class="brand">
+                <span class="brand-tile">◼</span>
+                <div>
+                    <p class="brand-name">AI News Daily</p>
+                    <p class="mono brand-version">v4.137 · shipped daily</p>
                 </div>
-                
-                <h1>Stay Ahead of the AI Revolution</h1>
-                <p class="tagline">
-                    The most important AI news, curated and summarized daily. 
-                    <span class="highlight">Free, straight to your inbox.</span>
-                </p>
+            </div>
+            <nav class="mono nav-links">
+                <a href="/issues/">/archive</a>
+                <a href="#sources">/sources</a>
+                <a href="#about">/about</a>
+                <button type="button" id="nav-subscribe-btn" class="nav-subscribe">Subscribe →</button>
+            </nav>
+        </header>
 
-                <!-- Subscription Form -->
-                <form id="subscribe-form" class="subscribe-form">
-                    <div class="form-group">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="Enter your email"
-                            required
-                            autocomplete="email"
-                        >
-                        <button type="submit" id="submit-btn">
-                            <span class="btn-text">Subscribe</span>
-                            <span class="btn-loading">
-                                <svg viewBox="0 0 24 24" class="spinner">
-                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="60" stroke-dashoffset="20"/>
-                                </svg>
-                            </span>
-                        </button>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="pill mono"><span class="dot"></span> Issue 137 · ships in 2h 14m</p>
+                <h1>The AI feed,<br><span class="accent-italic">distilled.</span></h1>
+                <p class="hero-lead">One email, every morning at 6 AM. The five AI stories that actually matter, summarized for operators.</p>
+
+                <form class="subscribe-form" data-form-variant="hero" novalidate>
+                    <div class="subscribe-row">
+                        <span class="mono subscribe-prefix">$ sub</span>
+                        <input type="email" name="email" placeholder="you@domain.com" autocomplete="email">
+                        <button type="submit" class="mono submit-btn">Subscribe ↵</button>
                     </div>
                     <div class="bot-field" aria-hidden="true">
-                        <label for="website">Leave this field empty</label>
-                        <input
-                            type="text"
-                            id="website"
-                            name="website"
-                            tabindex="-1"
-                            autocomplete="off"
-                        >
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
                     </div>
-                    <input type="hidden" id="captcha-token" name="captchaToken" value="">
-                    <input type="hidden" id="captcha-provider" name="captchaProvider" value="">
-                    <p id="form-message" class="form-message"></p>
+                    <input type="hidden" name="captchaToken" value="">
+                    <input type="hidden" name="captchaProvider" value="">
+                    <p class="mono form-meta">» free · one email / day · unsub anytime</p>
+                    <div class="form-success" hidden>
+                        <span class="success-check mono">✓</span>
+                        <div>
+                            <p class="mono success-title">200 OK · subscribed</p>
+                            <p class="success-body">Confirmation sent. Check your inbox.</p>
+                        </div>
+                    </div>
                 </form>
 
-                <p class="trust-line">
-                    Join <span class="subscriber-count">500+</span> subscribers • No spam, ever
-                </p>
+                <div class="stats mono">
+                    <p><strong>500+</strong><span>subscribers</span></p>
+                    <p><strong>137</strong><span>issues</span></p>
+                    <p><strong>5 min</strong><span>read time</span></p>
+                </div>
+            </div>
+
+            <aside class="sample-card">
+                <div class="card-top mono">
+                    <div class="lights"><span></span><span></span><span></span></div>
+                    <span>inbox · ai-news-daily@digest · Apr 20, 2026 · 06:00 AM</span>
+                    <span>#00137</span>
+                </div>
+                <div class="card-head">
+                    <p class="mono card-kicker">Today · 5 stories · 11 min read</p>
+                    <h3>Cheaper ChatGPT, endless AI silicon, and one arxiv paper worth your afternoon.</h3>
+                </div>
+                <div class="card-stories">
+                    <article><span class="mono idx">01</span><div><p class="mono item-meta"><span>PRODUCT</span> · The Verge · 2 min</p><h4>OpenAI releases a cheaper ChatGPT subscription</h4><p>OpenAI targets the prosumer tier between free and enterprise pricing.</p></div></article>
+                    <article><span class="mono idx">02</span><div><p class="mono item-meta"><span>HARDWARE</span> · Ars Technica · 3 min</p><h4>TSMC says AI demand is “endless” after record Q4</h4><p>Capacity remains sold through multiple future cycles.</p></div></article>
+                    <article><span class="mono idx">03</span><div><p class="mono item-meta"><span>RESEARCH</span> · arXiv · 4 min</p><h4>A retrieval paper quietly drops baseline by 14%</h4><p>Smaller rerankers continue to reshape RAG cost curves.</p></div></article>
+                </div>
+                <p class="mono card-foot"><span>+ 2 more stories</span><span>→ read full edition</span></p>
+            </aside>
+        </section>
+
+        <section id="sources" class="sources">
+            <div class="section-top">
+                <p class="mono">$ cat sources.txt</p>
+                <p>We read 200+ outlets so you read one email.</p>
+            </div>
+            <div class="sources-grid">
+                <span>The Verge</span><span>TechCrunch</span><span>MIT Tech Review</span><span>Ars Technica</span><span>The Information</span><span>Stratechery</span>
+                <span>Platformer</span><span>Semianalysis</span><span>Interconnects</span><span>arXiv</span><span>Hugging Face</span><span>Ben's Bites</span>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <h2>What You Get</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📰</div>
-                    <h3>Curated Sources</h3>
-                    <p>News from TechCrunch, The Verge, MIT Tech Review, and top AI researchers on X.</p>
+        <section class="archive">
+            <div class="archive-heading">
+                <div>
+                    <p class="mono accent">/archive</p>
+                    <h2>Recent editions.</h2>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3>AI Summaries</h3>
-                    <p>Each story summarized in 2-3 sentences so you get the key insights in minutes.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🕐</div>
-                    <h3>Daily Delivery</h3>
-                    <p>One email, every morning, with everything you need to know about AI.</p>
-                </div>
+                <a class="mono" href="/issues/">view all →</a>
             </div>
-        </section>
-
-        <section class="issues" id="issues">
-            <div class="issues-header">
-                <h2>Latest Issues</h2>
-                <a class="issues-archive-link" href="/issues/">View full archive</a>
-            </div>
-
-            <article class="new-issue-callout" id="new-issue-callout">
-                <p class="issue-kicker">New issue out</p>
-                <h3>Fresh AI coverage is live on the web archive</h3>
-                <p>Read the latest issue now, then subscribe to get tomorrow's edition by email.</p>
-                <div class="issue-callout-actions">
-                    <a class="issue-read-link" href="/issues/">Read latest issue</a>
-                    <a class="issue-subscribe-link" href="#subscribe-form">Subscribe free</a>
-                </div>
-            </article>
-
-            <div class="recent-issues">
-                <h3>Recent issues</h3>
-                <ul id="recent-issues-list">
+            <div class="archive-list-wrap">
+                <ul id="recent-issues-list" class="archive-list">
                     <li class="issues-loading">Loading latest issues...</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>Built with ❤️ for the AI curious</p>
+        <section id="about" class="testimonials">
+            <p class="mono">/readers</p>
+            <h2>Read by people <span>building the thing.</span></h2>
+            <div class="quote-grid">
+                <article><p>"Replaced three newsletters and most of my group chat."</p><strong>Dr. Hana Okafor</strong><span>AI Researcher</span></article>
+                <article><p>"The one email I read before standup. Period."</p><strong>Priya Raman</strong><span>Staff ML, Ramp</span></article>
+                <article><p>"5 minutes, actual signal. I forward it to my team."</p><strong>Marcus Lee</strong><span>Founder, Inflect</span></article>
+                <article><p>"Only way I stay current without doomscrolling."</p><strong>Alex Chen</strong><span>Product Lead, Vercel</span></article>
+            </div>
+        </section>
+
+        <section id="cta-subscribe" class="cta">
+            <p class="mono accent">◆ Next edition · tomorrow 06:00</p>
+            <h2>Skip the feed.<br><span>Read the brief.</span></h2>
+            <p class="cta-sub">Join engineers, founders, and researchers. Free forever.</p>
+            <form class="subscribe-form" data-form-variant="cta" novalidate>
+                <div class="subscribe-row">
+                    <span class="mono subscribe-prefix">$ sub</span>
+                    <input type="email" name="email" placeholder="you@domain.com" autocomplete="email">
+                    <button type="submit" class="mono submit-btn">Subscribe ↵</button>
+                </div>
+                <div class="bot-field" aria-hidden="true">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <input type="hidden" name="captchaToken" value="">
+                <input type="hidden" name="captchaProvider" value="">
+                <p class="mono form-meta">» free · one email / day · unsub anytime</p>
+                <div class="form-success" hidden>
+                    <span class="success-check mono">✓</span>
+                    <div>
+                        <p class="mono success-title">200 OK · subscribed</p>
+                        <p class="success-body">Confirmation sent. Check your inbox.</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer class="site-footer mono">
+            <span>© 2026 AI News Daily · v4.137</span>
+            <span>status: operational <b>●</b></span>
+            <span><a href="#">/privacy</a> · <a href="/issues/">/archive</a> · <a href="#">/rss</a></span>
         </footer>
     </main>
 
