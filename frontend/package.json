@@ -2,7 +2,17 @@
     "name": "ai-newsy",
     "version": "1.0.0",
     "private": true,
+    "scripts": {
+        "dev": "echo \"Use npm run dev:env for local Vercel API testing.\"",
+        "dev:env": "dotenv -e ../.env -- vercel dev --yes --local",
+        "vercel:dev": "vercel dev --yes --local"
+    },
     "dependencies": {
-        "@supabase/supabase-js": "^2.39.0"
+        "@supabase/supabase-js": "^2.39.0",
+        "resend": "^6.12.2"
+    },
+    "devDependencies": {
+        "dotenv-cli": "^11.0.0",
+        "vercel": "^51.8.0"
     }
 }

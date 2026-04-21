@@ -2,14 +2,11 @@
 // POST /api/subscribe - Add a new email subscriber
 
 import { createClient } from '@supabase/supabase-js';
+import crypto from 'crypto';
+import { sendConfirmationEmail } from './lib/send-confirmation-email';
 
 const supabaseUrl = process.env.SUPABASE_URL || '';
 const supabaseSecretKey = process.env.SUPABASE_SECRET_KEY || '';
-
-const supabase = createClient(
-    supabaseUrl,
-    supabaseSecretKey
-);
 
 const RATE_LIMIT_WINDOW_MS = Number(process.env.SUBSCRIBE_RATE_LIMIT_WINDOW_MS || 10 * 60 * 1000);
 const RATE_LIMIT_MAX_REQUESTS = Number(process.env.SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS || 5);
@@ -182,12 +179,7 @@ async function sendSlackSignupNotification(email) {
 }
 
 function generateToken() {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let token = '';
-    for (let i = 0; i < 43; i++) {
-        token += chars.charAt(Math.floor(Math.random() * chars.length));
-    }
-    return token;
+    return crypto.randomBytes(32).toString('base64url');
 }
 
 export default async function handler(req, res) {
@@ -209,6 +201,10 @@ export default async function handler(req, res) {
             console.error('SUPABASE_URL or SUPABASE_SECRET_KEY not configured for subscribe API.');
             return res.status(500).json({ error: 'Subscription service is not configured.' });
         }
+        const supabase = createClient(
+            supabaseUrl,
+            supabaseSecretKey
+        );
 
         cleanupRateLimitEntries();
 
@@ -251,14 +247,23 @@ export default async function handler(req, res) {
         // Check if already subscribed
         const { data: existing } = await supabase
             .from('subscribers')
-            .select('id, confirmed')
+            .select('id, email, confirmed, confirm_token')
             .eq('email', normalizedEmail)
             .single();
 
         if (existing) {
             if (existing.confirmed) {
-                return res.status(400).json({ error: 'This email is already subscribed!' });
+                return res.status(200).json({
+                    message: 'This email is already subscribed.',
+                    status: 'already-subscribed'
+                });
             } else {
+                try {
+                    await sendConfirmationEmail(normalizedEmail, existing.confirm_token);
+                } catch (emailError) {
+                    console.error('Failed to send confirmation email for existing subscriber:', emailError);
+                }
+
                 return res.status(200).json({
                     message: 'Check your email to confirm your subscription!',
                     status: 'pending'
@@ -274,7 +279,7 @@ export default async function handler(req, res) {
             .insert({
                 email: normalizedEmail,
                 confirm_token: confirmToken,
-                confirmed: true,  // Auto-confirm for now (no email verification flow)
+                confirmed: false,
                 subscribed_at: new Date().toISOString()
             })
             .select()
@@ -285,12 +290,18 @@ export default async function handler(req, res) {
             return res.status(500).json({ error: 'Failed to subscribe. Please try again.' });
         }
 
+        try {
+            await sendConfirmationEmail(normalizedEmail, confirmToken);
+        } catch (emailError) {
+            console.error('Failed to send confirmation email for new subscriber:', emailError);
+        }
+
         // Best-effort side effect: never fail successful signup on Slack issues.
         await sendSlackSignupNotification(normalizedEmail);
 
         return res.status(200).json({
-            message: 'Successfully subscribed! Welcome to AI Newsy.',
-            status: 'confirmed'
+            message: 'Check your email to confirm your subscription!',
+            status: 'pending'
         });
 
     } catch (error) {

@@ -1,5 +1,3 @@
-// AI Newsy - Frontend JavaScript
-
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('subscribe-form');
     const emailInput = document.getElementById('email');
@@ -29,16 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     loadRecentIssues();
 
     function setCaptchaToken(token, provider) {
-        if (captchaTokenInput) {
-            captchaTokenInput.value = token || '';
-        }
-
-        if (captchaProviderInput) {
-            captchaProviderInput.value = provider || '';
-        }
+        forms.forEach((form) => {
+            const tokenInput = form.querySelector('input[name="captchaToken"]');
+            const providerInput = form.querySelector('input[name="captchaProvider"]');
+            if (tokenInput) {
+                tokenInput.value = token || '';
+            }
+            if (providerInput) {
+                providerInput.value = provider || '';
+            }
+        });
     }
 
-    // Expose callbacks for captcha widgets if enabled in the page.
     window.onTurnstileSuccess = (token) => setCaptchaToken(token, 'turnstile');
     window.onTurnstileExpired = () => setCaptchaToken('', 'turnstile');
     window.onHCaptchaSuccess = (token) => {
@@ -78,18 +78,26 @@ document.addEventListener('DOMContentLoaded', () => {
         captchaContainer.hidden = true;
     }
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
+    if (navSubscribeButton) {
+        navSubscribeButton.addEventListener('click', () => {
+            const cta = document.getElementById('cta-subscribe');
+            if (cta) {
+                cta.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
 
-        const email = emailInput.value.trim();
-        const honeypotValue = websiteInput ? websiteInput.value : '';
-        const captchaToken = captchaTokenInput ? captchaTokenInput.value : '';
-        const captchaProvider = captchaProviderInput ? captchaProviderInput.value : '';
+    forms.forEach((form) => {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-        if (!email || !isValidEmail(email)) {
-            showMessage('Please enter a valid email address.', 'error');
-            return;
-        }
+            const emailInput = form.querySelector('input[name="email"]');
+            const websiteInput = form.querySelector('input[name="website"]');
+            const submitButton = form.querySelector('.submit-btn');
+            const formMeta = form.querySelector('.form-meta');
+            const successPanel = form.querySelector('.form-success');
+            const successBody = form.querySelector('.success-body');
+            const subscribeRow = form.querySelector('.subscribe-row');
 
         if (captchaState.required && !captchaState.loadError && (!captchaState.ready || !captchaState.solved || !captchaToken)) {
             showMessage('Please complete the captcha before subscribing.', 'error');
@@ -102,21 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
         formMessage.textContent = '';
         formMessage.className = 'form-message';
 
-        try {
-            const response = await fetch('/api/subscribe', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    email,
-                    website: honeypotValue,
-                    captchaToken,
-                    captchaProvider,
-                }),
-            });
+            const email = emailInput.value.trim();
+            const honeypotValue = websiteInput ? websiteInput.value : '';
+            const captchaToken = (form.querySelector('input[name="captchaToken"]') || {}).value || '';
+            const captchaProvider = (form.querySelector('input[name="captchaProvider"]') || {}).value || '';
 
-            const data = await response.json();
+            form.classList.remove('form-error');
+            form.classList.remove('form-success-state');
+            formMeta.textContent = '» free · one email / day · unsub anytime';
+            successPanel.hidden = true;
+            subscribeRow.hidden = false;
 
             if (response.ok) {
                 if (data.status === 'pending') {
@@ -128,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (websiteInput) {
                     websiteInput.value = '';
                 }
+                emailInput.value = '';
                 setCaptchaToken('', captchaProvider);
                 captchaState.solved = false;
                 if (window.hcaptcha && typeof captchaState.widgetId === 'number') {
@@ -139,41 +143,20 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 showMessage(data.error || 'Something went wrong. Please try again.', 'error');
             }
-        } catch (error) {
-            console.error('Subscription error:', error);
-            showMessage('Network error. Please try again.', 'error');
-        } finally {
-            submitBtn.classList.remove('loading');
-            submitBtn.disabled = false;
-        }
+        });
     });
 
+    function applyErrorState(form, formMeta, message) {
+        form.classList.add('form-error');
+        formMeta.textContent = `» error: ${message}`;
+    }
+
     function isValidEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    }
-
-    function showMessage(text, type) {
-        formMessage.textContent = text;
-        formMessage.className = `form-message ${type}`;
-    }
-
-    function updateSubscriberCount() {
-        const countEl = document.querySelector('.subscriber-count');
-        if (countEl) {
-            const currentCount = parseInt(countEl.textContent) || 500;
-            countEl.textContent = `${currentCount + 1}+`;
-
-            // Add a little animation
-            countEl.style.transform = 'scale(1.2)';
-            setTimeout(() => {
-                countEl.style.transform = 'scale(1)';
-            }, 200);
-        }
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 
     async function loadRecentIssues() {
-        if (!latestIssueCallout || !recentIssuesList) {
+        if (!recentIssuesList) {
             return;
         }
 
@@ -189,31 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const data = await response.json();
-            renderLatestIssue(data.latestIssue);
             renderRecentIssues(data.recentIssues || []);
         } catch (error) {
             console.error('Issue archive load error:', error);
             recentIssuesList.innerHTML = '<li class="issues-loading">No issues published yet. Check back soon.</li>';
-        }
-    }
-
-    function renderLatestIssue(latestIssue) {
-        if (!latestIssue || !latestIssue.urlPath) {
-            return;
-        }
-
-        const titleEl = latestIssueCallout.querySelector('h3');
-        const bodyEl = latestIssueCallout.querySelector('p:not(.issue-kicker)');
-        const readLinkEl = latestIssueCallout.querySelector('.issue-read-link');
-
-        if (titleEl) {
-            titleEl.textContent = latestIssue.subject || 'New issue out';
-        }
-        if (bodyEl) {
-            bodyEl.textContent = latestIssue.intro || 'Read the latest issue now, then subscribe to get tomorrow\'s edition by email.';
-        }
-        if (readLinkEl) {
-            readLinkEl.setAttribute('href', latestIssue.urlPath);
         }
     }
 
@@ -227,12 +189,19 @@ document.addEventListener('DOMContentLoaded', () => {
             .map((issue) => {
                 const subject = escapeHtml(issue.subject || 'Untitled issue');
                 const displayDate = escapeHtml(issue.displayDate || issue.digestDate || '');
-                const articleCount = Number.isFinite(issue.articleCount)
-                    ? `${issue.articleCount} stories`
-                    : '';
-                const meta = [displayDate, articleCount].filter(Boolean).join(' • ');
+                const articleCount = Number.isFinite(issue.articleCount) ? `${issue.articleCount} stories` : '';
+                const issueNumber = escapeHtml(
+                    issue.issueNumber || (issue.slug ? issue.slug.replace(/[^0-9]/g, '').slice(-5) : '')
+                );
                 const safeUrl = issue.urlPath || '/issues/';
-                return `<li><a href="${safeUrl}">${subject}</a><span>${escapeHtml(meta)}</span></li>`;
+                return `<li>
+                    <span class="mono">${issueNumber ? `#${issueNumber}` : '#00000'}</span>
+                    <span class="mono archive-date">${displayDate}</span>
+                    <a class="archive-headline" href="${safeUrl}">${subject}</a>
+                    <span class="mono archive-tag">[issue]</span>
+                    <span class="mono archive-count">${escapeHtml(articleCount)}</span>
+                    <span class="archive-chevron">→</span>
+                </li>`;
             })
             .join('');
 
@@ -248,12 +217,4 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace(/'/g, '&#39;');
     }
 
-    // Add email input focus effects
-    emailInput.addEventListener('focus', () => {
-        emailInput.parentElement.classList.add('focused');
-    });
-
-    emailInput.addEventListener('blur', () => {
-        emailInput.parentElement.classList.remove('focused');
-    });
 });
