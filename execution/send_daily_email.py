@@ -8,6 +8,7 @@ import os
 import argparse
 import html
 import re
+from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Optional, Dict, List
 from dotenv import load_dotenv
@@ -86,6 +87,126 @@ def generate_intro(articles: list) -> str:
     except Exception as e:
         print(f"    Error generating intro: {e}")
         return "Here's what's making waves in AI today."
+
+
+def _parse_frontmatter(markdown_text: str) -> tuple:
+    """Parse very simple YAML frontmatter key/value pairs."""
+    if not markdown_text.startswith("---\n"):
+        return {}, markdown_text
+    end_idx = markdown_text.find("\n---\n", 4)
+    if end_idx == -1:
+        return {}, markdown_text
+
+    frontmatter_block = markdown_text[4:end_idx]
+    body = markdown_text[end_idx + 5 :]
+    metadata: Dict[str, str] = {}
+    for raw_line in frontmatter_block.splitlines():
+        line = raw_line.strip()
+        if not line or ":" not in line or line.startswith("-"):
+            continue
+        key, value = line.split(":", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        metadata[key] = value
+    return metadata, body
+
+
+def _md_inline_to_html(text: str) -> str:
+    escaped = html.escape(text)
+    escaped = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", escaped)
+    escaped = re.sub(r"\[(.+?)\]\((https?://[^\)]+)\)", r'<a href="\2" style="color: #6246ea; text-decoration: underline;">\1</a>', escaped)
+    return escaped
+
+
+def _markdown_body_to_html(markdown_body: str) -> str:
+    lines = markdown_body.splitlines()
+    output: List[str] = []
+    in_list = False
+
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            if in_list:
+                output.append("</ul>")
+                in_list = False
+            continue
+        if stripped.startswith("## "):
+            if in_list:
+                output.append("</ul>")
+                in_list = False
+            output.append(f'<h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">{_md_inline_to_html(stripped[3:])}</h2>')
+            continue
+        if stripped.startswith("### "):
+            if in_list:
+                output.append("</ul>")
+                in_list = False
+            output.append(f'<h3 style="margin: 18px 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">{_md_inline_to_html(stripped[4:])}</h3>')
+            continue
+        if stripped.startswith("- "):
+            if not in_list:
+                output.append('<ul style="padding-left: 20px; margin: 0 0 12px 0;">')
+                in_list = True
+            output.append(f'<li style="margin-bottom: 10px; line-height: 1.6; color: #2b2c34;">{_md_inline_to_html(stripped[2:])}</li>')
+            continue
+
+        tag = "p"
+        style = 'margin: 0 0 10px 0; color: #2b2c34; font-size: 15px; line-height: 1.6;'
+        if stripped.startswith("*") and stripped.endswith("*") and len(stripped) > 2:
+            stripped = stripped[1:-1]
+            tag = "p"
+            style = 'margin: 0 0 8px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;'
+        output.append(f"<{tag} style=\"{style}\">{_md_inline_to_html(stripped)}</{tag}>")
+
+    if in_list:
+        output.append("</ul>")
+    return "\n".join(output)
+
+
+def _load_digest_markdown_email(
+    digest_date: str,
+    unsubscribe_token: str,
+) -> Optional[Dict[str, str]]:
+    markdown_dir = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
+    file_path = markdown_dir / f"{digest_date}.md"
+    if not file_path.exists():
+        return None
+
+    raw = file_path.read_text(encoding="utf-8")
+    meta, body = _parse_frontmatter(raw)
+    subject = meta.get("subject", f"AI Newsy • {digest_date}")
+    intro = meta.get("intro", "")
+    body_html = _markdown_body_to_html(body)
+
+    html_content = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="margin: 0; padding: 0; background-color: #fffffe; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;">
+        <div style="max-width: 560px; margin: 0 auto; padding: 48px 24px;">
+            <div style="margin-bottom: 32px;">
+                <h1 style="color: #2b2c34; font-size: 24px; margin: 0; font-weight: 700;">AI Newsy</h1>
+                <p style="color: #6246ea; margin: 4px 0 0 0; font-size: 14px;">{digest_date}</p>
+            </div>
+            <div style="margin-bottom: 32px; padding: 20px; background-color: #d1d1e9; border-radius: 8px;">
+                <p style="margin: 0; color: #2b2c34; font-size: 16px; line-height: 1.7;">{html.escape(intro)}</p>
+            </div>
+            <div style="margin-bottom: 32px;">
+                {body_html}
+            </div>
+            <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
+                <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
+                    You're receiving this because you subscribed to AI Newsy.
+                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #6246ea; text-decoration: underline;">Unsubscribe</a>
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+    """
+    return {"subject": subject, "html": html_content}
 
 
 def generate_email_html(
@@ -418,15 +539,21 @@ def send_daily_digest(
             sent += 1
             continue
 
-        html = generate_email_html(
-            sections,
-            intro=intro,
-            tweet_headlines=tweet_headlines,
-            community_headlines=community_headlines,
-            unsubscribe_token=token,
-        )
+        compiled = _load_digest_markdown_email(digest_date=digest_date, unsubscribe_token=token)
+        if compiled:
+            html = compiled["html"]
+            subject_to_send = compiled["subject"]
+        else:
+            html = generate_email_html(
+                sections,
+                intro=intro,
+                tweet_headlines=tweet_headlines,
+                community_headlines=community_headlines,
+                unsubscribe_token=token,
+            )
+            subject_to_send = subject
         
-        if send_email(email, html, subject):
+        if send_email(email, html, subject_to_send):
             print(f"    ✓ Sent!")
             sent += 1
         else:

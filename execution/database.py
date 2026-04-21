@@ -172,10 +172,62 @@ def get_unsummarized_articles() -> list:
     return result.data or []
 
 
+def get_articles_without_analysis(
+    limit: Optional[int] = None,
+    since: Optional[datetime] = None,
+    unsent_only: bool = True,
+) -> list:
+    """
+    Get articles that have not completed single-pass analysis.
+    This is the primary selector for one-shot LLM processing.
+    If since is provided, only return articles published on/after that time.
+    If unsent_only is True, only return articles that have not been sent yet.
+    """
+    query = supabase.table("articles").select("*").is_("analysis", "null")
+    if unsent_only:
+        query = query.is_("sent_at", "null")
+    if since is not None:
+        query = query.gte("published_at", since.isoformat())
+    result = query.execute()
+    data = result.data or []
+    if limit:
+        data = data[:limit]
+    return data
+
+
 def update_article_summary(article_id: int, summary: str) -> dict:
     """Update an article with its AI-generated summary."""
     result = supabase.table("articles").update({
         "summary": summary
+    }).eq("id", article_id).execute()
+    return result.data[0] if result.data else {}
+
+
+def update_article_analysis_payload(
+    article_id: int,
+    payload: Dict[str, Any],
+    model: str,
+    prompt_version: str,
+    run_id: str,
+) -> dict:
+    """
+    Persist structured one-pass analysis output for a single article.
+    Also writes first-class columns for downstream compatibility.
+    """
+    topic = (payload.get("topic") or "").strip() or "Industry"
+    summary = (payload.get("summary") or "").strip()
+    opinion = (payload.get("opinion") or "").strip()
+    now_iso = datetime.utcnow().isoformat()
+
+    result = supabase.table("articles").update({
+        "topic": topic,
+        "summary": summary,
+        "opinion": opinion,
+        "analysis": payload,
+        "analysis_model": model,
+        "analysis_prompt_version": prompt_version,
+        "analysis_run_id": run_id,
+        "analyzed_at": now_iso,
     }).eq("id", article_id).execute()
     return result.data[0] if result.data else {}
 
@@ -407,6 +459,14 @@ def get_article_count() -> int:
     """Get total count of articles in database."""
     result = supabase.table("articles").select("id", count="exact").execute()
     return result.count or 0
+
+
+def get_articles_by_analysis_run_id(run_id: str) -> list:
+    """Return articles tagged with a specific analysis run id."""
+    result = supabase.table("articles").select("id,url,title,analysis_run_id").eq(
+        "analysis_run_id", run_id
+    ).execute()
+    return result.data or []
 
 
 def delete_articles_older_than(days: int) -> int:

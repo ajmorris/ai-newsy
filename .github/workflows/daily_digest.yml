@@ -38,4 +38,13 @@ jobs:
           ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest' }}
           PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
-        run: python execution/send_daily_email.py
+        run: |
+          python execution/build_digest_markdown.py
+          python execution/send_daily_email.py
+
+      - name: Upload digest markdown artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-markdown-${{ github.run_id }}
+          path: data/digests/*.md
+          if-no-files-found: error

@@ -31,7 +31,7 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: python execution/fetch_ai_news.py --limit 10
 
-      - name: Assign topics to new articles
+      - name: Single-pass analyze new articles
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
@@ -39,10 +39,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest' }}
-          PROMPT_TOPIC: ${{ vars.PROMPT_TOPIC }}
-        run: python execution/assign_topics.py
+          PROMPT_SINGLE_PASS_ANALYSIS: ${{ vars.PROMPT_SINGLE_PASS_ANALYSIS }}
+          SINGLE_PASS_MODEL: ${{ vars.SINGLE_PASS_MODEL || 'gemini-2.0-flash' }}
+          SINGLE_PASS_RUN_ID: gha-${{ github.run_id }}-${{ github.run_attempt }}
+        run: python execution/analyze_articles_single_pass.py
 
-      - name: Summarize articles
+      - name: Generate tweet headlines and persist
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
@@ -50,8 +52,19 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest' }}
-          PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
-        run: python execution/summarize_articles.py
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
+        run: python execution/generate_tweet_headlines.py
+
+      - name: Generate community headlines and persist
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-3-5-haiku-latest' }}
+        run: python execution/generate_community_headlines.py
 
       - name: Verify RSS summaries available for digest
         env:
@@ -61,9 +74,19 @@ jobs:
         run: |
           python - <<'PY'
           from datetime import datetime, timedelta
-          from execution.database import get_unsent_articles
+          from execution.database import get_unsent_articles, get_articles_without_analysis
 
           since = datetime.utcnow() - timedelta(hours=24)
           rows = get_unsent_articles(topic=None, require_summary=True, since=since, until=None)
+          pending = get_articles_without_analysis()
           print(f"rss verification: summarized_unsent_last_24h={len(rows)}")
+          print(f"rss verification: pending_single_pass_articles={len(pending)}")
           PY
+
+      - name: Upload prepare-step digest markdown artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prepare-digest-markdown-${{ github.run_id }}
+          path: data/digests/*.md
+          if-no-files-found: ignore
