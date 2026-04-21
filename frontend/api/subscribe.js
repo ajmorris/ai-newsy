@@ -6,11 +6,6 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = process.env.SUPABASE_URL || '';
 const supabaseSecretKey = process.env.SUPABASE_SECRET_KEY || '';
 
-const supabase = createClient(
-    supabaseUrl,
-    supabaseSecretKey
-);
-
 const RATE_LIMIT_WINDOW_MS = Number(process.env.SUBSCRIBE_RATE_LIMIT_WINDOW_MS || 10 * 60 * 1000);
 const RATE_LIMIT_MAX_REQUESTS = Number(process.env.SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS || 5);
 const rateLimitStore = new Map();
@@ -209,6 +204,10 @@ export default async function handler(req, res) {
             console.error('SUPABASE_URL or SUPABASE_SECRET_KEY not configured for subscribe API.');
             return res.status(500).json({ error: 'Subscription service is not configured.' });
         }
+        const supabase = createClient(
+            supabaseUrl,
+            supabaseSecretKey
+        );
 
         cleanupRateLimitEntries();
 

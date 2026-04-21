@@ -72,6 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
             submitButton.textContent = 'Sending...';
 
             try {
+                // #region agent log
+                fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'pre-fix',hypothesisId:'H1-H4',location:'frontend/script.js:74',message:'Subscribe submit started',data:{formVariant:form.dataset.formVariant || 'unknown',emailDomain:(email.split('@')[1] || '').toLowerCase(),hasCaptchaToken:Boolean(captchaToken),captchaProvider:captchaProvider || 'none',endpoint:'/api/subscribe'},timestamp:Date.now()})}).catch(()=>{});
+                // #endregion
                 const response = await fetch('/api/subscribe', {
                     method: 'POST',
                     headers: {
@@ -84,10 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
                         captchaProvider,
                     }),
                 });
-                const data = await response.json();
+                // #region agent log
+                fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'pre-fix',hypothesisId:'H2-H3',location:'frontend/script.js:87',message:'Subscribe response received',data:{ok:response.ok,status:response.status,contentType:response.headers.get('content-type') || 'missing'},timestamp:Date.now()})}).catch(()=>{});
+                // #endregion
+                const contentType = (response.headers.get('content-type') || '').toLowerCase();
+                let data = null;
+                let responseText = '';
+                if (contentType.includes('application/json')) {
+                    try {
+                        data = await response.json();
+                        // #region agent log
+                        fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H2',location:'frontend/script.js:97',message:'Subscribe response JSON parsed',data:{hasErrorField:Boolean(data && data.error),statusField:data && data.status ? data.status : 'missing'},timestamp:Date.now()})}).catch(()=>{});
+                        // #endregion
+                    } catch (parseError) {
+                        // #region agent log
+                        fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H2',location:'frontend/script.js:101',message:'Subscribe response JSON parse failed',data:{errorName:parseError?.name || 'unknown',errorMessage:parseError?.message || 'unknown'},timestamp:Date.now()})}).catch(()=>{});
+                        // #endregion
+                    }
+                } else {
+                    responseText = await response.text();
+                    // #region agent log
+                    fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H3',location:'frontend/script.js:108',message:'Subscribe response was non-JSON',data:{status:response.status,textSnippet:responseText.slice(0,120)},timestamp:Date.now()})}).catch(()=>{});
+                    // #endregion
+                }
 
                 if (!response.ok) {
-                    applyErrorState(form, formMeta, data.error || 'Invalid email format.');
+                    const errorMessage = (data && data.error) || responseText || `Request failed (${response.status}). Try again.`;
+                    // #region agent log
+                    fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H6',location:'frontend/script.js:117',message:'Subscribe API returned handled error',data:{status:response.status,errorMessage:errorMessage.slice(0,160)},timestamp:Date.now()})}).catch(()=>{});
+                    // #endregion
+                    applyErrorState(form, formMeta, errorMessage);
                     return;
                 }
 
@@ -102,6 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 setCaptchaToken('', captchaProvider);
             } catch (error) {
                 console.error('Subscription error:', error);
+                // #region agent log
+                fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6111e0'},body:JSON.stringify({sessionId:'6111e0',runId:'post-fix',hypothesisId:'H1-H5',location:'frontend/script.js:128',message:'Subscribe request threw',data:{errorName:error?.name || 'unknown',errorMessage:error?.message || 'unknown'},timestamp:Date.now()})}).catch(()=>{});
+                // #endregion
                 applyErrorState(form, formMeta, 'Network error. Try again.');
             } finally {
                 submitButton.disabled = false;
