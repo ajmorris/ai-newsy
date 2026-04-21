@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="hcaptcha-site-key" content="">
     <title>AI Newsy - Your Daily AI News Digest</title>
     <meta name="description" content="Get the latest AI news delivered to your inbox daily. Curated and summarized by AI.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,6 +63,9 @@
                     </div>
                     <input type="hidden" id="captcha-token" name="captchaToken" value="">
                     <input type="hidden" id="captcha-provider" name="captchaProvider" value="">
+                    <div id="captcha-container" class="captcha-container" hidden>
+                        <div id="hcaptcha-widget" class="h-captcha-widget"></div>
+                    </div>
                     <p id="form-message" class="form-message"></p>
                 </form>
 
@@ -123,6 +127,10 @@
         </footer>
     </main>
 
+    <script>
+        window.HCAPTCHA_SITE_KEY = document.querySelector('meta[name="hcaptcha-site-key"]')?.content || '';
+    </script>
     <script src="script.js"></script>
+    <script src="https://js.hcaptcha.com/1/api.js?render=explicit&onload=onHCaptchaApiLoad" async defer></script>
 </body>
 </html>

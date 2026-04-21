@@ -227,6 +227,12 @@ h1 {
     min-height: 20px;
 }
 
+.captcha-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
 .form-message.success {
     color: #34d399;
 }

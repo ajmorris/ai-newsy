@@ -8,8 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('form-message');
     const captchaTokenInput = document.getElementById('captcha-token');
     const captchaProviderInput = document.getElementById('captcha-provider');
+    const captchaContainer = document.getElementById('captcha-container');
+    const hcaptchaWidget = document.getElementById('hcaptcha-widget');
     const latestIssueCallout = document.getElementById('new-issue-callout');
     const recentIssuesList = document.getElementById('recent-issues-list');
+    const hcaptchaSiteKey = (
+        window.HCAPTCHA_SITE_KEY ||
+        document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
+        document.documentElement.getAttribute('data-hcaptcha-site-key') ||
+        ''
+    ).trim();
+    const captchaState = {
+        required: Boolean(hcaptchaSiteKey),
+        ready: false,
+        solved: false,
+        widgetId: null,
+        loadError: false,
+    };
 
     loadRecentIssues();
 
@@ -26,8 +41,42 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose callbacks for captcha widgets if enabled in the page.
     window.onTurnstileSuccess = (token) => setCaptchaToken(token, 'turnstile');
     window.onTurnstileExpired = () => setCaptchaToken('', 'turnstile');
-    window.onHCaptchaSuccess = (token) => setCaptchaToken(token, 'hcaptcha');
-    window.onHCaptchaExpired = () => setCaptchaToken('', 'hcaptcha');
+    window.onHCaptchaSuccess = (token) => {
+        captchaState.solved = Boolean(token);
+        setCaptchaToken(token, 'hcaptcha');
+    };
+    window.onHCaptchaExpired = () => {
+        captchaState.solved = false;
+        setCaptchaToken('', 'hcaptcha');
+    };
+    window.onHCaptchaError = () => {
+        captchaState.loadError = true;
+        captchaState.solved = false;
+        setCaptchaToken('', 'hcaptcha');
+        showMessage('Captcha failed to load. You can still continue; anti-spam checks remain active.', 'error');
+    };
+    window.onHCaptchaApiLoad = () => {
+        if (!captchaState.required || !hcaptchaWidget || !window.hcaptcha) {
+            return;
+        }
+
+        if (captchaContainer) {
+            captchaContainer.hidden = false;
+        }
+
+        captchaState.widgetId = window.hcaptcha.render(hcaptchaWidget, {
+            sitekey: hcaptchaSiteKey,
+            callback: window.onHCaptchaSuccess,
+            'expired-callback': window.onHCaptchaExpired,
+            'error-callback': window.onHCaptchaError,
+        });
+        captchaState.ready = true;
+    };
+
+    // Fail-open: if no site key is configured, skip captcha on the frontend.
+    if (!captchaState.required && captchaContainer) {
+        captchaContainer.hidden = true;
+    }
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -39,6 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!email || !isValidEmail(email)) {
             showMessage('Please enter a valid email address.', 'error');
+            return;
+        }
+
+        if (captchaState.required && !captchaState.loadError && (!captchaState.ready || !captchaState.solved || !captchaToken)) {
+            showMessage('Please complete the captcha before subscribing.', 'error');
             return;
         }
 
@@ -65,12 +119,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (response.ok) {
-                showMessage('🎉 Check your email to confirm your subscription!', 'success');
+                if (data.status === 'pending') {
+                    showMessage('🎉 Check your email to confirm your subscription!', 'success');
+                } else {
+                    showMessage('🎉 You are subscribed. Welcome to AI Newsy!', 'success');
+                }
                 emailInput.value = '';
                 if (websiteInput) {
                     websiteInput.value = '';
                 }
                 setCaptchaToken('', captchaProvider);
+                captchaState.solved = false;
+                if (window.hcaptcha && typeof captchaState.widgetId === 'number') {
+                    window.hcaptcha.reset(captchaState.widgetId);
+                }
 
                 // Update subscriber count animation
                 updateSubscriberCount();

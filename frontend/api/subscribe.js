@@ -60,7 +60,7 @@ async function verifyTurnstileToken(token, remoteIp) {
     }
 
     if (!token || token.trim() === '') {
-        return { enabled: true, ok: false, reason: 'missing token' };
+        return { enabled: true, ok: true, reason: 'missing token (fail-open)', bypassed: true };
     }
 
     const body = new URLSearchParams({
@@ -94,7 +94,7 @@ async function verifyHCaptchaToken(token, remoteIp) {
     }
 
     if (!token || token.trim() === '') {
-        return { enabled: true, ok: false, reason: 'missing token' };
+        return { enabled: true, ok: true, reason: 'missing token (fail-open)', bypassed: true };
     }
 
     const body = new URLSearchParams({
@@ -238,6 +238,10 @@ export default async function handler(req, res) {
             provider: String(captchaProvider || ''),
             remoteIp: clientIp
         });
+
+        if (captchaCheck.enabled && captchaCheck.bypassed) {
+            console.warn('Captcha verification bypassed:', captchaCheck.reason || 'unknown');
+        }
 
         if (captchaCheck.enabled && !captchaCheck.ok) {
             console.warn('Captcha verification failed:', captchaCheck.reason || 'unknown');

@@ -45,8 +45,8 @@ Edit `.env` and set at least:
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
 | `APP_URL`      | Links in the email                   | Your app URL (e.g. Vercel URL or `http://localhost:3000`) |
 | `SLACK_WEBHOOK_URL` | Slack alerts for new signups (optional) | Slack Incoming Webhooks app settings |
-| `TURNSTILE_SECRET_KEY` or `HCAPTCHA_SECRET_KEY` | Server-side captcha verification for signup API (optional but recommended) | Cloudflare Turnstile or hCaptcha dashboard |
-| `TURNSTILE_SITE_KEY` or `HCAPTCHA_SITE_KEY` | Frontend captcha widget rendering (optional) | Same provider dashboard |
+| `TURNSTILE_SECRET_KEY` or `HCAPTCHA_SECRET_KEY` | Server-side captcha verification for signup API (optional but recommended; pair with matching site key) | Cloudflare Turnstile or hCaptcha dashboard |
+| `TURNSTILE_SITE_KEY` or `HCAPTCHA_SITE_KEY` | Frontend captcha widget rendering (required if matching secret key is set) | Same provider dashboard |
 
 - **RSS-only (no DB):** You can run `scripts/check_feeds.py` without any env vars (it only needs `feedparser` and `requests`).
 - **Fetch + DB:** You need `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
@@ -54,6 +54,8 @@ Edit `.env` and set at least:
 - **Signup Slack alerts (optional):** Set `SLACK_WEBHOOK_URL` to post a message when a brand-new subscriber is created.
 - **Signup API:** `frontend/api/subscribe.js` and `frontend/api/unsubscribe.js` use `SUPABASE_SECRET_KEY` (server-side only) for subscriber writes.
 - **Signup abuse controls (optional):** Configure one captcha provider plus optional `SUBSCRIBE_RATE_LIMIT_WINDOW_MS` / `SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS`.
+- **Captcha fail-open behavior:** If secret key is configured but captcha token is missing (widget load/init issue), signup falls back to honeypot + rate limiting and logs a warning.
+- **Frontend site key wiring:** Set `<meta name="hcaptcha-site-key" content="...">` in `frontend/index.html` (or set `window.HCAPTCHA_SITE_KEY`) so the widget renders.
 
 ### Slack webhook setup (optional)
 
