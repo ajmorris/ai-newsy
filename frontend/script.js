@@ -1,15 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('subscribe-form');
-    const emailInput = document.getElementById('email');
-    const websiteInput = document.getElementById('website');
-    const submitBtn = document.getElementById('submit-btn');
-    const formMessage = document.getElementById('form-message');
-    const captchaTokenInput = document.getElementById('captcha-token');
-    const captchaProviderInput = document.getElementById('captcha-provider');
+    const forms = Array.from(document.querySelectorAll('.subscribe-form'));
+    const navSubscribeButton = document.getElementById('nav-subscribe-btn');
+    const recentIssuesList = document.getElementById('recent-issues-list');
+    const globalMessageEl = document.getElementById('form-message');
     const captchaContainer = document.getElementById('captcha-container');
     const hcaptchaWidget = document.getElementById('hcaptcha-widget');
-    const latestIssueCallout = document.getElementById('new-issue-callout');
-    const recentIssuesList = document.getElementById('recent-issues-list');
     const hcaptchaSiteKey = (
         window.HCAPTCHA_SITE_KEY ||
         document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
@@ -39,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function showGlobalMessage(text, type) {
+        if (!globalMessageEl) {
+            return;
+        }
+        globalMessageEl.textContent = text;
+        globalMessageEl.className = `form-message ${type}`;
+    }
+
     window.onTurnstileSuccess = (token) => setCaptchaToken(token, 'turnstile');
     window.onTurnstileExpired = () => setCaptchaToken('', 'turnstile');
     window.onHCaptchaSuccess = (token) => {
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         captchaState.loadError = true;
         captchaState.solved = false;
         setCaptchaToken('', 'hcaptcha');
-        showMessage('Captcha failed to load. You can still continue; anti-spam checks remain active.', 'error');
+        showGlobalMessage('Captcha failed to load. You can still continue; anti-spam checks remain active.', 'error');
     };
     window.onHCaptchaApiLoad = () => {
         if (!captchaState.required || !hcaptchaWidget || !window.hcaptcha) {
@@ -73,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         captchaState.ready = true;
     };
 
-    // Fail-open: if no site key is configured, skip captcha on the frontend.
     if (!captchaState.required && captchaContainer) {
         captchaContainer.hidden = true;
     }
@@ -88,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     forms.forEach((form) => {
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
 
             const emailInput = form.querySelector('input[name="email"]');
             const websiteInput = form.querySelector('input[name="website"]');
@@ -99,16 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const successBody = form.querySelector('.success-body');
             const subscribeRow = form.querySelector('.subscribe-row');
 
-        if (captchaState.required && !captchaState.loadError && (!captchaState.ready || !captchaState.solved || !captchaToken)) {
-            showMessage('Please complete the captcha before subscribing.', 'error');
-            return;
-        }
-
-        // Show loading state
-        submitBtn.classList.add('loading');
-        submitBtn.disabled = true;
-        formMessage.textContent = '';
-        formMessage.className = 'form-message';
+            if (!emailInput || !submitButton || !formMeta || !successPanel || !successBody || !subscribeRow) {
+                return;
+            }
 
             const email = emailInput.value.trim();
             const honeypotValue = websiteInput ? websiteInput.value : '';
@@ -120,28 +115,79 @@ document.addEventListener('DOMContentLoaded', () => {
             formMeta.textContent = '» free · one email / day · unsub anytime';
             successPanel.hidden = true;
             subscribeRow.hidden = false;
+            showGlobalMessage('', '');
 
-            if (response.ok) {
-                if (data.status === 'pending') {
-                    showMessage('🎉 Check your email to confirm your subscription!', 'success');
+            if (!email) {
+                applyErrorState(form, formMeta, 'Field required.');
+                return;
+            }
+            if (!isValidEmail(email)) {
+                applyErrorState(form, formMeta, 'Invalid email format.');
+                return;
+            }
+            if (captchaState.required && !captchaState.loadError && (!captchaState.ready || !captchaState.solved || !captchaToken)) {
+                applyErrorState(form, formMeta, 'Please complete the captcha before subscribing.');
+                return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            try {
+                const response = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email,
+                        website: honeypotValue,
+                        captchaToken,
+                        captchaProvider,
+                    }),
+                });
+
+                const contentType = (response.headers.get('content-type') || '').toLowerCase();
+                let data = {};
+                if (contentType.includes('application/json')) {
+                    data = await response.json();
                 } else {
-                    showMessage('🎉 You are subscribed. Welcome to AI Newsy!', 'success');
+                    const rawText = await response.text();
+                    data = { error: rawText || 'Unexpected server response.' };
                 }
+
+                if (!response.ok) {
+                    applyErrorState(form, formMeta, data.error || `Request failed (${response.status}). Try again.`);
+                    return;
+                }
+
+                form.classList.add('form-success-state');
+                subscribeRow.hidden = true;
+                successPanel.hidden = false;
+
+                if (data.status === 'already-subscribed') {
+                    successBody.textContent = `Already subscribed. You are on the AI Newsy list. - ${email}`;
+                } else if (data.status === 'confirmed') {
+                    successBody.textContent = `Subscription confirmed. Welcome to AI Newsy. - ${email}`;
+                } else {
+                    successBody.textContent = `Confirmation sent. Check your inbox. - ${email}`;
+                }
+
                 emailInput.value = '';
                 if (websiteInput) {
                     websiteInput.value = '';
                 }
-                emailInput.value = '';
                 setCaptchaToken('', captchaProvider);
                 captchaState.solved = false;
                 if (window.hcaptcha && typeof captchaState.widgetId === 'number') {
                     window.hcaptcha.reset(captchaState.widgetId);
                 }
-
-                // Update subscriber count animation
-                updateSubscriberCount();
-            } else {
-                showMessage(data.error || 'Something went wrong. Please try again.', 'error');
+            } catch (error) {
+                console.error('Subscription error:', error);
+                applyErrorState(form, formMeta, 'Network error. Try again.');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Subscribe ↵';
             }
         });
     });
