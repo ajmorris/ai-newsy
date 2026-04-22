@@ -7,13 +7,22 @@ on:
     paths:
       - 'data/digests/*.md'
       - 'execution/build_web_archive.py'
+  workflow_run:
+    workflows:
+      - Daily AI Digest
+    branches:
+      - main
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: write
 
 jobs:
   publish-web-archive:
+    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
 
     steps:
@@ -32,12 +41,69 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Download digest markdown artifact from Daily AI Digest
+        if: ${{ github.event_name == 'workflow_run' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: digest-markdown-${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          run-id: ${{ github.event.workflow_run.id }}
+          path: /tmp/digest-markdown
+
+      - name: Sync downloaded digest markdown into repository
+        if: ${{ github.event_name == 'workflow_run' }}
+        run: |
+          mkdir -p data/digests
+          shopt -s globstar nullglob
+          files=(/tmp/digest-markdown/**/*.md)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No digest markdown files found in downloaded artifact."
+            exit 1
+          fi
+          for file in "${files[@]}"; do
+            cp "$file" "data/digests/$(basename "$file")"
+          done
+          ls -1 data/digests/*.md
+
       - name: Build archive pages and manifest
         run: python execution/build_web_archive.py
 
+      - name: Validate archive manifest matches digest inputs
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          digest_files = sorted(Path("data/digests").glob("*.md"))
+          if not digest_files:
+              raise SystemExit("No digest markdown files found in data/digests.")
+
+          dated = [p.stem for p in digest_files if re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)]
+          expected_latest = max(dated) if dated else digest_files[-1].stem
+          expected_count = len(digest_files)
+
+          manifest_path = Path("frontend/issues/index.json")
+          if not manifest_path.exists():
+              raise SystemExit("Archive manifest missing: frontend/issues/index.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          actual_count = int(manifest.get("issueCount", -1))
+          latest_issue = manifest.get("latestIssue") or {}
+          actual_latest = str(latest_issue.get("digestDate", ""))
+
+          print(f"Expected digest count: {expected_count} | Manifest issueCount: {actual_count}")
+          print(f"Expected latest digest date: {expected_latest} | Manifest latestIssue: {actual_latest}")
+
+          if actual_count != expected_count:
+              raise SystemExit("Manifest issueCount does not match digest markdown file count.")
+          if actual_latest != expected_latest:
+              raise SystemExit("Manifest latestIssue.digestDate does not match latest digest markdown date.")
+          PY
+
       - name: Commit and push generated archive updates
         env:
-          BRANCH_NAME: ${{ github.ref_name }}
+          BRANCH_NAME: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_branch || github.ref_name }}
         run: |
           git add frontend/issues
           if git diff --staged --quiet; then

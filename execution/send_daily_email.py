@@ -425,7 +425,7 @@ def generate_email_html(
         tweet_section_html = f"""
         <div style="margin-bottom: 32px;">
             <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
-                From X/Twitter
+                Here's what's going on in Twitter/X
             </h2>
             <ul style="padding-left: 20px; margin: 0;">
                 {tweet_items_html}
@@ -441,7 +441,7 @@ def generate_email_html(
         community_section_html = f"""
         <div style="margin-bottom: 32px;">
             <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
-                From Reddit/HN/YC
+                Here's what we're hearing from the community
             </h2>
             <ul style="padding-left: 20px; margin: 0;">
                 {community_items_html}
@@ -513,20 +513,22 @@ def _build_email_renderer_payload(
                 }
             )
 
-    quick_hits: List[Dict[str, str]] = []
+    tweet_quick_hits: List[Dict[str, str]] = []
     for item in (tweet_headlines or [])[:6]:
         headline = str(item.get("headline", "") or "").strip()
         if headline:
-            quick_hits.append(
+            tweet_quick_hits.append(
                 {
                     "headline": headline,
                     "url": str(item.get("url", "") or "").strip(),
                 }
             )
+
+    community_quick_hits: List[Dict[str, str]] = []
     for item in (community_headlines or [])[:6]:
         headline = str(item.get("headline", "") or "").strip()
         if headline:
-            quick_hits.append(
+            community_quick_hits.append(
                 {
                     "headline": headline,
                     "url": str(item.get("url", "") or "").strip(),
@@ -542,7 +544,8 @@ def _build_email_renderer_payload(
         "dateLabel": digest_date,
         "issueNumber": issue_number,
         "stories": stories[:8],
-        "quickHits": quick_hits[:6],
+        "tweetHeadlines": tweet_quick_hits,
+        "communityHeadlines": community_quick_hits,
         "unsubscribeUrl": f"{APP_URL}/api/unsubscribe?token={unsubscribe_token}",
         "viewInBrowserUrl": f"{APP_URL}/issues/{digest_date}.html",
         "archiveUrl": archive_url,
