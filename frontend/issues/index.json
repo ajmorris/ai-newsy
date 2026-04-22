@@ -1,12 +1,12 @@
 {
   "generatedAt": "2026-04-22T00:00:00Z",
-  "issueCount": 3,
+  "issueCount": 2,
   "latestIssue": {
     "slug": "2026-04-22",
     "digestDate": "2026-04-22",
     "displayDate": "Apr 22, 2026",
-    "issueNumber": "3",
-    "subject": "ISSUE 3 \u00b7 39 STORIES \u00b7 11 MIN READ",
+    "issueNumber": "2",
+    "subject": "ISSUE 2 \u00b7 39 STORIES \u00b7 11 MIN READ",
     "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* \u2014 Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
     "articleCount": 39,
     "urlPath": "/issues/2026-04-22.html"
@@ -16,8 +16,8 @@
       "slug": "2026-04-22",
       "digestDate": "2026-04-22",
       "displayDate": "Apr 22, 2026",
-      "issueNumber": "3",
-      "subject": "ISSUE 3 \u00b7 39 STORIES \u00b7 11 MIN READ",
+      "issueNumber": "2",
+      "subject": "ISSUE 2 \u00b7 39 STORIES \u00b7 11 MIN READ",
       "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* \u2014 Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
       "articleCount": 39,
       "urlPath": "/issues/2026-04-22.html"
@@ -26,21 +26,11 @@
       "slug": "2026-04-21",
       "digestDate": "2026-04-21",
       "displayDate": "Apr 21, 2026",
-      "issueNumber": "2",
-      "subject": "ISSUE 2 \u00b7 15 STORIES \u00b7 11 MIN READ",
+      "issueNumber": "1",
+      "subject": "ISSUE 1 \u00b7 15 STORIES \u00b7 11 MIN READ",
       "intro": "Today, all eyes are on AI's potential for misuse, from manipulated political imagery raising concerns about disinformation to reports of the NSA using Anthropic's restricted Mythos model. We'll also dive into how companies are grappling with AI's impact, including a nuclear power startup facing a leadership crisis and tech workers training AI to take over their jobs. Plus, hear how Intercom doubled engineering output using Claude Code!",
       "articleCount": 15,
       "urlPath": "/issues/2026-04-21.html"
-    },
-    {
-      "slug": "2016-04-22",
-      "digestDate": "2016-04-22",
-      "displayDate": "Apr 22, 2016",
-      "issueNumber": "1",
-      "subject": "ISSUE 1 \u00b7 0 STORIES \u00b7 11 MIN READ",
-      "intro": "No stories selected.",
-      "articleCount": 0,
-      "urlPath": "/issues/2016-04-22.html"
     }
   ]
 }
