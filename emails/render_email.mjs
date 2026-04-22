@@ -117,7 +117,7 @@ const mjml = `
                 <div style="font-family:Inter,Arial,sans-serif;color:${DB.text};font-size:14px;font-weight:700;">AI News Daily</div>
               </td>
               <td style="vertical-align:middle;text-align:right;">
-                <div style="font-family:'JetBrains Mono',Menlo,monospace;color:${DB.textDim};font-size:10px;letter-spacing:1px;text-transform:uppercase;">Issue ${esc(issueLabel)} · ${stories.length} stories · 11 min read</div>
+                <div style="font-family:'JetBrains Mono',Menlo,monospace;color:${DB.textDim};font-size:10px;letter-spacing:1px;text-transform:uppercase;">${esc(payload.subject || `ISSUE ${issueLabel} · ${stories.length} STORIES · 11 MIN READ`)}</div>
               </td>
             </tr>
           </mj-table>

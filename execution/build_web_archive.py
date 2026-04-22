@@ -38,6 +38,7 @@ class DigestIssue:
     body_html: str
     slug: str
     source_file: str
+    issue_number: int = 0
 
     @property
     def url_path(self) -> str:
@@ -52,13 +53,11 @@ class DigestIssue:
             return self.digest_date
 
     def to_manifest_item(self) -> Dict[str, object]:
-        digits = "".join(ch for ch in self.slug if ch.isdigit())
-        issue_number = digits[-5:] if digits else "00000"
         return {
             "slug": self.slug,
             "digestDate": self.digest_date,
             "displayDate": self.display_date,
-            "issueNumber": issue_number,
+            "issueNumber": str(self.issue_number),
             "subject": self.subject,
             "intro": self.intro,
             "articleCount": self.article_count,
@@ -92,6 +91,10 @@ def _read_issue(markdown_path: Path) -> Optional[DigestIssue]:
         slug=slug,
         source_file=str(markdown_path),
     )
+
+
+def _build_issue_subject(issue_number: int, article_count: int) -> str:
+    return f"ISSUE {issue_number} · {article_count} STORIES · 11 MIN READ"
 
 
 def _render_tweet_headline_html(item: Dict[str, object]) -> str:
@@ -282,8 +285,6 @@ def _digest_markdown_to_web_html(markdown_body: str) -> str:
 
 def _render_issue_page(issue: DigestIssue) -> str:
     intro_text = html.escape(issue.intro)
-    issue_digits = "".join(ch for ch in issue.slug if ch.isdigit())
-    issue_number = issue_digits[-5:] if issue_digits else "00000"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -417,7 +418,7 @@ def _render_issue_page(issue: DigestIssue) -> str:
     </nav>
     <header class="issue-header">
       <h1>AI News Daily</h1>
-      <p>Issue #{issue_number} · {issue.display_date} · {issue.article_count} stories</p>
+      <p>Issue #{issue.issue_number} · {issue.display_date} · {issue.article_count} stories</p>
     </header>
 
     <section class="cta">
@@ -454,7 +455,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
         [
             (
                 f'<li>'
-                f'<span class="issue-id">#{("".join(ch for ch in issue.slug if ch.isdigit())[-5:] or "00000")}</span>'
+                f'<span class="issue-id">#{issue.issue_number}</span>'
                 f'<span class="issue-date">{issue.display_date}</span>'
                 f'<a href="{issue.slug}.html">{html.escape(issue.subject)}</a>'
                 f'<span>{issue.article_count} stories</span>'
@@ -575,6 +576,12 @@ def build_web_archive() -> Dict[str, int]:
         issue = _read_issue(issue_file)
         if issue is not None:
             issues.append(issue)
+
+    issues.sort(key=lambda item: item.digest_date)
+
+    for idx, issue in enumerate(issues, start=1):
+        issue.issue_number = idx
+        issue.subject = _build_issue_subject(issue.issue_number, issue.article_count)
 
     issues.sort(key=lambda item: item.digest_date, reverse=True)
 

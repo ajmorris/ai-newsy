@@ -75,6 +75,17 @@ DEFAULT_CATEGORY = "Other AI News"
 EMAIL_RENDERER_SCRIPT = Path("emails/render_email.mjs")
 
 
+def _issue_number_from_digest_date(digest_date: str) -> str:
+    """Build the short issue number from a YYYY-MM-DD digest date."""
+    return "".join(ch for ch in digest_date if ch.isdigit())[-5:] or "00137"
+
+
+def _build_digest_summary_line(digest_date: str, story_count: int) -> str:
+    """Create canonical digest line used for subject and email header."""
+    issue_number = _issue_number_from_digest_date(digest_date)
+    return f"ISSUE {issue_number} · {story_count} STORIES · 11 MIN READ"
+
+
 def generate_intro(articles: list) -> str:
     """Generate an AI introduction synthesizing all articles."""
     try:
@@ -293,6 +304,7 @@ def _markdown_body_to_html(markdown_body: str) -> str:
 def _load_digest_markdown_email(
     digest_date: str,
     unsubscribe_token: str,
+    digest_summary_line: str,
 ) -> Optional[Dict[str, str]]:
     markdown_dir = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
     file_path = markdown_dir / f"{digest_date}.md"
@@ -301,7 +313,7 @@ def _load_digest_markdown_email(
 
     raw = file_path.read_text(encoding="utf-8")
     meta, body = _parse_frontmatter(raw)
-    subject = meta.get("subject", f"AI Newsy • {digest_date}")
+    subject = meta.get("subject", digest_summary_line)
     intro = meta.get("intro", "")
     body_html = _markdown_body_to_html(body)
 
@@ -319,7 +331,7 @@ def _load_digest_markdown_email(
                 <div style="padding: 28px 28px 18px; background-color: #121214; border-bottom: 1px solid #1d1d21;">
                     <h1 style="color: #f4f3ef; font-size: 34px; margin: 0 0 10px 0; font-weight: 700; letter-spacing: -1px; line-height: 1.1;">The AI feed, distilled.</h1>
                     <p style="color: #a3a099; margin: 0; font-size: 14px; line-height: 1.6;">{html.escape(intro)}</p>
-                    <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">Issue {digest_date} · AI Newsy</p>
+                    <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">{html.escape(digest_summary_line)}</p>
                 </div>
             </div>
             <div style="margin-bottom: 32px;">
@@ -345,9 +357,11 @@ def generate_email_html(
     tweet_headlines: Optional[List[dict]] = None,
     community_headlines: Optional[List[dict]] = None,
     unsubscribe_token: str = "",
+    digest_summary_line: str = "",
 ) -> str:
     """Generate HTML email with grouped sections. Links and takeaways styled for clarity."""
     today = datetime.now().strftime("%B %d, %Y")
+    summary_line = digest_summary_line or f"{today} · AI Newsy"
 
     # ---- Sections and article cards ----
     section_blocks = ""
@@ -450,7 +464,7 @@ def generate_email_html(
                 <div style="padding: 28px 28px 18px; background-color: #121214; border-bottom: 1px solid #1d1d21;">
                     <h1 style="color: #f4f3ef; font-size: 34px; margin: 0 0 10px 0; font-weight: 700; letter-spacing: -1px; line-height: 1.1;">The AI feed, distilled.</h1>
                     <p style="color: #a3a099; margin: 0; font-size: 14px; line-height: 1.6;">{intro}</p>
-                    <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">{today} · AI Newsy</p>
+                    <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">{summary_line}</p>
                 </div>
             </div>
             <div style="margin-bottom: 32px;">
@@ -507,7 +521,7 @@ def _build_email_renderer_payload(
         if item.get("headline"):
             quick_hits.append(str(item["headline"]))
 
-    issue_number = "".join(ch for ch in digest_date if ch.isdigit())[-5:] or "00137"
+    issue_number = _issue_number_from_digest_date(digest_date)
     archive_url = f"{APP_URL}/issues/"
     return {
         "subject": subject,
@@ -683,9 +697,11 @@ def send_daily_digest(
     intro = generate_intro(articles)
     print(f"   Intro: {intro[:80]}...")
 
-    # Subject line (no longer single-topic; reflect total story count)
-    today = datetime.now().strftime("%b %d")
-    subject = f"AI Newsy • {today} • {len(articles)} Stories"
+    # Subject/header line uses issue number + included story count.
+    digest_date = datetime.utcnow().date().isoformat()
+    included_story_count = min(len(articles), 8)
+    digest_summary_line = _build_digest_summary_line(digest_date, included_story_count)
+    subject = digest_summary_line
     if sent_yesterday:
         subject = f"[TEST Replay] {subject}"
 
@@ -694,7 +710,6 @@ def send_daily_digest(
 
     # Build sections once from article topics so each article appears only once
     sections = group_articles_by_category(articles)
-    digest_date = datetime.utcnow().date().isoformat()
     extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines")
     tweet_headlines = []
     if not extra:
@@ -755,7 +770,7 @@ def send_daily_digest(
         payload = _build_email_renderer_payload(
             sections=sections,
             intro=intro,
-            subject=subject,
+            subject=digest_summary_line,
             unsubscribe_token=token,
             digest_date=digest_date,
             tweet_headlines=tweet_headlines,
@@ -767,7 +782,11 @@ def send_daily_digest(
             html = rendered_html
             subject_to_send = subject
         else:
-            compiled = _load_digest_markdown_email(digest_date=digest_date, unsubscribe_token=token)
+            compiled = _load_digest_markdown_email(
+                digest_date=digest_date,
+                unsubscribe_token=token,
+                digest_summary_line=digest_summary_line,
+            )
             if compiled:
                 html = compiled["html"]
                 subject_to_send = compiled["subject"]
@@ -778,6 +797,7 @@ def send_daily_digest(
                     tweet_headlines=tweet_headlines,
                     community_headlines=community_headlines,
                     unsubscribe_token=token,
+                    digest_summary_line=digest_summary_line,
                 )
                 subject_to_send = subject
         

@@ -117,6 +117,8 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
 .lights span { width: 10px; height: 10px; border-radius: 999px; background: var(--danger); }
 .lights span:nth-child(2) { background: var(--traffic-amber); }
 .lights span:nth-child(3) { background: var(--accent); }
+.card-top > span:first-of-type { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-top > span:last-of-type { flex-shrink: 0; }
 .card-head { padding: 28px 28px 4px; }
 .card-kicker { margin: 0; font-size: 11px; color: var(--accent); }
 .card-head h3 { margin: 8px 0 0; font-size: 28px; line-height: 1.15; letter-spacing: -.8px; }

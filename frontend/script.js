@@ -2,9 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const forms = Array.from(document.querySelectorAll('.subscribe-form'));
     const navSubscribeButton = document.getElementById('nav-subscribe-btn');
     const recentIssuesList = document.getElementById('recent-issues-list');
+    const nextIssueNumberEl = document.getElementById('next-issue-number');
+    const nextIssueCountdownEl = document.getElementById('next-issue-countdown');
     const globalMessageEl = document.getElementById('form-message');
     const captchaContainer = document.getElementById('captcha-container');
     const hcaptchaWidget = document.getElementById('hcaptcha-widget');
+    const NEWSLETTER_TIME_ZONE = 'America/New_York';
+    const FALLBACK_ISSUE_NUMBER = '001';
+    const COUNTDOWN_FALLBACK_TEXT = 'ships daily at 8:00 AM ET';
     const hcaptchaSiteKey = (
         window.HCAPTCHA_SITE_KEY ||
         document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
@@ -20,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     loadRecentIssues();
+    initializeHeroCountdown();
 
     function setCaptchaToken(token, provider) {
         forms.forEach((form) => {
@@ -219,10 +225,64 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await response.json();
             renderRecentIssues(data.recentIssues || []);
+            updateHeroIssueNumber(data);
         } catch (error) {
             console.error('Issue archive load error:', error);
             recentIssuesList.innerHTML = '<li class="issues-loading">No issues published yet. Check back soon.</li>';
+            updateHeroIssueNumber(null);
         }
+    }
+
+    function initializeHeroCountdown() {
+        if (!nextIssueCountdownEl) {
+            return;
+        }
+
+        updateHeroCountdown();
+        setInterval(updateHeroCountdown, 60 * 1000);
+    }
+
+    function updateHeroIssueNumber(manifestData) {
+        if (!nextIssueNumberEl) {
+            return;
+        }
+
+        const issueCount = Number(manifestData && manifestData.issueCount);
+        if (!Number.isFinite(issueCount) || issueCount < 0) {
+            nextIssueNumberEl.textContent = FALLBACK_ISSUE_NUMBER;
+            return;
+        }
+
+        const nextIssue = issueCount + 1;
+        nextIssueNumberEl.textContent = String(nextIssue).padStart(3, '0');
+    }
+
+    function updateHeroCountdown() {
+        try {
+            const minutesRemaining = getMinutesUntilNextSend();
+            const hours = Math.floor(minutesRemaining / 60);
+            const minutes = minutesRemaining % 60;
+            nextIssueCountdownEl.textContent = `ships in ${hours}h ${minutes}m`;
+        } catch (error) {
+            console.error('Countdown update error:', error);
+            nextIssueCountdownEl.textContent = COUNTDOWN_FALLBACK_TEXT;
+        }
+    }
+
+    function getMinutesUntilNextSend() {
+        const now = new Date();
+        const nowInNewsletterTz = new Date(
+            now.toLocaleString('en-US', { timeZone: NEWSLETTER_TIME_ZONE })
+        );
+
+        const nextSendInNewsletterTz = new Date(nowInNewsletterTz);
+        nextSendInNewsletterTz.setHours(8, 0, 0, 0);
+        if (nowInNewsletterTz >= nextSendInNewsletterTz) {
+            nextSendInNewsletterTz.setDate(nextSendInNewsletterTz.getDate() + 1);
+        }
+
+        const msRemaining = nextSendInNewsletterTz.getTime() - nowInNewsletterTz.getTime();
+        return Math.max(0, Math.floor(msRemaining / (60 * 1000)));
     }
 
     function renderRecentIssues(recentIssues) {
