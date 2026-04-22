@@ -52,22 +52,31 @@ export async function sendConfirmationEmail(email, token) {
         to: email,
         subject: 'Confirm your AI Newsy subscription',
         html: `
-            <div style="font-family: Inter, Arial, sans-serif; max-width: 520px; margin: 0 auto; color: #111827;">
-                <h1 style="font-size: 24px; margin-bottom: 12px;">Confirm your subscription</h1>
-                <p style="font-size: 15px; line-height: 1.6; margin-bottom: 20px;">
-                    Click the button below to confirm you want to receive the AI Newsy daily digest.
-                </p>
-                <p style="margin-bottom: 24px;">
-                    <a
-                        href="${confirmUrl}"
-                        style="background: #4f46e5; color: #ffffff; text-decoration: none; padding: 12px 18px; border-radius: 8px; display: inline-block; font-weight: 600;"
-                    >
-                        Confirm subscription
-                    </a>
-                </p>
-                <p style="font-size: 13px; color: #6b7280;">
-                    If you did not request this, you can safely ignore this email.
-                </p>
+            <div style="margin:0;padding:24px 16px;background:#0b0b0c;font-family:Inter,Arial,sans-serif;">
+                <div style="max-width:640px;margin:0 auto;background:#17171a;border:1px solid #26262b;color:#f4f3ef;">
+                    <div style="padding:24px 24px 18px;background:#121214;border-bottom:1px solid #1d1d21;">
+                        <div style="display:inline-block;background:#39ff88;color:#0b0b0c;border-radius:2px;padding:4px 8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+                            AI Newsy
+                        </div>
+                        <h1 style="margin:14px 0 10px 0;font-size:30px;line-height:1.1;letter-spacing:-1px;color:#f4f3ef;">
+                            Confirm your subscription.
+                        </h1>
+                        <p style="margin:0;color:#a3a099;font-size:14px;line-height:1.6;">
+                            One click and you are in. We will send one concise AI digest each morning.
+                        </p>
+                    </div>
+                    <div style="padding:22px 24px;">
+                        <a
+                            href="${confirmUrl}"
+                            style="display:inline-block;background:#39ff88;color:#0b0b0c;text-decoration:none;padding:11px 16px;border-radius:2px;font-family:'JetBrains Mono',Menlo,monospace;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;box-shadow:0 0 20px rgba(57,255,136,0.4);"
+                        >
+                            Confirm subscription ->
+                        </a>
+                        <p style="margin:14px 0 0 0;color:#6b6a65;font-family:'JetBrains Mono',Menlo,monospace;font-size:10px;line-height:1.8;">
+                            If this was not you, ignore this email.
+                        </p>
+                    </div>
+                </div>
             </div>
         `,
         text: `Confirm your AI Newsy subscription: ${confirmUrl}`
