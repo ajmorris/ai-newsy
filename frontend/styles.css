@@ -133,8 +133,41 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
 .section-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
 .section-top p { margin: 0; color: var(--text-mute); }
 .section-top .mono { color: var(--text-dim); font-size: 11px; }
-.sources-grid { display: grid; grid-template-columns: repeat(6, 1fr); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
-.sources-grid span { padding: 22px 18px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 17px; font-weight: 600; }
+.sources-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-auto-columns: minmax(150px, 1fr);
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+.source-card {
+    margin: 0;
+    min-height: 100px;
+    padding: 16px 14px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
+    text-align: center;
+    background: color-mix(in oklab, var(--card) 66%, transparent);
+}
+.source-card img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #fff;
+    padding: 4px;
+}
+.source-card span {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text);
+}
 
 .archive { padding: 80px 48px; }
 .archive-heading { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
@@ -184,7 +217,12 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
     .hero { grid-template-columns: 1fr; gap: 40px; padding: 56px 24px 40px; }
     h1 { font-size: 72px; letter-spacing: -3.2px; }
     .sources, .archive, .testimonials { padding: 56px 24px; }
-    .sources-grid { grid-template-columns: repeat(3, 1fr); }
+    .sources-grid {
+        grid-auto-flow: row;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+    .source-card:nth-child(n+13) { display: none; }
     .archive-heading h2, .testimonials h2 { font-size: 42px; }
     .archive-list li { grid-template-columns: 90px 1fr 100px 90px 24px; }
     .archive-list .archive-date { display: none; }
@@ -215,8 +253,15 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
     .card-stories h4 { font-size: 14px; }
     .card-stories p { font-size: 12px; }
     .sources { padding: 32px 16px; }
-    .sources-grid { grid-template-columns: repeat(2, 1fr); }
-    .sources-grid span { padding: 14px 12px; font-size: 13px; }
+    .sources-grid {
+        grid-auto-flow: row;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .source-card:nth-child(n+9) { display: none; }
+    .source-card { min-height: 88px; padding: 12px 8px; }
+    .source-card img { width: 28px; height: 28px; }
+    .source-card span { font-size: 11px; }
     .archive { padding: 40px 16px; }
     .archive-heading { margin-bottom: 24px; }
     .archive-heading h2 { font-size: 32px; letter-spacing: -1.2px; }
