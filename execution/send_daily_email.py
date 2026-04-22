@@ -95,6 +95,64 @@ def generate_intro(articles: list) -> str:
         return "Here's what's making waves in AI today."
 
 
+def _parse_story_json_blob(raw_text: str) -> Optional[Dict[str, object]]:
+    """Parse JSON story payloads that may be wrapped in markdown fences."""
+    text = (raw_text or "").strip()
+    if not text:
+        return None
+
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text, count=1, flags=re.IGNORECASE).strip()
+        text = re.sub(r"\s*```$", "", text, count=1).strip()
+
+    if not text.startswith("{"):
+        match = re.search(r"(\{[\s\S]*\})", text)
+        if not match:
+            return None
+        text = match.group(1).strip()
+
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+
+    if not isinstance(payload, dict):
+        return None
+
+    if not any(key in payload for key in ("summary", "opinion", "image_url", "topic")):
+        return None
+    return payload
+
+
+def _normalize_article_for_email(article: Dict[str, object]) -> Dict[str, object]:
+    """Normalize article fields so renderers receive clean summary/opinion/image values."""
+    normalized = dict(article)
+    summary = str(normalized.get("summary", "") or "").strip()
+    opinion = str(normalized.get("opinion", "") or "").strip()
+    image_url = str(normalized.get("image_url", "") or "").strip()
+
+    parsed = _parse_story_json_blob(summary) or _parse_story_json_blob(opinion)
+    if parsed:
+        parsed_summary = str(parsed.get("summary", "") or "").strip()
+        parsed_opinion = str(parsed.get("opinion", "") or "").strip()
+        parsed_image = str(parsed.get("image_url", "") or "").strip()
+        parsed_topic = str(parsed.get("topic", "") or "").strip()
+
+        if parsed_summary:
+            summary = parsed_summary
+        if parsed_opinion:
+            opinion = parsed_opinion
+        if parsed_image:
+            image_url = parsed_image
+        if parsed_topic and not str(normalized.get("topic", "") or "").strip():
+            normalized["topic"] = parsed_topic
+
+    normalized["summary"] = summary
+    normalized["opinion"] = opinion
+    normalized["image_url"] = image_url
+    return normalized
+
+
 def _markdown_body_to_html(markdown_body: str) -> str:
     lines = markdown_body.splitlines()
     output: List[str] = []
@@ -133,21 +191,21 @@ def _markdown_body_to_html(markdown_body: str) -> str:
         opinion_html = ""
         if opinion:
             opinion_html = (
-                '<div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; '
-                'border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">'
-                '<p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>'
-                f'<p style="margin: 0; color: #2b2c34; font-size: 14px; line-height: 1.5;">{opinion}</p>'
+                '<div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; '
+                'border-left: 2px solid #39ff88; border-radius: 0 2px 2px 0;">'
+                '<p style="margin: 0 0 4px 0; color: #39ff88; font-family: \'JetBrains Mono\', Menlo, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Why it matters</p>'
+                f'<p style="margin: 0; color: #f4f3ef; font-size: 14px; line-height: 1.5;">{opinion}</p>'
                 "</div>"
             )
 
         output.append(
-            '<div style="padding: 24px 0; border-bottom: 1px solid #d1d1e9;">'
-            f'<p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">{source}</p>'
+            '<div style="padding: 24px 0; border-bottom: 1px solid #1d1d21;">'
+            f'<p style="margin: 0 0 8px 0; color: #6b6a65; font-family: \'JetBrains Mono\', Menlo, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">{source}</p>'
             f"{image_html}"
-            f'<h3 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">'
-            f'<a href="{link}" style="color: #6246ea; text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
+            f'<h3 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em;">'
+            f'<a href="{link}" style="color: #f4f3ef; text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
             "</h3>"
-            f'<p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">{summary}</p>'
+            f'<p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.6;">{summary}</p>'
             f"{opinion_html}"
             "</div>"
         )
@@ -179,7 +237,7 @@ def _markdown_body_to_html(markdown_body: str) -> str:
         if stripped.startswith("## "):
             close_list()
             flush_article()
-            output.append(f'<h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">{_md_inline_to_html(stripped[3:])}</h2>')
+            output.append(f'<h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">{_md_inline_to_html(stripped[3:])}</h2>')
             continue
 
         if stripped.startswith("### "):
@@ -221,11 +279,11 @@ def _markdown_body_to_html(markdown_body: str) -> str:
             if not in_list:
                 output.append('<ul style="padding-left: 20px; margin: 0 0 12px 0;">')
                 in_list = True
-            output.append(f'<li style="margin-bottom: 10px; line-height: 1.6; color: #2b2c34;">{_md_inline_to_html(stripped[2:])}</li>')
+            output.append(f'<li style="margin-bottom: 10px; line-height: 1.6; color: #a3a099;">{_md_inline_to_html(stripped[2:])}</li>')
             continue
 
         flush_article()
-        output.append(f'<p style="margin: 0 0 10px 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">{_md_inline_to_html(stripped)}</p>')
+        output.append(f'<p style="margin: 0 0 10px 0; color: #a3a099; font-size: 15px; line-height: 1.6;">{_md_inline_to_html(stripped)}</p>')
 
     close_list()
     flush_article()
@@ -254,23 +312,25 @@ def _load_digest_markdown_email(
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="margin: 0; padding: 0; background-color: #fffffe; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;">
-        <div style="max-width: 560px; margin: 0 auto; padding: 48px 24px;">
+    <body style="margin: 0; padding: 0; background-color: #0b0b0c; color: #f4f3ef; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+        <div style="max-width: 640px; margin: 0 auto; padding: 24px 16px;">
+            <div style="background-color: #17171a; border: 1px solid #26262b;">
             <div style="margin-bottom: 32px;">
-                <h1 style="color: #2b2c34; font-size: 24px; margin: 0; font-weight: 700;">AI Newsy</h1>
-                <p style="color: #6246ea; margin: 4px 0 0 0; font-size: 14px;">{digest_date}</p>
-            </div>
-            <div style="margin-bottom: 32px; padding: 20px; background-color: #d1d1e9; border-radius: 8px;">
-                <p style="margin: 0; color: #2b2c34; font-size: 16px; line-height: 1.7;">{html.escape(intro)}</p>
+                <div style="padding: 28px 28px 18px; background-color: #121214; border-bottom: 1px solid #1d1d21;">
+                    <h1 style="color: #f4f3ef; font-size: 34px; margin: 0 0 10px 0; font-weight: 700; letter-spacing: -1px; line-height: 1.1;">The AI feed, distilled.</h1>
+                    <p style="color: #a3a099; margin: 0; font-size: 14px; line-height: 1.6;">{html.escape(intro)}</p>
+                    <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">Issue {digest_date} · AI Newsy</p>
+                </div>
             </div>
             <div style="margin-bottom: 32px;">
-                {body_html}
+                <div style="padding: 0 28px 24px 28px;">{body_html}</div>
             </div>
-            <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
-                <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
+            <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
+                <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
                     You're receiving this because you subscribed to AI Newsy.
-                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #6246ea; text-decoration: underline;">Unsubscribe</a>
+                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
                 </p>
+            </div>
             </div>
         </div>
     </body>
@@ -304,9 +364,9 @@ def generate_email_html(
             opinion_html = ""
             if opinion:
                 opinion_html = f"""
-                <div style="margin-top: 12px; padding: 12px 14px; background-color: #d1d1e9; border-left: 3px solid #6246ea; border-radius: 0 4px 4px 0;">
-                    <p style="margin: 0 0 4px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>
-                    <p style="margin: 0; color: #2b2c34; font-size: 14px; line-height: 1.5;">{opinion}</p>
+                <div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; border-left: 2px solid #39ff88; border-radius: 0 2px 2px 0;">
+                    <p style="margin: 0 0 4px 0; color: #39ff88; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Why it matters</p>
+                    <p style="margin: 0; color: #f4f3ef; font-size: 14px; line-height: 1.5;">{opinion}</p>
                 </div>
                 """
 
@@ -316,15 +376,15 @@ def generate_email_html(
                 image_html = f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{title_esc}" style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; border-radius: 6px;" width="560" /></div>'
 
             article_cards += f"""
-            <div style="padding: 24px 0; border-bottom: 1px solid #d1d1e9;">
-                <p style="margin: 0 0 6px 0; color: #6246ea; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">
+            <div style="padding: 24px 0; border-bottom: 1px solid #1d1d21;">
+                <p style="margin: 0 0 8px 0; color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">
                     {source}
                 </p>
                 {image_html}
-                <h3 style="margin: 0 0 8px 0; font-size: 20px; font-weight: 600; line-height: 1.35;">
-                    <a href="{article.get("url", "#")}" style="color: #6246ea; text-decoration: none; padding: 4px 0; display: inline-block;">{article.get("title", "Untitled")}</a>
+                <h3 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em;">
+                    <a href="{article.get("url", "#")}" style="color: #f4f3ef; text-decoration: none; padding: 4px 0; display: inline-block;">{article.get("title", "Untitled")}</a>
                 </h3>
-                <p style="margin: 0; color: #2b2c34; font-size: 15px; line-height: 1.6;">
+                <p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.6;">
                     {article.get("summary", "No summary available.")}
                 </p>
                 {opinion_html}
@@ -333,7 +393,7 @@ def generate_email_html(
 
         section_blocks += f"""
         <div style="margin-bottom: 32px;">
-            <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
+            <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
                 {name}
             </h2>
             {article_cards}
@@ -346,11 +406,11 @@ def generate_email_html(
     tweet_section_html = ""
     if tweet_headlines:
         tweet_items_html = "".join(
-            [f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #2b2c34;\">{render_tweet_headline_html(item)}</li>" for item in tweet_headlines]
+            [f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #a3a099;\">{render_tweet_headline_html(item)}</li>" for item in tweet_headlines]
         )
         tweet_section_html = f"""
         <div style="margin-bottom: 32px;">
-            <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
+            <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
                 From X/Twitter
             </h2>
             <ul style="padding-left: 20px; margin: 0;">
@@ -362,11 +422,11 @@ def generate_email_html(
     community_section_html = ""
     if community_headlines:
         community_items_html = "".join(
-            [f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #2b2c34;\">{render_tweet_headline_html(item)}</li>" for item in community_headlines]
+            [f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #a3a099;\">{render_tweet_headline_html(item)}</li>" for item in community_headlines]
         )
         community_section_html = f"""
         <div style="margin-bottom: 32px;">
-            <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 600; color: #2b2c34;">
+            <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
                 From Reddit/HN/YC
             </h2>
             <ul style="padding-left: 20px; margin: 0;">
@@ -375,7 +435,7 @@ def generate_email_html(
         </div>
         """
 
-    # Full email template (colors from Happy Hues palette 6)
+    # Full email fallback template using the dark-brutalist palette
     html = f"""
     <!DOCTYPE html>
     <html>
@@ -383,25 +443,27 @@ def generate_email_html(
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="margin: 0; padding: 0; background-color: #fffffe; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;">
-        <div style="max-width: 560px; margin: 0 auto; padding: 48px 24px;">
+    <body style="margin: 0; padding: 0; background-color: #0b0b0c; color: #f4f3ef; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+        <div style="max-width: 640px; margin: 0 auto; padding: 24px 16px;">
+            <div style="background-color: #17171a; border: 1px solid #26262b;">
             <div style="margin-bottom: 32px;">
-                <h1 style="color: #2b2c34; font-size: 24px; margin: 0; font-weight: 700;">AI Newsy</h1>
-                <p style="color: #6246ea; margin: 4px 0 0 0; font-size: 14px;">{today}</p>
-            </div>
-            <div style="margin-bottom: 32px; padding: 20px; background-color: #d1d1e9; border-radius: 8px;">
-                <p style="margin: 0; color: #2b2c34; font-size: 16px; line-height: 1.7;">{intro}</p>
+                <div style="padding: 28px 28px 18px; background-color: #121214; border-bottom: 1px solid #1d1d21;">
+                    <h1 style="color: #f4f3ef; font-size: 34px; margin: 0 0 10px 0; font-weight: 700; letter-spacing: -1px; line-height: 1.1;">The AI feed, distilled.</h1>
+                    <p style="color: #a3a099; margin: 0; font-size: 14px; line-height: 1.6;">{intro}</p>
+                    <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">{today} · AI Newsy</p>
+                </div>
             </div>
             <div style="margin-bottom: 32px;">
-                {section_blocks}
+                <div style="padding: 0 28px 0 28px;">{section_blocks}</div>
             </div>
-            {tweet_section_html}
-            {community_section_html}
-            <div style="padding-top: 24px; border-top: 1px solid #d1d1e9;">
-                <p style="color: #2b2c34; font-size: 13px; margin: 0; line-height: 1.6;">
+            <div style="padding: 0 28px 0 28px;">{tweet_section_html}</div>
+            <div style="padding: 0 28px 0 28px;">{community_section_html}</div>
+            <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
+                <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
                     You're receiving this because you subscribed to AI Newsy.
-                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #6246ea; text-decoration: underline;">Unsubscribe</a>
+                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
                 </p>
+            </div>
             </div>
         </div>
     </body>
@@ -423,15 +485,17 @@ def _build_email_renderer_payload(
     for section in sections:
         section_name = section.get("name", DEFAULT_CATEGORY)
         for article in section.get("articles", []):
+            normalized_article = _normalize_article_for_email(article)
             stories.append(
                 {
                     "tag": section_name,
-                    "source": article.get("source", "Unknown Source"),
-                    "read": article.get("reading_time", ""),
-                    "headline": article.get("title", "Untitled"),
-                    "summary": article.get("summary", ""),
-                    "why": article.get("opinion", ""),
-                    "url": article.get("url", "#"),
+                    "source": normalized_article.get("source", "Unknown Source"),
+                    "read": normalized_article.get("reading_time", ""),
+                    "headline": normalized_article.get("title", "Untitled"),
+                    "summary": normalized_article.get("summary", ""),
+                    "why": normalized_article.get("opinion", ""),
+                    "url": normalized_article.get("url", "#"),
+                    "imageUrl": normalized_article.get("image_url", ""),
                 }
             )
 
@@ -506,13 +570,13 @@ def render_tweet_headline_html(item: dict) -> str:
         safe_url = html.escape(url, quote=True)
         return (
             f"{title} "
-            f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">Source</a>'
+            f'<a href="{safe_url}" style="color: #39ff88; text-decoration: underline;">Source</a>'
         )
 
     anchor_text = match.group(1)
     safe_anchor = html.escape(anchor_text)
     safe_url = html.escape(url, quote=True)
-    linked = f'<a href="{safe_url}" style="color: #6246ea; text-decoration: underline;">{safe_anchor}</a>'
+    linked = f'<a href="{safe_url}" style="color: #39ff88; text-decoration: underline;">{safe_anchor}</a>'
     replaced = headline[:match.start()] + linked + headline[match.end():]
     return html.escape(replaced).replace(html.escape(linked), linked)
 
@@ -599,6 +663,8 @@ def send_daily_digest(
     if not articles:
         print("No matching articles to include in digest.")
         return {"articles": 0, "sent": 0, "failed": 0}
+
+    articles = [_normalize_article_for_email(article) for article in articles]
 
     print(f"📰 {len(articles)} articles to include")
 
