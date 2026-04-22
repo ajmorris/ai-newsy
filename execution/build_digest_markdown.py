@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 import sys
 sys.path.insert(0, ".")
 from execution.ai_client import generate_text_with_fallback
-from execution.database import get_digest_extra, get_unsent_articles, upsert_digest_extra
+from execution.database import get_digest_extra, get_sent_articles, get_unsent_articles, upsert_digest_extra
 
 load_dotenv()
 
@@ -196,15 +196,28 @@ def _render_body(sections: List[dict], tweet_headlines: List[dict], community_he
     return "\n".join(parts).strip() + "\n"
 
 
-def build_digest_markdown(digest_date: Optional[str] = None, window_hours: int = 24) -> Tuple[Path, int]:
+def build_digest_markdown(
+    digest_date: Optional[str] = None,
+    window_hours: int = 24,
+    use_sent: bool = False,
+) -> Tuple[Path, int]:
     if digest_date:
         target_date = datetime.strptime(digest_date, "%Y-%m-%d").date()
     else:
         target_date = datetime.now(timezone.utc).date()
     safe_date = target_date.isoformat()
 
-    since = datetime.now(timezone.utc) - timedelta(hours=window_hours)
-    articles = get_unsent_articles(topic=None, require_summary=True, since=since, until=None)
+    if use_sent:
+        day_start = datetime.combine(target_date, datetime.min.time())
+        day_end = day_start + timedelta(days=1)
+        articles = get_sent_articles(
+            require_summary=True,
+            since=day_start,
+            until=day_end,
+        )
+    else:
+        since = datetime.now(timezone.utc) - timedelta(hours=window_hours)
+        articles = get_unsent_articles(topic=None, require_summary=True, since=since, until=None)
     sections = _group_articles_by_category(articles)
 
     subject = f"AI Newsy • {target_date.strftime('%b %d')} • {len(articles)} Stories"
@@ -237,6 +250,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build daily digest markdown from storage")
     parser.add_argument("--digest-date", type=str, default=None, help="YYYY-MM-DD (UTC)")
     parser.add_argument("--window-hours", type=int, default=int(os.getenv("DIGEST_WINDOW_HOURS", "24")))
+    parser.add_argument(
+        "--use-sent",
+        action="store_true",
+        help="Build from already-sent stories for --digest-date (UTC day window), useful for archive replay",
+    )
     args = parser.parse_args()
-    path, count = build_digest_markdown(digest_date=args.digest_date, window_hours=args.window_hours)
+    path, count = build_digest_markdown(
+        digest_date=args.digest_date,
+        window_hours=args.window_hours,
+        use_sent=args.use_sent,
+    )
     print(f"Done. articles={count} markdown={path}")
