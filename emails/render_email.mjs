@@ -155,7 +155,7 @@ const mjml = `
           <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700">
             ◆ End of edition
           </mj-text>
-          <mj-text color="${DB.text}" font-size="20px" font-weight="700" letter-spacing="-0.4px" padding="8px 0 4px">See you tomorrow at 06:00.</mj-text>
+          <mj-text color="${DB.text}" font-size="20px" font-weight="700" letter-spacing="-0.4px" padding="5px 0 5px">See you tomorrow at 8:00.</mj-text>
           <mj-text color="${DB.textMute}" font-size="13px" padding="0 0 14px">Got a tip? Just reply — a human reads every one.</mj-text>
           <mj-button background-color="${DB.accent}" color="${DB.accentInk}" font-family="'JetBrains Mono', Menlo, monospace" font-size="12px" font-weight="700" text-transform="uppercase" letter-spacing="1.2px" inner-padding="10px 16px" border-radius="2px" href="${esc(payload.forwardUrl || payload.archiveUrl || "#")}">
             Forward to a friend →
