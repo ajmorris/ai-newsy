@@ -513,13 +513,25 @@ def _build_email_renderer_payload(
                 }
             )
 
-    quick_hits: List[str] = []
+    quick_hits: List[Dict[str, str]] = []
     for item in (tweet_headlines or [])[:6]:
-        if item.get("headline"):
-            quick_hits.append(str(item["headline"]))
+        headline = str(item.get("headline", "") or "").strip()
+        if headline:
+            quick_hits.append(
+                {
+                    "headline": headline,
+                    "url": str(item.get("url", "") or "").strip(),
+                }
+            )
     for item in (community_headlines or [])[:6]:
-        if item.get("headline"):
-            quick_hits.append(str(item["headline"]))
+        headline = str(item.get("headline", "") or "").strip()
+        if headline:
+            quick_hits.append(
+                {
+                    "headline": headline,
+                    "url": str(item.get("url", "") or "").strip(),
+                }
+            )
 
     issue_number = _issue_number_from_digest_date(digest_date)
     archive_url = f"{APP_URL}/issues/"

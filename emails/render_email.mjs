@@ -36,6 +36,33 @@ const quickHits = payload.quickHits || [];
 const issueLabel = payload.issueNumber || "00137";
 const heroHeadline = payload.heroHeadline || "The AI feed, distilled.";
 
+const renderQuickHitHeadline = (item) => {
+  const headline =
+    item && typeof item === "object"
+      ? String(item.headline || "").trim()
+      : String(item || "").trim();
+  const url =
+    item && typeof item === "object" ? String(item.url || "").trim() : "";
+
+  if (!headline) {
+    return "";
+  }
+  if (!url) {
+    return esc(headline);
+  }
+
+  const anchorMatch = /__(.+?)__/.exec(headline);
+  if (!anchorMatch || anchorMatch.index === undefined) {
+    return `${esc(headline)} <a href="${esc(url)}" style="color:${DB.accent};text-decoration:underline;">Source</a>`;
+  }
+
+  const anchorText = anchorMatch[1];
+  const before = headline.slice(0, anchorMatch.index);
+  const after = headline.slice(anchorMatch.index + anchorMatch[0].length);
+
+  return `${esc(before)}<a href="${esc(url)}" style="color:${DB.accent};text-decoration:underline;">${esc(anchorText)}</a>${esc(after)}`;
+};
+
 const tldrItems = stories
   .map(
     (story, idx) => `
@@ -84,7 +111,7 @@ const quickHitItems = quickHits
   .map(
     (item) => `
       <mj-text color="${DB.textMute}" font-size="14px" padding="5px 0">
-        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${esc(item)}
+        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}
       </mj-text>
     `
   )
