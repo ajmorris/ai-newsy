@@ -32,7 +32,8 @@ const DB = {
 };
 
 const stories = (payload.stories || []).slice(0, 8);
-const quickHits = payload.quickHits || [];
+const tweetHeadlines = payload.tweetHeadlines || [];
+const communityHeadlines = payload.communityHeadlines || [];
 const issueLabel = payload.issueNumber || "00137";
 const heroHeadline = payload.heroHeadline || "The AI feed, distilled.";
 
@@ -107,7 +108,17 @@ const storyItems = stories
   )
   .join("");
 
-const quickHitItems = quickHits
+const tweetHitItems = tweetHeadlines
+  .map(
+    (item) => `
+      <mj-text color="${DB.textMute}" font-size="14px" padding="5px 0">
+        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}
+      </mj-text>
+    `
+  )
+  .join("");
+
+const communityHitItems = communityHeadlines
   .map(
     (item) => `
       <mj-text color="${DB.textMute}" font-size="14px" padding="5px 0">
@@ -169,14 +180,30 @@ const mjml = `
           ${storyItems}
         </mj-column>
       </mj-section>
-      <mj-section padding="2px 36px 30px">
+      ${
+        tweetHitItems
+          ? `<mj-section padding="2px 36px 18px">
         <mj-column>
           <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
-            ◆ Quick hits
+            ◆ Here's what's going on in Twitter/X
           </mj-text>
-          ${quickHitItems}
+          ${tweetHitItems}
         </mj-column>
-      </mj-section>
+      </mj-section>`
+          : ""
+      }
+      ${
+        communityHitItems
+          ? `<mj-section padding="2px 36px 30px">
+        <mj-column>
+          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
+            ◆ Here's what we're hearing from the community
+          </mj-text>
+          ${communityHitItems}
+        </mj-column>
+      </mj-section>`
+          : ""
+      }
       <mj-section background-color="${DB.bgRaised}" padding="28px 36px" border-top="1px solid ${DB.border}">
         <mj-column>
           <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700">
