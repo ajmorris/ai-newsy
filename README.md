@@ -119,6 +119,24 @@ python3 execution/send_daily_email.py --test-email you@example.com
 python3 execution/build_web_archive.py
 ```
 
+### Local parity validation (no production sent writes, no git changes required)
+
+```bash
+./scripts/validate_digest_parity_local.sh you@example.com
+```
+
+Optional date replay:
+
+```bash
+./scripts/validate_digest_parity_local.sh you@example.com 2026-04-23
+```
+
+This local validator:
+
+- writes canonical digest + web output to a temporary directory (not `data/digests` / `frontend/issues`)
+- sends using `--test-email` so `sent_at` is not marked on articles
+- runs parity checks and writes a local `parity-report.json`
+
 ### Cleanup old articles
 
 ```bash

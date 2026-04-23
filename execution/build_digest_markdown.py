@@ -5,7 +5,7 @@ Build a daily digest markdown file with YAML frontmatter from persisted storage.
 import argparse
 import json
 import os
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -13,39 +13,13 @@ from dotenv import load_dotenv
 
 import sys
 sys.path.insert(0, ".")
-from execution.ai_client import generate_text_with_fallback
-from execution.database import get_digest_extra, get_sent_articles, get_unsent_articles, upsert_digest_extra
+from execution.digest_payload import (
+    DigestBuildOptions,
+    build_digest_payload,
+    write_digest_payload,
+)
 
 load_dotenv()
-
-TOPIC_TO_CATEGORY: Dict[str, str] = {
-    "Models": "Model Releases & Capabilities",
-    "Agents & Tools": "Tools, Infrastructure & Open Source",
-    "MCP & SKILLs": "Tools, Infrastructure & Open Source",
-    "Safety": "Safety, Policy & Regulation",
-    "Industry": "Business, Deals & Funding",
-}
-DEFAULT_CATEGORY = "Other AI News"
-
-DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for my daily AI news digest email.
-Write as me, in first person, like we are talking over coffee.
-
-Voice rules:
-- Human Element + Honesty: candid, grounded, emotionally real.
-- No guru certainty. I do not pretend to have everything figured out.
-- Emphasize what I am learning, what I am watching, and what I am seeing.
-- Sound like a builder sharing process: false starts, pivots, and practical signal.
-- Keep it warm and plainspoken, not polished or promotional.
-
-Output requirements:
-1. Exactly one short paragraph (2-3 sentences).
-2. Lead with today's most important thread or tension.
-3. Preview what readers will get from the digest.
-4. No greeting, no sign-off, no hashtags.
-
-Today's stories:
-{article_summaries}"""
-
 
 def _yaml_quote(value: str) -> str:
     safe = (value or "").replace("\\", "\\\\").replace('"', '\\"')
@@ -63,49 +37,6 @@ def _extract_embedded_payload(text: str) -> Dict[str, object]:
         except json.JSONDecodeError:
             return {}
     return {}
-
-
-def _group_articles_by_category(articles: List[dict]) -> List[dict]:
-    grouped: Dict[str, List[dict]] = {}
-    for article in articles:
-        topic = (article.get("topic") or "").strip()
-        category = TOPIC_TO_CATEGORY.get(topic, DEFAULT_CATEGORY)
-        grouped.setdefault(category, []).append(article)
-
-    sections: List[dict] = []
-    for category in sorted(grouped.keys()):
-        ordered = sorted(
-            grouped[category],
-            key=lambda row: row.get("published_at") or row.get("fetched_at") or "",
-            reverse=True,
-        )
-        sections.append({"name": category, "articles": ordered})
-    return sections
-
-
-def _get_or_create_intro(digest_date: str, articles: List[dict]) -> str:
-    stored = get_digest_extra(digest_date=digest_date, key="digest_intro")
-    if stored and isinstance(stored.get("payload"), dict):
-        intro = (stored["payload"].get("text") or "").strip()
-        if intro:
-            return intro
-
-    summaries = "\n".join(
-        f"- {row.get('title', '')}: {row.get('summary', '')}" for row in articles if row.get("summary")
-    )
-    prompt = os.getenv("PROMPT_INTRO", DEFAULT_INTRO_PROMPT).format(article_summaries=summaries)
-    intro = generate_text_with_fallback(prompt=prompt, gemini_model="gemini-2.0-flash").strip()
-    if not intro:
-        intro = "Here's what's making waves in AI today."
-    upsert_digest_extra(
-        digest_date=digest_date,
-        key="digest_intro",
-        payload={
-            "text": intro,
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-        },
-    )
-    return intro
 
 
 def _render_frontmatter(
@@ -201,37 +132,23 @@ def build_digest_markdown(
     window_hours: int = 24,
     use_sent: bool = False,
 ) -> Tuple[Path, int]:
-    if digest_date:
-        target_date = datetime.strptime(digest_date, "%Y-%m-%d").date()
-    else:
-        target_date = datetime.now(timezone.utc).date()
-    safe_date = target_date.isoformat()
-
-    if use_sent:
-        day_start = datetime.combine(target_date, datetime.min.time())
-        day_end = day_start + timedelta(days=1)
-        articles = get_sent_articles(
-            require_summary=True,
-            since=day_start,
-            until=day_end,
+    payload = build_digest_payload(
+        DigestBuildOptions(
+            digest_date=digest_date,
+            window_hours=window_hours,
+            use_sent=use_sent,
         )
-    else:
-        since = datetime.now(timezone.utc) - timedelta(hours=window_hours)
-        articles = get_unsent_articles(topic=None, require_summary=True, since=since, until=None)
-    sections = _group_articles_by_category(articles)
-
-    subject = f"AI Newsy • {target_date.strftime('%b %d')} • {len(articles)} Stories"
-    intro = _get_or_create_intro(digest_date=safe_date, articles=articles) if articles else "No stories selected."
-
-    tweet_extra = get_digest_extra(digest_date=safe_date, key="tweet_headlines") or {}
-    tweet_headlines = (tweet_extra.get("payload") or {}).get("headlines", []) if isinstance(tweet_extra.get("payload"), dict) else []
-    community_extra = get_digest_extra(digest_date=safe_date, key="community_headlines") or {}
-    community_headlines = (community_extra.get("payload") or {}).get("headlines", []) if isinstance(community_extra.get("payload"), dict) else []
+    )
+    write_digest_payload(payload)
+    safe_date = str(payload["digest_date"])
+    sections = list(payload.get("sections", []))
+    tweet_headlines = list(payload.get("tweet_headlines", []))
+    community_headlines = list(payload.get("community_headlines", []))
 
     frontmatter = _render_frontmatter(
         digest_date=safe_date,
-        subject=subject,
-        intro=intro,
+        subject=str(payload.get("subject_line", "")),
+        intro=str(payload.get("intro", "")),
         sections=sections,
         tweet_count=len(tweet_headlines),
         community_count=len(community_headlines),
@@ -243,7 +160,7 @@ def build_digest_markdown(
     output_path = output_dir / f"{safe_date}.md"
     output_path.write_text(frontmatter + body, encoding="utf-8")
     print(f"Wrote digest markdown: {output_path}")
-    return output_path, len(articles)
+    return output_path, int(payload.get("article_count", 0))
 
 
 if __name__ == "__main__":

@@ -64,12 +64,15 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: |
+          python execution/digest_payload.py
           python execution/build_digest_markdown.py
           python execution/send_daily_email.py
 
-      - name: Upload digest markdown artifact
+      - name: Upload digest artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: digest-markdown-${{ github.run_id }}
-          path: data/digests/*.md
+          name: digest-artifacts-${{ github.run_id }}
+          path: |
+            data/digests/*.md
+            data/digests/*.json
           if-no-files-found: error

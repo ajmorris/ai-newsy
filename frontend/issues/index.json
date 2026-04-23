@@ -1,46 +1,39 @@
 {
-  "generatedAt": "2026-04-23T00:00:00Z",
-  "issueCount": 3,
+  "generatedAt": "2026-04-22T00:00:00Z",
+  "issueCount": 2,
   "latestIssue": {
-    "slug": "2026-04-23",
-    "digestDate": "2026-04-23",
-    "displayDate": "Apr 23, 2026",
-    "issueNumber": "3",
-    "subject": "ISSUE 3 \u00b7 32 STORIES \u00b7 11 MIN READ",
-    "intro": "It's a Google kind of day. The tech giant dominated headlines at Cloud Next 2026, rolling out Gemini-powered AI across its entire Workspace suite, launching two new custom AI chips to challenge Nvidia, unveiling an enterprise agent-building platform, and turning Chrome into an autonomous workplace assistant \u2014 all while OpenAI countered with free ChatGPT for clinicians and new workspace agents of its own. Beyond the product blitz, today's digest also covers the Pentagon's staggering $54 billion bet on AI-powered warfare, Senator Warren's warning that the AI industry could trigger the next financial crisis, Sony's ping-pong robot making history in *Nature*, and Meta quietly recording employees' keystrokes to train its AI agents.",
-    "articleCount": 32,
-    "urlPath": "/issues/2026-04-23.html"
+    "slug": "2026-04-22",
+    "digestDate": "2026-04-22",
+    "displayDate": "Apr 22, 2026",
+    "issueNumber": "60422",
+    "subject": "AI Newsy \u2022 Apr 22 \u2022 39 Stories",
+    "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* \u2014 Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
+    "articleCount": 39,
+    "urlPath": "/issues/2026-04-22.html",
+    "contentHash": "cd557f520054004e33e4ab64b7722e0378a3a37e392d9f1720051aa33dad7592"
   },
   "recentIssues": [
-    {
-      "slug": "2026-04-23",
-      "digestDate": "2026-04-23",
-      "displayDate": "Apr 23, 2026",
-      "issueNumber": "3",
-      "subject": "ISSUE 3 \u00b7 32 STORIES \u00b7 11 MIN READ",
-      "intro": "It's a Google kind of day. The tech giant dominated headlines at Cloud Next 2026, rolling out Gemini-powered AI across its entire Workspace suite, launching two new custom AI chips to challenge Nvidia, unveiling an enterprise agent-building platform, and turning Chrome into an autonomous workplace assistant \u2014 all while OpenAI countered with free ChatGPT for clinicians and new workspace agents of its own. Beyond the product blitz, today's digest also covers the Pentagon's staggering $54 billion bet on AI-powered warfare, Senator Warren's warning that the AI industry could trigger the next financial crisis, Sony's ping-pong robot making history in *Nature*, and Meta quietly recording employees' keystrokes to train its AI agents.",
-      "articleCount": 32,
-      "urlPath": "/issues/2026-04-23.html"
-    },
     {
       "slug": "2026-04-22",
       "digestDate": "2026-04-22",
       "displayDate": "Apr 22, 2026",
-      "issueNumber": "2",
-      "subject": "ISSUE 2 \u00b7 39 STORIES \u00b7 11 MIN READ",
+      "issueNumber": "60422",
+      "subject": "AI Newsy \u2022 Apr 22 \u2022 39 Stories",
       "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* \u2014 Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
       "articleCount": 39,
-      "urlPath": "/issues/2026-04-22.html"
+      "urlPath": "/issues/2026-04-22.html",
+      "contentHash": "cd557f520054004e33e4ab64b7722e0378a3a37e392d9f1720051aa33dad7592"
     },
     {
       "slug": "2026-04-21",
       "digestDate": "2026-04-21",
       "displayDate": "Apr 21, 2026",
-      "issueNumber": "1",
-      "subject": "ISSUE 1 \u00b7 15 STORIES \u00b7 11 MIN READ",
+      "issueNumber": "60421",
+      "subject": "AI Newsy \u2022 Apr 21 \u2022 15 Stories",
       "intro": "Today, all eyes are on AI's potential for misuse, from manipulated political imagery raising concerns about disinformation to reports of the NSA using Anthropic's restricted Mythos model. We'll also dive into how companies are grappling with AI's impact, including a nuclear power startup facing a leadership crisis and tech workers training AI to take over their jobs. Plus, hear how Intercom doubled engineering output using Claude Code!",
       "articleCount": 15,
-      "urlPath": "/issues/2026-04-21.html"
+      "urlPath": "/issues/2026-04-21.html",
+      "contentHash": "a6ae4cbc86ccab3558fdad3143aabca27a3211a6174382f8a09962e2cb157982"
     }
   ]
 }
