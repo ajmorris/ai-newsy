@@ -2,17 +2,26 @@
   "generatedAt": "2026-04-22T00:00:00Z",
   "issueCount": 2,
   "latestIssue": {
-    "slug": "2026-04-22",
-    "digestDate": "2026-04-22",
-    "displayDate": "Apr 22, 2026",
-    "issueNumber": "60422",
-    "subject": "AI Newsy \u2022 Apr 22 \u2022 39 Stories",
-    "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* \u2014 Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
-    "articleCount": 39,
-    "urlPath": "/issues/2026-04-22.html",
-    "contentHash": "cd557f520054004e33e4ab64b7722e0378a3a37e392d9f1720051aa33dad7592"
+    "slug": "2026-04-23",
+    "digestDate": "2026-04-23",
+    "displayDate": "Apr 23, 2026",
+    "issueNumber": "60423",
+    "subject": "AI Newsy \u2022 Apr 23 \u2022 0 Stories",
+    "intro": "No stories selected.",
+    "articleCount": 0,
+    "urlPath": "/issues/2026-04-23.html"
   },
   "recentIssues": [
+    {
+      "slug": "2026-04-23",
+      "digestDate": "2026-04-23",
+      "displayDate": "Apr 23, 2026",
+      "issueNumber": "60423",
+      "subject": "AI Newsy \u2022 Apr 23 \u2022 0 Stories",
+      "intro": "No stories selected.",
+      "articleCount": 0,
+      "urlPath": "/issues/2026-04-23.html"
+    },
     {
       "slug": "2026-04-22",
       "digestDate": "2026-04-22",
