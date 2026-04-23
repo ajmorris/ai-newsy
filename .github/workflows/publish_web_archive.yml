@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'data/digests/*.md'
+      - 'data/digests/snapshots/*.sent.json'
       - 'execution/build_web_archive.py'
   workflow_run:
     workflows:
@@ -41,33 +41,44 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Download digest markdown artifact from Daily AI Digest
+      - name: Download digest artifacts from Daily AI Digest
         if: ${{ github.event_name == 'workflow_run' }}
         uses: actions/download-artifact@v4
         with:
-          name: digest-markdown-${{ github.event.workflow_run.id }}
+          name: digest-artifacts-${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           run-id: ${{ github.event.workflow_run.id }}
-          path: /tmp/digest-markdown
+          path: /tmp/digest-artifacts
 
-      - name: Sync downloaded digest markdown into repository
+      - name: Sync downloaded digest artifacts into repository
         if: ${{ github.event_name == 'workflow_run' }}
         run: |
           mkdir -p data/digests
+          mkdir -p data/digests/snapshots
           shopt -s globstar nullglob
-          files=(/tmp/digest-markdown/**/*.md)
+          files=(/tmp/digest-artifacts/**/*.json /tmp/digest-artifacts/**/*.md /tmp/digest-artifacts/**/*.sent.json)
           if [ "${#files[@]}" -eq 0 ]; then
-            echo "No digest markdown files found in downloaded artifact."
+            echo "No digest artifacts found in downloaded artifact."
             exit 1
           fi
           for file in "${files[@]}"; do
-            cp "$file" "data/digests/$(basename "$file")"
+            name="$(basename "$file")"
+            if [[ "$name" == *.sent.json ]]; then
+              cp "$file" "data/digests/snapshots/${name}"
+            else
+              cp "$file" "data/digests/${name}"
+            fi
           done
-          ls -1 data/digests/*.md
+          ls -1 data/digests/*.json data/digests/*.md data/digests/snapshots/*.sent.json
 
       - name: Build archive pages and manifest
         run: python execution/build_web_archive.py
+
+      - name: Validate digest parity
+        run: |
+          latest_digest=$(ls -1 data/digests/snapshots/*.sent.json | sed -E 's|.*/||' | sed -E 's|\.sent\.json$||' | sort | tail -n 1)
+          python execution/validate_digest_parity.py --digest-date "${latest_digest}" --snapshot-dir data/digests/snapshots --report parity-report.json
 
       - name: Validate archive manifest matches digest inputs
         run: |
@@ -76,12 +87,12 @@ jobs:
           import re
           from pathlib import Path
 
-          digest_files = sorted(Path("data/digests").glob("*.md"))
+          digest_files = sorted(Path("data/digests/snapshots").glob("*.sent.json"))
           if not digest_files:
-              raise SystemExit("No digest markdown files found in data/digests.")
+              raise SystemExit("No sent snapshot files found in data/digests/snapshots.")
 
-          dated = [p.stem for p in digest_files if re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)]
-          expected_latest = max(dated) if dated else digest_files[-1].stem
+          dated = [p.name.replace(".sent.json", "") for p in digest_files if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.sent\.json", p.name)]
+          expected_latest = max(dated) if dated else digest_files[-1].name.replace(".sent.json", "")
           expected_count = len(digest_files)
 
           manifest_path = Path("frontend/issues/index.json")

@@ -22,14 +22,16 @@ sys.path.insert(0, '.')
 from execution.markdown_utils import md_inline_to_html as _md_inline_to_html
 from execution.markdown_utils import parse_frontmatter as _parse_frontmatter
 from execution.database import (
-    get_unsent_articles,
-    get_sent_articles,
     get_active_subscribers,
     mark_articles_sent,
     insert_digest_log,
-    get_digest_extra,
 )
 from execution.ai_client import generate_text_with_fallback
+from execution.digest_payload import (
+    DigestBuildOptions,
+    load_or_build_digest_payload,
+    write_sent_snapshot,
+)
 
 load_dotenv()
 
@@ -652,6 +654,8 @@ def send_daily_digest(
     dry_run: bool = False,
     test_email: Optional[str] = None,
     sent_yesterday: bool = False,
+    digest_date: Optional[str] = None,
+    overwrite_snapshot: bool = False,
 ) -> dict:
     """
     Send daily digest to all active subscribers (or only to test_email if set).
@@ -664,36 +668,21 @@ def send_daily_digest(
         print(f"  [TEST MODE] Sending only to: {test_email}")
     print(f"{'='*50}\n")
 
-    if sent_yesterday:
-        today_utc = datetime.utcnow().date()
-        yesterday_start = datetime.combine(today_utc - timedelta(days=1), datetime.min.time())
-        today_start = datetime.combine(today_utc, datetime.min.time())
-        print(
-            "Using SENT replay window: "
-            f"{yesterday_start.isoformat()} to {today_start.isoformat()} (UTC)"
+    payload = load_or_build_digest_payload(
+        DigestBuildOptions(
+            digest_date=digest_date,
+            window_hours=int(os.getenv("DIGEST_WINDOW_HOURS", "24")),
+            use_sent=sent_yesterday,
         )
-        articles = get_sent_articles(
-            require_summary=True,
-            since=yesterday_start,
-            until=today_start,
-        )
-    else:
-        window_hours = int(os.getenv("DIGEST_WINDOW_HOURS", "24"))
-        since = datetime.utcnow() - timedelta(hours=window_hours)
-        print(f"Using time window: last {window_hours} hour(s) since {since.isoformat()}")
-        # Select all unsent, summarized articles within the time window
-        articles = get_unsent_articles(
-            topic=None,
-            require_summary=True,
-            since=since,
-            until=None,
-        )
+    )
+    digest_date = str(payload.get("digest_date"))
+    stories = list(payload.get("stories", []))
 
-    if not articles:
+    if not stories:
         print("No matching articles to include in digest.")
         return {"articles": 0, "sent": 0, "failed": 0}
 
-    articles = [_normalize_article_for_email(article) for article in articles]
+    articles = [_normalize_article_for_email(article) for article in stories]
 
     print(f"📰 {len(articles)} articles to include")
 
@@ -707,15 +696,7 @@ def send_daily_digest(
             return {"articles": len(articles), "sent": 0, "failed": 0}
         print(f"👥 {len(subscribers)} active subscribers")
 
-    # Generate AI introduction
-    print("✨ Generating AI introduction...")
-    intro = generate_intro(articles)
-    print(f"   Intro: {intro[:80]}...")
-
-    # Subject/header line uses issue number + included story count.
-    digest_date = datetime.utcnow().date().isoformat()
-    included_story_count = min(len(articles), 8)
-    digest_summary_line = _build_digest_summary_line(digest_date, included_story_count)
+    digest_summary_line = str(payload.get("subject_line", _build_digest_summary_line(digest_date, len(articles))))
     subject = digest_summary_line
     if sent_yesterday:
         subject = f"[TEST Replay] {subject}"
@@ -723,53 +704,24 @@ def send_daily_digest(
     sent = 0
     failed = 0
 
-    # Build sections once from article topics so each article appears only once
-    sections = group_articles_by_category(articles)
-    extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines")
-    tweet_headlines = []
-    if not extra:
-        print(f"⚠️ No digest_extras row found for key=tweet_headlines on {digest_date}")
-    elif isinstance(extra.get("payload"), dict):
-        payload = extra["payload"]
-        source_count = payload.get("source_count", "unknown")
-        headline_count = payload.get("headline_count", "unknown")
-        tweet_headlines = payload.get("headlines", []) or []
-        print(
-            "🐦 Tweet headlines extra found: "
-            f"source_count={source_count}, payload_headline_count={headline_count}, "
-            f"loaded_for_email={len(tweet_headlines)}"
-        )
-    else:
-        print(f"⚠️ tweet_headlines payload is not a dict for digest_date={digest_date}")
+    sections = list(payload.get("sections", [])) or group_articles_by_category(articles)
+    tweet_headlines = list(payload.get("tweet_headlines", []))
+    community_headlines = list(payload.get("community_headlines", []))
+    intro = str(payload.get("intro", ""))
 
-    if not tweet_headlines and not sent_yesterday:
-        print(
-            "⚠️ Tweet headlines are empty for this digest send. "
-            "Email will continue without the From X/Twitter section."
+    send_started_at = datetime.utcnow().isoformat()
+    snapshot_path = None
+    if not dry_run:
+        snapshot_path = write_sent_snapshot(
+            payload=payload,
+            allow_overwrite=overwrite_snapshot,
+            metadata={
+                "created_by": "send_daily_email",
+                "send_mode": "test" if test_email else "production",
+                "send_started_at": send_started_at,
+            },
         )
-
-    community_extra = get_digest_extra(digest_date=digest_date, key="community_headlines")
-    community_headlines = []
-    if not community_extra:
-        print(f"⚠️ No digest_extras row found for key=community_headlines on {digest_date}")
-    elif isinstance(community_extra.get("payload"), dict):
-        payload = community_extra["payload"]
-        source_count = payload.get("source_count", "unknown")
-        headline_count = payload.get("headline_count", "unknown")
-        community_headlines = payload.get("headlines", []) or []
-        print(
-            "🌐 Community headlines extra found: "
-            f"source_count={source_count}, payload_headline_count={headline_count}, "
-            f"loaded_for_email={len(community_headlines)}"
-        )
-    else:
-        print(f"⚠️ community_headlines payload is not a dict for digest_date={digest_date}")
-
-    if not community_headlines and not sent_yesterday:
-        print(
-            "⚠️ Community headlines are empty for this digest send. "
-            "Email will continue without the From Reddit/HN/YC section."
-        )
+        print(f"🧊 Sent snapshot path: {snapshot_path}")
 
     for subscriber in subscribers:
         email = subscriber.get('email')
@@ -825,7 +777,7 @@ def send_daily_digest(
     
     # Mark articles as sent (only if not dry run, not test mode, and we sent to at least one person)
     if not dry_run and not test_email and sent > 0:
-        article_ids = [a.get('id') for a in articles]
+        article_ids = [a.get('id') for a in articles if a.get("id") is not None]
         mark_articles_sent(article_ids)
         print(f"\n📌 Marked {len(article_ids)} articles as sent")
         # Log each digest topic for this send
@@ -847,6 +799,10 @@ if __name__ == "__main__":
                         help="Send only to this email (e.g. for testing); does not mark articles as sent")
     parser.add_argument('--sent-yesterday', action='store_true',
                         help="Build digest from articles sent yesterday (UTC), for testing replay")
+    parser.add_argument('--digest-date', type=str, default=None,
+                        help="Build/send digest for YYYY-MM-DD canonical payload date")
+    parser.add_argument('--overwrite-snapshot', action='store_true',
+                        help="Allow replacing existing sent snapshot for digest date")
     args = parser.parse_args()
 
     # Check for API key
@@ -859,5 +815,7 @@ if __name__ == "__main__":
         dry_run=args.dry_run,
         test_email=args.test_email,
         sent_yesterday=args.sent_yesterday,
+        digest_date=args.digest_date,
+        overwrite_snapshot=args.overwrite_snapshot,
     )
     print(f"Done! Sent digest with {result['articles']} articles to {result['sent']} subscribers.")

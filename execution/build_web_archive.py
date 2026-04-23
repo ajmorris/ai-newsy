@@ -1,28 +1,21 @@
-"""
-Build static web archive pages from digest markdown files.
-"""
+"""Build static web archive pages from canonical digest JSON files."""
 
 from __future__ import annotations
 
+import argparse
+import html
 import json
 import os
-import sys
-import html
 import re
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional
-
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-
-from execution.markdown_utils import md_inline_to_html, parse_frontmatter
-
+from typing import Any, Dict, List, Optional
 
 ARCHIVE_DIR = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
+SNAPSHOT_DIR = Path(os.getenv("DIGEST_SNAPSHOT_DIR", str(ARCHIVE_DIR / "snapshots")))
 OUTPUT_DIR = Path(os.getenv("WEB_ARCHIVE_OUTPUT_DIR", "frontend/issues"))
 MANIFEST_PATH = OUTPUT_DIR / "index.json"
-ARCHIVE_INDEX_PATH = OUTPUT_DIR / "index.html"
 SITE_TITLE = "AI Newsy"
 MAX_RECENT_ISSUES = int(os.getenv("WEB_ARCHIVE_RECENT_COUNT", "12"))
 
@@ -38,7 +31,8 @@ class DigestIssue:
     body_html: str
     slug: str
     source_file: str
-    issue_number: int = 0
+    issue_label: str = ""
+    content_hash: str = ""
 
     @property
     def url_path(self) -> str:
@@ -57,44 +51,17 @@ class DigestIssue:
             "slug": self.slug,
             "digestDate": self.digest_date,
             "displayDate": self.display_date,
-            "issueNumber": str(self.issue_number),
+            "issueNumber": self.issue_label,
             "subject": self.subject,
             "intro": self.intro,
             "articleCount": self.article_count,
             "urlPath": self.url_path,
+            "contentHash": self.content_hash,
         }
 
 
-def _read_issue(markdown_path: Path) -> Optional[DigestIssue]:
-    raw = markdown_path.read_text(encoding="utf-8")
-    metadata, body = parse_frontmatter(raw)
-
-    digest_date = metadata.get("digest_date", markdown_path.stem)
-    subject = metadata.get("subject", f"{SITE_TITLE} • {digest_date}")
-    intro = metadata.get("intro", "")
-
-    article_count_raw = metadata.get("article_count", "0")
-    try:
-        article_count = int(str(article_count_raw).strip())
-    except ValueError:
-        article_count = 0
-
-    body_html = _digest_markdown_to_web_html(body)
-    slug = markdown_path.stem
-
-    return DigestIssue(
-        digest_date=digest_date,
-        subject=subject,
-        intro=intro,
-        article_count=article_count,
-        body_html=body_html,
-        slug=slug,
-        source_file=str(markdown_path),
-    )
-
-
-def _build_issue_subject(issue_number: int, article_count: int) -> str:
-    return f"ISSUE {issue_number} · {article_count} STORIES · 11 MIN READ"
+def _issue_label_from_issue_id(issue_id: str) -> str:
+    return issue_id[-5:] if issue_id else "00137"
 
 
 def _render_tweet_headline_html(item: Dict[str, object]) -> str:
@@ -120,167 +87,106 @@ def _render_tweet_headline_html(item: Dict[str, object]) -> str:
     return html.escape(replaced).replace(html.escape(linked), linked)
 
 
-def _digest_markdown_to_web_html(markdown_body: str) -> str:
-    lines = markdown_body.splitlines()
-    output: List[str] = []
-
-    current_section_open = False
-    current_section_title = ""
-    in_tweet_list = False
-    in_json_block = False
-    json_lines: List[str] = []
-    article: Optional[Dict[str, str]] = None
-
-    def close_tweet_list() -> None:
-        nonlocal in_tweet_list
-        if in_tweet_list:
-            output.append("</ul>")
-            in_tweet_list = False
-
-    def flush_article() -> None:
-        nonlocal article
-        if not article:
-            return
-
-        title_html = md_inline_to_html(article.get("title", "Untitled"))
-        link = article.get("url", "#")
-        source = html.escape(article.get("source", ""))
-        summary = md_inline_to_html(article.get("summary", ""))
-        opinion = md_inline_to_html(article.get("opinion", ""))
-        image_url = html.escape(article.get("image_url", ""), quote=True)
-        image_alt = html.escape(article.get("title", "Article"), quote=True)
-
-        image_html = ""
-        if image_url:
-            image_html = (
-                f'<div style="margin-bottom: 12px;">'
-                f'<img src="{image_url}" alt="{image_alt}" '
-                f'style="max-width: 100%; height: auto; border-radius: 8px;" />'
-                f"</div>"
-            )
-
-        opinion_html = ""
-        if opinion:
-            opinion_html = (
-                '<div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; '
-                'border-left: 3px solid #39ff88; border-radius: 0 4px 4px 0;">'
-                '<p style="margin: 0 0 4px 0; color: #39ff88; font-size: 11px; text-transform: uppercase; '
-                'letter-spacing: 0.05em; font-weight: 600;">Takeaway</p>'
-                f'<p style="margin: 0; color: #f4f3ef; font-size: 15px; line-height: 1.6;">{opinion}</p>'
-                "</div>"
-            )
-
-        output.append(
-            '<article style="padding: 22px 0; border-bottom: 1px solid #d1d1e9;">'
-            f'<p style="margin: 0 0 6px 0; color: #39ff88; font-size: 11px; text-transform: uppercase; '
-            f'letter-spacing: 0.05em; font-weight: 600;">{source}</p>'
-            f"{image_html}"
-            f'<h3 style="margin: 0 0 8px 0; font-size: 24px; line-height: 1.3;">'
-            f'<a href="{html.escape(link, quote=True)}" style="color: #39ff88; text-decoration: underline;">{title_html}</a>'
-            "</h3>"
-            f'<p style="margin: 0; color: #a3a099; font-size: 16px; line-height: 1.7;">{summary}</p>'
-            f"{opinion_html}"
-            "</article>"
+def _render_story(story: Dict[str, Any]) -> str:
+    source = html.escape(str(story.get("source", "Unknown Source")))
+    title = html.escape(str(story.get("title", "Untitled")))
+    link = html.escape(str(story.get("url", "#")), quote=True)
+    summary = html.escape(str(story.get("summary", "")))
+    opinion = html.escape(str(story.get("opinion", "")))
+    image_url = html.escape(str(story.get("image_url", "")), quote=True)
+    image_alt = title
+    image_html = ""
+    if image_url:
+        image_html = (
+            f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{image_alt}" '
+            f'style="max-width: 100%; height: auto; border-radius: 8px;" /></div>'
         )
-        article = None
+    opinion_html = ""
+    if opinion:
+        opinion_html = (
+            '<div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; '
+            'border-left: 2px solid #39ff88; border-radius: 0 2px 2px 0;">'
+            '<p style="margin: 0 0 4px 0; color: #39ff88; font-family: JetBrains Mono, monospace; '
+            'font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Why it matters</p>'
+            f'<p style="margin: 0; color: #f4f3ef; font-size: 14px; line-height: 1.5;">{opinion}</p>'
+            '</div>'
+        )
+    return (
+        '<article style="padding: 24px 0; border-bottom: 1px solid #1d1d21;">'
+        f'<p style="margin: 0 0 8px 0; color: #6b6a65; font-family: JetBrains Mono, monospace; '
+        f'font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">{source}</p>'
+        f'{image_html}'
+        f'<h3 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em;">'
+        f'<a href="{link}" style="color: #f4f3ef; text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
+        '</h3>'
+        f'<p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.6;">{summary}</p>'
+        f'{opinion_html}'
+        '</article>'
+    )
 
-    for raw_line in lines:
-        line = raw_line.strip()
 
-        if in_json_block:
-            if line == "```":
-                in_json_block = False
-                try:
-                    payload = json.loads("\n".join(json_lines))
-                    if article is not None:
-                        article["summary"] = str(payload.get("summary", "")).strip()
-                        article["opinion"] = str(payload.get("opinion", "")).strip()
-                        raw_image = payload.get("image_url")
-                        article["image_url"] = str(raw_image).strip() if raw_image else ""
-                except json.JSONDecodeError:
-                    if article is not None:
-                        article["summary"] = "\n".join(json_lines).strip()
-                json_lines = []
-            else:
-                json_lines.append(raw_line)
-            continue
+def _render_body_from_payload(payload: Dict[str, Any]) -> str:
+    parts: List[str] = []
+    for section in payload.get("sections", []):
+        section_name = html.escape(str(section.get("name", "")))
+        parts.append(
+            f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">{section_name}</h2>'
+        )
+        for story in section.get("articles", []):
+            parts.append(_render_story(story))
 
-        if not line:
-            continue
-
-        if line.startswith("## "):
-            close_tweet_list()
-            flush_article()
-            current_section_title = line[3:].strip()
-            current_section_open = True
-            output.append(
-                f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">'
-                f"{md_inline_to_html(current_section_title)}</h2>"
-            )
-            continue
-
-        if line.startswith("### "):
-            close_tweet_list()
-            flush_article()
-            title_line = line[4:].strip()
-            link_match = re.match(r"\[(.+?)\]\((https?://[^\)]+)\)", title_line)
-            if link_match:
-                article = {
-                    "title": link_match.group(1),
-                    "url": link_match.group(2),
-                    "source": "",
-                    "summary": "",
-                    "opinion": "",
-                    "image_url": "",
-                }
-            else:
-                article = {
-                    "title": title_line,
-                    "url": "#",
-                    "source": "",
-                    "summary": "",
-                    "opinion": "",
-                    "image_url": "",
-                }
-            continue
-
-        if line.startswith("*") and line.endswith("*") and article is not None:
-            article["source"] = line.strip("*").strip()
-            continue
-
-        if line == "```json":
-            in_json_block = True
-            json_lines = []
-            continue
-
-        if line.startswith("- "):
-            flush_article()
-            if not in_tweet_list:
-                output.append('<ul style="padding-left: 22px; margin: 10px 0 18px;">')
-                in_tweet_list = True
-            bullet_content = line[2:].strip()
-            source_match = re.match(r"(.+?)\(\[Source\]\((https?://[^\)]+)\)\)\s*$", bullet_content)
-            if source_match:
-                item = {"headline": source_match.group(1).strip(), "url": source_match.group(2).strip()}
-                bullet_html = _render_tweet_headline_html(item)
-            else:
-                bullet_html = md_inline_to_html(bullet_content)
-            output.append(
+    tweet_headlines = payload.get("tweet_headlines", [])
+    if tweet_headlines:
+        parts.append('<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">From X/Twitter</h2>')
+        parts.append('<ul style="padding-left: 22px; margin: 10px 0 18px;">')
+        for item in tweet_headlines:
+            parts.append(
                 '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
-                f"{bullet_html}</li>"
+                f'{_render_tweet_headline_html(item)}</li>'
             )
-            continue
+        parts.append("</ul>")
 
-        close_tweet_list()
-        if current_section_open and current_section_title and article is None:
-            output.append(
-                f'<p style="margin: 0 0 10px 0; color: #a3a099; font-size: 15px; line-height: 1.6;">'
-                f"{md_inline_to_html(line)}</p>"
+    community_headlines = payload.get("community_headlines", [])
+    if community_headlines:
+        parts.append('<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">From Reddit/HN/YC</h2>')
+        parts.append('<ul style="padding-left: 22px; margin: 10px 0 18px;">')
+        for item in community_headlines:
+            label = str(item.get("source_label", "")).strip()
+            headline = str(item.get("headline", "")).strip()
+            url = str(item.get("url", "")).strip()
+            display = f"[{label}] {headline}" if label else headline
+            parts.append(
+                '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
+                f'{_render_tweet_headline_html({"headline": display, "url": url})}</li>'
             )
+        parts.append("</ul>")
 
-    close_tweet_list()
-    flush_article()
-    return "\n".join(output)
+    return "\n".join(parts)
+
+
+def _read_issue(json_path: Path) -> Optional[DigestIssue]:
+    payload = json.loads(json_path.read_text(encoding="utf-8"))
+    digest_date = str(payload.get("digest_date", json_path.stem))
+    subject = str(payload.get("subject_line", f"{SITE_TITLE} • {digest_date}"))
+    issue_id = str(payload.get("issue_id", "")).strip()
+    issue_label = _issue_label_from_issue_id(issue_id)
+    intro = str(payload.get("intro", ""))
+    article_count = int(payload.get("article_count", 0) or 0)
+    body_html = _render_body_from_payload(payload)
+    slug = json_path.stem
+    if slug.endswith(".sent"):
+        slug = slug[: -len(".sent")]
+    return DigestIssue(
+        digest_date=digest_date,
+        subject=subject,
+        intro=intro,
+        article_count=article_count,
+        body_html=body_html,
+        slug=slug,
+        source_file=str(json_path),
+        issue_label=issue_label,
+        content_hash=str(payload.get("content_hash", "")),
+    )
 
 
 def _render_issue_page(issue: DigestIssue) -> str:
@@ -418,7 +324,7 @@ def _render_issue_page(issue: DigestIssue) -> str:
     </nav>
     <header class="issue-header">
       <h1>AI News Daily</h1>
-      <p>Issue #{issue.issue_number} · {issue.display_date} · {issue.article_count} stories</p>
+      <p>Issue {issue.issue_label} · {issue.display_date} · {issue.article_count} stories</p>
     </header>
 
     <section class="cta">
@@ -455,7 +361,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
         [
             (
                 f'<li>'
-                f'<span class="issue-id">#{issue.issue_number}</span>'
+                f'<span class="issue-id">#{issue.issue_label}</span>'
                 f'<span class="issue-date">{issue.display_date}</span>'
                 f'<a href="{issue.slug}.html">{html.escape(issue.subject)}</a>'
                 f'<span>{issue.article_count} stories</span>'
@@ -564,24 +470,27 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
 """
 
 
-def build_web_archive() -> Dict[str, int]:
-    if not ARCHIVE_DIR.exists():
-        raise FileNotFoundError(f"Digest directory not found: {ARCHIVE_DIR}")
+def build_web_archive(slug_prefix: str = "", use_canonical_fallback: bool = False) -> Dict[str, int]:
+    if not SNAPSHOT_DIR.exists() and not use_canonical_fallback:
+        raise FileNotFoundError(f"Sent snapshot directory not found: {SNAPSHOT_DIR}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    issue_files = sorted(ARCHIVE_DIR.glob("*.md"))
+    issue_files = sorted(SNAPSHOT_DIR.glob("*.sent.json"))
+    if not issue_files and use_canonical_fallback:
+        issue_files = sorted(ARCHIVE_DIR.glob("*.json"))
+    if not issue_files:
+        raise FileNotFoundError(
+            "No sent snapshots found. Expected files like data/digests/snapshots/YYYY-MM-DD.sent.json"
+        )
+
     issues: List[DigestIssue] = []
     for issue_file in issue_files:
         issue = _read_issue(issue_file)
         if issue is not None:
+            if slug_prefix:
+                issue.slug = f"{slug_prefix}{issue.slug}"
             issues.append(issue)
-
-    issues.sort(key=lambda item: item.digest_date)
-
-    for idx, issue in enumerate(issues, start=1):
-        issue.issue_number = idx
-        issue.subject = _build_issue_subject(issue.issue_number, issue.article_count)
 
     issues.sort(key=lambda item: item.digest_date, reverse=True)
 
@@ -608,5 +517,12 @@ def build_web_archive() -> Dict[str, int]:
 
 
 if __name__ == "__main__":
-    result = build_web_archive()
+    parser = argparse.ArgumentParser(description="Build web archive from canonical digest JSON.")
+    parser.add_argument("--slug-prefix", type=str, default="")
+    parser.add_argument("--use-canonical-fallback", action="store_true")
+    args = parser.parse_args()
+    result = build_web_archive(
+        slug_prefix=args.slug_prefix,
+        use_canonical_fallback=args.use_canonical_fallback,
+    )
     print(f"Built web archive with {result['issues']} issues.")
