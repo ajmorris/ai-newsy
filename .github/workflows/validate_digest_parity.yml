@@ -122,6 +122,7 @@ jobs:
         run: |
           python execution/validate_digest_parity.py \
             --digest-date "${{ steps.digest_date.outputs.value }}" \
+            --snapshot-dir data/digests/snapshots \
             --report parity-report.json
 
       - name: Upload parity artifacts
@@ -132,6 +133,7 @@ jobs:
             parity-report.json
             data/digests/${{ steps.digest_date.outputs.value }}.json
             data/digests/${{ steps.digest_date.outputs.value }}.md
+            data/digests/snapshots/${{ steps.digest_date.outputs.value }}.sent.json
             frontend/issues/*.html
             frontend/issues/index.json
           if-no-files-found: error

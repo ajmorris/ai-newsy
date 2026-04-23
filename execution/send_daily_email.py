@@ -27,7 +27,11 @@ from execution.database import (
     insert_digest_log,
 )
 from execution.ai_client import generate_text_with_fallback
-from execution.digest_payload import DigestBuildOptions, load_or_build_digest_payload
+from execution.digest_payload import (
+    DigestBuildOptions,
+    load_or_build_digest_payload,
+    write_sent_snapshot,
+)
 
 load_dotenv()
 
@@ -651,6 +655,7 @@ def send_daily_digest(
     test_email: Optional[str] = None,
     sent_yesterday: bool = False,
     digest_date: Optional[str] = None,
+    overwrite_snapshot: bool = False,
 ) -> dict:
     """
     Send daily digest to all active subscribers (or only to test_email if set).
@@ -703,6 +708,20 @@ def send_daily_digest(
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
     intro = str(payload.get("intro", ""))
+
+    send_started_at = datetime.utcnow().isoformat()
+    snapshot_path = None
+    if not dry_run:
+        snapshot_path = write_sent_snapshot(
+            payload=payload,
+            allow_overwrite=overwrite_snapshot,
+            metadata={
+                "created_by": "send_daily_email",
+                "send_mode": "test" if test_email else "production",
+                "send_started_at": send_started_at,
+            },
+        )
+        print(f"🧊 Sent snapshot path: {snapshot_path}")
 
     for subscriber in subscribers:
         email = subscriber.get('email')
@@ -782,6 +801,8 @@ if __name__ == "__main__":
                         help="Build digest from articles sent yesterday (UTC), for testing replay")
     parser.add_argument('--digest-date', type=str, default=None,
                         help="Build/send digest for YYYY-MM-DD canonical payload date")
+    parser.add_argument('--overwrite-snapshot', action='store_true',
+                        help="Allow replacing existing sent snapshot for digest date")
     args = parser.parse_args()
 
     # Check for API key
@@ -795,5 +816,6 @@ if __name__ == "__main__":
         test_email=args.test_email,
         sent_yesterday=args.sent_yesterday,
         digest_date=args.digest_date,
+        overwrite_snapshot=args.overwrite_snapshot,
     )
     print(f"Done! Sent digest with {result['articles']} articles to {result['sent']} subscribers.")

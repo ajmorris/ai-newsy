@@ -27,13 +27,15 @@ fi
 
 TEMP_ROOT="$(mktemp -d "${TMPDIR:-/tmp}/ai-newsy-parity.XXXXXX")"
 export DIGEST_MARKDOWN_DIR="${TEMP_ROOT}/digests"
+export DIGEST_SNAPSHOT_DIR="${TEMP_ROOT}/digests/snapshots"
 export WEB_ARCHIVE_OUTPUT_DIR="${TEMP_ROOT}/issues"
 REPORT_PATH="${TEMP_ROOT}/parity-report.json"
 
-mkdir -p "${DIGEST_MARKDOWN_DIR}" "${WEB_ARCHIVE_OUTPUT_DIR}"
+mkdir -p "${DIGEST_MARKDOWN_DIR}" "${DIGEST_SNAPSHOT_DIR}" "${WEB_ARCHIVE_OUTPUT_DIR}"
 
 echo "Using temporary workspace:"
 echo "  DIGEST_MARKDOWN_DIR=${DIGEST_MARKDOWN_DIR}"
+echo "  DIGEST_SNAPSHOT_DIR=${DIGEST_SNAPSHOT_DIR}"
 echo "  WEB_ARCHIVE_OUTPUT_DIR=${WEB_ARCHIVE_OUTPUT_DIR}"
 
 DIGEST_DATE_ARGS=()
@@ -63,6 +65,7 @@ echo "=== 4) Validate parity ==="
 python3 execution/validate_digest_parity.py \
   --digest-date "${DIGEST_DATE}" \
   --digest-dir "${DIGEST_MARKDOWN_DIR}" \
+  --snapshot-dir "${DIGEST_SNAPSHOT_DIR}" \
   --issues-dir "${WEB_ARCHIVE_OUTPUT_DIR}" \
   --report "${REPORT_PATH}"
 
@@ -71,5 +74,6 @@ echo "Parity validation passed."
 echo "Artifacts:"
 echo "  Canonical digest: ${DIGEST_MARKDOWN_DIR}/${DIGEST_DATE}.json"
 echo "  Markdown digest:  ${DIGEST_MARKDOWN_DIR}/${DIGEST_DATE}.md"
+echo "  Sent snapshot:   ${DIGEST_SNAPSHOT_DIR}/${DIGEST_DATE}.sent.json"
 echo "  Web issue:        ${WEB_ARCHIVE_OUTPUT_DIR}/${DIGEST_DATE}.html"
 echo "  Report:           ${REPORT_PATH}"

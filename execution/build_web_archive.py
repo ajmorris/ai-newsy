@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 ARCHIVE_DIR = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
+SNAPSHOT_DIR = Path(os.getenv("DIGEST_SNAPSHOT_DIR", str(ARCHIVE_DIR / "snapshots")))
 OUTPUT_DIR = Path(os.getenv("WEB_ARCHIVE_OUTPUT_DIR", "frontend/issues"))
 MANIFEST_PATH = OUTPUT_DIR / "index.json"
 SITE_TITLE = "AI Newsy"
@@ -172,13 +173,16 @@ def _read_issue(json_path: Path) -> Optional[DigestIssue]:
     intro = str(payload.get("intro", ""))
     article_count = int(payload.get("article_count", 0) or 0)
     body_html = _render_body_from_payload(payload)
+    slug = json_path.stem
+    if slug.endswith(".sent"):
+        slug = slug[: -len(".sent")]
     return DigestIssue(
         digest_date=digest_date,
         subject=subject,
         intro=intro,
         article_count=article_count,
         body_html=body_html,
-        slug=json_path.stem,
+        slug=slug,
         source_file=str(json_path),
         issue_label=issue_label,
         content_hash=str(payload.get("content_hash", "")),
@@ -466,13 +470,20 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
 """
 
 
-def build_web_archive(slug_prefix: str = "") -> Dict[str, int]:
-    if not ARCHIVE_DIR.exists():
-        raise FileNotFoundError(f"Digest directory not found: {ARCHIVE_DIR}")
+def build_web_archive(slug_prefix: str = "", use_canonical_fallback: bool = False) -> Dict[str, int]:
+    if not SNAPSHOT_DIR.exists() and not use_canonical_fallback:
+        raise FileNotFoundError(f"Sent snapshot directory not found: {SNAPSHOT_DIR}")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    issue_files = sorted(ARCHIVE_DIR.glob("*.json"))
+    issue_files = sorted(SNAPSHOT_DIR.glob("*.sent.json"))
+    if not issue_files and use_canonical_fallback:
+        issue_files = sorted(ARCHIVE_DIR.glob("*.json"))
+    if not issue_files:
+        raise FileNotFoundError(
+            "No sent snapshots found. Expected files like data/digests/snapshots/YYYY-MM-DD.sent.json"
+        )
+
     issues: List[DigestIssue] = []
     for issue_file in issue_files:
         issue = _read_issue(issue_file)
@@ -508,6 +519,10 @@ def build_web_archive(slug_prefix: str = "") -> Dict[str, int]:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Build web archive from canonical digest JSON.")
     parser.add_argument("--slug-prefix", type=str, default="")
+    parser.add_argument("--use-canonical-fallback", action="store_true")
     args = parser.parse_args()
-    result = build_web_archive(slug_prefix=args.slug_prefix)
+    result = build_web_archive(
+        slug_prefix=args.slug_prefix,
+        use_canonical_fallback=args.use_canonical_fallback,
+    )
     print(f"Built web archive with {result['issues']} issues.")

@@ -29,6 +29,7 @@ from execution.database import (
 load_dotenv()
 
 CANONICAL_SCHEMA_VERSION = "digest-json-v1"
+DIGEST_SNAPSHOT_SUFFIX = ".sent.json"
 
 TOPIC_TO_CATEGORY: Dict[str, str] = {
     "Models": "Model Releases & Capabilities",
@@ -212,6 +213,47 @@ def write_digest_payload(payload: Dict[str, Any], output_dir: Optional[Path] = N
     output_path = out_dir / f"{payload['digest_date']}.json"
     output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return output_path
+
+
+def _snapshot_dir(base_dir: Optional[Path] = None) -> Path:
+    if base_dir is not None:
+        return base_dir
+    env_dir = os.getenv("DIGEST_SNAPSHOT_DIR", "").strip()
+    if env_dir:
+        return Path(env_dir)
+    return Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests")) / "snapshots"
+
+
+def snapshot_path_for_digest(digest_date: str, snapshot_dir: Optional[Path] = None) -> Path:
+    return _snapshot_dir(snapshot_dir) / f"{digest_date}{DIGEST_SNAPSHOT_SUFFIX}"
+
+
+def write_sent_snapshot(
+    payload: Dict[str, Any],
+    snapshot_dir: Optional[Path] = None,
+    allow_overwrite: bool = False,
+    metadata: Optional[Dict[str, Any]] = None,
+) -> Path:
+    snap_path = snapshot_path_for_digest(str(payload["digest_date"]), snapshot_dir=snapshot_dir)
+    snap_path.parent.mkdir(parents=True, exist_ok=True)
+    if snap_path.exists() and not allow_overwrite:
+        return snap_path
+    snapshot_payload = dict(payload)
+    build_meta = dict(snapshot_payload.get("build_meta") or {})
+    build_meta["source"] = "sent_snapshot"
+    if metadata:
+        build_meta["snapshot_meta"] = metadata
+    snapshot_payload["build_meta"] = build_meta
+    snapshot_payload["content_hash"] = _content_hash(snapshot_payload)
+    snap_path.write_text(json.dumps(snapshot_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return snap_path
+
+
+def load_sent_snapshot(digest_date: str, snapshot_dir: Optional[Path] = None) -> Optional[Dict[str, Any]]:
+    snap_path = snapshot_path_for_digest(digest_date=digest_date, snapshot_dir=snapshot_dir)
+    if not snap_path.exists():
+        return None
+    return json.loads(snap_path.read_text(encoding="utf-8"))
 
 
 def load_digest_payload(digest_date: str, output_dir: Optional[Path] = None) -> Optional[Dict[str, Any]]:

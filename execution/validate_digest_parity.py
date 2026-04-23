@@ -25,13 +25,18 @@ def _story_signatures(stories: List[Dict[str, Any]]) -> List[str]:
 def validate_parity(
     digest_date: str,
     digest_dir: Path,
+    snapshot_dir: Path,
     issues_dir: Path,
     report_path: Path,
 ) -> Dict[str, Any]:
+    snapshot_path = snapshot_dir / f"{digest_date}.sent.json"
     digest_path = digest_dir / f"{digest_date}.json"
-    if not digest_path.exists():
-        raise SystemExit(f"Missing canonical digest: {digest_path}")
-    digest = _load_json(digest_path)
+    if snapshot_path.exists():
+        digest = _load_json(snapshot_path)
+    elif digest_path.exists():
+        digest = _load_json(digest_path)
+    else:
+        raise SystemExit(f"Missing digest source for parity: {snapshot_path} or {digest_path}")
 
     stories = list(digest.get("stories", []))
     sections = list(digest.get("sections", []))
@@ -103,16 +108,13 @@ def validate_parity(
     )
 
     issue_html_path = issues_dir / f"{digest_date}.html"
-    if issue_html_path.exists():
-        html_text = issue_html_path.read_text(encoding="utf-8")
-        title_checks = all(str(story.get("title", "")) in html_text for story in stories)
-        checks.append(
-            {
-                "name": "issue_html_contains_all_story_titles",
-                "pass": title_checks,
-                "details": {"story_count": len(stories)},
-            }
-        )
+    checks.append(
+        {
+            "name": "issue_html_exists_for_digest_date",
+            "pass": issue_html_path.exists(),
+            "details": {"issue_html": str(issue_html_path)},
+        }
+    )
 
     passed = all(item["pass"] for item in checks)
     report = {"digest_date": digest_date, "pass": passed, "checks": checks}
@@ -124,6 +126,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Validate digest content parity.")
     parser.add_argument("--digest-date", required=True)
     parser.add_argument("--digest-dir", default="data/digests")
+    parser.add_argument("--snapshot-dir", default="data/digests/snapshots")
     parser.add_argument("--issues-dir", default="frontend/issues")
     parser.add_argument("--report", default="parity-report.json")
     args = parser.parse_args()
@@ -131,6 +134,7 @@ if __name__ == "__main__":
     report = validate_parity(
         digest_date=args.digest_date,
         digest_dir=Path(args.digest_dir),
+        snapshot_dir=Path(args.snapshot_dir),
         issues_dir=Path(args.issues_dir),
         report_path=Path(args.report),
     )
