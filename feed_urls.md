@@ -33,3 +33,19 @@
 - [Thinking Machines](https://raw.githubusercontent.com/ajmorris/rss-feeds/main/feeds/feed_thinkingmachines.xml)
 - [Chander Ramesh](https://raw.githubusercontent.com/ajmorris/rss-feeds/main/feeds/feed_chanderramesh.xml)
 - [Anthropic (Legacy)](https://raw.githubusercontent.com/ajmorris/rss-feeds/main/feeds/feed_anthropic.xml)
+
+## Around the Web Expansion
+
+- [Google DeepMind](https://deepmind.google/blog/rss.xml)
+- [NVIDIA AI Blog](https://blogs.nvidia.com/feed/)
+- [Google AI Blog](http://googleaiblog.blogspot.com/atom.xml)
+- [xAI Blog](https://x.ai/blog/rss.xml)
+- [ElevenLabs Blog](https://elevenlabs.io/blog/rss.xml)
+- [Tesla AI](https://www.tesla.com/blog/rss)
+- [Boston Dynamics Blog](https://bostondynamics.com/blog/rss.xml)
+- [Perplexity Blog](https://www.perplexity.ai/hub/blog/rss.xml)
+- [Meta AI Blog](https://ai.meta.com/blog/rss/)
+- [Cursor Blog](https://www.cursor.com/blog/rss.xml)
+- [Runway Research](https://runwayml.com/research/rss.xml)
+- [DeepSeek News](https://api.deepseek.com/news/rss.xml)
+- [Microsoft Research AI](https://www.microsoft.com/en-us/research/feed/)

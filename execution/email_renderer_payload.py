@@ -84,6 +84,9 @@ def build_email_renderer_payload(
     digest_date: str,
     tweet_headlines: Optional[List[dict]] = None,
     community_headlines: Optional[List[dict]] = None,
+    what_reading: Optional[Dict[str, object]] = None,
+    what_watching: Optional[Dict[str, object]] = None,
+    around_web: Optional[List[dict]] = None,
 ) -> Dict[str, object]:
     stories: List[Dict[str, str]] = []
     for section in sections:
@@ -127,15 +130,31 @@ def build_email_renderer_payload(
 
     issue_number = _issue_number_from_digest_date(digest_date)
     archive_url = f"{APP_URL}/issues/"
+    around_web_hits: List[Dict[str, str]] = []
+    for item in (around_web or [])[:12]:
+        headline = str(item.get("headline", "") or "").strip()
+        if not headline:
+            continue
+        around_web_hits.append(
+            {
+                "headline": headline,
+                "url": str(item.get("url", "") or "").strip(),
+                "sourceLabel": str(item.get("source_label", "") or "").strip(),
+            }
+        )
+
     return {
         "subject": subject,
         "intro": intro,
-        "heroHeadline": "The AI feed, distilled.",
+        "heroHeadline": "What I am learning in AI today.",
         "dateLabel": digest_date,
         "issueNumber": issue_number,
         "stories": stories[:8],
         "tweetHeadlines": tweet_quick_hits,
         "communityHeadlines": community_quick_hits,
+        "whatReading": what_reading or {},
+        "whatWatching": what_watching or {},
+        "aroundWebHeadlines": around_web_hits,
         "unsubscribeUrl": f"{APP_URL}/api/unsubscribe?token={unsubscribe_token}",
         "viewInBrowserUrl": f"{APP_URL}/issues/{digest_date}.html",
         "archiveUrl": archive_url,

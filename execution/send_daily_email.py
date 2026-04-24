@@ -304,6 +304,9 @@ def generate_email_html(
     intro: str,
     tweet_headlines: Optional[List[dict]] = None,
     community_headlines: Optional[List[dict]] = None,
+    what_reading: Optional[Dict[str, object]] = None,
+    what_watching: Optional[Dict[str, object]] = None,
+    around_web: Optional[List[dict]] = None,
     unsubscribe_token: str = "",
     digest_summary_line: str = "",
 ) -> str:
@@ -364,6 +367,18 @@ def generate_email_html(
 
     tweet_headlines = tweet_headlines or []
     community_headlines = community_headlines or []
+    what_reading = what_reading or {}
+    what_watching = what_watching or {}
+    around_web = around_web or (tweet_headlines + community_headlines)
+
+    reading_title = str(what_reading.get("title", "") or "What I'm Reading").strip()
+    reading_essay = str(what_reading.get("essay", "") or "").strip()
+    watching_title = str(what_watching.get("title", "") or "").strip()
+    watching_url = str(what_watching.get("url", "") or "").strip()
+    watching_channel = str(what_watching.get("channel", "") or "").strip()
+    why_this_matters = str(what_watching.get("why_this_matters", "") or "").strip()
+    why_im_sharing_it = str(what_watching.get("why_im_sharing_it", "") or "").strip()
+    why_its_important = str(what_watching.get("why_its_important", "") or "").strip()
 
     tweet_section_html = ""
     if tweet_headlines:
@@ -397,7 +412,16 @@ def generate_email_html(
         </div>
         """
 
-    # Full email fallback template using the dark-brutalist palette
+    around_rows = []
+    for item in around_web[:12]:
+        source_label = str(item.get("source_label", "") or "").strip()
+        source_suffix = f' <span style="color:#6b6a65;">({source_label})</span>' if source_label else ""
+        around_rows.append(
+            f'<li style="margin-bottom: 10px; line-height: 1.6; color: #a3a099;">'
+            f"{render_tweet_headline_html(item)}{source_suffix}</li>"
+        )
+    around_items_html = "".join(around_rows)
+
     html = f"""
     <!DOCTYPE html>
     <html>
@@ -410,19 +434,33 @@ def generate_email_html(
             <div style="background-color: #17171a; border: 1px solid #26262b;">
             <div style="margin-bottom: 32px;">
                 <div style="padding: 28px 28px 18px; background-color: #121214; border-bottom: 1px solid #1d1d21;">
-                    <h1 style="color: #f4f3ef; font-size: 34px; margin: 0 0 10px 0; font-weight: 700; letter-spacing: -1px; line-height: 1.1;">The AI feed, distilled.</h1>
+                    <h1 style="color: #f4f3ef; font-size: 34px; margin: 0 0 10px 0; font-weight: 700; letter-spacing: -1px; line-height: 1.1;">What I am learning in AI today.</h1>
                     <p style="color: #a3a099; margin: 0; font-size: 14px; line-height: 1.6;">{intro}</p>
                     <p style="color: #6b6a65; margin: 12px 0 0 0; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">{summary_line}</p>
                 </div>
             </div>
-            <div style="margin-bottom: 32px;">
-                <div style="padding: 0 28px 0 28px;">{section_blocks}</div>
+            <div style="padding: 0 28px 12px 28px;">
+                <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef;">What I'm Reading</h2>
+                <p style="margin: 0 0 8px 0; color: #f4f3ef; font-size: 18px; font-weight: 600;">{reading_title}</p>
+                <p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.7; white-space: pre-line;">{reading_essay}</p>
             </div>
-            <div style="padding: 0 28px 0 28px;">{tweet_section_html}</div>
-            <div style="padding: 0 28px 0 28px;">{community_section_html}</div>
+            <div style="padding: 16px 28px 12px 28px;">
+                <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef;">What I'm Watching</h2>
+                <p style="margin: 0 0 6px 0; color: #f4f3ef; font-size: 18px; font-weight: 600;">
+                    <a href="{watching_url or '#'}" style="color:#f4f3ef;text-decoration:underline;">{watching_title or 'No video selected today'}</a>
+                </p>
+                <p style="margin: 0 0 10px 0; color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 11px;">{watching_channel}</p>
+                <p style="margin: 0 0 6px 0; color: #a3a099; font-size: 14px; line-height: 1.6;"><strong>Why this matters:</strong> {why_this_matters}</p>
+                <p style="margin: 0 0 6px 0; color: #a3a099; font-size: 14px; line-height: 1.6;"><strong>Why I'm sharing it:</strong> {why_im_sharing_it}</p>
+                <p style="margin: 0; color: #a3a099; font-size: 14px; line-height: 1.6;"><strong>Why it's important:</strong> {why_its_important}</p>
+            </div>
+            <div style="padding: 0 28px 18px 28px;">
+                <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef;">Around the Web</h2>
+                <ul style="padding-left: 20px; margin: 0;">{around_items_html}</ul>
+            </div>
             <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
                 <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
-                    You're receiving this because you subscribed to AI Newsy.
+                    You're receiving this because you subscribed to AJ's daily AI brief.
                     <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
                 </p>
             </div>
@@ -495,7 +533,7 @@ def send_email(to_email: str, html_content: str, subject: str) -> bool:
     """Send a single email via Resend."""
     try:
         params = {
-            "from": f"AI Newsy <{EMAIL_FROM}>",
+            "from": f"AJ Morris <{EMAIL_FROM}>",
             "to": [to_email],
             "subject": subject,
             "html": html_content,
@@ -586,6 +624,9 @@ def send_daily_digest(
     sections = list(payload.get("sections", [])) or group_articles_by_category(articles)
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
+    what_reading = dict(payload.get("what_reading", {}) or {})
+    what_watching = dict(payload.get("what_watching", {}) or {})
+    around_web = list(payload.get("around_web", []) or [])
     intro = str(payload.get("intro", ""))
 
     send_started_at = datetime.utcnow().isoformat()
@@ -621,6 +662,9 @@ def send_daily_digest(
             digest_date=digest_date,
             tweet_headlines=tweet_headlines,
             community_headlines=community_headlines,
+            what_reading=what_reading,
+            what_watching=what_watching,
+            around_web=around_web,
         )
         rendered_html = _render_email_with_mjml(payload)
 
@@ -642,6 +686,9 @@ def send_daily_digest(
                     intro=intro,
                     tweet_headlines=tweet_headlines,
                     community_headlines=community_headlines,
+                    what_reading=what_reading,
+                    what_watching=what_watching,
+                    around_web=around_web,
                     unsubscribe_token=token,
                     digest_summary_line=digest_summary_line,
                 )

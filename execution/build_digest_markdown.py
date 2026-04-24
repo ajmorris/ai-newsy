@@ -46,6 +46,7 @@ def _render_frontmatter(
     sections: List[dict],
     tweet_count: int,
     community_count: int,
+    around_web_count: int,
 ) -> str:
     lines = [
         "---",
@@ -55,6 +56,7 @@ def _render_frontmatter(
         f"article_count: {sum(len(s['articles']) for s in sections)}",
         f"tweet_headline_count: {tweet_count}",
         f"community_headline_count: {community_count}",
+        f"around_web_count: {around_web_count}",
         "sections:",
     ]
     for section in sections:
@@ -73,8 +75,29 @@ def _render_frontmatter(
     return "\n".join(lines)
 
 
-def _render_body(sections: List[dict], tweet_headlines: List[dict], community_headlines: List[dict]) -> str:
+def _render_body(
+    sections: List[dict],
+    tweet_headlines: List[dict],
+    community_headlines: List[dict],
+    what_reading: Dict[str, object],
+    what_watching: Dict[str, object],
+    around_web: List[dict],
+) -> str:
     parts: List[str] = []
+    parts.append("## What I'm Reading\n")
+    parts.append(f"### {str(what_reading.get('title', '') or 'What I am reading today')}")
+    parts.append(str(what_reading.get("essay", "") or ""))
+    parts.append("")
+
+    parts.append("## What I'm Watching\n")
+    watch_title = str(what_watching.get("title", "") or "No video selected")
+    watch_url = str(what_watching.get("url", "") or "#")
+    parts.append(f"### [{watch_title}]({watch_url})")
+    parts.append(f"- Why this matters: {str(what_watching.get('why_this_matters', '') or '')}")
+    parts.append(f"- Why I'm sharing it: {str(what_watching.get('why_im_sharing_it', '') or '')}")
+    parts.append(f"- Why it's important: {str(what_watching.get('why_its_important', '') or '')}")
+    parts.append("")
+
     for section in sections:
         parts.append(f"## {section['name']}\n")
         for article in section["articles"]:
@@ -107,22 +130,14 @@ def _render_body(sections: List[dict], tweet_headlines: List[dict], community_he
             parts.append("```")
             parts.append("")
 
-    if tweet_headlines:
-        parts.append("## From X/Twitter\n")
-        for item in tweet_headlines:
-            headline = item.get("headline", "")
-            url = item.get("url", "")
-            parts.append(f"- {headline} ([Source]({url}))")
-        parts.append("")
-
-    if community_headlines:
-        parts.append("## From Reddit/HN/YC\n")
-        for item in community_headlines:
-            source = item.get("source_label", "Community")
-            headline = item.get("headline", "")
-            url = item.get("url", "")
-            parts.append(f"- [{source}] {headline} ([Source]({url}))")
-        parts.append("")
+    parts.append("## Around the Web\n")
+    rows = around_web or tweet_headlines + community_headlines
+    for item in rows:
+        source = item.get("source_label", "Web")
+        headline = item.get("headline", "")
+        url = item.get("url", "")
+        parts.append(f"- [{source}] {headline} ([Source]({url}))")
+    parts.append("")
 
     return "\n".join(parts).strip() + "\n"
 
@@ -144,6 +159,9 @@ def build_digest_markdown(
     sections = list(payload.get("sections", []))
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
+    what_reading = dict(payload.get("what_reading", {}) or {})
+    what_watching = dict(payload.get("what_watching", {}) or {})
+    around_web = list(payload.get("around_web", []) or [])
 
     frontmatter = _render_frontmatter(
         digest_date=safe_date,
@@ -152,8 +170,16 @@ def build_digest_markdown(
         sections=sections,
         tweet_count=len(tweet_headlines),
         community_count=len(community_headlines),
+        around_web_count=len(around_web),
     )
-    body = _render_body(sections, tweet_headlines=tweet_headlines, community_headlines=community_headlines)
+    body = _render_body(
+        sections,
+        tweet_headlines=tweet_headlines,
+        community_headlines=community_headlines,
+        what_reading=what_reading,
+        what_watching=what_watching,
+        around_web=around_web,
+    )
 
     output_dir = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
     output_dir.mkdir(parents=True, exist_ok=True)

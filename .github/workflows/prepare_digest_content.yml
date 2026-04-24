@@ -84,6 +84,41 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
         run: python execution/generate_community_headlines.py
 
+      - name: Generate What I'm Reading atomic essay
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          PROMPT_WHAT_READING: ${{ vars.PROMPT_WHAT_READING }}
+        run: python execution/generate_atomic_reading_essay.py
+
+      - name: Generate What I'm Watching from Notion YouTube
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_YOUTUBE_DATABASE_ID: ${{ secrets.NOTION_YOUTUBE_DATABASE_ID }}
+          PROMPT_WHAT_WATCHING: ${{ vars.PROMPT_WHAT_WATCHING }}
+        run: python execution/generate_youtube_watching.py
+
+      - name: Build Around the Web rollup
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          AROUND_WEB_LOOKBACK_HOURS: ${{ vars.AROUND_WEB_LOOKBACK_HOURS || '24' }}
+          AROUND_WEB_MAX_HEADLINES: ${{ vars.AROUND_WEB_MAX_HEADLINES || '18' }}
+        run: python execution/generate_around_web_headlines.py
+
       - name: Verify RSS summaries available for digest
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}

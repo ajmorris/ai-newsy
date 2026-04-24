@@ -34,8 +34,13 @@ const DB = {
 const stories = (payload.stories || []).slice(0, 8);
 const tweetHeadlines = payload.tweetHeadlines || [];
 const communityHeadlines = payload.communityHeadlines || [];
+const whatReading = payload.whatReading || {};
+const whatWatching = payload.whatWatching || {};
+const aroundWebHeadlines =
+  payload.aroundWebHeadlines ||
+  [...tweetHeadlines, ...communityHeadlines];
 const issueLabel = payload.issueNumber || "00137";
-const heroHeadline = payload.heroHeadline || "The AI feed, distilled.";
+const heroHeadline = payload.heroHeadline || "What I am learning in AI today.";
 
 const renderQuickHitHeadline = (item) => {
   const headline =
@@ -128,6 +133,16 @@ const communityHitItems = communityHeadlines
   )
   .join("");
 
+const aroundWebItems = aroundWebHeadlines
+  .map(
+    (item) => `
+      <mj-text color="${DB.textMute}" font-size="14px" padding="5px 0">
+        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}${item.sourceLabel ? ` <span style="color:${DB.textDim};">(${esc(item.sourceLabel)})</span>` : ""}
+      </mj-text>
+    `
+  )
+  .join("");
+
 const mjml = `
 <mjml>
   <mj-head>
@@ -152,7 +167,7 @@ const mjml = `
                 <div style="width:28px;height:28px;background:${DB.accent};color:${DB.accentInk};text-align:center;line-height:28px;border-radius:2px;font-family:'JetBrains Mono',Menlo,monospace;font-size:14px;font-weight:800;box-shadow:0 0 14px rgba(57,255,136,0.45);">◼</div>
               </td>
               <td style="vertical-align:middle;padding-left:10px;">
-                <div style="font-family:Inter,Arial,sans-serif;color:${DB.text};font-size:14px;font-weight:700;">AI News Daily</div>
+                <div style="font-family:Inter,Arial,sans-serif;color:${DB.text};font-size:14px;font-weight:700;">AJ Morris Daily AI Brief</div>
               </td>
               <td style="vertical-align:middle;text-align:right;">
                 <div style="font-family:'JetBrains Mono',Menlo,monospace;color:${DB.textDim};font-size:10px;letter-spacing:1px;text-transform:uppercase;">${esc(payload.subject || `ISSUE ${issueLabel} · ${stories.length} STORIES · 11 MIN READ`)}</div>
@@ -167,39 +182,44 @@ const mjml = `
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section background-color="${DB.bgRaised}" padding="22px 36px" border-bottom="1px solid ${DB.borderSoft}">
+      
+      <mj-section padding="4px 36px 18px">
         <mj-column>
-          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 8px">
-            ◆ TL;DR
+          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
+            ◆ What I'm Reading
           </mj-text>
-          ${tldrItems}
+          <mj-text color="${DB.text}" font-size="22px" font-weight="700" line-height="1.3" padding="0 0 8px">
+            ${esc(whatReading.title || "What I'm Reading")}
+          </mj-text>
+          <mj-text color="${DB.textMute}" font-size="15px" line-height="1.7" padding="0 0 8px">
+            ${esc(whatReading.essay || "")}
+          </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section padding="24px 36px 10px">
+      <mj-section padding="4px 36px 18px">
         <mj-column>
-          ${storyItems}
+          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
+            ◆ What I'm Watching
+          </mj-text>
+          <mj-text color="${DB.text}" font-size="18px" font-weight="700" line-height="1.4" padding="0 0 6px">
+            <a href="${esc(whatWatching.url || "#")}" style="color:${DB.text};text-decoration:underline;">${esc(whatWatching.title || "No video selected today")}</a>
+          </mj-text>
+          <mj-text color="${DB.textDim}" font-size="11px" font-family="'JetBrains Mono', Menlo, monospace" padding="0 0 10px">
+            ${esc(whatWatching.channel || "")}
+          </mj-text>
+          <mj-text color="${DB.textMute}" font-size="14px" line-height="1.6" padding="0 0 5px"><strong>Why this matters:</strong> ${esc(whatWatching.why_this_matters || "")}</mj-text>
+          <mj-text color="${DB.textMute}" font-size="14px" line-height="1.6" padding="0 0 5px"><strong>Why I'm sharing it:</strong> ${esc(whatWatching.why_im_sharing_it || "")}</mj-text>
+          <mj-text color="${DB.textMute}" font-size="14px" line-height="1.6" padding="0"><strong>Why it's important:</strong> ${esc(whatWatching.why_its_important || "")}</mj-text>
         </mj-column>
       </mj-section>
       ${
-        tweetHitItems
+        aroundWebItems
           ? `<mj-section padding="2px 36px 18px">
         <mj-column>
           <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
-            ◆ Here's what's going on in Twitter/X
+            ◆ Around the Web
           </mj-text>
-          ${tweetHitItems}
-        </mj-column>
-      </mj-section>`
-          : ""
-      }
-      ${
-        communityHitItems
-          ? `<mj-section padding="2px 36px 30px">
-        <mj-column>
-          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
-            ◆ Here's what we're hearing from the community
-          </mj-text>
-          ${communityHitItems}
+          ${aroundWebItems}
         </mj-column>
       </mj-section>`
           : ""
@@ -219,7 +239,7 @@ const mjml = `
       <mj-section padding="18px 36px 24px" border-top="1px solid ${DB.borderSoft}">
         <mj-column>
           <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.textDim}" font-size="10px" line-height="1.8">
-            © 2026 AI News Daily · v4.137 · status: operational <span style="color:${DB.accent}">●</span><br/>
+            © 2026 AJ Morris Daily AI Brief · v5.0 · status: operational <span style="color:${DB.accent}">●</span><br/>
             <a href="${esc(payload.unsubscribeUrl || "#")}" style="color:${DB.textMute};">unsubscribe</a> ·
             <a href="${esc(payload.viewInBrowserUrl || "#")}" style="color:${DB.textMute};">view in browser</a> ·
             <a href="${esc(payload.archiveUrl || "#")}" style="color:${DB.textMute};">archive</a>

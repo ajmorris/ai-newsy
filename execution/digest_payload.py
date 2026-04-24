@@ -137,6 +137,9 @@ def _content_hash(payload: Dict[str, Any]) -> str:
         "stories": payload.get("stories", []),
         "tweet_headlines": payload.get("tweet_headlines", []),
         "community_headlines": payload.get("community_headlines", []),
+        "what_reading": payload.get("what_reading", {}),
+        "what_watching": payload.get("what_watching", {}),
+        "around_web": payload.get("around_web", []),
     }
     blob = json.dumps(canonical_subset, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(blob.encode("utf-8")).hexdigest()
@@ -176,6 +179,43 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
     if isinstance(community_payload, dict):
         community_headlines = list(community_payload.get("headlines", []) or [])[: max(0, options.max_headlines)]
 
+    reading_extra = get_digest_extra(digest_date=digest_date, key="what_reading") or {}
+    what_reading: Dict[str, Any] = {}
+    reading_payload = reading_extra.get("payload")
+    if isinstance(reading_payload, dict):
+        what_reading = {
+            "title": str(reading_payload.get("title", "") or "").strip(),
+            "essay": str(reading_payload.get("essay", "") or "").strip(),
+            "key_links": list(reading_payload.get("key_links", []) or []),
+            "generated_at": str(reading_payload.get("generated_at", "") or ""),
+        }
+
+    watching_extra = get_digest_extra(digest_date=digest_date, key="what_watching") or {}
+    what_watching: Dict[str, Any] = {}
+    watching_payload = watching_extra.get("payload")
+    if isinstance(watching_payload, dict):
+        what_watching = {
+            "title": str(watching_payload.get("title", "") or "").strip(),
+            "url": str(watching_payload.get("url", "") or "").strip(),
+            "channel": str(watching_payload.get("channel", "") or "").strip(),
+            "liked_at": str(watching_payload.get("liked_at", "") or "").strip(),
+            "published_at": str(watching_payload.get("published_at", "") or "").strip(),
+            "why_this_matters": str(watching_payload.get("why_this_matters", "") or "").strip(),
+            "why_im_sharing_it": str(watching_payload.get("why_im_sharing_it", "") or "").strip(),
+            "why_its_important": str(watching_payload.get("why_its_important", "") or "").strip(),
+            "source_text": str(watching_payload.get("source_text", "") or "").strip(),
+            "generated_at": str(watching_payload.get("generated_at", "") or ""),
+        }
+
+    around_web_extra = get_digest_extra(digest_date=digest_date, key="around_web_headlines") or {}
+    around_web: List[Dict[str, Any]] = []
+    around_web_payload = around_web_extra.get("payload")
+    if isinstance(around_web_payload, dict):
+        around_web = list(around_web_payload.get("headlines", []) or [])[: max(0, options.max_headlines * 3)]
+
+    if not around_web:
+        around_web = (tweet_headlines + community_headlines)[: max(0, options.max_headlines * 2)]
+
     issue_id = _issue_id_from_digest_date(digest_date)
     subject_line = _build_subject_line(issue_id, len(stories))
     intro = _get_or_create_intro(digest_date=digest_date, stories=stories) if stories else "No stories selected."
@@ -197,6 +237,9 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
         "sections": sections,
         "tweet_headlines": tweet_headlines,
         "community_headlines": community_headlines,
+        "what_reading": what_reading,
+        "what_watching": what_watching,
+        "around_web": around_web,
         "build_meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "source_window_hours": options.window_hours,
