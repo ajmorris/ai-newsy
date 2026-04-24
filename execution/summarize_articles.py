@@ -15,6 +15,7 @@ from execution.database import (
     supabase,
 )
 from execution.ai_client import generate_text_with_fallback
+from execution.story_text_normalizer import normalize_story_text
 
 load_dotenv()
 
@@ -101,9 +102,12 @@ def summarize_article(title: str, content: str, url: str) -> tuple:
             summary = parts[0].replace("SUMMARY:", "").strip()
             opinion = parts[1].strip()
         else:
-            summary = text # Fallback
-            
-        return summary, opinion
+            summary = normalize_story_text(text, max_chars=900)
+
+        return (
+            normalize_story_text(summary, max_chars=900),
+            normalize_story_text(opinion, max_chars=500),
+        )
     except Exception as e:
         print(f"    Error summarizing: {e}")
         return "", ""

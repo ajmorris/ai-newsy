@@ -21,6 +21,7 @@ import sys
 sys.path.insert(0, '.')
 from execution.markdown_utils import md_inline_to_html as _md_inline_to_html
 from execution.markdown_utils import parse_frontmatter as _parse_frontmatter
+from execution.story_text_normalizer import normalize_story_text
 from execution.database import (
     get_active_subscribers,
     mark_articles_sent,
@@ -160,8 +161,8 @@ def _normalize_article_for_email(article: Dict[str, object]) -> Dict[str, object
         if parsed_topic and not str(normalized.get("topic", "") or "").strip():
             normalized["topic"] = parsed_topic
 
-    normalized["summary"] = summary
-    normalized["opinion"] = opinion
+    normalized["summary"] = normalize_story_text(summary, max_chars=900)
+    normalized["opinion"] = normalize_story_text(opinion, max_chars=500)
     normalized["image_url"] = image_url
     return normalized
 

@@ -7,10 +7,14 @@ import html
 import json
 import os
 import re
+import sys
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+
+sys.path.insert(0, ".")
+from execution.story_text_normalizer import normalize_story_text
 
 ARCHIVE_DIR = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
 SNAPSHOT_DIR = Path(os.getenv("DIGEST_SNAPSHOT_DIR", str(ARCHIVE_DIR / "snapshots")))
@@ -91,8 +95,10 @@ def _render_story(story: Dict[str, Any]) -> str:
     source = html.escape(str(story.get("source", "Unknown Source")))
     title = html.escape(str(story.get("title", "Untitled")))
     link = html.escape(str(story.get("url", "#")), quote=True)
-    summary = html.escape(str(story.get("summary", "")))
-    opinion = html.escape(str(story.get("opinion", "")))
+    summary_text = normalize_story_text(str(story.get("summary", "")), max_chars=900)
+    opinion_text = normalize_story_text(str(story.get("opinion", "")), max_chars=500)
+    summary = html.escape(summary_text)
+    opinion = html.escape(opinion_text)
     image_url = html.escape(str(story.get("image_url", "")), quote=True)
     image_alt = title
     image_html = ""

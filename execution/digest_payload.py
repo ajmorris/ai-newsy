@@ -25,6 +25,7 @@ from execution.database import (
     get_unsent_articles,
     upsert_digest_extra,
 )
+from execution.story_text_normalizer import normalize_story_text
 
 load_dotenv()
 
@@ -90,8 +91,8 @@ def _normalize_article(article: Dict[str, Any]) -> Dict[str, Any]:
         "url": str(article.get("url", "#") or "#").strip(),
         "topic": str(article.get("topic", "") or "").strip(),
         "category": "",
-        "summary": str(article.get("summary", "") or "").strip(),
-        "opinion": str(article.get("opinion", "") or "").strip(),
+        "summary": normalize_story_text(str(article.get("summary", "") or "").strip(), max_chars=900),
+        "opinion": normalize_story_text(str(article.get("opinion", "") or "").strip(), max_chars=500),
         "image_url": str(article.get("image_url", "") or "").strip(),
         "published_at": str(article.get("published_at", "") or ""),
         "fetched_at": str(article.get("fetched_at", "") or ""),

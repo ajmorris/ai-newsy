@@ -4,7 +4,6 @@ Each article is processed at most once and persisted as structured output.
 """
 
 import argparse
-import json
 import os
 import time
 import uuid
@@ -25,6 +24,7 @@ from execution.database import (
     update_article_image,
     upsert_digest_extra,
 )
+from execution.story_text_normalizer import extract_json_object, normalize_story_text
 
 load_dotenv()
 
@@ -94,12 +94,11 @@ def extract_og_image(url: str) -> Optional[str]:
 
 def _safe_analysis_payload(text: str) -> Dict[str, object]:
     """Parse model JSON output with a resilient fallback."""
-    try:
-        payload = json.loads(text)
-    except Exception:
+    payload = extract_json_object(text)
+    if payload is None:
         payload = {
             "topic": "Industry",
-            "summary": text.strip(),
+            "summary": normalize_story_text(text, max_chars=900),
             "opinion": "",
             "confidence": 0.0,
         }
@@ -108,8 +107,8 @@ def _safe_analysis_payload(text: str) -> Dict[str, object]:
     if topic not in TOPICS:
         topic = "Industry"
 
-    summary = str(payload.get("summary", "")).strip()
-    opinion = str(payload.get("opinion", "")).strip()
+    summary = normalize_story_text(str(payload.get("summary", "")).strip(), max_chars=900)
+    opinion = normalize_story_text(str(payload.get("opinion", "")).strip(), max_chars=500)
     confidence_raw = payload.get("confidence", 0.0)
     try:
         confidence = max(0.0, min(float(confidence_raw), 1.0))

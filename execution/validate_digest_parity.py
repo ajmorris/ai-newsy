@@ -12,6 +12,7 @@ import sys
 sys.path.insert(0, ".")
 
 from execution.send_daily_email import _build_email_renderer_payload
+from execution.story_text_normalizer import is_markdown_heavy
 
 
 def _load_json(path: Path) -> Dict[str, Any]:
@@ -20,6 +21,28 @@ def _load_json(path: Path) -> Dict[str, Any]:
 
 def _story_signatures(stories: List[Dict[str, Any]]) -> List[str]:
     return [f"{s.get('title','')}|{s.get('url','')}" for s in stories]
+
+
+def _markdown_violations(stories: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    violations: List[Dict[str, Any]] = []
+    for story in stories:
+        summary = str(story.get("summary", "") or "")
+        opinion = str(story.get("opinion", "") or "")
+        bad_fields: List[str] = []
+        if is_markdown_heavy(summary):
+            bad_fields.append("summary")
+        if is_markdown_heavy(opinion):
+            bad_fields.append("opinion")
+        if bad_fields:
+            violations.append(
+                {
+                    "id": story.get("id"),
+                    "title": story.get("title", ""),
+                    "url": story.get("url", ""),
+                    "fields": bad_fields,
+                }
+            )
+    return violations
 
 
 def validate_parity(
@@ -69,6 +92,17 @@ def validate_parity(
             "name": "email_subject_matches_canonical",
             "pass": str(email_payload.get("subject")) == str(digest.get("subject_line")),
             "details": {},
+        }
+    )
+    markdown_violations = _markdown_violations(stories)
+    checks.append(
+        {
+            "name": "stories_summary_opinion_are_not_markdown_heavy",
+            "pass": len(markdown_violations) == 0,
+            "details": {
+                "violation_count": len(markdown_violations),
+                "violations": markdown_violations[:10],
+            },
         }
     )
 
