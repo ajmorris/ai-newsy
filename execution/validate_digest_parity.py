@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, ".")
 
-from execution.send_daily_email import _build_email_renderer_payload
+from execution.email_renderer_payload import build_email_renderer_payload
 from execution.story_text_normalizer import is_markdown_heavy
 
 
@@ -67,7 +67,7 @@ def validate_parity(
     community_headlines = list(digest.get("community_headlines", []))
 
     # Email parity checks (input parity, not pixel parity).
-    email_payload = _build_email_renderer_payload(
+    email_payload = build_email_renderer_payload(
         sections=sections,
         intro=str(digest.get("intro", "")),
         subject=str(digest.get("subject_line", "")),

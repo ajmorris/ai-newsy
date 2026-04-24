@@ -21,7 +21,10 @@ import sys
 sys.path.insert(0, '.')
 from execution.markdown_utils import md_inline_to_html as _md_inline_to_html
 from execution.markdown_utils import parse_frontmatter as _parse_frontmatter
-from execution.story_text_normalizer import normalize_story_text
+from execution.email_renderer_payload import (
+    build_email_renderer_payload,
+    normalize_article_for_email,
+)
 from execution.database import (
     get_active_subscribers,
     mark_articles_sent,
@@ -107,64 +110,6 @@ def generate_intro(articles: list) -> str:
     except Exception as e:
         print(f"    Error generating intro: {e}")
         return "Here's what's making waves in AI today."
-
-
-def _parse_story_json_blob(raw_text: str) -> Optional[Dict[str, object]]:
-    """Parse JSON story payloads that may be wrapped in markdown fences."""
-    text = (raw_text or "").strip()
-    if not text:
-        return None
-
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*", "", text, count=1, flags=re.IGNORECASE).strip()
-        text = re.sub(r"\s*```$", "", text, count=1).strip()
-
-    if not text.startswith("{"):
-        match = re.search(r"(\{[\s\S]*\})", text)
-        if not match:
-            return None
-        text = match.group(1).strip()
-
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError:
-        return None
-
-    if not isinstance(payload, dict):
-        return None
-
-    if not any(key in payload for key in ("summary", "opinion", "image_url", "topic")):
-        return None
-    return payload
-
-
-def _normalize_article_for_email(article: Dict[str, object]) -> Dict[str, object]:
-    """Normalize article fields so renderers receive clean summary/opinion/image values."""
-    normalized = dict(article)
-    summary = str(normalized.get("summary", "") or "").strip()
-    opinion = str(normalized.get("opinion", "") or "").strip()
-    image_url = str(normalized.get("image_url", "") or "").strip()
-
-    parsed = _parse_story_json_blob(summary) or _parse_story_json_blob(opinion)
-    if parsed:
-        parsed_summary = str(parsed.get("summary", "") or "").strip()
-        parsed_opinion = str(parsed.get("opinion", "") or "").strip()
-        parsed_image = str(parsed.get("image_url", "") or "").strip()
-        parsed_topic = str(parsed.get("topic", "") or "").strip()
-
-        if parsed_summary:
-            summary = parsed_summary
-        if parsed_opinion:
-            opinion = parsed_opinion
-        if parsed_image:
-            image_url = parsed_image
-        if parsed_topic and not str(normalized.get("topic", "") or "").strip():
-            normalized["topic"] = parsed_topic
-
-    normalized["summary"] = normalize_story_text(summary, max_chars=900)
-    normalized["opinion"] = normalize_story_text(opinion, max_chars=500)
-    normalized["image_url"] = image_url
-    return normalized
 
 
 def _markdown_body_to_html(markdown_body: str) -> str:
@@ -489,73 +434,6 @@ def generate_email_html(
     return html
 
 
-def _build_email_renderer_payload(
-    sections: List[dict],
-    intro: str,
-    subject: str,
-    unsubscribe_token: str,
-    digest_date: str,
-    tweet_headlines: Optional[List[dict]] = None,
-    community_headlines: Optional[List[dict]] = None,
-) -> Dict[str, object]:
-    stories: List[Dict[str, str]] = []
-    for section in sections:
-        section_name = section.get("name", DEFAULT_CATEGORY)
-        for article in section.get("articles", []):
-            normalized_article = _normalize_article_for_email(article)
-            stories.append(
-                {
-                    "tag": section_name,
-                    "source": normalized_article.get("source", "Unknown Source"),
-                    "read": normalized_article.get("reading_time", ""),
-                    "headline": normalized_article.get("title", "Untitled"),
-                    "summary": normalized_article.get("summary", ""),
-                    "why": normalized_article.get("opinion", ""),
-                    "url": normalized_article.get("url", "#"),
-                    "imageUrl": normalized_article.get("image_url", ""),
-                }
-            )
-
-    tweet_quick_hits: List[Dict[str, str]] = []
-    for item in (tweet_headlines or [])[:6]:
-        headline = str(item.get("headline", "") or "").strip()
-        if headline:
-            tweet_quick_hits.append(
-                {
-                    "headline": headline,
-                    "url": str(item.get("url", "") or "").strip(),
-                }
-            )
-
-    community_quick_hits: List[Dict[str, str]] = []
-    for item in (community_headlines or [])[:6]:
-        headline = str(item.get("headline", "") or "").strip()
-        if headline:
-            community_quick_hits.append(
-                {
-                    "headline": headline,
-                    "url": str(item.get("url", "") or "").strip(),
-                }
-            )
-
-    issue_number = _issue_number_from_digest_date(digest_date)
-    archive_url = f"{APP_URL}/issues/"
-    return {
-        "subject": subject,
-        "intro": intro,
-        "heroHeadline": "The AI feed, distilled.",
-        "dateLabel": digest_date,
-        "issueNumber": issue_number,
-        "stories": stories[:8],
-        "tweetHeadlines": tweet_quick_hits,
-        "communityHeadlines": community_quick_hits,
-        "unsubscribeUrl": f"{APP_URL}/api/unsubscribe?token={unsubscribe_token}",
-        "viewInBrowserUrl": f"{APP_URL}/issues/{digest_date}.html",
-        "archiveUrl": archive_url,
-        "forwardUrl": archive_url,
-    }
-
-
 def _render_email_with_mjml(payload: Dict[str, object]) -> Optional[str]:
     if not EMAIL_RENDERER_SCRIPT.exists():
         return None
@@ -683,7 +561,7 @@ def send_daily_digest(
         print("No matching articles to include in digest.")
         return {"articles": 0, "sent": 0, "failed": 0}
 
-    articles = [_normalize_article_for_email(article) for article in stories]
+    articles = [normalize_article_for_email(article) for article in stories]
 
     print(f"📰 {len(articles)} articles to include")
 
@@ -735,7 +613,7 @@ def send_daily_digest(
             sent += 1
             continue
 
-        payload = _build_email_renderer_payload(
+        payload = build_email_renderer_payload(
             sections=sections,
             intro=intro,
             subject=digest_summary_line,
