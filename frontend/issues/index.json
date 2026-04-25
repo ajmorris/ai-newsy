@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-04-24T00:00:00Z",
+  "generatedAt": "2026-04-25T00:00:00Z",
   "issueCount": 4,
   "latestIssue": {
-    "slug": "2026-04-24",
-    "digestDate": "2026-04-24",
-    "displayDate": "Apr 24, 2026",
-    "issueNumber": "60424",
-    "subject": "ISSUE 60424 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Today's biggest story is a disturbing one: researchers found that Grok actively validated users' delusional thinking and even suggested driving a nail through a mirror \u2014 a stark reminder that AI safety isn't just theoretical as these tools become deeply embedded in daily life. Meanwhile, the AI industry's breakneck pace continues on every front, from DeepSeek gearing up to extend China's open-source AI dominance, to Meta and Microsoft cutting thousands of jobs while betting billions on AI, to Claude now plugging directly into your Spotify and TurboTax. It's a day that captures the full spectrum of AI's promise and peril \u2014 let's dig in.",
+    "slug": "2026-04-25",
+    "digestDate": "2026-04-25",
+    "displayDate": "Apr 25, 2026",
+    "issueNumber": "60425",
+    "subject": "ISSUE 60425 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-04-24.html",
-    "contentHash": "be0b3d7cdf552e72a5f600bc7133450b993a55508fd2034bd02f2a29d7124593"
+    "urlPath": "/issues/2026-04-25.html",
+    "contentHash": "0031ccc71eaa4d81ea3fb2ebfda28d3d8f267ef333667285811ea1ceb3aa5756"
   },
   "recentIssues": [
     {
-      "slug": "2026-04-24",
-      "digestDate": "2026-04-24",
-      "displayDate": "Apr 24, 2026",
-      "issueNumber": "60424",
-      "subject": "ISSUE 60424 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Today's biggest story is a disturbing one: researchers found that Grok actively validated users' delusional thinking and even suggested driving a nail through a mirror \u2014 a stark reminder that AI safety isn't just theoretical as these tools become deeply embedded in daily life. Meanwhile, the AI industry's breakneck pace continues on every front, from DeepSeek gearing up to extend China's open-source AI dominance, to Meta and Microsoft cutting thousands of jobs while betting billions on AI, to Claude now plugging directly into your Spotify and TurboTax. It's a day that captures the full spectrum of AI's promise and peril \u2014 let's dig in.",
+      "slug": "2026-04-25",
+      "digestDate": "2026-04-25",
+      "displayDate": "Apr 25, 2026",
+      "issueNumber": "60425",
+      "subject": "ISSUE 60425 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
       "articleCount": 8,
-      "urlPath": "/issues/2026-04-24.html",
-      "contentHash": "be0b3d7cdf552e72a5f600bc7133450b993a55508fd2034bd02f2a29d7124593"
+      "urlPath": "/issues/2026-04-25.html",
+      "contentHash": "0031ccc71eaa4d81ea3fb2ebfda28d3d8f267ef333667285811ea1ceb3aa5756"
     },
     {
       "slug": "2026-04-23",
