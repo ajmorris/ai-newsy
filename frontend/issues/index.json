@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-04-25T00:00:00Z",
+  "generatedAt": "2026-04-26T00:00:00Z",
   "issueCount": 4,
   "latestIssue": {
-    "slug": "2026-04-25",
-    "digestDate": "2026-04-25",
-    "displayDate": "Apr 25, 2026",
-    "issueNumber": "60425",
-    "subject": "ISSUE 60425 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
+    "slug": "2026-04-26",
+    "digestDate": "2026-04-26",
+    "displayDate": "Apr 26, 2026",
+    "issueNumber": "60426",
+    "subject": "ISSUE 60426 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-04-25.html",
-    "contentHash": "18e05d47e1b71c60b881e1dea7f0b0d73c0021eb9f8cc41428d3dff9daff25d1"
+    "urlPath": "/issues/2026-04-26.html",
+    "contentHash": "eeb92a844a3668fa2c62b26170cab3aca3bea30d98aaa1aef72ae3e54fb789df"
   },
   "recentIssues": [
     {
-      "slug": "2026-04-25",
-      "digestDate": "2026-04-25",
-      "displayDate": "Apr 25, 2026",
-      "issueNumber": "60425",
-      "subject": "ISSUE 60425 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
+      "slug": "2026-04-26",
+      "digestDate": "2026-04-26",
+      "displayDate": "Apr 26, 2026",
+      "issueNumber": "60426",
+      "subject": "ISSUE 60426 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
       "articleCount": 8,
-      "urlPath": "/issues/2026-04-25.html",
-      "contentHash": "18e05d47e1b71c60b881e1dea7f0b0d73c0021eb9f8cc41428d3dff9daff25d1"
+      "urlPath": "/issues/2026-04-26.html",
+      "contentHash": "eeb92a844a3668fa2c62b26170cab3aca3bea30d98aaa1aef72ae3e54fb789df"
     },
     {
       "slug": "2026-04-23",
