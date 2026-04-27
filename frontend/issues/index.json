@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-04-26T00:00:00Z",
+  "generatedAt": "2026-04-27T00:00:00Z",
   "issueCount": 4,
   "latestIssue": {
-    "slug": "2026-04-26",
-    "digestDate": "2026-04-26",
-    "displayDate": "Apr 26, 2026",
-    "issueNumber": "60426",
-    "subject": "ISSUE 60426 \u00b7 2 STORIES \u00b7 11 MIN READ",
-    "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
-    "articleCount": 2,
-    "urlPath": "/issues/2026-04-26.html",
-    "contentHash": "49c7bfab7665862e02f1a92f0269734bac017b4ef0ca11e999a99edb440ae1a6"
+    "slug": "2026-04-27",
+    "digestDate": "2026-04-27",
+    "displayDate": "Apr 27, 2026",
+    "issueNumber": "60427",
+    "subject": "ISSUE 60427 \u00b7 5 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
+    "articleCount": 5,
+    "urlPath": "/issues/2026-04-27.html",
+    "contentHash": "5e64a8e605302b4ef6f3615fdcc1f826c4e8609d209fa046daf1ca0123b0e5a6"
   },
   "recentIssues": [
     {
-      "slug": "2026-04-26",
-      "digestDate": "2026-04-26",
-      "displayDate": "Apr 26, 2026",
-      "issueNumber": "60426",
-      "subject": "ISSUE 60426 \u00b7 2 STORIES \u00b7 11 MIN READ",
-      "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
-      "articleCount": 2,
-      "urlPath": "/issues/2026-04-26.html",
-      "contentHash": "49c7bfab7665862e02f1a92f0269734bac017b4ef0ca11e999a99edb440ae1a6"
+      "slug": "2026-04-27",
+      "digestDate": "2026-04-27",
+      "displayDate": "Apr 27, 2026",
+      "issueNumber": "60427",
+      "subject": "ISSUE 60427 \u00b7 5 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
+      "articleCount": 5,
+      "urlPath": "/issues/2026-04-27.html",
+      "contentHash": "5e64a8e605302b4ef6f3615fdcc1f826c4e8609d209fa046daf1ca0123b0e5a6"
     },
     {
       "slug": "2026-04-23",
