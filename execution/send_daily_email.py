@@ -33,6 +33,7 @@ from execution.database import (
 from execution.ai_client import generate_text_with_fallback
 from execution.digest_payload import (
     DigestBuildOptions,
+    load_sent_snapshot,
     load_or_build_digest_payload,
     write_sent_snapshot,
 )
@@ -79,6 +80,28 @@ TOPIC_TO_CATEGORY: Dict[str, str] = {
 
 DEFAULT_CATEGORY = "Other AI News"
 EMAIL_RENDERER_SCRIPT = Path("emails/render_email.mjs")
+
+
+def _snapshot_meta_for_digest(digest_date: str) -> Dict[str, object]:
+    """Return snapshot metadata object for a digest date, if present."""
+    snapshot = load_sent_snapshot(digest_date=digest_date)
+    if not isinstance(snapshot, dict):
+        return {}
+    build_meta = snapshot.get("build_meta")
+    if not isinstance(build_meta, dict):
+        return {}
+    snapshot_meta = build_meta.get("snapshot_meta")
+    if not isinstance(snapshot_meta, dict):
+        return {}
+    return snapshot_meta
+
+
+def _production_digest_already_sent(digest_date: str) -> bool:
+    """True when snapshot metadata marks a completed production send."""
+    snapshot_meta = _snapshot_meta_for_digest(digest_date=digest_date)
+    send_mode = str(snapshot_meta.get("send_mode", "")).strip().lower()
+    completed_at = str(snapshot_meta.get("send_completed_at", "")).strip()
+    return send_mode == "production" and bool(completed_at)
 
 
 def _issue_number_from_digest_date(digest_date: str) -> str:
@@ -535,6 +558,8 @@ def send_daily_digest(
     sent_yesterday: bool = False,
     digest_date: Optional[str] = None,
     overwrite_snapshot: bool = False,
+    force_send: bool = False,
+    send_reason: str = "",
 ) -> dict:
     """
     Send daily digest to all active subscribers (or only to test_email if set).
@@ -545,6 +570,10 @@ def send_daily_digest(
     print(f"Daily Email Digest - {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     if test_email:
         print(f"  [TEST MODE] Sending only to: {test_email}")
+    event_name = os.getenv("GITHUB_EVENT_NAME", "local")
+    run_id = os.getenv("GITHUB_RUN_ID", "")
+    run_attempt = os.getenv("GITHUB_RUN_ATTEMPT", "")
+    print(f"  Trigger: {event_name}")
     print(f"{'='*50}\n")
 
     payload = load_or_build_digest_payload(
@@ -556,6 +585,19 @@ def send_daily_digest(
     )
     digest_date = str(payload.get("digest_date"))
     stories = list(payload.get("stories", []))
+    send_mode = "test" if test_email else "production"
+
+    print(f"📅 Digest date: {digest_date}")
+    print(f"🚦 Mode: {send_mode}")
+
+    if not dry_run and not test_email and not force_send and _production_digest_already_sent(digest_date):
+        print("⛔ Duplicate production send prevented: digest already marked as sent for this date.")
+        print("   Use --force-send for intentional resend.")
+        return {"articles": len(stories), "sent": 0, "failed": 0}
+
+    if force_send:
+        reason = send_reason.strip() or "unspecified"
+        print(f"⚠️ Force send enabled. Reason: {reason}")
 
     if not stories:
         print("No matching articles to include in digest.")
@@ -589,18 +631,6 @@ def send_daily_digest(
     intro = str(payload.get("intro", ""))
 
     send_started_at = datetime.utcnow().isoformat()
-    snapshot_path = None
-    if not dry_run:
-        snapshot_path = write_sent_snapshot(
-            payload=payload,
-            allow_overwrite=overwrite_snapshot,
-            metadata={
-                "created_by": "send_daily_email",
-                "send_mode": "test" if test_email else "production",
-                "send_started_at": send_started_at,
-            },
-        )
-        print(f"🧊 Sent snapshot path: {snapshot_path}")
 
     for subscriber in subscribers:
         email = subscriber.get('email')
@@ -613,7 +643,7 @@ def send_daily_digest(
             sent += 1
             continue
 
-        payload = build_email_renderer_payload(
+        renderer_payload = build_email_renderer_payload(
             sections=sections,
             intro=intro,
             subject=digest_summary_line,
@@ -622,7 +652,7 @@ def send_daily_digest(
             tweet_headlines=tweet_headlines,
             community_headlines=community_headlines,
         )
-        rendered_html = _render_email_with_mjml(payload)
+        rendered_html = _render_email_with_mjml(renderer_payload)
 
         if rendered_html:
             html = rendered_html
@@ -662,6 +692,25 @@ def send_daily_digest(
         # Log each digest topic for this send
         for topic in DIGEST_TOPICS:
             insert_digest_log(topic)
+
+    snapshot_path = None
+    if not dry_run and sent > 0:
+        snapshot_path = write_sent_snapshot(
+            payload=payload,
+            allow_overwrite=overwrite_snapshot or force_send,
+            metadata={
+                "created_by": "send_daily_email",
+                "send_mode": send_mode,
+                "send_started_at": send_started_at,
+                "send_completed_at": datetime.utcnow().isoformat(),
+                "event_name": event_name,
+                "github_run_id": run_id,
+                "github_run_attempt": run_attempt,
+                "force_send": force_send,
+                "send_reason": send_reason.strip(),
+            },
+        )
+        print(f"🧊 Sent snapshot path: {snapshot_path}")
     
     print(f"\n{'='*50}")
     print(f"Summary: Sent to {sent}, Failed: {failed}")
@@ -682,6 +731,10 @@ if __name__ == "__main__":
                         help="Build/send digest for YYYY-MM-DD canonical payload date")
     parser.add_argument('--overwrite-snapshot', action='store_true',
                         help="Allow replacing existing sent snapshot for digest date")
+    parser.add_argument('--force-send', action='store_true',
+                        help="Bypass production duplicate-send guard for intentional resends")
+    parser.add_argument('--send-reason', type=str, default="",
+                        help="Optional reason to log when a send is forced/manual")
     args = parser.parse_args()
 
     # Check for API key
@@ -696,5 +749,7 @@ if __name__ == "__main__":
         sent_yesterday=args.sent_yesterday,
         digest_date=args.digest_date,
         overwrite_snapshot=args.overwrite_snapshot,
+        force_send=args.force_send,
+        send_reason=args.send_reason,
     )
     print(f"Done! Sent digest with {result['articles']} articles to {result['sent']} subscribers.")

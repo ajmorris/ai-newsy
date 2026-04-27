@@ -9,6 +9,16 @@ on:
     - cron: '0 13 * * *'
     - cron: '0 12 * * *'
   workflow_dispatch:
+    inputs:
+      force_send:
+        description: "Allow manual production send (bypasses duplicate-send guard)"
+        required: false
+        type: boolean
+        default: false
+      send_reason:
+        description: "Reason for manual production send override"
+        required: false
+        type: string
 
 concurrency:
   group: daily-ai-digest-schedule
@@ -19,15 +29,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Guard scheduled run to 8:00 AM America/New_York
+      - name: Guard scheduled run to 8:00 AM America/New_York (with tolerance)
         if: ${{ github.event_name == 'schedule' }}
         run: |
           ny_time=$(TZ=America/New_York date +'%H:%M')
           echo "Current America/New_York time: ${ny_time}"
-          if [ "${ny_time}" != "08:00" ]; then
+          if [[ "${ny_time}" < "08:00" || "${ny_time}" > "08:05" ]]; then
             echo "Outside target local time; exiting successfully."
             exit 0
           fi
+
+      - name: Guard manual production send
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.force_send }}
+        run: |
+          echo "Manual run blocked unless force_send=true."
+          echo "Re-run workflow with force_send=true and send_reason."
+          exit 0
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -63,10 +80,18 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_RUN_ATTEMPT: ${{ github.run_attempt }}
         run: |
           python execution/digest_payload.py
           python execution/build_digest_markdown.py
-          python execution/send_daily_email.py
+          FORCE_SEND_FLAG=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_send }}" = "true" ]; then
+            FORCE_SEND_FLAG="--force-send"
+          fi
+          SEND_REASON="${{ inputs.send_reason || '' }}"
+          python execution/send_daily_email.py ${FORCE_SEND_FLAG} --send-reason "${SEND_REASON}"
 
       - name: Upload digest artifacts
         uses: actions/upload-artifact@v4
