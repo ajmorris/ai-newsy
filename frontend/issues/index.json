@@ -1,29 +1,18 @@
 {
-  "generatedAt": "2026-04-27T00:00:00Z",
-  "issueCount": 4,
+  "generatedAt": "2026-04-23T00:00:00Z",
+  "issueCount": 3,
   "latestIssue": {
-    "slug": "2026-04-27",
-    "digestDate": "2026-04-27",
-    "displayDate": "Apr 27, 2026",
-    "issueNumber": "60427",
-    "subject": "ISSUE 60427 \u00b7 5 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
-    "articleCount": 5,
-    "urlPath": "/issues/2026-04-27.html",
-    "contentHash": "5e64a8e605302b4ef6f3615fdcc1f826c4e8609d209fa046daf1ca0123b0e5a6"
+    "slug": "2026-04-23",
+    "digestDate": "2026-04-23",
+    "displayDate": "Apr 23, 2026",
+    "issueNumber": "60423",
+    "subject": "AI Newsy \u2022 Apr 23 \u2022 32 Stories",
+    "intro": "It's a Google kind of day. The tech giant dominated headlines at Cloud Next 2026, rolling out Gemini-powered AI across its entire Workspace suite, launching two new custom AI chips to challenge Nvidia, unveiling an enterprise agent-building platform, and turning Chrome into an autonomous workplace assistant \u2014 all while OpenAI countered with free ChatGPT for clinicians and new workspace agents of its own. Beyond the product blitz, today's digest also covers the Pentagon's staggering $54 billion bet on AI-powered warfare, Senator Warren's warning that the AI industry could trigger the next financial crisis, Sony's ping-pong robot making history in *Nature*, and Meta quietly recording employees' keystrokes to train its AI agents.",
+    "articleCount": 32,
+    "urlPath": "/issues/2026-04-23.html",
+    "contentHash": "1833d9bb655e06c0b7926d7e278533ad0eb9e4cb39eb175b94f1a69e0f217f60"
   },
   "recentIssues": [
-    {
-      "slug": "2026-04-27",
-      "digestDate": "2026-04-27",
-      "displayDate": "Apr 27, 2026",
-      "issueNumber": "60427",
-      "subject": "ISSUE 60427 \u00b7 5 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
-      "articleCount": 5,
-      "urlPath": "/issues/2026-04-27.html",
-      "contentHash": "5e64a8e605302b4ef6f3615fdcc1f826c4e8609d209fa046daf1ca0123b0e5a6"
-    },
     {
       "slug": "2026-04-23",
       "digestDate": "2026-04-23",
