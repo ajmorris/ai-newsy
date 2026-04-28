@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-04-23T00:00:00Z",
-  "issueCount": 3,
+  "generatedAt": "2026-04-28T00:00:00Z",
+  "issueCount": 4,
   "latestIssue": {
-    "slug": "2026-04-23",
-    "digestDate": "2026-04-23",
-    "displayDate": "Apr 23, 2026",
-    "issueNumber": "60423",
-    "subject": "AI Newsy \u2022 Apr 23 \u2022 32 Stories",
-    "intro": "It's a Google kind of day. The tech giant dominated headlines at Cloud Next 2026, rolling out Gemini-powered AI across its entire Workspace suite, launching two new custom AI chips to challenge Nvidia, unveiling an enterprise agent-building platform, and turning Chrome into an autonomous workplace assistant \u2014 all while OpenAI countered with free ChatGPT for clinicians and new workspace agents of its own. Beyond the product blitz, today's digest also covers the Pentagon's staggering $54 billion bet on AI-powered warfare, Senator Warren's warning that the AI industry could trigger the next financial crisis, Sony's ping-pong robot making history in *Nature*, and Meta quietly recording employees' keystrokes to train its AI agents.",
-    "articleCount": 32,
-    "urlPath": "/issues/2026-04-23.html",
-    "contentHash": "1833d9bb655e06c0b7926d7e278533ad0eb9e4cb39eb175b94f1a69e0f217f60"
+    "slug": "2026-04-28",
+    "digestDate": "2026-04-28",
+    "displayDate": "Apr 28, 2026",
+    "issueNumber": "60428",
+    "subject": "ISSUE 60428 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "From humanoid baggage handlers in Japan to AI welfare checks on South Korea's elderly, today's stories paint a vivid picture of how AI and robotics are stepping in where demographic crises are creating real-world gaps \u2014 while the courtroom drama between Musk and Altman kicks off with prospective jurors openly calling Musk \"a world-class jerk.\" We've also got a nasty supply chain attack hitting a million-download open-source package, Google experimenting with conversational AI search on YouTube, and Australia slapping tech giants with a new levy for profiting off news content \u2014 so let's dig in.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-04-28.html",
+    "contentHash": "69418e1de3e8fe39bcd636077a0908d25d9c45db3b21fd2a69bc5809d63a8e57"
   },
   "recentIssues": [
+    {
+      "slug": "2026-04-28",
+      "digestDate": "2026-04-28",
+      "displayDate": "Apr 28, 2026",
+      "issueNumber": "60428",
+      "subject": "ISSUE 60428 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "From humanoid baggage handlers in Japan to AI welfare checks on South Korea's elderly, today's stories paint a vivid picture of how AI and robotics are stepping in where demographic crises are creating real-world gaps \u2014 while the courtroom drama between Musk and Altman kicks off with prospective jurors openly calling Musk \"a world-class jerk.\" We've also got a nasty supply chain attack hitting a million-download open-source package, Google experimenting with conversational AI search on YouTube, and Australia slapping tech giants with a new levy for profiting off news content \u2014 so let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-04-28.html",
+      "contentHash": "69418e1de3e8fe39bcd636077a0908d25d9c45db3b21fd2a69bc5809d63a8e57"
+    },
     {
       "slug": "2026-04-23",
       "digestDate": "2026-04-23",
