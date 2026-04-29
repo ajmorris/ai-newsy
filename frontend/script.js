@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hcaptchaWidget = document.getElementById('hcaptcha-widget');
     const NEWSLETTER_TIME_ZONE = 'America/New_York';
     const FALLBACK_ISSUE_NUMBER = '001';
-    const COUNTDOWN_FALLBACK_TEXT = 'ships daily at 8:00 AM ET';
+    const COUNTDOWN_FALLBACK_TEXT = 'ships daily at 5:00 AM ET';
     const hcaptchaSiteKey = (
         window.HCAPTCHA_SITE_KEY ||
         document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
@@ -213,7 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('/issues/index.json', {
+            const response = await fetch(`/issues/index.json?ts=${Date.now()}`, {
+                cache: 'no-store',
                 headers: {
                     Accept: 'application/json',
                 },
@@ -224,12 +225,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const data = await response.json();
-            renderRecentIssues(data.recentIssues || []);
-            updateHeroIssueNumber(data);
+            const mergedIssues = await mergeIssuesFromArchive(data);
+            renderRecentIssues(mergedIssues);
+            updateHeroIssueNumber(data, mergedIssues);
         } catch (error) {
             console.error('Issue archive load error:', error);
+            try {
+                const fallbackIssues = await loadIssuesFromArchiveHtml();
+                if (fallbackIssues.length > 0) {
+                    renderRecentIssues(fallbackIssues);
+                    updateHeroIssueNumber(null, fallbackIssues);
+                    return;
+                }
+            } catch (fallbackError) {
+                console.error('Archive HTML fallback failed:', fallbackError);
+            }
             recentIssuesList.innerHTML = '<li class="issues-loading">No issues published yet. Check back soon.</li>';
-            updateHeroIssueNumber(null);
+            updateHeroIssueNumber(null, []);
         }
     }
 
@@ -242,12 +254,16 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(updateHeroCountdown, 60 * 1000);
     }
 
-    function updateHeroIssueNumber(manifestData) {
+    function updateHeroIssueNumber(manifestData, renderedIssues = []) {
         if (!nextIssueNumberEl) {
             return;
         }
 
-        const issueCount = Number(manifestData && manifestData.issueCount);
+        const manifestCount = Number(manifestData && manifestData.issueCount);
+        const derivedCount = Array.isArray(renderedIssues) ? renderedIssues.length : 0;
+        const issueCount = Number.isFinite(manifestCount) && manifestCount >= derivedCount
+            ? manifestCount
+            : derivedCount;
         if (!Number.isFinite(issueCount) || issueCount < 0) {
             nextIssueNumberEl.textContent = FALLBACK_ISSUE_NUMBER;
             return;
@@ -276,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
 
         const nextSendInNewsletterTz = new Date(nowInNewsletterTz);
-        nextSendInNewsletterTz.setHours(8, 0, 0, 0);
+        nextSendInNewsletterTz.setHours(5, 0, 0, 0);
         if (nowInNewsletterTz >= nextSendInNewsletterTz) {
             nextSendInNewsletterTz.setDate(nextSendInNewsletterTz.getDate() + 1);
         }
@@ -312,6 +328,101 @@ document.addEventListener('DOMContentLoaded', () => {
             .join('');
 
         recentIssuesList.innerHTML = items;
+    }
+
+    async function mergeIssuesFromArchive(manifestData) {
+        const manifestIssues = Array.isArray(manifestData && manifestData.recentIssues)
+            ? manifestData.recentIssues
+            : [];
+        const htmlIssues = await loadIssuesFromArchiveHtml();
+        if (htmlIssues.length === 0) {
+            return manifestIssues;
+        }
+
+        const bySlug = new Map();
+        manifestIssues.forEach((issue) => {
+            const slug = normalizeIssueSlug(issue && issue.slug, issue && issue.urlPath);
+            if (!slug) {
+                return;
+            }
+            bySlug.set(slug, {
+                ...issue,
+                slug,
+                digestDate: issue.digestDate || slug,
+                urlPath: issue.urlPath || `/issues/${slug}.html`,
+            });
+        });
+
+        htmlIssues.forEach((issue) => {
+            const slug = normalizeIssueSlug(issue.slug, issue.urlPath);
+            if (!slug || bySlug.has(slug)) {
+                return;
+            }
+            bySlug.set(slug, {
+                ...issue,
+                slug,
+                digestDate: issue.digestDate || slug,
+                urlPath: issue.urlPath || `/issues/${slug}.html`,
+            });
+        });
+
+        return Array.from(bySlug.values())
+            .sort((a, b) => {
+                const aDate = String(a.digestDate || a.slug || '');
+                const bDate = String(b.digestDate || b.slug || '');
+                return bDate.localeCompare(aDate);
+            })
+            .slice(0, 12);
+    }
+
+    async function loadIssuesFromArchiveHtml() {
+        const response = await fetch(`/issues/index.html?ts=${Date.now()}`, {
+            cache: 'no-store',
+            headers: {
+                Accept: 'text/html',
+            },
+        });
+        if (!response.ok) {
+            throw new Error(`Failed to load /issues/index.html (${response.status})`);
+        }
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const anchors = Array.from(doc.querySelectorAll('li a[href$=".html"]'));
+        const issues = anchors
+            .map((anchor) => {
+                const href = anchor.getAttribute('href') || '';
+                const normalizedHref = href.startsWith('/issues/') ? href : `/issues/${href.replace(/^\//, '')}`;
+                const slugMatch = normalizedHref.match(/\/issues\/(\d{4}-\d{2}-\d{2})\.html$/);
+                if (!slugMatch) {
+                    return null;
+                }
+                const slug = slugMatch[1];
+                const row = anchor.closest('li');
+                const dateEl = row ? row.querySelector('.issue-date') : null;
+                const countText = row ? (row.textContent || '') : '';
+                const countMatch = countText.match(/(\d+)\s+stories/i);
+                return {
+                    slug,
+                    digestDate: slug,
+                    displayDate: dateEl ? dateEl.textContent.trim() : slug,
+                    subject: anchor.textContent.trim(),
+                    articleCount: countMatch ? Number(countMatch[1]) : undefined,
+                    urlPath: normalizedHref,
+                };
+            })
+            .filter(Boolean);
+        return issues;
+    }
+
+    function normalizeIssueSlug(slug, urlPath) {
+        const rawSlug = String(slug || '').trim();
+        if (/^\d{4}-\d{2}-\d{2}$/.test(rawSlug)) {
+            return rawSlug;
+        }
+        const rawPath = String(urlPath || '').trim();
+        const match = rawPath.match(/(\d{4}-\d{2}-\d{2})\.html$/);
+        return match ? match[1] : '';
     }
 
     function escapeHtml(value) {

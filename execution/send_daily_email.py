@@ -82,6 +82,15 @@ DEFAULT_CATEGORY = "Other AI News"
 EMAIL_RENDERER_SCRIPT = Path("emails/render_email.mjs")
 
 
+def _write_send_status_artifact(digest_date: str, payload: Dict[str, object]) -> Path:
+    """Write a lightweight status artifact for operational visibility."""
+    snapshot_dir = Path(os.getenv("DIGEST_SNAPSHOT_DIR", "data/digests/snapshots"))
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
+    status_path = snapshot_dir / f"{digest_date}.status.json"
+    status_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return status_path
+
+
 def _snapshot_meta_for_digest(digest_date: str) -> Dict[str, object]:
     """Return snapshot metadata object for a digest date, if present."""
     snapshot = load_sent_snapshot(digest_date=digest_date)
@@ -586,6 +595,17 @@ def send_daily_digest(
     digest_date = str(payload.get("digest_date"))
     stories = list(payload.get("stories", []))
     send_mode = "test" if test_email else "production"
+    run_status: Dict[str, object] = {
+        "digest_date": digest_date,
+        "event_name": event_name,
+        "github_run_id": run_id,
+        "github_run_attempt": run_attempt,
+        "send_mode": send_mode,
+        "force_send": force_send,
+        "send_reason": send_reason.strip(),
+        "status": "started",
+        "status_updated_at": datetime.utcnow().isoformat(),
+    }
 
     print(f"📅 Digest date: {digest_date}")
     print(f"🚦 Mode: {send_mode}")
@@ -593,6 +613,10 @@ def send_daily_digest(
     if not dry_run and not test_email and not force_send and _production_digest_already_sent(digest_date):
         print("⛔ Duplicate production send prevented: digest already marked as sent for this date.")
         print("   Use --force-send for intentional resend.")
+        run_status["status"] = "duplicate_prevented"
+        run_status["status_updated_at"] = datetime.utcnow().isoformat()
+        status_path = _write_send_status_artifact(digest_date, run_status)
+        print(f"🗒️ Send status path: {status_path}")
         return {"articles": len(stories), "sent": 0, "failed": 0}
 
     if force_send:
@@ -601,6 +625,10 @@ def send_daily_digest(
 
     if not stories:
         print("No matching articles to include in digest.")
+        run_status["status"] = "no_stories"
+        run_status["status_updated_at"] = datetime.utcnow().isoformat()
+        status_path = _write_send_status_artifact(digest_date, run_status)
+        print(f"🗒️ Send status path: {status_path}")
         return {"articles": 0, "sent": 0, "failed": 0}
 
     articles = [normalize_article_for_email(article) for article in stories]
@@ -614,6 +642,10 @@ def send_daily_digest(
         subscribers = get_active_subscribers()
         if not subscribers:
             print("No active subscribers.")
+            run_status["status"] = "no_subscribers"
+            run_status["status_updated_at"] = datetime.utcnow().isoformat()
+            status_path = _write_send_status_artifact(digest_date, run_status)
+            print(f"🗒️ Send status path: {status_path}")
             return {"articles": len(articles), "sent": 0, "failed": 0}
         print(f"👥 {len(subscribers)} active subscribers")
 
@@ -711,6 +743,18 @@ def send_daily_digest(
             },
         )
         print(f"🧊 Sent snapshot path: {snapshot_path}")
+    run_status.update(
+        {
+            "status": "completed",
+            "status_updated_at": datetime.utcnow().isoformat(),
+            "articles": len(articles),
+            "sent": sent,
+            "failed": failed,
+            "sent_snapshot_path": str(snapshot_path) if snapshot_path else "",
+        }
+    )
+    status_path = _write_send_status_artifact(digest_date, run_status)
+    print(f"🗒️ Send status path: {status_path}")
     
     print(f"\n{'='*50}")
     print(f"Summary: Sent to {sent}, Failed: {failed}")

@@ -214,8 +214,8 @@ For signup or web UX changes:
 Match local changes to automation:
 
 - `prepare_digest_content.yml`: fetch + single-pass analysis + extras generation
-- `daily_digest.yml`: build digest + send daily email
-- `publish_web_archive.yml`: regenerate static issue archive on digest updates
+- `daily_digest.yml`: build digest + send once daily on `0 9 * * *` UTC (early New York morning)
+- `publish_web_archive.yml`: regenerate static issue archive on digest updates; fails if fresh daily snapshot is missing
 - `cleanup_old_articles.yml`: scheduled retention cleanup
 - `test_digest.yml`: manual one-recipient test digest
 
@@ -241,6 +241,8 @@ When adding new functionality, prioritize:
 - If local API changes are not reflected, restart `vercel dev`.
 - If signup fails with server configuration errors, verify `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - If digest send fails, verify `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`.
+- Manual digest dispatches require `force_send=true`; this intentionally bypasses duplicate-send protection.
+- Archive publishing blocks stale output when latest published digest date is older than one day.
 - Keep `SUPABASE_SECRET_KEY` and provider API keys out of frontend/client code.
 - Prefer dry-run/test modes before running production-impacting commands.
 

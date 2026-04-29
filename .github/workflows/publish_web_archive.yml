@@ -57,20 +57,32 @@ jobs:
           mkdir -p data/digests
           mkdir -p data/digests/snapshots
           shopt -s globstar nullglob
-          files=(/tmp/digest-artifacts/**/*.json /tmp/digest-artifacts/**/*.md /tmp/digest-artifacts/**/*.sent.json)
+          files=(/tmp/digest-artifacts/**/*.json /tmp/digest-artifacts/**/*.md /tmp/digest-artifacts/**/*.sent.json /tmp/digest-artifacts/**/*.status.json)
           if [ "${#files[@]}" -eq 0 ]; then
             echo "No digest artifacts found in downloaded artifact."
             exit 1
           fi
           for file in "${files[@]}"; do
             name="$(basename "$file")"
-            if [[ "$name" == *.sent.json ]]; then
+            if [[ "$name" == *.sent.json || "$name" == *.status.json ]]; then
               cp "$file" "data/digests/snapshots/${name}"
             else
               cp "$file" "data/digests/${name}"
             fi
           done
-          ls -1 data/digests/*.json data/digests/*.md data/digests/snapshots/*.sent.json
+          ls -1 data/digests/*.json data/digests/*.md data/digests/snapshots/*.sent.json data/digests/snapshots/*.status.json || true
+
+      - name: Validate fresh snapshot exists for expected digest date
+        run: |
+          expected_digest_date="$(date -u +%F)"
+          expected_snapshot="data/digests/snapshots/${expected_digest_date}.sent.json"
+          echo "Expected digest date: ${expected_digest_date}"
+          echo "Looking for snapshot: ${expected_snapshot}"
+          if [ ! -f "${expected_snapshot}" ]; then
+            echo "Fresh snapshot missing; refusing to publish stale archive."
+            ls -1 data/digests/snapshots || true
+            exit 1
+          fi
 
       - name: Build archive pages and manifest
         run: python execution/build_web_archive.py
@@ -110,6 +122,27 @@ jobs:
               raise SystemExit("Manifest issueCount does not match digest markdown file count.")
           if actual_latest != expected_latest:
               raise SystemExit("Manifest latestIssue.digestDate does not match latest digest markdown date.")
+          PY
+
+      - name: Detect stale publication window
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          manifest = json.loads(Path("frontend/issues/index.json").read_text(encoding="utf-8"))
+          latest = (manifest.get("latestIssue") or {}).get("digestDate")
+          if not latest:
+              raise SystemExit("latestIssue.digestDate missing in frontend/issues/index.json")
+
+          latest_dt = datetime.strptime(str(latest), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+          now_dt = datetime.now(timezone.utc)
+          age_days = (now_dt.date() - latest_dt.date()).days
+
+          print(f"Latest published digest date: {latest_dt.date().isoformat()} (age={age_days} day(s))")
+          if age_days > 1:
+              raise SystemExit("Latest published issue is older than 1 day; publication is stale.")
           PY
 
       - name: Commit and push generated archive updates
