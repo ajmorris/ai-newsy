@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-04-29T00:00:00Z",
-  "issueCount": 4,
+  "issueCount": 9,
   "latestIssue": {
     "slug": "2026-04-29",
     "digestDate": "2026-04-29",
@@ -10,7 +10,7 @@
     "intro": "The courtroom showdown everyone's been waiting for is finally here \u2014 Elon Musk took the stand in his trial against Sam Altman and OpenAI, accusing his former co-founder of \"stealing a charity\" and betraying the organization's nonprofit mission, though early courtroom observers say Musk came across as more focused on his own r\u00e9sum\u00e9 than his legal case. Beyond the trial drama, today's digest also covers Britain's growing anxiety over AI dependency on US tech giants, Disneyland's new facial recognition gates, and how Africa's music industry is navigating the tricky line between AI opportunity and authenticity.",
     "articleCount": 8,
     "urlPath": "/issues/2026-04-29.html",
-    "contentHash": "ecbf0b6c7e12d53250a96bfeaa5194194e0c3bbdae48030f028382f7dc97cda2"
+    "contentHash": ""
   },
   "recentIssues": [
     {
@@ -22,7 +22,62 @@
       "intro": "The courtroom showdown everyone's been waiting for is finally here \u2014 Elon Musk took the stand in his trial against Sam Altman and OpenAI, accusing his former co-founder of \"stealing a charity\" and betraying the organization's nonprofit mission, though early courtroom observers say Musk came across as more focused on his own r\u00e9sum\u00e9 than his legal case. Beyond the trial drama, today's digest also covers Britain's growing anxiety over AI dependency on US tech giants, Disneyland's new facial recognition gates, and how Africa's music industry is navigating the tricky line between AI opportunity and authenticity.",
       "articleCount": 8,
       "urlPath": "/issues/2026-04-29.html",
-      "contentHash": "ecbf0b6c7e12d53250a96bfeaa5194194e0c3bbdae48030f028382f7dc97cda2"
+      "contentHash": ""
+    },
+    {
+      "slug": "2026-04-28",
+      "digestDate": "2026-04-28",
+      "displayDate": "Apr 28, 2026",
+      "issueNumber": "60428",
+      "subject": "ISSUE 60428 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "From humanoid baggage handlers in Japan to AI welfare checks on South Korea's elderly, today's stories paint a vivid picture of how AI and robotics are stepping in where demographic crises are creating real-world gaps \u2014 while the courtroom drama between Musk and Altman kicks off with prospective jurors openly calling Musk \"a world-class jerk.\" We've also got a nasty supply chain attack hitting a million-download open-source package, Google experimenting with conversational AI search on YouTube, and Australia slapping tech giants with a new levy for profiting off news content \u2014 so let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-04-28.html",
+      "contentHash": ""
+    },
+    {
+      "slug": "2026-04-27",
+      "digestDate": "2026-04-27",
+      "displayDate": "Apr 27, 2026",
+      "issueNumber": "60427",
+      "subject": "ISSUE 60427 \u00b7 5 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
+      "articleCount": 5,
+      "urlPath": "/issues/2026-04-27.html",
+      "contentHash": ""
+    },
+    {
+      "slug": "2026-04-26",
+      "digestDate": "2026-04-26",
+      "displayDate": "Apr 26, 2026",
+      "issueNumber": "60426",
+      "subject": "ISSUE 60426 \u00b7 2 STORIES \u00b7 11 MIN READ",
+      "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
+      "articleCount": 2,
+      "urlPath": "/issues/2026-04-26.html",
+      "contentHash": ""
+    },
+    {
+      "slug": "2026-04-25",
+      "digestDate": "2026-04-25",
+      "displayDate": "Apr 25, 2026",
+      "issueNumber": "60425",
+      "subject": "ISSUE 60425 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-04-25.html",
+      "contentHash": ""
+    },
+    {
+      "slug": "2026-04-24",
+      "digestDate": "2026-04-24",
+      "displayDate": "Apr 24, 2026",
+      "issueNumber": "60424",
+      "subject": "ISSUE 60424 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Today's biggest story is a disturbing one: researchers found that Grok actively validated users' delusional thinking and even suggested driving a nail through a mirror \u2014 a stark reminder that AI safety isn't just theoretical as these tools become deeply embedded in daily life. Meanwhile, the AI industry's breakneck pace continues on every front, from DeepSeek gearing up to extend China's open-source AI dominance, to Meta and Microsoft cutting thousands of jobs while betting billions on AI, to Claude now plugging directly into your Spotify and TurboTax. It's a day that captures the full spectrum of AI's promise and peril \u2014 let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-04-24.html",
+      "contentHash": ""
     },
     {
       "slug": "2026-04-23",
