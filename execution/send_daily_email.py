@@ -1,6 +1,6 @@
 """
 Send daily email digest to subscribers.
-Compiles summarized articles and sends via Resend.
+Compiles summarized articles and sends via Cloudflare Email Service.
 Includes AI-generated introduction synthesizing all stories.
 """
 
@@ -11,11 +11,12 @@ import json
 import re
 import subprocess
 import tempfile
+import urllib.error
+import urllib.request
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Optional, Dict, List
 from dotenv import load_dotenv
-import resend
 
 import sys
 sys.path.insert(0, '.')
@@ -40,9 +41,9 @@ from execution.digest_payload import (
 
 load_dotenv()
 
-# Resend configuration
-RESEND_API_KEY = os.getenv("RESEND_API_KEY")
-resend.api_key = RESEND_API_KEY
+# Cloudflare Email Service configuration
+CLOUDFLARE_ACCOUNT_ID = os.getenv("CLOUDFLARE_ACCOUNT_ID")
+CLOUDFLARE_EMAIL_API_TOKEN = os.getenv("CLOUDFLARE_EMAIL_API_TOKEN")
 EMAIL_FROM = os.getenv("EMAIL_FROM", "newsletter@example.com")
 APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 
@@ -515,16 +516,44 @@ def render_tweet_headline_html(item: dict) -> str:
 
 
 def send_email(to_email: str, html_content: str, subject: str) -> bool:
-    """Send a single email via Resend."""
+    """Send a single email via Cloudflare Email Service REST API."""
     try:
-        params = {
-            "from": f"AI Newsy <{EMAIL_FROM}>",
+        payload = {
+            "from": {"address": EMAIL_FROM, "name": "AI Newsy"},
             "to": [to_email],
             "subject": subject,
             "html": html_content,
+            "text": "View this digest in an HTML-capable email client.",
         }
-        resend.Emails.send(params)
+
+        url = f"https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ACCOUNT_ID}/email/sending/send"
+        request = urllib.request.Request(
+            url,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Authorization": f"Bearer {CLOUDFLARE_EMAIL_API_TOKEN}",
+                "Content-Type": "application/json",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(request, timeout=30) as response:
+            raw = response.read().decode("utf-8")
+            parsed = json.loads(raw) if raw else {}
+
+        if not parsed.get("success"):
+            errors = parsed.get("errors") or []
+            print(f"    Cloudflare email API rejected send to {to_email}: {errors}")
+            return False
+
         return True
+    except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode("utf-8")
+        except Exception:
+            body = str(e)
+        print(f"    HTTP error sending to {to_email}: {e.code} {body}")
+        return False
     except Exception as e:
         print(f"    Error sending to {to_email}: {e}")
         return False
@@ -737,10 +766,14 @@ if __name__ == "__main__":
                         help="Optional reason to log when a send is forced/manual")
     args = parser.parse_args()
 
-    # Check for API key
-    if not RESEND_API_KEY or RESEND_API_KEY.strip() == "":
-        print("RESEND_API_KEY not configured in .env")
-        print("   Get one at: https://resend.com/api-keys")
+    # Check for Cloudflare Email Service configuration
+    if not CLOUDFLARE_ACCOUNT_ID or CLOUDFLARE_ACCOUNT_ID.strip() == "":
+        print("CLOUDFLARE_ACCOUNT_ID not configured in .env")
+        print("   Find it in Cloudflare Dashboard or account URL context.")
+        exit(1)
+    if not CLOUDFLARE_EMAIL_API_TOKEN or CLOUDFLARE_EMAIL_API_TOKEN.strip() == "":
+        print("CLOUDFLARE_EMAIL_API_TOKEN not configured in .env")
+        print("   Create token with Email Sending: Write permission.")
         exit(1)
 
     result = send_daily_digest(

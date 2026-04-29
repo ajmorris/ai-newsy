@@ -8,8 +8,7 @@
         "vercel:dev": "vercel dev --yes --local"
     },
     "dependencies": {
-        "@supabase/supabase-js": "^2.39.0",
-        "resend": "^6.12.2"
+        "@supabase/supabase-js": "^2.39.0"
     },
     "devDependencies": {
         "dotenv-cli": "^11.0.0",

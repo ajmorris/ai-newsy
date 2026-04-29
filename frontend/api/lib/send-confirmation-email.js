@@ -1,21 +1,3 @@
-import { Resend } from 'resend';
-
-let resendClient = null;
-
-function getResendClient() {
-    if (resendClient) {
-        return resendClient;
-    }
-
-    const apiKey = process.env.RESEND_API_KEY || '';
-    if (!apiKey) {
-        throw new Error('RESEND_API_KEY is not configured.');
-    }
-
-    resendClient = new Resend(apiKey);
-    return resendClient;
-}
-
 function getAppUrl() {
     const appUrl = process.env.APP_URL || '';
     if (!appUrl) {
@@ -40,16 +22,32 @@ export async function sendConfirmationEmail(email, token) {
     if (!fromEmail) {
         throw new Error('EMAIL_FROM is not configured.');
     }
+    const accountId = process.env.CLOUDFLARE_ACCOUNT_ID || '';
+    if (!accountId) {
+        throw new Error('CLOUDFLARE_ACCOUNT_ID is not configured.');
+    }
+    const apiToken = process.env.CLOUDFLARE_EMAIL_API_TOKEN || '';
+    if (!apiToken) {
+        throw new Error('CLOUDFLARE_EMAIL_API_TOKEN is not configured.');
+    }
 
     const confirmUrl = buildConfirmationUrl(token);
-    const resend = getResendClient();
     // #region agent log
     fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6dec93'},body:JSON.stringify({sessionId:'6dec93',runId:'pre-fix',hypothesisId:'H1-H2',location:'frontend/api/lib/send-confirmation-email.js:45',message:'Sending confirmation email',data:{emailDomain:String(email).split('@')[1] || 'unknown',confirmUrlPath:new URL(confirmUrl).pathname,confirmUrlHasToken:new URL(confirmUrl).searchParams.has('token')},timestamp:Date.now()})}).catch(()=>{});
     // #endregion
 
-    await resend.emails.send({
-        from: fromEmail,
-        to: email,
+    const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountId}/email/sending/send`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiToken}`
+        },
+        body: JSON.stringify({
+        from: {
+            address: fromEmail,
+            name: 'AI Newsy'
+        },
+        to: [email],
         subject: 'Confirm your AI Newsy subscription',
         html: `
             <div style="margin:0;padding:24px 16px;background:#0b0b0c;font-family:Inter,Arial,sans-serif;">
@@ -80,5 +78,11 @@ export async function sendConfirmationEmail(email, token) {
             </div>
         `,
         text: `Confirm your AI Newsy subscription: ${confirmUrl}`
+        })
     });
+
+    const payload = await response.json();
+    if (!response.ok || !payload?.success) {
+        throw new Error(`Cloudflare email send failed: ${JSON.stringify(payload?.errors || payload)}`);
+    }
 }

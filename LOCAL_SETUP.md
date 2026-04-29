@@ -41,7 +41,8 @@ Edit `.env` and set at least:
 | `SUPABASE_PUBLISHABLE_KEY` | Public/non-privileged client usage | Same (publishable key) |
 | `SUPABASE_SECRET_KEY` | Server-side writes/admin operations | Same (secret key) |
 | `GEMINI_API_KEY` | Topic assignment, summarization, email | [Google AI Studio](https://aistudio.google.com/apikey) |
-| `RESEND_API_KEY` | Sending the daily email            | [Resend](https://resend.com/api-keys) |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare Email Service account scope | [Cloudflare account dashboard](https://dash.cloudflare.com/) |
+| `CLOUDFLARE_EMAIL_API_TOKEN` | Sending the daily email | [Cloudflare API tokens](https://dash.cloudflare.com/profile/api-tokens) |
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
 | `APP_URL`      | Links in the email                   | Your app URL (e.g. Vercel URL or `http://localhost:3000`) |
 | `SLACK_WEBHOOK_URL` | Slack alerts for new signups (optional) | Slack Incoming Webhooks app settings |
@@ -96,7 +97,7 @@ python3 execution/fetch_ai_news.py --limit 10
 python3 execution/assign_topics.py
 ```
 
-**Summarize and send daily email:** see `execution/summarize_articles.py` and `execution/send_daily_email.py` (need Gemini + Resend + Supabase).
+**Summarize and send daily email:** see `execution/summarize_articles.py` and `execution/send_daily_email.py` (need Gemini + Cloudflare Email Service + Supabase).
 
 ## 6. Frontend (optional)
 

@@ -224,7 +224,7 @@ Local Vercel dev with repo `.env`:
 
 GitHub Actions configuration:
 
-- Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `CLOUDFLARE_ACCOUNT_ID`, and `CLOUDFLARE_EMAIL_API_TOKEN`.
 - Source-specific prep workflows are split by source:
   - `prepare_digest_content.yml` (RSS)
   - `prepare_twitter_headlines.yml` (Twitter/X extras)

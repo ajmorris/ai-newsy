@@ -23,7 +23,7 @@ AI Newsy is an AI-news ingestion and digest system:
 - Node.js `20+` and npm (for frontend local dev)
 - Supabase project credentials
 - At least one LLM provider key (`ANTHROPIC_KEY`, `GEMINI_API_KEY`, or `OPENAI_API_KEY`)
-- Resend credentials for email sending
+- Cloudflare Email Service credentials for email sending
 
 ## Quickstart (End-to-End Local)
 
@@ -51,7 +51,8 @@ Minimum vars for core pipeline:
 
 Add email vars to send digests:
 
-- `RESEND_API_KEY`
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_EMAIL_API_TOKEN`
 - `EMAIL_FROM`
 - `APP_URL`
 
@@ -182,7 +183,7 @@ See `.env.example` for full reference. Common groups:
 - Core DB: `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`
 - AI providers: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`
 - AI selection/tuning: `LLM_PROVIDER_CHAIN`, `ANTHROPIC_MODEL`, `GEMINI_MODEL`, `OPENAI_MODEL`
-- Email: `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL`
+- Email: `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_EMAIL_API_TOKEN`, `EMAIL_FROM`, `APP_URL`
 - Signup protections: `SUBSCRIBE_RATE_LIMIT_*`, `TURNSTILE_*` or `HCAPTCHA_*`
 - Optional notifications: `SLACK_WEBHOOK_URL`
 - Tweet extras: `NOTION_API_KEY`, `NOTION_TWEETS_DATABASE_ID`, `TWEET_*`
@@ -240,7 +241,7 @@ When adding new functionality, prioritize:
 
 - If local API changes are not reflected, restart `vercel dev`.
 - If signup fails with server configuration errors, verify `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
-- If digest send fails, verify `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`.
+- If digest send fails, verify `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_EMAIL_API_TOKEN`, `EMAIL_FROM`, and `APP_URL`.
 - Keep `SUPABASE_SECRET_KEY` and provider API keys out of frontend/client code.
 - Prefer dry-run/test modes before running production-impacting commands.
 
@@ -249,3 +250,88 @@ When adding new functionality, prioritize:
 - `LOCAL_SETUP.md` for machine bootstrap details
 - `docs/ENVIRONMENT.md` for full environment/configuration notes
 - `docs/FEEDS_TROUBLESHOOTING.md` for feed-specific debugging
+
+## What Next (Cloudflare Email Service Activation)
+
+Use this checklist to finish activation and make the new sender work in local/dev and GitHub Actions.
+
+### 1) Confirm Cloudflare plan and domain prerequisites
+
+- Email Sending requires a **Workers Paid** plan.
+- Your sending domain must use Cloudflare as authoritative DNS.
+- Decide your sender address now (example: `newsletter@yourdomain.com`) and use this exact value for `EMAIL_FROM`.
+
+### 2) Onboard your sending domain in Cloudflare
+
+1. Open Cloudflare Dashboard.
+2. Go to `Compute` -> `Email Service` -> `Email Sending`.
+3. Select `Onboard Domain`.
+4. Pick the sending domain used by `EMAIL_FROM`.
+5. Click `Add records and onboard`.
+
+Cloudflare will create required sending records (including bounce/DKIM/SPF/DMARC-related records). Wait for status to become ready.
+
+### 3) Create the Cloudflare API token
+
+1. Go to [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens).
+2. Create a custom token.
+3. Add account permission: `Email Sending: Write`.
+4. Scope resources to the target account.
+5. Create token and copy it once.
+
+Required values:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_EMAIL_API_TOKEN`
+- `EMAIL_FROM` (sender on the onboarded domain)
+
+### 4) Configure local environment
+
+In `.env`, set:
+
+```bash
+CLOUDFLARE_ACCOUNT_ID=your-account-id
+CLOUDFLARE_EMAIL_API_TOKEN=cfut_your-token
+EMAIL_FROM=newsletter@yourdomain.com
+APP_URL=https://your-app.vercel.app
+```
+
+Then run a local single-recipient send:
+
+```bash
+python3 execution/send_daily_email.py --test-email you@example.com
+```
+
+### 5) Configure GitHub Actions secrets
+
+In GitHub repository secrets, add:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_EMAIL_API_TOKEN`
+- `EMAIL_FROM`
+- `APP_URL`
+
+The workflows already read the Cloudflare variables:
+
+- `.github/workflows/daily_digest.yml`
+- `.github/workflows/test_digest.yml`
+- `.github/workflows/validate_digest_parity.yml`
+
+### 6) Run a smoke test in Actions
+
+1. Trigger `Test Digest (Single User)` workflow.
+2. Send to your own inbox first.
+3. Confirm email is delivered and content renders correctly.
+
+### 7) Cutover and cleanup
+
+- Remove `RESEND_API_KEY` from all local/hosted environments.
+- Remove `RESEND_API_KEY` from GitHub Secrets.
+- Keep only Cloudflare credentials.
+
+### 8) Troubleshooting checklist
+
+- `CLOUDFLARE_ACCOUNT_ID` missing -> add to `.env` and GitHub Secrets.
+- `CLOUDFLARE_EMAIL_API_TOKEN` missing/invalid -> recreate token with `Email Sending: Write`.
+- Sender not accepted -> ensure `EMAIL_FROM` is on onboarded/ready domain.
+- Action works locally but fails in CI -> verify repo secrets exist with exact names.
