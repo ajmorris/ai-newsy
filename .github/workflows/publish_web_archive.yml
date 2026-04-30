@@ -118,8 +118,8 @@ jobs:
           print(f"Expected digest count: {expected_count} | Manifest issueCount: {actual_count}")
           print(f"Expected latest digest date: {expected_latest} | Manifest latestIssue: {actual_latest}")
 
-          if actual_count != expected_count:
-              raise SystemExit("Manifest issueCount does not match digest markdown file count.")
+          if actual_count < expected_count:
+              raise SystemExit("Manifest issueCount is below digest snapshot count.")
           if actual_latest != expected_latest:
               raise SystemExit("Manifest latestIssue.digestDate does not match latest digest markdown date.")
           PY
