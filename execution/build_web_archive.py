@@ -220,15 +220,15 @@ def _read_existing_html_issue(html_path: Path) -> Optional[DigestIssue]:
     )
 
 
-def _discover_existing_html_issues(known_slugs: set) -> List[DigestIssue]:
+def _discover_existing_html_issues(known_digest_dates: set[str]) -> List[DigestIssue]:
     if not OUTPUT_DIR.exists():
         return []
     discovered: List[DigestIssue] = []
     for html_path in sorted(OUTPUT_DIR.glob("*.html")):
         if html_path.name == "index.html":
             continue
-        slug = html_path.stem
-        if slug in known_slugs:
+        digest_date = html_path.stem
+        if digest_date in known_digest_dates:
             continue
         issue = _read_existing_html_issue(html_path)
         if issue is not None:
@@ -564,8 +564,11 @@ def build_web_archive(slug_prefix: str = "", use_canonical_fallback: bool = Fals
                 issue.slug = f"{slug_prefix}{issue.slug}"
             issues.append(issue)
 
-    known_slugs = {issue.slug for issue in issues}
-    issues.extend(_discover_existing_html_issues(known_slugs))
+    # Deduplicate discovered HTML-only issues by canonical digest date (YYYY-MM-DD),
+    # not by slug, so prefixed validation runs (e.g. "test-2026-04-29") do not
+    # re-add the same date from existing unprefixed HTML files.
+    known_digest_dates = {issue.digest_date for issue in issues}
+    issues.extend(_discover_existing_html_issues(known_digest_dates))
 
     issues.sort(key=lambda item: item.digest_date, reverse=True)
 
