@@ -480,6 +480,92 @@ def delete_articles_older_than(days: int) -> int:
     return len(result.data) if result.data else 0
 
 
+# ===========================================
+# DIGEST SEND LOCK (idempotent once-per-day claim)
+# ===========================================
+
+def try_claim_digest_send(
+    digest_date: str,
+    send_mode: str,
+    github_run_id: str = "",
+    github_run_attempt: str = "",
+    event_name: str = "",
+) -> bool:
+    """
+    Atomically claim the right to send a digest for (digest_date, send_mode).
+
+    Returns True if this caller now owns the send (row inserted) or already
+    owns an in-flight claim for the same run. Returns False when another run
+    has already claimed/completed the send for this date+mode.
+
+    The unique constraint on (digest_date, send_mode) guarantees that exactly
+    one concurrent caller wins; on conflict PostgREST returns a 409 which we
+    surface as False so the loser can exit cleanly without sending.
+    """
+    payload = {
+        "digest_date": digest_date,
+        "send_mode": send_mode,
+        "status": "claimed",
+        "github_run_id": github_run_id or None,
+        "github_run_attempt": github_run_attempt or None,
+        "event_name": event_name or None,
+        "claimed_at": datetime.utcnow().isoformat(),
+    }
+    try:
+        result = supabase.table("digest_sends").insert(payload).execute()
+        return bool(result.data)
+    except Exception as exc:
+        message = str(exc).lower()
+        if "duplicate" in message or "unique" in message or "23505" in message or "conflict" in message:
+            return False
+        raise
+
+
+def complete_digest_send(
+    digest_date: str,
+    send_mode: str,
+    sent_count: int,
+    failed_count: int,
+) -> Optional[dict]:
+    """
+    Mark a previously-claimed digest send as completed with final counts.
+    Safe to call multiple times; the latest call wins.
+    """
+    result = supabase.table("digest_sends").update({
+        "status": "completed",
+        "sent_count": int(sent_count),
+        "failed_count": int(failed_count),
+        "completed_at": datetime.utcnow().isoformat(),
+    }).eq("digest_date", digest_date).eq("send_mode", send_mode).execute()
+    return result.data[0] if result.data else None
+
+
+def release_failed_digest_send(
+    digest_date: str,
+    send_mode: str,
+    error_message: str = "",
+) -> Optional[dict]:
+    """
+    Mark a claimed digest send as failed so the day can be retried with a
+    fresh claim. Use only when no emails have been delivered yet, otherwise
+    a retry could double-send to recipients.
+    """
+    result = supabase.table("digest_sends").update({
+        "status": "failed",
+        "error_message": (error_message or "")[:2000] or None,
+        "completed_at": datetime.utcnow().isoformat(),
+    }).eq("digest_date", digest_date).eq("send_mode", send_mode).execute()
+    return result.data[0] if result.data else None
+
+
+def get_digest_send(digest_date: str, send_mode: str) -> Optional[dict]:
+    """Return the current digest_sends row for a date+mode, if any."""
+    result = supabase.table("digest_sends").select("*").eq(
+        "digest_date", digest_date
+    ).eq("send_mode", send_mode).limit(1).execute()
+    return result.data[0] if result.data else None
+
+
 if __name__ == "__main__":
     # Quick test
     print(f"Connected to Supabase: {os.getenv('SUPABASE_URL', 'NOT SET')[:30]}...")

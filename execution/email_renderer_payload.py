@@ -2,14 +2,13 @@
 
 from __future__ import annotations
 
-import os
 import re
 import json
 from typing import Dict, List, Optional
 
 from execution.story_text_normalizer import normalize_story_text
+from execution.email_links import build_unsubscribe_url, get_app_url
 
-APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 DEFAULT_CATEGORY = "Other AI News"
 
 
@@ -126,7 +125,8 @@ def build_email_renderer_payload(
             )
 
     issue_number = _issue_number_from_digest_date(digest_date)
-    archive_url = f"{APP_URL}/issues/"
+    app_url = get_app_url()
+    archive_url = f"{app_url}/issues/"
     return {
         "subject": subject,
         "intro": intro,
@@ -136,8 +136,8 @@ def build_email_renderer_payload(
         "stories": stories[:8],
         "tweetHeadlines": tweet_quick_hits,
         "communityHeadlines": community_quick_hits,
-        "unsubscribeUrl": f"{APP_URL}/api/unsubscribe?token={unsubscribe_token}",
-        "viewInBrowserUrl": f"{APP_URL}/issues/{digest_date}.html",
+        "unsubscribeUrl": build_unsubscribe_url(unsubscribe_token),
+        "viewInBrowserUrl": f"{app_url}/issues/{digest_date}.html",
         "archiveUrl": archive_url,
         "forwardUrl": archive_url,
     }

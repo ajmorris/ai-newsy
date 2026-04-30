@@ -243,6 +243,7 @@ When adding new functionality, prioritize:
 - If digest send fails, verify `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`.
 - Manual digest dispatches require `force_send=true`; this intentionally bypasses duplicate-send protection.
 - Archive publishing blocks stale output when latest published digest date is older than one day.
+- If confirm/unsubscribe links open the wrong host, verify `APP_URL` matches your canonical deployed frontend origin in both Vercel env vars and GitHub Actions secrets.
 - Keep `SUPABASE_SECRET_KEY` and provider API keys out of frontend/client code.
 - Prefer dry-run/test modes before running production-impacting commands.
 

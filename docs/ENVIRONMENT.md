@@ -198,7 +198,7 @@ GitHub Actions:
 
 Subscriber endpoints (`frontend/api/subscribe.js`, `frontend/api/unsubscribe.js`) now use server-side Supabase access.
 
-- **Required in Vercel project envs**: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`
+- **Required in Vercel project envs**: `APP_URL`, `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`
 - **Optional rate limit tuning**:
   - `SUBSCRIBE_RATE_LIMIT_WINDOW_MS` (default `600000`)
   - `SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS` (default `5`)
@@ -215,6 +215,7 @@ Vercel configuration:
 
 - Add required values in **Project Settings → Environment Variables** for Production/Preview as needed.
 - Redeploy after changing env vars so serverless functions pick them up.
+- Set `APP_URL` to the canonical deployed frontend origin (for example `https://ai-newsy.vercel.app`) so confirmation and unsubscribe links resolve correctly.
 
 Local Vercel dev with repo `.env`:
 
@@ -225,12 +226,22 @@ Local Vercel dev with repo `.env`:
 GitHub Actions configuration:
 
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- `daily_digest.yml` also requires `APP_URL` in repository secrets; use the same canonical origin as Vercel `APP_URL`.
 - Source-specific prep workflows are split by source:
   - `prepare_digest_content.yml` (RSS)
   - `prepare_twitter_headlines.yml` (Twitter/X extras)
   - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
+
+## Confirmation and unsubscribe verification checklist
+
+1. Submit a signup via `POST /api/subscribe` with a test email and confirm response status is `pending`.
+2. Open the confirmation link from the received email and confirm it resolves to your `APP_URL` host and returns "Subscription Confirmed".
+3. Verify subscriber state in Supabase `subscribers` table: `confirmed = true` for that email/token row.
+4. Send a test digest (`python execution/send_daily_email.py --test-email you@example.com`) and click the unsubscribe link from the email.
+5. Verify unsubscribe state in Supabase `subscribers` table: `unsubscribed_at` is set for that token row.
+6. Re-open both links to confirm idempotent behavior ("Already Confirmed" / "Already Unsubscribed").
 
 ## Matching GitHub
 
