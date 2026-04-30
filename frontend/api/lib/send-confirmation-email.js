@@ -22,7 +22,14 @@ function getAppUrl() {
         throw new Error('APP_URL is not configured.');
     }
 
-    return appUrl.replace(/\/+$/, '');
+    const normalized = appUrl.replace(/\/+$/, '');
+    try {
+        new URL(normalized);
+    } catch (error) {
+        throw new Error('APP_URL is invalid. Expected an absolute URL.');
+    }
+
+    return normalized;
 }
 
 export function buildConfirmationUrl(token) {
@@ -32,6 +39,13 @@ export function buildConfirmationUrl(token) {
     // #region agent log
     fetch('http://127.0.0.1:7920/ingest/32461e49-42c8-4faf-8e25-7a8fe55277aa',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'6dec93'},body:JSON.stringify({sessionId:'6dec93',runId:'pre-fix',hypothesisId:'H1-H3',location:'frontend/api/lib/send-confirmation-email.js:31',message:'Built confirmation URL',data:{appUrlHost:new URL(appUrl).host,confirmUrlHost:url.host,confirmUrlPath:url.pathname,hasToken:Boolean(token),tokenLength:typeof token === 'string' ? token.length : 0},timestamp:Date.now()})}).catch(()=>{});
     // #endregion
+    return url.toString();
+}
+
+export function buildUnsubscribeUrl(token) {
+    const appUrl = getAppUrl();
+    const url = new URL('/api/unsubscribe', appUrl);
+    url.searchParams.set('token', token);
     return url.toString();
 }
 

@@ -16,9 +16,11 @@ export default async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    const { token } = req.query;
+    const rawToken = req.query?.token;
+    const token = Array.isArray(rawToken) ? rawToken[0] : rawToken;
 
     if (!token) {
+        console.warn('Confirm request missing token.', { url: req.url || '' });
         return res.status(400).send(renderPage('Missing Token', 'Invalid confirmation link.', 'error'));
     }
 
@@ -40,6 +42,11 @@ export default async function handler(req, res) {
         // #endregion
 
         if (error || !data) {
+            console.warn('Confirm request failed to match pending subscriber.', {
+                hasError: Boolean(error),
+                errorCode: error?.code || null,
+                url: req.url || '',
+            });
             return res.status(400).send(renderPage(
                 'Already Confirmed',
                 'This subscription is already confirmed or the link is invalid.',

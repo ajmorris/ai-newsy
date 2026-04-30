@@ -25,10 +25,14 @@ from execution.email_renderer_payload import (
     build_email_renderer_payload,
     normalize_article_for_email,
 )
+from execution.email_links import build_unsubscribe_url
 from execution.database import (
+    complete_digest_send,
     get_active_subscribers,
-    mark_articles_sent,
     insert_digest_log,
+    mark_articles_sent,
+    release_failed_digest_send,
+    try_claim_digest_send,
 )
 from execution.ai_client import generate_text_with_fallback
 from execution.digest_payload import (
@@ -44,7 +48,6 @@ load_dotenv()
 RESEND_API_KEY = os.getenv("RESEND_API_KEY")
 resend.api_key = RESEND_API_KEY
 EMAIL_FROM = os.getenv("EMAIL_FROM", "newsletter@example.com")
-APP_URL = os.getenv("APP_URL", "https://your-app.vercel.app")
 
 # Intro prompt (override via PROMPT_INTRO env var)
 DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for a daily AI news digest email. 
@@ -320,7 +323,7 @@ def _load_digest_markdown_email(
             <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
                 <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
                     You're receiving this because you subscribed to AI Newsy.
-                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
+                    <a href="{build_unsubscribe_url(unsubscribe_token)}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
                 </p>
             </div>
             </div>
@@ -455,7 +458,7 @@ def generate_email_html(
             <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
                 <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
                     You're receiving this because you subscribed to AI Newsy.
-                    <a href="{APP_URL}/api/unsubscribe?token={unsubscribe_token}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
+                    <a href="{build_unsubscribe_url(unsubscribe_token)}" style="color: #a3a099; text-decoration: underline;">unsubscribe</a>
                 </p>
             </div>
             </div>
@@ -610,7 +613,11 @@ def send_daily_digest(
     print(f"📅 Digest date: {digest_date}")
     print(f"🚦 Mode: {send_mode}")
 
-    if not dry_run and not test_email and not force_send and _production_digest_already_sent(digest_date):
+    # Production duplicate-send guard: snapshot file (legacy, per-runner) plus a
+    # durable database claim that survives across separate workflow runs. Test
+    # and dry-run paths intentionally skip both so they never block real sends.
+    use_send_lock = not dry_run and not test_email and not force_send
+    if use_send_lock and _production_digest_already_sent(digest_date):
         print("⛔ Duplicate production send prevented: digest already marked as sent for this date.")
         print("   Use --force-send for intentional resend.")
         run_status["status"] = "duplicate_prevented"
@@ -618,6 +625,21 @@ def send_daily_digest(
         status_path = _write_send_status_artifact(digest_date, run_status)
         print(f"🗒️ Send status path: {status_path}")
         return {"articles": len(stories), "sent": 0, "failed": 0}
+
+    claim_acquired = False
+    if use_send_lock:
+        claim_acquired = try_claim_digest_send(
+            digest_date=digest_date,
+            send_mode=send_mode,
+            github_run_id=run_id,
+            github_run_attempt=run_attempt,
+            event_name=event_name,
+        )
+        if not claim_acquired:
+            print("⛔ Duplicate production send prevented: another run already claimed this digest_date.")
+            print("   Use --force-send for intentional resend.")
+            return {"articles": len(stories), "sent": 0, "failed": 0}
+        print(f"🔒 Acquired digest send claim for {digest_date} ({send_mode}).")
 
     if force_send:
         reason = send_reason.strip() or "unspecified"
@@ -629,6 +651,13 @@ def send_daily_digest(
         run_status["status_updated_at"] = datetime.utcnow().isoformat()
         status_path = _write_send_status_artifact(digest_date, run_status)
         print(f"🗒️ Send status path: {status_path}")
+        if claim_acquired:
+            release_failed_digest_send(
+                digest_date=digest_date,
+                send_mode=send_mode,
+                error_message="No stories selected for digest",
+            )
+            print("🔓 Released digest send claim (no stories to send).")
         return {"articles": 0, "sent": 0, "failed": 0}
 
     articles = [normalize_article_for_email(article) for article in stories]
@@ -646,6 +675,13 @@ def send_daily_digest(
             run_status["status_updated_at"] = datetime.utcnow().isoformat()
             status_path = _write_send_status_artifact(digest_date, run_status)
             print(f"🗒️ Send status path: {status_path}")
+            if claim_acquired:
+                release_failed_digest_send(
+                    digest_date=digest_date,
+                    send_mode=send_mode,
+                    error_message="No active subscribers",
+                )
+                print("🔓 Released digest send claim (no active subscribers).")
             return {"articles": len(articles), "sent": 0, "failed": 0}
         print(f"👥 {len(subscribers)} active subscribers")
 
@@ -755,11 +791,27 @@ def send_daily_digest(
     )
     status_path = _write_send_status_artifact(digest_date, run_status)
     print(f"🗒️ Send status path: {status_path}")
-    
+
+    if claim_acquired:
+        if sent > 0:
+            complete_digest_send(
+                digest_date=digest_date,
+                send_mode=send_mode,
+                sent_count=sent,
+                failed_count=failed,
+            )
+            print(f"✅ Marked digest send complete in database (sent={sent}, failed={failed}).")
+        else:
+            release_failed_digest_send(
+                digest_date=digest_date,
+                send_mode=send_mode,
+                error_message=f"All sends failed (failed={failed})",
+            )
+            print("🔓 Released digest send claim (no successful sends).")
     print(f"\n{'='*50}")
     print(f"Summary: Sent to {sent}, Failed: {failed}")
     print(f"{'='*50}\n")
-    
+
     return {"articles": len(articles), "sent": sent, "failed": failed}
 
 

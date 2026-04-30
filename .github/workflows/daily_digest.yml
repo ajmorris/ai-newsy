@@ -28,22 +28,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Guard manual production send
-        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.force_send }}
+      # Decide once whether this run should proceed past setup. Setting an output
+      # (instead of `exit 0`) lets every later step gate on `steps.guard.outputs.should_send`,
+      # so an out-of-window cron trigger or a manual run without force_send no longer
+      # leaks through to the actual send. The DB claim in send_daily_email.py is the
+      # second, durable layer that catches anything this guard misses.
+      - name: Guard run (time window + manual override)
+        id: guard
         run: |
-          echo "Manual run blocked unless force_send=true."
-          echo "Re-run workflow with force_send=true and send_reason."
-          exit 0
+          should_send="false"
+          reason=""
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            ny_time=$(TZ=America/New_York date +'%H:%M')
+            echo "Current America/New_York time: ${ny_time}"
+            if [[ "${ny_time}" < "08:00" || "${ny_time}" > "08:05" ]]; then
+              reason="Outside target local time window (08:00-08:05 NY)."
+            else
+              should_send="true"
+            fi
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ "${{ inputs.force_send }}" = "true" ]; then
+              should_send="true"
+            else
+              reason="Manual run blocked unless force_send=true."
+            fi
+          else
+            reason="Unsupported event: ${{ github.event_name }}."
+          fi
+
+          if [ "${should_send}" = "true" ]; then
+            echo "Guard: proceeding with send."
+          else
+            echo "Guard: skipping later steps. Reason: ${reason}"
+          fi
+          echo "should_send=${should_send}" >> "$GITHUB_OUTPUT"
 
       - name: Checkout repository
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/checkout@v4
 
       - name: Set up Python
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: Set up Node
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -51,12 +82,28 @@ jobs:
           cache-dependency-path: emails/package-lock.json
 
       - name: Install dependencies
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           npm ci --prefix emails
 
+      - name: Validate email link origin env
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
+        env:
+          APP_URL: ${{ secrets.APP_URL }}
+        run: |
+          if [ -z "${APP_URL}" ]; then
+            echo "APP_URL secret is required for confirmation/unsubscribe links."
+            exit 1
+          fi
+          if [ "${APP_URL}" = "https://your-app.vercel.app" ]; then
+            echo "APP_URL secret is still set to placeholder value."
+            exit 1
+          fi
+
       - name: Send daily email digest
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
@@ -94,6 +141,7 @@ jobs:
           fi
 
       - name: Upload digest artifacts
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/upload-artifact@v4
         with:
           name: digest-artifacts-${{ github.run_id }}
