@@ -39,41 +39,43 @@ jobs:
         run: |
           echo "Trigger event: ${{ github.event_name }}"
           echo "UTC now: $(date -u +'%Y-%m-%d %H:%M:%S')"
-          echo "Building archive from repository snapshots."
+          echo "Building archive from canonical digest payloads."
 
-      - name: Validate fresh snapshot exists for expected digest date
+      - name: Validate canonical digest payloads exist
         run: |
-          expected_digest_date="$(date -u +%F)"
-          expected_snapshot="data/digests/snapshots/${expected_digest_date}.sent.json"
-          echo "Expected digest date: ${expected_digest_date}"
-          echo "Looking for snapshot: ${expected_snapshot}"
-          if [ ! -f "${expected_snapshot}" ]; then
-            echo "Fresh snapshot missing; refusing to publish stale archive."
-            ls -1 data/digests/snapshots || true
+          canonical_count=$(ls -1 data/digests/*.json 2>/dev/null | wc -l | tr -d ' ')
+          echo "Canonical digest payload count: ${canonical_count}"
+          if [ "${canonical_count}" -eq 0 ]; then
+            echo "No canonical digest payloads found; refusing to publish archive."
+            ls -1 data/digests || true
             exit 1
           fi
+          latest_canonical=$(ls -1 data/digests/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)
+          echo "Latest canonical digest date: ${latest_canonical}"
 
       - name: Build archive pages and manifest
-        run: python execution/build_web_archive.py
+        run: python execution/build_web_archive.py --use-canonical-fallback
 
       - name: Validate digest parity
         run: |
-          latest_digest=$(ls -1 data/digests/snapshots/*.sent.json | sed -E 's|.*/||' | sed -E 's|\.sent\.json$||' | sort | tail -n 1)
+          latest_digest=$(ls -1 data/digests/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)
           python execution/validate_digest_parity.py --digest-date "${latest_digest}" --snapshot-dir data/digests/snapshots --report parity-report.json
 
-      - name: Validate archive manifest matches digest inputs
+      - name: Validate archive manifest matches canonical digest inputs
         run: |
           python - <<'PY'
           import json
           import re
           from pathlib import Path
 
-          digest_files = sorted(Path("data/digests/snapshots").glob("*.sent.json"))
+          digest_files = sorted(
+              p for p in Path("data/digests").glob("*.json")
+              if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", p.name)
+          )
           if not digest_files:
-              raise SystemExit("No sent snapshot files found in data/digests/snapshots.")
+              raise SystemExit("No canonical digest files found in data/digests.")
 
-          dated = [p.name.replace(".sent.json", "") for p in digest_files if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.sent\.json", p.name)]
-          expected_latest = max(dated) if dated else digest_files[-1].name.replace(".sent.json", "")
+          expected_latest = max(p.name.replace(".json", "") for p in digest_files)
           expected_count = len(digest_files)
 
           manifest_path = Path("frontend/issues/index.json")

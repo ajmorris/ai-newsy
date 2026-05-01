@@ -596,6 +596,8 @@ def send_daily_digest(
         )
     )
     digest_date = str(payload.get("digest_date"))
+    payload_hash = str(payload.get("content_hash", "")).strip()
+    payload_source = str((payload.get("build_meta") or {}).get("source", "canonical")).strip()
     stories = list(payload.get("stories", []))
     send_mode = "test" if test_email else "production"
     run_status: Dict[str, object] = {
@@ -612,6 +614,8 @@ def send_daily_digest(
 
     print(f"📅 Digest date: {digest_date}")
     print(f"🚦 Mode: {send_mode}")
+    print(f"🧾 Canonical payload source: {payload_source or 'canonical'}")
+    print(f"🔐 Canonical payload hash: {payload_hash or 'missing'}")
 
     # Production duplicate-send guard: snapshot file (legacy, per-runner) plus a
     # durable database claim that survives across separate workflow runs. Test

@@ -97,6 +97,17 @@ jobs:
             exit 1
           fi
 
+      - name: Validate canonical digest payload exists
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
+        run: |
+          expected_payload="data/digests/$(date -u +%F).json"
+          echo "Looking for canonical payload: ${expected_payload}"
+          if [ ! -f "${expected_payload}" ]; then
+            echo "Missing canonical digest payload for today."
+            ls -la data/digests || true
+            exit 1
+          fi
+
       - name: Send daily email digest
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         env:
