@@ -5,7 +5,7 @@ name: Daily AI Digest
 
 on:
   schedule:
-    # Fixed UTC trigger near early New York morning.
+    # Runs 20 minutes after archive publish (08:40 UTC).
     - cron: '0 9 * * *'
   workflow_dispatch:
     inputs:
@@ -39,13 +39,8 @@ jobs:
           should_send="false"
           reason=""
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            ny_time=$(TZ=America/New_York date +'%H:%M')
-            echo "Current America/New_York time: ${ny_time}"
-            if [[ "${ny_time}" < "08:00" || "${ny_time}" > "08:05" ]]; then
-              reason="Outside target local time window (08:00-08:05 NY)."
-            else
-              should_send="true"
-            fi
+            should_send="true"
+            reason="Scheduled run at fixed UTC cadence."
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if [ "${{ inputs.force_send }}" = "true" ]; then
               should_send="true"
@@ -57,7 +52,7 @@ jobs:
           fi
 
           if [ "${should_send}" = "true" ]; then
-            echo "Guard: proceeding with send."
+            echo "Guard: proceeding with send. Reason: ${reason}"
           else
             echo "Guard: skipping later steps. Reason: ${reason}"
           fi
@@ -130,7 +125,7 @@ jobs:
           python execution/send_daily_email.py ${FORCE_SEND_FLAG} --send-reason "${SEND_REASON}"
 
       - name: Verify scheduled run produced today's sent snapshot
-        if: ${{ github.event_name == 'schedule' }}
+        if: ${{ github.event_name == 'schedule' && steps.guard.outputs.should_send == 'true' }}
         run: |
           expected_snapshot="data/digests/snapshots/$(date -u +%F).sent.json"
           echo "Checking for expected snapshot: ${expected_snapshot}"

@@ -1,19 +1,14 @@
 name: Publish Web Archive
 
 on:
+  schedule:
+    - cron: '40 8 * * *'
   push:
     branches:
       - main
     paths:
       - 'data/digests/snapshots/*.sent.json'
       - 'execution/build_web_archive.py'
-  workflow_run:
-    workflows:
-      - Daily AI Digest
-    branches:
-      - main
-    types:
-      - completed
   workflow_dispatch:
 
 permissions:
@@ -22,7 +17,6 @@ permissions:
 
 jobs:
   publish-web-archive:
-    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
 
     steps:
@@ -41,36 +35,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Download digest artifacts from Daily AI Digest
-        if: ${{ github.event_name == 'workflow_run' }}
-        uses: actions/download-artifact@v4
-        with:
-          name: digest-artifacts-${{ github.event.workflow_run.id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
-          run-id: ${{ github.event.workflow_run.id }}
-          path: /tmp/digest-artifacts
-
-      - name: Sync downloaded digest artifacts into repository
-        if: ${{ github.event_name == 'workflow_run' }}
+      - name: Log trigger context
         run: |
-          mkdir -p data/digests
-          mkdir -p data/digests/snapshots
-          shopt -s globstar nullglob
-          files=(/tmp/digest-artifacts/**/*.json /tmp/digest-artifacts/**/*.md /tmp/digest-artifacts/**/*.sent.json /tmp/digest-artifacts/**/*.status.json)
-          if [ "${#files[@]}" -eq 0 ]; then
-            echo "No digest artifacts found in downloaded artifact."
-            exit 1
-          fi
-          for file in "${files[@]}"; do
-            name="$(basename "$file")"
-            if [[ "$name" == *.sent.json || "$name" == *.status.json ]]; then
-              cp "$file" "data/digests/snapshots/${name}"
-            else
-              cp "$file" "data/digests/${name}"
-            fi
-          done
-          ls -1 data/digests/*.json data/digests/*.md data/digests/snapshots/*.sent.json data/digests/snapshots/*.status.json || true
+          echo "Trigger event: ${{ github.event_name }}"
+          echo "UTC now: $(date -u +'%Y-%m-%d %H:%M:%S')"
+          echo "Building archive from repository snapshots."
 
       - name: Validate fresh snapshot exists for expected digest date
         run: |
@@ -146,8 +115,6 @@ jobs:
           PY
 
       - name: Commit and push generated archive updates
-        env:
-          BRANCH_NAME: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_branch || github.ref_name }}
         run: |
           git add frontend/issues
           if git diff --staged --quiet; then
@@ -157,4 +124,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: publish web issue archive"
-          git push origin "HEAD:${BRANCH_NAME}"
+          git push origin "HEAD:${{ github.ref_name }}"
