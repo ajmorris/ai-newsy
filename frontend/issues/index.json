@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-01T00:00:00Z",
-  "issueCount": 11,
+  "generatedAt": "2026-05-02T00:00:00Z",
+  "issueCount": 12,
   "latestIssue": {
-    "slug": "2026-05-01",
-    "digestDate": "2026-05-01",
-    "displayDate": "May 01, 2026",
-    "issueNumber": "60501",
-    "subject": "ISSUE 60501 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Microsoft is betting that even lawyers \u2014 perhaps the most cautious professionals on the planet \u2014 are ready to let AI handle their contracts, launching a new Legal Agent embedded right in Word that follows real legal workflows for clause-by-clause review. It's a bold move that captures today's biggest theme: AI pushing deeper into high-stakes, trust-dependent professions, from legal offices to doctor's visits to job interviews (where candidates are, let's say, *less* than thrilled). Today's digest also covers a brewing White House-Anthropic standoff, a Christian phone network blocking content at the infrastructure level, and the surprisingly philosophical question of whether robot athletes can ever make us care.",
+    "slug": "2026-05-02",
+    "digestDate": "2026-05-02",
+    "displayDate": "May 02, 2026",
+    "issueNumber": "60502",
+    "subject": "ISSUE 60502 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The Musk v. OpenAI trial is dominating headlines this week, with Elon Musk delivering a bombshell courtroom admission that his own xAI distills OpenAI's models \u2014 all while arguing \"you can't steal a charity\" and pushing to oust Sam Altman from the company he helped fund. But that's far from the only big story today: the Pentagon just locked in AI deals with seven major tech companies (notably *without* Anthropic, which is fighting back over ethical guardrails), Meta is making a serious push into humanoid robotics with a new acquisition, and a major DDoS attack has knocked Ubuntu's infrastructure offline at the worst possible time. It's a packed news day \u2014 let's dive in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-01.html",
-    "contentHash": "40040997885e8ff0d80ffaf3aa895c27b6e1ca8cc900ff650fc6ccf069730da6"
+    "urlPath": "/issues/2026-05-02.html",
+    "contentHash": "fa76846df848790c99854de392c8c97a3533e0b087a4bc750889bf86b3951464"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-02",
+      "digestDate": "2026-05-02",
+      "displayDate": "May 02, 2026",
+      "issueNumber": "60502",
+      "subject": "ISSUE 60502 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The Musk v. OpenAI trial is dominating headlines this week, with Elon Musk delivering a bombshell courtroom admission that his own xAI distills OpenAI's models \u2014 all while arguing \"you can't steal a charity\" and pushing to oust Sam Altman from the company he helped fund. But that's far from the only big story today: the Pentagon just locked in AI deals with seven major tech companies (notably *without* Anthropic, which is fighting back over ethical guardrails), Meta is making a serious push into humanoid robotics with a new acquisition, and a major DDoS attack has knocked Ubuntu's infrastructure offline at the worst possible time. It's a packed news day \u2014 let's dive in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-02.html",
+      "contentHash": "fa76846df848790c99854de392c8c97a3533e0b087a4bc750889bf86b3951464"
+    },
     {
       "slug": "2026-05-01",
       "digestDate": "2026-05-01",
