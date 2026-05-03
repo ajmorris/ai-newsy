@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-02T00:00:00Z",
-  "issueCount": 12,
+  "generatedAt": "2026-05-03T00:00:00Z",
+  "issueCount": 13,
   "latestIssue": {
-    "slug": "2026-05-02",
-    "digestDate": "2026-05-02",
-    "displayDate": "May 02, 2026",
-    "issueNumber": "60502",
-    "subject": "ISSUE 60502 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The Musk v. OpenAI trial is dominating headlines this week, with Elon Musk delivering a bombshell courtroom admission that his own xAI distills OpenAI's models \u2014 all while arguing \"you can't steal a charity\" and pushing to oust Sam Altman from the company he helped fund. But that's far from the only big story today: the Pentagon just locked in AI deals with seven major tech companies (notably *without* Anthropic, which is fighting back over ethical guardrails), Meta is making a serious push into humanoid robotics with a new acquisition, and a major DDoS attack has knocked Ubuntu's infrastructure offline at the worst possible time. It's a packed news day \u2014 let's dive in.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-05-02.html",
-    "contentHash": "fa76846df848790c99854de392c8c97a3533e0b087a4bc750889bf86b3951464"
+    "slug": "2026-05-03",
+    "digestDate": "2026-05-03",
+    "displayDate": "May 03, 2026",
+    "issueNumber": "60503",
+    "subject": "ISSUE 60503 \u00b7 6 STORIES \u00b7 11 MIN READ",
+    "intro": "Hollywood is drawing a line in the sand on AI creativity \u2014 the Academy just banned AI-generated actors and scripts from Oscar eligibility, even as China's $14 billion microdrama industry races in the opposite direction, embracing AI tools to pump out addictive mobile content at unprecedented scale. It's a fascinating split that captures the global tug-of-war over AI's role in entertainment, and it's far from the only tension point today. We've also got community backlash against Australia's sprawling AI datacenters, a deep dive into the best AI dictation apps, and a timely warning about chatbot-related subscription scams you'll want to watch out for.",
+    "articleCount": 6,
+    "urlPath": "/issues/2026-05-03.html",
+    "contentHash": "4a16aff24c29905d83ec32a5f818f16a7af26e340077dbf767714d0a049cd0ce"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-03",
+      "digestDate": "2026-05-03",
+      "displayDate": "May 03, 2026",
+      "issueNumber": "60503",
+      "subject": "ISSUE 60503 \u00b7 6 STORIES \u00b7 11 MIN READ",
+      "intro": "Hollywood is drawing a line in the sand on AI creativity \u2014 the Academy just banned AI-generated actors and scripts from Oscar eligibility, even as China's $14 billion microdrama industry races in the opposite direction, embracing AI tools to pump out addictive mobile content at unprecedented scale. It's a fascinating split that captures the global tug-of-war over AI's role in entertainment, and it's far from the only tension point today. We've also got community backlash against Australia's sprawling AI datacenters, a deep dive into the best AI dictation apps, and a timely warning about chatbot-related subscription scams you'll want to watch out for.",
+      "articleCount": 6,
+      "urlPath": "/issues/2026-05-03.html",
+      "contentHash": "4a16aff24c29905d83ec32a5f818f16a7af26e340077dbf767714d0a049cd0ce"
+    },
     {
       "slug": "2026-05-02",
       "digestDate": "2026-05-02",
@@ -133,17 +144,6 @@
       "articleCount": 39,
       "urlPath": "/issues/2026-04-22.html",
       "contentHash": "cd557f520054004e33e4ab64b7722e0378a3a37e392d9f1720051aa33dad7592"
-    },
-    {
-      "slug": "2026-04-21",
-      "digestDate": "2026-04-21",
-      "displayDate": "Apr 21, 2026",
-      "issueNumber": "60421",
-      "subject": "AI Newsy \u2022 Apr 21 \u2022 15 Stories",
-      "intro": "Today, all eyes are on AI's potential for misuse, from manipulated political imagery raising concerns about disinformation to reports of the NSA using Anthropic's restricted Mythos model. We'll also dive into how companies are grappling with AI's impact, including a nuclear power startup facing a leadership crisis and tech workers training AI to take over their jobs. Plus, hear how Intercom doubled engineering output using Claude Code!",
-      "articleCount": 15,
-      "urlPath": "/issues/2026-04-21.html",
-      "contentHash": "a6ae4cbc86ccab3558fdad3143aabca27a3211a6174382f8a09962e2cb157982"
     }
   ]
 }
