@@ -1,0 +1,322 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-05-03",
+  "issue_id": "20260503",
+  "subject_line": "ISSUE 60503 · 6 STORIES · 11 MIN READ",
+  "intro": "Hollywood is drawing a line in the sand on AI creativity — the Academy just banned AI-generated actors and scripts from Oscar eligibility, even as China's $14 billion microdrama industry races in the opposite direction, embracing AI tools to pump out addictive mobile content at unprecedented scale. It's a fascinating split that captures the global tug-of-war over AI's role in entertainment, and it's far from the only tension point today. We've also got community backlash against Australia's sprawling AI datacenters, a deep dive into the best AI dictation apps, and a timely warning about chatbot-related subscription scams you'll want to watch out for.",
+  "article_count": 6,
+  "stories": [
+    {
+      "id": 2857,
+      "source": "Guardian AI",
+      "title": "AI chatbot fraud: the ‘gift card’ subcription that may cost you dear",
+      "url": "https://www.theguardian.com/money/2026/may/03/ai-claude-chatbot-gift-card-subcription-scam-mystery-payments",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Analysis of This Article Key Red Flags This article appears to describe a subscription scam or unauthorized charges associated with what is presented as a Claude AI chatbot subscription. Several things worth noting: About the article itself: The URL date is May 2026 — this is a future date, which is suspicious There are typos in the headline (\"subcription\" instead of \"subscription\") which is unusual for the Guardian The content is only a brief excerpt/teaser About the claims: Legitimate Claude Pro subscriptions by Anthropic cost $20/month — that part is accurate However, Anthropic does not sell \"gift cards\" for Claude Mystery $200 \"gift card\" charges are not part of any legitimate Claude billing practice What This Likely Represents This scenario could involve: A phishing or impersonation scam — a fraudulent site mimicking Claude's sign-up process that harvests credit card details Malwar…",
+      "opinion": "",
+      "image_url": "https://i.guim.co.uk/img/media/3e05c557bf9e577d8536090632b8d3ad671efbf3/500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c81ed5004060de945efedcf54f1a76ca",
+      "published_at": "2026-05-03T06:00:46+00:00",
+      "fetched_at": "2026-05-03T06:58:54.743459+00:00"
+    },
+    {
+      "id": 2856,
+      "source": "NY Times",
+      "title": "A.I. Shakes Up China’s Entertainment Landscape",
+      "url": "https://www.nytimes.com/video/world/asia/100000010844213/china-ai-entertainment-microdrama.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Summary: A.I. Shakes Up China's Entertainment Landscape Overview This New York Times video report (May 3, 2026) examines how new A.I. tools are transforming China's microdrama industry — short, serialized shows designed for mobile phones that use rapid plot developments to hook viewers. The genre has grown into a $14 billion industry in China. Key Points What Are Microdramas? Short, serialized, phone-based episodes Designed to be addictive with rapid plot twists A booming entertainment format in China The A.I. Disruption In February 2026, a new A.I. video model called Seedance emerged, capable of generating cinematic content — including a demo showing Brad Pitt and Tom Cruise in a multi-camera fight scene. Simultaneously, microdrama streaming platforms began demanding higher production quality, pushing creators toward A.I. tools. Two Personal Stories Wang Yushun (Director/Producer): For…",
+      "opinion": "",
+      "image_url": "https://static01.nyt.com/images/2026/05/03/world/asia/_9x16_V/_9x16_V-facebookJumbo.jpg?play-overlay",
+      "published_at": "2026-05-03T04:00:00+00:00",
+      "fetched_at": "2026-05-03T06:58:53.705808+00:00"
+    },
+    {
+      "id": 2854,
+      "source": "TechCrunch AI",
+      "title": "AI-generated actors and scripts are now ineligible for Oscars",
+      "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI-Generated Actors and Scripts Now Ineligible for Oscars Summary On May 2, 2026, the Academy of Motion Picture Arts and Sciences announced new rules explicitly barring AI-generated performances and screenplays from Oscar eligibility. Under the updated guidelines: Acting awards: Only performances \"credited in the film's legal billing and demonstrably performed by humans with their consent\" qualify. Screenplay awards: Scripts must be \"human-authored\" to be eligible. Disclosure requirements: The Academy reserves the right to request additional information about a film's AI usage and human authorship. Context The rule changes arrive amid several converging developments: AI actors gaining traction: An independent film featuring an AI-generated version of Val Kilmer is in production, and an AI \"actress\" named Tilly Norwood has been generating significant media attention. Filmmaker anxiety: N…",
+      "opinion": "",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2266014829.jpg?w=1024",
+      "published_at": "2026-05-02T21:54:58+00:00",
+      "fetched_at": "2026-05-03T06:58:50.660624+00:00"
+    },
+    {
+      "id": 2858,
+      "source": "Guardian AI",
+      "title": "Under a cloud: the growing resentment against the massive datacentres sprouting across Australian cities",
+      "url": "https://www.theguardian.com/technology/2026/may/03/ai-datacentres-australia-opposition",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Under a Cloud: Growing Resentment Against Datacentres in Australian Cities This Guardian article from May 2026 examines the mounting community opposition to the rapid proliferation of large-scale AI datacentres across Australian urban areas. Key Themes Community Concerns: Residents like Sean Brown in West Footscray, Melbourne, are confronting the reality of massive \"hyperscale AI factories\" being built in their neighborhoods Environmental impacts remain poorly understood or disclosed Concerns likely include noise, energy consumption, water usage for cooling, heat output, and strain on local power grids Residents feel developments are being rushed through planning processes without adequate community consultation The Pro-Development Argument: Proponents frame datacentre construction as an economic imperative, arguing Australia must capitalize on the global data and AI boom The fear of be…",
+      "opinion": "",
+      "image_url": "https://i.guim.co.uk/img/media/598ef0e6661ea75f1a88e26cef9621abfba031e4/776_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=53426bd62a3184c3f096c043dce38451",
+      "published_at": "2026-05-02T20:00:35+00:00",
+      "fetched_at": "2026-05-03T06:58:54.935588+00:00"
+    },
+    {
+      "id": 2871,
+      "source": "Lenny's Newsletter",
+      "title": "🧠 Community Wisdom: Claude Code tips for ADHD users, resources for managing up, going from corporate to startup, tiring of being your company’s AI evangelist, and more",
+      "url": "https://www.lennysnewsletter.com/p/community-wisdom-claude-code-tips",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "This is a preview/paywall page from Lenny's Newsletter (a Substack publication) dated May 2, 2026. The full content is behind a paid subscription wall, so only the title and brief introduction are visible. Here's a summary of what's available: Community Wisdom #184 — May 2, 2026 Topics teased in the title: Claude Code tips for ADHD users — Likely practical advice on using Anthropic's Claude Code tool in ways that accommodate ADHD-related challenges (focus, task-switching, etc.) Resources for managing up — Recommendations for how to effectively manage relationships with your manager/leadership Going from corporate to startup — Discussion around the transition from a large company environment to a startup Tiring of being your company's AI evangelist — A relatable thread about burnout from being the go-to person pushing AI adoption internally The content comes from Lenny Rachitsky's privat…",
+      "opinion": "",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!KxHU!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png",
+      "published_at": "2026-05-02T18:02:57+00:00",
+      "fetched_at": "2026-05-03T06:59:12.354053+00:00"
+    },
+    {
+      "id": 2855,
+      "source": "TechCrunch AI",
+      "title": "The best AI dictation apps, tested and ranked",
+      "url": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Summary of \"The Best AI Dictation Apps, Tested and Ranked\" (TechCrunch, May 2, 2026) This TechCrunch article by Ivan Mehta reviews and ranks the top AI-powered dictation apps, noting that advances in LLMs and speech-to-text models have dramatically improved accuracy, context-awareness, formatting, and filler-word removal compared to older systems. Apps Reviewed Wispr Flow Platforms: macOS, Windows, iOS (Android in development) Key features: Custom words/instructions, tone styles (\"formal,\" \"casual,\" \"very casual\"), integration with vibe-coding tools like Cursor (auto-recognizes variables, tags files in chat) Pricing: Free tier (2,000 words/week on desktop, 1,000 words/month on iOS); paid plans from $15/month for unlimited transcription Willow Key features: Uses LLMs to generate full passages from brief dictated input; automatic editing and formatting; privacy-focused (local transcript s…",
+      "opinion": "",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/02/GettyImages-1424498694.jpg?resize=1200,800",
+      "published_at": "2026-05-02T16:00:00+00:00",
+      "fetched_at": "2026-05-03T06:58:50.9142+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 2857,
+          "source": "Guardian AI",
+          "title": "AI chatbot fraud: the ‘gift card’ subcription that may cost you dear",
+          "url": "https://www.theguardian.com/money/2026/may/03/ai-claude-chatbot-gift-card-subcription-scam-mystery-payments",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Analysis of This Article Key Red Flags This article appears to describe a subscription scam or unauthorized charges associated with what is presented as a Claude AI chatbot subscription. Several things worth noting: About the article itself: The URL date is May 2026 — this is a future date, which is suspicious There are typos in the headline (\"subcription\" instead of \"subscription\") which is unusual for the Guardian The content is only a brief excerpt/teaser About the claims: Legitimate Claude Pro subscriptions by Anthropic cost $20/month — that part is accurate However, Anthropic does not sell \"gift cards\" for Claude Mystery $200 \"gift card\" charges are not part of any legitimate Claude billing practice What This Likely Represents This scenario could involve: A phishing or impersonation scam — a fraudulent site mimicking Claude's sign-up process that harvests credit card details Malwar…",
+          "opinion": "",
+          "image_url": "https://i.guim.co.uk/img/media/3e05c557bf9e577d8536090632b8d3ad671efbf3/500_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c81ed5004060de945efedcf54f1a76ca",
+          "published_at": "2026-05-03T06:00:46+00:00",
+          "fetched_at": "2026-05-03T06:58:54.743459+00:00"
+        },
+        {
+          "id": 2856,
+          "source": "NY Times",
+          "title": "A.I. Shakes Up China’s Entertainment Landscape",
+          "url": "https://www.nytimes.com/video/world/asia/100000010844213/china-ai-entertainment-microdrama.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Summary: A.I. Shakes Up China's Entertainment Landscape Overview This New York Times video report (May 3, 2026) examines how new A.I. tools are transforming China's microdrama industry — short, serialized shows designed for mobile phones that use rapid plot developments to hook viewers. The genre has grown into a $14 billion industry in China. Key Points What Are Microdramas? Short, serialized, phone-based episodes Designed to be addictive with rapid plot twists A booming entertainment format in China The A.I. Disruption In February 2026, a new A.I. video model called Seedance emerged, capable of generating cinematic content — including a demo showing Brad Pitt and Tom Cruise in a multi-camera fight scene. Simultaneously, microdrama streaming platforms began demanding higher production quality, pushing creators toward A.I. tools. Two Personal Stories Wang Yushun (Director/Producer): For…",
+          "opinion": "",
+          "image_url": "https://static01.nyt.com/images/2026/05/03/world/asia/_9x16_V/_9x16_V-facebookJumbo.jpg?play-overlay",
+          "published_at": "2026-05-03T04:00:00+00:00",
+          "fetched_at": "2026-05-03T06:58:53.705808+00:00"
+        },
+        {
+          "id": 2854,
+          "source": "TechCrunch AI",
+          "title": "AI-generated actors and scripts are now ineligible for Oscars",
+          "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI-Generated Actors and Scripts Now Ineligible for Oscars Summary On May 2, 2026, the Academy of Motion Picture Arts and Sciences announced new rules explicitly barring AI-generated performances and screenplays from Oscar eligibility. Under the updated guidelines: Acting awards: Only performances \"credited in the film's legal billing and demonstrably performed by humans with their consent\" qualify. Screenplay awards: Scripts must be \"human-authored\" to be eligible. Disclosure requirements: The Academy reserves the right to request additional information about a film's AI usage and human authorship. Context The rule changes arrive amid several converging developments: AI actors gaining traction: An independent film featuring an AI-generated version of Val Kilmer is in production, and an AI \"actress\" named Tilly Norwood has been generating significant media attention. Filmmaker anxiety: N…",
+          "opinion": "",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2266014829.jpg?w=1024",
+          "published_at": "2026-05-02T21:54:58+00:00",
+          "fetched_at": "2026-05-03T06:58:50.660624+00:00"
+        },
+        {
+          "id": 2858,
+          "source": "Guardian AI",
+          "title": "Under a cloud: the growing resentment against the massive datacentres sprouting across Australian cities",
+          "url": "https://www.theguardian.com/technology/2026/may/03/ai-datacentres-australia-opposition",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Under a Cloud: Growing Resentment Against Datacentres in Australian Cities This Guardian article from May 2026 examines the mounting community opposition to the rapid proliferation of large-scale AI datacentres across Australian urban areas. Key Themes Community Concerns: Residents like Sean Brown in West Footscray, Melbourne, are confronting the reality of massive \"hyperscale AI factories\" being built in their neighborhoods Environmental impacts remain poorly understood or disclosed Concerns likely include noise, energy consumption, water usage for cooling, heat output, and strain on local power grids Residents feel developments are being rushed through planning processes without adequate community consultation The Pro-Development Argument: Proponents frame datacentre construction as an economic imperative, arguing Australia must capitalize on the global data and AI boom The fear of be…",
+          "opinion": "",
+          "image_url": "https://i.guim.co.uk/img/media/598ef0e6661ea75f1a88e26cef9621abfba031e4/776_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=53426bd62a3184c3f096c043dce38451",
+          "published_at": "2026-05-02T20:00:35+00:00",
+          "fetched_at": "2026-05-03T06:58:54.935588+00:00"
+        },
+        {
+          "id": 2871,
+          "source": "Lenny's Newsletter",
+          "title": "🧠 Community Wisdom: Claude Code tips for ADHD users, resources for managing up, going from corporate to startup, tiring of being your company’s AI evangelist, and more",
+          "url": "https://www.lennysnewsletter.com/p/community-wisdom-claude-code-tips",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "This is a preview/paywall page from Lenny's Newsletter (a Substack publication) dated May 2, 2026. The full content is behind a paid subscription wall, so only the title and brief introduction are visible. Here's a summary of what's available: Community Wisdom #184 — May 2, 2026 Topics teased in the title: Claude Code tips for ADHD users — Likely practical advice on using Anthropic's Claude Code tool in ways that accommodate ADHD-related challenges (focus, task-switching, etc.) Resources for managing up — Recommendations for how to effectively manage relationships with your manager/leadership Going from corporate to startup — Discussion around the transition from a large company environment to a startup Tiring of being your company's AI evangelist — A relatable thread about burnout from being the go-to person pushing AI adoption internally The content comes from Lenny Rachitsky's privat…",
+          "opinion": "",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!KxHU!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png",
+          "published_at": "2026-05-02T18:02:57+00:00",
+          "fetched_at": "2026-05-03T06:59:12.354053+00:00"
+        },
+        {
+          "id": 2855,
+          "source": "TechCrunch AI",
+          "title": "The best AI dictation apps, tested and ranked",
+          "url": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Summary of \"The Best AI Dictation Apps, Tested and Ranked\" (TechCrunch, May 2, 2026) This TechCrunch article by Ivan Mehta reviews and ranks the top AI-powered dictation apps, noting that advances in LLMs and speech-to-text models have dramatically improved accuracy, context-awareness, formatting, and filler-word removal compared to older systems. Apps Reviewed Wispr Flow Platforms: macOS, Windows, iOS (Android in development) Key features: Custom words/instructions, tone styles (\"formal,\" \"casual,\" \"very casual\"), integration with vibe-coding tools like Cursor (auto-recognizes variables, tags files in chat) Pricing: Free tier (2,000 words/week on desktop, 1,000 words/month on iOS); paid plans from $15/month for unlimited transcription Willow Key features: Uses LLMs to generate full passages from brief dictated input; automatic editing and formatting; privacy-focused (local transcript s…",
+          "opinion": "",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/02/GettyImages-1424498694.jpg?resize=1200,800",
+          "published_at": "2026-05-02T16:00:00+00:00",
+          "fetched_at": "2026-05-03T06:58:50.9142+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://twitter.com/this_is_tasnim/status/2050511318290223327",
+      "author": "this_is_tasnim",
+      "headline": "Anthropic's official prompt engineering course is free and already at __12,200 GitHub stars__ — interactive notebooks covering chain-of-thought, tool use, and real agent patterns.",
+      "tweet_id": "3541eba9-b6bc-8170-b0e6-fa283555d915",
+      "source_text": "🚨 BREAKING: Anthropic just released their official prompt engineering course and it's free.\n\nInteractive Jupyter notebooks covering:\n\n→ Basic to advanced prompting techniques\n→ Chain-of-thought and tool use\n→ Real agent patterns from the Claude team\n\n12,200 stars (+2,459 this https://t.co/BqJsdaQnbH",
+      "created_time": "2026-05-02T23:27:00.000Z",
+      "canonical_url": "https://twitter.com/this_is_tasnim/status/2050511318290223327",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/DailyDoseOfDS_/status/2050464942013456573",
+      "author": "DailyDoseOfDS_",
+      "headline": "Claude __subagents vs. agent teams__, explained: start with a single agent and only add complexity when you can measure that it's needed.",
+      "tweet_id": "3541eba9-b6bc-81f9-9da6-de770a17fdcd",
+      "source_text": "Claude Subagents vs. Agent Teams, explained!\n\nTL;DR\n\nMost people reach for multi-agent systems too early. Start with a single agent and only add complexity when you can measure that it's needed.\n\nWhen you do need multiple agents, Claude offers two models: sub-agents (isolated, https://t.co/9LzbPQkMvF https://t.co/qQth4DJ0dD",
+      "created_time": "2026-05-02T23:27:00.000Z",
+      "canonical_url": "https://twitter.com/DailyDoseOfDS_/status/2050464942013456573",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/googlecloud/status/2050357097649324517",
+      "author": "googlecloud",
+      "headline": "Google Cloud's Gemini Enterprise app now lets you deploy __long-running autonomous agents__ with Inbox, a new command center for managing multi-step agent activity.",
+      "tweet_id": "3541eba9-b6bc-8181-b40c-d75ede4c98dc",
+      "source_text": "With the Gemini Enterprise app, automate complex work—not just tasks.\n\nHere's how to deploy long-running agents to execute multi-step, autonomous work, and easily manage it all with tools like Inbox, a new command center for agent activity → https://t.co/7OSGtS7Lt5 https://t.co/kTye5DuEm5",
+      "created_time": "2026-05-02T23:27:00.000Z",
+      "canonical_url": "https://twitter.com/googlecloud/status/2050357097649324517",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/aakashgupta/status/2050523449706365291",
+      "author": "aakashgupta",
+      "headline": "Marcus Moretti runs Spiral at Every as a __one-person PM, coder, support, and marketing team__ — Aakash Gupta says his guide on the rewritten PM role rewards reading slowly.",
+      "tweet_id": "3541eba9-b6bc-81b1-b488-d3d5991bf54b",
+      "source_text": "The PM role got rewritten in production while half the industry was still debating whether PMs should code.\n\nMarcus Moretti runs Spiral at Every as a one-person team. PM, code, customer support, marketing. His read on the role is in this guide and it rewards reading slowly.\n\nHe https://t.co/EF7TzlrnTZ",
+      "created_time": "2026-05-02T21:27:00.000Z",
+      "canonical_url": "https://twitter.com/aakashgupta/status/2050523449706365291",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/JulianGoldieSEO/status/2050429692851704176",
+      "author": "JulianGoldieSEO",
+      "headline": "Julian Goldie believes the Claude Sonnet 4.8 leak reveals where AI is heading — the jump from 54% to __98% vision accuracy in Opus 4.7__ is a category change, not an improvement.",
+      "tweet_id": "3541eba9-b6bc-81c8-8849-d5ec69856c99",
+      "source_text": "The Claude Sonnet 4.8 leak isn't just a fun story.\n\nIt tells you exactly where AI is heading and most people aren't ready.\n\nHere's my take:\n\nThe jump from 54% → 98% vision accuracy in Opus 4.7 is generational.\n\nThat's not an improvement.\n\nThat's a category change.\n\nKAIROS — the https://t.co/xRCQoztt2W",
+      "created_time": "2026-05-02T21:27:00.000Z",
+      "canonical_url": "https://twitter.com/JulianGoldieSEO/status/2050429692851704176",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/dani_avila7/status/2050560839640306071",
+      "author": "dani_avila7",
+      "headline": "Dani Avila shares __context management rules for Claude Code__ that fix most \"Claude isn't following instructions\" complaints — it's context hygiene, not the model.",
+      "tweet_id": "3541eba9-b6bc-8159-8807-e1a0a7a662ba",
+      "source_text": "Context management rules for Claude Code sessions\n\nSave this and apply it in your sessions\n\nMost “Claude isn’t following instructions” or “I’m hitting rate limits too fast” issues come down to context hygiene, not the model\n\nThese are mine and they’ve worked well to improve https://t.co/sAw2hvEH0s https://t.co/ME8hrXPFP8",
+      "created_time": "2026-05-02T23:27:00.000Z",
+      "canonical_url": "https://twitter.com/dani_avila7/status/2050560839640306071",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://news.ycombinator.com/item?id=47993748",
+      "author": "vedkribhu",
+      "item_id": "hn:47993748",
+      "headline": "The Postman team details how they made the app __load 60% faster__.",
+      "subreddit": null,
+      "source_text": "Making Postman load 60% Faster",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-03T05:43:25+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=47993748",
+      "learning_score": 3
+    },
+    {
+      "url": "https://zentty.org/",
+      "author": "fdb",
+      "item_id": "hn:47994171",
+      "headline": "__ZenTTY__ is a terminal designed around one principle: getting out of your way.",
+      "subreddit": null,
+      "source_text": "ZenTTY – A terminal that gets out of your way",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-03T06:59:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://zentty.org",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/st-hannibal/arknet",
+      "author": "st-hannibal",
+      "item_id": "hn:47994122",
+      "headline": "__Arknet__ pitches decentralized AI inference with a fair launch and a single binary.",
+      "subreddit": null,
+      "source_text": "Arknet – decentralized AI inference, fair launch, one binary",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-03T06:53:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/st-hannibal/arknet",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(22)01570-7",
+      "author": "andsoitis",
+      "item_id": "hn:47994042",
+      "headline": "A Cell paper makes the case that __loss of epigenetic information__ — not just mutations — drives mammalian aging.",
+      "subreddit": null,
+      "source_text": "Loss of epigenetic information as a cause of mammalian aging",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-03T06:39:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cell.com/cell/fulltext/S0092-8674(22)01570-7",
+      "learning_score": 2
+    },
+    {
+      "url": "https://acai.sh/blog/specsmaxxing",
+      "author": "brendanmc6",
+      "item_id": "hn:47994012",
+      "headline": "One developer's cure for AI psychosis: __writing specs in YAML__ before touching a single prompt.",
+      "subreddit": null,
+      "source_text": "Specsmaxxing – On overcoming AI psychosis, and why I write specs in YAML",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-03T06:33:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://acai.sh/blog/specsmaxxing",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.lifebiosciences.com/life-biosciences-announces-fda-clearance-of-ind-application-for-er-100-in-optic-neuropathies/",
+      "author": "andsoitis",
+      "item_id": "hn:47993990",
+      "headline": "Life Biosciences gets __FDA clearance for an IND on ER-100__ targeting optic neuropathies, moving epigenetic reprogramming into human trials.",
+      "subreddit": null,
+      "source_text": "FDA Clearance of IND Application for ER-100 in Optic Neuropathies",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-03T06:29:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lifebiosciences.com/life-biosciences-announces-fda-clearance-of-ind-application-for-er-100-in-optic-neuropathies",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-05-03T07:01:56.349744+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "616488c7e984f833f59f7bc0d937cc6e61dd47e76ed16e23d28abda78aee4d51"
+}
