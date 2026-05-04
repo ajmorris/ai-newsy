@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-03T00:00:00Z",
-  "issueCount": 13,
+  "generatedAt": "2026-05-04T00:00:00Z",
+  "issueCount": 14,
   "latestIssue": {
-    "slug": "2026-05-03",
-    "digestDate": "2026-05-03",
-    "displayDate": "May 03, 2026",
-    "issueNumber": "60503",
-    "subject": "ISSUE 60503 \u00b7 6 STORIES \u00b7 11 MIN READ",
-    "intro": "Hollywood is drawing a line in the sand on AI creativity \u2014 the Academy just banned AI-generated actors and scripts from Oscar eligibility, even as China's $14 billion microdrama industry races in the opposite direction, embracing AI tools to pump out addictive mobile content at unprecedented scale. It's a fascinating split that captures the global tug-of-war over AI's role in entertainment, and it's far from the only tension point today. We've also got community backlash against Australia's sprawling AI datacenters, a deep dive into the best AI dictation apps, and a timely warning about chatbot-related subscription scams you'll want to watch out for.",
-    "articleCount": 6,
-    "urlPath": "/issues/2026-05-03.html",
-    "contentHash": "4a16aff24c29905d83ec32a5f818f16a7af26e340077dbf767714d0a049cd0ce"
+    "slug": "2026-05-04",
+    "digestDate": "2026-05-04",
+    "displayDate": "May 04, 2026",
+    "issueNumber": "60504",
+    "subject": "ISSUE 60504 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Australia's social media ban for minors is already drawing fire from tech heavyweights, with Wikipedia founder Jimmy Wales calling it an \"unmitigated disaster\" \u2014 and that's just one of several stories today where well-intentioned tech policy is colliding with messy real-world consequences, from Kenya's AI healthcare algorithm pushing costs onto the poorest citizens to UK watchdogs sounding the alarm on unchecked facial recognition. We've also got a Harvard study where AI outperformed ER doctors at diagnosis, an artist fighting back against an AI startup that allegedly stole his iconic \"This is fine\" comic, and the delightful story of how a squirrel-loving content creator built 2026's hottest camera app.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-05-04.html",
+    "contentHash": "099e024686a0c3107b83998b0e8e81d8bcf5a0f45d5b005487fc1b32d51b6a9e"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-04",
+      "digestDate": "2026-05-04",
+      "displayDate": "May 04, 2026",
+      "issueNumber": "60504",
+      "subject": "ISSUE 60504 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Australia's social media ban for minors is already drawing fire from tech heavyweights, with Wikipedia founder Jimmy Wales calling it an \"unmitigated disaster\" \u2014 and that's just one of several stories today where well-intentioned tech policy is colliding with messy real-world consequences, from Kenya's AI healthcare algorithm pushing costs onto the poorest citizens to UK watchdogs sounding the alarm on unchecked facial recognition. We've also got a Harvard study where AI outperformed ER doctors at diagnosis, an artist fighting back against an AI startup that allegedly stole his iconic \"This is fine\" comic, and the delightful story of how a squirrel-loving content creator built 2026's hottest camera app.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-04.html",
+      "contentHash": "099e024686a0c3107b83998b0e8e81d8bcf5a0f45d5b005487fc1b32d51b6a9e"
+    },
     {
       "slug": "2026-05-03",
       "digestDate": "2026-05-03",
@@ -133,17 +144,6 @@
       "articleCount": 32,
       "urlPath": "/issues/2026-04-23.html",
       "contentHash": "1833d9bb655e06c0b7926d7e278533ad0eb9e4cb39eb175b94f1a69e0f217f60"
-    },
-    {
-      "slug": "2026-04-22",
-      "digestDate": "2026-04-22",
-      "displayDate": "Apr 22, 2026",
-      "issueNumber": "60422",
-      "subject": "AI Newsy \u2022 Apr 22 \u2022 39 Stories",
-      "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* \u2014 Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
-      "articleCount": 39,
-      "urlPath": "/issues/2026-04-22.html",
-      "contentHash": "cd557f520054004e33e4ab64b7722e0378a3a37e392d9f1720051aa33dad7592"
     }
   ]
 }
