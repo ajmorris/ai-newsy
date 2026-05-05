@@ -8,23 +8,29 @@ import os
 import time
 import uuid
 from datetime import datetime, timedelta, timezone
-from typing import Dict, Optional, Tuple
+from typing import Any, Dict, Optional, Tuple
 
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 import sys
+
 sys.path.insert(0, ".")
 from execution.ai_client import generate_text_with_fallback
 from execution.database import (
-    get_articles_without_analysis,
     get_articles_by_analysis_run_id,
+    get_articles_without_analysis,
     update_article_analysis_payload,
     update_article_image,
     upsert_digest_extra,
 )
-from execution.story_text_normalizer import extract_json_object, normalize_story_text
+from execution.story_text_normalizer import (
+    DIGEST_OPINION_MAX_CHARS,
+    DIGEST_SUMMARY_MAX_CHARS,
+    extract_json_object,
+    normalize_story_text,
+)
 
 load_dotenv()
 
@@ -48,11 +54,28 @@ Return strictly valid JSON with this exact shape:
 
 Rules:
 - topic must be exactly one of the allowed labels
+- summary and opinion must both be non-empty strings
 - no markdown, no prose outside JSON
 - confidence is a float between 0 and 1
+- Output ONLY the JSON object. No markdown code fences, no commentary before or after.
 """
 ANALYSIS_PROMPT = os.getenv("PROMPT_SINGLE_PASS_ANALYSIS", DEFAULT_ANALYSIS_PROMPT)
 ANALYSIS_MODEL = os.getenv("SINGLE_PASS_MODEL", "gemini-2.0-flash")
+
+RETRY_TRAILER = (
+    "\n\nIMPORTANT: Your reply must be ONLY one JSON object matching the schema above. "
+    "No markdown fences, no text before or after the JSON. "
+    "Both \"summary\" and \"opinion\" must be non-empty strings."
+)
+
+DERIVE_OPINION_PROMPT = """You write a daily AI news digest in first person.
+
+Given this title and summary, write exactly 1-2 short sentences: what you are watching or learning from this story.
+Plain text only. No JSON, no bullet list, no greeting.
+
+Title: {title}
+Summary: {summary}
+"""
 
 
 def scrape_url(url: str) -> str:
@@ -92,28 +115,32 @@ def extract_og_image(url: str) -> Optional[str]:
         return None
 
 
-def _safe_analysis_payload(text: str) -> Dict[str, object]:
-    """Parse model JSON output with a resilient fallback."""
+def parse_strict_analysis_json(text: str) -> Optional[Dict[str, Any]]:
+    """Parse model JSON into normalized fields, or None if invalid or missing summary."""
     payload = extract_json_object(text)
-    if payload is None:
-        payload = {
-            "topic": "Industry",
-            "summary": normalize_story_text(text, max_chars=900),
-            "opinion": "",
-            "confidence": 0.0,
-        }
+    if not isinstance(payload, dict):
+        return None
 
     topic = str(payload.get("topic", "Industry")).strip()
     if topic not in TOPICS:
         topic = "Industry"
 
-    summary = normalize_story_text(str(payload.get("summary", "")).strip(), max_chars=900)
-    opinion = normalize_story_text(str(payload.get("opinion", "")).strip(), max_chars=500)
+    summary = normalize_story_text(
+        str(payload.get("summary", "")).strip(),
+        max_chars=DIGEST_SUMMARY_MAX_CHARS,
+    )
+    opinion = normalize_story_text(
+        str(payload.get("opinion", "")).strip(),
+        max_chars=DIGEST_OPINION_MAX_CHARS,
+    )
     confidence_raw = payload.get("confidence", 0.0)
     try:
         confidence = max(0.0, min(float(confidence_raw), 1.0))
     except Exception:
         confidence = 0.0
+
+    if not summary:
+        return None
 
     return {
         "topic": topic,
@@ -123,16 +150,72 @@ def _safe_analysis_payload(text: str) -> Dict[str, object]:
     }
 
 
-def analyze_article(title: str, content: str, url: str) -> Dict[str, object]:
-    """Call model once for topic + summary + opinion."""
-    prompt = (
-        f"{ANALYSIS_PROMPT}\n\n"
-        f"Title: {title}\n"
-        f"URL: {url}\n"
-        f"Content:\n{content}"
+def _has_summary_and_opinion(row: Optional[Dict[str, Any]]) -> bool:
+    if not row:
+        return False
+    return bool(str(row.get("summary", "")).strip()) and bool(str(row.get("opinion", "")).strip())
+
+
+def derive_opinion_from_summary(title: str, summary: str, gemini_model: str) -> str:
+    """Last-resort: 1-2 sentence first-person takeaway from title + summary."""
+    prompt = DERIVE_OPINION_PROMPT.format(
+        title=(title or "Untitled")[:500],
+        summary=(summary or "")[:2000],
     )
-    raw = generate_text_with_fallback(prompt=prompt, gemini_model=ANALYSIS_MODEL)
-    return _safe_analysis_payload(raw)
+    raw = generate_text_with_fallback(
+        prompt=prompt,
+        gemini_model=gemini_model,
+        json_mode=False,
+    )
+    return normalize_story_text(raw.strip(), max_chars=DIGEST_OPINION_MAX_CHARS)
+
+
+def analyze_article(title: str, content: str, url: str) -> Dict[str, object]:
+    """
+    Call model for topic + summary + opinion with JSON mode, one retry, then derivation.
+
+    Returns keys: topic, summary, opinion, confidence, opinion_source
+    (opinion_source is one of: model, retry, derived, none).
+    """
+    base = f"{ANALYSIS_PROMPT}\n\nTitle: {title}\nURL: {url}\nContent:\n{content}"
+
+    raw1 = generate_text_with_fallback(
+        prompt=base,
+        gemini_model=ANALYSIS_MODEL,
+        json_mode=True,
+    )
+    p1 = parse_strict_analysis_json(raw1)
+    if _has_summary_and_opinion(p1):
+        return {**p1, "opinion_source": "model"}
+
+    raw2 = generate_text_with_fallback(
+        prompt=base + RETRY_TRAILER,
+        gemini_model=ANALYSIS_MODEL,
+        json_mode=True,
+    )
+    p2 = parse_strict_analysis_json(raw2)
+    if _has_summary_and_opinion(p2):
+        return {**p2, "opinion_source": "retry"}
+
+    base_row = p2 if (p2 and str(p2.get("summary", "")).strip()) else p1
+    if not base_row or not str(base_row.get("summary", "")).strip():
+        return {
+            "topic": "Industry",
+            "summary": "",
+            "opinion": "",
+            "confidence": 0.0,
+            "opinion_source": "none",
+        }
+
+    opinion_text = derive_opinion_from_summary(
+        title=title,
+        summary=str(base_row["summary"]),
+        gemini_model=ANALYSIS_MODEL,
+    )
+    merged = dict(base_row)
+    merged["opinion"] = opinion_text
+    merged["opinion_source"] = "derived"
+    return merged
 
 
 def _build_context(article: dict) -> str:

@@ -368,7 +368,18 @@
     "generated_at": "2026-05-05T07:47:42.147162+00:00",
     "source_window_hours": 24,
     "use_sent": false,
-    "source": "canonical"
+    "source": "sent_snapshot",
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "test",
+      "send_started_at": "2026-05-05T18:28:57.439238",
+      "send_completed_at": "2026-05-05T18:28:58.238637",
+      "event_name": "local",
+      "github_run_id": "",
+      "github_run_attempt": "",
+      "force_send": false,
+      "send_reason": ""
+    }
   },
   "content_hash": "ca17712708c759a9e9c32ada219db003d717a3396cd9027c5d31024c2a6a782f"
 }

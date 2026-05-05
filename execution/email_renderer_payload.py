@@ -6,7 +6,11 @@ import re
 import json
 from typing import Dict, List, Optional
 
-from execution.story_text_normalizer import normalize_story_text
+from execution.story_text_normalizer import (
+    DIGEST_OPINION_MAX_CHARS,
+    DIGEST_SUMMARY_MAX_CHARS,
+    normalize_story_text,
+)
 from execution.email_links import build_unsubscribe_url, get_app_url
 
 DEFAULT_CATEGORY = "Other AI News"
@@ -69,8 +73,8 @@ def normalize_article_for_email(article: Dict[str, object]) -> Dict[str, object]
         if parsed_topic and not str(normalized.get("topic", "") or "").strip():
             normalized["topic"] = parsed_topic
 
-    normalized["summary"] = normalize_story_text(summary, max_chars=900)
-    normalized["opinion"] = normalize_story_text(opinion, max_chars=500)
+    normalized["summary"] = normalize_story_text(summary, max_chars=DIGEST_SUMMARY_MAX_CHARS)
+    normalized["opinion"] = normalize_story_text(opinion, max_chars=DIGEST_OPINION_MAX_CHARS)
     normalized["image_url"] = image_url
     return normalized
 

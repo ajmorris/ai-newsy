@@ -14,7 +14,11 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 sys.path.insert(0, ".")
-from execution.story_text_normalizer import normalize_story_text
+from execution.story_text_normalizer import (
+    DIGEST_OPINION_MAX_CHARS,
+    DIGEST_SUMMARY_MAX_CHARS,
+    normalize_story_text,
+)
 
 ARCHIVE_DIR = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
 SNAPSHOT_DIR = Path(os.getenv("DIGEST_SNAPSHOT_DIR", str(ARCHIVE_DIR / "snapshots")))
@@ -95,8 +99,8 @@ def _render_story(story: Dict[str, Any]) -> str:
     source = html.escape(str(story.get("source", "Unknown Source")))
     title = html.escape(str(story.get("title", "Untitled")))
     link = html.escape(str(story.get("url", "#")), quote=True)
-    summary_text = normalize_story_text(str(story.get("summary", "")), max_chars=900)
-    opinion_text = normalize_story_text(str(story.get("opinion", "")), max_chars=500)
+    summary_text = normalize_story_text(str(story.get("summary", "")), max_chars=DIGEST_SUMMARY_MAX_CHARS)
+    opinion_text = normalize_story_text(str(story.get("opinion", "")), max_chars=DIGEST_OPINION_MAX_CHARS)
     summary = html.escape(summary_text)
     opinion = html.escape(opinion_text)
     image_url = html.escape(str(story.get("image_url", "")), quote=True)

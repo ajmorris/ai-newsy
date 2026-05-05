@@ -1,0 +1,15 @@
+{
+  "digest_date": "2026-05-05",
+  "event_name": "local",
+  "github_run_id": "",
+  "github_run_attempt": "",
+  "send_mode": "test",
+  "force_send": false,
+  "send_reason": "",
+  "status": "completed",
+  "status_updated_at": "2026-05-05T18:28:58.241252",
+  "articles": 8,
+  "sent": 1,
+  "failed": 0,
+  "sent_snapshot_path": "data/digests/snapshots/2026-05-05.sent.json"
+}
