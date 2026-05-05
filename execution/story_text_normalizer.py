@@ -8,6 +8,11 @@ import json
 import re
 from typing import Any, Dict, Optional
 
+# Canonical digest truncation caps. Keep in sync with LLM JSON completion budget
+# (see execution/ai_client.py max_output_tokens when json_mode is enabled).
+DIGEST_SUMMARY_MAX_CHARS = 900
+DIGEST_OPINION_MAX_CHARS = 500
+
 
 _FENCE_RE = re.compile(r"```(?:json)?\s*([\s\S]*?)\s*```", re.IGNORECASE)
 _HEADER_RE = re.compile(r"^\s{0,3}#{1,6}\s+", re.MULTILINE)

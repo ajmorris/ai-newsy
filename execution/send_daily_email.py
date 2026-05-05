@@ -37,8 +37,11 @@ from execution.database import (
 from execution.ai_client import generate_text_with_fallback
 from execution.digest_payload import (
     DigestBuildOptions,
+    assert_digest_stories_have_opinions,
+    heal_digest_story_opinions,
     load_sent_snapshot,
     load_or_build_digest_payload,
+    refresh_digest_payload_after_story_edit,
     write_sent_snapshot,
 )
 
@@ -598,7 +601,8 @@ def send_daily_digest(
     digest_date = str(payload.get("digest_date"))
     payload_hash = str(payload.get("content_hash", "")).strip()
     payload_source = str((payload.get("build_meta") or {}).get("source", "canonical")).strip()
-    stories = list(payload.get("stories", []))
+    stories = list(payload.get("stories") or [])
+    payload["stories"] = stories
     send_mode = "test" if test_email else "production"
     run_status: Dict[str, object] = {
         "digest_date": digest_date,
@@ -663,6 +667,10 @@ def send_daily_digest(
             )
             print("🔓 Released digest send claim (no stories to send).")
         return {"articles": 0, "sent": 0, "failed": 0}
+
+    heal_digest_story_opinions(stories)
+    assert_digest_stories_have_opinions(stories)
+    refresh_digest_payload_after_story_edit(payload, stories)
 
     articles = [normalize_article_for_email(article) for article in stories]
 

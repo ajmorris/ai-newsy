@@ -14,7 +14,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "Wikipedia Founder Jimmy Wales Criticizes Australia's Social Media Ban Summary Jimmy Wales, the founder of Wikipedia, has sharply criticized Australia's social media ban for minors, calling it an \"unmitigated disaster\" and an \"embarrassment.\" According to this May 2026 article from The Guardian, Wales argues that the ban is counterproductive because it teaches young people to accept surveillance from technology companies as a normal part of going online. Key Points Australia's Social Media Ban: Australia passed legislation (the Online Safety Amendment - Social Media Minimum Age - Act 2024) banning children under 16 from using social media platforms. The law placed the onus on platforms to enforce age restrictions, which in practice requires some form of age verification technology. Wales's Criticisms: He labels the ban an \"unmitigated disaster\" and an \"embarrassment\" for Australia His ce…",
-      "opinion": "",
+      "opinion": "I'm watching how Australia's age verification experiment is drawing fire from open-web veterans like Jimmy Wales, who argues it normalizes surveillance rather than protecting kids. The tension between online safety and digital rights is clearly far from settled.",
       "image_url": "https://i.guim.co.uk/img/media/7946d2a8f02eb3a4b2dd2009f98e6cab79215463/0_0_3167_2535/master/3167.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=91caa643dd20942a067b8a75b832eff9",
       "published_at": "2026-05-04T06:49:38+00:00",
       "fetched_at": "2026-05-04T07:12:18.003316+00:00"
@@ -27,7 +27,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "Flaws in Kenya's AI-driven Health Reforms Driving Up Costs for the Poorest Summary This Guardian article from May 2026 reports on an investigation into Kenya's AI-driven healthcare reform system, which was launched in October 2024 as part of President William Ruto's key electoral promise to provide universal healthcare access to all Kenyans. The investigation found that the AI algorithm used to predict how much citizens can afford to pay for healthcare has been systematically driving up costs for the poorest Kenyans — the very people the system was supposed to help. Key Points The Promise President Ruto, amid significant public unrest (likely referring to the Gen Z-led protests of 2024), promised universal healthcare access for all Kenyans The new system was intended to replace Kenya's previous, decaying healthcare infrastructure Launched in October 2024 as a flagship reform The Problem…",
-      "opinion": "",
+      "opinion": "I'm watching how AI systems deployed with genuinely good intentions can embed and amplify inequality when the underlying algorithms aren't rigorously audited for bias against the most vulnerable populations. This is a cautionary case study I'll be tracking closely as more governments adopt AI-driven social welfare systems.",
       "image_url": "https://i.guim.co.uk/img/media/2f67d40cd03693e44b4894f64d22fe9ee81cb5fa/301_0_4806_3845/master/4806.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=26388f0bc6cf8cd8b87d23fd1c5e9854",
       "published_at": "2026-05-04T06:00:16+00:00",
       "fetched_at": "2026-05-04T07:12:18.163362+00:00"
@@ -40,7 +40,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "Analysis of the Article Summary KC Green, the creator of the iconic \"This is fine\" webcomic (featuring a dog sitting calmly in a burning room), has accused AI startup Artisan of stealing his artwork for use in a subway advertisement. The ad reportedly uses Green's art but modifies the dog's dialogue to say \"my pipeline is on fire\" while promoting \"Ava the AI BDR\" (business development representative). Green stated on Bluesky that he never agreed to the use and described it as being \"stolen like AI steals,\" even encouraging people to vandalize the ads. Artisan, already controversial for its \"Stop hiring humans\" billboard campaigns, responded by saying they \"have a lot of respect for KC Green\" and were reaching out to him directly. Green told TechCrunch he is seeking legal representation, though he expressed frustration at having to divert time from his creative work to pursue legal actio…",
-      "opinion": "",
+      "opinion": "I'm watching how AI companies are treating artist consent as optional even when using work that's culturally recognizable enough to get them caught immediately. The Artisan situation is a useful case study in how \"we respect the artist\" PR responses tend to follow the theft rather than precede it.",
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2241691471.jpg?w=1024",
       "published_at": "2026-05-03T20:16:51+00:00",
       "fetched_at": "2026-05-04T07:12:14.936216+00:00"
@@ -53,7 +53,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "A.I. Transforms China's Entertainment Industry: Microdramas and Backlash Summary This New York Times article from May 2026 reports on the rapid rise of AI-generated microdramas in China's entertainment industry, along with the significant pushback this trend has provoked from human performers and celebrities. Key Points The Rise of AI Microdramas AI-generated microdramas — short-form video content that was already a booming industry in China — have apparently surged in popularity, with AI now being used to create characters, dialogue, and potentially entire productions with minimal human involvement. Celebrity Backlash Celebrities have threatened legal action over the unauthorized use of their likenesses in AI-generated content, raising serious questions about digital rights, deepfakes, and personality/image rights under Chinese law. Impact on Actors and Workers Human actors report that…",
-      "opinion": "",
+      "opinion": "I'm watching how China's entertainment boom is becoming a flashpoint for AI's collision with human creative labor, particularly around the thorny issue of digital likeness rights. The celebrity backlash here could set important legal precedents that ripple far beyond China's borders.",
       "image_url": "",
       "published_at": "2026-05-03T19:14:44+00:00",
       "fetched_at": "2026-05-04T07:12:16.575552+00:00"
@@ -66,7 +66,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "Summary of the Harvard Study on AI in Emergency Room Diagnoses Key Findings This study, published in Science by researchers from Harvard Medical School and Beth Israel Deaconess Medical Center, compared the diagnostic accuracy of OpenAI's AI models (o1 and 4o) against human physicians in real emergency room settings. Study Design 76 real ER patients at Beth Israel were used as cases Two internal medicine attending physicians provided diagnoses OpenAI's o1 and 4o models were given the same electronic medical record information available to the human doctors — with no pre-processing Two separate attending physicians blindly evaluated all diagnoses (without knowing which came from humans vs. AI) Results At the initial ER triage stage (where information is most limited and urgency is highest), the differences were most pronounced: | Diagnostician | Exact or Very Close Diagnosis Rate | |---|…",
-      "opinion": "",
+      "opinion": "I'm watching how AI is beginning to outperform experienced physicians in high-stakes, time-pressured diagnostic scenarios — not in a lab, but with real patients and real incomplete data. The fact that blind evaluators couldn't distinguish the better diagnoses as human-generated tells me we're past the point of treating clinical AI as a novelty.",
       "image_url": "https://techcrunch.com/wp-content/uploads/2024/01/GettyImages-104509077.jpg?resize=1200,800",
       "published_at": "2026-05-03T18:00:09+00:00",
       "fetched_at": "2026-05-04T07:12:15.153132+00:00"
@@ -79,7 +79,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "AI Facial Recognition Oversight Lagging Behind Technology, Watchdogs Warn Summary This Guardian article from May 2026 reports that Britain's biometrics commissioners (independent watchdogs overseeing the use of biometric technologies) have raised alarms that regulatory oversight of AI-powered facial recognition technology is failing to keep pace with its rapid deployment, particularly by law enforcement. Key Points Core Concerns Raised by Watchdogs: National oversight frameworks are significantly behind the technology's growth Live facial recognition (LFR) may not be as effective as authorities claim New legislation is needed to properly regulate its use The Metropolitan Police has been dramatically expanding its use, nearly doubling the number of faces processed Broader Context: Live Facial Recognition (LFR) works by scanning faces in real-time (e.g., in public spaces) and comparing th…",
-      "opinion": "",
+      "opinion": "I'm watching how the gap between facial recognition deployment and meaningful regulation keeps widening, with law enforcement scaling up dramatically while oversight bodies are still playing catch-up. The Met nearly doubling faces processed is exactly the kind of acceleration that makes the watchdogs' warnings feel urgent rather than theoretical.",
       "image_url": "https://i.guim.co.uk/img/media/1c1b06bc7a14c84ec55ad4bed812f6d4df67ff2e/1_0_2499_2000/master/2499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1ca8e0225160a2f55fd29592f80e8121",
       "published_at": "2026-05-03T16:00:02+00:00",
       "fetched_at": "2026-05-04T07:12:18.329237+00:00"
@@ -92,7 +92,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "UK Police Live Facial Recognition: Summary How It Works Live facial recognition (LFR) technology uses AI-powered cameras to scan faces of people passing by in real time. These facial images are compared against a pre-compiled \"watchlist\" database of individuals wanted by police. When the system identifies a potential match, officers are alerted to intervene. Key Details from the Article Deployment history: The technology has been used since 2020 in London Government support: The Labour government has compared facial recognition to \"the biggest breakthrough for catching criminals since DNA matching\" Expansion plans: The government wants all UK police forces to adopt the technology and announced 40 new vans equipped with live facial recognition capabilities Concerns Raised The article references several significant issues: Data privacy concerns about mass surveillance of the public Racial…",
-      "opinion": "",
+      "opinion": "I'm watching how the UK government is aggressively pushing live facial recognition toward nationwide adoption, framing it as a generational law enforcement breakthrough while civil liberties concerns about bias and mass surveillance remain unresolved. The tension between that political enthusiasm and the documented racial accuracy disparities is exactly the kind of real-world AI deployment friction I think deserves close attention.",
       "image_url": "https://i.guim.co.uk/img/media/01066da73eeea045f2f1be8a05e736470fbfa21f/1_0_2499_2000/master/2499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9d4c065609051d816037d5230fec15d9",
       "published_at": "2026-05-03T16:00:00+00:00",
       "fetched_at": "2026-05-04T07:12:18.484692+00:00"
@@ -105,7 +105,7 @@
       "topic": "Industry",
       "category": "Business, Deals & Funding",
       "summary": "How the Internet's Favorite Squirrel Dad Made the Hottest Camera App of 2026 Summary This article from The Verge, written by senior reviewer Allison Johnson and published on May 3, 2026, profiles Derrick Downey Jr., a viral wildlife content creator who unexpectedly created one of the most successful camera apps of the year: DualShot Recorder. Key Points The App's Success DualShot Recorder hit #1 on the App Store's top paid apps within just 12 hours of its release The article describes it as a genuine \"overnight sensation\" The Creator: Derrick Downey Jr. Downey is a social media creator based in Los Angeles known for short-form videos documenting his interactions with neighborhood squirrels that visit his patio He has over a million followers on both Instagram and TikTok His regular cast of squirrel characters includes Maxine, Richard, and Hoodrat Raymond He cares for the squirrels by pr…",
-      "opinion": "",
+      "opinion": "I'm watching how creators with niche, passionate audiences can translate that trust into instant product success — Downey's squirrel following essentially became a built-in launch team. It's a reminder that distribution and authenticity often matter more than a polished tech pedigree when it comes to breaking through.",
       "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Vrg_illo_squirrel_influencer.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
       "published_at": "2026-05-03T13:00:00+00:00",
       "fetched_at": "2026-05-04T07:12:25.695924+00:00"
@@ -123,7 +123,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "Wikipedia Founder Jimmy Wales Criticizes Australia's Social Media Ban Summary Jimmy Wales, the founder of Wikipedia, has sharply criticized Australia's social media ban for minors, calling it an \"unmitigated disaster\" and an \"embarrassment.\" According to this May 2026 article from The Guardian, Wales argues that the ban is counterproductive because it teaches young people to accept surveillance from technology companies as a normal part of going online. Key Points Australia's Social Media Ban: Australia passed legislation (the Online Safety Amendment - Social Media Minimum Age - Act 2024) banning children under 16 from using social media platforms. The law placed the onus on platforms to enforce age restrictions, which in practice requires some form of age verification technology. Wales's Criticisms: He labels the ban an \"unmitigated disaster\" and an \"embarrassment\" for Australia His ce…",
-          "opinion": "",
+          "opinion": "I'm watching how Australia's age verification experiment is drawing fire from open-web veterans like Jimmy Wales, who argues it normalizes surveillance rather than protecting kids. The tension between online safety and digital rights is clearly far from settled.",
           "image_url": "https://i.guim.co.uk/img/media/7946d2a8f02eb3a4b2dd2009f98e6cab79215463/0_0_3167_2535/master/3167.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=91caa643dd20942a067b8a75b832eff9",
           "published_at": "2026-05-04T06:49:38+00:00",
           "fetched_at": "2026-05-04T07:12:18.003316+00:00"
@@ -136,7 +136,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "Flaws in Kenya's AI-driven Health Reforms Driving Up Costs for the Poorest Summary This Guardian article from May 2026 reports on an investigation into Kenya's AI-driven healthcare reform system, which was launched in October 2024 as part of President William Ruto's key electoral promise to provide universal healthcare access to all Kenyans. The investigation found that the AI algorithm used to predict how much citizens can afford to pay for healthcare has been systematically driving up costs for the poorest Kenyans — the very people the system was supposed to help. Key Points The Promise President Ruto, amid significant public unrest (likely referring to the Gen Z-led protests of 2024), promised universal healthcare access for all Kenyans The new system was intended to replace Kenya's previous, decaying healthcare infrastructure Launched in October 2024 as a flagship reform The Problem…",
-          "opinion": "",
+          "opinion": "I'm watching how AI systems deployed with genuinely good intentions can embed and amplify inequality when the underlying algorithms aren't rigorously audited for bias against the most vulnerable populations. This is a cautionary case study I'll be tracking closely as more governments adopt AI-driven social welfare systems.",
           "image_url": "https://i.guim.co.uk/img/media/2f67d40cd03693e44b4894f64d22fe9ee81cb5fa/301_0_4806_3845/master/4806.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=26388f0bc6cf8cd8b87d23fd1c5e9854",
           "published_at": "2026-05-04T06:00:16+00:00",
           "fetched_at": "2026-05-04T07:12:18.163362+00:00"
@@ -149,7 +149,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "Analysis of the Article Summary KC Green, the creator of the iconic \"This is fine\" webcomic (featuring a dog sitting calmly in a burning room), has accused AI startup Artisan of stealing his artwork for use in a subway advertisement. The ad reportedly uses Green's art but modifies the dog's dialogue to say \"my pipeline is on fire\" while promoting \"Ava the AI BDR\" (business development representative). Green stated on Bluesky that he never agreed to the use and described it as being \"stolen like AI steals,\" even encouraging people to vandalize the ads. Artisan, already controversial for its \"Stop hiring humans\" billboard campaigns, responded by saying they \"have a lot of respect for KC Green\" and were reaching out to him directly. Green told TechCrunch he is seeking legal representation, though he expressed frustration at having to divert time from his creative work to pursue legal actio…",
-          "opinion": "",
+          "opinion": "I'm watching how AI companies are treating artist consent as optional even when using work that's culturally recognizable enough to get them caught immediately. The Artisan situation is a useful case study in how \"we respect the artist\" PR responses tend to follow the theft rather than precede it.",
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2241691471.jpg?w=1024",
           "published_at": "2026-05-03T20:16:51+00:00",
           "fetched_at": "2026-05-04T07:12:14.936216+00:00"
@@ -162,7 +162,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "A.I. Transforms China's Entertainment Industry: Microdramas and Backlash Summary This New York Times article from May 2026 reports on the rapid rise of AI-generated microdramas in China's entertainment industry, along with the significant pushback this trend has provoked from human performers and celebrities. Key Points The Rise of AI Microdramas AI-generated microdramas — short-form video content that was already a booming industry in China — have apparently surged in popularity, with AI now being used to create characters, dialogue, and potentially entire productions with minimal human involvement. Celebrity Backlash Celebrities have threatened legal action over the unauthorized use of their likenesses in AI-generated content, raising serious questions about digital rights, deepfakes, and personality/image rights under Chinese law. Impact on Actors and Workers Human actors report that…",
-          "opinion": "",
+          "opinion": "I'm watching how China's entertainment boom is becoming a flashpoint for AI's collision with human creative labor, particularly around the thorny issue of digital likeness rights. The celebrity backlash here could set important legal precedents that ripple far beyond China's borders.",
           "image_url": "",
           "published_at": "2026-05-03T19:14:44+00:00",
           "fetched_at": "2026-05-04T07:12:16.575552+00:00"
@@ -175,7 +175,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "Summary of the Harvard Study on AI in Emergency Room Diagnoses Key Findings This study, published in Science by researchers from Harvard Medical School and Beth Israel Deaconess Medical Center, compared the diagnostic accuracy of OpenAI's AI models (o1 and 4o) against human physicians in real emergency room settings. Study Design 76 real ER patients at Beth Israel were used as cases Two internal medicine attending physicians provided diagnoses OpenAI's o1 and 4o models were given the same electronic medical record information available to the human doctors — with no pre-processing Two separate attending physicians blindly evaluated all diagnoses (without knowing which came from humans vs. AI) Results At the initial ER triage stage (where information is most limited and urgency is highest), the differences were most pronounced: | Diagnostician | Exact or Very Close Diagnosis Rate | |---|…",
-          "opinion": "",
+          "opinion": "I'm watching how AI is beginning to outperform experienced physicians in high-stakes, time-pressured diagnostic scenarios — not in a lab, but with real patients and real incomplete data. The fact that blind evaluators couldn't distinguish the better diagnoses as human-generated tells me we're past the point of treating clinical AI as a novelty.",
           "image_url": "https://techcrunch.com/wp-content/uploads/2024/01/GettyImages-104509077.jpg?resize=1200,800",
           "published_at": "2026-05-03T18:00:09+00:00",
           "fetched_at": "2026-05-04T07:12:15.153132+00:00"
@@ -188,7 +188,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "AI Facial Recognition Oversight Lagging Behind Technology, Watchdogs Warn Summary This Guardian article from May 2026 reports that Britain's biometrics commissioners (independent watchdogs overseeing the use of biometric technologies) have raised alarms that regulatory oversight of AI-powered facial recognition technology is failing to keep pace with its rapid deployment, particularly by law enforcement. Key Points Core Concerns Raised by Watchdogs: National oversight frameworks are significantly behind the technology's growth Live facial recognition (LFR) may not be as effective as authorities claim New legislation is needed to properly regulate its use The Metropolitan Police has been dramatically expanding its use, nearly doubling the number of faces processed Broader Context: Live Facial Recognition (LFR) works by scanning faces in real-time (e.g., in public spaces) and comparing th…",
-          "opinion": "",
+          "opinion": "I'm watching how the gap between facial recognition deployment and meaningful regulation keeps widening, with law enforcement scaling up dramatically while oversight bodies are still playing catch-up. The Met nearly doubling faces processed is exactly the kind of acceleration that makes the watchdogs' warnings feel urgent rather than theoretical.",
           "image_url": "https://i.guim.co.uk/img/media/1c1b06bc7a14c84ec55ad4bed812f6d4df67ff2e/1_0_2499_2000/master/2499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1ca8e0225160a2f55fd29592f80e8121",
           "published_at": "2026-05-03T16:00:02+00:00",
           "fetched_at": "2026-05-04T07:12:18.329237+00:00"
@@ -201,7 +201,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "UK Police Live Facial Recognition: Summary How It Works Live facial recognition (LFR) technology uses AI-powered cameras to scan faces of people passing by in real time. These facial images are compared against a pre-compiled \"watchlist\" database of individuals wanted by police. When the system identifies a potential match, officers are alerted to intervene. Key Details from the Article Deployment history: The technology has been used since 2020 in London Government support: The Labour government has compared facial recognition to \"the biggest breakthrough for catching criminals since DNA matching\" Expansion plans: The government wants all UK police forces to adopt the technology and announced 40 new vans equipped with live facial recognition capabilities Concerns Raised The article references several significant issues: Data privacy concerns about mass surveillance of the public Racial…",
-          "opinion": "",
+          "opinion": "I'm watching how the UK government is aggressively pushing live facial recognition toward nationwide adoption, framing it as a generational law enforcement breakthrough while civil liberties concerns about bias and mass surveillance remain unresolved. The tension between that political enthusiasm and the documented racial accuracy disparities is exactly the kind of real-world AI deployment friction I think deserves close attention.",
           "image_url": "https://i.guim.co.uk/img/media/01066da73eeea045f2f1be8a05e736470fbfa21f/1_0_2499_2000/master/2499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9d4c065609051d816037d5230fec15d9",
           "published_at": "2026-05-03T16:00:00+00:00",
           "fetched_at": "2026-05-04T07:12:18.484692+00:00"
@@ -214,7 +214,7 @@
           "topic": "Industry",
           "category": "Business, Deals & Funding",
           "summary": "How the Internet's Favorite Squirrel Dad Made the Hottest Camera App of 2026 Summary This article from The Verge, written by senior reviewer Allison Johnson and published on May 3, 2026, profiles Derrick Downey Jr., a viral wildlife content creator who unexpectedly created one of the most successful camera apps of the year: DualShot Recorder. Key Points The App's Success DualShot Recorder hit #1 on the App Store's top paid apps within just 12 hours of its release The article describes it as a genuine \"overnight sensation\" The Creator: Derrick Downey Jr. Downey is a social media creator based in Los Angeles known for short-form videos documenting his interactions with neighborhood squirrels that visit his patio He has over a million followers on both Instagram and TikTok His regular cast of squirrel characters includes Maxine, Richard, and Hoodrat Raymond He cares for the squirrels by pr…",
-          "opinion": "",
+          "opinion": "I'm watching how creators with niche, passionate audiences can translate that trust into instant product success — Downey's squirrel following essentially became a built-in launch team. It's a reminder that distribution and authenticity often matter more than a polished tech pedigree when it comes to breaking through.",
           "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Vrg_illo_squirrel_influencer.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
           "published_at": "2026-05-03T13:00:00+00:00",
           "fetched_at": "2026-05-04T07:12:25.695924+00:00"
@@ -370,5 +370,5 @@
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "099e024686a0c3107b83998b0e8e81d8bcf5a0f45d5b005487fc1b32d51b6a9e"
+  "content_hash": "253e06828af876bfd0dc6c95be9854ef17402dea7a26f17433264e0e0ca8d5e4"
 }

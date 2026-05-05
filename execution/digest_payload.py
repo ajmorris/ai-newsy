@@ -11,7 +11,7 @@ import os
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 from dotenv import load_dotenv
 
@@ -25,7 +25,11 @@ from execution.database import (
     get_unsent_articles,
     upsert_digest_extra,
 )
-from execution.story_text_normalizer import normalize_story_text
+from execution.story_text_normalizer import (
+    DIGEST_OPINION_MAX_CHARS,
+    DIGEST_SUMMARY_MAX_CHARS,
+    normalize_story_text,
+)
 
 load_dotenv()
 
@@ -91,8 +95,14 @@ def _normalize_article(article: Dict[str, Any]) -> Dict[str, Any]:
         "url": str(article.get("url", "#") or "#").strip(),
         "topic": str(article.get("topic", "") or "").strip(),
         "category": "",
-        "summary": normalize_story_text(str(article.get("summary", "") or "").strip(), max_chars=900),
-        "opinion": normalize_story_text(str(article.get("opinion", "") or "").strip(), max_chars=500),
+        "summary": normalize_story_text(
+            str(article.get("summary", "") or "").strip(),
+            max_chars=DIGEST_SUMMARY_MAX_CHARS,
+        ),
+        "opinion": normalize_story_text(
+            str(article.get("opinion", "") or "").strip(),
+            max_chars=DIGEST_OPINION_MAX_CHARS,
+        ),
         "image_url": str(article.get("image_url", "") or "").strip(),
         "published_at": str(article.get("published_at", "") or ""),
         "fetched_at": str(article.get("fetched_at", "") or ""),
@@ -127,6 +137,68 @@ def _get_or_create_intro(digest_date: str, stories: List[Dict[str, Any]]) -> str
         payload={"text": intro, "generated_at": datetime.now(timezone.utc).isoformat()},
     )
     return intro
+
+
+def group_stories_into_sections(stories: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Group digest stories into section dicts sorted by category name."""
+    grouped: Dict[str, List[Dict[str, Any]]] = {}
+    for story in stories:
+        category = str(story.get("category") or "").strip() or DEFAULT_CATEGORY
+        grouped.setdefault(category, []).append(story)
+    section_order = sorted(grouped.keys())
+    return [{"name": name, "articles": grouped[name]} for name in section_order]
+
+
+def heal_digest_story_opinions(
+    stories: List[Dict[str, Any]],
+    *,
+    gemini_model: str = "gemini-2.0-flash",
+    derive_fn: Optional[Callable[[str, str, str], str]] = None,
+) -> None:
+    """
+    Fill empty opinion fields using derive_opinion_from_summary (LLM).
+    Mutates story dicts in place.
+    """
+    if derive_fn is None:
+        from execution.analyze_articles_single_pass import derive_opinion_from_summary as _derive
+
+        derive = _derive
+    else:
+        derive = derive_fn
+
+    for story in stories:
+        if str(story.get("opinion", "") or "").strip():
+            continue
+        summary = str(story.get("summary", "") or "").strip()
+        if not summary:
+            continue
+        title = str(story.get("title", "") or "").strip()
+        derived = derive(title, summary, gemini_model)
+        story["opinion"] = normalize_story_text(derived, max_chars=DIGEST_OPINION_MAX_CHARS)
+
+
+def assert_digest_stories_have_opinions(stories: List[Dict[str, Any]]) -> None:
+    """Abort if any digest story lacks a non-empty opinion after healing."""
+    missing: List[Any] = []
+    for story in stories:
+        if not str(story.get("opinion", "") or "").strip():
+            missing.append(story.get("id", story.get("title", "unknown")))
+    if missing:
+        raise SystemExit(
+            "Digest invariant failed: every story must have a non-empty opinion (Why it matters). "
+            f"Missing for: {missing!r}"
+        )
+
+
+def refresh_digest_payload_after_story_edit(payload: Dict[str, Any], stories: List[Dict[str, Any]]) -> None:
+    """Keep sections/article_count/hash aligned with stories (e.g. after opinion heal)."""
+    payload["stories"] = stories
+    payload["sections"] = group_stories_into_sections(stories)
+    payload["article_count"] = len(stories)
+    issue_id = str(payload.get("issue_id") or _issue_id_from_digest_date(str(payload.get("digest_date", ""))))
+    payload["issue_id"] = issue_id
+    payload["subject_line"] = _build_subject_line(issue_id, len(stories))
+    payload["content_hash"] = _content_hash(payload)
 
 
 def _content_hash(payload: Dict[str, Any]) -> str:
@@ -164,6 +236,9 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
 
     stories = normalized[: max(0, options.max_stories)]
 
+    heal_digest_story_opinions(stories)
+    assert_digest_stories_have_opinions(stories)
+
     tweet_extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines") or {}
     tweet_headlines = []
     tweet_payload = tweet_extra.get("payload")
@@ -180,11 +255,7 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
     subject_line = _build_subject_line(issue_id, len(stories))
     intro = _get_or_create_intro(digest_date=digest_date, stories=stories) if stories else "No stories selected."
 
-    grouped: Dict[str, List[Dict[str, Any]]] = {}
-    for story in stories:
-        grouped.setdefault(story["category"], []).append(story)
-    section_order = sorted(grouped.keys())
-    sections = [{"name": name, "articles": grouped[name]} for name in section_order]
+    sections = group_stories_into_sections(stories)
 
     payload: Dict[str, Any] = {
         "schema_version": CANONICAL_SCHEMA_VERSION,

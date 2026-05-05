@@ -2,7 +2,7 @@
   "schema_version": "digest-json-v1",
   "digest_date": "2026-04-22",
   "issue_id": "20260422",
-  "subject_line": "AI Newsy • Apr 22 • 39 Stories",
+  "subject_line": "ISSUE 60422 · 39 STORIES · 11 MIN READ",
   "intro": "The tension I keep coming back to this morning is the gap between what AI companies *say* about safety and what they actually *do* — Altman calling Anthropic's Mythos rollout \\\"fear-based marketing\\\" the same day an unauthorized group apparently just guessed their way into it, while a super PAC backed by OpenAI and Palantir founders is quietly spending millions to block a pro-regulation candidate. Today's digest gets into all of that, plus Sergey Brin personally forming a strike team to catch Claude on coding, the SpaceX-Cursor deal that has a lot of people raising eyebrows, and a few other things I'm still trying to make sense of.",
   "article_count": 39,
   "stories": [
@@ -14,7 +14,7 @@
       "topic": "",
       "category": "Business, Deals & Funding",
       "summary": "Analysis of the Article Key Claims and Context This article from The Guardian (dated April 22, 2026) reports on warnings from Richard Horne, identified as the chief executive of the National Cyber Security Centre (NCSC), about the threat of large-scale hacktivist attacks against the UK. Main Points Core Warning: The UK could face \"hacktivist attacks at scale\" if it becomes embroiled in a conflict situation. Severity Comparison: The potential impact is compared to recent major ransomware incidents, suggesting disruption at a significant, nationally felt level. Nation-State Threat: Horne is reported as warning that nation states now account for the most significant cyber incidents the NCSC handles — highlighting the blurring line between state-sponsored activity and hacktivism. Critical Observations Hacktivism vs. State-Sponsored Activity: The article touches on an important and evolving…",
-      "opinion": "",
+      "opinion": "I'm watching how the line between state-sponsored cyberattacks and hacktivist movements continues to blur, with national security agencies now treating them as near-equivalent threats. The comparison to major ransomware incidents tells me the UK is bracing for disruption at a scale most people haven't seriously considered yet.",
       "image_url": "https://i.guim.co.uk/img/media/feb55202ad76bc2a8266dfe3008a8212d042508d/612_0_4375_3500/master/4375.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3a7068949f40805135bd4bdee62f5032",
       "published_at": "",
       "fetched_at": ""
@@ -526,7 +526,7 @@
           "topic": "",
           "category": "Business, Deals & Funding",
           "summary": "Analysis of the Article Key Claims and Context This article from The Guardian (dated April 22, 2026) reports on warnings from Richard Horne, identified as the chief executive of the National Cyber Security Centre (NCSC), about the threat of large-scale hacktivist attacks against the UK. Main Points Core Warning: The UK could face \"hacktivist attacks at scale\" if it becomes embroiled in a conflict situation. Severity Comparison: The potential impact is compared to recent major ransomware incidents, suggesting disruption at a significant, nationally felt level. Nation-State Threat: Horne is reported as warning that nation states now account for the most significant cyber incidents the NCSC handles — highlighting the blurring line between state-sponsored activity and hacktivism. Critical Observations Hacktivism vs. State-Sponsored Activity: The article touches on an important and evolving…",
-          "opinion": "",
+          "opinion": "I'm watching how the line between state-sponsored cyberattacks and hacktivist movements continues to blur, with national security agencies now treating them as near-equivalent threats. The comparison to major ransomware incidents tells me the UK is bracing for disruption at a scale most people haven't seriously considered yet.",
           "image_url": "https://i.guim.co.uk/img/media/feb55202ad76bc2a8266dfe3008a8212d042508d/612_0_4375_3500/master/4375.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3a7068949f40805135bd4bdee62f5032",
           "published_at": "",
           "fetched_at": ""
@@ -1147,5 +1147,5 @@
     "source": "migrated",
     "source_markdown": "data/digests/2026-04-22.md"
   },
-  "content_hash": "cd557f520054004e33e4ab64b7722e0378a3a37e392d9f1720051aa33dad7592"
+  "content_hash": "19e01cff502a6ed0816938a8ec4df324663913766040858988404bc3951ab953"
 }

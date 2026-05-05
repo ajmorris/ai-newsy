@@ -1,10 +1,11 @@
 import os
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 import requests
 from google import genai
+from google.genai import types as genai_types
 from openai import OpenAI
 
 
@@ -20,6 +21,9 @@ PROVIDER_MODEL_ENV_KEYS = {
     "gemini": "GEMINI_MODEL",
     "openai": "OPENAI_MODEL",
 }
+
+# When json_mode is on, model returns a small JSON object; 2048 avoids mid-JSON truncation.
+_JSON_COMPLETION_MAX_TOKENS = 2048
 
 
 def _response_preview(response: requests.Response, max_len: int = 500) -> str:
@@ -70,18 +74,19 @@ class LLMProvider(ABC):
     name: str
 
     @abstractmethod
-    def generate(self, prompt: str, model: str, temperature: float) -> str:
+    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
         """Generate text for the given prompt."""
 
 
 class AnthropicProvider(LLMProvider):
     name = "anthropic"
 
-    def generate(self, prompt: str, model: str, temperature: float) -> str:
+    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
         anthropic_key = (os.getenv("ANTHROPIC_KEY") or "").strip()
         if not anthropic_key:
             raise RuntimeError("ANTHROPIC_KEY is not configured")
 
+        max_tokens = _JSON_COMPLETION_MAX_TOKENS if json_mode else 1024
         response = requests.post(
             ANTHROPIC_API_URL,
             headers={
@@ -91,7 +96,7 @@ class AnthropicProvider(LLMProvider):
             },
             json={
                 "model": model,
-                "max_tokens": 1024,
+                "max_tokens": max_tokens,
                 "temperature": temperature,
                 "messages": [{"role": "user", "content": prompt}],
             },
@@ -109,15 +114,26 @@ class AnthropicProvider(LLMProvider):
 class GeminiProvider(LLMProvider):
     name = "gemini"
 
-    def generate(self, prompt: str, model: str, temperature: float) -> str:
+    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
         gemini_key = (os.getenv("GEMINI_API_KEY") or "").strip()
         if not gemini_key:
             raise RuntimeError("GEMINI_API_KEY is not configured")
         client = genai.Client(api_key=gemini_key)
+        if json_mode:
+            config = genai_types.GenerateContentConfig(
+                temperature=temperature,
+                max_output_tokens=_JSON_COMPLETION_MAX_TOKENS,
+                response_mime_type="application/json",
+            )
+        else:
+            config = genai_types.GenerateContentConfig(
+                temperature=temperature,
+                max_output_tokens=_JSON_COMPLETION_MAX_TOKENS,
+            )
         response = client.models.generate_content(
             model=model,
             contents=prompt,
-            config={"temperature": temperature},
+            config=config,
         )
         return (response.text or "").strip()
 
@@ -125,16 +141,20 @@ class GeminiProvider(LLMProvider):
 class OpenAIProvider(LLMProvider):
     name = "openai"
 
-    def generate(self, prompt: str, model: str, temperature: float) -> str:
+    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
         openai_key = (os.getenv("OPENAI_API_KEY") or "").strip()
         if not openai_key:
             raise RuntimeError("OPENAI_API_KEY is not configured")
         client = OpenAI(api_key=openai_key)
-        response = client.chat.completions.create(
-            model=model,
-            temperature=temperature,
-            messages=[{"role": "user", "content": prompt}],
-        )
+        kwargs: Dict[str, Any] = {
+            "model": model,
+            "temperature": temperature,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": _JSON_COMPLETION_MAX_TOKENS,
+        }
+        if json_mode:
+            kwargs["response_format"] = {"type": "json_object"}
+        response = client.chat.completions.create(**kwargs)
         return (response.choices[0].message.content or "").strip()
 
 
@@ -183,10 +203,14 @@ def generate_text_with_fallback(
     anthropic_model: Optional[str] = None,
     temperature: float = 0.2,
     openai_model: Optional[str] = None,
+    json_mode: bool = False,
 ) -> str:
     """
     Generate text with provider chain fallback.
     Default chain: Anthropic -> Gemini -> OpenAI.
+
+    When json_mode is True, providers request JSON-shaped output (Gemini/OpenAI native;
+    Anthropic uses a larger max_tokens budget so prompt-only JSON fits).
     """
     provider_registry: Dict[str, LLMProvider] = {
         "anthropic": AnthropicProvider(),
@@ -215,7 +239,12 @@ def generate_text_with_fallback(
             openai_model_override=openai_model,
         )
         try:
-            text = provider.generate(prompt=prompt, model=chosen_model, temperature=temperature).strip()
+            text = provider.generate(
+                prompt=prompt,
+                model=chosen_model,
+                temperature=temperature,
+                json_mode=json_mode,
+            ).strip()
             print(f"    LLM provider selected: {provider_name} (model={chosen_model})")
             return text
         except Exception as error:
