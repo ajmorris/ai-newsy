@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-04T00:00:00Z",
-  "issueCount": 14,
+  "generatedAt": "2026-05-05T00:00:00Z",
+  "issueCount": 15,
   "latestIssue": {
-    "slug": "2026-05-04",
-    "digestDate": "2026-05-04",
-    "displayDate": "May 04, 2026",
-    "issueNumber": "60504",
-    "subject": "ISSUE 60504 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Australia's social media ban for minors is already drawing fire from tech heavyweights, with Wikipedia founder Jimmy Wales calling it an \"unmitigated disaster\" \u2014 and that's just one of several stories today where well-intentioned tech policy is colliding with messy real-world consequences, from Kenya's AI healthcare algorithm pushing costs onto the poorest citizens to UK watchdogs sounding the alarm on unchecked facial recognition. We've also got a Harvard study where AI outperformed ER doctors at diagnosis, an artist fighting back against an AI startup that allegedly stole his iconic \"This is fine\" comic, and the delightful story of how a squirrel-loving content creator built 2026's hottest camera app.",
+    "slug": "2026-05-05",
+    "digestDate": "2026-05-05",
+    "displayDate": "May 05, 2026",
+    "issueNumber": "60505",
+    "subject": "ISSUE 60505 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing with courtroom drama this week, as OpenAI president Greg Brockman took the stand in the Musk v. OpenAI trial and delivered what can only be described as a masterclass in not answering questions \u2014 all while Musk's lawyers grilled him on how exactly he's worth $30 billion. But beyond the legal theatrics, today's digest spans a wide range of consequential stories, from Google DeepMind's UK workers unionizing over a Pentagon deal, to a Canadian fiddler suing Google after its AI falsely called him a sex offender, to the expanding \u2014 and largely unregulated \u2014 use of facial recognition by UK police. It's a day that underscores a growing theme: as AI's power and reach accelerate, the fights over who controls it, who profits from it, and who gets harmed by it are intensifying on every front.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-04.html",
-    "contentHash": "099e024686a0c3107b83998b0e8e81d8bcf5a0f45d5b005487fc1b32d51b6a9e"
+    "urlPath": "/issues/2026-05-05.html",
+    "contentHash": "161b1bef9d8b344f04be6582cf05d65bc61e673a8b2a5455804010a9d88e7838"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-05",
+      "digestDate": "2026-05-05",
+      "displayDate": "May 05, 2026",
+      "issueNumber": "60505",
+      "subject": "ISSUE 60505 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing with courtroom drama this week, as OpenAI president Greg Brockman took the stand in the Musk v. OpenAI trial and delivered what can only be described as a masterclass in not answering questions \u2014 all while Musk's lawyers grilled him on how exactly he's worth $30 billion. But beyond the legal theatrics, today's digest spans a wide range of consequential stories, from Google DeepMind's UK workers unionizing over a Pentagon deal, to a Canadian fiddler suing Google after its AI falsely called him a sex offender, to the expanding \u2014 and largely unregulated \u2014 use of facial recognition by UK police. It's a day that underscores a growing theme: as AI's power and reach accelerate, the fights over who controls it, who profits from it, and who gets harmed by it are intensifying on every front.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-05.html",
+      "contentHash": "161b1bef9d8b344f04be6582cf05d65bc61e673a8b2a5455804010a9d88e7838"
+    },
     {
       "slug": "2026-05-04",
       "digestDate": "2026-05-04",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-04-24.html",
       "contentHash": ""
-    },
-    {
-      "slug": "2026-04-23",
-      "digestDate": "2026-04-23",
-      "displayDate": "Apr 23, 2026",
-      "issueNumber": "60423",
-      "subject": "AI Newsy \u2022 Apr 23 \u2022 32 Stories",
-      "intro": "It's a Google kind of day. The tech giant dominated headlines at Cloud Next 2026, rolling out Gemini-powered AI across its entire Workspace suite, launching two new custom AI chips to challenge Nvidia, unveiling an enterprise agent-building platform, and turning Chrome into an autonomous workplace assistant \u2014 all while OpenAI countered with free ChatGPT for clinicians and new workspace agents of its own. Beyond the product blitz, today's digest also covers the Pentagon's staggering $54 billion bet on AI-powered warfare, Senator Warren's warning that the AI industry could trigger the next financial crisis, Sony's ping-pong robot making history in *Nature*, and Meta quietly recording employees' keystrokes to train its AI agents.",
-      "articleCount": 32,
-      "urlPath": "/issues/2026-04-23.html",
-      "contentHash": "1833d9bb655e06c0b7926d7e278533ad0eb9e4cb39eb175b94f1a69e0f217f60"
     }
   ]
 }
