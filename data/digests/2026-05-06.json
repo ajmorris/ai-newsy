@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 3004,
+      "source": "DATAVERSITY Smart Data",
+      "title": "Lessons Learned from Implementing AI Governance",
+      "url": "https://www.dataversity.net/articles/lessons-learned-from-implementing-ai-governance/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "This article discusses lessons learned from implementing AI governance, based on a DATAVERSITY webinar by Kelle O'Neal and Lisa Wintrick of First San Francisco Partners. It highlights that AI is scaling faster than governance, with only 38% of organizations having AI policies. The article covers four key lessons: (1) Determine AI Roles — organizations should define what roles AI will play (assistant, coder, autonomous agent) and consider HR-centric approaches including performance reviews for AI, making HR a new stakeholder in AI governance alongside IT; (2) Align AI for Impact — AI's value should be measured by business impact, but there is a significant disconnect between what leaders expect and what is actually being built and deployed. The article emphasizes that AI governance must embrace uncertainty as a feature rather than a flaw, and organizations need new decision-making proces…",
+      "opinion": "This article presents a thoughtful and practical perspective on AI governance that goes beyond typical compliance-focused discussions. The idea of treating AI agents through an HR lens — giving them performance reviews and defining their organizational roles — is a creative and useful framework that acknowledges how fundamentally AI is changing workplace dynamics. The statistic that only 38% of organizations have AI policies underscores the urgency of the topic. However, the article feels incom…",
+      "image_url": "https://www.dataversity.net/wp-content/uploads/2026/05/shutterstock_2709366373-1200x580.jpg",
+      "published_at": "2026-05-06T07:24:00+00:00",
+      "fetched_at": "2026-05-06T07:53:21.263072+00:00"
+    },
+    {
       "id": 2966,
       "source": "TechCrunch AI",
       "title": "Peter Sarlin’s QuTwo reaches $380M valuation in angel round",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/nemoclaw.jpg?resize=1200,675",
       "published_at": "2026-05-05T23:50:10+00:00",
       "fetched_at": "2026-05-06T07:03:58.832573+00:00"
-    },
-    {
-      "id": 2980,
-      "source": "Guardian AI",
-      "title": "Apple agrees to pay $250m after falsely claiming AI-powered Siri was ‘available now’",
-      "url": "https://www.theguardian.com/technology/2026/may/05/apple-siri-ai-settlement",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Apple agreed to pay $250 million to settle a class-action lawsuit alleging the company misled millions of iPhone buyers by falsely advertising AI-powered Siri capabilities as 'available now' in late 2024. The settlement covers approximately 36 million eligible devices. Plaintiffs claimed Apple promoted AI features that did not exist at the time of marketing, do not currently exist, and would not exist for years. The settlement includes no admission of wrongdoing by Apple.",
-      "opinion": "This settlement highlights a growing and important issue in the tech industry: companies overpromising on AI capabilities to drive sales. Apple's marketing of Siri's AI features as 'available now' when they weren't functional is a clear case of misleading consumers, and the $250 million penalty, while significant, is relatively modest for a company of Apple's size. This case could set an important precedent for holding tech giants accountable for AI-related marketing claims. The 'no admission o…",
-      "image_url": "https://i.guim.co.uk/img/media/24c9487714799b09a2359e46a668f05ef9b34fa0/125_0_3750_3000/master/3750.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=09bcf6b4122843f78311b9ba212c9504",
-      "published_at": "2026-05-05T23:14:41+00:00",
-      "fetched_at": "2026-05-06T07:04:03.321257+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 3004,
+          "source": "DATAVERSITY Smart Data",
+          "title": "Lessons Learned from Implementing AI Governance",
+          "url": "https://www.dataversity.net/articles/lessons-learned-from-implementing-ai-governance/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "This article discusses lessons learned from implementing AI governance, based on a DATAVERSITY webinar by Kelle O'Neal and Lisa Wintrick of First San Francisco Partners. It highlights that AI is scaling faster than governance, with only 38% of organizations having AI policies. The article covers four key lessons: (1) Determine AI Roles — organizations should define what roles AI will play (assistant, coder, autonomous agent) and consider HR-centric approaches including performance reviews for AI, making HR a new stakeholder in AI governance alongside IT; (2) Align AI for Impact — AI's value should be measured by business impact, but there is a significant disconnect between what leaders expect and what is actually being built and deployed. The article emphasizes that AI governance must embrace uncertainty as a feature rather than a flaw, and organizations need new decision-making proces…",
+          "opinion": "This article presents a thoughtful and practical perspective on AI governance that goes beyond typical compliance-focused discussions. The idea of treating AI agents through an HR lens — giving them performance reviews and defining their organizational roles — is a creative and useful framework that acknowledges how fundamentally AI is changing workplace dynamics. The statistic that only 38% of organizations have AI policies underscores the urgency of the topic. However, the article feels incom…",
+          "image_url": "https://www.dataversity.net/wp-content/uploads/2026/05/shutterstock_2709366373-1200x580.jpg",
+          "published_at": "2026-05-06T07:24:00+00:00",
+          "fetched_at": "2026-05-06T07:53:21.263072+00:00"
+        },
         {
           "id": 2966,
           "source": "TechCrunch AI",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/nemoclaw.jpg?resize=1200,675",
           "published_at": "2026-05-05T23:50:10+00:00",
           "fetched_at": "2026-05-06T07:03:58.832573+00:00"
-        },
-        {
-          "id": 2980,
-          "source": "Guardian AI",
-          "title": "Apple agrees to pay $250m after falsely claiming AI-powered Siri was ‘available now’",
-          "url": "https://www.theguardian.com/technology/2026/may/05/apple-siri-ai-settlement",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Apple agreed to pay $250 million to settle a class-action lawsuit alleging the company misled millions of iPhone buyers by falsely advertising AI-powered Siri capabilities as 'available now' in late 2024. The settlement covers approximately 36 million eligible devices. Plaintiffs claimed Apple promoted AI features that did not exist at the time of marketing, do not currently exist, and would not exist for years. The settlement includes no admission of wrongdoing by Apple.",
-          "opinion": "This settlement highlights a growing and important issue in the tech industry: companies overpromising on AI capabilities to drive sales. Apple's marketing of Siri's AI features as 'available now' when they weren't functional is a clear case of misleading consumers, and the $250 million penalty, while significant, is relatively modest for a company of Apple's size. This case could set an important precedent for holding tech giants accountable for AI-related marketing claims. The 'no admission o…",
-          "image_url": "https://i.guim.co.uk/img/media/24c9487714799b09a2359e46a668f05ef9b34fa0/125_0_3750_3000/master/3750.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=09bcf6b4122843f78311b9ba212c9504",
-          "published_at": "2026-05-05T23:14:41+00:00",
-          "fetched_at": "2026-05-06T07:04:03.321257+00:00"
         }
       ]
     }
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/clairevo/status/2051789748080132518",
       "author": "clairevo",
-      "headline": "Claire Vo takes the contrarian position that fewer managers, more AI code, and everyone as player-coach leads to __higher quality over the long haul__.",
+      "headline": "Claire Vo takes the contrarian position that fewer managers, more AI code, and broader spans of control will produce __higher-quality work__ over the long haul.",
       "tweet_id": "3571eba9-b6bc-8114-99df-f4aafe30f565",
       "source_text": "I'll take the contrarian position that\n- increased span of control\n- everyone player-coach\n- less managers\n- more AI code\n- (yes by \"non technical\")\nresults in higher--not lower--quality over the long haul. https://t.co/I3isyhcKiI",
       "created_time": "2026-05-05T22:32:00.000Z",
@@ -246,31 +246,11 @@
     {
       "url": "https://twitter.com/NotionHQ/status/2051768034466185592",
       "author": "NotionHQ",
-      "headline": "Notion launched an __Agent Hall of Fame__ — a curated gallery of customer-built agents with prompts ready to copy and remix.",
+      "headline": "Notion launched an __Agent Hall of Fame__ — a curated gallery of the best custom agents their customers have built, complete with copyable prompts.",
       "tweet_id": "3571eba9-b6bc-8199-b870-db9d5d5ba9c9",
       "source_text": "We've been a li’l obsessed with the Custom Agents our customers are building.\n\nSo we did what any reasonable team would do… collected our favorites in one place, prompts and all, ready for you to copy and remix.\n\nWe call it the Agent Hall of Fame → https://t.co/1vIih6odyj\n\n(@ https://t.co/epopTPIIJZ",
       "created_time": "2026-05-05T22:32:00.000Z",
       "canonical_url": "https://twitter.com/NotionHQ/status/2051768034466185592",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/edsim/status/2051704713322680739",
-      "author": "edsim",
-      "headline": "Ed Sim says the AI platform playbook is clear: go deep into massive verticals, ship workflow-specific agents, and __become vertical operating systems__.",
-      "tweet_id": "3571eba9-b6bc-8194-8086-cf41d7894399",
-      "source_text": "First coding, now finance.\n\nThe playbook is super clear: go deep into massive verticals, ship workflow-specific agents, wrap them with services/SI partners for enterprise last mile, and keep buying or partnering for proprietary data.\n\nAI platforms are becoming vertical operating https://t.co/Qk9o7GL02h https://t.co/ZF7j8zdCSo",
-      "created_time": "2026-05-05T19:02:00.000Z",
-      "canonical_url": "https://twitter.com/edsim/status/2051704713322680739",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/carlvellotti/status/2051735403548537154",
-      "author": "carlvellotti",
-      "headline": "Carl Vellotti makes the case that AI productivity gains have a __natural limit — you can't move faster than your team__.",
-      "tweet_id": "3571eba9-b6bc-8140-ac93-eb4d4ca4b0c9",
-      "source_text": "AI productivity gains have a natural limit.\n\nYou really can't move faster than your team.\n\nEven if you have the PERFECT AI setup:\n• You can query any doc, ticket, or Slack thread from one place\n• You've wired up MCP integrations to your real tools\n• Every workflow you touch https://t.co/BHcgexx2Jr",
-      "created_time": "2026-05-05T19:02:00.000Z",
-      "canonical_url": "https://twitter.com/carlvellotti/status/2051735403548537154",
       "learning_score": 3
     },
     {
@@ -282,9 +262,94 @@
       "created_time": "2026-05-05T19:02:00.000Z",
       "canonical_url": "https://twitter.com/rohanpaul_ai/status/2051631328760865273",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/andruyeung/status/2051444322927526248",
+      "author": "andruyeung",
+      "headline": "Stripe created a role that didn't exist 12 months ago — __Forward Deployed AI Accelerator__ — paying multiple six figures to embed AI-native people inside marketing teams.",
+      "tweet_id": "3571eba9-b6bc-81bc-af62-ca803f87fc50",
+      "source_text": "Stripe just created a role that didn't exist 12 months ago (and they're paying multiple six figures for it)\n\nIt's called the Forward Deployed AI Accelerator.\n\nThey are hiring AI-native individuals to work directly with their marketing teams to fundamentally change how they work. https://t.co/4FICaLlsY6",
+      "created_time": "2026-05-05T19:02:00.000Z",
+      "canonical_url": "https://twitter.com/andruyeung/status/2051444322927526248",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/armano/status/2051723248233009622",
+      "author": "armano",
+      "headline": "Armano flags what might be the real AI play for enterprises: __sleeper integrations for legacy orgs__.",
+      "tweet_id": "3571eba9-b6bc-8154-b5ba-f49197523855",
+      "source_text": "This is like sleeper AI integration for legacy orgs https://t.co/ydXvdfn7Dd",
+      "created_time": "2026-05-05T22:57:00.000Z",
+      "canonical_url": "https://twitter.com/armano/status/2051723248233009622",
+      "learning_score": 2
     }
   ],
   "community_headlines": [
+    {
+      "url": "https://www.youtube.com/watch?v=oEVHNvE_jDw",
+      "author": "operatingthetan",
+      "item_id": "hn:48033381",
+      "headline": "Mark Cuban argues __OpenAI will never return the $1T it's investing__ — and explains why the math doesn't work.",
+      "subreddit": null,
+      "source_text": "Mark Cuban: OpenAI Will Never Return the $1T It's Investing [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-06T07:37:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=oEVHNvE_jDw",
+      "learning_score": 3
+    },
+    {
+      "url": "https://buraak.com/blog/local-llm-on-rtx-5090.html",
+      "author": "bozdemir",
+      "item_id": "hn:48033460",
+      "headline": "__Q8 KV cache__ lets a 30B model fit 100K context on a single 24 GB RTX 5090.",
+      "subreddit": null,
+      "source_text": "Q8 KV cache lets a 30B model fit 100K context on a 24 GB RTX 5090",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-06T07:48:02+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://buraak.com/blog/local-llm-on-rtx-5090.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/trupositive-ai/trupositive",
+      "author": "simmestd",
+      "item_id": "hn:48033428",
+      "headline": "Trupositive __tags Terraform and CloudFormation resources with the Git commit SHA__ that created them.",
+      "subreddit": null,
+      "source_text": "Show HN: Trupositive – Tag Terraform/CFN Resources with Git Commit SHA",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-06T07:43:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/trupositive-ai/trupositive",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/kernalix7/rdprrap",
+      "author": "kernalix7",
+      "item_id": "hn:48033338",
+      "headline": "Rdprrap is a __Rust port of RDPWrap__ that enables multi-session RDP on Windows desktops.",
+      "subreddit": null,
+      "source_text": "Show HN: Rdprrap – Rust Port of RDPWrap (Multi-Session RDP for Windows Desktop)",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-06T07:30:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/kernalix7/rdprrap",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.nytimes.com/2026/04/01/technology/apple-employee-50-years.html",
+      "author": "nxobject",
+      "item_id": "hn:48033272",
+      "headline": "One of Apple's first employees __looks back at 50 years__ with the company.",
+      "subreddit": null,
+      "source_text": "One of Apple's First Employees Looks Back at 50 Years",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-06T07:19:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nytimes.com/2026/04/01/technology/apple-employee-50-years.html",
+      "learning_score": 2
+    },
     {
       "url": "https://www.theregister.com/2026/05/06/aws_workspaces_agent_access/",
       "author": "beardyw",
@@ -297,78 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://theregister.com/2026/05/06/aws_workspaces_agent_access",
       "learning_score": 2
-    },
-    {
-      "url": "https://blog.denic.de/en/denic-reports-dnssec-disruption-affecting-de-domains/",
-      "author": "teekert",
-      "item_id": "hn:48032886",
-      "headline": "A DNSSEC mishap knocked the entire __`.de` TLD offline for hours__.",
-      "subreddit": null,
-      "source_text": "Complete .de TLD was off-line for 4 hours",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-06T06:17:31+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://blog.denic.de/en/denic-reports-dnssec-disruption-affecting-de-domains",
-      "learning_score": 2
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=48032863",
-      "author": "ex-aws-dude",
-      "item_id": "hn:48032863",
-      "headline": "Ask HN debate: is the future everyone running __100 MCP processes__ on their PC?",
-      "subreddit": null,
-      "source_text": "Ask HN: Is the future everyone having 100 MCP processes running on their PC?",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-06T06:14:12+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=48032863",
-      "learning_score": 2
-    },
-    {
-      "url": "https://blog.gitea.com/release-of-runner-1.0.0/",
-      "author": "jandeboevrie",
-      "item_id": "hn:48032837",
-      "headline": "__Gitea Runner 1.0.0__ ships — the self-hosted CI runner hits its first stable release.",
-      "subreddit": null,
-      "source_text": "Gitea Runner 1.0.0 is released",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-06T06:09:00+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://blog.gitea.com/release-of-runner-1.0.0",
-      "learning_score": 2
-    },
-    {
-      "url": "https://programbench.com",
-      "author": "beau",
-      "item_id": "hn:48032772",
-      "headline": "ProgramBench tests whether language models can __rebuild programs from scratch__ — results are a mixed bag.",
-      "subreddit": null,
-      "source_text": "Can language models rebuild programs from scratch?",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-06T05:59:56+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://programbench.com",
-      "learning_score": 2
-    },
-    {
-      "url": "https://huggingface.co/spaces/AdithyaSK/rl-environments-guide",
-      "author": "babelfish",
-      "item_id": "hn:48032715",
-      "headline": "Hugging Face publishes a guide to __building and scaling RL environments__ in the LLM era.",
-      "subreddit": null,
-      "source_text": "The guide to RL environments: building and scaling them in the LLM era",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-06T05:50:41+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://huggingface.co/spaces/AdithyaSK/rl-environments-guide",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-06T07:22:12.845449+00:00",
+    "generated_at": "2026-05-06T07:55:14.535318+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "a6a5a5a86db41c93082304f9a0663d84685da0f31e7d98d057d4f235b99b4f86"
+  "content_hash": "2df8b510b8d1c3985988941694036a2ac409ed13a93e4d84ab388435f08fa873"
 }
