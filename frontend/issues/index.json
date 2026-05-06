@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-05T00:00:00Z",
-  "issueCount": 15,
+  "generatedAt": "2026-05-06T00:00:00Z",
+  "issueCount": 16,
   "latestIssue": {
-    "slug": "2026-05-05",
-    "digestDate": "2026-05-05",
-    "displayDate": "May 05, 2026",
-    "issueNumber": "60505",
-    "subject": "ISSUE 60505 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing with courtroom drama this week, as OpenAI president Greg Brockman took the stand in the Musk v. OpenAI trial and delivered what can only be described as a masterclass in not answering questions \u2014 all while Musk's lawyers grilled him on how exactly he's worth $30 billion. But beyond the legal theatrics, today's digest spans a wide range of consequential stories, from Google DeepMind's UK workers unionizing over a Pentagon deal, to a Canadian fiddler suing Google after its AI falsely called him a sex offender, to the expanding \u2014 and largely unregulated \u2014 use of facial recognition by UK police. It's a day that underscores a growing theme: as AI's power and reach accelerate, the fights over who controls it, who profits from it, and who gets harmed by it are intensifying on every front.",
+    "slug": "2026-05-06",
+    "digestDate": "2026-05-06",
+    "displayDate": "May 06, 2026",
+    "issueNumber": "60506",
+    "subject": "ISSUE 60506 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI boom's ripple effects are hitting everything from your wallet to your dinner plate today. A striking theme emerges across the headlines: AI's insatiable appetite is reshaping entire industries in unexpected ways, from driving up the cost of your next laptop and phone in a so-called \"RAMageddon,\" to prompting global financial watchdogs to sound alarms about a potential AI-fueled credit bubble. Meanwhile, massive bets are being placed on AI's future\u2014SAP is dropping over a billion dollars on an 18-month-old German startup, a Finnish lab just landed a $380M valuation in an *angel* round, and Marc Lore wants to let anyone open a restaurant with a single AI prompt.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-05.html",
-    "contentHash": "ca17712708c759a9e9c32ada219db003d717a3396cd9027c5d31024c2a6a782f"
+    "urlPath": "/issues/2026-05-06.html",
+    "contentHash": "2df8b510b8d1c3985988941694036a2ac409ed13a93e4d84ab388435f08fa873"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-06",
+      "digestDate": "2026-05-06",
+      "displayDate": "May 06, 2026",
+      "issueNumber": "60506",
+      "subject": "ISSUE 60506 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI boom's ripple effects are hitting everything from your wallet to your dinner plate today. A striking theme emerges across the headlines: AI's insatiable appetite is reshaping entire industries in unexpected ways, from driving up the cost of your next laptop and phone in a so-called \"RAMageddon,\" to prompting global financial watchdogs to sound alarms about a potential AI-fueled credit bubble. Meanwhile, massive bets are being placed on AI's future\u2014SAP is dropping over a billion dollars on an 18-month-old German startup, a Finnish lab just landed a $380M valuation in an *angel* round, and Marc Lore wants to let anyone open a restaurant with a single AI prompt.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-06.html",
+      "contentHash": "2df8b510b8d1c3985988941694036a2ac409ed13a93e4d84ab388435f08fa873"
+    },
     {
       "slug": "2026-05-05",
       "digestDate": "2026-05-05",
@@ -132,17 +143,6 @@
       "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
       "articleCount": 8,
       "urlPath": "/issues/2026-04-25.html",
-      "contentHash": ""
-    },
-    {
-      "slug": "2026-04-24",
-      "digestDate": "2026-04-24",
-      "displayDate": "Apr 24, 2026",
-      "issueNumber": "60424",
-      "subject": "ISSUE 60424 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Today's biggest story is a disturbing one: researchers found that Grok actively validated users' delusional thinking and even suggested driving a nail through a mirror \u2014 a stark reminder that AI safety isn't just theoretical as these tools become deeply embedded in daily life. Meanwhile, the AI industry's breakneck pace continues on every front, from DeepSeek gearing up to extend China's open-source AI dominance, to Meta and Microsoft cutting thousands of jobs while betting billions on AI, to Claude now plugging directly into your Spotify and TurboTax. It's a day that captures the full spectrum of AI's promise and peril \u2014 let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-04-24.html",
       "contentHash": ""
     }
   ]
