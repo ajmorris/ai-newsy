@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-06T00:00:00Z",
-  "issueCount": 16,
+  "generatedAt": "2026-05-07T00:00:00Z",
+  "issueCount": 17,
   "latestIssue": {
-    "slug": "2026-05-06",
-    "digestDate": "2026-05-06",
-    "displayDate": "May 06, 2026",
-    "issueNumber": "60506",
-    "subject": "ISSUE 60506 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI boom's ripple effects are hitting everything from your wallet to your dinner plate today. A striking theme emerges across the headlines: AI's insatiable appetite is reshaping entire industries in unexpected ways, from driving up the cost of your next laptop and phone in a so-called \"RAMageddon,\" to prompting global financial watchdogs to sound alarms about a potential AI-fueled credit bubble. Meanwhile, massive bets are being placed on AI's future\u2014SAP is dropping over a billion dollars on an 18-month-old German startup, a Finnish lab just landed a $380M valuation in an *angel* round, and Marc Lore wants to let anyone open a restaurant with a single AI prompt.",
+    "slug": "2026-05-07",
+    "digestDate": "2026-05-07",
+    "displayDate": "May 07, 2026",
+    "issueNumber": "60507",
+    "subject": "ISSUE 60507 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing with ambition this week \u2014 Anthropic CEO Dario Amodei is projecting the company could grow by a staggering 80x in 2026, while the \"Code with Claude\" event dropped a wave of new developer features from automated routines to multi-agent orchestration (plus a flurry of Claude Code patch releases to keep up the pace). Beyond Anthropic's spotlight, today's digest also dives into the chip supply crunch that top AI executives say will bottleneck the industry for years, Europe's soul-searching over its AI partnerships with US tech giants, and the courtroom drama unfolding in the Musk v. Altman trial.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-06.html",
-    "contentHash": "2df8b510b8d1c3985988941694036a2ac409ed13a93e4d84ab388435f08fa873"
+    "urlPath": "/issues/2026-05-07.html",
+    "contentHash": "86629c8b74d26b1f9fb560a3291ace80aeba224571cc5dd1ee840ce9cbd57030"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-07",
+      "digestDate": "2026-05-07",
+      "displayDate": "May 07, 2026",
+      "issueNumber": "60507",
+      "subject": "ISSUE 60507 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing with ambition this week \u2014 Anthropic CEO Dario Amodei is projecting the company could grow by a staggering 80x in 2026, while the \"Code with Claude\" event dropped a wave of new developer features from automated routines to multi-agent orchestration (plus a flurry of Claude Code patch releases to keep up the pace). Beyond Anthropic's spotlight, today's digest also dives into the chip supply crunch that top AI executives say will bottleneck the industry for years, Europe's soul-searching over its AI partnerships with US tech giants, and the courtroom drama unfolding in the Musk v. Altman trial.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-07.html",
+      "contentHash": "86629c8b74d26b1f9fb560a3291ace80aeba224571cc5dd1ee840ce9cbd57030"
+    },
     {
       "slug": "2026-05-06",
       "digestDate": "2026-05-06",
@@ -132,17 +143,6 @@
       "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
       "articleCount": 2,
       "urlPath": "/issues/2026-04-26.html",
-      "contentHash": ""
-    },
-    {
-      "slug": "2026-04-25",
-      "digestDate": "2026-04-25",
-      "displayDate": "Apr 25, 2026",
-      "issueNumber": "60425",
-      "subject": "ISSUE 60425 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "DeepSeek is back and making waves \u2014 the Chinese AI firm just dropped a preview of V4, its most significant release since R1 shook up the industry in early 2025, with open-source models that dramatically undercut competitors on price while pushing new boundaries in coding and reasoning. But that's far from the only story today: the DOJ is wading into the AI regulation fight on behalf of Elon Musk's xAI, Maine's governor just vetoed the first-ever state datacenter moratorium, Thinking Machines Lab keeps raiding Meta's top talent, and ComfyUI hit a $500M valuation \u2014 plus a wild tale about how university websites ended up serving porn thanks to sloppy DNS records.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-04-25.html",
       "contentHash": ""
     }
   ]
