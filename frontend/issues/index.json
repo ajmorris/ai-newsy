@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-07T00:00:00Z",
-  "issueCount": 17,
+  "generatedAt": "2026-05-08T00:00:00Z",
+  "issueCount": 18,
   "latestIssue": {
-    "slug": "2026-05-07",
-    "digestDate": "2026-05-07",
-    "displayDate": "May 07, 2026",
-    "issueNumber": "60507",
-    "subject": "ISSUE 60507 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing with ambition this week \u2014 Anthropic CEO Dario Amodei is projecting the company could grow by a staggering 80x in 2026, while the \"Code with Claude\" event dropped a wave of new developer features from automated routines to multi-agent orchestration (plus a flurry of Claude Code patch releases to keep up the pace). Beyond Anthropic's spotlight, today's digest also dives into the chip supply crunch that top AI executives say will bottleneck the industry for years, Europe's soul-searching over its AI partnerships with US tech giants, and the courtroom drama unfolding in the Musk v. Altman trial.",
+    "slug": "2026-05-08",
+    "digestDate": "2026-05-08",
+    "displayDate": "May 08, 2026",
+    "issueNumber": "60508",
+    "subject": "ISSUE 60508 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "OpenAI is dominating today's headlines with a triple feature: new real-time voice intelligence tools for developers, a \"Trusted Contact\" safety feature designed to address self-harm concerns amid mounting lawsuits, and fresh revelations from Mira Murati's deposition pulling back the curtain on Sam Altman's dramatic 2023 ouster. Beyond the OpenAI orbit, we've got a Phoenix startup using AI voice agents to fix the maddening specialist referral process, Perplexity bringing AI agents to every Mac, and a look at whether Europe's literary translators can survive the AI wave \u2014 spoiler: being human still counts for something.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-07.html",
-    "contentHash": "86629c8b74d26b1f9fb560a3291ace80aeba224571cc5dd1ee840ce9cbd57030"
+    "urlPath": "/issues/2026-05-08.html",
+    "contentHash": "a38c00c9acb74385205d7ffabc3ee9ce9a896109954c0f43f028c04b0847a9b0"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-08",
+      "digestDate": "2026-05-08",
+      "displayDate": "May 08, 2026",
+      "issueNumber": "60508",
+      "subject": "ISSUE 60508 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "OpenAI is dominating today's headlines with a triple feature: new real-time voice intelligence tools for developers, a \"Trusted Contact\" safety feature designed to address self-harm concerns amid mounting lawsuits, and fresh revelations from Mira Murati's deposition pulling back the curtain on Sam Altman's dramatic 2023 ouster. Beyond the OpenAI orbit, we've got a Phoenix startup using AI voice agents to fix the maddening specialist referral process, Perplexity bringing AI agents to every Mac, and a look at whether Europe's literary translators can survive the AI wave \u2014 spoiler: being human still counts for something.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-08.html",
+      "contentHash": "a38c00c9acb74385205d7ffabc3ee9ce9a896109954c0f43f028c04b0847a9b0"
+    },
     {
       "slug": "2026-05-07",
       "digestDate": "2026-05-07",
@@ -132,17 +143,6 @@
       "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
       "articleCount": 5,
       "urlPath": "/issues/2026-04-27.html",
-      "contentHash": ""
-    },
-    {
-      "slug": "2026-04-26",
-      "digestDate": "2026-04-26",
-      "displayDate": "Apr 26, 2026",
-      "issueNumber": "60426",
-      "subject": "ISSUE 60426 \u00b7 2 STORIES \u00b7 11 MIN READ",
-      "intro": "The UK government is arguing with itself over how much power AI will actually need \u2014 and the numbers are off by a factor of ten \u2014 while Maine's governor just vetoed the country's first statewide data center moratorium, making it clear that the political infrastructure around AI's physical footprint is every bit as messy as the technology itself. Beyond the energy battles, today's digest covers Anthropic's fascinating experiment letting AI agents haggle with each other using real money, a Cohere-Aleph Alpha mega-merger reshaping the European AI landscape, London police using Palantir to surveil their own officers, and Sam Altman's apology to a Canadian community over a tragedy that's reigniting the debate about AI companies' duty to report threats. It's a packed one \u2014 let's get into it.",
-      "articleCount": 2,
-      "urlPath": "/issues/2026-04-26.html",
       "contentHash": ""
     }
   ]
