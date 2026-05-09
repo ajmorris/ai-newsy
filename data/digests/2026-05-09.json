@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/PawelHuryn/status/2052864900247044255",
       "author": "PawelHuryn",
-      "headline": "Anthropic trained Claude on 3M tokens of hard reasoning with principle-based methods — dropping Opus 4's __blackmail rate from 96% to 0%__ in identical scenarios.",
+      "headline": "Anthropic trained Claude Opus 4 on Sinek's \"Start With Why\" framework — __blackmail rate dropped from 96% to 0%__ on identical scenarios.",
       "tweet_id": "35b1eba9-b6bc-81ea-a9b6-d04a8c5efb7b",
       "source_text": "Anthropic just shipped Start With Why into Claude.\n\n96% blackmail rate on Opus 4. After principle-based training: 0%. Same scenarios.\n\nSinek's 2009 thesis just became a training method. Anthropic fine-tuned on 3M tokens of hard reasoning, with answers rewritten to explain the https://t.co/Du8PTEiHc3",
       "created_time": "2026-05-09T02:57:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/msPartner/status/2052440828010713191",
       "author": "msPartner",
-      "headline": "Microsoft rolls out __agent capabilities in Word, Excel, and PowerPoint__ across Copilot, bringing automation into the everyday Office stack.",
+      "headline": "Microsoft rolls out __agent capabilities in Word, Excel, and PowerPoint__ — Copilot moves from assistance to action.",
       "tweet_id": "35a1eba9-b6bc-81fa-98ee-d252cfd427a9",
       "source_text": "Copilot is evolving from assistance to action. 🌱\n\nAgent capabilities in Word, Excel, and PowerPoint are now available, bringing automation and smarter workflows into everyday work. ✨\n\nLearn more: https://t.co/4NZULZqj4Y",
       "created_time": "2026-05-08T20:37:00.000Z",
@@ -264,6 +264,16 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/lennysan/status/2052804026937549123",
+      "author": "lennysan",
+      "headline": "Lenny Rachitsky digs into how Google bundled Gemini, NotebookLM, Veo 3, and terabytes of storage into arguably __the most successful consumer subscription in history__ with 150M+ subscribers.",
+      "tweet_id": "35a1eba9-b6bc-81b5-a13c-e8ff40bf9e23",
+      "source_text": ".@GoogleAI's subscription bundle is arguably the most successful consumer subscription in history.\n\nThey bundle Gemini, NotebookLM, Nano Banana, Veo 3, and terabytes of storage—with 150M+ subscribers generating many billions in revenue.\n\nHere's the story behind how they designed https://t.co/d0wwe5g4KD",
+      "created_time": "2026-05-08T20:17:00.000Z",
+      "canonical_url": "https://twitter.com/lennysan/status/2052804026937549123",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/rohit4verse/status/2052904398536511917",
       "author": "rohit4verse",
       "headline": "Rohit argues your second brain should __brief you every morning with connections you missed__ — here's a 5-minute Obsidian + Claude Code fix.",
@@ -272,24 +282,40 @@
       "created_time": "2026-05-09T02:07:00.000Z",
       "canonical_url": "https://twitter.com/rohit4verse/status/2052904398536511917",
       "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/coreyganim/status/2052845493181452455",
-      "author": "coreyganim",
-      "headline": "Hermes agent as __AI second brain in 60 seconds__: you curate the sources, the agent summarizes, files, and queries — no markdown editing by hand.",
-      "tweet_id": "35b1eba9-b6bc-81e5-a77c-c8e244bf7fdb",
-      "source_text": "The Hermes agent-powered AI second brain in 60 seconds:\n\n1. Division of labor. You curate the sources. The agent summarizes, files, and queries. You never read or edit a markdown file by hand again.\n\n2. Three core operations. Ingest a source (any tweet, article, or doc gets added https://t.co/1wlxFLIHv5 https://t.co/KmQv8cHHEt",
-      "created_time": "2026-05-09T02:07:00.000Z",
-      "canonical_url": "https://twitter.com/coreyganim/status/2052845493181452455",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
+      "url": "https://www.pentagram.com/work/caligra-c100-developer-terminal",
+      "author": "kaizenb",
+      "item_id": "hn:48072803",
+      "headline": "Pentagram designed the __Caligra c100 Developer Terminal__, and the industrial design alone is worth a look.",
+      "subreddit": null,
+      "source_text": "Caligra c100 Developer Terminal – Industrial design of computer hardware",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-09T07:38:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://pentagram.com/work/caligra-c100-developer-terminal",
+      "learning_score": 3
+    },
+    {
+      "url": "https://til.andrew-quinn.me/posts/i-still-like-jenkins/",
+      "author": "hiAndrewQuinn",
+      "item_id": "hn:48072419",
+      "headline": "A quiet defense of Jenkins: one developer explains why he __still likes Jenkins__ in 2026.",
+      "subreddit": null,
+      "source_text": "I Still Like Jenkins",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-09T06:34:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://til.andrew-quinn.me/posts/i-still-like-jenkins",
+      "learning_score": 3
+    },
+    {
       "url": "https://githubv6.com/",
       "author": "immibis2",
       "item_id": "hn:48072345",
-      "headline": "Someone built an __IPv6 proxy for GitHub__ because apparently that's still a problem in 2026.",
+      "headline": "Someone built an __IPv6 proxy for GitHub__ so you can finally clone repos over v6.",
       "subreddit": null,
       "source_text": "Show HN: I made an IPv6 proxy for GitHub",
       "source_type": "hacker_news",
@@ -299,76 +325,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://old.reddit.com/r/snapseed/comments/1t7j7yt/snapseed_40_a_note_from_the_snapseed_team/",
-      "author": "satvikpendem",
-      "item_id": "hn:48071963",
-      "headline": "Google's Snapseed team resurfaces with __Snapseed 4.0__ and a note explaining where they've been.",
+      "url": "https://www.youtube.com/watch?v=GMIWm5y90xA&list=PLmWCw1CzcFim2obQ-w3ohbULOfwp5lApR",
+      "author": "pramodbiligiri",
+      "item_id": "hn:48072202",
+      "headline": "The full __Code with Claude 2026__ San Francisco playlist is up — talks on agents, workflows, and building with the API.",
       "subreddit": null,
-      "source_text": "Snapseed 4.0 – Note from the Team",
+      "source_text": "Code with Claude 2026 – San Francisco (playlist) [video]",
       "source_type": "hacker_news",
-      "created_time": "2026-05-09T05:01:18+00:00",
+      "created_time": "2026-05-09T05:54:19+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://old.reddit.com/r/snapseed/comments/1t7j7yt/snapseed_40_a_note_from_the_snapseed_team",
+      "canonical_url": "https://youtube.com/watch?v=GMIWm5y90xA&list=PLmWCw1CzcFim2obQ-w3ohbULOfwp5lApR",
       "learning_score": 3
     },
     {
-      "url": "https://www.seangoedecke.com/notes-on-incidents/",
-      "author": "dondraper36",
-      "item_id": "hn:48072547",
-      "headline": "Sean Goedecke shares practical __notes on incidents__ — how to run them, learn from them, and not repeat them.",
+      "url": "https://news.ycombinator.com/item?id=48072594",
+      "author": "b112",
+      "item_id": "hn:48072594",
+      "headline": "Someone argues __Claude's signup workflow is terrible__, and the HN comments are predictably lively.",
       "subreddit": null,
-      "source_text": "Notes on Incidents",
+      "source_text": "Claude's signup workflow is terrible",
       "source_type": "hacker_news",
-      "created_time": "2026-05-09T06:57:34+00:00",
+      "created_time": "2026-05-09T07:03:00+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://seangoedecke.com/notes-on-incidents",
+      "canonical_url": "https://news.ycombinator.com/item?id=48072594",
       "learning_score": 2
     },
     {
-      "url": "https://hackaday.com/2026/04/21/why-some-s3-videocards-have-a-brightness-issue/",
-      "author": "networked",
-      "item_id": "hn:48072461",
-      "headline": "A deep dive into why some old __S3 graphics cards have a persistent brightness issue__ that's haunted retro computing for years.",
+      "url": "https://antman-does-software.com/i-will-never-use-ai-to-code-or-write",
+      "author": "ishanz",
+      "item_id": "hn:48072319",
+      "headline": "A developer makes the case for why he'll __never use AI to code__ — or write.",
       "subreddit": null,
-      "source_text": "Brightness Issue in Old S3 Graphics Cards",
+      "source_text": "I Will Never Use AI to Code",
       "source_type": "hacker_news",
-      "created_time": "2026-05-09T06:41:12+00:00",
+      "created_time": "2026-05-09T06:14:20+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://hackaday.com/2026/04/21/why-some-s3-videocards-have-a-brightness-issue",
-      "learning_score": 2
-    },
-    {
-      "url": "https://til.andrew-quinn.me/posts/i-still-like-jenkins/",
-      "author": "hiAndrewQuinn",
-      "item_id": "hn:48072419",
-      "headline": "A developer makes the case: __I still like Jenkins__ — and isn't embarrassed about it.",
-      "subreddit": null,
-      "source_text": "I Still Like Jenkins",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-09T06:34:38+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://til.andrew-quinn.me/posts/i-still-like-jenkins",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/PentHertz/LUKSbox",
-      "author": "fratellobigio",
-      "item_id": "hn:48072361",
-      "headline": "LUKSbox builds __encrypted vaults designed to survive the next decade__ — open-source and paranoia-friendly.",
-      "subreddit": null,
-      "source_text": "LUKSbox: Encrypted vaults that survive the next decade",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-09T06:23:14+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/PentHertz/LUKSbox",
+      "canonical_url": "https://antman-does-software.com/i-will-never-use-ai-to-code-or-write",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-09T07:00:49.567332+00:00",
+    "generated_at": "2026-05-09T07:41:25.472828+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "9c80e9acc7cb96e35811cd79c55916cc6a38b41073c6989c14102d84bb6ac4a9"
+  "content_hash": "8043e3142fcbd065dfeb8b524980279307b328267f8d661120926285cd86f8c3"
 }
