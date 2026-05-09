@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-08T00:00:00Z",
-  "issueCount": 18,
+  "generatedAt": "2026-05-09T00:00:00Z",
+  "issueCount": 19,
   "latestIssue": {
-    "slug": "2026-05-08",
-    "digestDate": "2026-05-08",
-    "displayDate": "May 08, 2026",
-    "issueNumber": "60508",
-    "subject": "ISSUE 60508 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "OpenAI is dominating today's headlines with a triple feature: new real-time voice intelligence tools for developers, a \"Trusted Contact\" safety feature designed to address self-harm concerns amid mounting lawsuits, and fresh revelations from Mira Murati's deposition pulling back the curtain on Sam Altman's dramatic 2023 ouster. Beyond the OpenAI orbit, we've got a Phoenix startup using AI voice agents to fix the maddening specialist referral process, Perplexity bringing AI agents to every Mac, and a look at whether Europe's literary translators can survive the AI wave \u2014 spoiler: being human still counts for something.",
+    "slug": "2026-05-09",
+    "digestDate": "2026-05-09",
+    "displayDate": "May 09, 2026",
+    "issueNumber": "60509",
+    "subject": "ISSUE 60509 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The courtroom drama between Elon Musk and Sam Altman keeps getting juicier \u2014 week two of the trial brought bombshell testimony that Musk himself pushed for OpenAI's for-profit pivot and even tried to poach Altman to run an AI lab at Tesla, flipping the entire narrative on its head. Beyond the legal fireworks, today's digest covers everything from Intel's jaw-dropping 490% stock surge to growing bipartisan backlash against AI data centers draining America's power grids, plus a thought-provoking argument about what we lose when AI makes language barriers disappear.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-08.html",
-    "contentHash": "a38c00c9acb74385205d7ffabc3ee9ce9a896109954c0f43f028c04b0847a9b0"
+    "urlPath": "/issues/2026-05-09.html",
+    "contentHash": "8043e3142fcbd065dfeb8b524980279307b328267f8d661120926285cd86f8c3"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-09",
+      "digestDate": "2026-05-09",
+      "displayDate": "May 09, 2026",
+      "issueNumber": "60509",
+      "subject": "ISSUE 60509 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The courtroom drama between Elon Musk and Sam Altman keeps getting juicier \u2014 week two of the trial brought bombshell testimony that Musk himself pushed for OpenAI's for-profit pivot and even tried to poach Altman to run an AI lab at Tesla, flipping the entire narrative on its head. Beyond the legal fireworks, today's digest covers everything from Intel's jaw-dropping 490% stock surge to growing bipartisan backlash against AI data centers draining America's power grids, plus a thought-provoking argument about what we lose when AI makes language barriers disappear.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-09.html",
+      "contentHash": "8043e3142fcbd065dfeb8b524980279307b328267f8d661120926285cd86f8c3"
+    },
     {
       "slug": "2026-05-08",
       "digestDate": "2026-05-08",
@@ -132,17 +143,6 @@
       "intro": "From humanoid baggage handlers in Japan to AI welfare checks on South Korea's elderly, today's stories paint a vivid picture of how AI and robotics are stepping in where demographic crises are creating real-world gaps \u2014 while the courtroom drama between Musk and Altman kicks off with prospective jurors openly calling Musk \"a world-class jerk.\" We've also got a nasty supply chain attack hitting a million-download open-source package, Google experimenting with conversational AI search on YouTube, and Australia slapping tech giants with a new levy for profiting off news content \u2014 so let's dig in.",
       "articleCount": 8,
       "urlPath": "/issues/2026-04-28.html",
-      "contentHash": ""
-    },
-    {
-      "slug": "2026-04-27",
-      "digestDate": "2026-04-27",
-      "displayDate": "Apr 27, 2026",
-      "issueNumber": "60427",
-      "subject": "ISSUE 60427 \u00b7 5 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic stock is apparently so hot right now that one Bay Area investment banker is willing to trade his $4.75 million estate for pre-IPO equity \u2014 a wild sign of just how much AI wealth is reshaping the real world. Beyond that eye-catching headline, today's digest spans Google DeepMind's new national partnership with South Korea, an on-the-ground look at China's humanoid robotics boom, OpenAI's guiding principles, and a clever argument for why the \"four-day workweek\" might just need a rebrand to finally win over skeptical bosses.",
-      "articleCount": 5,
-      "urlPath": "/issues/2026-04-27.html",
       "contentHash": ""
     }
   ]
