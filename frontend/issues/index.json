@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-09T00:00:00Z",
-  "issueCount": 19,
+  "generatedAt": "2026-05-10T00:00:00Z",
+  "issueCount": 20,
   "latestIssue": {
-    "slug": "2026-05-09",
-    "digestDate": "2026-05-09",
-    "displayDate": "May 09, 2026",
-    "issueNumber": "60509",
-    "subject": "ISSUE 60509 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The courtroom drama between Elon Musk and Sam Altman keeps getting juicier \u2014 week two of the trial brought bombshell testimony that Musk himself pushed for OpenAI's for-profit pivot and even tried to poach Altman to run an AI lab at Tesla, flipping the entire narrative on its head. Beyond the legal fireworks, today's digest covers everything from Intel's jaw-dropping 490% stock surge to growing bipartisan backlash against AI data centers draining America's power grids, plus a thought-provoking argument about what we lose when AI makes language barriers disappear.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-05-09.html",
-    "contentHash": "8043e3142fcbd065dfeb8b524980279307b328267f8d661120926285cd86f8c3"
+    "slug": "2026-05-10",
+    "digestDate": "2026-05-10",
+    "displayDate": "May 10, 2026",
+    "issueNumber": "60510",
+    "subject": "ISSUE 60510 \u00b7 7 STORIES \u00b7 11 MIN READ",
+    "intro": "Today's biggest story is all about Nvidia flexing its financial muscle, committing a staggering $40 billion to AI equity deals already this year \u2014 including a massive $30 billion bet on OpenAI \u2014 though critics are side-eyeing these investments as circular deals that essentially fund the chipmaker's own customers. Beyond the mega-deals, we're also diving into how AI voice tech is cracking India's linguistic puzzle, why those handy AI note-takers in your meetings are giving lawyers heartburn, and a look at Google developers significantly understating the carbon footprint of proposed UK datacentres. Grab your coffee \u2014 it's a packed one.",
+    "articleCount": 7,
+    "urlPath": "/issues/2026-05-10.html",
+    "contentHash": "0b3cd139564b3c9b3154513dfdd518602e2402ebffd65e0df41968ff0051c00e"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-10",
+      "digestDate": "2026-05-10",
+      "displayDate": "May 10, 2026",
+      "issueNumber": "60510",
+      "subject": "ISSUE 60510 \u00b7 7 STORIES \u00b7 11 MIN READ",
+      "intro": "Today's biggest story is all about Nvidia flexing its financial muscle, committing a staggering $40 billion to AI equity deals already this year \u2014 including a massive $30 billion bet on OpenAI \u2014 though critics are side-eyeing these investments as circular deals that essentially fund the chipmaker's own customers. Beyond the mega-deals, we're also diving into how AI voice tech is cracking India's linguistic puzzle, why those handy AI note-takers in your meetings are giving lawyers heartburn, and a look at Google developers significantly understating the carbon footprint of proposed UK datacentres. Grab your coffee \u2014 it's a packed one.",
+      "articleCount": 7,
+      "urlPath": "/issues/2026-05-10.html",
+      "contentHash": "0b3cd139564b3c9b3154513dfdd518602e2402ebffd65e0df41968ff0051c00e"
+    },
     {
       "slug": "2026-05-09",
       "digestDate": "2026-05-09",
@@ -132,17 +143,6 @@
       "intro": "The courtroom showdown everyone's been waiting for is finally here \u2014 Elon Musk took the stand in his trial against Sam Altman and OpenAI, accusing his former co-founder of \"stealing a charity\" and betraying the organization's nonprofit mission, though early courtroom observers say Musk came across as more focused on his own r\u00e9sum\u00e9 than his legal case. Beyond the trial drama, today's digest also covers Britain's growing anxiety over AI dependency on US tech giants, Disneyland's new facial recognition gates, and how Africa's music industry is navigating the tricky line between AI opportunity and authenticity.",
       "articleCount": 8,
       "urlPath": "/issues/2026-04-29.html",
-      "contentHash": ""
-    },
-    {
-      "slug": "2026-04-28",
-      "digestDate": "2026-04-28",
-      "displayDate": "Apr 28, 2026",
-      "issueNumber": "60428",
-      "subject": "ISSUE 60428 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "From humanoid baggage handlers in Japan to AI welfare checks on South Korea's elderly, today's stories paint a vivid picture of how AI and robotics are stepping in where demographic crises are creating real-world gaps \u2014 while the courtroom drama between Musk and Altman kicks off with prospective jurors openly calling Musk \"a world-class jerk.\" We've also got a nasty supply chain attack hitting a million-download open-source package, Google experimenting with conversational AI search on YouTube, and Australia slapping tech giants with a new levy for profiting off news content \u2014 so let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-04-28.html",
       "contentHash": ""
     }
   ]
