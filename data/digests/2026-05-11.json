@@ -33,6 +33,19 @@
       "fetched_at": "2026-05-11T07:24:37.893809+00:00"
     },
     {
+      "id": 3180,
+      "source": "DATAVERSITY Smart Data",
+      "title": "Ask a Data Ethicist: What Are the Legal and Ethical Issues in Summarizing Text with an AI Tool?",
+      "url": "https://www.dataversity.net/articles/ask-a-data-ethicist-what-are-the-legal-and-ethical-issues-in-summarizing-text-with-an-ai-tool/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses legal and ethical considerations when using AI tools to summarize copyrighted text. Key points include: users should verify whether their data will be used to train future AI models and check opt-out settings; AI tool terms of service place legal responsibility on users to comply with copyright laws; summarizing your own work or workplace documents is generally permissible; summarizing others' copyrighted works is more complex, even with legal access. In academic settings, licensed materials may fall under 'fair use' or 'fair dealing' provisions, but publishers are increasingly adding AI exclusion clauses to their licenses that may explicitly prohibit processing content with AI tools, potentially superseding fair use protections. The article advises checking organizational acceptable use policies and specific tool-level protections.",
+      "opinion": "This article addresses a timely and important topic as AI summarization tools become ubiquitous. The distinction between summarizing your own work versus others' copyrighted material is crucial and well-articulated. The point about publishers adding AI exclusion clauses to licenses is particularly significant, as many users likely assume that having legal access to content automatically permits AI processing of it. However, the article appears to be cut off before completing its analysis, which…",
+      "image_url": "https://www.dataversity.net/wp-content/uploads/2025/09/Katrina-Ingram_600x448.png",
+      "published_at": "2026-05-11T07:25:00+00:00",
+      "fetched_at": "2026-05-11T08:16:00.859813+00:00"
+    },
+    {
       "id": 3171,
       "source": "TechCrunch AI",
       "title": "Get ready for the whisper-filled office of the future",
@@ -96,19 +109,6 @@
       "image_url": "https://i.guim.co.uk/img/media/e6dcf73db64c84a2c7e3ae1f9ab84be7459303ee/0_2_3000_2398/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=58e1debef53ecb7b169d87da0a1d0f94",
       "published_at": "2026-05-10T13:00:27+00:00",
       "fetched_at": "2026-05-11T07:24:24.980085+00:00"
-    },
-    {
-      "id": 3174,
-      "source": "NY Times",
-      "title": "How Students Interact With A.I. Is What Matters",
-      "url": "https://www.nytimes.com/2026/05/10/opinion/ai-students.html",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "This New York Times opinion piece presents reader discussions about how students interact with artificial intelligence in classroom settings, particularly regarding writing. The article suggests that the manner in which students engage with AI tools is more important than simply whether they use them. The piece also touches on other topics including President Trump's actions regarding science and issues concerning election workers.",
-      "opinion": "The article and its reader responses appear to advocate for a nuanced approach to AI in education, emphasizing that the quality and nature of student-AI interaction matters more than blanket bans or unrestricted use. The framing suggests that educators should focus on teaching students how to engage meaningfully and critically with AI tools rather than treating AI as inherently beneficial or harmful to the learning process.",
-      "image_url": "",
-      "published_at": "2026-05-10T13:00:05+00:00",
-      "fetched_at": "2026-05-11T07:24:23.859801+00:00"
     }
   ],
   "sections": [
@@ -140,6 +140,19 @@
           "image_url": "https://images.ctfassets.net/kftzwdyauwt9/7jgfj0ck26uG4g1nrzrA0Q/66561482da84669067710304a720a960/OpenAI_Campus_Network-_Student_club_interest_form.png?w=1600&h=900&fit=fill",
           "published_at": "2026-05-11T10:00:00+00:00",
           "fetched_at": "2026-05-11T07:24:37.893809+00:00"
+        },
+        {
+          "id": 3180,
+          "source": "DATAVERSITY Smart Data",
+          "title": "Ask a Data Ethicist: What Are the Legal and Ethical Issues in Summarizing Text with an AI Tool?",
+          "url": "https://www.dataversity.net/articles/ask-a-data-ethicist-what-are-the-legal-and-ethical-issues-in-summarizing-text-with-an-ai-tool/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses legal and ethical considerations when using AI tools to summarize copyrighted text. Key points include: users should verify whether their data will be used to train future AI models and check opt-out settings; AI tool terms of service place legal responsibility on users to comply with copyright laws; summarizing your own work or workplace documents is generally permissible; summarizing others' copyrighted works is more complex, even with legal access. In academic settings, licensed materials may fall under 'fair use' or 'fair dealing' provisions, but publishers are increasingly adding AI exclusion clauses to their licenses that may explicitly prohibit processing content with AI tools, potentially superseding fair use protections. The article advises checking organizational acceptable use policies and specific tool-level protections.",
+          "opinion": "This article addresses a timely and important topic as AI summarization tools become ubiquitous. The distinction between summarizing your own work versus others' copyrighted material is crucial and well-articulated. The point about publishers adding AI exclusion clauses to licenses is particularly significant, as many users likely assume that having legal access to content automatically permits AI processing of it. However, the article appears to be cut off before completing its analysis, which…",
+          "image_url": "https://www.dataversity.net/wp-content/uploads/2025/09/Katrina-Ingram_600x448.png",
+          "published_at": "2026-05-11T07:25:00+00:00",
+          "fetched_at": "2026-05-11T08:16:00.859813+00:00"
         },
         {
           "id": 3171,
@@ -205,19 +218,6 @@
           "image_url": "https://i.guim.co.uk/img/media/e6dcf73db64c84a2c7e3ae1f9ab84be7459303ee/0_2_3000_2398/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=58e1debef53ecb7b169d87da0a1d0f94",
           "published_at": "2026-05-10T13:00:27+00:00",
           "fetched_at": "2026-05-11T07:24:24.980085+00:00"
-        },
-        {
-          "id": 3174,
-          "source": "NY Times",
-          "title": "How Students Interact With A.I. Is What Matters",
-          "url": "https://www.nytimes.com/2026/05/10/opinion/ai-students.html",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "This New York Times opinion piece presents reader discussions about how students interact with artificial intelligence in classroom settings, particularly regarding writing. The article suggests that the manner in which students engage with AI tools is more important than simply whether they use them. The piece also touches on other topics including President Trump's actions regarding science and issues concerning election workers.",
-          "opinion": "The article and its reader responses appear to advocate for a nuanced approach to AI in education, emphasizing that the quality and nature of student-AI interaction matters more than blanket bans or unrestricted use. The framing suggests that educators should focus on teaching students how to engage meaningfully and critically with AI tools rather than treating AI as inherently beneficial or harmful to the learning process.",
-          "image_url": "",
-          "published_at": "2026-05-10T13:00:05+00:00",
-          "fetched_at": "2026-05-11T07:24:23.859801+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/cgtwts/status/2053410240121675922",
       "author": "cgtwts",
-      "headline": "Andrej Karpathy says 10x engineers are normal — real agentic engineers are __100x__, and context engineering is the foundation.",
+      "headline": "Andrej Karpathy argues real agentic engineers are __100x, not 10x__ — context engineering is the new foundation.",
       "tweet_id": "35d1eba9-b6bc-8155-811c-d24f1b70da21",
       "source_text": "Andrej Karpathy:\n\n“10x engineers are normal. real agentic engineers are 100x”\n\nContext engineering is becoming the foundation of agentic software.\n\nTool routing, memory systems, evals, and orchestrator-subagent workflows are the new stack.\n\nBookmark it and watch it. https://t.co/mx3dKd8bdq https://t.co/oObBvRDczE",
       "created_time": "2026-05-11T01:27:00.000Z",
@@ -236,21 +236,11 @@
     {
       "url": "https://twitter.com/nireyal/status/2053460884802941155",
       "author": "nireyal",
-      "headline": "Nir Eyal cites the stat: knowledge workers __switch between tasks and apps 1,200 times a day__, and UC Irvine says each interruption costs 23 minutes of focus.",
+      "headline": "Nir Eyal: knowledge workers switch between tasks and apps __1,200 times per day__ — and each switch costs 23 minutes of focus.",
       "tweet_id": "35d1eba9-b6bc-816e-8b76-c7ef2bf43c3b",
       "source_text": "1,200 times. That's how many times the average knowledge worker switches between tasks and apps each day, according to Harvard Business Review.\n\nAnd every single switch costs you.\n\nUC Irvine research shows it takes 23 minutes to fully regain focus after an interruption. And https://t.co/AxN1xdjby6",
       "created_time": "2026-05-11T01:27:00.000Z",
       "canonical_url": "https://twitter.com/nireyal/status/2053460884802941155",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/Zephyr_hg/status/2053594428095504575",
-      "author": "Zephyr_hg",
-      "headline": "Claude Skills are quietly __replacing four software categories__ most businesses still pay $5K–$25K/year for — writing tools, research, analytics, and workflow automation.",
-      "tweet_id": "35d1eba9-b6bc-8130-ba87-fce67cad8cbd",
-      "source_text": "Most businesses are still paying $5K-$25K a year for 4 software categories Claude already replaces, and the math kills those categories by Christmas 2026.\n\nCategory 1: AI writing tools (Jasper, Copy AI, Writer).\n\nReplaced by a Claude Skill with 20-30 voice samples and a https://t.co/6Qe63jl2WC https://t.co/BJkQmSsfuF",
-      "created_time": "2026-05-11T01:17:00.000Z",
-      "canonical_url": "https://twitter.com/Zephyr_hg/status/2053594428095504575",
       "learning_score": 3
     },
     {
@@ -266,7 +256,7 @@
     {
       "url": "https://twitter.com/swyx/status/2053243747115413697",
       "author": "swyx",
-      "headline": "Swyx calls this the AI engineer equivalent of Kelsey Hightower's \"Kubernetes The Hard Way\" — a __just-in-case walkthrough every AI engineer should do once__.",
+      "headline": "Swyx compares a new AI engineering walkthrough to Kelsey Hightower's \"Kubernetes The Hard Way\" — says __every AI engineer should go through it once__.",
       "tweet_id": "35c1eba9-b6bc-81eb-ab67-cc8fb1a0fb4b",
       "source_text": "this is a big deal, on the order of Kelsey Hightower’s “Kubernetes The Hard Way” and probably all ai engineers should go thru this once\n\nmostly i advocate “just in time learning”, but this is one scenario you want “just in case” https://t.co/Ny7kTvwBr3 https://t.co/9tnMuuOBGI",
       "created_time": "2026-05-10T18:57:00.000Z",
@@ -274,101 +264,111 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/shannholmberg/status/2053477584068063708",
-      "author": "shannholmberg",
-      "headline": "Nate Herk published what may be the most thorough __Hermes Agent setup guide__ on the internet — 12 lessons before you build your own.",
-      "tweet_id": "35c1eba9-b6bc-81b7-9113-dfc02726049d",
-      "source_text": "Nate Herk just wrote the most thorough Hermes Agent setup guide on the internet\n\nHere are 12 lessons you need to know before you build your own 🧵\n\nhttps://t.co/n4d0T2p9b0 https://t.co/HpwELUi7ry",
-      "created_time": "2026-05-10T18:37:00.000Z",
-      "canonical_url": "https://twitter.com/shannholmberg/status/2053477584068063708",
+      "url": "https://twitter.com/nickvasiles/status/2053361786242707938",
+      "author": "nickvasiles",
+      "headline": "You can give any app __real-time voice via GPT's Realtime 2 WebRTC__ with a single prompt — here's the setup.",
+      "tweet_id": "35c1eba9-b6bc-81fc-a2b5-d8443a6e3720",
+      "source_text": "You can give GPT real-time voice to any application by using this prompt:\n\nBuild or add a minimal Realtime 2 WebRTC voice agent using the gpt-realtime-2 model.\n\nUse the latest OpenAI Realtime API docs for the WebRTC and session setup patterns. If this folder already contains an https://t.co/0RgYhbyTdC",
+      "created_time": "2026-05-10T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/nickvasiles/status/2053361786242707938",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/aakashgupta/status/2053444458361028712",
+      "author": "aakashgupta",
+      "headline": "Aakash Gupta makes the case that Anthropic is __eating software wrappers the way Apple ate apps__ — every category that proves out on Claude becomes the next thing they ship.",
+      "tweet_id": "35c1eba9-b6bc-8101-8208-eff127dfb26e",
+      "source_text": "Apple ate software through the App Store. Anthropic is doing the same thing faster, and the wrappers are paying for the privilege. Every category that proves out on Claude becomes the next thing Anthropic ships.\n\nThe easy reply: \"they don't train on enterprise data.\" Correct. https://t.co/kD4XJJvTzF",
+      "created_time": "2026-05-10T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/aakashgupta/status/2053444458361028712",
       "learning_score": 3
     }
   ],
   "community_headlines": [
     {
-      "url": "https://blog.himanshuanand.com/2026/05/the-90-day-disclosure-policy-is-dead/",
-      "author": "r4um",
-      "item_id": "hn:48091849",
-      "headline": "A security researcher argues __the 90-day disclosure policy is dead__ and needs rethinking.",
+      "url": "https://www.edelman.com/sites/g/files/aatuss191/files/2025-11/2025%20Edelman%20Trust%20Barometer%20Flash%20Poll%20Trust%20and%20Artificial%20Intelligence%20at%20a%20Crossroads%201.pdf",
+      "author": "nilen",
+      "item_id": "hn:48092053",
+      "headline": "Edelman data shows AI trust in China sits at __87% versus just 32% in the US__ — a staggering gap.",
       "subreddit": null,
-      "source_text": "The 90 Day disclosure policy is dead",
+      "source_text": "Why is AI trust so much higher in China (87%) than the US (32%)? [pdf]",
       "source_type": "hacker_news",
-      "created_time": "2026-05-11T06:57:28+00:00",
+      "created_time": "2026-05-11T07:31:04+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://blog.himanshuanand.com/2026/05/the-90-day-disclosure-policy-is-dead",
+      "canonical_url": "https://edelman.com/sites/g/files/aatuss191/files/2025-11/2025%20Edelman%20Trust%20Barometer%20Flash%20Poll%20Trust%20and%20Artificial%20Intelligence%20at%20a%20Crossroads%201.pdf",
       "learning_score": 3
     },
     {
-      "url": "https://auth0.com/blog/ai-agents-have-two-souls-you-control-only-one/",
-      "author": "andychiare",
-      "item_id": "hn:48091749",
-      "headline": "Auth0 argues AI agents __have two souls__ — the one you prompt and the one the model decides on its own.",
+      "url": "https://philippkuhnhardt.de/blog/sandbox-your-agents/",
+      "author": "Extasia785",
+      "item_id": "hn:48092322",
+      "headline": "A practical guide to why you should __sandbox your AI agents__ before they touch anything real.",
       "subreddit": null,
-      "source_text": "AI Agents Have Two Souls. You Only Control One",
+      "source_text": "Sandbox Your Agents",
       "source_type": "hacker_news",
-      "created_time": "2026-05-11T06:42:15+00:00",
+      "created_time": "2026-05-11T08:09:14+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://auth0.com/blog/ai-agents-have-two-souls-you-control-only-one",
-      "learning_score": 3
-    },
-    {
-      "url": "https://www.hanselman.com/blog/bring-kindness-back-to-open-source",
-      "author": "mashally",
-      "item_id": "hn:48092026",
-      "headline": "Scott Hanselman makes the case for __bringing kindness back to open source__.",
-      "subreddit": null,
-      "source_text": "Bring Kindness Back to Open Source",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-11T07:26:40+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://hanselman.com/blog/bring-kindness-back-to-open-source",
+      "canonical_url": "https://philippkuhnhardt.de/blog/sandbox-your-agents",
       "learning_score": 2
     },
     {
-      "url": "https://wuphf.team",
-      "author": "najmuzzaman",
-      "item_id": "hn:48091975",
-      "headline": "Wuphf builds AI agents that __prevent context drift through gossip__ — agents literally talk to each other to stay aligned.",
+      "url": "https://nickcheng0921.github.io/2026/05/10/thoughts-on-programbench-part1.html",
+      "author": "porterbaseball",
+      "item_id": "hn:48092295",
+      "headline": "Independent repro of Meta's ProgramBench finds __significant variance across runs__ — raising questions about the benchmark's reliability.",
       "subreddit": null,
-      "source_text": "Show HN: AI agents who prevent context drift through gossip",
+      "source_text": "ProgramBench (Meta) Repro: variance across runs and findings",
       "source_type": "hacker_news",
-      "created_time": "2026-05-11T07:16:59+00:00",
+      "created_time": "2026-05-11T08:05:32+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://wuphf.team",
+      "canonical_url": "https://nickcheng0921.github.io/2026/05/10/thoughts-on-programbench-part1.html",
       "learning_score": 2
     },
     {
-      "url": "https://arstechnica.com/science/2026/05/manufacturing-qubits-that-can-move/",
-      "author": "rippeltippel",
-      "item_id": "hn:48091926",
-      "headline": "Researchers figure out how to __manufacture qubits that can move__, a step toward scalable quantum hardware.",
+      "url": "https://github.blog/changelog/2026-05-08-upcoming-deprecation-of-grok-code-fast-1/",
+      "author": "whtsky",
+      "item_id": "hn:48092231",
+      "headline": "GitHub Copilot is __deprecating Grok Code Fast 1__ — one less model in the dropdown.",
       "subreddit": null,
-      "source_text": "Manufacturing qubits that can move",
+      "source_text": "GitHub Copilot is deprecating Grok Code Fast 1",
       "source_type": "hacker_news",
-      "created_time": "2026-05-11T07:08:37+00:00",
+      "created_time": "2026-05-11T07:54:26+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://arstechnica.com/science/2026/05/manufacturing-qubits-that-can-move",
+      "canonical_url": "https://github.blog/changelog/2026-05-08-upcoming-deprecation-of-grok-code-fast-1",
       "learning_score": 2
     },
     {
-      "url": "https://pub.towardsai.net/constrained-decoding-forcing-llms-to-respect-your-taxonomy-3aaaf13329f9",
-      "author": "sachinkalsi",
-      "item_id": "hn:48091904",
-      "headline": "A practical guide to __constrained decoding__ — forcing LLMs to output only valid labels from your taxonomy.",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3757493",
+      "author": "luu",
+      "item_id": "hn:48092074",
+      "headline": "New ACM paper makes the case for __requiring autonomous driving companies to share safety-critical data__.",
       "subreddit": null,
-      "source_text": "Constrained Decoding: Forcing LLMs to Respect Your Taxonomy",
+      "source_text": "Encouraging Autonomous Driving Companies to Share Safety-Critical Data",
       "source_type": "hacker_news",
-      "created_time": "2026-05-11T07:06:03+00:00",
+      "created_time": "2026-05-11T07:33:34+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://pub.towardsai.net/constrained-decoding-forcing-llms-to-respect-your-taxonomy-3aaaf13329f9",
+      "canonical_url": "https://dl.acm.org/doi/pdf/10.1145/3757493",
+      "learning_score": 2
+    },
+    {
+      "url": "https://english.elpais.com/technology/2026-04-13/detachment-201-the-us-army-unit-led-by-tech-executives.html",
+      "author": "BaudouinVH",
+      "item_id": "hn:48092067",
+      "headline": "Detachment 201 is a __US Army unit led by tech executives__ — El País goes inside the operation.",
+      "subreddit": null,
+      "source_text": "Detachment 201, the US Army unit led by tech executives",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-11T07:33:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://english.elpais.com/technology/2026-04-13/detachment-201-the-us-army-unit-led-by-tech-executives.html",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-11T07:30:28.662239+00:00",
+    "generated_at": "2026-05-11T08:17:58.051119+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "586c7f8438502a4afadb781a68d60a347b757e90a52aa8a48591564eddb84f27"
+  "content_hash": "553fa32674e2bf99cb4223a8d90138768c4241507c735842da88479abf11b918"
 }
