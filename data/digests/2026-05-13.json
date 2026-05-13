@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 3245,
+      "source": "Guardian AI",
+      "title": "Nvidia’s Jensen Huang joins Trump as tech dominates China trip",
+      "url": "https://www.theguardian.com/technology/2026/may/13/nvidia-jensen-huang-joins-trump-as-tech-dominates-china-trip",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia CEO Jensen Huang has joined Donald Trump's delegation to China after a last-minute invitation, joining other major tech and business leaders including Elon Musk, Tim Cook, and Goldman Sachs' David Solomon for a 36-hour meeting, underscoring the central role of AI and technology in US-China relations.",
+      "opinion": "This delegation composition speaks volumes about the current geopolitical landscape, where AI chip technology has become a critical lever in US-China relations. Huang's inclusion is particularly significant given Nvidia's central role in AI hardware and the ongoing US export controls on advanced chips to China. Having the heads of Nvidia, Tesla, Apple, and Goldman Sachs together signals that Trump is using corporate diplomacy as a key tool, but it also raises concerns about potential conflicts…",
+      "image_url": "https://i.guim.co.uk/img/media/09e8ebedefc1bb9bac94ec3c7c55104f1079452e/1585_596_4221_3379/master/4221.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ebfbc7c21b8595010788e65b16b58021",
+      "published_at": "2026-05-13T07:41:26+00:00",
+      "fetched_at": "2026-05-13T08:04:06.682689+00:00"
+    },
+    {
       "id": 3243,
       "source": "Claude Code Changelog",
       "title": "v2.1.140",
@@ -96,25 +109,25 @@
       "image_url": "https://i.guim.co.uk/img/media/32632f8e3e5cd1d4ffd991d30c5f14164f102b42/385_0_3853_3083/master/3853.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b6b8a219e38abeb7dcb7b75f1bc05d82",
       "published_at": "2026-05-12T20:48:15+00:00",
       "fetched_at": "2026-05-13T07:12:39.24595+00:00"
-    },
-    {
-      "id": 3231,
-      "source": "The Verge AI",
-      "title": "Meta won’t let you block its AI account on Threads",
-      "url": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Meta is testing a new Threads feature that lets users tag a Meta AI account to get answers and context in conversations, similar to how X users tag Grok. However, users discovered they cannot block the Meta AI account, sparking widespread backlash. The feature is initially being tested in Argentina, Malaysia, Mexico, Saudi Arabia, and Singapore. Users attempting to block the AI account encountered errors, and 'Users cannot block Meta AI' became a trending topic on Threads with over one million posts. Meta has been investing heavily in AI to compete with OpenAI and Google, recently launching a model called Muse Spark.",
-      "opinion": "This is a tone-deaf move by Meta that prioritizes its AI integration strategy over user autonomy. The inability to block an AI account fundamentally undermines the purpose of blocking features, which exist to give users control over their experience. It's particularly concerning because it signals that Meta views its AI as a privileged entity exempt from the same rules governing all other accounts. The backlash is entirely predictable and justified — forcing AI interactions on users who don't w…",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24774110/STK156_Instagram_threads_1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "published_at": "2026-05-12T20:35:23+00:00",
-      "fetched_at": "2026-05-13T07:12:48.019111+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 3245,
+          "source": "Guardian AI",
+          "title": "Nvidia’s Jensen Huang joins Trump as tech dominates China trip",
+          "url": "https://www.theguardian.com/technology/2026/may/13/nvidia-jensen-huang-joins-trump-as-tech-dominates-china-trip",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia CEO Jensen Huang has joined Donald Trump's delegation to China after a last-minute invitation, joining other major tech and business leaders including Elon Musk, Tim Cook, and Goldman Sachs' David Solomon for a 36-hour meeting, underscoring the central role of AI and technology in US-China relations.",
+          "opinion": "This delegation composition speaks volumes about the current geopolitical landscape, where AI chip technology has become a critical lever in US-China relations. Huang's inclusion is particularly significant given Nvidia's central role in AI hardware and the ongoing US export controls on advanced chips to China. Having the heads of Nvidia, Tesla, Apple, and Goldman Sachs together signals that Trump is using corporate diplomacy as a key tool, but it also raises concerns about potential conflicts…",
+          "image_url": "https://i.guim.co.uk/img/media/09e8ebedefc1bb9bac94ec3c7c55104f1079452e/1585_596_4221_3379/master/4221.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ebfbc7c21b8595010788e65b16b58021",
+          "published_at": "2026-05-13T07:41:26+00:00",
+          "fetched_at": "2026-05-13T08:04:06.682689+00:00"
+        },
         {
           "id": 3243,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://i.guim.co.uk/img/media/32632f8e3e5cd1d4ffd991d30c5f14164f102b42/385_0_3853_3083/master/3853.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b6b8a219e38abeb7dcb7b75f1bc05d82",
           "published_at": "2026-05-12T20:48:15+00:00",
           "fetched_at": "2026-05-13T07:12:39.24595+00:00"
-        },
-        {
-          "id": 3231,
-          "source": "The Verge AI",
-          "title": "Meta won’t let you block its AI account on Threads",
-          "url": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Meta is testing a new Threads feature that lets users tag a Meta AI account to get answers and context in conversations, similar to how X users tag Grok. However, users discovered they cannot block the Meta AI account, sparking widespread backlash. The feature is initially being tested in Argentina, Malaysia, Mexico, Saudi Arabia, and Singapore. Users attempting to block the AI account encountered errors, and 'Users cannot block Meta AI' became a trending topic on Threads with over one million posts. Meta has been investing heavily in AI to compete with OpenAI and Google, recently launching a model called Muse Spark.",
-          "opinion": "This is a tone-deaf move by Meta that prioritizes its AI integration strategy over user autonomy. The inability to block an AI account fundamentally undermines the purpose of blocking features, which exist to give users control over their experience. It's particularly concerning because it signals that Meta views its AI as a privileged entity exempt from the same rules governing all other accounts. The backlash is entirely predictable and justified — forcing AI interactions on users who don't w…",
-          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24774110/STK156_Instagram_threads_1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-          "published_at": "2026-05-12T20:35:23+00:00",
-          "fetched_at": "2026-05-13T07:12:48.019111+00:00"
         }
       ]
     }
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/Microsoft365Dev/status/2054120648742482399",
       "author": "Microsoft365Dev",
-      "headline": "__Cursor is now available inside Microsoft Teams__ — mention it in any channel to delegate tasks or pull information from Cursor into your workflow.",
+      "headline": "__Cursor is now available in Microsoft Teams__ — mention it in any channel to delegate tasks or pull information directly into your workflow.",
       "tweet_id": "35f1eba9-b6bc-817b-a538-cf90de75cbbf",
       "source_text": "✨ Cursor is now available in Microsoft Teams\n\nMention @Cursor in any channel to delegate tasks to an agent or pull information from Cursor into Teams\n\nLearn more → https://t.co/5iwV8mo6m2\n\n#Microsoft365 #MicrosotTeams #Copilot https://t.co/E5Yfel4HAK",
       "created_time": "2026-05-13T02:02:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/raroque/status/2054245009122082995",
       "author": "raroque",
-      "headline": "Boris Cherny's favorite Claude Code feature isn't /remote-control — it's a __different way to use remote control__ entirely.",
+      "headline": "Boris Cherny's favorite Claude Code feature isn't /remote-control — it's a different way to __remote-control the agent__ that most users don't know about.",
       "tweet_id": "35e1eba9-b6bc-8119-94f2-dc7acdce2c8f",
       "source_text": "I asked @bcherny what his favorite claude code feature was \n\nhe said it’s remote control \n\nBUT not using “/remote-control” 👀\n\nLearned something new! https://t.co/gN6YHurRil",
       "created_time": "2026-05-12T20:17:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/0xMovez/status/2054250035211116589",
       "author": "0xMovez",
-      "headline": "A Google Cloud AI engineer showed how to go from idea to __deployed app in 26 minutes__ using Claude and Google Cloud. Free walkthrough, no course needed.",
+      "headline": "A Google Cloud AI engineer showed how to go from idea to __deployed app in 26 minutes__ using Claude and Google Cloud. Free walkthrough, worth more than any paid course.",
       "tweet_id": "35e1eba9-b6bc-810b-a203-ec49d6e53d64",
       "source_text": "Google Cloud AI engineer just showed how they go from idea to deployed app at Google in 30-minutes using Claude.\n\n26-minutes. free. by Google AI team. \n\none person + Claude + Google Cloud = a full engineering org running on a laptop.\n\nworth more than any $500 vibe-coding course. https://t.co/TJak54zf4X https://t.co/ehjHplYbQD",
       "created_time": "2026-05-12T20:17:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/Av1dlive/status/2054268876935041389",
       "author": "Av1dlive",
-      "headline": "Linas Beliunas argues Andrew Ng just ended the AI jobs debate: software dev demand is rising, __AI-exposed industries show above-trend wage growth__, and open PM roles haven't been higher since 2022.",
+      "headline": "Eric Schmidt argues that if you really want to make money right now, the move is to __found an agentic AI company__.",
       "tweet_id": "35e1eba9-b6bc-81b6-8585-e79bb3a2e7d8",
       "source_text": "\"if you really want to make money, it's actually easy. found an agentic AI company.\"\n\nthese are the exact words. by Eric Schimdt (ex-CEO of Google)\n\n[if I had 7 days to master agents and how to use them to automate workflows:]\n\n→ read Anthropic: \"Building Effective Agents\"\n→ https://t.co/Ry2hdn1QjA https://t.co/u19IeLC9ht",
       "created_time": "2026-05-12T19:52:00.000Z",
@@ -286,89 +286,89 @@
   ],
   "community_headlines": [
     {
-      "url": "https://www.youtube.com/watch?v=XA84pSrPHS0",
-      "author": "mpweiher",
-      "item_id": "hn:48118660",
-      "headline": "The case that __AI will hit a wall in 2026__ if nothing changes about current approaches.",
+      "url": "https://x-x.codes/posts/supplementary-guide-to-code-reviews",
+      "author": "alex_x",
+      "item_id": "hn:48118876",
+      "headline": "A code review guide __written for humans, now repurposed as a prompt__ — the lifecycle of documentation in 2026.",
       "subreddit": null,
-      "source_text": "AI Will Hit a Wall in 2026, if nothing changes [video]",
+      "source_text": "Wrote this for humans, now I use it as a prompt",
       "source_type": "hacker_news",
-      "created_time": "2026-05-13T06:56:16+00:00",
+      "created_time": "2026-05-13T07:28:11+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=XA84pSrPHS0",
+      "canonical_url": "https://x-x.codes/posts/supplementary-guide-to-code-reviews",
       "learning_score": 3
     },
     {
-      "url": "https://wiki.c2.com/?GeneraOs",
+      "url": "https://github.com/open-energy-transition/grid2poster",
+      "author": "lyoncy",
+      "item_id": "hn:48118783",
+      "headline": "Grid2Poster lets you __design posters showcasing your country's electrical grid__ — unexpectedly beautiful infrastructure dataviz.",
+      "subreddit": null,
+      "source_text": "Show HN: Design posters showcasing your country's electrical grid",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-13T07:14:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/open-energy-transition/grid2poster",
+      "learning_score": 3
+    },
+    {
+      "url": "https://shotglass.app",
+      "author": "jakemanger",
+      "item_id": "hn:48119092",
+      "headline": "__Shotglass__ lets you record screen demos that look like Apple commercials — no motion graphics degree required.",
+      "subreddit": null,
+      "source_text": "Show HN: I made a screen recording app to make demos like an Apple commercial",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-13T08:02:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://shotglass.app",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/apernet/hysteria",
+      "author": "steveharing1",
+      "item_id": "hn:48119023",
+      "headline": "Hysteria is a __QUIC-based proxy designed to resist censorship__, and it's gaining traction on GitHub.",
+      "subreddit": null,
+      "source_text": "Hysteria: A QUIC-Based Proxy Designed to Resist Censorship",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-13T07:51:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/apernet/hysteria",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/ajensenwaud/recursant",
+      "author": "hestefisk",
+      "item_id": "hn:48118988",
+      "headline": "Recursant is a __mesh-based control plane for AI agents__ — think service mesh, but for coordinating autonomous systems.",
+      "subreddit": null,
+      "source_text": "Show HN: Recursant, a mesh-based control plane for AI agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-13T07:46:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/ajensenwaud/recursant",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.khronos.org/blog/opencl-3.1-is-here",
       "author": "tosh",
-      "item_id": "hn:48118857",
-      "headline": "__Genera OS__: the Lisp Machine operating system that still inspires OS designers decades later.",
+      "item_id": "hn:48118968",
+      "headline": "Khronos releases __OpenCL 3.1__, keeping the GPU compute standard alive alongside the Vulkan wave.",
       "subreddit": null,
-      "source_text": "Genera OS",
+      "source_text": "OpenCL 3.1",
       "source_type": "hacker_news",
-      "created_time": "2026-05-13T07:25:15+00:00",
+      "created_time": "2026-05-13T07:43:36+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://wiki.c2.com?GeneraOs=",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.androidauthority.com/google-aluminium-os-leak-3665979/",
-      "author": "thunderbong",
-      "item_id": "hn:48118855",
-      "headline": "A leaked __16-minute video__ reveals Google's mysterious \"Aluminium OS\" project.",
-      "subreddit": null,
-      "source_text": "Leak reveals Google's Aluminium OS with a 16-minute video",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-13T07:24:53+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://androidauthority.com/google-aluminium-os-leak-3665979",
-      "learning_score": 2
-    },
-    {
-      "url": "https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu/",
-      "author": "aequitas",
-      "item_id": "hn:48118763",
-      "headline": "European governments exposed: __3,000 tracking sites, 1,000 phpMyAdmins__, and 99% poorly encrypted email.",
-      "subreddit": null,
-      "source_text": "European governments: 3.000 tracking sites, 1.000 phpMyAdmins, and 99% poorly",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-13T07:11:17+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://internetcleanup.foundation/2026/05/european-governments-3000-tracking-sites-1000-phpmyadmins-and-99pct-poorly-encrypted-email-introducing-securitybaseline-eu",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.mdpi.com/2226-4310/6/11/123",
-      "author": "rbanffy",
-      "item_id": "hn:48118751",
-      "headline": "Brazil is building a __dedicated launch system for the small satellite market__.",
-      "subreddit": null,
-      "source_text": "A Brazilian Space Launch System for the Small Satellite Market",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-13T07:10:01+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://mdpi.com/2226-4310/6/11/123",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/DO-SAY-GO/freelang",
-      "author": "keepamovin",
-      "item_id": "hn:48118749",
-      "headline": "FreedomLang: a small AOT language where __the compiler is just JavaScript__.",
-      "subreddit": null,
-      "source_text": "Show HN: FreedomLang, a small AOT language where the compiler is just JavaScript",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-13T07:09:32+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/DO-SAY-GO/freelang",
+      "canonical_url": "https://khronos.org/blog/opencl-3.1-is-here",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-13T07:28:56.008177+00:00",
+    "generated_at": "2026-05-13T08:06:02.755789+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "640ad806a76c0dd74f826dd672b8b0e945ba33d435d64a2b84fb691266b73ba0"
+  "content_hash": "6f8e9fe80a896786214212cc24d26f04746aace361cff4825483273d434e9b22"
 }
