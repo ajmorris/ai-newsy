@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-12T00:00:00Z",
-  "issueCount": 22,
+  "generatedAt": "2026-05-13T00:00:00Z",
+  "issueCount": 23,
   "latestIssue": {
-    "slug": "2026-05-12",
-    "digestDate": "2026-05-12",
-    "displayDate": "May 12, 2026",
-    "issueNumber": "60512",
-    "subject": "ISSUE 60512 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Mira Murati's new startup just dropped its first big idea, and it's a fascinating one \u2014 \"interaction models\" that can listen and respond simultaneously, like a real conversation instead of the awkward walkie-talkie exchanges we're used to with AI. Beyond that, today's digest covers a wide sweep: OpenAI firing back at Anthropic with its own cybersecurity platform, GM swapping out hundreds of IT workers for AI-skilled replacements, Australian ministers pushing datacenters to go renewable, and a nasty new Linux vulnerability that's already being exploited in the wild. Grab your coffee \u2014 there's a lot to unpack.",
+    "slug": "2026-05-13",
+    "digestDate": "2026-05-13",
+    "displayDate": "May 13, 2026",
+    "issueNumber": "60513",
+    "subject": "ISSUE 60513 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The courtroom drama between Sam Altman and Elon Musk is stealing headlines as Altman takes the stand in a trial that could reshape perceptions of both tech titans\u2014but today's digest spans far beyond Silicon Valley rivalries. From a $5 billion defense AI mega-round to Medicare quietly building a payment model tailor-made for AI agents, to Meta users discovering they literally *can't* block the company's AI on Threads, it's a day that shows artificial intelligence weaving itself into everything from battlefields to flower beds (yes, the Chelsea Flower Show is having an AI meltdown). Grab your coffee\u2014there's a lot to unpack.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-12.html",
-    "contentHash": "780138dc7b1e603e455838931e4e60229b74fd639cf30c1344a0e42dc4331060"
+    "urlPath": "/issues/2026-05-13.html",
+    "contentHash": "6f8e9fe80a896786214212cc24d26f04746aace361cff4825483273d434e9b22"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-13",
+      "digestDate": "2026-05-13",
+      "displayDate": "May 13, 2026",
+      "issueNumber": "60513",
+      "subject": "ISSUE 60513 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The courtroom drama between Sam Altman and Elon Musk is stealing headlines as Altman takes the stand in a trial that could reshape perceptions of both tech titans\u2014but today's digest spans far beyond Silicon Valley rivalries. From a $5 billion defense AI mega-round to Medicare quietly building a payment model tailor-made for AI agents, to Meta users discovering they literally *can't* block the company's AI on Threads, it's a day that shows artificial intelligence weaving itself into everything from battlefields to flower beds (yes, the Chelsea Flower Show is having an AI meltdown). Grab your coffee\u2014there's a lot to unpack.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-13.html",
+      "contentHash": "6f8e9fe80a896786214212cc24d26f04746aace361cff4825483273d434e9b22"
+    },
     {
       "slug": "2026-05-12",
       "digestDate": "2026-05-12",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-02.html",
       "contentHash": "1ef174d1be52716c51b8a741ec9531a290cded1297279cfa276a8cb78bf009eb"
-    },
-    {
-      "slug": "2026-05-01",
-      "digestDate": "2026-05-01",
-      "displayDate": "May 01, 2026",
-      "issueNumber": "60501",
-      "subject": "ISSUE 60501 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Microsoft is betting that even lawyers \u2014 perhaps the most cautious professionals on the planet \u2014 are ready to let AI handle their contracts, launching a new Legal Agent embedded right in Word that follows real legal workflows for clause-by-clause review. It's a bold move that captures today's biggest theme: AI pushing deeper into high-stakes, trust-dependent professions, from legal offices to doctor's visits to job interviews (where candidates are, let's say, *less* than thrilled). Today's digest also covers a brewing White House-Anthropic standoff, a Christian phone network blocking content at the infrastructure level, and the surprisingly philosophical question of whether robot athletes can ever make us care.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-01.html",
-      "contentHash": "81a69d669af56fd04ddc4a93e0679984f0854f7dbc894a7fa717953a208fcdfe"
     }
   ]
 }
