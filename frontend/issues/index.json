@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-13T00:00:00Z",
-  "issueCount": 23,
+  "generatedAt": "2026-05-14T00:00:00Z",
+  "issueCount": 24,
   "latestIssue": {
-    "slug": "2026-05-13",
-    "digestDate": "2026-05-13",
-    "displayDate": "May 13, 2026",
-    "issueNumber": "60513",
-    "subject": "ISSUE 60513 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The courtroom drama between Sam Altman and Elon Musk is stealing headlines as Altman takes the stand in a trial that could reshape perceptions of both tech titans\u2014but today's digest spans far beyond Silicon Valley rivalries. From a $5 billion defense AI mega-round to Medicare quietly building a payment model tailor-made for AI agents, to Meta users discovering they literally *can't* block the company's AI on Threads, it's a day that shows artificial intelligence weaving itself into everything from battlefields to flower beds (yes, the Chelsea Flower Show is having an AI meltdown). Grab your coffee\u2014there's a lot to unpack.",
+    "slug": "2026-05-14",
+    "digestDate": "2026-05-14",
+    "displayDate": "May 14, 2026",
+    "issueNumber": "60514",
+    "subject": "ISSUE 60514 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The question of who controls what AI tells us is taking center stage today, from a former Meta news chief launching a company to benchmark AI accuracy on high-stakes topics, to UCF graduates booing a commencement speaker's rosy AI predictions, to Anthropic muscling into legal tech and potentially disrupting the very companies built on its models. It's a day that underscores a growing tension: as AI embeds itself deeper into how we work, learn, and create, the fights over who shapes it\u2014and who gets left behind\u2014are only intensifying. We've also got Notion opening its doors to AI agents, Microsoft letting Copilot read all your tabs, Musk's xAI dodging pollution rules in Mississippi, and more.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-13.html",
-    "contentHash": "6f8e9fe80a896786214212cc24d26f04746aace361cff4825483273d434e9b22"
+    "urlPath": "/issues/2026-05-14.html",
+    "contentHash": "392369b80bc4104c4fccdab1ed444b5d5f4e6f66b76d35b383a844c81410dd67"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-14",
+      "digestDate": "2026-05-14",
+      "displayDate": "May 14, 2026",
+      "issueNumber": "60514",
+      "subject": "ISSUE 60514 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The question of who controls what AI tells us is taking center stage today, from a former Meta news chief launching a company to benchmark AI accuracy on high-stakes topics, to UCF graduates booing a commencement speaker's rosy AI predictions, to Anthropic muscling into legal tech and potentially disrupting the very companies built on its models. It's a day that underscores a growing tension: as AI embeds itself deeper into how we work, learn, and create, the fights over who shapes it\u2014and who gets left behind\u2014are only intensifying. We've also got Notion opening its doors to AI agents, Microsoft letting Copilot read all your tabs, Musk's xAI dodging pollution rules in Mississippi, and more.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-14.html",
+      "contentHash": "392369b80bc4104c4fccdab1ed444b5d5f4e6f66b76d35b383a844c81410dd67"
+    },
     {
       "slug": "2026-05-13",
       "digestDate": "2026-05-13",
@@ -133,17 +144,6 @@
       "articleCount": 6,
       "urlPath": "/issues/2026-05-03.html",
       "contentHash": "ba5624513ec43c151fc131663d87dff172e451ee7d6534e38d547033f4d150d4"
-    },
-    {
-      "slug": "2026-05-02",
-      "digestDate": "2026-05-02",
-      "displayDate": "May 02, 2026",
-      "issueNumber": "60502",
-      "subject": "ISSUE 60502 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The Musk v. OpenAI trial is dominating headlines this week, with Elon Musk delivering a bombshell courtroom admission that his own xAI distills OpenAI's models \u2014 all while arguing \"you can't steal a charity\" and pushing to oust Sam Altman from the company he helped fund. But that's far from the only big story today: the Pentagon just locked in AI deals with seven major tech companies (notably *without* Anthropic, which is fighting back over ethical guardrails), Meta is making a serious push into humanoid robotics with a new acquisition, and a major DDoS attack has knocked Ubuntu's infrastructure offline at the worst possible time. It's a packed news day \u2014 let's dive in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-02.html",
-      "contentHash": "1ef174d1be52716c51b8a741ec9531a290cded1297279cfa276a8cb78bf009eb"
     }
   ]
 }
