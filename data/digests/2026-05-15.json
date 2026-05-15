@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/AlfieJCarter/status/2054989729767051434",
       "author": "AlfieJCarter",
-      "headline": "Alfie Carter spent 55 hours documenting exactly how GTM engineers run __125 skills across 6 layers__ for lead enrichment, outbound sequencing, and programmatic content.",
+      "headline": "Alfie Carter spent 55 hours documenting exactly how GTM engineers run __125 skills across 6 layers__ — covering lead enrichment, outbound sequencing, LinkedIn content, and programmatic SEO.",
       "tweet_id": "3611eba9-b6bc-8145-807d-d538f39e4000",
       "source_text": "I've dedicated 55 hours to creating a complete breakdown of the GTM Engineer's Full Stack and exactly how GTM engineers are running 125 skills across 6 layers for free.\n\nA plain English guide you can use for lead enrichment, outbound sequencing, LinkedIn content, programmatic https://t.co/UWcfTbd3oS",
       "created_time": "2026-05-15T02:42:00.000Z",
@@ -244,19 +244,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/aakashgupta/status/2055054437987795316",
-      "author": "aakashgupta",
-      "headline": "Aakash Gupta calls this the __most complete Claude mastery breakdown__ he's seen — covering Skills, MCP connectors, the Skills Marketplace, and Strategy Canvas in one session.",
-      "tweet_id": "3611eba9-b6bc-812f-920a-f6de55a361c1",
-      "source_text": "This guy literally broke down everything you need to master Claude:\n\n6:07 - Why to Stop Using Chat\n9:56 - Cowork vs Code vs Dispatch\n18:44 - Skills and MCP Connectors\n25:03 - The Skills Marketplace\n29:06 - Strategy Canvas Demo\n35:14 - Skill Iteration Cycle\n40:46 - Why You Need https://t.co/RQCp8Thrzu",
-      "created_time": "2026-05-15T01:42:00.000Z",
-      "canonical_url": "https://twitter.com/aakashgupta/status/2055054437987795316",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/ClaudeDevs/status/2055069548672631218",
       "author": "ClaudeDevs",
-      "headline": "Useful API trick from Claude Devs: __pre-warm the prompt cache__ by sending your system prompt before the user prompt, so the real request hits a warm cache and cuts time-to-first-token.",
+      "headline": "Useful API trick from ClaudeDevs: __pre-warm the prompt cache__ by sending your system prompt before the user prompt to cut time-to-first-token on longer calls.",
       "tweet_id": "3611eba9-b6bc-813d-b4b3-ed4877ff1d43",
       "source_text": "Useful tip to cut time-to-first-token on longer prompts in the API: pre-warm the prompt cache.\n\nSend your system prompt before the user prompt. Claude writes it to the cache, but skips generating any output.\n\nWhen the real user request lands, it'll hit a warm cache. https://t.co/6BdEzbamr2",
       "created_time": "2026-05-15T01:42:00.000Z",
@@ -266,7 +256,7 @@
     {
       "url": "https://twitter.com/Av1dlive/status/2054948286403150017",
       "author": "Av1dlive",
-      "headline": "Two senior staff engineers at Airbnb gave a live lecture on how they actually build with agents in 2026 — after shipping __one of the most ambitious LLM-agent migrations in production__.",
+      "headline": "Two senior staff engineers at Airbnb gave a live lecture on how they actually build with agents in 2026 — after shipping __one of the most ambitious LLM-agent migrations__ in production.",
       "tweet_id": "3601eba9-b6bc-81d4-9e5a-fa8b33e70a69",
       "source_text": "in 15 minutes, 2 Senior Staff Engineers at Airbnb gave a Live Lecture on Agentic Coding  \n\nAirbnb already shipped one of the most ambitious LLM-agent migrations in production. \n\nTonight two of their senior engineers shows how they actually build with agents in 2026. \n\nMost https://t.co/tJmvU6S3LY https://t.co/u19IeLC9ht",
       "created_time": "2026-05-14T17:17:00.000Z",
@@ -276,26 +266,62 @@
     {
       "url": "https://twitter.com/Suryanshti777/status/2054849234948821424",
       "author": "Suryanshti777",
-      "headline": "Most people hitting Claude's usage limit are creating the problem themselves — unknowingly __forcing Claude to re-read entire contexts__ instead of managing tokens.",
+      "headline": "90% of people hitting Claude's usage limit are __forcing it to re-read their entire context__ every message, says Suryanshti — and it's fixable.",
       "tweet_id": "3601eba9-b6bc-81f6-9b9c-d610df604470",
       "source_text": "“Claude usage limit reached.”\n\nThat popup has probably killed more good workflows than bad prompting ever did.\n\nAnd honestly?\n\n90% of people hitting the limit are creating the problem themselves.\n\nNot because Claude is weak.\n\nBecause they’re unknowingly forcing Claude to re-read https://t.co/3o4ZVrrnNf",
       "created_time": "2026-05-14T17:17:00.000Z",
       "canonical_url": "https://twitter.com/Suryanshti777/status/2054849234948821424",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/sijlalhussain/status/2054880158394229017",
+      "author": "sijlalhussain",
+      "headline": "BCG data shows countries with the highest GenAI adoption also report the __highest fears around job loss__ — proximity to AI-enabled workflows is accelerating anxiety, not reducing it.",
+      "tweet_id": "3601eba9-b6bc-819e-8931-eae813fef9ea",
+      "source_text": "📍 High AI adoption is not reducing workforce anxiety. In many cases, it is accelerating it.\n\nAs BCG highlights, some of the countries with the highest rates of regular GenAI usage also report the highest fears around job loss. The closer employees get to AI-enabled workflows, https://t.co/MB0ItolhoS",
+      "created_time": "2026-05-14T16:12:00.000Z",
+      "canonical_url": "https://twitter.com/sijlalhussain/status/2054880158394229017",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
-      "url": "https://www.economist.com/finance-and-economics/2026/05/11/america-is-experiencing-a-productivity-miracle",
-      "author": "edward",
-      "item_id": "hn:48145565",
-      "headline": "The Economist declares America is experiencing a __productivity miracle__ — and tries to explain what's behind it.",
+      "url": "https://rosettacheck.com/testflight",
+      "author": "jonnokid",
+      "item_id": "hn:48145841",
+      "headline": "__Rosetta Check 2.0__ scans your Pro Tools, Logic, and Photoshop plugins for lingering Intel builds.",
       "subreddit": null,
-      "source_text": "America is experiencing a productivity miracle",
+      "source_text": "Rosetta Check 2.0 scans Pro Tools, Logic and Photoshop plugins for Intel builds",
       "source_type": "hacker_news",
-      "created_time": "2026-05-15T07:24:00+00:00",
+      "created_time": "2026-05-15T08:06:54+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://economist.com/finance-and-economics/2026/05/11/america-is-experiencing-a-productivity-miracle",
+      "canonical_url": "https://rosettacheck.com/testflight",
+      "learning_score": 2
+    },
+    {
+      "url": "https://vi65.sourceforge.net/",
+      "author": "rbanffy",
+      "item_id": "hn:48145734",
+      "headline": "Someone built __vi for the 6502__ and it works exactly like you'd hope.",
+      "subreddit": null,
+      "source_text": "VI65 Text Editor - vi for the 6502",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-15T07:48:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://vi65.sourceforge.net",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.anthropic.com/research/2028-ai-leadership",
+      "author": "pretext",
+      "item_id": "hn:48145722",
+      "headline": "Anthropic publishes __two scenarios for global AI leadership__ by 2028 — and neither is comfortable.",
+      "subreddit": null,
+      "source_text": "2028: Two scenarios for global AI leadership",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-15T07:46:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://anthropic.com/research/2028-ai-leadership",
       "learning_score": 2
     },
     {
@@ -312,23 +338,10 @@
       "learning_score": 2
     },
     {
-      "url": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
-      "author": "joozio",
-      "item_id": "hn:48145463",
-      "headline": "MIT Technology Review makes the case for __AI and data sovereignty__ in the age of autonomous systems.",
-      "subreddit": null,
-      "source_text": "Establishing AI and data sovereignty in the age of autonomous systems",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-15T07:08:01+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems",
-      "learning_score": 2
-    },
-    {
       "url": "https://news.ycombinator.com/item?id=48145453",
       "author": "rockballslab",
       "item_id": "hn:48145453",
-      "headline": "A single command that claims to __turn a bare VPS into an operational fortress__ in 15 minutes.",
+      "headline": "A script that turns a bare VPS into an __operational fortress in 15 minutes__ and one command.",
       "subreddit": null,
       "source_text": "Turn a bare VPS into an operational fortress in 15 minutes and 1 command",
       "source_type": "hacker_news",
@@ -341,7 +354,7 @@
       "url": "https://www.theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821",
       "author": "beardyw",
       "item_id": "hn:48145429",
-      "headline": "Cerebras bet on dinner plate-sized AI accelerators — today the company is __worth $66B__.",
+      "headline": "Cerebras bet on dinner plate-sized AI accelerators. Today it's __worth $66B__.",
       "subreddit": null,
       "source_text": "Cerebras risked dinner plate-sized AI accelerators. Today it's worth $66B",
       "source_type": "hacker_news",
@@ -349,26 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://theregister.com/ai-ml/2026/05/15/cerebras-wafer-scale-ai-bet-delivers-blockbuster-ipo/5240821",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.aol.com/finance/everyone-unhappy-meta-employees-describe-151500588.html",
-      "author": "01-_-",
-      "item_id": "hn:48145415",
-      "headline": "'Everyone is unhappy': Meta employees describe a grim internal mood as the company __plans 8,000 more layoffs__.",
-      "subreddit": null,
-      "source_text": "'Everyone is unhappy': Meta faces grim mood, plans 8k layoffs soon amid cuts",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-15T07:03:33+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://aol.com/finance/everyone-unhappy-meta-employees-describe-151500588.html",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-15T07:33:41.920202+00:00",
+    "generated_at": "2026-05-15T08:08:42.032806+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "da8ee12d495f0503d98d97954765ef190862a83233acabec74b825fde05f9ea3"
+  "content_hash": "9b9e1fdedc8112bb7171df0a285d9364dbadfcd8c4659e7915466bccf59cbeaf"
 }
