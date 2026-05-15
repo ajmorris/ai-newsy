@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-14T00:00:00Z",
-  "issueCount": 24,
+  "generatedAt": "2026-05-15T00:00:00Z",
+  "issueCount": 25,
   "latestIssue": {
-    "slug": "2026-05-14",
-    "digestDate": "2026-05-14",
-    "displayDate": "May 14, 2026",
-    "issueNumber": "60514",
-    "subject": "ISSUE 60514 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The question of who controls what AI tells us is taking center stage today, from a former Meta news chief launching a company to benchmark AI accuracy on high-stakes topics, to UCF graduates booing a commencement speaker's rosy AI predictions, to Anthropic muscling into legal tech and potentially disrupting the very companies built on its models. It's a day that underscores a growing tension: as AI embeds itself deeper into how we work, learn, and create, the fights over who shapes it\u2014and who gets left behind\u2014are only intensifying. We've also got Notion opening its doors to AI agents, Microsoft letting Copilot read all your tabs, Musk's xAI dodging pollution rules in Mississippi, and more.",
+    "slug": "2026-05-15",
+    "digestDate": "2026-05-15",
+    "displayDate": "May 15, 2026",
+    "issueNumber": "60515",
+    "subject": "ISSUE 60515 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The Musk v. Altman trial is stealing the spotlight today, with closing arguments delivering courtroom drama that reads more like a screenplay than a legal proceeding \u2014 from Musk's lawyer accidentally calling a co-defendant \"Greg Altman\" to a literal jackass trophy entering the evidentiary record. But beyond the courtroom theatrics, there's plenty more to dig into, including a talent exodus at Musk's SpaceXAI, OpenAI bringing Codex to your phone, and a fresh Claude Code update worth knowing about.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-14.html",
-    "contentHash": "392369b80bc4104c4fccdab1ed444b5d5f4e6f66b76d35b383a844c81410dd67"
+    "urlPath": "/issues/2026-05-15.html",
+    "contentHash": "9b9e1fdedc8112bb7171df0a285d9364dbadfcd8c4659e7915466bccf59cbeaf"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-15",
+      "digestDate": "2026-05-15",
+      "displayDate": "May 15, 2026",
+      "issueNumber": "60515",
+      "subject": "ISSUE 60515 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The Musk v. Altman trial is stealing the spotlight today, with closing arguments delivering courtroom drama that reads more like a screenplay than a legal proceeding \u2014 from Musk's lawyer accidentally calling a co-defendant \"Greg Altman\" to a literal jackass trophy entering the evidentiary record. But beyond the courtroom theatrics, there's plenty more to dig into, including a talent exodus at Musk's SpaceXAI, OpenAI bringing Codex to your phone, and a fresh Claude Code update worth knowing about.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-15.html",
+      "contentHash": "9b9e1fdedc8112bb7171df0a285d9364dbadfcd8c4659e7915466bccf59cbeaf"
+    },
     {
       "slug": "2026-05-14",
       "digestDate": "2026-05-14",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-04.html",
       "contentHash": "253e06828af876bfd0dc6c95be9854ef17402dea7a26f17433264e0e0ca8d5e4"
-    },
-    {
-      "slug": "2026-05-03",
-      "digestDate": "2026-05-03",
-      "displayDate": "May 03, 2026",
-      "issueNumber": "60503",
-      "subject": "ISSUE 60503 \u00b7 6 STORIES \u00b7 11 MIN READ",
-      "intro": "Hollywood is drawing a line in the sand on AI creativity \u2014 the Academy just banned AI-generated actors and scripts from Oscar eligibility, even as China's $14 billion microdrama industry races in the opposite direction, embracing AI tools to pump out addictive mobile content at unprecedented scale. It's a fascinating split that captures the global tug-of-war over AI's role in entertainment, and it's far from the only tension point today. We've also got community backlash against Australia's sprawling AI datacenters, a deep dive into the best AI dictation apps, and a timely warning about chatbot-related subscription scams you'll want to watch out for.",
-      "articleCount": 6,
-      "urlPath": "/issues/2026-05-03.html",
-      "contentHash": "ba5624513ec43c151fc131663d87dff172e451ee7d6534e38d547033f4d150d4"
     }
   ]
 }
