@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-15T00:00:00Z",
-  "issueCount": 25,
+  "generatedAt": "2026-05-16T00:00:00Z",
+  "issueCount": 26,
   "latestIssue": {
-    "slug": "2026-05-15",
-    "digestDate": "2026-05-15",
-    "displayDate": "May 15, 2026",
-    "issueNumber": "60515",
-    "subject": "ISSUE 60515 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The Musk v. Altman trial is stealing the spotlight today, with closing arguments delivering courtroom drama that reads more like a screenplay than a legal proceeding \u2014 from Musk's lawyer accidentally calling a co-defendant \"Greg Altman\" to a literal jackass trophy entering the evidentiary record. But beyond the courtroom theatrics, there's plenty more to dig into, including a talent exodus at Musk's SpaceXAI, OpenAI bringing Codex to your phone, and a fresh Claude Code update worth knowing about.",
+    "slug": "2026-05-16",
+    "digestDate": "2026-05-16",
+    "displayDate": "May 16, 2026",
+    "issueNumber": "60516",
+    "subject": "ISSUE 60516 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The courtroom drama between Elon Musk and Sam Altman stole the spotlight this week as the blockbuster trial wrapped up with both sides landing heavy blows \u2014 testimony about alleged lying, power grabs, and a potential $134 billion unwinding of OpenAI's restructuring now sits in the jury's hands. But that's far from the only OpenAI news: the company also acquired a voice-cloning platform and reshuffled its leadership to go all-in on AI agents. Beyond the OpenAI orbit, today's digest covers YouTube giving everyone deepfake detection powers, ArXiv cracking down on AI slop in research papers, and how AI's insatiable energy appetite is hitting Lake Tahoe vacationers where it hurts \u2014 their electricity bills.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-15.html",
-    "contentHash": "9b9e1fdedc8112bb7171df0a285d9364dbadfcd8c4659e7915466bccf59cbeaf"
+    "urlPath": "/issues/2026-05-16.html",
+    "contentHash": "50adc6e698e5ccf6bfed0b08126b2ca8861076691482d89fe27110919f171e26"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-16",
+      "digestDate": "2026-05-16",
+      "displayDate": "May 16, 2026",
+      "issueNumber": "60516",
+      "subject": "ISSUE 60516 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The courtroom drama between Elon Musk and Sam Altman stole the spotlight this week as the blockbuster trial wrapped up with both sides landing heavy blows \u2014 testimony about alleged lying, power grabs, and a potential $134 billion unwinding of OpenAI's restructuring now sits in the jury's hands. But that's far from the only OpenAI news: the company also acquired a voice-cloning platform and reshuffled its leadership to go all-in on AI agents. Beyond the OpenAI orbit, today's digest covers YouTube giving everyone deepfake detection powers, ArXiv cracking down on AI slop in research papers, and how AI's insatiable energy appetite is hitting Lake Tahoe vacationers where it hurts \u2014 their electricity bills.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-16.html",
+      "contentHash": "50adc6e698e5ccf6bfed0b08126b2ca8861076691482d89fe27110919f171e26"
+    },
     {
       "slug": "2026-05-15",
       "digestDate": "2026-05-15",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-05.html",
       "contentHash": "ca17712708c759a9e9c32ada219db003d717a3396cd9027c5d31024c2a6a782f"
-    },
-    {
-      "slug": "2026-05-04",
-      "digestDate": "2026-05-04",
-      "displayDate": "May 04, 2026",
-      "issueNumber": "60504",
-      "subject": "ISSUE 60504 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Australia's social media ban for minors is already drawing fire from tech heavyweights, with Wikipedia founder Jimmy Wales calling it an \"unmitigated disaster\" \u2014 and that's just one of several stories today where well-intentioned tech policy is colliding with messy real-world consequences, from Kenya's AI healthcare algorithm pushing costs onto the poorest citizens to UK watchdogs sounding the alarm on unchecked facial recognition. We've also got a Harvard study where AI outperformed ER doctors at diagnosis, an artist fighting back against an AI startup that allegedly stole his iconic \"This is fine\" comic, and the delightful story of how a squirrel-loving content creator built 2026's hottest camera app.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-04.html",
-      "contentHash": "253e06828af876bfd0dc6c95be9854ef17402dea7a26f17433264e0e0ca8d5e4"
     }
   ]
 }
