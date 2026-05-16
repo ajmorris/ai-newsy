@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/RobbyMcCullough/status/2055355122465812596",
       "author": "RobbyMcCullough",
-      "headline": "FigJam opened to coding agents — the __whiteboard now sketches architecture before any code is written__, making designers load-bearing in the dev loop.",
+      "headline": "FigJam opened to coding agents — the __whiteboard now sketches architecture before any code is written__, handing designers a load-bearing role in the dev loop.",
       "tweet_id": "3621eba9-b6bc-8138-b802-fe1afe654641",
       "source_text": "I guess I was on to something here...\n\nFigJam opened to coding agents. The whiteboard now sketches architecture before any code is written. \n\nThe diagram is the new prompt - designers just inherited a load-bearing role 🌸\n\nToday's Art Direction Daily: https://t.co/8Eb1tW4vPQ https://t.co/PmWCEwW8iF",
       "created_time": "2026-05-16T02:57:00.000Z",
@@ -234,9 +234,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/Mnilax/status/2055375235298554017",
+      "author": "Mnilax",
+      "headline": "Karpathy's bottleneck isn't the model — it's the stale file you wrote three months ago. His framing: __express your will to agents 16 hours a day__ and run more of them in parallel.",
+      "tweet_id": "3621eba9-b6bc-8156-abc9-c5e5a51ac729",
+      "source_text": "the bottleneck Karpathy keeps pointing at isn't the model.\n\nit's the file you wrote three months ago telling it how to work.\n\nhis whole framing: code isn't the verb anymore.\n\n> you express your will to agents 16 hours a day.\n> running more of them in parallel is the unlock.\n> and https://t.co/sIStb5eK6X https://t.co/KYJ5ILirrk",
+      "created_time": "2026-05-16T02:57:00.000Z",
+      "canonical_url": "https://twitter.com/Mnilax/status/2055375235298554017",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/ataiiam/status/2055302150302101719",
       "author": "ataiiam",
-      "headline": "AG-UI hook gives your agent __resumable conversation threads__ with shared state, generative UI, and human-in-the-loop — in one integration.",
+      "headline": "AG-UI hook gives your agent __resumable conversation threads__ that capture messages, generative UI, shared state, and human-in-the-loop workflows in one call.",
       "tweet_id": "3611eba9-b6bc-8173-9bbc-f828800ed965",
       "source_text": "Stop leaving your Agent stateless. Give it Threads in one hook.\n\nResumable conversations that capture everything: messages, generative UI, shared state, human-in-the-loop workflows.\n\nBuilt on AG-UI, so it works with any compatible agent framework.\n\ndocs: https://t.co/GCM9fhAzG8 https://t.co/oEhREBabkw",
       "created_time": "2026-05-15T20:12:00.000Z",
@@ -246,7 +256,7 @@
     {
       "url": "https://twitter.com/dabit3/status/2055322772381847648",
       "author": "dabit3",
-      "headline": "Nader Dabit's deep dive on agent hooks: custom controls that turn repeatable rules into __deterministic behavior instead of prompt instructions__ the model has to remember.",
+      "headline": "Nader Dabit documented a deep dive on agent hooks — custom controls that turn repeatable rules into __deterministic behavior instead of prompt instructions__ the model has to remember.",
       "tweet_id": "3611eba9-b6bc-81e6-a539-e48db1fb16a0",
       "source_text": "Agent hooks extend frameworks and CLIs with custom controls, turning repeatable rules into deterministic behavior instead of prompt instructions the model has to remember.\n\nUnderstanding them gives you leverage that prompt-engineering skills never will.\n\nI documented a deep dive https://t.co/l9bejEFyI0",
       "created_time": "2026-05-15T20:12:00.000Z",
@@ -256,7 +266,7 @@
     {
       "url": "https://twitter.com/gkcs_/status/2055363929765970010",
       "author": "gkcs_",
-      "headline": "How Claude skills actually work internally: a __two-step lazy-loading process__ where only names and descriptions hit memory until a skill is selected.",
+      "headline": "Claude skills are two-step internally: the agent loads only __name and description into memory__ first, then pulls the full prompt + tool recipe once a skill is selected.",
       "tweet_id": "3611eba9-b6bc-81b0-be2d-c034ef0e18f7",
       "source_text": "Do you know how Claude skills work internally?\n\nSkills are predefined prompt + tool recipes. They are loaded into Claude in a two-step process.\n\nWhen searching for relevant skills, Claude only loads their name and description onto memory. \n\nOnce a skill is selected (based on its https://t.co/rzwr0tI9bP",
       "created_time": "2026-05-15T20:12:00.000Z",
@@ -264,19 +274,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/Blum_OG/status/2055334245275422839",
-      "author": "Blum_OG",
-      "headline": "Deploying Claude agents comes down to one question: reasoning or execution? A breakdown of __/loop vs. Claude Routines__ and when each one fits.",
-      "tweet_id": "3611eba9-b6bc-81e0-881f-e97527d4fc50",
-      "source_text": "deploying Claude agents comes down to one question:\n\ndoes the job need reasoning, or just execution?\n\n/loop - full agent loop, laptop stays on\n> terminal sessions last 7 days, desktop caps at 3\n> timing jitter up to 30 min by design\n\nClaude Routines - same loop, Anthropic runs it https://t.co/buwBYCstOy https://t.co/l3fmLQgH50",
-      "created_time": "2026-05-15T20:07:00.000Z",
-      "canonical_url": "https://twitter.com/Blum_OG/status/2055334245275422839",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/destraynor/status/2055310868708274314",
       "author": "destraynor",
-      "headline": "Intercom's Des Traynor says their new product Operator is prototypical of how all B2B software gets built: __say what you want and leave the rest__ to analysis, synthesis, and dynamic UI.",
+      "headline": "Intercom's Des Traynor unveils Operator: say what you want and it handles __analysis, synthesis, dynamic UI, and inline collaboration__ — prototypical of how all B2B software gets built.",
       "tweet_id": "3611eba9-b6bc-8132-9879-cf66522ec2b1",
       "source_text": "Our new product, Operator, is prototypical of how  all B2B software will be built. \n\nSay what you want and leave the rest to us. \n\nThese 3 demos show case Operator doing analysis and synthesis, with dynamic UI, and inline collaboration. \n\nIt's very, very, cool. https://t.co/C3rkh1l9O9",
       "created_time": "2026-05-15T16:12:00.000Z",
@@ -286,49 +286,36 @@
   ],
   "community_headlines": [
     {
-      "url": "http://richardkulisz.blogspot.com/2011/02/smalltalk-software-industrys-greatest.html",
-      "author": "parallelminds",
-      "item_id": "hn:48157360",
-      "headline": "A 2011 essay makes the case that Smalltalk was __the software industry's greatest failure__.",
+      "url": "https://www.gadgetreview.com/the-2-billion-conflict-sam-altmans-side-hustles-are-now-the-center-of-a-legal-warzone",
+      "author": "g42gregory",
+      "item_id": "hn:48157648",
+      "headline": "Sam Altman's side ventures are now the center of a __$2B legal conflict__ with OpenAI.",
       "subreddit": null,
-      "source_text": "Smalltalk: The Software Industry's Greatest Failure",
+      "source_text": "$2B Conflict: Sam Altman \"Side Hustles\" Are Now Center of a Legal Warzone",
       "source_type": "hacker_news",
-      "created_time": "2026-05-16T06:20:49+00:00",
+      "created_time": "2026-05-16T07:17:51+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "http://richardkulisz.blogspot.com/2011/02/smalltalk-software-industrys-greatest.html",
-      "learning_score": 3
+      "canonical_url": "https://gadgetreview.com/the-2-billion-conflict-sam-altmans-side-hustles-are-now-the-center-of-a-legal-warzone",
+      "learning_score": 2
     },
     {
-      "url": "https://arstechnica.com/health/2026/05/ebola-outbreak-confirmed-in-congo-and-uganda-246-suspected-cases-65-deaths/",
-      "author": "tatersolid",
-      "item_id": "hn:48156908",
-      "headline": "An __Ebola outbreak with an uncommon strain__ erupts across Congo and Uganda, with 246 suspected cases and 65 deaths.",
+      "url": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
+      "author": "gainsurier",
+      "item_id": "hn:48157599",
+      "headline": "InclusionAI open-sources __Ring-2.6-1T__, a new large-scale model on Hugging Face.",
       "subreddit": null,
-      "source_text": "Ebola outbreak with uncommon strain erupts in Congo and Uganda; 65 deaths",
+      "source_text": "InclusionAI/Ring-2.6-1T is now open-sourced",
       "source_type": "hacker_news",
-      "created_time": "2026-05-16T04:43:19+00:00",
+      "created_time": "2026-05-16T07:08:23+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://arstechnica.com/health/2026/05/ebola-outbreak-confirmed-in-congo-and-uganda-246-suspected-cases-65-deaths",
-      "learning_score": 3
-    },
-    {
-      "url": "https://huggingface.co/blog/continuous_async",
-      "author": "eigenBasis",
-      "item_id": "hn:48157456",
-      "headline": "Hugging Face breaks down how __asynchronicity in continuous batching__ actually works under the hood.",
-      "subreddit": null,
-      "source_text": "Asynchronicity in Continuous Batching",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-16T06:38:38+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://huggingface.co/blog/continuous_async",
+      "canonical_url": "https://huggingface.co/inclusionAI/Ring-2.6-1T",
       "learning_score": 2
     },
     {
       "url": "https://www.wsj.com/finance/spacex-is-aiming-to-go-public-on-june-12-in-what-stands-to-be-biggest-ipo-ever-2662311b",
       "author": "tzury",
       "item_id": "hn:48157415",
-      "headline": "SpaceX is aiming to __go public on June 12__ in what could be the biggest IPO ever.",
+      "headline": "SpaceX is aiming to go public on __June 12 in what could be the biggest IPO ever__.",
       "subreddit": null,
       "source_text": "SpaceX Is Aiming to Go Public on June 12 in What Stands to Be Biggest IPO",
       "source_type": "hacker_news",
@@ -338,23 +325,10 @@
       "learning_score": 2
     },
     {
-      "url": "https://zerolang.ai/",
-      "author": "yofabr",
-      "item_id": "hn:48157330",
-      "headline": "__Zero__ is a new programming language designed from the ground up for AI agents, not humans.",
-      "subreddit": null,
-      "source_text": "A programming language made for agents",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-16T06:16:04+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://zerolang.ai",
-      "learning_score": 2
-    },
-    {
       "url": "https://www.ft.com/content/a61cbcae-95e4-4449-86e1-ef40fb306f4e",
       "author": "tzury",
       "item_id": "hn:48157309",
-      "headline": "EY __retracts a study__ after researchers discover the findings were riddled with AI hallucinations.",
+      "headline": "EY retracts a study after researchers discover the findings were __riddled with AI hallucinations__.",
       "subreddit": null,
       "source_text": "EY retracts study after researchers discover AI hallucinations",
       "source_type": "hacker_news",
@@ -362,13 +336,39 @@
       "source_label": "Hacker News",
       "canonical_url": "https://ft.com/content/a61cbcae-95e4-4449-86e1-ef40fb306f4e",
       "learning_score": 2
+    },
+    {
+      "url": "https://sites.math.rutgers.edu/~zeilberg/Opinion82.html",
+      "author": "susam",
+      "item_id": "hn:48157229",
+      "headline": "Doron Zeilberger makes the case that __a good lemma is worth a thousand theorems__.",
+      "subreddit": null,
+      "source_text": "A Good Lemma Is Worth a Thousand Theorems",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-16T05:56:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sites.math.rutgers.edu/~zeilberg/Opinion82.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/towards-artificial-intelligence/ai-data-centers-are-wasting-power-moving-data-i-built-a-chip-that-stops-it-7d00d2ca1cad",
+      "author": "tejakusireddy",
+      "item_id": "hn:48157215",
+      "headline": "Teja Kusireddy built Tarvex ZM-1, a __compiler-free weight-stationary inference accelerator__ to stop data-movement waste in AI data centers.",
+      "subreddit": null,
+      "source_text": "Tarvex ZM-1 – A compiler-free weight-stationary inference accelerator",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-16T05:52:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/towards-artificial-intelligence/ai-data-centers-are-wasting-power-moving-data-i-built-a-chip-that-stops-it-7d00d2ca1cad",
+      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-16T07:06:29.992833+00:00",
+    "generated_at": "2026-05-16T07:44:52.507940+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "d7abecdb8ba3fb4149e7daaef1057a369094793bc2046466784268196097e52c"
+  "content_hash": "50adc6e698e5ccf6bfed0b08126b2ca8861076691482d89fe27110919f171e26"
 }
