@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-16T00:00:00Z",
-  "issueCount": 26,
+  "generatedAt": "2026-05-17T00:00:00Z",
+  "issueCount": 27,
   "latestIssue": {
-    "slug": "2026-05-16",
-    "digestDate": "2026-05-16",
-    "displayDate": "May 16, 2026",
-    "issueNumber": "60516",
-    "subject": "ISSUE 60516 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The courtroom drama between Elon Musk and Sam Altman stole the spotlight this week as the blockbuster trial wrapped up with both sides landing heavy blows \u2014 testimony about alleged lying, power grabs, and a potential $134 billion unwinding of OpenAI's restructuring now sits in the jury's hands. But that's far from the only OpenAI news: the company also acquired a voice-cloning platform and reshuffled its leadership to go all-in on AI agents. Beyond the OpenAI orbit, today's digest covers YouTube giving everyone deepfake detection powers, ArXiv cracking down on AI slop in research papers, and how AI's insatiable energy appetite is hitting Lake Tahoe vacationers where it hurts \u2014 their electricity bills.",
+    "slug": "2026-05-17",
+    "digestDate": "2026-05-17",
+    "displayDate": "May 17, 2026",
+    "issueNumber": "60517",
+    "subject": "ISSUE 60517 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "This week's college graduates are the first class to have had ChatGPT as a study buddy from day one \u2014 and their story is just one thread in a day packed with news about AI reshaping everything from academia to Hollywood to the courtroom. ArXiv is cracking down on unchecked AI-generated research papers, Soderbergh's new Lennon documentary is getting panned for leaning too hard on AI visuals, and over at OpenAI, Greg Brockman is consolidating the company's products into one unified platform while the Musk-Altman trial lays bare the messy human drama behind it all. Grab your coffee \u2014 there's a lot to unpack today.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-16.html",
-    "contentHash": "50adc6e698e5ccf6bfed0b08126b2ca8861076691482d89fe27110919f171e26"
+    "urlPath": "/issues/2026-05-17.html",
+    "contentHash": "3c94e8fc32e29cfb8ce199f569fb68ed828ef7fa07fe8e2683b7b09b1d6531f5"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-17",
+      "digestDate": "2026-05-17",
+      "displayDate": "May 17, 2026",
+      "issueNumber": "60517",
+      "subject": "ISSUE 60517 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "This week's college graduates are the first class to have had ChatGPT as a study buddy from day one \u2014 and their story is just one thread in a day packed with news about AI reshaping everything from academia to Hollywood to the courtroom. ArXiv is cracking down on unchecked AI-generated research papers, Soderbergh's new Lennon documentary is getting panned for leaning too hard on AI visuals, and over at OpenAI, Greg Brockman is consolidating the company's products into one unified platform while the Musk-Altman trial lays bare the messy human drama behind it all. Grab your coffee \u2014 there's a lot to unpack today.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-17.html",
+      "contentHash": "3c94e8fc32e29cfb8ce199f569fb68ed828ef7fa07fe8e2683b7b09b1d6531f5"
+    },
     {
       "slug": "2026-05-16",
       "digestDate": "2026-05-16",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-06.html",
       "contentHash": "2df8b510b8d1c3985988941694036a2ac409ed13a93e4d84ab388435f08fa873"
-    },
-    {
-      "slug": "2026-05-05",
-      "digestDate": "2026-05-05",
-      "displayDate": "May 05, 2026",
-      "issueNumber": "60505",
-      "subject": "ISSUE 60505 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing with courtroom drama this week, as OpenAI president Greg Brockman took the stand in the Musk v. OpenAI trial and delivered what can only be described as a masterclass in not answering questions \u2014 all while Musk's lawyers grilled him on how exactly he's worth $30 billion. But beyond the legal theatrics, today's digest spans a wide range of consequential stories, from Google DeepMind's UK workers unionizing over a Pentagon deal, to a Canadian fiddler suing Google after its AI falsely called him a sex offender, to the expanding \u2014 and largely unregulated \u2014 use of facial recognition by UK police. It's a day that underscores a growing theme: as AI's power and reach accelerate, the fights over who controls it, who profits from it, and who gets harmed by it are intensifying on every front.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-05.html",
-      "contentHash": "ca17712708c759a9e9c32ada219db003d717a3396cd9027c5d31024c2a6a782f"
     }
   ]
 }
