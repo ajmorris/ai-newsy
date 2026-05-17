@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 3413,
+      "source": "Guardian AI",
+      "title": "Tech founders use AI-generated images to poke fun at Anthony Albanese in protest against tax changes",
+      "url": "https://www.theguardian.com/australia-news/2026/may/17/tech-founders-use-ai-generated-images-to-poke-fun-at-anthony-albanese-in-protest-against-tax-changes",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Australian tech founders are protesting the government's capital gains tax changes by creating and sharing AI-generated images depicting Prime Minister Anthony Albanese as their 'new founder,' joking about his '47% equity' stake. The entrepreneurs warn that the increased tax burden could discourage people from joining startups and potentially drive new businesses overseas.",
+      "opinion": "This is a creative form of political protest that highlights legitimate concerns about how tax policy affects startup ecosystems. The use of AI-generated satirical images is an effective attention-grabbing tactic. However, the substantive policy debate deserves serious analysis beyond memes — whether a 47% capital gains rate genuinely threatens Australia's startup competitiveness compared to other factors like talent, market access, and infrastructure. The founders raise valid points about ince…",
+      "image_url": "https://i.guim.co.uk/img/media/bc5d892db4a82e2e8effccfcc801ebb0311a8180/0_103_1046_837/master/1046.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9e5db38bf9af38370deb96e8152f4cea",
+      "published_at": "2026-05-17T07:38:45+00:00",
+      "fetched_at": "2026-05-17T07:52:19.584713+00:00"
+    },
+    {
       "id": 3343,
       "source": "NY Times",
       "title": "My Classmate, ChatGPT",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2273248471.jpg?resize=1200,800",
       "published_at": "2026-05-16T15:33:33+00:00",
       "fetched_at": "2026-05-17T07:05:40.413887+00:00"
-    },
-    {
-      "id": 3345,
-      "source": "Guardian AI",
-      "title": "What we learned from the cringey courtroom drama between Elon Musk and Sam Altman",
-      "url": "https://www.theguardian.com/us-news/2026/may/16/what-we-learned-elon-musk-sam-altman",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "A jury trial between Elon Musk and Sam Altman over allegations that Altman 'stole a charity' (OpenAI) is nearing deliberations. The case has provided a revealing, sometimes exhausting look at OpenAI's history and the bitter personal feud between two of the tech industry's most powerful figures, exposing behind-the-scenes dynamics of how they operate.",
-      "opinion": "This trial represents a fascinating collision of massive egos and billions of dollars, with potentially significant implications for AI governance and the nonprofit-to-profit conversion model. Regardless of the verdict, the public airing of internal communications and personal grievances between Musk and Altman has already damaged both parties' reputations and raised legitimate questions about accountability in the AI industry. It's a cautionary tale about what happens when personal rivalries i…",
-      "image_url": "https://i.guim.co.uk/img/media/0cb80ed35b49dd77fc0dda2d0380182dbf4f0131/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2a81f464b64153bfd77aef79eab76538",
-      "published_at": "2026-05-16T15:00:12+00:00",
-      "fetched_at": "2026-05-17T07:05:43.727632+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 3413,
+          "source": "Guardian AI",
+          "title": "Tech founders use AI-generated images to poke fun at Anthony Albanese in protest against tax changes",
+          "url": "https://www.theguardian.com/australia-news/2026/may/17/tech-founders-use-ai-generated-images-to-poke-fun-at-anthony-albanese-in-protest-against-tax-changes",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Australian tech founders are protesting the government's capital gains tax changes by creating and sharing AI-generated images depicting Prime Minister Anthony Albanese as their 'new founder,' joking about his '47% equity' stake. The entrepreneurs warn that the increased tax burden could discourage people from joining startups and potentially drive new businesses overseas.",
+          "opinion": "This is a creative form of political protest that highlights legitimate concerns about how tax policy affects startup ecosystems. The use of AI-generated satirical images is an effective attention-grabbing tactic. However, the substantive policy debate deserves serious analysis beyond memes — whether a 47% capital gains rate genuinely threatens Australia's startup competitiveness compared to other factors like talent, market access, and infrastructure. The founders raise valid points about ince…",
+          "image_url": "https://i.guim.co.uk/img/media/bc5d892db4a82e2e8effccfcc801ebb0311a8180/0_103_1046_837/master/1046.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9e5db38bf9af38370deb96e8152f4cea",
+          "published_at": "2026-05-17T07:38:45+00:00",
+          "fetched_at": "2026-05-17T07:52:19.584713+00:00"
+        },
         {
           "id": 3343,
           "source": "NY Times",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2273248471.jpg?resize=1200,800",
           "published_at": "2026-05-16T15:33:33+00:00",
           "fetched_at": "2026-05-17T07:05:40.413887+00:00"
-        },
-        {
-          "id": 3345,
-          "source": "Guardian AI",
-          "title": "What we learned from the cringey courtroom drama between Elon Musk and Sam Altman",
-          "url": "https://www.theguardian.com/us-news/2026/may/16/what-we-learned-elon-musk-sam-altman",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "A jury trial between Elon Musk and Sam Altman over allegations that Altman 'stole a charity' (OpenAI) is nearing deliberations. The case has provided a revealing, sometimes exhausting look at OpenAI's history and the bitter personal feud between two of the tech industry's most powerful figures, exposing behind-the-scenes dynamics of how they operate.",
-          "opinion": "This trial represents a fascinating collision of massive egos and billions of dollars, with potentially significant implications for AI governance and the nonprofit-to-profit conversion model. Regardless of the verdict, the public airing of internal communications and personal grievances between Musk and Altman has already damaged both parties' reputations and raised legitimate questions about accountability in the AI industry. It's a cautionary tale about what happens when personal rivalries i…",
-          "image_url": "https://i.guim.co.uk/img/media/0cb80ed35b49dd77fc0dda2d0380182dbf4f0131/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2a81f464b64153bfd77aef79eab76538",
-          "published_at": "2026-05-16T15:00:12+00:00",
-          "fetched_at": "2026-05-17T07:05:43.727632+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/techwith_ram/status/2055625040897737174",
       "author": "techwith_ram",
-      "headline": "Anthropic is building Claude agents that __learn from experience through memory and dreaming__ — storing long-term knowledge and sharing learnings across sessions.",
+      "headline": "Anthropic is building managed agents that __learn from experience through memory and dreaming__ — storing long-term knowledge and sharing learnings across sessions.",
       "tweet_id": "3631eba9-b6bc-817d-8e7a-c4b449a13f0d",
       "source_text": "A really nice talk about how memory and dreaming turn Claude Managed Agents into self-learning systems.\n\nAnthropic is building agents that can actually learn from experience. Their new Memory + Dreaming system lets agents do:\n\n- store long-term knowledge\n- share learnings with https://t.co/PiUvUAIkBv https://t.co/CYHpXqVL2l",
       "created_time": "2026-05-17T04:57:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/AnatoliKopadze/status/2055715499263054256",
       "author": "AnatoliKopadze",
-      "headline": "Dario Amodei says it's \"absolutely wild\" people focus on tired political issues when we're __near the end of the AI exponential__ — then spends ten minutes explaining why almost nobody sees it.",
+      "headline": "Dario Amodei says it's \"absolutely wild\" that people focus on tired political issues when we're __near the end of the AI exponential__ — then spends ten minutes explaining why almost nobody sees it.",
       "tweet_id": "3631eba9-b6bc-8134-9003-e0fb8aa2c03a",
       "source_text": "Anthropic CEO: \"It is absolutely wild that people are talking about the same tired political issues, when we are near the end of the AI exponential.\"\n\nDario Amodei spent 10 minutes explaining why almost nobody sees it.\n\nhere's what he covers:\n\n> in 2017 he predicted exactly where https://t.co/PncXZwcVH6 https://t.co/17czRYRq23",
       "created_time": "2026-05-17T04:57:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/PawelHuryn/status/2055627512600813622",
       "author": "PawelHuryn",
-      "headline": "Pawel Huryn walks through setting up __Claude Code as a PM__ in five steps, no coding required.",
+      "headline": "Pawel Huryn walks through __setting up Claude Code as a PM__ in five steps, no coding required.",
       "tweet_id": "3631eba9-b6bc-814d-a226-ffbcc7fb9845",
       "source_text": "Set up Claude Code as a PM. 5 steps, no coding.\n\n1. Install the Claude Code extension in VS Code\n→ VS Code → Extensions → search \"Claude Code\"\n→ Sign in with your Anthropic account\n→ Default to the extension, not the terminal\n\n2. Pick subscription or free\n→ Pro ($20/mo) for https://t.co/441W2VRS7X",
       "created_time": "2026-05-17T04:57:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/shreyas/status/2055698546981326848",
       "author": "shreyas",
-      "headline": "Shreyas Doshi argues the most underrated use of AI is giving it __deep ongoing context on your product__ and letting it call out your BS in real time.",
+      "headline": "Shreyas Doshi argues the most underrated use of AI is giving it __deep ongoing context on your product__ and letting it call out your BS during product discussions.",
       "tweet_id": "3631eba9-b6bc-81c0-bdd5-e8b0d8949bb2",
       "source_text": "While everyone chases the latest AI tools, here’s an underrated, high leverage, practical application of AI:\n\nGive AI deep ongoing context on your product. Then actually use it during product discussions to keep you honest and call out your BS. AI is extremely good at this today. https://t.co/fFco19m5Py",
       "created_time": "2026-05-17T04:57:00.000Z",
@@ -286,10 +286,49 @@
   ],
   "community_headlines": [
     {
+      "url": "https://blog.getutm.app/2026/introducing-neptune-direct3d-virtualization-for-qemu/",
+      "author": "oofdere",
+      "item_id": "hn:48166868",
+      "headline": "__Neptune__ brings Direct3D virtualization to QEMU, letting virtual machines tap real GPU acceleration without passthrough.",
+      "subreddit": null,
+      "source_text": "Neptune: Direct3D Virtualization for QEMU",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-17T07:48:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.getutm.app/2026/introducing-neptune-direct3d-virtualization-for-qemu",
+      "learning_score": 2
+    },
+    {
+      "url": "https://2ality.com/",
+      "author": "mmarian",
+      "item_id": "hn:48166837",
+      "headline": "The 2ality JavaScript blog goes __temporarily offline__ because AI scrapers kept stealing the work wholesale.",
+      "subreddit": null,
+      "source_text": "2ality blog: temporarily offline due to AI stealing work",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-17T07:39:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://2ality.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://log.beshr.com/domain-knowledge-is-the-leverage/",
+      "author": "beshrkayali",
+      "item_id": "hn:48166832",
+      "headline": "Beshr Kayali makes the case that __domain knowledge is the real leverage__ — not the tooling, not the framework.",
+      "subreddit": null,
+      "source_text": "Domain Knowledge Is the Leverage",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-17T07:39:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://log.beshr.com/domain-knowledge-is-the-leverage",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
       "author": "joozio",
       "item_id": "hn:48166701",
-      "headline": "Musk v. Altman, week three: the two kept __trading blows over each other's motives__ in court and it's not getting prettier.",
+      "headline": "Musk vs. Altman week 3: the two traded blows over __each other's motives and OpenAI's future__ in court.",
       "subreddit": null,
       "source_text": "Musk vs. Altman week 3: Elon Musk and Sam Altman traded blows over each other's",
       "source_type": "hacker_news",
@@ -299,10 +338,23 @@
       "learning_score": 2
     },
     {
+      "url": "https://discuss.python.org/t/packaging-summit-at-pycon-us-2026/106911",
+      "author": "gaborbernat",
+      "item_id": "hn:48166560",
+      "headline": "The __PyCon US 2026 Packaging Summit__ recap is out, covering the state of Python packaging and what's next.",
+      "subreddit": null,
+      "source_text": "PyCon US 2026 Packaging Summit Recap",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-17T06:40:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://discuss.python.org/t/packaging-summit-at-pycon-us-2026/106911",
+      "learning_score": 2
+    },
+    {
       "url": "https://arxiv.org/abs/1910.05109",
       "author": "tosh",
       "item_id": "hn:48166505",
-      "headline": "A clever paper on __Base64 encoding and decoding at almost the speed of a memory copy__.",
+      "headline": "A paper on __Base64 encoding and decoding at nearly the speed of a memory copy__ — the kind of micro-optimization that compounds.",
       "subreddit": null,
       "source_text": "Base64 encoding and decoding at almost the speed of a memory copy",
       "source_type": "hacker_news",
@@ -310,65 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://arxiv.org/abs/1910.05109",
       "learning_score": 2
-    },
-    {
-      "url": "https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined/",
-      "author": "WithinReason",
-      "item_id": "hn:48166459",
-      "headline": "Mozilla tells UK regulators: __VPNs are essential privacy tools__ and should not be undermined by new legislation.",
-      "subreddit": null,
-      "source_text": "Mozilla to UK regulators: VPNs are essential privacy and security tools",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-17T06:17:26+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://blog.mozilla.org/netpolicy/2026/05/15/mozilla-to-uk-regulators-vpns-are-essential-privacy-and-security-tools-and-should-not-be-undermined",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=iFYF_e1GSGI",
-      "author": "tcp_handshaker",
-      "item_id": "hn:48166390",
-      "headline": "A deep dive into __the uncomfortable truth about AI \"reasoning\"__ — and why benchmarks keep fooling us.",
-      "subreddit": null,
-      "source_text": "The Uncomfortable Truth About AI \"Reasoning\"",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-17T06:00:11+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=iFYF_e1GSGI",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/healqq/mcp-content-guard",
-      "author": "healqq",
-      "item_id": "hn:48166327",
-      "headline": "An MCP context-guard tool that __saves context from MCP bloat__ before your agent chokes on its own memory.",
-      "subreddit": null,
-      "source_text": "Show HN: Save Context from MCP Bloat",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-17T05:43:37+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/healqq/mcp-content-guard",
-      "learning_score": 2
-    },
-    {
-      "url": "https://deepgram.com/learn/streaming-tts-latency-accuracy-tradeoff",
-      "author": "ChicknNuggt",
-      "item_id": "hn:48166299",
-      "headline": "Deepgram breaks down the __streaming TTS latency-accuracy tradeoff__ and why some models fall apart in real time.",
-      "subreddit": null,
-      "source_text": "The Streaming Latency Tradeoff: Why Some TTS Models Lose Accuracy in Real Time",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-17T05:37:20+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://deepgram.com/learn/streaming-tts-latency-accuracy-tradeoff",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-17T07:10:23.121537+00:00",
+    "generated_at": "2026-05-17T07:53:51.734313+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "abfcdfbe47e80a8b2a59e5675bf8284443ded793dd9fb28e48dc2374d08d8354"
+  "content_hash": "3c94e8fc32e29cfb8ce199f569fb68ed828ef7fa07fe8e2683b7b09b1d6531f5"
 }
