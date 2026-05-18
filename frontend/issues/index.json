@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-17T00:00:00Z",
-  "issueCount": 27,
+  "generatedAt": "2026-05-18T00:00:00Z",
+  "issueCount": 28,
   "latestIssue": {
-    "slug": "2026-05-17",
-    "digestDate": "2026-05-17",
-    "displayDate": "May 17, 2026",
-    "issueNumber": "60517",
-    "subject": "ISSUE 60517 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "This week's college graduates are the first class to have had ChatGPT as a study buddy from day one \u2014 and their story is just one thread in a day packed with news about AI reshaping everything from academia to Hollywood to the courtroom. ArXiv is cracking down on unchecked AI-generated research papers, Soderbergh's new Lennon documentary is getting panned for leaning too hard on AI visuals, and over at OpenAI, Greg Brockman is consolidating the company's products into one unified platform while the Musk-Altman trial lays bare the messy human drama behind it all. Grab your coffee \u2014 there's a lot to unpack today.",
+    "slug": "2026-05-18",
+    "digestDate": "2026-05-18",
+    "displayDate": "May 18, 2026",
+    "issueNumber": "60518",
+    "subject": "ISSUE 60518 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI backlash is getting loud \u2014 and it's not just online. From University of Arizona graduates booing former Google CEO Eric Schmidt off the stage to automakers like GM cutting thousands of jobs to hire AI-focused workers instead, today's stories paint a vivid picture of a technology revolution that's moving faster than the public's patience. We've also got Apple betting big on privacy as its AI differentiator, the trust question looming over the Musk-OpenAI trial, and a surprising energy story about UK datacentres that could blow a hole in the country's climate targets.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-17.html",
-    "contentHash": "3c94e8fc32e29cfb8ce199f569fb68ed828ef7fa07fe8e2683b7b09b1d6531f5"
+    "urlPath": "/issues/2026-05-18.html",
+    "contentHash": "a722ad5688dfc3e7180f4597291854938fc1efc46db7878cce7cd2a95e941b3f"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-18",
+      "digestDate": "2026-05-18",
+      "displayDate": "May 18, 2026",
+      "issueNumber": "60518",
+      "subject": "ISSUE 60518 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI backlash is getting loud \u2014 and it's not just online. From University of Arizona graduates booing former Google CEO Eric Schmidt off the stage to automakers like GM cutting thousands of jobs to hire AI-focused workers instead, today's stories paint a vivid picture of a technology revolution that's moving faster than the public's patience. We've also got Apple betting big on privacy as its AI differentiator, the trust question looming over the Musk-OpenAI trial, and a surprising energy story about UK datacentres that could blow a hole in the country's climate targets.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-18.html",
+      "contentHash": "a722ad5688dfc3e7180f4597291854938fc1efc46db7878cce7cd2a95e941b3f"
+    },
     {
       "slug": "2026-05-17",
       "digestDate": "2026-05-17",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-07.html",
       "contentHash": "86629c8b74d26b1f9fb560a3291ace80aeba224571cc5dd1ee840ce9cbd57030"
-    },
-    {
-      "slug": "2026-05-06",
-      "digestDate": "2026-05-06",
-      "displayDate": "May 06, 2026",
-      "issueNumber": "60506",
-      "subject": "ISSUE 60506 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI boom's ripple effects are hitting everything from your wallet to your dinner plate today. A striking theme emerges across the headlines: AI's insatiable appetite is reshaping entire industries in unexpected ways, from driving up the cost of your next laptop and phone in a so-called \"RAMageddon,\" to prompting global financial watchdogs to sound alarms about a potential AI-fueled credit bubble. Meanwhile, massive bets are being placed on AI's future\u2014SAP is dropping over a billion dollars on an 18-month-old German startup, a Finnish lab just landed a $380M valuation in an *angel* round, and Marc Lore wants to let anyone open a restaurant with a single AI prompt.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-06.html",
-      "contentHash": "2df8b510b8d1c3985988941694036a2ac409ed13a93e4d84ab388435f08fa873"
     }
   ]
 }
