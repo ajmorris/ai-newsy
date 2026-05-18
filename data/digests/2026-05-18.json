@@ -1,0 +1,348 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-05-18",
+  "issue_id": "20260518",
+  "subject_line": "ISSUE 60518 · 8 STORIES · 11 MIN READ",
+  "intro": "The AI backlash is getting loud — and it's not just online. From University of Arizona graduates booing former Google CEO Eric Schmidt off the stage to automakers like GM cutting thousands of jobs to hire AI-focused workers instead, today's stories paint a vivid picture of a technology revolution that's moving faster than the public's patience. We've also got Apple betting big on privacy as its AI differentiator, the trust question looming over the Musk-OpenAI trial, and a surprising energy story about UK datacentres that could blow a hole in the country's climate targets.",
+  "article_count": 8,
+  "stories": [
+    {
+      "id": 3418,
+      "source": "Guardian AI",
+      "title": "More than 100 UK datacentres plan to burn gas to generate electricity",
+      "url": "https://www.theguardian.com/business/2026/may/18/uk-datacentres-plan-to-burn-gas-to-generate-electricity",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "More than 100 new UK datacentres are planning to burn gas to generate their own electricity, with some potentially doing so permanently. Their requests for gas connections amount to over 15 terawatt hours per year. British officials attribute this to years-long delays in connecting to the National Grid, acknowledging it raises significant concerns about the UK's climate targets.",
+      "opinion": "This is a deeply concerning development that highlights a fundamental tension between the rapid expansion of digital infrastructure and climate commitments. The fact that datacentres are resorting to on-site gas burning — potentially permanently — because of grid connection delays represents a serious policy failure. It means the UK's energy infrastructure planning has not kept pace with demand, and the result is a massive increase in carbon emissions that directly undermines climate targets. T…",
+      "image_url": "https://i.guim.co.uk/img/media/87e18670ff742ef16d4bfc6e92462d6a794595bc/465_0_4653_3722/master/4653.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b3a3b77b0800d78a584ab6b19845a005",
+      "published_at": "2026-05-18T04:00:59+00:00",
+      "fetched_at": "2026-05-18T07:35:19.845507+00:00"
+    },
+    {
+      "id": 3414,
+      "source": "TechCrunch AI",
+      "title": "Apple’s Siri revamp could include auto-deleting chats",
+      "url": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Apple is planning a major Siri revamp to be unveiled at WWDC in June 2026, with privacy as a central theme. According to Bloomberg's Mark Gurman, the update will include the first standalone Siri app powered by Google Gemini, offering a ChatGPT-like chatbot experience. A key privacy feature will allow users to auto-delete conversations after 30 days or one year, similar to the Messages app. Apple will position itself as more privacy-friendly than competing AI companies by limiting how long user data is stored and used. However, Gurman notes that Apple's privacy emphasis may partly serve to excuse Siri's shortcomings relative to competitors and could obscure the fact that Google is handling some of the backend security.",
+      "opinion": "This is a strategically smart but somewhat contradictory move by Apple. On one hand, offering auto-deleting chats and emphasizing privacy aligns perfectly with Apple's long-standing brand identity and addresses genuine consumer concerns about AI data retention. On the other hand, the irony of building a privacy-focused product on top of Google Gemini — a company not exactly known for minimal data collection — is hard to ignore. Gurman's observation that privacy messaging might be used to mask S…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/10/apple-siri-header.jpg?resize=1200,800",
+      "published_at": "2026-05-17T20:15:00+00:00",
+      "fetched_at": "2026-05-18T07:35:16.081528+00:00"
+    },
+    {
+      "id": 3415,
+      "source": "TechCrunch AI",
+      "title": "Why trust is a big question at the Elon Musk-OpenAI trial",
+      "url": "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses the Elon Musk vs. OpenAI trial, focusing on the central theme of trust that emerged during closing arguments. Musk's lawyers questioned whether OpenAI CEO Sam Altman is trustworthy, grilling him about the truthfulness of his congressional testimony. The TechCrunch Equity podcast hosts discussed this theme, noting that Altman's colleagues have expressed distrust, and Altman himself has acknowledged being conflict-averse and telling people what they want to hear. However, the hosts broadened the discussion beyond Altman, arguing that trust is a fundamental issue across all AI labs, which are privately held companies with limited transparency. Kirsten Korosec emphasized that even noble intentions can lead to misuse, and the trust question applies to the entire AI industry, not just Altman. The jury is now deliberating whether OpenAI acted improperly in its transformat…",
+      "opinion": "This article captures an important and underexplored dimension of the AI industry debate: the fundamental trust deficit between AI companies and the public, policymakers, and journalists. The trial serves as a useful lens for examining how much faith we place in the leaders of transformative technology companies that operate largely behind closed doors. The podcast hosts' candid discussion is refreshing — particularly the honest admission that none of them could straightforwardly say they trust…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2273245180.jpg?resize=1200,800",
+      "published_at": "2026-05-17T19:46:34+00:00",
+      "fetched_at": "2026-05-18T07:35:16.355086+00:00"
+    },
+    {
+      "id": 3422,
+      "source": "The Verge AI",
+      "title": "Revamped Siri will reportedly offer auto-deleting chats",
+      "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Apple's revamped Siri, debuting in iOS 27, will reportedly feature auto-deleting chat histories with options to save conversations for 30 days, one year, or forever. According to Bloomberg's Mark Gurman, Apple is positioning privacy as its key AI differentiator, contrasting with competitors who generally only offer temporary incognito chats. While Apple is replacing many under-the-hood components with Google's Gemini technology, it plans to impose tighter limits on how AI memory works, including restrictions on what information can persist and for how long. The company is betting that users will trade some convenience for greater privacy amid growing AI-related anxiety.",
+      "opinion": "This is a smart strategic move by Apple. As AI anxiety grows among consumers, offering meaningful privacy controls rather than just lip service could genuinely differentiate Apple in a crowded market. The auto-delete options (30 days, one year, forever) give users real agency over their data, which is refreshing compared to the opaque data retention policies of most AI chatbot providers. However, there's an inherent tension here: Apple is simultaneously adopting Google's Gemini technology while…",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/10817647/acastro_180510_1777_siri_0001.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-05-17T18:40:28+00:00",
+      "fetched_at": "2026-05-18T07:35:28.498444+00:00"
+    },
+    {
+      "id": 3423,
+      "source": "The Verge AI",
+      "title": "University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Former Google CEO Eric Schmidt was booed by University of Arizona students during a commencement address on Friday when his speech turned to AI cheerleading. Students about to enter a difficult job market expressed frustration as Schmidt promoted AI, though he acknowledged their fears about jobs, climate, and politics were 'rational.' Some students also booed over sexual assault allegations against him. Schmidt urged graduates to embrace AI opportunities, telling them to 'get on the rocketship,' but the article frames this as another example of Silicon Valley's inability to read the room as public opinion increasingly turns against AI.",
+      "opinion": "This article captures a genuine and growing cultural tension between Silicon Valley's relentless AI optimism and the real anxieties of people facing its consequences. The students' reaction is understandable — being told to embrace a technology that threatens your career prospects by a billionaire who profits from it is tone-deaf. The piece is well-framed and appropriately critical, though it could have explored the students' specific concerns in more depth. Schmidt's acknowledgment that their…",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23350482/1328571726.jpg?quality=90&strip=all&crop=0%2C10.675926728958%2C100%2C78.648146542083&w=1200",
+      "published_at": "2026-05-17T17:22:23+00:00",
+      "fetched_at": "2026-05-18T07:35:28.693446+00:00"
+    },
+    {
+      "id": 3419,
+      "source": "Guardian AI",
+      "title": "The Guardian view on policing the internet: Ofcom must push harder on illegal content | Editorial",
+      "url": "https://www.theguardian.com/commentisfree/2026/may/17/the-guardian-view-on-policing-the-internet-ofcom-must-pusher-harder-on-content",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Ofcom fined a US-based suicide forum £950,000 linked to over 160 UK deaths, but the Guardian editorial argues the regulator and government must push harder and faster to confront big tech companies over illegal and harmful online content, echoing frustrations voiced by Jess Phillips about the slow pace of online safety enforcement.",
+      "opinion": "The editorial strongly criticizes the slow pace of internet regulation and calls on Ofcom to be more aggressive in tackling illegal online content. It expresses sympathy with campaigners and bereaved families frustrated by delays, and highlights what it sees as an alarming reluctance by authorities to confront major technology companies over harmful content.",
+      "image_url": "https://i.guim.co.uk/img/media/44c647fe0075cc346e19fb3a6a5d5d5e9438dc9a/363_0_3548_2837/master/3548.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=99c3348a3aa3fd736ce0c28cb58505cc",
+      "published_at": "2026-05-17T16:49:07+00:00",
+      "fetched_at": "2026-05-18T07:35:20.036488+00:00"
+    },
+    {
+      "id": 3416,
+      "source": "TechCrunch AI",
+      "title": "If you’re giving a commencement speech in 2026, maybe don’t mention AI",
+      "url": "https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article reports on a growing trend during 2026 commencement season where graduating students are booing speakers who mention artificial intelligence in their speeches. At the University of Central Florida, executive Gloria Caulfield was booed when she called AI 'the next industrial revolution,' and former Google CEO Eric Schmidt faced similar hostility at the University of Arizona when telling students they would 'help shape artificial intelligence.' The article notes that only 43% of Americans aged 15-34 believe it's a good time to find a job locally, down from 75% in 2022, and that for many graduates, AI has become a symbol of diminished job prospects and what critic Brian Merchant calls 'the cruel new face of hyper-scaling capitalism.' Not all speeches drew boos — Nvidia CEO Jensen Huang spoke at Carnegie Mellon without audible pushback — but 'resilience' was a recurring theme ac…",
+      "opinion": "This article captures a genuinely significant cultural moment — the point at which AI optimism from tech leaders collides head-on with the lived anxieties of young people entering a hostile job market. The booing is not mere rudeness; it's a visceral rejection of a narrative that asks graduates to celebrate the very technology many perceive as threatening their livelihoods. The contrast between Caulfield's tone-deaf corporate cheerleading to arts and humanities graduates and their reaction is a…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2019/01/university.jpg?resize=1200,641",
+      "published_at": "2026-05-17T16:32:04+00:00",
+      "fetched_at": "2026-05-18T07:35:16.562697+00:00"
+    },
+    {
+      "id": 3417,
+      "source": "TechCrunch AI",
+      "title": "TechCrunch Mobility: The AI skills arms race is coming for automotive",
+      "url": "https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch Mobility reports on the growing AI skills arms race in the automotive industry. General Motors laid off over 600 IT employees (10%+ of its IT department) to recruit workers with AI-focused backgrounds, seeking skills in AI-native development, data engineering, cloud engineering, agent/model development, and prompt engineering. Ford, GM, and Stellantis have collectively cut over 20,000 U.S. salaried jobs (19% of combined workforces) from recent peaks, largely driven by technological changes including AI. Samsara is highlighted as a company successfully leveraging AI, having trained models on truck camera data to detect and monitor pothole deterioration, now selling this to cities including Chicago. The newsletter also notes that Rivian founder RJ Scaringe's spinoff Mind Robotics raised $400 million just two months after a $500 million raise, with investors having poured $12.3…",
+      "opinion": "This article captures a significant and somewhat troubling trend in the automotive industry. The framing of GM's layoffs as a 'deliberate skills swap' is corporate euphemism at its finest — these are real job losses with the honest admission that it won't be a one-to-one replacement. The 20,000 combined job cuts across the Big Three are staggering. The candid note that 'not all of these businesses know quite what they're doing with AI yet' is refreshingly honest and probably the most important…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/rj-scaringe-Getty.jpg?resize=1200,800",
+      "published_at": "2026-05-17T16:05:00+00:00",
+      "fetched_at": "2026-05-18T07:35:16.777938+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 3418,
+          "source": "Guardian AI",
+          "title": "More than 100 UK datacentres plan to burn gas to generate electricity",
+          "url": "https://www.theguardian.com/business/2026/may/18/uk-datacentres-plan-to-burn-gas-to-generate-electricity",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "More than 100 new UK datacentres are planning to burn gas to generate their own electricity, with some potentially doing so permanently. Their requests for gas connections amount to over 15 terawatt hours per year. British officials attribute this to years-long delays in connecting to the National Grid, acknowledging it raises significant concerns about the UK's climate targets.",
+          "opinion": "This is a deeply concerning development that highlights a fundamental tension between the rapid expansion of digital infrastructure and climate commitments. The fact that datacentres are resorting to on-site gas burning — potentially permanently — because of grid connection delays represents a serious policy failure. It means the UK's energy infrastructure planning has not kept pace with demand, and the result is a massive increase in carbon emissions that directly undermines climate targets. T…",
+          "image_url": "https://i.guim.co.uk/img/media/87e18670ff742ef16d4bfc6e92462d6a794595bc/465_0_4653_3722/master/4653.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b3a3b77b0800d78a584ab6b19845a005",
+          "published_at": "2026-05-18T04:00:59+00:00",
+          "fetched_at": "2026-05-18T07:35:19.845507+00:00"
+        },
+        {
+          "id": 3414,
+          "source": "TechCrunch AI",
+          "title": "Apple’s Siri revamp could include auto-deleting chats",
+          "url": "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Apple is planning a major Siri revamp to be unveiled at WWDC in June 2026, with privacy as a central theme. According to Bloomberg's Mark Gurman, the update will include the first standalone Siri app powered by Google Gemini, offering a ChatGPT-like chatbot experience. A key privacy feature will allow users to auto-delete conversations after 30 days or one year, similar to the Messages app. Apple will position itself as more privacy-friendly than competing AI companies by limiting how long user data is stored and used. However, Gurman notes that Apple's privacy emphasis may partly serve to excuse Siri's shortcomings relative to competitors and could obscure the fact that Google is handling some of the backend security.",
+          "opinion": "This is a strategically smart but somewhat contradictory move by Apple. On one hand, offering auto-deleting chats and emphasizing privacy aligns perfectly with Apple's long-standing brand identity and addresses genuine consumer concerns about AI data retention. On the other hand, the irony of building a privacy-focused product on top of Google Gemini — a company not exactly known for minimal data collection — is hard to ignore. Gurman's observation that privacy messaging might be used to mask S…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/10/apple-siri-header.jpg?resize=1200,800",
+          "published_at": "2026-05-17T20:15:00+00:00",
+          "fetched_at": "2026-05-18T07:35:16.081528+00:00"
+        },
+        {
+          "id": 3415,
+          "source": "TechCrunch AI",
+          "title": "Why trust is a big question at the Elon Musk-OpenAI trial",
+          "url": "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses the Elon Musk vs. OpenAI trial, focusing on the central theme of trust that emerged during closing arguments. Musk's lawyers questioned whether OpenAI CEO Sam Altman is trustworthy, grilling him about the truthfulness of his congressional testimony. The TechCrunch Equity podcast hosts discussed this theme, noting that Altman's colleagues have expressed distrust, and Altman himself has acknowledged being conflict-averse and telling people what they want to hear. However, the hosts broadened the discussion beyond Altman, arguing that trust is a fundamental issue across all AI labs, which are privately held companies with limited transparency. Kirsten Korosec emphasized that even noble intentions can lead to misuse, and the trust question applies to the entire AI industry, not just Altman. The jury is now deliberating whether OpenAI acted improperly in its transformat…",
+          "opinion": "This article captures an important and underexplored dimension of the AI industry debate: the fundamental trust deficit between AI companies and the public, policymakers, and journalists. The trial serves as a useful lens for examining how much faith we place in the leaders of transformative technology companies that operate largely behind closed doors. The podcast hosts' candid discussion is refreshing — particularly the honest admission that none of them could straightforwardly say they trust…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2273245180.jpg?resize=1200,800",
+          "published_at": "2026-05-17T19:46:34+00:00",
+          "fetched_at": "2026-05-18T07:35:16.355086+00:00"
+        },
+        {
+          "id": 3422,
+          "source": "The Verge AI",
+          "title": "Revamped Siri will reportedly offer auto-deleting chats",
+          "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Apple's revamped Siri, debuting in iOS 27, will reportedly feature auto-deleting chat histories with options to save conversations for 30 days, one year, or forever. According to Bloomberg's Mark Gurman, Apple is positioning privacy as its key AI differentiator, contrasting with competitors who generally only offer temporary incognito chats. While Apple is replacing many under-the-hood components with Google's Gemini technology, it plans to impose tighter limits on how AI memory works, including restrictions on what information can persist and for how long. The company is betting that users will trade some convenience for greater privacy amid growing AI-related anxiety.",
+          "opinion": "This is a smart strategic move by Apple. As AI anxiety grows among consumers, offering meaningful privacy controls rather than just lip service could genuinely differentiate Apple in a crowded market. The auto-delete options (30 days, one year, forever) give users real agency over their data, which is refreshing compared to the opaque data retention policies of most AI chatbot providers. However, there's an inherent tension here: Apple is simultaneously adopting Google's Gemini technology while…",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/10817647/acastro_180510_1777_siri_0001.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-05-17T18:40:28+00:00",
+          "fetched_at": "2026-05-18T07:35:28.498444+00:00"
+        },
+        {
+          "id": 3423,
+          "source": "The Verge AI",
+          "title": "University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Former Google CEO Eric Schmidt was booed by University of Arizona students during a commencement address on Friday when his speech turned to AI cheerleading. Students about to enter a difficult job market expressed frustration as Schmidt promoted AI, though he acknowledged their fears about jobs, climate, and politics were 'rational.' Some students also booed over sexual assault allegations against him. Schmidt urged graduates to embrace AI opportunities, telling them to 'get on the rocketship,' but the article frames this as another example of Silicon Valley's inability to read the room as public opinion increasingly turns against AI.",
+          "opinion": "This article captures a genuine and growing cultural tension between Silicon Valley's relentless AI optimism and the real anxieties of people facing its consequences. The students' reaction is understandable — being told to embrace a technology that threatens your career prospects by a billionaire who profits from it is tone-deaf. The piece is well-framed and appropriately critical, though it could have explored the students' specific concerns in more depth. Schmidt's acknowledgment that their…",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23350482/1328571726.jpg?quality=90&strip=all&crop=0%2C10.675926728958%2C100%2C78.648146542083&w=1200",
+          "published_at": "2026-05-17T17:22:23+00:00",
+          "fetched_at": "2026-05-18T07:35:28.693446+00:00"
+        },
+        {
+          "id": 3419,
+          "source": "Guardian AI",
+          "title": "The Guardian view on policing the internet: Ofcom must push harder on illegal content | Editorial",
+          "url": "https://www.theguardian.com/commentisfree/2026/may/17/the-guardian-view-on-policing-the-internet-ofcom-must-pusher-harder-on-content",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Ofcom fined a US-based suicide forum £950,000 linked to over 160 UK deaths, but the Guardian editorial argues the regulator and government must push harder and faster to confront big tech companies over illegal and harmful online content, echoing frustrations voiced by Jess Phillips about the slow pace of online safety enforcement.",
+          "opinion": "The editorial strongly criticizes the slow pace of internet regulation and calls on Ofcom to be more aggressive in tackling illegal online content. It expresses sympathy with campaigners and bereaved families frustrated by delays, and highlights what it sees as an alarming reluctance by authorities to confront major technology companies over harmful content.",
+          "image_url": "https://i.guim.co.uk/img/media/44c647fe0075cc346e19fb3a6a5d5d5e9438dc9a/363_0_3548_2837/master/3548.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=99c3348a3aa3fd736ce0c28cb58505cc",
+          "published_at": "2026-05-17T16:49:07+00:00",
+          "fetched_at": "2026-05-18T07:35:20.036488+00:00"
+        },
+        {
+          "id": 3416,
+          "source": "TechCrunch AI",
+          "title": "If you’re giving a commencement speech in 2026, maybe don’t mention AI",
+          "url": "https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article reports on a growing trend during 2026 commencement season where graduating students are booing speakers who mention artificial intelligence in their speeches. At the University of Central Florida, executive Gloria Caulfield was booed when she called AI 'the next industrial revolution,' and former Google CEO Eric Schmidt faced similar hostility at the University of Arizona when telling students they would 'help shape artificial intelligence.' The article notes that only 43% of Americans aged 15-34 believe it's a good time to find a job locally, down from 75% in 2022, and that for many graduates, AI has become a symbol of diminished job prospects and what critic Brian Merchant calls 'the cruel new face of hyper-scaling capitalism.' Not all speeches drew boos — Nvidia CEO Jensen Huang spoke at Carnegie Mellon without audible pushback — but 'resilience' was a recurring theme ac…",
+          "opinion": "This article captures a genuinely significant cultural moment — the point at which AI optimism from tech leaders collides head-on with the lived anxieties of young people entering a hostile job market. The booing is not mere rudeness; it's a visceral rejection of a narrative that asks graduates to celebrate the very technology many perceive as threatening their livelihoods. The contrast between Caulfield's tone-deaf corporate cheerleading to arts and humanities graduates and their reaction is a…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2019/01/university.jpg?resize=1200,641",
+          "published_at": "2026-05-17T16:32:04+00:00",
+          "fetched_at": "2026-05-18T07:35:16.562697+00:00"
+        },
+        {
+          "id": 3417,
+          "source": "TechCrunch AI",
+          "title": "TechCrunch Mobility: The AI skills arms race is coming for automotive",
+          "url": "https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch Mobility reports on the growing AI skills arms race in the automotive industry. General Motors laid off over 600 IT employees (10%+ of its IT department) to recruit workers with AI-focused backgrounds, seeking skills in AI-native development, data engineering, cloud engineering, agent/model development, and prompt engineering. Ford, GM, and Stellantis have collectively cut over 20,000 U.S. salaried jobs (19% of combined workforces) from recent peaks, largely driven by technological changes including AI. Samsara is highlighted as a company successfully leveraging AI, having trained models on truck camera data to detect and monitor pothole deterioration, now selling this to cities including Chicago. The newsletter also notes that Rivian founder RJ Scaringe's spinoff Mind Robotics raised $400 million just two months after a $500 million raise, with investors having poured $12.3…",
+          "opinion": "This article captures a significant and somewhat troubling trend in the automotive industry. The framing of GM's layoffs as a 'deliberate skills swap' is corporate euphemism at its finest — these are real job losses with the honest admission that it won't be a one-to-one replacement. The 20,000 combined job cuts across the Big Three are staggering. The candid note that 'not all of these businesses know quite what they're doing with AI yet' is refreshingly honest and probably the most important…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/rj-scaringe-Getty.jpg?resize=1200,800",
+          "published_at": "2026-05-17T16:05:00+00:00",
+          "fetched_at": "2026-05-18T07:35:16.777938+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://twitter.com/eng_khairallah1/status/2056024748962754628",
+      "author": "eng_khairallah1",
+      "headline": "Boris Cherny's free 30-minute Anthropic workshop on Claude Code is __worth more than most $300 vibe-coding courses__.",
+      "tweet_id": "3641eba9-b6bc-8167-8d38-e4162b20c4bb",
+      "source_text": "🚨 Anthropic just showed a 30-minute workshop on how to actually use Claude Code properly.\n\nStraight from Boris Cherny himself.\n\nFree. No registration. No paywall.\n\nI've seen $300 courses that don't cover what they teach in the first 8 minutes.\n\nBookmark it and share it now. https://t.co/cPF0mNaaOq https://t.co/bwiPK11AZ5",
+      "created_time": "2026-05-18T03:33:00.000Z",
+      "canonical_url": "https://twitter.com/eng_khairallah1/status/2056024748962754628",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/NainsiDwiv50980/status/2056014783821074481",
+      "author": "NainsiDwiv50980",
+      "headline": "The engineer who built Claude Code runs __10–15 parallel AI agents__ like a team — his secret is a CLAUDE.md file that turns every mistake into a rule.",
+      "tweet_id": "3641eba9-b6bc-818b-9cb7-d14df1fa2812",
+      "source_text": "The guy who BUILT Claude Code is running 10–15 parallel AI agents like an engineering team.\n\nNot prompts.\nSystems.\n\nHis secret isn’t some hidden feature.\n\nIt’s a simple file:\n\nCLAUDE.md\n\nAnd it changes everything.\n\nEvery time Claude makes a mistake → it writes a rule.\nEvery https://t.co/hNkX67nAq2 https://t.co/6NpRaWuLqK",
+      "created_time": "2026-05-18T03:33:00.000Z",
+      "canonical_url": "https://twitter.com/NainsiDwiv50980/status/2056014783821074481",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/fivosaresti/status/2055725045662523661",
+      "author": "fivosaresti",
+      "headline": "A six-step GTM machine that books __100+ meetings every month__ from four motions — starting with a site designed to qualify, not just convert.",
+      "tweet_id": "3641eba9-b6bc-81e1-afc1-fc2a7038d10f",
+      "source_text": "We book 100+ meetings every month from 4 GTM motions.\n\nHere's the 6-step machine behind every single one of them:\n\n---\n\n1. Step 1: Website Conversion.\n\nWe spent 50+ hours designing the site to match prospect language and maximize conversions.\n\nThe site is the first qualifier, not https://t.co/IgZWkMFmJi",
+      "created_time": "2026-05-18T03:33:00.000Z",
+      "canonical_url": "https://twitter.com/fivosaresti/status/2055725045662523661",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/JaynitMakwana/status/2055967109080105047",
+      "author": "JaynitMakwana",
+      "headline": "A builder walked into a restaurant on a quiet Tuesday and __sold a chatbot that takes orders, confirms tables, and routes to the kitchen__ in under two minutes.",
+      "tweet_id": "3641eba9-b6bc-815b-8584-c585d737a389",
+      "source_text": "This guy literally leaked how to use AI to learn anything 10x faster in 2026: https://t.co/U4EQIj63O6 https://t.co/mafMtSA9eR",
+      "created_time": "2026-05-18T03:33:00.000Z",
+      "canonical_url": "https://twitter.com/JaynitMakwana/status/2055967109080105047",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/eng_khairallah1/status/2055672548227273044",
+      "author": "eng_khairallah1",
+      "headline": "Anthropic's Claude team published a free 24-minute tutorial on __building an AI agent with real memory__ from scratch.",
+      "tweet_id": "3641eba9-b6bc-81b9-8b6c-c5c7a6ea5457",
+      "source_text": "Anthropic's Claude team just showed how to build an AI agent with real memory in under 30 minutes.\n\n24-minutes. free. by the people who built Claude.\n\nworth than $500 vibe-coding course.\n\nBookmark & replace one movie today with this course, then read the complete article below. https://t.co/RB3LATkfHC https://t.co/pdBJB3quXS",
+      "created_time": "2026-05-18T03:33:00.000Z",
+      "canonical_url": "https://twitter.com/eng_khairallah1/status/2055672548227273044",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/jerryjliu0/status/2055817368253997244",
+      "author": "jerryjliu0",
+      "headline": "Jerry Liu breaks AI agents in finance into two buckets: __repetitive back-office work__",
+      "tweet_id": "3641eba9-b6bc-8145-8990-c98140502e97",
+      "source_text": "Many AI agents in finance rely on extremely high quality context engineering from documents 📑\n\nThey can be roughly divided into two categories:\n1️⃣ Repetitive, operational work common in back-office use cases - invoice processing, loan origination, KYC\n2️⃣ Assistive agents for https://t.co/MQaADUsgkz",
+      "created_time": "2026-05-18T03:33:00.000Z",
+      "canonical_url": "https://twitter.com/jerryjliu0/status/2055817368253997244",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://vostride.com",
+      "author": "pranshuchittora",
+      "item_id": "hn:48176493",
+      "headline": "Agent-QA is an open-source AI that handles __end-to-end testing for web and mobile apps__ without manual scripting.",
+      "subreddit": null,
+      "source_text": "Show HN: Agent-QA: Open-source AI end-to-end testing for web and mobile apps",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-18T07:29:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://vostride.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=48176449",
+      "author": "fragmede",
+      "item_id": "hn:48176449",
+      "headline": "An Ask HN thread makes the case that __Java is the ideal language for LLM-assisted coding__ — and the replies are split.",
+      "subreddit": null,
+      "source_text": "Ask HN: Is Java the ideal language for LLM-assisted coding?",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-18T07:23:58+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=48176449",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openclaw-creator-burns-through-1-3-million-in-openai-api-tokens-in-a-single-month",
+      "author": "m0do1",
+      "item_id": "hn:48176393",
+      "headline": "The OpenClaw creator burned through __$1.3 million in OpenAI API tokens__ in a single month.",
+      "subreddit": null,
+      "source_text": "OpenClaw creator burns through $1.3 mio in OpenAI API tokens in a single month",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-18T07:14:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/tech-industry/artificial-intelligence/openclaw-creator-burns-through-1-3-million-in-openai-api-tokens-in-a-single-month",
+      "learning_score": 2
+    },
+    {
+      "url": "https://old.reddit.com/r/codex/comments/1tgbb28/comment/omfo1by/",
+      "author": "mazzystar",
+      "item_id": "hn:48176199",
+      "headline": "Someone pitted Codex and Claude in a head-to-head tank arena — __Codex is winning 55%__ of rounds so far.",
+      "subreddit": null,
+      "source_text": "I put Codex and Claude into a tank arena. Codex is winning 55% so far",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-18T06:30:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://old.reddit.com/r/codex/comments/1tgbb28/comment/omfo1by",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-05-18T07:42:02.077591+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "123d38b898846d09d91943742bce4714818b419efaa1ae656840e46cabf8d58b"
+}
