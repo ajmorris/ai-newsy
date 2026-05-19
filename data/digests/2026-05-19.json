@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 3455,
+      "source": "Guardian AI",
+      "title": "Pocock urges CGT changes as Albanese laughs off AI meme campaign",
+      "url": "https://www.theguardian.com/australia-news/2026/may/19/australia-federal-budget-responses-albanese-ai-memes-david-pocock-warning",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Independent senator David Pocock has warned that proposed capital gains tax (CGT) changes in the Australian federal budget could drive tech investment offshore. Meanwhile, Prime Minister Anthony Albanese has dismissed an AI-generated meme campaign created by startup founders opposing the CGT reforms, joking about the 'very flattering' doctored images of himself. Independent politicians representing startup-heavy areas have expressed concern about the potential impact of the budget reforms on Australia's technology sector.",
+      "opinion": "This article highlights the growing tension between the Albanese government's tax reform agenda and Australia's startup ecosystem. The PM's lighthearted dismissal of the AI meme campaign, while politically savvy, risks appearing tone-deaf to legitimate concerns from the tech sector about capital gains tax changes that could discourage investment and entrepreneurship. David Pocock's warning deserves serious consideration — Australia already struggles to retain tech talent and investment compared…",
+      "image_url": "https://i.guim.co.uk/img/media/bc5d892db4a82e2e8effccfcc801ebb0311a8180/0_103_1046_837/master/1046.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9e5db38bf9af38370deb96e8152f4cea",
+      "published_at": "2026-05-19T07:44:22+00:00",
+      "fetched_at": "2026-05-19T08:15:48.683994+00:00"
+    },
+    {
       "id": 3452,
       "source": "Claude Code Changelog",
       "title": "v2.1.144",
@@ -31,6 +44,19 @@
       "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AP26138721148129.jpg?resize=1200,600",
       "published_at": "2026-05-19T00:53:10+00:00",
       "fetched_at": "2026-05-19T07:23:55.856845+00:00"
+    },
+    {
+      "id": 3454,
+      "source": "Science Daily",
+      "title": "Forget electrons, this breakthrough uses light-matter particles to power AI",
+      "url": "https://www.sciencedaily.com/releases/2026/05/260518041341.htm",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Researchers at the University of Pennsylvania, led by physicist Bo Zhen, have created a hybrid light-matter quasiparticle called an exciton-polariton that could dramatically speed up AI computing while using far less energy. The particle forms when photons are strongly coupled with electrons inside an atomically thin semiconductor material, enabling light to perform signal-switching operations that pure photons cannot do alone. Current photonic AI chips must convert light signals back to electronic ones for nonlinear activation steps like decision-making, which slows processing and wastes energy. The Penn team demonstrated all-light switching using only about 4 quadrillionths of a joule of energy, an extraordinarily small amount. If scalable, this technology could help replace some electronic computing processes with ultra-efficient light-based alternatives, addressing the growing energ…",
+      "opinion": "This is a genuinely exciting development that addresses one of the most critical bottlenecks in photonic computing: the need to convert optical signals back to electronic ones for nonlinear operations. The energy figures cited are impressively low, and the use of exciton-polaritons is a clever approach to bridging light's speed advantages with matter's ability to interact and switch signals. However, significant challenges remain before this becomes practical. Scaling from laboratory demonstrat…",
+      "image_url": "https://www.sciencedaily.com/images/1920/photonic-computing-component.webp",
+      "published_at": "2026-05-19T00:23:26+00:00",
+      "fetched_at": "2026-05-19T08:15:43.926175+00:00"
     },
     {
       "id": 3431,
@@ -83,38 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-5339511481.jpg?w=640",
       "published_at": "2026-05-18T21:29:31+00:00",
       "fetched_at": "2026-05-19T07:23:39.471217+00:00"
-    },
-    {
-      "id": 3427,
-      "source": "TechCrunch AI",
-      "title": "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare",
-      "url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Anthropic has acquired Stainless, a dev tools startup founded by former Stripe engineer Alex Rattray, for reportedly over $300 million. Stainless, backed by Sequoia Capital and Andreessen Horowitz, automated the creation and maintenance of SDKs used by major tech companies including OpenAI, Google, Cloudflare, Replicate, and Runway. Anthropic announced it will wind down all hosted Stainless products, making the tools exclusively available to Anthropic and cutting off competitors. Existing customers will retain ownership of previously generated SDKs. Stainless had powered every official Anthropic SDK since the company's earliest API days.",
-      "opinion": "This is a strategically aggressive move by Anthropic that goes beyond typical acqui-hires. By acquiring Stainless and shutting down its hosted products, Anthropic is deliberately removing a key piece of developer infrastructure from its competitors' toolchains. While this is smart competitive positioning — especially as AI agents increasingly need robust SDK connections to external services — it feels somewhat heavy-handed and could generate ill will in the developer community. The $300M+ price…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2252871842.jpg?w=1024",
-      "published_at": "2026-05-18T19:27:52+00:00",
-      "fetched_at": "2026-05-19T07:23:39.737526+00:00"
-    },
-    {
-      "id": 3434,
-      "source": "Guardian AI",
-      "title": "Pope Leo to issue text on human dignity and AI with Anthropic co-founder",
-      "url": "https://www.theguardian.com/world/2026/may/18/pope-leo-encyclical-human-dignity-ai-anthropic",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Pope Leo is set to release his first encyclical, focusing on human dignity in the age of artificial intelligence. The document will be presented at the Vatican next week at an event attended by Anthropic co-founder Christopher Olah. The Vatican describes the text as addressing 'the protection of the human person in the age of AI.' The article also notes that Anthropic has had tensions with the Trump administration.",
-      "opinion": "This is a significant development at the intersection of religion, ethics, and technology. The collaboration between the Vatican and a leading AI company co-founder signals that concerns about AI's impact on human dignity are being taken seriously at the highest institutional levels. Pope Leo choosing AI as the subject of his first encyclical underscores how central this issue has become globally. The involvement of an Anthropic co-founder is particularly notable given the company's stated focu…",
-      "image_url": "https://i.guim.co.uk/img/media/42f5cad5cee9f4d32463f11d0daff3c629611625/4_0_3543_2835/master/3543.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dc756fa880ea382f1178d9f003d02b32",
-      "published_at": "2026-05-18T19:22:44+00:00",
-      "fetched_at": "2026-05-19T07:23:43.852502+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 3455,
+          "source": "Guardian AI",
+          "title": "Pocock urges CGT changes as Albanese laughs off AI meme campaign",
+          "url": "https://www.theguardian.com/australia-news/2026/may/19/australia-federal-budget-responses-albanese-ai-memes-david-pocock-warning",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Independent senator David Pocock has warned that proposed capital gains tax (CGT) changes in the Australian federal budget could drive tech investment offshore. Meanwhile, Prime Minister Anthony Albanese has dismissed an AI-generated meme campaign created by startup founders opposing the CGT reforms, joking about the 'very flattering' doctored images of himself. Independent politicians representing startup-heavy areas have expressed concern about the potential impact of the budget reforms on Australia's technology sector.",
+          "opinion": "This article highlights the growing tension between the Albanese government's tax reform agenda and Australia's startup ecosystem. The PM's lighthearted dismissal of the AI meme campaign, while politically savvy, risks appearing tone-deaf to legitimate concerns from the tech sector about capital gains tax changes that could discourage investment and entrepreneurship. David Pocock's warning deserves serious consideration — Australia already struggles to retain tech talent and investment compared…",
+          "image_url": "https://i.guim.co.uk/img/media/bc5d892db4a82e2e8effccfcc801ebb0311a8180/0_103_1046_837/master/1046.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9e5db38bf9af38370deb96e8152f4cea",
+          "published_at": "2026-05-19T07:44:22+00:00",
+          "fetched_at": "2026-05-19T08:15:48.683994+00:00"
+        },
         {
           "id": 3452,
           "source": "Claude Code Changelog",
@@ -140,6 +153,19 @@
           "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AP26138721148129.jpg?resize=1200,600",
           "published_at": "2026-05-19T00:53:10+00:00",
           "fetched_at": "2026-05-19T07:23:55.856845+00:00"
+        },
+        {
+          "id": 3454,
+          "source": "Science Daily",
+          "title": "Forget electrons, this breakthrough uses light-matter particles to power AI",
+          "url": "https://www.sciencedaily.com/releases/2026/05/260518041341.htm",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Researchers at the University of Pennsylvania, led by physicist Bo Zhen, have created a hybrid light-matter quasiparticle called an exciton-polariton that could dramatically speed up AI computing while using far less energy. The particle forms when photons are strongly coupled with electrons inside an atomically thin semiconductor material, enabling light to perform signal-switching operations that pure photons cannot do alone. Current photonic AI chips must convert light signals back to electronic ones for nonlinear activation steps like decision-making, which slows processing and wastes energy. The Penn team demonstrated all-light switching using only about 4 quadrillionths of a joule of energy, an extraordinarily small amount. If scalable, this technology could help replace some electronic computing processes with ultra-efficient light-based alternatives, addressing the growing energ…",
+          "opinion": "This is a genuinely exciting development that addresses one of the most critical bottlenecks in photonic computing: the need to convert optical signals back to electronic ones for nonlinear operations. The energy figures cited are impressively low, and the use of exciton-polaritons is a clever approach to bridging light's speed advantages with matter's ability to interact and switch signals. However, significant challenges remain before this becomes practical. Scaling from laboratory demonstrat…",
+          "image_url": "https://www.sciencedaily.com/images/1920/photonic-computing-component.webp",
+          "published_at": "2026-05-19T00:23:26+00:00",
+          "fetched_at": "2026-05-19T08:15:43.926175+00:00"
         },
         {
           "id": 3431,
@@ -192,32 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-5339511481.jpg?w=640",
           "published_at": "2026-05-18T21:29:31+00:00",
           "fetched_at": "2026-05-19T07:23:39.471217+00:00"
-        },
-        {
-          "id": 3427,
-          "source": "TechCrunch AI",
-          "title": "Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare",
-          "url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Anthropic has acquired Stainless, a dev tools startup founded by former Stripe engineer Alex Rattray, for reportedly over $300 million. Stainless, backed by Sequoia Capital and Andreessen Horowitz, automated the creation and maintenance of SDKs used by major tech companies including OpenAI, Google, Cloudflare, Replicate, and Runway. Anthropic announced it will wind down all hosted Stainless products, making the tools exclusively available to Anthropic and cutting off competitors. Existing customers will retain ownership of previously generated SDKs. Stainless had powered every official Anthropic SDK since the company's earliest API days.",
-          "opinion": "This is a strategically aggressive move by Anthropic that goes beyond typical acqui-hires. By acquiring Stainless and shutting down its hosted products, Anthropic is deliberately removing a key piece of developer infrastructure from its competitors' toolchains. While this is smart competitive positioning — especially as AI agents increasingly need robust SDK connections to external services — it feels somewhat heavy-handed and could generate ill will in the developer community. The $300M+ price…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2252871842.jpg?w=1024",
-          "published_at": "2026-05-18T19:27:52+00:00",
-          "fetched_at": "2026-05-19T07:23:39.737526+00:00"
-        },
-        {
-          "id": 3434,
-          "source": "Guardian AI",
-          "title": "Pope Leo to issue text on human dignity and AI with Anthropic co-founder",
-          "url": "https://www.theguardian.com/world/2026/may/18/pope-leo-encyclical-human-dignity-ai-anthropic",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Pope Leo is set to release his first encyclical, focusing on human dignity in the age of artificial intelligence. The document will be presented at the Vatican next week at an event attended by Anthropic co-founder Christopher Olah. The Vatican describes the text as addressing 'the protection of the human person in the age of AI.' The article also notes that Anthropic has had tensions with the Trump administration.",
-          "opinion": "This is a significant development at the intersection of religion, ethics, and technology. The collaboration between the Vatican and a leading AI company co-founder signals that concerns about AI's impact on human dignity are being taken seriously at the highest institutional levels. Pope Leo choosing AI as the subject of his first encyclical underscores how central this issue has become globally. The involvement of an Anthropic co-founder is particularly notable given the company's stated focu…",
-          "image_url": "https://i.guim.co.uk/img/media/42f5cad5cee9f4d32463f11d0daff3c629611625/4_0_3543_2835/master/3543.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dc756fa880ea382f1178d9f003d02b32",
-          "published_at": "2026-05-18T19:22:44+00:00",
-          "fetched_at": "2026-05-19T07:23:43.852502+00:00"
         }
       ]
     }
@@ -236,21 +236,11 @@
     {
       "url": "https://twitter.com/ClaudeDevs/status/2056434422229123106",
       "author": "ClaudeDevs",
-      "headline": "Claude Console now shows __prompt cache diagnostics__ — when a request misses the cache, you can see exactly which part changed and how many tokens it cost.",
+      "headline": "Claude Console now shows __prompt cache diagnostics__ — when a request misses cache, you can see exactly which part changed and what it cost in tokens.",
       "tweet_id": "3651eba9-b6bc-81e6-a633-ef2aa38b0f8f",
       "source_text": "Prompt cache diagnostics are now in Claude Console.\n\nWhen a request misses the cache, you can now see exactly which part of your prompt changed and how many tokens it cost you. https://t.co/z0dV6zzLPm",
       "created_time": "2026-05-19T04:12:00.000Z",
       "canonical_url": "https://twitter.com/ClaudeDevs/status/2056434422229123106",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/gdb/status/2056430780809892252",
-      "author": "gdb",
-      "headline": "Greg Brockman explains how to use __/goal in Codex__ to keep the agent working on a persistent objective until it's solved.",
-      "tweet_id": "3651eba9-b6bc-81c8-acbb-daa15afb1f0f",
-      "source_text": "how to use /goal in codex — keep Codex working on a persistent objective until it's solved: https://t.co/Imoo5ZSxdJ",
-      "created_time": "2026-05-19T03:32:00.000Z",
-      "canonical_url": "https://twitter.com/gdb/status/2056430780809892252",
       "learning_score": 3
     },
     {
@@ -266,7 +256,7 @@
     {
       "url": "https://twitter.com/clairevo/status/2056428390773825701",
       "author": "clairevo",
-      "headline": "Claire Vo says five words changed her workflow: __\"HTML is the new markdown.\"__ Agents write it well, and unlike .md, humans can actually scan it.",
+      "headline": "Claire Vo and trq212 make the case that __\"HTML is the new markdown\"__ — .md is easy for agents to read but a slog for humans to eyeball.",
       "tweet_id": "3651eba9-b6bc-815e-9692-d24521f5997f",
       "source_text": "Soooo @trq212 has straight up changed my life with these 5 words:\n\n\"HTML is the new markdown.\"\n\nIt's so obvious in hindsight: while .md is simple to write and agents can read it well, it's a total slog to eyeball as a human. \n\nIn this special ep recorded live at Code with Claude, https://t.co/IujDRfa0tG",
       "created_time": "2026-05-19T03:22:00.000Z",
@@ -276,20 +266,43 @@
     {
       "url": "https://twitter.com/trq212/status/2056415973125796184",
       "author": "trq212",
-      "headline": "A prompt worth stealing: ask the agent to maintain a running __implementation-notes.html__ capturing every decision, tradeoff, and spec gap as it codes.",
+      "headline": "A prompt worth stealing: ask the agent to maintain a running __implementation-notes.html capturing decisions, tradeoffs, and spec gaps__ as it works.",
       "tweet_id": "3651eba9-b6bc-817e-9a28-c99c603b95e5",
       "source_text": "a prompt I've been using a lot recently:\n\nimplement <SPEC> and while you do, keep a running implementation-notes.html file (or markdown) with decisions you had to make weren't in the spec, things you had to change, tradeoffs you had to make or anything else I should know https://t.co/qQFTES4fjo",
       "created_time": "2026-05-19T03:22:00.000Z",
       "canonical_url": "https://twitter.com/trq212/status/2056415973125796184",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/karankendre/status/2056325408312942727",
+      "author": "karankendre",
+      "headline": "Microsoft's AI chief predicts most __white-collar work will be heavily automated within 12–18 months__ — lawyers, accountants, marketers, PMs, and engineers included.",
+      "tweet_id": "3651eba9-b6bc-812e-be16-d81021dfad97",
+      "source_text": "Microsoft AI chief predicts:\n\nA lot of people still think AI will only replace repetitive jobs\n\nMeanwhile, many experts now believe most white-collar work will be heavily automated within the next 12–18 months\n\nLawyers, accountants, marketers, project managers, software engineers https://t.co/2alg9ztW2X https://t.co/YZcVZzfmZ2",
+      "created_time": "2026-05-19T04:12:00.000Z",
+      "canonical_url": "https://twitter.com/karankendre/status/2056325408312942727",
+      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
+      "url": "https://2026.stateofai.dev/en-US",
+      "author": "mycroft_4221",
+      "item_id": "hn:48190468",
+      "headline": "The __State of AI 2026 survey results__ are out — a snapshot of where developers actually stand on tooling, models, and adoption.",
+      "subreddit": null,
+      "source_text": "State of AI 2026 survey results",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-19T07:49:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://2026.stateofai.dev/en-US",
+      "learning_score": 3
+    },
+    {
       "url": "https://xtra.sh/blog/markus/",
       "author": "xtra1",
       "item_id": "hn:48190344",
-      "headline": "Students detail how they __hacked a uWaterloo and UofT grading tool__ to give themselves free 4.0s.",
+      "headline": "Students hacked their way to __free 4.0s by exploiting a grading tool__ used at uWaterloo and UofT.",
       "subreddit": null,
       "source_text": "How We Hacked Our Way to Free 4.0s and Took Over a uWaterloo & UofT Grading Tool",
       "source_type": "hacker_news",
@@ -299,23 +312,49 @@
       "learning_score": 3
     },
     {
-      "url": "https://jvns.ca/blog/2023/12/04/mounting-git-commits-as-folders-with-nfs/",
-      "author": "pvtmert",
-      "item_id": "hn:48190373",
-      "headline": "Julia Evans mounted __Git commits as folders with NFS__ — a neat trick from 2023 worth revisiting.",
+      "url": "https://twitter.com/PatrickToulme/status/2055709800986780028",
+      "author": "pretext",
+      "item_id": "hn:48190540",
+      "headline": "Patrick Toulmé makes the case that __true hardware portability is a myth__ — the best AI stacks will always be opinionated about silicon.",
       "subreddit": null,
-      "source_text": "Mounting Git commits as folders with NFS",
+      "source_text": "Portability Is a Myth: Why the Best AI Stacks Will Never Be Hardware-Agnostic",
       "source_type": "hacker_news",
-      "created_time": "2026-05-19T07:32:56+00:00",
+      "created_time": "2026-05-19T08:03:50+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://jvns.ca/blog/2023/12/04/mounting-git-commits-as-folders-with-nfs",
+      "canonical_url": "https://twitter.com/PatrickToulme/status/2055709800986780028",
+      "learning_score": 2
+    },
+    {
+      "url": "https://getviberia.com/",
+      "author": "bhu8",
+      "item_id": "hn:48190531",
+      "headline": "Viberia is a __Civ/Polytopia-style command center__ for orchestrating AI agents, BYOK and BYOS.",
+      "subreddit": null,
+      "source_text": "Show HN: Viberia – Civ/Polytopia-like command center for AI agents (BYOK/BYOS)",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-19T08:02:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://getviberia.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.businessinsider.com/pizza-hut-ai-system-dragontail-lawsuit-franchisee-2026-5",
+      "author": "kombookcha",
+      "item_id": "hn:48190516",
+      "headline": "Pizza Hut franchisees allege the chain's AI system Dragontail caused __cascading failures and $100M in damages__.",
+      "subreddit": null,
+      "source_text": "Pizza Hut's AI system caused 'cascading' problems and $100M in damages",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-19T07:58:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://businessinsider.com/pizza-hut-ai-system-dragontail-lawsuit-franchisee-2026-5",
       "learning_score": 2
     },
     {
       "url": "https://antirez.com/news/166",
       "author": "surprisetalk",
       "item_id": "hn:48190359",
-      "headline": "Antirez built a new __EDIT tool for LLM agents__ designed to make code modifications more reliable.",
+      "headline": "Antirez built a __new EDIT tool for LLM agents__ — designed to make file modifications less error-prone than search-and-replace.",
       "subreddit": null,
       "source_text": "A new EDIT tool for LLM agents",
       "source_type": "hacker_news",
@@ -323,52 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://antirez.com/news/166",
       "learning_score": 2
-    },
-    {
-      "url": "https://meertens.dev/blog/github-enables-domain-abuse/",
-      "author": "rmeertens",
-      "item_id": "hn:48190348",
-      "headline": "A developer explains how __GitHub Pages enabled domain abuse__ on his personal domain.",
-      "subreddit": null,
-      "source_text": "My domain got abused on GitHub Pages",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-19T07:28:59+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://meertens.dev/blog/github-enables-domain-abuse",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict/",
-      "author": "joozio",
-      "item_id": "hn:48190333",
-      "headline": "A breakdown of __why Elon Musk lost his suit__ against OpenAI.",
-      "subreddit": null,
-      "source_text": "Why Elon Musk lost his suit against OpenAI",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-19T07:25:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://technologyreview.com/2026/05/18/1137488/elon-musk-suit-openai-verdict",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.reuters.com/world/meta-lays-out-plans-may-20-layoffs-restructuring-internal-document-says-2026-05-18/",
-      "author": "theonionspeaks",
-      "item_id": "hn:48190323",
-      "headline": "Meta circulates an internal document detailing __May 20 layoffs and restructuring__ plans.",
-      "subreddit": null,
-      "source_text": "Meta lays out details of May 20 restructuring in internal document",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-19T07:23:40+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://reuters.com/world/meta-lays-out-plans-may-20-layoffs-restructuring-internal-document-says-2026-05-18",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-19T07:37:35.847549+00:00",
+    "generated_at": "2026-05-19T08:18:43.580902+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "ddd6b557ee94f5bec2e8cf370bc6ce079d42bb71579d0ad0085136c3fa80117a"
+  "content_hash": "e559eacb2650243fa2bac369aedb14e9cb033d5c3efe9b74421f6564b8038a53"
 }
