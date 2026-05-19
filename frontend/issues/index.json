@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-18T00:00:00Z",
-  "issueCount": 28,
+  "generatedAt": "2026-05-19T00:00:00Z",
+  "issueCount": 29,
   "latestIssue": {
-    "slug": "2026-05-18",
-    "digestDate": "2026-05-18",
-    "displayDate": "May 18, 2026",
-    "issueNumber": "60518",
-    "subject": "ISSUE 60518 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI backlash is getting loud \u2014 and it's not just online. From University of Arizona graduates booing former Google CEO Eric Schmidt off the stage to automakers like GM cutting thousands of jobs to hire AI-focused workers instead, today's stories paint a vivid picture of a technology revolution that's moving faster than the public's patience. We've also got Apple betting big on privacy as its AI differentiator, the trust question looming over the Musk-OpenAI trial, and a surprising energy story about UK datacentres that could blow a hole in the country's climate targets.",
+    "slug": "2026-05-19",
+    "digestDate": "2026-05-19",
+    "displayDate": "May 19, 2026",
+    "issueNumber": "60519",
+    "subject": "ISSUE 60519 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing with major moves from Anthropic today \u2014 the company acquired dev tools startup Stainless for over $300 million (cutting off competitors like OpenAI and Google from its SDK tools), struck a scientific computing partnership with SandboxAQ to bring drug discovery capabilities into Claude, and even has co-founder Christopher Olah heading to the Vatican for Pope Leo's first encyclical on human dignity and AI. Meanwhile, a jury handed Elon Musk a decisive loss in his lawsuit against OpenAI, and a growing generational backlash against AI is making headlines as recent grads boo mentions of the technology at their own commencements. It's a day that captures the full spectrum of AI's expanding reach \u2014 from corporate power plays to courtroom battles to existential questions about what it all means for humanity.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-18.html",
-    "contentHash": "a722ad5688dfc3e7180f4597291854938fc1efc46db7878cce7cd2a95e941b3f"
+    "urlPath": "/issues/2026-05-19.html",
+    "contentHash": "e559eacb2650243fa2bac369aedb14e9cb033d5c3efe9b74421f6564b8038a53"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-19",
+      "digestDate": "2026-05-19",
+      "displayDate": "May 19, 2026",
+      "issueNumber": "60519",
+      "subject": "ISSUE 60519 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing with major moves from Anthropic today \u2014 the company acquired dev tools startup Stainless for over $300 million (cutting off competitors like OpenAI and Google from its SDK tools), struck a scientific computing partnership with SandboxAQ to bring drug discovery capabilities into Claude, and even has co-founder Christopher Olah heading to the Vatican for Pope Leo's first encyclical on human dignity and AI. Meanwhile, a jury handed Elon Musk a decisive loss in his lawsuit against OpenAI, and a growing generational backlash against AI is making headlines as recent grads boo mentions of the technology at their own commencements. It's a day that captures the full spectrum of AI's expanding reach \u2014 from corporate power plays to courtroom battles to existential questions about what it all means for humanity.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-19.html",
+      "contentHash": "e559eacb2650243fa2bac369aedb14e9cb033d5c3efe9b74421f6564b8038a53"
+    },
     {
       "slug": "2026-05-18",
       "digestDate": "2026-05-18",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-08.html",
       "contentHash": "a38c00c9acb74385205d7ffabc3ee9ce9a896109954c0f43f028c04b0847a9b0"
-    },
-    {
-      "slug": "2026-05-07",
-      "digestDate": "2026-05-07",
-      "displayDate": "May 07, 2026",
-      "issueNumber": "60507",
-      "subject": "ISSUE 60507 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing with ambition this week \u2014 Anthropic CEO Dario Amodei is projecting the company could grow by a staggering 80x in 2026, while the \"Code with Claude\" event dropped a wave of new developer features from automated routines to multi-agent orchestration (plus a flurry of Claude Code patch releases to keep up the pace). Beyond Anthropic's spotlight, today's digest also dives into the chip supply crunch that top AI executives say will bottleneck the industry for years, Europe's soul-searching over its AI partnerships with US tech giants, and the courtroom drama unfolding in the Musk v. Altman trial.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-07.html",
-      "contentHash": "86629c8b74d26b1f9fb560a3291ace80aeba224571cc5dd1ee840ce9cbd57030"
     }
   ]
 }
