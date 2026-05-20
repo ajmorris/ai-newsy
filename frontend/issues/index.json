@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-19T00:00:00Z",
-  "issueCount": 29,
+  "generatedAt": "2026-05-20T00:00:00Z",
+  "issueCount": 30,
   "latestIssue": {
-    "slug": "2026-05-19",
-    "digestDate": "2026-05-19",
-    "displayDate": "May 19, 2026",
-    "issueNumber": "60519",
-    "subject": "ISSUE 60519 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing with major moves from Anthropic today \u2014 the company acquired dev tools startup Stainless for over $300 million (cutting off competitors like OpenAI and Google from its SDK tools), struck a scientific computing partnership with SandboxAQ to bring drug discovery capabilities into Claude, and even has co-founder Christopher Olah heading to the Vatican for Pope Leo's first encyclical on human dignity and AI. Meanwhile, a jury handed Elon Musk a decisive loss in his lawsuit against OpenAI, and a growing generational backlash against AI is making headlines as recent grads boo mentions of the technology at their own commencements. It's a day that captures the full spectrum of AI's expanding reach \u2014 from corporate power plays to courtroom battles to existential questions about what it all means for humanity.",
+    "slug": "2026-05-20",
+    "digestDate": "2026-05-20",
+    "displayDate": "May 20, 2026",
+    "issueNumber": "60520",
+    "subject": "ISSUE 60520 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Demis Hassabis says we're standing in the \"foothills of the singularity,\" and judging by today's news cycle, it's hard to argue he's not at least *trying* to make that true \u2014 Google I/O 2026 unleashed a firehose of announcements, from a conversational Gmail inbox to a full-blown AI design app gunning for Canva. But beyond the Google blitz, today's digest also dives into the growing world of AI agents auditing other AI agents, xAI opening Grok up to a new open-source assistant, and a Google engineer's firing that raises thorny questions about protest and ethics inside Big Tech.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-19.html",
-    "contentHash": "e559eacb2650243fa2bac369aedb14e9cb033d5c3efe9b74421f6564b8038a53"
+    "urlPath": "/issues/2026-05-20.html",
+    "contentHash": "8b116413de9d1650f571732fd4a46bc32683d17534f903257c2e2725540877d8"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-20",
+      "digestDate": "2026-05-20",
+      "displayDate": "May 20, 2026",
+      "issueNumber": "60520",
+      "subject": "ISSUE 60520 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Demis Hassabis says we're standing in the \"foothills of the singularity,\" and judging by today's news cycle, it's hard to argue he's not at least *trying* to make that true \u2014 Google I/O 2026 unleashed a firehose of announcements, from a conversational Gmail inbox to a full-blown AI design app gunning for Canva. But beyond the Google blitz, today's digest also dives into the growing world of AI agents auditing other AI agents, xAI opening Grok up to a new open-source assistant, and a Google engineer's firing that raises thorny questions about protest and ethics inside Big Tech.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-20.html",
+      "contentHash": "8b116413de9d1650f571732fd4a46bc32683d17534f903257c2e2725540877d8"
+    },
     {
       "slug": "2026-05-19",
       "digestDate": "2026-05-19",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-09.html",
       "contentHash": "8043e3142fcbd065dfeb8b524980279307b328267f8d661120926285cd86f8c3"
-    },
-    {
-      "slug": "2026-05-08",
-      "digestDate": "2026-05-08",
-      "displayDate": "May 08, 2026",
-      "issueNumber": "60508",
-      "subject": "ISSUE 60508 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "OpenAI is dominating today's headlines with a triple feature: new real-time voice intelligence tools for developers, a \"Trusted Contact\" safety feature designed to address self-harm concerns amid mounting lawsuits, and fresh revelations from Mira Murati's deposition pulling back the curtain on Sam Altman's dramatic 2023 ouster. Beyond the OpenAI orbit, we've got a Phoenix startup using AI voice agents to fix the maddening specialist referral process, Perplexity bringing AI agents to every Mac, and a look at whether Europe's literary translators can survive the AI wave \u2014 spoiler: being human still counts for something.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-08.html",
-      "contentHash": "a38c00c9acb74385205d7ffabc3ee9ce9a896109954c0f43f028c04b0847a9b0"
     }
   ]
 }
