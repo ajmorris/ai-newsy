@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-20T00:00:00Z",
-  "issueCount": 30,
+  "generatedAt": "2026-05-21T00:00:00Z",
+  "issueCount": 31,
   "latestIssue": {
-    "slug": "2026-05-20",
-    "digestDate": "2026-05-20",
-    "displayDate": "May 20, 2026",
-    "issueNumber": "60520",
-    "subject": "ISSUE 60520 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Demis Hassabis says we're standing in the \"foothills of the singularity,\" and judging by today's news cycle, it's hard to argue he's not at least *trying* to make that true \u2014 Google I/O 2026 unleashed a firehose of announcements, from a conversational Gmail inbox to a full-blown AI design app gunning for Canva. But beyond the Google blitz, today's digest also dives into the growing world of AI agents auditing other AI agents, xAI opening Grok up to a new open-source assistant, and a Google engineer's firing that raises thorny questions about protest and ethics inside Big Tech.",
+    "slug": "2026-05-21",
+    "digestDate": "2026-05-21",
+    "displayDate": "May 21, 2026",
+    "issueNumber": "60521",
+    "subject": "ISSUE 60521 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic is having quite a week \u2014 its co-founder is predicting AI will snag a Nobel Prize within a year, and the company just told investors it's about to post its first-ever profitable quarter, with revenue expected to hit $10.9 billion. Meanwhile, Nvidia keeps smashing records with $81.6 billion in revenue while Jensen Huang unveils a \"brand new\" $200 billion market for AI agent CPUs, and SpaceX's IPO filing pulls back the curtain on xAI's staggering $6.4 billion in losses. Today's digest is packed with big numbers, bold predictions, and the financial reality checks that come with the AI boom.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-20.html",
-    "contentHash": "8b116413de9d1650f571732fd4a46bc32683d17534f903257c2e2725540877d8"
+    "urlPath": "/issues/2026-05-21.html",
+    "contentHash": "6432f8b0d53946ce242aedc94ea888c1bdf188699fa48b164ead02e570c3c136"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-21",
+      "digestDate": "2026-05-21",
+      "displayDate": "May 21, 2026",
+      "issueNumber": "60521",
+      "subject": "ISSUE 60521 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic is having quite a week \u2014 its co-founder is predicting AI will snag a Nobel Prize within a year, and the company just told investors it's about to post its first-ever profitable quarter, with revenue expected to hit $10.9 billion. Meanwhile, Nvidia keeps smashing records with $81.6 billion in revenue while Jensen Huang unveils a \"brand new\" $200 billion market for AI agent CPUs, and SpaceX's IPO filing pulls back the curtain on xAI's staggering $6.4 billion in losses. Today's digest is packed with big numbers, bold predictions, and the financial reality checks that come with the AI boom.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-21.html",
+      "contentHash": "6432f8b0d53946ce242aedc94ea888c1bdf188699fa48b164ead02e570c3c136"
+    },
     {
       "slug": "2026-05-20",
       "digestDate": "2026-05-20",
@@ -133,17 +144,6 @@
       "articleCount": 7,
       "urlPath": "/issues/2026-05-10.html",
       "contentHash": "0b3cd139564b3c9b3154513dfdd518602e2402ebffd65e0df41968ff0051c00e"
-    },
-    {
-      "slug": "2026-05-09",
-      "digestDate": "2026-05-09",
-      "displayDate": "May 09, 2026",
-      "issueNumber": "60509",
-      "subject": "ISSUE 60509 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The courtroom drama between Elon Musk and Sam Altman keeps getting juicier \u2014 week two of the trial brought bombshell testimony that Musk himself pushed for OpenAI's for-profit pivot and even tried to poach Altman to run an AI lab at Tesla, flipping the entire narrative on its head. Beyond the legal fireworks, today's digest covers everything from Intel's jaw-dropping 490% stock surge to growing bipartisan backlash against AI data centers draining America's power grids, plus a thought-provoking argument about what we lose when AI makes language barriers disappear.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-09.html",
-      "contentHash": "8043e3142fcbd065dfeb8b524980279307b328267f8d661120926285cd86f8c3"
     }
   ]
 }
