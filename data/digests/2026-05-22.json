@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/wallstengine/status/2057378437485216031",
       "author": "wallstengine",
-      "headline": "Cloudflare CEO Matthew Prince __laid off more than 20% of the workforce__ while posting record revenue growth — says AI changed who gets cut first.",
+      "headline": "Cloudflare CEO Matthew Prince laid off __more than 20% of the workforce__ while posting record revenue growth — says AI changed which roles the company needs.",
       "tweet_id": "3681eba9-b6bc-81d5-8dfb-d644398d9021",
       "source_text": "Cloudflare CEO Prince on how AI changes who gets laid off first:\n\nTwo weeks ago I laid off more than 20% of my workforce. I didn’t do it because Cloudflare is struggling. We posted record revenue growth, have strong free cash flow and are adding an unprecedented number of https://t.co/PH7Qa0m7Cu",
       "created_time": "2026-05-22T02:12:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/howard/status/2057613490605404344",
       "author": "howard",
-      "headline": "Howard argues everyone's focused on AI making a 10x engineer 1000x, but the real story is the inverse: __AI amplifies the negative impact of poor performers__.",
+      "headline": "Howard argues the Cloudflare and ClickUp cuts reveal the flip side of AI leverage: it __amplifies the negative impact of poor performers__ just as much as it boosts good ones.",
       "tweet_id": "3681eba9-b6bc-81f1-af09-feb5d4dd74b8",
       "source_text": "Everyone is obsessed with AI making a 10x engineer a 1000x engineer.\n\nThe recent reductions at CloudFlare and Click have me me realize the plot is equally about the inverse:  AI amplifies the *negative* impacts of poor performers.  \n\nIf a person with poor taste, who makes https://t.co/a9ibkrJYP0",
       "created_time": "2026-05-22T02:12:00.000Z",
@@ -244,9 +244,29 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/itsalexvacca/status/2057567622334705942",
+      "author": "itsalexvacca",
+      "headline": "a16z built a chart tracking how far AI can go on real business tasks — if you run an agency, everything left of that line is __automatable right now__.",
+      "tweet_id": "3681eba9-b6bc-814e-8139-d341aa5d7d3b",
+      "source_text": "a16z built this chart to track how far AI can go on real business tasks.\n\nRun an agency, and it reads like a map of your own disruption.\n\nEverything left of that line is automatable right now. So list what an agency does to deliver for a client: build the list, research the https://t.co/35jaCQ1fZE https://t.co/T8WtAX7pJK",
+      "created_time": "2026-05-22T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/itsalexvacca/status/2057567622334705942",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/MsSapone/status/2057574220612448393",
+      "author": "MsSapone",
+      "headline": "Heather Sapone makes the case that Cloudflare cutting 20% while __still growing 30%__ is offense, not retreat — and more companies should redesign before they're forced to.",
+      "tweet_id": "3681eba9-b6bc-81c6-a512-f32cc436cb12",
+      "source_text": "Cloudflare is a rare company with the luxury of being preemptive, not reactive. Cutting 20% while still growing 30% is offense. \n\nCompanies lucky enough to be relevant in this AI era should also be brave enough to redesign before they’re forced to !  \n\n@eastdakota",
+      "created_time": "2026-05-22T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/MsSapone/status/2057574220612448393",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/ant_murphy/status/2057627505524130040",
       "author": "ant_murphy",
-      "headline": "Ant Murphy says he runs an __anti-efficient business on purpose__ — manually reviews every LinkedIn request, deliberately slows things down despite being deeply AI-pilled.",
+      "headline": "Ant Murphy says he runs an __anti-efficient business__ on purpose — manually reviewing every LinkedIn request, deliberately slowing down where most AI-pilled founders speed up.",
       "tweet_id": "3681eba9-b6bc-81d9-ba4d-e6999dc7430a",
       "source_text": "I run an anti-efficient business.\n\nAnd I'm very AI pilled, so that probably sounds insane. Like, how?\n\nThe longer I do this, the less efficient I make things. Deliberately.\n\n→ I manually review every LinkedIn request (spent 2 hours doing it last night, even wrote everyone a https://t.co/lyxSgYSkMs",
       "created_time": "2026-05-22T01:47:00.000Z",
@@ -256,40 +276,72 @@
     {
       "url": "https://twitter.com/pootlepress/status/2057353348194386394",
       "author": "pootlepress",
-      "headline": "pootlepress accidentally turned __Telegram into a full CMS control panel__ — publishing stories, triggering workflows, emailing subscribers, all from chat.",
+      "headline": "Someone turned Telegram into a full __control panel for their website__ — publishing stories, triggering workflows, emailing subscribers, all from chat. No dashboard, no CMS.",
       "tweet_id": "3681eba9-b6bc-812a-98de-dda3031be88c",
       "source_text": "I accidentally turned Telegram into a control panel for my website 😅\n\nFor Tomorrow Times I can now:\n\n• publish stories\n• change prediction close dates\n• trigger workflows\n• email subscribers\n• manage social sharing\n\nAll from chat.\n\nNo dashboard. No CMS. Just Telegram.\n\nAlso https://t.co/GgzgP27Mn2",
       "created_time": "2026-05-22T01:47:00.000Z",
       "canonical_url": "https://twitter.com/pootlepress/status/2057353348194386394",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/Mnilax/status/2057551699204857930",
-      "author": "Mnilax",
-      "headline": "\"Let it cook\" was the line __Anthropic engineers repeated all day__ at Code with Claude London — stop micromanaging prompts, write the routine, let the agent run.",
-      "tweet_id": "3681eba9-b6bc-8185-9685-cff6a3c762da",
-      "source_text": "\"let it cook\" is the line Anthropic engineers just repeated all day at Code with Claude London.\n\nBoris Cherny said it in the keynote. Ravi Trivedi said it in the next talk. Katelyn Lesse said it at the panel.\n\nit means: stop micromanaging the prompts. write the routine. let https://t.co/xdUK13rrNv https://t.co/NcDJM7H4xC",
-      "created_time": "2026-05-22T01:42:00.000Z",
-      "canonical_url": "https://twitter.com/Mnilax/status/2057551699204857930",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/tonygentilcore/status/2057499327224848864",
-      "author": "tonygentilcore",
-      "headline": "Glean built a demo of its __Enterprise Knowledge Graph traversing work and people in real time__ — ask about your manager's projects and watch it map the connections.",
-      "tweet_id": "3681eba9-b6bc-811b-8646-d581a00426e2",
-      "source_text": "We've talked about @Glean's Enterprise Knowledge Graph since 2019. People kept asking to see it, so we built a demo.\n\nAsk Glean something like: \"show me my manager's projects and the team behind them,\" and watch it traverse the graph in real time, mapping work and people across https://t.co/c7utykK4ZJ",
-      "created_time": "2026-05-22T01:42:00.000Z",
-      "canonical_url": "https://twitter.com/tonygentilcore/status/2057499327224848864",
-      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://blog.ui.com/article/introducing-unifi-5g-backup",
+      "author": "jpalomaki",
+      "item_id": "hn:48233144",
+      "headline": "Ubiquiti launches __UniFi 5G Backup__ for automatic cellular failover.",
+      "subreddit": null,
+      "source_text": "UniFi 5G Backup",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-22T07:46:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.ui.com/article/introducing-unifi-5g-backup",
+      "learning_score": 3
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=48233125",
+      "author": "hholen",
+      "item_id": "hn:48233125",
+      "headline": "One developer ditched his analytics dashboard and __replaced it with 42 MCP tools__ for AI-native querying.",
+      "subreddit": null,
+      "source_text": "Show HN: I threw away my analytics dashboard and replaced it with 42 MCP tools",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-22T07:42:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=48233125",
+      "learning_score": 3
+    },
+    {
+      "url": "https://blog.flutter.dev/whats-new-in-flutter-3-44-b0cc1ad3c527",
+      "author": "divan",
+      "item_id": "hn:48233274",
+      "headline": "Flutter ships __version 3.44__ with a fresh batch of framework and engine updates.",
+      "subreddit": null,
+      "source_text": "What's New in Flutter 3.44",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-22T08:13:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.flutter.dev/whats-new-in-flutter-3-44-b0cc1ad3c527",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.hardkernel.com/shop/odroid-h5/",
+      "author": "chr",
+      "item_id": "hn:48233184",
+      "headline": "Odroid's H-series boards are __going 10 GbE__ with the new ODROID-H5.",
+      "subreddit": null,
+      "source_text": "Odroid H-series is going 10 GbE (ODROID-H5)",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-22T07:53:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://hardkernel.com/shop/odroid-h5",
+      "learning_score": 2
+    },
+    {
       "url": "https://soniqo.audio/blog/voxcpm2-voice-cloning",
       "author": "ipotapov",
       "item_id": "hn:48233113",
-      "headline": "Soniqo claims it can __clone a voice at 48 kHz__ at ElevenLabs-level quality using VoxCPM2.",
+      "headline": "VoxCPM2 clones a voice __at 48 kHz__ with quality rivaling ElevenLabs.",
       "subreddit": null,
       "source_text": "Cloning a voice at 48 kHz with VoxCPM2 in ElevenLabs API quality",
       "source_type": "hacker_news",
@@ -302,7 +354,7 @@
       "url": "https://securitylab.amnesty.org/latest/2024/12/a-digital-prison-surveillance-and-the-suppression-of-civil-society-in-serbia/",
       "author": "Cider9986",
       "item_id": "hn:48233074",
-      "headline": "Amnesty Security Lab documents how Serbia built a __digital surveillance prison__ to suppress civil society.",
+      "headline": "Amnesty Security Lab documents how Serbia built __a digital surveillance prison__ to suppress civil society.",
       "subreddit": null,
       "source_text": "\"A Digital Prison\": Surveillance and the suppression of civil society in Serbia",
       "source_type": "hacker_news",
@@ -310,65 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://securitylab.amnesty.org/latest/2024/12/a-digital-prison-surveillance-and-the-suppression-of-civil-society-in-serbia",
       "learning_score": 2
-    },
-    {
-      "url": "https://9to5mac.com/2026/05/21/apple-seeks-supreme-court-review-of-contempt-finding-and-injunction-scope-in-epic-games-case/",
-      "author": "alberto-m",
-      "item_id": "hn:48233073",
-      "headline": "Apple takes the Epic Games fight to the Supreme Court, seeking __review of the contempt finding and injunction scope__.",
-      "subreddit": null,
-      "source_text": "Apple seeks Supreme Court review for Epic Games case",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-22T07:32:56+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://9to5mac.com/2026/05/21/apple-seeks-supreme-court-review-of-contempt-finding-and-injunction-scope-in-epic-games-case",
-      "learning_score": 2
-    },
-    {
-      "url": "https://superluminar.io/2026/04/28/spec-driven-development-everything-old-is-new-again/",
-      "author": "schnipseljagd",
-      "item_id": "hn:48233050",
-      "headline": "The case for __spec-driven development__ — everything old is new again.",
-      "subreddit": null,
-      "source_text": "Spec-Driven Development: Everything Old Is New Again",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-22T07:29:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://superluminar.io/2026/04/28/spec-driven-development-everything-old-is-new-again",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.theregister.com/security/2026/05/22/cisco-used-ai-to-write-security-incident-reports-with-mixed-results/5244692",
-      "author": "01-_-",
-      "item_id": "hn:48232985",
-      "headline": "Cisco tried using AI to __write security incident reports__ and the results were, predictably, mixed.",
-      "subreddit": null,
-      "source_text": "Cisco used AI to write security incident reports, with mixed results",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-22T07:19:33+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://theregister.com/security/2026/05/22/cisco-used-ai-to-write-security-incident-reports-with-mixed-results/5244692",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.detroitnews.com/story/business/2026/05/20/grand-rapids-acrisure-to-cut-2250-jobs-cites-ai/90183575007/https://www.detroitnews.com/story/business/2026/05/20/grand-rapids-acrisure-to-cut-2250-jobs-cites-ai/90183575007/",
-      "author": "01-_-",
-      "item_id": "hn:48232976",
-      "headline": "Acrisure cuts __2,250 jobs__, citing AI advancements as the reason.",
-      "subreddit": null,
-      "source_text": "Acrisure layoffs to number 2,250, attributed to AI advancements",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-22T07:18:46+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://detroitnews.com/story/business/2026/05/20/grand-rapids-acrisure-to-cut-2250-jobs-cites-ai/90183575007/https://www.detroitnews.com/story/business/2026/05/20/grand-rapids-acrisure-to-cut-2250-jobs-cites-ai/90183575007",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-22T07:41:31.448124+00:00",
+    "generated_at": "2026-05-22T08:14:35.481686+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "27dff77e2ca8c3c07e56d7f6dc8c0082e838d68b88064e822a2d4214214424b3"
+  "content_hash": "137302ac429aa7cdabd1bf0bdb49745ab8460453df1928a0af6c5d3f58da744b"
 }
