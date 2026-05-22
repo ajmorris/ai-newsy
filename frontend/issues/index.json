@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-21T00:00:00Z",
-  "issueCount": 31,
+  "generatedAt": "2026-05-22T00:00:00Z",
+  "issueCount": 32,
   "latestIssue": {
-    "slug": "2026-05-21",
-    "digestDate": "2026-05-21",
-    "displayDate": "May 21, 2026",
-    "issueNumber": "60521",
-    "subject": "ISSUE 60521 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic is having quite a week \u2014 its co-founder is predicting AI will snag a Nobel Prize within a year, and the company just told investors it's about to post its first-ever profitable quarter, with revenue expected to hit $10.9 billion. Meanwhile, Nvidia keeps smashing records with $81.6 billion in revenue while Jensen Huang unveils a \"brand new\" $200 billion market for AI agent CPUs, and SpaceX's IPO filing pulls back the curtain on xAI's staggering $6.4 billion in losses. Today's digest is packed with big numbers, bold predictions, and the financial reality checks that come with the AI boom.",
+    "slug": "2026-05-22",
+    "digestDate": "2026-05-22",
+    "displayDate": "May 22, 2026",
+    "issueNumber": "60522",
+    "subject": "ISSUE 60522 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The class of 2026 is making its feelings about AI crystal clear \u2014 and tech CEOs are getting an earful. Viral videos of graduates booing and heckling executives who praise AI during commencement speeches are capturing a growing generational backlash that Silicon Valley seems genuinely unprepared for. Beyond the campus drama, today's digest covers Spotify and Universal Music's landmark deal to let fans create AI remixes, Google's search overhaul driving users to alternatives, Australia's push to avoid squandering its AI data center boom, and more.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-21.html",
-    "contentHash": "6432f8b0d53946ce242aedc94ea888c1bdf188699fa48b164ead02e570c3c136"
+    "urlPath": "/issues/2026-05-22.html",
+    "contentHash": "137302ac429aa7cdabd1bf0bdb49745ab8460453df1928a0af6c5d3f58da744b"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-22",
+      "digestDate": "2026-05-22",
+      "displayDate": "May 22, 2026",
+      "issueNumber": "60522",
+      "subject": "ISSUE 60522 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The class of 2026 is making its feelings about AI crystal clear \u2014 and tech CEOs are getting an earful. Viral videos of graduates booing and heckling executives who praise AI during commencement speeches are capturing a growing generational backlash that Silicon Valley seems genuinely unprepared for. Beyond the campus drama, today's digest covers Spotify and Universal Music's landmark deal to let fans create AI remixes, Google's search overhaul driving users to alternatives, Australia's push to avoid squandering its AI data center boom, and more.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-22.html",
+      "contentHash": "137302ac429aa7cdabd1bf0bdb49745ab8460453df1928a0af6c5d3f58da744b"
+    },
     {
       "slug": "2026-05-21",
       "digestDate": "2026-05-21",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-11.html",
       "contentHash": "553fa32674e2bf99cb4223a8d90138768c4241507c735842da88479abf11b918"
-    },
-    {
-      "slug": "2026-05-10",
-      "digestDate": "2026-05-10",
-      "displayDate": "May 10, 2026",
-      "issueNumber": "60510",
-      "subject": "ISSUE 60510 \u00b7 7 STORIES \u00b7 11 MIN READ",
-      "intro": "Today's biggest story is all about Nvidia flexing its financial muscle, committing a staggering $40 billion to AI equity deals already this year \u2014 including a massive $30 billion bet on OpenAI \u2014 though critics are side-eyeing these investments as circular deals that essentially fund the chipmaker's own customers. Beyond the mega-deals, we're also diving into how AI voice tech is cracking India's linguistic puzzle, why those handy AI note-takers in your meetings are giving lawyers heartburn, and a look at Google developers significantly understating the carbon footprint of proposed UK datacentres. Grab your coffee \u2014 it's a packed one.",
-      "articleCount": 7,
-      "urlPath": "/issues/2026-05-10.html",
-      "contentHash": "0b3cd139564b3c9b3154513dfdd518602e2402ebffd65e0df41968ff0051c00e"
     }
   ]
 }
