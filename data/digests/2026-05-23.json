@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/CasJam/status/2057893999831097512",
       "author": "CasJam",
-      "headline": "CasJam is building internal tools for __a content pipeline with a customer base of one__ — himself and his agents.",
+      "headline": "CasJam is building internal tools for a __content pipeline with a customer base of one__ — himself and his agents.",
       "tweet_id": "3691eba9-b6bc-81f4-aa02-da861553b95d",
       "source_text": "Been working on some internal tools for me & my agents to power my content pipeline.\n\nSo much freedom and power when designing for a customer base of one. https://t.co/gAae1Azta6",
       "created_time": "2026-05-23T03:12:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/alex_prompter/status/2057834124706996465",
       "author": "alex_prompter",
-      "headline": "500 founders, $10M on the table — the __agent-first startup land grab__ just got loud.",
+      "headline": "500 founders, $10M on the table — the same crowd that mocked AI agents is now __pitching agent-first startups by Friday__.",
       "tweet_id": "3691eba9-b6bc-8141-a7eb-d881bdf20afd",
       "source_text": "Everyone mocked “AI agents” until someone put $10M on the table.\n\nNow the same people calling it hype are about to pitch “agent-first” startups by Friday.\n\n500 founders. $10M. The land grab just got loud.\n\n@howietl https://t.co/YlpWGv9Xeq https://t.co/N5XM0Ql1PT",
       "created_time": "2026-05-23T01:37:00.000Z",
@@ -254,34 +254,34 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/Voxyz_ai/status/2057935694383939720",
-      "author": "Voxyz_ai",
-      "headline": "A framework for agent memory that boils down to __three jobs: Remember, Cite, Forget__ — with layered storage and provenance baked in.",
-      "tweet_id": "3691eba9-b6bc-81c5-9f74-e5aeac97c8eb",
-      "source_text": "a framework for agent memory: Remember, Cite, Forget.\n\nhere's one way to do it. mine looks like this:\n\n→ Remember: hot session takes lossless-claw's pattern (raw in SQLite, grep originals when needed), cross-session lives in gbrain with provenance.\n→ Cite: authority order https://t.co/3AwdzsXrPf",
-      "created_time": "2026-05-23T03:12:00.000Z",
-      "canonical_url": "https://twitter.com/Voxyz_ai/status/2057935694383939720",
-      "learning_score": 2
+      "url": "https://twitter.com/Bencera/status/2057847644966547920",
+      "author": "Bencera",
+      "headline": "Polsia raised __$30M at a $250M valuation__ with zero employees — one founder plus AI, approaching $10M ARR, and the AI even ran its own fundraise.",
+      "tweet_id": "3681eba9-b6bc-81f3-9f8f-ee871bef01bb",
+      "source_text": "Polsia just raised $30M at a $250M valuation.\n\nApproaching $10M annual run rate.\n\nOne Founder + AI. Zero employees.\n\nPolsia runs companies autonomously. \n\nIt also ran its own fundraising. \n\nI just showed up for signatures. https://t.co/6ryypKG0GY",
+      "created_time": "2026-05-22T18:37:00.000Z",
+      "canonical_url": "https://twitter.com/Bencera/status/2057847644966547920",
+      "learning_score": 3
     },
     {
-      "url": "https://twitter.com/svpino/status/2057841436461252859",
-      "author": "svpino",
-      "headline": "Santiago Valdarrama argues agents don't fail because models are dumb — they fail because of context, and names __the 4 ingredients of good context engineering__.",
-      "tweet_id": "3691eba9-b6bc-8106-8e09-ee7a693f0bbf",
-      "source_text": "Context engineering is the single most important area you can focus on right now.\n\nWe already have amazing models.\n\nAgents no longer fail because models are dumb. They fail because they don't have the right context.\n\nHere are the 4 ingredients of good context:",
-      "created_time": "2026-05-23T02:37:00.000Z",
-      "canonical_url": "https://twitter.com/svpino/status/2057841436461252859",
-      "learning_score": 2
+      "url": "https://twitter.com/jeffgrimes9/status/2057828327381946429",
+      "author": "jeffgrimes9",
+      "headline": "Perplexity Computer now uses aggregated Ramp credit card spend to show __real-time SaaS adoption, churn, and market share data__.",
+      "tweet_id": "3681eba9-b6bc-810e-90a4-c320c8eae2a8",
+      "source_text": "We launched the Software Adoption workflow in Perplexity Computer. It uses aggregated industry-wide Ramp credit card spend to provide data on the adoption, growth momentum, churn, and market share of SaaS products.\n\nWe are pleased to partner with @tryramp to connect Ramp Rate API https://t.co/52FKe4t1kr",
+      "created_time": "2026-05-22T17:57:00.000Z",
+      "canonical_url": "https://twitter.com/jeffgrimes9/status/2057828327381946429",
+      "learning_score": 3
     },
     {
-      "url": "https://twitter.com/chrislema/status/2057954241269174514",
-      "author": "chrislema",
-      "headline": "Chris Lema borrowed a trick from test-driven development: __write the AI checks before the AI creates anything__, not after.",
-      "tweet_id": "3691eba9-b6bc-818c-8f94-c563543999a6",
-      "source_text": "When you have AI doing any creation of any sort, the normal routine is to then check it. \n\nJust like normal QA / Testing, most people do it at the end. \n\nBut years ago I learned from some folks who were creating tests before they wrote any code.  \n\nThis week I worked on a new",
-      "created_time": "2026-05-23T02:27:00.000Z",
-      "canonical_url": "https://twitter.com/chrislema/status/2057954241269174514",
-      "learning_score": 2
+      "url": "https://twitter.com/shabnam_774/status/2057789613150966196",
+      "author": "shabnam_774",
+      "headline": "A Microsoft senior AI developer showed how they build agents with __Claude Opus 4.7 and 1,400+ pre-built MCP tools__ inside Microsoft.",
+      "tweet_id": "3681eba9-b6bc-8194-92f6-ccbcea692ca9",
+      "source_text": "Microsoft Senior AI developer just showed how they build AI agents with Claude inside Microsoft.\n\n34 minutes.\nCompletely free.\nStraight from the Microsoft team.\n\nThey use Claude Opus 4.7 with 1,400+ pre-built MCP tools.\n\nThe process is ridiculously simple:\n\nPlug Claude into an https://t.co/bd7Q9Gs4lY https://t.co/IRd5ddrwnq",
+      "created_time": "2026-05-22T17:47:00.000Z",
+      "canonical_url": "https://twitter.com/shabnam_774/status/2057789613150966196",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
@@ -289,7 +289,7 @@
       "url": "https://www.infoq.com/news/2026/05/pip-261-dependency-cooldowns/",
       "author": "OutOfHere",
       "item_id": "hn:48245219",
-      "headline": "Pip 26.1 ships __dependency cooldowns and experimental lockfile support__, closing a long-standing Python packaging gap.",
+      "headline": "Pip 26.1 ships __dependency cooldowns and experimental lockfile support__.",
       "subreddit": null,
       "source_text": "Pip 26.1 Ships Dependency Cooldowns and Experimental Lockfile Support",
       "source_type": "hacker_news",
@@ -299,10 +299,62 @@
       "learning_score": 3
     },
     {
+      "url": "https://tinyopsstudio.com/congress-disclosure-watchlist-digest",
+      "author": "tinyopsstudio",
+      "item_id": "hn:48245652",
+      "headline": "A tool that __source-checks politician stock-trade claims__ against actual public filings.",
+      "subreddit": null,
+      "source_text": "Show HN: Source-check politician stock-trade claims against public filings",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-23T07:47:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tinyopsstudio.com/congress-disclosure-watchlist-digest",
+      "learning_score": 2
+    },
+    {
+      "url": "https://algo-rhythm.dev/en/",
+      "author": "bytegogogo",
+      "item_id": "hn:48245604",
+      "headline": "An __interactive linear algebra primer__ designed not for humans but for LLM readers.",
+      "subreddit": null,
+      "source_text": "An interactive linear algebra primer aimed at LLM readers",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-23T07:40:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://algo-rhythm.dev/en",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.theguardian.com/lifeandstyle/2026/may/22/experience-found-baby-subway-now-26-year-old-son",
+      "author": "Michelangelo11",
+      "item_id": "hn:48245571",
+      "headline": "A couple found a baby on the subway — __now he's their 26-year-old son__.",
+      "subreddit": null,
+      "source_text": "Experience: We found a baby on the subway – now he's our 26-year-old son",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-23T07:34:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theguardian.com/lifeandstyle/2026/may/22/experience-found-baby-subway-now-26-year-old-son",
+      "learning_score": 2
+    },
+    {
+      "url": "https://lemire.me/blog/2026/05/22/only-17-of-all-64-bit-integers-are-products-of-two-32-bit-integers/",
+      "author": "signa11",
+      "item_id": "hn:48245507",
+      "headline": "Only __17% of all 64-bit integers__ are products of two 32-bit integers — Daniel Lemire does the math.",
+      "subreddit": null,
+      "source_text": "Only 17% of all 64-bit Integers are products of two 32-bit integers",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-23T07:22:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lemire.me/blog/2026/05/22/only-17-of-all-64-bit-integers-are-products-of-two-32-bit-integers",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon/",
       "author": "vismit2000",
       "item_id": "hn:48245331",
-      "headline": "Sean Goedecke makes the case that the __just-say-no engineer was a ZIRP phenomenon__ — and those days are over.",
+      "headline": "Sean Goedecke makes the case that __the \"just say no\" engineer was a ZIRP phenomenon__ — and that era is over.",
       "subreddit": null,
       "source_text": "The just-say-no engineer was a ZIRP phenomenon",
       "source_type": "hacker_news",
@@ -310,65 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://seangoedecke.com/the-just-say-no-engineer-was-a-zirp-phenomenon",
       "learning_score": 2
-    },
-    {
-      "url": "https://lemire.me/blog/2026/05/23/parsing-ipv6-addresses-crazily-fast-with-avx-512/",
-      "author": "0xedb",
-      "item_id": "hn:48245311",
-      "headline": "Daniel Lemire demonstrates __parsing IPv6 addresses with AVX-512__ at speeds that make scalar code look quaint.",
-      "subreddit": null,
-      "source_text": "Parsing IPv6 Addresses Crazily Fast with AVX-512",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-23T06:44:16+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://lemire.me/blog/2026/05/23/parsing-ipv6-addresses-crazily-fast-with-avx-512",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.bleepingcomputer.com/news/security/former-us-execs-plead-guilty-to-aiding-tech-support-scammers/",
-      "author": "jnord",
-      "item_id": "hn:48245268",
-      "headline": "Former US execs __plead guilty to aiding tech support scammers__ in a federal case.",
-      "subreddit": null,
-      "source_text": "Former US execs plead guilty to aiding tech support scammers",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-23T06:32:57+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://bleepingcomputer.com/news/security/former-us-execs-plead-guilty-to-aiding-tech-support-scammers",
-      "learning_score": 2
-    },
-    {
-      "url": "https://trulayer.ai/",
-      "author": "trulayer",
-      "item_id": "hn:48245217",
-      "headline": "TruLayer launches __tracing, evals, and a control loop for production LLMs__ — observability for agents, not just models.",
-      "subreddit": null,
-      "source_text": "Show HN: TruLayer – tracing, evals, and a control loop for production LLMs",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-23T06:20:22+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://trulayer.ai",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/05/20/the-software-coordination-tax-why-your-40-engineer-team-is-shipping-like-25/",
-      "author": "RyeCombinator",
-      "item_id": "hn:48245192",
-      "headline": "Forbes breaks down the software coordination tax: why your __40-engineer team is shipping like 25__.",
-      "subreddit": null,
-      "source_text": "The Software Coordination Tax: Why Your 40-Engineer Team Is Shipping Like 25",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-23T06:13:54+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://forbes.com/councils/forbestechcouncil/2026/05/20/the-software-coordination-tax-why-your-40-engineer-team-is-shipping-like-25",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-23T07:15:16.802778+00:00",
+    "generated_at": "2026-05-23T07:53:31.608218+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "83ec8908b1a4ed00cbb1c3dd37398e17afb4028c02287c25505637629f4d4368"
+  "content_hash": "57c0697bd2240566679117d1aa424a02b017257d0c7a7e807fb81489a2232df2"
 }
