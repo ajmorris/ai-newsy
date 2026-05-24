@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-23T00:00:00Z",
-  "issueCount": 33,
+  "generatedAt": "2026-05-24T00:00:00Z",
+  "issueCount": 34,
   "latestIssue": {
-    "slug": "2026-05-23",
-    "digestDate": "2026-05-23",
-    "displayDate": "May 23, 2026",
-    "issueNumber": "60523",
-    "subject": "ISSUE 60523 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is serving up a fascinating mix of the brilliant and the broken today. Google's AI Overviews are literally obeying users' search queries as commands \u2014 search for \"disregard\" and the AI cheerfully disregards your question \u2014 while across the industry, people are using AI tools to reconstruct dead pilots' voices from spectrograms, forcing the NTSB to shut down public access to its investigation files. From inflated AI startup metrics to Anthropic's $300 million acquisition and SpaceX's jaw-dropping $1.75 trillion IPO filing, there's a lot to unpack \u2014 let's dive in.",
+    "slug": "2026-05-24",
+    "digestDate": "2026-05-24",
+    "displayDate": "May 24, 2026",
+    "issueNumber": "60524",
+    "subject": "ISSUE 60524 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI hype machine is running at full throttle \u2014 and it's getting harder to tell what's real from what's manufactured. From UK companies slapping the \"AI\" label on basic tech to patients walking into plastic surgeons' offices clutching AI-generated selfies as surgical blueprints, today's stories paint a vivid picture of a world racing to embrace artificial intelligence, whether it's actually there or not. We've also got a major policy development as Trump backs away from AI safety oversight, a philosophical clash between filmmakers at Cannes, and Elon Musk's surprising pivot away from solar power to fuel his AI ambitions.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-23.html",
-    "contentHash": "57c0697bd2240566679117d1aa424a02b017257d0c7a7e807fb81489a2232df2"
+    "urlPath": "/issues/2026-05-24.html",
+    "contentHash": "3b3801abb2dd1bcdacccd45e80e4f6e6d511ef3cb658566c1bbc3784d707bca5"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-24",
+      "digestDate": "2026-05-24",
+      "displayDate": "May 24, 2026",
+      "issueNumber": "60524",
+      "subject": "ISSUE 60524 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI hype machine is running at full throttle \u2014 and it's getting harder to tell what's real from what's manufactured. From UK companies slapping the \"AI\" label on basic tech to patients walking into plastic surgeons' offices clutching AI-generated selfies as surgical blueprints, today's stories paint a vivid picture of a world racing to embrace artificial intelligence, whether it's actually there or not. We've also got a major policy development as Trump backs away from AI safety oversight, a philosophical clash between filmmakers at Cannes, and Elon Musk's surprising pivot away from solar power to fuel his AI ambitions.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-24.html",
+      "contentHash": "3b3801abb2dd1bcdacccd45e80e4f6e6d511ef3cb658566c1bbc3784d707bca5"
+    },
     {
       "slug": "2026-05-23",
       "digestDate": "2026-05-23",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-13.html",
       "contentHash": "6f8e9fe80a896786214212cc24d26f04746aace361cff4825483273d434e9b22"
-    },
-    {
-      "slug": "2026-05-12",
-      "digestDate": "2026-05-12",
-      "displayDate": "May 12, 2026",
-      "issueNumber": "60512",
-      "subject": "ISSUE 60512 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Mira Murati's new startup just dropped its first big idea, and it's a fascinating one \u2014 \"interaction models\" that can listen and respond simultaneously, like a real conversation instead of the awkward walkie-talkie exchanges we're used to with AI. Beyond that, today's digest covers a wide sweep: OpenAI firing back at Anthropic with its own cybersecurity platform, GM swapping out hundreds of IT workers for AI-skilled replacements, Australian ministers pushing datacenters to go renewable, and a nasty new Linux vulnerability that's already being exploited in the wild. Grab your coffee \u2014 there's a lot to unpack.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-12.html",
-      "contentHash": "780138dc7b1e603e455838931e4e60229b74fd639cf30c1344a0e42dc4331060"
     }
   ]
 }
