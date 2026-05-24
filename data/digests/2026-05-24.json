@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/lawrencecchen/status/2058117720017932607",
       "author": "lawrencecchen",
-      "headline": "Lawrence Chen built cmux to solve the hardest part of multi-agent coding: __knowing when an agent wants to talk to you__ across parallel sessions.",
+      "headline": "Lawrence Chen built cmux to solve the hardest part of running __multiple Codex and Claude agents side by side__ — knowing which one wants to talk to you.",
       "tweet_id": "36a1eba9-b6bc-8149-9b0e-d5c6c65fc0d7",
       "source_text": "I adopted @steipete's coding workflow last year. You just have to just talk to your agents.\n\nSo it's super important to know when and where an agent wants to talk to you! This is what I built cmux around.\n\nWhen you have a lot of codexes/claudes side by side, having the blue pane https://t.co/T5BnQQzvyn https://t.co/kJ8Ely9Rjr",
       "created_time": "2026-05-24T00:57:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/DivyanshT91162/status/2058053035352596569",
       "author": "DivyanshT91162",
-      "headline": "Andrej Karpathy's 65-line CLAUDE.md file — no app, no library, just coding philosophy — crossed __100K+ stars on GitHub Trending__.",
+      "headline": "Andrej Karpathy's 65-line CLAUDE.md file crossed __100K+ stars on GitHub__ — no app, no library, just coding philosophy in a text file.",
       "tweet_id": "36a1eba9-b6bc-81a4-8343-d9300eb362e9",
       "source_text": "OpenAI co-founder Andrej Karpathy dropped a 65-line file called CLAUDE.md… and somehow it’s outranking full-blown frameworks on GitHub Trending.\n\nNo app. No library. Just pure coding philosophy compressed into one text file — and it already crossed 100K+ stars.\n\nWhat made https://t.co/JBTWMT07WC https://t.co/qikrPYPOVe",
       "created_time": "2026-05-24T00:57:00.000Z",
@@ -254,19 +254,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/sijlalhussain/status/2058232249070288991",
-      "author": "sijlalhussain",
-      "headline": "McKinsey analysis suggests agentic AI could eventually power __around 60% of work across core marketing workflows__ — not automating marketing, but redesigning who controls execution.",
-      "tweet_id": "36a1eba9-b6bc-81d3-8df9-e2d4bcdf780d",
-      "source_text": "📍 Agentic AI is not automating marketing. It is redesigning who controls execution across the revenue system.\n\nAs a recent McKinsey analysis highlights, agentic AI could eventually power around 60% of work across core marketing workflows, with execution, optimization, and https://t.co/od1uRRqioD",
-      "created_time": "2026-05-24T00:42:00.000Z",
-      "canonical_url": "https://twitter.com/sijlalhussain/status/2058232249070288991",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/shannholmberg/status/2058178662818865342",
       "author": "shannholmberg",
-      "headline": "How Hermes Agent's __/goal command__ works: a judge model checks completion after every turn and auto-continues with its reasoning until the goal is met.",
+      "headline": "How Hermes Agent's /goal command works: a judge model checks completion after every turn and __auto-continues with its own reasoning__ until the goal is met or the token budget runs out.",
       "tweet_id": "36a1eba9-b6bc-8195-b22f-ebc8aeb62fc1",
       "source_text": "how /goal works in Hermes Agent\n\nyou give the agent a standing goal. after every turn, a judge model checks if it's complete.\n\nif not, Hermes auto-continues with the judge's reasoning. The loop runs until the goal is met, you pause, or the turn token budget is exhausted.\n\nthis is https://t.co/XSds80Bxnx",
       "created_time": "2026-05-24T00:42:00.000Z",
@@ -274,9 +264,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/sijlalhussain/status/2058232249070288991",
+      "author": "sijlalhussain",
+      "headline": "McKinsey analysis suggests agentic AI could eventually __power around 60% of work across core marketing workflows__ — execution, optimization, and beyond.",
+      "tweet_id": "36a1eba9-b6bc-81d3-8df9-e2d4bcdf780d",
+      "source_text": "📍 Agentic AI is not automating marketing. It is redesigning who controls execution across the revenue system.\n\nAs a recent McKinsey analysis highlights, agentic AI could eventually power around 60% of work across core marketing workflows, with execution, optimization, and https://t.co/od1uRRqioD",
+      "created_time": "2026-05-24T00:42:00.000Z",
+      "canonical_url": "https://twitter.com/sijlalhussain/status/2058232249070288991",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/PawelHuryn/status/2058258144359326117",
       "author": "PawelHuryn",
-      "headline": "Pawel Huryn argues you should __never write CLAUDE.md rules before you've hit the mistake manually first__ — guessing upfront just freezes your ignorance in markdown.",
+      "headline": "Pawel Huryn argues you should never write CLAUDE.md rules upfront — the ones that actually work all __started as a mistake he hit manually first__.",
       "tweet_id": "36a1eba9-b6bc-813c-a356-c9a8d6de2184",
       "source_text": "Everyone's racing to write their CLAUDE.md and skill files before they've done the work by hand. That's exactly how you freeze your ignorance in markdown.\n\nThe rules in mine that actually work all started as a mistake I hit manually first. The ones I wrote upfront, guessing what https://t.co/037aGyIXTd",
       "created_time": "2026-05-24T00:22:00.000Z",
@@ -286,10 +286,23 @@
   ],
   "community_headlines": [
     {
+      "url": "https://www.inferterra.com/the-new-workspace-a-first-principles-exploration-of-dictation-agents-and-humans/",
+      "author": "vinhnx",
+      "item_id": "hn:48255395",
+      "headline": "A first-principles case for ditching the keyboard: __dictation, agents, and humans__ as the new workspace.",
+      "subreddit": null,
+      "source_text": "It's Time to Walk",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-24T07:54:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://inferterra.com/the-new-workspace-a-first-principles-exploration-of-dictation-agents-and-humans",
+      "learning_score": 2
+    },
+    {
       "url": "https://davidlattimore.github.io/posts/2026/05/24/wild-update-0.9.0.html",
       "author": "dabinat",
       "item_id": "hn:48255221",
-      "headline": "The Wild linker hits __version 0.9.0__ with a fresh round of performance and compatibility improvements.",
+      "headline": "The Wild linker hits __version 0.9.0__ with a fresh batch of performance and compatibility fixes.",
       "subreddit": null,
       "source_text": "Wild Linker Update – 0.9.0",
       "source_type": "hacker_news",
@@ -302,7 +315,7 @@
       "url": "https://wayneresearch.com/research/anatomy-of-ai-power/",
       "author": "7moritz7",
       "item_id": "hn:48255193",
-      "headline": "Wayne Research maps __the anatomy of AI power in 2026__, tracing who actually holds influence and why.",
+      "headline": "A deep dive into __the anatomy of AI power in 2026__ and who actually holds it.",
       "subreddit": null,
       "source_text": "The anatomy of AI power in 2026",
       "source_type": "hacker_news",
@@ -310,65 +323,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://wayneresearch.com/research/anatomy-of-ai-power",
       "learning_score": 2
-    },
-    {
-      "url": "https://claude.ai/public/artifacts/e608fb30-b023-4263-b693-ef04fab85be9",
-      "author": "insta_tunnel",
-      "item_id": "hn:48255083",
-      "headline": "A guide to __exposing WebRTC and local game servers via UDP tunnels__, going beyond HTTP for real-time use cases.",
-      "subreddit": null,
-      "source_text": "Beyond HTTP: Exposing WebRTC and Local Game Servers via UDP Tunnels",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-24T06:53:01+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://claude.ai/public/artifacts/e608fb30-b023-4263-b693-ef04fab85be9",
-      "learning_score": 2
-    },
-    {
-      "url": "https://economist.com/finance-and-economics/2026/05/21/how-should-economists-treat-morality",
-      "author": "andsoitis",
-      "item_id": "hn:48255082",
-      "headline": "The Economist asks how economists should __treat morality__ — and whether the discipline even has the tools for it.",
-      "subreddit": null,
-      "source_text": "How should economists treat morality?",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-24T06:52:45+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://economist.com/finance-and-economics/2026/05/21/how-should-economists-treat-morality",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arpitbhayani.me/blogs/temporal-primer/",
-      "author": "BugsBunnyCodes",
-      "item_id": "hn:48254947",
-      "headline": "A solid primer on __Temporal for building long-running systems__ — workflows that survive crashes and restarts.",
-      "subreddit": null,
-      "source_text": "Temporal Primer – Building Long-Running Systems",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-24T06:31:25+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arpitbhayani.me/blogs/temporal-primer",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.sciencealert.com/we-were-wrong-about-fasting-massive-study-finds",
-      "author": "mikhael",
-      "item_id": "hn:48254658",
-      "headline": "A massive study finds __we were wrong about fasting__ — the health benefits may not be what decades of research suggested.",
-      "subreddit": null,
-      "source_text": "We Were Wrong About Fasting Study Finds",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-24T05:23:54+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://sciencealert.com/we-were-wrong-about-fasting-massive-study-finds",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-24T07:20:17.867036+00:00",
+    "generated_at": "2026-05-24T08:00:15.044726+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "71a9142664b43bcb44a307593fb86dcecee2d56a8f8602c3550c155efbf0d97c"
+  "content_hash": "3b3801abb2dd1bcdacccd45e80e4f6e6d511ef3cb658566c1bbc3784d707bca5"
 }
