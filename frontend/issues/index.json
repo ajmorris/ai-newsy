@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-24T00:00:00Z",
-  "issueCount": 34,
+  "generatedAt": "2026-05-25T00:00:00Z",
+  "issueCount": 35,
   "latestIssue": {
-    "slug": "2026-05-24",
-    "digestDate": "2026-05-24",
-    "displayDate": "May 24, 2026",
-    "issueNumber": "60524",
-    "subject": "ISSUE 60524 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI hype machine is running at full throttle \u2014 and it's getting harder to tell what's real from what's manufactured. From UK companies slapping the \"AI\" label on basic tech to patients walking into plastic surgeons' offices clutching AI-generated selfies as surgical blueprints, today's stories paint a vivid picture of a world racing to embrace artificial intelligence, whether it's actually there or not. We've also got a major policy development as Trump backs away from AI safety oversight, a philosophical clash between filmmakers at Cannes, and Elon Musk's surprising pivot away from solar power to fuel his AI ambitions.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-05-24.html",
-    "contentHash": "3b3801abb2dd1bcdacccd45e80e4f6e6d511ef3cb658566c1bbc3784d707bca5"
+    "slug": "2026-05-25",
+    "digestDate": "2026-05-25",
+    "displayDate": "May 25, 2026",
+    "issueNumber": "60525",
+    "subject": "ISSUE 60525 \u00b7 6 STORIES \u00b7 11 MIN READ",
+    "intro": "The Pope is weighing in on AI \u2014 and that might be the most telling sign yet of just how deeply this technology has permeated every corner of society. Pope Leo XIV is preparing to release his first encyclical focused squarely on artificial intelligence, a move that lands alongside a wave of stories today about the very real tensions AI is creating, from security teams scrambling to keep up with new attack surfaces to Scotland's climate policies buckling under the weight of AI's energy demands. We've also got hackers learning to sweet-talk chatbots, Amazon strapping a recorder to your wrist, and a compelling argument for why more automation might actually mean *more* human jobs \u2014 so let's dig in.",
+    "articleCount": 6,
+    "urlPath": "/issues/2026-05-25.html",
+    "contentHash": "4e9f9904f00babbd64690633fce447ac86f57175868ecc634b6b02da2abdedb9"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-25",
+      "digestDate": "2026-05-25",
+      "displayDate": "May 25, 2026",
+      "issueNumber": "60525",
+      "subject": "ISSUE 60525 \u00b7 6 STORIES \u00b7 11 MIN READ",
+      "intro": "The Pope is weighing in on AI \u2014 and that might be the most telling sign yet of just how deeply this technology has permeated every corner of society. Pope Leo XIV is preparing to release his first encyclical focused squarely on artificial intelligence, a move that lands alongside a wave of stories today about the very real tensions AI is creating, from security teams scrambling to keep up with new attack surfaces to Scotland's climate policies buckling under the weight of AI's energy demands. We've also got hackers learning to sweet-talk chatbots, Amazon strapping a recorder to your wrist, and a compelling argument for why more automation might actually mean *more* human jobs \u2014 so let's dig in.",
+      "articleCount": 6,
+      "urlPath": "/issues/2026-05-25.html",
+      "contentHash": "4e9f9904f00babbd64690633fce447ac86f57175868ecc634b6b02da2abdedb9"
+    },
     {
       "slug": "2026-05-24",
       "digestDate": "2026-05-24",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-14.html",
       "contentHash": "392369b80bc4104c4fccdab1ed444b5d5f4e6f66b76d35b383a844c81410dd67"
-    },
-    {
-      "slug": "2026-05-13",
-      "digestDate": "2026-05-13",
-      "displayDate": "May 13, 2026",
-      "issueNumber": "60513",
-      "subject": "ISSUE 60513 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The courtroom drama between Sam Altman and Elon Musk is stealing headlines as Altman takes the stand in a trial that could reshape perceptions of both tech titans\u2014but today's digest spans far beyond Silicon Valley rivalries. From a $5 billion defense AI mega-round to Medicare quietly building a payment model tailor-made for AI agents, to Meta users discovering they literally *can't* block the company's AI on Threads, it's a day that shows artificial intelligence weaving itself into everything from battlefields to flower beds (yes, the Chelsea Flower Show is having an AI meltdown). Grab your coffee\u2014there's a lot to unpack.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-13.html",
-      "contentHash": "6f8e9fe80a896786214212cc24d26f04746aace361cff4825483273d434e9b22"
     }
   ]
 }
