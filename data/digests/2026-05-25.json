@@ -1,0 +1,322 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-05-25",
+  "issue_id": "20260525",
+  "subject_line": "ISSUE 60525 · 6 STORIES · 11 MIN READ",
+  "intro": "The Pope is weighing in on AI — and that might be the most telling sign yet of just how deeply this technology has permeated every corner of society. Pope Leo XIV is preparing to release his first encyclical focused squarely on artificial intelligence, a move that lands alongside a wave of stories today about the very real tensions AI is creating, from security teams scrambling to keep up with new attack surfaces to Scotland's climate policies buckling under the weight of AI's energy demands. We've also got hackers learning to sweet-talk chatbots, Amazon strapping a recorder to your wrist, and a compelling argument for why more automation might actually mean *more* human jobs — so let's dig in.",
+  "article_count": 6,
+  "stories": [
+    {
+      "id": 3675,
+      "source": "NY Times",
+      "title": "Pope Leo Is Set to Release an Encyclical About A.I. Why Is That Important?",
+      "url": "https://www.nytimes.com/2026/05/25/world/europe/pope-leo-encyclical-ai.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Pope Leo XIV is preparing to release his first encyclical, which will focus on artificial intelligence and its role in the modern world. An encyclical is a centuries-old form of papal communication traditionally used to address significant issues facing humanity and the Catholic Church.",
+      "opinion": "This is a significant development as it signals the Catholic Church's engagement with one of the most transformative technologies of our era. Papal encyclicals carry substantial moral weight for over a billion Catholics worldwide and often influence broader global discourse. The fact that Pope Leo XIV chose AI as the subject of his first encyclical underscores how central this technology has become to questions of ethics, human dignity, and the future of society. Whether one is religious or not…",
+      "image_url": "",
+      "published_at": "2026-05-25T04:01:05+00:00",
+      "fetched_at": "2026-05-25T07:45:42.49804+00:00"
+    },
+    {
+      "id": 3676,
+      "source": "Guardian AI",
+      "title": "Scotland’s ‘green datacentres’ policy ignores emissions impact of AI, analysis shows",
+      "url": "https://www.theguardian.com/uk-news/2026/may/25/scotland-policy-green-datacentres-emissions-impact-ai-analysis",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Scottish charity, Action to Protect Rural Scotland, has published an analysis arguing that Scotland's 'green datacentres' policy, established in 2022 before the AI boom triggered by ChatGPT's release, fails to account for the significant carbon emissions associated with AI workloads. The policy, which is central to Scotland's economic development strategy and part of broader UK efforts to attract AI investment, defines datacentres as 'green' under criteria that may not adequately address the substantial and growing energy demands of modern AI operations, potentially allowing a massive volume of carbon emissions to go unaccounted for.",
+      "opinion": "This analysis highlights a genuinely important gap in policy-making: technology moves far faster than government frameworks. The 2022 definition of 'green datacentres' was crafted in a pre-ChatGPT world where the explosive energy demands of large-scale AI inference and training were not yet widely understood. It's entirely plausible that labeling datacentres as 'green' based on outdated criteria could serve as greenwashing, allowing significant emissions to be overlooked while governments chase…",
+      "image_url": "https://i.guim.co.uk/img/media/2376ec6dae4dcbd920110145a1929a2e3521de6e/329_0_3083_2467/master/3083.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f560969cc2e55fbe4dbb983ee4f10249",
+      "published_at": "2026-05-24T23:01:09+00:00",
+      "fetched_at": "2026-05-25T07:45:43.351406+00:00"
+    },
+    {
+      "id": 3673,
+      "source": "TechCrunch AI",
+      "title": "Everyone is navigating AI security in real time — even Google",
+      "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch reports on a conversation with Google Cloud COO Francis de Souza about the current state of AI security. De Souza emphasizes that security cannot be an afterthought in AI adoption, warning about 'shadow AI' where employees use consumer AI tools without oversight. He notes the threat landscape has fundamentally changed, with breach-to-attack handoff times dropping from eight hours to 22 seconds, and new attack surfaces emerging from AI models, data pipelines, agents, and prompts. He highlights a lesser-discussed risk: AI agents roaming enterprise systems can discover forgotten data repositories with outdated access controls. De Souza advocates for 'AI-native, fully agentic defense' where AI agents drive security operations with human oversight rather than human-led defense. He stresses this is a board-level issue requiring a platform approach where security, data, and AI strat…",
+      "opinion": "This is a substantive and well-framed article that captures an important truth: we are in an unprecedented period where AI security challenges are evolving faster than anyone's ability to fully address them, and even the largest tech companies are figuring it out as they go. De Souza's point about forgotten data repositories being surfaced by AI agents is particularly insightful and underreported — it represents a class of vulnerability that most organizations haven't even begun to think about.…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg?w=1024",
+      "published_at": "2026-05-24T21:39:21+00:00",
+      "fetched_at": "2026-05-25T07:45:39.260858+00:00"
+    },
+    {
+      "id": 3674,
+      "source": "TechCrunch AI",
+      "title": "I tried Amazon’s Bee wearable and am both intrigued and slightly creeped out",
+      "url": "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch's Lucas Ropek tested Amazon's Bee wearable, an AI wrist device that records, transcribes, and summarizes conversations throughout the day. Acquired by Amazon last year, Bee works by syncing with a mobile app and using a built-in recorder toggled by a button with a green light indicator. The reviewer found it useful in professional contexts like meetings, where it faithfully summarized business calls, though transcripts were sometimes incomplete and required manual speaker identification. The reviewer, a self-described privacy enthusiast, acknowledged the tension between Bee's organizational convenience and the discomfort of wearing a constant recording device. The article notes Bee's transcription capabilities aren't markedly different from existing services like Otter or Granola.",
+      "opinion": "The reviewer presents a balanced but cautiously skeptical take on the Bee wearable. While acknowledging its genuine utility for professionals juggling multiple meetings, the reviewer is clearly uneasy about the privacy implications of wearing an always-available recording device. The tone is honest and relatable — admitting the product works while questioning whether the convenience justifies the surveillance trade-off. The transcription accuracy issues and lack of automatic speaker identificat…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/07/17.png?resize=1200,750",
+      "published_at": "2026-05-24T15:00:00+00:00",
+      "fetched_at": "2026-05-25T07:45:39.541687+00:00"
+    },
+    {
+      "id": 3678,
+      "source": "Lenny's Newsletter",
+      "title": "The AI paradox: More automation, more humans, more work | Dan Shipper",
+      "url": "https://www.lennysnewsletter.com/p/the-ai-paradox-dan-shipper",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Dan Shipper, co-founder and CEO of Every, shares his predictions about the future of AI and work. He argues that most work will happen inside tools like Codex or Claude Code, that CLIs are over, and that every company will have a 'super-agent' in Slack. Contrary to popular narratives, he believes SaaS is not dead (and would buy SaaS stocks now), the AI job apocalypse is not happening, and that automation actually creates more need for humans. He's bullish on PMs, full-stack designers, and the emerging role of 'forward deployed engineer.' He predicts users will bring their own AI tokens into SaaS apps (improving margins), that we'll read and enjoy more AI-generated writing, and that software will be built for humans and agents to use together. His core thesis is paradoxical: more automation leads to more humans, more work, and more need for human judgment and oversight.",
+      "opinion": "This is a refreshingly contrarian and well-grounded perspective that pushes back against both AI doomerism and the naive 'everything is automated' hype. Shipper's insight that automation creates more work rather than eliminating it echoes historical patterns (the Jevons paradox applied to labor). His bullishness on PMs and designers makes sense—as code generation becomes commoditized, the bottleneck shifts to taste, judgment, and problem definition. The prediction about users bringing their own…",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!dknL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ffbad0-0df6-4ed0-8654-3f7d141add4b_2048x2048.png",
+      "published_at": "2026-05-24T12:31:49+00:00",
+      "fetched_at": "2026-05-25T07:45:59.384173+00:00"
+    },
+    {
+      "id": 3677,
+      "source": "The Verge AI",
+      "title": "Hackers are learning to exploit chatbot &#8216;personalities&#8217;",
+      "url": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article from The Verge discusses how hackers have evolved their techniques for exploiting AI chatbots, moving from simple early jailbreaks to more sophisticated methods that target chatbot 'personalities.' Early attacks were trivially simple — users could bypass safety instructions by asking chatbots to 'ignore all previous instructions' or roleplay as unrestricted AI personas like 'DAN' (Do Anything Now). These exploits could coax chatbots into producing dangerous content like malware instructions or bomb-making guides. The piece suggests that as AI systems have become more complex and developed more defined behavioral characteristics, attackers have learned to manipulate these personality-like traits, essentially treating the AI as if it has feelings or motivations that can be exploited through social engineering rather than traditional technical hacking.",
+      "opinion": "This article highlights a genuinely important and underappreciated dimension of AI security. The fact that the most effective attacks on billion-dollar AI systems often rely on social engineering rather than technical exploitation is both fascinating and deeply concerning. It reveals a fundamental tension in AI development: the more human-like and conversational these systems become, the more vulnerable they are to the same kinds of psychological manipulation techniques used against humans. The…",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0005_3.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-05-24T12:00:00+00:00",
+      "fetched_at": "2026-05-25T07:45:51.245137+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 3675,
+          "source": "NY Times",
+          "title": "Pope Leo Is Set to Release an Encyclical About A.I. Why Is That Important?",
+          "url": "https://www.nytimes.com/2026/05/25/world/europe/pope-leo-encyclical-ai.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Pope Leo XIV is preparing to release his first encyclical, which will focus on artificial intelligence and its role in the modern world. An encyclical is a centuries-old form of papal communication traditionally used to address significant issues facing humanity and the Catholic Church.",
+          "opinion": "This is a significant development as it signals the Catholic Church's engagement with one of the most transformative technologies of our era. Papal encyclicals carry substantial moral weight for over a billion Catholics worldwide and often influence broader global discourse. The fact that Pope Leo XIV chose AI as the subject of his first encyclical underscores how central this technology has become to questions of ethics, human dignity, and the future of society. Whether one is religious or not…",
+          "image_url": "",
+          "published_at": "2026-05-25T04:01:05+00:00",
+          "fetched_at": "2026-05-25T07:45:42.49804+00:00"
+        },
+        {
+          "id": 3676,
+          "source": "Guardian AI",
+          "title": "Scotland’s ‘green datacentres’ policy ignores emissions impact of AI, analysis shows",
+          "url": "https://www.theguardian.com/uk-news/2026/may/25/scotland-policy-green-datacentres-emissions-impact-ai-analysis",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Scottish charity, Action to Protect Rural Scotland, has published an analysis arguing that Scotland's 'green datacentres' policy, established in 2022 before the AI boom triggered by ChatGPT's release, fails to account for the significant carbon emissions associated with AI workloads. The policy, which is central to Scotland's economic development strategy and part of broader UK efforts to attract AI investment, defines datacentres as 'green' under criteria that may not adequately address the substantial and growing energy demands of modern AI operations, potentially allowing a massive volume of carbon emissions to go unaccounted for.",
+          "opinion": "This analysis highlights a genuinely important gap in policy-making: technology moves far faster than government frameworks. The 2022 definition of 'green datacentres' was crafted in a pre-ChatGPT world where the explosive energy demands of large-scale AI inference and training were not yet widely understood. It's entirely plausible that labeling datacentres as 'green' based on outdated criteria could serve as greenwashing, allowing significant emissions to be overlooked while governments chase…",
+          "image_url": "https://i.guim.co.uk/img/media/2376ec6dae4dcbd920110145a1929a2e3521de6e/329_0_3083_2467/master/3083.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f560969cc2e55fbe4dbb983ee4f10249",
+          "published_at": "2026-05-24T23:01:09+00:00",
+          "fetched_at": "2026-05-25T07:45:43.351406+00:00"
+        },
+        {
+          "id": 3673,
+          "source": "TechCrunch AI",
+          "title": "Everyone is navigating AI security in real time — even Google",
+          "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch reports on a conversation with Google Cloud COO Francis de Souza about the current state of AI security. De Souza emphasizes that security cannot be an afterthought in AI adoption, warning about 'shadow AI' where employees use consumer AI tools without oversight. He notes the threat landscape has fundamentally changed, with breach-to-attack handoff times dropping from eight hours to 22 seconds, and new attack surfaces emerging from AI models, data pipelines, agents, and prompts. He highlights a lesser-discussed risk: AI agents roaming enterprise systems can discover forgotten data repositories with outdated access controls. De Souza advocates for 'AI-native, fully agentic defense' where AI agents drive security operations with human oversight rather than human-led defense. He stresses this is a board-level issue requiring a platform approach where security, data, and AI strat…",
+          "opinion": "This is a substantive and well-framed article that captures an important truth: we are in an unprecedented period where AI security challenges are evolving faster than anyone's ability to fully address them, and even the largest tech companies are figuring it out as they go. De Souza's point about forgotten data repositories being surfaced by AI agents is particularly insightful and underreported — it represents a class of vulnerability that most organizations haven't even begun to think about.…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2266466589.jpg?w=1024",
+          "published_at": "2026-05-24T21:39:21+00:00",
+          "fetched_at": "2026-05-25T07:45:39.260858+00:00"
+        },
+        {
+          "id": 3674,
+          "source": "TechCrunch AI",
+          "title": "I tried Amazon’s Bee wearable and am both intrigued and slightly creeped out",
+          "url": "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch's Lucas Ropek tested Amazon's Bee wearable, an AI wrist device that records, transcribes, and summarizes conversations throughout the day. Acquired by Amazon last year, Bee works by syncing with a mobile app and using a built-in recorder toggled by a button with a green light indicator. The reviewer found it useful in professional contexts like meetings, where it faithfully summarized business calls, though transcripts were sometimes incomplete and required manual speaker identification. The reviewer, a self-described privacy enthusiast, acknowledged the tension between Bee's organizational convenience and the discomfort of wearing a constant recording device. The article notes Bee's transcription capabilities aren't markedly different from existing services like Otter or Granola.",
+          "opinion": "The reviewer presents a balanced but cautiously skeptical take on the Bee wearable. While acknowledging its genuine utility for professionals juggling multiple meetings, the reviewer is clearly uneasy about the privacy implications of wearing an always-available recording device. The tone is honest and relatable — admitting the product works while questioning whether the convenience justifies the surveillance trade-off. The transcription accuracy issues and lack of automatic speaker identificat…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/07/17.png?resize=1200,750",
+          "published_at": "2026-05-24T15:00:00+00:00",
+          "fetched_at": "2026-05-25T07:45:39.541687+00:00"
+        },
+        {
+          "id": 3678,
+          "source": "Lenny's Newsletter",
+          "title": "The AI paradox: More automation, more humans, more work | Dan Shipper",
+          "url": "https://www.lennysnewsletter.com/p/the-ai-paradox-dan-shipper",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Dan Shipper, co-founder and CEO of Every, shares his predictions about the future of AI and work. He argues that most work will happen inside tools like Codex or Claude Code, that CLIs are over, and that every company will have a 'super-agent' in Slack. Contrary to popular narratives, he believes SaaS is not dead (and would buy SaaS stocks now), the AI job apocalypse is not happening, and that automation actually creates more need for humans. He's bullish on PMs, full-stack designers, and the emerging role of 'forward deployed engineer.' He predicts users will bring their own AI tokens into SaaS apps (improving margins), that we'll read and enjoy more AI-generated writing, and that software will be built for humans and agents to use together. His core thesis is paradoxical: more automation leads to more humans, more work, and more need for human judgment and oversight.",
+          "opinion": "This is a refreshingly contrarian and well-grounded perspective that pushes back against both AI doomerism and the naive 'everything is automated' hype. Shipper's insight that automation creates more work rather than eliminating it echoes historical patterns (the Jevons paradox applied to labor). His bullishness on PMs and designers makes sense—as code generation becomes commoditized, the bottleneck shifts to taste, judgment, and problem definition. The prediction about users bringing their own…",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!dknL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ffbad0-0df6-4ed0-8654-3f7d141add4b_2048x2048.png",
+          "published_at": "2026-05-24T12:31:49+00:00",
+          "fetched_at": "2026-05-25T07:45:59.384173+00:00"
+        },
+        {
+          "id": 3677,
+          "source": "The Verge AI",
+          "title": "Hackers are learning to exploit chatbot &#8216;personalities&#8217;",
+          "url": "https://www.theverge.com/column/935545/hackers-ai-chatbots",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article from The Verge discusses how hackers have evolved their techniques for exploiting AI chatbots, moving from simple early jailbreaks to more sophisticated methods that target chatbot 'personalities.' Early attacks were trivially simple — users could bypass safety instructions by asking chatbots to 'ignore all previous instructions' or roleplay as unrestricted AI personas like 'DAN' (Do Anything Now). These exploits could coax chatbots into producing dangerous content like malware instructions or bomb-making guides. The piece suggests that as AI systems have become more complex and developed more defined behavioral characteristics, attackers have learned to manipulate these personality-like traits, essentially treating the AI as if it has feelings or motivations that can be exploited through social engineering rather than traditional technical hacking.",
+          "opinion": "This article highlights a genuinely important and underappreciated dimension of AI security. The fact that the most effective attacks on billion-dollar AI systems often rely on social engineering rather than technical exploitation is both fascinating and deeply concerning. It reveals a fundamental tension in AI development: the more human-like and conversational these systems become, the more vulnerable they are to the same kinds of psychological manipulation techniques used against humans. The…",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0005_3.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-05-24T12:00:00+00:00",
+          "fetched_at": "2026-05-25T07:45:51.245137+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://twitter.com/RodmanAi/status/2058515010696151265",
+      "author": "RodmanAi",
+      "headline": "InsForge Skills + CLI cut Claude Code token usage from __10.4M to 3.7M__ — zero errors, 70% cost drop. Context engineering, not prompt engineering.",
+      "tweet_id": "36b1eba9-b6bc-81ae-a367-c8b6710c1a53",
+      "source_text": "Claude Code was bleeding tokens.\n\n10.4M → 3.7M\n$9.21 → $2.81\n10 errors → 0\n\nThe fix?\n\nInsForge Skills + CLI.\n\nNot prompt engineering.\nContext engineering.\n\nLocal. Open-source. Dangerous levels of efficient.\n\nRepo: https://t.co/CIJdNrqCuI\n\n(Star this before everyone finds it https://t.co/TxgE0ujPhp",
+      "created_time": "2026-05-25T03:22:00.000Z",
+      "canonical_url": "https://twitter.com/RodmanAi/status/2058515010696151265",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Hesamation/status/2058673941397291200",
+      "author": "Hesamation",
+      "headline": "Hesamation breaks down how agent harnesses like Codex and Claude Code work — turns out they're __fundamentally simple under the hood__.",
+      "tweet_id": "36b1eba9-b6bc-819c-a881-e091826f63cd",
+      "source_text": "this 8 minute guide will teach you about agent harnesses like Codex and Claude Code. it helps you see how fundamentally simple they are and how they work under the hood. https://t.co/svcUamAVUb",
+      "created_time": "2026-05-25T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/Hesamation/status/2058673941397291200",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/DataChaz/status/2058659843712696671",
+      "author": "DataChaz",
+      "headline": "A visual guide breaks down the anatomy of a perfect __SOUL.md file__ — the 30-to-80-line blueprint that defines an AI agent's identity before memory, skills, or tools.",
+      "tweet_id": "36b1eba9-b6bc-81f0-9229-d799a9bc8ea6",
+      "source_text": "This guy literally dropped the anatomy of the perfect 𝗦𝗢𝗨𝗟.𝗺𝗱 file for AI agents 🤯\n\nInstead of settling for boring, default AI that just tries to \"be helpful,\" this visual guide breaks down a 30-to-80-line blueprint.\n\nIt forces you to define an agent's true identity, https://t.co/LxWwi5kQp8 https://t.co/T8mou2RxUK",
+      "created_time": "2026-05-25T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/DataChaz/status/2058659843712696671",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/zodchiii/status/2058489071274533169",
+      "author": "zodchiii",
+      "headline": "An Anthropic engineer demonstrated one person __running 5 AI agents__ that code, test, review, and deploy simultaneously — built live in 30 minutes.",
+      "tweet_id": "36b1eba9-b6bc-812a-9cdf-f5bf67931377",
+      "source_text": "Anthropic engineer showed how one person can run 5 AI agents, that code, test, review, and deploy at the same time.\n\nIn 30 minutes they built the whole thing live in one session. \n\nHere's what they cover:\n\n> when to use one agent vs a full team \n> how to split work so agents https://t.co/I8V9Lp5HSp https://t.co/cvTxbZWObh",
+      "created_time": "2026-05-25T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/zodchiii/status/2058489071274533169",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Dharmikpawar13/status/2058560557155041563",
+      "author": "Dharmikpawar13",
+      "headline": "A breakdown of the __top 5 MCP server architectures__ for anyone building production AI agents that actually need to scale.",
+      "tweet_id": "36b1eba9-b6bc-81ba-9ad6-f448d812696c",
+      "source_text": "Most AI engineers know how to use MCP.\n\nVery few understand the server patterns that make production AI systems actually scalable. ⚡\n\nThis breakdown of the top 5 MCP server architectures is pure gold for anyone building serious AI agents in 2026. 👇\n\n1️⃣ Tool Server\nLets AI https://t.co/7fXSEHCycJ",
+      "created_time": "2026-05-25T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/Dharmikpawar13/status/2058560557155041563",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/doublenickk/status/2058676383912431842",
+      "author": "doublenickk",
+      "headline": "Anthropic shipped 125 Claude settings but only documented 40 — one developer found the other 85 and __dropped his API bill from $340 to $87__ by moving a single config line.",
+      "tweet_id": "36b1eba9-b6bc-81aa-acaa-c942704a4f32",
+      "source_text": "Anthropic shipped 125 settings for Claude\n\nThe official docs cover 40\n\nOne developer found the other 85 and his API bill dropped from $340 to $87\n\n- not by using a cheaper model\n- not by writing shorter prompts\n\njust by moving one line in a config file to the right place \n\n> https://t.co/XLYNYDj4WH https://t.co/17dkn1HiNK",
+      "created_time": "2026-05-25T03:12:00.000Z",
+      "canonical_url": "https://twitter.com/doublenickk/status/2058676383912431842",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://modal.com/blog/modal-series-c",
+      "author": "yla92",
+      "item_id": "hn:48264429",
+      "headline": "Modal raises __$355M at a $4.65B valuation__ in its Series C.",
+      "subreddit": null,
+      "source_text": "Modal's Series C: Raising $355M at a $4.65B valuation",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-25T07:44:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://modal.com/blog/modal-series-c",
+      "learning_score": 2
+    },
+    {
+      "url": "https://batsov.com/articles/2026/02/17/supercharging-claude-code-with-the-right-tools/",
+      "author": "fagnerbrack",
+      "item_id": "hn:48264376",
+      "headline": "A guide to __supercharging Claude Code with the right CLI tools__ for a faster agentic workflow.",
+      "subreddit": null,
+      "source_text": "Supercharging Claude Code with the Right (CLI) Tools",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-25T07:34:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://batsov.com/articles/2026/02/17/supercharging-claude-code-with-the-right-tools",
+      "learning_score": 2
+    },
+    {
+      "url": "https://bastrich.tech/perfect-code-review/",
+      "author": "fagnerbrack",
+      "item_id": "hn:48264375",
+      "headline": "How to reduce cognitive load in code review by __designing reviews around the reviewer's attention__, not the author's ego.",
+      "subreddit": null,
+      "source_text": "The Perfect Code Review: How to Reduce Cognitive Load While Improving Quality",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-25T07:34:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bastrich.tech/perfect-code-review",
+      "learning_score": 2
+    },
+    {
+      "url": "https://fzakaria.com/2026/05/23/leaving-performance-on-the-table",
+      "author": "ingve",
+      "item_id": "hn:48264364",
+      "headline": "A deep look at how common patterns __leave performance on the table__ without anyone noticing.",
+      "subreddit": null,
+      "source_text": "Leaving Performance on the Table",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-25T07:32:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://fzakaria.com/2026/05/23/leaving-performance-on-the-table",
+      "learning_score": 2
+    },
+    {
+      "url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
+      "author": "ingve",
+      "item_id": "hn:48264328",
+      "headline": "Theseus __translates Win32 binaries to WASM__, shipping legacy Windows apps to the browser.",
+      "subreddit": null,
+      "source_text": "Theseus: Translating Win32 to WASM",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-25T07:26:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://mayberay.bearblog.dev/i-ditched-google-adk-for-lang-graph/",
+      "author": "mugamuga",
+      "item_id": "hn:48264291",
+      "headline": "One developer __ditched Google ADK for LangGraph__ and explains why the switch stuck.",
+      "subreddit": null,
+      "source_text": "I Ditched Google ADK for LangGraph",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-25T07:19:15+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://mayberay.bearblog.dev/i-ditched-google-adk-for-lang-graph",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-05-25T07:50:09.257192+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "fa69486fca7f7e762db62dae983e10110302ecba6ca065ac364e5a3c94591f63"
+}
