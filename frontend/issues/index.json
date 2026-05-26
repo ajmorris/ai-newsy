@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-25T00:00:00Z",
-  "issueCount": 35,
+  "generatedAt": "2026-05-26T00:00:00Z",
+  "issueCount": 36,
   "latestIssue": {
-    "slug": "2026-05-25",
-    "digestDate": "2026-05-25",
-    "displayDate": "May 25, 2026",
-    "issueNumber": "60525",
-    "subject": "ISSUE 60525 \u00b7 6 STORIES \u00b7 11 MIN READ",
-    "intro": "The Pope is weighing in on AI \u2014 and that might be the most telling sign yet of just how deeply this technology has permeated every corner of society. Pope Leo XIV is preparing to release his first encyclical focused squarely on artificial intelligence, a move that lands alongside a wave of stories today about the very real tensions AI is creating, from security teams scrambling to keep up with new attack surfaces to Scotland's climate policies buckling under the weight of AI's energy demands. We've also got hackers learning to sweet-talk chatbots, Amazon strapping a recorder to your wrist, and a compelling argument for why more automation might actually mean *more* human jobs \u2014 so let's dig in.",
-    "articleCount": 6,
-    "urlPath": "/issues/2026-05-25.html",
-    "contentHash": "4e9f9904f00babbd64690633fce447ac86f57175868ecc634b6b02da2abdedb9"
+    "slug": "2026-05-26",
+    "digestDate": "2026-05-26",
+    "displayDate": "May 26, 2026",
+    "issueNumber": "60526",
+    "subject": "ISSUE 60526 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The Vatican just dropped the most unexpected AI policy document of the year. Pope Leo XIV's sweeping 42,300-word encyclical, *Magnifica Humanitas*, dominated today's headlines as the first American pope took aim at Silicon Valley's unchecked AI ambitions, concentrated tech power, and the \"idolatry of profit\" \u2014 drawing striking parallels to the Church's historic intervention during the Industrial Revolution. Meanwhile, as if to underscore the pope's warnings about labor disruption, ClickUp offered a real-time case study by replacing hundreds of workers with 3,000 AI agents, giving us a glimpse of the future the encyclical is urging the world to think harder about.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-05-26.html",
+    "contentHash": "a13863add56fb8f58bf68fb05b7812b4f6ac49b70bae900b591fe95e13048cad"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-26",
+      "digestDate": "2026-05-26",
+      "displayDate": "May 26, 2026",
+      "issueNumber": "60526",
+      "subject": "ISSUE 60526 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The Vatican just dropped the most unexpected AI policy document of the year. Pope Leo XIV's sweeping 42,300-word encyclical, *Magnifica Humanitas*, dominated today's headlines as the first American pope took aim at Silicon Valley's unchecked AI ambitions, concentrated tech power, and the \"idolatry of profit\" \u2014 drawing striking parallels to the Church's historic intervention during the Industrial Revolution. Meanwhile, as if to underscore the pope's warnings about labor disruption, ClickUp offered a real-time case study by replacing hundreds of workers with 3,000 AI agents, giving us a glimpse of the future the encyclical is urging the world to think harder about.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-26.html",
+      "contentHash": "a13863add56fb8f58bf68fb05b7812b4f6ac49b70bae900b591fe95e13048cad"
+    },
     {
       "slug": "2026-05-25",
       "digestDate": "2026-05-25",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-15.html",
       "contentHash": "9b9e1fdedc8112bb7171df0a285d9364dbadfcd8c4659e7915466bccf59cbeaf"
-    },
-    {
-      "slug": "2026-05-14",
-      "digestDate": "2026-05-14",
-      "displayDate": "May 14, 2026",
-      "issueNumber": "60514",
-      "subject": "ISSUE 60514 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The question of who controls what AI tells us is taking center stage today, from a former Meta news chief launching a company to benchmark AI accuracy on high-stakes topics, to UCF graduates booing a commencement speaker's rosy AI predictions, to Anthropic muscling into legal tech and potentially disrupting the very companies built on its models. It's a day that underscores a growing tension: as AI embeds itself deeper into how we work, learn, and create, the fights over who shapes it\u2014and who gets left behind\u2014are only intensifying. We've also got Notion opening its doors to AI agents, Microsoft letting Copilot read all your tabs, Musk's xAI dodging pollution rules in Mississippi, and more.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-14.html",
-      "contentHash": "392369b80bc4104c4fccdab1ed444b5d5f4e6f66b76d35b383a844c81410dd67"
     }
   ]
 }
