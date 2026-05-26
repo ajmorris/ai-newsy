@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 3697,
+      "source": "Guardian AI",
+      "title": "US students on why they booed their pro-AI graduation speakers: ‘They’re not reading the room’",
+      "url": "https://www.theguardian.com/technology/2026/may/26/students-boo-pro-ai-graduation-speakers",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Recent US college graduates have been booing commencement speakers who promote artificial intelligence during graduation ceremonies. Students like Jacob Pagel from Middle Tennessee State University feel that pro-AI speeches are tone-deaf, as many graduates view AI as a direct threat to their career prospects and question the value of their degrees in light of AI's rapid advancement. The article highlights a growing disconnect between industry leaders enthusiastic about AI's transformative potential and young people entering the workforce who fear the technology will undermine their job opportunities.",
+      "opinion": "This article captures a genuinely important cultural moment — the collision between Silicon Valley's relentless AI optimism and the real anxieties of young people entering an increasingly uncertain job market. The students' frustration is entirely understandable: being told at your own graduation ceremony that the technology reshaping your industry is exciting and transformative, when you're the one whose livelihood may be disrupted, is remarkably tone-deaf. The phrase 'not reading the room' pe…",
+      "image_url": "https://i.guim.co.uk/img/media/1096f89b3579c276b8cd72e460025530bd17b133/687_0_6871_5497/master/6871.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8ba7fb997c9e3f20181ce0108a82ec34",
+      "published_at": "2026-05-26T08:00:49+00:00",
+      "fetched_at": "2026-05-26T08:19:20.787826+00:00"
+    },
+    {
       "id": 3686,
       "source": "NY Times",
       "title": "Main Takeaways From Pope Leo’s Encyclical on A.I.",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2213411719.jpg?w=1024",
       "published_at": "2026-05-25T15:09:41+00:00",
       "fetched_at": "2026-05-26T07:23:10.148819+00:00"
-    },
-    {
-      "id": 3692,
-      "source": "The Verge AI",
-      "title": "Pope Leo calls for being ‘profoundly human’ in the age of AI",
-      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Pope Leo XIV released his first major papal document, 'Magnifica Humanitas,' warning about the risks of AI and unconstrained technological power. The encyclical addresses AI-powered warfare, labor disruption, children's exposure to AI, and calls for new legal and ethical frameworks to govern technology. He compared the current AI era to the Tower of Babel, warning against the 'idolatry of profit that sacrifices the weak' and the pretense that everything human can be reduced to data. The document emphasizes that human dignity must remain central to decision-making and governance in the age of artificial intelligence.",
-      "opinion": "This is a significant and timely intervention from the papacy. Regardless of one's religious views, having a major global moral authority articulate concerns about AI's impact on human dignity, labor, and warfare adds important weight to ongoing debates. The Tower of Babel metaphor is particularly apt — capturing the hubris of believing technology can solve or encode everything about the human experience. The call for new legal and ethical frameworks is welcome, though the real challenge lies i…",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2278126608.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.487862082976&w=1200",
-      "published_at": "2026-05-25T15:05:07+00:00",
-      "fetched_at": "2026-05-26T07:23:20.354955+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 3697,
+          "source": "Guardian AI",
+          "title": "US students on why they booed their pro-AI graduation speakers: ‘They’re not reading the room’",
+          "url": "https://www.theguardian.com/technology/2026/may/26/students-boo-pro-ai-graduation-speakers",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Recent US college graduates have been booing commencement speakers who promote artificial intelligence during graduation ceremonies. Students like Jacob Pagel from Middle Tennessee State University feel that pro-AI speeches are tone-deaf, as many graduates view AI as a direct threat to their career prospects and question the value of their degrees in light of AI's rapid advancement. The article highlights a growing disconnect between industry leaders enthusiastic about AI's transformative potential and young people entering the workforce who fear the technology will undermine their job opportunities.",
+          "opinion": "This article captures a genuinely important cultural moment — the collision between Silicon Valley's relentless AI optimism and the real anxieties of young people entering an increasingly uncertain job market. The students' frustration is entirely understandable: being told at your own graduation ceremony that the technology reshaping your industry is exciting and transformative, when you're the one whose livelihood may be disrupted, is remarkably tone-deaf. The phrase 'not reading the room' pe…",
+          "image_url": "https://i.guim.co.uk/img/media/1096f89b3579c276b8cd72e460025530bd17b133/687_0_6871_5497/master/6871.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8ba7fb997c9e3f20181ce0108a82ec34",
+          "published_at": "2026-05-26T08:00:49+00:00",
+          "fetched_at": "2026-05-26T08:19:20.787826+00:00"
+        },
         {
           "id": 3686,
           "source": "NY Times",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2213411719.jpg?w=1024",
           "published_at": "2026-05-25T15:09:41+00:00",
           "fetched_at": "2026-05-26T07:23:10.148819+00:00"
-        },
-        {
-          "id": 3692,
-          "source": "The Verge AI",
-          "title": "Pope Leo calls for being ‘profoundly human’ in the age of AI",
-          "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Pope Leo XIV released his first major papal document, 'Magnifica Humanitas,' warning about the risks of AI and unconstrained technological power. The encyclical addresses AI-powered warfare, labor disruption, children's exposure to AI, and calls for new legal and ethical frameworks to govern technology. He compared the current AI era to the Tower of Babel, warning against the 'idolatry of profit that sacrifices the weak' and the pretense that everything human can be reduced to data. The document emphasizes that human dignity must remain central to decision-making and governance in the age of artificial intelligence.",
-          "opinion": "This is a significant and timely intervention from the papacy. Regardless of one's religious views, having a major global moral authority articulate concerns about AI's impact on human dignity, labor, and warfare adds important weight to ongoing debates. The Tower of Babel metaphor is particularly apt — capturing the hubris of believing technology can solve or encode everything about the human experience. The call for new legal and ethical frameworks is welcome, though the real challenge lies i…",
-          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2278126608.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C78.487862082976&w=1200",
-          "published_at": "2026-05-25T15:05:07+00:00",
-          "fetched_at": "2026-05-26T07:23:20.354955+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/mattapperson/status/2059011048355639477",
       "author": "mattapperson",
-      "headline": "Matt Apperson open-sources __Noetic__, a new agentic harness designed to let you fully customize how you build your own agent.",
+      "headline": "Matt Apperson is open-sourcing __Noetic__, a new agentic harness designed to let you fully customize how you build your own agent.",
       "tweet_id": "36c1eba9-b6bc-8183-8951-decd007dcc00",
       "source_text": "I am open sourcing a new agentic harness/framework today named Noetic! It’s designed to help you build your own agent, and fully customize the harness! It’s an early alpha, and there is a lot more features in the pipeline, but would love your feedback! https://t.co/pkVXJ2ihZE",
       "created_time": "2026-05-26T01:47:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/gregisenberg/status/2058923630960988300",
       "author": "gregisenberg",
-      "headline": "Greg Isenberg's playbook for vertical AI agent startups: find a painful workflow in a boring industry, __be the agent manually first__, then automate.",
+      "headline": "Greg Isenberg's playbook for vertical AI agents: find a painful workflow in a boring industry, __be the agent manually first__, then automate it.",
       "tweet_id": "36c1eba9-b6bc-816a-be12-d600502289a8",
       "source_text": "How to build a vertical AI agent cash-flowing startup:\n\nfind painful workflow in a boring industry → talk to 10 people who do that workflow every day → map every step, every tool, every spreadsheet, every phone call →\n\ndo the workflow manually first → be the agent before you",
       "created_time": "2026-05-26T01:47:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/sjsandeep_jain/status/2058864103645700558",
       "author": "sjsandeep_jain",
-      "headline": "Most developers treat CLAUDE.md like documentation — but it's actually the __instruction architecture__ controlling your AI agent's consistency.",
+      "headline": "Most developers treat CLAUDE.md like documentation — but it's actually the __instruction architecture__ that controls whether your AI agent's output is consistent or random.",
       "tweet_id": "36b1eba9-b6bc-815e-865a-e5ac1669d25d",
       "source_text": "Most developers treat CLAUDE.md like documentation.\n\nThat’s the mistake.\n\nIt’s not a README.\nIt’s the control layer for your AI agent.\nIf your outputs feel inconsistent, buggy, or “random”…\nthe problem usually isn’t the model.\n\nIt’s the instruction architecture.\nThe biggest https://t.co/hV3dhwWUuV",
       "created_time": "2026-05-25T13:52:00.000Z",
@@ -286,89 +286,89 @@
   ],
   "community_headlines": [
     {
-      "url": "https://www.twitch.tv/gptfortress",
-      "author": "leostera",
-      "item_id": "hn:48276013",
-      "headline": "__GPTFortress__ is a 24/7 Twitch livestream where GPT-5 plays Dwarf Fortress autonomously.",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2601283",
+      "author": "Kaibeezy",
+      "item_id": "hn:48276425",
+      "headline": "In vivo base editing of PCSK9 with __Verve-102__ shows promise for treating hypercholesterolemia — gene editing goes after cholesterol.",
       "subreddit": null,
-      "source_text": "Show HN: GPTFortress, a 24/7 live-stream playing Dwarf Fortress with GPT-5",
+      "source_text": "In Vivo Base Editing of PCSK9 with Verve-102 for Hypercholesterolemia",
       "source_type": "hacker_news",
-      "created_time": "2026-05-26T06:51:12+00:00",
+      "created_time": "2026-05-26T07:42:57+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://twitch.tv/gptfortress",
+      "canonical_url": "https://nejm.org/doi/full/10.1056/NEJMoa2601283",
       "learning_score": 3
     },
     {
-      "url": "https://www.macrumors.com/2026/05/25/ferrari-luce-jony-ive-photos/",
-      "author": "mgh2",
-      "item_id": "hn:48275736",
-      "headline": "Ferrari reveals the Luce, a __$640k EV co-designed by Jony Ive__ — peak luxury meets peak voltage.",
+      "url": "https://www.jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development/",
+      "author": "rbanffy",
+      "item_id": "hn:48276598",
+      "headline": "Jeff Geerling shares __news about Raspberry Pi 6__ and the state of microcontroller development.",
       "subreddit": null,
-      "source_text": "Ferrari Reveals $640k EV Co-Designed by Jony Ive",
+      "source_text": "News about Raspberry Pi 6 and Microcontroller Development – Jeff Geerling",
       "source_type": "hacker_news",
-      "created_time": "2026-05-26T06:20:46+00:00",
+      "created_time": "2026-05-26T08:02:52+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://macrumors.com/2026/05/25/ferrari-luce-jony-ive-photos",
-      "learning_score": 3
-    },
-    {
-      "url": "https://www.wired.com/story/ferrari-ev-jony-ive-design/",
-      "author": "divbzero",
-      "item_id": "hn:48276286",
-      "headline": "Ferrari's new EV is __swathed in glass and aluminum__ — and it was designed by Jony Ive.",
-      "subreddit": null,
-      "source_text": "Ferrari's New Jony Ive–Designed EV Is Swathed in Glass and Aluminum",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-26T07:25:10+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://wired.com/story/ferrari-ev-jony-ive-design",
+      "canonical_url": "https://jeffgeerling.com/blog/2026/news-about-raspberry-pi-6-and-microcontroller-development",
       "learning_score": 2
     },
     {
-      "url": "https://thoth-app.com/blog/2026-05-13-why-your-meeting-recorder-shouldnt-upload-your-audio/",
-      "author": "MattVePhD",
-      "item_id": "hn:48276268",
-      "headline": "Thoth makes the case that your __cloud meeting recorder captures everyone in the room__ — not just you — and why that's a problem.",
+      "url": "https://volary.ai/articles/sdlc-agents",
+      "author": "CamouflagedKiwi",
+      "item_id": "hn:48276578",
+      "headline": "Volary makes the case that SDLC agents are pushing developers __out of the loop__ — and why that's a problem.",
       "subreddit": null,
-      "source_text": "Cloud meeting recorders record everyone in the room. Not just you",
+      "source_text": "Out of the Loop",
       "source_type": "hacker_news",
-      "created_time": "2026-05-26T07:22:24+00:00",
+      "created_time": "2026-05-26T08:01:00+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://thoth-app.com/blog/2026-05-13-why-your-meeting-recorder-shouldnt-upload-your-audio",
+      "canonical_url": "https://volary.ai/articles/sdlc-agents",
       "learning_score": 2
     },
     {
-      "url": "https://news.ycombinator.com/item?id=48276264",
-      "author": "cheecheongfan",
-      "item_id": "hn:48276264",
-      "headline": "__Presentforme.ai__ turns slide decks into self-explaining presentations so you never have to narrate a PDF again.",
+      "url": "https://www.heltweg.org/posts/improving-local-techdocs-for-your-ai-coding-agent/",
+      "author": "rhazn",
+      "item_id": "hn:48276548",
+      "headline": "Practical guide to __improving local techdocs__ so your AI coding agent actually knows what it's building.",
       "subreddit": null,
-      "source_text": "Show HN: Presentforme.ai – Make slide decks explain themselves",
+      "source_text": "Improving Local Techdocs for Your AI Coding Agent",
       "source_type": "hacker_news",
-      "created_time": "2026-05-26T07:22:07+00:00",
+      "created_time": "2026-05-26T07:57:15+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=48276264",
+      "canonical_url": "https://heltweg.org/posts/improving-local-techdocs-for-your-ai-coding-agent",
       "learning_score": 2
     },
     {
-      "url": "https://arxiv.org/abs/2605.25902",
-      "author": "Timofeibu",
-      "item_id": "hn:48276183",
-      "headline": "New paper shows researchers can __recover finetuning data without weight access__ using contrastive decoding diffing.",
+      "url": "https://arxiv.org/abs/2510.04950",
+      "author": "KnuthIsGod",
+      "item_id": "hn:48276429",
+      "headline": "Research finds that __prompt politeness affects LLM accuracy__ — saying \"please\" might actually matter.",
       "subreddit": null,
-      "source_text": "Contrastive Decoding Diffing: Recovering Finetuning Data Without Weight Access",
+      "source_text": "Prompt Politeness Affects LLM Accuracy",
       "source_type": "hacker_news",
-      "created_time": "2026-05-26T07:09:36+00:00",
+      "created_time": "2026-05-26T07:43:22+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2605.25902",
+      "canonical_url": "https://arxiv.org/abs/2510.04950",
+      "learning_score": 2
+    },
+    {
+      "url": "https://tinyopsstudio.com/ai-agent-token-cost-calculator",
+      "author": "tinyopsstudio",
+      "item_id": "hn:48276358",
+      "headline": "Token cost calculator for __Codex and Claude Code loops__ — finally a way to estimate what your AI agent runs actually cost.",
+      "subreddit": null,
+      "source_text": "Show HN: AI agent token cost calculator for Codex and Claude Code loops",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-26T07:34:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tinyopsstudio.com/ai-agent-token-cost-calculator",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-26T07:32:38.516813+00:00",
+    "generated_at": "2026-05-26T08:21:17.769331+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "428c8dd7c703612b23d2514867021c95e4d520fdb3907d84faf15a000f057806"
+  "content_hash": "a13863add56fb8f58bf68fb05b7812b4f6ac49b70bae900b591fe95e13048cad"
 }
