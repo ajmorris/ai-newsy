@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-26T00:00:00Z",
-  "issueCount": 36,
+  "generatedAt": "2026-05-27T00:00:00Z",
+  "issueCount": 37,
   "latestIssue": {
-    "slug": "2026-05-26",
-    "digestDate": "2026-05-26",
-    "displayDate": "May 26, 2026",
-    "issueNumber": "60526",
-    "subject": "ISSUE 60526 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The Vatican just dropped the most unexpected AI policy document of the year. Pope Leo XIV's sweeping 42,300-word encyclical, *Magnifica Humanitas*, dominated today's headlines as the first American pope took aim at Silicon Valley's unchecked AI ambitions, concentrated tech power, and the \"idolatry of profit\" \u2014 drawing striking parallels to the Church's historic intervention during the Industrial Revolution. Meanwhile, as if to underscore the pope's warnings about labor disruption, ClickUp offered a real-time case study by replacing hundreds of workers with 3,000 AI agents, giving us a glimpse of the future the encyclical is urging the world to think harder about.",
+    "slug": "2026-05-27",
+    "digestDate": "2026-05-27",
+    "displayDate": "May 27, 2026",
+    "issueNumber": "60527",
+    "subject": "ISSUE 60527 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The irony is almost too perfect: Pope Leo XIV's first encyclical warning about AI's impact on humanity may itself have been partially written by AI, with detectors flagging nearly half the text as machine-generated. It's a fitting symbol for a day where the tension between embracing and resisting AI is everywhere \u2014 from Cannes filmmakers wrestling with the technology, to millions of users fleeing Google's AI-saturated search results for DuckDuckGo, to a critical vulnerability putting millions of AI agents at risk. We've also got a billion-dollar bet on a multi-model future, Indian gig workers training the world's robots, and a landmark music industry deal tackling AI-generated fakes.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-26.html",
-    "contentHash": "a13863add56fb8f58bf68fb05b7812b4f6ac49b70bae900b591fe95e13048cad"
+    "urlPath": "/issues/2026-05-27.html",
+    "contentHash": "3020d44150d6af81893eb7adcde1fbd3c58817a8e4edb8abf427b3a54da6571c"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-27",
+      "digestDate": "2026-05-27",
+      "displayDate": "May 27, 2026",
+      "issueNumber": "60527",
+      "subject": "ISSUE 60527 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The irony is almost too perfect: Pope Leo XIV's first encyclical warning about AI's impact on humanity may itself have been partially written by AI, with detectors flagging nearly half the text as machine-generated. It's a fitting symbol for a day where the tension between embracing and resisting AI is everywhere \u2014 from Cannes filmmakers wrestling with the technology, to millions of users fleeing Google's AI-saturated search results for DuckDuckGo, to a critical vulnerability putting millions of AI agents at risk. We've also got a billion-dollar bet on a multi-model future, Indian gig workers training the world's robots, and a landmark music industry deal tackling AI-generated fakes.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-27.html",
+      "contentHash": "3020d44150d6af81893eb7adcde1fbd3c58817a8e4edb8abf427b3a54da6571c"
+    },
     {
       "slug": "2026-05-26",
       "digestDate": "2026-05-26",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-16.html",
       "contentHash": "50adc6e698e5ccf6bfed0b08126b2ca8861076691482d89fe27110919f171e26"
-    },
-    {
-      "slug": "2026-05-15",
-      "digestDate": "2026-05-15",
-      "displayDate": "May 15, 2026",
-      "issueNumber": "60515",
-      "subject": "ISSUE 60515 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The Musk v. Altman trial is stealing the spotlight today, with closing arguments delivering courtroom drama that reads more like a screenplay than a legal proceeding \u2014 from Musk's lawyer accidentally calling a co-defendant \"Greg Altman\" to a literal jackass trophy entering the evidentiary record. But beyond the courtroom theatrics, there's plenty more to dig into, including a talent exodus at Musk's SpaceXAI, OpenAI bringing Codex to your phone, and a fresh Claude Code update worth knowing about.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-15.html",
-      "contentHash": "9b9e1fdedc8112bb7171df0a285d9364dbadfcd8c4659e7915466bccf59cbeaf"
     }
   ]
 }
