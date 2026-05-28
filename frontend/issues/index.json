@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-27T00:00:00Z",
-  "issueCount": 37,
+  "generatedAt": "2026-05-28T00:00:00Z",
+  "issueCount": 38,
   "latestIssue": {
-    "slug": "2026-05-27",
-    "digestDate": "2026-05-27",
-    "displayDate": "May 27, 2026",
-    "issueNumber": "60527",
-    "subject": "ISSUE 60527 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The irony is almost too perfect: Pope Leo XIV's first encyclical warning about AI's impact on humanity may itself have been partially written by AI, with detectors flagging nearly half the text as machine-generated. It's a fitting symbol for a day where the tension between embracing and resisting AI is everywhere \u2014 from Cannes filmmakers wrestling with the technology, to millions of users fleeing Google's AI-saturated search results for DuckDuckGo, to a critical vulnerability putting millions of AI agents at risk. We've also got a billion-dollar bet on a multi-model future, Indian gig workers training the world's robots, and a landmark music industry deal tackling AI-generated fakes.",
+    "slug": "2026-05-28",
+    "digestDate": "2026-05-28",
+    "displayDate": "May 28, 2026",
+    "issueNumber": "60528",
+    "subject": "ISSUE 60528 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Robots are smashing marathon records, Google's AI still can't spell its own name, and a new browser attack can spy on you through your SSD \u2014 it's a day that perfectly captures AI's wild spectrum from impressive to embarrassing to downright unsettling. We've also got a $6 billion AWS chip deal signaling the post-Nvidia era, Pope Leo weighing in on artificial intelligence, and some hard-won wisdom on why your AI governance checklist probably isn't working the way you think. Grab your coffee \u2014 there's a lot to unpack.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-27.html",
-    "contentHash": "3020d44150d6af81893eb7adcde1fbd3c58817a8e4edb8abf427b3a54da6571c"
+    "urlPath": "/issues/2026-05-28.html",
+    "contentHash": "a16df68af4319cc8c93e5939095b8522dc3e6bc13a8d5c41e25cb3f3a283668c"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-28",
+      "digestDate": "2026-05-28",
+      "displayDate": "May 28, 2026",
+      "issueNumber": "60528",
+      "subject": "ISSUE 60528 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Robots are smashing marathon records, Google's AI still can't spell its own name, and a new browser attack can spy on you through your SSD \u2014 it's a day that perfectly captures AI's wild spectrum from impressive to embarrassing to downright unsettling. We've also got a $6 billion AWS chip deal signaling the post-Nvidia era, Pope Leo weighing in on artificial intelligence, and some hard-won wisdom on why your AI governance checklist probably isn't working the way you think. Grab your coffee \u2014 there's a lot to unpack.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-28.html",
+      "contentHash": "a16df68af4319cc8c93e5939095b8522dc3e6bc13a8d5c41e25cb3f3a283668c"
+    },
     {
       "slug": "2026-05-27",
       "digestDate": "2026-05-27",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-17.html",
       "contentHash": "3c94e8fc32e29cfb8ce199f569fb68ed828ef7fa07fe8e2683b7b09b1d6531f5"
-    },
-    {
-      "slug": "2026-05-16",
-      "digestDate": "2026-05-16",
-      "displayDate": "May 16, 2026",
-      "issueNumber": "60516",
-      "subject": "ISSUE 60516 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The courtroom drama between Elon Musk and Sam Altman stole the spotlight this week as the blockbuster trial wrapped up with both sides landing heavy blows \u2014 testimony about alleged lying, power grabs, and a potential $134 billion unwinding of OpenAI's restructuring now sits in the jury's hands. But that's far from the only OpenAI news: the company also acquired a voice-cloning platform and reshuffled its leadership to go all-in on AI agents. Beyond the OpenAI orbit, today's digest covers YouTube giving everyone deepfake detection powers, ArXiv cracking down on AI slop in research papers, and how AI's insatiable energy appetite is hitting Lake Tahoe vacationers where it hurts \u2014 their electricity bills.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-16.html",
-      "contentHash": "50adc6e698e5ccf6bfed0b08126b2ca8861076691482d89fe27110919f171e26"
     }
   ]
 }
