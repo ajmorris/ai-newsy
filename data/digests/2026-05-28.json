@@ -33,6 +33,19 @@
       "fetched_at": "2026-05-28T07:31:52.796467+00:00"
     },
     {
+      "id": 3749,
+      "source": "TechCrunch AI",
+      "title": "Vertu wants CEOs to run companies from an AI foldable starting at $6,880",
+      "url": "https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Luxury smartphone brand Vertu has unveiled the Alphafold, an AI-powered foldable phone starting at $6,880 (up to $46,800 for premium models) targeting CEOs and executives. The device features an AI agent called Hermes Agent, built on the open-source Hermes project by Nous Research, which connects to enterprise systems like ERP and CRM to handle approvals, scheduling, sales tracking, and operational reporting through natural language. It can route requests across multiple AI models including GPT, Claude, and Gemini, and integrates with over 80 apps. The phone includes a proprietary A5 security chip for isolating sensitive data, with on-device processing and data redaction capabilities, though it has not yet undergone third-party security audits. Vertu, the Hong Kong-based company that has changed ownership multiple times, is attempting to reinvent itself for the AI era by combining luxur…",
+      "opinion": "This feels like a classic Vertu play: wrap existing technology in luxury materials and charge a massive premium, but this time with an AI narrative bolted on. The enterprise AI agent concept is genuinely interesting — connecting a mobile device directly to ERP/CRM systems through natural language could be valuable for executives — but there's little reason this couldn't run on any flagship smartphone. The lack of third-party security audits is a significant red flag for a device marketed to CEO…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/vertu-alphafold-foldable.jpg?resize=1200,800",
+      "published_at": "2026-05-28T07:00:00+00:00",
+      "fetched_at": "2026-05-28T08:24:44.737932+00:00"
+    },
+    {
       "id": 3729,
       "source": "Guardian AI",
       "title": "Are robots nearing their ChatGPT moment? – podcast",
@@ -96,19 +109,6 @@
       "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/solid-state-drive-ssd-1152x648.jpg",
       "published_at": "2026-05-27T20:56:03+00:00",
       "fetched_at": "2026-05-28T07:31:44.91481+00:00"
-    },
-    {
-      "id": 3718,
-      "source": "TechCrunch AI",
-      "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
-      "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Snowflake has signed a $6 billion, five-year deal with Amazon Web Services, primarily to secure access to AWS's homegrown ARM-based Graviton CPU chips for AI workloads. The deal reflects Snowflake's accelerating customer spending on AWS, which doubled to $2 billion in 2025, driven largely by AI demand through Snowflake's Cortex AI tool. The agreement highlights a broader trend of cloud providers developing their own chips to compete with Nvidia, as CPU usage grows with the shift from AI training to daily usage and agent-based automation. AWS has been landing similar large deals, including providing Graviton chips to Meta, while Google and Microsoft are also developing proprietary AI chips. Nvidia's CEO Jensen Huang has responded by touting the company's new AI-specific CPU called Vera, claiming it represents a $200 billion market opportunity with $20 billion already sold.",
-      "opinion": "This deal is a significant indicator of how the AI infrastructure landscape is evolving. The fact that Snowflake is specifically contracting for AWS's Graviton CPUs rather than Nvidia GPUs underscores an important and underappreciated shift: as AI moves from training to inference and agentic workflows, CPU demand becomes increasingly critical. Amazon's strategy of building affordable, competitive custom silicon and passing savings to customers is proving effective at locking in massive, long-te…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/dollar-signs-data-center.png?w=1024",
-      "published_at": "2026-05-27T20:10:00+00:00",
-      "fetched_at": "2026-05-28T07:31:31.094263+00:00"
     }
   ],
   "sections": [
@@ -140,6 +140,19 @@
           "image_url": "",
           "published_at": "2026-05-28T07:25:00+00:00",
           "fetched_at": "2026-05-28T07:31:52.796467+00:00"
+        },
+        {
+          "id": 3749,
+          "source": "TechCrunch AI",
+          "title": "Vertu wants CEOs to run companies from an AI foldable starting at $6,880",
+          "url": "https://techcrunch.com/2026/05/28/vertu-wants-ceos-to-run-companies-from-an-ai-foldable-starting-at-6880/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Luxury smartphone brand Vertu has unveiled the Alphafold, an AI-powered foldable phone starting at $6,880 (up to $46,800 for premium models) targeting CEOs and executives. The device features an AI agent called Hermes Agent, built on the open-source Hermes project by Nous Research, which connects to enterprise systems like ERP and CRM to handle approvals, scheduling, sales tracking, and operational reporting through natural language. It can route requests across multiple AI models including GPT, Claude, and Gemini, and integrates with over 80 apps. The phone includes a proprietary A5 security chip for isolating sensitive data, with on-device processing and data redaction capabilities, though it has not yet undergone third-party security audits. Vertu, the Hong Kong-based company that has changed ownership multiple times, is attempting to reinvent itself for the AI era by combining luxur…",
+          "opinion": "This feels like a classic Vertu play: wrap existing technology in luxury materials and charge a massive premium, but this time with an AI narrative bolted on. The enterprise AI agent concept is genuinely interesting — connecting a mobile device directly to ERP/CRM systems through natural language could be valuable for executives — but there's little reason this couldn't run on any flagship smartphone. The lack of third-party security audits is a significant red flag for a device marketed to CEO…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/vertu-alphafold-foldable.jpg?resize=1200,800",
+          "published_at": "2026-05-28T07:00:00+00:00",
+          "fetched_at": "2026-05-28T08:24:44.737932+00:00"
         },
         {
           "id": 3729,
@@ -205,38 +218,25 @@
           "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/solid-state-drive-ssd-1152x648.jpg",
           "published_at": "2026-05-27T20:56:03+00:00",
           "fetched_at": "2026-05-28T07:31:44.91481+00:00"
-        },
-        {
-          "id": 3718,
-          "source": "TechCrunch AI",
-          "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
-          "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Snowflake has signed a $6 billion, five-year deal with Amazon Web Services, primarily to secure access to AWS's homegrown ARM-based Graviton CPU chips for AI workloads. The deal reflects Snowflake's accelerating customer spending on AWS, which doubled to $2 billion in 2025, driven largely by AI demand through Snowflake's Cortex AI tool. The agreement highlights a broader trend of cloud providers developing their own chips to compete with Nvidia, as CPU usage grows with the shift from AI training to daily usage and agent-based automation. AWS has been landing similar large deals, including providing Graviton chips to Meta, while Google and Microsoft are also developing proprietary AI chips. Nvidia's CEO Jensen Huang has responded by touting the company's new AI-specific CPU called Vera, claiming it represents a $200 billion market opportunity with $20 billion already sold.",
-          "opinion": "This deal is a significant indicator of how the AI infrastructure landscape is evolving. The fact that Snowflake is specifically contracting for AWS's Graviton CPUs rather than Nvidia GPUs underscores an important and underappreciated shift: as AI moves from training to inference and agentic workflows, CPU demand becomes increasingly critical. Amazon's strategy of building affordable, competitive custom silicon and passing savings to customers is proving effective at locking in massive, long-te…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/dollar-signs-data-center.png?w=1024",
-          "published_at": "2026-05-27T20:10:00+00:00",
-          "fetched_at": "2026-05-28T07:31:31.094263+00:00"
         }
       ]
     }
   ],
   "tweet_headlines": [
     {
-      "url": "https://twitter.com/johnturner/status/2059736377051226474",
-      "author": "johnturner",
-      "headline": "John Turner makes the case that MCPs suck: a typical 3–4 server setup injects __30–60k tokens of JSON__ before the model even reads your message.",
-      "tweet_id": "36e1eba9-b6bc-818f-8caf-c17cc99f4b2b",
-      "source_text": "MCPs suck. Well, most do.\n\nEvery mcp server you connect injects its full tool catalog into your AI's context on every single turn. A typical 3-4 server setup is 30-60k tokens of JSON before the AI even reads your message.\n\nTwo compounding problems, less room for your actual",
-      "created_time": "2026-05-28T01:27:00.000Z",
-      "canonical_url": "https://twitter.com/johnturner/status/2059736377051226474",
+      "url": "https://twitter.com/bhalligan/status/2059732266365096390",
+      "author": "bhalligan",
+      "headline": "Halligan makes the case for the __five-tool operator__: the person who can spec, build, ship, market, and measure — and argues compensation needs to reward it.",
+      "tweet_id": "36e1eba9-b6bc-8192-88b0-e41d62fba626",
+      "source_text": "Compensation is changing.  This is the era of the five-tool operator.\n\nIn baseball, a five-tool player hits for average, hits for power, runs, fields, and throws. Most players have two or three tools. The five-tool player is the one you build a franchise around.\n\nThe best CEOs I https://t.co/P32FHA1wXg",
+      "created_time": "2026-05-28T04:07:00.000Z",
+      "canonical_url": "https://twitter.com/bhalligan/status/2059732266365096390",
       "learning_score": 3
     },
     {
       "url": "https://twitter.com/cyb3rops/status/2059531734589247991",
       "author": "cyb3rops",
-      "headline": "Florian Roth outlines the __four stages of AI coding hype__ — from amazement to expansion to the reckoning most builders don't talk about.",
+      "headline": "Florian Roth outlines __four stages of AI coding hype__ — from amazement to expansion to the phase most people don't talk about yet.",
       "tweet_id": "36d1eba9-b6bc-813b-8d1a-e7fb9040cf77",
       "source_text": "I think AI coding hype follows roughly four stages:\n\n1. Amazement\n\nYou try it and can’t believe how much code it generates from a few prompts.\n\n2. Expansion\n\nYou start more and more projects because shipping suddenly feels cheap and fast.\n\nThis is also the phase where people https://t.co/WDQA43m5yN https://t.co/Y3AedboHG5",
       "created_time": "2026-05-27T19:57:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/petergyang/status/2059642246614647259",
       "author": "petergyang",
-      "headline": "Peter Yang built an AI skill that __turns a rough outline into an HTML slide deck__ in minutes — tutorial covers 12 slide formats and 3 templates.",
+      "headline": "Peter Yang got tired of making slides, so he built an AI skill that __turns a rough outline into a polished HTML deck__ in minutes.",
       "tweet_id": "36d1eba9-b6bc-81b7-b867-de305f5f06f9",
       "source_text": "I got tired of making PowerPoint slides so I built an AI skill to do it for me.\n\nHere's my new tutorial on how to build a /slides skill that turns a rough outline into a beautiful HTML deck in minutes.\n\nI walk through how to:\n\n→ Use 12 slide formats and 3 templates\n→ Add live",
       "created_time": "2026-05-27T19:52:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/clairevo/status/2059685739546448333",
       "author": "clairevo",
-      "headline": "Claire Vo believes Codex's __/goal command solved all her problems__ — put together a 30-minute breakdown of how it works and why she's obsessed.",
+      "headline": "Claire Vo says Codex's __/goal command solved all her problems__ — and put together a 30-minute breakdown of how it works.",
       "tweet_id": "36d1eba9-b6bc-8121-8676-d472225edf8c",
       "source_text": "good news: /goal in codex has solved all my problems\nbad news: i'm sitting here twiddling my thumbs while the agents do all my bidding\n\nit's no secret i'm a little bit obsessed with codex, and /goal is a big part of that.\n\ni put together a 30m ep on /goal including:\n- what it is https://t.co/ymZAtYfH3u",
       "created_time": "2026-05-27T19:52:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/bhalligan/status/2059732739667136640",
       "author": "bhalligan",
-      "headline": "Brian Halligan says a single senior engineer at a frontier lab now __ships in a week what a five-person team shipped in a month__ — and compensation systems haven't caught up.",
+      "headline": "Brian Halligan says a senior engineer at a frontier AI lab now __ships in a week what a five-person team shipped in a month__ — and comp systems haven't caught up.",
       "tweet_id": "36e1eba9-b6bc-81a7-8612-e35ac618fe17",
       "source_text": "A senior engineer at a frontier AI company ships in a week what a five-person team shipped in a month two years ago.\n\nMost compensation systems still operate as job equals a function.\n\nEngineer writes code.\nDesigner designs interfaces.\nPM writes requirements.\nMarketer drives",
       "created_time": "2026-05-28T04:27:00.000Z",
@@ -274,22 +274,74 @@
       "learning_score": 2
     },
     {
-      "url": "https://twitter.com/dharmesh/status/2059685580263309571",
-      "author": "dharmesh",
-      "headline": "Dharmesh Shah has been an __\"Executive IC\" at HubSpot__ for 20 years and argues the role finally has a name.",
-      "tweet_id": "36e1eba9-b6bc-81ff-a346-ee96cb0875c6",
-      "source_text": "\"Executive IC\". That's pretty much the role I've had at HubSpot since its founding 20 years ago.\n\nThanks for giving shape to the idea, @jmwind and best wishes with the new role. \n\nLong-time admirer of your work. https://t.co/64d9AWBRyV",
-      "created_time": "2026-05-28T04:12:00.000Z",
-      "canonical_url": "https://twitter.com/dharmesh/status/2059685580263309571",
+      "url": "https://twitter.com/johnyeo_/status/2059688796728267261",
+      "author": "johnyeo_",
+      "headline": "John Yeo walks through the agent his team built to __automatically query logs and investigate support tickets__ — one of their biggest internal levers.",
+      "tweet_id": "36e1eba9-b6bc-81e1-be31-e4b6c385b1ac",
+      "source_text": "One of the biggest levers we've built in house is an agent to automatically query our logs and investigate tickets - explained how it works here!\n\nhttps://t.co/CcGOPoGUaz",
+      "created_time": "2026-05-28T04:07:00.000Z",
+      "canonical_url": "https://twitter.com/johnyeo_/status/2059688796728267261",
       "learning_score": 2
     }
   ],
   "community_headlines": [
     {
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "author": "steveharing1",
+      "item_id": "hn:48306196",
+      "headline": "__Taste Skill__ is an open-source front-end framework designed to keep AI agent outputs from drowning in slop.",
+      "subreddit": null,
+      "source_text": "Taste Skill: An Anti-Slop Front End Framework for AI Agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-28T08:24:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Leonxlnx/taste-skill",
+      "learning_score": 2
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.26825",
+      "author": "crohr",
+      "item_id": "hn:48306179",
+      "headline": "New research maps the __GitHub Actions language__ — its usage patterns, how workflows evolve, and where reliability breaks down.",
+      "subreddit": null,
+      "source_text": "The GitHub Actions Language: Usage, Evolution, and Workflow Reliability",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-28T08:22:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arxiv.org/abs/2605.26825",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.theregister.com/off-prem/2025/07/25/microsoft-exec-admits-it-cannot-guarantee-data-sovereignty/458553",
+      "author": "leonidasrup",
+      "item_id": "hn:48306127",
+      "headline": "Microsoft admits it __cannot guarantee data sovereignty__ for cloud customers — a quiet, significant concession.",
+      "subreddit": null,
+      "source_text": "Microsoft admits it 'cannot guarantee' data sovereignty (2025)",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-28T08:13:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theregister.com/off-prem/2025/07/25/microsoft-exec-admits-it-cannot-guarantee-data-sovereignty/458553",
+      "learning_score": 2
+    },
+    {
+      "url": "https://starcloudinc.github.io/wp.pdf",
+      "author": "nilen",
+      "item_id": "hn:48305988",
+      "headline": "A paper makes the case for putting __AI data centres in space__, arguing orbital infrastructure solves power and cooling at scale.",
+      "subreddit": null,
+      "source_text": "A useful paper on the case for AI data centres in space [pdf]",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-28T07:56:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://starcloudinc.github.io/wp.pdf",
+      "learning_score": 2
+    },
+    {
       "url": "https://news.ycombinator.com/item?id=48305896",
       "author": "kendy1992",
       "item_id": "hn:48305896",
-      "headline": "A new approach claims to __train a 1T-parameter LLM with just 8 GPUs__ — details still sparse, but the efficiency claim is wild.",
+      "headline": "An open question making the rounds: can you actually __train a 1T-parameter LLM with just 8 GPUs__?",
       "subreddit": null,
       "source_text": "Train 1T parameter LLM with 8 GPUs?",
       "source_type": "hacker_news",
@@ -302,7 +354,7 @@
       "url": "https://greenlab.di.uminho.pt/wp-content/uploads/2017/09/paperSLE.pdf",
       "author": "doener",
       "item_id": "hn:48305883",
-      "headline": "A study benchmarks __energy efficiency across programming languages__ — the gaps are bigger than you'd think.",
+      "headline": "A classic revisited — benchmarking __energy efficiency across programming languages__ reveals C and Rust at the top, Python near the bottom.",
       "subreddit": null,
       "source_text": "Energy Efficiency across Programming Languages [pdf]",
       "source_type": "hacker_news",
@@ -310,65 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://greenlab.di.uminho.pt/wp-content/uploads/2017/09/paperSLE.pdf",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.bbc.com/news/articles/c052yv259jvo",
-      "author": "ZeljkoS",
-      "item_id": "hn:48305875",
-      "headline": "A Google worker has been charged with using internal data to __make $1.2M betting on Polymarket__.",
-      "subreddit": null,
-      "source_text": "Google worker charged with using internal data to make $1.2M on Polymarket",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-28T07:40:20+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://bbc.com/news/articles/c052yv259jvo",
-      "learning_score": 2
-    },
-    {
-      "url": "https://news.ycombinator.com/item?id=48305743",
-      "author": "timxzz",
-      "item_id": "hn:48305743",
-      "headline": "A framework says it can __post-train DeepSeek V4-pro on a single node__ — first to make that claim.",
-      "subreddit": null,
-      "source_text": "The first framework that can post train DeepSeek V4-pro on a single-node?",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-28T07:22:43+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=48305743",
-      "learning_score": 2
-    },
-    {
-      "url": "https://slhck.info/software/2025/10/25/typst-pdf-generation-xelatex-alternative.html",
-      "author": "ankitg12",
-      "item_id": "hn:48305738",
-      "headline": "__Typst with Pandoc__ makes a case as a modern, fast alternative to XeLaTeX for PDF generation.",
-      "subreddit": null,
-      "source_text": "Typst with Pandoc: A Modern, Fast Alternative to (Xe)LaTeX for PDF Generation",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-28T07:21:38+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://slhck.info/software/2025/10/25/typst-pdf-generation-xelatex-alternative.html",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it/",
-      "author": "joozio",
-      "item_id": "hn:48305638",
-      "headline": "Former Google and Apple researchers launch a startup to build __AI that gets smarter as you use it__ — what they call AI's missing feedback loop.",
-      "subreddit": null,
-      "source_text": "Former Google and Apple Researchers Launch a Startup to Build AI's Missing Feed",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-28T07:08:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://wired.com/story/ex-google-apple-ai-researchers-want-to-make-ai-that-gets-smarter-as-you-use-it",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-28T07:46:08.479077+00:00",
+    "generated_at": "2026-05-28T08:27:00.504528+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "5ac4e2cba6b29bf353094e1594595fb3b92915b75f712105a324557c03b5b450"
+  "content_hash": "a16df68af4319cc8c93e5939095b8522dc3e6bc13a8d5c41e25cb3f3a283668c"
 }
