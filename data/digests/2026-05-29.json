@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 3783,
+      "source": "DATAVERSITY Smart Data",
+      "title": "Why Data “Spring Cleaning” Is Critical for AI Execution",
+      "url": "https://www.dataversity.net/articles/why-data-spring-cleaning-is-critical-for-ai-execution/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article argues that enterprise data environments have accumulated years of fragmentation, duplication, and inconsistency that, while previously tolerable, now pose critical barriers to scaling AI. As AI requires timely, governed, and context-rich data, these long-standing issues surface immediately in model outputs, leading to inaccurate results and failed initiatives. The author advocates treating data 'spring cleaning' as a continuous operational discipline—systematically eliminating redundancy, reconciling inconsistencies, modernizing pipelines, and automating classification and deduplication. The piece also challenges the misconception that legacy core systems are incompatible with AI, noting they often contain the most valuable and trusted data. Statistics cited include 66% of IT leaders naming data accessibility as their top AI concern and 62% citing data quality as a top chal…",
+      "opinion": "The article presents a sensible and well-structured argument, but it reads more like a polished consulting pitch than a deeply insightful analysis. The 'spring cleaning' metaphor is accessible but somewhat overused, and the core message—that bad data undermines AI—is by now well-established conventional wisdom in the data management space. The piece would benefit from concrete case studies, specific technical recommendations, or a more nuanced discussion of trade-offs rather than broad prescrip…",
+      "image_url": "https://www.dataversity.net/wp-content/uploads/2025/09/Michael-Curry_600x448.png",
+      "published_at": "2026-05-29T07:52:00+00:00",
+      "fetched_at": "2026-05-29T08:23:07.749649+00:00"
+    },
+    {
       "id": 3781,
       "source": "Claude Code Changelog",
       "title": "v2.1.154",
@@ -96,25 +109,25 @@
       "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/M365Copilot_Hero_BannerImage_1920x1080.webp?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
       "published_at": "2026-05-28T20:14:07+00:00",
       "fetched_at": "2026-05-29T07:30:51.395179+00:00"
-    },
-    {
-      "id": 3752,
-      "source": "TechCrunch AI",
-      "title": "Asana acquires no-code agent-builder StackAI",
-      "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Asana has acquired no-code AI workflow automation company StackAI for $75 million as part of its strategy to become an AI-native workplace platform. StackAI, a Y Combinator Winter '23 company that had raised just under $20 million including a $16 million Series A, builds agents that operate within existing business systems like Salesforce, Slack, and GSuite. StackAI's founders Tony Rosinol and Bernard Aceituno will join Asana. The acquisition complements Asana's existing AI products including AI Studio and AI Teammates. Asana CEO Dan Rogers said the deal accelerates their roadmap for human-agent work. Asana has struggled on public markets, losing over half its market cap since ChatGPT's introduction, compounded by founder Dustin Moskovitz's departure as CEO in March 2025, though revenue has continued to grow.",
-      "opinion": "This acquisition makes strategic sense for Asana, which desperately needs to demonstrate AI credibility as its stock has been hammered. StackAI's no-code agent-building capabilities and integrations with enterprise tools like Salesforce and Slack fill a real gap in Asana's product suite. The $75 million price tag for a company that raised under $20 million represents a reasonable premium, suggesting investors got a decent return but StackAI may have faced challenges scaling independently agains…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/asana-illustration-getty.jpg?resize=1200,800",
-      "published_at": "2026-05-28T20:06:07+00:00",
-      "fetched_at": "2026-05-29T07:30:38.559623+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 3783,
+          "source": "DATAVERSITY Smart Data",
+          "title": "Why Data “Spring Cleaning” Is Critical for AI Execution",
+          "url": "https://www.dataversity.net/articles/why-data-spring-cleaning-is-critical-for-ai-execution/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article argues that enterprise data environments have accumulated years of fragmentation, duplication, and inconsistency that, while previously tolerable, now pose critical barriers to scaling AI. As AI requires timely, governed, and context-rich data, these long-standing issues surface immediately in model outputs, leading to inaccurate results and failed initiatives. The author advocates treating data 'spring cleaning' as a continuous operational discipline—systematically eliminating redundancy, reconciling inconsistencies, modernizing pipelines, and automating classification and deduplication. The piece also challenges the misconception that legacy core systems are incompatible with AI, noting they often contain the most valuable and trusted data. Statistics cited include 66% of IT leaders naming data accessibility as their top AI concern and 62% citing data quality as a top chal…",
+          "opinion": "The article presents a sensible and well-structured argument, but it reads more like a polished consulting pitch than a deeply insightful analysis. The 'spring cleaning' metaphor is accessible but somewhat overused, and the core message—that bad data undermines AI—is by now well-established conventional wisdom in the data management space. The piece would benefit from concrete case studies, specific technical recommendations, or a more nuanced discussion of trade-offs rather than broad prescrip…",
+          "image_url": "https://www.dataversity.net/wp-content/uploads/2025/09/Michael-Curry_600x448.png",
+          "published_at": "2026-05-29T07:52:00+00:00",
+          "fetched_at": "2026-05-29T08:23:07.749649+00:00"
+        },
         {
           "id": 3781,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/M365Copilot_Hero_BannerImage_1920x1080.webp?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
           "published_at": "2026-05-28T20:14:07+00:00",
           "fetched_at": "2026-05-29T07:30:51.395179+00:00"
-        },
-        {
-          "id": 3752,
-          "source": "TechCrunch AI",
-          "title": "Asana acquires no-code agent-builder StackAI",
-          "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Asana has acquired no-code AI workflow automation company StackAI for $75 million as part of its strategy to become an AI-native workplace platform. StackAI, a Y Combinator Winter '23 company that had raised just under $20 million including a $16 million Series A, builds agents that operate within existing business systems like Salesforce, Slack, and GSuite. StackAI's founders Tony Rosinol and Bernard Aceituno will join Asana. The acquisition complements Asana's existing AI products including AI Studio and AI Teammates. Asana CEO Dan Rogers said the deal accelerates their roadmap for human-agent work. Asana has struggled on public markets, losing over half its market cap since ChatGPT's introduction, compounded by founder Dustin Moskovitz's departure as CEO in March 2025, though revenue has continued to grow.",
-          "opinion": "This acquisition makes strategic sense for Asana, which desperately needs to demonstrate AI credibility as its stock has been hammered. StackAI's no-code agent-building capabilities and integrations with enterprise tools like Salesforce and Slack fill a real gap in Asana's product suite. The $75 million price tag for a company that raised under $20 million represents a reasonable premium, suggesting investors got a decent return but StackAI may have faced challenges scaling independently agains…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/asana-illustration-getty.jpg?resize=1200,800",
-          "published_at": "2026-05-28T20:06:07+00:00",
-          "fetched_at": "2026-05-29T07:30:38.559623+00:00"
         }
       ]
     }
@@ -236,11 +236,31 @@
     {
       "url": "https://twitter.com/0xwhrrari/status/2060103151299268993",
       "author": "0xwhrrari",
-      "headline": "Boris Cherny's free prompt workshop from Anthropic is out — the __first 8 minutes beat most $300 AI courses__ on context, task structure, and cleaner outputs.",
+      "headline": "Boris Cherny's free prompt workshop is out — Anthropic says the __first 8 minutes beat most $300 AI courses__ on context, task structure, and cleaner outputs.",
       "tweet_id": "36f1eba9-b6bc-818a-abc3-f82185a6c72f",
       "source_text": "Claude opus 4.8 dropped and Anthropic released Boris Cherny's prompt workshop\n\nOne of the people actually building claude explains how to use it properly\n\nFree\nNo signup\nNo paywall\n\nThe first 8 minutes are better than most $300 ai courses\n\nContext\nTask structure\nCleaner outputs https://t.co/PQC1lRfSiD https://t.co/KR9mRKml5S",
       "created_time": "2026-05-29T04:57:00.000Z",
       "canonical_url": "https://twitter.com/0xwhrrari/status/2060103151299268993",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Zephyr_hg/status/2060206496378659053",
+      "author": "Zephyr_hg",
+      "headline": "Zephyr argues the prompt engineering industry is __selling skills with a 12-month half-life__ and calling it the future.",
+      "tweet_id": "36f1eba9-b6bc-8162-91aa-ee2b73f76005",
+      "source_text": "The \"prompt engineering\" industry is selling skills with a 12-month half-life and calling it the future. \n\nEvery prompt library you buy this year is a sunk cost by 2027. \n\nThe 4-question test is the only filter that works. https://t.co/2n6VWsaw5z https://t.co/k8MWCfnJyq",
+      "created_time": "2026-05-29T04:52:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2060206496378659053",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/0xJeff/status/2060179323248848979",
+      "author": "0xJeff",
+      "headline": "Hermes Analyst now handles __onchain forensics, real-time X sentiment, deep research, and portfolio-aware reminders__ in a single agent.",
+      "tweet_id": "36f1eba9-b6bc-81c7-be69-c9c612a31ed7",
+      "source_text": "What Hermes Analyst is capable of rn\n\n> Onchain forensics (who dumps, who accumulate, how much)\n> Real-time research on X + sentiment check\n> Deep research producing high quality outputs\n> Remind me to water my plants\n> Knows my theses, my preferences, my portfolio\n> Deliver https://t.co/jt1Tds1KTd",
+      "created_time": "2026-05-29T04:52:00.000Z",
+      "canonical_url": "https://twitter.com/0xJeff/status/2060179323248848979",
       "learning_score": 3
     },
     {
@@ -256,53 +276,85 @@
     {
       "url": "https://twitter.com/dani_avila7/status/2060124030594638092",
       "author": "dani_avila7",
-      "headline": "Dani Avila says Opus 4.8 is solid but ultracode is on another level — __dynamic workflows let you orchestrate agents in parallel__ while your session stays free.",
+      "headline": "Dani Avila says Opus 4.8 is solid but ultracode is on another level — __dynamic workflows in Claude Code__ let you orchestrate agents in parallel while your session stays free.",
       "tweet_id": "36f1eba9-b6bc-81b0-b78f-c5c449b4608c",
       "source_text": "Opus 4.8 is solid... but ultracode is on another level\n\nDynamic Workflows in Claude Code lets you orchestrate agents in parallel while your session stays free. One word: delegate\n\nFocus on governance, security guardrails, and skills. The code is already solved https://t.co/RVxGfC5YWw",
       "created_time": "2026-05-29T04:47:00.000Z",
       "canonical_url": "https://twitter.com/dani_avila7/status/2060124030594638092",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/mattyp/status/2059998131140579753",
-      "author": "mattyp",
-      "headline": "Mattyp walks through __deploying a Hermes Agent__ with Fly, Modal, OpenRouter, and Cloudflare in a full hour-long build session.",
-      "tweet_id": "36f1eba9-b6bc-8160-8d8f-f32a188edf1c",
-      "source_text": "Deploying a Hermes Agent with Fly, Modal, OpenRouter, & Cloudflare\n\n02:43 Managed vs VPS\n06:08 Architecture\n15:14 Setup\n22:23 Deployment\n28:00 Access / OIDC\n39:57 Hermes and Open WebUI\n52:07 Cloudflare\n01:01:35 Validation\n01:07:32 Recap\n\nAwesome tool - s/o @NousResearch ! https://t.co/TGl48R6BBY",
-      "created_time": "2026-05-29T04:57:00.000Z",
-      "canonical_url": "https://twitter.com/mattyp/status/2059998131140579753",
-      "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/danrodrigux/status/2060121171614445735",
-      "author": "danrodrigux",
-      "headline": "Anthropic quietly released an official plugin that scans your project and __auto-configures hooks, skills, MCP servers, and subagents__ for Claude Code.",
-      "tweet_id": "36f1eba9-b6bc-816c-b5e8-d042b2ea5f00",
-      "source_text": "👀 Anthropic quietly released an official plugin that scans your project and auto-sets up hooks, skills, MCP servers, subagents, and automations. Most people are only using Claude Code at 20% of its potential. https://t.co/Z226APlARJ",
-      "created_time": "2026-05-29T04:57:00.000Z",
-      "canonical_url": "https://twitter.com/danrodrigux/status/2060121171614445735",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
-      "url": "https://www.theregister.com/security/2026/05/28/microsoft-0-day-feud-escalates-as-researcher-threatens-another-windows-exploit-dump/5248085",
-      "author": "beardyw",
-      "item_id": "hn:48319716",
-      "headline": "A security researcher threatens __another Windows exploit dump__ as the Microsoft 0-day feud escalates.",
+      "url": "https://blog.calif.io/p/an-ai-audit-of-freebsd",
+      "author": "SVI",
+      "item_id": "hn:48320476",
+      "headline": "Someone pointed an AI at the FreeBSD codebase for a __full security audit__ — here's what it found.",
       "subreddit": null,
-      "source_text": "Microsoft 0-day feud escalates as researcher threatens another exploit dump",
+      "source_text": "An AI Audit of FreeBSD",
       "source_type": "hacker_news",
-      "created_time": "2026-05-29T06:24:02+00:00",
+      "created_time": "2026-05-29T08:13:40+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://theregister.com/security/2026/05/28/microsoft-0-day-feud-escalates-as-researcher-threatens-another-windows-exploit-dump/5248085",
-      "learning_score": 3
+      "canonical_url": "https://blog.calif.io/p/an-ai-audit-of-freebsd",
+      "learning_score": 2
+    },
+    {
+      "url": "https://jollywatt.github.io/feynman-diagrams-without-any-physics/",
+      "author": "jollywatt",
+      "item_id": "hn:48320440",
+      "headline": "A lovely explainer on __Feynman diagrams without any physics__ — pure combinatorics and topology.",
+      "subreddit": null,
+      "source_text": "Feynman diagrams without any physics",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-29T08:09:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://jollywatt.github.io/feynman-diagrams-without-any-physics",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.blef.fr/someone-tried-to-hack-us",
+      "author": "articsputnik",
+      "item_id": "hn:48320370",
+      "headline": "A team got __attacked via malicious GitHub PRs__ — here's how the exploit worked and what they caught.",
+      "subreddit": null,
+      "source_text": "We got attacked via GitHub PRs",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-29T08:00:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blef.fr/someone-tried-to-hack-us",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.macrumors.com/2026/05/28/rivian-software-chief-on-carplay/",
+      "author": "whiteboardr",
+      "item_id": "hn:48320310",
+      "headline": "Rivian's software chief argues the __CarPlay debate will become completely obsolete__ as in-car software matures.",
+      "subreddit": null,
+      "source_text": "Rivian Explains Why CarPlay Debate Will Become 'Completely Obsolete'",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-29T07:51:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://macrumors.com/2026/05/28/rivian-software-chief-on-carplay",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/microsoft/windows-rs/pull/4479",
+      "author": "tcfhgj",
+      "item_id": "hn:48320284",
+      "headline": "Microsoft ships __Windows Reactor__, a new UI library for Rust developers targeting WinUI 3.",
+      "subreddit": null,
+      "source_text": "Windows Reactor: UI library for Rust developers targeting WinUI 3",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-29T07:48:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/microsoft/windows-rs/pull/4479",
+      "learning_score": 2
     },
     {
       "url": "https://mastodon.gamedev.place/@JeremiahFieldhaven/116654345332213390",
       "author": "throw_await",
       "item_id": "hn:48320203",
-      "headline": "Rsync's security update ships commits __co-authored by Claude__ that break `--compare-dest`.",
+      "headline": "Rsync security update ships a bug: commits __co-authored by Claude broke --compare-dest__ functionality.",
       "subreddit": null,
       "source_text": "Rsync: Commits co-authored by Claude break –compare-dest in security update",
       "source_type": "hacker_news",
@@ -310,65 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://mastodon.gamedev.place/@JeremiahFieldhaven/116654345332213390",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-      "author": "v-mdev",
-      "item_id": "hn:48320191",
-      "headline": "Anthropic details how it's __building guardrails for autonomous Claude agents__ from the inside out.",
-      "subreddit": null,
-      "source_text": "How Anthropic Is Building Guardrails for Autonomous Claude Agents",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-29T07:32:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://anthropic.com/engineering/how-we-contain-claude",
-      "learning_score": 2
-    },
-    {
-      "url": "https://linear.app/now/code-review-should-be-fast",
-      "author": "s4i",
-      "item_id": "hn:48320181",
-      "headline": "Linear makes the case that __code review should be fast__ — and ships tooling to enforce it.",
-      "subreddit": null,
-      "source_text": "Code review should be fast – Linear",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-29T07:32:09+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://linear.app/now/code-review-should-be-fast",
-      "learning_score": 2
-    },
-    {
-      "url": "https://app.opencve.io/cve/CVE-2026-5450",
-      "author": "euoia",
-      "item_id": "hn:48320009",
-      "headline": "Glibc lands a __CVE with a 9.8 severity score__ — CVE-2026-5450 is as bad as it sounds.",
-      "subreddit": null,
-      "source_text": "Glibc CVE-2026-5450 9.8",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-29T07:11:13+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://app.opencve.io/cve/CVE-2026-5450",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code/",
-      "author": "joozio",
-      "item_id": "hn:48319968",
-      "headline": "A developer, fed up with vibe coders, __sneaks a data-nuking prompt injection__ into their own code as a trap.",
-      "subreddit": null,
-      "source_text": "Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-29T07:05:31+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arstechnica.com/security/2026/05/fed-up-with-vibe-coders-dev-sneaks-data-nuking-prompt-injection-into-their-code",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-29T07:45:53.682510+00:00",
+    "generated_at": "2026-05-29T08:24:47.201711+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "764e265e5eb4d0510e238ca0ae997db69c722d5379ad1e9026a163a160003647"
+  "content_hash": "7a846af21f1d16886a7345e6edcf30976c009464e5621ff7a1367eec07feb3b0"
 }
