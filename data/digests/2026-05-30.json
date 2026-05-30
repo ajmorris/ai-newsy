@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/HilaShmuel/status/2060395813461696722",
       "author": "HilaShmuel",
-      "headline": "Hila Shmuel says she __shipped 60 features in 60 minutes__ without touching code — her workflow: prompt Cabinet to act as head of product, then let HTML + AI do the building.",
+      "headline": "Hila Shmuel says she __shipped 60 features in 60 minutes__ without touching code, using an HTML + AI workflow where Claude acted as her head of product.",
       "tweet_id": "3701eba9-b6bc-8102-9e39-fa6257631366",
       "source_text": "i shipped 60 features to cabinet in 60 minutes. never touched the code. 20 years writing software and i've never seen a workflow like this.\nHTML + AI is a different way to build.\n\nHere's what I actually did: I prompted Cabinet to act as my head of product, and to think like https://t.co/XgOmxFHzZ9 https://t.co/yCbtYdpPDO",
       "created_time": "2026-05-30T04:17:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/alexeheath/status/2060516372891992097",
       "author": "alexeheath",
-      "headline": "Leaked screenshot shows Microsoft redesigning Copilot into a super app with an OpenClaw-like agent called __Scout__, according to Alex Heath.",
+      "headline": "Leaked screenshot shows Microsoft redesigning Copilot into a super app with an __OpenClaw-like agent called Scout__, according to Alex Heath.",
       "tweet_id": "3701eba9-b6bc-81a3-a359-c2a42ba7ae05",
       "source_text": "Sources: This is a leaked screenshot of Microsoft's coming super app redesign of Copilot, featuring an OpenClaw-like agent called Scout that it's planning to announce soon https://t.co/4IvkdOhIf8 https://t.co/vew3fQCUAM",
       "created_time": "2026-05-30T04:17:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/ClaudeDevs/status/2060432688281251998",
       "author": "ClaudeDevs",
-      "headline": "Opus 4.8 quietly added the ability to __inject system instructions mid-conversation without breaking the prompt cache__ — more cache hits, lower cost, less latency.",
+      "headline": "Opus 4.8 lets you __add system instructions mid-conversation without breaking the prompt cache__ — more cache hits, lower cost and latency on API calls.",
       "tweet_id": "36f1eba9-b6bc-81b5-965a-df0fd00ec7fa",
       "source_text": "With Opus 4.8, you can add system instructions mid-conversation without breaking the prompt cache.\n\nMore cache hits means lower cost and latency for your API requests. https://t.co/42C7wqnLhD",
       "created_time": "2026-05-29T19:42:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/danrodrigux/status/2060254869886206290",
       "author": "danrodrigux",
-      "headline": "Someone casually coded a Mac app that __automatically assigns icons to folders based on their names__ and people are losing it.",
+      "headline": "Someone coded a Mac app that __automatically applies icons to folders__ based on their names, and nobody seems to be talking about it.",
       "tweet_id": "36f1eba9-b6bc-81a4-af5b-e3fa0240abc3",
       "source_text": "How is nobody talking about this?! Someone casually coded a Mac app that automatically applies icons to folders according to their names. 📁 https://t.co/nY6oTcd6qg",
       "created_time": "2026-05-29T17:22:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/MengTo/status/2060336491231080486",
       "author": "MengTo",
-      "headline": "Meng To tested Opus 4.8 on landing page design — says it can produce beautiful pages but requires heavy prompting, and is __a little worse than GPT 5.5__.",
+      "headline": "Meng To tested Opus 4.8 on landing page design — says it can produce beautiful pages but requires heavy prompting, and it's __a little worse than GPT 5.5__.",
       "tweet_id": "36f1eba9-b6bc-8123-af99-f13258422e98",
       "source_text": "Can Opus 4.8 design beautiful landing pages? Yes it can, but requires a ton of skills and prompts.\n\nIt's a little worse than GPT 5.5. https://t.co/jgEWJJTCiA",
       "created_time": "2026-05-29T17:17:00.000Z",
@@ -289,7 +289,7 @@
       "url": "https://cashandcache.substack.com/p/the-prototype-tax-how-a-weekend-in",
       "author": "binyu",
       "item_id": "hn:48332954",
-      "headline": "Spending a weekend in Claude's design mode __saved three weeks of Claude Code__ — a case for prototyping before you prompt.",
+      "headline": "Spending a weekend in Claude Design before touching Claude Code __saved three weeks of development time__.",
       "subreddit": null,
       "source_text": "A Weekend in Claude Design Saves 3 Weeks of Claude Code",
       "source_type": "hacker_news",
@@ -299,10 +299,49 @@
       "learning_score": 3
     },
     {
+      "url": "https://www.theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
+      "author": "fuzzythinker",
+      "item_id": "hn:48333728",
+      "headline": "A __$2k AI-generated film__ is about to debut at Tribeca — proof the floor for entry keeps dropping.",
+      "subreddit": null,
+      "source_text": "A $2k AI-generated film will make its debut at Tribeca",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-30T07:45:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theverge.com/entertainment/939067/ai-film-dreams-of-violets-tribeca",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.xprize.org/news/xprize-launches-hackathon-with-2-million-prize-pool-backed-by-google",
+      "author": "T-A",
+      "item_id": "hn:48333642",
+      "headline": "xPrize launches a hackathon with a __$2M prize pool backed by Google__.",
+      "subreddit": null,
+      "source_text": "xPrize Launches Hackathon with $2M Prize Pool, Backed by Google",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-30T07:32:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://xprize.org/news/xprize-launches-hackathon-with-2-million-prize-pool-backed-by-google",
+      "learning_score": 2
+    },
+    {
+      "url": "https://grahamhelton.com/blog/ssh-cheatsheet",
+      "author": "thunderbong",
+      "item_id": "hn:48333602",
+      "headline": "Graham Helton wrote an __excruciatingly detailed guide to SSH__ that earns the adjective.",
+      "subreddit": null,
+      "source_text": "An Excruciatingly Detailed Guide to SSH",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-30T07:23:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://grahamhelton.com/blog/ssh-cheatsheet",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.mpg.de/26391218/how-dendrites-shorten-the-lifespan-of-solid-state-batteries",
       "author": "croes",
       "item_id": "hn:48333570",
-      "headline": "Max Planck researchers pinpoint how __dendrites shorten the lifespan__ of solid-state batteries — and what might fix it.",
+      "headline": "Max Planck researchers figure out how dendrites shorten the __lifespan of solid-state batteries__ — and how to fight back.",
       "subreddit": null,
       "source_text": "Expanding the lifespan of solid-state batteries",
       "source_type": "hacker_news",
@@ -312,63 +351,24 @@
       "learning_score": 2
     },
     {
-      "url": "https://vostoktechnicalbureau.substack.com/p/red-team-technical-dossier-operational",
-      "author": "VostocBuraeu",
-      "item_id": "hn:48333552",
-      "headline": "Red-teaming report details how models handle requests for __explosives synthesis and ricin production__ — the kind of eval nobody wants to publish.",
+      "url": "https://github.com/PepperDev/totpgate",
+      "author": "tpimenta",
+      "item_id": "hn:48333370",
+      "headline": "Totpgate uses __single-packet authorization via TOTP__ — one UDP packet, no open ports, no VPN.",
       "subreddit": null,
-      "source_text": "Explosives Synthesis, Ricin Production and Anatomical Neutralization Protocols",
+      "source_text": "Show HN: Totpgate – Single-packet authorization via TOTP",
       "source_type": "hacker_news",
-      "created_time": "2026-05-30T07:17:14+00:00",
+      "created_time": "2026-05-30T06:49:06+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://vostoktechnicalbureau.substack.com/p/red-team-technical-dossier-operational",
-      "learning_score": 2
-    },
-    {
-      "url": "https://blog.gpkb.org/posts/just-send-me-the-prompt/",
-      "author": "globular-toast",
-      "item_id": "hn:48333489",
-      "headline": "A plea to stop asking for \"the prompt\" — the real value is in __the system around it__, not the text.",
-      "subreddit": null,
-      "source_text": "Just Send Me the Prompt",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-30T07:05:45+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://blog.gpkb.org/posts/just-send-me-the-prompt",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled/",
-      "author": "joozio",
-      "item_id": "hn:48333465",
-      "headline": "A __botnet spanning 17 million devices__ has been dismantled in what looks like one of the largest takedowns to date.",
-      "subreddit": null,
-      "source_text": "Botnet of more than 17M devices dismantled",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-30T07:02:22+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arstechnica.com/security/2026/05/botnet-of-more-than-17-million-devices-dismantled",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/mplsllc/macsurf",
-      "author": "gattilorenz",
-      "item_id": "hn:48333440",
-      "headline": "Someone built __Macsurf__, a \"modern\" web browser that runs on macOS 9.",
-      "subreddit": null,
-      "source_text": "Macsurf, \"modern\" web browser for macOS 9",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-30T06:58:23+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/mplsllc/macsurf",
+      "canonical_url": "https://github.com/PepperDev/totpgate",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-30T07:22:04.250308+00:00",
+    "generated_at": "2026-05-30T07:58:30.301563+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "85b5a48aef6a9dfe46e00401b1d474b3669b95d6405c5e7db6a55f5b0f07c4a5"
+  "content_hash": "c28778bf8d8c3301bc6fce7fd83eb97c0ddedf4dca5b6bc14f02e4c921126e9f"
 }
