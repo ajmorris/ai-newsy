@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-29T00:00:00Z",
-  "issueCount": 39,
+  "generatedAt": "2026-05-30T00:00:00Z",
+  "issueCount": 40,
   "latestIssue": {
-    "slug": "2026-05-29",
-    "digestDate": "2026-05-29",
-    "displayDate": "May 29, 2026",
-    "issueNumber": "60529",
-    "subject": "ISSUE 60529 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Claude's latest model just dropped, and the reviews are already rolling in \u2014 Opus 4.8 brings dynamic multi-agent workflows and a new \"xhigh\" effort mode, though early testers say it still stumbles on those tricky last-mile edge cases. Beyond the model wars, today's digest paints a bigger picture of an internet rapidly reshaping itself around AI: cloud giants are rebuilding infrastructure for machine traffic expected to surpass humans by 2027, developers are planting prompt-injection traps to fight back against vibe coders, and the Pentagon is quietly leaving the door open on lethal autonomous weapons. Buckle in \u2014 it's a packed one.",
+    "slug": "2026-05-30",
+    "digestDate": "2026-05-30",
+    "displayDate": "May 30, 2026",
+    "issueNumber": "60530",
+    "subject": "ISSUE 60530 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI productivity paradox is getting harder to ignore. Developers are now refusing to work without AI coding tools, yet mounting evidence suggests AI-generated code creates 1.7x more problems \u2014 and companies are spending nearly half their AI tokens just fixing bugs that AI itself introduced. Pair that with today's stories on \"AI psychosis\" driving reckless workforce cuts, a massive 17-million-device botnet takedown, and a startup offering free house cleaning just to film training data for robots, and it's a day that really puts the gap between AI hype and AI reality under the microscope.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-29.html",
-    "contentHash": "7a846af21f1d16886a7345e6edcf30976c009464e5621ff7a1367eec07feb3b0"
+    "urlPath": "/issues/2026-05-30.html",
+    "contentHash": "c28778bf8d8c3301bc6fce7fd83eb97c0ddedf4dca5b6bc14f02e4c921126e9f"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-30",
+      "digestDate": "2026-05-30",
+      "displayDate": "May 30, 2026",
+      "issueNumber": "60530",
+      "subject": "ISSUE 60530 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI productivity paradox is getting harder to ignore. Developers are now refusing to work without AI coding tools, yet mounting evidence suggests AI-generated code creates 1.7x more problems \u2014 and companies are spending nearly half their AI tokens just fixing bugs that AI itself introduced. Pair that with today's stories on \"AI psychosis\" driving reckless workforce cuts, a massive 17-million-device botnet takedown, and a startup offering free house cleaning just to film training data for robots, and it's a day that really puts the gap between AI hype and AI reality under the microscope.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-30.html",
+      "contentHash": "c28778bf8d8c3301bc6fce7fd83eb97c0ddedf4dca5b6bc14f02e4c921126e9f"
+    },
     {
       "slug": "2026-05-29",
       "digestDate": "2026-05-29",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-19.html",
       "contentHash": "e559eacb2650243fa2bac369aedb14e9cb033d5c3efe9b74421f6564b8038a53"
-    },
-    {
-      "slug": "2026-05-18",
-      "digestDate": "2026-05-18",
-      "displayDate": "May 18, 2026",
-      "issueNumber": "60518",
-      "subject": "ISSUE 60518 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI backlash is getting loud \u2014 and it's not just online. From University of Arizona graduates booing former Google CEO Eric Schmidt off the stage to automakers like GM cutting thousands of jobs to hire AI-focused workers instead, today's stories paint a vivid picture of a technology revolution that's moving faster than the public's patience. We've also got Apple betting big on privacy as its AI differentiator, the trust question looming over the Musk-OpenAI trial, and a surprising energy story about UK datacentres that could blow a hole in the country's climate targets.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-18.html",
-      "contentHash": "a722ad5688dfc3e7180f4597291854938fc1efc46db7878cce7cd2a95e941b3f"
     }
   ]
 }
