@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/Dinosn/status/2060610895458553977",
       "author": "Dinosn",
-      "headline": "New open-source tool scans AI agent skills for __vulnerabilities, malicious patterns, and security risks__.",
+      "headline": "A __security scanner for AI agent skills__ that detects vulnerabilities, malicious patterns, and risks before they ship.",
       "tweet_id": "3711eba9-b6bc-81af-8469-cda6562f0f69",
       "source_text": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks. https://t.co/QTnbJID5UK",
       "created_time": "2026-05-31T03:27:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/zodchiii/status/2060728613872234644",
       "author": "zodchiii",
-      "headline": "An Anthropic engineer builds a full __Claude Code workflow that ships while you sleep__ — 22-minute live demo of async autonomous coding.",
+      "headline": "An Anthropic engineer built a workflow where you __wake up and review what Claude Code shipped overnight__ — full demo in 22 minutes.",
       "tweet_id": "3711eba9-b6bc-8111-8794-c910e4a45a0c",
       "source_text": "Anthropic engineer: \n\n\"You're not supposed to watch Claude Code work. You're supposed to wake up and review what it shipped.\"\n\nIn 22 minutes she builds the entire workflow live on camera.\n\nMost people close their terminal and everything stops. \nThis setup keeps shipping while you https://t.co/24WPK2Pn4E https://t.co/q0ND3VvUTq",
       "created_time": "2026-05-31T03:27:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/ericosiu/status/2060787867673379088",
       "author": "ericosiu",
-      "headline": "Eric Siu shares high-leverage __Claude Code workflow prompts for revenue operations__ — CRM analysis, call transcripts, the whole stack.",
+      "headline": "Eric Siu shares high-leverage __Claude Code workflow prompts for revenue operations__ — CRM analysis, call transcripts, the works.",
       "tweet_id": "3711eba9-b6bc-8168-8081-c9ef6b4faa60",
       "source_text": "Highest-leverage Claude Code dynamic workflow prompts to generate more revenue, assuming unlimited tokens:\n\n1. Revenue Command Center\nUse a workflow. Build a revenue command center for [company]. Inspect every available data source I provide: CRM exports, call transcripts, email https://t.co/nmrQNevhYK",
       "created_time": "2026-05-31T03:27:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/ericosiu/status/2060720592475795693",
       "author": "ericosiu",
-      "headline": "Eric Siu says enterprises don't want to build their own AI — they want you to do it, which is why his team went all in on __managed revenue agents__.",
+      "headline": "Eric Siu says enterprises don't want to build their own AI — they want you to __do it for them with managed revenue agents__.",
       "tweet_id": "3711eba9-b6bc-81f2-8032-cf8f3674c0b2",
       "source_text": "So many people are building horizontal company brains right now.\n\nWe decided to go with managed revenue agents. Once our clients see the value, they can’t help but ask for more.\n\nWhat we learned is enterprises want you to do it for them. \n\nSetup below: https://t.co/IK9fa8CapF",
       "created_time": "2026-05-31T03:17:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/every/status/2060761473702584649",
       "author": "every",
-      "headline": "Every's team shares a weekend guide to __leveling up compound engineering skills__ across engineering, GTM, and ops.",
+      "headline": "Every's team lays out a weekend guide to __leveling up your compound engineering skills__ across engineering, GTM, and ops.",
       "tweet_id": "3711eba9-b6bc-81f2-9923-c3e5efe69547",
       "source_text": "Inside Every, improving our skills with compound engineering is how we do better work across engineering, GTM, operations, everything.\n\nIf you're spending your weekend building, follow these steps from @kieranklaassen and @trevin to level up. https://t.co/GYSbPC1nk1",
       "created_time": "2026-05-31T03:12:00.000Z",
@@ -286,23 +286,23 @@
   ],
   "community_headlines": [
     {
-      "url": "https://arxiv.org/abs/2605.30136",
-      "author": "ankitg12",
-      "item_id": "hn:48343771",
-      "headline": "New paper proposes __attention steering__ to sharpen how multi-agent systems actually talk to each other.",
+      "url": "https://osaka.law.miami.edu/froomkin/articles/tcmay.htm",
+      "author": "greyface-",
+      "item_id": "hn:48343871",
+      "headline": "Tim May's 1997 paper on __untraceable digital cash, information markets, and BlackNet__ reads like a prophecy.",
       "subreddit": null,
-      "source_text": "Enhancing Multi-Agent Communication Through Attention Steering",
+      "source_text": "Untraceable Digital Cash, Information Markets, and BlackNet (1997)",
       "source_type": "hacker_news",
-      "created_time": "2026-05-31T07:29:04+00:00",
+      "created_time": "2026-05-31T07:58:39+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2605.30136",
+      "canonical_url": "https://osaka.law.miami.edu/froomkin/articles/tcmay.htm",
       "learning_score": 2
     },
     {
       "url": "https://www.law.berkeley.edu/academics/registrar/academic-rules/artificial-intelligence-policy/",
       "author": "xyzal",
       "item_id": "hn:48343728",
-      "headline": "UC Berkeley Law has enacted a __blanket AI ban__ effective summer 2026 — no exceptions across coursework and exams.",
+      "headline": "UC Berkeley Law has imposed a __blanket AI ban__ effective summer 2026.",
       "subreddit": null,
       "source_text": "UC Berkeley Law blanket AI ban since summer 2026",
       "source_type": "hacker_news",
@@ -315,7 +315,7 @@
       "url": "https://yuraiz.github.io/dyld/",
       "author": "yuraiz",
       "item_id": "hn:48343687",
-      "headline": "A deep dive into how __thread locals work on macOS__ and the dyld machinery underneath.",
+      "headline": "A deep dive into how __thread locals actually work on macOS__ via dyld.",
       "subreddit": null,
       "source_text": "How thread locals work on macOS",
       "source_type": "hacker_news",
@@ -328,7 +328,7 @@
       "url": "https://www.yahoo.com/lifestyle/articles/viral-video-shows-tiny-birds-212000935.html",
       "author": "gurjeet",
       "item_id": "hn:48343667",
-      "headline": "Viral video reveals an evolved bird nest design that leaves __snakes with almost no way in__.",
+      "headline": "Viral video shows an evolved bird nest design that leaves __snakes with almost no way in__.",
       "subreddit": null,
       "source_text": "Video shows an evolved bird nest design that leaves snakes with almost no way in",
       "source_type": "hacker_news",
@@ -338,23 +338,10 @@
       "learning_score": 2
     },
     {
-      "url": "https://github.com/mainak55512/qwe",
-      "author": "thunderbong",
-      "item_id": "hn:48343647",
-      "headline": "Qwe is a __file-first atomic version control system__ that skips the complexity of Git for simpler workflows.",
-      "subreddit": null,
-      "source_text": "Qwe: A simple file-first atomic version control system",
-      "source_type": "hacker_news",
-      "created_time": "2026-05-31T07:03:12+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/mainak55512/qwe",
-      "learning_score": 2
-    },
-    {
       "url": "https://www.reuters.com/business/aerospace-defense/blue-origin-faces-months-delays-after-rocket-explosion-damages-launch-pad-2026-05-30/",
       "author": "JumpCrisscross",
       "item_id": "hn:48343525",
-      "headline": "Blue Origin faces __months of delays__ after a rocket explosion damages its launch pad.",
+      "headline": "Blue Origin faces __months of delays after a rocket explosion__ damaged its launch pad.",
       "subreddit": null,
       "source_text": "Blue Origin faces months of delays after rocket explosion damages launch pad",
       "source_type": "hacker_news",
@@ -362,13 +349,26 @@
       "source_label": "Hacker News",
       "canonical_url": "https://reuters.com/business/aerospace-defense/blue-origin-faces-months-delays-after-rocket-explosion-damages-launch-pad-2026-05-30",
       "learning_score": 2
+    },
+    {
+      "url": "https://www.wsj.com/world/the-u-s-has-found-a-way-to-down-a-drone-without-spending-1-million-848facd0",
+      "author": "JumpCrisscross",
+      "item_id": "hn:48343456",
+      "headline": "The U.S. military says it found a way to __down a drone without spending $1M__.",
+      "subreddit": null,
+      "source_text": "The U.S. Has Found a Way to Down a Drone Without Spending $1M",
+      "source_type": "hacker_news",
+      "created_time": "2026-05-31T06:21:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://wsj.com/world/the-u-s-has-found-a-way-to-down-a-drone-without-spending-1-million-848facd0",
+      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-05-31T07:33:41.285904+00:00",
+    "generated_at": "2026-05-31T08:08:31.156426+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "4fe1f6b94128436f685861042bfb42a7193075b3308adee6267bdb6819a87ba1"
+  "content_hash": "31c71d1834d74f6d2b08a7282782b942efc2f4669a7d57f26dd5f29e0c693384"
 }
