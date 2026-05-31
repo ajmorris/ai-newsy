@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-30T00:00:00Z",
-  "issueCount": 40,
+  "generatedAt": "2026-05-31T00:00:00Z",
+  "issueCount": 41,
   "latestIssue": {
-    "slug": "2026-05-30",
-    "digestDate": "2026-05-30",
-    "displayDate": "May 30, 2026",
-    "issueNumber": "60530",
-    "subject": "ISSUE 60530 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI productivity paradox is getting harder to ignore. Developers are now refusing to work without AI coding tools, yet mounting evidence suggests AI-generated code creates 1.7x more problems \u2014 and companies are spending nearly half their AI tokens just fixing bugs that AI itself introduced. Pair that with today's stories on \"AI psychosis\" driving reckless workforce cuts, a massive 17-million-device botnet takedown, and a startup offering free house cleaning just to film training data for robots, and it's a day that really puts the gap between AI hype and AI reality under the microscope.",
+    "slug": "2026-05-31",
+    "digestDate": "2026-05-31",
+    "displayDate": "May 31, 2026",
+    "issueNumber": "60531",
+    "subject": "ISSUE 60531 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The developer world is buzzing today as GitHub Copilot's surprise switch to token-based billing has some users staring down projected monthly costs jumping from $50 to over $3,000 \u2014 and they're not happy about it. But pricing drama isn't the only big move shaking things up: SoftBank is pouring a staggering \u20ac75 billion into French data centers, Meta's cooking up an AI pendant, and Google's new always-on assistant Gemini Spark is getting its first real-world test drive. From your wallet to your wardrobe to the Vatican, AI is making itself at home everywhere \u2014 let's dig in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-30.html",
-    "contentHash": "c28778bf8d8c3301bc6fce7fd83eb97c0ddedf4dca5b6bc14f02e4c921126e9f"
+    "urlPath": "/issues/2026-05-31.html",
+    "contentHash": "31c71d1834d74f6d2b08a7282782b942efc2f4669a7d57f26dd5f29e0c693384"
   },
   "recentIssues": [
+    {
+      "slug": "2026-05-31",
+      "digestDate": "2026-05-31",
+      "displayDate": "May 31, 2026",
+      "issueNumber": "60531",
+      "subject": "ISSUE 60531 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The developer world is buzzing today as GitHub Copilot's surprise switch to token-based billing has some users staring down projected monthly costs jumping from $50 to over $3,000 \u2014 and they're not happy about it. But pricing drama isn't the only big move shaking things up: SoftBank is pouring a staggering \u20ac75 billion into French data centers, Meta's cooking up an AI pendant, and Google's new always-on assistant Gemini Spark is getting its first real-world test drive. From your wallet to your wardrobe to the Vatican, AI is making itself at home everywhere \u2014 let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-05-31.html",
+      "contentHash": "31c71d1834d74f6d2b08a7282782b942efc2f4669a7d57f26dd5f29e0c693384"
+    },
     {
       "slug": "2026-05-30",
       "digestDate": "2026-05-30",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-20.html",
       "contentHash": "8b116413de9d1650f571732fd4a46bc32683d17534f903257c2e2725540877d8"
-    },
-    {
-      "slug": "2026-05-19",
-      "digestDate": "2026-05-19",
-      "displayDate": "May 19, 2026",
-      "issueNumber": "60519",
-      "subject": "ISSUE 60519 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing with major moves from Anthropic today \u2014 the company acquired dev tools startup Stainless for over $300 million (cutting off competitors like OpenAI and Google from its SDK tools), struck a scientific computing partnership with SandboxAQ to bring drug discovery capabilities into Claude, and even has co-founder Christopher Olah heading to the Vatican for Pope Leo's first encyclical on human dignity and AI. Meanwhile, a jury handed Elon Musk a decisive loss in his lawsuit against OpenAI, and a growing generational backlash against AI is making headlines as recent grads boo mentions of the technology at their own commencements. It's a day that captures the full spectrum of AI's expanding reach \u2014 from corporate power plays to courtroom battles to existential questions about what it all means for humanity.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-19.html",
-      "contentHash": "e559eacb2650243fa2bac369aedb14e9cb033d5c3efe9b74421f6564b8038a53"
     }
   ]
 }
