@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-05-31T00:00:00Z",
-  "issueCount": 41,
+  "generatedAt": "2026-06-01T00:00:00Z",
+  "issueCount": 42,
   "latestIssue": {
-    "slug": "2026-05-31",
-    "digestDate": "2026-05-31",
-    "displayDate": "May 31, 2026",
-    "issueNumber": "60531",
-    "subject": "ISSUE 60531 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The developer world is buzzing today as GitHub Copilot's surprise switch to token-based billing has some users staring down projected monthly costs jumping from $50 to over $3,000 \u2014 and they're not happy about it. But pricing drama isn't the only big move shaking things up: SoftBank is pouring a staggering \u20ac75 billion into French data centers, Meta's cooking up an AI pendant, and Google's new always-on assistant Gemini Spark is getting its first real-world test drive. From your wallet to your wardrobe to the Vatican, AI is making itself at home everywhere \u2014 let's dig in.",
+    "slug": "2026-06-01",
+    "digestDate": "2026-06-01",
+    "displayDate": "Jun 01, 2026",
+    "issueNumber": "60601",
+    "subject": "ISSUE 60601 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI backlash is getting louder \u2014 and more creative. From college grads booing AI mentions and DuckDuckGo downloads surging 30% as users flee Google's AI push, to Erin Brockovich crowdsourcing a map of secretive data centers and UK charities fighting AI-powered age checks on child asylum seekers, today's stories paint a picture of a society grappling with where to draw the line. We've also got tech billionaires dreaming of conscious AI conquering the cosmos, a surprisingly thoughtful book on knowledge graphs, and yes, an AI weed vape that pays you in Bitcoin \u2014 because of course that exists.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-05-31.html",
-    "contentHash": "31c71d1834d74f6d2b08a7282782b942efc2f4669a7d57f26dd5f29e0c693384"
+    "urlPath": "/issues/2026-06-01.html",
+    "contentHash": "bb23a59c284931b7335b31d535dbf5aa5fe22372601fabf0b4ce5e5383e74193"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-01",
+      "digestDate": "2026-06-01",
+      "displayDate": "Jun 01, 2026",
+      "issueNumber": "60601",
+      "subject": "ISSUE 60601 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI backlash is getting louder \u2014 and more creative. From college grads booing AI mentions and DuckDuckGo downloads surging 30% as users flee Google's AI push, to Erin Brockovich crowdsourcing a map of secretive data centers and UK charities fighting AI-powered age checks on child asylum seekers, today's stories paint a picture of a society grappling with where to draw the line. We've also got tech billionaires dreaming of conscious AI conquering the cosmos, a surprisingly thoughtful book on knowledge graphs, and yes, an AI weed vape that pays you in Bitcoin \u2014 because of course that exists.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-01.html",
+      "contentHash": "bb23a59c284931b7335b31d535dbf5aa5fe22372601fabf0b4ce5e5383e74193"
+    },
     {
       "slug": "2026-05-31",
       "digestDate": "2026-05-31",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-21.html",
       "contentHash": "6432f8b0d53946ce242aedc94ea888c1bdf188699fa48b164ead02e570c3c136"
-    },
-    {
-      "slug": "2026-05-20",
-      "digestDate": "2026-05-20",
-      "displayDate": "May 20, 2026",
-      "issueNumber": "60520",
-      "subject": "ISSUE 60520 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Demis Hassabis says we're standing in the \"foothills of the singularity,\" and judging by today's news cycle, it's hard to argue he's not at least *trying* to make that true \u2014 Google I/O 2026 unleashed a firehose of announcements, from a conversational Gmail inbox to a full-blown AI design app gunning for Canva. But beyond the Google blitz, today's digest also dives into the growing world of AI agents auditing other AI agents, xAI opening Grok up to a new open-source assistant, and a Google engineer's firing that raises thorny questions about protest and ethics inside Big Tech.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-20.html",
-      "contentHash": "8b116413de9d1650f571732fd4a46bc32683d17534f903257c2e2725540877d8"
     }
   ]
 }
