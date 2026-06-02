@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-01T00:00:00Z",
-  "issueCount": 42,
+  "generatedAt": "2026-06-02T00:00:00Z",
+  "issueCount": 43,
   "latestIssue": {
-    "slug": "2026-06-01",
-    "digestDate": "2026-06-01",
-    "displayDate": "Jun 01, 2026",
-    "issueNumber": "60601",
-    "subject": "ISSUE 60601 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI backlash is getting louder \u2014 and more creative. From college grads booing AI mentions and DuckDuckGo downloads surging 30% as users flee Google's AI push, to Erin Brockovich crowdsourcing a map of secretive data centers and UK charities fighting AI-powered age checks on child asylum seekers, today's stories paint a picture of a society grappling with where to draw the line. We've also got tech billionaires dreaming of conscious AI conquering the cosmos, a surprisingly thoughtful book on knowledge graphs, and yes, an AI weed vape that pays you in Bitcoin \u2014 because of course that exists.",
+    "slug": "2026-06-02",
+    "digestDate": "2026-06-02",
+    "displayDate": "Jun 02, 2026",
+    "issueNumber": "60602",
+    "subject": "ISSUE 60602 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The big money is flowing \u2014 and so are the big concerns. Alphabet's staggering $80 billion fundraise to fuel its AI buildout dominates today's headlines, underscoring just how aggressively tech giants are betting on AI infrastructure, with collective industry capex expected to hit $700 billion this year. But it's not all bullish momentum: from Florida suing OpenAI over child safety risks, to hackers exploiting Meta's AI support bot to hijack Obama's Instagram account, to Nvidia making its play for the $200 billion PC market with AI agent-ready chips, today's digest is a vivid reminder that the AI gold rush is raising as many red flags as it is dollar signs.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-01.html",
-    "contentHash": "bb23a59c284931b7335b31d535dbf5aa5fe22372601fabf0b4ce5e5383e74193"
+    "urlPath": "/issues/2026-06-02.html",
+    "contentHash": "78a4707e9deac389c560af026d51a17adad586875ecea52749e3f6de5889a489"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-02",
+      "digestDate": "2026-06-02",
+      "displayDate": "Jun 02, 2026",
+      "issueNumber": "60602",
+      "subject": "ISSUE 60602 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The big money is flowing \u2014 and so are the big concerns. Alphabet's staggering $80 billion fundraise to fuel its AI buildout dominates today's headlines, underscoring just how aggressively tech giants are betting on AI infrastructure, with collective industry capex expected to hit $700 billion this year. But it's not all bullish momentum: from Florida suing OpenAI over child safety risks, to hackers exploiting Meta's AI support bot to hijack Obama's Instagram account, to Nvidia making its play for the $200 billion PC market with AI agent-ready chips, today's digest is a vivid reminder that the AI gold rush is raising as many red flags as it is dollar signs.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-02.html",
+      "contentHash": "78a4707e9deac389c560af026d51a17adad586875ecea52749e3f6de5889a489"
+    },
     {
       "slug": "2026-06-01",
       "digestDate": "2026-06-01",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-22.html",
       "contentHash": "137302ac429aa7cdabd1bf0bdb49745ab8460453df1928a0af6c5d3f58da744b"
-    },
-    {
-      "slug": "2026-05-21",
-      "digestDate": "2026-05-21",
-      "displayDate": "May 21, 2026",
-      "issueNumber": "60521",
-      "subject": "ISSUE 60521 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic is having quite a week \u2014 its co-founder is predicting AI will snag a Nobel Prize within a year, and the company just told investors it's about to post its first-ever profitable quarter, with revenue expected to hit $10.9 billion. Meanwhile, Nvidia keeps smashing records with $81.6 billion in revenue while Jensen Huang unveils a \"brand new\" $200 billion market for AI agent CPUs, and SpaceX's IPO filing pulls back the curtain on xAI's staggering $6.4 billion in losses. Today's digest is packed with big numbers, bold predictions, and the financial reality checks that come with the AI boom.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-21.html",
-      "contentHash": "6432f8b0d53946ce242aedc94ea888c1bdf188699fa48b164ead02e570c3c136"
     }
   ]
 }
