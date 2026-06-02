@@ -224,19 +224,9 @@
   ],
   "tweet_headlines": [
     {
-      "url": "https://twitter.com/sharbel/status/2061448348792414354",
-      "author": "sharbel",
-      "headline": "Sharbel's six __Hermes hacks__ — from cron jobs to subagent research teams — that automate hours of manual workflow.",
-      "tweet_id": "3731eba9-b6bc-81f0-bdd4-fc37dd6fc922",
-      "source_text": "These Hermes Hacks Will Save You Hours\n\n0:00 My current Hermes setup  \n0:57 Hack 1: Mission Control  \n2:25 Hack 2: Notion triggers and filming briefs  \n5:12 Hack 3: Cron jobs  \n6:23 Hack 4: Slash goals  \n9:06 Hack 5: Subagents as a research team  \n9:57 Hack 6: Telegram topics as https://t.co/1eVhyfnSo7",
-      "created_time": "2026-06-02T04:12:00.000Z",
-      "canonical_url": "https://twitter.com/sharbel/status/2061448348792414354",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/kstgeniee/status/2061469560650306006",
       "author": "kstgeniee",
-      "headline": "Four simple rules for __prompting Claude Code the way Anthropic engineers actually do it__, distilled from everything the team has published.",
+      "headline": "Four simple rules for __prompting Claude Code the way Anthropic engineers actually do it__, distilled from every internal doc they've published.",
       "tweet_id": "3731eba9-b6bc-81ca-8df3-c2148f600892",
       "source_text": "I studied everything Anthropic engineers have published to understand how they actually prompt Claude Code and which methods are the most effective...\n\nHere are 4 simple rules for prompting Claude Code the way Anthropic engineers actually do it.\n\nYou dont really need any https://t.co/G9Y8WGAXEo https://t.co/EbMW1oFKF8",
       "created_time": "2026-06-02T04:12:00.000Z",
@@ -246,7 +236,7 @@
     {
       "url": "https://twitter.com/0xMortyx/status/2061491256107159736",
       "author": "0xMortyx",
-      "headline": "Andrej Karpathy says __90% of what AI Twitter tells you to learn dies in 6 months__ — senior engineers already stopped chasing it.",
+      "headline": "Andrej Karpathy says __90% of what AI Twitter tells you to learn dies in 6 months__ — senior engineers already stopped chasing frameworks like AutoGen and CrewAI.",
       "tweet_id": "3731eba9-b6bc-81f8-b6ab-ed4c366dcbc9",
       "source_text": "Andrej Karpathy: \"90% of what AI twitter tells you to learn will be dead in 6 months\"\n\n90% of what ai twitter tells you to learn dies in 6 months\n\nsenior engineers already stopped chasing it\n\nthe dead list: autogen, crewai, autonomous agent pitches, agent marketplaces, benchmark https://t.co/K8HAQlCC4h https://t.co/jEAXEUDmaq",
       "created_time": "2026-06-02T04:12:00.000Z",
@@ -256,7 +246,7 @@
     {
       "url": "https://twitter.com/_avichawla/status/2061380528939671677",
       "author": "_avichawla",
-      "headline": "Vector index vs. vector database — __understanding the distinction__ matters more than most devs think, and conflating them causes problems downstream.",
+      "headline": "Vector index vs. vector database — __a distinction most devs blur__ that causes real problems downstream.",
       "tweet_id": "3731eba9-b6bc-8159-a49b-ed87852fa7aa",
       "source_text": "Vector Index vs Vector Database, clearly explained!\n\nDevs typically use these terms interchangeably.\n\nBut understanding this distinction is necessary since it leads to problems down the line.\n\nHere's how to think about it:\n\nA vector index is basically a search algorithm.\n\nYou https://t.co/flRuG68fds https://t.co/KV4P2PTAr9",
       "created_time": "2026-06-02T04:12:00.000Z",
@@ -266,7 +256,7 @@
     {
       "url": "https://twitter.com/AndrewYNg/status/2061477558693384395",
       "author": "AndrewYNg",
-      "headline": "Andrew Ng spotlights the __AI Forward Deployed Engineer__, Silicon Valley's buzzy new role embedding engineers inside client orgs to tune agentic workflows.",
+      "headline": "Andrew Ng says the __AI Forward Deployed Engineer__ is Silicon Valley's hottest new role: embedded with clients, tuning agentic workflows to fit.",
       "tweet_id": "3731eba9-b6bc-812f-b9d1-d31c76c0a250",
       "source_text": "One of the new, buzzy jobs in Silicon Valley is the AI Forward Deployed Engineer (FDE), an engineer who is embedded within a client organization to help customize solutions, such as building and tuning agentic workflows that suit the client’s particular needs. I’ve heard from https://t.co/0MIoYvLIqT",
       "created_time": "2026-06-02T04:12:00.000Z",
@@ -274,14 +264,24 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/PawelHuryn/status/2061453645149851829",
+      "url": "https://twitter.com/PawelHuryn/status/2061340481531854882",
       "author": "PawelHuryn",
-      "headline": "Pawel Huryn makes the case that building isn't the bottleneck anymore — __the first working version is cheaper than the meeting about it__.",
-      "tweet_id": "3731eba9-b6bc-8116-8a8a-e5c85ae5e6ed",
-      "source_text": "Building isn’t the bottleneck anymore. The first working version is often cheaper than the meeting about it, an afternoon instead of a sprint. \n\nSo the order flips: you build the thing, then align around what you can see instead of arguing about what you imagine.\n\nYou ship, https://t.co/S7ThNLIlkT",
+      "headline": "\"The code is the agent's. __The artifact layer is mine.__\" Pawel Huryn on how the PM job now means reviewing plans and strategy, not code.",
+      "tweet_id": "3731eba9-b6bc-8120-bc5c-e9d686a79621",
+      "source_text": "The code is the agent's. The artifact layer is mine.\n\nI'm a PM. I barely read the code. Every unit test green.\n\nI review the artifacts that steer the work: plans, decisions, strategy, docs.\n\nThat's the job now. https://t.co/S7ThNLIlkT",
       "created_time": "2026-06-02T04:12:00.000Z",
-      "canonical_url": "https://twitter.com/PawelHuryn/status/2061453645149851829",
+      "canonical_url": "https://twitter.com/PawelHuryn/status/2061340481531854882",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/sharbel/status/2061448348792414354",
+      "author": "sharbel",
+      "headline": "Sharbel shares __six Hermes hacks__ — from cron jobs to subagent research teams — that automate hours of daily busywork.",
+      "tweet_id": "3731eba9-b6bc-81f0-bdd4-fc37dd6fc922",
+      "source_text": "These Hermes Hacks Will Save You Hours\n\n0:00 My current Hermes setup  \n0:57 Hack 1: Mission Control  \n2:25 Hack 2: Notion triggers and filming briefs  \n5:12 Hack 3: Cron jobs  \n6:23 Hack 4: Slash goals  \n9:06 Hack 5: Subagents as a research team  \n9:57 Hack 6: Telegram topics as https://t.co/1eVhyfnSo7",
+      "created_time": "2026-06-02T04:12:00.000Z",
+      "canonical_url": "https://twitter.com/sharbel/status/2061448348792414354",
+      "learning_score": 2
     }
   ],
   "community_headlines": [
@@ -289,7 +289,7 @@
       "url": "https://engineering.fb.com/2022/11/04/video-engineering/instagram-video-processing-encoding-reduction/",
       "author": "tzury",
       "item_id": "hn:48367247",
-      "headline": "How Instagram's engineering team cut __basic video compute time by 94 percent__ — a 2022 deep dive worth revisiting.",
+      "headline": "How Instagram's engineering team reduced __basic video compute time by 94 percent__ (2022, still worth studying).",
       "subreddit": null,
       "source_text": "Reducing Instagram's basic video compute time by 94 percent (2022)",
       "source_type": "hacker_news",
@@ -299,10 +299,36 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/MatthieuWyart/status/2061317203857739846",
+      "author": "MrBuddyCasino",
+      "item_id": "hn:48367547",
+      "headline": "Matthieu Wyart argues that __world models need exponentially less data__ than LLMs — a claim with big implications for how we train next-gen AI.",
+      "subreddit": null,
+      "source_text": "World models need exponentially less data than LLMs",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-02T08:35:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/MatthieuWyart/status/2061317203857739846",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.euronews.com/my-europe/2026/06/01/the-eu-is-set-to-join-us-led-chip-alliance-pax-silica-to-counter-chinas-ai-race",
+      "author": "doener",
+      "item_id": "hn:48367491",
+      "headline": "The EU is set to join __Pax Silica__, a US-led chip alliance designed to counter China's AI ambitions.",
+      "subreddit": null,
+      "source_text": "EU is set to join US-led chip alliance 'Pax Silica' to counter China's AI race",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-02T08:29:43+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://euronews.com/my-europe/2026/06/01/the-eu-is-set-to-join-us-led-chip-alliance-pax-silica-to-counter-chinas-ai-race",
+      "learning_score": 2
+    },
+    {
       "url": "https://adamtornhill.substack.com/p/why-merge-conflicts-became-the-new",
       "author": "nephrenka",
       "item_id": "hn:48367294",
-      "headline": "Adam Tornhill makes the case that __merge conflicts are the new agentic bottleneck__ — the unglamorous wall AI coding agents keep hitting.",
+      "headline": "Adam Tornhill makes the case that __merge conflicts are the new agentic bottleneck__ — the unsexy problem slowing AI-assisted coding.",
       "subreddit": null,
       "source_text": "Why Merge Conflicts Became the New Agentic Bottleneck",
       "source_type": "hacker_news",
@@ -315,7 +341,7 @@
       "url": "https://www.techpolicy.press/brazil-banned-addictive-design-the-crucial-regulatory-choices-are-still-ahead/",
       "author": "rbanffy",
       "item_id": "hn:48367266",
-      "headline": "Brazil banned addictive design in apps, but the __crucial regulatory choices__ about enforcement are still ahead.",
+      "headline": "Brazil banned addictive design in apps, but __the crucial regulatory choices__ are still ahead.",
       "subreddit": null,
       "source_text": "Brazil Banned Addictive Design. The Crucial Regulatory Choices Are Still Ahead",
       "source_type": "hacker_news",
@@ -328,7 +354,7 @@
       "url": "https://twitter.com/stevencheng/status/2059950811954692451",
       "author": "throwaway2037",
       "item_id": "hn:48367260",
-      "headline": "Version 2.0 of the __AI laser mosquito defense system__ is here, and yes, it's exactly what it sounds like.",
+      "headline": "Version 2.0 of an __AI-powered laser mosquito defense system__ is here, and yes, it's exactly what it sounds like.",
       "subreddit": null,
       "source_text": "Version 2.0 of AI laser mosquito defense system is here",
       "source_type": "hacker_news",
@@ -336,39 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://twitter.com/stevencheng/status/2059950811954692451",
       "learning_score": 2
-    },
-    {
-      "url": "https://jank-lang.org/blog/2026-06-01-optimization/",
-      "author": "pjmlp",
-      "item_id": "hn:48367211",
-      "headline": "Jank, the Clojure-on-native language, shows off its optimizer by __tracing rays with Jank__.",
-      "subreddit": null,
-      "source_text": "Tracing Rays with Jank",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-02T07:44:22+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://jank-lang.org/blog/2026-06-01-optimization",
-      "learning_score": 2
-    },
-    {
-      "url": "https://glassalmanac.com/google-maps-finally-ditches-mercator-projection-mapping/",
-      "author": "866-RON-0-FEZ",
-      "item_id": "hn:48367107",
-      "headline": "Google Maps finally __ditches the Mercator projection__ after years of distorting how we see the world.",
-      "subreddit": null,
-      "source_text": "Google Maps Ditches Mercator Projection Mapping",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-02T07:28:16+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://glassalmanac.com/google-maps-finally-ditches-mercator-projection-mapping",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-02T08:05:16.800557+00:00",
+    "generated_at": "2026-06-02T08:37:53.509253+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "b72cc9ffde5d44d729ca8dc0f2f844d52d5fe6cd0030daffb3fdd1275de3db32"
+  "content_hash": "78a4707e9deac389c560af026d51a17adad586875ecea52749e3f6de5889a489"
 }
