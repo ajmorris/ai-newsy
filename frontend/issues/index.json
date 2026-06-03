@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-02T00:00:00Z",
-  "issueCount": 43,
+  "generatedAt": "2026-06-03T00:00:00Z",
+  "issueCount": 44,
   "latestIssue": {
-    "slug": "2026-06-02",
-    "digestDate": "2026-06-02",
-    "displayDate": "Jun 02, 2026",
-    "issueNumber": "60602",
-    "subject": "ISSUE 60602 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The big money is flowing \u2014 and so are the big concerns. Alphabet's staggering $80 billion fundraise to fuel its AI buildout dominates today's headlines, underscoring just how aggressively tech giants are betting on AI infrastructure, with collective industry capex expected to hit $700 billion this year. But it's not all bullish momentum: from Florida suing OpenAI over child safety risks, to hackers exploiting Meta's AI support bot to hijack Obama's Instagram account, to Nvidia making its play for the $200 billion PC market with AI agent-ready chips, today's digest is a vivid reminder that the AI gold rush is raising as many red flags as it is dollar signs.",
+    "slug": "2026-06-03",
+    "digestDate": "2026-06-03",
+    "displayDate": "Jun 03, 2026",
+    "issueNumber": "60603",
+    "subject": "ISSUE 60603 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI revolution is pushing into every corner of our world today \u2014 from a $2,000 feature film heading to Tribeca that's forcing us to rethink what \"real\" filmmaking looks like, to researchers discovering how AI can supercharge computer worms into unprecedented cyber threats. Meanwhile, the business side is just as dramatic, with South Korea's chip giants riding the AI boom into the trillion-dollar club even as bubble fears mount, and data security startup Cyera eyeing a jaw-dropping $12 billion valuation at 80x revenue. Buckle in \u2014 today's digest covers the creative, the dangerous, and the financially dizzying sides of AI's accelerating impact.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-02.html",
-    "contentHash": "78a4707e9deac389c560af026d51a17adad586875ecea52749e3f6de5889a489"
+    "urlPath": "/issues/2026-06-03.html",
+    "contentHash": "12cb2201a60300deb83d55e1121255c91d828fae75c6f571bca3453a3c326f9c"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-03",
+      "digestDate": "2026-06-03",
+      "displayDate": "Jun 03, 2026",
+      "issueNumber": "60603",
+      "subject": "ISSUE 60603 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI revolution is pushing into every corner of our world today \u2014 from a $2,000 feature film heading to Tribeca that's forcing us to rethink what \"real\" filmmaking looks like, to researchers discovering how AI can supercharge computer worms into unprecedented cyber threats. Meanwhile, the business side is just as dramatic, with South Korea's chip giants riding the AI boom into the trillion-dollar club even as bubble fears mount, and data security startup Cyera eyeing a jaw-dropping $12 billion valuation at 80x revenue. Buckle in \u2014 today's digest covers the creative, the dangerous, and the financially dizzying sides of AI's accelerating impact.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-03.html",
+      "contentHash": "12cb2201a60300deb83d55e1121255c91d828fae75c6f571bca3453a3c326f9c"
+    },
     {
       "slug": "2026-06-02",
       "digestDate": "2026-06-02",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-23.html",
       "contentHash": "57c0697bd2240566679117d1aa424a02b017257d0c7a7e807fb81489a2232df2"
-    },
-    {
-      "slug": "2026-05-22",
-      "digestDate": "2026-05-22",
-      "displayDate": "May 22, 2026",
-      "issueNumber": "60522",
-      "subject": "ISSUE 60522 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The class of 2026 is making its feelings about AI crystal clear \u2014 and tech CEOs are getting an earful. Viral videos of graduates booing and heckling executives who praise AI during commencement speeches are capturing a growing generational backlash that Silicon Valley seems genuinely unprepared for. Beyond the campus drama, today's digest covers Spotify and Universal Music's landmark deal to let fans create AI remixes, Google's search overhaul driving users to alternatives, Australia's push to avoid squandering its AI data center boom, and more.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-22.html",
-      "contentHash": "137302ac429aa7cdabd1bf0bdb49745ab8460453df1928a0af6c5d3f58da744b"
     }
   ]
 }
