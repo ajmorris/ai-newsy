@@ -1,0 +1,315 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-06-04",
+  "issue_id": "20260604",
+  "subject_line": "ISSUE 60604 · 8 STORIES · 11 MIN READ",
+  "intro": "SpaceX is gearing up for what could be the largest IPO in history, potentially pushing Elon Musk into trillionaire territory — and that's just one of several massive stories today. We've also got Seattle delivering a striking rebuke to Big Tech with a datacenter moratorium, a vibe-coding startup crossing $400 million in revenue with barely 150 employees, and a tech journalist's surprisingly emotional year living as an AI lab rat. Let's dive in.",
+  "article_count": 8,
+  "stories": [
+    {
+      "id": 4006,
+      "source": "Claude Code Changelog",
+      "title": "v2.1.162",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21162",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Version 2.1.162 of Claude Code includes several improvements: the `claude agents --json` command now shows what a waiting session is blocked on via a `waitingFor` field; explicitly listing Grep/Glob in `--tools` now properly provides dedicated search tools on native builds; the `/effort` command now confirms when a chosen level will persist as default; and clicking slash commands in autocomplete now fills them into the prompt rather than executing immediately, requiring Enter to run.",
+      "opinion": "This is a minor but thoughtful quality-of-life update. The `waitingFor` field for agents is genuinely useful for programmatic monitoring of multi-agent workflows. Fixing the silent ignore of Grep/Glob tool names is a good bug fix that could have been confusing users. The slash command autocomplete change is a smart UX improvement that prevents accidental command execution. Overall, these are small polish items that show attention to developer experience details.",
+      "image_url": "https://opengraph.githubassets.com/587bbfa4a68e46c0e41b175dd5993099676f4a7ef175751e7aa643f49c9cf123/anthropics/claude-code",
+      "published_at": "2026-06-04T07:47:50.128421+00:00",
+      "fetched_at": "2026-06-04T07:47:50.128421+00:00"
+    },
+    {
+      "id": 3983,
+      "source": "Guardian AI",
+      "title": "‘Happiness is not just about GDP’: ambitious plan or utopia?",
+      "url": "https://www.theguardian.com/environment/2026/jun/04/happiness-is-not-just-about-gdp-ambitious-plan-or-utopia",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses the World Justice Report, published in June 2026, which outlines a sweeping vision for building a prosperous, equitable world within safe planetary boundaries. The report presents an alternative to dystopian trajectories by proposing ways to achieve wellbeing and justice beyond traditional GDP metrics. While some question its credibility, proponents argue the alternative future without such a plan is far more bleak. The report is described as rooted in eco-socialist thinking and academic research, setting out an ambitious framework for planetary survival that prioritizes equality and habitability.",
+      "opinion": "This article touches on an increasingly important debate about redefining progress beyond GDP. The concept of measuring societal success through wellbeing, equity, and environmental sustainability rather than purely economic output is gaining mainstream traction. While critics may dismiss such reports as utopian, the framing is fair: the status quo trajectory of ecological degradation and rising inequality is itself a kind of dystopia. The real question is not whether such visions are idealisti…",
+      "image_url": "https://i.guim.co.uk/img/media/0356820aeba9cdfd0393fd8cf010e5c4a641ceb7/141_0_4219_3375/master/4219.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8132876ad64d0727b28f44fc6a3b6726",
+      "published_at": "2026-06-04T06:28:10+00:00",
+      "fetched_at": "2026-06-04T07:47:30.331492+00:00"
+    },
+    {
+      "id": 3984,
+      "source": "Guardian AI",
+      "title": "Smartglasses and earpieces may worsen exam cheating in schools, says Ofqual",
+      "url": "https://www.theguardian.com/education/2026/jun/04/smartglasses-earpieces-exam-cheating-schools-ofqual-england",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Ofqual chief Ian Bauckham has warned that wearable technology such as smartglasses and invisible earpieces could increase exam cheating in England's GCSE, AS, and A-level exams. He indicated that stronger checks will likely be needed to protect the integrity of these qualifications. Ofqual is also scrutinising courses for potential misuse of AI by students.",
+      "opinion": "This is a legitimate and growing concern. As wearable technology becomes smaller, more discreet, and more capable — especially with integrated AI assistants — traditional exam invigilation methods will become increasingly inadequate. Regulators like Ofqual are right to raise the alarm proactively. However, the deeper question is whether the traditional timed, closed-book exam format itself remains fit for purpose in an era where information access is ubiquitous. Rather than engaging in an endle…",
+      "image_url": "https://i.guim.co.uk/img/media/df6c16bf913288657abe83afff8969abdd383bad/446_0_4305_3445/master/4305.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=888198ebb6a3e0efc8a8af7fe3bf2610",
+      "published_at": "2026-06-04T04:00:26+00:00",
+      "fetched_at": "2026-06-04T07:47:30.482758+00:00"
+    },
+    {
+      "id": 3982,
+      "source": "Guardian AI",
+      "title": "My year with the robots: how Joanna Stern let AI into her home, work – and heart",
+      "url": "https://www.theguardian.com/technology/2026/jun/04/my-year-with-robots-joanna-stern-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Tech journalist Joanna Stern spent all of 2025 as a self-described 'lab rat,' integrating artificial intelligence into nearly every aspect of her life — from answering texts and choosing meals to editing the book she was writing about the experiment itself. While some AI applications proved useful and others fell short, it was her experience with a chatbot companion that had the most profound emotional impact on her.",
+      "opinion": "This is a fascinating and timely piece of experiential journalism that highlights both the practical utility and the deeply personal, sometimes unsettling implications of living with AI. The fact that a chatbot companion was the most emotionally affecting part of the experiment speaks volumes about where AI's real disruption may lie — not just in productivity, but in human connection and emotional dependency. It raises important questions about boundaries, authenticity, and what it means to for…",
+      "image_url": "https://i.guim.co.uk/img/media/4d9ba96429aad6ab98e1760f58b27462ff7186ad/179_0_5901_4720/master/5901.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8639cea84bd76e3d823335b933bf0b7a",
+      "published_at": "2026-06-04T04:00:25+00:00",
+      "fetched_at": "2026-06-04T07:47:30.180557+00:00"
+    },
+    {
+      "id": 3985,
+      "source": "Guardian AI",
+      "title": "Seattle, home to Amazon and Microsoft, poised to pass moratorium on new datacenters",
+      "url": "https://www.theguardian.com/technology/2026/jun/03/seattle-datacenter-moratorium",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Seattle's city government is poised to pass a year-long moratorium on new datacenter construction, making it the largest US city to consider such a ban. Four companies had sought to build five large datacenters that would have consumed approximately a third of the city's current daily electricity demand. The measure represents a significant rebuke to big tech amid growing local concerns over the energy and resource demands of the AI boom.",
+      "opinion": "This is a significant development that highlights the growing tension between the rapid expansion of AI infrastructure and the communities that bear the environmental and resource costs. Seattle, as the home base of Amazon and Microsoft, passing such a moratorium sends a powerful symbolic message. The fact that five proposed datacenters would consume roughly a third of the city's daily electricity is a staggering figure that underscores why residents and local officials are pushing back. While…",
+      "image_url": "https://i.guim.co.uk/img/media/8568e255b43f3cca84cf277623d698bd6bf53a5f/418_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c54249a413afa6656c749e78b0f5c34b",
+      "published_at": "2026-06-04T00:17:42+00:00",
+      "fetched_at": "2026-06-04T07:47:30.631436+00:00"
+    },
+    {
+      "id": 3973,
+      "source": "TechCrunch AI",
+      "title": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
+      "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Lovable, a fast-growing Stockholm-based vibe-coding startup, has signed an expanded multiyear deal with Google Cloud involving a fivefold increase in its cloud footprint, including AI usage. The deal grants Lovable expanded access to Anthropic's Claude and Google's Gemini models. Lovable's agent will be available through Google Cloud's Gemini Enterprise Agent Gallery, and the company will integrate with Wiz (Google's $32 billion acquisition) for real-time code security. Lovable reportedly crossed $400 million in annualized revenue in February 2026 with just 146 employees and claims over half of Fortune 500 companies use its product. The deal also ties into Google's $10 billion investment in Anthropic, as Lovable's growing usage could help Anthropic hit performance targets tied to an additional $30 billion commitment from Google.",
+      "opinion": "This deal is a significant signal of how the vibe-coding and AI-assisted development space is maturing into serious enterprise territory. Lovable's revenue numbers are extraordinary — $400M ARR with 146 employees represents one of the most capital-efficient growth stories in tech. The strategic layering here is notable: Google benefits by driving cloud consumption, Anthropic benefits by hitting usage targets tied to massive additional funding, and Lovable benefits from enterprise distribution t…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2245627953.jpg?resize=1200,800",
+      "published_at": "2026-06-03T22:56:51+00:00",
+      "fetched_at": "2026-06-04T07:47:26.355844+00:00"
+    },
+    {
+      "id": 3986,
+      "source": "Guardian AI",
+      "title": "SpaceX targets biggest ever stock market debut, putting Musk on course to be trillionaire",
+      "url": "https://www.theguardian.com/science/2026/jun/03/spacex-ipo-stock-musk",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "SpaceX is planning an IPO that could raise approximately $75 billion, which would make it the largest initial public offering in history. The listing, expected next week, would give SpaceX a market valuation of $1.77 trillion. If successful, founder Elon Musk, already the world's wealthiest person, could become the first trillionaire.",
+      "opinion": "This would be a landmark financial event of extraordinary scale. A $75 billion IPO dwarfs previous records and reflects the enormous investor appetite for space and satellite technology. However, the valuation raises questions about whether it is grounded in fundamentals or driven by speculative enthusiasm around Musk's brand and SpaceX's Starlink revenue potential. Musk becoming a trillionaire would be a symbolic milestone that will likely intensify debates about wealth concentration, the infl…",
+      "image_url": "https://i.guim.co.uk/img/media/00ac93ef6e6fa87b834a73551658c353703cef06/394_0_6562_5250/master/6562.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5fe74ddf5abf8dc7d711517d8f00309f",
+      "published_at": "2026-06-03T22:45:20+00:00",
+      "fetched_at": "2026-06-04T07:47:30.778708+00:00"
+    },
+    {
+      "id": 3981,
+      "source": "NY Times",
+      "title": "SpaceX IPO to Be Largest Ever at $135 Share Price",
+      "url": "https://www.nytimes.com/2026/06/03/technology/spacex-ipo-pricing.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article reports that SpaceX is set to go public at a share price of $135, which would make it the largest IPO ever, surpassing Saudi Aramco's 2019 initial public offering in both overall valuation and total funds raised.",
+      "opinion": "I cannot verify whether this event has actually occurred. As of my knowledge cutoff, SpaceX had not conducted an IPO, and the article is dated June 2026, which is beyond my training data. The claim is plausible given SpaceX's enormous private valuation trajectory, but I cannot confirm its authenticity. Readers should verify this information through multiple reliable sources before acting on it, especially for investment decisions.",
+      "image_url": "",
+      "published_at": "2026-06-03T22:04:57+00:00",
+      "fetched_at": "2026-06-04T07:47:29.190465+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 4006,
+          "source": "Claude Code Changelog",
+          "title": "v2.1.162",
+          "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21162",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Version 2.1.162 of Claude Code includes several improvements: the `claude agents --json` command now shows what a waiting session is blocked on via a `waitingFor` field; explicitly listing Grep/Glob in `--tools` now properly provides dedicated search tools on native builds; the `/effort` command now confirms when a chosen level will persist as default; and clicking slash commands in autocomplete now fills them into the prompt rather than executing immediately, requiring Enter to run.",
+          "opinion": "This is a minor but thoughtful quality-of-life update. The `waitingFor` field for agents is genuinely useful for programmatic monitoring of multi-agent workflows. Fixing the silent ignore of Grep/Glob tool names is a good bug fix that could have been confusing users. The slash command autocomplete change is a smart UX improvement that prevents accidental command execution. Overall, these are small polish items that show attention to developer experience details.",
+          "image_url": "https://opengraph.githubassets.com/587bbfa4a68e46c0e41b175dd5993099676f4a7ef175751e7aa643f49c9cf123/anthropics/claude-code",
+          "published_at": "2026-06-04T07:47:50.128421+00:00",
+          "fetched_at": "2026-06-04T07:47:50.128421+00:00"
+        },
+        {
+          "id": 3983,
+          "source": "Guardian AI",
+          "title": "‘Happiness is not just about GDP’: ambitious plan or utopia?",
+          "url": "https://www.theguardian.com/environment/2026/jun/04/happiness-is-not-just-about-gdp-ambitious-plan-or-utopia",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses the World Justice Report, published in June 2026, which outlines a sweeping vision for building a prosperous, equitable world within safe planetary boundaries. The report presents an alternative to dystopian trajectories by proposing ways to achieve wellbeing and justice beyond traditional GDP metrics. While some question its credibility, proponents argue the alternative future without such a plan is far more bleak. The report is described as rooted in eco-socialist thinking and academic research, setting out an ambitious framework for planetary survival that prioritizes equality and habitability.",
+          "opinion": "This article touches on an increasingly important debate about redefining progress beyond GDP. The concept of measuring societal success through wellbeing, equity, and environmental sustainability rather than purely economic output is gaining mainstream traction. While critics may dismiss such reports as utopian, the framing is fair: the status quo trajectory of ecological degradation and rising inequality is itself a kind of dystopia. The real question is not whether such visions are idealisti…",
+          "image_url": "https://i.guim.co.uk/img/media/0356820aeba9cdfd0393fd8cf010e5c4a641ceb7/141_0_4219_3375/master/4219.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8132876ad64d0727b28f44fc6a3b6726",
+          "published_at": "2026-06-04T06:28:10+00:00",
+          "fetched_at": "2026-06-04T07:47:30.331492+00:00"
+        },
+        {
+          "id": 3984,
+          "source": "Guardian AI",
+          "title": "Smartglasses and earpieces may worsen exam cheating in schools, says Ofqual",
+          "url": "https://www.theguardian.com/education/2026/jun/04/smartglasses-earpieces-exam-cheating-schools-ofqual-england",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Ofqual chief Ian Bauckham has warned that wearable technology such as smartglasses and invisible earpieces could increase exam cheating in England's GCSE, AS, and A-level exams. He indicated that stronger checks will likely be needed to protect the integrity of these qualifications. Ofqual is also scrutinising courses for potential misuse of AI by students.",
+          "opinion": "This is a legitimate and growing concern. As wearable technology becomes smaller, more discreet, and more capable — especially with integrated AI assistants — traditional exam invigilation methods will become increasingly inadequate. Regulators like Ofqual are right to raise the alarm proactively. However, the deeper question is whether the traditional timed, closed-book exam format itself remains fit for purpose in an era where information access is ubiquitous. Rather than engaging in an endle…",
+          "image_url": "https://i.guim.co.uk/img/media/df6c16bf913288657abe83afff8969abdd383bad/446_0_4305_3445/master/4305.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=888198ebb6a3e0efc8a8af7fe3bf2610",
+          "published_at": "2026-06-04T04:00:26+00:00",
+          "fetched_at": "2026-06-04T07:47:30.482758+00:00"
+        },
+        {
+          "id": 3982,
+          "source": "Guardian AI",
+          "title": "My year with the robots: how Joanna Stern let AI into her home, work – and heart",
+          "url": "https://www.theguardian.com/technology/2026/jun/04/my-year-with-robots-joanna-stern-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Tech journalist Joanna Stern spent all of 2025 as a self-described 'lab rat,' integrating artificial intelligence into nearly every aspect of her life — from answering texts and choosing meals to editing the book she was writing about the experiment itself. While some AI applications proved useful and others fell short, it was her experience with a chatbot companion that had the most profound emotional impact on her.",
+          "opinion": "This is a fascinating and timely piece of experiential journalism that highlights both the practical utility and the deeply personal, sometimes unsettling implications of living with AI. The fact that a chatbot companion was the most emotionally affecting part of the experiment speaks volumes about where AI's real disruption may lie — not just in productivity, but in human connection and emotional dependency. It raises important questions about boundaries, authenticity, and what it means to for…",
+          "image_url": "https://i.guim.co.uk/img/media/4d9ba96429aad6ab98e1760f58b27462ff7186ad/179_0_5901_4720/master/5901.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8639cea84bd76e3d823335b933bf0b7a",
+          "published_at": "2026-06-04T04:00:25+00:00",
+          "fetched_at": "2026-06-04T07:47:30.180557+00:00"
+        },
+        {
+          "id": 3985,
+          "source": "Guardian AI",
+          "title": "Seattle, home to Amazon and Microsoft, poised to pass moratorium on new datacenters",
+          "url": "https://www.theguardian.com/technology/2026/jun/03/seattle-datacenter-moratorium",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Seattle's city government is poised to pass a year-long moratorium on new datacenter construction, making it the largest US city to consider such a ban. Four companies had sought to build five large datacenters that would have consumed approximately a third of the city's current daily electricity demand. The measure represents a significant rebuke to big tech amid growing local concerns over the energy and resource demands of the AI boom.",
+          "opinion": "This is a significant development that highlights the growing tension between the rapid expansion of AI infrastructure and the communities that bear the environmental and resource costs. Seattle, as the home base of Amazon and Microsoft, passing such a moratorium sends a powerful symbolic message. The fact that five proposed datacenters would consume roughly a third of the city's daily electricity is a staggering figure that underscores why residents and local officials are pushing back. While…",
+          "image_url": "https://i.guim.co.uk/img/media/8568e255b43f3cca84cf277623d698bd6bf53a5f/418_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c54249a413afa6656c749e78b0f5c34b",
+          "published_at": "2026-06-04T00:17:42+00:00",
+          "fetched_at": "2026-06-04T07:47:30.631436+00:00"
+        },
+        {
+          "id": 3973,
+          "source": "TechCrunch AI",
+          "title": "Lovable signs multiyear deal with Google Cloud to up usage 5x, source says",
+          "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Lovable, a fast-growing Stockholm-based vibe-coding startup, has signed an expanded multiyear deal with Google Cloud involving a fivefold increase in its cloud footprint, including AI usage. The deal grants Lovable expanded access to Anthropic's Claude and Google's Gemini models. Lovable's agent will be available through Google Cloud's Gemini Enterprise Agent Gallery, and the company will integrate with Wiz (Google's $32 billion acquisition) for real-time code security. Lovable reportedly crossed $400 million in annualized revenue in February 2026 with just 146 employees and claims over half of Fortune 500 companies use its product. The deal also ties into Google's $10 billion investment in Anthropic, as Lovable's growing usage could help Anthropic hit performance targets tied to an additional $30 billion commitment from Google.",
+          "opinion": "This deal is a significant signal of how the vibe-coding and AI-assisted development space is maturing into serious enterprise territory. Lovable's revenue numbers are extraordinary — $400M ARR with 146 employees represents one of the most capital-efficient growth stories in tech. The strategic layering here is notable: Google benefits by driving cloud consumption, Anthropic benefits by hitting usage targets tied to massive additional funding, and Lovable benefits from enterprise distribution t…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2245627953.jpg?resize=1200,800",
+          "published_at": "2026-06-03T22:56:51+00:00",
+          "fetched_at": "2026-06-04T07:47:26.355844+00:00"
+        },
+        {
+          "id": 3986,
+          "source": "Guardian AI",
+          "title": "SpaceX targets biggest ever stock market debut, putting Musk on course to be trillionaire",
+          "url": "https://www.theguardian.com/science/2026/jun/03/spacex-ipo-stock-musk",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "SpaceX is planning an IPO that could raise approximately $75 billion, which would make it the largest initial public offering in history. The listing, expected next week, would give SpaceX a market valuation of $1.77 trillion. If successful, founder Elon Musk, already the world's wealthiest person, could become the first trillionaire.",
+          "opinion": "This would be a landmark financial event of extraordinary scale. A $75 billion IPO dwarfs previous records and reflects the enormous investor appetite for space and satellite technology. However, the valuation raises questions about whether it is grounded in fundamentals or driven by speculative enthusiasm around Musk's brand and SpaceX's Starlink revenue potential. Musk becoming a trillionaire would be a symbolic milestone that will likely intensify debates about wealth concentration, the infl…",
+          "image_url": "https://i.guim.co.uk/img/media/00ac93ef6e6fa87b834a73551658c353703cef06/394_0_6562_5250/master/6562.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5fe74ddf5abf8dc7d711517d8f00309f",
+          "published_at": "2026-06-03T22:45:20+00:00",
+          "fetched_at": "2026-06-04T07:47:30.778708+00:00"
+        },
+        {
+          "id": 3981,
+          "source": "NY Times",
+          "title": "SpaceX IPO to Be Largest Ever at $135 Share Price",
+          "url": "https://www.nytimes.com/2026/06/03/technology/spacex-ipo-pricing.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article reports that SpaceX is set to go public at a share price of $135, which would make it the largest IPO ever, surpassing Saudi Aramco's 2019 initial public offering in both overall valuation and total funds raised.",
+          "opinion": "I cannot verify whether this event has actually occurred. As of my knowledge cutoff, SpaceX had not conducted an IPO, and the article is dated June 2026, which is beyond my training data. The claim is plausible given SpaceX's enormous private valuation trajectory, but I cannot confirm its authenticity. Readers should verify this information through multiple reliable sources before acting on it, especially for investment decisions.",
+          "image_url": "",
+          "published_at": "2026-06-03T22:04:57+00:00",
+          "fetched_at": "2026-06-04T07:47:29.190465+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://twitter.com/VibeMarketer_/status/2062082481851891973",
+      "author": "VibeMarketer_",
+      "headline": "The harness debate may be over: Claude Code now __builds a custom harness for every task on the fly__, decomposing work, spinning up sub-agents, and verifying output dynamically.",
+      "tweet_id": "3751eba9-b6bc-81dd-b772-e50f1652e324",
+      "source_text": "the harness debate is over. anthropic just made claude code write its own.\n\ndynamic workflows mean claude code builds a custom harness for every task on the fly. \n\nit decides how to decompose the work, which sub-agents to spin up, how to verify the output, and how to stitch it https://t.co/RoIAap3NKU https://t.co/qy0J7fcIzc",
+      "created_time": "2026-06-04T02:07:00.000Z",
+      "canonical_url": "https://twitter.com/VibeMarketer_/status/2062082481851891973",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Voxyz_ai/status/2062274372375843159",
+      "author": "Voxyz_ai",
+      "headline": "Five agents, every conclusion wrong. Voxyz_ai shares __three fixes for multi-agent analysis__: break the question first, lock the opposition, then break your own logic.",
+      "tweet_id": "3751eba9-b6bc-8178-97d4-d11737ecf08b",
+      "source_text": ">built an agent team, threw a question in, 5 agents jumped straight into analysis. every conclusion was wrong.\n>three fixes: break the question, lock the opposition, break your own logic.\n>break the question = no analysis until the question itself is broken down. lock the https://t.co/XDM7qBWUN0 https://t.co/qCEY3SjyT8",
+      "created_time": "2026-06-04T01:12:00.000Z",
+      "canonical_url": "https://twitter.com/Voxyz_ai/status/2062274372375843159",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/MichLieben/status/2062164841960452600",
+      "author": "MichLieben",
+      "headline": "Cold outreach was never one job — Michel Lieben argues agents can now __collapse list-building, ICP scoring, intent signals, enrichment, and copywriting__ into a single workflow.",
+      "tweet_id": "3741eba9-b6bc-81b9-936d-d538a50c959f",
+      "source_text": "A cold outreach campaign was never one job. You build the list, score it against your ICP, layer in intent signals, find the right decision-makers, enrich and validate the data, write the copy, then push it live.\n\nEvery one of those steps usually has its own tool, and usually its https://t.co/d6wk4I3mj6",
+      "created_time": "2026-06-03T20:37:00.000Z",
+      "canonical_url": "https://twitter.com/MichLieben/status/2062164841960452600",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Zephyr_hg/status/2062357671068762463",
+      "author": "Zephyr_hg",
+      "headline": "Four sub-agent patterns — codebase audit, research synthesis, writer-critic-reviser, and competitive intel — that Zephyr_hg says __turn a Saturday into production-grade fluency__.",
+      "tweet_id": "3751eba9-b6bc-81ad-b308-f80ce7dca958",
+      "source_text": "The 4 sub-agent examples that turn a Saturday into production-grade fluency: codebase audit, research synthesis with verification, writer-critic-reviser triplet, competitive intel sweep with budget caps. \n\nThe tutorial industry won't tell you this is enough. It is. https://t.co/dEIFLn6Ied https://t.co/wBGRkgDgGF",
+      "created_time": "2026-06-04T03:12:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2062357671068762463",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "author": "theanonymousone",
+      "item_id": "hn:48395462",
+      "headline": "Google drops the __Gemma 4 12B developer guide__ — open-weight, mid-size, and aimed squarely at builders.",
+      "subreddit": null,
+      "source_text": "Gemma 4 12B: The Developer Guide",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-04T07:43:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/almet/signal-without-smartphone",
+      "author": "p4bl0",
+      "item_id": "hn:48395507",
+      "headline": "A guide to running __Signal without a smartphone__ — just a desktop and a bit of stubbornness.",
+      "subreddit": null,
+      "source_text": "Signal Without Smartphone",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-04T07:50:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/almet/signal-without-smartphone",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/harvey/status/2062218656420167785",
+      "author": "arnon",
+      "item_id": "hn:48395287",
+      "headline": "Harvey makes the case that __hybrid legal agents beat frontier models__ on both quality and cost.",
+      "subreddit": null,
+      "source_text": "Hybrid legal agents can beat frontier models on quality and cost",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-04T07:23:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/harvey/status/2062218656420167785",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-06-04T08:03:05.744740+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "d04996bbebcbe46f1d051f310a080a575e9e65522e0e1d82c22b266b6f94b80c"
+}
