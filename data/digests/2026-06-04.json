@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/VibeMarketer_/status/2062082481851891973",
       "author": "VibeMarketer_",
-      "headline": "The harness debate may be over: Claude Code now __builds a custom harness for every task on the fly__, decomposing work, spinning up sub-agents, and verifying output dynamically.",
+      "headline": "VibeMarketer_ argues the harness debate is over: Claude Code now __builds a custom harness for every task on the fly__, decomposing work, spinning up sub-agents, and verifying output dynamically.",
       "tweet_id": "3751eba9-b6bc-81dd-b772-e50f1652e324",
       "source_text": "the harness debate is over. anthropic just made claude code write its own.\n\ndynamic workflows mean claude code builds a custom harness for every task on the fly. \n\nit decides how to decompose the work, which sub-agents to spin up, how to verify the output, and how to stitch it https://t.co/RoIAap3NKU https://t.co/qy0J7fcIzc",
       "created_time": "2026-06-04T02:07:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/Voxyz_ai/status/2062274372375843159",
       "author": "Voxyz_ai",
-      "headline": "Five agents, every conclusion wrong. Voxyz_ai shares __three fixes for multi-agent analysis__: break the question first, lock the opposition, then break your own logic.",
+      "headline": "Voxyz_ai threw a question at five agents and __every conclusion was wrong__ — three fixes that actually worked: break the question first, lock the opposition, then break your own logic.",
       "tweet_id": "3751eba9-b6bc-8178-97d4-d11737ecf08b",
       "source_text": ">built an agent team, threw a question in, 5 agents jumped straight into analysis. every conclusion was wrong.\n>three fixes: break the question, lock the opposition, break your own logic.\n>break the question = no analysis until the question itself is broken down. lock the https://t.co/XDM7qBWUN0 https://t.co/qCEY3SjyT8",
       "created_time": "2026-06-04T01:12:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/MichLieben/status/2062164841960452600",
       "author": "MichLieben",
-      "headline": "Cold outreach was never one job — Michel Lieben argues agents can now __collapse list-building, ICP scoring, intent signals, enrichment, and copywriting__ into a single workflow.",
+      "headline": "MichLieben makes the case that cold outreach was never one job — list building, ICP scoring, intent signals, enrichment, copy — and argues __every step now collapses into a single agent workflow__.",
       "tweet_id": "3741eba9-b6bc-81b9-936d-d538a50c959f",
       "source_text": "A cold outreach campaign was never one job. You build the list, score it against your ICP, layer in intent signals, find the right decision-makers, enrich and validate the data, write the copy, then push it live.\n\nEvery one of those steps usually has its own tool, and usually its https://t.co/d6wk4I3mj6",
       "created_time": "2026-06-03T20:37:00.000Z",
@@ -266,10 +266,36 @@
   ],
   "community_headlines": [
     {
+      "url": "https://lernerpython.com/2025/12/08/30-things-ive-learned-from-30-years-in-business/",
+      "author": "reuven",
+      "item_id": "hn:48395709",
+      "headline": "Reuven Lerner distills __30 lessons from 30 years__ of freelancing into one list.",
+      "subreddit": null,
+      "source_text": "30 things I've learned from 30 years freelancing",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-04T08:17:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lernerpython.com/2025/12/08/30-things-ive-learned-from-30-years-in-business",
+      "learning_score": 3
+    },
+    {
+      "url": "https://respeak-io.github.io/lucide-motion-vue/",
+      "author": "evolabs",
+      "item_id": "hn:48395648",
+      "headline": "The largest free animated icon library for Vue ships with __523 Lucide motion icons__.",
+      "subreddit": null,
+      "source_text": "Show HN: The largest free animated icon library for Vue (523 Lucide icons)",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-04T08:07:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://respeak-io.github.io/lucide-motion-vue",
+      "learning_score": 3
+    },
+    {
       "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
       "author": "theanonymousone",
       "item_id": "hn:48395462",
-      "headline": "Google drops the __Gemma 4 12B developer guide__ — open-weight, mid-size, and aimed squarely at builders.",
+      "headline": "Google publishes the developer guide for __Gemma 4 12B__, its latest open-weight model.",
       "subreddit": null,
       "source_text": "Gemma 4 12B: The Developer Guide",
       "source_type": "hacker_news",
@@ -279,37 +305,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://github.com/almet/signal-without-smartphone",
-      "author": "p4bl0",
-      "item_id": "hn:48395507",
-      "headline": "A guide to running __Signal without a smartphone__ — just a desktop and a bit of stubbornness.",
+      "url": "https://swift.org/blog/whats-new-in-swift-may-2026/",
+      "author": "frizlab",
+      "item_id": "hn:48395808",
+      "headline": "Swift's __May 2026 edition__ rounds up the language's latest changes and additions.",
       "subreddit": null,
-      "source_text": "Signal Without Smartphone",
+      "source_text": "What's new in Swift: May 2026 Edition",
       "source_type": "hacker_news",
-      "created_time": "2026-06-04T07:50:00+00:00",
+      "created_time": "2026-06-04T08:27:32+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/almet/signal-without-smartphone",
+      "canonical_url": "https://swift.org/blog/whats-new-in-swift-may-2026",
       "learning_score": 2
     },
     {
-      "url": "https://twitter.com/harvey/status/2062218656420167785",
-      "author": "arnon",
-      "item_id": "hn:48395287",
-      "headline": "Harvey makes the case that __hybrid legal agents beat frontier models__ on both quality and cost.",
+      "url": "https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai/",
+      "author": "dangoldbj",
+      "item_id": "hn:48395770",
+      "headline": "Microsoft unveils __Majorana 2__, a new quantum chip built to accelerate the path toward agentic AI.",
       "subreddit": null,
-      "source_text": "Hybrid legal agents can beat frontier models on quality and cost",
+      "source_text": "Majorana 2 – Microsoft's new quantum chip",
       "source_type": "hacker_news",
-      "created_time": "2026-06-04T07:23:51+00:00",
+      "created_time": "2026-06-04T08:24:18+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://twitter.com/harvey/status/2062218656420167785",
+      "canonical_url": "https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://jacobian.org/2021/apr/7/embrace-the-grind/",
+      "author": "tosh",
+      "item_id": "hn:48395687",
+      "headline": "Jacob Kaplan-Moss on why sometimes the answer isn't clever code — it's __embracing the grind__.",
+      "subreddit": null,
+      "source_text": "Embrace the Grind (2021)",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-04T08:13:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://jacobian.org/2021/apr/7/embrace-the-grind",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-04T08:03:05.744740+00:00",
+    "generated_at": "2026-06-04T08:32:42.579660+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "d04996bbebcbe46f1d051f310a080a575e9e65522e0e1d82c22b266b6f94b80c"
+  "content_hash": "b3cff53ec25b99fef06bf14e50045617919ecd590b60608ffde53bec43f1993d"
 }
