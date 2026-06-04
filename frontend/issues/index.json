@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-03T00:00:00Z",
-  "issueCount": 44,
+  "generatedAt": "2026-06-04T00:00:00Z",
+  "issueCount": 45,
   "latestIssue": {
-    "slug": "2026-06-03",
-    "digestDate": "2026-06-03",
-    "displayDate": "Jun 03, 2026",
-    "issueNumber": "60603",
-    "subject": "ISSUE 60603 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI revolution is pushing into every corner of our world today \u2014 from a $2,000 feature film heading to Tribeca that's forcing us to rethink what \"real\" filmmaking looks like, to researchers discovering how AI can supercharge computer worms into unprecedented cyber threats. Meanwhile, the business side is just as dramatic, with South Korea's chip giants riding the AI boom into the trillion-dollar club even as bubble fears mount, and data security startup Cyera eyeing a jaw-dropping $12 billion valuation at 80x revenue. Buckle in \u2014 today's digest covers the creative, the dangerous, and the financially dizzying sides of AI's accelerating impact.",
+    "slug": "2026-06-04",
+    "digestDate": "2026-06-04",
+    "displayDate": "Jun 04, 2026",
+    "issueNumber": "60604",
+    "subject": "ISSUE 60604 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "SpaceX is gearing up for what could be the largest IPO in history, potentially pushing Elon Musk into trillionaire territory \u2014 and that's just one of several massive stories today. We've also got Seattle delivering a striking rebuke to Big Tech with a datacenter moratorium, a vibe-coding startup crossing $400 million in revenue with barely 150 employees, and a tech journalist's surprisingly emotional year living as an AI lab rat. Let's dive in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-03.html",
-    "contentHash": "12cb2201a60300deb83d55e1121255c91d828fae75c6f571bca3453a3c326f9c"
+    "urlPath": "/issues/2026-06-04.html",
+    "contentHash": "b3cff53ec25b99fef06bf14e50045617919ecd590b60608ffde53bec43f1993d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-04",
+      "digestDate": "2026-06-04",
+      "displayDate": "Jun 04, 2026",
+      "issueNumber": "60604",
+      "subject": "ISSUE 60604 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "SpaceX is gearing up for what could be the largest IPO in history, potentially pushing Elon Musk into trillionaire territory \u2014 and that's just one of several massive stories today. We've also got Seattle delivering a striking rebuke to Big Tech with a datacenter moratorium, a vibe-coding startup crossing $400 million in revenue with barely 150 employees, and a tech journalist's surprisingly emotional year living as an AI lab rat. Let's dive in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-04.html",
+      "contentHash": "b3cff53ec25b99fef06bf14e50045617919ecd590b60608ffde53bec43f1993d"
+    },
     {
       "slug": "2026-06-03",
       "digestDate": "2026-06-03",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-24.html",
       "contentHash": "3b3801abb2dd1bcdacccd45e80e4f6e6d511ef3cb658566c1bbc3784d707bca5"
-    },
-    {
-      "slug": "2026-05-23",
-      "digestDate": "2026-05-23",
-      "displayDate": "May 23, 2026",
-      "issueNumber": "60523",
-      "subject": "ISSUE 60523 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is serving up a fascinating mix of the brilliant and the broken today. Google's AI Overviews are literally obeying users' search queries as commands \u2014 search for \"disregard\" and the AI cheerfully disregards your question \u2014 while across the industry, people are using AI tools to reconstruct dead pilots' voices from spectrograms, forcing the NTSB to shut down public access to its investigation files. From inflated AI startup metrics to Anthropic's $300 million acquisition and SpaceX's jaw-dropping $1.75 trillion IPO filing, there's a lot to unpack \u2014 let's dive in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-23.html",
-      "contentHash": "57c0697bd2240566679117d1aa424a02b017257d0c7a7e807fb81489a2232df2"
     }
   ]
 }
