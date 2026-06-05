@@ -244,9 +244,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/alex_prompter/status/2062564976544621046",
+      "author": "alex_prompter",
+      "headline": "Anthropic published a security guide that essentially tells you to __stop trusting your own AI agents__ — relevant if you're running Claude Code, MCP, or automation tools.",
+      "tweet_id": "3751eba9-b6bc-816e-b198-ddc9ff84f152",
+      "source_text": "Anthropic published a security guide that basically tells you to stop trusting your own AI agents.\n\nIf you're running agents on Claude Code, MCP servers, or automation tools, this one matters.\n\nHere's what it actually says: 👇 https://t.co/R6RMQ8oD3d",
+      "created_time": "2026-06-04T19:07:00.000Z",
+      "canonical_url": "https://twitter.com/alex_prompter/status/2062564976544621046",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/HilaShmuel/status/2062390855260909650",
       "author": "HilaShmuel",
-      "headline": "Hila Shmuel launches Cabinet: an AI team with a knowledge base where you can __dump CSVs, PDFs, and run generative UI__ inside the app.",
+      "headline": "Hila Shmuel launches Cabinet — an __AI team with a knowledge base__ where you can dump CSVs, PDFs, and run inline generative UI on your existing models.",
       "tweet_id": "3751eba9-b6bc-81fa-86d3-f5e5d1da1296",
       "source_text": "Meet Cabinet: AI Team + KB. for quite some time I've been thinking how LLMs are missing the knowledge base - where I can dump CSVs, PDFs, and most important - inline web app for Generative UI. running on your existing AI with agents with heartbeats and jobs https://t.co/p2dtydIrxI https://t.co/MJWWAW3yGH",
       "created_time": "2026-06-04T16:57:00.000Z",
@@ -254,19 +264,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/elorm_elom/status/2062276419707617772",
-      "author": "elorm_elom",
-      "headline": "Elorm ships Prompts — a simple directory for __discovering, copying, and sharing practical AI prompts__ across coding, research, and product workflows.",
-      "tweet_id": "3751eba9-b6bc-812c-9898-ed24f4f822f4",
-      "source_text": "introducing prompts!\n\na simple directory for discovering, copying, adapting, and sharing practical AI prompts.\n\nbuilt for people using AI coding agents, product workflows, research, debugging, and everyday work.\n\nFind a prompt. Copy it. Make it yours.\nhttps://t.co/ekloKb90OZ https://t.co/hl53aQy4d4",
-      "created_time": "2026-06-04T16:57:00.000Z",
-      "canonical_url": "https://twitter.com/elorm_elom/status/2062276419707617772",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/sydneyrunkle/status/2062219093386707270",
       "author": "sydneyrunkle",
-      "headline": "Sydney Runkle: agents are only as good as their context — here's a guide on __building a bespoke harness__ for your use case",
+      "headline": "Sydney Runkle's guide on building a __bespoke harness__ for your agents: get the right context to the model at the right time.",
       "tweet_id": "3751eba9-b6bc-8174-8c68-dd228c4a744b",
       "source_text": "Agents are only as good as the context you give them. The job of a harness is to get the model the right context at the right time for a given task.\n\nHere’s a guide on how to build a bespoke harness for your use case. https://t.co/4TmmL1dtmo",
       "created_time": "2026-06-04T16:52:00.000Z",
@@ -274,35 +274,74 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/danshipper/status/2062628079869005876",
-      "author": "danshipper",
-      "headline": "__Spiral 4.0__ ships a Style Engine built on stylometry principles to extract your voice from past work, plus MCP and CLI support.",
-      "tweet_id": "3761eba9-b6bc-8152-9207-ddc21f2517e4",
-      "source_text": "NEW:\n\nSpiral 4.0—a writing partner for you and your agent by @every\n\n-> Stylometry: we built a new Style Engine based on the principles of stylometry to extract you and your brand's voice and produce great writing every time, based on examples of your past work\n\n-> MCP and CLI: https://t.co/eVeehc59IG",
-      "created_time": "2026-06-05T04:27:00.000Z",
-      "canonical_url": "https://twitter.com/danshipper/status/2062628079869005876",
-      "learning_score": 2
+      "url": "https://twitter.com/ClaudeDevs/status/2061900434722496604",
+      "author": "ClaudeDevs",
+      "headline": "ClaudeDevs shows how to __encode your manual checks so Claude closes its own feedback loop__ before handing work back.",
+      "tweet_id": "3751eba9-b6bc-810a-8949-c48966b4cb87",
+      "source_text": "How do you get Claude Code to check its own work before handing it back?\n\nWatch how you can encode your manual checks so Claude closes its own feedback loop: https://t.co/gxastVL4QH",
+      "created_time": "2026-06-04T16:52:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2061900434722496604",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
-      "url": "https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence",
-      "author": "vquemener",
-      "item_id": "hn:48409382",
-      "headline": "Ethan Mollick makes the case for __co-existence over co-intelligence__ as the new frame for living alongside AI.",
+      "url": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260604-1483731/1483731_spdji-us-indices-megacaps-results-20260604.pdf",
+      "author": "ImageXav",
+      "item_id": "hn:48409535",
+      "headline": "S&P Dow Jones publishes results of its consultation on __treatment of megacap companies__ in the S&P 500.",
       "subreddit": null,
-      "source_text": "Co-Existence and the End of Co-Intelligence",
+      "source_text": "S&P 500 Indices Consultation on Treatment of MegaCap Companies – Results [pdf]",
       "source_type": "hacker_news",
-      "created_time": "2026-06-05T07:52:10+00:00",
+      "created_time": "2026-06-05T08:17:39+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence",
+      "canonical_url": "https://spglobal.com/spdji/en/documents/indexnews/announcements/20260604-1483731/1483731_spdji-us-indices-megacaps-results-20260604.pdf",
+      "learning_score": 3
+    },
+    {
+      "url": "https://store.steampowered.com/news/group/4145017/view/716780409378048027",
+      "author": "HelloUsername",
+      "item_id": "hn:48409585",
+      "headline": "Valve reaffirms that __Steam Machine and Frame launch this summer__, doubling down on its living-room hardware push.",
+      "subreddit": null,
+      "source_text": "Valve Reaffirms Steam Machine and Frame This Summer Launch",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-05T08:22:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://store.steampowered.com/news/group/4145017/view/716780409378048027",
+      "learning_score": 2
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.03811",
+      "author": "u1hcw9nx",
+      "item_id": "hn:48409547",
+      "headline": "New research shows AI agents can enable __adaptive computer worms__ that propagate autonomously across systems.",
+      "subreddit": null,
+      "source_text": "AI Agents Enable Adaptive Computer Worms",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-05T08:19:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arxiv.org/abs/2606.03811",
+      "learning_score": 2
+    },
+    {
+      "url": "https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated",
+      "author": "freetonik",
+      "item_id": "hn:48409540",
+      "headline": "A clean design principle worth bookmarking: __related UI elements should not appear unrelated__.",
+      "subreddit": null,
+      "source_text": "Related UI elements should not appear unrelated",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-05T08:18:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated",
       "learning_score": 2
     },
     {
       "url": "https://archive.org/details/Unix_World_Vol02_10.pdf",
       "author": "pjmlp",
       "item_id": "hn:48409363",
-      "headline": "Bill Gates in 1985, interviewed by Unix World, lays out __the future of Xenix__ — worth reading with hindsight goggles on.",
+      "headline": "Bill Gates in 1985, talking about __the future of Xenix__ — a fascinating Unix World interview preserved by the Internet Archive.",
       "subreddit": null,
       "source_text": "The Future of Xenix, (Bill Gates Interview Unix World, 1985)",
       "source_type": "hacker_news",
@@ -315,7 +354,7 @@
       "url": "https://github.com/geo-tp/ESP32-Bit-Pirate",
       "author": "geotp",
       "item_id": "hn:48409306",
-      "headline": "__ESP32 Bit Pirate__ is an open-source hardware hacking tool with a WebCLI that speaks every protocol you'd want.",
+      "headline": "__ESP32 Bit Pirate__ is an open-source hardware hacking tool with a WebCLI that speaks SPI, I2C, UART, and more.",
       "subreddit": null,
       "source_text": "ESP32 Bit Pirate, a Hardware Hacking Tool with WebCLI That Speaks Every Protocol",
       "source_type": "hacker_news",
@@ -323,52 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://github.com/geo-tp/ESP32-Bit-Pirate",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.bbc.com/news/articles/cx2124z7g45o",
-      "author": "reconnecting",
-      "item_id": "hn:48409196",
-      "headline": "BBC reports AI technology is __nearing a point where it could develop without human input__ — framing that will launch a thousand debates.",
-      "subreddit": null,
-      "source_text": "AI technology is nearing a point where it could develop without human input",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-05T07:26:56+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://bbc.com/news/articles/cx2124z7g45o",
-      "learning_score": 2
-    },
-    {
-      "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
-      "author": "EdwinHoksberg",
-      "item_id": "hn:48409191",
-      "headline": "Ladybird is __changing how it develops__ the browser, rethinking its contribution and review workflow.",
-      "subreddit": null,
-      "source_text": "Changing How We Develop Ladybird",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-05T07:26:33+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://ladybird.org/posts/changing-how-we-develop-ladybird",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arxiv.org/abs/2606.05273",
-      "author": "50kIters",
-      "item_id": "hn:48409153",
-      "headline": "New paper argues __online safety regulation increases privacy risk__ — the tradeoff nobody in policy wants to talk about.",
-      "subreddit": null,
-      "source_text": "Online Safety Regulation Increases Privacy Risk",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-05T07:21:13+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2606.05273",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-05T07:53:14.950003+00:00",
+    "generated_at": "2026-06-05T08:28:13.733444+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "dacf8f385d829c873ea2b75f69f727fcfef8b0840b0942fe561dd8789a425680"
+  "content_hash": "1ea48daea79b7e426fc928053605bd58adf28e5b65b79823b4095844e95ab871"
 }
