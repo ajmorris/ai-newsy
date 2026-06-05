@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-04T00:00:00Z",
-  "issueCount": 45,
+  "generatedAt": "2026-06-05T00:00:00Z",
+  "issueCount": 46,
   "latestIssue": {
-    "slug": "2026-06-04",
-    "digestDate": "2026-06-04",
-    "displayDate": "Jun 04, 2026",
-    "issueNumber": "60604",
-    "subject": "ISSUE 60604 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "SpaceX is gearing up for what could be the largest IPO in history, potentially pushing Elon Musk into trillionaire territory \u2014 and that's just one of several massive stories today. We've also got Seattle delivering a striking rebuke to Big Tech with a datacenter moratorium, a vibe-coding startup crossing $400 million in revenue with barely 150 employees, and a tech journalist's surprisingly emotional year living as an AI lab rat. Let's dive in.",
+    "slug": "2026-06-05",
+    "digestDate": "2026-06-05",
+    "displayDate": "Jun 05, 2026",
+    "issueNumber": "60605",
+    "subject": "ISSUE 60605 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic's confidential IPO filing is arguably the biggest story in AI today \u2014 with annualized revenue soaring to $47 billion and a $965 billion valuation, the company is making a massive bet that the AI boom is far from over. But that's just one thread in a day packed with big moves: Mira Murati resurfaced with a tantalizing preview of \"interaction models\" that could reshape how we communicate with AI, Airbnb's Brian Chesky is launching his own AI lab out of frustration with existing models, and Canada unveiled a national AI strategy aimed at reducing dependence on the U.S. Buckle in \u2014 there's a lot to unpack.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-04.html",
-    "contentHash": "b3cff53ec25b99fef06bf14e50045617919ecd590b60608ffde53bec43f1993d"
+    "urlPath": "/issues/2026-06-05.html",
+    "contentHash": "1ea48daea79b7e426fc928053605bd58adf28e5b65b79823b4095844e95ab871"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-05",
+      "digestDate": "2026-06-05",
+      "displayDate": "Jun 05, 2026",
+      "issueNumber": "60605",
+      "subject": "ISSUE 60605 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic's confidential IPO filing is arguably the biggest story in AI today \u2014 with annualized revenue soaring to $47 billion and a $965 billion valuation, the company is making a massive bet that the AI boom is far from over. But that's just one thread in a day packed with big moves: Mira Murati resurfaced with a tantalizing preview of \"interaction models\" that could reshape how we communicate with AI, Airbnb's Brian Chesky is launching his own AI lab out of frustration with existing models, and Canada unveiled a national AI strategy aimed at reducing dependence on the U.S. Buckle in \u2014 there's a lot to unpack.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-05.html",
+      "contentHash": "1ea48daea79b7e426fc928053605bd58adf28e5b65b79823b4095844e95ab871"
+    },
     {
       "slug": "2026-06-04",
       "digestDate": "2026-06-04",
@@ -133,17 +144,6 @@
       "articleCount": 6,
       "urlPath": "/issues/2026-05-25.html",
       "contentHash": "4e9f9904f00babbd64690633fce447ac86f57175868ecc634b6b02da2abdedb9"
-    },
-    {
-      "slug": "2026-05-24",
-      "digestDate": "2026-05-24",
-      "displayDate": "May 24, 2026",
-      "issueNumber": "60524",
-      "subject": "ISSUE 60524 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI hype machine is running at full throttle \u2014 and it's getting harder to tell what's real from what's manufactured. From UK companies slapping the \"AI\" label on basic tech to patients walking into plastic surgeons' offices clutching AI-generated selfies as surgical blueprints, today's stories paint a vivid picture of a world racing to embrace artificial intelligence, whether it's actually there or not. We've also got a major policy development as Trump backs away from AI safety oversight, a philosophical clash between filmmakers at Cannes, and Elon Musk's surprising pivot away from solar power to fuel his AI ambitions.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-24.html",
-      "contentHash": "3b3801abb2dd1bcdacccd45e80e4f6e6d511ef3cb658566c1bbc3784d707bca5"
     }
   ]
 }
