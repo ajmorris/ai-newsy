@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-05T00:00:00Z",
-  "issueCount": 46,
+  "generatedAt": "2026-06-06T00:00:00Z",
+  "issueCount": 47,
   "latestIssue": {
-    "slug": "2026-06-05",
-    "digestDate": "2026-06-05",
-    "displayDate": "Jun 05, 2026",
-    "issueNumber": "60605",
-    "subject": "ISSUE 60605 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic's confidential IPO filing is arguably the biggest story in AI today \u2014 with annualized revenue soaring to $47 billion and a $965 billion valuation, the company is making a massive bet that the AI boom is far from over. But that's just one thread in a day packed with big moves: Mira Murati resurfaced with a tantalizing preview of \"interaction models\" that could reshape how we communicate with AI, Airbnb's Brian Chesky is launching his own AI lab out of frustration with existing models, and Canada unveiled a national AI strategy aimed at reducing dependence on the U.S. Buckle in \u2014 there's a lot to unpack.",
+    "slug": "2026-06-06",
+    "digestDate": "2026-06-06",
+    "displayDate": "Jun 06, 2026",
+    "issueNumber": "60606",
+    "subject": "ISSUE 60606 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The biggest story today is one that reads like science fiction but is very real: Google is shelling out a staggering $920 million *per month* to SpaceX for GPU access, hot on the heels of Anthropic's even larger $1.25 billion monthly compute deal \u2014 underscoring just how ferociously the AI giants are scrambling for infrastructure as demand outpaces supply. Beyond the compute arms race, today's digest spans everything from a Bluetooth speaker that can silently hijack your PC, to an AI-faked presidential speech that went viral across Africa because it said what real leaders won't, to a growing wave of startups that \u2014 ironically \u2014 want to pull you away from your screen entirely.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-05.html",
-    "contentHash": "1ea48daea79b7e426fc928053605bd58adf28e5b65b79823b4095844e95ab871"
+    "urlPath": "/issues/2026-06-06.html",
+    "contentHash": "7e8f87e6a224fd5d67469f0e558c15d8b68067ee181e5b516b45eb25ac61f993"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-06",
+      "digestDate": "2026-06-06",
+      "displayDate": "Jun 06, 2026",
+      "issueNumber": "60606",
+      "subject": "ISSUE 60606 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The biggest story today is one that reads like science fiction but is very real: Google is shelling out a staggering $920 million *per month* to SpaceX for GPU access, hot on the heels of Anthropic's even larger $1.25 billion monthly compute deal \u2014 underscoring just how ferociously the AI giants are scrambling for infrastructure as demand outpaces supply. Beyond the compute arms race, today's digest spans everything from a Bluetooth speaker that can silently hijack your PC, to an AI-faked presidential speech that went viral across Africa because it said what real leaders won't, to a growing wave of startups that \u2014 ironically \u2014 want to pull you away from your screen entirely.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-06.html",
+      "contentHash": "7e8f87e6a224fd5d67469f0e558c15d8b68067ee181e5b516b45eb25ac61f993"
+    },
     {
       "slug": "2026-06-05",
       "digestDate": "2026-06-05",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-26.html",
       "contentHash": "a13863add56fb8f58bf68fb05b7812b4f6ac49b70bae900b591fe95e13048cad"
-    },
-    {
-      "slug": "2026-05-25",
-      "digestDate": "2026-05-25",
-      "displayDate": "May 25, 2026",
-      "issueNumber": "60525",
-      "subject": "ISSUE 60525 \u00b7 6 STORIES \u00b7 11 MIN READ",
-      "intro": "The Pope is weighing in on AI \u2014 and that might be the most telling sign yet of just how deeply this technology has permeated every corner of society. Pope Leo XIV is preparing to release his first encyclical focused squarely on artificial intelligence, a move that lands alongside a wave of stories today about the very real tensions AI is creating, from security teams scrambling to keep up with new attack surfaces to Scotland's climate policies buckling under the weight of AI's energy demands. We've also got hackers learning to sweet-talk chatbots, Amazon strapping a recorder to your wrist, and a compelling argument for why more automation might actually mean *more* human jobs \u2014 so let's dig in.",
-      "articleCount": 6,
-      "urlPath": "/issues/2026-05-25.html",
-      "contentHash": "4e9f9904f00babbd64690633fce447ac86f57175868ecc634b6b02da2abdedb9"
     }
   ]
 }
