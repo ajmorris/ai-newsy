@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-06T00:00:00Z",
-  "issueCount": 47,
+  "generatedAt": "2026-06-07T00:00:00Z",
+  "issueCount": 48,
   "latestIssue": {
-    "slug": "2026-06-06",
-    "digestDate": "2026-06-06",
-    "displayDate": "Jun 06, 2026",
-    "issueNumber": "60606",
-    "subject": "ISSUE 60606 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story today is one that reads like science fiction but is very real: Google is shelling out a staggering $920 million *per month* to SpaceX for GPU access, hot on the heels of Anthropic's even larger $1.25 billion monthly compute deal \u2014 underscoring just how ferociously the AI giants are scrambling for infrastructure as demand outpaces supply. Beyond the compute arms race, today's digest spans everything from a Bluetooth speaker that can silently hijack your PC, to an AI-faked presidential speech that went viral across Africa because it said what real leaders won't, to a growing wave of startups that \u2014 ironically \u2014 want to pull you away from your screen entirely.",
+    "slug": "2026-06-07",
+    "digestDate": "2026-06-07",
+    "displayDate": "Jun 07, 2026",
+    "issueNumber": "60607",
+    "subject": "ISSUE 60607 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The lines between AI and government are blurring fast \u2014 the Trump administration is reportedly in talks to take an equity stake in OpenAI, a move that could fundamentally reshape the relationship between Washington and Silicon Valley. But that's far from the only big story today: Apple is gearing up to unveil a Gemini-powered Siri overhaul at WWDC, OpenAI is rolling out a new \"Lockdown Mode\" to combat prompt injection attacks, and a troubling investigation reveals how ChatGPT is unwittingly steering shoppers toward sophisticated scam websites. It's a day that underscores just how quickly AI is weaving itself into everything from national policy to your shopping cart \u2014 and not always in ways we'd hope.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-06.html",
-    "contentHash": "7e8f87e6a224fd5d67469f0e558c15d8b68067ee181e5b516b45eb25ac61f993"
+    "urlPath": "/issues/2026-06-07.html",
+    "contentHash": "cb62016de597f6f0ff68c2176c416eef10d8c504e0362211026c8b9069ef8a0d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-07",
+      "digestDate": "2026-06-07",
+      "displayDate": "Jun 07, 2026",
+      "issueNumber": "60607",
+      "subject": "ISSUE 60607 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The lines between AI and government are blurring fast \u2014 the Trump administration is reportedly in talks to take an equity stake in OpenAI, a move that could fundamentally reshape the relationship between Washington and Silicon Valley. But that's far from the only big story today: Apple is gearing up to unveil a Gemini-powered Siri overhaul at WWDC, OpenAI is rolling out a new \"Lockdown Mode\" to combat prompt injection attacks, and a troubling investigation reveals how ChatGPT is unwittingly steering shoppers toward sophisticated scam websites. It's a day that underscores just how quickly AI is weaving itself into everything from national policy to your shopping cart \u2014 and not always in ways we'd hope.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-07.html",
+      "contentHash": "cb62016de597f6f0ff68c2176c416eef10d8c504e0362211026c8b9069ef8a0d"
+    },
     {
       "slug": "2026-06-06",
       "digestDate": "2026-06-06",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-27.html",
       "contentHash": "3020d44150d6af81893eb7adcde1fbd3c58817a8e4edb8abf427b3a54da6571c"
-    },
-    {
-      "slug": "2026-05-26",
-      "digestDate": "2026-05-26",
-      "displayDate": "May 26, 2026",
-      "issueNumber": "60526",
-      "subject": "ISSUE 60526 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The Vatican just dropped the most unexpected AI policy document of the year. Pope Leo XIV's sweeping 42,300-word encyclical, *Magnifica Humanitas*, dominated today's headlines as the first American pope took aim at Silicon Valley's unchecked AI ambitions, concentrated tech power, and the \"idolatry of profit\" \u2014 drawing striking parallels to the Church's historic intervention during the Industrial Revolution. Meanwhile, as if to underscore the pope's warnings about labor disruption, ClickUp offered a real-time case study by replacing hundreds of workers with 3,000 AI agents, giving us a glimpse of the future the encyclical is urging the world to think harder about.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-26.html",
-      "contentHash": "a13863add56fb8f58bf68fb05b7812b4f6ac49b70bae900b591fe95e13048cad"
     }
   ]
 }
