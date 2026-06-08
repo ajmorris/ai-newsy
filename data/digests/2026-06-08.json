@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 4143,
+      "source": "Guardian AI",
+      "title": "Stock markets fall as concerns persist over tech firms at heart of AI boom",
+      "url": "https://www.theguardian.com/business/2026/jun/08/stock-markets-fall-tech-firms-ai-boom-oil-prices-iran-israel",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Global stock markets fell on Monday following a sharp sell-off in US tech stocks late last week, driven by investor concerns about the prospects for technology companies at the heart of the AI boom. The declines were seen across Asian and European markets. Meanwhile, oil prices rose after Iran and Israel exchanged strikes, raising fears that a fragile truce in the Middle East could collapse.",
+      "opinion": "This article highlights the intersection of two major risk factors currently weighing on markets: uncertainty about the sustainability of the AI-driven tech rally and geopolitical instability in the Middle East. The tech sell-off suggests investors are beginning to question whether AI-related valuations have gotten ahead of fundamentals, which is a healthy correction signal. The geopolitical tensions adding pressure through rising oil prices compound the bearish sentiment. Together, these facto…",
+      "image_url": "https://i.guim.co.uk/img/media/ef5e7178d44e3cb982ed3f207097d4291b36c415/830_0_6524_5222/master/6524.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=18d85e66e01b5f061d4f0b1a19a32b79",
+      "published_at": "2026-06-08T08:32:17+00:00",
+      "fetched_at": "2026-06-08T08:39:52.939542+00:00"
+    },
+    {
       "id": 4137,
       "source": "Guardian AI",
       "title": "Aviva detects record £230m in bogus insurance claims as use of AI rises",
@@ -96,25 +109,25 @@
       "image_url": "https://substackcdn.com/image/fetch/$s_!HNaV!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1cae153d-1019-44b4-8473-1e28e687a49e_2048x2048.png",
       "published_at": "2026-06-07T12:31:29+00:00",
       "fetched_at": "2026-06-08T07:55:26.982906+00:00"
-    },
-    {
-      "id": 4141,
-      "source": "The Verge AI",
-      "title": "AI ‘content creators’ are getting harder to spot",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/943187/ai-content-creators",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "The Verge article discusses how AI-generated content creators and influencers are becoming increasingly difficult to distinguish from real human creators on social media. The piece traces the evolution from early, obviously digital virtual influencers like Lil Miquela and Imma — who required studios, money, and significant production effort — to newer AI personas like Emily Pellegrini and Aitana Lopez that look increasingly realistic and blend in with regular social media content. The article notes that social media platforms are struggling to address this growing challenge as AI-generated characters become more sophisticated and harder to identify.",
-      "opinion": "This is an important and timely topic that highlights a genuine concern about authenticity and trust on social media platforms. As AI-generated imagery and personas become more convincing, the line between real and synthetic content is eroding in ways that could have significant implications for advertising transparency, consumer trust, and the livelihoods of real content creators. The fact that platforms themselves are described as 'baffled' is particularly concerning — it suggests the technol…",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/GAUYdq3a4AAAlsX.jpg?quality=90&strip=all&crop=0%2C0.6699364330709%2C100%2C78.534031413613&w=1200",
-      "published_at": "2026-06-07T12:00:00+00:00",
-      "fetched_at": "2026-06-08T07:55:21.603665+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 4143,
+          "source": "Guardian AI",
+          "title": "Stock markets fall as concerns persist over tech firms at heart of AI boom",
+          "url": "https://www.theguardian.com/business/2026/jun/08/stock-markets-fall-tech-firms-ai-boom-oil-prices-iran-israel",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Global stock markets fell on Monday following a sharp sell-off in US tech stocks late last week, driven by investor concerns about the prospects for technology companies at the heart of the AI boom. The declines were seen across Asian and European markets. Meanwhile, oil prices rose after Iran and Israel exchanged strikes, raising fears that a fragile truce in the Middle East could collapse.",
+          "opinion": "This article highlights the intersection of two major risk factors currently weighing on markets: uncertainty about the sustainability of the AI-driven tech rally and geopolitical instability in the Middle East. The tech sell-off suggests investors are beginning to question whether AI-related valuations have gotten ahead of fundamentals, which is a healthy correction signal. The geopolitical tensions adding pressure through rising oil prices compound the bearish sentiment. Together, these facto…",
+          "image_url": "https://i.guim.co.uk/img/media/ef5e7178d44e3cb982ed3f207097d4291b36c415/830_0_6524_5222/master/6524.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=18d85e66e01b5f061d4f0b1a19a32b79",
+          "published_at": "2026-06-08T08:32:17+00:00",
+          "fetched_at": "2026-06-08T08:39:52.939542+00:00"
+        },
         {
           "id": 4137,
           "source": "Guardian AI",
@@ -205,19 +218,6 @@
           "image_url": "https://substackcdn.com/image/fetch/$s_!HNaV!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1cae153d-1019-44b4-8473-1e28e687a49e_2048x2048.png",
           "published_at": "2026-06-07T12:31:29+00:00",
           "fetched_at": "2026-06-08T07:55:26.982906+00:00"
-        },
-        {
-          "id": 4141,
-          "source": "The Verge AI",
-          "title": "AI ‘content creators’ are getting harder to spot",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/943187/ai-content-creators",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "The Verge article discusses how AI-generated content creators and influencers are becoming increasingly difficult to distinguish from real human creators on social media. The piece traces the evolution from early, obviously digital virtual influencers like Lil Miquela and Imma — who required studios, money, and significant production effort — to newer AI personas like Emily Pellegrini and Aitana Lopez that look increasingly realistic and blend in with regular social media content. The article notes that social media platforms are struggling to address this growing challenge as AI-generated characters become more sophisticated and harder to identify.",
-          "opinion": "This is an important and timely topic that highlights a genuine concern about authenticity and trust on social media platforms. As AI-generated imagery and personas become more convincing, the line between real and synthetic content is eroding in ways that could have significant implications for advertising transparency, consumer trust, and the livelihoods of real content creators. The fact that platforms themselves are described as 'baffled' is particularly concerning — it suggests the technol…",
-          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/GAUYdq3a4AAAlsX.jpg?quality=90&strip=all&crop=0%2C0.6699364330709%2C100%2C78.534031413613&w=1200",
-          "published_at": "2026-06-07T12:00:00+00:00",
-          "fetched_at": "2026-06-08T07:55:21.603665+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/DivyanshT91162/status/2063544027342074158",
       "author": "DivyanshT91162",
-      "headline": "Understand-Anything is a Claude Code plugin that __maps an entire codebase for you__ using 5 parallel agents — 54K stars on GitHub trending.",
+      "headline": "Google Gemma 4 + Ollama + Hermes gives you a __fully offline local agent stack__ — no API bills, no cloud dependency, no data leaving your machine.",
       "tweet_id": "3781eba9-b6bc-81e8-b8e6-ebcf53ad2947",
       "source_text": "STOP RENTING YOUR AI.\n\nGoogle Gemma 4 + Ollama + Hermes is all you need for a powerful local agent stack.\n\nNo API bills.\nNo cloud dependency.\nNo data leaving your machine.\n\nCode, write, research, and automate workflows entirely offline.\n\nYour own AI brain running 24/7 on hardware https://t.co/E1qm6ZDLux",
       "created_time": "2026-06-07T18:52:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/_avichawla/status/2063210446686146750",
       "author": "_avichawla",
-      "headline": "Avi Chawla shares the __top 15 fine-tuning techniques__ he's learned over two years of working with LLMs, from LoRA to QLoRA and beyond.",
+      "headline": "Avi Chawla distills two years of fine-tuning LLMs into __15 techniques from LoRA to QLoRA__ and beyond — bookmark-worthy if you're training your own models.",
       "tweet_id": "3781eba9-b6bc-8163-91e6-dd989453c3a9",
       "source_text": "I have been fine-tuning LLMs for over 2 years now!\n\nHere are the top 15 techniques I'd learn if I were to fine-tune them:\n\nBookmark this.\n\n1. LoRA\n> Freezes the base weights and trains two low-rank matrices as the update, resulting in ~95-99% fewer params to fine-tune.\n\n2. QLoRA https://t.co/d0jOXVKxC1 https://t.co/5DiD5Vi6lI",
       "created_time": "2026-06-07T18:52:00.000Z",
@@ -256,21 +256,11 @@
     {
       "url": "https://twitter.com/FlowAltDelete/status/2063019276815229166",
       "author": "FlowAltDelete",
-      "headline": "Microsoft is layering context into agents with __Work IQ, Fabric IQ, Foundry IQ, and Web IQ__ — people, business data, enterprise knowledge, and the web.",
+      "headline": "Microsoft is layering context into agents with Work IQ, Fabric IQ, Foundry IQ, and Web IQ — the companies that __master the IQ layer__ will win the agent era.",
       "tweet_id": "3781eba9-b6bc-81c0-a824-ea5349298d5c",
       "source_text": "Microsoft is killing it with the IQ layer.\n\nWork IQ.\nFabric IQ.\nFoundry IQ.\nWeb IQ.\n\nThis is how agents get real context:\npeople, business data, enterprise knowledge, apps, files, Dataverse, and the web.\n\nThe companies that understand context will win the agent era.\n\nMicrosoft https://t.co/OllbjvE0iO",
       "created_time": "2026-06-07T18:47:00.000Z",
       "canonical_url": "https://twitter.com/FlowAltDelete/status/2063019276815229166",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/0xchromium/status/2063321324605280569",
-      "author": "0xchromium",
-      "headline": "Andrej Karpathy spent __2 hours showing how he actually uses AI__ day to day — just briefing the machine in plain language.",
-      "tweet_id": "3781eba9-b6bc-810d-b35c-ebd1ca3f4cad",
-      "source_text": "Andrej Karpathy spent 2h showing how he actually uses AI day to day\n\nhe's a co-founder of OpenAI and led AI at Tesla, so when he shows how he works, it’s worth watching\n\nand the whole session is just him telling the machine what he wants in simple terms, like he's briefing a https://t.co/mxNvYgP2i2 https://t.co/HoPnMNEu62",
-      "created_time": "2026-06-07T18:47:00.000Z",
-      "canonical_url": "https://twitter.com/0xchromium/status/2063321324605280569",
       "learning_score": 3
     },
     {
@@ -282,40 +272,76 @@
       "created_time": "2026-06-07T18:47:00.000Z",
       "canonical_url": "https://twitter.com/hnshah/status/2063402382634226039",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/0xchromium/status/2063321324605280569",
+      "author": "0xchromium",
+      "headline": "Andrej Karpathy spent two hours showing __how he actually uses AI day to day__ — just briefing the machine in plain language and iterating.",
+      "tweet_id": "3781eba9-b6bc-810d-b35c-ebd1ca3f4cad",
+      "source_text": "Andrej Karpathy spent 2h showing how he actually uses AI day to day\n\nhe's a co-founder of OpenAI and led AI at Tesla, so when he shows how he works, it’s worth watching\n\nand the whole session is just him telling the machine what he wants in simple terms, like he's briefing a https://t.co/mxNvYgP2i2 https://t.co/HoPnMNEu62",
+      "created_time": "2026-06-07T18:47:00.000Z",
+      "canonical_url": "https://twitter.com/0xchromium/status/2063321324605280569",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
-      "url": "https://bluedoor.sh/apis/financial-data",
-      "author": "ahshucks",
-      "item_id": "hn:48442127",
-      "headline": "Bluedoor ships a __free financial data API pulling from 26 sources__ with built-in inference.",
+      "url": "https://mukba.ng/image-3d/",
+      "author": "mnorris",
+      "item_id": "hn:48442524",
+      "headline": "Image-3D converts a photo into a __3D Gaussian splat that runs entirely in the browser__.",
       "subreddit": null,
-      "source_text": "Show HN: Free 26-Source Financial Data API with Free Inference",
+      "source_text": "Show HN: Image-3D: photo to 3D splat that runs in the browser",
       "source_type": "hacker_news",
-      "created_time": "2026-06-08T07:04:26+00:00",
+      "created_time": "2026-06-08T08:03:14+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://bluedoor.sh/apis/financial-data",
+      "canonical_url": "https://mukba.ng/image-3d",
       "learning_score": 3
     },
     {
-      "url": "https://lifespan.io/forever-healthy-foundation-launches-evipedia-ai/",
-      "author": "negura",
-      "item_id": "hn:48442020",
-      "headline": "Forever Healthy Foundation launches Evipedia AI — an encyclopedia of __500+ longevity evidence reviews__.",
+      "url": "https://www.reuters.com/legal/litigation/uk-pm-starmer-set-ban-harmful-social-media-under-16s-2026-06-08/",
+      "author": "geox",
+      "item_id": "hn:48442743",
+      "headline": "UK PM Starmer moves to __ban social media for under-16s__, with legislation expected by 2026.",
       "subreddit": null,
-      "source_text": "Encyclopedia of 500+ Longevity Evidence Reviews",
+      "source_text": "UK PM Starmer set to ban 'harmful' social media for under-16s",
       "source_type": "hacker_news",
-      "created_time": "2026-06-08T06:46:47+00:00",
+      "created_time": "2026-06-08T08:35:54+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://lifespan.io/forever-healthy-foundation-launches-evipedia-ai",
-      "learning_score": 3
+      "canonical_url": "https://reuters.com/legal/litigation/uk-pm-starmer-set-ban-harmful-social-media-under-16s-2026-06-08",
+      "learning_score": 2
+    },
+    {
+      "url": "https://joshcollinsworth.com/blog/productivity",
+      "author": "gregnavis",
+      "item_id": "hn:48442715",
+      "headline": "Josh Collinsworth makes the case that LLMs encourage __performative productivity__ — looking busy without meaningful output.",
+      "subreddit": null,
+      "source_text": "LLMs and Performative Productivity",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-08T08:31:04+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://joshcollinsworth.com/blog/productivity",
+      "learning_score": 2
+    },
+    {
+      "url": "https://cloudbudgetmaster.com/tools/aws-waste-finder/",
+      "author": "samarth0211",
+      "item_id": "hn:48442654",
+      "headline": "Free read-only script that scans your AWS account to __find wasted cloud spend__ without touching anything.",
+      "subreddit": null,
+      "source_text": "Show HN: Free read-only script to find wasted AWS spend",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-08T08:22:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cloudbudgetmaster.com/tools/aws-waste-finder",
+      "learning_score": 2
     },
     {
       "url": "https://cedardb.com/blog/doombench/",
       "author": "krishadi",
       "item_id": "hn:48442498",
-      "headline": "CedarDB introduces __DoomBench__ — benchmarking data stacks by how well they run Doom.",
+      "headline": "__DoomBench__ benchmarks data stacks by making them run Doom — because why not.",
       "subreddit": null,
       "source_text": "DoomBench – benchmarking data stacks running Doom",
       "source_type": "hacker_news",
@@ -325,50 +351,24 @@
       "learning_score": 2
     },
     {
-      "url": "https://luisgardea.substack.com/p/ai-has-a-measurement-problem",
-      "author": "gallardo147",
-      "item_id": "hn:48442412",
-      "headline": "AI has a measurement problem — and Luis Gardea argues it's __everyone's problem__, not just the benchmarkers'.",
+      "url": "https://www.quantamagazine.org/how-ecotypes-harbor-the-genetic-memory-of-a-species-past-20260521/",
+      "author": "vfalbor",
+      "item_id": "hn:48442264",
+      "headline": "How __ecotypes harbor the genetic memory__ of a species' evolutionary past.",
       "subreddit": null,
-      "source_text": "AI Has a Measurement Problem – And it's everyone's problem",
+      "source_text": "Ecotypes Harbor the Genetic Memory of a Species' Past",
       "source_type": "hacker_news",
-      "created_time": "2026-06-08T07:46:33+00:00",
+      "created_time": "2026-06-08T07:24:24+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://luisgardea.substack.com/p/ai-has-a-measurement-problem",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.multiplayer.app/",
-      "author": "argoeris",
-      "item_id": "hn:48442262",
-      "headline": "Multiplayer launches __session-based runtime data collection for coding agents__ — observe what your agent actually does, not just what it outputs.",
-      "subreddit": null,
-      "source_text": "Show HN: Multiplayer, session-based runtime data collection for coding agents",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-08T07:24:08+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://multiplayer.app",
-      "learning_score": 2
-    },
-    {
-      "url": "https://daringfireball.net/2026/06/swiftui_only_makes_it_easy_to_develop_bad_apps",
-      "author": "frizlab",
-      "item_id": "hn:48442251",
-      "headline": "John Gruber makes the case that __SwiftUI only makes it easy to develop bad apps__.",
-      "subreddit": null,
-      "source_text": "SwiftUI Only Makes It Easy to Develop Bad Apps",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-08T07:22:29+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://daringfireball.net/2026/06/swiftui_only_makes_it_easy_to_develop_bad_apps",
+      "canonical_url": "https://quantamagazine.org/how-ecotypes-harbor-the-genetic-memory-of-a-species-past-20260521",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-08T08:01:02.765071+00:00",
+    "generated_at": "2026-06-08T08:41:54.760484+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "61fb2b4492ac71ef47c2fffab387cd64ef62a9a12417eedc8ce16545d49a8294"
+  "content_hash": "de78d171a947815b7ddea5474c18ef8e3b2c17a244c574efe616e6cd308a7e49"
 }
