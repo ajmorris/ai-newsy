@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-07T00:00:00Z",
-  "issueCount": 48,
+  "generatedAt": "2026-06-08T00:00:00Z",
+  "issueCount": 49,
   "latestIssue": {
-    "slug": "2026-06-07",
-    "digestDate": "2026-06-07",
-    "displayDate": "Jun 07, 2026",
-    "issueNumber": "60607",
-    "subject": "ISSUE 60607 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The lines between AI and government are blurring fast \u2014 the Trump administration is reportedly in talks to take an equity stake in OpenAI, a move that could fundamentally reshape the relationship between Washington and Silicon Valley. But that's far from the only big story today: Apple is gearing up to unveil a Gemini-powered Siri overhaul at WWDC, OpenAI is rolling out a new \"Lockdown Mode\" to combat prompt injection attacks, and a troubling investigation reveals how ChatGPT is unwittingly steering shoppers toward sophisticated scam websites. It's a day that underscores just how quickly AI is weaving itself into everything from national policy to your shopping cart \u2014 and not always in ways we'd hope.",
+    "slug": "2026-06-08",
+    "digestDate": "2026-06-08",
+    "displayDate": "Jun 08, 2026",
+    "issueNumber": "60608",
+    "subject": "ISSUE 60608 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI honeymoon phase might be officially over \u2014 at least for your wallet. Microsoft's shift to per-token pricing for GitHub Copilot has sparked what Reddit is calling the \"Tokenpocalypse,\" and it's part of a broader reckoning as companies realize just how expensive AI really is when the subsidies dry up. Today we're also diving into how scammers are weaponizing AI to fake insurance claims at record scale, OpenAI's ambitious \"super app\" pivot, and a growing debate about what we lose when we let AI do our thinking for us.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-07.html",
-    "contentHash": "cb62016de597f6f0ff68c2176c416eef10d8c504e0362211026c8b9069ef8a0d"
+    "urlPath": "/issues/2026-06-08.html",
+    "contentHash": "de78d171a947815b7ddea5474c18ef8e3b2c17a244c574efe616e6cd308a7e49"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-08",
+      "digestDate": "2026-06-08",
+      "displayDate": "Jun 08, 2026",
+      "issueNumber": "60608",
+      "subject": "ISSUE 60608 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI honeymoon phase might be officially over \u2014 at least for your wallet. Microsoft's shift to per-token pricing for GitHub Copilot has sparked what Reddit is calling the \"Tokenpocalypse,\" and it's part of a broader reckoning as companies realize just how expensive AI really is when the subsidies dry up. Today we're also diving into how scammers are weaponizing AI to fake insurance claims at record scale, OpenAI's ambitious \"super app\" pivot, and a growing debate about what we lose when we let AI do our thinking for us.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-08.html",
+      "contentHash": "de78d171a947815b7ddea5474c18ef8e3b2c17a244c574efe616e6cd308a7e49"
+    },
     {
       "slug": "2026-06-07",
       "digestDate": "2026-06-07",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-28.html",
       "contentHash": "a16df68af4319cc8c93e5939095b8522dc3e6bc13a8d5c41e25cb3f3a283668c"
-    },
-    {
-      "slug": "2026-05-27",
-      "digestDate": "2026-05-27",
-      "displayDate": "May 27, 2026",
-      "issueNumber": "60527",
-      "subject": "ISSUE 60527 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The irony is almost too perfect: Pope Leo XIV's first encyclical warning about AI's impact on humanity may itself have been partially written by AI, with detectors flagging nearly half the text as machine-generated. It's a fitting symbol for a day where the tension between embracing and resisting AI is everywhere \u2014 from Cannes filmmakers wrestling with the technology, to millions of users fleeing Google's AI-saturated search results for DuckDuckGo, to a critical vulnerability putting millions of AI agents at risk. We've also got a billion-dollar bet on a multi-model future, Indian gig workers training the world's robots, and a landmark music industry deal tackling AI-generated fakes.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-27.html",
-      "contentHash": "3020d44150d6af81893eb7adcde1fbd3c58817a8e4edb8abf427b3a54da6571c"
     }
   ]
 }
