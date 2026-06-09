@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-08T00:00:00Z",
-  "issueCount": 49,
+  "generatedAt": "2026-06-09T00:00:00Z",
+  "issueCount": 50,
   "latestIssue": {
-    "slug": "2026-06-08",
-    "digestDate": "2026-06-08",
-    "displayDate": "Jun 08, 2026",
-    "issueNumber": "60608",
-    "subject": "ISSUE 60608 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI honeymoon phase might be officially over \u2014 at least for your wallet. Microsoft's shift to per-token pricing for GitHub Copilot has sparked what Reddit is calling the \"Tokenpocalypse,\" and it's part of a broader reckoning as companies realize just how expensive AI really is when the subsidies dry up. Today we're also diving into how scammers are weaponizing AI to fake insurance claims at record scale, OpenAI's ambitious \"super app\" pivot, and a growing debate about what we lose when we let AI do our thinking for us.",
+    "slug": "2026-06-09",
+    "digestDate": "2026-06-09",
+    "displayDate": "Jun 09, 2026",
+    "issueNumber": "60609",
+    "subject": "ISSUE 60609 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The big story today is Apple finally going all-in on AI \u2014 and doing it in a way that's turning heads. From a revamped Siri powered by Google's Gemini to letting users \"vibe-code\" their own Safari extensions with natural language, WWDC 2026 painted a picture of a company embedding AI deep into its operating system rather than chasing hype, all while taking a notably humbler approach to demos after that $250 million false advertising settlement. Beyond Cupertino, we've also got China's wild new underwater datacenter, a VC valuation scandal brewing on X, and some tough news for Sam Altman's eye-scanning venture \u2014 plenty to dig into today.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-08.html",
-    "contentHash": "de78d171a947815b7ddea5474c18ef8e3b2c17a244c574efe616e6cd308a7e49"
+    "urlPath": "/issues/2026-06-09.html",
+    "contentHash": "27ee3d8861ec01d8ca80970333411e7b327d01e7a5a107b9eec21d4a30b3acdb"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-09",
+      "digestDate": "2026-06-09",
+      "displayDate": "Jun 09, 2026",
+      "issueNumber": "60609",
+      "subject": "ISSUE 60609 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The big story today is Apple finally going all-in on AI \u2014 and doing it in a way that's turning heads. From a revamped Siri powered by Google's Gemini to letting users \"vibe-code\" their own Safari extensions with natural language, WWDC 2026 painted a picture of a company embedding AI deep into its operating system rather than chasing hype, all while taking a notably humbler approach to demos after that $250 million false advertising settlement. Beyond Cupertino, we've also got China's wild new underwater datacenter, a VC valuation scandal brewing on X, and some tough news for Sam Altman's eye-scanning venture \u2014 plenty to dig into today.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-09.html",
+      "contentHash": "27ee3d8861ec01d8ca80970333411e7b327d01e7a5a107b9eec21d4a30b3acdb"
+    },
     {
       "slug": "2026-06-08",
       "digestDate": "2026-06-08",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-29.html",
       "contentHash": "7a846af21f1d16886a7345e6edcf30976c009464e5621ff7a1367eec07feb3b0"
-    },
-    {
-      "slug": "2026-05-28",
-      "digestDate": "2026-05-28",
-      "displayDate": "May 28, 2026",
-      "issueNumber": "60528",
-      "subject": "ISSUE 60528 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Robots are smashing marathon records, Google's AI still can't spell its own name, and a new browser attack can spy on you through your SSD \u2014 it's a day that perfectly captures AI's wild spectrum from impressive to embarrassing to downright unsettling. We've also got a $6 billion AWS chip deal signaling the post-Nvidia era, Pope Leo weighing in on artificial intelligence, and some hard-won wisdom on why your AI governance checklist probably isn't working the way you think. Grab your coffee \u2014 there's a lot to unpack.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-28.html",
-      "contentHash": "a16df68af4319cc8c93e5939095b8522dc3e6bc13a8d5c41e25cb3f3a283668c"
     }
   ]
 }
