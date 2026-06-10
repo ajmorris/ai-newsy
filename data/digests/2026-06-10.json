@@ -244,6 +244,16 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/hasantoxr/status/2064461437276459092",
+      "author": "hasantoxr",
+      "headline": "Claude doesn't count messages — it counts tokens. Here are __10 tricks to stretch your daily limit__ without upgrading.",
+      "tweet_id": "37b1eba9-b6bc-818e-9bd2-c486ed7d4a8a",
+      "source_text": "I use Claude every day without exhausting my token limit.\n\nClaude doesn't count how many messages you send. It counts how much it has to read and write. Some chats use 10x faster than others.\n\nIf you want to use Claude without running out of limits, use these 10 tricks: https://t.co/cQDdrova1r",
+      "created_time": "2026-06-10T07:22:00.000Z",
+      "canonical_url": "https://twitter.com/hasantoxr/status/2064461437276459092",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/caro_milanesi/status/2064487207273107475",
       "author": "caro_milanesi",
       "headline": "Carolina Milanesi makes the case that Apple's most interesting WWDC move was __what it didn't announce__ — no moonshots, no autonomous agent demos, just incremental polish.",
@@ -256,7 +266,7 @@
     {
       "url": "https://twitter.com/signulll/status/2064111884719321382",
       "author": "signulll",
-      "headline": "An Apple keynote graphic accidentally outlines the shift from an app-based OS to an __intent-centric operating system__ — and someone noticed.",
+      "headline": "One WWDC graphic quietly outlines the shift from an app-based OS to an __intent-centric operating system__ — and it might describe a new class of devices.",
       "tweet_id": "37b1eba9-b6bc-81ce-9ea4-d7f5ccbb5176",
       "source_text": "in today's keynote, apple produced this really interesting graphic that ironically outlines the core mechanics for a new type of operating system (for perhaps a new class of devices).\n\nyou can see how this moves the world from an app based ecosystem to an intent centric world. https://t.co/ITpfGya1gj",
       "created_time": "2026-06-10T00:17:00.000Z",
@@ -264,24 +274,14 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/awnihannun/status/2064202168618422396",
-      "author": "awnihannun",
-      "headline": "Awni Hannun breaks down how Apple shipped a __20B-parameter on-device model__ using a small routing model that predicts which experts to load into RAM.",
-      "tweet_id": "37b1eba9-b6bc-817d-b37e-d2f04eb39031",
-      "source_text": "It's very cool that Apple shipped a 20B parameter on-device. \n\nYou can't put 20B parameters in RAM at any reasonable precision. To make it work they are using pretty exotic architecture by today's standards.\n\nA small model predicts from the query (or prompt) which experts to load https://t.co/Zhe5HcbGuL",
-      "created_time": "2026-06-10T00:12:00.000Z",
-      "canonical_url": "https://twitter.com/awnihannun/status/2064202168618422396",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/9to5mac/status/2064351868688449986",
-      "author": "9to5mac",
-      "headline": "Craig Federighi explains __why Apple built a dedicated Siri chatbot app__ after years of resisting the format.",
-      "tweet_id": "37b1eba9-b6bc-8113-8cc8-c4748f5f4992",
-      "source_text": "Craig Federighi explains why Apple made a Siri chatbot app after all https://t.co/IP0tNPxriy by @ChanceHMiller",
-      "created_time": "2026-06-10T00:12:00.000Z",
-      "canonical_url": "https://twitter.com/9to5mac/status/2064351868688449986",
-      "learning_score": 3
+      "url": "https://twitter.com/Voxyz_ai/status/2064441201084825921",
+      "author": "Voxyz_ai",
+      "headline": "Early Fable 5 impressions: it __thrives on big complex tasks__, feels slow even at low effort, and ultracode spawns a swarm of parallel agents.",
+      "tweet_id": "37b1eba9-b6bc-81c9-be1e-f915dc43d58e",
+      "source_text": "quick impressions after a few hours with fable 5:\n\n→ it wants big tasks. small stuff feels beneath it, the more complex the job the harder it goes\n\n→ wouldn't turn on ultracode yet, it spins up a whole lot of parallel agents\n\n→ it's on the slow side. even with effort turned https://t.co/Ige0byU5nW",
+      "created_time": "2026-06-10T07:22:00.000Z",
+      "canonical_url": "https://twitter.com/Voxyz_ai/status/2064441201084825921",
+      "learning_score": 2
     }
   ],
   "community_headlines": [
@@ -289,7 +289,7 @@
       "url": "https://devblogs.microsoft.com/commandline/powertoys-0-100-is-here-new-shortcut-guide-command-palette-improvements-and-much-more/",
       "author": "Klaster_1",
       "item_id": "hn:48472990",
-      "headline": "__PowerToys 0.100__ ships with a revamped Shortcut Guide, Command Palette improvements, and a pile of fixes.",
+      "headline": "__PowerToys 0.100__ ships with a new shortcut guide, command palette improvements, and more.",
       "subreddit": null,
       "source_text": "PowerToys 0.100 Is Here",
       "source_type": "hacker_news",
@@ -299,23 +299,62 @@
       "learning_score": 3
     },
     {
-      "url": "https://github.com/joelparkerhenderson/ai-medical-diagnosis-examples/blob/main/doctor-perspective/claude-fable-5-ultracode/index.md",
-      "author": "jph",
-      "item_id": "hn:48472677",
-      "headline": "An early test pairing __Claude Fable 5 Ultracode with AI medical diagnosis__ — detailed case walkthrough from a doctor's perspective.",
+      "url": "https://webcli.sh",
+      "author": "keepamovin",
+      "item_id": "hn:48473198",
+      "headline": "WebCLI asks a fun question: __what if the browser was just another Unix command__?",
       "subreddit": null,
-      "source_text": "Claude Fable 5 Ultracode + AI medical diagnosis",
+      "source_text": "Show HN: WebCLI – what if the browser was just another Unix command?",
       "source_type": "hacker_news",
-      "created_time": "2026-06-10T07:19:45+00:00",
+      "created_time": "2026-06-10T08:27:01+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/joelparkerhenderson/ai-medical-diagnosis-examples/blob/main/doctor-perspective/claude-fable-5-ultracode/index.md",
-      "learning_score": 3
+      "canonical_url": "https://webcli.sh",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.tomshardware.com/software/linux/linux-developers-are-using-ai-vibe-coding-to-keep-vintage-amd-gpus-alive-r600-driver-cleaned-up-with-github-copilot-gives-hd-2000-to-hd-6000-series-a-new-lease-of-life",
+      "author": "01-_-",
+      "item_id": "hn:48473140",
+      "headline": "Linux developers are __vibe-coding with Copilot to keep vintage AMD GPUs alive__ — giving the HD 2000 through HD 6000 series a second life.",
+      "subreddit": null,
+      "source_text": "Linux developers are using AI vibe coding to keep vintage AMD GPUs alive",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-10T08:17:54+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/software/linux/linux-developers-are-using-ai-vibe-coding-to-keep-vintage-amd-gpus-alive-r600-driver-cleaned-up-with-github-copilot-gives-hd-2000-to-hd-6000-series-a-new-lease-of-life",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.ft.com/content/db75e347-b13b-4753-8130-6301bb55c040",
+      "author": "JumpCrisscross",
+      "item_id": "hn:48473037",
+      "headline": "Germany is pouring __€100B into making its trains run on time__.",
+      "subreddit": null,
+      "source_text": "Germany's €100B bid to make the trains run on time",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-10T08:04:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ft.com/content/db75e347-b13b-4753-8130-6301bb55c040",
+      "learning_score": 2
+    },
+    {
+      "url": "https://samihonkonen.com/posts/purpose-built-local-ai-agents/",
+      "author": "shonkone",
+      "item_id": "hn:48473010",
+      "headline": "The case for __purpose-built local AI agents__ over general-purpose ones.",
+      "subreddit": null,
+      "source_text": "Purpose-built local AI agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-10T08:00:58+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://samihonkonen.com/posts/purpose-built-local-ai-agents",
+      "learning_score": 2
     },
     {
       "url": "https://github.com/valkor-ai/loom",
       "author": "buzzplayapp",
       "item_id": "hn:48472991",
-      "headline": "__Loom__ is an open-source delivery harness designed to wrangle coding agents through structured workflows.",
+      "headline": "Loom — an __open-source delivery harness for coding agents__.",
       "subreddit": null,
       "source_text": "Show HN: Loom, an open-source delivery harness for coding agents",
       "source_type": "hacker_news",
@@ -323,52 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://github.com/valkor-ai/loom",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.panasiti.me/blog/how-to-build-agentic-rag-with-rubyllm-and-rails/",
-      "author": "giovapanasiti",
-      "item_id": "hn:48472952",
-      "headline": "A walkthrough for building __agentic RAG with RubyLLM and Rails__ — Ruby finally gets its AI plumbing post.",
-      "subreddit": null,
-      "source_text": "How to Build an Agentic RAG with RubyLLM and Rails",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-10T07:53:06+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://panasiti.me/blog/how-to-build-agentic-rag-with-rubyllm-and-rails",
-      "learning_score": 2
-    },
-    {
-      "url": "https://medium.com/empirical-engineer/gepa-wrote-its-own-legal-rubric-and-caught-33-more-unfair-contract-clauses-913a2d7d8ad5",
-      "author": "tassosyal",
-      "item_id": "hn:48472943",
-      "headline": "GEPA wrote its own legal rubric from labelled data and __caught 33% more unfair contract clauses__ than baseline approaches using DSPy.",
-      "subreddit": null,
-      "source_text": "Mining a Terms-of-Service fairness rubric from labelled data with DSPy and GEPA",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-10T07:52:09+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://medium.com/empirical-engineer/gepa-wrote-its-own-legal-rubric-and-caught-33-more-unfair-contract-clauses-913a2d7d8ad5",
-      "learning_score": 2
-    },
-    {
-      "url": "https://mail.openjdk.org/archives/list/jdk-dev@openjdk.org/thread/AIA3O3LHFZ6T7TIPH7KZT4WS4B6U72U5/",
-      "author": "lichtenberger",
-      "item_id": "hn:48472941",
-      "headline": "First __Valhalla-related changes__ will land in Java 28, bringing value types closer to reality after years of incubation.",
-      "subreddit": null,
-      "source_text": "First Valhalla related stuff will land in Java 28",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-10T07:51:50+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://mail.openjdk.org/archives/list/jdk-dev@openjdk.org/thread/AIA3O3LHFZ6T7TIPH7KZT4WS4B6U72U5",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-10T07:58:25.139033+00:00",
+    "generated_at": "2026-06-10T08:29:37.402229+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "dd48376b0577f3ba56eada91e0e8c9e8e88a3dddbeb9fa6fdd8b915581730167"
+  "content_hash": "b9897dfe6d80c21e61eb3b1c6943b0e29f183a9bd178082f55a80524c6cca7c6"
 }
