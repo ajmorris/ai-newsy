@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-09T00:00:00Z",
-  "issueCount": 50,
+  "generatedAt": "2026-06-10T00:00:00Z",
+  "issueCount": 51,
   "latestIssue": {
-    "slug": "2026-06-09",
-    "digestDate": "2026-06-09",
-    "displayDate": "Jun 09, 2026",
-    "issueNumber": "60609",
-    "subject": "ISSUE 60609 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The big story today is Apple finally going all-in on AI \u2014 and doing it in a way that's turning heads. From a revamped Siri powered by Google's Gemini to letting users \"vibe-code\" their own Safari extensions with natural language, WWDC 2026 painted a picture of a company embedding AI deep into its operating system rather than chasing hype, all while taking a notably humbler approach to demos after that $250 million false advertising settlement. Beyond Cupertino, we've also got China's wild new underwater datacenter, a VC valuation scandal brewing on X, and some tough news for Sam Altman's eye-scanning venture \u2014 plenty to dig into today.",
+    "slug": "2026-06-10",
+    "digestDate": "2026-06-10",
+    "displayDate": "Jun 10, 2026",
+    "issueNumber": "60610",
+    "subject": "ISSUE 60610 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI infrastructure boom is hitting turbulence from all sides today \u2014 Seattle just became the largest U.S. city to ban new AI data centers, Google is slashing subscription prices in what looks like the opening salvo of a commoditization war, and Meta is meanwhile doubling down with a massive new data center deal in India. It's a day that really captures the tension between AI's breakneck expansion and the growing pushback against its real-world costs, with stories ranging from deepfake abuse on X to a surprisingly functional Siri finally showing up to the party.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-09.html",
-    "contentHash": "27ee3d8861ec01d8ca80970333411e7b327d01e7a5a107b9eec21d4a30b3acdb"
+    "urlPath": "/issues/2026-06-10.html",
+    "contentHash": "b9897dfe6d80c21e61eb3b1c6943b0e29f183a9bd178082f55a80524c6cca7c6"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-10",
+      "digestDate": "2026-06-10",
+      "displayDate": "Jun 10, 2026",
+      "issueNumber": "60610",
+      "subject": "ISSUE 60610 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI infrastructure boom is hitting turbulence from all sides today \u2014 Seattle just became the largest U.S. city to ban new AI data centers, Google is slashing subscription prices in what looks like the opening salvo of a commoditization war, and Meta is meanwhile doubling down with a massive new data center deal in India. It's a day that really captures the tension between AI's breakneck expansion and the growing pushback against its real-world costs, with stories ranging from deepfake abuse on X to a surprisingly functional Siri finally showing up to the party.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-10.html",
+      "contentHash": "b9897dfe6d80c21e61eb3b1c6943b0e29f183a9bd178082f55a80524c6cca7c6"
+    },
     {
       "slug": "2026-06-09",
       "digestDate": "2026-06-09",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-30.html",
       "contentHash": "c28778bf8d8c3301bc6fce7fd83eb97c0ddedf4dca5b6bc14f02e4c921126e9f"
-    },
-    {
-      "slug": "2026-05-29",
-      "digestDate": "2026-05-29",
-      "displayDate": "May 29, 2026",
-      "issueNumber": "60529",
-      "subject": "ISSUE 60529 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Claude's latest model just dropped, and the reviews are already rolling in \u2014 Opus 4.8 brings dynamic multi-agent workflows and a new \"xhigh\" effort mode, though early testers say it still stumbles on those tricky last-mile edge cases. Beyond the model wars, today's digest paints a bigger picture of an internet rapidly reshaping itself around AI: cloud giants are rebuilding infrastructure for machine traffic expected to surpass humans by 2027, developers are planting prompt-injection traps to fight back against vibe coders, and the Pentagon is quietly leaving the door open on lethal autonomous weapons. Buckle in \u2014 it's a packed one.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-29.html",
-      "contentHash": "7a846af21f1d16886a7345e6edcf30976c009464e5621ff7a1367eec07feb3b0"
     }
   ]
 }
