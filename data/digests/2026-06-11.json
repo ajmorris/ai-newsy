@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 4246,
+      "source": "The Verge AI",
+      "title": "Deezer launches an AI music detector for other streaming services",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Deezer has launched an AI music detector tool that allows users of any streaming platform to scan their playlists for AI-generated music. After being the first major streaming service to label AI-generated content and failing to get competitors to license its detection technology, Deezer is now offering the tool directly to consumers. Users visit Deezer's site, grant access to their streaming service (compatible with 20 platforms including Spotify, Apple Music, SoundCloud, and YouTube Music), and Deezer imports and scans their playlists for AI content, alerting them to any detections. The move comes as competitors like Apple and Spotify have opted for voluntary tagging systems rather than adopting Deezer's detection tech.",
+      "opinion": "This is a clever strategic move by Deezer that serves dual purposes: it positions the company as a champion of human-created music while simultaneously functioning as a marketing tool that drives traffic and brand awareness. By requiring users to interact with Deezer's platform to scan their Spotify or Apple Music libraries, they're creating a touchpoint with potential subscribers. The underlying concern about AI-generated music flooding streaming platforms is legitimate, and Deezer deserves cr…",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/NEW_1200-x-580-pixel-SI-logo-1240x600-1.jpeg?quality=90&strip=all&crop=3.7903225806452,0,92.41935483871,100",
+      "published_at": "2026-06-11T08:00:00+00:00",
+      "fetched_at": "2026-06-11T08:37:29.170088+00:00"
+    },
+    {
       "id": 4245,
       "source": "Claude Code Changelog",
       "title": "v2.1.172",
@@ -96,25 +109,25 @@
       "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2werzLSxuGbJH8PlE7OUjI/e2b93554902c5d96ef2550b4fd3579d6/Frame__5_.png?w=1600&h=900&fit=fill",
       "published_at": "2026-06-11T00:00:00+00:00",
       "fetched_at": "2026-06-11T07:52:14.618279+00:00"
-    },
-    {
-      "id": 4239,
-      "source": "OpenAI",
-      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "OpenAI announces its support for the EU Code of Practice on Transparency of AI-Generated Content, building on its ongoing provenance work since 2024. The company highlights its multi-layered approach to content provenance, which includes C2PA Content Credentials metadata and SynthID watermarks for AI-generated images. OpenAI emphasizes that provenance helps people understand where content comes from and aids in detecting disinformation. The company notes that metadata alone is not foolproof, as it can be stripped or lost, so multiple complementary signals are needed. OpenAI frames this as part of its broader engagement with EU AI governance, having previously signed the EU's General-Purpose AI Code of Practice in 2025, and stresses that advancing content transparency requires ecosystem-wide collaboration across news organizations, device manufacturers, platforms, and AI providers.",
-      "opinion": "This announcement is a solid and welcome step, though it reads more as a strategic positioning piece than a groundbreaking technical commitment. OpenAI is essentially formalizing support for something it was already doing—adding C2PA metadata and watermarks to generated images—while aligning itself favorably with EU regulators. The multi-layered approach combining metadata and watermarks is genuinely sensible, since metadata stripping is a real and persistent problem. However, the piece is nota…",
-      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2nHP3xnASZcBNZlIiE1QsM/c7de0b335c1c6a7c5c6bad6813fcf355/Frame.png?w=1600&h=900&fit=fill",
-      "published_at": "2026-06-11T00:00:00+00:00",
-      "fetched_at": "2026-06-11T07:52:14.792828+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 4246,
+          "source": "The Verge AI",
+          "title": "Deezer launches an AI music detector for other streaming services",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Deezer has launched an AI music detector tool that allows users of any streaming platform to scan their playlists for AI-generated music. After being the first major streaming service to label AI-generated content and failing to get competitors to license its detection technology, Deezer is now offering the tool directly to consumers. Users visit Deezer's site, grant access to their streaming service (compatible with 20 platforms including Spotify, Apple Music, SoundCloud, and YouTube Music), and Deezer imports and scans their playlists for AI content, alerting them to any detections. The move comes as competitors like Apple and Spotify have opted for voluntary tagging systems rather than adopting Deezer's detection tech.",
+          "opinion": "This is a clever strategic move by Deezer that serves dual purposes: it positions the company as a champion of human-created music while simultaneously functioning as a marketing tool that drives traffic and brand awareness. By requiring users to interact with Deezer's platform to scan their Spotify or Apple Music libraries, they're creating a touchpoint with potential subscribers. The underlying concern about AI-generated music flooding streaming platforms is legitimate, and Deezer deserves cr…",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/NEW_1200-x-580-pixel-SI-logo-1240x600-1.jpeg?quality=90&strip=all&crop=3.7903225806452,0,92.41935483871,100",
+          "published_at": "2026-06-11T08:00:00+00:00",
+          "fetched_at": "2026-06-11T08:37:29.170088+00:00"
+        },
         {
           "id": 4245,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2werzLSxuGbJH8PlE7OUjI/e2b93554902c5d96ef2550b4fd3579d6/Frame__5_.png?w=1600&h=900&fit=fill",
           "published_at": "2026-06-11T00:00:00+00:00",
           "fetched_at": "2026-06-11T07:52:14.618279+00:00"
-        },
-        {
-          "id": 4239,
-          "source": "OpenAI",
-          "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-          "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "OpenAI announces its support for the EU Code of Practice on Transparency of AI-Generated Content, building on its ongoing provenance work since 2024. The company highlights its multi-layered approach to content provenance, which includes C2PA Content Credentials metadata and SynthID watermarks for AI-generated images. OpenAI emphasizes that provenance helps people understand where content comes from and aids in detecting disinformation. The company notes that metadata alone is not foolproof, as it can be stripped or lost, so multiple complementary signals are needed. OpenAI frames this as part of its broader engagement with EU AI governance, having previously signed the EU's General-Purpose AI Code of Practice in 2025, and stresses that advancing content transparency requires ecosystem-wide collaboration across news organizations, device manufacturers, platforms, and AI providers.",
-          "opinion": "This announcement is a solid and welcome step, though it reads more as a strategic positioning piece than a groundbreaking technical commitment. OpenAI is essentially formalizing support for something it was already doing—adding C2PA metadata and watermarks to generated images—while aligning itself favorably with EU regulators. The multi-layered approach combining metadata and watermarks is genuinely sensible, since metadata stripping is a real and persistent problem. However, the piece is nota…",
-          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2nHP3xnASZcBNZlIiE1QsM/c7de0b335c1c6a7c5c6bad6813fcf355/Frame.png?w=1600&h=900&fit=fill",
-          "published_at": "2026-06-11T00:00:00+00:00",
-          "fetched_at": "2026-06-11T07:52:14.792828+00:00"
         }
       ]
     }
@@ -244,9 +244,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/MarcinAI81/status/2064551188243316926",
+      "author": "MarcinAI81",
+      "headline": "Marcin told Fable 5 to build three apps in one prompt — a Jarvis dashboard, an Apple Fitness clone, and a pixel-perfect hotel site — and it __nailed all three__.",
+      "tweet_id": "37b1eba9-b6bc-8147-93ef-ef82516d7014",
+      "source_text": "Wow Claude Fable 5 is wild!! \n\nI just told it to make 3 apps with 1 prompt. \n\n1. Jarvis Dashboard\n2. Build Apple fitness app\n3. Clone my hotel website pixel perfect\n\nresults have me speechless https://t.co/duwrSgfnxE",
+      "created_time": "2026-06-10T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/MarcinAI81/status/2064551188243316926",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/ClaudeDevs/status/2064394919549210774",
       "author": "ClaudeDevs",
-      "headline": "Claude Fable 5 is live — Anthropic's __new model generation__ ships with a new way of working in Claude Code and on the platform.",
+      "headline": "Claude Fable 5 is live: new model generation, new way of working. Here's the __official getting-started guide__ for Claude Code and the platform.",
       "tweet_id": "37b1eba9-b6bc-81fc-8f2b-ebae8a4fe4f8",
       "source_text": "Claude Fable 5 is here. New model generation, new way of working.\n\nHere's how to get started in Claude Code and on the Claude Platform: 🧵 https://t.co/XcaQVogPDo",
       "created_time": "2026-06-10T21:32:00.000Z",
@@ -272,16 +282,6 @@
       "created_time": "2026-06-10T21:28:00.000Z",
       "canonical_url": "https://twitter.com/Saboo_Shubham_/status/2064535610065592530",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/a16z/status/2064726996257853648",
-      "author": "a16z",
-      "headline": "a16z argues most work conversations are now recorded by default, and a __new category of enterprise software organized around voice__ is emerging.",
-      "tweet_id": "37b1eba9-b6bc-81bf-95c3-f3fe8569fcd4",
-      "source_text": "Most work conversations are now being recorded by default. You should probably assume that everything you say at work is getting recorded from here on out.\n\nWhat’s emerging is a new category of enterprise software, organized around voice instead of text.\n\nThe system of record https://t.co/3XeUBlATrx https://t.co/x2XbsMdZNm",
-      "created_time": "2026-06-10T21:32:00.000Z",
-      "canonical_url": "https://twitter.com/a16z/status/2064726996257853648",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
@@ -289,7 +289,7 @@
       "url": "https://xcancel.com/ClaudeDevs/status/2064949876463645026",
       "author": "frb",
       "item_id": "hn:48487571",
-      "headline": "Anthropic __makes Fable 5's invisible safeguards visible__ after backlash over opaque prompt filtering.",
+      "headline": "Anthropic __makes Fable 5's invisible safeguards visible__ after community backlash over hidden system prompts.",
       "subreddit": null,
       "source_text": "Anthropic makes Fable 5's invisible safeguards visible after backlash",
       "source_type": "hacker_news",
@@ -299,76 +299,76 @@
       "learning_score": 3
     },
     {
-      "url": "https://news.ycombinator.com/item?id=48487528",
-      "author": "eckelhesten",
-      "item_id": "hn:48487528",
-      "headline": "Fable 5 is __weak at flagging prompts correctly__, and the HN discussion isn't kind.",
+      "url": "https://syncodelive.com/",
+      "author": "ketul_shah",
+      "item_id": "hn:48487791",
+      "headline": "__SynCodeLive__ lets teams code, talk, and pair with AI in a single live session.",
       "subreddit": null,
-      "source_text": "Discussion: Fable 5 is weak at flagging prompts correctly",
+      "source_text": "Show HN: SynCodeLive – code and talk with your team along with AI, live",
       "source_type": "hacker_news",
-      "created_time": "2026-06-11T07:49:47+00:00",
+      "created_time": "2026-06-11T08:31:07+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=48487528",
-      "learning_score": 3
-    },
-    {
-      "url": "https://www.indiehackers.com/post/the-diy-infrastructure-trap-i-see-founders-spending-6k-to-save-240-year-can-we-talk-about-this-d31eb8146e",
-      "author": "DharmendraJago",
-      "item_id": "hn:48487551",
-      "headline": "The DIY infrastructure trap: founders __spending $6k to save $240/year__ and nobody's talking about it.",
-      "subreddit": null,
-      "source_text": "The DIY trap: I see founders spending $6k to save $240/year. Can we talk?",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-11T07:52:29+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://indiehackers.com/post/the-diy-infrastructure-trap-i-see-founders-spending-6k-to-save-240-year-can-we-talk-about-this-d31eb8146e",
+      "canonical_url": "https://syncodelive.com",
       "learning_score": 2
     },
     {
-      "url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
-      "author": "trueduke",
-      "item_id": "hn:48487540",
-      "headline": "A case for why AI __hasn't replaced software engineers__ — and won't.",
+      "url": "https://philbooth.me/blog/agentic-coding-and-mental-models",
+      "author": "philbo",
+      "item_id": "hn:48487782",
+      "headline": "Phil Booth makes the case that agentic coding fails when developers __lose their mental models__ of the codebase.",
       "subreddit": null,
-      "source_text": "Why AI hasn't replaced software engineers, and won't",
+      "source_text": "Agentic Coding and Mental Models",
       "source_type": "hacker_news",
-      "created_time": "2026-06-11T07:51:17+00:00",
+      "created_time": "2026-06-11T08:29:49+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
+      "canonical_url": "https://philbooth.me/blog/agentic-coding-and-mental-models",
       "learning_score": 2
     },
     {
-      "url": "https://agents.stackoverflow.com",
-      "author": "CommonGuy",
-      "item_id": "hn:48487507",
-      "headline": "Stack Overflow launches __Stack Overflow for Agents__ — a dedicated endpoint for AI tool use.",
+      "url": "https://www.pcworld.com/article/3162530/framework-delays-laptop-13-pro-due-to-bugs-but-theres-a-bonus.html",
+      "author": "cassianoleal",
+      "item_id": "hn:48487779",
+      "headline": "Framework __delays the Laptop 13 Pro__ due to bugs — but sweetens the wait with a bonus for pre-order customers.",
       "subreddit": null,
-      "source_text": "Stack Overflow for Agents",
+      "source_text": "Framework delays Laptop 13 Pro due to bugs, but there's a bonus",
       "source_type": "hacker_news",
-      "created_time": "2026-06-11T07:46:37+00:00",
+      "created_time": "2026-06-11T08:29:20+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://agents.stackoverflow.com",
+      "canonical_url": "https://pcworld.com/article/3162530/framework-delays-laptop-13-pro-due-to-bugs-but-theres-a-bonus.html",
       "learning_score": 2
     },
     {
-      "url": "https://lumosql.org/",
-      "author": "smartmic",
-      "item_id": "hn:48487469",
-      "headline": "__LumoSQL__ adds security, privacy, and speed features on top of SQLite.",
+      "url": "https://evahill1.substack.com/p/the-vulnerability-bottleneck-has",
+      "author": "evaXhill",
+      "item_id": "hn:48487758",
+      "headline": "The security __vulnerability bottleneck has moved__ — and most teams haven't updated their mental model of where risk actually lives.",
       "subreddit": null,
-      "source_text": "LumoSQL – Add features to SQLite for security, privacy, speed and measurability",
+      "source_text": "The vulnerability bottleneck has moved",
       "source_type": "hacker_news",
-      "created_time": "2026-06-11T07:40:23+00:00",
+      "created_time": "2026-06-11T08:25:11+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://lumosql.org",
+      "canonical_url": "https://evahill1.substack.com/p/the-vulnerability-bottleneck-has",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0927025626003587",
+      "author": "librasteve",
+      "item_id": "hn:48487639",
+      "headline": "Researchers evaluate __LLM-generated code for domain-specific languages__ and find the results vary wildly by DSL complexity.",
+      "subreddit": null,
+      "source_text": "Evaluating LLM-generated code for domain-specific languages",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-11T08:06:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sciencedirect.com/science/article/abs/pii/S0927025626003587",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-11T08:04:32.717762+00:00",
+    "generated_at": "2026-06-11T08:41:41.420175+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "0c644e20b1105dccf933300084543916cc82dfa32ab37fd2e19a2a1da012b148"
+  "content_hash": "116885fc09ef76d42c4cbac222037f813917e1e829a9331ed6bf88ba06f09e80"
 }
