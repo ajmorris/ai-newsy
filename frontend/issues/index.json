@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-10T00:00:00Z",
-  "issueCount": 51,
+  "generatedAt": "2026-06-11T00:00:00Z",
+  "issueCount": 52,
   "latestIssue": {
-    "slug": "2026-06-10",
-    "digestDate": "2026-06-10",
-    "displayDate": "Jun 10, 2026",
-    "issueNumber": "60610",
-    "subject": "ISSUE 60610 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI infrastructure boom is hitting turbulence from all sides today \u2014 Seattle just became the largest U.S. city to ban new AI data centers, Google is slashing subscription prices in what looks like the opening salvo of a commoditization war, and Meta is meanwhile doubling down with a massive new data center deal in India. It's a day that really captures the tension between AI's breakneck expansion and the growing pushback against its real-world costs, with stories ranging from deepfake abuse on X to a surprisingly functional Siri finally showing up to the party.",
+    "slug": "2026-06-11",
+    "digestDate": "2026-06-11",
+    "displayDate": "Jun 11, 2026",
+    "issueNumber": "60611",
+    "subject": "ISSUE 60611 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI industry's reshaping of the global workforce is coming into sharp focus today, with Opendoor's abrupt exit from India sparking a heated debate about whether AI-native teams are beginning to dismantle the offshore outsourcing model that employs millions. Meanwhile, we're also looking at Anthropic's unconventional management structure (Dario Amodei has *one* direct report), Australia's push to avoid repeating resource-boom mistakes as data centers proliferate, and how an astrophysicist is using Codex to tackle one of the universe's hardest simulation problems.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-10.html",
-    "contentHash": "b9897dfe6d80c21e61eb3b1c6943b0e29f183a9bd178082f55a80524c6cca7c6"
+    "urlPath": "/issues/2026-06-11.html",
+    "contentHash": "116885fc09ef76d42c4cbac222037f813917e1e829a9331ed6bf88ba06f09e80"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-11",
+      "digestDate": "2026-06-11",
+      "displayDate": "Jun 11, 2026",
+      "issueNumber": "60611",
+      "subject": "ISSUE 60611 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI industry's reshaping of the global workforce is coming into sharp focus today, with Opendoor's abrupt exit from India sparking a heated debate about whether AI-native teams are beginning to dismantle the offshore outsourcing model that employs millions. Meanwhile, we're also looking at Anthropic's unconventional management structure (Dario Amodei has *one* direct report), Australia's push to avoid repeating resource-boom mistakes as data centers proliferate, and how an astrophysicist is using Codex to tackle one of the universe's hardest simulation problems.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-11.html",
+      "contentHash": "116885fc09ef76d42c4cbac222037f813917e1e829a9331ed6bf88ba06f09e80"
+    },
     {
       "slug": "2026-06-10",
       "digestDate": "2026-06-10",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-05-31.html",
       "contentHash": "31c71d1834d74f6d2b08a7282782b942efc2f4669a7d57f26dd5f29e0c693384"
-    },
-    {
-      "slug": "2026-05-30",
-      "digestDate": "2026-05-30",
-      "displayDate": "May 30, 2026",
-      "issueNumber": "60530",
-      "subject": "ISSUE 60530 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI productivity paradox is getting harder to ignore. Developers are now refusing to work without AI coding tools, yet mounting evidence suggests AI-generated code creates 1.7x more problems \u2014 and companies are spending nearly half their AI tokens just fixing bugs that AI itself introduced. Pair that with today's stories on \"AI psychosis\" driving reckless workforce cuts, a massive 17-million-device botnet takedown, and a startup offering free house cleaning just to film training data for robots, and it's a day that really puts the gap between AI hype and AI reality under the microscope.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-30.html",
-      "contentHash": "c28778bf8d8c3301bc6fce7fd83eb97c0ddedf4dca5b6bc14f02e4c921126e9f"
     }
   ]
 }
