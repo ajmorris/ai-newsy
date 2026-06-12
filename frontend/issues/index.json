@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-11T00:00:00Z",
-  "issueCount": 52,
+  "generatedAt": "2026-06-12T00:00:00Z",
+  "issueCount": 53,
   "latestIssue": {
-    "slug": "2026-06-11",
-    "digestDate": "2026-06-11",
-    "displayDate": "Jun 11, 2026",
-    "issueNumber": "60611",
-    "subject": "ISSUE 60611 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry's reshaping of the global workforce is coming into sharp focus today, with Opendoor's abrupt exit from India sparking a heated debate about whether AI-native teams are beginning to dismantle the offshore outsourcing model that employs millions. Meanwhile, we're also looking at Anthropic's unconventional management structure (Dario Amodei has *one* direct report), Australia's push to avoid repeating resource-boom mistakes as data centers proliferate, and how an astrophysicist is using Codex to tackle one of the universe's hardest simulation problems.",
+    "slug": "2026-06-12",
+    "digestDate": "2026-06-12",
+    "displayDate": "Jun 12, 2026",
+    "issueNumber": "60612",
+    "subject": "ISSUE 60612 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Your Pok\u00e9mon Go habit might have just helped build a military drone navigator, Jeff Bezos is raising $12 billion to create an \"artificial general engineer,\" and SpaceX just shattered every IPO record in history \u2014 it's a day where the sheer scale of ambition (and dollar signs) in tech is hard to wrap your head around. From the largest IPO ever at $75 billion to a congressional race awash in $16 million of AI industry money, today's stories reveal just how deeply artificial intelligence and big tech are reshaping everything from battlefields to ballot boxes. Grab your coffee and settle in, because this one's a lot.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-11.html",
-    "contentHash": "116885fc09ef76d42c4cbac222037f813917e1e829a9331ed6bf88ba06f09e80"
+    "urlPath": "/issues/2026-06-12.html",
+    "contentHash": "c27006e805397bcb713026f1da867f65e89c3966f6d9c288c40545886747c362"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-12",
+      "digestDate": "2026-06-12",
+      "displayDate": "Jun 12, 2026",
+      "issueNumber": "60612",
+      "subject": "ISSUE 60612 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Your Pok\u00e9mon Go habit might have just helped build a military drone navigator, Jeff Bezos is raising $12 billion to create an \"artificial general engineer,\" and SpaceX just shattered every IPO record in history \u2014 it's a day where the sheer scale of ambition (and dollar signs) in tech is hard to wrap your head around. From the largest IPO ever at $75 billion to a congressional race awash in $16 million of AI industry money, today's stories reveal just how deeply artificial intelligence and big tech are reshaping everything from battlefields to ballot boxes. Grab your coffee and settle in, because this one's a lot.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-12.html",
+      "contentHash": "c27006e805397bcb713026f1da867f65e89c3966f6d9c288c40545886747c362"
+    },
     {
       "slug": "2026-06-11",
       "digestDate": "2026-06-11",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-01.html",
       "contentHash": "bb23a59c284931b7335b31d535dbf5aa5fe22372601fabf0b4ce5e5383e74193"
-    },
-    {
-      "slug": "2026-05-31",
-      "digestDate": "2026-05-31",
-      "displayDate": "May 31, 2026",
-      "issueNumber": "60531",
-      "subject": "ISSUE 60531 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The developer world is buzzing today as GitHub Copilot's surprise switch to token-based billing has some users staring down projected monthly costs jumping from $50 to over $3,000 \u2014 and they're not happy about it. But pricing drama isn't the only big move shaking things up: SoftBank is pouring a staggering \u20ac75 billion into French data centers, Meta's cooking up an AI pendant, and Google's new always-on assistant Gemini Spark is getting its first real-world test drive. From your wallet to your wardrobe to the Vatican, AI is making itself at home everywhere \u2014 let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-05-31.html",
-      "contentHash": "31c71d1834d74f6d2b08a7282782b942efc2f4669a7d57f26dd5f29e0c693384"
     }
   ]
 }
