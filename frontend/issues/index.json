@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-12T00:00:00Z",
-  "issueCount": 53,
+  "generatedAt": "2026-06-13T00:00:00Z",
+  "issueCount": 54,
   "latestIssue": {
-    "slug": "2026-06-12",
-    "digestDate": "2026-06-12",
-    "displayDate": "Jun 12, 2026",
-    "issueNumber": "60612",
-    "subject": "ISSUE 60612 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Your Pok\u00e9mon Go habit might have just helped build a military drone navigator, Jeff Bezos is raising $12 billion to create an \"artificial general engineer,\" and SpaceX just shattered every IPO record in history \u2014 it's a day where the sheer scale of ambition (and dollar signs) in tech is hard to wrap your head around. From the largest IPO ever at $75 billion to a congressional race awash in $16 million of AI industry money, today's stories reveal just how deeply artificial intelligence and big tech are reshaping everything from battlefields to ballot boxes. Grab your coffee and settle in, because this one's a lot.",
+    "slug": "2026-06-13",
+    "digestDate": "2026-06-13",
+    "displayDate": "Jun 13, 2026",
+    "issueNumber": "60613",
+    "subject": "ISSUE 60613 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing today as the U.S. government made a dramatic move to shut down access to Anthropic's most powerful models \u2014 Claude Fable 5 and Claude Mythos 5 \u2014 over national security concerns tied to a claimed jailbreak vulnerability, a decision Anthropic is publicly pushing back on. Beyond that bombshell, we've got a rapid-fire trio of Claude Code updates tightening admin controls and polishing the model picker, Andrew Yang making the case that lowering the cost of living is the next big startup play, SpaceX's record-shattering IPO, and a Dutch court case highlighting the dangers of AI-altered images. Let's dig in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-12.html",
-    "contentHash": "c27006e805397bcb713026f1da867f65e89c3966f6d9c288c40545886747c362"
+    "urlPath": "/issues/2026-06-13.html",
+    "contentHash": "c113d8ec12f4355e2117ecde5168ef5ac4830064cc477377ce802b81ed9034e6"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-13",
+      "digestDate": "2026-06-13",
+      "displayDate": "Jun 13, 2026",
+      "issueNumber": "60613",
+      "subject": "ISSUE 60613 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing today as the U.S. government made a dramatic move to shut down access to Anthropic's most powerful models \u2014 Claude Fable 5 and Claude Mythos 5 \u2014 over national security concerns tied to a claimed jailbreak vulnerability, a decision Anthropic is publicly pushing back on. Beyond that bombshell, we've got a rapid-fire trio of Claude Code updates tightening admin controls and polishing the model picker, Andrew Yang making the case that lowering the cost of living is the next big startup play, SpaceX's record-shattering IPO, and a Dutch court case highlighting the dangers of AI-altered images. Let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-13.html",
+      "contentHash": "c113d8ec12f4355e2117ecde5168ef5ac4830064cc477377ce802b81ed9034e6"
+    },
     {
       "slug": "2026-06-12",
       "digestDate": "2026-06-12",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-02.html",
       "contentHash": "78a4707e9deac389c560af026d51a17adad586875ecea52749e3f6de5889a489"
-    },
-    {
-      "slug": "2026-06-01",
-      "digestDate": "2026-06-01",
-      "displayDate": "Jun 01, 2026",
-      "issueNumber": "60601",
-      "subject": "ISSUE 60601 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI backlash is getting louder \u2014 and more creative. From college grads booing AI mentions and DuckDuckGo downloads surging 30% as users flee Google's AI push, to Erin Brockovich crowdsourcing a map of secretive data centers and UK charities fighting AI-powered age checks on child asylum seekers, today's stories paint a picture of a society grappling with where to draw the line. We've also got tech billionaires dreaming of conscious AI conquering the cosmos, a surprisingly thoughtful book on knowledge graphs, and yes, an AI weed vape that pays you in Bitcoin \u2014 because of course that exists.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-01.html",
-      "contentHash": "bb23a59c284931b7335b31d535dbf5aa5fe22372601fabf0b4ce5e5383e74193"
     }
   ]
 }
