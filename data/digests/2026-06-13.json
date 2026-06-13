@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/elvissun/status/2065434256869065128",
       "author": "elvissun",
-      "headline": "Elvis Sun trained Fable 5 on __thousands of legendary headlines spanning 100 years__ to build a headline-writing skill — his argument: you can't teach taste with rules, only examples.",
+      "headline": "Elvis Sun trained Fable 5 on __1,000+ legendary headlines spanning 100 years__ to build a headline-generation skill — his argument: you can't teach taste with rules, only examples.",
       "tweet_id": "37d1eba9-b6bc-8183-9883-d03212efc7d7",
       "source_text": "I made Fable 5 study 1000s of legendary headlines over 100 years to build the world's best skill for writing headlines.\n\nthe reason is simple: you can't teach taste with rules.\n\nyou teach it taste with examples.\n\nand the result is incredible.\n\nthe new /headline-generator skill in https://t.co/k5UymTSp0w",
       "created_time": "2026-06-12T21:22:00.000Z",
@@ -244,16 +244,6 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/shannholmberg/status/2065501899206615185",
-      "author": "shannholmberg",
-      "headline": "Holmberg also maps out the difference between __coding loops and marketing loops__ for agents — a distinction most builders are ignoring.",
-      "tweet_id": "37d1eba9-b6bc-81e4-bb43-cf98b69ad02d",
-      "source_text": "agent loops have been a hot topic the past week\n\nbut I have not seen much discussion around coding vs marketing loops\n\nhere is a simplified visualisation of how you can think about them https://t.co/XhcchUi6Sc https://t.co/apQyjMxAgt",
-      "created_time": "2026-06-12T21:17:00.000Z",
-      "canonical_url": "https://twitter.com/shannholmberg/status/2065501899206615185",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/9to5mac/status/2065259694797537783",
       "author": "9to5mac",
       "headline": "9to5Mac breaks down Apple's new Foundation Models: __on-device AI, cloud AI, and everything in between__.",
@@ -264,45 +254,81 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/ClaudeDevs/status/2065494480837583297",
-      "author": "ClaudeDevs",
-      "headline": "Anthropic adds new sandbox guides for Claude Managed Agents — you can now run them on __your own infrastructure with Blaxel, E2B, Google Cloud, Namespace, or Superserve__.",
-      "tweet_id": "37d1eba9-b6bc-8151-9277-fa20a9754c73",
-      "source_text": "Claude Managed Agents can operate in a sandbox you control, on your own infrastructure or with any provider you choose.\n\nToday we added new guides for @blaxelAI, @e2b, @googlecloud, @namespacelabs, and @superserve_ai, so you can choose the best fit for your use case. https://t.co/7uFMGWUTkp",
-      "created_time": "2026-06-12T18:32:00.000Z",
-      "canonical_url": "https://twitter.com/ClaudeDevs/status/2065494480837583297",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/shannholmberg/status/2065430546172596713",
       "author": "shannholmberg",
-      "headline": "Shann Holmberg argues __distribution is the moat now__ for AI startups — the model and harness aren't the edge anymore, getting in front of people is.",
+      "headline": "Shannon Holmberg argues __distribution is the moat now__ for AI startups — the model and harness aren't the edge anymore, getting in front of people is.",
       "tweet_id": "37d1eba9-b6bc-81dd-bc7a-d794cc84f553",
       "source_text": "how to creatively distribute your ai startup\n\nnew ai startup ships every day, most wrapping a similar model in a similar way. so the model & harness is not the edge anymore, how you get in front of people is\n\nto summarize, distribution is the moat now\n\nhere are 3 creative ways to https://t.co/vB9QGN8Pvb https://t.co/EoV3u17IZ4",
       "created_time": "2026-06-12T18:32:00.000Z",
       "canonical_url": "https://twitter.com/shannholmberg/status/2065430546172596713",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/hey_madni/status/2065457222239543672",
+      "author": "hey_madni",
+      "headline": "The __$599 Mac Mini M4 + Ollama + Claude Code__ stack is replacing $4,800/year in subscriptions — one env var redirects Claude Code to your local box.",
+      "tweet_id": "37d1eba9-b6bc-810c-8417-ecb211faa692",
+      "source_text": "$4,800/year subscription stack vs $599 hardware\n\nMac Mini M4 + Ollama + Claude Code\n\nApple Stores ran out of Mac Minis. \n\nnot because of marketing. because developers figured out the math.\n\none env var redirects Claude Code to your $599 box: https://t.co/5utqbR5ZpZ https://t.co/LPFTRDDJah",
+      "created_time": "2026-06-12T21:22:00.000Z",
+      "canonical_url": "https://twitter.com/hey_madni/status/2065457222239543672",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/Zephyr_hg/status/2065431425113825313",
+      "author": "Zephyr_hg",
+      "headline": "Zephyr_hg spent a year reading six morning news sources by hand, then built one __Cowork Routine that does the same job before sunrise__ — 90 minutes a day reclaimed.",
+      "tweet_id": "37d1eba9-b6bc-81cc-8539-de8aa949a358",
+      "source_text": "For a year I read 6 morning news sources by hand before I'd write a word.\n\nBuilt one Cowork Routine in May.\n\nIt does the same job before sunrise.\n\n90 minutes a day I never got back.\n\nThe slowest part of my day was the part I had Claude trained to do. https://t.co/2ytReXQS6j https://t.co/cKirwvAbnr",
+      "created_time": "2026-06-12T21:17:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2065431425113825313",
+      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
-      "url": "https://thecoder.io/blog/not-your-weights",
-      "author": "pixelhed",
-      "item_id": "hn:48513938",
-      "headline": "Anthropic's Claude Fable 5 export ban sparks a sharp take: __not your weights, not your workflow__.",
+      "url": "https://en.wikipedia.org/wiki/Lojban",
+      "author": "tosh",
+      "item_id": "hn:48514747",
+      "headline": "__Lojban__, the constructed language designed to be syntactically unambiguous, resurfaces on Hacker News.",
       "subreddit": null,
-      "source_text": "Not Your Weights, Not Your Workflow (Claude Fable 5 Export Ban)",
+      "source_text": "Lojban",
       "source_type": "hacker_news",
-      "created_time": "2026-06-13T06:15:24+00:00",
+      "created_time": "2026-06-13T08:09:36+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://thecoder.io/blog/not-your-weights",
-      "learning_score": 3
+      "canonical_url": "https://en.wikipedia.org/wiki/Lojban",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CBFlWUnjkRc",
+      "author": "Cider9986",
+      "item_id": "hn:48514644",
+      "headline": "A case for why you should __teach your kids to pirate__ — not ships, software.",
+      "subreddit": null,
+      "source_text": "Teach Your Kids to Pirate. Now [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-13T07:57:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=CBFlWUnjkRc",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/lauriewired/status/2065553747078709500",
+      "author": "tosh",
+      "item_id": "hn:48514595",
+      "headline": "LaurieWired makes the case that old games feel \"hard\" because __modern emulators add layers of abstraction__ the original hardware never had.",
+      "subreddit": null,
+      "source_text": "Old games feel \"hard\" because modern emulators have layers of abstraction",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-13T07:50:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/lauriewired/status/2065553747078709500",
+      "learning_score": 2
     },
     {
       "url": "https://www.drinkner.com/",
       "author": "alexsa",
       "item_id": "hn:48514459",
-      "headline": "__Drinkner__ matches whatever's in your bar to the 102 official IBA cocktails — AI only kicks in when nothing fits.",
+      "headline": "Drinkner __matches your bar to 102 IBA cocktails__ and only calls AI when it can't find a recipe match.",
       "subreddit": null,
       "source_text": "Drinkner – Matches your bar to the 102 IBA cocktails, AI only on miss",
       "source_type": "hacker_news",
@@ -315,7 +341,7 @@
       "url": "https://developer.microsoft.com/blog/your-agent-just-scaffolded-a-project-from-2020",
       "author": "waldekm",
       "item_id": "hn:48514399",
-      "headline": "Microsoft warns: your coding agent just __scaffolded a project from 2020__, and you probably didn't notice.",
+      "headline": "Microsoft's developer blog warns: your agent just __scaffolded a project from 2020__ and you didn't notice.",
       "subreddit": null,
       "source_text": "Agent just scaffolded a project from 2020",
       "source_type": "hacker_news",
@@ -336,39 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://addyosmani.com/blog/loop-engineering",
       "learning_score": 2
-    },
-    {
-      "url": "https://webcli.sh",
-      "author": "keepamovin",
-      "item_id": "hn:48514294",
-      "headline": "__webcli.sh__ lets you browse the web from the console using a Textual-based agent interface.",
-      "subreddit": null,
-      "source_text": "Show HN: Browse the web, from the console, using a Textual Agent Interface",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-13T07:05:55+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://webcli.sh",
-      "learning_score": 2
-    },
-    {
-      "url": "https://courtyard.io/blog/post/from-a-slack-link-to-production-in-under-48-hours-cloning-shopifys-quick-with-devin",
-      "author": "joetyson",
-      "item_id": "hn:48514194",
-      "headline": "Courtyard went from a Slack link to production in __under 48 hours cloning Shopify's \"Quick\"__ with Devin.",
-      "subreddit": null,
-      "source_text": "From a Slack link to production in under 48 hours: cloning Shopify's \"Quick\"",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-13T06:53:49+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://courtyard.io/blog/post/from-a-slack-link-to-production-in-under-48-hours-cloning-shopifys-quick-with-devin",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-13T07:40:26.494335+00:00",
+    "generated_at": "2026-06-13T08:13:03.215003+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "7b5feeebd1a53c0655883599752e0f33ff49b80d8aadc53174b1d348ab1719b8"
+  "content_hash": "c113d8ec12f4355e2117ecde5168ef5ac4830064cc477377ce802b81ed9034e6"
 }
