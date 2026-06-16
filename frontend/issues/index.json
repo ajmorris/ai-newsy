@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-15T00:00:00Z",
-  "issueCount": 56,
+  "generatedAt": "2026-06-16T00:00:00Z",
+  "issueCount": 57,
   "latestIssue": {
-    "slug": "2026-06-15",
-    "digestDate": "2026-06-15",
-    "displayDate": "Jun 15, 2026",
-    "issueNumber": "60615",
-    "subject": "ISSUE 60615 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI layoff wave is accelerating at a staggering pace \u2014 nearly 150,000 tech workers cut so far this year \u2014 but here's the twist: while companies point to AI as the reason, a growing chorus of critics (including Marc Andreessen) say it's really just a convenient excuse for unwinding pandemic-era overhiring. That tension sits at the heart of today's biggest stories, where we're also tracking a red-hot IPO summer that's minting trillionaires and reshaping the tech power hierarchy, national security fears over China potentially accessing Anthropic's Mythos model, and OpenAI's $150 million bet that the real AI bottleneck isn't the technology \u2014 it's getting enterprises to actually use it.",
+    "slug": "2026-06-16",
+    "digestDate": "2026-06-16",
+    "displayDate": "Jun 16, 2026",
+    "issueNumber": "60616",
+    "subject": "ISSUE 60616 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The biggest story in AI right now isn't about a new model launch \u2014 it's about what happens after one. Anthropic's clash with the Trump administration over its Claude Mythos 5 and Fable 5 models has escalated into a full-blown standoff, with export control orders, weekend scrambles, and serious questions about whether the government's response was ever really about a jailbreak at all. We've got multiple angles on that saga today, plus Meta's new AI-powered search on Facebook, a $62.5M raise for a Malaysian AI messaging platform, and how botanists are using AI to fight plant extinction.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-15.html",
-    "contentHash": "a475b9aec00ddcb52ae00855b936123c669fa283fb4ad750d586d349eeddf308"
+    "urlPath": "/issues/2026-06-16.html",
+    "contentHash": "897642a9aeecba546161efed46238a84249a5c527b6ba3a571866979656f8941"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-16",
+      "digestDate": "2026-06-16",
+      "displayDate": "Jun 16, 2026",
+      "issueNumber": "60616",
+      "subject": "ISSUE 60616 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The biggest story in AI right now isn't about a new model launch \u2014 it's about what happens after one. Anthropic's clash with the Trump administration over its Claude Mythos 5 and Fable 5 models has escalated into a full-blown standoff, with export control orders, weekend scrambles, and serious questions about whether the government's response was ever really about a jailbreak at all. We've got multiple angles on that saga today, plus Meta's new AI-powered search on Facebook, a $62.5M raise for a Malaysian AI messaging platform, and how botanists are using AI to fight plant extinction.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-16.html",
+      "contentHash": "897642a9aeecba546161efed46238a84249a5c527b6ba3a571866979656f8941"
+    },
     {
       "slug": "2026-06-15",
       "digestDate": "2026-06-15",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-05.html",
       "contentHash": "1ea48daea79b7e426fc928053605bd58adf28e5b65b79823b4095844e95ab871"
-    },
-    {
-      "slug": "2026-06-04",
-      "digestDate": "2026-06-04",
-      "displayDate": "Jun 04, 2026",
-      "issueNumber": "60604",
-      "subject": "ISSUE 60604 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "SpaceX is gearing up for what could be the largest IPO in history, potentially pushing Elon Musk into trillionaire territory \u2014 and that's just one of several massive stories today. We've also got Seattle delivering a striking rebuke to Big Tech with a datacenter moratorium, a vibe-coding startup crossing $400 million in revenue with barely 150 employees, and a tech journalist's surprisingly emotional year living as an AI lab rat. Let's dive in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-04.html",
-      "contentHash": "b3cff53ec25b99fef06bf14e50045617919ecd590b60608ffde53bec43f1993d"
     }
   ]
 }
