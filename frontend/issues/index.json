@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-16T00:00:00Z",
-  "issueCount": 57,
+  "generatedAt": "2026-06-17T00:00:00Z",
+  "issueCount": 58,
   "latestIssue": {
-    "slug": "2026-06-16",
-    "digestDate": "2026-06-16",
-    "displayDate": "Jun 16, 2026",
-    "issueNumber": "60616",
-    "subject": "ISSUE 60616 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story in AI right now isn't about a new model launch \u2014 it's about what happens after one. Anthropic's clash with the Trump administration over its Claude Mythos 5 and Fable 5 models has escalated into a full-blown standoff, with export control orders, weekend scrambles, and serious questions about whether the government's response was ever really about a jailbreak at all. We've got multiple angles on that saga today, plus Meta's new AI-powered search on Facebook, a $62.5M raise for a Malaysian AI messaging platform, and how botanists are using AI to fight plant extinction.",
+    "slug": "2026-06-17",
+    "digestDate": "2026-06-17",
+    "displayDate": "Jun 17, 2026",
+    "issueNumber": "60617",
+    "subject": "ISSUE 60617 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The Anthropic-Trump administration showdown is quickly becoming the defining tech story of the summer \u2014 and paradoxically, it might be the best thing that ever happened to the company's bottom line. With new data showing Anthropic has overtaken OpenAI in business spending for the first time, a $965 billion valuation, and its first profitable quarter, the AI safety company's clash with Washington is reshaping the power dynamics between government and the AI industry in ways nobody predicted. Today we're also diving into SpaceX's jaw-dropping post-IPO surge past Amazon, the DOJ stepping in to shield Musk's data centers from a pollution lawsuit, and Google DeepMind's ambitious play to fix the UK's housing crisis.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-16.html",
-    "contentHash": "897642a9aeecba546161efed46238a84249a5c527b6ba3a571866979656f8941"
+    "urlPath": "/issues/2026-06-17.html",
+    "contentHash": "5e810ffd3333fde68c3d3f75c5445e2c7764100623f0ba43aa6165fbc20c1715"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-17",
+      "digestDate": "2026-06-17",
+      "displayDate": "Jun 17, 2026",
+      "issueNumber": "60617",
+      "subject": "ISSUE 60617 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The Anthropic-Trump administration showdown is quickly becoming the defining tech story of the summer \u2014 and paradoxically, it might be the best thing that ever happened to the company's bottom line. With new data showing Anthropic has overtaken OpenAI in business spending for the first time, a $965 billion valuation, and its first profitable quarter, the AI safety company's clash with Washington is reshaping the power dynamics between government and the AI industry in ways nobody predicted. Today we're also diving into SpaceX's jaw-dropping post-IPO surge past Amazon, the DOJ stepping in to shield Musk's data centers from a pollution lawsuit, and Google DeepMind's ambitious play to fix the UK's housing crisis.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-17.html",
+      "contentHash": "5e810ffd3333fde68c3d3f75c5445e2c7764100623f0ba43aa6165fbc20c1715"
+    },
     {
       "slug": "2026-06-16",
       "digestDate": "2026-06-16",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-06.html",
       "contentHash": "7e8f87e6a224fd5d67469f0e558c15d8b68067ee181e5b516b45eb25ac61f993"
-    },
-    {
-      "slug": "2026-06-05",
-      "digestDate": "2026-06-05",
-      "displayDate": "Jun 05, 2026",
-      "issueNumber": "60605",
-      "subject": "ISSUE 60605 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic's confidential IPO filing is arguably the biggest story in AI today \u2014 with annualized revenue soaring to $47 billion and a $965 billion valuation, the company is making a massive bet that the AI boom is far from over. But that's just one thread in a day packed with big moves: Mira Murati resurfaced with a tantalizing preview of \"interaction models\" that could reshape how we communicate with AI, Airbnb's Brian Chesky is launching his own AI lab out of frustration with existing models, and Canada unveiled a national AI strategy aimed at reducing dependence on the U.S. Buckle in \u2014 there's a lot to unpack.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-05.html",
-      "contentHash": "1ea48daea79b7e426fc928053605bd58adf28e5b65b79823b4095844e95ab871"
     }
   ]
 }
