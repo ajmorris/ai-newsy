@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 4455,
+      "source": "NY Times",
+      "title": "Here’s the latest.",
+      "url": "https://www.nytimes.com/live/2026/06/17/world/g7-summit-trump-france/g7-evian-summit",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article covers the G7 summit taking place in Evian, France, where leaders are set to discuss artificial intelligence and global economic imbalances on Wednesday. The summit agenda is also shadowed by unresolved questions regarding Iran.",
+      "opinion": "This appears to be a straightforward live news update from the New York Times covering the G7 summit. The brief snippet suggests a packed diplomatic agenda where AI governance and economic concerns share the stage with geopolitical tensions over Iran. The juxtaposition of forward-looking technology policy discussions with persistent security concerns reflects the complex balancing act facing world leaders. Without more detail from the full article, it's difficult to assess the depth of coverage…",
+      "image_url": "",
+      "published_at": "2026-06-17T08:26:27+00:00",
+      "fetched_at": "2026-06-17T08:47:55.465352+00:00"
+    },
+    {
       "id": 4454,
       "source": "DATAVERSITY Smart Data",
       "title": "AI Is Increasing the Strategic Importance of Data Modeling",
@@ -96,25 +109,25 @@
       "image_url": "",
       "published_at": "2026-06-16T21:00:04+00:00",
       "fetched_at": "2026-06-17T08:02:35.654942+00:00"
-    },
-    {
-      "id": 4430,
-      "source": "TechCrunch AI",
-      "title": "SpaceX valuation balloons to $2.6T, briefly passes Amazon",
-      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "SpaceX's valuation surged to $2.6 trillion (briefly hitting $2.9 trillion), momentarily surpassing Amazon to become the fifth-most valuable company in the world, just days after its historic IPO that debuted at $1.7 trillion. The spike was fueled by news of SpaceX acquiring AI coding company Cursor for $60 billion in shares and the start of options trading, despite the company posting a $4.9 billion loss on $18.7 billion in revenue last year. SpaceX has added AI-related revenue streams through compute leasing deals with Anthropic and Google, and its former xAI division has been absorbed into the company. With only about 4% of total shares available for public trading, experts noted the stock would be susceptible to wild swings, which proved true as over half the available shares changed hands in a single trading day.",
-      "opinion": "This valuation is extraordinarily disconnected from fundamentals — a company losing $4.9 billion annually on $18.7 billion in revenue being valued at nearly $3 trillion while Amazon earns $78 billion in profit on $717 billion in revenue at a similar market cap is remarkable. The combination of a tiny float (4% of shares), options trading launch, meme-stock energy around Elon Musk, and AI hype is creating a perfect storm for speculative excess. The Cursor acquisition and non-binding compute deal…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2023/01/GettyImages-1244294229.jpg?resize=1200,675",
-      "published_at": "2026-06-16T20:11:00+00:00",
-      "fetched_at": "2026-06-17T08:02:31.378549+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 4455,
+          "source": "NY Times",
+          "title": "Here’s the latest.",
+          "url": "https://www.nytimes.com/live/2026/06/17/world/g7-summit-trump-france/g7-evian-summit",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article covers the G7 summit taking place in Evian, France, where leaders are set to discuss artificial intelligence and global economic imbalances on Wednesday. The summit agenda is also shadowed by unresolved questions regarding Iran.",
+          "opinion": "This appears to be a straightforward live news update from the New York Times covering the G7 summit. The brief snippet suggests a packed diplomatic agenda where AI governance and economic concerns share the stage with geopolitical tensions over Iran. The juxtaposition of forward-looking technology policy discussions with persistent security concerns reflects the complex balancing act facing world leaders. Without more detail from the full article, it's difficult to assess the depth of coverage…",
+          "image_url": "",
+          "published_at": "2026-06-17T08:26:27+00:00",
+          "fetched_at": "2026-06-17T08:47:55.465352+00:00"
+        },
         {
           "id": 4454,
           "source": "DATAVERSITY Smart Data",
@@ -205,19 +218,6 @@
           "image_url": "",
           "published_at": "2026-06-16T21:00:04+00:00",
           "fetched_at": "2026-06-17T08:02:35.654942+00:00"
-        },
-        {
-          "id": 4430,
-          "source": "TechCrunch AI",
-          "title": "SpaceX valuation balloons to $2.6T, briefly passes Amazon",
-          "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "SpaceX's valuation surged to $2.6 trillion (briefly hitting $2.9 trillion), momentarily surpassing Amazon to become the fifth-most valuable company in the world, just days after its historic IPO that debuted at $1.7 trillion. The spike was fueled by news of SpaceX acquiring AI coding company Cursor for $60 billion in shares and the start of options trading, despite the company posting a $4.9 billion loss on $18.7 billion in revenue last year. SpaceX has added AI-related revenue streams through compute leasing deals with Anthropic and Google, and its former xAI division has been absorbed into the company. With only about 4% of total shares available for public trading, experts noted the stock would be susceptible to wild swings, which proved true as over half the available shares changed hands in a single trading day.",
-          "opinion": "This valuation is extraordinarily disconnected from fundamentals — a company losing $4.9 billion annually on $18.7 billion in revenue being valued at nearly $3 trillion while Amazon earns $78 billion in profit on $717 billion in revenue at a similar market cap is remarkable. The combination of a tiny float (4% of shares), options trading launch, meme-stock energy around Elon Musk, and AI hype is creating a perfect storm for speculative excess. The Cursor acquisition and non-binding compute deal…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2023/01/GettyImages-1244294229.jpg?resize=1200,675",
-          "published_at": "2026-06-16T20:11:00+00:00",
-          "fetched_at": "2026-06-17T08:02:31.378549+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/LandseerEnga/status/2066634638366593408",
       "author": "LandseerEnga",
-      "headline": "Claude Code and Codex can now __drive iOS features on a live device__ — no scripts, no selectors, no Xcode, just one prompt.",
+      "headline": "Claude Code and Codex can now __drive iOS features on a live device__ — no scripts, no selectors, no Xcode.",
       "tweet_id": "3821eba9-b6bc-814c-aa1d-c899d8b14d75",
       "source_text": "claude code and codex can now drive iOS features on a live device.\n\nno scripts. no selectors. no xcode.\n\none prompt https://t.co/rUdRU5owy4",
       "created_time": "2026-06-17T07:12:00.000Z",
@@ -254,24 +254,14 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/NathanMcNulty/status/2066993812627710184",
-      "author": "NathanMcNulty",
-      "headline": "Nathan McNulty makes the case that nobody wants to pay licensing plus API rates for __AI slot machines with non-deterministic ROI__.",
-      "tweet_id": "3821eba9-b6bc-8150-afb8-c5184b3e2af5",
-      "source_text": "Nobody is paying licensing costs plus API rates for their employees to play with AI slot machines\n\nBusinesses want predictable pricing and outcomes\n\nROI should not be this non-deterministic https://t.co/nuj7dG0pN7",
-      "created_time": "2026-06-17T07:02:00.000Z",
-      "canonical_url": "https://twitter.com/NathanMcNulty/status/2066993812627710184",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/jeffteper/status/2067017152180486436",
-      "author": "jeffteper",
-      "headline": "Jeff Teper says Copilot Cowork lets people __delegate complex long-running tasks__ across Microsoft 365 and Dynamics 365, with GA plugins shipping today.",
-      "tweet_id": "3821eba9-b6bc-8187-ab2f-e5cdda503529",
-      "source_text": "Big day! Microsoft Copilot Cowork lets people delegate complex long running tasks to AI. But the power of this comes from workflows that transcend systems for collaboration and business processes including Microsoft 365 and Dynamics 365.\n\nToday is also the GA of the plugins for https://t.co/g4OmG1BpGG",
-      "created_time": "2026-06-17T07:02:00.000Z",
-      "canonical_url": "https://twitter.com/jeffteper/status/2067017152180486436",
-      "learning_score": 3
+      "url": "https://twitter.com/orinthomas/status/2067010909432877304",
+      "author": "orinthomas",
+      "headline": "__Copilot Cowork__ hits general availability, turning Microsoft 365 Copilot from drafting assistant into agentic task runner.",
+      "tweet_id": "3821eba9-b6bc-815d-b840-db16a94ca312",
+      "source_text": "Copilot Cowork is now generally available https://t.co/CM629mbiNa https://t.co/UUbJ4kJC78",
+      "created_time": "2026-06-17T07:17:00.000Z",
+      "canonical_url": "https://twitter.com/orinthomas/status/2067010909432877304",
+      "learning_score": 2
     },
     {
       "url": "https://twitter.com/edwardsanchez/status/2067001848717045841",
@@ -282,6 +272,16 @@
       "created_time": "2026-06-17T07:07:00.000Z",
       "canonical_url": "https://twitter.com/edwardsanchez/status/2067001848717045841",
       "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/esandurrani/status/2062377518951485744",
+      "author": "esandurrani",
+      "headline": "Honen partnered with NVIDIA to bring AI literacy to __250,000 learners__ by turning org docs into interactive courses that self-improve.",
+      "tweet_id": "3821eba9-b6bc-8139-9a30-dd4502b708af",
+      "source_text": "Introducing Honen  \n\nThe world's fastest way to train skills needed to succeed in the Al era  \n\nSimply drop in your org's docs  \n\nGet interactive courses that self-improve over time  \nTo prove out our vision, we partnered with NVIDIA to bring AI literacy to 250,000 learners  \n\nBy https://t.co/8Ixfx1hgCM",
+      "created_time": "2026-06-17T07:07:00.000Z",
+      "canonical_url": "https://twitter.com/esandurrani/status/2062377518951485744",
+      "learning_score": 2
     }
   ],
   "community_headlines": [
@@ -289,7 +289,7 @@
       "url": "https://xcancel.com/ArtificialAnlys/status/2067135640249209175",
       "author": "alecco",
       "item_id": "hn:48567329",
-      "headline": "__GLM-5.2__ takes the top spot among open-weight models on the Artificial Analysis Intelligence Index v4.1.",
+      "headline": "__GLM-5.2__ is now the leading open-weights model on the Artificial Analysis Intelligence Index v4.1.",
       "subreddit": null,
       "source_text": "GLM-5.2 is the leading open weights model on the Intelligence Index v4.1",
       "source_type": "hacker_news",
@@ -302,7 +302,7 @@
       "url": "https://nextweekai.com/blog/claude-code-27-skills-ai-engineering-team/",
       "author": "javatuts",
       "item_id": "hn:48567320",
-      "headline": "A guide to turning Claude Code into a __27-skill AI engineering team__ using persistent skill files.",
+      "headline": "A breakdown of 27 Claude Code skills that effectively __turn it into an AI engineering team__.",
       "subreddit": null,
       "source_text": "Claude Code Skills Turn It into an AI Engineering Team",
       "source_type": "hacker_news",
@@ -312,23 +312,10 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/arena/status/2066957802741043641",
-      "author": "stared",
-      "item_id": "hn:48567170",
-      "headline": "GLM 5.2 ranks __#2 in Code Arena: Frontend__, reinforcing its open-weight momentum across multiple benchmarks.",
-      "subreddit": null,
-      "source_text": "GLM 5.2 ranks #2 in Code Arena: Frontend",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-17T07:51:29+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://twitter.com/arena/status/2066957802741043641",
-      "learning_score": 3
-    },
-    {
       "url": "https://www.indiatoday.in/science/story/monsoon-has-vanished-imd-satellite-images-show-rain-collapse-india-faces-64-deficit-2926669-2026-06-15",
       "author": "koolhead17",
       "item_id": "hn:48567146",
-      "headline": "India's monsoon has effectively vanished: satellite images show rain collapse with a __64% deficit__ across the country.",
+      "headline": "India's monsoon has effectively vanished — satellite images show rain collapse with a __64% deficit__ across the country.",
       "subreddit": null,
       "source_text": "Monsoon has vanished: Satellite images of rain collapse, India faces 64% deficit",
       "source_type": "hacker_news",
@@ -338,37 +325,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://tinytapeout.com/news/mini-mosbius/",
-      "author": "thomasjb",
-      "item_id": "hn:48567350",
-      "headline": "__Mini MOSBius__ — Tiny Tapeout's latest open-source chip design brings a Möbius strip topology to MOSFET layout.",
+      "url": "https://honeylabs.net/blog/the-cloud-fleet-behind-cve-2026-4020",
+      "author": "Robbedoes",
+      "item_id": "hn:48567574",
+      "headline": "Honeylabs traced CVE-2026-4020 attackers and found __most of them are the same client__ running a coordinated cloud fleet.",
       "subreddit": null,
-      "source_text": "Mini MOSBius",
+      "source_text": "Most of the CVE-2026-4020 attackers are the same client",
       "source_type": "hacker_news",
-      "created_time": "2026-06-17T08:15:40+00:00",
+      "created_time": "2026-06-17T08:47:14+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://tinytapeout.com/news/mini-mosbius",
+      "canonical_url": "https://honeylabs.net/blog/the-cloud-fleet-behind-cve-2026-4020",
       "learning_score": 2
     },
     {
-      "url": "https://meta.wikimedia.org/wiki/Friends_of_gays_should_not_be_allowed_to_edit_articles",
-      "author": "mellosouls",
-      "item_id": "hn:48567343",
-      "headline": "A 2007 Wikimedia policy page titled \"__Friends of gays should not be allowed to edit articles__\" resurfaces as a snapshot of early wiki governance absurdity.",
+      "url": "https://web.archive.org/web/20080103143526/http://www.stsc.hill.af.mil:80/CrossTalk/2008/01/0801DewarSchonberg.html",
+      "author": "tosh",
+      "item_id": "hn:48567546",
+      "headline": "A 2008 paper asked __where the software engineers of tomorrow__ would come from — still uncomfortable reading eighteen years later.",
       "subreddit": null,
-      "source_text": "Friends of gays should not be allowed to edit articles",
+      "source_text": "Computer Science Education: Where Are the Software Engineers of Tomorrow? (2008)",
       "source_type": "hacker_news",
-      "created_time": "2026-06-17T08:13:52+00:00",
+      "created_time": "2026-06-17T08:44:10+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://meta.wikimedia.org/wiki/Friends_of_gays_should_not_be_allowed_to_edit_articles",
+      "canonical_url": "https://web.archive.org/web/20080103143526/http://www.stsc.hill.af.mil:80/CrossTalk/2008/01/0801DewarSchonberg.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/cleverbrush/xpenser",
+      "author": "andrew_zol",
+      "item_id": "hn:48567485",
+      "headline": "Xpenser is a self-hostable personal finance tracker with __MCP access__ for plugging into your AI tools.",
+      "subreddit": null,
+      "source_text": "Show HN: Xpenser – self-hostable personal finance tracker with MCP access",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-17T08:34:59+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/cleverbrush/xpenser",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-17T08:16:59.354460+00:00",
+    "generated_at": "2026-06-17T08:49:53.744696+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "354bb14c6c8d156777806f591942d60da78dd0ce2c490d63bf54b0d18ee7dd45"
+  "content_hash": "5e810ffd3333fde68c3d3f75c5445e2c7764100623f0ba43aa6165fbc20c1715"
 }
