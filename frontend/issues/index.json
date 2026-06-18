@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-17T00:00:00Z",
-  "issueCount": 58,
+  "generatedAt": "2026-06-18T00:00:00Z",
+  "issueCount": 59,
   "latestIssue": {
-    "slug": "2026-06-17",
-    "digestDate": "2026-06-17",
-    "displayDate": "Jun 17, 2026",
-    "issueNumber": "60617",
-    "subject": "ISSUE 60617 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The Anthropic-Trump administration showdown is quickly becoming the defining tech story of the summer \u2014 and paradoxically, it might be the best thing that ever happened to the company's bottom line. With new data showing Anthropic has overtaken OpenAI in business spending for the first time, a $965 billion valuation, and its first profitable quarter, the AI safety company's clash with Washington is reshaping the power dynamics between government and the AI industry in ways nobody predicted. Today we're also diving into SpaceX's jaw-dropping post-IPO surge past Amazon, the DOJ stepping in to shield Musk's data centers from a pollution lawsuit, and Google DeepMind's ambitious play to fix the UK's housing crisis.",
+    "slug": "2026-06-18",
+    "digestDate": "2026-06-18",
+    "displayDate": "Jun 18, 2026",
+    "issueNumber": "60618",
+    "subject": "ISSUE 60618 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Midjourney just made the wildest pivot in tech \u2014 from AI-generated art to full-body ultrasound scanners that aim to rival MRI quality, complete with plans for a San Francisco spa where you can get scanned. It's one of those stories that makes you do a double-take, and it's far from the only headline worth your attention today. We've also got a massive breach exposing credentials for half of all internet-facing Fortinet firewalls, Tesco suing Broadcom over eye-watering VMware price hikes, and a growing reality check on whether enterprises are actually getting ROI from their AI spending.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-17.html",
-    "contentHash": "5e810ffd3333fde68c3d3f75c5445e2c7764100623f0ba43aa6165fbc20c1715"
+    "urlPath": "/issues/2026-06-18.html",
+    "contentHash": "6c2ea204ff33a6333c98923a799a9a590733ad3ccc504042fe160fc279ad661e"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-18",
+      "digestDate": "2026-06-18",
+      "displayDate": "Jun 18, 2026",
+      "issueNumber": "60618",
+      "subject": "ISSUE 60618 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Midjourney just made the wildest pivot in tech \u2014 from AI-generated art to full-body ultrasound scanners that aim to rival MRI quality, complete with plans for a San Francisco spa where you can get scanned. It's one of those stories that makes you do a double-take, and it's far from the only headline worth your attention today. We've also got a massive breach exposing credentials for half of all internet-facing Fortinet firewalls, Tesco suing Broadcom over eye-watering VMware price hikes, and a growing reality check on whether enterprises are actually getting ROI from their AI spending.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-18.html",
+      "contentHash": "6c2ea204ff33a6333c98923a799a9a590733ad3ccc504042fe160fc279ad661e"
+    },
     {
       "slug": "2026-06-17",
       "digestDate": "2026-06-17",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-07.html",
       "contentHash": "cb62016de597f6f0ff68c2176c416eef10d8c504e0362211026c8b9069ef8a0d"
-    },
-    {
-      "slug": "2026-06-06",
-      "digestDate": "2026-06-06",
-      "displayDate": "Jun 06, 2026",
-      "issueNumber": "60606",
-      "subject": "ISSUE 60606 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest story today is one that reads like science fiction but is very real: Google is shelling out a staggering $920 million *per month* to SpaceX for GPU access, hot on the heels of Anthropic's even larger $1.25 billion monthly compute deal \u2014 underscoring just how ferociously the AI giants are scrambling for infrastructure as demand outpaces supply. Beyond the compute arms race, today's digest spans everything from a Bluetooth speaker that can silently hijack your PC, to an AI-faked presidential speech that went viral across Africa because it said what real leaders won't, to a growing wave of startups that \u2014 ironically \u2014 want to pull you away from your screen entirely.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-06.html",
-      "contentHash": "7e8f87e6a224fd5d67469f0e558c15d8b68067ee181e5b516b45eb25ac61f993"
     }
   ]
 }
