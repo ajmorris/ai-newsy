@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-18T00:00:00Z",
-  "issueCount": 59,
+  "generatedAt": "2026-06-19T00:00:00Z",
+  "issueCount": 60,
   "latestIssue": {
-    "slug": "2026-06-18",
-    "digestDate": "2026-06-18",
-    "displayDate": "Jun 18, 2026",
-    "issueNumber": "60618",
-    "subject": "ISSUE 60618 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Midjourney just made the wildest pivot in tech \u2014 from AI-generated art to full-body ultrasound scanners that aim to rival MRI quality, complete with plans for a San Francisco spa where you can get scanned. It's one of those stories that makes you do a double-take, and it's far from the only headline worth your attention today. We've also got a massive breach exposing credentials for half of all internet-facing Fortinet firewalls, Tesco suing Broadcom over eye-watering VMware price hikes, and a growing reality check on whether enterprises are actually getting ROI from their AI spending.",
+    "slug": "2026-06-19",
+    "digestDate": "2026-06-19",
+    "displayDate": "Jun 19, 2026",
+    "issueNumber": "60619",
+    "subject": "ISSUE 60619 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The chip export control saga just got a new twist \u2014 the US government is claiming one of ASML's crown jewel EUV lithography machines may have secretly ended up in China, while ASML is flatly saying \"no way, we track every single one.\" Meanwhile, OpenAI is loading up for its IPO by snagging Transformer co-inventor Noam Shazeer from Google DeepMind (yes, *that* Noam Shazeer), and SpaceX is floating the wild idea of putting AI data centers in orbit \u2014 though physicists have some thoughts about that. It's a packed day, so let's dive in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-18.html",
-    "contentHash": "6c2ea204ff33a6333c98923a799a9a590733ad3ccc504042fe160fc279ad661e"
+    "urlPath": "/issues/2026-06-19.html",
+    "contentHash": "30580dfd6f0605a5e7b21e43882b7f2f61756e88232c2b223272b6893db0ff92"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-19",
+      "digestDate": "2026-06-19",
+      "displayDate": "Jun 19, 2026",
+      "issueNumber": "60619",
+      "subject": "ISSUE 60619 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The chip export control saga just got a new twist \u2014 the US government is claiming one of ASML's crown jewel EUV lithography machines may have secretly ended up in China, while ASML is flatly saying \"no way, we track every single one.\" Meanwhile, OpenAI is loading up for its IPO by snagging Transformer co-inventor Noam Shazeer from Google DeepMind (yes, *that* Noam Shazeer), and SpaceX is floating the wild idea of putting AI data centers in orbit \u2014 though physicists have some thoughts about that. It's a packed day, so let's dive in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-19.html",
+      "contentHash": "30580dfd6f0605a5e7b21e43882b7f2f61756e88232c2b223272b6893db0ff92"
+    },
     {
       "slug": "2026-06-18",
       "digestDate": "2026-06-18",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-08.html",
       "contentHash": "de78d171a947815b7ddea5474c18ef8e3b2c17a244c574efe616e6cd308a7e49"
-    },
-    {
-      "slug": "2026-06-07",
-      "digestDate": "2026-06-07",
-      "displayDate": "Jun 07, 2026",
-      "issueNumber": "60607",
-      "subject": "ISSUE 60607 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The lines between AI and government are blurring fast \u2014 the Trump administration is reportedly in talks to take an equity stake in OpenAI, a move that could fundamentally reshape the relationship between Washington and Silicon Valley. But that's far from the only big story today: Apple is gearing up to unveil a Gemini-powered Siri overhaul at WWDC, OpenAI is rolling out a new \"Lockdown Mode\" to combat prompt injection attacks, and a troubling investigation reveals how ChatGPT is unwittingly steering shoppers toward sophisticated scam websites. It's a day that underscores just how quickly AI is weaving itself into everything from national policy to your shopping cart \u2014 and not always in ways we'd hope.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-07.html",
-      "contentHash": "cb62016de597f6f0ff68c2176c416eef10d8c504e0362211026c8b9069ef8a0d"
     }
   ]
 }
