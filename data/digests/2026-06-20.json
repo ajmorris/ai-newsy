@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/thorstenball/status/2067986399282794703",
       "author": "thorstenball",
-      "headline": "Thorsten Ball's guide on __how to get better at prompting__ — short, practical, worth bookmarking.",
+      "headline": "Thorsten Ball on __how to get better at prompting__ — short, practical, worth bookmarking.",
       "tweet_id": "3851eba9-b6bc-81fe-a415-fd263d869203",
       "source_text": "How to get better at prompting https://t.co/NKUhY9690j",
       "created_time": "2026-06-20T05:52:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/beyang/status/2068069483084968355",
       "author": "beyang",
-      "headline": "Beyang shows GLM 5.2 creating and describing images despite being text-only — Amp's __specialized subagents__ handle the multi-modal heavy lifting.",
+      "headline": "Beyang shows GLM 5.2 creating and describing images despite being text-only — Amp's __specialized subagents__ handle the multi-modal routing.",
       "tweet_id": "3851eba9-b6bc-8119-ab5e-f995db550838",
       "source_text": "This is GLM 5.2 creating and describing *images*\n\nHow, since the model is text-only?\n\nWith Amp's specialized subagents.\n\nMulti-modal agentic workflows at the pareto frontier of intelligence, speed, and cost. https://t.co/YgRAc0LuA1",
       "created_time": "2026-06-20T05:52:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/beyang/status/2068020177007165734",
       "author": "beyang",
-      "headline": "Amp now lets you spin up __specialized agents via a simple plugin__ — pick a model, set a system prompt, inline the tools, done.",
+      "headline": "Amp now lets you __create specialized agents through a plugin__ — pick a model, define a system prompt, inline the tools, done.",
       "tweet_id": "3851eba9-b6bc-81b3-934f-c6cacbb848fe",
       "source_text": "It's now super easy to create specialized agents through an Amp plugin. Select the model, define the system prompt, and just inline the tool definitions. This is all the code you need (and you can have Amp write it): https://t.co/OhBghNrwmG https://t.co/O8HgcSAoJ0",
       "created_time": "2026-06-20T05:52:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/framara/status/2067989625788858819",
       "author": "framara",
-      "headline": "iOS 27 lets on-device models see images — framara's ToMe 2.0 now __auto-tags saved photos locally__ with zero uploads and no backend.",
+      "headline": "iOS 27 lets on-device models see images — framara's ToMe 2.0 __auto-tags saved photos locally__ with zero backend, full privacy.",
       "tweet_id": "3851eba9-b6bc-815e-b536-f099d29ac399",
       "source_text": "iOS 27 now lets on-device model see images. \n\nToMe 2.0 (WIP): a saved photo now gets tagged by what's in it. Runs on-device, nothing uploaded. Full privacy. No backend servers. https://t.co/H9XyoTz147",
       "created_time": "2026-06-20T06:32:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/regent0x_/status/2067886827868934392",
       "author": "regent0x_",
-      "headline": "Someone buys mini PCs for $600, resells them to law firms for $4,500, and is quietly running a __$40k/month private AI business__ the factory has no idea exists.",
+      "headline": "A guy buys mini PCs for $600, loads them with AI, and __sells them to law firms for $4,500__ plus monthly support — $40k/month, and the factory thinks he's an Amazon reseller.",
       "tweet_id": "3851eba9-b6bc-8113-b6f2-e825ffbf9357",
       "source_text": "buys mini PCs from a factory for $600, sells them to law firms for $4,500 plus monthly support\n\nthe factory thinks he’s a regular bulk reseller\n\nhe’s running a $40k/month private AI business they have no idea exists\n\nthe factory rep assumes he flips them on amazon like everyone https://t.co/ej6td5OKDC https://t.co/THoiSCHhn9",
       "created_time": "2026-06-20T06:32:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/Codie_Sanchez/status/2068037891574448132",
       "author": "Codie_Sanchez",
-      "headline": "Codie Sanchez says her company makes employees __earn the right to a paid AI subscription__ — show the ROI first, then she covers the bill.",
+      "headline": "Codie Sanchez says employees at her company have to __earn their AI subscription__ by showing ROI first — free seats create zero incentive to get good.",
       "tweet_id": "3851eba9-b6bc-8163-8398-c95ba9cde913",
       "source_text": "A new rule I run at our company... you have to earn the right to get your AI subscription paid for. You don’t get it free out the gate. \n\nShow me what it produced first, ROI it drove, how much time it saved. Then I'll cover the bill.\n\nFree AI creates zero incentive to get good at",
       "created_time": "2026-06-20T06:27:00.000Z",
@@ -286,23 +286,75 @@
   ],
   "community_headlines": [
     {
-      "url": "https://www.vox.com/podcasts/491360/vladimir-putin-live-forever-26-billion-cryo-pigs-longevity-guru",
-      "author": "thunderbong",
-      "item_id": "hn:48606780",
-      "headline": "Putin is reportedly spending __$26 billion on longevity research__, including cryo-preserved pigs and a personal anti-aging guru.",
+      "url": "https://opensourcemalware.com/blog/the-software-supply-chain-malware-landscape-january-may-2026",
+      "author": "jruohonen",
+      "item_id": "hn:48607317",
+      "headline": "Software supply chain malware surged between January and May 2026 — here's __the full landscape report__.",
       "subreddit": null,
-      "source_text": "How Russian President Vladimir Putin plans to live forever",
+      "source_text": "The Software Supply Chain Malware Landscape: January – May 2026",
       "source_type": "hacker_news",
-      "created_time": "2026-06-20T06:10:13+00:00",
+      "created_time": "2026-06-20T08:08:55+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://vox.com/podcasts/491360/vladimir-putin-live-forever-26-billion-cryo-pigs-longevity-guru",
-      "learning_score": 3
+      "canonical_url": "https://opensourcemalware.com/blog/the-software-supply-chain-malware-landscape-january-may-2026",
+      "learning_score": 2
+    },
+    {
+      "url": "https://placementist.com/insights/fear-farming-the-stanford-ai-hiring-study-debunk",
+      "author": "nikkotyze",
+      "item_id": "hn:48607303",
+      "headline": "Career coaches are __fear-farming the Stanford AI hiring study__ — and the actual data doesn't support the panic.",
+      "subreddit": null,
+      "source_text": "\"Career coaches\" are fear-farming the Stanford AI hiring study [debunk]",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-20T08:06:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://placementist.com/insights/fear-farming-the-stanford-ai-hiring-study-debunk",
+      "learning_score": 2
+    },
+    {
+      "url": "https://kaitchup.substack.com/p/choosing-a-gguf-model-k-quants-i",
+      "author": "theanonymousone",
+      "item_id": "hn:48607244",
+      "headline": "A practical guide to __choosing a GGUF model__ across K-Quants, IQ variants, and legacy formats.",
+      "subreddit": null,
+      "source_text": "Choosing a GGUF Model: K-Quants, IQ Variants, and Legacy Formats",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-20T07:52:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://kaitchup.substack.com/p/choosing-a-gguf-model-k-quants-i",
+      "learning_score": 2
+    },
+    {
+      "url": "https://store.steampowered.com/news/group/45479024/view/697641379212297809",
+      "author": "haunter",
+      "item_id": "hn:48607215",
+      "headline": "New __Steam Controller reservations won't ship until 2027__ — Valve keeps pushing the timeline.",
+      "subreddit": null,
+      "source_text": "New Steam Controller reservations won't be fulfilled until 2027",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-20T07:46:13+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://store.steampowered.com/news/group/45479024/view/697641379212297809",
+      "learning_score": 2
+    },
+    {
+      "url": "https://openmw.org/2026/openmw-0-51-0-released/",
+      "author": "haunter",
+      "item_id": "hn:48607197",
+      "headline": "__OpenMW 0.51__ drops — the open-source Morrowind engine keeps quietly shipping.",
+      "subreddit": null,
+      "source_text": "OpenMW 0.51",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-20T07:42:46+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://openmw.org/2026/openmw-0-51-0-released",
+      "learning_score": 2
     },
     {
       "url": "https://www.nytimes.com/2026/06/17/climate/trump-wind-farms-cancel-millions.html",
       "author": "asplake",
       "item_id": "hn:48607148",
-      "headline": "Trump administration to __pay £765M to cancel four more wind projects__, adding to a growing pile of taxpayer-funded termination fees.",
+      "headline": "Trump administration agrees to pay __£765M to cancel four more wind projects__.",
       "subreddit": null,
       "source_text": "Trump administration to pay £765M to cancel 4 more wind projects",
       "source_type": "hacker_news",
@@ -310,65 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://nytimes.com/2026/06/17/climate/trump-wind-farms-cancel-millions.html",
       "learning_score": 2
-    },
-    {
-      "url": "https://phys.org/news/2026-06-animals-communicate-species-boundaries.html",
-      "author": "the-mitr",
-      "item_id": "hn:48607127",
-      "headline": "Researchers document how animals __communicate to cooperate across species boundaries__ — and the signaling is more structured than expected.",
-      "subreddit": null,
-      "source_text": "How animals communicate to work together across species boundaries",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-20T07:26:11+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://phys.org/news/2026-06-animals-communicate-species-boundaries.html",
-      "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/Designarena/status/2068030598028087788",
-      "author": "tosh",
-      "item_id": "hn:48607105",
-      "headline": "__GLM-5.2 beat Fable 5__ at website design in a head-to-head comparison.",
-      "subreddit": null,
-      "source_text": "GLM-5.2 Beat Fable 5 at Website Design",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-20T07:21:36+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://twitter.com/Designarena/status/2068030598028087788",
-      "learning_score": 2
-    },
-    {
-      "url": "https://workers.io/",
-      "author": "chaitanyya",
-      "item_id": "hn:48607073",
-      "headline": "Workers.io wants to __make every bug perfectly reproducible__ by capturing full execution context.",
-      "subreddit": null,
-      "source_text": "Show HN: Make every bug perfectly reproducible",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-20T07:15:10+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://workers.io",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/linxiv-dev/linXiv",
-      "author": "jeuribe",
-      "item_id": "hn:48607047",
-      "headline": "linXiv is a __self-hostable academic paper manager__ for researchers who don't want their library locked in someone else's cloud.",
-      "subreddit": null,
-      "source_text": "Show HN: Self-hostable academic paper manager (linxiv)",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-20T07:09:18+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/linxiv-dev/linXiv",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-20T07:36:29.455602+00:00",
+    "generated_at": "2026-06-20T08:14:37.718301+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "7c20f194cb6df36880bdadec0e7a043a9a881e7572ce9549bc408a34bd5d2bc0"
+  "content_hash": "0820b3806abf80bd801677a99fe8374a99f9eb446a75b53a2222a043387c21d3"
 }
