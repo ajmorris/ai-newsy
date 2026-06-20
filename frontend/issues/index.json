@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-19T00:00:00Z",
-  "issueCount": 60,
+  "generatedAt": "2026-06-20T00:00:00Z",
+  "issueCount": 61,
   "latestIssue": {
-    "slug": "2026-06-19",
-    "digestDate": "2026-06-19",
-    "displayDate": "Jun 19, 2026",
-    "issueNumber": "60619",
-    "subject": "ISSUE 60619 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The chip export control saga just got a new twist \u2014 the US government is claiming one of ASML's crown jewel EUV lithography machines may have secretly ended up in China, while ASML is flatly saying \"no way, we track every single one.\" Meanwhile, OpenAI is loading up for its IPO by snagging Transformer co-inventor Noam Shazeer from Google DeepMind (yes, *that* Noam Shazeer), and SpaceX is floating the wild idea of putting AI data centers in orbit \u2014 though physicists have some thoughts about that. It's a packed day, so let's dive in.",
+    "slug": "2026-06-20",
+    "digestDate": "2026-06-20",
+    "displayDate": "Jun 20, 2026",
+    "issueNumber": "60620",
+    "subject": "ISSUE 60620 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The Anthropic saga is dominating today's AI news cycle \u2014 the US government forced the company to pull its Fable 5 and Mythos 5 models over national security concerns, and the fallout is raising big questions about whether export controls actually work, what this means for developers and Anthropic's looming IPO, and whether the ban might paradoxically be *boosting* the company's brand. Meanwhile, Amazon is navigating its own awkward entanglement with AI power players by quietly dropping a film about Sam Altman (perhaps that $50 billion OpenAI investment made things a tad uncomfortable), and we've got stories ranging from a billionaire's plan to put AI in every phone call in India to a shoe company that sold its entire business to become an AI infrastructure startup.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-19.html",
-    "contentHash": "30580dfd6f0605a5e7b21e43882b7f2f61756e88232c2b223272b6893db0ff92"
+    "urlPath": "/issues/2026-06-20.html",
+    "contentHash": "0820b3806abf80bd801677a99fe8374a99f9eb446a75b53a2222a043387c21d3"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-20",
+      "digestDate": "2026-06-20",
+      "displayDate": "Jun 20, 2026",
+      "issueNumber": "60620",
+      "subject": "ISSUE 60620 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The Anthropic saga is dominating today's AI news cycle \u2014 the US government forced the company to pull its Fable 5 and Mythos 5 models over national security concerns, and the fallout is raising big questions about whether export controls actually work, what this means for developers and Anthropic's looming IPO, and whether the ban might paradoxically be *boosting* the company's brand. Meanwhile, Amazon is navigating its own awkward entanglement with AI power players by quietly dropping a film about Sam Altman (perhaps that $50 billion OpenAI investment made things a tad uncomfortable), and we've got stories ranging from a billionaire's plan to put AI in every phone call in India to a shoe company that sold its entire business to become an AI infrastructure startup.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-20.html",
+      "contentHash": "0820b3806abf80bd801677a99fe8374a99f9eb446a75b53a2222a043387c21d3"
+    },
     {
       "slug": "2026-06-19",
       "digestDate": "2026-06-19",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-09.html",
       "contentHash": "27ee3d8861ec01d8ca80970333411e7b327d01e7a5a107b9eec21d4a30b3acdb"
-    },
-    {
-      "slug": "2026-06-08",
-      "digestDate": "2026-06-08",
-      "displayDate": "Jun 08, 2026",
-      "issueNumber": "60608",
-      "subject": "ISSUE 60608 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI honeymoon phase might be officially over \u2014 at least for your wallet. Microsoft's shift to per-token pricing for GitHub Copilot has sparked what Reddit is calling the \"Tokenpocalypse,\" and it's part of a broader reckoning as companies realize just how expensive AI really is when the subsidies dry up. Today we're also diving into how scammers are weaponizing AI to fake insurance claims at record scale, OpenAI's ambitious \"super app\" pivot, and a growing debate about what we lose when we let AI do our thinking for us.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-08.html",
-      "contentHash": "de78d171a947815b7ddea5474c18ef8e3b2c17a244c574efe616e6cd308a7e49"
     }
   ]
 }
