@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-20T00:00:00Z",
-  "issueCount": 61,
+  "generatedAt": "2026-06-21T00:00:00Z",
+  "issueCount": 62,
   "latestIssue": {
-    "slug": "2026-06-20",
-    "digestDate": "2026-06-20",
-    "displayDate": "Jun 20, 2026",
-    "issueNumber": "60620",
-    "subject": "ISSUE 60620 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The Anthropic saga is dominating today's AI news cycle \u2014 the US government forced the company to pull its Fable 5 and Mythos 5 models over national security concerns, and the fallout is raising big questions about whether export controls actually work, what this means for developers and Anthropic's looming IPO, and whether the ban might paradoxically be *boosting* the company's brand. Meanwhile, Amazon is navigating its own awkward entanglement with AI power players by quietly dropping a film about Sam Altman (perhaps that $50 billion OpenAI investment made things a tad uncomfortable), and we've got stories ranging from a billionaire's plan to put AI in every phone call in India to a shoe company that sold its entire business to become an AI infrastructure startup.",
+    "slug": "2026-06-21",
+    "digestDate": "2026-06-21",
+    "displayDate": "Jun 21, 2026",
+    "issueNumber": "60621",
+    "subject": "ISSUE 60621 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The biggest AI news today is a blockbuster talent move: Nobel laureate John Jumper, the mind behind AlphaFold, is leaving Google DeepMind to join Anthropic \u2014 a significant shift that underscores the fierce competition for top-tier AI talent. Beyond the hiring wars, today's digest spans a wide range: from brands quietly deploying fake AI influencers to sell products, to Signal's president reminding us that chatbots \"are not your friends,\" to a revealing look at the millions of music tracks scraped to train AI models. It's a day that really captures the tension between AI's dazzling potential and the growing calls for transparency and accountability around how it's built and used.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-20.html",
-    "contentHash": "0820b3806abf80bd801677a99fe8374a99f9eb446a75b53a2222a043387c21d3"
+    "urlPath": "/issues/2026-06-21.html",
+    "contentHash": "9b5a4e6df9968fae5bddb484e448da343a1e4b05a9be8dc8f8fbc29f680fa8b2"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-21",
+      "digestDate": "2026-06-21",
+      "displayDate": "Jun 21, 2026",
+      "issueNumber": "60621",
+      "subject": "ISSUE 60621 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The biggest AI news today is a blockbuster talent move: Nobel laureate John Jumper, the mind behind AlphaFold, is leaving Google DeepMind to join Anthropic \u2014 a significant shift that underscores the fierce competition for top-tier AI talent. Beyond the hiring wars, today's digest spans a wide range: from brands quietly deploying fake AI influencers to sell products, to Signal's president reminding us that chatbots \"are not your friends,\" to a revealing look at the millions of music tracks scraped to train AI models. It's a day that really captures the tension between AI's dazzling potential and the growing calls for transparency and accountability around how it's built and used.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-21.html",
+      "contentHash": "9b5a4e6df9968fae5bddb484e448da343a1e4b05a9be8dc8f8fbc29f680fa8b2"
+    },
     {
       "slug": "2026-06-20",
       "digestDate": "2026-06-20",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-10.html",
       "contentHash": "b9897dfe6d80c21e61eb3b1c6943b0e29f183a9bd178082f55a80524c6cca7c6"
-    },
-    {
-      "slug": "2026-06-09",
-      "digestDate": "2026-06-09",
-      "displayDate": "Jun 09, 2026",
-      "issueNumber": "60609",
-      "subject": "ISSUE 60609 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The big story today is Apple finally going all-in on AI \u2014 and doing it in a way that's turning heads. From a revamped Siri powered by Google's Gemini to letting users \"vibe-code\" their own Safari extensions with natural language, WWDC 2026 painted a picture of a company embedding AI deep into its operating system rather than chasing hype, all while taking a notably humbler approach to demos after that $250 million false advertising settlement. Beyond Cupertino, we've also got China's wild new underwater datacenter, a VC valuation scandal brewing on X, and some tough news for Sam Altman's eye-scanning venture \u2014 plenty to dig into today.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-09.html",
-      "contentHash": "27ee3d8861ec01d8ca80970333411e7b327d01e7a5a107b9eec21d4a30b3acdb"
     }
   ]
 }
