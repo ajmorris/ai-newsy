@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-21T00:00:00Z",
-  "issueCount": 62,
+  "generatedAt": "2026-06-22T00:00:00Z",
+  "issueCount": 63,
   "latestIssue": {
-    "slug": "2026-06-21",
-    "digestDate": "2026-06-21",
-    "displayDate": "Jun 21, 2026",
-    "issueNumber": "60621",
-    "subject": "ISSUE 60621 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest AI news today is a blockbuster talent move: Nobel laureate John Jumper, the mind behind AlphaFold, is leaving Google DeepMind to join Anthropic \u2014 a significant shift that underscores the fierce competition for top-tier AI talent. Beyond the hiring wars, today's digest spans a wide range: from brands quietly deploying fake AI influencers to sell products, to Signal's president reminding us that chatbots \"are not your friends,\" to a revealing look at the millions of music tracks scraped to train AI models. It's a day that really captures the tension between AI's dazzling potential and the growing calls for transparency and accountability around how it's built and used.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-06-21.html",
-    "contentHash": "9b5a4e6df9968fae5bddb484e448da343a1e4b05a9be8dc8f8fbc29f680fa8b2"
+    "slug": "2026-06-22",
+    "digestDate": "2026-06-22",
+    "displayDate": "Jun 22, 2026",
+    "issueNumber": "60622",
+    "subject": "ISSUE 60622 \u00b7 6 STORIES \u00b7 11 MIN READ",
+    "intro": "The Trump administration just forced Anthropic to pull its two newest AI models offline over national security concerns \u2014 a dramatic escalation that has cybersecurity experts warning the move actually makes America *less* safe. It's a wild day in AI news, with stories ranging from Samsung rolling out ChatGPT to all its employees in one of OpenAI's biggest enterprise deals ever, to Apple quietly embedding AI into everyday iPhone tasks like splitting dinner bills, to Anthropic's own engineering lead revealing her teams now ship 8x more code per quarter thanks to AI tools. Let's dig in.",
+    "articleCount": 6,
+    "urlPath": "/issues/2026-06-22.html",
+    "contentHash": "9c036419f9b959482207aa09dd2dceea472d507bcb2c1e2f69240976f40a781d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-22",
+      "digestDate": "2026-06-22",
+      "displayDate": "Jun 22, 2026",
+      "issueNumber": "60622",
+      "subject": "ISSUE 60622 \u00b7 6 STORIES \u00b7 11 MIN READ",
+      "intro": "The Trump administration just forced Anthropic to pull its two newest AI models offline over national security concerns \u2014 a dramatic escalation that has cybersecurity experts warning the move actually makes America *less* safe. It's a wild day in AI news, with stories ranging from Samsung rolling out ChatGPT to all its employees in one of OpenAI's biggest enterprise deals ever, to Apple quietly embedding AI into everyday iPhone tasks like splitting dinner bills, to Anthropic's own engineering lead revealing her teams now ship 8x more code per quarter thanks to AI tools. Let's dig in.",
+      "articleCount": 6,
+      "urlPath": "/issues/2026-06-22.html",
+      "contentHash": "9c036419f9b959482207aa09dd2dceea472d507bcb2c1e2f69240976f40a781d"
+    },
     {
       "slug": "2026-06-21",
       "digestDate": "2026-06-21",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-11.html",
       "contentHash": "116885fc09ef76d42c4cbac222037f813917e1e829a9331ed6bf88ba06f09e80"
-    },
-    {
-      "slug": "2026-06-10",
-      "digestDate": "2026-06-10",
-      "displayDate": "Jun 10, 2026",
-      "issueNumber": "60610",
-      "subject": "ISSUE 60610 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI infrastructure boom is hitting turbulence from all sides today \u2014 Seattle just became the largest U.S. city to ban new AI data centers, Google is slashing subscription prices in what looks like the opening salvo of a commoditization war, and Meta is meanwhile doubling down with a massive new data center deal in India. It's a day that really captures the tension between AI's breakneck expansion and the growing pushback against its real-world costs, with stories ranging from deepfake abuse on X to a surprisingly functional Siri finally showing up to the party.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-10.html",
-      "contentHash": "b9897dfe6d80c21e61eb3b1c6943b0e29f183a9bd178082f55a80524c6cca7c6"
     }
   ]
 }
