@@ -1,0 +1,322 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-06-22",
+  "issue_id": "20260622",
+  "subject_line": "ISSUE 60622 · 6 STORIES · 11 MIN READ",
+  "intro": "The Trump administration just forced Anthropic to pull its two newest AI models offline over national security concerns — a dramatic escalation that has cybersecurity experts warning the move actually makes America *less* safe. It's a wild day in AI news, with stories ranging from Samsung rolling out ChatGPT to all its employees in one of OpenAI's biggest enterprise deals ever, to Apple quietly embedding AI into everyday iPhone tasks like splitting dinner bills, to Anthropic's own engineering lead revealing her teams now ship 8x more code per quarter thanks to AI tools. Let's dig in.",
+  "article_count": 6,
+  "stories": [
+    {
+      "id": 4611,
+      "source": "NY Times",
+      "title": "Embattled Superintendent of Los Angeles School District Resigns",
+      "url": "https://www.nytimes.com/2026/06/22/us/superintendent-lausd-alberto-carvalho-resigns.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Alberto Carvalho, the superintendent of the Los Angeles Unified School District, resigned on Sunday following months of controversy after the FBI raided his home and office. Carvalho had arrived in Los Angeles from Miami with a strong reputation for improving student test scores but encountered significant challenges and missteps during his tenure.",
+      "opinion": "This resignation appears to be the culmination of serious legal and professional troubles for Carvalho. An FBI raid on both a superintendent's home and office signals a significant federal investigation, which would make his position untenable regardless of his prior accomplishments in Miami. His departure underscores the immense challenges facing large urban school district leaders, where even those with strong track records can falter amid political complexities and, in this case, apparent le…",
+      "image_url": "",
+      "published_at": "2026-06-22T06:51:47+00:00",
+      "fetched_at": "2026-06-22T08:15:02.339942+00:00"
+    },
+    {
+      "id": 4612,
+      "source": "Guardian AI",
+      "title": "The Reverse Centaur’s Guide to Life After AI by Cory Doctorow review – the real price of artificial intelligence",
+      "url": "https://www.theguardian.com/books/2026/jun/22/the-reverse-centaurs-guide-to-life-after-ai-by-cory-doctorow-review-the-real-price-of-artificial-intelligence",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "This Guardian review covers Cory Doctorow's book 'The Reverse Centaur's Guide to Life After AI,' describing it as a vivid and entertaining polemic on the economics of the tech revolution. The review references a growing popular backlash against AI, citing an incident where former Google CEO Eric Schmidt was booed by University of Arizona students during a commencement address about the AI revolution, as students face an AI-disrupted job market. The book appears to examine the real economic and social costs of artificial intelligence.",
+      "opinion": "The reviewer appears to view the book favorably, describing it as 'vivid and entertaining' and 'filled with righteous ire.' The tone of the review suggests sympathy with Doctorow's critical perspective on the AI industry and its economic impacts, and the reviewer seems to share the author's skepticism about AI boosters and their claims, using the Schmidt anecdote to illustrate the growing disconnect between tech industry optimism and public sentiment.",
+      "image_url": "https://i.guim.co.uk/img/media/c950225c1217464767e369fc79a152c2704e4cb4/982_662_5740_4591/master/5740.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2b14c3e39bc8ad0662eb6fbdf60ac07b",
+      "published_at": "2026-06-22T06:00:52+00:00",
+      "fetched_at": "2026-06-22T08:15:03.157374+00:00"
+    },
+    {
+      "id": 4613,
+      "source": "OpenAI",
+      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all its employees in Korea and all Device eXperience (DX) division employees worldwide, marking one of OpenAI's largest enterprise AI rollouts to date. The tools will be used across a broad range of functions including software development, R&D, manufacturing, marketing, and corporate operations. Codex, originally a software development tool, is now being used by non-technical teams as well, with over 5 million weekly active users globally and nearly 800% growth in Korean weekly active users since February 2026. The partnership builds on an existing relationship where Samsung supplies advanced memory semiconductors for AI infrastructure. OpenAI's General Manager for Korea, Harrison Kim, highlighted the significance of Samsung embracing AI as a core platform rather than limiting it to specific teams. The article also notes…",
+      "opinion": "This is a significant enterprise deal that demonstrates OpenAI's growing foothold in the Korean market and its ability to land major global technology companies as customers. The deployment is strategically important on multiple levels: it validates ChatGPT Enterprise and Codex as tools suitable for one of the world's most sophisticated technology and manufacturing companies, it deepens a bilateral relationship where Samsung is both a customer and a supplier (memory semiconductors), and it esta…",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/18IGXqgYieQfH2AcUiYbua/4975e902fc7b1eb55f0863da06f82c92/samsung-electronics-16_9.png?w=1600&h=900&fit=fill",
+      "published_at": "2026-06-21T23:00:00+00:00",
+      "fetched_at": "2026-06-22T08:15:14.028389+00:00"
+    },
+    {
+      "id": 4609,
+      "source": "TechCrunch AI",
+      "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+      "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses the Trump administration issuing an export control order that forced Anthropic to take its two newest AI models (Fable 5 and Mythos 5) offline, citing unspecified national security concerns. The crackdown was reportedly triggered after Amazon researchers found ways to bypass Fable 5's safety guardrails, with Amazon CEO Andy Jassy raising concerns directly with the White House. The TechCrunch Equity podcast hosts noted that Anthropic has had a uniquely poor relationship with the Trump administration compared to other AI labs, suggesting the response may be disproportionate. Leading cybersecurity experts signed an open letter asking Trump to revoke the order, arguing that removing advanced cybersecurity capabilities from U.S. network defenders is actually dangerous. The hosts speculated about whether rival AI companies might face similar crackdowns and whether the co…",
+      "opinion": "This article appears to describe events set in June 2026 that have not occurred and cannot be verified. The AI model names mentioned (Fable 5, Mythos 5) do not correspond to any known Anthropic products, and the described geopolitical context (a U.S.-started war in Iran) does not match current reality. The article reads as either speculative fiction, a fabricated scenario, or a future-dated piece that cannot be confirmed. While TechCrunch is a legitimate publication, the specific claims about e…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?resize=1200,798",
+      "published_at": "2026-06-21T15:28:17+00:00",
+      "fetched_at": "2026-06-22T08:15:00.439614+00:00"
+    },
+    {
+      "id": 4610,
+      "source": "TechCrunch AI",
+      "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+      "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "iOS 27 introduces several practical AI features beyond the Siri overhaul announced at WWDC. Key additions include AI-powered bill splitting via Apple Cash (photograph a receipt, select items, and split costs through Messages), an intelligent password update feature that automatically identifies weak or compromised passwords and agentically navigates websites to update them, and one-tap suggestions in Messages. Apple's strategy focuses on embedding AI into existing apps and services to solve real-world problems rather than requiring users to interact with a chatbot, making the software feel smarter with less manual effort.",
+      "opinion": "This represents a mature and user-centric approach to AI integration. Rather than chasing the flashy chatbot trend, Apple is doing what it does best: embedding intelligence into workflows people already use. The bill-splitting feature alone solves a genuinely annoying everyday problem elegantly, and the agentic password updating could meaningfully improve security for millions of people who would never manually rotate compromised credentials. These incremental, practical improvements may collec…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/tim-cook-iphone-GettyImages-2234563479.jpg?w=1024",
+      "published_at": "2026-06-21T14:40:28+00:00",
+      "fetched_at": "2026-06-22T08:15:00.634997+00:00"
+    },
+    {
+      "id": 4614,
+      "source": "Lenny's Newsletter",
+      "title": "Building the most AI-pilled engineering team in the world | Fiona Fung (Manager of the Claude Code and Cowork Teams)",
+      "url": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Fiona Fung, who leads the Claude Code and Cowork teams at Anthropic, discusses her experience building and managing an AI-native engineering organization. She shares that Anthropic engineers now ship 8x more code per quarter compared to 2021-2025. The conversation covers how AI is transforming engineering roles, specific ways her team uses AI tools including Claude 'routines' for management tasks, the unsolved context-switching problem, which roles AI will transform next, and how to maintain team culture when roles are blurring and AI agents are increasingly prevalent. Before Anthropic, Fung spent 11 years at Microsoft on Visual Studio and TypeScript, then worked at Meta where she started Facebook Marketplace (now over $100B GMV annually), worked on Meta's smart glasses, and led teams at Instagram.",
+      "opinion": "This appears to be a substantive interview with a senior engineering leader who has impressive credentials spanning Microsoft, Meta, and now Anthropic. The 8x code shipping claim is attention-grabbing and worth scrutinizing — shipping more code doesn't necessarily mean shipping more value, and this metric could be misleading. The discussion topics around maintaining culture amid AI disruption and the unsolved context-switching problem seem genuinely important and timely. However, the content is…",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!pejL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9061eab1-ac9d-4300-820d-09c4ac9176c3_2048x2048.png",
+      "published_at": "2026-06-21T12:31:43+00:00",
+      "fetched_at": "2026-06-22T08:15:16.09961+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 4611,
+          "source": "NY Times",
+          "title": "Embattled Superintendent of Los Angeles School District Resigns",
+          "url": "https://www.nytimes.com/2026/06/22/us/superintendent-lausd-alberto-carvalho-resigns.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Alberto Carvalho, the superintendent of the Los Angeles Unified School District, resigned on Sunday following months of controversy after the FBI raided his home and office. Carvalho had arrived in Los Angeles from Miami with a strong reputation for improving student test scores but encountered significant challenges and missteps during his tenure.",
+          "opinion": "This resignation appears to be the culmination of serious legal and professional troubles for Carvalho. An FBI raid on both a superintendent's home and office signals a significant federal investigation, which would make his position untenable regardless of his prior accomplishments in Miami. His departure underscores the immense challenges facing large urban school district leaders, where even those with strong track records can falter amid political complexities and, in this case, apparent le…",
+          "image_url": "",
+          "published_at": "2026-06-22T06:51:47+00:00",
+          "fetched_at": "2026-06-22T08:15:02.339942+00:00"
+        },
+        {
+          "id": 4612,
+          "source": "Guardian AI",
+          "title": "The Reverse Centaur’s Guide to Life After AI by Cory Doctorow review – the real price of artificial intelligence",
+          "url": "https://www.theguardian.com/books/2026/jun/22/the-reverse-centaurs-guide-to-life-after-ai-by-cory-doctorow-review-the-real-price-of-artificial-intelligence",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "This Guardian review covers Cory Doctorow's book 'The Reverse Centaur's Guide to Life After AI,' describing it as a vivid and entertaining polemic on the economics of the tech revolution. The review references a growing popular backlash against AI, citing an incident where former Google CEO Eric Schmidt was booed by University of Arizona students during a commencement address about the AI revolution, as students face an AI-disrupted job market. The book appears to examine the real economic and social costs of artificial intelligence.",
+          "opinion": "The reviewer appears to view the book favorably, describing it as 'vivid and entertaining' and 'filled with righteous ire.' The tone of the review suggests sympathy with Doctorow's critical perspective on the AI industry and its economic impacts, and the reviewer seems to share the author's skepticism about AI boosters and their claims, using the Schmidt anecdote to illustrate the growing disconnect between tech industry optimism and public sentiment.",
+          "image_url": "https://i.guim.co.uk/img/media/c950225c1217464767e369fc79a152c2704e4cb4/982_662_5740_4591/master/5740.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2b14c3e39bc8ad0662eb6fbdf60ac07b",
+          "published_at": "2026-06-22T06:00:52+00:00",
+          "fetched_at": "2026-06-22T08:15:03.157374+00:00"
+        },
+        {
+          "id": 4613,
+          "source": "OpenAI",
+          "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Samsung Electronics is deploying ChatGPT Enterprise and Codex to all its employees in Korea and all Device eXperience (DX) division employees worldwide, marking one of OpenAI's largest enterprise AI rollouts to date. The tools will be used across a broad range of functions including software development, R&D, manufacturing, marketing, and corporate operations. Codex, originally a software development tool, is now being used by non-technical teams as well, with over 5 million weekly active users globally and nearly 800% growth in Korean weekly active users since February 2026. The partnership builds on an existing relationship where Samsung supplies advanced memory semiconductors for AI infrastructure. OpenAI's General Manager for Korea, Harrison Kim, highlighted the significance of Samsung embracing AI as a core platform rather than limiting it to specific teams. The article also notes…",
+          "opinion": "This is a significant enterprise deal that demonstrates OpenAI's growing foothold in the Korean market and its ability to land major global technology companies as customers. The deployment is strategically important on multiple levels: it validates ChatGPT Enterprise and Codex as tools suitable for one of the world's most sophisticated technology and manufacturing companies, it deepens a bilateral relationship where Samsung is both a customer and a supplier (memory semiconductors), and it esta…",
+          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/18IGXqgYieQfH2AcUiYbua/4975e902fc7b1eb55f0863da06f82c92/samsung-electronics-16_9.png?w=1600&h=900&fit=fill",
+          "published_at": "2026-06-21T23:00:00+00:00",
+          "fetched_at": "2026-06-22T08:15:14.028389+00:00"
+        },
+        {
+          "id": 4609,
+          "source": "TechCrunch AI",
+          "title": "When the Trump administration cracks down on Anthropic, who benefits?",
+          "url": "https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses the Trump administration issuing an export control order that forced Anthropic to take its two newest AI models (Fable 5 and Mythos 5) offline, citing unspecified national security concerns. The crackdown was reportedly triggered after Amazon researchers found ways to bypass Fable 5's safety guardrails, with Amazon CEO Andy Jassy raising concerns directly with the White House. The TechCrunch Equity podcast hosts noted that Anthropic has had a uniquely poor relationship with the Trump administration compared to other AI labs, suggesting the response may be disproportionate. Leading cybersecurity experts signed an open letter asking Trump to revoke the order, arguing that removing advanced cybersecurity capabilities from U.S. network defenders is actually dangerous. The hosts speculated about whether rival AI companies might face similar crackdowns and whether the co…",
+          "opinion": "This article appears to describe events set in June 2026 that have not occurred and cannot be verified. The AI model names mentioned (Fable 5, Mythos 5) do not correspond to any known Anthropic products, and the described geopolitical context (a U.S.-started war in Iran) does not match current reality. The article reads as either speculative fiction, a fabricated scenario, or a future-dated piece that cannot be confirmed. While TechCrunch is a legitimate publication, the specific claims about e…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/anthropic-claude-fable.jpg?resize=1200,798",
+          "published_at": "2026-06-21T15:28:17+00:00",
+          "fetched_at": "2026-06-22T08:15:00.439614+00:00"
+        },
+        {
+          "id": 4610,
+          "source": "TechCrunch AI",
+          "title": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+          "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "iOS 27 introduces several practical AI features beyond the Siri overhaul announced at WWDC. Key additions include AI-powered bill splitting via Apple Cash (photograph a receipt, select items, and split costs through Messages), an intelligent password update feature that automatically identifies weak or compromised passwords and agentically navigates websites to update them, and one-tap suggestions in Messages. Apple's strategy focuses on embedding AI into existing apps and services to solve real-world problems rather than requiring users to interact with a chatbot, making the software feel smarter with less manual effort.",
+          "opinion": "This represents a mature and user-centric approach to AI integration. Rather than chasing the flashy chatbot trend, Apple is doing what it does best: embedding intelligence into workflows people already use. The bill-splitting feature alone solves a genuinely annoying everyday problem elegantly, and the agentic password updating could meaningfully improve security for millions of people who would never manually rotate compromised credentials. These incremental, practical improvements may collec…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/tim-cook-iphone-GettyImages-2234563479.jpg?w=1024",
+          "published_at": "2026-06-21T14:40:28+00:00",
+          "fetched_at": "2026-06-22T08:15:00.634997+00:00"
+        },
+        {
+          "id": 4614,
+          "source": "Lenny's Newsletter",
+          "title": "Building the most AI-pilled engineering team in the world | Fiona Fung (Manager of the Claude Code and Cowork Teams)",
+          "url": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Fiona Fung, who leads the Claude Code and Cowork teams at Anthropic, discusses her experience building and managing an AI-native engineering organization. She shares that Anthropic engineers now ship 8x more code per quarter compared to 2021-2025. The conversation covers how AI is transforming engineering roles, specific ways her team uses AI tools including Claude 'routines' for management tasks, the unsolved context-switching problem, which roles AI will transform next, and how to maintain team culture when roles are blurring and AI agents are increasingly prevalent. Before Anthropic, Fung spent 11 years at Microsoft on Visual Studio and TypeScript, then worked at Meta where she started Facebook Marketplace (now over $100B GMV annually), worked on Meta's smart glasses, and led teams at Instagram.",
+          "opinion": "This appears to be a substantive interview with a senior engineering leader who has impressive credentials spanning Microsoft, Meta, and now Anthropic. The 8x code shipping claim is attention-grabbing and worth scrutinizing — shipping more code doesn't necessarily mean shipping more value, and this metric could be misleading. The discussion topics around maintaining culture amid AI disruption and the unsolved context-switching problem seem genuinely important and timely. However, the content is…",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!pejL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9061eab1-ac9d-4300-820d-09c4ac9176c3_2048x2048.png",
+          "published_at": "2026-06-21T12:31:43+00:00",
+          "fetched_at": "2026-06-22T08:15:16.09961+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://twitter.com/9to5mac/status/2068708897234223177",
+      "author": "9to5mac",
+      "headline": "John Ternus is reportedly set to __re-establish the importance of Apple's design team__ when he takes over as CEO.",
+      "tweet_id": "3861eba9-b6bc-81f1-b7ef-c91e7135b069",
+      "source_text": "John Ternus reportedly set to re-establish importance of Apple design team when he takes over https://t.co/SXQFXmg6zt by @bzamayo",
+      "created_time": "2026-06-21T19:32:00.000Z",
+      "canonical_url": "https://twitter.com/9to5mac/status/2068708897234223177",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/selinaai_/status/2068291018114670990",
+      "author": "selinaai_",
+      "headline": "Claude's new Council feature spins up __five AI advisors that debate each other__ before delivering a single consensus answer.",
+      "tweet_id": "3861eba9-b6bc-81e7-81aa-deb40f77e00e",
+      "source_text": "🚨BREAKING NEWS: Claude has dropped a new feature called Council.\nIt turns Claude into something like 5 AI advisors debating among themselves before giving you a single final answer.\n\nHere's how to set it up, along with 5 prompts you can try👇",
+      "created_time": "2026-06-21T12:57:00.000Z",
+      "canonical_url": "https://twitter.com/selinaai_/status/2068291018114670990",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/markgurman/status/2068775977325375818",
+      "author": "markgurman",
+      "headline": "Mark Gurman maps out Apple's roadmap through 2028 — __new iPhones, AI wearables, home devices__, and more in the latest Power On.",
+      "tweet_id": "3861eba9-b6bc-81df-ba29-dc1b697458cc",
+      "source_text": "Apple has big plans in store for the rest of 2026, 2027 and 2028, including several new iPhones, Macs, iPads, AI wearables, home devices and more. Here’s a list of some of what to expect in the latest Power On - https://t.co/41IX3YKHyT",
+      "created_time": "2026-06-21T19:32:00.000Z",
+      "canonical_url": "https://twitter.com/markgurman/status/2068775977325375818",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/skirano/status/2068067725218295922",
+      "author": "skirano",
+      "headline": "Skirano asked Codex for a __macOS YouTube TV menu bar app__ to watch the World Cup while working — one-shotted it.",
+      "tweet_id": "3861eba9-b6bc-81fc-9941-fcaa6de9cfdd",
+      "source_text": "I wanted a macOS Youtube TV menu bar app so I could watch the world cup game while working.\n\nAsked codex, one-shot it with /goal.\n\nWe really live in the golden age of ideas. https://t.co/eCJ2rpfqVK",
+      "created_time": "2026-06-21T12:57:00.000Z",
+      "canonical_url": "https://twitter.com/skirano/status/2068067725218295922",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/p_d_d_t/status/2068571794609787025",
+      "author": "p_d_d_t",
+      "headline": "__Sheet Canvas__ puts spreadsheets inside a canvas — first MVP is live to try.",
+      "tweet_id": "3861eba9-b6bc-8177-90ad-d46d3e655524",
+      "source_text": "My husband built this: sheets in canvas \n\nWe call it: Sheet Canvas \n\nYou can try our first MVP here: https://t.co/uf2Qvg1dkj https://t.co/3MiAI1pNRM",
+      "created_time": "2026-06-21T12:57:00.000Z",
+      "canonical_url": "https://twitter.com/p_d_d_t/status/2068571794609787025",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/jordan_ross_8F/status/2068597702460395962",
+      "author": "jordan_ross_8F",
+      "headline": "Jordan Ross argues it's __completely idiotic to lock into one AI platform__ right as every major lab is about to undercut the others for your tokens.",
+      "tweet_id": "3861eba9-b6bc-813f-aaf2-e7c1fb91bc5d",
+      "source_text": "It is completely idiotic to tie yourself to one AI platform.\n\nWe're about to go into a long cycle of Silicon Valley juggernauts  going head to head to win your business to have you process as many tokens as possible on their platform. \n\nTwo months ago, no one gave a shit about https://t.co/I7hPpUcacN",
+      "created_time": "2026-06-21T12:57:00.000Z",
+      "canonical_url": "https://twitter.com/jordan_ross_8F/status/2068597702460395962",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+      "author": "pul",
+      "item_id": "hn:48626732",
+      "headline": "__P99 0ms autocomplete for 240 million domain names__ — how Ruurtjan pulled it off.",
+      "subreddit": null,
+      "source_text": "P99 0ms* autocomplete for 240M domain names",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-22T07:03:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.engadget.com/2007-06-27-why-the-iphone-will-fail.html",
+      "author": "chistev",
+      "item_id": "hn:48626689",
+      "headline": "A 2007 Engadget post confidently explaining __why the iPhone will fail__ — aged like milk.",
+      "subreddit": null,
+      "source_text": "Why the iPhone Will Fail (2007)",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-22T06:58:47+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://engadget.com/2007-06-27-why-the-iphone-will-fail.html",
+      "learning_score": 3
+    },
+    {
+      "url": "https://trace-commons-web.hf.space/",
+      "author": "_josh_meyer_",
+      "item_id": "hn:48627152",
+      "headline": "An open __CC-BY-4.0 dataset__ wants your Claude Code traces — donate yours to help the commons.",
+      "subreddit": null,
+      "source_text": "Donate your Claude Code traces to an open CC-BY-4.0 dataset",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-22T08:00:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://trace-commons-web.hf.space",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.maroonmed.com/fun-with-docker-broken-networking-remote-filesystem-mounts-and-race-conditions-on-debian-13/",
+      "author": "erdoc69",
+      "item_id": "hn:48627125",
+      "headline": "A war story about Docker on Debian 13: __broken networking, remote filesystem mounts, and race conditions__.",
+      "subreddit": null,
+      "source_text": "Fun with Docker, broken networking, remote filesystems, and race conditions",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-22T07:57:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://maroonmed.com/fun-with-docker-broken-networking-remote-filesystem-mounts-and-race-conditions-on-debian-13",
+      "learning_score": 2
+    },
+    {
+      "url": "https://rutgerbregman.substack.com/p/an-inconvenient-truth-about-ai",
+      "author": "nemoniac",
+      "item_id": "hn:48627094",
+      "headline": "Rutger Bregman makes the case for __an inconvenient truth about AI__ that boosters don't want to hear.",
+      "subreddit": null,
+      "source_text": "An Inconvenient Truth About AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-22T07:53:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://rutgerbregman.substack.com/p/an-inconvenient-truth-about-ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://carsondb.github.io/blog/2026-06-api-native/",
+      "author": "CarsonWu",
+      "item_id": "hn:48626915",
+      "headline": "The case for __API-native computer control__ — moving beyond clicking and shell commands.",
+      "subreddit": null,
+      "source_text": "Beyond Clicking and Shell Commands: API-Native Computer Control",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-22T07:28:25+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://carsondb.github.io/blog/2026-06-api-native",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-06-22T08:18:17.344722+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "2438fba04b2dbf50c8d92b6676f509b4dccf4ef1eb03f5161883b4ff930e9530"
+}
