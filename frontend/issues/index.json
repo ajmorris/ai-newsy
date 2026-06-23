@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-22T00:00:00Z",
-  "issueCount": 63,
+  "generatedAt": "2026-06-23T00:00:00Z",
+  "issueCount": 64,
   "latestIssue": {
-    "slug": "2026-06-22",
-    "digestDate": "2026-06-22",
-    "displayDate": "Jun 22, 2026",
-    "issueNumber": "60622",
-    "subject": "ISSUE 60622 \u00b7 6 STORIES \u00b7 11 MIN READ",
-    "intro": "The Trump administration just forced Anthropic to pull its two newest AI models offline over national security concerns \u2014 a dramatic escalation that has cybersecurity experts warning the move actually makes America *less* safe. It's a wild day in AI news, with stories ranging from Samsung rolling out ChatGPT to all its employees in one of OpenAI's biggest enterprise deals ever, to Apple quietly embedding AI into everyday iPhone tasks like splitting dinner bills, to Anthropic's own engineering lead revealing her teams now ship 8x more code per quarter thanks to AI tools. Let's dig in.",
-    "articleCount": 6,
-    "urlPath": "/issues/2026-06-22.html",
-    "contentHash": "9c036419f9b959482207aa09dd2dceea472d507bcb2c1e2f69240976f40a781d"
+    "slug": "2026-06-23",
+    "digestDate": "2026-06-23",
+    "displayDate": "Jun 23, 2026",
+    "issueNumber": "60623",
+    "subject": "ISSUE 60623 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The biggest story today isn't about what AI can do \u2014 it's about what it's already *doing* to the workforce. TechCrunch's running tally of 2026 tech layoffs paints a stark picture: Oracle cutting 21,000 jobs, Meta shedding 8,000, Google quietly trimming thousands of engineers \u2014 all while reporting record revenues and citing AI as a key factor. Beyond the layoffs, today's digest covers a wide range of AI milestones and trends, from an AI lawyer winning its first English court case and an AI system catching a heart condition that doctors missed, to Nvidia's push for hotter, waterless data centers and the rise of endlessly recursive \"loops\" where AI agents prompt other AI agents around the clock.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-06-23.html",
+    "contentHash": "ab1dc3f0f43165958e354fa5eedbd39468e22ebe48b2862178d5dc87a1dbc403"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-23",
+      "digestDate": "2026-06-23",
+      "displayDate": "Jun 23, 2026",
+      "issueNumber": "60623",
+      "subject": "ISSUE 60623 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The biggest story today isn't about what AI can do \u2014 it's about what it's already *doing* to the workforce. TechCrunch's running tally of 2026 tech layoffs paints a stark picture: Oracle cutting 21,000 jobs, Meta shedding 8,000, Google quietly trimming thousands of engineers \u2014 all while reporting record revenues and citing AI as a key factor. Beyond the layoffs, today's digest covers a wide range of AI milestones and trends, from an AI lawyer winning its first English court case and an AI system catching a heart condition that doctors missed, to Nvidia's push for hotter, waterless data centers and the rise of endlessly recursive \"loops\" where AI agents prompt other AI agents around the clock.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-23.html",
+      "contentHash": "ab1dc3f0f43165958e354fa5eedbd39468e22ebe48b2862178d5dc87a1dbc403"
+    },
     {
       "slug": "2026-06-22",
       "digestDate": "2026-06-22",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-12.html",
       "contentHash": "c27006e805397bcb713026f1da867f65e89c3966f6d9c288c40545886747c362"
-    },
-    {
-      "slug": "2026-06-11",
-      "digestDate": "2026-06-11",
-      "displayDate": "Jun 11, 2026",
-      "issueNumber": "60611",
-      "subject": "ISSUE 60611 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry's reshaping of the global workforce is coming into sharp focus today, with Opendoor's abrupt exit from India sparking a heated debate about whether AI-native teams are beginning to dismantle the offshore outsourcing model that employs millions. Meanwhile, we're also looking at Anthropic's unconventional management structure (Dario Amodei has *one* direct report), Australia's push to avoid repeating resource-boom mistakes as data centers proliferate, and how an astrophysicist is using Codex to tackle one of the universe's hardest simulation problems.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-11.html",
-      "contentHash": "116885fc09ef76d42c4cbac222037f813917e1e829a9331ed6bf88ba06f09e80"
     }
   ]
 }
