@@ -59,6 +59,19 @@
       "fetched_at": "2026-06-23T07:24:36.900368+00:00"
     },
     {
+      "id": 4642,
+      "source": "OpenAI",
+      "title": "How Omio is building the future of conversational travel",
+      "url": "https://openai.com/index/omio",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Omio, a leading multimodal travel platform connecting travelers with trains, buses, ferries, and flights across 3,000+ providers in 47 countries, is using OpenAI's products (ChatGPT, Codex, API) to transform both its customer experience and internal operations. Since 2023, Omio has built conversational travel experiences allowing users to ask natural-language questions and receive personalized, bookable journeys from live transportation data. Internally, the company rolled out ChatGPT and Codex across teams, reducing development effort to 20% of previous levels and cutting project timelines from three months with multiple developers to one month with a single developer. CTO Tomas Vocetka describes the shift from search-based interfaces to AI-native conversational commerce as a fundamental reimagining of travel discovery and booking.",
+      "opinion": "This is a well-executed case study that demonstrates a genuinely compelling use case for conversational AI in travel. The shift from fragmented, multi-site search to a natural-language interface for multimodal travel planning addresses a real pain point. The productivity metrics are impressive if accurate—reducing development effort to 20% is transformative. However, the article reads heavily as marketing material for both Omio and OpenAI, lacking critical examination of challenges, failure cas…",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6wFIgOcT1xK5IvZQIDJ2xQ/edf82561f00cdb27cf3ffcfcad7cd215/oai_Omio_SEO.png?w=1600&h=900&fit=fill",
+      "published_at": "2026-06-23T00:00:00+00:00",
+      "fetched_at": "2026-06-23T08:16:40.994727+00:00"
+    },
+    {
       "id": 4631,
       "source": "The Verge AI",
       "title": "Nvidia says its AI data center design runs hotter to use a lot less water",
@@ -96,19 +109,6 @@
       "image_url": "",
       "published_at": "2026-06-22T21:00:06+00:00",
       "fetched_at": "2026-06-23T07:24:40.418234+00:00"
-    },
-    {
-      "id": 4617,
-      "source": "TechCrunch AI",
-      "title": "The AI world is getting ‘loopy’",
-      "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "The article discusses the emerging trend of 'loops' in AI, where swarms of AI agents work continuously in the background, with agents prompting other agents in recursive cycles. Boris Cherny, creator of Claude Code, endorsed loops at Meta's @Scale conference as a significant step beyond agentic AI. He described running agents that continuously improve code architecture and submit pull requests endlessly. The concept builds on recursive loops from computer science but uses non-deterministic logic where subagents decide when to stop. Examples include the 'Ralph Loop' that summarizes work and checks goal completion, and approaches leveraging more test-time compute to solve problems by persistently throwing resources at them. The article notes this approach is token-intensive and expensive, representing a significant escalation in AI resource consumption compared to simple chatbots.",
-      "opinion": "This represents a genuinely important evolution in how AI is being deployed, moving from tool-assisted work to autonomous continuous improvement cycles. The concept is intellectually compelling but raises serious concerns. The trust required to let AI agents run indefinitely without human checkpoints is substantial, and the economic implications of burning through tokens endlessly are significant. There's also a real risk of compounding errors — non-deterministic stopping conditions mean these…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-3.44.39-PM.jpg?resize=1200,676",
-      "published_at": "2026-06-22T20:53:11+00:00",
-      "fetched_at": "2026-06-23T07:24:37.102249+00:00"
     }
   ],
   "sections": [
@@ -168,6 +168,19 @@
           "fetched_at": "2026-06-23T07:24:36.900368+00:00"
         },
         {
+          "id": 4642,
+          "source": "OpenAI",
+          "title": "How Omio is building the future of conversational travel",
+          "url": "https://openai.com/index/omio",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Omio, a leading multimodal travel platform connecting travelers with trains, buses, ferries, and flights across 3,000+ providers in 47 countries, is using OpenAI's products (ChatGPT, Codex, API) to transform both its customer experience and internal operations. Since 2023, Omio has built conversational travel experiences allowing users to ask natural-language questions and receive personalized, bookable journeys from live transportation data. Internally, the company rolled out ChatGPT and Codex across teams, reducing development effort to 20% of previous levels and cutting project timelines from three months with multiple developers to one month with a single developer. CTO Tomas Vocetka describes the shift from search-based interfaces to AI-native conversational commerce as a fundamental reimagining of travel discovery and booking.",
+          "opinion": "This is a well-executed case study that demonstrates a genuinely compelling use case for conversational AI in travel. The shift from fragmented, multi-site search to a natural-language interface for multimodal travel planning addresses a real pain point. The productivity metrics are impressive if accurate—reducing development effort to 20% is transformative. However, the article reads heavily as marketing material for both Omio and OpenAI, lacking critical examination of challenges, failure cas…",
+          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/6wFIgOcT1xK5IvZQIDJ2xQ/edf82561f00cdb27cf3ffcfcad7cd215/oai_Omio_SEO.png?w=1600&h=900&fit=fill",
+          "published_at": "2026-06-23T00:00:00+00:00",
+          "fetched_at": "2026-06-23T08:16:40.994727+00:00"
+        },
+        {
           "id": 4631,
           "source": "The Verge AI",
           "title": "Nvidia says its AI data center design runs hotter to use a lot less water",
@@ -205,19 +218,6 @@
           "image_url": "",
           "published_at": "2026-06-22T21:00:06+00:00",
           "fetched_at": "2026-06-23T07:24:40.418234+00:00"
-        },
-        {
-          "id": 4617,
-          "source": "TechCrunch AI",
-          "title": "The AI world is getting ‘loopy’",
-          "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "The article discusses the emerging trend of 'loops' in AI, where swarms of AI agents work continuously in the background, with agents prompting other agents in recursive cycles. Boris Cherny, creator of Claude Code, endorsed loops at Meta's @Scale conference as a significant step beyond agentic AI. He described running agents that continuously improve code architecture and submit pull requests endlessly. The concept builds on recursive loops from computer science but uses non-deterministic logic where subagents decide when to stop. Examples include the 'Ralph Loop' that summarizes work and checks goal completion, and approaches leveraging more test-time compute to solve problems by persistently throwing resources at them. The article notes this approach is token-intensive and expensive, representing a significant escalation in AI resource consumption compared to simple chatbots.",
-          "opinion": "This represents a genuinely important evolution in how AI is being deployed, moving from tool-assisted work to autonomous continuous improvement cycles. The concept is intellectually compelling but raises serious concerns. The trust required to let AI agents run indefinitely without human checkpoints is substantial, and the economic implications of burning through tokens endlessly are significant. There's also a real risk of compounding errors — non-deterministic stopping conditions mean these…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-3.44.39-PM.jpg?resize=1200,676",
-          "published_at": "2026-06-22T20:53:11+00:00",
-          "fetched_at": "2026-06-23T07:24:37.102249+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/noisyb0y1/status/2069149306347540840",
       "author": "noisyb0y1",
-      "headline": "Apple showed how to run __10 AI agents locally on Mac__ — no cloud, no API keys, zero costs. Your data never leaves the device.",
+      "headline": "Apple showed how to run __10 AI agents locally on Mac__ — no cloud, no API keys, zero cost.",
       "tweet_id": "3881eba9-b6bc-81a4-8a7c-e212a939eb29",
       "source_text": "APPLE JUST SHOWED HOW TO RUN 10 AI AGENTS LOCALLY ON MAC - NO CLOUD, NO API KEYS, ZERO COSTS\n\n00:10 Apple engineer says: \"your data stays on your device, AI available anywhere at any time, zero usage costs\"\n\nagent reads your code, checks GitHub, finds what needs attention and https://t.co/0IHvgVwHwb https://t.co/W9DTNk4LCc",
       "created_time": "2026-06-23T03:07:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/ryolu_/status/2069218497272717661",
       "author": "ryolu_",
-      "headline": "Ryolu shares his __Cursor Compile talk__ on how to build in the age of AI and what doesn't change.",
+      "headline": "Ryo Lu's Cursor Compile talk: __what doesn't change__ about how we build in the age of AI.",
       "tweet_id": "3881eba9-b6bc-8107-94af-ecf101e3c0e1",
       "source_text": "here's my talk at Cursor Compile\nsome thoughts on how we build in the age of AI\nand what doesn't change https://t.co/otMw3nwPkr",
       "created_time": "2026-06-23T03:02:00.000Z",
@@ -289,7 +289,7 @@
       "url": "https://github.com/compresh/compresh-benchmarks/blob/main/epbench/WRITEUP.md",
       "author": "compresh",
       "item_id": "hn:48641509",
-      "headline": "A meditation on what happens when you ask an AI to write poetry — and whether __the AI poet__ reveals more about us than itself.",
+      "headline": "Compresh claims it matched __full-context recall on ~1% of the tokens__ and open-sourced the benchmark to prove it.",
       "subreddit": null,
       "source_text": "Show HN: We matched full-context recall on ~1% of the tokens (open benchmark)",
       "source_type": "hacker_news",
@@ -299,76 +299,76 @@
       "learning_score": 3
     },
     {
-      "url": "https://openresearch.sh/",
-      "author": "ilreb",
-      "item_id": "hn:48641347",
-      "headline": "Openresearch ships __GLM 5.2 for automated research__ workflows — open-source and self-hostable.",
+      "url": "https://twitter.com/JaydenDavisNC/status/2069190974622822872",
+      "author": "wahnfrieden",
+      "item_id": "hn:48641397",
+      "headline": "GPT 5.6 Pro's __SVG output__ is turning heads — early samples show near-illustration-quality vector generation.",
       "subreddit": null,
-      "source_text": "Openresearch: GLM 5.2 for Autoresearch",
+      "source_text": "GPT 5.6 Pro SVG output is INSANE",
       "source_type": "hacker_news",
-      "created_time": "2026-06-23T07:02:43+00:00",
+      "created_time": "2026-06-23T07:11:19+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://openresearch.sh",
+      "canonical_url": "https://twitter.com/JaydenDavisNC/status/2069190974622822872",
       "learning_score": 3
     },
     {
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "author": "ankitg12",
-      "item_id": "hn:48641583",
-      "headline": "Anthropic now publishes the __full system prompts__ powering Claude's API, version by version.",
+      "url": "https://tossrock.substack.com/p/36-hours-with-fable",
+      "author": "fragmede",
+      "item_id": "hn:48641815",
+      "headline": "A developer spent __36 hours with Fable__ and wrote up what it's actually like to live inside the game.",
       "subreddit": null,
-      "source_text": "System Prompts – Claude API Docs",
+      "source_text": "36 Hours with Fable",
       "source_type": "hacker_news",
-      "created_time": "2026-06-23T07:35:05+00:00",
+      "created_time": "2026-06-23T08:03:47+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "canonical_url": "https://tossrock.substack.com/p/36-hours-with-fable",
       "learning_score": 2
     },
     {
-      "url": "https://seadance-video.com/",
-      "author": "Evanmo666",
-      "item_id": "hn:48641553",
-      "headline": "A simple web studio for __generating videos with Seedance models__ directly in the browser.",
+      "url": "https://www.gov.uk/government/news/a-decisive-shift-to-power-british-ai-new-11-billion-plan-to-back-chip-firms-boost-computing-power-and-skills-for-the-ai-revolution",
+      "author": "rbanffy",
+      "item_id": "hn:48641809",
+      "headline": "The UK government announces a __£1.1B plan to back chip firms__ and boost AI computing power and skills.",
       "subreddit": null,
-      "source_text": "Show HN: A simple web studio for generating videos with Seedance models",
+      "source_text": "New £1.1B plan to back chip firms, boost computing and skills for the AI",
       "source_type": "hacker_news",
-      "created_time": "2026-06-23T07:31:13+00:00",
+      "created_time": "2026-06-23T08:03:03+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://seadance-video.com",
+      "canonical_url": "https://gov.uk/government/news/a-decisive-shift-to-power-british-ai-new-11-billion-plan-to-back-chip-firms-boost-computing-power-and-skills-for-the-ai-revolution",
       "learning_score": 2
     },
     {
-      "url": "https://status.claude.com/incidents/2stpj60m2fr9",
-      "author": "adamheath",
-      "item_id": "hn:48641500",
-      "headline": "Claude Opus 4.8 hit a wall: Anthropic confirms __elevated errors__ and is investigating.",
+      "url": "https://www.computerweekly.com/news/366644941/Artificial-intelligence-based-law-firm-wins-in-court",
+      "author": "TMWNN",
+      "item_id": "hn:48641786",
+      "headline": "An __AI-based law firm wins in court__ — the first reported case of a largely automated legal practice prevailing at trial.",
       "subreddit": null,
-      "source_text": "Elevated errors for Claude Opus 4.8",
+      "source_text": "Artificial intelligence-based law firm wins in court",
       "source_type": "hacker_news",
-      "created_time": "2026-06-23T07:24:29+00:00",
+      "created_time": "2026-06-23T08:00:20+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://status.claude.com/incidents/2stpj60m2fr9",
+      "canonical_url": "https://computerweekly.com/news/366644941/Artificial-intelligence-based-law-firm-wins-in-court",
       "learning_score": 2
     },
     {
-      "url": "https://static.tomaskafka.com/prototypes/1m-starlinks/",
-      "author": "tomaskafka",
-      "item_id": "hn:48641489",
-      "headline": "Interactive visualization asks: __would 1M Starlink satellites__ actually be visible from Earth? The answer is denser than you'd think.",
+      "url": "https://www.economist.com/finance-and-economics/2026/06/22/how-to-turn-compute-into-a-financial-asset",
+      "author": "zczc",
+      "item_id": "hn:48641725",
+      "headline": "The Economist explores how to turn __compute into a financial asset__ — securitizing GPU time like it's real estate.",
       "subreddit": null,
-      "source_text": "Visualization: Would 1M Starlink satellites look",
+      "source_text": "How to turn compute into a financial asset",
       "source_type": "hacker_news",
-      "created_time": "2026-06-23T07:22:50+00:00",
+      "created_time": "2026-06-23T07:53:01+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://static.tomaskafka.com/prototypes/1m-starlinks",
+      "canonical_url": "https://economist.com/finance-and-economics/2026/06/22/how-to-turn-compute-into-a-financial-asset",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-23T07:39:27.065927+00:00",
+    "generated_at": "2026-06-23T08:18:37.508624+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "e2e5c5a49122b13992a9540755fa6dbdb8776fd1464f3170faa00449e8ff4836"
+  "content_hash": "ab1dc3f0f43165958e354fa5eedbd39468e22ebe48b2862178d5dc87a1dbc403"
 }
