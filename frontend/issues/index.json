@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-23T00:00:00Z",
-  "issueCount": 64,
+  "generatedAt": "2026-06-24T00:00:00Z",
+  "issueCount": 65,
   "latestIssue": {
-    "slug": "2026-06-23",
-    "digestDate": "2026-06-23",
-    "displayDate": "Jun 23, 2026",
-    "issueNumber": "60623",
-    "subject": "ISSUE 60623 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story today isn't about what AI can do \u2014 it's about what it's already *doing* to the workforce. TechCrunch's running tally of 2026 tech layoffs paints a stark picture: Oracle cutting 21,000 jobs, Meta shedding 8,000, Google quietly trimming thousands of engineers \u2014 all while reporting record revenues and citing AI as a key factor. Beyond the layoffs, today's digest covers a wide range of AI milestones and trends, from an AI lawyer winning its first English court case and an AI system catching a heart condition that doctors missed, to Nvidia's push for hotter, waterless data centers and the rise of endlessly recursive \"loops\" where AI agents prompt other AI agents around the clock.",
+    "slug": "2026-06-24",
+    "digestDate": "2026-06-24",
+    "displayDate": "Jun 24, 2026",
+    "issueNumber": "60624",
+    "subject": "ISSUE 60624 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "China just reclaimed the title of the world's fastest supercomputer for the first time since 2017, the White House is racing to quantum-proof government cryptography years ahead of schedule, and Hollywood studios are tripping over themselves to avoid releasing a film that might upset OpenAI \u2014 it's a day where the power dynamics of technology are front and center. Today's digest spans the global AI landscape, from Indian factory workers filming their own potential obsolescence to Google Home getting eerily better at recognizing who's in your house, with plenty of strategic moves in between.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-23.html",
-    "contentHash": "ab1dc3f0f43165958e354fa5eedbd39468e22ebe48b2862178d5dc87a1dbc403"
+    "urlPath": "/issues/2026-06-24.html",
+    "contentHash": "f83be681f0377856bec6f8fcea01fc5e813d96d94c95b2e1c0a376958af0cc6c"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-24",
+      "digestDate": "2026-06-24",
+      "displayDate": "Jun 24, 2026",
+      "issueNumber": "60624",
+      "subject": "ISSUE 60624 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "China just reclaimed the title of the world's fastest supercomputer for the first time since 2017, the White House is racing to quantum-proof government cryptography years ahead of schedule, and Hollywood studios are tripping over themselves to avoid releasing a film that might upset OpenAI \u2014 it's a day where the power dynamics of technology are front and center. Today's digest spans the global AI landscape, from Indian factory workers filming their own potential obsolescence to Google Home getting eerily better at recognizing who's in your house, with plenty of strategic moves in between.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-24.html",
+      "contentHash": "f83be681f0377856bec6f8fcea01fc5e813d96d94c95b2e1c0a376958af0cc6c"
+    },
     {
       "slug": "2026-06-23",
       "digestDate": "2026-06-23",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-13.html",
       "contentHash": "c113d8ec12f4355e2117ecde5168ef5ac4830064cc477377ce802b81ed9034e6"
-    },
-    {
-      "slug": "2026-06-12",
-      "digestDate": "2026-06-12",
-      "displayDate": "Jun 12, 2026",
-      "issueNumber": "60612",
-      "subject": "ISSUE 60612 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Your Pok\u00e9mon Go habit might have just helped build a military drone navigator, Jeff Bezos is raising $12 billion to create an \"artificial general engineer,\" and SpaceX just shattered every IPO record in history \u2014 it's a day where the sheer scale of ambition (and dollar signs) in tech is hard to wrap your head around. From the largest IPO ever at $75 billion to a congressional race awash in $16 million of AI industry money, today's stories reveal just how deeply artificial intelligence and big tech are reshaping everything from battlefields to ballot boxes. Grab your coffee and settle in, because this one's a lot.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-12.html",
-      "contentHash": "c27006e805397bcb713026f1da867f65e89c3966f6d9c288c40545886747c362"
     }
   ]
 }
