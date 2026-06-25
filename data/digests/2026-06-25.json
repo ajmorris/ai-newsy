@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 4705,
+      "source": "Guardian AI",
+      "title": "‘More relevant than making fires’: Explorer Scouts launch badges for AI and digital age",
+      "url": "https://www.theguardian.com/society/2026/jun/25/explorer-scouts-launch-badges-ai-digital-age",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Explorer Scouts are introducing new badges in content creation, digital communication, and online safety as part of their first major overhaul in nearly 25 years. The changes came after consulting nearly 3,000 teenagers aged 14-18 who expressed a desire for skills to navigate a world shaped by AI, social media, and digital technology. Adjustments may be needed when a social media ban for young people comes into effect.",
+      "opinion": "This is a sensible and overdue modernization of the Scouting program. Teaching young people practical digital literacy skills, including understanding AI and online safety, is arguably more immediately relevant to their daily lives than many traditional outdoor skills. The fact that the changes were driven by consulting thousands of teenagers themselves adds legitimacy to the initiative. However, the mention of potential tweaks needed for an incoming social media ban highlights the challenge of…",
+      "image_url": "https://i.guim.co.uk/img/media/16b4258744f3b774fe6b88c7cfa42ee04ce437a6/21_79_570_456/master/570.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dbb30d8726227e2eed03da67d79e778e",
+      "published_at": "2026-06-25T07:40:46+00:00",
+      "fetched_at": "2026-06-25T08:12:47.525207+00:00"
+    },
+    {
       "id": 4702,
       "source": "Claude Code Changelog",
       "title": "v2.1.191",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2023/02/glitched-google-logo.jpg?resize=1200,645",
       "published_at": "2026-06-24T21:42:07+00:00",
       "fetched_at": "2026-06-25T07:21:07.880827+00:00"
-    },
-    {
-      "id": 4676,
-      "source": "TechCrunch AI",
-      "title": "The memory chip crunch is paying off for this US company",
-      "url": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Micron, the largest U.S. computer-memory chip maker, reported exceptional third-quarter earnings driven by the AI-fueled memory chip shortage. Revenue quadrupled year-over-year to $41.45 billion, while profit surged from $1.88 billion to $28.2 billion. The company's stock has risen dramatically from around $83 in early 2024 to $1,048.51, giving it a $1.2 trillion market cap. Micron forecasted fourth-quarter revenue between $49-$51 billion and announced a deal to supply Anthropic with memory and storage chips, also participating in Anthropic's Series H funding round. The memory chip shortage, dubbed 'RAMageddon,' is expected to persist through 2027, with rising prices trickling down to consumers.",
-      "opinion": "Micron's results are staggering and illustrate how the AI boom has created massive winners in the semiconductor supply chain. A 15x profit increase year-over-year and a stock price that has multiplied roughly 12x in two and a half years is extraordinary. However, this level of growth is inherently tied to a supply-demand imbalance that won't last forever. The memory chip shortage is a double-edged sword: while it's enormously profitable for Micron, it's raising costs across the tech ecosystem a…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/micron-HQ-GettyImages-2147904174.jpg?resize=1200,801",
-      "published_at": "2026-06-24T21:30:55+00:00",
-      "fetched_at": "2026-06-25T07:21:08.043241+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 4705,
+          "source": "Guardian AI",
+          "title": "‘More relevant than making fires’: Explorer Scouts launch badges for AI and digital age",
+          "url": "https://www.theguardian.com/society/2026/jun/25/explorer-scouts-launch-badges-ai-digital-age",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Explorer Scouts are introducing new badges in content creation, digital communication, and online safety as part of their first major overhaul in nearly 25 years. The changes came after consulting nearly 3,000 teenagers aged 14-18 who expressed a desire for skills to navigate a world shaped by AI, social media, and digital technology. Adjustments may be needed when a social media ban for young people comes into effect.",
+          "opinion": "This is a sensible and overdue modernization of the Scouting program. Teaching young people practical digital literacy skills, including understanding AI and online safety, is arguably more immediately relevant to their daily lives than many traditional outdoor skills. The fact that the changes were driven by consulting thousands of teenagers themselves adds legitimacy to the initiative. However, the mention of potential tweaks needed for an incoming social media ban highlights the challenge of…",
+          "image_url": "https://i.guim.co.uk/img/media/16b4258744f3b774fe6b88c7cfa42ee04ce437a6/21_79_570_456/master/570.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dbb30d8726227e2eed03da67d79e778e",
+          "published_at": "2026-06-25T07:40:46+00:00",
+          "fetched_at": "2026-06-25T08:12:47.525207+00:00"
+        },
         {
           "id": 4702,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2023/02/glitched-google-logo.jpg?resize=1200,645",
           "published_at": "2026-06-24T21:42:07+00:00",
           "fetched_at": "2026-06-25T07:21:07.880827+00:00"
-        },
-        {
-          "id": 4676,
-          "source": "TechCrunch AI",
-          "title": "The memory chip crunch is paying off for this US company",
-          "url": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Micron, the largest U.S. computer-memory chip maker, reported exceptional third-quarter earnings driven by the AI-fueled memory chip shortage. Revenue quadrupled year-over-year to $41.45 billion, while profit surged from $1.88 billion to $28.2 billion. The company's stock has risen dramatically from around $83 in early 2024 to $1,048.51, giving it a $1.2 trillion market cap. Micron forecasted fourth-quarter revenue between $49-$51 billion and announced a deal to supply Anthropic with memory and storage chips, also participating in Anthropic's Series H funding round. The memory chip shortage, dubbed 'RAMageddon,' is expected to persist through 2027, with rising prices trickling down to consumers.",
-          "opinion": "Micron's results are staggering and illustrate how the AI boom has created massive winners in the semiconductor supply chain. A 15x profit increase year-over-year and a stock price that has multiplied roughly 12x in two and a half years is extraordinary. However, this level of growth is inherently tied to a supply-demand imbalance that won't last forever. The memory chip shortage is a double-edged sword: while it's enormously profitable for Micron, it's raising costs across the tech ecosystem a…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/micron-HQ-GettyImages-2147904174.jpg?resize=1200,801",
-          "published_at": "2026-06-24T21:30:55+00:00",
-          "fetched_at": "2026-06-25T07:21:08.043241+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/dunik_7/status/2069501428146581543",
       "author": "dunik_7",
-      "headline": "Peter Steinberger brought his viral thesis to Microsoft Build with a 43-minute talk on __building the thing that builds the thing__.",
+      "headline": "Peter Steinberger brought his viral \"__build the thing that builds the thing__\" philosophy to a full 43-minute Microsoft Build session.",
       "tweet_id": "38a1eba9-b6bc-81cb-b565-dea90bd21770",
       "source_text": "Peter Steinberger took the stage at Microsoft Build with the most loop-pilled title in tech:\n\n\"Build the thing that builds the thing.\"\n\nThe same guy whose two sentences on this hit 6.5M views except now he's got 43 minutes to actually show the machine.\n\nInside: the tool ecosystem https://t.co/5PxJPsuC3i https://t.co/RlWXmeTW36",
       "created_time": "2026-06-25T00:57:00.000Z",
@@ -246,11 +246,21 @@
     {
       "url": "https://twitter.com/businessbarista/status/2069837132848640480",
       "author": "businessbarista",
-      "headline": "Alex Lieberman uses a dead-simple Claude skill to __prioritize his to-do list and calendar-block his day__ based on company and personal goals.",
+      "headline": "Alex Lieberman uses a daily Claude skill that __prioritizes his to-do list and calendar-blocks his day__ based on company and personal goals.",
       "tweet_id": "38a1eba9-b6bc-812a-a5f5-e905f4cd3572",
       "source_text": "Stupid simple, but most powerful Claude skill I run. \n\nEvery day, Claude helps me create and prioritize my to-do list based on company & personal goals then calendar block my to-do list so my ADHD-ridden brain  has exact clarity on how I should be spending my time.\n\nStep 1: https://t.co/Xw8MNPh0VI",
       "created_time": "2026-06-25T00:32:00.000Z",
       "canonical_url": "https://twitter.com/businessbarista/status/2069837132848640480",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/sqs/status/2069695703346246038",
+      "author": "sqs",
+      "headline": "Quinn Slack doubts companies will become a __\"Claude shop\" the way they became a \"Microsoft shop\"__ — wonders how Anthropic's enterprise push will land.",
+      "tweet_id": "3891eba9-b6bc-8163-84c9-c60272d057c6",
+      "source_text": "I don’t see companies choosing to be a “Claude shop” in the same way that companies are a “Microsoft shop”. Wonder how this will go over. https://t.co/1eLIzron9k",
+      "created_time": "2026-06-24T10:27:00.000Z",
+      "canonical_url": "https://twitter.com/sqs/status/2069695703346246038",
       "learning_score": 3
     },
     {
@@ -272,64 +282,93 @@
       "created_time": "2026-06-25T00:37:00.000Z",
       "canonical_url": "https://twitter.com/ClaudeDevs/status/2069895377080443271",
       "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/9to5mac/status/2069892664967733519",
-      "author": "9to5mac",
-      "headline": "iOS 27 beta 2: Apple now tells Siri AI to __clearly refuse requests to summarize URLs__.",
-      "tweet_id": "38a1eba9-b6bc-814a-8458-de4378d082da",
-      "source_text": "iOS 27 beta 2: Apple tells Siri AI to clearly refuse requests to summarize URLs https://t.co/CeD1VkTKav by @mvcmendes",
-      "created_time": "2026-06-25T00:37:00.000Z",
-      "canonical_url": "https://twitter.com/9to5mac/status/2069892664967733519",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
-      "url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
-      "author": "BerislavLopac",
-      "item_id": "hn:48669707",
-      "headline": "Charity Majors makes the case to __make AI boring again__ — stop treating it like magic, start treating it like infrastructure.",
+      "url": "https://news.ycombinator.com/item?id=48670364",
+      "author": "c99e",
+      "item_id": "hn:48670364",
+      "headline": "c99e makes the case that LLMs __amplify code quality__ rather than improve it — garbage in, shinier garbage out.",
       "subreddit": null,
-      "source_text": "Make AI Boring Again",
+      "source_text": "LLMs amplify code quality, they don't improve it",
       "source_type": "hacker_news",
-      "created_time": "2026-06-25T06:23:21+00:00",
+      "created_time": "2026-06-25T08:01:02+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
+      "canonical_url": "https://news.ycombinator.com/item?id=48670364",
+      "learning_score": 3
+    },
+    {
+      "url": "https://annalium.com",
+      "author": "i18nagentai",
+      "item_id": "hn:48670444",
+      "headline": "__Annalium__ renders world history as an interactive map and timeline you can explore in the browser.",
+      "subreddit": null,
+      "source_text": "Show HN: Annalium – a world-history map and timeline in the browser",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-25T08:12:47+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://annalium.com",
       "learning_score": 2
     },
     {
-      "url": "https://compsec.snu.ac.kr/blog/badepoll",
-      "author": "j-jaeyoung",
-      "item_id": "hn:48669528",
-      "headline": "Bad Epoll: the __bug Mythos missed__ in Linux's event polling, dissected by Seoul National's security lab.",
+      "url": "https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/",
+      "author": "downbad_",
+      "item_id": "hn:48670426",
+      "headline": "The classic reverse-engineering story: one developer __cut GTA Online loading times by 70%__ by finding a single bad JSON parser.",
       "subreddit": null,
-      "source_text": "Bad Epoll: The bug Mythos missed",
+      "source_text": "I cut GTA Online loading times by 70% (2021)",
       "source_type": "hacker_news",
-      "created_time": "2026-06-25T05:59:27+00:00",
+      "created_time": "2026-06-25T08:09:58+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://compsec.snu.ac.kr/blog/badepoll",
+      "canonical_url": "https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70",
       "learning_score": 2
     },
     {
-      "url": "https://www.youtube.com/watch?v=YrJzjC4kKCY",
-      "author": "AbbeFaria",
-      "item_id": "hn:48669500",
-      "headline": "A video breakdown of how Big Tech __hides the true cost of the AI buildout__ from investors and the public.",
+      "url": "https://aisle.com/blog/aisle-discovers-6-new-cves-in-curl-including-the-oldest-issue-ever-reported",
+      "author": "ragebol",
+      "item_id": "hn:48670411",
+      "headline": "Aisle found __6 new CVEs in curl__, including the oldest issue ever reported in the project's history.",
       "subreddit": null,
-      "source_text": "How Big Tech Hides the True Cost of the AI Buildout [video]",
+      "source_text": "Aisle Discovers 6 New CVEs in Curl, Including the Oldest Issue Ever Reported",
       "source_type": "hacker_news",
-      "created_time": "2026-06-25T05:55:14+00:00",
+      "created_time": "2026-06-25T08:07:54+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=YrJzjC4kKCY",
+      "canonical_url": "https://aisle.com/blog/aisle-discovers-6-new-cves-in-curl-including-the-oldest-issue-ever-reported",
+      "learning_score": 2
+    },
+    {
+      "url": "https://outofcontext.dev/blog/cursor-auto-review-vs-yolo/",
+      "author": "leianixcheese",
+      "item_id": "hn:48670322",
+      "headline": "A practical breakdown of __Cursor's auto-review vs. YOLO mode__ and why the middle safety tier might be the sweet spot.",
+      "subreddit": null,
+      "source_text": "Cursor auto-review vs. YOLO – picking the middle safety tier",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-25T07:56:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://outofcontext.dev/blog/cursor-auto-review-vs-yolo",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.techsentiments.com/article/2026/06/24/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale-c979",
+      "author": "rajsuper123",
+      "item_id": "hn:48670298",
+      "headline": "OpenAI and Broadcom __announce a custom chip__ designed for LLM inference at scale.",
+      "subreddit": null,
+      "source_text": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-25T07:53:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://techsentiments.com/article/2026/06/24/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale-c979",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-25T07:37:16.754241+00:00",
+    "generated_at": "2026-06-25T08:14:43.571188+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "cc983e8e7f74d5ffc251e27d44e612e0095b43cfe6239cae662db9864f946db1"
+  "content_hash": "c73b7c260626fb0dd4ee0501d490584b697db8af910b3b6c0f0a93deec0e032b"
 }
