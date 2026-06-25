@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-24T00:00:00Z",
-  "issueCount": 65,
+  "generatedAt": "2026-06-25T00:00:00Z",
+  "issueCount": 66,
   "latestIssue": {
-    "slug": "2026-06-24",
-    "digestDate": "2026-06-24",
-    "displayDate": "Jun 24, 2026",
-    "issueNumber": "60624",
-    "subject": "ISSUE 60624 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "China just reclaimed the title of the world's fastest supercomputer for the first time since 2017, the White House is racing to quantum-proof government cryptography years ahead of schedule, and Hollywood studios are tripping over themselves to avoid releasing a film that might upset OpenAI \u2014 it's a day where the power dynamics of technology are front and center. Today's digest spans the global AI landscape, from Indian factory workers filming their own potential obsolescence to Google Home getting eerily better at recognizing who's in your house, with plenty of strategic moves in between.",
+    "slug": "2026-06-25",
+    "digestDate": "2026-06-25",
+    "displayDate": "Jun 25, 2026",
+    "issueNumber": "60625",
+    "subject": "ISSUE 60625 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI talent wars are heating up \u2014 and Google is feeling the burn. Key researchers behind Gemini are defecting to Anthropic and OpenAI, lured by pre-IPO equity and fresh momentum, while the broader industry data tells a surprising story: engineering jobs are actually proving *more* resilient than expected in the age of AI. Today's digest also covers Europe's standoff with Washington over chip export controls, Cerebras's rocky public debut, and a memory chip boom that has Micron's revenue quadrupling to eye-popping levels.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-24.html",
-    "contentHash": "f83be681f0377856bec6f8fcea01fc5e813d96d94c95b2e1c0a376958af0cc6c"
+    "urlPath": "/issues/2026-06-25.html",
+    "contentHash": "c73b7c260626fb0dd4ee0501d490584b697db8af910b3b6c0f0a93deec0e032b"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-25",
+      "digestDate": "2026-06-25",
+      "displayDate": "Jun 25, 2026",
+      "issueNumber": "60625",
+      "subject": "ISSUE 60625 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI talent wars are heating up \u2014 and Google is feeling the burn. Key researchers behind Gemini are defecting to Anthropic and OpenAI, lured by pre-IPO equity and fresh momentum, while the broader industry data tells a surprising story: engineering jobs are actually proving *more* resilient than expected in the age of AI. Today's digest also covers Europe's standoff with Washington over chip export controls, Cerebras's rocky public debut, and a memory chip boom that has Micron's revenue quadrupling to eye-popping levels.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-25.html",
+      "contentHash": "c73b7c260626fb0dd4ee0501d490584b697db8af910b3b6c0f0a93deec0e032b"
+    },
     {
       "slug": "2026-06-24",
       "digestDate": "2026-06-24",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-14.html",
       "contentHash": "2078cebdfde39c4bec352a678cae055867949685b101a9b84fa73332c744d45f"
-    },
-    {
-      "slug": "2026-06-13",
-      "digestDate": "2026-06-13",
-      "displayDate": "Jun 13, 2026",
-      "issueNumber": "60613",
-      "subject": "ISSUE 60613 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing today as the U.S. government made a dramatic move to shut down access to Anthropic's most powerful models \u2014 Claude Fable 5 and Claude Mythos 5 \u2014 over national security concerns tied to a claimed jailbreak vulnerability, a decision Anthropic is publicly pushing back on. Beyond that bombshell, we've got a rapid-fire trio of Claude Code updates tightening admin controls and polishing the model picker, Andrew Yang making the case that lowering the cost of living is the next big startup play, SpaceX's record-shattering IPO, and a Dutch court case highlighting the dangers of AI-altered images. Let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-13.html",
-      "contentHash": "c113d8ec12f4355e2117ecde5168ef5ac4830064cc477377ce802b81ed9034e6"
     }
   ]
 }
