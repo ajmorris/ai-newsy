@@ -1,0 +1,335 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-06-25",
+  "issue_id": "20260625",
+  "subject_line": "ISSUE 60625 · 8 STORIES · 11 MIN READ",
+  "intro": "The AI talent wars are heating up — and Google is feeling the burn. Key researchers behind Gemini are defecting to Anthropic and OpenAI, lured by pre-IPO equity and fresh momentum, while the broader industry data tells a surprising story: engineering jobs are actually proving *more* resilient than expected in the age of AI. Today's digest also covers Europe's standoff with Washington over chip export controls, Cerebras's rocky public debut, and a memory chip boom that has Micron's revenue quadrupling to eye-popping levels.",
+  "article_count": 8,
+  "stories": [
+    {
+      "id": 4702,
+      "source": "Claude Code Changelog",
+      "title": "v2.1.191",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21191",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Version 2.1.191 of Claude Code adds /rewind support for resuming conversations from before /clear, fixes scroll position jumping during streaming, fixes background agents resurrecting after being stopped, improves /voice error messaging for organization policy restrictions, and fixes /login URL truncation in Windows Terminal.",
+      "opinion": "This is a solid maintenance release with practical quality-of-life improvements. The /rewind feature for recovering conversations after /clear is genuinely useful, and the fix for background agents resurrecting after being stopped addresses what sounds like a frustrating bug. The scroll position fix during streaming is a welcome UX improvement. Overall, these are thoughtful, user-focused changes.",
+      "image_url": "https://opengraph.githubassets.com/b05e2e08faa7e08e13facb823029863c63cddc638e5137f02cb185c3957c66bb/anthropics/claude-code",
+      "published_at": "2026-06-25T07:21:29.616066+00:00",
+      "fetched_at": "2026-06-25T07:21:29.616066+00:00"
+    },
+    {
+      "id": 4671,
+      "source": "TechCrunch AI",
+      "title": "Europe is pushing back on Washington’s chip war",
+      "url": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Dutch Trade Minister Sjoerd Sjoerdsma visited Washington to oppose the MATCH Act, a proposed U.S. bill that would bar Chinese chipmakers from accessing Western semiconductor equipment. The legislation would particularly impact ASML, Europe's most valuable company and the sole manufacturer of advanced lithography machines used to make cutting-edge AI chips. China accounts for 19% of ASML's net system sales, and the MATCH Act would extend existing restrictions beyond the already-banned extreme ultraviolet (EUV) tools to also cover older-generation deep ultraviolet immersion machines — equipment first shipped about a decade ago. ASML CEO Christophe Fouquet noted that these older DUV tools are currently the only machines China can legally purchase. The bill, introduced in April 2026, has not yet faced a full congressional vote and would likely need to be incorporated into a larger legislati…",
+      "opinion": "This article highlights a significant and growing tension between U.S. national security ambitions and European economic interests in the semiconductor space. The MATCH Act represents a notable escalation of Washington's chip war with China, moving beyond restricting cutting-edge technology to limiting access to decade-old equipment. This raises legitimate questions about proportionality — whether blocking older-generation tools meaningfully advances security goals or primarily serves to damage…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/ASML-GettyImages-2258043611.jpg?w=1024",
+      "published_at": "2026-06-25T00:08:36+00:00",
+      "fetched_at": "2026-06-25T07:21:07.25895+00:00"
+    },
+    {
+      "id": 4672,
+      "source": "TechCrunch AI",
+      "title": "Former Infosys chief has a new startup that wants to challenge the IT services world",
+      "url": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Vishal Sikka, former CEO of Infosys and SAP veteran, has launched Hang Ten Systems, a startup that aims to use AI to disrupt the traditional IT services industry. The company raised a $32 million seed round led by Mayfield, with strategic investment from Aramco Ventures. Hang Ten describes itself as an enterprise AI services company built around agentic code generation, reusable AI skills, and domain expertise, helping enterprises continuously build, modify, and operate software using AI-driven development and automation. The startup already has customers including Siemens Gamesa Renewable Energy and Fresenius, and its board includes Yahoo co-founder Jerry Yang. The founding team includes veterans from Sikka's previous stints at SAP, Infosys, and his earlier AI startup VianAI. Unlike traditional IT services firms that scale linearly with headcount, Hang Ten claims its AI-native model al…",
+      "opinion": "This is a compelling and well-timed venture. Sikka has deep credibility in enterprise software, having led both SAP's technology strategy and Infosys, giving him rare insight into both the software vendor and services sides of the equation. The thesis that AI can replace much of the customization, integration, and maintenance work traditionally done by IT services firms is sound and increasingly validated by advances in code generation and agentic AI. However, there are significant challenges.…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/vishal-sikka-indiaai-summit.jpg?resize=1200,800",
+      "published_at": "2026-06-24T23:26:52+00:00",
+      "fetched_at": "2026-06-25T07:21:07.451153+00:00"
+    },
+    {
+      "id": 4673,
+      "source": "TechCrunch AI",
+      "title": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+      "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Cerebras Systems saw its stock drop nearly 20% after its first earnings report as a public company, despite beating revenue expectations with $193 million in Q1 revenue (up 94% YoY). The sell-off was triggered by the company's full-year gross margin guidance of 38%-41%, significantly below the 47% reported in Q1. CEO Andrew Feldman said investors misunderstood the margin outlook, explaining that the company plans to temporarily rent back its own AI systems from an existing customer while building out its own data center capacity, which will compress margins. Net loss narrowed to $14 million from $23.9 million a year earlier, and the stock nearly fell to its IPO price.",
+      "opinion": "This is a classic case of a newly public company stumbling on its first earnings call by failing to properly frame a margin compression story. The underlying business fundamentals — 94% revenue growth and narrowing losses — are strong, but the market is right to scrutinize the margin guidance. Renting back your own systems from a customer is an unusual and somewhat concerning arrangement that raises questions about Cerebras's capital efficiency and infrastructure planning. However, if this is t…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-1251294592.jpg?w=1024",
+      "published_at": "2026-06-24T22:41:41+00:00",
+      "fetched_at": "2026-06-25T07:21:07.605464+00:00"
+    },
+    {
+      "id": 4682,
+      "source": "Guardian AI",
+      "title": "Met gets extension to Palantir AI project after Sadiq Khan blocked deal",
+      "url": "https://www.theguardian.com/uk-news/2026/jun/24/met-gets-extension-to-ai-project-with-spy-tech-firm-palantir-after-mayor-blocked-deal",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Metropolitan Police has been granted a 12-month extension to its pilot project with US spy-tech firm Palantir, allowing continued use of the AI system while the force conducts a procurement process for a long-term supplier. This follows London Mayor Sadiq Khan's recent decision to block a £50 million deal between the Met and Palantir that would have automated intelligence analysis in criminal investigations.",
+      "opinion": "This situation highlights the tension between law enforcement's desire for advanced AI tools and legitimate concerns about civil liberties, data privacy, and the involvement of controversial surveillance technology companies. Khan's decision to block the original £50m deal suggests serious governance concerns, yet the extension effectively allows the technology to remain in use, creating an awkward middle ground. The reliance on Palantir — a company with deep ties to intelligence agencies — for…",
+      "image_url": "https://i.guim.co.uk/img/media/32a53d47c4e69c1cee3b77ce1cb76cd8bec7c202/185_0_5408_4326/master/5408.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5ddca9fb44967a62f2edb87a13d63078",
+      "published_at": "2026-06-24T22:14:57+00:00",
+      "fetched_at": "2026-06-25T07:21:10.755866+00:00"
+    },
+    {
+      "id": 4674,
+      "source": "TechCrunch AI",
+      "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
+      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "New data from venture firm SignalFire challenges the narrative that AI is replacing engineering jobs. While tech layoffs hit record highs in May 2026 with AI cited as the top reason, SignalFire's analysis of millions of employees across 80+ million companies found engineering to be the most resilient job function in 2025. Though overall hiring at major tech companies dropped 25% compared to 2019, engineering roles declined only 11%. Engineers comprised 55% of new hires at 12 major tech companies in 2025, up from 46% in 2019. Early-stage startups hired 7% more engineers than in 2019. Anthropic's own head of economics noted no significant AI-driven effects on workforce unemployment rates, and Nvidia CEO Jensen Huang rejected the theory that AI will replace engineers, arguing the opposite is true.",
+      "opinion": "This data provides a valuable counterpoint to the prevailing doom narrative about AI and engineering jobs, but it requires careful interpretation. The resilience of engineering hiring likely reflects that we're in an AI buildout phase — companies need more engineers precisely to build, deploy, integrate, and maintain AI systems. This is consistent with historical technology transitions where the enabling technology initially creates more jobs in its own domain before potentially displacing them…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2022/01/GettyImages-1250956868.jpg?resize=1200,800",
+      "published_at": "2026-06-24T21:56:41+00:00",
+      "fetched_at": "2026-06-25T07:21:07.741074+00:00"
+    },
+    {
+      "id": 4675,
+      "source": "TechCrunch AI",
+      "title": "AI researchers continue to leave Google for its rivals",
+      "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Top AI researchers Jonas Adler and Alexander Pritzel, who played key roles in developing Google's Gemini model, are leaving Google for Anthropic. This follows recent high-profile departures including Noam Shazeer (who left for OpenAI after Google effectively acqui-hired him back from Character.AI for $2.7 billion) and Nobel Prize-winning researcher John Jumper (who also left for Anthropic). The article suggests that as OpenAI and Anthropic prepare to go public, they can attract top talent with promises of equity, and the trend of researchers leaving Google may continue.",
+      "opinion": "This represents a significant brain drain for Google and highlights a broader competitive dynamic in the AI industry. The loss of researchers who were instrumental in building Gemini — including someone Google paid $2.7 billion to bring back — suggests that Google may be struggling with retention despite its resources. The timing around anticipated IPOs for OpenAI and Anthropic is particularly notable, as equity in pre-IPO companies can be an extremely compelling recruitment tool. However, it's…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2023/02/glitched-google-logo.jpg?resize=1200,645",
+      "published_at": "2026-06-24T21:42:07+00:00",
+      "fetched_at": "2026-06-25T07:21:07.880827+00:00"
+    },
+    {
+      "id": 4676,
+      "source": "TechCrunch AI",
+      "title": "The memory chip crunch is paying off for this US company",
+      "url": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Micron, the largest U.S. computer-memory chip maker, reported exceptional third-quarter earnings driven by the AI-fueled memory chip shortage. Revenue quadrupled year-over-year to $41.45 billion, while profit surged from $1.88 billion to $28.2 billion. The company's stock has risen dramatically from around $83 in early 2024 to $1,048.51, giving it a $1.2 trillion market cap. Micron forecasted fourth-quarter revenue between $49-$51 billion and announced a deal to supply Anthropic with memory and storage chips, also participating in Anthropic's Series H funding round. The memory chip shortage, dubbed 'RAMageddon,' is expected to persist through 2027, with rising prices trickling down to consumers.",
+      "opinion": "Micron's results are staggering and illustrate how the AI boom has created massive winners in the semiconductor supply chain. A 15x profit increase year-over-year and a stock price that has multiplied roughly 12x in two and a half years is extraordinary. However, this level of growth is inherently tied to a supply-demand imbalance that won't last forever. The memory chip shortage is a double-edged sword: while it's enormously profitable for Micron, it's raising costs across the tech ecosystem a…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/micron-HQ-GettyImages-2147904174.jpg?resize=1200,801",
+      "published_at": "2026-06-24T21:30:55+00:00",
+      "fetched_at": "2026-06-25T07:21:08.043241+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 4702,
+          "source": "Claude Code Changelog",
+          "title": "v2.1.191",
+          "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21191",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Version 2.1.191 of Claude Code adds /rewind support for resuming conversations from before /clear, fixes scroll position jumping during streaming, fixes background agents resurrecting after being stopped, improves /voice error messaging for organization policy restrictions, and fixes /login URL truncation in Windows Terminal.",
+          "opinion": "This is a solid maintenance release with practical quality-of-life improvements. The /rewind feature for recovering conversations after /clear is genuinely useful, and the fix for background agents resurrecting after being stopped addresses what sounds like a frustrating bug. The scroll position fix during streaming is a welcome UX improvement. Overall, these are thoughtful, user-focused changes.",
+          "image_url": "https://opengraph.githubassets.com/b05e2e08faa7e08e13facb823029863c63cddc638e5137f02cb185c3957c66bb/anthropics/claude-code",
+          "published_at": "2026-06-25T07:21:29.616066+00:00",
+          "fetched_at": "2026-06-25T07:21:29.616066+00:00"
+        },
+        {
+          "id": 4671,
+          "source": "TechCrunch AI",
+          "title": "Europe is pushing back on Washington’s chip war",
+          "url": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Dutch Trade Minister Sjoerd Sjoerdsma visited Washington to oppose the MATCH Act, a proposed U.S. bill that would bar Chinese chipmakers from accessing Western semiconductor equipment. The legislation would particularly impact ASML, Europe's most valuable company and the sole manufacturer of advanced lithography machines used to make cutting-edge AI chips. China accounts for 19% of ASML's net system sales, and the MATCH Act would extend existing restrictions beyond the already-banned extreme ultraviolet (EUV) tools to also cover older-generation deep ultraviolet immersion machines — equipment first shipped about a decade ago. ASML CEO Christophe Fouquet noted that these older DUV tools are currently the only machines China can legally purchase. The bill, introduced in April 2026, has not yet faced a full congressional vote and would likely need to be incorporated into a larger legislati…",
+          "opinion": "This article highlights a significant and growing tension between U.S. national security ambitions and European economic interests in the semiconductor space. The MATCH Act represents a notable escalation of Washington's chip war with China, moving beyond restricting cutting-edge technology to limiting access to decade-old equipment. This raises legitimate questions about proportionality — whether blocking older-generation tools meaningfully advances security goals or primarily serves to damage…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/ASML-GettyImages-2258043611.jpg?w=1024",
+          "published_at": "2026-06-25T00:08:36+00:00",
+          "fetched_at": "2026-06-25T07:21:07.25895+00:00"
+        },
+        {
+          "id": 4672,
+          "source": "TechCrunch AI",
+          "title": "Former Infosys chief has a new startup that wants to challenge the IT services world",
+          "url": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Vishal Sikka, former CEO of Infosys and SAP veteran, has launched Hang Ten Systems, a startup that aims to use AI to disrupt the traditional IT services industry. The company raised a $32 million seed round led by Mayfield, with strategic investment from Aramco Ventures. Hang Ten describes itself as an enterprise AI services company built around agentic code generation, reusable AI skills, and domain expertise, helping enterprises continuously build, modify, and operate software using AI-driven development and automation. The startup already has customers including Siemens Gamesa Renewable Energy and Fresenius, and its board includes Yahoo co-founder Jerry Yang. The founding team includes veterans from Sikka's previous stints at SAP, Infosys, and his earlier AI startup VianAI. Unlike traditional IT services firms that scale linearly with headcount, Hang Ten claims its AI-native model al…",
+          "opinion": "This is a compelling and well-timed venture. Sikka has deep credibility in enterprise software, having led both SAP's technology strategy and Infosys, giving him rare insight into both the software vendor and services sides of the equation. The thesis that AI can replace much of the customization, integration, and maintenance work traditionally done by IT services firms is sound and increasingly validated by advances in code generation and agentic AI. However, there are significant challenges.…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/vishal-sikka-indiaai-summit.jpg?resize=1200,800",
+          "published_at": "2026-06-24T23:26:52+00:00",
+          "fetched_at": "2026-06-25T07:21:07.451153+00:00"
+        },
+        {
+          "id": 4673,
+          "source": "TechCrunch AI",
+          "title": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+          "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Cerebras Systems saw its stock drop nearly 20% after its first earnings report as a public company, despite beating revenue expectations with $193 million in Q1 revenue (up 94% YoY). The sell-off was triggered by the company's full-year gross margin guidance of 38%-41%, significantly below the 47% reported in Q1. CEO Andrew Feldman said investors misunderstood the margin outlook, explaining that the company plans to temporarily rent back its own AI systems from an existing customer while building out its own data center capacity, which will compress margins. Net loss narrowed to $14 million from $23.9 million a year earlier, and the stock nearly fell to its IPO price.",
+          "opinion": "This is a classic case of a newly public company stumbling on its first earnings call by failing to properly frame a margin compression story. The underlying business fundamentals — 94% revenue growth and narrowing losses — are strong, but the market is right to scrutinize the margin guidance. Renting back your own systems from a customer is an unusual and somewhat concerning arrangement that raises questions about Cerebras's capital efficiency and infrastructure planning. However, if this is t…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-1251294592.jpg?w=1024",
+          "published_at": "2026-06-24T22:41:41+00:00",
+          "fetched_at": "2026-06-25T07:21:07.605464+00:00"
+        },
+        {
+          "id": 4682,
+          "source": "Guardian AI",
+          "title": "Met gets extension to Palantir AI project after Sadiq Khan blocked deal",
+          "url": "https://www.theguardian.com/uk-news/2026/jun/24/met-gets-extension-to-ai-project-with-spy-tech-firm-palantir-after-mayor-blocked-deal",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Metropolitan Police has been granted a 12-month extension to its pilot project with US spy-tech firm Palantir, allowing continued use of the AI system while the force conducts a procurement process for a long-term supplier. This follows London Mayor Sadiq Khan's recent decision to block a £50 million deal between the Met and Palantir that would have automated intelligence analysis in criminal investigations.",
+          "opinion": "This situation highlights the tension between law enforcement's desire for advanced AI tools and legitimate concerns about civil liberties, data privacy, and the involvement of controversial surveillance technology companies. Khan's decision to block the original £50m deal suggests serious governance concerns, yet the extension effectively allows the technology to remain in use, creating an awkward middle ground. The reliance on Palantir — a company with deep ties to intelligence agencies — for…",
+          "image_url": "https://i.guim.co.uk/img/media/32a53d47c4e69c1cee3b77ce1cb76cd8bec7c202/185_0_5408_4326/master/5408.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5ddca9fb44967a62f2edb87a13d63078",
+          "published_at": "2026-06-24T22:14:57+00:00",
+          "fetched_at": "2026-06-25T07:21:10.755866+00:00"
+        },
+        {
+          "id": 4674,
+          "source": "TechCrunch AI",
+          "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
+          "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "New data from venture firm SignalFire challenges the narrative that AI is replacing engineering jobs. While tech layoffs hit record highs in May 2026 with AI cited as the top reason, SignalFire's analysis of millions of employees across 80+ million companies found engineering to be the most resilient job function in 2025. Though overall hiring at major tech companies dropped 25% compared to 2019, engineering roles declined only 11%. Engineers comprised 55% of new hires at 12 major tech companies in 2025, up from 46% in 2019. Early-stage startups hired 7% more engineers than in 2019. Anthropic's own head of economics noted no significant AI-driven effects on workforce unemployment rates, and Nvidia CEO Jensen Huang rejected the theory that AI will replace engineers, arguing the opposite is true.",
+          "opinion": "This data provides a valuable counterpoint to the prevailing doom narrative about AI and engineering jobs, but it requires careful interpretation. The resilience of engineering hiring likely reflects that we're in an AI buildout phase — companies need more engineers precisely to build, deploy, integrate, and maintain AI systems. This is consistent with historical technology transitions where the enabling technology initially creates more jobs in its own domain before potentially displacing them…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2022/01/GettyImages-1250956868.jpg?resize=1200,800",
+          "published_at": "2026-06-24T21:56:41+00:00",
+          "fetched_at": "2026-06-25T07:21:07.741074+00:00"
+        },
+        {
+          "id": 4675,
+          "source": "TechCrunch AI",
+          "title": "AI researchers continue to leave Google for its rivals",
+          "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Top AI researchers Jonas Adler and Alexander Pritzel, who played key roles in developing Google's Gemini model, are leaving Google for Anthropic. This follows recent high-profile departures including Noam Shazeer (who left for OpenAI after Google effectively acqui-hired him back from Character.AI for $2.7 billion) and Nobel Prize-winning researcher John Jumper (who also left for Anthropic). The article suggests that as OpenAI and Anthropic prepare to go public, they can attract top talent with promises of equity, and the trend of researchers leaving Google may continue.",
+          "opinion": "This represents a significant brain drain for Google and highlights a broader competitive dynamic in the AI industry. The loss of researchers who were instrumental in building Gemini — including someone Google paid $2.7 billion to bring back — suggests that Google may be struggling with retention despite its resources. The timing around anticipated IPOs for OpenAI and Anthropic is particularly notable, as equity in pre-IPO companies can be an extremely compelling recruitment tool. However, it's…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2023/02/glitched-google-logo.jpg?resize=1200,645",
+          "published_at": "2026-06-24T21:42:07+00:00",
+          "fetched_at": "2026-06-25T07:21:07.880827+00:00"
+        },
+        {
+          "id": 4676,
+          "source": "TechCrunch AI",
+          "title": "The memory chip crunch is paying off for this US company",
+          "url": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Micron, the largest U.S. computer-memory chip maker, reported exceptional third-quarter earnings driven by the AI-fueled memory chip shortage. Revenue quadrupled year-over-year to $41.45 billion, while profit surged from $1.88 billion to $28.2 billion. The company's stock has risen dramatically from around $83 in early 2024 to $1,048.51, giving it a $1.2 trillion market cap. Micron forecasted fourth-quarter revenue between $49-$51 billion and announced a deal to supply Anthropic with memory and storage chips, also participating in Anthropic's Series H funding round. The memory chip shortage, dubbed 'RAMageddon,' is expected to persist through 2027, with rising prices trickling down to consumers.",
+          "opinion": "Micron's results are staggering and illustrate how the AI boom has created massive winners in the semiconductor supply chain. A 15x profit increase year-over-year and a stock price that has multiplied roughly 12x in two and a half years is extraordinary. However, this level of growth is inherently tied to a supply-demand imbalance that won't last forever. The memory chip shortage is a double-edged sword: while it's enormously profitable for Micron, it's raising costs across the tech ecosystem a…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/micron-HQ-GettyImages-2147904174.jpg?resize=1200,801",
+          "published_at": "2026-06-24T21:30:55+00:00",
+          "fetched_at": "2026-06-25T07:21:08.043241+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://twitter.com/dunik_7/status/2069501428146581543",
+      "author": "dunik_7",
+      "headline": "Peter Steinberger brought his viral thesis to Microsoft Build with a 43-minute talk on __building the thing that builds the thing__.",
+      "tweet_id": "38a1eba9-b6bc-81cb-b565-dea90bd21770",
+      "source_text": "Peter Steinberger took the stage at Microsoft Build with the most loop-pilled title in tech:\n\n\"Build the thing that builds the thing.\"\n\nThe same guy whose two sentences on this hit 6.5M views except now he's got 43 minutes to actually show the machine.\n\nInside: the tool ecosystem https://t.co/5PxJPsuC3i https://t.co/RlWXmeTW36",
+      "created_time": "2026-06-25T00:57:00.000Z",
+      "canonical_url": "https://twitter.com/dunik_7/status/2069501428146581543",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/emilkowalski/status/2069742622252445866",
+      "author": "emilkowalski",
+      "headline": "Emil Kowalski's design engineering skill for Claude has crossed __100k installs__ — and he says there's still untapped potential.",
+      "tweet_id": "38a1eba9-b6bc-811c-b587-cb0fce89fcba",
+      "source_text": "I’ve been tinkering with some new skills for my skills repo over the weekend, and it seems like there’s so much untapped potential for design engineering skills.   \n\n/emil-design-eng skill can already help you a ton, and it’s doing more than 100k installs already, but there’s",
+      "created_time": "2026-06-25T00:37:00.000Z",
+      "canonical_url": "https://twitter.com/emilkowalski/status/2069742622252445866",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/businessbarista/status/2069837132848640480",
+      "author": "businessbarista",
+      "headline": "Alex Lieberman uses a dead-simple Claude skill to __prioritize his to-do list and calendar-block his day__ based on company and personal goals.",
+      "tweet_id": "38a1eba9-b6bc-812a-a5f5-e905f4cd3572",
+      "source_text": "Stupid simple, but most powerful Claude skill I run. \n\nEvery day, Claude helps me create and prioritize my to-do list based on company & personal goals then calendar block my to-do list so my ADHD-ridden brain  has exact clarity on how I should be spending my time.\n\nStep 1: https://t.co/Xw8MNPh0VI",
+      "created_time": "2026-06-25T00:32:00.000Z",
+      "canonical_url": "https://twitter.com/businessbarista/status/2069837132848640480",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/mecid/status/2069739330612969553",
+      "author": "mecid",
+      "headline": "SwiftUI's new __toolbar appearance APIs__ give developers finer control over the content layer and UI controls layer split.",
+      "tweet_id": "38a1eba9-b6bc-8168-9d24-f17fa9b30ffa",
+      "source_text": "Toolbar APIs are crucial and widely used in SwiftUI. They play a vital role, especially with the recent design language update introducing a content layer and UI controls layer. This week, we’ll discuss new APIs to control toolbar appearance further. \nhttps://t.co/dRzNGoptpi",
+      "created_time": "2026-06-25T00:57:00.000Z",
+      "canonical_url": "https://twitter.com/mecid/status/2069739330612969553",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/ClaudeDevs/status/2069895377080443271",
+      "author": "ClaudeDevs",
+      "headline": "Anthropic explains __agent identity__ — how Claude gets its own credentials when working alongside humans in a shared channel.",
+      "tweet_id": "38a1eba9-b6bc-816b-94ec-c933cedbe9b4",
+      "source_text": "When Claude is working in a channel with four people, whose credentials does it use?\n\nThe answer: its own. When tagging Claude, Claude gets provisioned like any other teammate, with its own credentials.\n\nWe call this access model \"agent identity\". Here's how it works: 🧵 https://t.co/UveJWgOQEx",
+      "created_time": "2026-06-25T00:37:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2069895377080443271",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/9to5mac/status/2069892664967733519",
+      "author": "9to5mac",
+      "headline": "iOS 27 beta 2: Apple now tells Siri AI to __clearly refuse requests to summarize URLs__.",
+      "tweet_id": "38a1eba9-b6bc-814a-8458-de4378d082da",
+      "source_text": "iOS 27 beta 2: Apple tells Siri AI to clearly refuse requests to summarize URLs https://t.co/CeD1VkTKav by @mvcmendes",
+      "created_time": "2026-06-25T00:37:00.000Z",
+      "canonical_url": "https://twitter.com/9to5mac/status/2069892664967733519",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
+      "author": "BerislavLopac",
+      "item_id": "hn:48669707",
+      "headline": "Charity Majors makes the case to __make AI boring again__ — stop treating it like magic, start treating it like infrastructure.",
+      "subreddit": null,
+      "source_text": "Make AI Boring Again",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-25T06:23:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://charitydotwtf.substack.com/p/make-ai-boring-again",
+      "learning_score": 2
+    },
+    {
+      "url": "https://compsec.snu.ac.kr/blog/badepoll",
+      "author": "j-jaeyoung",
+      "item_id": "hn:48669528",
+      "headline": "Bad Epoll: the __bug Mythos missed__ in Linux's event polling, dissected by Seoul National's security lab.",
+      "subreddit": null,
+      "source_text": "Bad Epoll: The bug Mythos missed",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-25T05:59:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://compsec.snu.ac.kr/blog/badepoll",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YrJzjC4kKCY",
+      "author": "AbbeFaria",
+      "item_id": "hn:48669500",
+      "headline": "A video breakdown of how Big Tech __hides the true cost of the AI buildout__ from investors and the public.",
+      "subreddit": null,
+      "source_text": "How Big Tech Hides the True Cost of the AI Buildout [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-25T05:55:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=YrJzjC4kKCY",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-06-25T07:37:16.754241+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "cc983e8e7f74d5ffc251e27d44e612e0095b43cfe6239cae662db9864f946db1"
+}
