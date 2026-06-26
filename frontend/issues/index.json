@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-25T00:00:00Z",
-  "issueCount": 66,
+  "generatedAt": "2026-06-26T00:00:00Z",
+  "issueCount": 67,
   "latestIssue": {
-    "slug": "2026-06-25",
-    "digestDate": "2026-06-25",
-    "displayDate": "Jun 25, 2026",
-    "issueNumber": "60625",
-    "subject": "ISSUE 60625 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI talent wars are heating up \u2014 and Google is feeling the burn. Key researchers behind Gemini are defecting to Anthropic and OpenAI, lured by pre-IPO equity and fresh momentum, while the broader industry data tells a surprising story: engineering jobs are actually proving *more* resilient than expected in the age of AI. Today's digest also covers Europe's standoff with Washington over chip export controls, Cerebras's rocky public debut, and a memory chip boom that has Micron's revenue quadrupling to eye-popping levels.",
+    "slug": "2026-06-26",
+    "digestDate": "2026-06-26",
+    "displayDate": "Jun 26, 2026",
+    "issueNumber": "60626",
+    "subject": "ISSUE 60626 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing with an unexpected plot twist: the Trump administration is pumping the brakes on frontier AI releases, pressuring OpenAI to delay GPT-5.6's public rollout and cracking down even harder on Anthropic's most powerful models \u2014 a striking reversal from its earlier \"speed wins\" rhetoric. Meanwhile, Anthropic's Claude is having quite a moment despite the regulatory headwinds, with paying consumers surging 75% since January and \"Claude\" overtaking \"AI\" as the most-searched term on DataCamp. From Notion killing its email app because AI agents already run most users' inboxes to a scientist winning $100K for cracking zebra finch communication, today's digest is packed with stories that show just how fast the landscape is shifting.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-25.html",
-    "contentHash": "c73b7c260626fb0dd4ee0501d490584b697db8af910b3b6c0f0a93deec0e032b"
+    "urlPath": "/issues/2026-06-26.html",
+    "contentHash": "bc5dea82f15e5cf91840c32a7ebba1db92b80d90a8b5125cd1a63bbadc6dbd60"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-26",
+      "digestDate": "2026-06-26",
+      "displayDate": "Jun 26, 2026",
+      "issueNumber": "60626",
+      "subject": "ISSUE 60626 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing with an unexpected plot twist: the Trump administration is pumping the brakes on frontier AI releases, pressuring OpenAI to delay GPT-5.6's public rollout and cracking down even harder on Anthropic's most powerful models \u2014 a striking reversal from its earlier \"speed wins\" rhetoric. Meanwhile, Anthropic's Claude is having quite a moment despite the regulatory headwinds, with paying consumers surging 75% since January and \"Claude\" overtaking \"AI\" as the most-searched term on DataCamp. From Notion killing its email app because AI agents already run most users' inboxes to a scientist winning $100K for cracking zebra finch communication, today's digest is packed with stories that show just how fast the landscape is shifting.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-26.html",
+      "contentHash": "bc5dea82f15e5cf91840c32a7ebba1db92b80d90a8b5125cd1a63bbadc6dbd60"
+    },
     {
       "slug": "2026-06-25",
       "digestDate": "2026-06-25",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-15.html",
       "contentHash": "a475b9aec00ddcb52ae00855b936123c669fa283fb4ad750d586d349eeddf308"
-    },
-    {
-      "slug": "2026-06-14",
-      "digestDate": "2026-06-14",
-      "displayDate": "Jun 14, 2026",
-      "issueNumber": "60614",
-      "subject": "ISSUE 60614 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is caught in a geopolitical whirlwind today, with the Anthropic saga dominating headlines as the Trump administration cut off foreign access to the company's latest models \u2014 a move reportedly triggered by Amazon's own security research and CEO Andy Jassy's conversations with the White House, now sparking a fierce debate in India about AI sovereignty. Meanwhile, the geopolitical chess match extends to China, where Beijing has forced Meta to unwind its $2 billion acquisition of AI startup Manus, and closer to home, a coalition of state attorneys general has launched an investigation into OpenAI. Oh, and in a delicious bit of irony, KPMG had to pull its report about AI excellence \u2014 because it was riddled with AI hallucinations.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-14.html",
-      "contentHash": "2078cebdfde39c4bec352a678cae055867949685b101a9b84fa73332c744d45f"
     }
   ]
 }
