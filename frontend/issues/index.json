@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-26T00:00:00Z",
-  "issueCount": 67,
+  "generatedAt": "2026-06-27T00:00:00Z",
+  "issueCount": 68,
   "latestIssue": {
-    "slug": "2026-06-26",
-    "digestDate": "2026-06-26",
-    "displayDate": "Jun 26, 2026",
-    "issueNumber": "60626",
-    "subject": "ISSUE 60626 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing with an unexpected plot twist: the Trump administration is pumping the brakes on frontier AI releases, pressuring OpenAI to delay GPT-5.6's public rollout and cracking down even harder on Anthropic's most powerful models \u2014 a striking reversal from its earlier \"speed wins\" rhetoric. Meanwhile, Anthropic's Claude is having quite a moment despite the regulatory headwinds, with paying consumers surging 75% since January and \"Claude\" overtaking \"AI\" as the most-searched term on DataCamp. From Notion killing its email app because AI agents already run most users' inboxes to a scientist winning $100K for cracking zebra finch communication, today's digest is packed with stories that show just how fast the landscape is shifting.",
+    "slug": "2026-06-27",
+    "digestDate": "2026-06-27",
+    "displayDate": "Jun 27, 2026",
+    "issueNumber": "60627",
+    "subject": "ISSUE 60627 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The escalating tug-of-war between the U.S. government and leading AI companies is today's biggest story, with Anthropic's Mythos 5 model getting a partial green light after a two-week standoff with the Trump administration\u2014only for OpenAI to find itself in a strikingly similar showdown over its new GPT-5.6 lineup. What's emerging is a pattern that could reshape how advanced AI reaches the public, as Washington pushes toward a de facto pre-release review regime that has both companies pushing back. Beyond the policy drama, we've also got a global crackdown on kids' social media use gaining serious momentum, an AI drone pulling off a first-of-its-kind rescue in the Australian wilderness, and OpenAI making big moves in India.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-26.html",
-    "contentHash": "bc5dea82f15e5cf91840c32a7ebba1db92b80d90a8b5125cd1a63bbadc6dbd60"
+    "urlPath": "/issues/2026-06-27.html",
+    "contentHash": "df3a225a8325911248d3f5a3e013a83a6030be0614662574d952f00007b9bc02"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-27",
+      "digestDate": "2026-06-27",
+      "displayDate": "Jun 27, 2026",
+      "issueNumber": "60627",
+      "subject": "ISSUE 60627 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The escalating tug-of-war between the U.S. government and leading AI companies is today's biggest story, with Anthropic's Mythos 5 model getting a partial green light after a two-week standoff with the Trump administration\u2014only for OpenAI to find itself in a strikingly similar showdown over its new GPT-5.6 lineup. What's emerging is a pattern that could reshape how advanced AI reaches the public, as Washington pushes toward a de facto pre-release review regime that has both companies pushing back. Beyond the policy drama, we've also got a global crackdown on kids' social media use gaining serious momentum, an AI drone pulling off a first-of-its-kind rescue in the Australian wilderness, and OpenAI making big moves in India.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-27.html",
+      "contentHash": "df3a225a8325911248d3f5a3e013a83a6030be0614662574d952f00007b9bc02"
+    },
     {
       "slug": "2026-06-26",
       "digestDate": "2026-06-26",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-16.html",
       "contentHash": "897642a9aeecba546161efed46238a84249a5c527b6ba3a571866979656f8941"
-    },
-    {
-      "slug": "2026-06-15",
-      "digestDate": "2026-06-15",
-      "displayDate": "Jun 15, 2026",
-      "issueNumber": "60615",
-      "subject": "ISSUE 60615 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI layoff wave is accelerating at a staggering pace \u2014 nearly 150,000 tech workers cut so far this year \u2014 but here's the twist: while companies point to AI as the reason, a growing chorus of critics (including Marc Andreessen) say it's really just a convenient excuse for unwinding pandemic-era overhiring. That tension sits at the heart of today's biggest stories, where we're also tracking a red-hot IPO summer that's minting trillionaires and reshaping the tech power hierarchy, national security fears over China potentially accessing Anthropic's Mythos model, and OpenAI's $150 million bet that the real AI bottleneck isn't the technology \u2014 it's getting enterprises to actually use it.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-15.html",
-      "contentHash": "a475b9aec00ddcb52ae00855b936123c669fa283fb4ad750d586d349eeddf308"
     }
   ]
 }
