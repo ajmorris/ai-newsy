@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-27T00:00:00Z",
-  "issueCount": 68,
+  "generatedAt": "2026-06-28T00:00:00Z",
+  "issueCount": 69,
   "latestIssue": {
-    "slug": "2026-06-27",
-    "digestDate": "2026-06-27",
-    "displayDate": "Jun 27, 2026",
-    "issueNumber": "60627",
-    "subject": "ISSUE 60627 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The escalating tug-of-war between the U.S. government and leading AI companies is today's biggest story, with Anthropic's Mythos 5 model getting a partial green light after a two-week standoff with the Trump administration\u2014only for OpenAI to find itself in a strikingly similar showdown over its new GPT-5.6 lineup. What's emerging is a pattern that could reshape how advanced AI reaches the public, as Washington pushes toward a de facto pre-release review regime that has both companies pushing back. Beyond the policy drama, we've also got a global crackdown on kids' social media use gaining serious momentum, an AI drone pulling off a first-of-its-kind rescue in the Australian wilderness, and OpenAI making big moves in India.",
+    "slug": "2026-06-28",
+    "digestDate": "2026-06-28",
+    "displayDate": "Jun 28, 2026",
+    "issueNumber": "60628",
+    "subject": "ISSUE 60628 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI arms race isn't just reshaping geopolitics \u2014 it's hitting your wallet, too. From Washington and Beijing converging on eerily similar AI playbooks to Apple hiking prices across its product line because memory manufacturers would rather sell chips to data centers than put them in your MacBook, today's stories paint a picture of an industry whose insatiable appetite for compute is rippling out in every direction. We've also got a cancer-fighting founder who turned Claude into his medical co-pilot, Margaret Atwood's delightfully skeptical take on chatbots, and SoftBank's CEO throwing cold water on Elon Musk's plan to put data centers in orbit.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-27.html",
-    "contentHash": "df3a225a8325911248d3f5a3e013a83a6030be0614662574d952f00007b9bc02"
+    "urlPath": "/issues/2026-06-28.html",
+    "contentHash": "9de4f26bd84d9e717b16aeee53f50ece1268e18cf7a59bd346c99e1f1a9d74bb"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-28",
+      "digestDate": "2026-06-28",
+      "displayDate": "Jun 28, 2026",
+      "issueNumber": "60628",
+      "subject": "ISSUE 60628 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI arms race isn't just reshaping geopolitics \u2014 it's hitting your wallet, too. From Washington and Beijing converging on eerily similar AI playbooks to Apple hiking prices across its product line because memory manufacturers would rather sell chips to data centers than put them in your MacBook, today's stories paint a picture of an industry whose insatiable appetite for compute is rippling out in every direction. We've also got a cancer-fighting founder who turned Claude into his medical co-pilot, Margaret Atwood's delightfully skeptical take on chatbots, and SoftBank's CEO throwing cold water on Elon Musk's plan to put data centers in orbit.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-28.html",
+      "contentHash": "9de4f26bd84d9e717b16aeee53f50ece1268e18cf7a59bd346c99e1f1a9d74bb"
+    },
     {
       "slug": "2026-06-27",
       "digestDate": "2026-06-27",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-17.html",
       "contentHash": "5e810ffd3333fde68c3d3f75c5445e2c7764100623f0ba43aa6165fbc20c1715"
-    },
-    {
-      "slug": "2026-06-16",
-      "digestDate": "2026-06-16",
-      "displayDate": "Jun 16, 2026",
-      "issueNumber": "60616",
-      "subject": "ISSUE 60616 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest story in AI right now isn't about a new model launch \u2014 it's about what happens after one. Anthropic's clash with the Trump administration over its Claude Mythos 5 and Fable 5 models has escalated into a full-blown standoff, with export control orders, weekend scrambles, and serious questions about whether the government's response was ever really about a jailbreak at all. We've got multiple angles on that saga today, plus Meta's new AI-powered search on Facebook, a $62.5M raise for a Malaysian AI messaging platform, and how botanists are using AI to fight plant extinction.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-16.html",
-      "contentHash": "897642a9aeecba546161efed46238a84249a5c527b6ba3a571866979656f8941"
     }
   ]
 }
