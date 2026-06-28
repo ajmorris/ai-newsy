@@ -224,6 +224,26 @@
   ],
   "tweet_headlines": [
     {
+      "url": "https://twitter.com/Raytar/status/2070577723089768500",
+      "author": "Raytar",
+      "headline": "A leaked Claude.md file from __Karpathy's team at Anthropic__ is circulating — users say it transforms how Claude responds from the first message.",
+      "tweet_id": "38c1eba9-b6bc-81e7-b4e1-f159b018e0ba",
+      "source_text": "Andrej Karpathy joined Anthropic five weeks ago.\n\nYesterday my friend on his team sent me the Claude.md file he actually uses.\n\nIt completely changed how I work with Claude.\nFrom the very first message, the difference was obvious.\n\nWith this file, Claude finally stops fighting me https://t.co/YEoSMaSMqJ https://t.co/ruhm6s2tLb",
+      "created_time": "2026-06-27T10:27:00.000Z",
+      "canonical_url": "https://twitter.com/Raytar/status/2070577723089768500",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/AnthropicAI/status/2070528961235575278",
+      "author": "AnthropicAI",
+      "headline": "Anthropic is advancing how it studies Claude's economic impact with __hourly sampling and survey data__ on real usage patterns.",
+      "tweet_id": "38c1eba9-b6bc-81c1-99b9-eddb4e885374",
+      "source_text": "To keep pace with AI progress, we're advancing how we study Claude's economic impact. \n\nHourly sampling and survey data show us how the cadences of life shape usage, what people produce with Claude, and how perceptions of AI's impact may be changing. https://t.co/Waov1B6iG1",
+      "created_time": "2026-06-27T10:27:00.000Z",
+      "canonical_url": "https://twitter.com/AnthropicAI/status/2070528961235575278",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/AnthropicAI/status/2070665903440871779",
       "author": "AnthropicAI",
       "headline": "Anthropic says the US government has cleared __Claude Mythos 5 for redeployment__ to organizations defending critical infrastructure.",
@@ -234,19 +254,19 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/ItsRoboki/status/2070422104114446655",
-      "author": "ItsRoboki",
-      "headline": "Cursor __one-shots whole features__ where Claude and Codex only deliver half the request — one dev's breakdown of why the IDE context matters.",
-      "tweet_id": "38c1eba9-b6bc-81d0-9287-e0d44e815235",
-      "source_text": "Cursor one shots anything. Whole features. Full files. Working code in one go.\n\nGive the same task to Claude or Codex and they do not one shot. They take a full cake request and only put the bread batter in the tray. Technically  not the thing you asked for.\n\nI spent the first https://t.co/55Q7FqfRvR https://t.co/kAo2jCBfWi",
+      "url": "https://twitter.com/mattcassinelli/status/2070522483011387674",
+      "author": "mattcassinelli",
+      "headline": "Matt Cassinelli shares the __introduction of the Siri AI system prompt__.",
+      "tweet_id": "38c1eba9-b6bc-8149-8fb7-cf4e932afe38",
+      "source_text": "Here's the introduction of the Siri AI system prompt: https://t.co/iOmtR8fQ79",
       "created_time": "2026-06-27T10:27:00.000Z",
-      "canonical_url": "https://twitter.com/ItsRoboki/status/2070422104114446655",
+      "canonical_url": "https://twitter.com/mattcassinelli/status/2070522483011387674",
       "learning_score": 3
     },
     {
       "url": "https://twitter.com/zodchiii/status/2070444119051157559",
       "author": "zodchiii",
-      "headline": "Anthropic published a PDF showing how their own teams actually use Claude Code — the workflow boils down to __Spec → Dispatch → Verify → Systemize__.",
+      "headline": "Anthropic published a PDF showing how their own teams use Claude Code — the workflow boils down to __Spec → Dispatch → Verify → Systemize__.",
       "tweet_id": "38c1eba9-b6bc-8191-b0ec-d82e0e976f43",
       "source_text": "this is f*cking gold\n\nAnthropic published PDF on how their own teams actually use Claude Code.\n\nExplaining real workflows from engineering, security, growth, and design.\n\nSpec → Dispatch → Verify → Systemize\n\n• Spec: they hand Claude a clear goal, then let it run, instead of https://t.co/091tTKZJhK https://t.co/u3FOLEAodh",
       "created_time": "2026-06-27T10:27:00.000Z",
@@ -256,40 +276,46 @@
     {
       "url": "https://twitter.com/ShishirShelke1/status/2070201498710208947",
       "author": "ShishirShelke1",
-      "headline": "Expected M6 upgrades include __~200GB/s memory bandwidth__, a redesigned 12-core GPU, and a faster Neural Engine — with M7 targeting H1 2027.",
+      "headline": "Apple's M6 chip is expected to hit __~200GB/s memory bandwidth__, with the base M7 arriving H1 2027 at around 240GB/s.",
       "tweet_id": "38c1eba9-b6bc-81e5-a035-daf65776f8d5",
       "source_text": "Expected M6 upgrades:\n~200GB/s memory bandwidth (up from ~153GB/s on M5)\n- Redesigned GPU with up to 12 cores\n- Faster Neural Engine\n- Better CPU performance\n- Improved video encoding/decoding\n\nThe base M7 is expected in H1 2027, bringing another jump to around 240GB/s memory https://t.co/lcLVAjpMJ4 https://t.co/o7LFdLnlSZ",
       "created_time": "2026-06-27T10:27:00.000Z",
       "canonical_url": "https://twitter.com/ShishirShelke1/status/2070201498710208947",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/milesdeutscher/status/2070367709448355841",
-      "author": "milesdeutscher",
-      "headline": "A \"Taste\" skill you can install directly inside Claude Code and Codex to __kill AI-generated slop__ in your output.",
-      "tweet_id": "38c1eba9-b6bc-8171-992c-df70359a18be",
-      "source_text": "This \"Taste\" Skill is cracked.\n\nI can't believe I didn't discover it sooner - everyone should install this.\n\nIt works directly inside Claude Code, Codex, Hermes & more to completely kill AI-generated slop.\n\nIf you send this prompt to your agent, it will automatically install it: https://t.co/57DRVu8jCC https://t.co/zQXtGc7zpw",
-      "created_time": "2026-06-27T10:27:00.000Z",
-      "canonical_url": "https://twitter.com/milesdeutscher/status/2070367709448355841",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/PawelHuryn/status/2070156748917248499",
-      "author": "PawelHuryn",
-      "headline": "Pawel Huryn's Claude Code Max subscription costs $200/month — the equivalent API usage would be __$5,225 over 30 days__.",
-      "tweet_id": "38c1eba9-b6bc-81ae-8a27-cecf3d15e5ab",
-      "source_text": "My Claude Code Max (20x) subscription:\n- $200/month\n- $5,225.85 over 30 days if I used the API\n\nAnd I don't even use half of my weekly limits. Those subsidies are crazy. I wonder how long this will last. https://t.co/MJ9tSV5HRo",
-      "created_time": "2026-06-27T10:27:00.000Z",
-      "canonical_url": "https://twitter.com/PawelHuryn/status/2070156748917248499",
-      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture",
+      "author": "toilet",
+      "item_id": "hn:48705360",
+      "headline": "ITCSS remains a solid approach to __scalable and maintainable CSS architecture__ — a 2021 guide worth revisiting.",
+      "subreddit": null,
+      "source_text": "Itcss: Scalable and Maintainable CSS Architecture (2021)",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-28T08:05:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://xfive.co/blog/itcss-scalable-maintainable-css-architecture",
+      "learning_score": 3
+    },
+    {
+      "url": "https://hikarulabs.xyz",
+      "author": "CFBL",
+      "item_id": "hn:48705335",
+      "headline": "__Hikaru Labs__ offers a private, fully local alternative to iLoveIMG for image editing.",
+      "subreddit": null,
+      "source_text": "Show HN: Hikaru Labs – A private, 100% local alternative to iLoveIMG",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-28T08:00:54+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://hikarulabs.xyz",
+      "learning_score": 3
+    },
+    {
       "url": "https://github.com/Sarkar-AGI/Core-1",
       "author": "Rahul-sarkar",
       "item_id": "hn:48705084",
-      "headline": "Show HN: Core-1, a distributed C++ framework designed for __trillion-parameter-scale AGI__ workloads.",
+      "headline": "Core-1 is a distributed C++ framework designed for __trillion-parameter-scale AGI__ workloads.",
       "subreddit": null,
       "source_text": "Show HN: Core-1 – A distributed C++ AGI framework for trillion-parameter scale",
       "source_type": "hacker_news",
@@ -299,76 +325,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://www.mikehyland.com/blog/ai-governance-zero-trust-runtime",
-      "author": "mjhyl",
-      "item_id": "hn:48705208",
-      "headline": "Mike Hyland makes the case that AI governance belongs at __the runtime, not in legislation__.",
+      "url": "https://ache.one/notes/the-us-lock-of-the-web",
+      "author": "enz",
+      "item_id": "hn:48705359",
+      "headline": "A look at how US jurisdiction creates a quiet __lock on the open web__ through infrastructure and policy.",
       "subreddit": null,
-      "source_text": "Guess what, lawmakers? The Runtime Is the Regulator",
+      "source_text": "The US Lock of the Web",
       "source_type": "hacker_news",
-      "created_time": "2026-06-28T07:31:13+00:00",
+      "created_time": "2026-06-28T08:05:21+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://mikehyland.com/blog/ai-governance-zero-trust-runtime",
+      "canonical_url": "https://ache.one/notes/the-us-lock-of-the-web",
       "learning_score": 2
     },
     {
-      "url": "https://badshah.io/blog/ai-is-the-best-thing-to-happen-to-security/",
-      "author": "ilreb",
-      "item_id": "hn:48705198",
-      "headline": "Counterintuitive take: AI might be __the best thing to happen to security__, not the worst.",
+      "url": "https://bharad.dev/blog/from-transformer-to-llm",
+      "author": "bharadwajp",
+      "item_id": "hn:48705350",
+      "headline": "A walkthrough of how __a transformer becomes an LLM__ — from architecture to training to alignment.",
       "subreddit": null,
-      "source_text": "AI Is the Best Thing to Happen to Security",
+      "source_text": "A Transformer Becomes an LLM",
       "source_type": "hacker_news",
-      "created_time": "2026-06-28T07:28:33+00:00",
+      "created_time": "2026-06-28T08:04:40+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://badshah.io/blog/ai-is-the-best-thing-to-happen-to-security",
+      "canonical_url": "https://bharad.dev/blog/from-transformer-to-llm",
       "learning_score": 2
     },
     {
-      "url": "https://verpad.vercel.app/so-trends.html",
-      "author": "sheelagay",
-      "item_id": "hn:48705178",
-      "headline": "A dev visualized __15+ years of Stack Overflow tag popularity__ to track which technologies actually stuck.",
+      "url": "https://www.wordsinsearchlight.org/p/how-policymakers-can-prep-for-a-potential",
+      "author": "m-hodges",
+      "item_id": "hn:48705339",
+      "headline": "A framework for how policymakers can __prep for a potential AI job apocalypse__ before it arrives.",
       "subreddit": null,
-      "source_text": "I built Stack Overflow Tech Trends to visualize 15+ years of tag popularity",
+      "source_text": "Policymakers can prep for a potential AI job apocalypse",
       "source_type": "hacker_news",
-      "created_time": "2026-06-28T07:24:03+00:00",
+      "created_time": "2026-06-28T08:01:01+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://verpad.vercel.app/so-trends.html",
-      "learning_score": 2
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/PSR_J1748%E2%88%922446ad",
-      "author": "Jimmc414",
-      "item_id": "hn:48705157",
-      "headline": "PSR J1748−2446ad is a neutron star whose equator __spins at 24% of the speed of light__.",
-      "subreddit": null,
-      "source_text": "PSR J1748−2446ad spins at 24% of the speed of light at it's equator",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-28T07:17:46+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://en.wikipedia.org/wiki/PSR_J1748%E2%88%922446ad",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
-      "author": "joozio",
-      "item_id": "hn:48705089",
-      "headline": "LastPass users __had their data stolen — again__ — in yet another breach hitting the password manager.",
-      "subreddit": null,
-      "source_text": "Security News This Week: LastPass Users Had Their Data Stolen–Again",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-28T07:02:54+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again",
+      "canonical_url": "https://wordsinsearchlight.org/p/how-policymakers-can-prep-for-a-potential",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-28T07:36:07.536992+00:00",
+    "generated_at": "2026-06-28T08:13:17.306799+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "618ce1ec43d63d407270ac55935b2dee2c4ad9464bb52945cdd5e61af39ce6b8"
+  "content_hash": "9de4f26bd84d9e717b16aeee53f50ece1268e18cf7a59bd346c99e1f1a9d74bb"
 }
