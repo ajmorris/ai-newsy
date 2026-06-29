@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-28T00:00:00Z",
-  "issueCount": 69,
+  "generatedAt": "2026-06-29T00:00:00Z",
+  "issueCount": 70,
   "latestIssue": {
-    "slug": "2026-06-28",
-    "digestDate": "2026-06-28",
-    "displayDate": "Jun 28, 2026",
-    "issueNumber": "60628",
-    "subject": "ISSUE 60628 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI arms race isn't just reshaping geopolitics \u2014 it's hitting your wallet, too. From Washington and Beijing converging on eerily similar AI playbooks to Apple hiking prices across its product line because memory manufacturers would rather sell chips to data centers than put them in your MacBook, today's stories paint a picture of an industry whose insatiable appetite for compute is rippling out in every direction. We've also got a cancer-fighting founder who turned Claude into his medical co-pilot, Margaret Atwood's delightfully skeptical take on chatbots, and SoftBank's CEO throwing cold water on Elon Musk's plan to put data centers in orbit.",
+    "slug": "2026-06-29",
+    "digestDate": "2026-06-29",
+    "displayDate": "Jun 29, 2026",
+    "issueNumber": "60629",
+    "subject": "ISSUE 60629 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI hype machine hit a reality check this week \u2014 and the stories are coming from every direction. Ford is rehiring retired engineers after its AI quality systems fell short, enterprise leaders are watching AI projects crumble at scale due to neglected data foundations, and Erin Brockovich is gearing up for a new fight against the environmental toll of AI datacentres. Meanwhile, the boom rolls on with chipmaker stocks surging, China closing the gap in AI cybersecurity, and Suno's new artist incubator raising serious red flags \u2014 so grab your coffee and let's dig in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-28.html",
-    "contentHash": "9de4f26bd84d9e717b16aeee53f50ece1268e18cf7a59bd346c99e1f1a9d74bb"
+    "urlPath": "/issues/2026-06-29.html",
+    "contentHash": "d731ac5c79796480b22196e41dafa859844e102c606d3bc6a48bb8d201ba8530"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-29",
+      "digestDate": "2026-06-29",
+      "displayDate": "Jun 29, 2026",
+      "issueNumber": "60629",
+      "subject": "ISSUE 60629 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI hype machine hit a reality check this week \u2014 and the stories are coming from every direction. Ford is rehiring retired engineers after its AI quality systems fell short, enterprise leaders are watching AI projects crumble at scale due to neglected data foundations, and Erin Brockovich is gearing up for a new fight against the environmental toll of AI datacentres. Meanwhile, the boom rolls on with chipmaker stocks surging, China closing the gap in AI cybersecurity, and Suno's new artist incubator raising serious red flags \u2014 so grab your coffee and let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-29.html",
+      "contentHash": "d731ac5c79796480b22196e41dafa859844e102c606d3bc6a48bb8d201ba8530"
+    },
     {
       "slug": "2026-06-28",
       "digestDate": "2026-06-28",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-18.html",
       "contentHash": "6c2ea204ff33a6333c98923a799a9a590733ad3ccc504042fe160fc279ad661e"
-    },
-    {
-      "slug": "2026-06-17",
-      "digestDate": "2026-06-17",
-      "displayDate": "Jun 17, 2026",
-      "issueNumber": "60617",
-      "subject": "ISSUE 60617 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The Anthropic-Trump administration showdown is quickly becoming the defining tech story of the summer \u2014 and paradoxically, it might be the best thing that ever happened to the company's bottom line. With new data showing Anthropic has overtaken OpenAI in business spending for the first time, a $965 billion valuation, and its first profitable quarter, the AI safety company's clash with Washington is reshaping the power dynamics between government and the AI industry in ways nobody predicted. Today we're also diving into SpaceX's jaw-dropping post-IPO surge past Amazon, the DOJ stepping in to shield Musk's data centers from a pollution lawsuit, and Google DeepMind's ambitious play to fix the UK's housing crisis.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-17.html",
-      "contentHash": "5e810ffd3333fde68c3d3f75c5445e2c7764100623f0ba43aa6165fbc20c1715"
     }
   ]
 }
