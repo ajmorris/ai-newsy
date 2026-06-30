@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-29T00:00:00Z",
-  "issueCount": 70,
+  "generatedAt": "2026-06-30T00:00:00Z",
+  "issueCount": 71,
   "latestIssue": {
-    "slug": "2026-06-29",
-    "digestDate": "2026-06-29",
-    "displayDate": "Jun 29, 2026",
-    "issueNumber": "60629",
-    "subject": "ISSUE 60629 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI hype machine hit a reality check this week \u2014 and the stories are coming from every direction. Ford is rehiring retired engineers after its AI quality systems fell short, enterprise leaders are watching AI projects crumble at scale due to neglected data foundations, and Erin Brockovich is gearing up for a new fight against the environmental toll of AI datacentres. Meanwhile, the boom rolls on with chipmaker stocks surging, China closing the gap in AI cybersecurity, and Suno's new artist incubator raising serious red flags \u2014 so grab your coffee and let's dig in.",
+    "slug": "2026-06-30",
+    "digestDate": "2026-06-30",
+    "displayDate": "Jun 30, 2026",
+    "issueNumber": "60630",
+    "subject": "ISSUE 60630 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI jobs debate just got a whole lot more nuanced \u2014 a major new study of nearly 22,000 companies found that heavy AI adopters actually *grew* headcount by over 10%, but the catch is those gains may say more about which companies can afford to go all-in on AI than about AI's universal impact on employment. Beyond that headline, today's digest covers everything from Russian hackers exploiting Signal and WhatsApp at scale, to Google making personalized AI image generation free for 750 million Gemini users, to a philosopher embedded inside DeepMind wrestling with whether ethics can keep pace with the AI race.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-29.html",
-    "contentHash": "d731ac5c79796480b22196e41dafa859844e102c606d3bc6a48bb8d201ba8530"
+    "urlPath": "/issues/2026-06-30.html",
+    "contentHash": "545bedb866a923f6d9e26e419a73caf3d47fa4e6429e41eb7d42eeb0512a609e"
   },
   "recentIssues": [
+    {
+      "slug": "2026-06-30",
+      "digestDate": "2026-06-30",
+      "displayDate": "Jun 30, 2026",
+      "issueNumber": "60630",
+      "subject": "ISSUE 60630 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI jobs debate just got a whole lot more nuanced \u2014 a major new study of nearly 22,000 companies found that heavy AI adopters actually *grew* headcount by over 10%, but the catch is those gains may say more about which companies can afford to go all-in on AI than about AI's universal impact on employment. Beyond that headline, today's digest covers everything from Russian hackers exploiting Signal and WhatsApp at scale, to Google making personalized AI image generation free for 750 million Gemini users, to a philosopher embedded inside DeepMind wrestling with whether ethics can keep pace with the AI race.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-06-30.html",
+      "contentHash": "545bedb866a923f6d9e26e419a73caf3d47fa4e6429e41eb7d42eeb0512a609e"
+    },
     {
       "slug": "2026-06-29",
       "digestDate": "2026-06-29",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-19.html",
       "contentHash": "30580dfd6f0605a5e7b21e43882b7f2f61756e88232c2b223272b6893db0ff92"
-    },
-    {
-      "slug": "2026-06-18",
-      "digestDate": "2026-06-18",
-      "displayDate": "Jun 18, 2026",
-      "issueNumber": "60618",
-      "subject": "ISSUE 60618 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Midjourney just made the wildest pivot in tech \u2014 from AI-generated art to full-body ultrasound scanners that aim to rival MRI quality, complete with plans for a San Francisco spa where you can get scanned. It's one of those stories that makes you do a double-take, and it's far from the only headline worth your attention today. We've also got a massive breach exposing credentials for half of all internet-facing Fortinet firewalls, Tesco suing Broadcom over eye-watering VMware price hikes, and a growing reality check on whether enterprises are actually getting ROI from their AI spending.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-18.html",
-      "contentHash": "6c2ea204ff33a6333c98923a799a9a590733ad3ccc504042fe160fc279ad661e"
     }
   ]
 }
