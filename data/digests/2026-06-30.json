@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/Saboo_Shubham_/status/2071639897669267922",
       "author": "Saboo_Shubham_",
-      "headline": "Shubham Saboo runs a __one-person company with 7 AI agents__, 10 cron jobs, and zero human employees — every role is a folder, every job description a markdown file.",
+      "headline": "Shubham Saboo runs a one-person AI agent company with __7 agents, 10 cron jobs, and 0 employees__ — every role is a folder, every job description a markdown file.",
       "tweet_id": "38f1eba9-b6bc-81e6-923b-ededbb9b6968",
       "source_text": "This is HOW you run a one-person AI Agent company in 2026.\n\n7 AI agents. 10 cron jobs. 0 human employees.\n\nEvery role is a folder. Every job description is a md file. No standups. No Slack. No payroll.\n\nEach agent review, retro and self-improve in the LOOP. https://t.co/3Zsg59VUr9 https://t.co/Opz5Gvi1N9",
       "created_time": "2026-06-30T03:27:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/PawelHuryn/status/2071476759426465971",
       "author": "PawelHuryn",
-      "headline": "Pawel Huryn shares a free, no-paywall guide to __Claude Code for PMs__ — because cowork alone isn't cutting it.",
+      "headline": "Pawel Huryn says most PMs are lagging behind and shares a free __Claude Code for PMs 101__ guide.",
       "tweet_id": "38e1eba9-b6bc-81f3-b229-ee3413e3f635",
       "source_text": "Most PMs are lagging behind. Cowork is not enough. But it's not rocket science. Claude Code for PMs 101 (no email, no paywall):\nhttps://t.co/xIDIXMy0u8 https://t.co/3ZJ6TSCn4n",
       "created_time": "2026-06-29T18:47:00.000Z",
@@ -254,9 +254,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/Zephyr_hg/status/2071499659995218086",
+      "author": "Zephyr_hg",
+      "headline": "Sam Altman makes the case that building with AI __doesn't require a huge team, just a good idea__ — the surviving work is deciding what's good.",
+      "tweet_id": "38e1eba9-b6bc-8197-b92c-f3632f2e3c94",
+      "source_text": "Sam Altman, CEO of OpenAI: \n\n\"To build with AI, you don't need a huge team. You need a good idea.\"\n\nIn a 52-minute keynote, he describes the kind of work that's about to matter most.\n\nThe surviving work is directing AI to do the tasks while you decide what's good.\n\nOne person who https://t.co/N2oiSxbNOJ https://t.co/FtyESJ0XLJ",
+      "created_time": "2026-06-29T17:32:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2071499659995218086",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/MacRumors/status/2071725951097135430",
       "author": "MacRumors",
-      "headline": "__OpenClaw launches native iOS and Android apps__, putting agents in your pocket alongside channels, tasks, and replies.",
+      "headline": "__OpenClaw launches native iOS and Android apps__, putting AI agents in your pocket alongside channels, tasks, and replies.",
       "tweet_id": "38f1eba9-b6bc-8195-9279-e20e0f290a8e",
       "source_text": "Open Source AI Agent OpenClaw Gets Native iOS App https://t.co/64vebkQsQC https://t.co/kyak0lhJw7",
       "created_time": "2026-06-30T03:22:00.000Z",
@@ -266,30 +276,46 @@
     {
       "url": "https://twitter.com/akshay_pachaar/status/2071638409022763292",
       "author": "akshay_pachaar",
-      "headline": "Akshay Pachaar argues the model is now a commodity — what matters is __the harness that reads the repo, applies edits, and reacts to failures__.",
+      "headline": "Akshay Pachaar argues the model is a commodity now — what matters is __the harness that reads the repo, applies edits, and runs the tests__.",
       "tweet_id": "38f1eba9-b6bc-8136-b6f0-de46f45ae3fa",
       "source_text": "The harness is what matters now. The model is just a commodity.\n\nA model on its own returns text. Nothing it produces becomes working code until something around it reads the repo, applies the edits, runs the tests, and reacts to what breaks.\n\nThat something is the harness, and https://t.co/7txlErqGQN https://t.co/449ufq36kF",
       "created_time": "2026-06-30T03:22:00.000Z",
       "canonical_url": "https://twitter.com/akshay_pachaar/status/2071638409022763292",
       "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/Zephyr_hg/status/2071662986381361542",
-      "author": "Zephyr_hg",
-      "headline": "Boris Cherny, creator of Claude Code, says __loops are as big as the leap from source code to agents__ — and most people haven't reached that step yet.",
-      "tweet_id": "38f1eba9-b6bc-814d-b62c-d97f744a8298",
-      "source_text": "Boris Cherny, creator of Claude Code at Anthropic: \n\n\"Loops are sort of like as big as the step from source code to agents was. Loops are the step from agents to the next thing.\"\n\nIn a 40-minute fireside, the person who built Claude Code names the step most people haven't reached https://t.co/VoldtsYcR2 https://t.co/Jhqnz5xrth",
-      "created_time": "2026-06-30T02:52:00.000Z",
-      "canonical_url": "https://twitter.com/Zephyr_hg/status/2071662986381361542",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
+      "url": "https://1shotgen.com/",
+      "author": "zachisparanoid",
+      "item_id": "hn:48729839",
+      "headline": "__1ShotGen__ turns a rough idea into a full build prompt for your coding agent in a single pass.",
+      "subreddit": null,
+      "source_text": "Show HN: 1ShotGen – From rough idea to full build prompt in 1 shot",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-30T08:15:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://1shotgen.com",
+      "learning_score": 3
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.26276",
+      "author": "ddxv",
+      "item_id": "hn:48729728",
+      "headline": "A 2026 study finds __pregnancy and health apps still leaking data__ despite years of scrutiny.",
+      "subreddit": null,
+      "source_text": "The Pregnancy and Health Apps Still Leaking Data in 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-06-30T07:58:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arxiv.org/abs/2606.26276",
+      "learning_score": 3
+    },
+    {
       "url": "https://x.com/i/trending/2071612403301683379",
       "author": "vantareed",
       "item_id": "hn:48729468",
-      "headline": "Pieter Levels' data shows __negative posts get 2.5x more views__ — rage still outperforms everything else.",
+      "headline": "Pieter Levels' data shows __negative posts get 2.5× more views__ than positive ones on X.",
       "subreddit": null,
       "source_text": "Pieter Levels' Data Shows Negative Posts Get 2.5x More Views",
       "source_type": "hacker_news",
@@ -299,76 +325,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://www.getwidgetai.com",
-      "author": "bring-shrubbery",
-      "item_id": "hn:48729514",
-      "headline": "__WidgetAI__ lets you design iOS widgets in plain English — no Xcode required.",
+      "url": "https://slimsnap.ai/",
+      "author": "bickov",
+      "item_id": "hn:48729837",
+      "headline": "__SlimSnap__ lets you mark a screenshot element and get structured JSON your coding agent can actually use.",
       "subreddit": null,
-      "source_text": "Show HN: WidgetAI – Design iOS widgets in plain English, no Xcode",
+      "source_text": "Show HN: SlimSnap – mark a screenshot element, get JSON for your coding agent",
       "source_type": "hacker_news",
-      "created_time": "2026-06-30T07:21:58+00:00",
+      "created_time": "2026-06-30T08:15:10+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://getwidgetai.com",
+      "canonical_url": "https://slimsnap.ai",
       "learning_score": 2
     },
     {
-      "url": "https://www.calcalistech.com/ctechnews/article/sycgn6yxze",
-      "author": "taubek",
-      "item_id": "hn:48729496",
-      "headline": "Elementor __cuts 100 jobs, 30% of its workforce__, as AI reshapes the website-building market it pioneered.",
+      "url": "https://github.com/casatrick/polymarket-arbitrage-bot",
+      "author": "casatrick",
+      "item_id": "hn:48729744",
+      "headline": "A Rust trading bot for Polymarket makes decisions in an __800µs loop__ — open-sourced on GitHub.",
       "subreddit": null,
-      "source_text": "Elementor cuts 100 jobs, 30% of workforce, as AI reshapes website building",
+      "source_text": "A Rust trading bot for Polymarket, 800µs decision loop",
       "source_type": "hacker_news",
-      "created_time": "2026-06-30T07:17:07+00:00",
+      "created_time": "2026-06-30T08:00:20+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://calcalistech.com/ctechnews/article/sycgn6yxze",
+      "canonical_url": "https://github.com/casatrick/polymarket-arbitrage-bot",
       "learning_score": 2
     },
     {
-      "url": "https://github.com/gelkao/cloud-inefficiency-audit",
-      "author": "dominikz",
-      "item_id": "hn:48729485",
-      "headline": "A local CLI that __audits your Hetzner bill__ for cloud inefficiencies — no data leaves your machine.",
+      "url": "https://github.com/ggml-org/llama.cpp/pull/24219",
+      "author": "trykhlieb",
+      "item_id": "hn:48729733",
+      "headline": "TurboPrefill lands in llama.cpp with __2.7× faster prefill than Pipeline Parallel__ on Llama-3-70B.",
       "subreddit": null,
-      "source_text": "Show HN: Cloud Inefficiency Audit – a local CLI to audit your Hetzner bill",
+      "source_text": "TurboPrefill: 2.7× faster than llama.cpp Pipeline Parallel on Llama-3-70B",
       "source_type": "hacker_news",
-      "created_time": "2026-06-30T07:15:18+00:00",
+      "created_time": "2026-06-30T07:58:24+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/gelkao/cloud-inefficiency-audit",
-      "learning_score": 2
-    },
-    {
-      "url": "https://old.reddit.com/r/help/comments/1ufgtew/weekly_recap_june_25_2026/",
-      "author": "taurath",
-      "item_id": "hn:48729439",
-      "headline": "Reddit is experimenting with a __\"For You\" default feed__ for some users, replacing the home timeline.",
-      "subreddit": null,
-      "source_text": "Reddit now experimenting with \"For You\" default feed for some users",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-30T07:06:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://old.reddit.com/r/help/comments/1ufgtew/weekly_recap_june_25_2026",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/ngaut/agent-git-service",
-      "author": "shenli3514",
-      "item_id": "hn:48729434",
-      "headline": "A __GitHub-compatible Git service built for AI agents__ — designed so agents can push, pull, and branch without human plumbing.",
-      "subreddit": null,
-      "source_text": "A GitHub-compatible Git service built for AI agents",
-      "source_type": "hacker_news",
-      "created_time": "2026-06-30T07:05:44+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/ngaut/agent-git-service",
+      "canonical_url": "https://github.com/ggml-org/llama.cpp/pull/24219",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-06-30T07:42:23.774280+00:00",
+    "generated_at": "2026-06-30T08:18:42.443330+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "a333d78b885c183ac69e6881ee76c59dd1dab74aa935ed5cadc81a9da5758512"
+  "content_hash": "545bedb866a923f6d9e26e419a73caf3d47fa4e6429e41eb7d42eeb0512a609e"
 }
