@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-06-30T00:00:00Z",
-  "issueCount": 71,
+  "generatedAt": "2026-07-01T00:00:00Z",
+  "issueCount": 72,
   "latestIssue": {
-    "slug": "2026-06-30",
-    "digestDate": "2026-06-30",
-    "displayDate": "Jun 30, 2026",
-    "issueNumber": "60630",
-    "subject": "ISSUE 60630 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI jobs debate just got a whole lot more nuanced \u2014 a major new study of nearly 22,000 companies found that heavy AI adopters actually *grew* headcount by over 10%, but the catch is those gains may say more about which companies can afford to go all-in on AI than about AI's universal impact on employment. Beyond that headline, today's digest covers everything from Russian hackers exploiting Signal and WhatsApp at scale, to Google making personalized AI image generation free for 750 million Gemini users, to a philosopher embedded inside DeepMind wrestling with whether ethics can keep pace with the AI race.",
+    "slug": "2026-07-01",
+    "digestDate": "2026-07-01",
+    "displayDate": "Jul 01, 2026",
+    "issueNumber": "60701",
+    "subject": "ISSUE 60701 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The big story today is Anthropic getting the green light to bring its most powerful AI models back online, as the Trump administration lifts the export restrictions that had sidelined Fable 5 and Mythos 5 for weeks \u2014 a saga that looks more like political arm-wrestling than genuine national security policy. Beyond that regulatory drama, we've got Claude Code shipping with Sonnet 5 as its new default, the \"Father of the Internet\" Vint Cerf hanging up his hat with a fascinating prediction about AI agents, and Australia's creatives fighting a $50 billion proposal that could let AI companies feast on copyrighted content.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-06-30.html",
-    "contentHash": "545bedb866a923f6d9e26e419a73caf3d47fa4e6429e41eb7d42eeb0512a609e"
+    "urlPath": "/issues/2026-07-01.html",
+    "contentHash": "87670900b49c17bcd2e7e495accb5a1cc3ad7f60cf98c4c48f7592063a2e6ac2"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-01",
+      "digestDate": "2026-07-01",
+      "displayDate": "Jul 01, 2026",
+      "issueNumber": "60701",
+      "subject": "ISSUE 60701 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The big story today is Anthropic getting the green light to bring its most powerful AI models back online, as the Trump administration lifts the export restrictions that had sidelined Fable 5 and Mythos 5 for weeks \u2014 a saga that looks more like political arm-wrestling than genuine national security policy. Beyond that regulatory drama, we've got Claude Code shipping with Sonnet 5 as its new default, the \"Father of the Internet\" Vint Cerf hanging up his hat with a fascinating prediction about AI agents, and Australia's creatives fighting a $50 billion proposal that could let AI companies feast on copyrighted content.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-01.html",
+      "contentHash": "87670900b49c17bcd2e7e495accb5a1cc3ad7f60cf98c4c48f7592063a2e6ac2"
+    },
     {
       "slug": "2026-06-30",
       "digestDate": "2026-06-30",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-20.html",
       "contentHash": "0820b3806abf80bd801677a99fe8374a99f9eb446a75b53a2222a043387c21d3"
-    },
-    {
-      "slug": "2026-06-19",
-      "digestDate": "2026-06-19",
-      "displayDate": "Jun 19, 2026",
-      "issueNumber": "60619",
-      "subject": "ISSUE 60619 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The chip export control saga just got a new twist \u2014 the US government is claiming one of ASML's crown jewel EUV lithography machines may have secretly ended up in China, while ASML is flatly saying \"no way, we track every single one.\" Meanwhile, OpenAI is loading up for its IPO by snagging Transformer co-inventor Noam Shazeer from Google DeepMind (yes, *that* Noam Shazeer), and SpaceX is floating the wild idea of putting AI data centers in orbit \u2014 though physicists have some thoughts about that. It's a packed day, so let's dive in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-19.html",
-      "contentHash": "30580dfd6f0605a5e7b21e43882b7f2f61756e88232c2b223272b6893db0ff92"
     }
   ]
 }
