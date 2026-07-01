@@ -234,9 +234,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/polydao/status/2071832672066830847",
+      "author": "polydao",
+      "headline": "Anthropic's technical paper on encoding daily workflows into Claude as custom Skills is quietly becoming __a playbook for automating your own job__.",
+      "tweet_id": "3901eba9-b6bc-8175-be59-c30facf25c70",
+      "source_text": "THIS DOCUMENT FROM ANTHROPIC WILL LITERALLY GET YOU PROMOTED\n\n> the fastest way to reach a senior position is to automate your current job\n\nthis technical paper shows how to encode your daily workflows into Claude\n\nbuild custom \"Skills\" to force the AI to do the heavy lifting:\n> https://t.co/RBtnpVf7L9 https://t.co/8XhPnOrybM",
+      "created_time": "2026-07-01T04:12:00.000Z",
+      "canonical_url": "https://twitter.com/polydao/status/2071832672066830847",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/shmidtqq/status/2071989087225954437",
       "author": "shmidtqq",
-      "headline": "Anthropic says prompt engineering was just the start — __context engineering__ is the real discipline, and bloated context is the silent killer of agent reliability.",
+      "headline": "rom1trs built a Claude skill that __creates Vox-style ads__ end to end — writes the voice-over, breaks it into clips, and renders video via Arcads MCP.",
       "tweet_id": "3901eba9-b6bc-81e9-a430-eff2a899fd23",
       "source_text": "Anthropic wrote it down: prompt engineering was just the start.\n\nNext comes context engineering. The discipline of curating what the model sees.\n\nTheir words: bloated context is the silent killer of agent reliability.\n\nIt isn't the model. It's what you feed it.\n\nSame Claude for https://t.co/tZar0PhOdJ https://t.co/fmrKWFLXII",
       "created_time": "2026-07-01T04:07:00.000Z",
@@ -246,7 +256,7 @@
     {
       "url": "https://twitter.com/femke_plantinga/status/2071909327808483360",
       "author": "femke_plantinga",
-      "headline": "Henry Raiten built __a complete SaaS in one prompt__ — landing page, auth, database, Stripe, deploy — then had AI test every screen and fix bugs. He's 15.",
+      "headline": "The case for __agentic, self-updating knowledge bases__ — where data actively maintains itself instead of rotting in a corporate wiki.",
       "tweet_id": "3901eba9-b6bc-81e4-8e28-f18a99c89598",
       "source_text": "The traditional corporate wiki is officially dead 🪦\n\nTeams are now shifting to agentic (self-updating) knowledge bases.\n\nSimply put: data doesn't just sit there, but actively maintains itself.\n\nSo many companies waste months fine-tuning AI agents.\n\nThen they wonder why the AI https://t.co/fkX9uBZkfc",
       "created_time": "2026-07-01T04:02:00.000Z",
@@ -254,42 +264,58 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/HenryRaiten/status/2071975156386308194",
+      "author": "HenryRaiten",
+      "headline": "A 15-year-old one-shotted __a complete SaaS with auth, Stripe, and deployment__ from a single prompt — then had AI test every screen and fix the bugs.",
+      "tweet_id": "3901eba9-b6bc-81e4-9c1a-e62d364a494c",
+      "source_text": "One prompt → a complete SaaS. Landing page, auth, database, Stripe, integrations, deployed. Then an AI tests every screen and fixes the bugs before you open it. Built by a 15-year-old. https://t.co/QPj10HwGNr",
+      "created_time": "2026-07-01T03:37:00.000Z",
+      "canonical_url": "https://twitter.com/HenryRaiten/status/2071975156386308194",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/github/status/2072023913966559601",
       "author": "github",
-      "headline": "__Claude Sonnet 5__ is now generally available in GitHub Copilot, with strong CLI-task performance and excellent prompt-cache utilization.",
+      "headline": "__Claude Sonnet 5 is now generally available in GitHub Copilot__ — early testing shows strong CLI-task performance and excellent prompt-cache utilization.",
       "tweet_id": "3901eba9-b6bc-81f3-9259-c7de6013f4be",
       "source_text": "📣 @AnthropicAI's Claude Sonnet 5 is now generally available and rolling out in GitHub Copilot.\n\nEarly testing for Claude Sonnet 5 showed:\n• strong results across a range of coding scenarios, particularly for performance on CLI-style tasks.\n• excellent prompt-cache utilization https://t.co/KTLpnOggXP",
       "created_time": "2026-07-01T03:37:00.000Z",
       "canonical_url": "https://twitter.com/github/status/2072023913966559601",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/satishmreddy/status/2072088277008666776",
-      "author": "satishmreddy",
-      "headline": "Satish Reddy on competing against creators with 250K–1M+ reach: __when the 500lb gorilla comes for you__, here's how he survived three times.",
-      "tweet_id": "3901eba9-b6bc-8180-a35b-d20d42056d56",
-      "source_text": "When the 500lb gorilla comes for you!\nOver the last two years I had to compete with @shreyas  (250K-500K reach, friend of Lenny), @lennysan  List (1M+  reach) and @wes_kao  (250K+ reach, founder of Maven) with three different courses. Each time I felt my business was going to https://t.co/M7yZqUykGq",
-      "created_time": "2026-07-01T03:37:00.000Z",
-      "canonical_url": "https://twitter.com/satishmreddy/status/2072088277008666776",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/brenhubr/status/2071979004509221057",
-      "author": "brenhubr",
-      "headline": "A solo dev built an app that runs __Claude and Codex sessions in your Mac notch__, showing which agents are working and which are waiting on you.",
-      "tweet_id": "3901eba9-b6bc-8158-a6ef-dab136c0b13e",
-      "source_text": "i built an app to use Claude and Codex in my Mac notch\n\nit shows all running CLI and Desktop app sessions in parallel, showing you who's working, and who's waiting on you\n\njust launched on Product Hunt!\n\nif that sounds useful, an upvote today genuinely helps a solo dev out 🙏👇 https://t.co/5Pwy0unMg5",
-      "created_time": "2026-07-01T03:32:00.000Z",
-      "canonical_url": "https://twitter.com/brenhubr/status/2071979004509221057",
-      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://www.pv-magazine.com/2026/06/29/panasonic-launches-co%e2%82%82-air-to-water-heat-pump-with-coefficient-of-performance-of-6-1/",
+      "author": "flipbrad",
+      "item_id": "hn:48743651",
+      "headline": "Panasonic ships a CO₂ air-to-water heat pump with a __coefficient of performance of 6.1__ — nearly double typical units.",
+      "subreddit": null,
+      "source_text": "Panasonic launches CO₂ air-to-water heat pump with CoP of 6.1",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-01T08:12:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://pv-magazine.com/2026/06/29/panasonic-launches-co%e2%82%82-air-to-water-heat-pump-with-coefficient-of-performance-of-6-1",
+      "learning_score": 3
+    },
+    {
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug/",
+      "author": "blerb795",
+      "item_id": "hn:48743636",
+      "headline": "OpenAI details how they traced and fixed __an 18-year-old core dump bug__ using epidemiological methods across their infrastructure.",
+      "subreddit": null,
+      "source_text": "Core dump epidemiology: fixing an 18-year-old bug",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-01T08:09:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "learning_score": 3
+    },
+    {
       "url": "https://github.com/SaravananJaichandar/world-model-mcp",
       "author": "saravanan2294",
       "item_id": "hn:48743544",
-      "headline": "World Model MCP v0.10.0 brings __cross-runtime memory across 7 coding agents__ so context survives tool-hopping.",
+      "headline": "World Model MCP v0.10.0 brings __cross-runtime memory across seven coding agents__ — persistent context that follows you between tools.",
       "subreddit": null,
       "source_text": "Show HN: World Model MCP v0.10.0 – cross-runtime memory across 7 coding agents",
       "source_type": "hacker_news",
@@ -299,76 +325,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://theprint.in/india/a-whatsapp-message-from-your-ceo-rs-1-5-crore-gone-how-the-boss-scam-is-tricking-indian-executives/2973626/",
-      "author": "rustoo",
-      "item_id": "hn:48743471",
-      "headline": "A WhatsApp message from \"your CEO,\" __₹1.5 crore gone__ — how the boss scam is fooling Indian executives.",
+      "url": "https://medium.com/@VibeHacker/best-ai-coding-token-plans-in-2026-a-practical-comparison-for-developers-78c9e12f6c60",
+      "author": "Timmyzzz",
+      "item_id": "hn:48743714",
+      "headline": "A practical comparison of the __best AI coding token plans in 2026__ — pricing, context limits, and what you actually get per dollar.",
       "subreddit": null,
-      "source_text": "How the 'Boss scam' is tricking Indian executives",
+      "source_text": "Best AI Coding Token Plans in 2026: A Practical Comparison for Developers",
       "source_type": "hacker_news",
-      "created_time": "2026-07-01T07:43:22+00:00",
+      "created_time": "2026-07-01T08:19:58+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://theprint.in/india/a-whatsapp-message-from-your-ceo-rs-1-5-crore-gone-how-the-boss-scam-is-tricking-indian-executives/2973626",
-      "learning_score": 3
-    },
-    {
-      "url": "https://kristoff.it/blog/contributor-poker-and-ai/",
-      "author": "birdculture",
-      "item_id": "hn:48743547",
-      "headline": "Zig's maintainer explains __contributor poker and the project's AI ban__ — why they won't accept AI-generated patches.",
-      "subreddit": null,
-      "source_text": "Contributor Poker and Zig's AI Ban",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-01T07:55:28+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://kristoff.it/blog/contributor-poker-and-ai",
+      "canonical_url": "https://medium.com/@VibeHacker/best-ai-coding-token-plans-in-2026-a-practical-comparison-for-developers-78c9e12f6c60",
       "learning_score": 2
     },
     {
-      "url": "https://www.tommyjepsen.com/blog/supervised-vs-unsupervised-ai-code",
-      "author": "tommyjepsen",
-      "item_id": "hn:48743411",
-      "headline": "Tommy Jepsen makes the case for __supervised vs. unsupervised AI-generated code__ and why the distinction matters more than you'd think.",
+      "url": "https://useabstractions.com",
+      "author": "nshntarora",
+      "item_id": "hn:48743674",
+      "headline": "Abstractions generates __weekly newsletters explaining your codebase__ — auto-summarizes recent changes so the whole team stays oriented.",
       "subreddit": null,
-      "source_text": "Supervised vs. Unsupervised AI-generated code",
+      "source_text": "Show HN: Abstractions – Weekly newsletters explaining your codebase",
       "source_type": "hacker_news",
-      "created_time": "2026-07-01T07:34:43+00:00",
+      "created_time": "2026-07-01T08:14:54+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://tommyjepsen.com/blog/supervised-vs-unsupervised-ai-code",
+      "canonical_url": "https://useabstractions.com",
       "learning_score": 2
     },
     {
-      "url": "https://www.bbc.co.uk/news/articles/cvgmv98ez3zo",
-      "author": "ndsipa_pomu",
-      "item_id": "hn:48743387",
-      "headline": "Trump made __more than $1B from crypto__ in his first year back in office.",
+      "url": "https://wasm.chdb.io/",
+      "author": "auxten",
+      "item_id": "hn:48743592",
+      "headline": "__ChDB-WASM__ runs ClickHouse entirely in the browser via WebAssembly — full analytical SQL with no server.",
       "subreddit": null,
-      "source_text": "Trump made more than $1B from crypto in first year back in office",
+      "source_text": "Show HN: ChDB-WASM – ClickHouse running in the browser via WebAssembly",
       "source_type": "hacker_news",
-      "created_time": "2026-07-01T07:30:58+00:00",
+      "created_time": "2026-07-01T08:03:33+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://bbc.co.uk/news/articles/cvgmv98ez3zo",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.cs.uni.edu/~wallingf/blog/archives/monthly/2026-06.html#e2026-06-30T20_43_40.htm",
-      "author": "matt_d",
-      "item_id": "hn:48743383",
-      "headline": "What it looks like to __teach algorithms in 2026__ when students arrive with LLMs in their pockets.",
-      "subreddit": null,
-      "source_text": "Teaching Algorithms in 2026",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-01T07:30:09+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://cs.uni.edu/~wallingf/blog/archives/monthly/2026-06.html",
+      "canonical_url": "https://wasm.chdb.io",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-01T07:57:35.697984+00:00",
+    "generated_at": "2026-07-01T08:31:37.508630+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "da6708985a1702e0d8f42ab51caaaa8f3573aad8643c73b43bd523ffaa5c7169"
+  "content_hash": "87670900b49c17bcd2e7e495accb5a1cc3ad7f60cf98c4c48f7592063a2e6ac2"
 }
