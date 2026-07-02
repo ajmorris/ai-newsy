@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-01T00:00:00Z",
-  "issueCount": 72,
+  "generatedAt": "2026-07-02T00:00:00Z",
+  "issueCount": 73,
   "latestIssue": {
-    "slug": "2026-07-01",
-    "digestDate": "2026-07-01",
-    "displayDate": "Jul 01, 2026",
-    "issueNumber": "60701",
-    "subject": "ISSUE 60701 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The big story today is Anthropic getting the green light to bring its most powerful AI models back online, as the Trump administration lifts the export restrictions that had sidelined Fable 5 and Mythos 5 for weeks \u2014 a saga that looks more like political arm-wrestling than genuine national security policy. Beyond that regulatory drama, we've got Claude Code shipping with Sonnet 5 as its new default, the \"Father of the Internet\" Vint Cerf hanging up his hat with a fascinating prediction about AI agents, and Australia's creatives fighting a $50 billion proposal that could let AI companies feast on copyrighted content.",
+    "slug": "2026-07-02",
+    "digestDate": "2026-07-02",
+    "displayDate": "Jul 02, 2026",
+    "issueNumber": "60702",
+    "subject": "ISSUE 60702 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI industry is facing a credibility check from multiple angles today \u2014 from a UN warning that AI's uneven spread could deepen global inequality, to a Tripadvisor investigation revealing that AI-generated review summaries are actively burying serious safety complaints like food poisoning and sexual harassment. Meanwhile, the hardware race heats up with SpaceX reportedly prototyping a sleek AI device to rival OpenAI's Jony Ive collaboration, and an Indian entrepreneur is betting $30 million that the entire concept of office software needs to be rebuilt from scratch for the AI era.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-01.html",
-    "contentHash": "87670900b49c17bcd2e7e495accb5a1cc3ad7f60cf98c4c48f7592063a2e6ac2"
+    "urlPath": "/issues/2026-07-02.html",
+    "contentHash": "f363ef488b9a87953329e3d8a5998e224e90a62a64a59461c7c4555f0ffa9475"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-02",
+      "digestDate": "2026-07-02",
+      "displayDate": "Jul 02, 2026",
+      "issueNumber": "60702",
+      "subject": "ISSUE 60702 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI industry is facing a credibility check from multiple angles today \u2014 from a UN warning that AI's uneven spread could deepen global inequality, to a Tripadvisor investigation revealing that AI-generated review summaries are actively burying serious safety complaints like food poisoning and sexual harassment. Meanwhile, the hardware race heats up with SpaceX reportedly prototyping a sleek AI device to rival OpenAI's Jony Ive collaboration, and an Indian entrepreneur is betting $30 million that the entire concept of office software needs to be rebuilt from scratch for the AI era.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-02.html",
+      "contentHash": "f363ef488b9a87953329e3d8a5998e224e90a62a64a59461c7c4555f0ffa9475"
+    },
     {
       "slug": "2026-07-01",
       "digestDate": "2026-07-01",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-21.html",
       "contentHash": "9b5a4e6df9968fae5bddb484e448da343a1e4b05a9be8dc8f8fbc29f680fa8b2"
-    },
-    {
-      "slug": "2026-06-20",
-      "digestDate": "2026-06-20",
-      "displayDate": "Jun 20, 2026",
-      "issueNumber": "60620",
-      "subject": "ISSUE 60620 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The Anthropic saga is dominating today's AI news cycle \u2014 the US government forced the company to pull its Fable 5 and Mythos 5 models over national security concerns, and the fallout is raising big questions about whether export controls actually work, what this means for developers and Anthropic's looming IPO, and whether the ban might paradoxically be *boosting* the company's brand. Meanwhile, Amazon is navigating its own awkward entanglement with AI power players by quietly dropping a film about Sam Altman (perhaps that $50 billion OpenAI investment made things a tad uncomfortable), and we've got stories ranging from a billionaire's plan to put AI in every phone call in India to a shoe company that sold its entire business to become an AI infrastructure startup.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-20.html",
-      "contentHash": "0820b3806abf80bd801677a99fe8374a99f9eb446a75b53a2222a043387c21d3"
     }
   ]
 }
