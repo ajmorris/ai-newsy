@@ -234,29 +234,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/AnatoliKopadze/status/2072379676136476844",
-      "author": "AnatoliKopadze",
-      "headline": "An ex-Google AI engineer says he's already __running 40 agents in parallel__ and built a $50k marketing team for $500 in cash.",
-      "tweet_id": "3911eba9-b6bc-819d-bb57-d158aadafc1c",
-      "source_text": "Ex-Google AI engineer:\n\n\"In the near future everyone will be running AI AGENTS. I'm already running 40 in parallel.\"\n\nHe built a $50,000 marketing team using AI and $500 in cash.\n\nIn 14 minutes he shows how to build something similar from scratch step by step.\n\nWatch it, then https://t.co/qZ9uU38gfl https://t.co/zOjZrtunFg",
-      "created_time": "2026-07-02T15:42:00.000Z",
-      "canonical_url": "https://twitter.com/AnatoliKopadze/status/2072379676136476844",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/DamiDefi/status/2072681951170027901",
-      "author": "DamiDefi",
-      "headline": "Fable 5 is back and users are calling it __a gargantuan step forward__ — first move is reviewing any code written while it was unavailable.",
-      "tweet_id": "3911eba9-b6bc-810b-a3ab-deb4463b9aa5",
-      "source_text": "\"FABLE 5 ISN'T JUST A STEP BETTER... IT'S A GARGANTUAN STEP FORWARD.\"\n\nThat's how one AI expert described Claude Fable 5's return.\n\nAfter watching the breakdown, these are the first things I'd do:\n\n→ Review and upgrade any code written while Fable 5 was unavailable.\n→ Let https://t.co/1NFOffPKWj",
-      "created_time": "2026-07-02T15:42:00.000Z",
-      "canonical_url": "https://twitter.com/DamiDefi/status/2072681951170027901",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/hwchase17/status/2072344890755977571",
       "author": "hwchase17",
-      "headline": "Harrison Chase says more developers are turning to __glm5.2 as a daily coding driver__ — here's how to wire it into deepagents.",
+      "headline": "Harrison Chase says more developers are switching to __glm5.2 as a daily coding driver__ and shares how to wire it into deepagents.",
       "tweet_id": "3911eba9-b6bc-81f1-96e6-fa25b76c736a",
       "source_text": "More and more developers turning to glm5.2 as a daily driver for coding\n\nHere’s how to use it with deepagents code https://t.co/kGgud7qYFp",
       "created_time": "2026-07-02T15:37:00.000Z",
@@ -264,32 +244,91 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/khemaridh/status/2072703440535613521",
-      "author": "khemaridh",
-      "headline": "Agent skills just got easier — now you can __record your screen and workflow__ inside Codex to teach them.",
-      "tweet_id": "3911eba9-b6bc-81f1-98fa-e9ee1f8f924c",
-      "source_text": "Agent skills got even easier by just recording your screen and workflow inside Codex https://t.co/V4AHSRHiRb",
-      "created_time": "2026-07-02T15:32:00.000Z",
-      "canonical_url": "https://twitter.com/khemaridh/status/2072703440535613521",
+      "url": "https://twitter.com/AiCamila_/status/2072355014585327990",
+      "author": "AiCamila_",
+      "headline": "Without idempotency, agent retries can charge a customer twice. A walkthrough of __exactly-once semantics for agent workflows__.",
+      "tweet_id": "3911eba9-b6bc-81cf-b111-c415ff5d100d",
+      "source_text": "Building Reliable Agent Systems with Idempotency and Exactly-Once Semantics\n\nAgent workflows often involve external systems, retries, and long-running steps. \n\nWithout proper design, the same action can be executed multiple times (e.g., charging a customer twice). Idempotency + https://t.co/JCtFV0JxZb",
+      "created_time": "2026-07-02T15:27:00.000Z",
+      "canonical_url": "https://twitter.com/AiCamila_/status/2072355014585327990",
       "learning_score": 3
     },
     {
       "url": "https://twitter.com/hwchase17/status/2072377816780624266",
       "author": "hwchase17",
-      "headline": "Harrison Chase on \"agentic map reduce\": spawning subagents programmatically lets you add determinism to __dynamic agent orchestration patterns__ in LangGraph.",
+      "headline": "Harrison Chase coins \"agentic map reduce\" — spawning subagents programmatically for patterns where you want __determinism controlling how agents are created and run__.",
       "tweet_id": "3911eba9-b6bc-8182-bfc9-c4ed75023951",
       "source_text": "\"agentic map reduce\" is a nice name\n\nspawning subagents programatically allows you to do these advanced agent patterns, where you want some determinism to control how agents are created/run\n\ncheck out dynamic subagents in deepagents for a way to do this: https://t.co/QKeQOELWr6 https://t.co/qOsdRctWi3",
       "created_time": "2026-07-02T15:27:00.000Z",
       "canonical_url": "https://twitter.com/hwchase17/status/2072377816780624266",
       "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/thymikee/status/2072401519912059305",
+      "author": "thymikee",
+      "headline": "agent-device validated as __faster than Maestro on iOS__ in a third-party benchmark for mobile testing.",
+      "tweet_id": "3911eba9-b6bc-8132-a5b4-f36a380a74f8",
+      "source_text": "agent-device validated to be faster than Maestro on iOS in a 3rd party benchmark, let’s go!\n\nI had a version working almost as fast as mobai (kudos!) but it didn’t survive React Navigation test suite unfortunately, reliability hurt especially on CI. Or it was a skill issue https://t.co/NV4vmJw1cV",
+      "created_time": "2026-07-02T14:32:00.000Z",
+      "canonical_url": "https://twitter.com/thymikee/status/2072401519912059305",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Tech_girlll/status/2072340631372853434",
+      "author": "Tech_girlll",
+      "headline": "Loop engineering in one thread: define a goal, break it into repeatable steps, add verification, __let the agent retry with context__, and define when to stop.",
+      "tweet_id": "3911eba9-b6bc-81e1-a856-c8d923a60703",
+      "source_text": "want to learn loop engineering?\n\nstart here:\n\nstop thinking in prompts\ndefine a clear goal\nbreak the goal into repeatable steps\nadd a way to verify the output\ncreate a feedback loop for failures\nlet the agent retry with context\ndefine when the loop should stop\n\nRead full article https://t.co/v6sAA7Hsga https://t.co/SleQegqLGa",
+      "created_time": "2026-07-02T14:32:00.000Z",
+      "canonical_url": "https://twitter.com/Tech_girlll/status/2072340631372853434",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance/",
+      "author": "giuliomagnifico",
+      "item_id": "hn:48773149",
+      "headline": "Anthropic's __Claude Fable relaunch disappoints users__ with what they're calling nerfed performance.",
+      "subreddit": null,
+      "source_text": "Claude Fable relaunch disappoints users with nerfed performance",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-03T10:02:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector/pull/989",
+      "author": "thunderbong",
+      "item_id": "hn:48773111",
+      "headline": "pgvector lands a PR for __10x smaller vector indexes__ — a big deal for anyone running embeddings in Postgres.",
+      "subreddit": null,
+      "source_text": "10x smaller vector indexes in pgvector",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-03T09:57:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/pgvector/pgvector/pull/989",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.phoronix.com/news/ReactOS-First-NT6-Syscall",
+      "author": "serhack_",
+      "item_id": "hn:48772953",
+      "headline": "ReactOS implements its __first Windows NT6 system call__, inching toward Vista compatibility.",
+      "subreddit": null,
+      "source_text": "ReactOS Implements First Windows NT6 System Call Toward Vista Compatibility",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-03T09:36:23+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://phoronix.com/news/ReactOS-First-NT6-Syscall",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.datacenterdynamics.com/en/news/aws-says-it-added-more-data-center-capacity-than-any-other-company-in-2025-including-12gw-in-q4/",
       "author": "01-_-",
       "item_id": "hn:48772927",
-      "headline": "AWS says it added more data center capacity than any other company in 2025, including __12GW in Q4 alone__.",
+      "headline": "AWS says it added __more data center capacity than any other company in 2025__, including 12GW in Q4 alone.",
       "subreddit": null,
       "source_text": "AWS says it added more data center capacity",
       "source_type": "hacker_news",
@@ -302,7 +341,7 @@
       "url": "https://matduggan.com/clickhouse-is-winning-the-observability-wars/",
       "author": "hiyer",
       "item_id": "hn:48772926",
-      "headline": "The case that __ClickHouse is winning the observability wars__ — and what that means for the logging stack you're running today.",
+      "headline": "The case that __ClickHouse is winning the observability wars__ — and why the incumbents should worry.",
       "subreddit": null,
       "source_text": "ClickHouse is winning the observability wars",
       "source_type": "hacker_news",
@@ -323,52 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be",
       "learning_score": 2
-    },
-    {
-      "url": "https://github.com/eshengsky/Codex-Sidecar",
-      "author": "eshengsky",
-      "item_id": "hn:48772837",
-      "headline": "__Codex Sidecar__ is a local macOS companion app that runs alongside OpenAI's Codex Desktop.",
-      "subreddit": null,
-      "source_text": "Show HN: Codex Sidecar – A Local macOS Companion for Codex Desktop",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-03T09:22:00+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/eshengsky/Codex-Sidecar",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/timohaa/scopewalker-mcp",
-      "author": "thaanpaa",
-      "item_id": "hn:48772579",
-      "headline": "__Scopewalker__ is an MCP server that surfaces codebase complexity metrics for AI coding agents.",
-      "subreddit": null,
-      "source_text": "Show HN: Scopewalker, an MCP server for codebase complexity metrics",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-03T08:51:07+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/timohaa/scopewalker-mcp",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.phoronix.com/news/JPEG-XL-libjxl-0.12",
-      "author": "blurred",
-      "item_id": "hn:48772485",
-      "headline": "__JPEG-XL libjxl 0.12__ lands with another round of performance optimizations.",
-      "subreddit": null,
-      "source_text": "JPEG-XL Libjxl 0.12 Brings More Performance Optimizations",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-03T08:37:35+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://phoronix.com/news/JPEG-XL-libjxl-0.12",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-03T09:34:15.317168+00:00",
+    "generated_at": "2026-07-03T10:09:51.192846+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "19f9be979bb623c4c371793fddcd66d69a73ec32c7ef2d730208706cb195b42e"
+  "content_hash": "84253c3019101237cf3bc3cccb897a26b6d4389b7f3983b7a98b3f866823f3ec"
 }
