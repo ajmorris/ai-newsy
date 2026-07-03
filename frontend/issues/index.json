@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-02T00:00:00Z",
-  "issueCount": 73,
+  "generatedAt": "2026-07-03T00:00:00Z",
+  "issueCount": 74,
   "latestIssue": {
-    "slug": "2026-07-02",
-    "digestDate": "2026-07-02",
-    "displayDate": "Jul 02, 2026",
-    "issueNumber": "60702",
-    "subject": "ISSUE 60702 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry is facing a credibility check from multiple angles today \u2014 from a UN warning that AI's uneven spread could deepen global inequality, to a Tripadvisor investigation revealing that AI-generated review summaries are actively burying serious safety complaints like food poisoning and sexual harassment. Meanwhile, the hardware race heats up with SpaceX reportedly prototyping a sleek AI device to rival OpenAI's Jony Ive collaboration, and an Indian entrepreneur is betting $30 million that the entire concept of office software needs to be rebuilt from scratch for the AI era.",
+    "slug": "2026-07-03",
+    "digestDate": "2026-07-03",
+    "displayDate": "Jul 03, 2026",
+    "issueNumber": "60703",
+    "subject": "ISSUE 60703 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI industry is sending some mixed signals today. Mark Zuckerberg is admitting to staff that Meta's massive AI agent push \u2014 backed by $145 billion in infrastructure spending and thousands of reassigned employees \u2014 hasn't delivered results as fast as hoped, while a sandwich chain is name-dropping \"artificial intelligence\" 22 times in its IPO filing just to ride the hype wave. Meanwhile, the debate over who should actually be building and governing this technology is heating up, with Sam Altman pitching Washington on an international AI oversight framework, the U.S. government being urged to build its own frontier model Manhattan Project-style, and Australian musicians begging their PM to stop Big Tech from scraping their work to train AI systems.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-02.html",
-    "contentHash": "f363ef488b9a87953329e3d8a5998e224e90a62a64a59461c7c4555f0ffa9475"
+    "urlPath": "/issues/2026-07-03.html",
+    "contentHash": "84253c3019101237cf3bc3cccb897a26b6d4389b7f3983b7a98b3f866823f3ec"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-03",
+      "digestDate": "2026-07-03",
+      "displayDate": "Jul 03, 2026",
+      "issueNumber": "60703",
+      "subject": "ISSUE 60703 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI industry is sending some mixed signals today. Mark Zuckerberg is admitting to staff that Meta's massive AI agent push \u2014 backed by $145 billion in infrastructure spending and thousands of reassigned employees \u2014 hasn't delivered results as fast as hoped, while a sandwich chain is name-dropping \"artificial intelligence\" 22 times in its IPO filing just to ride the hype wave. Meanwhile, the debate over who should actually be building and governing this technology is heating up, with Sam Altman pitching Washington on an international AI oversight framework, the U.S. government being urged to build its own frontier model Manhattan Project-style, and Australian musicians begging their PM to stop Big Tech from scraping their work to train AI systems.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-03.html",
+      "contentHash": "84253c3019101237cf3bc3cccb897a26b6d4389b7f3983b7a98b3f866823f3ec"
+    },
     {
       "slug": "2026-07-02",
       "digestDate": "2026-07-02",
@@ -133,17 +144,6 @@
       "articleCount": 6,
       "urlPath": "/issues/2026-06-22.html",
       "contentHash": "9c036419f9b959482207aa09dd2dceea472d507bcb2c1e2f69240976f40a781d"
-    },
-    {
-      "slug": "2026-06-21",
-      "digestDate": "2026-06-21",
-      "displayDate": "Jun 21, 2026",
-      "issueNumber": "60621",
-      "subject": "ISSUE 60621 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest AI news today is a blockbuster talent move: Nobel laureate John Jumper, the mind behind AlphaFold, is leaving Google DeepMind to join Anthropic \u2014 a significant shift that underscores the fierce competition for top-tier AI talent. Beyond the hiring wars, today's digest spans a wide range: from brands quietly deploying fake AI influencers to sell products, to Signal's president reminding us that chatbots \"are not your friends,\" to a revealing look at the millions of music tracks scraped to train AI models. It's a day that really captures the tension between AI's dazzling potential and the growing calls for transparency and accountability around how it's built and used.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-21.html",
-      "contentHash": "9b5a4e6df9968fae5bddb484e448da343a1e4b05a9be8dc8f8fbc29f680fa8b2"
     }
   ]
 }
