@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-03T00:00:00Z",
-  "issueCount": 74,
+  "generatedAt": "2026-07-04T00:00:00Z",
+  "issueCount": 75,
   "latestIssue": {
-    "slug": "2026-07-03",
-    "digestDate": "2026-07-03",
-    "displayDate": "Jul 03, 2026",
-    "issueNumber": "60703",
-    "subject": "ISSUE 60703 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry is sending some mixed signals today. Mark Zuckerberg is admitting to staff that Meta's massive AI agent push \u2014 backed by $145 billion in infrastructure spending and thousands of reassigned employees \u2014 hasn't delivered results as fast as hoped, while a sandwich chain is name-dropping \"artificial intelligence\" 22 times in its IPO filing just to ride the hype wave. Meanwhile, the debate over who should actually be building and governing this technology is heating up, with Sam Altman pitching Washington on an international AI oversight framework, the U.S. government being urged to build its own frontier model Manhattan Project-style, and Australian musicians begging their PM to stop Big Tech from scraping their work to train AI systems.",
+    "slug": "2026-07-04",
+    "digestDate": "2026-07-04",
+    "displayDate": "Jul 04, 2026",
+    "issueNumber": "60704",
+    "subject": "ISSUE 60704 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The safety of children in the age of AI is front and center today, with UK watchdogs issuing urgent warnings to parents about AI \"nudification\" apps that can transform innocent photos of kids into explicit content \u2014 a chilling reminder that the risks of this technology aren't abstract. Beyond that sobering story, we're also diving into the new browser wars (spoiler: it's all about AI assistants now), the question of whether AI could pen the next great novel, and a fresh batch of Claude Code updates worth knowing about.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-03.html",
-    "contentHash": "84253c3019101237cf3bc3cccb897a26b6d4389b7f3983b7a98b3f866823f3ec"
+    "urlPath": "/issues/2026-07-04.html",
+    "contentHash": "fd7a6b9536131912ce32544b9db54b0fd5350d7790fda4240c992c80773f5a11"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-04",
+      "digestDate": "2026-07-04",
+      "displayDate": "Jul 04, 2026",
+      "issueNumber": "60704",
+      "subject": "ISSUE 60704 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The safety of children in the age of AI is front and center today, with UK watchdogs issuing urgent warnings to parents about AI \"nudification\" apps that can transform innocent photos of kids into explicit content \u2014 a chilling reminder that the risks of this technology aren't abstract. Beyond that sobering story, we're also diving into the new browser wars (spoiler: it's all about AI assistants now), the question of whether AI could pen the next great novel, and a fresh batch of Claude Code updates worth knowing about.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-04.html",
+      "contentHash": "fd7a6b9536131912ce32544b9db54b0fd5350d7790fda4240c992c80773f5a11"
+    },
     {
       "slug": "2026-07-03",
       "digestDate": "2026-07-03",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-23.html",
       "contentHash": "ab1dc3f0f43165958e354fa5eedbd39468e22ebe48b2862178d5dc87a1dbc403"
-    },
-    {
-      "slug": "2026-06-22",
-      "digestDate": "2026-06-22",
-      "displayDate": "Jun 22, 2026",
-      "issueNumber": "60622",
-      "subject": "ISSUE 60622 \u00b7 6 STORIES \u00b7 11 MIN READ",
-      "intro": "The Trump administration just forced Anthropic to pull its two newest AI models offline over national security concerns \u2014 a dramatic escalation that has cybersecurity experts warning the move actually makes America *less* safe. It's a wild day in AI news, with stories ranging from Samsung rolling out ChatGPT to all its employees in one of OpenAI's biggest enterprise deals ever, to Apple quietly embedding AI into everyday iPhone tasks like splitting dinner bills, to Anthropic's own engineering lead revealing her teams now ship 8x more code per quarter thanks to AI tools. Let's dig in.",
-      "articleCount": 6,
-      "urlPath": "/issues/2026-06-22.html",
-      "contentHash": "9c036419f9b959482207aa09dd2dceea472d507bcb2c1e2f69240976f40a781d"
     }
   ]
 }
