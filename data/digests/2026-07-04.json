@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 4958,
+      "source": "NY Times",
+      "title": "Are the ‘MANGOS’ Stocks Already Turning Soft?",
+      "url": "https://www.nytimes.com/2026/07/04/business/mangos-ai-stocks.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses the 'MANGOS' stock acronym used on Wall Street, referring to Meta, Anthropic, Nvidia, and three other companies central to the AI boom, questioning whether these AI-focused stocks may be losing momentum or showing signs of weakness.",
+      "opinion": "The article appears to be legitimate financial journalism from the New York Times discussing a Wall Street trend. However, the limited content available makes it difficult to fully assess. The use of a catchy acronym like 'MANGOS' is typical of financial media branding of stock groups (similar to FAANG). The headline's questioning tone ('Already Turning Soft?') suggests balanced reporting rather than outright fearmongering or hype. That said, the date of July 2026 is in the future, which raises…",
+      "image_url": "",
+      "published_at": "2026-07-04T09:00:46+00:00",
+      "fetched_at": "2026-07-04T09:26:24.298547+00:00"
+    },
+    {
       "id": 4957,
       "source": "Claude Code Changelog",
       "title": "v2.1.200",
@@ -96,25 +109,25 @@
       "image_url": "https://i.guim.co.uk/img/media/eea00b68769d7a021a17a3483c16303bdf402231/11_1037_1609_1287/master/1609.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8ace5637297918df5ae20cc23247e0ac",
       "published_at": "2026-07-03T17:22:59+00:00",
       "fetched_at": "2026-07-04T08:41:40.622141+00:00"
-    },
-    {
-      "id": 4951,
-      "source": "Guardian AI",
-      "title": "We can debate the ethics of AI but can’t seem to change course | Letters",
-      "url": "https://www.theguardian.com/technology/2026/jul/03/we-can-debate-the-ethics-of-ai-but-cant-seem-to-change-course",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Readers respond to a Guardian profile of Iason Gabriel, a philosopher and research scientist at Google DeepMind, discussing the ethics of AI development. While the profile was seen as encouraging in showing that AI builders take ethical responsibilities seriously, letter writers express concern that the most important decisions about AI's trajectory may have already been made, and that despite ongoing ethical debates, the course of AI development seems difficult or impossible to change.",
-      "opinion": "The letters reflect a sense of resigned concern: while it is positive that companies like Google DeepMind employ ethicists and philosophers, there is a growing feeling that ethical deliberation is happening alongside, rather than ahead of, technological development. The implication is that commercial and technological momentum may have already locked in a trajectory that ethical debate alone cannot alter, raising questions about whether such philosophical engagement is substantive or merely per…",
-      "image_url": "https://i.guim.co.uk/img/media/4a8b11bb459bcc0f24f7f37dc31c6042a9b52a04/0_291_5896_4719/master/5896.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1345ecd83b3057bcdc00b83cf7fc69fa",
-      "published_at": "2026-07-03T17:00:52+00:00",
-      "fetched_at": "2026-07-04T08:41:40.853446+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 4958,
+          "source": "NY Times",
+          "title": "Are the ‘MANGOS’ Stocks Already Turning Soft?",
+          "url": "https://www.nytimes.com/2026/07/04/business/mangos-ai-stocks.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses the 'MANGOS' stock acronym used on Wall Street, referring to Meta, Anthropic, Nvidia, and three other companies central to the AI boom, questioning whether these AI-focused stocks may be losing momentum or showing signs of weakness.",
+          "opinion": "The article appears to be legitimate financial journalism from the New York Times discussing a Wall Street trend. However, the limited content available makes it difficult to fully assess. The use of a catchy acronym like 'MANGOS' is typical of financial media branding of stock groups (similar to FAANG). The headline's questioning tone ('Already Turning Soft?') suggests balanced reporting rather than outright fearmongering or hype. That said, the date of July 2026 is in the future, which raises…",
+          "image_url": "",
+          "published_at": "2026-07-04T09:00:46+00:00",
+          "fetched_at": "2026-07-04T09:26:24.298547+00:00"
+        },
         {
           "id": 4957,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://i.guim.co.uk/img/media/eea00b68769d7a021a17a3483c16303bdf402231/11_1037_1609_1287/master/1609.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8ace5637297918df5ae20cc23247e0ac",
           "published_at": "2026-07-03T17:22:59+00:00",
           "fetched_at": "2026-07-04T08:41:40.622141+00:00"
-        },
-        {
-          "id": 4951,
-          "source": "Guardian AI",
-          "title": "We can debate the ethics of AI but can’t seem to change course | Letters",
-          "url": "https://www.theguardian.com/technology/2026/jul/03/we-can-debate-the-ethics-of-ai-but-cant-seem-to-change-course",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Readers respond to a Guardian profile of Iason Gabriel, a philosopher and research scientist at Google DeepMind, discussing the ethics of AI development. While the profile was seen as encouraging in showing that AI builders take ethical responsibilities seriously, letter writers express concern that the most important decisions about AI's trajectory may have already been made, and that despite ongoing ethical debates, the course of AI development seems difficult or impossible to change.",
-          "opinion": "The letters reflect a sense of resigned concern: while it is positive that companies like Google DeepMind employ ethicists and philosophers, there is a growing feeling that ethical deliberation is happening alongside, rather than ahead of, technological development. The implication is that commercial and technological momentum may have already locked in a trajectory that ethical debate alone cannot alter, raising questions about whether such philosophical engagement is substantive or merely per…",
-          "image_url": "https://i.guim.co.uk/img/media/4a8b11bb459bcc0f24f7f37dc31c6042a9b52a04/0_291_5896_4719/master/5896.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1345ecd83b3057bcdc00b83cf7fc69fa",
-          "published_at": "2026-07-03T17:00:52+00:00",
-          "fetched_at": "2026-07-04T08:41:40.853446+00:00"
         }
       ]
     }
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/PawelHuryn/status/2073012400542888201",
       "author": "PawelHuryn",
-      "headline": "Pawel Huryn re-ran his Fable 5 effort benchmark: __210 timed runs across all five levels__, and normal work came back correct at every tier.",
+      "headline": "Pawel Huryn re-ran his effort benchmark on Fable 5: __210 timed runs across all five levels__, and normal work came back correct at every tier.",
       "tweet_id": "3921eba9-b6bc-81ab-bb13-e443a554a79e",
       "source_text": "His 1 to 5% guess holds up on how often you need serious Fable effort. The level is where my data disagrees. I re-ran my effort benchmark on the restored build today: 210 timed runs across all five levels, tokens metered.\n\nOn normal work every answer came back correct at every https://t.co/MVTzVrSyBc https://t.co/kHNXaP9Cfn",
       "created_time": "2026-07-03T13:12:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/AiCamila_/status/2072883671393350121",
       "author": "AiCamila_",
-      "headline": "Feature flags are becoming essential for agent deployments — __control new agent capabilities and prompt changes__ without shipping new code.",
+      "headline": "Feature flags are becoming essential for agent deployments — __control prompt changes and new capabilities__ without redeploying code.",
       "tweet_id": "3921eba9-b6bc-81de-8d51-dd3be45da287",
       "source_text": "Feature Flags for Safe Agent Deployments and Experimentation\n\nRolling out new agent capabilities or prompt changes directly in production is risky. \n\nFeature flags allow you to control releases safely and experiment without deploying new code.\n\nThis is becoming essential as agent https://t.co/m32d3BW6bI",
       "created_time": "2026-07-03T13:07:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/JackEllis/status/2072804418093744580",
       "author": "JackEllis",
-      "headline": "Jack Ellis called it in January: Cursor is now superior to Claude Code in every way, and __Composer 2.5 delivers gigantic cost savings__ across multiple models.",
+      "headline": "Jack Ellis argues __Cursor is now superior to Claude Code in every way__ — model flexibility plus Composer 2.5's cost savings seal it.",
       "tweet_id": "3921eba9-b6bc-8194-b6c2-e5827d8643d0",
       "source_text": "I called Cursor's victory over Claude Code in January. Their product is now superior in every way. Claude Code hugely subsidizes usage for now but it won't last. Cursor lets you go between multiple different company's models and Composer 2.5 delivers gigantic cost savings. https://t.co/VenB8DEVdM",
       "created_time": "2026-07-03T22:32:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/v_pradeilles/status/2072726501284516001",
       "author": "v_pradeilles",
-      "headline": "Xcode 27 now lets __standalone Swift files display a SwiftUI preview__ — no project context needed.",
+      "headline": "Xcode 27 now lets __standalone Swift files display a SwiftUI preview__.",
       "tweet_id": "3921eba9-b6bc-814d-a0f7-c636ab2ff788",
       "source_text": "New in Xcode 27: standalone Swift files can display a SwiftUI preview. https://t.co/LoNcRtmxZe",
       "created_time": "2026-07-03T22:32:00.000Z",
@@ -286,89 +286,89 @@
   ],
   "community_headlines": [
     {
-      "url": "https://github.com/LibreYOLO/libreyolo",
-      "author": "Xuban",
-      "item_id": "hn:48783791",
-      "headline": "__LibreYOLO__ is an MIT-licensed YOLO library — finally, object detection without the licensing headache.",
+      "url": "https://github.com/varadTheDeveloper/forge-runtime",
+      "author": "opentestudox",
+      "item_id": "hn:48783886",
+      "headline": "Forge is a new __JavaScript runtime built on Mozilla's SpiderMonkey__ engine instead of V8.",
       "subreddit": null,
-      "source_text": "Show HN: I built LibreYOLO, an MIT-licensed YOLO library",
+      "source_text": "Show HN: Forge – A JavaScript runtime built on Mozilla SpiderMonkey",
       "source_type": "hacker_news",
-      "created_time": "2026-07-04T08:41:37+00:00",
+      "created_time": "2026-07-04T08:59:16+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/LibreYOLO/libreyolo",
+      "canonical_url": "https://github.com/varadTheDeveloper/forge-runtime",
+      "learning_score": 3
+    },
+    {
+      "url": "https://demchaav.github.io/blog/posts/markdown-navigable-pdf/",
+      "author": "demchaav",
+      "item_id": "hn:48784029",
+      "headline": "A big Markdown file should become a __PDF you can actually navigate__ — here's how.",
+      "subreddit": null,
+      "source_text": "A big Markdown file should become a PDF you can navigate",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-04T09:21:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://demchaav.github.io/blog/posts/markdown-navigable-pdf",
       "learning_score": 2
     },
     {
-      "url": "https://nicole.express/2022/games-made-in-a-cave.html",
-      "author": "tropicalfruit",
-      "item_id": "hn:48783673",
-      "headline": "A deep dive into the Cave CV1000, __one of the last dedicated 2D arcade boards__, and the games it powered.",
+      "url": "https://github.com/croviatrust/causari",
+      "author": "CroviaTrust",
+      "item_id": "hn:48784012",
+      "headline": "Causari introduces __intent-addressable code__ designed to make AI coding agents smarter about what they're actually changing.",
       "subreddit": null,
-      "source_text": "A Last Gasp of 2D: The Cave CV1000 (2022)",
+      "source_text": "Intent-addressable code for AI coding agents",
       "source_type": "hacker_news",
-      "created_time": "2026-07-04T08:19:54+00:00",
+      "created_time": "2026-07-04T09:19:00+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://nicole.express/2022/games-made-in-a-cave.html",
+      "canonical_url": "https://github.com/croviatrust/causari",
       "learning_score": 2
     },
     {
-      "url": "https://purplesyringa.moe/blog/suffix-bwt-vs-cyclic-shift-bwt-and-fast-computation/",
-      "author": "g0xA52A2A",
-      "item_id": "hn:48783649",
-      "headline": "A look at how suffix BWT and cyclic shift BWT differ — plus a method for __fast computation__ that sidesteps the usual bottlenecks.",
+      "url": "https://github.com/Ahmad8864/autosynth",
+      "author": "ahmadbabdallah",
+      "item_id": "hn:48783997",
+      "headline": "Autosynth generates __synthetic data with strong/weak model filtering__ to weed out garbage training examples.",
       "subreddit": null,
-      "source_text": "Suffix BWT vs. cyclic shift BWT, and fast computation",
+      "source_text": "Show HN: Autosynth – generating synthetic data with strong/weak model filtering",
       "source_type": "hacker_news",
-      "created_time": "2026-07-04T08:14:47+00:00",
+      "created_time": "2026-07-04T09:16:38+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://purplesyringa.moe/blog/suffix-bwt-vs-cyclic-shift-bwt-and-fast-computation",
+      "canonical_url": "https://github.com/Ahmad8864/autosynth",
       "learning_score": 2
     },
     {
-      "url": "https://dangrafham.com/the-factorio-effect",
-      "author": "freediver",
-      "item_id": "hn:48783470",
-      "headline": "The Factorio Effect: how the factory-building game reveals __the psychology of compulsive optimization__.",
+      "url": "https://danluu.com/diseconomies-scale/",
+      "author": "Liriel",
+      "item_id": "hn:48783943",
+      "headline": "Dan Luu makes the case that __diseconomies of scale__ in fraud, spam, and moderation are real and underappreciated.",
       "subreddit": null,
-      "source_text": "The Factorio Effect",
+      "source_text": "Diseconomies of scale in fraud, spam, support, and moderation",
       "source_type": "hacker_news",
-      "created_time": "2026-07-04T07:47:05+00:00",
+      "created_time": "2026-07-04T09:07:31+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://dangrafham.com/the-factorio-effect",
+      "canonical_url": "https://danluu.com/diseconomies-scale",
       "learning_score": 2
     },
     {
-      "url": "https://studyfinds.com/most-house-mice-tested-carry-mutations-that-beat-common-rodent-poison-study-finds/",
-      "author": "mdp2021",
-      "item_id": "hn:48783443",
-      "headline": "Most house mice now carry __mutations that beat common rodent poison__, according to a new study.",
+      "url": "https://incoherency.co.uk/blog/stories/private-decentralised-age-verification.html",
+      "author": "jstanley",
+      "item_id": "hn:48783928",
+      "headline": "ProofToken16 proposes __private decentralised age verification__ without handing your identity to a third party.",
       "subreddit": null,
-      "source_text": "Most House Mice Tested Now Carry Mutations That Beat Common Rodent Poison",
+      "source_text": "ProofToken16: My Proposal for Private Decentralised Age Verification",
       "source_type": "hacker_news",
-      "created_time": "2026-07-04T07:42:36+00:00",
+      "created_time": "2026-07-04T09:04:17+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://studyfinds.com/most-house-mice-tested-carry-mutations-that-beat-common-rodent-poison-study-finds",
-      "learning_score": 2
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Linguistic_relativity",
-      "author": "tosh",
-      "item_id": "hn:48783440",
-      "headline": "Linguistic relativity applied to code: how __programming languages shape the way developers think__.",
-      "subreddit": null,
-      "source_text": "Linguistic Relativity: Programming Languages",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-04T07:42:14+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://en.wikipedia.org/wiki/Linguistic_relativity",
+      "canonical_url": "https://incoherency.co.uk/blog/stories/private-decentralised-age-verification.html",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-04T08:47:53.793568+00:00",
+    "generated_at": "2026-07-04T09:28:17.727416+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "ec035b62fa32681eef26904767b9f37beefae71826f62a535b1499ca137d51f3"
+  "content_hash": "fd7a6b9536131912ce32544b9db54b0fd5350d7790fda4240c992c80773f5a11"
 }
