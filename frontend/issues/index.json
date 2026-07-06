@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-05T00:00:00Z",
-  "issueCount": 76,
+  "generatedAt": "2026-07-06T00:00:00Z",
+  "issueCount": 77,
   "latestIssue": {
-    "slug": "2026-07-05",
-    "digestDate": "2026-07-05",
-    "displayDate": "Jul 05, 2026",
-    "issueNumber": "60705",
-    "subject": "ISSUE 60705 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Healthcare AI is stealing the spotlight today, with the NHS rolling out an AI triage tool to its app for 200,000 patients while Australian regulators sound the alarm over doctors' rapidly growing use of AI scribes \u2014 a neat illustration of how governments are simultaneously racing to deploy AI in healthcare and scrambling to set guardrails around it. Beyond the medical world, there's plenty of AI drama to dig into, from Midjourney trying to turn the tables on Hollywood studios suing it for copyright infringement, to Alibaba banning employees from using Claude Code, to serious questions about whether OpenAI's splashy UK investment was ever quite what ministers claimed. Grab your coffee \u2014 it's a packed one.",
+    "slug": "2026-07-06",
+    "digestDate": "2026-07-06",
+    "displayDate": "Jul 06, 2026",
+    "issueNumber": "60706",
+    "subject": "ISSUE 60706 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI arms race is heating up on multiple fronts today. Meta is making bold claims that its in-training model \"Watermelon\" has caught up to OpenAI's GPT-5.5, while a Guardian investigation reveals that Britain's ambitious AI growth zones may be built on broken promises \u2014 with a landmark Scottish datacentre project exposed for having no realistic path to meeting its renewable energy commitments. We've also got stories on Israel's AI-powered targeting system identifying 850,000 targets across Gaza and Lebanon, China's push to crack robotic dexterity, wealthy parents handing their kids' education over to AI tutors, and the ongoing fight over copyright in the age of generative AI.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-05.html",
-    "contentHash": "5a4d57d2e7ce6d3869a4e11a3478078443d7088492a9bbbbdade54fde58be0f3"
+    "urlPath": "/issues/2026-07-06.html",
+    "contentHash": "1e32c99e425402682c994c73e18e94ad9dd0b7b4af4d373a0a13a1f42f364f47"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-06",
+      "digestDate": "2026-07-06",
+      "displayDate": "Jul 06, 2026",
+      "issueNumber": "60706",
+      "subject": "ISSUE 60706 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI arms race is heating up on multiple fronts today. Meta is making bold claims that its in-training model \"Watermelon\" has caught up to OpenAI's GPT-5.5, while a Guardian investigation reveals that Britain's ambitious AI growth zones may be built on broken promises \u2014 with a landmark Scottish datacentre project exposed for having no realistic path to meeting its renewable energy commitments. We've also got stories on Israel's AI-powered targeting system identifying 850,000 targets across Gaza and Lebanon, China's push to crack robotic dexterity, wealthy parents handing their kids' education over to AI tutors, and the ongoing fight over copyright in the age of generative AI.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-06.html",
+      "contentHash": "1e32c99e425402682c994c73e18e94ad9dd0b7b4af4d373a0a13a1f42f364f47"
+    },
     {
       "slug": "2026-07-05",
       "digestDate": "2026-07-05",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-25.html",
       "contentHash": "c73b7c260626fb0dd4ee0501d490584b697db8af910b3b6c0f0a93deec0e032b"
-    },
-    {
-      "slug": "2026-06-24",
-      "digestDate": "2026-06-24",
-      "displayDate": "Jun 24, 2026",
-      "issueNumber": "60624",
-      "subject": "ISSUE 60624 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "China just reclaimed the title of the world's fastest supercomputer for the first time since 2017, the White House is racing to quantum-proof government cryptography years ahead of schedule, and Hollywood studios are tripping over themselves to avoid releasing a film that might upset OpenAI \u2014 it's a day where the power dynamics of technology are front and center. Today's digest spans the global AI landscape, from Indian factory workers filming their own potential obsolescence to Google Home getting eerily better at recognizing who's in your house, with plenty of strategic moves in between.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-24.html",
-      "contentHash": "f83be681f0377856bec6f8fcea01fc5e813d96d94c95b2e1c0a376958af0cc6c"
     }
   ]
 }
