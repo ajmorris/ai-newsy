@@ -7,6 +7,32 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 5060,
+      "source": "Guardian AI",
+      "title": "Boost City regulator’s powers to help protect UK consumers from AI, says watchdog",
+      "url": "https://www.theguardian.com/business/2026/jul/06/boost-city-regulators-powers-protect-uk-consumers-ai-cyber-crime-fraud-watchdog",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The UK's Financial Conduct Authority (FCA) has published a landmark review (the Mills review) examining how AI will reshape financial services from 2030 onward. The review urges ministers to strengthen the City regulator's powers to protect consumers against potential risks posed by AI, including amplified threats from cyber-crime and fraud. The review found that companies are already beginning to shift from human-led activities toward AI-driven processes, raising concerns about consumer protection in an increasingly automated financial landscape.",
+      "opinion": "This is a significant and timely development. As AI becomes more deeply embedded in financial services, the risks to consumers — from algorithmic bias in lending decisions to sophisticated AI-powered fraud and cyber-attacks — are very real and growing. Strengthening the FCA's regulatory powers proactively, rather than waiting for a major crisis, seems like a prudent approach. The UK has generally taken a lighter-touch, pro-innovation stance on AI regulation compared to the EU's AI Act, so this…",
+      "image_url": "https://i.guim.co.uk/img/media/7b8001ab28eca8ff15610743007f8390c37a725f/1005_287_1985_1588/master/1985.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c1a39737ab7716577f1deece7f026873",
+      "published_at": "2026-07-06T11:11:05+00:00",
+      "fetched_at": "2026-07-06T11:40:08.490108+00:00"
+    },
+    {
+      "id": 5059,
+      "source": "Guardian AI",
+      "title": "AI altering meaning of users’ drafts on issues from abortion to climate, study finds",
+      "url": "https://www.theguardian.com/technology/2026/jul/06/ai-altering-meaning-of-users-drafts-on-issues-from-abortion-to-climate-study-finds",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A study has found that AI tools used for drafting and summarizing messages are subtly altering the meaning of users' content on politically sensitive topics such as abortion and climate change. Researchers warn that these small changes inject political biases—some leaning distinctly right-wing—and could spread rapidly across online communications, potentially creating long-term shifts in public opinion as tech companies increasingly promote AI-assisted writing tools.",
+      "opinion": "This is a deeply concerning finding that highlights one of the most insidious risks of widespread AI adoption. When AI tools subtly reshape the language people use to express their views on politically charged topics, it amounts to a form of invisible ideological manipulation at massive scale. Unlike overt censorship, these small nudges in wording can fly under users' radar while cumulatively shifting the tone and framing of public discourse. The fact that some tools lean in particular politica…",
+      "image_url": "https://i.guim.co.uk/img/media/02174f30cfc14b32ad1a5d261c7058663c1b9acd/452_0_2797_2239/master/2797.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ce17f5c30427664d32634c6292825657",
+      "published_at": "2026-07-06T11:00:03+00:00",
+      "fetched_at": "2026-07-06T11:40:08.186236+00:00"
+    },
+    {
       "id": 5056,
       "source": "The Rundown AI",
       "title": "Meta sizes up GPT-5.5 with 'Watermelon'",
@@ -83,38 +109,38 @@
       "image_url": "https://i.guim.co.uk/img/media/5ea5b1c87589b3a4fdfb86c0b7d1e8d578edb46f/200_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f8f01e827d5b40a6f5e59c3a690494e1",
       "published_at": "2026-07-06T03:35:48+00:00",
       "fetched_at": "2026-07-06T10:43:05.448182+00:00"
-    },
-    {
-      "id": 5053,
-      "source": "Guardian AI",
-      "title": "China wants to solve the hardest problem in robotics – making hands",
-      "url": "https://www.theguardian.com/technology/ng-interactive/2026/jul/06/china-dextrous-robotic-hands-humanoid",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "China is intensely focused on developing dextrous robotic hands, considered one of the hardest challenges in robotics, as a key step toward making humanoid robots practical and useful rather than mere gimmicks. The article highlights the extraordinary complexity of human hands and the intricate neurological processes behind everyday tasks like tying shoelaces or buttoning shirts. This effort is part of a broader race to develop 'embodied AI' — robots that can physically interact with the world in sophisticated ways. China appears to be making this a strategic priority in its robotics and AI development programs.",
-      "opinion": "This is a genuinely important area of technological development, and China's focus on it is strategically astute. Dextrous manipulation has long been the bottleneck preventing humanoid robots from being truly useful in real-world settings — locomotion and perception have advanced significantly, but without capable hands, robots remain limited. The fact that China is prioritizing this suggests a serious long-term vision for deploying humanoid robots in manufacturing, elder care, and other labor-…",
-      "image_url": "https://i.guim.co.uk/img/media/53ea9534d7a24ef08bb20853830b00a7491fc319/349_0_4998_3998/master/4998.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c02543a9954f062fd0aaf156c770e5e4",
-      "published_at": "2026-07-06T00:31:18+00:00",
-      "fetched_at": "2026-07-06T10:43:05.563254+00:00"
-    },
-    {
-      "id": 5057,
-      "source": "The Verge AI",
-      "title": "Some of the nation’s rich are letting AI teach their kids",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Wealthy American families are paying tens of thousands of dollars to enroll their children in AI-driven schools like Forge Prep and Alpha School, where AI tutors and interactive workshops replace traditional education. Silicon Valley parents are major adopters, with one venture capitalist planning to spend $75,000 on an AI-based kindergarten, arguing traditional education is 'broken.' The article raises concerns about using sycophantic AI to teach critical thinking, and notes that Alpha School's cofounder plans to exclude 'hot-button social issues' from the curriculum, which could mean omitting topics like women's rights, slavery, and immigration history.",
-      "opinion": "This is a deeply troubling trend that essentially turns children of the wealthy into beta testers for unproven educational technology. The irony is thick: parents who can afford any educational option are choosing to gamble on AI systems known for hallucination and sycophancy to teach their children critical thinking. The venture capitalist's dismissal of traditional pedagogy as mere 'recitation of facts' reveals a profound ignorance of how modern education actually works. More concerning is th…",
-      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25584700/STK483_EDUCATION_C.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
-      "published_at": "2026-07-05T22:30:54+00:00",
-      "fetched_at": "2026-07-06T10:43:11.829844+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 5060,
+          "source": "Guardian AI",
+          "title": "Boost City regulator’s powers to help protect UK consumers from AI, says watchdog",
+          "url": "https://www.theguardian.com/business/2026/jul/06/boost-city-regulators-powers-protect-uk-consumers-ai-cyber-crime-fraud-watchdog",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The UK's Financial Conduct Authority (FCA) has published a landmark review (the Mills review) examining how AI will reshape financial services from 2030 onward. The review urges ministers to strengthen the City regulator's powers to protect consumers against potential risks posed by AI, including amplified threats from cyber-crime and fraud. The review found that companies are already beginning to shift from human-led activities toward AI-driven processes, raising concerns about consumer protection in an increasingly automated financial landscape.",
+          "opinion": "This is a significant and timely development. As AI becomes more deeply embedded in financial services, the risks to consumers — from algorithmic bias in lending decisions to sophisticated AI-powered fraud and cyber-attacks — are very real and growing. Strengthening the FCA's regulatory powers proactively, rather than waiting for a major crisis, seems like a prudent approach. The UK has generally taken a lighter-touch, pro-innovation stance on AI regulation compared to the EU's AI Act, so this…",
+          "image_url": "https://i.guim.co.uk/img/media/7b8001ab28eca8ff15610743007f8390c37a725f/1005_287_1985_1588/master/1985.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c1a39737ab7716577f1deece7f026873",
+          "published_at": "2026-07-06T11:11:05+00:00",
+          "fetched_at": "2026-07-06T11:40:08.490108+00:00"
+        },
+        {
+          "id": 5059,
+          "source": "Guardian AI",
+          "title": "AI altering meaning of users’ drafts on issues from abortion to climate, study finds",
+          "url": "https://www.theguardian.com/technology/2026/jul/06/ai-altering-meaning-of-users-drafts-on-issues-from-abortion-to-climate-study-finds",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A study has found that AI tools used for drafting and summarizing messages are subtly altering the meaning of users' content on politically sensitive topics such as abortion and climate change. Researchers warn that these small changes inject political biases—some leaning distinctly right-wing—and could spread rapidly across online communications, potentially creating long-term shifts in public opinion as tech companies increasingly promote AI-assisted writing tools.",
+          "opinion": "This is a deeply concerning finding that highlights one of the most insidious risks of widespread AI adoption. When AI tools subtly reshape the language people use to express their views on politically charged topics, it amounts to a form of invisible ideological manipulation at massive scale. Unlike overt censorship, these small nudges in wording can fly under users' radar while cumulatively shifting the tone and framing of public discourse. The fact that some tools lean in particular politica…",
+          "image_url": "https://i.guim.co.uk/img/media/02174f30cfc14b32ad1a5d261c7058663c1b9acd/452_0_2797_2239/master/2797.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ce17f5c30427664d32634c6292825657",
+          "published_at": "2026-07-06T11:00:03+00:00",
+          "fetched_at": "2026-07-06T11:40:08.186236+00:00"
+        },
         {
           "id": 5056,
           "source": "The Rundown AI",
@@ -192,32 +218,6 @@
           "image_url": "https://i.guim.co.uk/img/media/5ea5b1c87589b3a4fdfb86c0b7d1e8d578edb46f/200_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f8f01e827d5b40a6f5e59c3a690494e1",
           "published_at": "2026-07-06T03:35:48+00:00",
           "fetched_at": "2026-07-06T10:43:05.448182+00:00"
-        },
-        {
-          "id": 5053,
-          "source": "Guardian AI",
-          "title": "China wants to solve the hardest problem in robotics – making hands",
-          "url": "https://www.theguardian.com/technology/ng-interactive/2026/jul/06/china-dextrous-robotic-hands-humanoid",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "China is intensely focused on developing dextrous robotic hands, considered one of the hardest challenges in robotics, as a key step toward making humanoid robots practical and useful rather than mere gimmicks. The article highlights the extraordinary complexity of human hands and the intricate neurological processes behind everyday tasks like tying shoelaces or buttoning shirts. This effort is part of a broader race to develop 'embodied AI' — robots that can physically interact with the world in sophisticated ways. China appears to be making this a strategic priority in its robotics and AI development programs.",
-          "opinion": "This is a genuinely important area of technological development, and China's focus on it is strategically astute. Dextrous manipulation has long been the bottleneck preventing humanoid robots from being truly useful in real-world settings — locomotion and perception have advanced significantly, but without capable hands, robots remain limited. The fact that China is prioritizing this suggests a serious long-term vision for deploying humanoid robots in manufacturing, elder care, and other labor-…",
-          "image_url": "https://i.guim.co.uk/img/media/53ea9534d7a24ef08bb20853830b00a7491fc319/349_0_4998_3998/master/4998.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c02543a9954f062fd0aaf156c770e5e4",
-          "published_at": "2026-07-06T00:31:18+00:00",
-          "fetched_at": "2026-07-06T10:43:05.563254+00:00"
-        },
-        {
-          "id": 5057,
-          "source": "The Verge AI",
-          "title": "Some of the nation’s rich are letting AI teach their kids",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Wealthy American families are paying tens of thousands of dollars to enroll their children in AI-driven schools like Forge Prep and Alpha School, where AI tutors and interactive workshops replace traditional education. Silicon Valley parents are major adopters, with one venture capitalist planning to spend $75,000 on an AI-based kindergarten, arguing traditional education is 'broken.' The article raises concerns about using sycophantic AI to teach critical thinking, and notes that Alpha School's cofounder plans to exclude 'hot-button social issues' from the curriculum, which could mean omitting topics like women's rights, slavery, and immigration history.",
-          "opinion": "This is a deeply troubling trend that essentially turns children of the wealthy into beta testers for unproven educational technology. The irony is thick: parents who can afford any educational option are choosing to gamble on AI systems known for hallucination and sycophancy to teach their children critical thinking. The venture capitalist's dismissal of traditional pedagogy as mere 'recitation of facts' reveals a profound ignorance of how modern education actually works. More concerning is th…",
-          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25584700/STK483_EDUCATION_C.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
-          "published_at": "2026-07-05T22:30:54+00:00",
-          "fetched_at": "2026-07-06T10:43:11.829844+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/Granite0x/status/2073540259208700311",
       "author": "Granite0x",
-      "headline": "Addy Osmani, Google's Gemini engineering lead, open-sourced his personal Claude setup — __68,925 stars__ and counting.",
+      "headline": "Addy Osmani, Google's Gemini engineering lead, open-sourced his personal Claude setup — __68,925 stars__ and counting on \"agent-skills.\"",
       "tweet_id": "3941eba9-b6bc-8125-b528-c39506fc9bd3",
       "source_text": "He leads engineering on Gemini at Google.\n\ninstead of keeping his Claude setup private, he open-sourced it.\n\nAddy Osmani. That Google: Chrome DevTools lead, \"Learning JavaScript Design Patterns\" author.\n\n'agent-skills' - his personal loadout. Drop-in for any project.\n\n68,925 https://t.co/XsRslbCScc https://t.co/At82Ae2JH4",
       "created_time": "2026-07-05T14:52:00.000Z",
@@ -256,10 +256,23 @@
   ],
   "community_headlines": [
     {
+      "url": "https://github.com/Cloud-V-10xE/RISC-V-software",
+      "author": "alitariq4589",
+      "item_id": "hn:48803068",
+      "headline": "Cloud-V ships __prebuilt RISC-V64 binaries for GCC, PyTorch, Kubernetes__, and more so you can skip the cross-compilation pain.",
+      "subreddit": null,
+      "source_text": "Show HN: Prebuilt RISC-V64 Binaries for GCC, PyTorch, Kubernetes, and More",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-06T11:05:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Cloud-V-10xE/RISC-V-software",
+      "learning_score": 3
+    },
+    {
       "url": "https://ohdear.app/uptime-statistics",
       "author": "Mojah",
       "item_id": "hn:48802953",
-      "headline": "What alerting on __1.8M outages__ has taught Oh Dear about how and when downtime actually happens.",
+      "headline": "Oh Dear analyzed __1.8M outages__ and published what they've learned about real-world downtime patterns and alerting.",
       "subreddit": null,
       "source_text": "What alerting on 1.8M outages has thought us about downtime",
       "source_type": "hacker_news",
@@ -272,7 +285,7 @@
       "url": "https://twitter.com/GustavHartz/status/2073819470796128402",
       "author": "GustavHartz",
       "item_id": "hn:48802836",
-      "headline": "__650k commits__ reveal how crypto bugs evolve over time.",
+      "headline": "Gustav Hartz analyzed __650k commits__ to map how crypto bugs evolve over a codebase's lifetime.",
       "subreddit": null,
       "source_text": "What 650k commits say about how crypto bugs change",
       "source_type": "hacker_news",
@@ -282,63 +295,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://lionshead.digital/notes/why-i-run-enterprise-grade-ci-at-solo-founder-scale",
-      "author": "earnestamateur",
-      "item_id": "hn:48802847",
-      "headline": "A solo founder makes the case for running __enterprise-grade CI at one-person scale__.",
+      "url": "https://arxiv.org/abs/2607.02144",
+      "author": "ilreb",
+      "item_id": "hn:48803287",
+      "headline": "New paper makes __the economic case for taxing artificial intelligence__ — and how to structure it without killing adoption.",
       "subreddit": null,
-      "source_text": "I run enterprise-grade CI at solo-founder scale",
+      "source_text": "Taxing Artificial Intelligence",
       "source_type": "hacker_news",
-      "created_time": "2026-07-06T10:32:58+00:00",
+      "created_time": "2026-07-06T11:36:20+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://lionshead.digital/notes/why-i-run-enterprise-grade-ci-at-solo-founder-scale",
+      "canonical_url": "https://arxiv.org/abs/2607.02144",
       "learning_score": 2
     },
     {
-      "url": "https://github.com/maref-org/maref",
-      "author": "Athena-maref",
-      "item_id": "hn:48802777",
-      "headline": "An audit of 100 open-source agent projects found __73% have permission overreach__.",
+      "url": "https://shkspr.mobi/blog/2026/07/im-just-so-bored-of-ai/",
+      "author": "edward",
+      "item_id": "hn:48803286",
+      "headline": "Terence Eden makes the case many are thinking but few will say: __I'm just so bored of AI__.",
       "subreddit": null,
-      "source_text": "We audited 100 open-source Agent projects – 73% have permission overreach",
+      "source_text": "I'm just so bored of AI",
       "source_type": "hacker_news",
-      "created_time": "2026-07-06T10:23:06+00:00",
+      "created_time": "2026-07-06T11:35:54+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/maref-org/maref",
+      "canonical_url": "https://shkspr.mobi/blog/2026/07/im-just-so-bored-of-ai",
       "learning_score": 2
     },
     {
-      "url": "https://www.whitematterlabs.ai/",
-      "author": "ardatasci",
-      "item_id": "hn:48802741",
-      "headline": "PAI — a __Linux-y personal assistant for Mac__ that lives in your terminal.",
+      "url": "https://www.surrey.ac.uk/news/astrophysicists-show-how-worlds-darkest-coating-could-protect-night-sky-satellite-light-pollution",
+      "author": "giuliomagnifico",
+      "item_id": "hn:48803244",
+      "headline": "Surrey astrophysicists show how the world's __darkest coating could reduce satellite light pollution__ threatening ground-based astronomy.",
       "subreddit": null,
-      "source_text": "Show HN: PAI, a Linux-y personal-assistant for Mac",
+      "source_text": "Study: ultra-black coating could reduce satellite light pollution",
       "source_type": "hacker_news",
-      "created_time": "2026-07-06T10:16:32+00:00",
+      "created_time": "2026-07-06T11:29:30+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://whitematterlabs.ai",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.bbc.com/news/articles/c0ry4xx7rk8o",
-      "author": "msadowski",
-      "item_id": "hn:48802722",
-      "headline": "NASA launches a robot to __save the Swift telescope__ from falling to Earth.",
-      "subreddit": null,
-      "source_text": "NASA launches robot to save Swift telescope falling to Earth",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-06T10:13:28+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://bbc.com/news/articles/c0ry4xx7rk8o",
+      "canonical_url": "https://surrey.ac.uk/news/astrophysicists-show-how-worlds-darkest-coating-could-protect-night-sky-satellite-light-pollution",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-06T10:49:31.349613+00:00",
+    "generated_at": "2026-07-06T11:42:16.570134+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "819940fdebd834fd08b7ee55e736415253ce840de6de04cd88f937daefd82535"
+  "content_hash": "1e32c99e425402682c994c73e18e94ad9dd0b7b4af4d373a0a13a1f42f364f47"
 }
