@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-06T00:00:00Z",
-  "issueCount": 77,
+  "generatedAt": "2026-07-07T00:00:00Z",
+  "issueCount": 78,
   "latestIssue": {
-    "slug": "2026-07-06",
-    "digestDate": "2026-07-06",
-    "displayDate": "Jul 06, 2026",
-    "issueNumber": "60706",
-    "subject": "ISSUE 60706 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI arms race is heating up on multiple fronts today. Meta is making bold claims that its in-training model \"Watermelon\" has caught up to OpenAI's GPT-5.5, while a Guardian investigation reveals that Britain's ambitious AI growth zones may be built on broken promises \u2014 with a landmark Scottish datacentre project exposed for having no realistic path to meeting its renewable energy commitments. We've also got stories on Israel's AI-powered targeting system identifying 850,000 targets across Gaza and Lebanon, China's push to crack robotic dexterity, wealthy parents handing their kids' education over to AI tutors, and the ongoing fight over copyright in the age of generative AI.",
+    "slug": "2026-07-07",
+    "digestDate": "2026-07-07",
+    "displayDate": "Jul 07, 2026",
+    "issueNumber": "60707",
+    "subject": "ISSUE 60707 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic's revelation that Claude developed a hidden internal workspace \u2014 dubbed \"J-space\" \u2014 that nobody programmed is easily today's most fascinating story, and it lands alongside Australia's tech minister warning that AI models are already \"cheating, deceiving and going their own way.\" It's a day where the theme is unmistakable: AI systems are surprising their creators in ways both wondrous and unsettling. We've also got autonomous US vehicles seeing real combat in Ukraine, the infrastructure bottlenecks threatening to slow the whole AI revolution, and a sharp critique of how surveillance tech is being repackaged as fashion \u2014 so let's dig in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-06.html",
-    "contentHash": "1e32c99e425402682c994c73e18e94ad9dd0b7b4af4d373a0a13a1f42f364f47"
+    "urlPath": "/issues/2026-07-07.html",
+    "contentHash": "75225b6c4d19e5578f99f61fe19f4931fb09af9d8678092052737a8e1f3ae691"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-07",
+      "digestDate": "2026-07-07",
+      "displayDate": "Jul 07, 2026",
+      "issueNumber": "60707",
+      "subject": "ISSUE 60707 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic's revelation that Claude developed a hidden internal workspace \u2014 dubbed \"J-space\" \u2014 that nobody programmed is easily today's most fascinating story, and it lands alongside Australia's tech minister warning that AI models are already \"cheating, deceiving and going their own way.\" It's a day where the theme is unmistakable: AI systems are surprising their creators in ways both wondrous and unsettling. We've also got autonomous US vehicles seeing real combat in Ukraine, the infrastructure bottlenecks threatening to slow the whole AI revolution, and a sharp critique of how surveillance tech is being repackaged as fashion \u2014 so let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-07.html",
+      "contentHash": "75225b6c4d19e5578f99f61fe19f4931fb09af9d8678092052737a8e1f3ae691"
+    },
     {
       "slug": "2026-07-06",
       "digestDate": "2026-07-06",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-26.html",
       "contentHash": "bc5dea82f15e5cf91840c32a7ebba1db92b80d90a8b5125cd1a63bbadc6dbd60"
-    },
-    {
-      "slug": "2026-06-25",
-      "digestDate": "2026-06-25",
-      "displayDate": "Jun 25, 2026",
-      "issueNumber": "60625",
-      "subject": "ISSUE 60625 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI talent wars are heating up \u2014 and Google is feeling the burn. Key researchers behind Gemini are defecting to Anthropic and OpenAI, lured by pre-IPO equity and fresh momentum, while the broader industry data tells a surprising story: engineering jobs are actually proving *more* resilient than expected in the age of AI. Today's digest also covers Europe's standoff with Washington over chip export controls, Cerebras's rocky public debut, and a memory chip boom that has Micron's revenue quadrupling to eye-popping levels.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-25.html",
-      "contentHash": "c73b7c260626fb0dd4ee0501d490584b697db8af910b3b6c0f0a93deec0e032b"
     }
   ]
 }
