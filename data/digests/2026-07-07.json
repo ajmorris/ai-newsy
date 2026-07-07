@@ -224,19 +224,9 @@
   ],
   "tweet_headlines": [
     {
-      "url": "https://twitter.com/petergyang/status/2074206798631071796",
-      "author": "petergyang",
-      "headline": "Peter Yang shares five use cases worth trying with Fable 5 before it __leaves Claude subscriptions tomorrow at midnight__ — prompts included.",
-      "tweet_id": "3961eba9-b6bc-8196-92ae-c1a167b69276",
-      "source_text": "Fable 5 will leave Claude subscriptions tomorrow at midnight. Here are 5 use cases worth trying before then, with prompts you can copy and paste:\n\n1) FIND FABLE-WORTHY WORK\nYou're Fable 5, the most capable model available. Look through my projects, docs, and your memory, and list https://t.co/BqzhN7aT2q",
-      "created_time": "2026-07-07T03:57:00.000Z",
-      "canonical_url": "https://twitter.com/petergyang/status/2074206798631071796",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/Zephyr_hg/status/2074109356300521852",
       "author": "Zephyr_hg",
-      "headline": "Jacob Bank, former Google product lead, says he built __a team of 40 AI marketing agents__ — he's the only human on marketing, and his AI bill is $500/month.",
+      "headline": "Jacob Bank, former Google product lead, says he built __40 AI marketing agents__ and runs the entire function solo for $500/month.",
       "tweet_id": "3961eba9-b6bc-81b6-bba3-fa47a567c03d",
       "source_text": "Jacob Bank, former Google product lead: \n\n\"I built up this team of 40 AI marketing agents to work with me. I'm the only marketing person.\"\n\nIn a 15-minute talk, he shows what one person now runs with nobody on payroll.\n\nForty agents. One human. His AI bill is $500 a month, https://t.co/Bh7S6uKsbt https://t.co/bBBXVeTAB0",
       "created_time": "2026-07-07T03:52:00.000Z",
@@ -244,19 +234,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/gm_mertd/status/2074119820480479704",
-      "author": "gm_mertd",
-      "headline": "iOS 27 Beta 3 rolling out — early impressions include __5G+ enabled for the first time__, fixed notification animations, and improved Siri visuals.",
-      "tweet_id": "3961eba9-b6bc-81fb-8e1e-fad2343f66c0",
-      "source_text": "In a world of slop, design is a competitive edge. This is how skills should work https://t.co/vgBy6yAqNR",
-      "created_time": "2026-07-07T03:37:00.000Z",
-      "canonical_url": "https://twitter.com/gm_mertd/status/2074119820480479704",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/dctanner/status/2074068156331556920",
       "author": "dctanner",
-      "headline": "Dan Tanner says building full-stack apps __feels solved now with Fable + Codex__ after shipping a \"crazy amount\" over one weekend with a few morning prompts.",
+      "headline": "Dan Tanner says building full-stack apps __feels solved now with Fable + Codex__ after shipping a weekend's worth of work with a few morning prompts.",
       "tweet_id": "3961eba9-b6bc-816f-88dd-f04560f9424e",
       "source_text": "After achieving a crazy amount this weekend with a few prompts in the morning, building full-stack apps feels solved now with Fable+Codex.\n\nHere's a skill I've affectionately named 'cook': https://t.co/qEMS2iPYp9",
       "created_time": "2026-07-07T03:37:00.000Z",
@@ -264,9 +244,29 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/RaulJuncoV/status/2074117416586465304",
+      "author": "RaulJuncoV",
+      "headline": "Raul Junco distills",
+      "tweet_id": "3961eba9-b6bc-8171-b55c-fe5ed6a84adc",
+      "source_text": "Small decisions build reliable systems.\n\nHere are 10 short lessons from 10 years watching distributed systems fail.\n\n- Caches work only when hit rates cluster (same data gets requested repeatedly).\n- Sharding matters when writes dominate and one database node cannot keep up.\n- https://t.co/xKBYPvDoEp",
+      "created_time": "2026-07-07T03:37:00.000Z",
+      "canonical_url": "https://twitter.com/RaulJuncoV/status/2074117416586465304",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/AnatoliKopadze/status/2074189718892232965",
+      "author": "AnatoliKopadze",
+      "headline": "An Anthropic engineer argues that __Fable 5 is already smarter than we know how to use__ — the bottleneck is the user, not the model.",
+      "tweet_id": "3961eba9-b6bc-8196-b041-f797cd23aec9",
+      "source_text": "Anthropic engineer:\n\n\"Fable 5 is already smarter than we know how to use. The bottleneck was never the AI, it's you.\"\n\nIn 19 minutes he shows exactly how to get everything out of Claude with no extra tools, no extra costs.\n\nYou're already paying for all of this, just not using https://t.co/0VCKxgFiiB https://t.co/NgIHNwmgaP",
+      "created_time": "2026-07-07T03:22:00.000Z",
+      "canonical_url": "https://twitter.com/AnatoliKopadze/status/2074189718892232965",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/amix3k/status/2074109394925559922",
       "author": "amix3k",
-      "headline": "Todoist adds __project and section descriptions__ with Markdown support — context and workflow docs right where the work happens.",
+      "headline": "Todoist's new __project and section descriptions__ support Markdown, links, and inline context right where the work happens.",
       "tweet_id": "3961eba9-b6bc-8127-9fec-cebe9fad9e52",
       "source_text": "Todoist’s new project and section descriptions are more useful than they look.\n\nYou can add links, use Markdown formatting, document context, explain workflows etc. — right where the work happens. “Simple yet powerful” https://t.co/LPp0fhXQlr",
       "created_time": "2026-07-07T03:22:00.000Z",
@@ -274,35 +274,74 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/SawyerMerritt/status/2074266523653247146",
-      "author": "SawyerMerritt",
-      "headline": "Tesla launches __Tesla Home__, an AI-powered energy management system that uses Opticaster to predict usage and automatically adjust appliances to lower your electricity bills.",
-      "tweet_id": "3961eba9-b6bc-818c-b9d1-f0f26a0236ab",
-      "source_text": "Tesla has just launched Tesla Home, a home energy management system.\n\nPowered by Opticaster, Tesla's AI optimization software, it predicts your energy needs, automatically adjusts your usage across your electric appliances and can help lower your electricity bills.\n\n1) Opticaster https://t.co/3GqWiVKODv",
-      "created_time": "2026-07-07T04:02:00.000Z",
-      "canonical_url": "https://twitter.com/SawyerMerritt/status/2074266523653247146",
-      "learning_score": 2
+      "url": "https://twitter.com/hnshah/status/2074254648333209988",
+      "author": "hnshah",
+      "headline": "Dharmesh Shah believes the AI surface most people are sleeping on is __the computer they already use all day__ — open apps, drafts, and visible intent.",
+      "tweet_id": "3961eba9-b6bc-81b5-b8b9-ddc4f312bf37",
+      "source_text": "The AI surface most people are sleeping on is the computer they already use all day.\n\nOpen apps, half-written drafts, recent messages, nearby files, and visible intent all live there.\n\nThat matters because useful AI is usually about timing.\n\nHelp is better when it shows up inside https://t.co/r27Dhd73F8 https://t.co/n5Su9sq7h4",
+      "created_time": "2026-07-07T02:37:00.000Z",
+      "canonical_url": "https://twitter.com/hnshah/status/2074254648333209988",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
-      "url": "https://www.bbc.com/news/articles/c1kyy8yrpxdo",
-      "author": "nnurmanov",
-      "item_id": "hn:48815657",
-      "headline": "Samsung profits __jump 1,800%__ as AI chip demand drives a massive earnings surge.",
+      "url": "https://brianni.co/blog/prove-were-not-lying",
+      "author": "iosazee",
+      "item_id": "hn:48815739",
+      "headline": "Brianni offers AI chat on GPT, Claude, and Gemini with a __provable guarantee they can't read your conversations__.",
       "subreddit": null,
-      "source_text": "Samsung profits jump 1,800% as AI chip sales soar",
+      "source_text": "Show HN: Brianni – AI chat on GPT/Claude/Gemini that we can't read (provable)",
       "source_type": "hacker_news",
-      "created_time": "2026-07-07T09:57:16+00:00",
+      "created_time": "2026-07-07T10:10:01+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://bbc.com/news/articles/c1kyy8yrpxdo",
+      "canonical_url": "https://brianni.co/blog/prove-were-not-lying",
+      "learning_score": 2
+    },
+    {
+      "url": "https://cacm.acm.org/blogcacm/what-platform-security-taught-me-about-trusting-llm-agents/",
+      "author": "visha1v",
+      "item_id": "hn:48815728",
+      "headline": "Platform security lesson applied to LLM agents: __never ask a model to do something a deterministic system can do reliably__.",
+      "subreddit": null,
+      "source_text": "Never ask a model to do something a deterministic system can do reliably",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-07T10:07:04+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cacm.acm.org/blogcacm/what-platform-security-taught-me-about-trusting-llm-agents",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/notune/TextGrab",
+      "author": "leumon",
+      "item_id": "hn:48815721",
+      "headline": "TextGrab brings iOS-style __\"select text on any image\" OCR to de-googled Android__.",
+      "subreddit": null,
+      "source_text": "Show HN: iOS-style \"select text on any image\" OCR for de-googled Android",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-07T10:06:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/notune/TextGrab",
+      "learning_score": 2
+    },
+    {
+      "url": "https://sanju.sh/wisprflow/",
+      "author": "freediver",
+      "item_id": "hn:48815637",
+      "headline": "One developer argues __voice is his new keyboard__, walking through a full workflow built on Whispr Flow.",
+      "subreddit": null,
+      "source_text": "Voice Is My New Keyboard",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-07T09:55:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sanju.sh/wisprflow",
       "learning_score": 2
     },
     {
       "url": "https://www.phoronix.com/news/Half-Life-2-ReactOS",
       "author": "birdculture",
       "item_id": "hn:48815619",
-      "headline": "ReactOS, the open-source Windows project, can now __run Half-Life 2__.",
+      "headline": "ReactOS, the open-source Windows reimplementation, is now __capable of running Half-Life 2__.",
       "subreddit": null,
       "source_text": "ReactOS \"Open-Source Windows\" Project Now Capable of Running Half-Life 2",
       "source_type": "hacker_news",
@@ -323,52 +362,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://doscienceto.it/waterpark",
       "learning_score": 2
-    },
-    {
-      "url": "https://deceptive.design/",
-      "author": "harrybr",
-      "item_id": "hn:48815593",
-      "headline": "Deceptive.design catalogs __dark pattern types, laws, and cases__ — rebuilt and expanded.",
-      "subreddit": null,
-      "source_text": "Show HN: Deceptive.design – dark pattern types, laws and cases (rebuilt)",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-07T09:47:06+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://deceptive.design",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arxiv.org/abs/2607.05188",
-      "author": "andre15silva",
-      "item_id": "hn:48815591",
-      "headline": "New paper maps the __latent programming horizons__ that shape how coding agents plan and fail.",
-      "subreddit": null,
-      "source_text": "Latent Programming Horizons in Coding Agents",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-07T09:46:58+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2607.05188",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.independent.co.uk/us/money/spacex-nasdaq-elon-musk-b3010301.html",
-      "author": "enlightpixel",
-      "item_id": "hn:48815547",
-      "headline": "SpaceX's upcoming Nasdaq listing is set to __trigger a $4.3B buying frenzy__.",
-      "subreddit": null,
-      "source_text": "Elon Musk's SpaceX is about to trigger a $4.3B buying frenzy",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-07T09:41:23+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://independent.co.uk/us/money/spacex-nasdaq-elon-musk-b3010301.html",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-07T10:03:09.420473+00:00",
+    "generated_at": "2026-07-07T10:30:12.473324+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "16cbe916559c2c52230754cf3315705ba2071634eb811697a0aed7b1c24bc4c4"
+  "content_hash": "75225b6c4d19e5578f99f61fe19f4931fb09af9d8678092052737a8e1f3ae691"
 }
