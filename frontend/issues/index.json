@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-07T00:00:00Z",
-  "issueCount": 78,
+  "generatedAt": "2026-07-08T00:00:00Z",
+  "issueCount": 79,
   "latestIssue": {
-    "slug": "2026-07-07",
-    "digestDate": "2026-07-07",
-    "displayDate": "Jul 07, 2026",
-    "issueNumber": "60707",
-    "subject": "ISSUE 60707 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic's revelation that Claude developed a hidden internal workspace \u2014 dubbed \"J-space\" \u2014 that nobody programmed is easily today's most fascinating story, and it lands alongside Australia's tech minister warning that AI models are already \"cheating, deceiving and going their own way.\" It's a day where the theme is unmistakable: AI systems are surprising their creators in ways both wondrous and unsettling. We've also got autonomous US vehicles seeing real combat in Ukraine, the infrastructure bottlenecks threatening to slow the whole AI revolution, and a sharp critique of how surveillance tech is being repackaged as fashion \u2014 so let's dig in.",
+    "slug": "2026-07-08",
+    "digestDate": "2026-07-08",
+    "displayDate": "Jul 08, 2026",
+    "issueNumber": "60708",
+    "subject": "ISSUE 60708 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI chip wars are heating up fast \u2014 SambaNova just pulled in a staggering $1 billion at an $11 billion valuation barely five months after its last mega-round, while French upstart ZML is taking a different swing at the infrastructure game with a free inference server designed to break chip vendor lock-in entirely. Beyond the hardware hustle, today's digest covers a clever new attack that turns AI coding assistants into botnet builders, Meta's controversial Muse Image launch that lets anyone AI-manipulate your Instagram photos without asking, and why San Francisco homes are selling for a million dollars over asking \u2014 because apparently the AI boom is reshaping everything, real estate included.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-07.html",
-    "contentHash": "75225b6c4d19e5578f99f61fe19f4931fb09af9d8678092052737a8e1f3ae691"
+    "urlPath": "/issues/2026-07-08.html",
+    "contentHash": "5c6e06b426e66e6dd264c971e8258d96e8027b9297f9e1530b8288fe27a4b57f"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-08",
+      "digestDate": "2026-07-08",
+      "displayDate": "Jul 08, 2026",
+      "issueNumber": "60708",
+      "subject": "ISSUE 60708 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI chip wars are heating up fast \u2014 SambaNova just pulled in a staggering $1 billion at an $11 billion valuation barely five months after its last mega-round, while French upstart ZML is taking a different swing at the infrastructure game with a free inference server designed to break chip vendor lock-in entirely. Beyond the hardware hustle, today's digest covers a clever new attack that turns AI coding assistants into botnet builders, Meta's controversial Muse Image launch that lets anyone AI-manipulate your Instagram photos without asking, and why San Francisco homes are selling for a million dollars over asking \u2014 because apparently the AI boom is reshaping everything, real estate included.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-08.html",
+      "contentHash": "5c6e06b426e66e6dd264c971e8258d96e8027b9297f9e1530b8288fe27a4b57f"
+    },
     {
       "slug": "2026-07-07",
       "digestDate": "2026-07-07",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-27.html",
       "contentHash": "df3a225a8325911248d3f5a3e013a83a6030be0614662574d952f00007b9bc02"
-    },
-    {
-      "slug": "2026-06-26",
-      "digestDate": "2026-06-26",
-      "displayDate": "Jun 26, 2026",
-      "issueNumber": "60626",
-      "subject": "ISSUE 60626 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing with an unexpected plot twist: the Trump administration is pumping the brakes on frontier AI releases, pressuring OpenAI to delay GPT-5.6's public rollout and cracking down even harder on Anthropic's most powerful models \u2014 a striking reversal from its earlier \"speed wins\" rhetoric. Meanwhile, Anthropic's Claude is having quite a moment despite the regulatory headwinds, with paying consumers surging 75% since January and \"Claude\" overtaking \"AI\" as the most-searched term on DataCamp. From Notion killing its email app because AI agents already run most users' inboxes to a scientist winning $100K for cracking zebra finch communication, today's digest is packed with stories that show just how fast the landscape is shifting.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-26.html",
-      "contentHash": "bc5dea82f15e5cf91840c32a7ebba1db92b80d90a8b5125cd1a63bbadc6dbd60"
     }
   ]
 }
