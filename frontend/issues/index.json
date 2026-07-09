@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-08T00:00:00Z",
-  "issueCount": 79,
+  "generatedAt": "2026-07-09T00:00:00Z",
+  "issueCount": 80,
   "latestIssue": {
-    "slug": "2026-07-08",
-    "digestDate": "2026-07-08",
-    "displayDate": "Jul 08, 2026",
-    "issueNumber": "60708",
-    "subject": "ISSUE 60708 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI chip wars are heating up fast \u2014 SambaNova just pulled in a staggering $1 billion at an $11 billion valuation barely five months after its last mega-round, while French upstart ZML is taking a different swing at the infrastructure game with a free inference server designed to break chip vendor lock-in entirely. Beyond the hardware hustle, today's digest covers a clever new attack that turns AI coding assistants into botnet builders, Meta's controversial Muse Image launch that lets anyone AI-manipulate your Instagram photos without asking, and why San Francisco homes are selling for a million dollars over asking \u2014 because apparently the AI boom is reshaping everything, real estate included.",
+    "slug": "2026-07-09",
+    "digestDate": "2026-07-09",
+    "displayDate": "Jul 09, 2026",
+    "issueNumber": "60709",
+    "subject": "ISSUE 60709 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI arms race just got a new price war. SpaceXAI and Cursor dropped Grok 4.5 today \u2014 the first model born from SpaceXAI's $60 billion Cursor acquisition \u2014 and it's gunning straight for Anthropic and OpenAI with Opus-class performance at a fraction of the cost. Beyond the model wars, today's digest covers a vibe-coding startup eyeing a $13.2 billion valuation, Google's deepfake detector proving its worth in a real-world political hoax, a robotics startup betting video game data is the key to physical AI's ChatGPT moment, and a 16-year-old Linux vulnerability that lets attackers break out of virtual machines.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-08.html",
-    "contentHash": "5c6e06b426e66e6dd264c971e8258d96e8027b9297f9e1530b8288fe27a4b57f"
+    "urlPath": "/issues/2026-07-09.html",
+    "contentHash": "611d31c24f8e557a0abc46db661b0dc7f01c74461e8f251c670f751ceb58b5f3"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-09",
+      "digestDate": "2026-07-09",
+      "displayDate": "Jul 09, 2026",
+      "issueNumber": "60709",
+      "subject": "ISSUE 60709 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI arms race just got a new price war. SpaceXAI and Cursor dropped Grok 4.5 today \u2014 the first model born from SpaceXAI's $60 billion Cursor acquisition \u2014 and it's gunning straight for Anthropic and OpenAI with Opus-class performance at a fraction of the cost. Beyond the model wars, today's digest covers a vibe-coding startup eyeing a $13.2 billion valuation, Google's deepfake detector proving its worth in a real-world political hoax, a robotics startup betting video game data is the key to physical AI's ChatGPT moment, and a 16-year-old Linux vulnerability that lets attackers break out of virtual machines.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-09.html",
+      "contentHash": "611d31c24f8e557a0abc46db661b0dc7f01c74461e8f251c670f751ceb58b5f3"
+    },
     {
       "slug": "2026-07-08",
       "digestDate": "2026-07-08",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-28.html",
       "contentHash": "9de4f26bd84d9e717b16aeee53f50ece1268e18cf7a59bd346c99e1f1a9d74bb"
-    },
-    {
-      "slug": "2026-06-27",
-      "digestDate": "2026-06-27",
-      "displayDate": "Jun 27, 2026",
-      "issueNumber": "60627",
-      "subject": "ISSUE 60627 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The escalating tug-of-war between the U.S. government and leading AI companies is today's biggest story, with Anthropic's Mythos 5 model getting a partial green light after a two-week standoff with the Trump administration\u2014only for OpenAI to find itself in a strikingly similar showdown over its new GPT-5.6 lineup. What's emerging is a pattern that could reshape how advanced AI reaches the public, as Washington pushes toward a de facto pre-release review regime that has both companies pushing back. Beyond the policy drama, we've also got a global crackdown on kids' social media use gaining serious momentum, an AI drone pulling off a first-of-its-kind rescue in the Australian wilderness, and OpenAI making big moves in India.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-27.html",
-      "contentHash": "df3a225a8325911248d3f5a3e013a83a6030be0614662574d952f00007b9bc02"
     }
   ]
 }
