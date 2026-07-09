@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 5140,
+      "source": "NY Times",
+      "title": "How the Platner Campaign Imploded, and New Questions About Trump’s Qatari-Donated Jet",
+      "url": "https://www.nytimes.com/2026/07/09/podcasts/the-headlines/platner-campaign-trump-qatar-jet-meta.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article covers three main topics: the collapse of the Platner political campaign, emerging questions about a jet donated to Trump by Qatar, and Meta's new AI initiative that will affect users' Instagram photos.",
+      "opinion": "The headline combines several significant political and technology stories. The juxtaposition of a campaign implosion with questions about foreign gifts to Trump suggests ongoing concerns about political ethics and foreign influence. The inclusion of Meta's AI push affecting Instagram photos reflects the growing intersection of AI technology with everyday social media use. Without access to the full article content, it's difficult to assess the depth of reporting, but the topics chosen reflect…",
+      "image_url": "",
+      "published_at": "2026-07-09T10:00:11+00:00",
+      "fetched_at": "2026-07-09T10:27:32.879397+00:00"
+    },
+    {
       "id": 5139,
       "source": "Claude Code Changelog",
       "title": "v2.1.205",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/pic_Pim_CEO.jpg?resize=1200,800",
       "published_at": "2026-07-08T19:19:15+00:00",
       "fetched_at": "2026-07-09T09:45:24.790575+00:00"
-    },
-    {
-      "id": 5130,
-      "source": "Ars Technica AI",
-      "title": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
-      "url": "https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Two high-severity Linux vulnerabilities were disclosed this week. The first, dubbed 'Januscape' (CVE-2026-53359), is a use-after-free flaw in KVM's shadow MMU emulation that has existed for 16 years, allowing guest VMs to escape and gain root access on host machines—a serious threat to cloud platforms. Researcher Hyunwoo Kim demonstrated a proof-of-concept crash exploit and confirmed a full escape exploit exists. Google awarded $250,000 for the discovery. The second vulnerability, 'GhostLock' (CVE-2026-43499), is a 15-year-old use-after-free bug in the kernel's futex priority-inheritance code that allows privilege escalation to root, discovered by Nebula Security using their AI-assisted vulnerability scanner.",
-      "opinion": "These are both significant vulnerabilities, with Januscape being particularly alarming for cloud infrastructure. A guest-to-host VM escape that works on both AMD and Intel processors and has lurked undetected for 16 years underscores how deeply complex and under-audited critical kernel subsystems like KVM's shadow MMU remain. The $250K bounty from Google reflects the severity—cloud providers' entire security models depend on VM isolation. The GhostLock finding is also noteworthy, both for the 1…",
-      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
-      "published_at": "2026-07-08T19:01:19+00:00",
-      "fetched_at": "2026-07-09T09:45:39.963707+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 5140,
+          "source": "NY Times",
+          "title": "How the Platner Campaign Imploded, and New Questions About Trump’s Qatari-Donated Jet",
+          "url": "https://www.nytimes.com/2026/07/09/podcasts/the-headlines/platner-campaign-trump-qatar-jet-meta.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article covers three main topics: the collapse of the Platner political campaign, emerging questions about a jet donated to Trump by Qatar, and Meta's new AI initiative that will affect users' Instagram photos.",
+          "opinion": "The headline combines several significant political and technology stories. The juxtaposition of a campaign implosion with questions about foreign gifts to Trump suggests ongoing concerns about political ethics and foreign influence. The inclusion of Meta's AI push affecting Instagram photos reflects the growing intersection of AI technology with everyday social media use. Without access to the full article content, it's difficult to assess the depth of reporting, but the topics chosen reflect…",
+          "image_url": "",
+          "published_at": "2026-07-09T10:00:11+00:00",
+          "fetched_at": "2026-07-09T10:27:32.879397+00:00"
+        },
         {
           "id": 5139,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/pic_Pim_CEO.jpg?resize=1200,800",
           "published_at": "2026-07-08T19:19:15+00:00",
           "fetched_at": "2026-07-09T09:45:24.790575+00:00"
-        },
-        {
-          "id": 5130,
-          "source": "Ars Technica AI",
-          "title": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
-          "url": "https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Two high-severity Linux vulnerabilities were disclosed this week. The first, dubbed 'Januscape' (CVE-2026-53359), is a use-after-free flaw in KVM's shadow MMU emulation that has existed for 16 years, allowing guest VMs to escape and gain root access on host machines—a serious threat to cloud platforms. Researcher Hyunwoo Kim demonstrated a proof-of-concept crash exploit and confirmed a full escape exploit exists. Google awarded $250,000 for the discovery. The second vulnerability, 'GhostLock' (CVE-2026-43499), is a 15-year-old use-after-free bug in the kernel's futex priority-inheritance code that allows privilege escalation to root, discovered by Nebula Security using their AI-assisted vulnerability scanner.",
-          "opinion": "These are both significant vulnerabilities, with Januscape being particularly alarming for cloud infrastructure. A guest-to-host VM escape that works on both AMD and Intel processors and has lurked undetected for 16 years underscores how deeply complex and under-audited critical kernel subsystems like KVM's shadow MMU remain. The $250K bounty from Google reflects the severity—cloud providers' entire security models depend on VM isolation. The GhostLock finding is also noteworthy, both for the 1…",
-          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
-          "published_at": "2026-07-08T19:01:19+00:00",
-          "fetched_at": "2026-07-09T09:45:39.963707+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/clairevo/status/2074945391225909446",
       "author": "clairevo",
-      "headline": "Claire Vo's early take on GPT-5.6-Sol: significantly better at __browser use, front-end design, and video editing__ than anything else on the market.",
+      "headline": "Claire Vo's early take on GPT-5.6-Sol: significantly better at __browser use, writing like a human, and video editing__ than anything else out there.",
       "tweet_id": "3981eba9-b6bc-81f2-9f3c-c9524365915f",
       "source_text": "Things GPT-5.6-Sol is significantly better at than other models:\n- browser use\n- writing like a human\n- communicating to a human\n- shipping usable product, not just code\n- video editing (the dark horse use case!)\n- front end design - tho it loves forest green\n- productive loops",
       "created_time": "2026-07-09T05:42:00.000Z",
@@ -234,9 +234,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/KanikaBK/status/2074742533650026624",
+      "author": "KanikaBK",
+      "headline": "Kanika dropped Andrej Karpathy's __LOOPS.md file__ into her Claude setup and says it immediately outperformed months of manual prompt tweaking.",
+      "tweet_id": "3981eba9-b6bc-8156-a22a-c716ade8626b",
+      "source_text": "Wait..WHAT!!!\n\nI had been tweaking my Claude prompts for months thinking that was the work until someone shared the LOOPS.md file Andrej Karpathy actually uses in his own setup and the very first response after...\n\nI dropped it in made everything before it feel like I had been https://t.co/tkgYqtDePY https://t.co/6hAqAKTLgd",
+      "created_time": "2026-07-09T05:42:00.000Z",
+      "canonical_url": "https://twitter.com/KanikaBK/status/2074742533650026624",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/rseroter/status/2074577440479887754",
       "author": "rseroter",
-      "headline": "Richard Seroter explores whether it's time to __replace product requirements docs__ with formats better suited to how fast teams actually ship now.",
+      "headline": "Richard Seroter explores whether it's time to __replace product requirements docs__ with formats better suited to how teams actually ship now.",
       "tweet_id": "3971eba9-b6bc-813f-8d22-c65417266e08",
       "source_text": "Have you replaced product requirements docs with something else? Still doing it the original way?\n\nThis post looks at some alternatives that might better suit the speed and flexibility you want now.\n\nhttps://t.co/CWqKBatD2i https://t.co/5OWI3ds3Hs",
       "created_time": "2026-07-08T14:02:00.000Z",
@@ -246,7 +256,7 @@
     {
       "url": "https://twitter.com/nireyal/status/2074841863341724036",
       "author": "nireyal",
-      "headline": "Nir Eyal argues distraction isn't a technology problem — it's a __discomfort problem__, and the phone is the cope, not the cause.",
+      "headline": "Nir Eyal makes the case that distraction isn't a technology problem — it's a __discomfort problem__, and the phone is the cope, not the cause.",
       "tweet_id": "3971eba9-b6bc-81e7-b2e0-ca7e48cb240e",
       "source_text": "Most people think distraction is a technology problem.\n\nIt isn't. It's a discomfort problem.\n\nThe phone is the cope, not the cause. We reach for it when we're bored, anxious, lonely, uncertain — and then we blame the phone for the reach.\n\nHere's what I've learned after years of https://t.co/gPBDzF5rQM",
       "created_time": "2026-07-08T14:02:00.000Z",
@@ -256,7 +266,7 @@
     {
       "url": "https://twitter.com/svpino/status/2074832126055489814",
       "author": "svpino",
-      "headline": "Santiago Valdarrama on building a moat: ship agents that __learn from both agent traces and in-browser behavior__ so they improve every time someone uses them.",
+      "headline": "Santiago Valdarrama on building a moat: ship agents that __get better every time people use them__ by learning from both traces and in-browser behavior.",
       "tweet_id": "3971eba9-b6bc-811f-adac-d175a9188145",
       "source_text": "How you can build a moat with self-learning agents:\n\nIf you can build an agent that gets better every time people use it, you will be unstoppable.\n\nHere is what you can do:\n\n1. Learn from two sources, not one. Agent traces show what the agent did and where it broke. In-browser https://t.co/IO03gQtuNd https://t.co/uMq6c93AV0",
       "created_time": "2026-07-08T14:02:00.000Z",
@@ -266,30 +276,46 @@
     {
       "url": "https://twitter.com/free_ai_guides/status/2074586543034171548",
       "author": "free_ai_guides",
-      "headline": "Notion's data science lead built a Chief of Staff agent that __replaced 30–45 minutes of daily triage__ — more practical than any $500 AI productivity course.",
+      "headline": "Notion's data science lead built a __Chief of Staff agent that replaced 30–45 minutes__ of daily morning triage — more useful than any paid AI productivity course.",
       "tweet_id": "3971eba9-b6bc-810e-a349-d85a9b34386d",
       "source_text": "Notion Data Science Lead, Jessica, shared how she built a Chief of Staff agent that runs her entire morning, and it's more practical than any $500 AI productivity course on the market.\n\nThis is what she built:\n\n1. One agent replaced 30-45 minutes of daily triage.\n\nEvery morning https://t.co/I3k0CNeBYX https://t.co/t0ert6LG2P",
       "created_time": "2026-07-08T14:02:00.000Z",
       "canonical_url": "https://twitter.com/free_ai_guides/status/2074586543034171548",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/Zephyr_hg/status/2074817018994495942",
-      "author": "Zephyr_hg",
-      "headline": "Sam Altman in a 52-minute keynote: building stopped needing a company behind you — __one person with a good idea__ now ships what took a floor of staff.",
-      "tweet_id": "3971eba9-b6bc-8120-9bc9-d56cee8ff207",
-      "source_text": "Sam Altman, CEO of OpenAI: \n\n\"To build with AI, you don't need a huge team. You need a good idea.\"\n\nIn a 52-minute keynote, he describes how building stopped needing a company behind you.\n\nOne person with a good idea and the right setup now ships what took a floor of staff.\n\nThat https://t.co/Jdi4OdzQp0 https://t.co/P4mEYb0suV",
-      "created_time": "2026-07-08T13:03:00.000Z",
-      "canonical_url": "https://twitter.com/Zephyr_hg/status/2074817018994495942",
-      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://github.com/i18n-agent/i18nstack",
+      "author": "lokinkl",
+      "item_id": "hn:48843558",
+      "headline": "i18nstack is an open-source tool that __fixes AI localization bugs__ in Claude Code workflows.",
+      "subreddit": null,
+      "source_text": "Show HN: Internationalizationstack – Fix AI Localization Bugs in Claude Code",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-09T10:19:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/i18n-agent/i18nstack",
+      "learning_score": 3
+    },
+    {
+      "url": "https://sitespeak.ai/research/ai-readiness-report-2026",
+      "author": "kizum",
+      "item_id": "hn:48843475",
+      "headline": "A study of websites finds __97% expose zero tools__ an AI agent can actually use.",
+      "subreddit": null,
+      "source_text": "97% of websites expose zero tools an AI agent can use",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-09T10:07:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sitespeak.ai/research/ai-readiness-report-2026",
+      "learning_score": 3
+    },
+    {
       "url": "https://artificialanalysis.ai/models/grok-4-5",
       "author": "theanonymousone",
       "item_id": "hn:48843376",
-      "headline": "__Grok 4.5 benchmark results__ are in, with Cursor publishing a technical breakdown alongside.",
+      "headline": "__Grok 4.5 benchmark results__ are out — see where xAI's latest model lands.",
       "subreddit": null,
       "source_text": "Grok 4.5 Benchmark Results",
       "source_type": "hacker_news",
@@ -299,76 +325,50 @@
       "learning_score": 3
     },
     {
-      "url": "https://blog.uehiro.ox.ac.uk/2026/06/the-uk-plans-to-ban-romantic-ai-chatbots-for-under-18s-young-people-have-bigger-worries-about-ai/",
-      "author": "ilreb",
-      "item_id": "hn:48843378",
-      "headline": "The UK is moving to __ban romantic AI chatbots for under-18s__ — but young people say they have bigger AI worries.",
+      "url": "https://www.hackster.io/adam-taylor/getting-started-with-forgix-4c72eb",
+      "author": "signalhound",
+      "item_id": "hn:48843584",
+      "headline": "Forgix is a __$50 FPGA dev board__ aiming to make hardware prototyping more accessible.",
       "subreddit": null,
-      "source_text": "The UK plans to ban romantic AI chatbots for under-18s",
+      "source_text": "Get started with the Forgix board the $50 FPGA dev board",
       "source_type": "hacker_news",
-      "created_time": "2026-07-09T09:52:13+00:00",
+      "created_time": "2026-07-09T10:22:36+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://blog.uehiro.ox.ac.uk/2026/06/the-uk-plans-to-ban-romantic-ai-chatbots-for-under-18s-young-people-have-bigger-worries-about-ai",
+      "canonical_url": "https://hackster.io/adam-taylor/getting-started-with-forgix-4c72eb",
       "learning_score": 2
     },
     {
-      "url": "https://www.theguardian.com/us-news/2026/jul/07/san-francisco-home-sale-prices-ai",
-      "author": "pseudolus",
-      "item_id": "hn:48843363",
-      "headline": "San Francisco homes are selling for __$1M above asking price__ as the AI boom reshapes the housing market.",
+      "url": "https://www.404media.co/we-are-living-in-a-chatgpt-flyer-pandemic/",
+      "author": "xz18r",
+      "item_id": "hn:48843552",
+      "headline": "404 Media says we're living in a __ChatGPT flyer pandemic__ — AI-generated posters are flooding real-world bulletin boards.",
       "subreddit": null,
-      "source_text": "San Francisco homes sell for $1M above asking price amid AI boom",
+      "source_text": "We Are Living in a 'ChatGPT Flyer Pandemic'",
       "source_type": "hacker_news",
-      "created_time": "2026-07-09T09:48:42+00:00",
+      "created_time": "2026-07-09T10:19:01+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://theguardian.com/us-news/2026/jul/07/san-francisco-home-sale-prices-ai",
+      "canonical_url": "https://404media.co/we-are-living-in-a-chatgpt-flyer-pandemic",
       "learning_score": 2
     },
     {
-      "url": "https://humm.so/",
-      "author": "welanes",
-      "item_id": "hn:48843345",
-      "headline": "__Humm__ is a free, private realtime speech-to-text tool that runs locally.",
+      "url": "https://www.benkuhn.net/hard/",
+      "author": "downbad_",
+      "item_id": "hn:48843544",
+      "headline": "Ben Kuhn's 2020 essay still holds: __you don't need to work on hard problems__ to do meaningful work.",
       "subreddit": null,
-      "source_text": "Show HN: Humm – free, private realtime speech-to-text",
+      "source_text": "You don't need to work on hard problems (2020)",
       "source_type": "hacker_news",
-      "created_time": "2026-07-09T09:46:32+00:00",
+      "created_time": "2026-07-09T10:18:40+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://humm.so",
-      "learning_score": 2
-    },
-    {
-      "url": "https://stabigs.github.io/",
-      "author": "trueduke",
-      "item_id": "hn:48843255",
-      "headline": "StaBIGS stabilizes full-frame video through __global 3D scene reconstruction__ — no cropping required.",
-      "subreddit": null,
-      "source_text": "Full-frame video stabilization through global 3D scene reconstruction",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-09T09:34:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://stabigs.github.io",
-      "learning_score": 2
-    },
-    {
-      "url": "https://rustify.yreh.com",
-      "author": "ratsimihah",
-      "item_id": "hn:48843244",
-      "headline": "__Rustify__ adds Stripe payments and code-signing to native Rust desktop apps.",
-      "subreddit": null,
-      "source_text": "Show HN: Rustify – Stripe and code-signing for native Rust desktop apps",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-09T09:33:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://rustify.yreh.com",
+      "canonical_url": "https://benkuhn.net/hard",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-09T10:02:13.414103+00:00",
+    "generated_at": "2026-07-09T10:29:45.028697+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "c12079ebf864fbaeff7c10218e91f59e6078ff1bf1a7be7a79862af9e796e36e"
+  "content_hash": "611d31c24f8e557a0abc46db661b0dc7f01c74461e8f251c670f751ceb58b5f3"
 }
