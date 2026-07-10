@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-09T00:00:00Z",
-  "issueCount": 80,
+  "generatedAt": "2026-07-10T00:00:00Z",
+  "issueCount": 81,
   "latestIssue": {
-    "slug": "2026-07-09",
-    "digestDate": "2026-07-09",
-    "displayDate": "Jul 09, 2026",
-    "issueNumber": "60709",
-    "subject": "ISSUE 60709 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI arms race just got a new price war. SpaceXAI and Cursor dropped Grok 4.5 today \u2014 the first model born from SpaceXAI's $60 billion Cursor acquisition \u2014 and it's gunning straight for Anthropic and OpenAI with Opus-class performance at a fraction of the cost. Beyond the model wars, today's digest covers a vibe-coding startup eyeing a $13.2 billion valuation, Google's deepfake detector proving its worth in a real-world political hoax, a robotics startup betting video game data is the key to physical AI's ChatGPT moment, and a 16-year-old Linux vulnerability that lets attackers break out of virtual machines.",
+    "slug": "2026-07-10",
+    "digestDate": "2026-07-10",
+    "displayDate": "Jul 10, 2026",
+    "issueNumber": "60710",
+    "subject": "ISSUE 60710 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "OpenAI just dropped GPT-5.6 and launched ChatGPT Work in a clear bid to challenge Anthropic's dominance \u2014 and the model benchmarks suggest this race is tighter than ever. Meanwhile, the AI industry's breakneck growth is drawing attention from all sides, with a US senator unveiling a sweeping legislative package to rein in AI harms, SK hynix raising a staggering $26.5 billion on the back of AI chip demand, and major companies from Deutsche Telekom to London's biggest banks going all-in on AI transformation. It's a day that captures the full spectrum of the AI boom: fierce competition at the top, massive capital flowing in, and regulators scrambling to keep up.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-09.html",
-    "contentHash": "611d31c24f8e557a0abc46db661b0dc7f01c74461e8f251c670f751ceb58b5f3"
+    "urlPath": "/issues/2026-07-10.html",
+    "contentHash": "c6d8d8fb3785a450231caa3fc758f7d5ab9afa43823f0db031ea6632cf2d83ff"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-10",
+      "digestDate": "2026-07-10",
+      "displayDate": "Jul 10, 2026",
+      "issueNumber": "60710",
+      "subject": "ISSUE 60710 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "OpenAI just dropped GPT-5.6 and launched ChatGPT Work in a clear bid to challenge Anthropic's dominance \u2014 and the model benchmarks suggest this race is tighter than ever. Meanwhile, the AI industry's breakneck growth is drawing attention from all sides, with a US senator unveiling a sweeping legislative package to rein in AI harms, SK hynix raising a staggering $26.5 billion on the back of AI chip demand, and major companies from Deutsche Telekom to London's biggest banks going all-in on AI transformation. It's a day that captures the full spectrum of the AI boom: fierce competition at the top, massive capital flowing in, and regulators scrambling to keep up.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-10.html",
+      "contentHash": "c6d8d8fb3785a450231caa3fc758f7d5ab9afa43823f0db031ea6632cf2d83ff"
+    },
     {
       "slug": "2026-07-09",
       "digestDate": "2026-07-09",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-29.html",
       "contentHash": "d731ac5c79796480b22196e41dafa859844e102c606d3bc6a48bb8d201ba8530"
-    },
-    {
-      "slug": "2026-06-28",
-      "digestDate": "2026-06-28",
-      "displayDate": "Jun 28, 2026",
-      "issueNumber": "60628",
-      "subject": "ISSUE 60628 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI arms race isn't just reshaping geopolitics \u2014 it's hitting your wallet, too. From Washington and Beijing converging on eerily similar AI playbooks to Apple hiking prices across its product line because memory manufacturers would rather sell chips to data centers than put them in your MacBook, today's stories paint a picture of an industry whose insatiable appetite for compute is rippling out in every direction. We've also got a cancer-fighting founder who turned Claude into his medical co-pilot, Margaret Atwood's delightfully skeptical take on chatbots, and SoftBank's CEO throwing cold water on Elon Musk's plan to put data centers in orbit.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-28.html",
-      "contentHash": "9de4f26bd84d9e717b16aeee53f50ece1268e18cf7a59bd346c99e1f1a9d74bb"
     }
   ]
 }
