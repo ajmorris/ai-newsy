@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-10T00:00:00Z",
-  "issueCount": 81,
+  "generatedAt": "2026-07-11T00:00:00Z",
+  "issueCount": 82,
   "latestIssue": {
-    "slug": "2026-07-10",
-    "digestDate": "2026-07-10",
-    "displayDate": "Jul 10, 2026",
-    "issueNumber": "60710",
-    "subject": "ISSUE 60710 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "OpenAI just dropped GPT-5.6 and launched ChatGPT Work in a clear bid to challenge Anthropic's dominance \u2014 and the model benchmarks suggest this race is tighter than ever. Meanwhile, the AI industry's breakneck growth is drawing attention from all sides, with a US senator unveiling a sweeping legislative package to rein in AI harms, SK hynix raising a staggering $26.5 billion on the back of AI chip demand, and major companies from Deutsche Telekom to London's biggest banks going all-in on AI transformation. It's a day that captures the full spectrum of the AI boom: fierce competition at the top, massive capital flowing in, and regulators scrambling to keep up.",
+    "slug": "2026-07-11",
+    "digestDate": "2026-07-11",
+    "displayDate": "Jul 11, 2026",
+    "issueNumber": "60711",
+    "subject": "ISSUE 60711 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing today with a blockbuster legal battle: Apple is suing OpenAI, alleging a brazen pattern of trade secret theft involving poached employees who allegedly smuggled out confidential hardware designs, used secret project code names during recruiting, and even coached departing staff on dodging security protocols. Meanwhile, Meta had a rough week of its own, pulling the plug on its Instagram Muse Image AI feature after swift backlash over letting anyone generate AI images using public accounts without permission. We've also got Hugging Face's CEO making the case for why open source AI is more critical than ever, plus a fresh Claude Code update worth noting.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-10.html",
-    "contentHash": "c6d8d8fb3785a450231caa3fc758f7d5ab9afa43823f0db031ea6632cf2d83ff"
+    "urlPath": "/issues/2026-07-11.html",
+    "contentHash": "29b4f6743c8a070171463b21bbe9d741fc5644a83f4cc28dcb1b306495ed7cb9"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-11",
+      "digestDate": "2026-07-11",
+      "displayDate": "Jul 11, 2026",
+      "issueNumber": "60711",
+      "subject": "ISSUE 60711 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing today with a blockbuster legal battle: Apple is suing OpenAI, alleging a brazen pattern of trade secret theft involving poached employees who allegedly smuggled out confidential hardware designs, used secret project code names during recruiting, and even coached departing staff on dodging security protocols. Meanwhile, Meta had a rough week of its own, pulling the plug on its Instagram Muse Image AI feature after swift backlash over letting anyone generate AI images using public accounts without permission. We've also got Hugging Face's CEO making the case for why open source AI is more critical than ever, plus a fresh Claude Code update worth noting.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-11.html",
+      "contentHash": "29b4f6743c8a070171463b21bbe9d741fc5644a83f4cc28dcb1b306495ed7cb9"
+    },
     {
       "slug": "2026-07-10",
       "digestDate": "2026-07-10",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-06-30.html",
       "contentHash": "545bedb866a923f6d9e26e419a73caf3d47fa4e6429e41eb7d42eeb0512a609e"
-    },
-    {
-      "slug": "2026-06-29",
-      "digestDate": "2026-06-29",
-      "displayDate": "Jun 29, 2026",
-      "issueNumber": "60629",
-      "subject": "ISSUE 60629 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI hype machine hit a reality check this week \u2014 and the stories are coming from every direction. Ford is rehiring retired engineers after its AI quality systems fell short, enterprise leaders are watching AI projects crumble at scale due to neglected data foundations, and Erin Brockovich is gearing up for a new fight against the environmental toll of AI datacentres. Meanwhile, the boom rolls on with chipmaker stocks surging, China closing the gap in AI cybersecurity, and Suno's new artist incubator raising serious red flags \u2014 so grab your coffee and let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-29.html",
-      "contentHash": "d731ac5c79796480b22196e41dafa859844e102c606d3bc6a48bb8d201ba8530"
     }
   ]
 }
