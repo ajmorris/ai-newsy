@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-11T00:00:00Z",
-  "issueCount": 82,
+  "generatedAt": "2026-07-12T00:00:00Z",
+  "issueCount": 83,
   "latestIssue": {
-    "slug": "2026-07-11",
-    "digestDate": "2026-07-11",
-    "displayDate": "Jul 11, 2026",
-    "issueNumber": "60711",
-    "subject": "ISSUE 60711 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing today with a blockbuster legal battle: Apple is suing OpenAI, alleging a brazen pattern of trade secret theft involving poached employees who allegedly smuggled out confidential hardware designs, used secret project code names during recruiting, and even coached departing staff on dodging security protocols. Meanwhile, Meta had a rough week of its own, pulling the plug on its Instagram Muse Image AI feature after swift backlash over letting anyone generate AI images using public accounts without permission. We've also got Hugging Face's CEO making the case for why open source AI is more critical than ever, plus a fresh Claude Code update worth noting.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-07-11.html",
-    "contentHash": "29b4f6743c8a070171463b21bbe9d741fc5644a83f4cc28dcb1b306495ed7cb9"
+    "slug": "2026-07-12",
+    "digestDate": "2026-07-12",
+    "displayDate": "Jul 12, 2026",
+    "issueNumber": "60712",
+    "subject": "ISSUE 60712 \u00b7 5 STORIES \u00b7 11 MIN READ",
+    "intro": "The creative world is pushing back hard today \u2014 from Australian artists fighting to keep AI companies from gutting copyright protections to critics sounding the alarm over an AI-generated \"actor\" landing a movie role, the tension between human creativity and artificial intelligence is front and center. Meanwhile, OpenAI is making a bold play for your living room with family-focused ChatGPT features, and Big Tech's data center boom is leaving a carbon footprint that rivals a mid-sized European nation. It's a day that really underscores the messy, real-world consequences of AI's rapid expansion into every corner of our lives.",
+    "articleCount": 5,
+    "urlPath": "/issues/2026-07-12.html",
+    "contentHash": "514abf79c28d9d98fc7e15cb4b19cb1562f7e8371919d8a881e1eecb82946e57"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-12",
+      "digestDate": "2026-07-12",
+      "displayDate": "Jul 12, 2026",
+      "issueNumber": "60712",
+      "subject": "ISSUE 60712 \u00b7 5 STORIES \u00b7 11 MIN READ",
+      "intro": "The creative world is pushing back hard today \u2014 from Australian artists fighting to keep AI companies from gutting copyright protections to critics sounding the alarm over an AI-generated \"actor\" landing a movie role, the tension between human creativity and artificial intelligence is front and center. Meanwhile, OpenAI is making a bold play for your living room with family-focused ChatGPT features, and Big Tech's data center boom is leaving a carbon footprint that rivals a mid-sized European nation. It's a day that really underscores the messy, real-world consequences of AI's rapid expansion into every corner of our lives.",
+      "articleCount": 5,
+      "urlPath": "/issues/2026-07-12.html",
+      "contentHash": "514abf79c28d9d98fc7e15cb4b19cb1562f7e8371919d8a881e1eecb82946e57"
+    },
     {
       "slug": "2026-07-11",
       "digestDate": "2026-07-11",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-01.html",
       "contentHash": "87670900b49c17bcd2e7e495accb5a1cc3ad7f60cf98c4c48f7592063a2e6ac2"
-    },
-    {
-      "slug": "2026-06-30",
-      "digestDate": "2026-06-30",
-      "displayDate": "Jun 30, 2026",
-      "issueNumber": "60630",
-      "subject": "ISSUE 60630 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI jobs debate just got a whole lot more nuanced \u2014 a major new study of nearly 22,000 companies found that heavy AI adopters actually *grew* headcount by over 10%, but the catch is those gains may say more about which companies can afford to go all-in on AI than about AI's universal impact on employment. Beyond that headline, today's digest covers everything from Russian hackers exploiting Signal and WhatsApp at scale, to Google making personalized AI image generation free for 750 million Gemini users, to a philosopher embedded inside DeepMind wrestling with whether ethics can keep pace with the AI race.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-06-30.html",
-      "contentHash": "545bedb866a923f6d9e26e419a73caf3d47fa4e6429e41eb7d42eeb0512a609e"
     }
   ]
 }
