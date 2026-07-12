@@ -147,23 +147,23 @@
   "tweet_headlines": [],
   "community_headlines": [
     {
-      "url": "https://www.howtogeek.com/i-tried-netbsd-as-a-desktop-and-it-felt-like-stepping-into-the-90s-in-a-good-way/",
-      "author": "birdculture",
-      "item_id": "hn:48879306",
-      "headline": "__Teleflow__ is a local-first teleprompter and selfie recorder for creators who want to keep their data off the cloud.",
+      "url": "https://github.com/asallay/godot-llm",
+      "author": "steamspaghetti",
+      "item_id": "hn:48879481",
+      "headline": "Someone got Godot running __Gemma 4 inference in GDScript and Vulkan compute shaders__ — local LLMs inside a game engine.",
       "subreddit": null,
-      "source_text": "NetBSD as a Desktop: A Nostalgic '90s Experience",
+      "source_text": "Show HN: Godot running Gemma 4 inference in GDScript and Vulkan compute shaders",
       "source_type": "hacker_news",
-      "created_time": "2026-07-12T08:07:01+00:00",
+      "created_time": "2026-07-12T08:48:49+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://howtogeek.com/i-tried-netbsd-as-a-desktop-and-it-felt-like-stepping-into-the-90s-in-a-good-way",
+      "canonical_url": "https://github.com/asallay/godot-llm",
       "learning_score": 3
     },
     {
       "url": "https://hitsubscribe.com/surviving-the-great-commoditizer-stop-getting-good-at-chatgpt/",
       "author": "LAC-Tech",
       "item_id": "hn:48879244",
-      "headline": "A 2024 essay makes the case that __getting \"good\" at ChatGPT is a dead end__ — the skill being optimized will keep shifting under you.",
+      "headline": "A 2024 essay makes the case to __stop getting \"good\" at ChatGPT__ — the skill being commoditized is yours.",
       "subreddit": null,
       "source_text": "Stop Getting 'Good' at ChatGPT (2024)",
       "source_type": "hacker_news",
@@ -173,23 +173,23 @@
       "learning_score": 3
     },
     {
-      "url": "https://rubys.github.io/kamal-in-production/",
-      "author": "enz",
-      "item_id": "hn:48879048",
-      "headline": "A practical guide to running __Kamal 2.0 in production__ for Rails deployment.",
+      "url": "https://github.com/dotbrt/dejaview",
+      "author": "thisbrt",
+      "item_id": "hn:48879501",
+      "headline": "DejaView gives you a __terminal dashboard for all your Claude Code sessions__ so nothing gets lost between context windows.",
       "subreddit": null,
-      "source_text": "Using Kamal 2.0 in Production",
+      "source_text": "Show HN: DejaView – Terminal dashboard for all your Claude Code sessions",
       "source_type": "hacker_news",
-      "created_time": "2026-07-12T07:12:06+00:00",
+      "created_time": "2026-07-12T08:52:40+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://rubys.github.io/kamal-in-production",
-      "learning_score": 3
+      "canonical_url": "https://github.com/dotbrt/dejaview",
+      "learning_score": 2
     },
     {
       "url": "https://neutralityproject.org/results.html",
       "author": "ryzvonusef",
       "item_id": "hn:48879363",
-      "headline": "A new __political neutrality benchmark__ scores popular AI models on left-right bias — results are more varied than you'd think.",
+      "headline": "A new benchmark tests the __political neutrality of popular AI models__ — results are uneven.",
       "subreddit": null,
       "source_text": "Political Neutrality Benchmark of popular AI models",
       "source_type": "hacker_news",
@@ -199,10 +199,23 @@
       "learning_score": 2
     },
     {
+      "url": "https://adlrocha.substack.com/p/adlrocha-forget-fat-models-the-future",
+      "author": "adlrocha",
+      "item_id": "hn:48879284",
+      "headline": "The case for __narrow models over fat ones__ — smaller, task-specific architectures as the real path forward.",
+      "subreddit": null,
+      "source_text": "Forget \"Fat\" Models. The Future Is Narrow",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T08:02:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://adlrocha.substack.com/p/adlrocha-forget-fat-models-the-future",
+      "learning_score": 2
+    },
+    {
       "url": "https://chromewebstore.google.com/detail/inlie-â-political-manipul/oajemdmhhgpifbdncldjappndcpehlie",
       "author": "ivan_holovach",
       "item_id": "hn:48879256",
-      "headline": "__InLie__ is a Chrome extension that surfaces manipulation tactics in political videos as you watch them.",
+      "headline": "InLie is a Chrome extension that __surfaces manipulation tactics in political videos__ in real time.",
       "subreddit": null,
       "source_text": "Show HN: InLie – See manipulation tactics in political videos, live",
       "source_type": "hacker_news",
@@ -210,26 +223,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://chromewebstore.google.com/detail/inlie-â-political-manipul/oajemdmhhgpifbdncldjappndcpehlie",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.ling.upenn.edu/~beatrice/110/docs/uncleftish-beholding.html",
-      "author": "xelxebar",
-      "item_id": "hn:48879242",
-      "headline": "A classic explainer rewrites __atomic physics in pure Anglo-Saxon__ English — no Latin or Greek roots allowed.",
-      "subreddit": null,
-      "source_text": "Atomic Physics in Pure Anglo-Saxon",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-12T07:54:12+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://ling.upenn.edu/~beatrice/110/docs/uncleftish-beholding.html",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-12T08:25:43.603884+00:00",
+    "generated_at": "2026-07-12T09:07:24.245966+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "42ddd024e27573b2d48b12266053bae644d0998e504bfc5024b4bcd17ddcc199"
+  "content_hash": "514abf79c28d9d98fc7e15cb4b19cb1562f7e8371919d8a881e1eecb82946e57"
 }
