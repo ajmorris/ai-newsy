@@ -1,0 +1,235 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-07-12",
+  "issue_id": "20260712",
+  "subject_line": "ISSUE 60712 · 5 STORIES · 11 MIN READ",
+  "intro": "The creative world is pushing back hard today — from Australian artists fighting to keep AI companies from gutting copyright protections to critics sounding the alarm over an AI-generated \"actor\" landing a movie role, the tension between human creativity and artificial intelligence is front and center. Meanwhile, OpenAI is making a bold play for your living room with family-focused ChatGPT features, and Big Tech's data center boom is leaving a carbon footprint that rivals a mid-sized European nation. It's a day that really underscores the messy, real-world consequences of AI's rapid expansion into every corner of our lives.",
+  "article_count": 5,
+  "stories": [
+    {
+      "id": 5214,
+      "source": "Guardian AI",
+      "title": "AI companies want to water down Australia’s copyright laws. Artists are outraged, Labor is split",
+      "url": "https://www.theguardian.com/technology/2026/jul/12/ai-australia-will-labor-water-down-copyright-laws-datacentres",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses the tension within Australia's Labor government over AI companies' push to weaken copyright laws. Author Anna Funder and other artists are outraged that tech companies have used their creative works without permission to train AI models. Prime Minister Anthony Albanese is set to deliver a major speech on AI as Labor MPs are divided between attracting datacentre investment and protecting the rights of creative professionals. The piece highlights the broader conflict between fostering AI industry growth and safeguarding intellectual property rights.",
+      "opinion": "This article addresses one of the most critical and contentious issues at the intersection of technology and creative rights. The framing clearly sympathizes with artists and creators who feel their work has been exploited without consent or compensation. The tension within Labor reflects a genuine and difficult policy dilemma faced by governments worldwide: how to remain competitive in the AI race while upholding fundamental intellectual property protections. It is concerning that economic inc…",
+      "image_url": "https://i.guim.co.uk/img/media/22ada131c2cb310491b0adad1a133e8a5cada2c6/255_557_4171_3337/master/4171.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3198d4788a2109c3310713822129091e",
+      "published_at": "2026-07-11T20:00:59+00:00",
+      "fetched_at": "2026-07-12T08:22:20.266433+00:00"
+    },
+    {
+      "id": 5210,
+      "source": "TechCrunch AI",
+      "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI is hiring a dedicated product manager to build ChatGPT experiences for families, caregivers, and older adults, signaling a shift from individual productivity tools to household-oriented technology. This comes as ChatGPT's user base is aging — users 35+ grew from 26% to 31% globally, and nearly 25% of U.S. parents with smartphones now use ChatGPT. The move brings new trust and safety challenges, especially for children, as research shows parents underestimate their kids' AI usage. OpenAI has faced lawsuits alleging ChatGPT harmed children and has introduced safety measures including parental controls, sensitive conversation routing, and a Trusted Contact feature. Experts say this represents 'safety by redesign' and an opportunity for AI companies to avoid mistakes made by social media platforms.",
+      "opinion": "This is a strategically important and arguably overdue move by OpenAI. As ChatGPT becomes embedded in daily household life, treating it purely as an individual productivity tool ignores the reality of how families actually interact with technology. The demographic data showing rapid adoption among parents and older adults makes a compelling case for dedicated family-focused product design. The safety dimension is critical — the gap between parents' perception and children's actual AI usage is a…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2170386424.jpg?w=1024",
+      "published_at": "2026-07-11T14:13:00+00:00",
+      "fetched_at": "2026-07-12T08:22:15.297654+00:00"
+    },
+    {
+      "id": 5215,
+      "source": "Guardian AI",
+      "title": "Datacentres drive up big tech’s carbon emissions to a third of those of France",
+      "url": "https://www.theguardian.com/us-news/2026/jul/11/microsoft-amazon-google-datacentre-carbon-emissions-france",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Microsoft, Amazon, and Google's combined carbon emissions have risen by nearly a fifth in the past year, reaching 119 million metric tonnes of CO₂ equivalent in the financial year ending March 2026—roughly a third of France's total emissions. The increase is driven largely by datacentre construction, though all three companies maintain they still aim to achieve net zero emissions.",
+      "opinion": "This is a striking and alarming figure that underscores the enormous environmental cost of the AI and cloud computing boom. The fact that just three companies now produce emissions equivalent to a third of an entire industrialized nation like France reveals a profound tension between the tech industry's sustainability pledges and its aggressive infrastructure expansion. Their continued insistence on net zero goals rings increasingly hollow when emissions are climbing nearly 20% year over year.…",
+      "image_url": "https://i.guim.co.uk/img/media/759518978daf02dee0d450e98f9f76de047cf552/0_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5378afed81a42b8da30c8e1561edeb6f",
+      "published_at": "2026-07-11T11:00:49+00:00",
+      "fetched_at": "2026-07-12T08:22:20.674492+00:00"
+    },
+    {
+      "id": 5216,
+      "source": "Guardian AI",
+      "title": "AI ‘actor’ Tilly Norwood has a movie coming out. Spare us this future | Dave Schilling",
+      "url": "https://www.theguardian.com/commentisfree/2026/jul/11/ai-actor-tilly-norwood-movie",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article by Dave Schilling criticizes the emergence of AI 'actor' Tilly Norwood, who has a movie coming out. Schilling argues that acting is fundamentally about human connection across cultural and social divides, something an AI-generated digital performer cannot authentically provide. He expresses concern about the growing trend of AI actors in cinema and the publicity machinery behind making them mainstream, viewing this as a troubling future for the film industry.",
+      "opinion": "The author is strongly opposed to AI actors in cinema. He views the concept with disdain and concern, arguing that replacing human actors with AI-generated performers undermines the essential human connection that makes acting meaningful. His tone is sardonic and critical, treating the 'Tillyverse' as a dystopian development that cinema lovers should resist rather than embrace.",
+      "image_url": "https://i.guim.co.uk/img/media/0e61e97a45a583364c863eb3e4983da36cdc03e1/1_0_2999_2400/master/2999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f62e8cd3ccfe708b07499a6f14892d17",
+      "published_at": "2026-07-11T11:00:48+00:00",
+      "fetched_at": "2026-07-12T08:22:21.127827+00:00"
+    },
+    {
+      "id": 5217,
+      "source": "Guardian AI",
+      "title": "Safe from AI: which jobs will help you thrive in the future?",
+      "url": "https://www.theguardian.com/money/2026/jul/11/ai-work-jobs-future-medicine-teaching-hotels-law",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian article explores which careers are likely to remain resilient in the face of AI advancement. Experts from various industries including teaching, hospitality, law, and medicine share their perspectives on how AI will impact different professions. The piece suggests that while AI is transforming the workplace, many roles will still offer strong opportunities, particularly those requiring human interaction, judgment, and adaptability. The article advises people entering the workforce to consider how they can future-proof their careers by choosing fields less susceptible to automation and by developing skills that complement rather than compete with AI technology.",
+      "opinion": "This is a timely and practical article that addresses a widespread anxiety about the future of work. The framing of 'AI-proofing' careers is useful for young people and career changers, though the article appears to take a cautiously optimistic tone that may understate the pace and breadth of AI disruption. It's worth noting that predictions about which jobs are 'safe' from technological change have historically been unreliable — many roles considered immune to automation a decade ago are now b…",
+      "image_url": "https://i.guim.co.uk/img/media/5a3983d88fce9aed3b93c1f0042fe0ca573df746/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=017d0390fab61f85708fa157a1e7e76f",
+      "published_at": "2026-07-11T11:00:47+00:00",
+      "fetched_at": "2026-07-12T08:22:21.542421+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 5214,
+          "source": "Guardian AI",
+          "title": "AI companies want to water down Australia’s copyright laws. Artists are outraged, Labor is split",
+          "url": "https://www.theguardian.com/technology/2026/jul/12/ai-australia-will-labor-water-down-copyright-laws-datacentres",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses the tension within Australia's Labor government over AI companies' push to weaken copyright laws. Author Anna Funder and other artists are outraged that tech companies have used their creative works without permission to train AI models. Prime Minister Anthony Albanese is set to deliver a major speech on AI as Labor MPs are divided between attracting datacentre investment and protecting the rights of creative professionals. The piece highlights the broader conflict between fostering AI industry growth and safeguarding intellectual property rights.",
+          "opinion": "This article addresses one of the most critical and contentious issues at the intersection of technology and creative rights. The framing clearly sympathizes with artists and creators who feel their work has been exploited without consent or compensation. The tension within Labor reflects a genuine and difficult policy dilemma faced by governments worldwide: how to remain competitive in the AI race while upholding fundamental intellectual property protections. It is concerning that economic inc…",
+          "image_url": "https://i.guim.co.uk/img/media/22ada131c2cb310491b0adad1a133e8a5cada2c6/255_557_4171_3337/master/4171.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3198d4788a2109c3310713822129091e",
+          "published_at": "2026-07-11T20:00:59+00:00",
+          "fetched_at": "2026-07-12T08:22:20.266433+00:00"
+        },
+        {
+          "id": 5210,
+          "source": "TechCrunch AI",
+          "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+          "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI is hiring a dedicated product manager to build ChatGPT experiences for families, caregivers, and older adults, signaling a shift from individual productivity tools to household-oriented technology. This comes as ChatGPT's user base is aging — users 35+ grew from 26% to 31% globally, and nearly 25% of U.S. parents with smartphones now use ChatGPT. The move brings new trust and safety challenges, especially for children, as research shows parents underestimate their kids' AI usage. OpenAI has faced lawsuits alleging ChatGPT harmed children and has introduced safety measures including parental controls, sensitive conversation routing, and a Trusted Contact feature. Experts say this represents 'safety by redesign' and an opportunity for AI companies to avoid mistakes made by social media platforms.",
+          "opinion": "This is a strategically important and arguably overdue move by OpenAI. As ChatGPT becomes embedded in daily household life, treating it purely as an individual productivity tool ignores the reality of how families actually interact with technology. The demographic data showing rapid adoption among parents and older adults makes a compelling case for dedicated family-focused product design. The safety dimension is critical — the gap between parents' perception and children's actual AI usage is a…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2170386424.jpg?w=1024",
+          "published_at": "2026-07-11T14:13:00+00:00",
+          "fetched_at": "2026-07-12T08:22:15.297654+00:00"
+        },
+        {
+          "id": 5215,
+          "source": "Guardian AI",
+          "title": "Datacentres drive up big tech’s carbon emissions to a third of those of France",
+          "url": "https://www.theguardian.com/us-news/2026/jul/11/microsoft-amazon-google-datacentre-carbon-emissions-france",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Microsoft, Amazon, and Google's combined carbon emissions have risen by nearly a fifth in the past year, reaching 119 million metric tonnes of CO₂ equivalent in the financial year ending March 2026—roughly a third of France's total emissions. The increase is driven largely by datacentre construction, though all three companies maintain they still aim to achieve net zero emissions.",
+          "opinion": "This is a striking and alarming figure that underscores the enormous environmental cost of the AI and cloud computing boom. The fact that just three companies now produce emissions equivalent to a third of an entire industrialized nation like France reveals a profound tension between the tech industry's sustainability pledges and its aggressive infrastructure expansion. Their continued insistence on net zero goals rings increasingly hollow when emissions are climbing nearly 20% year over year.…",
+          "image_url": "https://i.guim.co.uk/img/media/759518978daf02dee0d450e98f9f76de047cf552/0_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5378afed81a42b8da30c8e1561edeb6f",
+          "published_at": "2026-07-11T11:00:49+00:00",
+          "fetched_at": "2026-07-12T08:22:20.674492+00:00"
+        },
+        {
+          "id": 5216,
+          "source": "Guardian AI",
+          "title": "AI ‘actor’ Tilly Norwood has a movie coming out. Spare us this future | Dave Schilling",
+          "url": "https://www.theguardian.com/commentisfree/2026/jul/11/ai-actor-tilly-norwood-movie",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article by Dave Schilling criticizes the emergence of AI 'actor' Tilly Norwood, who has a movie coming out. Schilling argues that acting is fundamentally about human connection across cultural and social divides, something an AI-generated digital performer cannot authentically provide. He expresses concern about the growing trend of AI actors in cinema and the publicity machinery behind making them mainstream, viewing this as a troubling future for the film industry.",
+          "opinion": "The author is strongly opposed to AI actors in cinema. He views the concept with disdain and concern, arguing that replacing human actors with AI-generated performers undermines the essential human connection that makes acting meaningful. His tone is sardonic and critical, treating the 'Tillyverse' as a dystopian development that cinema lovers should resist rather than embrace.",
+          "image_url": "https://i.guim.co.uk/img/media/0e61e97a45a583364c863eb3e4983da36cdc03e1/1_0_2999_2400/master/2999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f62e8cd3ccfe708b07499a6f14892d17",
+          "published_at": "2026-07-11T11:00:48+00:00",
+          "fetched_at": "2026-07-12T08:22:21.127827+00:00"
+        },
+        {
+          "id": 5217,
+          "source": "Guardian AI",
+          "title": "Safe from AI: which jobs will help you thrive in the future?",
+          "url": "https://www.theguardian.com/money/2026/jul/11/ai-work-jobs-future-medicine-teaching-hotels-law",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian article explores which careers are likely to remain resilient in the face of AI advancement. Experts from various industries including teaching, hospitality, law, and medicine share their perspectives on how AI will impact different professions. The piece suggests that while AI is transforming the workplace, many roles will still offer strong opportunities, particularly those requiring human interaction, judgment, and adaptability. The article advises people entering the workforce to consider how they can future-proof their careers by choosing fields less susceptible to automation and by developing skills that complement rather than compete with AI technology.",
+          "opinion": "This is a timely and practical article that addresses a widespread anxiety about the future of work. The framing of 'AI-proofing' careers is useful for young people and career changers, though the article appears to take a cautiously optimistic tone that may understate the pace and breadth of AI disruption. It's worth noting that predictions about which jobs are 'safe' from technological change have historically been unreliable — many roles considered immune to automation a decade ago are now b…",
+          "image_url": "https://i.guim.co.uk/img/media/5a3983d88fce9aed3b93c1f0042fe0ca573df746/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=017d0390fab61f85708fa157a1e7e76f",
+          "published_at": "2026-07-11T11:00:47+00:00",
+          "fetched_at": "2026-07-12T08:22:21.542421+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [],
+  "community_headlines": [
+    {
+      "url": "https://www.howtogeek.com/i-tried-netbsd-as-a-desktop-and-it-felt-like-stepping-into-the-90s-in-a-good-way/",
+      "author": "birdculture",
+      "item_id": "hn:48879306",
+      "headline": "__Teleflow__ is a local-first teleprompter and selfie recorder for creators who want to keep their data off the cloud.",
+      "subreddit": null,
+      "source_text": "NetBSD as a Desktop: A Nostalgic '90s Experience",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T08:07:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://howtogeek.com/i-tried-netbsd-as-a-desktop-and-it-felt-like-stepping-into-the-90s-in-a-good-way",
+      "learning_score": 3
+    },
+    {
+      "url": "https://hitsubscribe.com/surviving-the-great-commoditizer-stop-getting-good-at-chatgpt/",
+      "author": "LAC-Tech",
+      "item_id": "hn:48879244",
+      "headline": "A 2024 essay makes the case that __getting \"good\" at ChatGPT is a dead end__ — the skill being optimized will keep shifting under you.",
+      "subreddit": null,
+      "source_text": "Stop Getting 'Good' at ChatGPT (2024)",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T07:55:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://hitsubscribe.com/surviving-the-great-commoditizer-stop-getting-good-at-chatgpt",
+      "learning_score": 3
+    },
+    {
+      "url": "https://rubys.github.io/kamal-in-production/",
+      "author": "enz",
+      "item_id": "hn:48879048",
+      "headline": "A practical guide to running __Kamal 2.0 in production__ for Rails deployment.",
+      "subreddit": null,
+      "source_text": "Using Kamal 2.0 in Production",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T07:12:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://rubys.github.io/kamal-in-production",
+      "learning_score": 3
+    },
+    {
+      "url": "https://neutralityproject.org/results.html",
+      "author": "ryzvonusef",
+      "item_id": "hn:48879363",
+      "headline": "A new __political neutrality benchmark__ scores popular AI models on left-right bias — results are more varied than you'd think.",
+      "subreddit": null,
+      "source_text": "Political Neutrality Benchmark of popular AI models",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T08:21:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://neutralityproject.org/results.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/inlie-â-political-manipul/oajemdmhhgpifbdncldjappndcpehlie",
+      "author": "ivan_holovach",
+      "item_id": "hn:48879256",
+      "headline": "__InLie__ is a Chrome extension that surfaces manipulation tactics in political videos as you watch them.",
+      "subreddit": null,
+      "source_text": "Show HN: InLie – See manipulation tactics in political videos, live",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T07:57:15+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://chromewebstore.google.com/detail/inlie-â-political-manipul/oajemdmhhgpifbdncldjappndcpehlie",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.ling.upenn.edu/~beatrice/110/docs/uncleftish-beholding.html",
+      "author": "xelxebar",
+      "item_id": "hn:48879242",
+      "headline": "A classic explainer rewrites __atomic physics in pure Anglo-Saxon__ English — no Latin or Greek roots allowed.",
+      "subreddit": null,
+      "source_text": "Atomic Physics in Pure Anglo-Saxon",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-12T07:54:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ling.upenn.edu/~beatrice/110/docs/uncleftish-beholding.html",
+      "learning_score": 2
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-07-12T08:25:43.603884+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "42ddd024e27573b2d48b12266053bae644d0998e504bfc5024b4bcd17ddcc199"
+}
