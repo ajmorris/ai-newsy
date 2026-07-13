@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/davidsenra/status/2076401031106449733",
       "author": "davidsenra",
-      "headline": "Ramp cofounder Eric Glyman argues there's a __distorted reality around AI__ — and says air conditioning explains why you should still build a company even if AGI is around the corner.",
+      "headline": "Ramp cofounder Eric Glyman argues there's a __distorted reality around AI__ — and says air conditioning explains why you should build anyway.",
       "tweet_id": "39c1eba9-b6bc-8115-8207-e28aff74d888",
       "source_text": "Ramp cofounder @eglyman says there’s a distorted reality around AI. \n\nPeople are starting to ask: “Should we even build a company if AGI is around the corner?”\n\n“History offers some pretty interesting lessons around this.”\n\n“ Let's talk about air conditioning.”\n\n“It's 95 degrees https://t.co/VPOwnosnBx https://t.co/bzazPDwQeF",
       "created_time": "2026-07-13T05:57:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/AnatoliKopadze/status/2076294995179405533",
       "author": "AnatoliKopadze",
-      "headline": "Andrew Ng says __100% of his tasks are done by AI agents__ and believes prompting will be gone within three to six months.",
+      "headline": "Andrew Ng says __100% of his tasks are done by AI agents__ and believes prompting will be gone within 3–6 months.",
       "tweet_id": "39c1eba9-b6bc-81aa-940c-d489bcae46a8",
       "source_text": "Google Brain founder, Andrew Ng:\n\n\"100% of my tasks are done by ai agents, self-improving loops are next. \n\nGive it 3-6 months and prompting is gone.\"\n\n31 minutes of clear explanation on building self-improving agents from scratch.\n\nWorth more than any $500 agentic course.\n\nWatch https://t.co/1ygJW3glmv https://t.co/zOjZrttPPI",
       "created_time": "2026-07-13T05:52:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/hrswatigupta/status/2076191777867083913",
       "author": "hrswatigupta",
-      "headline": "Anthropic engineer explains how to __build AI agents that prompt themselves__, remember past work, and improve with every run — 45-minute session, free.",
+      "headline": "Anthropic engineer explains how to __build AI agents that prompt themselves__, remember past work, and improve with every run.",
       "tweet_id": "39c1eba9-b6bc-814e-9613-f6ada52b6a38",
       "source_text": "Anthropic engineer:\n\n\"Don't just prompt Claude. Build a system that can prompt itself.\"\n\nIn this 45-minute session, she explains how Anthropic builds AI agents that can remember past work, learn from mistakes, and improve with every run.\n\nIt's one of the best free resources for https://t.co/yR4TWP5N9f https://t.co/DkBHrMMVGw",
       "created_time": "2026-07-13T05:52:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/xieike/status/2076283449388785847",
       "author": "xieike",
-      "headline": "Anthropic's \"Getting Started with Loops\" doc defines __four loop types from 25% to full autonomy__ — the turn-based-to-hands-off spectrum for Claude agents.",
+      "headline": "Anthropic's new doc on loop engineering defines __four autonomy levels__ — from turn-based at 25% to fully hands-off while you sleep.",
       "tweet_id": "39c1eba9-b6bc-8183-b5ac-f9c5d22a5f1e",
       "source_text": "THIS \"GETTING STARTED WITH LOOPS\" DOC TURNS CLAUDE INTO AN EMPLOYEE THAT SHIPS WHILE YOU SLEEP\n\nspoiler: prompt engineering didn't survive\n\nthe 4 loop types, from you-drive to fully hands-off:\n\n> turn-based - 25% autonomy. one task per round, control returns to you. best for https://t.co/UyWNxKfDEQ https://t.co/5TBfs5nLZa",
       "created_time": "2026-07-13T05:47:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/Granite0x/status/2076288237052600752",
       "author": "Granite0x",
-      "headline": "Elvis Saravia open-sourced the __prompt engineering guide 76k devs learned from__ — zero-shot to advanced, all free.",
+      "headline": "Elvis Saravia open-sourced the prompt engineering guide that __76K devs learned LLM prompting from__ — zero-shot to advanced, all free.",
       "tweet_id": "39c1eba9-b6bc-81aa-a02c-c16b89b1ac1e",
       "source_text": "He wrote the #1 prompt-engineering guide on the internet.\n\ninstead of keeping his LLM research private, he open-sourced it.\n\nElvis Saravia, PhD. Founder of DAIRAI. Ex-Meta AI. Ex-Elastic.\n\n'Prompt-Engineering-Guide' - the free guide 76K devs learned LLM prompting from. Zero-shot, https://t.co/ivJyQHcOyV https://t.co/ppTF9pOs3W",
       "created_time": "2026-07-13T05:47:00.000Z",
@@ -274,22 +274,74 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/heyshrutimishra/status/2076507817180074461",
-      "author": "heyshrutimishra",
-      "headline": "Satya Nadella calls it the __Reverse Information Paradox__: every prompt and correction you feed an AI vendor becomes their institutional knowledge, not yours.",
-      "tweet_id": "39c1eba9-b6bc-815b-a9ef-f216979790ff",
-      "source_text": "Satya Nadella just posted something that every enterprise board should read before their next AI contract renewal.\n\nHe calls it the Reverse Information Paradox and once you see it, you can't unsee it.\n\nKenneth Arrow's 1962 paradox was the seller's problem: to sell information, https://t.co/dBIZ2gsDiY https://t.co/6LSy44PPHg",
-      "created_time": "2026-07-13T05:37:00.000Z",
-      "canonical_url": "https://twitter.com/heyshrutimishra/status/2076507817180074461",
+      "url": "https://twitter.com/masonjames/status/2076311031186424184",
+      "author": "masonjames",
+      "headline": "Mason James compared Codex, Claude Code, Pi, Amp, and Hermes across the __design choices that make coding agents trustworthy__.",
+      "tweet_id": "39c1eba9-b6bc-8126-840a-c7d735574489",
+      "source_text": "The model writes the code. The harness determines whether we can trust how it got there.\n\nInspired by Lilian Weng’s framework, I compared Codex, Claude Code, Pi, Amp, and Hermes across the design choices that make agents effective. \n\nFull results:\nhttps://t.co/uez2orDlB6 https://t.co/KTjO1eMJ6m",
+      "created_time": "2026-07-13T05:32:00.000Z",
+      "canonical_url": "https://twitter.com/masonjames/status/2076311031186424184",
       "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://github.com/autopost/llm-mock",
+      "author": "roman_t",
+      "item_id": "hn:48890462",
+      "headline": "LLM-mock lets you __record and replay OpenAI/Anthropic calls__ in pytest — deterministic LLM tests without burning tokens.",
+      "subreddit": null,
+      "source_text": "Show HN: LLM-mock – Record and replay OpenAI/Anthropic calls in pytest (v1.0)",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-13T10:21:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/autopost/llm-mock",
+      "learning_score": 3
+    },
+    {
+      "url": "https://c410-f3r.github.io/thoughts/tls-handshakes-measuring-the-performance-of-4-cryptography-libraries/",
+      "author": "CaioFer",
+      "item_id": "hn:48890397",
+      "headline": "Benchmarking __TLS handshake performance across 4 cryptography libraries__ — the gaps are wider than you'd think.",
+      "subreddit": null,
+      "source_text": "TLS Handshakes: Measuring the Performance of 4 Cryptography Libraries",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-13T10:14:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://c410-f3r.github.io/thoughts/tls-handshakes-measuring-the-performance-of-4-cryptography-libraries",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/loopedautomation/agent-framework",
+      "author": "RatulMaharaj",
+      "item_id": "hn:48890395",
+      "headline": "An agent framework where the __entire agent is just one file__ — no scaffolding, no framework bloat.",
+      "subreddit": null,
+      "source_text": "Show HN: I built an agent framework where the agent is just one file",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-13T10:14:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/loopedautomation/agent-framework",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.debian.org/News/2026/20260712",
+      "author": "tapanjk",
+      "item_id": "hn:48890169",
+      "headline": "Debian hands __Bookworm security support over to the LTS team__ — end-of-era for the current stable release.",
+      "subreddit": null,
+      "source_text": "Debian: Security support for Bookworm handed over to the LTS team",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-13T09:47:29+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://debian.org/News/2026/20260712",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.pcgamer.com/gaming-industry/us-federal-reserve-taps-xbox-ceo-asha-sharma-who-just-laid-off-3-200-employees-to-lead-task-force-on-jobs/",
       "author": "robtherobber",
       "item_id": "hn:48889982",
-      "headline": "Xbox CEO Asha Sharma, who just __laid off 3,200 employees__, tapped by the Federal Reserve to lead a task force on jobs.",
+      "headline": "Xbox CEO Asha Sharma, who just __laid off 3,200 employees__, tapped by the Fed to lead a task force on jobs.",
       "subreddit": null,
       "source_text": "Xbox CEO Asha Sharma, who laid off 3,200 employees, to lead task force on jobs",
       "source_type": "hacker_news",
@@ -297,78 +349,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://pcgamer.com/gaming-industry/us-federal-reserve-taps-xbox-ceo-asha-sharma-who-just-laid-off-3-200-employees-to-lead-task-force-on-jobs",
       "learning_score": 2
-    },
-    {
-      "url": "https://sakana.ai/smart-cellular-bricks/",
-      "author": "hardmaru",
-      "item_id": "hn:48889967",
-      "headline": "Sakana AI introduces __Smart Cellular Bricks__, modular units designed to bring collective intelligence into the physical world.",
-      "subreddit": null,
-      "source_text": "Smart Cellular Bricks: Towards Collective Intelligence for the Physical World",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-13T09:25:29+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://sakana.ai/smart-cellular-bricks",
-      "learning_score": 2
-    },
-    {
-      "url": "https://motionobj.com/minutefile/",
-      "author": "hboon",
-      "item_id": "hn:48889881",
-      "headline": "MinuteFile turns meeting recordings into __searchable transcripts entirely on-device__ — no cloud, no uploads.",
-      "subreddit": null,
-      "source_text": "Show HN: Turn meeting recordings into searchable transcripts. All local",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-13T09:16:22+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://motionobj.com/minutefile",
-      "learning_score": 2
-    },
-    {
-      "url": "https://urlwatch.io/blog/domain-grace-period-recovery.php",
-      "author": "urlwatch",
-      "item_id": "hn:48889838",
-      "headline": "Your domain expired — here's what happens in the __30-day grace period__ before it's gone for good.",
-      "subreddit": null,
-      "source_text": "Domain Expired – You Have 30 Days Before It's Gone Forever",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-13T09:11:21+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://urlwatch.io/blog/domain-grace-period-recovery.php",
-      "learning_score": 2
-    },
-    {
-      "url": "https://narada.koley.in/",
-      "author": "arkokoley",
-      "item_id": "hn:48889782",
-      "headline": "Narada is a __browser built for AI agents__ that keeps you in control of what they see and do.",
-      "subreddit": null,
-      "source_text": "Show HN: Narada – a browser built for agents, under your control",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-13T09:03:55+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://narada.koley.in",
-      "learning_score": 2
-    },
-    {
-      "url": "https://artificialanalysis.ai/articles/muse-spark-1-1-everything-you-need-to-know",
-      "author": "himata4113",
-      "item_id": "hn:48889610",
-      "headline": "Meta's Muse Spark 1.1 gains __8 Intelligence Index points in three months__, closing the gap fast.",
-      "subreddit": null,
-      "source_text": "Muse Spark 1.1: Meta gains 8 Intelligence Index points in three months",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-13T08:37:00+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://artificialanalysis.ai/articles/muse-spark-1-1-everything-you-need-to-know",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-13T09:40:41.284849+00:00",
+    "generated_at": "2026-07-13T10:32:59.151331+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "45f0c32601cfe9a28ca5988f7bf0078be8875647117930b82111052d1c1b93aa"
+  "content_hash": "90d8a5a2a1ffb50ca3b7b2ba18b5b18757711e9cec10a7d98ad83ea3ddd09ce9"
 }
