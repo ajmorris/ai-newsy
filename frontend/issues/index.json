@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-12T00:00:00Z",
-  "issueCount": 83,
+  "generatedAt": "2026-07-13T00:00:00Z",
+  "issueCount": 84,
   "latestIssue": {
-    "slug": "2026-07-12",
-    "digestDate": "2026-07-12",
-    "displayDate": "Jul 12, 2026",
-    "issueNumber": "60712",
-    "subject": "ISSUE 60712 \u00b7 5 STORIES \u00b7 11 MIN READ",
-    "intro": "The creative world is pushing back hard today \u2014 from Australian artists fighting to keep AI companies from gutting copyright protections to critics sounding the alarm over an AI-generated \"actor\" landing a movie role, the tension between human creativity and artificial intelligence is front and center. Meanwhile, OpenAI is making a bold play for your living room with family-focused ChatGPT features, and Big Tech's data center boom is leaving a carbon footprint that rivals a mid-sized European nation. It's a day that really underscores the messy, real-world consequences of AI's rapid expansion into every corner of our lives.",
-    "articleCount": 5,
-    "urlPath": "/issues/2026-07-12.html",
-    "contentHash": "514abf79c28d9d98fc7e15cb4b19cb1562f7e8371919d8a881e1eecb82946e57"
+    "slug": "2026-07-13",
+    "digestDate": "2026-07-13",
+    "displayDate": "Jul 13, 2026",
+    "issueNumber": "60713",
+    "subject": "ISSUE 60713 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing with courtroom drama today as Apple drops a bombshell lawsuit against OpenAI, alleging a systematic scheme to poach over 400 employees and steal hardware trade secrets \u2014 even claiming candidates were told to bring \"actual parts\" to interviews. Beyond the legal fireworks, today's digest spans everything from how metaphors quietly shape AI policy debates to Christopher Nolan calling AI replacement fears \"nonsense,\" plus a surprisingly catchy Australian radio hit that might not be as human-made as it sounds.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-07-13.html",
+    "contentHash": "90d8a5a2a1ffb50ca3b7b2ba18b5b18757711e9cec10a7d98ad83ea3ddd09ce9"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-13",
+      "digestDate": "2026-07-13",
+      "displayDate": "Jul 13, 2026",
+      "issueNumber": "60713",
+      "subject": "ISSUE 60713 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing with courtroom drama today as Apple drops a bombshell lawsuit against OpenAI, alleging a systematic scheme to poach over 400 employees and steal hardware trade secrets \u2014 even claiming candidates were told to bring \"actual parts\" to interviews. Beyond the legal fireworks, today's digest spans everything from how metaphors quietly shape AI policy debates to Christopher Nolan calling AI replacement fears \"nonsense,\" plus a surprisingly catchy Australian radio hit that might not be as human-made as it sounds.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-13.html",
+      "contentHash": "90d8a5a2a1ffb50ca3b7b2ba18b5b18757711e9cec10a7d98ad83ea3ddd09ce9"
+    },
     {
       "slug": "2026-07-12",
       "digestDate": "2026-07-12",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-02.html",
       "contentHash": "f363ef488b9a87953329e3d8a5998e224e90a62a64a59461c7c4555f0ffa9475"
-    },
-    {
-      "slug": "2026-07-01",
-      "digestDate": "2026-07-01",
-      "displayDate": "Jul 01, 2026",
-      "issueNumber": "60701",
-      "subject": "ISSUE 60701 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The big story today is Anthropic getting the green light to bring its most powerful AI models back online, as the Trump administration lifts the export restrictions that had sidelined Fable 5 and Mythos 5 for weeks \u2014 a saga that looks more like political arm-wrestling than genuine national security policy. Beyond that regulatory drama, we've got Claude Code shipping with Sonnet 5 as its new default, the \"Father of the Internet\" Vint Cerf hanging up his hat with a fascinating prediction about AI agents, and Australia's creatives fighting a $50 billion proposal that could let AI companies feast on copyrighted content.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-01.html",
-      "contentHash": "87670900b49c17bcd2e7e495accb5a1cc3ad7f60cf98c4c48f7592063a2e6ac2"
     }
   ]
 }
