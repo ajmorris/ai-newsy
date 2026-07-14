@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 5334,
+      "source": "The Verge AI",
+      "title": "New York becomes the first state to enact a data center moratorium",
+      "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "New York Governor Kathy Hochul has signed the nation's first statewide data center moratorium, blocking new environmental permits for hyperscale data centers over 50 megawatts for up to a year. The executive order aims to give the state time to develop regulations protecting residents from rising energy prices and environmental impacts of AI-driven data center expansion. A separate bill passed by the state legislature with a stricter 20 megawatt threshold still awaits Hochul's signature. The governor's office says the higher 50 MW threshold is intended to avoid disrupting smaller data centers used by institutions like hospitals. The Department of Public Service will use the moratorium period to develop appropriate regulatory frameworks.",
+      "opinion": "This is a significant and potentially precedent-setting policy move that reflects growing tension between the explosive demand for AI infrastructure and local community concerns about energy costs and environmental impact. The moratorium is a reasonable pause-and-assess approach rather than an outright ban, giving regulators time to catch up with a rapidly evolving industry. However, there are real risks: New York could lose economic development opportunities to other states, and the moratorium…",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-07-14T09:00:00+00:00",
+      "fetched_at": "2026-07-14T09:08:11.386258+00:00"
+    },
+    {
       "id": 5333,
       "source": "Claude Code Changelog",
       "title": "v2.1.208",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/Sachin-Kansal.jpg?w=1024",
       "published_at": "2026-07-14T00:45:00+00:00",
       "fetched_at": "2026-07-14T08:11:47.552002+00:00"
-    },
-    {
-      "id": 5309,
-      "source": "TechCrunch AI",
-      "title": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
-      "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Singapore-based video-generation startup PixVerse has closed a $439 million Series C extension round, pushing its valuation past $2 billion. The round included investors such as Alibaba, Lollapalooza Capital, Ivy Capital, and others. Founded in 2023 by former ByteDance computer vision researcher Wang Changhu and former Lighthouse Capital executive Jaden Xie, PixVerse offers multiple model series: V-Series for consumer/API video generation, C-Series for professional film and commercial workflows, and R-Series world models for game development. The platform supports up to 4K resolution video with integrated audio and claims over 150 million registered users and 15 million monthly active users. Co-founder Xie argues the competitive landscape has narrowed, citing OpenAI shutting down Sora 2 and other companies struggling with quality. He attributes PixVerse's edge to superior data labeling…",
-      "opinion": "PixVerse's massive fundraise reflects the continued investor appetite for AI video generation despite an increasingly crowded and competitive market. The $2 billion valuation is aggressive for a company that won't disclose paying user numbers, which suggests monetization may still be nascent relative to its 150 million registered user base. The claim that OpenAI 'exited the business' by shutting down Sora 2 is a notable development if true, potentially validating the difficulty of making consum…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/69c14912d8f2b4b74d7b13ba_Copy-of-Red-Yellow-Retro-Vibrant-2025-Monthly-Calendar-1280-x-720-px-1200-x-630-px-8.jpeg?w=1200",
-      "published_at": "2026-07-14T00:00:00+00:00",
-      "fetched_at": "2026-07-14T08:11:47.76618+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 5334,
+          "source": "The Verge AI",
+          "title": "New York becomes the first state to enact a data center moratorium",
+          "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "New York Governor Kathy Hochul has signed the nation's first statewide data center moratorium, blocking new environmental permits for hyperscale data centers over 50 megawatts for up to a year. The executive order aims to give the state time to develop regulations protecting residents from rising energy prices and environmental impacts of AI-driven data center expansion. A separate bill passed by the state legislature with a stricter 20 megawatt threshold still awaits Hochul's signature. The governor's office says the higher 50 MW threshold is intended to avoid disrupting smaller data centers used by institutions like hospitals. The Department of Public Service will use the moratorium period to develop appropriate regulatory frameworks.",
+          "opinion": "This is a significant and potentially precedent-setting policy move that reflects growing tension between the explosive demand for AI infrastructure and local community concerns about energy costs and environmental impact. The moratorium is a reasonable pause-and-assess approach rather than an outright ban, giving regulators time to catch up with a rapidly evolving industry. However, there are real risks: New York could lose economic development opportunities to other states, and the moratorium…",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-07-14T09:00:00+00:00",
+          "fetched_at": "2026-07-14T09:08:11.386258+00:00"
+        },
         {
           "id": 5333,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/Sachin-Kansal.jpg?w=1024",
           "published_at": "2026-07-14T00:45:00+00:00",
           "fetched_at": "2026-07-14T08:11:47.552002+00:00"
-        },
-        {
-          "id": 5309,
-          "source": "TechCrunch AI",
-          "title": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
-          "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Singapore-based video-generation startup PixVerse has closed a $439 million Series C extension round, pushing its valuation past $2 billion. The round included investors such as Alibaba, Lollapalooza Capital, Ivy Capital, and others. Founded in 2023 by former ByteDance computer vision researcher Wang Changhu and former Lighthouse Capital executive Jaden Xie, PixVerse offers multiple model series: V-Series for consumer/API video generation, C-Series for professional film and commercial workflows, and R-Series world models for game development. The platform supports up to 4K resolution video with integrated audio and claims over 150 million registered users and 15 million monthly active users. Co-founder Xie argues the competitive landscape has narrowed, citing OpenAI shutting down Sora 2 and other companies struggling with quality. He attributes PixVerse's edge to superior data labeling…",
-          "opinion": "PixVerse's massive fundraise reflects the continued investor appetite for AI video generation despite an increasingly crowded and competitive market. The $2 billion valuation is aggressive for a company that won't disclose paying user numbers, which suggests monetization may still be nascent relative to its 150 million registered user base. The claim that OpenAI 'exited the business' by shutting down Sora 2 is a notable development if true, potentially validating the difficulty of making consum…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/69c14912d8f2b4b74d7b13ba_Copy-of-Red-Yellow-Retro-Vibrant-2025-Monthly-Calendar-1280-x-720-px-1200-x-630-px-8.jpeg?w=1200",
-          "published_at": "2026-07-14T00:00:00+00:00",
-          "fetched_at": "2026-07-14T08:11:47.76618+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/johnwhereareu/status/2076631471394345131",
       "author": "johnwhereareu",
-      "headline": "Anthropic released a free course on __loop engineering with Claude Code__ — covers the agentic loop, why voice beats writing, and automatic code review with draft PRs.",
+      "headline": "Anthropic released a free course on __loop engineering with Claude Code__ — covering agentic loops, why voice beats writing, and automatic code review with draft PRs.",
       "tweet_id": "39d1eba9-b6bc-81db-a6a1-e683d1a98314",
       "source_text": "Anthropic just released a free course on loop engineering with Fable 5\n\n00:00 - how Claude Code works under the hood\n05:01 - the agentic loop explained\n16:21 - the function that 99% of devs ignore\n19:01 - why voice beats writing\n32:34 - automatic code review with draft PRs\n58:39 https://t.co/cMjlHPQqRc",
       "created_time": "2026-07-14T03:27:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/chrislema/status/2076691393485939146",
       "author": "chrislema",
-      "headline": "Chris Lema argues the AI conversation has moved from prompts to __systems, agents, and encoded judgement__ — let AI do the prep, not the decisions.",
+      "headline": "Chris Lema says the shift in 18 months went from mastering prompts to building __systems with encoded judgement__ — let AI do the prep, not the decisions.",
       "tweet_id": "39c1eba9-b6bc-81f1-88bb-d4829a281416",
       "source_text": "18 months ago, I would have told you about prompts (how to get the most from them, etc.).\n\nToday I would tell you about systems (agents and workflows), and encoded judgement. \n\nDon't let AI make your decisions for you. But let them pull together the prep.",
       "created_time": "2026-07-13T23:12:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/raroque/status/2076707171300261891",
       "author": "raroque",
-      "headline": "Raroque open-sourced a custom AI agent that __integrates iMessage, Apple Notes, and Reminders__ — despite Apple having no API for any of them.",
+      "headline": "Raroque open-sourced a custom AI agent that __integrates iMessage, Apple Notes, and Reminders__ — despite Apple offering no API for any of them.",
       "tweet_id": "39c1eba9-b6bc-817d-93e3-ceea1199e92e",
       "source_text": "WE DONT GATEKEEP HERE 😤\n\n3 months ago I open sourced my custom AI agent and I made a ton of improvements + learned a few things I wanted to share\n\nfor example how i integrated iMessage, Apple notes and reminders even though Apple doesn't have an API 👀\n\nenjoy 🤝 https://t.co/mZLwjJS2jL",
       "created_time": "2026-07-13T23:12:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/hwchase17/status/2076784403414651035",
       "author": "hwchase17",
-      "headline": "Harrison Chase says a __custom eval harness is the only way to beat the labs__ on agentic product experience — here's how to build one.",
+      "headline": "Harrison Chase argues a __custom eval harness__ is the only way to beat the labs' agentic experience — here's how to build one.",
       "tweet_id": "39c1eba9-b6bc-818a-a8d2-e907aaabe9f5",
       "source_text": "> For me, agentic performance on spreadsheet tasks is the whole of Shortcut existence. So I'm going to beat competitors by obsessing over the harness.\n\ncustom harness is the only way you will beat the labs agentic experience\n\nheres how to build one: https://t.co/Y8QoykQGu5 https://t.co/iKUm6vu9dT",
       "created_time": "2026-07-13T23:12:00.000Z",
@@ -286,89 +286,89 @@
   ],
   "community_headlines": [
     {
-      "url": "https://politicianstocktracker.com/",
-      "author": "wbemaker",
-      "item_id": "hn:48903377",
-      "headline": "A new site tracks which politicians are __beating the S&P 500__ with their stock trades.",
+      "url": "https://news.ycombinator.com/item?id=48903854",
+      "author": "mingtianzhang",
+      "item_id": "hn:48903854",
+      "headline": "Show HN: someone built a __chat interface over Stanford's CS229 course notes__.",
       "subreddit": null,
-      "source_text": "Show HN: I built a site to see what politicians are beating S&P 500",
+      "source_text": "Show HN: We Built a Chat of Stanford's CS229 Course Notes",
       "source_type": "hacker_news",
-      "created_time": "2026-07-14T07:36:42+00:00",
+      "created_time": "2026-07-14T08:47:02+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://politicianstocktracker.com",
+      "canonical_url": "https://news.ycombinator.com/item?id=48903854",
       "learning_score": 3
     },
     {
-      "url": "https://fortune.com/article/how-did-us-spending-30-billion-dollars-on-laptops-result-in-first-generation-less-cognitively-capable-than-parents/",
-      "author": "01-_-",
-      "item_id": "hn:48903704",
-      "headline": "The U.S. spent __$30B swapping textbooks for laptops__ and may have produced the first generation less cognitively capable than their parents.",
+      "url": "https://mrkt30.com/tsmc-spies-got-10-years-taiwans-ai-basic-act-has-no-penalties-at-all/",
+      "author": "emsidisii",
+      "item_id": "hn:48904003",
+      "headline": "TSMC spies got 10 years in prison, but Taiwan's new __AI Basic Act has no penalties at all__.",
       "subreddit": null,
-      "source_text": "The U.S. spent $30B to ditch textbooks for laptops and tablets",
+      "source_text": "TSMC Spies Got 10 Years. Taiwan's AI Basic Act Has No Penalties at All",
       "source_type": "hacker_news",
-      "created_time": "2026-07-14T08:23:14+00:00",
+      "created_time": "2026-07-14T09:08:26+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://fortune.com/article/how-did-us-spending-30-billion-dollars-on-laptops-result-in-first-generation-less-cognitively-capable-than-parents",
+      "canonical_url": "https://mrkt30.com/tsmc-spies-got-10-years-taiwans-ai-basic-act-has-no-penalties-at-all",
       "learning_score": 2
     },
     {
-      "url": "https://mashable.com/tech/apple-iphone-ultra-price-rumor",
-      "author": "01-_-",
-      "item_id": "hn:48903698",
-      "headline": "Apple's iPhone Ultra is rumored to cost __double the iPhone 17 Pro Max__.",
+      "url": "https://pagezero.dev/blog/tanstack-start-cloudflare-full-stack",
+      "author": "pawelgalazka",
+      "item_id": "hn:48903956",
+      "headline": "PageZERO v2 goes all-in on __TanStack Start for full-stack development on Cloudflare__.",
       "subreddit": null,
-      "source_text": "Apple's iPhone Ultra will be double the price of the iPhone 17 Pro Max",
+      "source_text": "Embracing TanStack Start for full-stack development on Cloudflare – PageZERO v2",
       "source_type": "hacker_news",
-      "created_time": "2026-07-14T08:22:14+00:00",
+      "created_time": "2026-07-14T09:02:00+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://mashable.com/tech/apple-iphone-ultra-price-rumor",
+      "canonical_url": "https://pagezero.dev/blog/tanstack-start-cloudflare-full-stack",
       "learning_score": 2
     },
     {
-      "url": "https://github.com/Graphify-Labs/graphify",
-      "author": "adithyaharish",
-      "item_id": "hn:48903692",
-      "headline": "Graphify turns any folder of code or SQL schemas into a __queryable knowledge graph__.",
+      "url": "https://anchor.humanbrain.in/",
+      "author": "Alien1Being",
+      "item_id": "hn:48903916",
+      "headline": "A new atlas offers __3D neurochemical reconstruction of the human brainstem__ at unprecedented detail.",
       "subreddit": null,
-      "source_text": "Show HN: Turn any folder of code, SQL schemas into a queryable knowledge graph",
+      "source_text": "Atlas Neurochemical Characterization Human Brainstem with 3D Reconstruction",
       "source_type": "hacker_news",
-      "created_time": "2026-07-14T08:21:18+00:00",
+      "created_time": "2026-07-14T08:56:29+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/Graphify-Labs/graphify",
+      "canonical_url": "https://anchor.humanbrain.in",
       "learning_score": 2
     },
     {
-      "url": "https://news.ycombinator.com/item?id=48903663",
-      "author": "linzhangrun",
-      "item_id": "hn:48903663",
-      "headline": "Developers are asking whether __GPT-5.6 Sol in Codex is unusably slow__ or if it's just them.",
+      "url": "https://news.mit.edu/2026/toward-future-preserves-benefits-neurotechnology-for-all-0706",
+      "author": "rbanffy",
+      "item_id": "hn:48903915",
+      "headline": "MIT makes the case for a future that __preserves the benefits of neurotechnology for all__, not just the well-funded.",
       "subreddit": null,
-      "source_text": "Ask HN: Does anyone else find GPT-5.6 Sol in Codex slow?",
+      "source_text": "Toward a future that preserves benefits of neurotechnology for all",
       "source_type": "hacker_news",
-      "created_time": "2026-07-14T08:16:42+00:00",
+      "created_time": "2026-07-14T08:56:28+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=48903663",
+      "canonical_url": "https://news.mit.edu/2026/toward-future-preserves-benefits-neurotechnology-for-all-0706",
       "learning_score": 2
     },
     {
-      "url": "https://xandergos.github.io/terrain-diffusion/",
-      "author": "logdahl",
-      "item_id": "hn:48903653",
-      "headline": "InfiniteDiffusion uses diffusion models for __learned procedural open-world terrain generation__ — no hand-authored biomes required.",
+      "url": "https://vvka-141.github.io/pgmi/articles/test-postgresql-migrations-before-commit/",
+      "author": "aevlampiev",
+      "item_id": "hn:48903908",
+      "headline": "A practical guide to __testing PostgreSQL migrations before COMMIT__ — catch schema disasters before they land.",
       "subreddit": null,
-      "source_text": "InfiniteDiffusion: Learned Procedural Open-World Terrain Generation",
+      "source_text": "Test PostgreSQL migrations before COMMIT",
       "source_type": "hacker_news",
-      "created_time": "2026-07-14T08:15:14+00:00",
+      "created_time": "2026-07-14T08:56:07+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://xandergos.github.io/terrain-diffusion",
+      "canonical_url": "https://vvka-141.github.io/pgmi/articles/test-postgresql-migrations-before-commit",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-14T08:26:46.982139+00:00",
+    "generated_at": "2026-07-14T09:10:18.139886+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "85236358da44b3f6d2424df5e49ea08b67e557ef184f77b9962c1e657eda7899"
+  "content_hash": "a8b988d7cb0e8c03b9c88ba4702d3380d63ddd1fe44451bdf0b274bbfe3de396"
 }
