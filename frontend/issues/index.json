@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-13T00:00:00Z",
-  "issueCount": 84,
+  "generatedAt": "2026-07-14T00:00:00Z",
+  "issueCount": 85,
   "latestIssue": {
-    "slug": "2026-07-13",
-    "digestDate": "2026-07-13",
-    "displayDate": "Jul 13, 2026",
-    "issueNumber": "60713",
-    "subject": "ISSUE 60713 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing with courtroom drama today as Apple drops a bombshell lawsuit against OpenAI, alleging a systematic scheme to poach over 400 employees and steal hardware trade secrets \u2014 even claiming candidates were told to bring \"actual parts\" to interviews. Beyond the legal fireworks, today's digest spans everything from how metaphors quietly shape AI policy debates to Christopher Nolan calling AI replacement fears \"nonsense,\" plus a surprisingly catchy Australian radio hit that might not be as human-made as it sounds.",
+    "slug": "2026-07-14",
+    "digestDate": "2026-07-14",
+    "displayDate": "Jul 14, 2026",
+    "issueNumber": "60714",
+    "subject": "ISSUE 60714 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI talent gold rush is real \u2014 from GoCardless and Instagram founders to Tesla's Andrej Karpathy, a wave of already-successful tech leaders is flocking to companies like Anthropic, driven by a fear of missing what they see as a once-in-a-generation moment. It's a striking signal about where the industry's center of gravity is shifting. Today's digest also covers a $439M mega-raise for video-generation startup PixVerse, a provocative argument that Alan Turing's core AI assumptions were wrong all along, and fresh updates from Claude Code, OpenAI, and Uber's expanding AI ambitions.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-13.html",
-    "contentHash": "90d8a5a2a1ffb50ca3b7b2ba18b5b18757711e9cec10a7d98ad83ea3ddd09ce9"
+    "urlPath": "/issues/2026-07-14.html",
+    "contentHash": "a8b988d7cb0e8c03b9c88ba4702d3380d63ddd1fe44451bdf0b274bbfe3de396"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-14",
+      "digestDate": "2026-07-14",
+      "displayDate": "Jul 14, 2026",
+      "issueNumber": "60714",
+      "subject": "ISSUE 60714 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI talent gold rush is real \u2014 from GoCardless and Instagram founders to Tesla's Andrej Karpathy, a wave of already-successful tech leaders is flocking to companies like Anthropic, driven by a fear of missing what they see as a once-in-a-generation moment. It's a striking signal about where the industry's center of gravity is shifting. Today's digest also covers a $439M mega-raise for video-generation startup PixVerse, a provocative argument that Alan Turing's core AI assumptions were wrong all along, and fresh updates from Claude Code, OpenAI, and Uber's expanding AI ambitions.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-14.html",
+      "contentHash": "a8b988d7cb0e8c03b9c88ba4702d3380d63ddd1fe44451bdf0b274bbfe3de396"
+    },
     {
       "slug": "2026-07-13",
       "digestDate": "2026-07-13",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-03.html",
       "contentHash": "84253c3019101237cf3bc3cccb897a26b6d4389b7f3983b7a98b3f866823f3ec"
-    },
-    {
-      "slug": "2026-07-02",
-      "digestDate": "2026-07-02",
-      "displayDate": "Jul 02, 2026",
-      "issueNumber": "60702",
-      "subject": "ISSUE 60702 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry is facing a credibility check from multiple angles today \u2014 from a UN warning that AI's uneven spread could deepen global inequality, to a Tripadvisor investigation revealing that AI-generated review summaries are actively burying serious safety complaints like food poisoning and sexual harassment. Meanwhile, the hardware race heats up with SpaceX reportedly prototyping a sleek AI device to rival OpenAI's Jony Ive collaboration, and an Indian entrepreneur is betting $30 million that the entire concept of office software needs to be rebuilt from scratch for the AI era.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-02.html",
-      "contentHash": "f363ef488b9a87953329e3d8a5998e224e90a62a64a59461c7c4555f0ffa9475"
     }
   ]
 }
