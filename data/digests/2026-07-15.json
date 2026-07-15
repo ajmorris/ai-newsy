@@ -7,6 +7,32 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 5372,
+      "source": "NY Times",
+      "title": "Can Democrats Harness the Data Center Backlash?",
+      "url": "https://www.nytimes.com/2026/07/15/opinion/ai-data-center-politics.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "David Wallace-Wells and Robinson Meyer discuss the growing coalition of Americans opposing data centers and whether Democrats can politically harness this backlash, comparing its potential to movements like Occupy Wall Street or the Tea Party.",
+      "opinion": "The article appears to be an opinion/discussion piece exploring the political dimensions of anti-data center sentiment in the US. It frames the backlash against AI data centers as a potentially significant political movement that Democrats might capitalize on, drawing parallels to past grassroots movements. The framing suggests the authors see real political energy in this issue but are debating whether it can be effectively organized and channeled into lasting political power.",
+      "image_url": "",
+      "published_at": "2026-07-15T09:03:38+00:00",
+      "fetched_at": "2026-07-15T09:11:43.605194+00:00"
+    },
+    {
+      "id": 5373,
+      "source": "The Rundown AI",
+      "title": "Demis Hassabis puts a clock on AI oversight",
+      "url": "https://www.therundown.ai/p/demis-hassabis-puts-a-clock-on-ai-oversight",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google DeepMind CEO Demis Hassabis has published a proposal for a U.S.-led independent body that would safety-test advanced AI models before public release, modeled after FINRA (the financial industry's self-regulatory organization). The proposed body would screen frontier models for dangerous capabilities such as deception, bioweapons creation, and malicious hacking, with labs voluntarily submitting models for review 30 days before release. Hassabis wants the body operational before the end of 2026, warning that open-source AI capabilities could enter dangerous territory within 18 months. The proposal comes after the U.S. government's improvised handling of a recent Mythos and Fable AI ban. The article also covers reports that OpenAI's first hardware device, designed by Jony Ive, will be a screen-free AI speaker with cameras and sensors, facing an Apple trade-secrets lawsuit ahead of a…",
+      "opinion": "Hassabis's proposal is the most concrete AI oversight framework to come from a major lab leader, and the urgency he attaches — operational this year, with a stated 18-month window before open-source models could become dangerous — signals genuine concern rather than mere positioning. However, the fundamental tension is glaring: a self-regulatory body funded by the very labs it oversees, answerable to a government that has already demonstrated it will use AI regulation powers opportunistically,…",
+      "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0145ad5c-7050-4a4b-b79d-c4563d1dc57c/hassabispost.png?t=1784069595",
+      "published_at": "2026-07-15T09:00:00+00:00",
+      "fetched_at": "2026-07-15T09:11:51.581838+00:00"
+    },
+    {
       "id": 5371,
       "source": "Claude Code Changelog",
       "title": "v2.1.209",
@@ -83,38 +109,38 @@
       "image_url": "https://i.guim.co.uk/img/media/9544d9aec5fecace2e4a22bbef6ed963deb212db/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e35bd6ad92b4ed02064fe83942cbc61a",
       "published_at": "2026-07-15T04:00:45+00:00",
       "fetched_at": "2026-07-15T08:19:02.628475+00:00"
-    },
-    {
-      "id": 5349,
-      "source": "Guardian AI",
-      "title": "AI may be the toughest challenge Anthony Albanese faces this term. Guardrails are urgently needed | Peter Lewis",
-      "url": "https://www.theguardian.com/commentisfree/2026/jul/15/australia-ai-challenge-anthony-albanese",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "The article discusses the challenge artificial intelligence poses for Australian Prime Minister Anthony Albanese's current term, arguing that regulatory guardrails are urgently needed. It references Albanese's promise to fast-track approvals for datacentres to attract AI investment and his speech at the University of Sydney laying out a vision for confronting AI's economic and social challenges. The piece emphasizes the need for coherent decision-making and internal accountability in addressing the rapid pace of AI development.",
-      "opinion": "The author, Peter Lewis, takes a cautionary stance, arguing that AI represents perhaps the most significant challenge facing the Albanese government and that urgent regulatory action is needed. Lewis appears supportive of government intervention and the establishment of guardrails around AI technology, suggesting that without coherent policy and accountability structures, Australia risks being unprepared for AI's transformative impacts. The tone is one of concerned urgency rather than oppositio…",
-      "image_url": "https://i.guim.co.uk/img/media/74fa48e223da96ba2814bf20afa6091c78cd669e/374_128_2868_2295/master/2868.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=968a9e8c6331ca163e606daf8ee46d35",
-      "published_at": "2026-07-15T02:53:48+00:00",
-      "fetched_at": "2026-07-15T08:19:02.844287+00:00"
-    },
-    {
-      "id": 5335,
-      "source": "TechCrunch AI",
-      "title": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
-      "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "OpenAI researcher Miles Wang is reportedly leaving the company to launch an AI drug discovery startup, currently in talks to raise approximately $200 million at a $2 billion valuation, with Lightspeed potentially leading the round. Wang, who joined OpenAI in 2024 after dropping out of Harvard, co-authored research on using AI to accelerate scientific discovery. The startup may focus on AI models to find new uses for existing drugs, including those that previously failed in trials, which could offer faster paths to revenue than developing new drugs from scratch. Several other OpenAI researchers are expected to join. The move reflects broader investor enthusiasm for AI in life sciences, with competitors like Chai Discovery raising $400 million at a $3.8 billion valuation and Google DeepMind spinout Isomorphic Labs raising a $2.1 billion Series B. Wang disputed the reported funding figures…",
-      "opinion": "This story highlights the continuing trend of talented AI researchers leaving major labs like OpenAI to pursue domain-specific applications, particularly in biotech. The $2 billion pre-revenue valuation for a startup from a college dropout is eye-catching but not unprecedented in the current AI funding environment. The strategic focus on drug repurposing rather than de novo drug discovery is actually quite shrewd — it's a more tractable problem with clearer regulatory pathways and faster potent…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2021/10/biotech-header.jpg?resize=1200,807",
-      "published_at": "2026-07-15T00:27:04+00:00",
-      "fetched_at": "2026-07-15T08:18:57.56033+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 5372,
+          "source": "NY Times",
+          "title": "Can Democrats Harness the Data Center Backlash?",
+          "url": "https://www.nytimes.com/2026/07/15/opinion/ai-data-center-politics.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "David Wallace-Wells and Robinson Meyer discuss the growing coalition of Americans opposing data centers and whether Democrats can politically harness this backlash, comparing its potential to movements like Occupy Wall Street or the Tea Party.",
+          "opinion": "The article appears to be an opinion/discussion piece exploring the political dimensions of anti-data center sentiment in the US. It frames the backlash against AI data centers as a potentially significant political movement that Democrats might capitalize on, drawing parallels to past grassroots movements. The framing suggests the authors see real political energy in this issue but are debating whether it can be effectively organized and channeled into lasting political power.",
+          "image_url": "",
+          "published_at": "2026-07-15T09:03:38+00:00",
+          "fetched_at": "2026-07-15T09:11:43.605194+00:00"
+        },
+        {
+          "id": 5373,
+          "source": "The Rundown AI",
+          "title": "Demis Hassabis puts a clock on AI oversight",
+          "url": "https://www.therundown.ai/p/demis-hassabis-puts-a-clock-on-ai-oversight",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google DeepMind CEO Demis Hassabis has published a proposal for a U.S.-led independent body that would safety-test advanced AI models before public release, modeled after FINRA (the financial industry's self-regulatory organization). The proposed body would screen frontier models for dangerous capabilities such as deception, bioweapons creation, and malicious hacking, with labs voluntarily submitting models for review 30 days before release. Hassabis wants the body operational before the end of 2026, warning that open-source AI capabilities could enter dangerous territory within 18 months. The proposal comes after the U.S. government's improvised handling of a recent Mythos and Fable AI ban. The article also covers reports that OpenAI's first hardware device, designed by Jony Ive, will be a screen-free AI speaker with cameras and sensors, facing an Apple trade-secrets lawsuit ahead of a…",
+          "opinion": "Hassabis's proposal is the most concrete AI oversight framework to come from a major lab leader, and the urgency he attaches — operational this year, with a stated 18-month window before open-source models could become dangerous — signals genuine concern rather than mere positioning. However, the fundamental tension is glaring: a self-regulatory body funded by the very labs it oversees, answerable to a government that has already demonstrated it will use AI regulation powers opportunistically,…",
+          "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0145ad5c-7050-4a4b-b79d-c4563d1dc57c/hassabispost.png?t=1784069595",
+          "published_at": "2026-07-15T09:00:00+00:00",
+          "fetched_at": "2026-07-15T09:11:51.581838+00:00"
+        },
         {
           "id": 5371,
           "source": "Claude Code Changelog",
@@ -192,32 +218,6 @@
           "image_url": "https://i.guim.co.uk/img/media/9544d9aec5fecace2e4a22bbef6ed963deb212db/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e35bd6ad92b4ed02064fe83942cbc61a",
           "published_at": "2026-07-15T04:00:45+00:00",
           "fetched_at": "2026-07-15T08:19:02.628475+00:00"
-        },
-        {
-          "id": 5349,
-          "source": "Guardian AI",
-          "title": "AI may be the toughest challenge Anthony Albanese faces this term. Guardrails are urgently needed | Peter Lewis",
-          "url": "https://www.theguardian.com/commentisfree/2026/jul/15/australia-ai-challenge-anthony-albanese",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "The article discusses the challenge artificial intelligence poses for Australian Prime Minister Anthony Albanese's current term, arguing that regulatory guardrails are urgently needed. It references Albanese's promise to fast-track approvals for datacentres to attract AI investment and his speech at the University of Sydney laying out a vision for confronting AI's economic and social challenges. The piece emphasizes the need for coherent decision-making and internal accountability in addressing the rapid pace of AI development.",
-          "opinion": "The author, Peter Lewis, takes a cautionary stance, arguing that AI represents perhaps the most significant challenge facing the Albanese government and that urgent regulatory action is needed. Lewis appears supportive of government intervention and the establishment of guardrails around AI technology, suggesting that without coherent policy and accountability structures, Australia risks being unprepared for AI's transformative impacts. The tone is one of concerned urgency rather than oppositio…",
-          "image_url": "https://i.guim.co.uk/img/media/74fa48e223da96ba2814bf20afa6091c78cd669e/374_128_2868_2295/master/2868.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=968a9e8c6331ca163e606daf8ee46d35",
-          "published_at": "2026-07-15T02:53:48+00:00",
-          "fetched_at": "2026-07-15T08:19:02.844287+00:00"
-        },
-        {
-          "id": 5335,
-          "source": "TechCrunch AI",
-          "title": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
-          "url": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "OpenAI researcher Miles Wang is reportedly leaving the company to launch an AI drug discovery startup, currently in talks to raise approximately $200 million at a $2 billion valuation, with Lightspeed potentially leading the round. Wang, who joined OpenAI in 2024 after dropping out of Harvard, co-authored research on using AI to accelerate scientific discovery. The startup may focus on AI models to find new uses for existing drugs, including those that previously failed in trials, which could offer faster paths to revenue than developing new drugs from scratch. Several other OpenAI researchers are expected to join. The move reflects broader investor enthusiasm for AI in life sciences, with competitors like Chai Discovery raising $400 million at a $3.8 billion valuation and Google DeepMind spinout Isomorphic Labs raising a $2.1 billion Series B. Wang disputed the reported funding figures…",
-          "opinion": "This story highlights the continuing trend of talented AI researchers leaving major labs like OpenAI to pursue domain-specific applications, particularly in biotech. The $2 billion pre-revenue valuation for a startup from a college dropout is eye-catching but not unprecedented in the current AI funding environment. The strategic focus on drug repurposing rather than de novo drug discovery is actually quite shrewd — it's a more tractable problem with clearer regulatory pathways and faster potent…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2021/10/biotech-header.jpg?resize=1200,807",
-          "published_at": "2026-07-15T00:27:04+00:00",
-          "fetched_at": "2026-07-15T08:18:57.56033+00:00"
         }
       ]
     }
@@ -234,16 +234,6 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/pauliusztin_/status/2077068104539283653",
-      "author": "pauliusztin_",
-      "headline": "Paul Iusztin makes the case that agent memory is __at least four distinct layers__ — confusing them is the fastest way to build brittle AI.",
-      "tweet_id": "39e1eba9-b6bc-8169-918d-d6da4c1d6319",
-      "source_text": "AI engineers often talk about \"memory\" as if it's one thing.\n\nDisclaimer: It’s not!\n\nAn agent has at least four distinct memory layers:\n\nInternal knowledge (weights)\nContext window\nShort-term memory\nLong-term memory\n\nConfusing them is one of the fastest ways to build brittle AI https://t.co/iKlS6KYdX6",
-      "created_time": "2026-07-15T04:32:00.000Z",
-      "canonical_url": "https://twitter.com/pauliusztin_/status/2077068104539283653",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/VaibhavSisinty/status/2076946477231014310",
       "author": "VaibhavSisinty",
       "headline": "Bloomberg's Mark Gurman reports Apple is building an __M7 Ultra chip__ designed to run AI models locally — the laptop selling point is shifting from display to on-device inference.",
@@ -254,9 +244,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/SigsNYC/status/2077227434408038590",
+      "author": "SigsNYC",
+      "headline": "Hiten Shah makes the case that __seat-based pricing is dying__ — value is reorganizing around where it accumulates in the stack, not around headcount.",
+      "tweet_id": "39e1eba9-b6bc-81cd-b6d6-cd0c1177b499",
+      "source_text": "Good read from @hnshah. Sharp on why seat-based pricing worked so well for two decades and why it stops working now. Pricing is going to reorganize around where the value is accumulating in the stack, not around headcount. https://t.co/nZ0xOSocif",
+      "created_time": "2026-07-15T04:27:00.000Z",
+      "canonical_url": "https://twitter.com/SigsNYC/status/2077227434408038590",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/0xMovez/status/2077043573430636985",
       "author": "0xMovez",
-      "headline": "An Anthropic engineer says they cut agent costs from $90 to $20 — __Sonnet 5 hits Opus-class coding at one-quarter the price__.",
+      "headline": "An Anthropic engineer says they cut agent costs from $90 on Opus to $20 — __Sonnet 5 hits Opus-class coding at one-quarter the price__.",
       "tweet_id": "39e1eba9-b6bc-81df-ae68-ed989b9cd9f8",
       "source_text": "Anthropic engineer:\n\n\"We were spending $90 running agents on Opus. Sonnet 5 did the same thing for $20. Same outcomes.\n\nSonnet 5 hits Opus-class coding at 1/4 the cost\"\n\nIn this 1-hour workshop, Anthropic reveals how to build low-cost agentic systems with Sonnet 5.\n\nWorth more https://t.co/iG8aNG8fXw https://t.co/3Otg9lSowr",
       "created_time": "2026-07-15T04:12:00.000Z",
@@ -286,10 +286,23 @@
   ],
   "community_headlines": [
     {
+      "url": "https://garrit.xyz/posts/2026-07-15-you-should-be-using-a-meta-harness-for-agents",
+      "author": "garritfra",
+      "item_id": "hn:48917995",
+      "headline": "HN asks how people are actually __productive with GPT 5.6 Sol__ — workflows, not hype.",
+      "subreddit": null,
+      "source_text": "Be using a meta harness for agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-15T08:45:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://garrit.xyz/posts/2026-07-15-you-should-be-using-a-meta-harness-for-agents",
+      "learning_score": 3
+    },
+    {
       "url": "https://mrkt30.com/what-do-asmls-q2-2026-results-tell-us-about-the-ai-boom/",
       "author": "technewssss",
       "item_id": "hn:48917631",
-      "headline": "ASML's Q2 2026 results hint at what's actually happening __beneath the AI boom hype__.",
+      "headline": "ASML's Q2 2026 results hint at what's real and what's froth — __what the numbers tell us about the AI boom__.",
       "subreddit": null,
       "source_text": "What Do ASML's Q2 2026 Results Tell Us About the AI Boom?",
       "source_type": "hacker_news",
@@ -299,76 +312,63 @@
       "learning_score": 3
     },
     {
-      "url": "https://aztec-labs.com/blog/age-verification-state-2026",
-      "author": "rzk",
-      "item_id": "hn:48917712",
-      "headline": "Aztec Labs surveys __the state of age verification in 2026__ — and it's still a mess.",
+      "url": "https://news.ycombinator.com/item?id=48918150",
+      "author": "probst",
+      "item_id": "hn:48918150",
+      "headline": "Marketing in the age of slop — HN asks __how you cut through__ when everything looks AI-generated.",
       "subreddit": null,
-      "source_text": "The State of Age Verification in 2026",
+      "source_text": "Ask HN: How do you do marketing in the age of slop?",
       "source_type": "hacker_news",
-      "created_time": "2026-07-15T08:11:51+00:00",
+      "created_time": "2026-07-15T09:08:05+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://aztec-labs.com/blog/age-verification-state-2026",
+      "canonical_url": "https://news.ycombinator.com/item?id=48918150",
       "learning_score": 2
     },
     {
-      "url": "https://www.theguardian.com/money/2026/jul/15/the-scary-rise-of-locksmith-scams-i-was-shut-out-with-my-baby-and-charged-2200-to-get-back-in",
-      "author": "YeGoblynQueenne",
-      "item_id": "hn:48917647",
-      "headline": "Locksmith scams in the UK: one parent was __shut out with a baby and charged £2,200__ to get back in.",
+      "url": "https://fidget-spinner.github.io/posts/ultra-fast-tracing.html",
+      "author": "rbanffy",
+      "item_id": "hn:48918140",
+      "headline": "Python 3.15 adds an __ultra-low-overhead interpreter profiling mode__ that finally makes tracing cheap enough to leave on.",
       "subreddit": null,
-      "source_text": "Locksmith scams: 'I was shut out with my baby and charged £2,200 to get back in'",
+      "source_text": "Python 3.15's Ultra-Low Overhead Interpreter Profiling Mode – Ken Jin's Blog",
       "source_type": "hacker_news",
-      "created_time": "2026-07-15T08:02:13+00:00",
+      "created_time": "2026-07-15T09:07:02+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://theguardian.com/money/2026/jul/15/the-scary-rise-of-locksmith-scams-i-was-shut-out-with-my-baby-and-charged-2200-to-get-back-in",
+      "canonical_url": "https://fidget-spinner.github.io/posts/ultra-fast-tracing.html",
       "learning_score": 2
     },
     {
-      "url": "https://www.phoronix.com/news/FreeBSD-16-Goes-GPL-Free",
-      "author": "brandhout",
-      "item_id": "hn:48917607",
-      "headline": "FreeBSD 16 __retires the last GPL code__ from its base system.",
+      "url": "https://github.com/rekal-dev/rekal-cli/blob/main/docs/research/paper/rekal-paper.pdf",
+      "author": "guocongwudi",
+      "item_id": "hn:48918095",
+      "headline": "__Rekal__ makes the case that Git is the memory layer the AI development lifecycle has been missing.",
       "subreddit": null,
-      "source_text": "FreeBSD 16 Retires the Last GPL Code from Its Base System",
+      "source_text": "Why Git Is the Memory Solution for the ADLC [pdf]",
       "source_type": "hacker_news",
-      "created_time": "2026-07-15T07:56:14+00:00",
+      "created_time": "2026-07-15T09:01:07+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://phoronix.com/news/FreeBSD-16-Goes-GPL-Free",
+      "canonical_url": "https://github.com/rekal-dev/rekal-cli/blob/main/docs/research/paper/rekal-paper.pdf",
       "learning_score": 2
     },
     {
-      "url": "https://kore-nordmann.de/blog/always_go_with_a_monorepo.html",
-      "author": "ingve",
-      "item_id": "hn:48917560",
-      "headline": "Kore Nordmann makes the case that you should __always go with a monorepo__ — no exceptions.",
+      "url": "https://fortune.com/2026/07/13/us-worst-oecd-fair-pay-score/",
+      "author": "robtherobber",
+      "item_id": "hn:48918078",
+      "headline": "America pays workers just __27% of what its wealth allows__ — dead last in the OECD.",
       "subreddit": null,
-      "source_text": "Always Go with a Monorepo",
+      "source_text": "America pays workers just 27% of what its wealth allows – the worst in the OECD",
       "source_type": "hacker_news",
-      "created_time": "2026-07-15T07:50:06+00:00",
+      "created_time": "2026-07-15T08:58:17+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://kore-nordmann.de/blog/always_go_with_a_monorepo.html",
-      "learning_score": 2
-    },
-    {
-      "url": "https://repebble.com/blog/pebble-mega-update-july-2026",
-      "author": "smig0",
-      "item_id": "hn:48917500",
-      "headline": "The Pebble revival project ships its __July 2026 mega update__ with hardware and software progress.",
-      "subreddit": null,
-      "source_text": "Pebble July 2026 Update",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-15T07:40:49+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://repebble.com/blog/pebble-mega-update-july-2026",
+      "canonical_url": "https://fortune.com/2026/07/13/us-worst-oecd-fair-pay-score",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-15T08:36:55.234476+00:00",
+    "generated_at": "2026-07-15T09:14:36.139961+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "7cd511c98a2b860d81e10df5372dcda1456df0f61be8e75538e36b248ca1c371"
+  "content_hash": "1df2a5ea6940158ca29ef541800f64713aa925a9645028ede512f9e87bce1c4a"
 }
