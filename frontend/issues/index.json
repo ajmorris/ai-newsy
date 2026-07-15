@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-14T00:00:00Z",
-  "issueCount": 85,
+  "generatedAt": "2026-07-15T00:00:00Z",
+  "issueCount": 86,
   "latestIssue": {
-    "slug": "2026-07-14",
-    "digestDate": "2026-07-14",
-    "displayDate": "Jul 14, 2026",
-    "issueNumber": "60714",
-    "subject": "ISSUE 60714 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI talent gold rush is real \u2014 from GoCardless and Instagram founders to Tesla's Andrej Karpathy, a wave of already-successful tech leaders is flocking to companies like Anthropic, driven by a fear of missing what they see as a once-in-a-generation moment. It's a striking signal about where the industry's center of gravity is shifting. Today's digest also covers a $439M mega-raise for video-generation startup PixVerse, a provocative argument that Alan Turing's core AI assumptions were wrong all along, and fresh updates from Claude Code, OpenAI, and Uber's expanding AI ambitions.",
+    "slug": "2026-07-15",
+    "digestDate": "2026-07-15",
+    "displayDate": "Jul 15, 2026",
+    "issueNumber": "60715",
+    "subject": "ISSUE 60715 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing on multiple fronts today, but the biggest story might be the global tug-of-war over who controls AI's future \u2014 from China's CXMT planning a massive $10 billion IPO to fuel its semiconductor ambitions, to Australia's Prime Minister drawing a hard line against tech companies using creative works without permission, declaring them \"not up for grabs.\" Meanwhile, an OpenAI researcher is jumping ship to launch a $2 billion AI drug discovery startup, consciousness researcher Anil Seth is pushing back on claims that Claude might be sentient, and Palantir's deepening grip on British public services is raising alarms.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-14.html",
-    "contentHash": "a8b988d7cb0e8c03b9c88ba4702d3380d63ddd1fe44451bdf0b274bbfe3de396"
+    "urlPath": "/issues/2026-07-15.html",
+    "contentHash": "1df2a5ea6940158ca29ef541800f64713aa925a9645028ede512f9e87bce1c4a"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-15",
+      "digestDate": "2026-07-15",
+      "displayDate": "Jul 15, 2026",
+      "issueNumber": "60715",
+      "subject": "ISSUE 60715 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing on multiple fronts today, but the biggest story might be the global tug-of-war over who controls AI's future \u2014 from China's CXMT planning a massive $10 billion IPO to fuel its semiconductor ambitions, to Australia's Prime Minister drawing a hard line against tech companies using creative works without permission, declaring them \"not up for grabs.\" Meanwhile, an OpenAI researcher is jumping ship to launch a $2 billion AI drug discovery startup, consciousness researcher Anil Seth is pushing back on claims that Claude might be sentient, and Palantir's deepening grip on British public services is raising alarms.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-15.html",
+      "contentHash": "1df2a5ea6940158ca29ef541800f64713aa925a9645028ede512f9e87bce1c4a"
+    },
     {
       "slug": "2026-07-14",
       "digestDate": "2026-07-14",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-04.html",
       "contentHash": "fd7a6b9536131912ce32544b9db54b0fd5350d7790fda4240c992c80773f5a11"
-    },
-    {
-      "slug": "2026-07-03",
-      "digestDate": "2026-07-03",
-      "displayDate": "Jul 03, 2026",
-      "issueNumber": "60703",
-      "subject": "ISSUE 60703 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry is sending some mixed signals today. Mark Zuckerberg is admitting to staff that Meta's massive AI agent push \u2014 backed by $145 billion in infrastructure spending and thousands of reassigned employees \u2014 hasn't delivered results as fast as hoped, while a sandwich chain is name-dropping \"artificial intelligence\" 22 times in its IPO filing just to ride the hype wave. Meanwhile, the debate over who should actually be building and governing this technology is heating up, with Sam Altman pitching Washington on an international AI oversight framework, the U.S. government being urged to build its own frontier model Manhattan Project-style, and Australian musicians begging their PM to stop Big Tech from scraping their work to train AI systems.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-03.html",
-      "contentHash": "84253c3019101237cf3bc3cccb897a26b6d4389b7f3983b7a98b3f866823f3ec"
     }
   ]
 }
