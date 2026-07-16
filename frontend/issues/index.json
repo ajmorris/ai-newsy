@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-15T00:00:00Z",
-  "issueCount": 86,
+  "generatedAt": "2026-07-16T00:00:00Z",
+  "issueCount": 87,
   "latestIssue": {
-    "slug": "2026-07-15",
-    "digestDate": "2026-07-15",
-    "displayDate": "Jul 15, 2026",
-    "issueNumber": "60715",
-    "subject": "ISSUE 60715 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing on multiple fronts today, but the biggest story might be the global tug-of-war over who controls AI's future \u2014 from China's CXMT planning a massive $10 billion IPO to fuel its semiconductor ambitions, to Australia's Prime Minister drawing a hard line against tech companies using creative works without permission, declaring them \"not up for grabs.\" Meanwhile, an OpenAI researcher is jumping ship to launch a $2 billion AI drug discovery startup, consciousness researcher Anil Seth is pushing back on claims that Claude might be sentient, and Palantir's deepening grip on British public services is raising alarms.",
+    "slug": "2026-07-16",
+    "digestDate": "2026-07-16",
+    "displayDate": "Jul 16, 2026",
+    "issueNumber": "60716",
+    "subject": "ISSUE 60716 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "AI is getting personal this week \u2014 Microsoft is reportedly coaching its sales team to trash-talk OpenAI and Anthropic, positioning its own models as the smarter, cheaper choice and signaling a dramatic shift in a partnership that once defined the AI race. Beyond the corporate drama, today's digest spans everything from a $20 million bet on AI for oil and gas plants to a psychologist's provocative argument that banning kids from social media is missing the point entirely. Grab your coffee and let's dig in.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-15.html",
-    "contentHash": "1df2a5ea6940158ca29ef541800f64713aa925a9645028ede512f9e87bce1c4a"
+    "urlPath": "/issues/2026-07-16.html",
+    "contentHash": "06b025f4707a0727a8aef3b36e6a568d2ec1007fd5193c2f5d3f3b441020c29f"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-16",
+      "digestDate": "2026-07-16",
+      "displayDate": "Jul 16, 2026",
+      "issueNumber": "60716",
+      "subject": "ISSUE 60716 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "AI is getting personal this week \u2014 Microsoft is reportedly coaching its sales team to trash-talk OpenAI and Anthropic, positioning its own models as the smarter, cheaper choice and signaling a dramatic shift in a partnership that once defined the AI race. Beyond the corporate drama, today's digest spans everything from a $20 million bet on AI for oil and gas plants to a psychologist's provocative argument that banning kids from social media is missing the point entirely. Grab your coffee and let's dig in.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-16.html",
+      "contentHash": "06b025f4707a0727a8aef3b36e6a568d2ec1007fd5193c2f5d3f3b441020c29f"
+    },
     {
       "slug": "2026-07-15",
       "digestDate": "2026-07-15",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-05.html",
       "contentHash": "5a4d57d2e7ce6d3869a4e11a3478078443d7088492a9bbbbdade54fde58be0f3"
-    },
-    {
-      "slug": "2026-07-04",
-      "digestDate": "2026-07-04",
-      "displayDate": "Jul 04, 2026",
-      "issueNumber": "60704",
-      "subject": "ISSUE 60704 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The safety of children in the age of AI is front and center today, with UK watchdogs issuing urgent warnings to parents about AI \"nudification\" apps that can transform innocent photos of kids into explicit content \u2014 a chilling reminder that the risks of this technology aren't abstract. Beyond that sobering story, we're also diving into the new browser wars (spoiler: it's all about AI assistants now), the question of whether AI could pen the next great novel, and a fresh batch of Claude Code updates worth knowing about.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-04.html",
-      "contentHash": "fd7a6b9536131912ce32544b9db54b0fd5350d7790fda4240c992c80773f5a11"
     }
   ]
 }
