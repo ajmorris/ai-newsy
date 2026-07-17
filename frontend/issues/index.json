@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-16T00:00:00Z",
-  "issueCount": 87,
+  "generatedAt": "2026-07-17T00:00:00Z",
+  "issueCount": 88,
   "latestIssue": {
-    "slug": "2026-07-16",
-    "digestDate": "2026-07-16",
-    "displayDate": "Jul 16, 2026",
-    "issueNumber": "60716",
-    "subject": "ISSUE 60716 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "AI is getting personal this week \u2014 Microsoft is reportedly coaching its sales team to trash-talk OpenAI and Anthropic, positioning its own models as the smarter, cheaper choice and signaling a dramatic shift in a partnership that once defined the AI race. Beyond the corporate drama, today's digest spans everything from a $20 million bet on AI for oil and gas plants to a psychologist's provocative argument that banning kids from social media is missing the point entirely. Grab your coffee and let's dig in.",
+    "slug": "2026-07-17",
+    "digestDate": "2026-07-17",
+    "displayDate": "Jul 17, 2026",
+    "issueNumber": "60717",
+    "subject": "ISSUE 60717 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The big theme today is AI tools getting more powerful *and* more personal \u2014 from Google letting you star as a digital avatar in AI-generated videos to Roblox putting AI game creation in the hands of nine-year-olds on mobile. Meanwhile, Claude Code drops a meaty update with smarter session management, Russia's elite hackers are weaponizing fake CAPTCHAs in creative new ways, and a philosopher embedded inside Google DeepMind is wrestling with the question we're all quietly asking: what *is* this thing, really? Grab your coffee \u2014 there's a lot to unpack.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-16.html",
-    "contentHash": "06b025f4707a0727a8aef3b36e6a568d2ec1007fd5193c2f5d3f3b441020c29f"
+    "urlPath": "/issues/2026-07-17.html",
+    "contentHash": "c3bcee2e9627d31da602fec59a5b3817f058bc00c66387d5095f0890edebabc8"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-17",
+      "digestDate": "2026-07-17",
+      "displayDate": "Jul 17, 2026",
+      "issueNumber": "60717",
+      "subject": "ISSUE 60717 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The big theme today is AI tools getting more powerful *and* more personal \u2014 from Google letting you star as a digital avatar in AI-generated videos to Roblox putting AI game creation in the hands of nine-year-olds on mobile. Meanwhile, Claude Code drops a meaty update with smarter session management, Russia's elite hackers are weaponizing fake CAPTCHAs in creative new ways, and a philosopher embedded inside Google DeepMind is wrestling with the question we're all quietly asking: what *is* this thing, really? Grab your coffee \u2014 there's a lot to unpack.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-17.html",
+      "contentHash": "c3bcee2e9627d31da602fec59a5b3817f058bc00c66387d5095f0890edebabc8"
+    },
     {
       "slug": "2026-07-16",
       "digestDate": "2026-07-16",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-06.html",
       "contentHash": "1e32c99e425402682c994c73e18e94ad9dd0b7b4af4d373a0a13a1f42f364f47"
-    },
-    {
-      "slug": "2026-07-05",
-      "digestDate": "2026-07-05",
-      "displayDate": "Jul 05, 2026",
-      "issueNumber": "60705",
-      "subject": "ISSUE 60705 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Healthcare AI is stealing the spotlight today, with the NHS rolling out an AI triage tool to its app for 200,000 patients while Australian regulators sound the alarm over doctors' rapidly growing use of AI scribes \u2014 a neat illustration of how governments are simultaneously racing to deploy AI in healthcare and scrambling to set guardrails around it. Beyond the medical world, there's plenty of AI drama to dig into, from Midjourney trying to turn the tables on Hollywood studios suing it for copyright infringement, to Alibaba banning employees from using Claude Code, to serious questions about whether OpenAI's splashy UK investment was ever quite what ministers claimed. Grab your coffee \u2014 it's a packed one.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-05.html",
-      "contentHash": "5a4d57d2e7ce6d3869a4e11a3478078443d7088492a9bbbbdade54fde58be0f3"
     }
   ]
 }
