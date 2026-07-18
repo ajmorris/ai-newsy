@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-17T00:00:00Z",
-  "issueCount": 88,
+  "generatedAt": "2026-07-18T00:00:00Z",
+  "issueCount": 89,
   "latestIssue": {
-    "slug": "2026-07-17",
-    "digestDate": "2026-07-17",
-    "displayDate": "Jul 17, 2026",
-    "issueNumber": "60717",
-    "subject": "ISSUE 60717 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The big theme today is AI tools getting more powerful *and* more personal \u2014 from Google letting you star as a digital avatar in AI-generated videos to Roblox putting AI game creation in the hands of nine-year-olds on mobile. Meanwhile, Claude Code drops a meaty update with smarter session management, Russia's elite hackers are weaponizing fake CAPTCHAs in creative new ways, and a philosopher embedded inside Google DeepMind is wrestling with the question we're all quietly asking: what *is* this thing, really? Grab your coffee \u2014 there's a lot to unpack.",
+    "slug": "2026-07-18",
+    "digestDate": "2026-07-18",
+    "displayDate": "Jul 18, 2026",
+    "issueNumber": "60718",
+    "subject": "ISSUE 60718 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI boom's ripple effects are hitting everything from Silicon Valley wallets to smartphone prices in India today. Databricks just soared to a staggering $188 billion valuation as it rides the AI wave, while halfway around the world, the insatiable demand for AI-powering memory chips is crushing India's budget smartphone market with the steepest quarterly decline in six years. From billion-dollar fundraises and a $6,880 \"luxury AI phone\" to the social awkwardness of AI-recorded first dates, today's digest is a snapshot of an industry reshaping economies, gadgets, and even basic human etiquette.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-17.html",
-    "contentHash": "c3bcee2e9627d31da602fec59a5b3817f058bc00c66387d5095f0890edebabc8"
+    "urlPath": "/issues/2026-07-18.html",
+    "contentHash": "627943ad67a9262f846cb521adbd1131e64c4619bc3fab1a2e69e440296a1105"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-18",
+      "digestDate": "2026-07-18",
+      "displayDate": "Jul 18, 2026",
+      "issueNumber": "60718",
+      "subject": "ISSUE 60718 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI boom's ripple effects are hitting everything from Silicon Valley wallets to smartphone prices in India today. Databricks just soared to a staggering $188 billion valuation as it rides the AI wave, while halfway around the world, the insatiable demand for AI-powering memory chips is crushing India's budget smartphone market with the steepest quarterly decline in six years. From billion-dollar fundraises and a $6,880 \"luxury AI phone\" to the social awkwardness of AI-recorded first dates, today's digest is a snapshot of an industry reshaping economies, gadgets, and even basic human etiquette.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-18.html",
+      "contentHash": "627943ad67a9262f846cb521adbd1131e64c4619bc3fab1a2e69e440296a1105"
+    },
     {
       "slug": "2026-07-17",
       "digestDate": "2026-07-17",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-07.html",
       "contentHash": "75225b6c4d19e5578f99f61fe19f4931fb09af9d8678092052737a8e1f3ae691"
-    },
-    {
-      "slug": "2026-07-06",
-      "digestDate": "2026-07-06",
-      "displayDate": "Jul 06, 2026",
-      "issueNumber": "60706",
-      "subject": "ISSUE 60706 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI arms race is heating up on multiple fronts today. Meta is making bold claims that its in-training model \"Watermelon\" has caught up to OpenAI's GPT-5.5, while a Guardian investigation reveals that Britain's ambitious AI growth zones may be built on broken promises \u2014 with a landmark Scottish datacentre project exposed for having no realistic path to meeting its renewable energy commitments. We've also got stories on Israel's AI-powered targeting system identifying 850,000 targets across Gaza and Lebanon, China's push to crack robotic dexterity, wealthy parents handing their kids' education over to AI tutors, and the ongoing fight over copyright in the age of generative AI.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-06.html",
-      "contentHash": "1e32c99e425402682c994c73e18e94ad9dd0b7b4af4d373a0a13a1f42f364f47"
     }
   ]
 }
