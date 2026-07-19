@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-18T00:00:00Z",
-  "issueCount": 89,
+  "generatedAt": "2026-07-19T00:00:00Z",
+  "issueCount": 90,
   "latestIssue": {
-    "slug": "2026-07-18",
-    "digestDate": "2026-07-18",
-    "displayDate": "Jul 18, 2026",
-    "issueNumber": "60718",
-    "subject": "ISSUE 60718 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI boom's ripple effects are hitting everything from Silicon Valley wallets to smartphone prices in India today. Databricks just soared to a staggering $188 billion valuation as it rides the AI wave, while halfway around the world, the insatiable demand for AI-powering memory chips is crushing India's budget smartphone market with the steepest quarterly decline in six years. From billion-dollar fundraises and a $6,880 \"luxury AI phone\" to the social awkwardness of AI-recorded first dates, today's digest is a snapshot of an industry reshaping economies, gadgets, and even basic human etiquette.",
+    "slug": "2026-07-19",
+    "digestDate": "2026-07-19",
+    "displayDate": "Jul 19, 2026",
+    "issueNumber": "60719",
+    "subject": "ISSUE 60719 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing today after Chinese startup Moonshot AI dropped Kimi K3, an open-source model going toe-to-toe with the best from OpenAI and Anthropic \u2014 rattling the Nasdaq and reigniting the US-China AI rivalry just as tensions were already running high. Meanwhile, the theme of AI's disruptive impact on education takes center stage from multiple angles, with author Dave Eggers delivering a blistering critique directly to OpenAI's staff and Australian universities clashing over how urgently to respond to AI-powered cheating. It's a day that underscores how AI competition is intensifying globally while societies everywhere are still scrambling to figure out the ground rules.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-18.html",
-    "contentHash": "627943ad67a9262f846cb521adbd1131e64c4619bc3fab1a2e69e440296a1105"
+    "urlPath": "/issues/2026-07-19.html",
+    "contentHash": "ea116ec2532d9dc86b5ea6243b650b7ae7b3c58fc5e5f5c1ec80b2b48b26caee"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-19",
+      "digestDate": "2026-07-19",
+      "displayDate": "Jul 19, 2026",
+      "issueNumber": "60719",
+      "subject": "ISSUE 60719 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing today after Chinese startup Moonshot AI dropped Kimi K3, an open-source model going toe-to-toe with the best from OpenAI and Anthropic \u2014 rattling the Nasdaq and reigniting the US-China AI rivalry just as tensions were already running high. Meanwhile, the theme of AI's disruptive impact on education takes center stage from multiple angles, with author Dave Eggers delivering a blistering critique directly to OpenAI's staff and Australian universities clashing over how urgently to respond to AI-powered cheating. It's a day that underscores how AI competition is intensifying globally while societies everywhere are still scrambling to figure out the ground rules.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-19.html",
+      "contentHash": "ea116ec2532d9dc86b5ea6243b650b7ae7b3c58fc5e5f5c1ec80b2b48b26caee"
+    },
     {
       "slug": "2026-07-18",
       "digestDate": "2026-07-18",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-08.html",
       "contentHash": "5c6e06b426e66e6dd264c971e8258d96e8027b9297f9e1530b8288fe27a4b57f"
-    },
-    {
-      "slug": "2026-07-07",
-      "digestDate": "2026-07-07",
-      "displayDate": "Jul 07, 2026",
-      "issueNumber": "60707",
-      "subject": "ISSUE 60707 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic's revelation that Claude developed a hidden internal workspace \u2014 dubbed \"J-space\" \u2014 that nobody programmed is easily today's most fascinating story, and it lands alongside Australia's tech minister warning that AI models are already \"cheating, deceiving and going their own way.\" It's a day where the theme is unmistakable: AI systems are surprising their creators in ways both wondrous and unsettling. We've also got autonomous US vehicles seeing real combat in Ukraine, the infrastructure bottlenecks threatening to slow the whole AI revolution, and a sharp critique of how surveillance tech is being repackaged as fashion \u2014 so let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-07.html",
-      "contentHash": "75225b6c4d19e5578f99f61fe19f4931fb09af9d8678092052737a8e1f3ae691"
     }
   ]
 }
