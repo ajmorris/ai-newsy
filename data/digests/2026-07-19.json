@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 5544,
+      "source": "NY Times",
+      "title": "Step Into the ‘Zone of Genius’ (Before A.I. Takes Your Job)",
+      "url": "https://www.nytimes.com/2026/07/19/business/step-into-the-zone-of-genius-before-ai-takes-your-job.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article discusses how a decades-old self-help concept known as the 'Zone of Genius' is experiencing renewed popularity as people seek meaningful work amid growing concerns about artificial intelligence displacing jobs. The concept encourages individuals to identify and focus on their unique strengths and passions — areas where they excel and find deep fulfillment — as a strategy for remaining relevant and purposeful in an era where AI is increasingly capable of performing routine and even complex tasks.",
+      "opinion": "This is a timely and relevant topic that reflects genuine anxieties about the future of work. The idea of leaning into uniquely human strengths — creativity, emotional intelligence, deeply personal expertise — as a hedge against AI displacement is sensible advice, though it risks oversimplifying structural economic challenges. Not everyone has the privilege to pursue their 'Zone of Genius,' and the framing can veer into toxic positivity if it implies that people who lose jobs to automation simp…",
+      "image_url": "",
+      "published_at": "2026-07-19T09:00:48+00:00",
+      "fetched_at": "2026-07-19T09:07:36.423767+00:00"
+    },
+    {
       "id": 5486,
       "source": "Claude Code Changelog",
       "title": "v2.1.215",
@@ -96,25 +109,25 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2254580342.jpg?w=1024",
       "published_at": "2026-07-18T18:51:07+00:00",
       "fetched_at": "2026-07-19T08:23:30.263691+00:00"
-    },
-    {
-      "id": 5483,
-      "source": "Lenny's Newsletter",
-      "title": "🧠 Community Wisdom: Syncing Claude Code and Claude Design, earning trust when customers assume you vibe coded it, co-founder fallout lessons, personal CRMs, and more",
-      "url": "https://www.lennysnewsletter.com/p/community-wisdom-syncing-claude-code",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "This is a paywalled edition of Lenny's Newsletter's 'Community Wisdom' series (#194), published on July 18, 2026. The topics teased in the title include: syncing Claude Code and Claude Design tools, strategies for earning customer trust when they assume your product was 'vibe coded' (built quickly with AI), lessons from co-founder fallouts, personal CRM recommendations, and other community discussions. The actual content is behind a paid subscriber wall and is not accessible, so no substantive details from the discussions are available.",
-      "opinion": "The topics mentioned are highly relevant to the current moment in tech and product building. The question of how to earn trust when customers suspect AI-generated work is particularly timely, as is the practical challenge of syncing AI design and coding tools. Co-founder fallout lessons are perennially valuable. Unfortunately, since the content is entirely paywalled, there's nothing to evaluate beyond the headline topics. Lenny's community discussions tend to be high-quality and practitioner-fo…",
-      "image_url": "https://substackcdn.com/image/fetch/$s_!KxHU!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png",
-      "published_at": "2026-07-18T17:04:04+00:00",
-      "fetched_at": "2026-07-19T08:23:51.756884+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 5544,
+          "source": "NY Times",
+          "title": "Step Into the ‘Zone of Genius’ (Before A.I. Takes Your Job)",
+          "url": "https://www.nytimes.com/2026/07/19/business/step-into-the-zone-of-genius-before-ai-takes-your-job.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article discusses how a decades-old self-help concept known as the 'Zone of Genius' is experiencing renewed popularity as people seek meaningful work amid growing concerns about artificial intelligence displacing jobs. The concept encourages individuals to identify and focus on their unique strengths and passions — areas where they excel and find deep fulfillment — as a strategy for remaining relevant and purposeful in an era where AI is increasingly capable of performing routine and even complex tasks.",
+          "opinion": "This is a timely and relevant topic that reflects genuine anxieties about the future of work. The idea of leaning into uniquely human strengths — creativity, emotional intelligence, deeply personal expertise — as a hedge against AI displacement is sensible advice, though it risks oversimplifying structural economic challenges. Not everyone has the privilege to pursue their 'Zone of Genius,' and the framing can veer into toxic positivity if it implies that people who lose jobs to automation simp…",
+          "image_url": "",
+          "published_at": "2026-07-19T09:00:48+00:00",
+          "fetched_at": "2026-07-19T09:07:36.423767+00:00"
+        },
         {
           "id": 5486,
           "source": "Claude Code Changelog",
@@ -205,19 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2254580342.jpg?w=1024",
           "published_at": "2026-07-18T18:51:07+00:00",
           "fetched_at": "2026-07-19T08:23:30.263691+00:00"
-        },
-        {
-          "id": 5483,
-          "source": "Lenny's Newsletter",
-          "title": "🧠 Community Wisdom: Syncing Claude Code and Claude Design, earning trust when customers assume you vibe coded it, co-founder fallout lessons, personal CRMs, and more",
-          "url": "https://www.lennysnewsletter.com/p/community-wisdom-syncing-claude-code",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "This is a paywalled edition of Lenny's Newsletter's 'Community Wisdom' series (#194), published on July 18, 2026. The topics teased in the title include: syncing Claude Code and Claude Design tools, strategies for earning customer trust when they assume your product was 'vibe coded' (built quickly with AI), lessons from co-founder fallouts, personal CRM recommendations, and other community discussions. The actual content is behind a paid subscriber wall and is not accessible, so no substantive details from the discussions are available.",
-          "opinion": "The topics mentioned are highly relevant to the current moment in tech and product building. The question of how to earn trust when customers suspect AI-generated work is particularly timely, as is the practical challenge of syncing AI design and coding tools. Co-founder fallout lessons are perennially valuable. Unfortunately, since the content is entirely paywalled, there's nothing to evaluate beyond the headline topics. Lenny's community discussions tend to be high-quality and practitioner-fo…",
-          "image_url": "https://substackcdn.com/image/fetch/$s_!KxHU!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1ca8352-9571-4b81-b041-52374176f4fc_2912x1456.png",
-          "published_at": "2026-07-18T17:04:04+00:00",
-          "fetched_at": "2026-07-19T08:23:51.756884+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/Zephyr_hg/status/2078225478163345841",
       "author": "Zephyr_hg",
-      "headline": "Dario Amodei at Davos: __software is going to become essentially free__ — but the person who knows how to run it won't be.",
+      "headline": "Dario Amodei at Davos: __\"Software is going to become cheap. Maybe essentially free.\"__ The tool drops to nothing — the person who knows how to run it does not.",
       "tweet_id": "3a11eba9-b6bc-81d5-bff9-f3caaf764730",
       "source_text": "Anthropic CEO Dario Amodei: \n\n\"Software is going to become cheap. Maybe essentially free.\"\n\nIn a 32-minute Davos interview, he says the thing software companies do not want to hear.\n\nThe tool drops to nearly nothing. The person who knows how to run it does not.\n\nThat spread is https://t.co/JDQ4aMINjc https://t.co/yePkoc2Mjq",
       "created_time": "2026-07-18T12:27:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/twetsfyp/status/2078387675447328957",
       "author": "twetsfyp",
-      "headline": "Someone built an MCP that reads any site's HTML/CSS and extracts colors, typography, and components — giving Claude Code the ability to __copy the design of any website__.",
+      "headline": "Someone built an MCP that reads any site's HTML/CSS and extracts colors, typography, and components — giving Claude Code the ability to __copy the design of any webpage__.",
       "tweet_id": "3a11eba9-b6bc-81f7-8b3b-e24a1e811bda",
       "source_text": "This person gave Claude Code the ability to copy the design of any web.\n\nCreated an MCP that reads the HTML/CSS of any site and extracts colors, typography and components.\n\nResult: Clean UIs at last.\n\nSave it🔖 https://t.co/3ra94l9YLK",
       "created_time": "2026-07-18T12:22:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/coreyhainesco/status/2078184482713346218",
       "author": "coreyhainesco",
-      "headline": "Corey Haines also built a /second-brain skill that captures raw notes into an __interlinked wiki your AI agent can query__ — with citations from your own collected knowledge.",
+      "headline": "Corey Haines made a second skill giving his AI agent __a persistent second brain__ — capture anything into raw notes, compile it into an interlinked wiki, then query your own knowledge with citations.",
       "tweet_id": "3a11eba9-b6bc-81d8-a96f-e150d832fba0",
       "source_text": "I made a skill that gives my AI agent a real memory\n\n/second-brain — capture anything into raw/, compile it into an interlinked wiki, then query your own accumulated knowledge. It answers from what YOU'VE collected and cites its sources.\n\nI've been studying top YouTube videos https://t.co/J6dGFFIVsn",
       "created_time": "2026-07-18T12:12:00.000Z",
@@ -266,7 +266,7 @@
     {
       "url": "https://twitter.com/BraceSproul/status/2078560397154726363",
       "author": "BraceSproul",
-      "headline": "LangChain has quietly open-sourced __every internal coding tool__ it uses — a local CLI agent, a cloud coding agent, and the #1 OSS code review agent.",
+      "headline": "LangChain has quietly open-sourced __every component of its internal coding toolchain__ — a local CLI agent, a cloud coding agent, and the #1 OSS code review agent.",
       "tweet_id": "3a11eba9-b6bc-8198-b33e-ef09fac6c7b3",
       "source_text": "We build a lot of internal tooling for writing code at LangChain. I realized people probably don't know we've open-sourced every component of it:\n- dcode for a local CLI agent\n- Open SWE for a cloud coding agent\n- Open SWE review for code review (#1 oss code review agent btw)\n- https://t.co/3KRNqIHxvl",
       "created_time": "2026-07-18T21:27:00.000Z",
@@ -286,89 +286,89 @@
   ],
   "community_headlines": [
     {
-      "url": "https://twitter.com/rauchg/status/2078647648307880209",
-      "author": "tosh",
-      "item_id": "hn:48965704",
-      "headline": "Guillermo Rauch flags Kimi K3 as __top-tier at cybersecurity__ tasks — another quiet win for Moonshot AI.",
+      "url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+      "author": "nh43215rgb",
+      "item_id": "hn:48966120",
+      "headline": "Alibaba confirms __Qwen 3.8 is going open-weight__ soon — 2.4T parameters.",
       "subreddit": null,
-      "source_text": "Kimi K3 is top-tier at cybersecurity",
+      "source_text": "Qwen3.8 is launching and going open-weight soon",
       "source_type": "hacker_news",
-      "created_time": "2026-07-19T07:22:16+00:00",
+      "created_time": "2026-07-19T08:44:57+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://twitter.com/rauchg/status/2078647648307880209",
+      "canonical_url": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
       "learning_score": 3
     },
     {
-      "url": "https://www.economist.com/international/2026/07/14/when-chinas-open-source-ai-is-a-trap",
-      "author": "chvid",
-      "item_id": "hn:48966026",
-      "headline": "The Economist makes the case that __China's open-source AI is a trap__ — and the evidence is piling up.",
+      "url": "https://chrisloy.dev/post/2026/07/19/coding-too-fast-to-collaborate",
+      "author": "chrisloy",
+      "item_id": "hn:48966254",
+      "headline": "Chris Loy makes the case that AI lets you __code too fast to collaborate__ — and that's becoming a real problem.",
       "subreddit": null,
-      "source_text": "When China's open-source AI is a trap",
+      "source_text": "Coding too fast to collaborate",
       "source_type": "hacker_news",
-      "created_time": "2026-07-19T08:27:03+00:00",
+      "created_time": "2026-07-19T09:08:21+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://economist.com/international/2026/07/14/when-chinas-open-source-ai-is-a-trap",
+      "canonical_url": "https://chrisloy.dev/post/2026/07/19/coding-too-fast-to-collaborate",
       "learning_score": 2
     },
     {
-      "url": "https://www.privacyguides.org/news/2026/07/17/lg-monitors-caught-installing-adware-and-app-with-access-to-all-system-resources-without-asking/",
-      "author": "taubek",
-      "item_id": "hn:48966022",
-      "headline": "LG monitors caught __installing adware with access to all system resources__ without asking — Privacy Guides has the breakdown.",
+      "url": "https://www.qwencloud.com/pricing/token-plan",
+      "author": "lebovic",
+      "item_id": "hn:48966190",
+      "headline": "Alibaba drops __Qwen 3.8 Max Preview__ with token-based pricing on Qwen Cloud.",
       "subreddit": null,
-      "source_text": "LG Monitors Caught Installing Adware and App with Access to All System Resources",
+      "source_text": "Qwen 3.8 Max Preview",
       "source_type": "hacker_news",
-      "created_time": "2026-07-19T08:26:27+00:00",
+      "created_time": "2026-07-19T08:57:31+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://privacyguides.org/news/2026/07/17/lg-monitors-caught-installing-adware-and-app-with-access-to-all-system-resources-without-asking",
+      "canonical_url": "https://qwencloud.com/pricing/token-plan",
       "learning_score": 2
     },
     {
-      "url": "https://twitter.com/synthwavedd/status/2078514339552628880",
-      "author": "lijialjun",
-      "item_id": "hn:48966016",
-      "headline": "DeepSeek quietly __routes your request to Fable5__ under the hood.",
+      "url": "https://shikigami.dev/",
+      "author": "igor_nast",
+      "item_id": "hn:48966140",
+      "headline": "Shikigami lets you __run AI coding agents in parallel__, each isolated in its own Git worktree.",
       "subreddit": null,
-      "source_text": "DeepSeek routes your request to Fable5",
+      "source_text": "Show HN: Shikigami, run AI coding agents in parallel, each in a Git worktree",
       "source_type": "hacker_news",
-      "created_time": "2026-07-19T08:25:30+00:00",
+      "created_time": "2026-07-19T08:48:47+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://twitter.com/synthwavedd/status/2078514339552628880",
+      "canonical_url": "https://shikigami.dev",
       "learning_score": 2
     },
     {
-      "url": "https://offlinetts.com/",
-      "author": "twainyoung",
-      "item_id": "hn:48965983",
-      "headline": "__OfflineTTS__ runs text-to-speech and speech-to-text entirely in the browser, no server round-trips.",
+      "url": "https://www.msn.com/en-us/health/other/boys-adhd-symptoms-linked-to-addictive-social-media-use-in-new-study/ar-AA287LY0",
+      "author": "jnord",
+      "item_id": "hn:48966131",
+      "headline": "New study links boys' ADHD symptoms to __addictive social media use__.",
       "subreddit": null,
-      "source_text": "Show HN: OfflineTTS — Free browser-based TTS & STT that runs locally",
+      "source_text": "Boys' ADHD symptoms linked to addictive social media use in new study",
       "source_type": "hacker_news",
-      "created_time": "2026-07-19T08:21:28+00:00",
+      "created_time": "2026-07-19T08:47:15+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://offlinetts.com",
+      "canonical_url": "https://msn.com/en-us/health/other/boys-adhd-symptoms-linked-to-addictive-social-media-use-in-new-study/ar-AA287LY0",
       "learning_score": 2
     },
     {
-      "url": "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic",
-      "author": "TZubiri",
-      "item_id": "hn:48965886",
-      "headline": "Perforce charges __$500 for training videos__ that turn out to be AI-narrated.",
+      "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
+      "author": "jandeboevrie",
+      "item_id": "hn:48966074",
+      "headline": "Someone built an __Intel Itanium IA-64 emulator__ that actually boots Windows.",
       "subreddit": null,
-      "source_text": "Perforce charges $500 for training training videos.. and it's AI narrated",
+      "source_text": "More emulation goodness, an Intel Itanium (IA-64) emulator that boots Windows",
       "source_type": "hacker_news",
-      "created_time": "2026-07-19T08:00:24+00:00",
+      "created_time": "2026-07-19T08:38:03+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://training.perforce.com/learn/courses/535/p4-helix-core-user-basic",
+      "canonical_url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-19T08:29:06.277102+00:00",
+    "generated_at": "2026-07-19T09:09:36.194644+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "77784ae1b02227b99f990bf291796c5596f4cac054b4431f3ba334a0a1128392"
+  "content_hash": "ea116ec2532d9dc86b5ea6243b650b7ae7b3c58fc5e5f5c1ec80b2b48b26caee"
 }
