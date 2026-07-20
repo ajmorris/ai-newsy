@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-19T00:00:00Z",
-  "issueCount": 90,
+  "generatedAt": "2026-07-20T00:00:00Z",
+  "issueCount": 91,
   "latestIssue": {
-    "slug": "2026-07-19",
-    "digestDate": "2026-07-19",
-    "displayDate": "Jul 19, 2026",
-    "issueNumber": "60719",
-    "subject": "ISSUE 60719 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing today after Chinese startup Moonshot AI dropped Kimi K3, an open-source model going toe-to-toe with the best from OpenAI and Anthropic \u2014 rattling the Nasdaq and reigniting the US-China AI rivalry just as tensions were already running high. Meanwhile, the theme of AI's disruptive impact on education takes center stage from multiple angles, with author Dave Eggers delivering a blistering critique directly to OpenAI's staff and Australian universities clashing over how urgently to respond to AI-powered cheating. It's a day that underscores how AI competition is intensifying globally while societies everywhere are still scrambling to figure out the ground rules.",
+    "slug": "2026-07-20",
+    "digestDate": "2026-07-20",
+    "displayDate": "Jul 20, 2026",
+    "issueNumber": "60720",
+    "subject": "ISSUE 60720 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI race is heating up on every front today \u2014 from Silicon Valley nervously watching China close the gap in AI capabilities, to Jensen Huang locking down a massive robotics and sovereign AI push in Japan worth billions, to Apple throwing a legal wrench into OpenAI's hardware ambitions. Meanwhile, a striking Princeton study reveals that AI models are actually *worse* than humans at fair hiring, developing biases at rates 65% higher than people \u2014 a finding that should give every company rushing to automate recruitment serious pause. Grab your coffee; there's a lot to unpack.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-19.html",
-    "contentHash": "ea116ec2532d9dc86b5ea6243b650b7ae7b3c58fc5e5f5c1ec80b2b48b26caee"
+    "urlPath": "/issues/2026-07-20.html",
+    "contentHash": "708b29e3be68afbb25be18bdb20f43926fa71534e27821503f12177d2933c4de"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-20",
+      "digestDate": "2026-07-20",
+      "displayDate": "Jul 20, 2026",
+      "issueNumber": "60720",
+      "subject": "ISSUE 60720 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI race is heating up on every front today \u2014 from Silicon Valley nervously watching China close the gap in AI capabilities, to Jensen Huang locking down a massive robotics and sovereign AI push in Japan worth billions, to Apple throwing a legal wrench into OpenAI's hardware ambitions. Meanwhile, a striking Princeton study reveals that AI models are actually *worse* than humans at fair hiring, developing biases at rates 65% higher than people \u2014 a finding that should give every company rushing to automate recruitment serious pause. Grab your coffee; there's a lot to unpack.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-20.html",
+      "contentHash": "708b29e3be68afbb25be18bdb20f43926fa71534e27821503f12177d2933c4de"
+    },
     {
       "slug": "2026-07-19",
       "digestDate": "2026-07-19",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-09.html",
       "contentHash": "611d31c24f8e557a0abc46db661b0dc7f01c74461e8f251c670f751ceb58b5f3"
-    },
-    {
-      "slug": "2026-07-08",
-      "digestDate": "2026-07-08",
-      "displayDate": "Jul 08, 2026",
-      "issueNumber": "60708",
-      "subject": "ISSUE 60708 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI chip wars are heating up fast \u2014 SambaNova just pulled in a staggering $1 billion at an $11 billion valuation barely five months after its last mega-round, while French upstart ZML is taking a different swing at the infrastructure game with a free inference server designed to break chip vendor lock-in entirely. Beyond the hardware hustle, today's digest covers a clever new attack that turns AI coding assistants into botnet builders, Meta's controversial Muse Image launch that lets anyone AI-manipulate your Instagram photos without asking, and why San Francisco homes are selling for a million dollars over asking \u2014 because apparently the AI boom is reshaping everything, real estate included.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-08.html",
-      "contentHash": "5c6e06b426e66e6dd264c971e8258d96e8027b9297f9e1530b8288fe27a4b57f"
     }
   ]
 }
