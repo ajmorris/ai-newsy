@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-20T00:00:00Z",
-  "issueCount": 91,
+  "generatedAt": "2026-07-21T00:00:00Z",
+  "issueCount": 92,
   "latestIssue": {
-    "slug": "2026-07-20",
-    "digestDate": "2026-07-20",
-    "displayDate": "Jul 20, 2026",
-    "issueNumber": "60720",
-    "subject": "ISSUE 60720 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI race is heating up on every front today \u2014 from Silicon Valley nervously watching China close the gap in AI capabilities, to Jensen Huang locking down a massive robotics and sovereign AI push in Japan worth billions, to Apple throwing a legal wrench into OpenAI's hardware ambitions. Meanwhile, a striking Princeton study reveals that AI models are actually *worse* than humans at fair hiring, developing biases at rates 65% higher than people \u2014 a finding that should give every company rushing to automate recruitment serious pause. Grab your coffee; there's a lot to unpack.",
+    "slug": "2026-07-21",
+    "digestDate": "2026-07-21",
+    "displayDate": "Jul 21, 2026",
+    "issueNumber": "60721",
+    "subject": "ISSUE 60721 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic's record-shattering $1.5 billion copyright settlement is dominating today's AI news cycle, but it's far from the only legal and political drama unfolding \u2014 Sony is going after AI music generator Udio over 30,000 songs, Trump's latest AI czar has already quit after just three months, and the UK is learning that its grand AI ambitions may literally run out of water. It's a day that underscores just how messy the real-world collisions between AI and, well, *everything* \u2014 copyright law, government leadership, natural resources, newsrooms \u2014 are getting.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-20.html",
-    "contentHash": "708b29e3be68afbb25be18bdb20f43926fa71534e27821503f12177d2933c4de"
+    "urlPath": "/issues/2026-07-21.html",
+    "contentHash": "c117a3b68412baf540029a6c35cdd60a06c70b92416fbdd2b0e68202e019326a"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-21",
+      "digestDate": "2026-07-21",
+      "displayDate": "Jul 21, 2026",
+      "issueNumber": "60721",
+      "subject": "ISSUE 60721 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic's record-shattering $1.5 billion copyright settlement is dominating today's AI news cycle, but it's far from the only legal and political drama unfolding \u2014 Sony is going after AI music generator Udio over 30,000 songs, Trump's latest AI czar has already quit after just three months, and the UK is learning that its grand AI ambitions may literally run out of water. It's a day that underscores just how messy the real-world collisions between AI and, well, *everything* \u2014 copyright law, government leadership, natural resources, newsrooms \u2014 are getting.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-21.html",
+      "contentHash": "c117a3b68412baf540029a6c35cdd60a06c70b92416fbdd2b0e68202e019326a"
+    },
     {
       "slug": "2026-07-20",
       "digestDate": "2026-07-20",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-10.html",
       "contentHash": "c6d8d8fb3785a450231caa3fc758f7d5ab9afa43823f0db031ea6632cf2d83ff"
-    },
-    {
-      "slug": "2026-07-09",
-      "digestDate": "2026-07-09",
-      "displayDate": "Jul 09, 2026",
-      "issueNumber": "60709",
-      "subject": "ISSUE 60709 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI arms race just got a new price war. SpaceXAI and Cursor dropped Grok 4.5 today \u2014 the first model born from SpaceXAI's $60 billion Cursor acquisition \u2014 and it's gunning straight for Anthropic and OpenAI with Opus-class performance at a fraction of the cost. Beyond the model wars, today's digest covers a vibe-coding startup eyeing a $13.2 billion valuation, Google's deepfake detector proving its worth in a real-world political hoax, a robotics startup betting video game data is the key to physical AI's ChatGPT moment, and a 16-year-old Linux vulnerability that lets attackers break out of virtual machines.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-09.html",
-      "contentHash": "611d31c24f8e557a0abc46db661b0dc7f01c74461e8f251c670f751ceb58b5f3"
     }
   ]
 }
