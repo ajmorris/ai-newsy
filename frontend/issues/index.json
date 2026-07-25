@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-24T00:00:00Z",
-  "issueCount": 95,
+  "generatedAt": "2026-07-25T00:00:00Z",
+  "issueCount": 96,
   "latestIssue": {
-    "slug": "2026-07-24",
-    "digestDate": "2026-07-24",
-    "displayDate": "Jul 24, 2026",
-    "issueNumber": "60724",
-    "subject": "ISSUE 60724 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI hardware race is heating up as AMD throws down the gauntlet against Nvidia with its Helios rack-scale system, already locking in heavyweights like OpenAI, Anthropic, Microsoft, and Meta as customers. Meanwhile, Anthropic is making moves of its own on the software side, upgrading Claude's voice mode to support its most powerful models while adding integrations that let you reschedule meetings and draft emails just by talking. From cybersecurity researchers clashing with AI guardrails to Black Forest Labs teaching video AI to literally run factory robots, today's digest is packed with stories that show just how fast AI is reshaping every corner of the tech landscape.",
+    "slug": "2026-07-25",
+    "digestDate": "2026-07-25",
+    "displayDate": "Jul 25, 2026",
+    "issueNumber": "60725",
+    "subject": "ISSUE 60725 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing with Claude Opus 5 making its grand entrance \u2014 and the reviews are... complicated. Anthropic's latest flagship model is earning praise for its raw brilliance while simultaneously frustrating users with what one reviewer calls a \"neurotic\" personality that refuses to touch merge conflicts, even as it ships as the new default in Claude Code with a massive 1M context window. Beyond the Opus 5 drama, today's digest covers everything from a heartwarming family reunion powered by ChatGPT, to Midjourney's surprising acquisition of astrology app Co-Star, to the growing crisis of \"Google Zero\" threatening the entire web ecosystem.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-24.html",
-    "contentHash": "ce29984f73ac5efd34905b801d24ca5710e14db8383ca39f3c84022015b96bf5"
+    "urlPath": "/issues/2026-07-25.html",
+    "contentHash": "69ff75e4b6e33efb2735cad546d9cc9326948dfd06601c52369c7c183b0de90f"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-25",
+      "digestDate": "2026-07-25",
+      "displayDate": "Jul 25, 2026",
+      "issueNumber": "60725",
+      "subject": "ISSUE 60725 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing with Claude Opus 5 making its grand entrance \u2014 and the reviews are... complicated. Anthropic's latest flagship model is earning praise for its raw brilliance while simultaneously frustrating users with what one reviewer calls a \"neurotic\" personality that refuses to touch merge conflicts, even as it ships as the new default in Claude Code with a massive 1M context window. Beyond the Opus 5 drama, today's digest covers everything from a heartwarming family reunion powered by ChatGPT, to Midjourney's surprising acquisition of astrology app Co-Star, to the growing crisis of \"Google Zero\" threatening the entire web ecosystem.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-25.html",
+      "contentHash": "69ff75e4b6e33efb2735cad546d9cc9326948dfd06601c52369c7c183b0de90f"
+    },
     {
       "slug": "2026-07-24",
       "digestDate": "2026-07-24",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-14.html",
       "contentHash": "a8b988d7cb0e8c03b9c88ba4702d3380d63ddd1fe44451bdf0b274bbfe3de396"
-    },
-    {
-      "slug": "2026-07-13",
-      "digestDate": "2026-07-13",
-      "displayDate": "Jul 13, 2026",
-      "issueNumber": "60713",
-      "subject": "ISSUE 60713 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing with courtroom drama today as Apple drops a bombshell lawsuit against OpenAI, alleging a systematic scheme to poach over 400 employees and steal hardware trade secrets \u2014 even claiming candidates were told to bring \"actual parts\" to interviews. Beyond the legal fireworks, today's digest spans everything from how metaphors quietly shape AI policy debates to Christopher Nolan calling AI replacement fears \"nonsense,\" plus a surprisingly catchy Australian radio hit that might not be as human-made as it sounds.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-13.html",
-      "contentHash": "90d8a5a2a1ffb50ca3b7b2ba18b5b18757711e9cec10a7d98ad83ea3ddd09ce9"
     }
   ]
 }
