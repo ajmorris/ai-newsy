@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/stephenrobles/status/2080702577260351897",
       "author": "stephenrobles",
-      "headline": "Stephen Robles shows why he runs models via API in Shortcuts: change one number and __every Shortcut updates to Opus 5 instantly__.",
+      "headline": "Stephen Robles shows why he runs models via API in Apple Shortcuts — change one number and __every Shortcut instantly upgrades to Opus 5__.",
       "tweet_id": "3a71eba9-b6bc-812c-8af3-c158760d016d",
       "source_text": "Claude Opus 5 is out, and this is why I love using models via API in Shortcuts. I can just change a number, and now all my Shortcuts using my \"Claude Request\" Shortcut are instantly updated: https://t.co/8vI9oaiIPy",
       "created_time": "2026-07-24T20:02:00.000Z",
@@ -234,9 +234,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/danshipper/status/2080700057892815114",
+      "author": "danshipper",
+      "headline": "Dan Shipper spent a week testing Claude Opus 5 and found it __argued with instructions, quit early, and didn't play well__ with workflows — yet still impressed on raw output quality.",
+      "tweet_id": "3a71eba9-b6bc-81e2-afd8-f13342526424",
+      "source_text": "BREAKING: Claude Opus 5 is OUT NOW!\n\nAnd…it’s a hard model to love.\n\nWe’ve spent the last week @every testing it across coding, writing, knowledge work, and our internal agent.\n\nIt argued with instructions, stopped before the work was finished, and generally didn’t play well https://t.co/QWoL64tizS https://t.co/qpAq8mv5O1",
+      "created_time": "2026-07-24T19:42:00.000Z",
+      "canonical_url": "https://twitter.com/danshipper/status/2080700057892815114",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/cheatyyyy/status/2080712740965106121",
       "author": "cheatyyyy",
-      "headline": "Someone surfaced the __new system prompts used to steer Opus 5__ specifically — different from every other Claude model.",
+      "headline": "The __system prompts Anthropic uses to steer Opus 5__ have leaked — exclusive steering instructions not shared with other Claude models.",
       "tweet_id": "3a71eba9-b6bc-81ee-afaa-e3c157ec77ff",
       "source_text": "New Claude Opus 5 prompts used to steer the model, this is exclusive to Opus 5 specifically. https://t.co/9SXLNAIb4j https://t.co/KL8RVjVKKI",
       "created_time": "2026-07-24T19:42:00.000Z",
@@ -246,7 +256,7 @@
     {
       "url": "https://twitter.com/JensenHuang/status/2080643682408321103",
       "author": "JensenHuang",
-      "headline": "Jensen Huang's first post on X: a letter on why __open models strengthen safety, accelerate innovation, and enable sovereignty__.",
+      "headline": "Jensen Huang's first post on X: a letter NVIDIA signed on __why open models matter__ for safety, innovation, and national sovereignty.",
       "tweet_id": "3a71eba9-b6bc-8196-8229-ff2c5ce6694f",
       "source_text": "For my first post, I’m sharing a letter @NVIDIA signed on why open models matter.\n\nAI will transform every industry, power every company, and be built by every country.\n\nOpen models strengthen safety and cybersecurity, accelerate innovation and diffusion, and enable sovereignty. https://t.co/t02bi51N4C",
       "created_time": "2026-07-24T19:07:00.000Z",
@@ -256,7 +266,7 @@
     {
       "url": "https://twitter.com/bcherny/status/2080713091688583312",
       "author": "bcherny",
-      "headline": "Boris Cherny argues the most exciting thing about Opus 5 isn't benchmarks — it's their __least prompt-injectable model yet__.",
+      "headline": "Boris Cherny argues the most exciting thing about Opus 5 isn't benchmarks — it's that it's Anthropic's __least prompt-injectable model yet__.",
       "tweet_id": "3a71eba9-b6bc-8135-aa6f-c6df5cffe1df",
       "source_text": "Opus 5 is a great model for coding, data analysis, design, biology, knowledge work.\n\nMore than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and https://t.co/JCAjU874tP https://t.co/KE2V24IxX5",
       "created_time": "2026-07-24T18:27:00.000Z",
@@ -266,30 +276,33 @@
     {
       "url": "https://twitter.com/trq212/status/2080710971228918066",
       "author": "trq212",
-      "headline": "Anthropic __removed ~80% of the Claude Code system prompt__ for their newest models and shared what they learned about writing skills and Claude.MDs.",
+      "headline": "Anthropic __removed ~80% of the Claude Code system prompt__ for its newest models and shared what they've learned about writing prompts and skills for them.",
       "tweet_id": "3a71eba9-b6bc-81ae-99df-c05af9600c43",
       "source_text": "We removed ~80% of the Claude Code system prompt for our newest models, this is what we've learned about writing system prompts, skills and Claude.MDs for them. https://t.co/6DZwSrZjE9",
       "created_time": "2026-07-24T18:27:00.000Z",
       "canonical_url": "https://twitter.com/trq212/status/2080710971228918066",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/rseroter/status/2080317009754259705",
-      "author": "rseroter",
-      "headline": "Anthropic's CISO team details how they __secure an SDLC where AI authors 80% of the code__ — a sharp read on staying fast while staying safe.",
-      "tweet_id": "3a71eba9-b6bc-81c6-9b77-d07f568089df",
-      "source_text": "How does @AnthropicAI secure an SDLC where AI authors 80% of the code? 🤔\n\nI thought this was a terrific piece from their CISO team. Anthropic uses a few overarching strategies to keep the team going fast while staying safe.\nhttps://t.co/TflUTkzQLw https://t.co/ErLFFZnCMw",
-      "created_time": "2026-07-24T15:17:00.000Z",
-      "canonical_url": "https://twitter.com/rseroter/status/2080317009754259705",
-      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://nostalgia-stilloo.zocomputer.io/",
+      "author": "tsachin",
+      "item_id": "hn:49045838",
+      "headline": "Nostalgia lets you __build and share a Windows 98 desktop__ in your browser — pure vibes, zero utility, maximum joy.",
+      "subreddit": null,
+      "source_text": "Show HN: Nostalgia – A shareable Windows 98 desktop builder",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-25T08:57:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nostalgia-stilloo.zocomputer.io",
+      "learning_score": 3
+    },
+    {
       "url": "https://github.com/samchon/ttsc/tree/master/packages/graph",
       "author": "autobe",
       "item_id": "hn:49045581",
-      "headline": "A TypeScript compiler knowledge graph that __reduces AI token usage by ~90%__ — open-sourced on GitHub.",
+      "headline": "A TypeScript compiler knowledge graph that __reduces AI token usage by roughly 90%__ when reasoning about TS code.",
       "subreddit": null,
       "source_text": "Show HN: TS Compiler Knowledge Graph reducing AI tokens about 90%",
       "source_type": "hacker_news",
@@ -299,76 +312,63 @@
       "learning_score": 3
     },
     {
-      "url": "https://news.ycombinator.com/item?id=49045369",
-      "author": "jspuri",
-      "item_id": "hn:49045369",
-      "headline": "BlazeRules is a YAML-based rule engine for streaming data that claims to handle __5M records per second__.",
+      "url": "https://medium.com/@alanscottencinas/new-tariffs-cover-99-4-of-u-s-imports-your-plan-doesnt-cb3a7f67d8af",
+      "author": "encinas88",
+      "item_id": "hn:49045784",
+      "headline": "New tariffs now __cover 99.4% of U.S. imports__ — and most businesses haven't updated their plans to match.",
       "subreddit": null,
-      "source_text": "Show HN: BlazeRules – YAML rule engine for streaming data, 5M records/SEC",
+      "source_text": "New Tariffs Cover 99.4% of U.S. Imports. Your Plan Doesn't",
       "source_type": "hacker_news",
-      "created_time": "2026-07-25T07:37:34+00:00",
+      "created_time": "2026-07-25T08:49:12+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=49045369",
-      "learning_score": 3
-    },
-    {
-      "url": "https://devpost.com/software/turboprefill",
-      "author": "trykhlieb",
-      "item_id": "hn:49045343",
-      "headline": "TurboPrefill delivers a __3.27× prefill speedup in Llama.cpp__ by rethinking how context is processed.",
-      "subreddit": null,
-      "source_text": "TurboPrefill: 3.27× Prefill Speedup in Llama.cpp",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-25T07:32:37+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://devpost.com/software/turboprefill",
-      "learning_score": 3
-    },
-    {
-      "url": "https://substack.nybooks.com/p/against-slop-an-interview-with-meghan",
-      "author": "Michelangelo11",
-      "item_id": "hn:49045620",
-      "headline": "Meghan O'Gieblyn makes the case __against slop__ — on AI-generated mediocrity and what it costs culture.",
-      "subreddit": null,
-      "source_text": "Against Slop: An Interview with Meghan O'Gieblyn",
-      "source_type": "hacker_news",
-      "created_time": "2026-07-25T08:19:17+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://substack.nybooks.com/p/against-slop-an-interview-with-meghan",
+      "canonical_url": "https://medium.com/@alanscottencinas/new-tariffs-cover-99-4-of-u-s-imports-your-plan-doesnt-cb3a7f67d8af",
       "learning_score": 2
     },
     {
-      "url": "https://cosmiclog.com/2026/07/24/lucky-13-starship-sends-out-satellites-and-stays-intact/",
-      "author": "ColinWright",
-      "item_id": "hn:49045499",
-      "headline": "SpaceX's __Starship Flight 13 deployed satellites and landed intact__, earning its \"Lucky 13\" nickname.",
+      "url": "https://bobdahacker.com/blog/click-to-pray",
+      "author": "OuterVale",
+      "item_id": "hn:49045730",
+      "headline": "The Pope's official Click to Pray app __exposed 700K+ user emails__ — devotion in, data out.",
       "subreddit": null,
-      "source_text": "Lucky 13 Starship sends out satellites and stays intact",
+      "source_text": "Click to Pray, Click to Leak: The Pope's Official App Exposes 700K+ User Emails",
       "source_type": "hacker_news",
-      "created_time": "2026-07-25T08:00:27+00:00",
+      "created_time": "2026-07-25T08:38:35+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://cosmiclog.com/2026/07/24/lucky-13-starship-sends-out-satellites-and-stays-intact",
+      "canonical_url": "https://bobdahacker.com/blog/click-to-pray",
       "learning_score": 2
     },
     {
-      "url": "https://www.energy.gov/science/articles/energy-department-announces-initiative-create-and-deploy-worlds-first",
-      "author": "donutloop",
-      "item_id": "hn:49045451",
-      "headline": "The DOE is launching an initiative to build and deploy the __world's first fault-tolerant quantum computer__.",
+      "url": "https://www.ft.com/content/bdb3b820-905b-431e-82c0-386535755af1",
+      "author": "bishopsmother",
+      "item_id": "hn:49045676",
+      "headline": "A philosopher explains __why she turned down Anthropic__, arguing the AI industry is asking the wrong questions.",
       "subreddit": null,
-      "source_text": "DOE Launching First Fault-Tolerant Quantum Computer Initiative",
+      "source_text": "Why a philosopher turned down Anthropic (AI industry asking the wrong questions)",
       "source_type": "hacker_news",
-      "created_time": "2026-07-25T07:51:39+00:00",
+      "created_time": "2026-07-25T08:27:56+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://energy.gov/science/articles/energy-department-announces-initiative-create-and-deploy-worlds-first",
+      "canonical_url": "https://ft.com/content/bdb3b820-905b-431e-82c0-386535755af1",
+      "learning_score": 2
+    },
+    {
+      "url": "https://matklad.github.io/2026/07/20/memory-safety-hardest-problem.html",
+      "author": "miniBill",
+      "item_id": "hn:49045664",
+      "headline": "matklad makes the case that __memory safety's hardest problem__ isn't technical — it's everything around the technical.",
+      "subreddit": null,
+      "source_text": "Memory Safety's Hardest Problem",
+      "source_type": "hacker_news",
+      "created_time": "2026-07-25T08:25:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://matklad.github.io/2026/07/20/memory-safety-hardest-problem.html",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-07-25T08:20:34.816427+00:00",
+    "generated_at": "2026-07-25T09:04:22.003445+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "4efaa74b638c9d790c26b66d8d0a29433d35a9b64c8c9b8cdaa0b4a3ecc8570e"
+  "content_hash": "69ff75e4b6e33efb2735cad546d9cc9326948dfd06601c52369c7c183b0de90f"
 }
