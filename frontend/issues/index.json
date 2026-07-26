@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-25T00:00:00Z",
-  "issueCount": 96,
+  "generatedAt": "2026-07-26T00:00:00Z",
+  "issueCount": 97,
   "latestIssue": {
-    "slug": "2026-07-25",
-    "digestDate": "2026-07-25",
-    "displayDate": "Jul 25, 2026",
-    "issueNumber": "60725",
-    "subject": "ISSUE 60725 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is buzzing with Claude Opus 5 making its grand entrance \u2014 and the reviews are... complicated. Anthropic's latest flagship model is earning praise for its raw brilliance while simultaneously frustrating users with what one reviewer calls a \"neurotic\" personality that refuses to touch merge conflicts, even as it ships as the new default in Claude Code with a massive 1M context window. Beyond the Opus 5 drama, today's digest covers everything from a heartwarming family reunion powered by ChatGPT, to Midjourney's surprising acquisition of astrology app Co-Star, to the growing crisis of \"Google Zero\" threatening the entire web ecosystem.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-07-25.html",
-    "contentHash": "69ff75e4b6e33efb2735cad546d9cc9326948dfd06601c52369c7c183b0de90f"
+    "slug": "2026-07-26",
+    "digestDate": "2026-07-26",
+    "displayDate": "Jul 26, 2026",
+    "issueNumber": "60726",
+    "subject": "ISSUE 60726 \u00b7 7 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI jobs narrative is getting more complicated by the day \u2014 Monday.com just became the latest company to cite AI as the reason for cutting 20% of its workforce, joining a growing list of over 20 major tech firms that have collectively slashed nearly 140,000 jobs this year alone. But while the layoff headlines pile up, a counterpoint is emerging: an Anthropic analysis suggests the feared AI jobs apocalypse may not actually be coming anytime soon, and companies blaming AI for cuts are actually *underperforming* the Nasdaq afterward. Beyond the employment debate, today's digest covers a power grid scare triggered by AI data centers, librarians going viral for teaching people how to *turn off* AI, and a community that killed a school robot project before it even started.",
+    "articleCount": 7,
+    "urlPath": "/issues/2026-07-26.html",
+    "contentHash": "3f1ddf1a110aacf2caf7b62e49897232e21855b80d3f69339f2741eef8c98bfb"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-26",
+      "digestDate": "2026-07-26",
+      "displayDate": "Jul 26, 2026",
+      "issueNumber": "60726",
+      "subject": "ISSUE 60726 \u00b7 7 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI jobs narrative is getting more complicated by the day \u2014 Monday.com just became the latest company to cite AI as the reason for cutting 20% of its workforce, joining a growing list of over 20 major tech firms that have collectively slashed nearly 140,000 jobs this year alone. But while the layoff headlines pile up, a counterpoint is emerging: an Anthropic analysis suggests the feared AI jobs apocalypse may not actually be coming anytime soon, and companies blaming AI for cuts are actually *underperforming* the Nasdaq afterward. Beyond the employment debate, today's digest covers a power grid scare triggered by AI data centers, librarians going viral for teaching people how to *turn off* AI, and a community that killed a school robot project before it even started.",
+      "articleCount": 7,
+      "urlPath": "/issues/2026-07-26.html",
+      "contentHash": "3f1ddf1a110aacf2caf7b62e49897232e21855b80d3f69339f2741eef8c98bfb"
+    },
     {
       "slug": "2026-07-25",
       "digestDate": "2026-07-25",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-15.html",
       "contentHash": "1df2a5ea6940158ca29ef541800f64713aa925a9645028ede512f9e87bce1c4a"
-    },
-    {
-      "slug": "2026-07-14",
-      "digestDate": "2026-07-14",
-      "displayDate": "Jul 14, 2026",
-      "issueNumber": "60714",
-      "subject": "ISSUE 60714 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI talent gold rush is real \u2014 from GoCardless and Instagram founders to Tesla's Andrej Karpathy, a wave of already-successful tech leaders is flocking to companies like Anthropic, driven by a fear of missing what they see as a once-in-a-generation moment. It's a striking signal about where the industry's center of gravity is shifting. Today's digest also covers a $439M mega-raise for video-generation startup PixVerse, a provocative argument that Alan Turing's core AI assumptions were wrong all along, and fresh updates from Claude Code, OpenAI, and Uber's expanding AI ambitions.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-14.html",
-      "contentHash": "a8b988d7cb0e8c03b9c88ba4702d3380d63ddd1fe44451bdf0b274bbfe3de396"
     }
   ]
 }
