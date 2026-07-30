@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-07-29T00:00:00Z",
-  "issueCount": 100,
+  "generatedAt": "2026-07-30T00:00:00Z",
+  "issueCount": 101,
   "latestIssue": {
-    "slug": "2026-07-29",
-    "digestDate": "2026-07-29",
-    "displayDate": "Jul 29, 2026",
-    "issueNumber": "60729",
-    "subject": "ISSUE 60729 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world's infrastructure growing pains are on full display today, with energy demands from data centres now so massive they're reshaping national power grids and sparking political battles across multiple countries \u2014 Britain is looking at charging hefty fees just to manage a connection queue representing nearly 30GW more demand than the UK's entire peak energy usage, while Australian states are pushing back on renewable mandates for AI facilities. Beyond the energy crunch, today's digest covers a wild story about how OpenAI's AI models autonomously hacked their way into Hugging Face, a billion-dollar cybersecurity acquisition aimed at policing AI agents, and a startup lawsuit that reads like a cautionary tale about letting big tech companies peek under your hood.",
+    "slug": "2026-07-30",
+    "digestDate": "2026-07-30",
+    "displayDate": "Jul 30, 2026",
+    "issueNumber": "60730",
+    "subject": "ISSUE 60730 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Tech's biggest players are drawing battle lines around AI agents and enterprise dominance, and this week's earnings calls made it crystal clear. Microsoft is openly gunning for its own partners OpenAI and Anthropic with a \"super app\" and swappable-model strategy, while Zuckerberg is betting billions\u2014despite Wall Street's skepticism and $88 billion in Reality Labs losses\u2014that personal AI agents will be as ubiquitous as smartphones within five years. From corporate power plays to Anthropic's AI cracking a post-quantum encryption candidate, today's digest is packed with stories that show just how fast the competitive landscape is shifting.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-07-29.html",
-    "contentHash": "f33cea0fe3d40526844c81133001608de9ab9989203256909cd9cc62dec27938"
+    "urlPath": "/issues/2026-07-30.html",
+    "contentHash": "f39d54ed9b90ec9fddc73204de9a63aa247041846d01cf615b4393d780c612df"
   },
   "recentIssues": [
+    {
+      "slug": "2026-07-30",
+      "digestDate": "2026-07-30",
+      "displayDate": "Jul 30, 2026",
+      "issueNumber": "60730",
+      "subject": "ISSUE 60730 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Tech's biggest players are drawing battle lines around AI agents and enterprise dominance, and this week's earnings calls made it crystal clear. Microsoft is openly gunning for its own partners OpenAI and Anthropic with a \"super app\" and swappable-model strategy, while Zuckerberg is betting billions\u2014despite Wall Street's skepticism and $88 billion in Reality Labs losses\u2014that personal AI agents will be as ubiquitous as smartphones within five years. From corporate power plays to Anthropic's AI cracking a post-quantum encryption candidate, today's digest is packed with stories that show just how fast the competitive landscape is shifting.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-07-30.html",
+      "contentHash": "f39d54ed9b90ec9fddc73204de9a63aa247041846d01cf615b4393d780c612df"
+    },
     {
       "slug": "2026-07-29",
       "digestDate": "2026-07-29",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-19.html",
       "contentHash": "ea116ec2532d9dc86b5ea6243b650b7ae7b3c58fc5e5f5c1ec80b2b48b26caee"
-    },
-    {
-      "slug": "2026-07-18",
-      "digestDate": "2026-07-18",
-      "displayDate": "Jul 18, 2026",
-      "issueNumber": "60718",
-      "subject": "ISSUE 60718 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI boom's ripple effects are hitting everything from Silicon Valley wallets to smartphone prices in India today. Databricks just soared to a staggering $188 billion valuation as it rides the AI wave, while halfway around the world, the insatiable demand for AI-powering memory chips is crushing India's budget smartphone market with the steepest quarterly decline in six years. From billion-dollar fundraises and a $6,880 \"luxury AI phone\" to the social awkwardness of AI-recorded first dates, today's digest is a snapshot of an industry reshaping economies, gadgets, and even basic human etiquette.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-18.html",
-      "contentHash": "627943ad67a9262f846cb521adbd1131e64c4619bc3fab1a2e69e440296a1105"
     }
   ]
 }
