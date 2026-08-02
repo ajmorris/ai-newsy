@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 6024,
+      "source": "Guardian AI",
+      "title": "Stock market turmoil sheds stark light on the opaque AI economy",
+      "url": "https://www.theguardian.com/technology/2026/aug/02/stock-market-turmoil-nvidia-china-light-ai-economy",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article reports on significant stock market volatility driven by developments in the AI chip economy. A Chinese memory chipmaker, CXMT, had a dramatic IPO on the Shanghai stock market, surging 466% in value to 3.3 trillion yuan (£365 billion), posing a shock challenge to the dominance of major western chipmakers like Nvidia. Investors struggled to make sense of these rapid developments, which highlighted the opaque nature of the AI economy and raised questions about the competitive landscape in the global semiconductor industry.",
+      "opinion": "This story underscores a critical and underappreciated vulnerability in the western AI ecosystem: the assumption that US and allied chipmakers would maintain unchallenged dominance indefinitely. CXMT's explosive IPO valuation signals that China's semiconductor ambitions are far more advanced than many investors and policymakers had assumed, despite years of export controls and sanctions designed to slow Chinese progress. The 'opaque AI economy' framing is apt — the massive capital flows into AI…",
+      "image_url": "https://i.guim.co.uk/img/media/f3c5945bf000f1a831b643986588a8d2fb63555a/213_0_2133_1707/master/2133.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ee18cf3f6315023858b86fc0193762c4",
+      "published_at": "2026-08-02T09:00:17+00:00",
+      "fetched_at": "2026-08-02T09:12:22.978819+00:00"
+    },
+    {
       "id": 5944,
       "source": "TechCrunch AI",
       "title": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
@@ -96,25 +109,25 @@
       "image_url": "https://i.guim.co.uk/img/media/81fcb075f5eb538d8327f56e2ea009632c7e7e2d/516_0_5160_4128/master/5160.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a228984d6b2a6203723837a3f32a0bb4",
       "published_at": "2026-08-01T12:00:53+00:00",
       "fetched_at": "2026-08-02T08:27:52.436363+00:00"
-    },
-    {
-      "id": 5950,
-      "source": "Guardian AI",
-      "title": "If you think kids will respect a robot teacher, you have never met a kid | Dave Schilling",
-      "url": "https://www.theguardian.com/commentisfree/2026/aug/01/new-york-salamanca-school-robot-teacher-plan",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "The article discusses a New York school district (Salamanca) that paused plans to introduce a robot (android) teacher into classrooms. The author, Dave Schilling, uses humor to argue that children are unlikely to respect or respond well to a robot teacher, questioning whether AI-driven robotic instruction is a viable future for education. The piece touches on parental anxieties about schooling and skepticism toward replacing human teachers with technology.",
-      "opinion": "The author is clearly skeptical and opposed to the idea of robot teachers in classrooms. Using humor and the rhetorical framing of the headline ('if you think kids will respect a robot teacher, you have never met a kid'), Schilling suggests that the human element of teaching is irreplaceable and that children's unpredictable, often defiant nature makes robotic instruction impractical. The tone is satirical but the underlying opinion is critical of the rush to implement AI and robotics in educat…",
-      "image_url": "https://i.guim.co.uk/img/media/d01002863e751c83ac09e45c485806940292dcee/1_0_2999_2400/master/2999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=822794e492ee7fad0f3aca90ab9f8ab7",
-      "published_at": "2026-08-01T11:00:52+00:00",
-      "fetched_at": "2026-08-02T08:27:52.552829+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 6024,
+          "source": "Guardian AI",
+          "title": "Stock market turmoil sheds stark light on the opaque AI economy",
+          "url": "https://www.theguardian.com/technology/2026/aug/02/stock-market-turmoil-nvidia-china-light-ai-economy",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article reports on significant stock market volatility driven by developments in the AI chip economy. A Chinese memory chipmaker, CXMT, had a dramatic IPO on the Shanghai stock market, surging 466% in value to 3.3 trillion yuan (£365 billion), posing a shock challenge to the dominance of major western chipmakers like Nvidia. Investors struggled to make sense of these rapid developments, which highlighted the opaque nature of the AI economy and raised questions about the competitive landscape in the global semiconductor industry.",
+          "opinion": "This story underscores a critical and underappreciated vulnerability in the western AI ecosystem: the assumption that US and allied chipmakers would maintain unchallenged dominance indefinitely. CXMT's explosive IPO valuation signals that China's semiconductor ambitions are far more advanced than many investors and policymakers had assumed, despite years of export controls and sanctions designed to slow Chinese progress. The 'opaque AI economy' framing is apt — the massive capital flows into AI…",
+          "image_url": "https://i.guim.co.uk/img/media/f3c5945bf000f1a831b643986588a8d2fb63555a/213_0_2133_1707/master/2133.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ee18cf3f6315023858b86fc0193762c4",
+          "published_at": "2026-08-02T09:00:17+00:00",
+          "fetched_at": "2026-08-02T09:12:22.978819+00:00"
+        },
         {
           "id": 5944,
           "source": "TechCrunch AI",
@@ -205,19 +218,6 @@
           "image_url": "https://i.guim.co.uk/img/media/81fcb075f5eb538d8327f56e2ea009632c7e7e2d/516_0_5160_4128/master/5160.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a228984d6b2a6203723837a3f32a0bb4",
           "published_at": "2026-08-01T12:00:53+00:00",
           "fetched_at": "2026-08-02T08:27:52.436363+00:00"
-        },
-        {
-          "id": 5950,
-          "source": "Guardian AI",
-          "title": "If you think kids will respect a robot teacher, you have never met a kid | Dave Schilling",
-          "url": "https://www.theguardian.com/commentisfree/2026/aug/01/new-york-salamanca-school-robot-teacher-plan",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "The article discusses a New York school district (Salamanca) that paused plans to introduce a robot (android) teacher into classrooms. The author, Dave Schilling, uses humor to argue that children are unlikely to respect or respond well to a robot teacher, questioning whether AI-driven robotic instruction is a viable future for education. The piece touches on parental anxieties about schooling and skepticism toward replacing human teachers with technology.",
-          "opinion": "The author is clearly skeptical and opposed to the idea of robot teachers in classrooms. Using humor and the rhetorical framing of the headline ('if you think kids will respect a robot teacher, you have never met a kid'), Schilling suggests that the human element of teaching is irreplaceable and that children's unpredictable, often defiant nature makes robotic instruction impractical. The tone is satirical but the underlying opinion is critical of the rush to implement AI and robotics in educat…",
-          "image_url": "https://i.guim.co.uk/img/media/d01002863e751c83ac09e45c485806940292dcee/1_0_2999_2400/master/2999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=822794e492ee7fad0f3aca90ab9f8ab7",
-          "published_at": "2026-08-01T11:00:52+00:00",
-          "fetched_at": "2026-08-02T08:27:52.552829+00:00"
         }
       ]
     }
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/DevAdventur3s/status/2083664809707651079",
       "author": "DevAdventur3s",
-      "headline": "OpenAI's Codex app ships with __hidden features behind client-side flags__ — a full code scanner, library view, and debug internals, all already in the build.",
+      "headline": "OpenAI's Codex app ships with __a library, security scanner, and debugger already built in__ — just hidden behind client-side feature flags.",
       "tweet_id": "3af1eba9-b6bc-81ef-8f9e-d197fc789655",
       "source_text": "OpenAI's Codex app ships with features that are switched off. 🔒\n\nNot missing. Just turned off.\n\n📚 Library — every file, image and site in one place\n🛡️ Security — a full code scanner\n🐛 Debug — the app internals\n\nAll already in the app, hidden behind client-side flags.\nSo I https://t.co/atsEKNZ6Do",
       "created_time": "2026-08-01T22:22:00.000Z",
@@ -256,7 +256,7 @@
     {
       "url": "https://twitter.com/rammcodes/status/2083498870353391788",
       "author": "rammcodes",
-      "headline": "A repo of __battle-tested plugins, skills, and MCP integrations__ for Claude Code, Codex, Cursor, and Gemini CLI that you can install à la carte.",
+      "headline": "A repo of __battle-tested plugins, skills, and MCP integrations__ for Claude Code, Codex, Cursor, and Gemini CLI that replaces the default setup.",
       "tweet_id": "3af1eba9-b6bc-81ea-adaf-c4f187e49a4f",
       "source_text": "Dude... I wish someone showed me this sooner. 🤯\n\nInstead of sticking with the default setup for Claude Code, Codex, Cursor, or Gemini CLI, this repository gives you a collection of battle-tested plugins, skills, hooks, commands, agents, and MCP integrations you can install based https://t.co/eK8WgHrmT0",
       "created_time": "2026-08-01T22:22:00.000Z",
@@ -264,32 +264,45 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/bibryam/status/2083523930657030532",
-      "author": "bibryam",
-      "headline": "The emerging zoo of __.md formats shaping agent behavior__ — from AGENTS.md and CLAUDE.md to SKILL.md, spec.md, and AUTH.md — mapped in one chart.",
-      "tweet_id": "3af1eba9-b6bc-81a2-821f-e36a86c75b24",
-      "source_text": "🌟 Emerging .MD Formats Shaping Agent Behavior \n\n→ AGENTS.md, CLAUDE.md, GEMINI.md - rules\n→ .claude/rules/, .clinerules/ - scoped\n→ SKILL.md - procedures\n→ spec.md, plan.md, tasks.md - plans\n→ ARCHITECTURE.md, DESIGN.md - intent\n→ AUTH.md - authorization\n→ REVIEW.md - https://t.co/354bFCT5YA",
-      "created_time": "2026-08-01T21:32:00.000Z",
-      "canonical_url": "https://twitter.com/bibryam/status/2083523930657030532",
+      "url": "https://twitter.com/alex_prompter/status/2083587618055586074",
+      "author": "alex_prompter",
+      "headline": "Three identity decisions that turn a generic AI assistant into __an agent that thinks for itself__ instead of asking permission on every call.",
+      "tweet_id": "3af1eba9-b6bc-81c4-84f7-f15de7573e3a",
+      "source_text": "Three identity decisions that turn a generic AI assistant into an agent that thinks for itself.\n\nGeneric AI assistants give generic answers. They summarize when you want analysis. They ask permission when the answer is obvious. They sound different every session because nothing https://t.co/ZHk82CDv5c https://t.co/LsJHlS0L8g",
+      "created_time": "2026-08-01T22:22:00.000Z",
+      "canonical_url": "https://twitter.com/alex_prompter/status/2083587618055586074",
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/lennysan/status/2083635470534402452",
-      "author": "lennysan",
-      "headline": "Lenny Rachitsky makes the case that __everyone is becoming a part-time engineer and marketer__.",
-      "tweet_id": "3af1eba9-b6bc-814b-95e5-de64a822ac60",
-      "source_text": "Everyone is becoming a part-time engineer and marketer https://t.co/L5l5peSWbv https://t.co/uF5aYMTb3M",
-      "created_time": "2026-08-01T21:32:00.000Z",
-      "canonical_url": "https://twitter.com/lennysan/status/2083635470534402452",
+      "url": "https://twitter.com/pootlepress/status/2083561446194008526",
+      "author": "pootlepress",
+      "headline": "Gogh adds __snap-to-grid and smart guides__ for",
+      "tweet_id": "3af1eba9-b6bc-8140-912b-f503ac1b87b4",
+      "source_text": "Today's Gogh update 👇\n\nI have been working on Snap to Grid and Smart Guides, so you can drag, align and evenly space elements with precision, just like you'd expect from a modern design tool.\n\nThe best bit is that it all still converts back into native Gutenberg blocks.\n\nPretty https://t.co/q1yXLFu4k0",
+      "created_time": "2026-08-01T21:37:00.000Z",
+      "canonical_url": "https://twitter.com/pootlepress/status/2083561446194008526",
       "learning_score": 3
     }
   ],
   "community_headlines": [
     {
+      "url": "https://github.com/lyogavin/airllm",
+      "author": "maxloh",
+      "item_id": "hn:49142538",
+      "headline": "AirLLM lets you __inference the 2.8T Kimi K3 model on a single 4GB GPU__ — no cluster required.",
+      "subreddit": null,
+      "source_text": "AirLLM: Inference 2.8T Kimi K3 on a single 4GB GPU",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-02T09:02:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/lyogavin/airllm",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.promptreceipts.com/blog/claude-code-plugin-marketplace-no-price-2026",
       "author": "pwsj",
       "item_id": "hn:49142313",
-      "headline": "The Claude Code plugin marketplace __has no price field__ — and that tells you everything about Anthropic's 2026 platform play.",
+      "headline": "The Claude Code plugin marketplace launched __with no price field__ — every plugin is free, for now.",
       "subreddit": null,
       "source_text": "The Claude Code plugin marketplace has no price field",
       "source_type": "hacker_news",
@@ -302,7 +315,7 @@
       "url": "https://medium.com/ai-advances/running-a-35b-llm-at-128k-context-full-speed-on-870-of-used-hardware-no-cloud-required-c4f7629810b8",
       "author": "dexmac221",
       "item_id": "hn:49142301",
-      "headline": "Running a __35B LLM at 128K context__ at full speed on €870 of used hardware, no cloud required.",
+      "headline": "A walkthrough on running a __35B LLM at 128K context on €870 of used hardware__, no cloud required.",
       "subreddit": null,
       "source_text": "Running a 35B LLM at 128K Context, Full Speed, on €870 of Used Hardware",
       "source_type": "hacker_news",
@@ -312,23 +325,10 @@
       "learning_score": 2
     },
     {
-      "url": "https://github.com/mindify-ai/VACT-P",
-      "author": "markchennext-al",
-      "item_id": "hn:49142206",
-      "headline": "MCP and A2A leave one crucial challenge unsolved in the post-AGI world — __trust between agents__.",
-      "subreddit": null,
-      "source_text": "MCP and A2A are not solving one crucial challenge in the post-AGI world – Trust",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-02T08:10:37+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/mindify-ai/VACT-P",
-      "learning_score": 2
-    },
-    {
       "url": "https://www.ft.com/content/4532122d-90f2-4433-9df6-ca99d8a141d2",
       "author": "sbulaev",
       "item_id": "hn:49142179",
-      "headline": "Apple is __struggling to keep pace with AI bug hunters__ as security researchers weaponize models faster than Cupertino can patch.",
+      "headline": "Apple is struggling to __keep pace with AI security researchers__ finding bugs faster than it can patch them.",
       "subreddit": null,
       "source_text": "Apple struggles to keep pace with AI 'bug' hunters",
       "source_type": "hacker_news",
@@ -341,7 +341,7 @@
       "url": "https://github.com/Mobeen0119/Aevros",
       "author": "Mobeen0119",
       "item_id": "hn:49142156",
-      "headline": "Aevros is a kernel that __explains itself__ — every scheduling and memory decision comes with a rationale.",
+      "headline": "Aevros is a new kernel that __explains its own decisions__ as it runs — self-documenting at the OS level.",
       "subreddit": null,
       "source_text": "Show HN: Aevros .... A kernel that explains itself",
       "source_type": "hacker_news",
@@ -354,7 +354,7 @@
       "url": "https://confer.to/blog/2026/08/private-ai-document-search/",
       "author": "DavideNL",
       "item_id": "hn:49142129",
-      "headline": "Confer built a way to __search documents the system can't actually read__, using privacy-preserving AI over encrypted files.",
+      "headline": "Confer built a system to __search documents it can't actually read__, using privacy-preserving AI techniques.",
       "subreddit": null,
       "source_text": "How to search documents we can't read – Confer Blog",
       "source_type": "hacker_news",
@@ -365,10 +365,10 @@
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-02T08:32:38.233260+00:00",
+    "generated_at": "2026-08-02T09:14:13.741338+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "5139939cadc175e2d2bdd7e8c81374b71e88cd1a685ab43517a2abd3ededccac"
+  "content_hash": "6c5e54b24f36d79c3158ba575a5bbbcc21e635b9acc545f38b261c44d07667a4"
 }
