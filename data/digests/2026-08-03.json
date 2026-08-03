@@ -7,6 +7,19 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 6033,
+      "source": "TechCrunch AI",
+      "title": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
+      "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "June, a startup founded by former Salesforce executives, emerged from stealth with a $20 million pre-seed round led by Marc Benioff's Time Ventures, with backing from Michael Dell, Aaron Levie, and George Kurtz. The company aims to solve the AI deployment problem in enterprises by using AI to scan existing corporate systems, identify bottlenecks and technical debt, and then automatically build optimized agent-powered processes. Rather than hiring more forward-deployed engineers to integrate AI with legacy systems like Salesforce, ServiceNow, and Workday, June's platform generates step-by-step implementation roadmaps and can execute the integration tasks itself. The four founders previously built Bonobo AI, which was acquired by Salesforce in 2019, and spent years watching customers struggle with AI adoption before launching June.",
+      "opinion": "This is a genuinely interesting startup tackling a real and painful problem — the gap between AI's theoretical capabilities and the messy reality of enterprise deployment. The founding team's pedigree is strong: they built and sold a company to Salesforce, then spent years inside watching the integration pain firsthand. The $20 million pre-seed without even a deck signals extraordinary investor confidence, though that also raises questions about whether the valuation reflects hype more than sub…",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/June-Headshots-7740.jpg?resize=1200,800",
+      "published_at": "2026-08-03T10:00:00+00:00",
+      "fetched_at": "2026-08-03T10:47:28.712434+00:00"
+    },
+    {
       "id": 6028,
       "source": "The Rundown AI",
       "title": "OpenAI's 'Astra' solves 10 long-standing math problems",
@@ -96,25 +109,25 @@
       "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-31-at-4.11.25-PM.png?quality=90&strip=all&crop=2.6881256103516%2C4.7093735253803%2C97.311874389648%2C90.581252949239&w=1200",
       "published_at": "2026-08-02T13:00:00+00:00",
       "fetched_at": "2026-08-03T09:51:22.549725+00:00"
-    },
-    {
-      "id": 6032,
-      "source": "Lenny's Newsletter",
-      "title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",
-      "url": "https://www.lennysnewsletter.com/p/this-cpo-regrets-that-product-management",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Tom Verrilli, CPO of Whatnot (a live shopping platform with over $8B in GMV), discusses his philosophy that product management as a function is something he 'regrets exists.' He advocates for fewer, more senior PMs doing real individual contributor work rather than building large PM teams based on ratio-driven org structures. The conversation covers how AI is reshaping the PM role, how AI has transformed data science at Whatnot, his 'play the accordion' mental model for team management, why the common advice to 'hire great people and get out of their way' fails, and lessons learned from his time at Twitter during a turbulent period and as CPO at Twitch.",
-      "opinion": "This is a provocative and potentially valuable perspective from a CPO running a high-growth marketplace. The headline is deliberately contrarian — no CPO truly wishes their own function didn't exist — but the underlying argument about bloated PM orgs and the superiority of fewer, more senior ICs doing substantive work resonates with broader industry trends toward leaner teams, especially in the AI era. The framing aligns with Marty Cagan's critiques of 'product management theater.' However, sin…",
-      "image_url": "https://substackcdn.com/image/fetch/$s_!8A68!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9aedec2-27a8-486a-bafb-10c17689569f_2048x2048.png",
-      "published_at": "2026-08-02T12:32:02+00:00",
-      "fetched_at": "2026-08-03T09:51:30.593253+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 6033,
+          "source": "TechCrunch AI",
+          "title": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
+          "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "June, a startup founded by former Salesforce executives, emerged from stealth with a $20 million pre-seed round led by Marc Benioff's Time Ventures, with backing from Michael Dell, Aaron Levie, and George Kurtz. The company aims to solve the AI deployment problem in enterprises by using AI to scan existing corporate systems, identify bottlenecks and technical debt, and then automatically build optimized agent-powered processes. Rather than hiring more forward-deployed engineers to integrate AI with legacy systems like Salesforce, ServiceNow, and Workday, June's platform generates step-by-step implementation roadmaps and can execute the integration tasks itself. The four founders previously built Bonobo AI, which was acquired by Salesforce in 2019, and spent years watching customers struggle with AI adoption before launching June.",
+          "opinion": "This is a genuinely interesting startup tackling a real and painful problem — the gap between AI's theoretical capabilities and the messy reality of enterprise deployment. The founding team's pedigree is strong: they built and sold a company to Salesforce, then spent years inside watching the integration pain firsthand. The $20 million pre-seed without even a deck signals extraordinary investor confidence, though that also raises questions about whether the valuation reflects hype more than sub…",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/June-Headshots-7740.jpg?resize=1200,800",
+          "published_at": "2026-08-03T10:00:00+00:00",
+          "fetched_at": "2026-08-03T10:47:28.712434+00:00"
+        },
         {
           "id": 6028,
           "source": "The Rundown AI",
@@ -205,19 +218,6 @@
           "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-31-at-4.11.25-PM.png?quality=90&strip=all&crop=2.6881256103516%2C4.7093735253803%2C97.311874389648%2C90.581252949239&w=1200",
           "published_at": "2026-08-02T13:00:00+00:00",
           "fetched_at": "2026-08-03T09:51:22.549725+00:00"
-        },
-        {
-          "id": 6032,
-          "source": "Lenny's Newsletter",
-          "title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",
-          "url": "https://www.lennysnewsletter.com/p/this-cpo-regrets-that-product-management",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Tom Verrilli, CPO of Whatnot (a live shopping platform with over $8B in GMV), discusses his philosophy that product management as a function is something he 'regrets exists.' He advocates for fewer, more senior PMs doing real individual contributor work rather than building large PM teams based on ratio-driven org structures. The conversation covers how AI is reshaping the PM role, how AI has transformed data science at Whatnot, his 'play the accordion' mental model for team management, why the common advice to 'hire great people and get out of their way' fails, and lessons learned from his time at Twitter during a turbulent period and as CPO at Twitch.",
-          "opinion": "This is a provocative and potentially valuable perspective from a CPO running a high-growth marketplace. The headline is deliberately contrarian — no CPO truly wishes their own function didn't exist — but the underlying argument about bloated PM orgs and the superiority of fewer, more senior ICs doing substantive work resonates with broader industry trends toward leaner teams, especially in the AI era. The framing aligns with Marty Cagan's critiques of 'product management theater.' However, sin…",
-          "image_url": "https://substackcdn.com/image/fetch/$s_!8A68!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd9aedec2-27a8-486a-bafb-10c17689569f_2048x2048.png",
-          "published_at": "2026-08-02T12:32:02+00:00",
-          "fetched_at": "2026-08-03T09:51:30.593253+00:00"
         }
       ]
     }
@@ -225,10 +225,36 @@
   "tweet_headlines": [],
   "community_headlines": [
     {
+      "url": "https://github.com/anthropics/claude-code/issues/83510",
+      "author": "GodelNumbering",
+      "item_id": "hn:49153758",
+      "headline": "Claude's gen-5 models show __significant regression on BullshitBench__ — the issue is gaining traction on GitHub.",
+      "subreddit": null,
+      "source_text": "Claude gen-5 models show significant regression in BullshitBench",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-03T10:21:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/anthropics/claude-code/issues/83510",
+      "learning_score": 3
+    },
+    {
+      "url": "https://cepr.net/publications/gdp-growth-in-second-quarter-slows-to-1-5-no-evidence-of-ai-productivity-boom/",
+      "author": "konmok",
+      "item_id": "hn:49153574",
+      "headline": "Q2 GDP growth slows to 1.5% with __no evidence of an AI productivity boom__ showing up in the data.",
+      "subreddit": null,
+      "source_text": "GDP growth shows no evidence of AI productivity boom",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-03T09:59:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cepr.net/publications/gdp-growth-in-second-quarter-slows-to-1-5-no-evidence-of-ai-productivity-boom",
+      "learning_score": 3
+    },
+    {
       "url": "https://huggingface.co/zyoralabs/AQ-academic-ai",
       "author": "zyoraclub",
       "item_id": "hn:49153490",
-      "headline": "A two-person team in India built __AQ, a from-scratch 1B academic LLM__ and open-sourced it on Hugging Face.",
+      "headline": "A two-person team in India built __AQ, a 1B-parameter academic LLM__ from scratch.",
       "subreddit": null,
       "source_text": "Show HN: AQ – a from-scratch 1B academic LLM by a 2-person team in India",
       "source_type": "hacker_news",
@@ -241,7 +267,7 @@
       "url": "https://ctaio.dev/en/jobs/",
       "author": "norejisace",
       "item_id": "hn:49153434",
-      "headline": "The highest-paid AI/tech job publicly advertised tops out at __$824k, not $100M__ — a reality check on comp discourse.",
+      "headline": "The highest-paid AI job anyone actually advertises tops out at __$824k, not $100M__.",
       "subreddit": null,
       "source_text": "Show HN: The best-paid AI/tech job anyone advertises pays $824k, not $100M",
       "source_type": "hacker_news",
@@ -251,63 +277,37 @@
       "learning_score": 3
     },
     {
-      "url": "https://clickhouse.com/blog/clickbench-playground",
-      "author": "soheilpro",
-      "item_id": "hn:49152910",
-      "headline": "Someone built a __playground benchmarking 110 database systems__ side by side on ClickBench.",
+      "url": "https://philarchive.org/rec/NOVWIL",
+      "author": "lioeters",
+      "item_id": "hn:49153970",
+      "headline": "A second wave of scholarship makes the case that AI is __degrading research__ rather than advancing it.",
       "subreddit": null,
-      "source_text": "I created a playground for 110 database systems",
+      "source_text": "What Is Left for Us? Second Scholarship Against Degradation of Research by AI",
       "source_type": "hacker_news",
-      "created_time": "2026-08-03T08:39:21+00:00",
+      "created_time": "2026-08-03T10:46:41+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://clickhouse.com/blog/clickbench-playground",
-      "learning_score": 3
-    },
-    {
-      "url": "https://www.thestreet.com/crypto/markets/coldcard-hack-just-grew-to-75m-call-your-friends",
-      "author": "thm",
-      "item_id": "hn:49153532",
-      "headline": "The Coldcard hardware wallet hack has __grown to $89M__ — and it's still climbing.",
-      "subreddit": null,
-      "source_text": "Coldcard hack just grew to $89M, call your friends",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-03T09:53:24+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://thestreet.com/crypto/markets/coldcard-hack-just-grew-to-75m-call-your-friends",
+      "canonical_url": "https://philarchive.org/rec/NOVWIL",
       "learning_score": 2
     },
     {
-      "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
-      "author": "rohanath",
-      "item_id": "hn:49153520",
-      "headline": "Nvidia releases __Cosmos 3 Edge__, a new model family purpose-built for robotics at the edge.",
+      "url": "https://deepfocus.space/en/the-timeless-study",
+      "author": "mike_watson",
+      "item_id": "hn:49153917",
+      "headline": "__DeepFocus__ is a quiet digital workspace designed for doing exactly one thing at a time.",
       "subreddit": null,
-      "source_text": "Nvidia releases Cosmos 3 Edge for robotics",
+      "source_text": "Show HN: DeepFocus – A quiet digital workspace for doing one thing at a time",
       "source_type": "hacker_news",
-      "created_time": "2026-08-03T09:51:43+00:00",
+      "created_time": "2026-08-03T10:40:46+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://huggingface.co/blog/nvidia/cosmos3edge",
-      "learning_score": 2
-    },
-    {
-      "url": "https://outdata.net/blog/260803",
-      "author": "LAC-Tech",
-      "item_id": "hn:49153497",
-      "headline": "A case for building software with a __deterministic core and non-deterministic shell__ — keeping unpredictability at the boundaries.",
-      "subreddit": null,
-      "source_text": "Deterministic Core, Non-Deterministic Shell",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-03T09:48:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://outdata.net/blog/260803",
+      "canonical_url": "https://deepfocus.space/en/the-timeless-study",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-03T09:56:52.495917+00:00",
+    "generated_at": "2026-08-03T10:49:19.706651+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "50f5ef80252df6e9125a3fc4e2fd7e99963700b2ba950eb2609499f7b1ee0f73"
+  "content_hash": "8c975f1b66e1fd710414c6eafffd7e4bc4e754f99819c65380f964fd1d8cd221"
 }
