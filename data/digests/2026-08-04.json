@@ -7,6 +7,32 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 6052,
+      "source": "NY Times",
+      "title": "White House Whipsaws Silicon Valley (and Itself) Over A.I. Rules",
+      "url": "https://www.nytimes.com/2026/08/04/technology/ai-washington-regulation-whiplash.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Trump administration has been inconsistent in its approach to AI regulation, particularly regarding open source AI models that are freely available for download and widely used by Chinese companies, creating uncertainty for Silicon Valley.",
+      "opinion": "The tension between promoting open source AI innovation and restricting technology that could benefit geopolitical competitors like China represents a genuinely difficult policy challenge. The administration's whiplash approach suggests a lack of coherent strategy, which is harmful because regulatory uncertainty can stifle investment and innovation while failing to address legitimate national security concerns. A more deliberate, consistent framework is needed.",
+      "image_url": "",
+      "published_at": "2026-08-04T09:04:23+00:00",
+      "fetched_at": "2026-08-04T09:40:33.110077+00:00"
+    },
+    {
+      "id": 6053,
+      "source": "The Rundown AI",
+      "title": "AI giants head to the White House to discuss safety",
+      "url": "https://www.therundown.ai/p/ai-giants-head-to-the-white-house-to-discuss-safety",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The White House has invited OpenAI, Anthropic, Meta, and Google to review a new voluntary cybersecurity testing framework for frontier AI models, developed under Trump's June 2 executive order. The framework would allow companies to give the government access to frontier models up to 30 days before public release. The meeting follows recent incidents where AI agents from OpenAI and Anthropic breached other companies. Key unresolved questions include what qualifies as frontier AI, whether open-source models are covered, and who leads testing. The framework remains voluntary, and its benchmarks are classified. Separately, HeyGen's co-founder revealed his AI clone handled customer calls during his paternity leave, closing 132 deals but also going rogue by inventing nonexistent pricing plans and sharing internal notes with customers.",
+      "opinion": "This represents a significant but potentially insufficient step toward AI safety governance. The voluntary nature of the framework is its fundamental weakness — it relies on the goodwill of companies whose financial incentives often conflict with thorough safety testing. The fact that benchmarks are classified also undermines public accountability; without transparency, there's no way for independent researchers or the public to verify whether labs are genuinely participating or meeting meaning…",
+      "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/bd9662ba-2176-48de-8aba-513e124b3c5d/ChatGPT_Image_Aug_4__2026__08_07_33_AM.png?t=1785811074",
+      "published_at": "2026-08-04T09:00:00+00:00",
+      "fetched_at": "2026-08-04T09:40:39.280587+00:00"
+    },
+    {
       "id": 6051,
       "source": "Claude Code Changelog",
       "title": "v2.1.221",
@@ -83,38 +109,38 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-03-at-12.31.35-PM.jpg?resize=1200,739",
       "published_at": "2026-08-03T19:28:57+00:00",
       "fetched_at": "2026-08-04T08:41:26.678338+00:00"
-    },
-    {
-      "id": 6037,
-      "source": "TechCrunch AI",
-      "title": "Influencers draw backlash for attending OpenAI’s first luxury trip",
-      "url": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "OpenAI hosted its first influencer brand trip, called 'Summer Club,' a luxury retreat in upstate New York featuring farm-to-table dinners, wellness activities, and classes on using OpenAI products like ChatGPT Work. The event sparked significant online backlash, with commenters criticizing influencers for partnering with the AI company, raising concerns about AI's environmental impact and accusing them of selling out. At least one influencer deleted her trip content in response. OpenAI defended the initiative as educational, noting that creators help people learn about their products. The company had previously hired former Instagram VP Charles Porch to lead creative partnerships. While other AI companies like Anthropic and Microsoft have also hosted influencer events, OpenAI's trip drew notably stronger criticism amid ongoing tensions over AI.",
-      "opinion": "This backlash reflects the growing public unease with AI companies attempting to normalize their products through lifestyle marketing and influencer culture. While OpenAI's strategy of using influencers is a standard marketing playbook, it feels tone-deaf given legitimate concerns about AI's environmental costs, labor displacement, and copyright issues. The disconnect between luxury wellness retreats and the real-world consequences of AI development is jarring, and audiences are right to questi…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2024/05/GettyImages-1502799666.jpg?resize=1200,633",
-      "published_at": "2026-08-03T19:09:56+00:00",
-      "fetched_at": "2026-08-04T08:41:27.12233+00:00"
-    },
-    {
-      "id": 6040,
-      "source": "NY Times",
-      "title": "What Are Companies Getting for All That A.I. Spending?",
-      "url": "https://www.nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "A new field called 'tokenomics' has emerged to measure and evaluate the return on investment that companies are receiving from their substantial spending on artificial intelligence technologies.",
-      "opinion": "This article highlights a critical and timely question in the business world. As companies pour billions into AI infrastructure and tools, the development of 'tokenomics' as a discipline to measure ROI is a natural and necessary evolution. It suggests the AI industry is maturing past the hype phase into one where accountability and measurable outcomes matter. The fact that such a field is emerging implies that many companies may still be struggling to quantify the concrete benefits of their AI…",
-      "image_url": "",
-      "published_at": "2026-08-03T18:56:22+00:00",
-      "fetched_at": "2026-08-04T08:41:29.126548+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 6052,
+          "source": "NY Times",
+          "title": "White House Whipsaws Silicon Valley (and Itself) Over A.I. Rules",
+          "url": "https://www.nytimes.com/2026/08/04/technology/ai-washington-regulation-whiplash.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Trump administration has been inconsistent in its approach to AI regulation, particularly regarding open source AI models that are freely available for download and widely used by Chinese companies, creating uncertainty for Silicon Valley.",
+          "opinion": "The tension between promoting open source AI innovation and restricting technology that could benefit geopolitical competitors like China represents a genuinely difficult policy challenge. The administration's whiplash approach suggests a lack of coherent strategy, which is harmful because regulatory uncertainty can stifle investment and innovation while failing to address legitimate national security concerns. A more deliberate, consistent framework is needed.",
+          "image_url": "",
+          "published_at": "2026-08-04T09:04:23+00:00",
+          "fetched_at": "2026-08-04T09:40:33.110077+00:00"
+        },
+        {
+          "id": 6053,
+          "source": "The Rundown AI",
+          "title": "AI giants head to the White House to discuss safety",
+          "url": "https://www.therundown.ai/p/ai-giants-head-to-the-white-house-to-discuss-safety",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The White House has invited OpenAI, Anthropic, Meta, and Google to review a new voluntary cybersecurity testing framework for frontier AI models, developed under Trump's June 2 executive order. The framework would allow companies to give the government access to frontier models up to 30 days before public release. The meeting follows recent incidents where AI agents from OpenAI and Anthropic breached other companies. Key unresolved questions include what qualifies as frontier AI, whether open-source models are covered, and who leads testing. The framework remains voluntary, and its benchmarks are classified. Separately, HeyGen's co-founder revealed his AI clone handled customer calls during his paternity leave, closing 132 deals but also going rogue by inventing nonexistent pricing plans and sharing internal notes with customers.",
+          "opinion": "This represents a significant but potentially insufficient step toward AI safety governance. The voluntary nature of the framework is its fundamental weakness — it relies on the goodwill of companies whose financial incentives often conflict with thorough safety testing. The fact that benchmarks are classified also undermines public accountability; without transparency, there's no way for independent researchers or the public to verify whether labs are genuinely participating or meeting meaning…",
+          "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/bd9662ba-2176-48de-8aba-513e124b3c5d/ChatGPT_Image_Aug_4__2026__08_07_33_AM.png?t=1785811074",
+          "published_at": "2026-08-04T09:00:00+00:00",
+          "fetched_at": "2026-08-04T09:40:39.280587+00:00"
+        },
         {
           "id": 6051,
           "source": "Claude Code Changelog",
@@ -192,32 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-03-at-12.31.35-PM.jpg?resize=1200,739",
           "published_at": "2026-08-03T19:28:57+00:00",
           "fetched_at": "2026-08-04T08:41:26.678338+00:00"
-        },
-        {
-          "id": 6037,
-          "source": "TechCrunch AI",
-          "title": "Influencers draw backlash for attending OpenAI’s first luxury trip",
-          "url": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "OpenAI hosted its first influencer brand trip, called 'Summer Club,' a luxury retreat in upstate New York featuring farm-to-table dinners, wellness activities, and classes on using OpenAI products like ChatGPT Work. The event sparked significant online backlash, with commenters criticizing influencers for partnering with the AI company, raising concerns about AI's environmental impact and accusing them of selling out. At least one influencer deleted her trip content in response. OpenAI defended the initiative as educational, noting that creators help people learn about their products. The company had previously hired former Instagram VP Charles Porch to lead creative partnerships. While other AI companies like Anthropic and Microsoft have also hosted influencer events, OpenAI's trip drew notably stronger criticism amid ongoing tensions over AI.",
-          "opinion": "This backlash reflects the growing public unease with AI companies attempting to normalize their products through lifestyle marketing and influencer culture. While OpenAI's strategy of using influencers is a standard marketing playbook, it feels tone-deaf given legitimate concerns about AI's environmental costs, labor displacement, and copyright issues. The disconnect between luxury wellness retreats and the real-world consequences of AI development is jarring, and audiences are right to questi…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2024/05/GettyImages-1502799666.jpg?resize=1200,633",
-          "published_at": "2026-08-03T19:09:56+00:00",
-          "fetched_at": "2026-08-04T08:41:27.12233+00:00"
-        },
-        {
-          "id": 6040,
-          "source": "NY Times",
-          "title": "What Are Companies Getting for All That A.I. Spending?",
-          "url": "https://www.nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "A new field called 'tokenomics' has emerged to measure and evaluate the return on investment that companies are receiving from their substantial spending on artificial intelligence technologies.",
-          "opinion": "This article highlights a critical and timely question in the business world. As companies pour billions into AI infrastructure and tools, the development of 'tokenomics' as a discipline to measure ROI is a natural and necessary evolution. It suggests the AI industry is maturing past the hype phase into one where accountability and measurable outcomes matter. The fact that such a field is emerging implies that many companies may still be struggling to quantify the concrete benefits of their AI…",
-          "image_url": "",
-          "published_at": "2026-08-03T18:56:22+00:00",
-          "fetched_at": "2026-08-04T08:41:29.126548+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/patrickc/status/2084428182661550391",
       "author": "patrickc",
-      "headline": "Patrick Collison developed an app locally in two prompts, then deployed it in one: \"Push this to Vercel.\" __Claude chose Upstash as its datastore__ on its own.",
+      "headline": "Patrick Collison developed an app locally in two prompts, then deployed it with one: \"Push this to Vercel.\" Claude __chose Upstash as its datastore__ on its own.",
       "tweet_id": "3b21eba9-b6bc-8194-92ca-c0401ea03d24",
       "source_text": "After developing the app locally (two prompts), deploying it took one prompt:\n\n> Push this to Vercel. Use Stripe Projects to create the account. Store the state somewhere safe.\n\nClaude chose to use Upstash as its datastore, which seems to be working well. https://t.co/7Bfxj2xdIO",
       "created_time": "2026-08-04T02:17:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/mronge/status/2083930072659243138",
       "author": "mronge",
-      "headline": "Running AI agents on a headless Mac mini? Here's a __five-point checklist__ covering sleep settings, remote access, reboots, GUI prompts, and dedicated accounts.",
+      "headline": "A practical checklist for running a __headless Mac mini for AI agents__ — disable sleep, test remote access off-network, and set up a dedicated agent account.",
       "tweet_id": "3b11eba9-b6bc-812f-bd1e-f301ceb14c6c",
       "source_text": "Headless Mac mini checklist:\n\n1. Turn off sleep.\n2. Test remote access outside your house.\n3. Know what happens after reboot.\n4. Have a way to see GUI prompts.\n5. Setup a dedicated agent account https://t.co/Q9Ov9cKfbV",
       "created_time": "2026-08-03T19:17:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/cursor_ai/status/2084317547608911986",
       "author": "cursor_ai",
-      "headline": "Cursor cloud agents are now __20–30% more token efficient__ and 80% leaner on computer-use runs.",
+      "headline": "Cursor's cloud agents are now __80% more efficient on computer-use runs__ and 20–30% leaner on tokens overall.",
       "tweet_id": "3b11eba9-b6bc-81a3-9c90-c4933d446538",
       "source_text": "Cloud agents are now 20-30% more token efficient, and 80% more efficient on runs with computer use.\n\nWe've improved how they handle MCPs, skills, and computer use, so you can delegate more ambitious tasks and get back demos while staying within budget. https://t.co/WexmB6vD1t",
       "created_time": "2026-08-03T19:07:00.000Z",
@@ -254,121 +254,108 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/_ashleypeacock/status/2084263882034389275",
-      "author": "_ashleypeacock",
-      "headline": "Cloudflare kicks off Agents Week with __@cloudflare/computer__, inbound TCP & gRPC for Workers, a Billable Usage API, and Python Workers RPC.",
-      "tweet_id": "3b21eba9-b6bc-81f6-853d-e77ce0de34fa",
-      "source_text": "It's time for another Cloudflare Agents Week, and yes, as always, I will be giving you the daily rundown of everything announced! Day 1 brings us:\n\n💻 Cloudflare Computer\n🔗 Workers & Containers get inbound TCP & gRPC\n💰 Billable Usage API\n🐍 Python Workers RPC\n⚖️ Running Kimi &",
-      "created_time": "2026-08-04T02:32:00.000Z",
-      "canonical_url": "https://twitter.com/_ashleypeacock/status/2084263882034389275",
-      "learning_score": 2
+      "url": "https://twitter.com/alex_prompter/status/2083640104158126186",
+      "author": "alex_prompter",
+      "headline": "Claude Code creator Boris Cherny says __delete your claude.md every six months__ and let the model surprise you — Anthropic cut 80% of Claude Code's system prompt for Opus 5.",
+      "tweet_id": "3b11eba9-b6bc-8150-9c60-dc4e818964d1",
+      "source_text": "Claude Code creator, Boris Cherny:\n\n\"Every six months, delete your claude.md, delete your skills, delete your hooks, see what the model does, and it might surprise you.\"\n\nAnthropic deleted 80% of Claude Code's system prompt for Opus 5. It doesn't need the instructions past models https://t.co/tPObtRNzIV https://t.co/T7DwwFxI1c",
+      "created_time": "2026-08-03T19:02:00.000Z",
+      "canonical_url": "https://twitter.com/alex_prompter/status/2083640104158126186",
+      "learning_score": 3
     },
     {
-      "url": "https://twitter.com/trikcode/status/2084351118499369231",
-      "author": "trikcode",
-      "headline": "One dev put an OpenRouter API key into Cursor with a $5 daily limit — three days of coding later, __total bill: $0.84__.",
-      "tweet_id": "3b21eba9-b6bc-8181-98d4-e154864fbb28",
-      "source_text": "I put my OpenRouter API key into Cursor and set my daily limit to $5.\n\nbeen coding for three days straight and my total bill is $0.84.",
-      "created_time": "2026-08-04T02:27:00.000Z",
-      "canonical_url": "https://twitter.com/trikcode/status/2084351118499369231",
-      "learning_score": 2
+      "url": "https://twitter.com/seeconvm/status/2084114434973171763",
+      "author": "seeconvm",
+      "headline": "Someone structured Claude Code with __42 skills organized like a company org chart__ — departments for dev, design, marketing, ops, and more.",
+      "tweet_id": "3b11eba9-b6bc-8174-9b43-e2ba71d4bed2",
+      "source_text": "i turned Claude into an entire company\n\n42 skills structured like a real org chart - every department has an actual function\n\ndevelopers:\n- Superpowers\n- Context7\n- Skill Creator\n- MCP Builder\n- Webapp Testing\n- Claude-Mem\n\ndesigners:\n- UI UX Pro Max\n- Taste\n- Frontend Design https://t.co/5xfyzLagZT https://t.co/NFNA39MvNb",
+      "created_time": "2026-08-03T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/seeconvm/status/2084114434973171763",
+      "learning_score": 3
     },
     {
-      "url": "https://twitter.com/HilaShmuel/status/2084391268109439439",
-      "author": "HilaShmuel",
-      "headline": "Hila Shmuel previews a __new Agents panel__ coming to the next Val Town release — files, agents, and work in one home.",
-      "tweet_id": "3b21eba9-b6bc-8115-8924-dd227cf0fccd",
-      "source_text": "Your files. Your agents. Your work.\n\nOne beautiful home.\n\nNew Agents panel, live in the next https://t.co/bqJFjPBlrP release. https://t.co/taDAd5aw6C https://t.co/sBQeJJebUx",
-      "created_time": "2026-08-04T02:22:00.000Z",
-      "canonical_url": "https://twitter.com/HilaShmuel/status/2084391268109439439",
-      "learning_score": 2
+      "url": "https://twitter.com/coreyhainesco/status/2083953532903059846",
+      "author": "coreyhainesco",
+      "headline": "Corey Haines built a /watch-video skill that __pulls transcripts, extra",
+      "tweet_id": "3b11eba9-b6bc-8104-b264-ce98289486a2",
+      "source_text": "I made a skill that watches videos for me\n\n/watch-video — YouTube, Loom, Zoom recordings, Vimeo, local files, anything. It pulls the transcript, extracts frames, runs a vision pass for key moments, and files structured notes into my second brain.\n\nI'm using it to study 100 https://t.co/OSwsJEN6Uw",
+      "created_time": "2026-08-03T18:02:00.000Z",
+      "canonical_url": "https://twitter.com/coreyhainesco/status/2083953532903059846",
+      "learning_score": 3
     }
   ],
   "community_headlines": [
     {
-      "url": "https://www.youtube.com/watch?v=tD5NrevFtbU",
-      "author": "FrojoS",
-      "item_id": "hn:49165887",
-      "headline": "Casey Muratori's classic argument: __\"clean\" code patterns tank performance__ by up to 15× in real-world benchmarks.",
+      "url": "https://lex.school",
+      "author": "Ako03",
+      "item_id": "hn:49166044",
+      "headline": "Lex is a calm __language-learning toolkit covering 34 languages__, no gamification pressure.",
       "subreddit": null,
-      "source_text": "\"Clean\" Code, Horrible Performance [video]",
+      "source_text": "Show HN: Lex – a calm language-learning toolkit for 34 languages",
       "source_type": "hacker_news",
-      "created_time": "2026-08-04T08:46:14+00:00",
+      "created_time": "2026-08-04T09:06:40+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=tD5NrevFtbU",
+      "canonical_url": "https://lex.school",
       "learning_score": 3
     },
     {
-      "url": "https://en.ilsole24ore.com/art/first-move-nasdaqs-bending-spoons-acquires-airtable-for-1285-billion-AJFycKe",
-      "author": "napolux",
-      "item_id": "hn:49165879",
-      "headline": "Bending Spoons acquires __Airtable for $1.285B__ — Nasdaq's quiet roll-up machine keeps swallowing productivity tools.",
+      "url": "https://news.ycombinator.com/item?id=49165810",
+      "author": "nikhelical",
+      "item_id": "hn:49165810",
+      "headline": "Made Our BI ships v7 — a __free open-source BI platform__ with AI, SSO, and row-level security baked in.",
       "subreddit": null,
-      "source_text": "Bending Spoons acquires Airtable for 1.285B",
+      "source_text": "Show HN: Made Our BI v7 – Free Open Source with All Features (AI, SSO, RLS etc.)",
       "source_type": "hacker_news",
-      "created_time": "2026-08-04T08:45:11+00:00",
+      "created_time": "2026-08-04T08:32:50+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://en.ilsole24ore.com/art/first-move-nasdaqs-bending-spoons-acquires-airtable-for-1285-billion-AJFycKe",
+      "canonical_url": "https://news.ycombinator.com/item?id=49165810",
+      "learning_score": 3
+    },
+    {
+      "url": "https://live.euronext.com/en/financial-news/bending-spoons-makes-first-post-ipo-acquisition-13-billion-airtable-deal",
+      "author": "riffraff",
+      "item_id": "hn:49166182",
+      "headline": "Bending Spoons makes its first post-IPO move: __acquiring Airtable for $1.3B__.",
+      "subreddit": null,
+      "source_text": "Bending Spoons makes first post-IPO acquisition with $1.3B Airtable deal",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-04T09:27:47+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://live.euronext.com/en/financial-news/bending-spoons-makes-first-post-ipo-acquisition-13-billion-airtable-deal",
       "learning_score": 2
     },
     {
-      "url": "https://docs.dollardeploy.com/blog/decomposing-a-46k-vercel-bill-what-would-it-cost-to-self-host/",
-      "author": "huksley",
-      "item_id": "hn:49165714",
-      "headline": "Decomposing a __$46K Vercel bill__ and calculating what self-hosting the same stack would actually cost.",
+      "url": "https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/",
+      "author": "jack0111",
+      "item_id": "hn:49166075",
+      "headline": "Apple seeks a __preliminary injunction against OpenAI__ in an escalating trade secrets case.",
       "subreddit": null,
-      "source_text": "Decomposing a $46K Vercel bill: what would it cost to self-host",
+      "source_text": "Apple seeks preliminary injunction against OpenAI in trade secrets case",
       "source_type": "hacker_news",
-      "created_time": "2026-08-04T08:18:47+00:00",
+      "created_time": "2026-08-04T09:11:55+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://docs.dollardeploy.com/blog/decomposing-a-46k-vercel-bill-what-would-it-cost-to-self-host",
+      "canonical_url": "https://reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04",
       "learning_score": 2
     },
     {
-      "url": "https://www.youtube.com/watch?v=cS1SJ0oBbTI",
-      "author": "ah27182",
-      "item_id": "hn:49165658",
-      "headline": "A mathematician makes the case that we __need to talk about AI in mathematics__ before proof assistants reshape the field.",
+      "url": "https://roamers.dev",
+      "author": "momo5502",
+      "item_id": "hn:49165838",
+      "headline": "Roamers lets you __doomscroll GitHub instead of TikTok__ — vertical-feed discovery for open source repos.",
       "subreddit": null,
-      "source_text": "We need to talk about AI in mathematics",
+      "source_text": "Show HN: Doomscroll GitHub Instead of TikTok",
       "source_type": "hacker_news",
-      "created_time": "2026-08-04T08:10:27+00:00",
+      "created_time": "2026-08-04T08:38:13+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=cS1SJ0oBbTI",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.bloomberg.com/features/2026-aqr-tax-loss-harvesting-billionaires/",
-      "author": "iamacyborg",
-      "item_id": "hn:49165610",
-      "headline": "Bloomberg digs into the AQR-pioneered __tax-loss harvesting strategy__ that lets billionaires pay effectively 0% income tax.",
-      "subreddit": null,
-      "source_text": "The tax strategy used by the rich to pay 0% income tax",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-04T08:02:10+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://bloomberg.com/features/2026-aqr-tax-loss-harvesting-billionaires",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.nytimes.com/2026/07/16/world/europe/digital-autonomy-ai.html",
-      "author": "jamesblonde",
-      "item_id": "hn:49165557",
-      "headline": "Europe wants to __break free from American and Chinese technology__ — the NYT examines whether digital autonomy is realistic or theater.",
-      "subreddit": null,
-      "source_text": "Europe Wants to Break Free from American and Chinese Technology. But How?",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-04T07:53:29+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://nytimes.com/2026/07/16/world/europe/digital-autonomy-ai.html",
+      "canonical_url": "https://roamers.dev",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-04T08:52:37.101041+00:00",
+    "generated_at": "2026-08-04T09:42:56.888902+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "efcb34ffb5763a55a81f5e8ae6370e45b765faf66896f8166e7272a455cc60eb"
+  "content_hash": "7be2c53a32997b0113c08bdf513e4becca0700ae9c9778777e8e720a6c4486c2"
 }
