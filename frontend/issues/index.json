@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-04T00:00:00Z",
-  "issueCount": 106,
+  "generatedAt": "2026-08-05T00:00:00Z",
+  "issueCount": 107,
   "latestIssue": {
-    "slug": "2026-08-04",
-    "digestDate": "2026-08-04",
-    "displayDate": "Aug 04, 2026",
-    "issueNumber": "60804",
-    "subject": "ISSUE 60804 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Palantir CEO Alex Karp isn't holding back \u2014 fresh off a killer quarter with revenue up 93%, he's calling the AI industry \"Marxist,\" accusing frontier labs like OpenAI and Anthropic of trying to capture their customers' data and IP to eventually compete against them. It's a provocative framing, but he's not alone in the sentiment, and today's digest is full of stories that show just how tangled the AI ecosystem's relationships are getting \u2014 from AWS embedding a vibe-coding startup into its enterprise cloud, to OpenAI firing back at Apple in a heated legal spat, to influencers catching flak for attending OpenAI's luxury retreat. Buckle in: the AI industry's power dynamics are shifting fast, and everyone's trying to figure out who's really on whose side.",
+    "slug": "2026-08-05",
+    "digestDate": "2026-08-05",
+    "displayDate": "Aug 05, 2026",
+    "issueNumber": "60805",
+    "subject": "ISSUE 60805 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI boom isn't just reshaping tech \u2014 it's reshaping entire companies and markets. Today's biggest story might be SpaceX quietly becoming more of an AI company than a space company, pulling in $2.6 billion in AI revenue that eclipsed its rocket business, while AMD's data center revenue more than doubled and US stock markets hit record highs on the back of AI-driven profits. Beyond the financial frenzy, we're also diving into a sobering safety report on open-weight models closing the capability gap with frontier AI without the guardrails, a surprising study on AI-written stories outscoring human ones, and a fresh batch of Claude Code bug fixes.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-08-04.html",
-    "contentHash": "7be2c53a32997b0113c08bdf513e4becca0700ae9c9778777e8e720a6c4486c2"
+    "urlPath": "/issues/2026-08-05.html",
+    "contentHash": "21fee69ea2727d2f3d5d3527cfd2c2a1e4fd82d0924a365f6d00633882bbdfab"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-05",
+      "digestDate": "2026-08-05",
+      "displayDate": "Aug 05, 2026",
+      "issueNumber": "60805",
+      "subject": "ISSUE 60805 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI boom isn't just reshaping tech \u2014 it's reshaping entire companies and markets. Today's biggest story might be SpaceX quietly becoming more of an AI company than a space company, pulling in $2.6 billion in AI revenue that eclipsed its rocket business, while AMD's data center revenue more than doubled and US stock markets hit record highs on the back of AI-driven profits. Beyond the financial frenzy, we're also diving into a sobering safety report on open-weight models closing the capability gap with frontier AI without the guardrails, a surprising study on AI-written stories outscoring human ones, and a fresh batch of Claude Code bug fixes.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-08-05.html",
+      "contentHash": "21fee69ea2727d2f3d5d3527cfd2c2a1e4fd82d0924a365f6d00633882bbdfab"
+    },
     {
       "slug": "2026-08-04",
       "digestDate": "2026-08-04",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-25.html",
       "contentHash": "69ff75e4b6e33efb2735cad546d9cc9326948dfd06601c52369c7c183b0de90f"
-    },
-    {
-      "slug": "2026-07-24",
-      "digestDate": "2026-07-24",
-      "displayDate": "Jul 24, 2026",
-      "issueNumber": "60724",
-      "subject": "ISSUE 60724 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI hardware race is heating up as AMD throws down the gauntlet against Nvidia with its Helios rack-scale system, already locking in heavyweights like OpenAI, Anthropic, Microsoft, and Meta as customers. Meanwhile, Anthropic is making moves of its own on the software side, upgrading Claude's voice mode to support its most powerful models while adding integrations that let you reschedule meetings and draft emails just by talking. From cybersecurity researchers clashing with AI guardrails to Black Forest Labs teaching video AI to literally run factory robots, today's digest is packed with stories that show just how fast AI is reshaping every corner of the tech landscape.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-24.html",
-      "contentHash": "ce29984f73ac5efd34905b801d24ca5710e14db8383ca39f3c84022015b96bf5"
     }
   ]
 }
