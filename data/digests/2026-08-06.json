@@ -7,6 +7,32 @@
   "article_count": 8,
   "stories": [
     {
+      "id": 6115,
+      "source": "The Verge AI",
+      "title": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+      "url": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI has filed a motion to dismiss Apple's trade secrets lawsuit, calling the allegations 'meritless' and 'rotten to its core.' Apple's July lawsuit accused former Apple employees now working at OpenAI of stealing confidential documents to advance OpenAI's hardware development plans. OpenAI counters that Apple is mischaracterizing generic product development information as trade secrets, that Apple made no reasonable efforts to maintain secrecy, and that the case is built on selective or out-of-context communications. OpenAI also published a blog post calling the lawsuit 'careless, aggressive, and oddly personal,' and claims that one accused former Apple employee was simply helping ex-colleagues rather than stealing documents.",
+      "opinion": "This is a significant legal battle between two tech giants that reflects the intensifying competition in the AI hardware space. OpenAI's aggressive response — both through formal legal channels and a public blog post — suggests the company is confident in its defense, but the fact that Apple filed such a high-profile lawsuit indicates it likely has substantial evidence to present. Trade secret cases often hinge on nuanced questions about what constitutes a trade secret and what reasonable prote…",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25431704/STK201_SAM_ALTMAN_CVIRGINIA_C.jpg?quality=90&strip=all&crop=4.7487503051758%2C21.869598945592%2C95.251249694824%2C74.804666989327&w=1200",
+      "published_at": "2026-08-06T09:33:11+00:00",
+      "fetched_at": "2026-08-06T09:42:37.609358+00:00"
+    },
+    {
+      "id": 6114,
+      "source": "The Rundown AI",
+      "title": "Google shakes up its AI brain trust",
+      "url": "https://www.therundown.ai/p/google-shakes-up-its-ai-brain-trust",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google has reshuffled its AI leadership, with DeepMind CEO Demis Hassabis moving to a chairman and chief scientist role while CTO Koray Kavukcuoglu takes over daily operations as senior VP. Long-time Google veteran Jeff Dean is departing to co-found Discovery Loop, a public benefit corporation focused on automating scientific research, joined by other notable Google researchers including Sanjay Ghemawat, Oriol Vinyals, and Quoc Le. The changes come amid pressure from Gemini 3.5 Pro delays and top researchers leaving for competitors. Google's stock dropped approximately 4% following the announcement. CEO Sundar Pichai framed the restructuring as essential for staying at the AI frontier and shaping AGI development. The article also covers other AI developments including advances in voice mode capabilities from OpenAI and Anthropic, Meta's entry into the coding-agent space with Muse Code,…",
+      "opinion": "This leadership shakeup at Google signals a potentially concerning transition period for the company's AI efforts. Losing both Hassabis from day-to-day operations and Jeff Dean entirely represents a significant brain drain, even if Hassabis remains in an advisory capacity. The timing is particularly worrying given that Google is already perceived as falling behind rivals in delivering frontier models, with Gemini 3.5 Pro delays being a notable sore point. The market's negative reaction seems ju…",
+      "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5f5f2c33-6b66-4653-b7aa-86d8609c36ce/ChatGPT_Image_Aug_6__2026__12_07_18_PM.png?t=1785998250",
+      "published_at": "2026-08-06T09:00:00+00:00",
+      "fetched_at": "2026-08-06T09:42:35.821579+00:00"
+    },
+    {
       "id": 6113,
       "source": "Claude Code Changelog",
       "title": "v2.1.223",
@@ -83,38 +109,38 @@
       "image_url": "https://techcrunch.com/wp-content/uploads/2025/10/GettyImages-2235448056.jpg?resize=1200,800",
       "published_at": "2026-08-05T21:21:28+00:00",
       "fetched_at": "2026-08-06T08:41:02.629618+00:00"
-    },
-    {
-      "id": 6086,
-      "source": "TechCrunch AI",
-      "title": "Klaviyo acquires Elias Torres’ Agency in full-circle reunion for tech founders",
-      "url": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Klaviyo, a publicly traded e-commerce marketing automation platform, has acquired Agency, a three-year-old AI-powered customer success startup founded by serial entrepreneur Elias Torres. Agency had raised $32 million from investors including Sequoia, Menlo Ventures, and Felicis. Deal terms were not disclosed. Torres will join Klaviyo as Chief Product Officer, bringing his 25-person team to accelerate development of Klaviyo's AI agents: Composer (for building marketing campaigns) and Customer Agent (for post-sale support). The acquisition represents a full-circle moment for the founders — Torres had hired Klaviyo CEO Andrew Bialecki as one of the first engineers at Performable in 2010, mentoring him on startup dynamics. Bialecki later co-founded and bootstrapped Klaviyo, and Torres was an angel investor in Klaviyo's 2015 seed round. Torres previously co-founded Performable (acquired by…",
-      "opinion": "This is a strategically sound acquisition for Klaviyo that goes beyond a typical acqui-hire. The personal history between Torres and Bialecki — from mentor-mentee to angel investor-founder to now CPO-CEO — suggests strong alignment and trust, which is often the most critical factor in successful acquisitions. Torres brings deep experience in conversational AI and customer engagement from his Drift years, making him well-suited to lead Klaviyo's AI agent strategy. The deal also makes sense from…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-05-at-8.53.41-PM.png?resize=1200,868",
-      "published_at": "2026-08-05T20:05:00+00:00",
-      "fetched_at": "2026-08-06T08:41:02.891774+00:00"
-    },
-    {
-      "id": 6087,
-      "source": "TechCrunch AI",
-      "title": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
-      "url": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
-      "topic": "Industry",
-      "category": "Business, Deals & Funding",
-      "summary": "Jeff Dean, one of Google's longest-serving and most influential executives, is leaving the company along with several other top researchers—Sanjay Ghemawat, Quoc Le, and Oriol Vinyals—to co-found Discovery Loop, a public benefit corporation. The startup aims to use AI to accelerate scientific research by automating experimental loops and running thousands of experiments simultaneously. The company is also exploring recursive self-improvement, where AI helps create more powerful AI. The initial funding round is co-led by Radical Ventures and Khosla Ventures, with participation from Kleiner Perkins, Lightspeed, Doerr Capital, and notably Google's parent company Alphabet. Dean, who joined Google in 1999 as its 30th employee, will serve as CEO.",
-      "opinion": "This is a genuinely significant departure for Google and a major moment for the AI industry. Jeff Dean is not just any executive—he is arguably one of the most important engineers in Google's history, and Sanjay Ghemawat has been his legendary collaborator for decades. Quoc Le and Oriol Vinyals are also world-class researchers. The fact that all four are leaving together signals deep conviction that the most impactful AI work may now be better pursued outside of Google's corporate structure. Th…",
-      "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1197130647.jpg?resize=1200,800",
-      "published_at": "2026-08-05T19:30:19+00:00",
-      "fetched_at": "2026-08-06T08:41:03.100795+00:00"
     }
   ],
   "sections": [
     {
       "name": "Business, Deals & Funding",
       "articles": [
+        {
+          "id": 6115,
+          "source": "The Verge AI",
+          "title": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+          "url": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI has filed a motion to dismiss Apple's trade secrets lawsuit, calling the allegations 'meritless' and 'rotten to its core.' Apple's July lawsuit accused former Apple employees now working at OpenAI of stealing confidential documents to advance OpenAI's hardware development plans. OpenAI counters that Apple is mischaracterizing generic product development information as trade secrets, that Apple made no reasonable efforts to maintain secrecy, and that the case is built on selective or out-of-context communications. OpenAI also published a blog post calling the lawsuit 'careless, aggressive, and oddly personal,' and claims that one accused former Apple employee was simply helping ex-colleagues rather than stealing documents.",
+          "opinion": "This is a significant legal battle between two tech giants that reflects the intensifying competition in the AI hardware space. OpenAI's aggressive response — both through formal legal channels and a public blog post — suggests the company is confident in its defense, but the fact that Apple filed such a high-profile lawsuit indicates it likely has substantial evidence to present. Trade secret cases often hinge on nuanced questions about what constitutes a trade secret and what reasonable prote…",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25431704/STK201_SAM_ALTMAN_CVIRGINIA_C.jpg?quality=90&strip=all&crop=4.7487503051758%2C21.869598945592%2C95.251249694824%2C74.804666989327&w=1200",
+          "published_at": "2026-08-06T09:33:11+00:00",
+          "fetched_at": "2026-08-06T09:42:37.609358+00:00"
+        },
+        {
+          "id": 6114,
+          "source": "The Rundown AI",
+          "title": "Google shakes up its AI brain trust",
+          "url": "https://www.therundown.ai/p/google-shakes-up-its-ai-brain-trust",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google has reshuffled its AI leadership, with DeepMind CEO Demis Hassabis moving to a chairman and chief scientist role while CTO Koray Kavukcuoglu takes over daily operations as senior VP. Long-time Google veteran Jeff Dean is departing to co-found Discovery Loop, a public benefit corporation focused on automating scientific research, joined by other notable Google researchers including Sanjay Ghemawat, Oriol Vinyals, and Quoc Le. The changes come amid pressure from Gemini 3.5 Pro delays and top researchers leaving for competitors. Google's stock dropped approximately 4% following the announcement. CEO Sundar Pichai framed the restructuring as essential for staying at the AI frontier and shaping AGI development. The article also covers other AI developments including advances in voice mode capabilities from OpenAI and Anthropic, Meta's entry into the coding-agent space with Muse Code,…",
+          "opinion": "This leadership shakeup at Google signals a potentially concerning transition period for the company's AI efforts. Losing both Hassabis from day-to-day operations and Jeff Dean entirely represents a significant brain drain, even if Hassabis remains in an advisory capacity. The timing is particularly worrying given that Google is already perceived as falling behind rivals in delivering frontier models, with Gemini 3.5 Pro delays being a notable sore point. The market's negative reaction seems ju…",
+          "image_url": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/5f5f2c33-6b66-4653-b7aa-86d8609c36ce/ChatGPT_Image_Aug_6__2026__12_07_18_PM.png?t=1785998250",
+          "published_at": "2026-08-06T09:00:00+00:00",
+          "fetched_at": "2026-08-06T09:42:35.821579+00:00"
+        },
         {
           "id": 6113,
           "source": "Claude Code Changelog",
@@ -192,32 +218,6 @@
           "image_url": "https://techcrunch.com/wp-content/uploads/2025/10/GettyImages-2235448056.jpg?resize=1200,800",
           "published_at": "2026-08-05T21:21:28+00:00",
           "fetched_at": "2026-08-06T08:41:02.629618+00:00"
-        },
-        {
-          "id": 6086,
-          "source": "TechCrunch AI",
-          "title": "Klaviyo acquires Elias Torres’ Agency in full-circle reunion for tech founders",
-          "url": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Klaviyo, a publicly traded e-commerce marketing automation platform, has acquired Agency, a three-year-old AI-powered customer success startup founded by serial entrepreneur Elias Torres. Agency had raised $32 million from investors including Sequoia, Menlo Ventures, and Felicis. Deal terms were not disclosed. Torres will join Klaviyo as Chief Product Officer, bringing his 25-person team to accelerate development of Klaviyo's AI agents: Composer (for building marketing campaigns) and Customer Agent (for post-sale support). The acquisition represents a full-circle moment for the founders — Torres had hired Klaviyo CEO Andrew Bialecki as one of the first engineers at Performable in 2010, mentoring him on startup dynamics. Bialecki later co-founded and bootstrapped Klaviyo, and Torres was an angel investor in Klaviyo's 2015 seed round. Torres previously co-founded Performable (acquired by…",
-          "opinion": "This is a strategically sound acquisition for Klaviyo that goes beyond a typical acqui-hire. The personal history between Torres and Bialecki — from mentor-mentee to angel investor-founder to now CPO-CEO — suggests strong alignment and trust, which is often the most critical factor in successful acquisitions. Torres brings deep experience in conversational AI and customer engagement from his Drift years, making him well-suited to lead Klaviyo's AI agent strategy. The deal also makes sense from…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-05-at-8.53.41-PM.png?resize=1200,868",
-          "published_at": "2026-08-05T20:05:00+00:00",
-          "fetched_at": "2026-08-06T08:41:02.891774+00:00"
-        },
-        {
-          "id": 6087,
-          "source": "TechCrunch AI",
-          "title": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
-          "url": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
-          "topic": "Industry",
-          "category": "Business, Deals & Funding",
-          "summary": "Jeff Dean, one of Google's longest-serving and most influential executives, is leaving the company along with several other top researchers—Sanjay Ghemawat, Quoc Le, and Oriol Vinyals—to co-found Discovery Loop, a public benefit corporation. The startup aims to use AI to accelerate scientific research by automating experimental loops and running thousands of experiments simultaneously. The company is also exploring recursive self-improvement, where AI helps create more powerful AI. The initial funding round is co-led by Radical Ventures and Khosla Ventures, with participation from Kleiner Perkins, Lightspeed, Doerr Capital, and notably Google's parent company Alphabet. Dean, who joined Google in 1999 as its 30th employee, will serve as CEO.",
-          "opinion": "This is a genuinely significant departure for Google and a major moment for the AI industry. Jeff Dean is not just any executive—he is arguably one of the most important engineers in Google's history, and Sanjay Ghemawat has been his legendary collaborator for decades. Quoc Le and Oriol Vinyals are also world-class researchers. The fact that all four are leaving together signals deep conviction that the most impactful AI work may now be better pursued outside of Google's corporate structure. Th…",
-          "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-1197130647.jpg?resize=1200,800",
-          "published_at": "2026-08-05T19:30:19+00:00",
-          "fetched_at": "2026-08-06T08:41:03.100795+00:00"
         }
       ]
     }
@@ -226,7 +226,7 @@
     {
       "url": "https://twitter.com/coreyhainesco/status/2085130743865659787",
       "author": "coreyhainesco",
-      "headline": "Corey Haines built a skill that turns a plain Google listing into a __rich result with three times the pixels__ — writes the JSON-LD, validates it, and ships it.",
+      "headline": "Corey Haines built a skill that turns your plain Google listing into a __rich result with three times the pixels__ — same ranking position, way more real estate.",
       "tweet_id": "3b41eba9-b6bc-81a0-9893-cbbebf2601f7",
       "source_text": "I made a skill that turns your plain blue Google listing into a rich result.\n\nIt writes the JSON-LD from your real data — product, ratings, FAQs — validates it, and ships it. Same ranking position, three times the pixels.\n\nnpx skills add coreyhaines31/marketingskills https://t.co/cPRoZ28uiZ",
       "created_time": "2026-08-06T00:57:00.000Z",
@@ -236,7 +236,7 @@
     {
       "url": "https://twitter.com/mattpocockuk/status/2085023484913012992",
       "author": "mattpocockuk",
-      "headline": "Matt Pocock ships mattpocock/skills v1.2 with __/wait-what for smacking down verbose models__, plus /writing-for-agents and a revamped /grill-me.",
+      "headline": "Matt Pocock ships mattpocock/skills v1.2 with __/wait-what for smacking down verbose models__ and a revamped /grill-me.",
       "tweet_id": "3b41eba9-b6bc-8162-b3de-eaabe1b83647",
       "source_text": "mattpocock/skills v1.2 is here!\n\nBrings /wait-what (for smacking down verbose models), /writing-for-agents, and a huge change to /grill-me\n\nHere's the breakdown: https://t.co/A9MuDyalRE",
       "created_time": "2026-08-06T00:57:00.000Z",
@@ -246,7 +246,7 @@
     {
       "url": "https://twitter.com/nurijanian/status/2085018241496412361",
       "author": "nurijanian",
-      "headline": "Nuri Janian made a skill for PMs that catches __underspecified features in PRDs__ — small but designed to wire into every new spec workflow.",
+      "headline": "A PM skill designed to catch __underspecified features before they ship__ — wire it into new PRD workflows or use it to stress-test existing ones.",
       "tweet_id": "3b31eba9-b6bc-8168-82c0-e9881ff1a7bf",
       "source_text": "i still see this happen, so i made a skill for my PM friends. it should be wired into new PRD workflows, but it’s also useful when you’re underspecified on existing features and need to answer questions.\n\nsmall but mighty https://t.co/kPtn2T0Izc",
       "created_time": "2026-08-05T21:07:00.000Z",
@@ -254,19 +254,19 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/Suryanshti777/status/2084693098714599697",
-      "author": "Suryanshti777",
-      "headline": "Daniel Pink says __Drive__ keeps selling 15 years later — here are the 7 insights most workplaces still ignore about motivation.",
-      "tweet_id": "3b41eba9-b6bc-81f7-8715-c36c94d8506d",
-      "source_text": "Most people want to become AI Engineers\n\nVery few know what to learn next\n\nThat's why I'm giving away one of the best Agentic AI Engineer Roadmaps for FREE to the first 4500 people only\n\nInside you'll learn\n\n✅ Python Fundamentals\n✅ LLM Fundamentals\n✅ LangChain LangGraph CrewAI https://t.co/c97xmjbpGF",
+      "url": "https://twitter.com/hal__lee/status/2084839790428758332",
+      "author": "hal__lee",
+      "headline": "Found a slick __calendar and to-do app__ that's actually nice to look at.",
+      "tweet_id": "3b41eba9-b6bc-81ca-90ea-c65b65e535c3",
+      "source_text": "发现一个挺好看的日历待办应用。\nhttps://t.co/74Y4yEWOWX",
       "created_time": "2026-08-06T00:57:00.000Z",
-      "canonical_url": "https://twitter.com/Suryanshti777/status/2084693098714599697",
+      "canonical_url": "https://twitter.com/hal__lee/status/2084839790428758332",
       "learning_score": 2
     },
     {
       "url": "https://twitter.com/mikenevermiss/status/2084884935500767717",
       "author": "mikenevermiss",
-      "headline": "Jack Dorsey open-sourced a tool for running a one-person business — chat, search, Git, and AI agents in one place, already at __14.4K GitHub stars__.",
+      "headline": "Jack Dorsey open-sourced a tool for running a one-person business — chat, search, Git, and AI agents in one place — already at __14.4K GitHub stars__.",
       "tweet_id": "3b31eba9-b6bc-8154-a9b6-de6faad12855",
       "source_text": "this is f**king insane.\n\nJack Dorsey just open sourced a free tool for running a one-person business.\n\nthe GitHub repo already has 14.4K stars.\n\nIt lets you:\n\n→ run your own server\n→ keep chat, search, Git, and automation in one place\n→ add AI agents that work like teammates https://t.co/1YVYlvCrAH https://t.co/Sf4ySVL8G0",
       "created_time": "2026-08-05T23:17:00.000Z",
@@ -276,7 +276,7 @@
     {
       "url": "https://twitter.com/hnshah/status/2085051297984856101",
       "author": "hnshah",
-      "headline": "Hiten Shah says AI can __read every customer call__ your marketing team never attended — Will Nelson is teaching a free session on building a listening system from transcripts and LinkedIn signals.",
+      "headline": "Hiten Shah says AI can __read every customer call your marketing team never attended__ — Will Nelson is teaching a free lesson tomorrow on building a listening system from transcripts and LinkedIn signals.",
       "tweet_id": "3b31eba9-b6bc-81c2-8917-d62390470cde",
       "source_text": "AI can read every customer call your marketing team never had time to attend.\n\nThat changes where content ideas come from.\n\n@mrwillnelson is teaching a free 30-minute lesson tomorrow on building an AI listening system from transcripts and LinkedIn signals.\n\nYou will leave with a",
       "created_time": "2026-08-05T23:17:00.000Z",
@@ -286,89 +286,89 @@
   ],
   "community_headlines": [
     {
-      "url": "https://scienceblog.com/t-a-study-of-730-000-norwegian-conscripts-found-the-iq-gains-of-the-20th-century-reversed-after-1975-falling-by-roughly-seven-points-a-generation-and-ruled-out-genetics-as-the-cause-by-comparing-broth/",
-      "author": "ColinWright",
-      "item_id": "hn:49194141",
-      "headline": "A study of 730,000 Norwegian conscripts found __IQ gains reversed after 1975__, falling roughly seven points per generation — and ruled out genetics.",
+      "url": "https://zhenyi.gibber.blog/1-rce-2-ai-models-0-ways-to-tell-who-was-right",
+      "author": "zhenyi",
+      "item_id": "hn:49194523",
+      "headline": "One RCE, two AI models, and __zero ways to tell who was right__ — a security debugging story.",
       "subreddit": null,
-      "source_text": "A study of Norwegian conscripts found 20th century IQ gains reversed after 1975",
+      "source_text": "1 RCE, 2 AI models, 0 ways to tell who was right",
       "source_type": "hacker_news",
-      "created_time": "2026-08-06T08:44:33+00:00",
+      "created_time": "2026-08-06T09:38:59+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://scienceblog.com/t-a-study-of-730-000-norwegian-conscripts-found-the-iq-gains-of-the-20th-century-reversed-after-1975-falling-by-roughly-seven-points-a-generation-and-ruled-out-genetics-as-the-cause-by-comparing-broth",
+      "canonical_url": "https://zhenyi.gibber.blog/1-rce-2-ai-models-0-ways-to-tell-who-was-right",
       "learning_score": 3
     },
     {
-      "url": "https://www.ycombinator.com/library/Vy-jeff-dean-the-1-rule-for-building-in-ai",
-      "author": "immighelper",
-      "item_id": "hn:49193907",
-      "headline": "Jeff Dean makes the case for __the 1% rule for building in AI__ — small improvements compound faster than you think.",
+      "url": "https://www.iankduncan.com/engineering/2026-02-10-http3-not-always-faster/",
+      "author": "michael-sumner",
+      "item_id": "hn:49194311",
+      "headline": "TIL: __HTTP/3 is not always faster than HTTP/2__ — the nuances most benchmarks skip.",
       "subreddit": null,
-      "source_text": "Jeff Dean: The 1% Rule for Building in AI",
+      "source_text": "TIL: HTTP/3 Is Not Always Faster Than HTTP/2",
       "source_type": "hacker_news",
-      "created_time": "2026-08-06T08:10:40+00:00",
+      "created_time": "2026-08-06T09:07:34+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://ycombinator.com/library/Vy-jeff-dean-the-1-rule-for-building-in-ai",
+      "canonical_url": "https://iankduncan.com/engineering/2026-02-10-http3-not-always-faster",
       "learning_score": 3
     },
     {
-      "url": "https://dontwordle.app/",
-      "author": "lby910722",
-      "item_id": "hn:49194180",
-      "headline": "__Dont Wordle__ flips the word puzzle — your goal is to preserve as many options as possible, not guess the answer.",
+      "url": "https://www.nature.com/articles/s41591-026-04492-6",
+      "author": "tokai",
+      "item_id": "hn:49194290",
+      "headline": "A Nature study maps the __genetic architecture of fibromyalgia across 2.5 million individuals__.",
       "subreddit": null,
-      "source_text": "Show HN: Dont Wordle – a reverse word puzzle about preserving options",
+      "source_text": "The genetic architecture of fibromyalgia across 2.5M individuals",
       "source_type": "hacker_news",
-      "created_time": "2026-08-06T08:50:29+00:00",
+      "created_time": "2026-08-06T09:05:03+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://dontwordle.app",
+      "canonical_url": "https://nature.com/articles/s41591-026-04492-6",
+      "learning_score": 3
+    },
+    {
+      "url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/",
+      "author": "mpfect",
+      "item_id": "hn:49194552",
+      "headline": "Anthropic is __hiring an AI chip design team__, signaling a move to build its own silicon.",
+      "subreddit": null,
+      "source_text": "Anthropic is hiring an AI chip design team",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-06T09:43:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team",
       "learning_score": 2
     },
     {
-      "url": "https://www.youtube.com/watch?v=cvvIUJOMVRI",
-      "author": "RicoElectrico",
-      "item_id": "hn:49194174",
-      "headline": "Microsoft once created __fake employees to test Exchange Server__ security, and the story is wilder than you'd think.",
+      "url": "https://www.sciencedaily.com/releases/2026/08/260804034634.htm",
+      "author": "theanonymousone",
+      "item_id": "hn:49194526",
+      "headline": "Claude Fable 5 discovers a __tiny formula that topples an 87-year-old math conjecture__.",
       "subreddit": null,
-      "source_text": "Microsoft Created Fake Employees to Test Exchange Server [video]",
+      "source_text": "Claude Fable 5 finds a tiny formula that topples an 87-year-old math conjecture",
       "source_type": "hacker_news",
-      "created_time": "2026-08-06T08:48:53+00:00",
+      "created_time": "2026-08-06T09:39:10+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=cvvIUJOMVRI",
+      "canonical_url": "https://sciencedaily.com/releases/2026/08/260804034634.htm",
       "learning_score": 2
     },
     {
-      "url": "https://apnews.com/article/john-cage-organ-project-halberstadt-organ-aslsp-938b5a1d0bc3d8d0dec5cb19accd00a6",
-      "author": "1659447091",
-      "item_id": "hn:49194159",
-      "headline": "The slowest organ concert in history just made a chord change — the piece __won't finish until 2640__.",
+      "url": "https://agent-tools.net/",
+      "author": "karucosu",
+      "item_id": "hn:49194345",
+      "headline": "Agent-tools.net offers __pay-per-call APIs for AI agents__, settled via x402/USDC on Base.",
       "subreddit": null,
-      "source_text": "Playing one composition until 2640, slowest organ concert made a chord change",
+      "source_text": "Agent-tools.net – pay-per-call APIs for AI agents, paid via x402/USDC on Base",
       "source_type": "hacker_news",
-      "created_time": "2026-08-06T08:46:33+00:00",
+      "created_time": "2026-08-06T09:12:09+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://apnews.com/article/john-cage-organ-project-halberstadt-organ-aslsp-938b5a1d0bc3d8d0dec5cb19accd00a6",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/choiyounggi/groundwork",
-      "author": "dch0202",
-      "item_id": "hn:49194074",
-      "headline": "__Safety guardrails for Claude Code__ — a new open-source project for keeping agentic coding sessions in check.",
-      "subreddit": null,
-      "source_text": "Show HN: Safety Guardrails for Claude Code",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-06T08:34:09+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/choiyounggi/groundwork",
+      "canonical_url": "https://agent-tools.net",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-06T08:55:32.488419+00:00",
+    "generated_at": "2026-08-06T09:45:08.843869+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "6e7bb34c9dd845ce6d6fdce6b28098ac70ac7eae365d8172aedfed3d4061fc58"
+  "content_hash": "7925c5b1a6d08bdf3b5d50d4f4e9f039ed22910f4844441a7ba8a0f7af0a24bb"
 }
