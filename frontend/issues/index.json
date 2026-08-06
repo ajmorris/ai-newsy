@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-05T00:00:00Z",
-  "issueCount": 107,
+  "generatedAt": "2026-08-06T00:00:00Z",
+  "issueCount": 108,
   "latestIssue": {
-    "slug": "2026-08-05",
-    "digestDate": "2026-08-05",
-    "displayDate": "Aug 05, 2026",
-    "issueNumber": "60805",
-    "subject": "ISSUE 60805 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI boom isn't just reshaping tech \u2014 it's reshaping entire companies and markets. Today's biggest story might be SpaceX quietly becoming more of an AI company than a space company, pulling in $2.6 billion in AI revenue that eclipsed its rocket business, while AMD's data center revenue more than doubled and US stock markets hit record highs on the back of AI-driven profits. Beyond the financial frenzy, we're also diving into a sobering safety report on open-weight models closing the capability gap with frontier AI without the guardrails, a surprising study on AI-written stories outscoring human ones, and a fresh batch of Claude Code bug fixes.",
+    "slug": "2026-08-06",
+    "digestDate": "2026-08-06",
+    "displayDate": "Aug 06, 2026",
+    "issueNumber": "60806",
+    "subject": "ISSUE 60806 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The biggest story in AI today is a seismic talent earthquake at Google \u2014 Jeff Dean, the legendary engineer who helped build the company from its earliest days, is leaving along with fellow research titans Sanjay Ghemawat, Quoc Le, and Oriol Vinyals to launch a new startup focused on AI-driven scientific discovery, and that's on top of Demis Hassabis stepping down as DeepMind CEO. Beyond Google's brain drain, we've also got Meta making waves on two fronts (one intentional, one very much not), a sobering look at tens of thousands of hackable servers hiding in plain sight, and the quiet death of Elon Musk's AI-powered Wikipedia rival.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-08-05.html",
-    "contentHash": "21fee69ea2727d2f3d5d3527cfd2c2a1e4fd82d0924a365f6d00633882bbdfab"
+    "urlPath": "/issues/2026-08-06.html",
+    "contentHash": "7925c5b1a6d08bdf3b5d50d4f4e9f039ed22910f4844441a7ba8a0f7af0a24bb"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-06",
+      "digestDate": "2026-08-06",
+      "displayDate": "Aug 06, 2026",
+      "issueNumber": "60806",
+      "subject": "ISSUE 60806 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The biggest story in AI today is a seismic talent earthquake at Google \u2014 Jeff Dean, the legendary engineer who helped build the company from its earliest days, is leaving along with fellow research titans Sanjay Ghemawat, Quoc Le, and Oriol Vinyals to launch a new startup focused on AI-driven scientific discovery, and that's on top of Demis Hassabis stepping down as DeepMind CEO. Beyond Google's brain drain, we've also got Meta making waves on two fronts (one intentional, one very much not), a sobering look at tens of thousands of hackable servers hiding in plain sight, and the quiet death of Elon Musk's AI-powered Wikipedia rival.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-08-06.html",
+      "contentHash": "7925c5b1a6d08bdf3b5d50d4f4e9f039ed22910f4844441a7ba8a0f7af0a24bb"
+    },
     {
       "slug": "2026-08-05",
       "digestDate": "2026-08-05",
@@ -133,17 +144,6 @@
       "articleCount": 7,
       "urlPath": "/issues/2026-07-26.html",
       "contentHash": "3f1ddf1a110aacf2caf7b62e49897232e21855b80d3f69339f2741eef8c98bfb"
-    },
-    {
-      "slug": "2026-07-25",
-      "digestDate": "2026-07-25",
-      "displayDate": "Jul 25, 2026",
-      "issueNumber": "60725",
-      "subject": "ISSUE 60725 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing with Claude Opus 5 making its grand entrance \u2014 and the reviews are... complicated. Anthropic's latest flagship model is earning praise for its raw brilliance while simultaneously frustrating users with what one reviewer calls a \"neurotic\" personality that refuses to touch merge conflicts, even as it ships as the new default in Claude Code with a massive 1M context window. Beyond the Opus 5 drama, today's digest covers everything from a heartwarming family reunion powered by ChatGPT, to Midjourney's surprising acquisition of astrology app Co-Star, to the growing crisis of \"Google Zero\" threatening the entire web ecosystem.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-25.html",
-      "contentHash": "69ff75e4b6e33efb2735cad546d9cc9326948dfd06601c52369c7c183b0de90f"
     }
   ]
 }
