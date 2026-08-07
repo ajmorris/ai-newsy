@@ -496,7 +496,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate community headlines from Reddit/HN/YC")
     parser.add_argument("--hours", type=int, default=_env_int("COMMUNITY_LOOKBACK_HOURS", 24))
     parser.add_argument("--limit", type=int, default=_env_int("COMMUNITY_FETCH_LIMIT", 120))
-    parser.add_argument("--max-headlines", type=int, default=_env_int("COMMUNITY_MAX_HEADLINES", 12))
+    parser.add_argument("--max-headlines", type=int, default=_env_int("COMMUNITY_MAX_HEADLINES", 24))
     parser.add_argument("--digest-date", type=str, default=None, help="YYYY-MM-DD (UTC)")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
