@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-06T00:00:00Z",
-  "issueCount": 108,
+  "generatedAt": "2026-08-07T00:00:00Z",
+  "issueCount": 109,
   "latestIssue": {
-    "slug": "2026-08-06",
-    "digestDate": "2026-08-06",
-    "displayDate": "Aug 06, 2026",
-    "issueNumber": "60806",
-    "subject": "ISSUE 60806 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story in AI today is a seismic talent earthquake at Google \u2014 Jeff Dean, the legendary engineer who helped build the company from its earliest days, is leaving along with fellow research titans Sanjay Ghemawat, Quoc Le, and Oriol Vinyals to launch a new startup focused on AI-driven scientific discovery, and that's on top of Demis Hassabis stepping down as DeepMind CEO. Beyond Google's brain drain, we've also got Meta making waves on two fronts (one intentional, one very much not), a sobering look at tens of thousands of hackable servers hiding in plain sight, and the quiet death of Elon Musk's AI-powered Wikipedia rival.",
+    "slug": "2026-08-07",
+    "digestDate": "2026-08-07",
+    "displayDate": "Aug 07, 2026",
+    "issueNumber": "60807",
+    "subject": "ISSUE 60807 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Scientists just created the first AI-designed viruses, OpenAI is making ChatGPT unlimited *and* turning it into a hockey puck-shaped smart speaker, and someone's raised $28.5 million to let AI agents literally set up and run entire businesses \u2014 it's one of those days where the future feels like it's arriving all at once. Today's digest spans the full spectrum, from Isaac Asimov's decades-old warnings finding new relevance in AI governance debates to the very real biosecurity questions raised when artificial intelligence starts engineering biology. Buckle in \u2014 there's a lot to unpack.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-08-06.html",
-    "contentHash": "7925c5b1a6d08bdf3b5d50d4f4e9f039ed22910f4844441a7ba8a0f7af0a24bb"
+    "urlPath": "/issues/2026-08-07.html",
+    "contentHash": "a84550d977e6f9670841579d0fe0f79173ae66cd12bd0fbb23e561cc6c615874"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-07",
+      "digestDate": "2026-08-07",
+      "displayDate": "Aug 07, 2026",
+      "issueNumber": "60807",
+      "subject": "ISSUE 60807 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Scientists just created the first AI-designed viruses, OpenAI is making ChatGPT unlimited *and* turning it into a hockey puck-shaped smart speaker, and someone's raised $28.5 million to let AI agents literally set up and run entire businesses \u2014 it's one of those days where the future feels like it's arriving all at once. Today's digest spans the full spectrum, from Isaac Asimov's decades-old warnings finding new relevance in AI governance debates to the very real biosecurity questions raised when artificial intelligence starts engineering biology. Buckle in \u2014 there's a lot to unpack.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-08-07.html",
+      "contentHash": "a84550d977e6f9670841579d0fe0f79173ae66cd12bd0fbb23e561cc6c615874"
+    },
     {
       "slug": "2026-08-06",
       "digestDate": "2026-08-06",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-27.html",
       "contentHash": "4acdab45450e180ab2261258d5bb4edce7f42deec8283ef3db8de61b9b49b912"
-    },
-    {
-      "slug": "2026-07-26",
-      "digestDate": "2026-07-26",
-      "displayDate": "Jul 26, 2026",
-      "issueNumber": "60726",
-      "subject": "ISSUE 60726 \u00b7 7 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI jobs narrative is getting more complicated by the day \u2014 Monday.com just became the latest company to cite AI as the reason for cutting 20% of its workforce, joining a growing list of over 20 major tech firms that have collectively slashed nearly 140,000 jobs this year alone. But while the layoff headlines pile up, a counterpoint is emerging: an Anthropic analysis suggests the feared AI jobs apocalypse may not actually be coming anytime soon, and companies blaming AI for cuts are actually *underperforming* the Nasdaq afterward. Beyond the employment debate, today's digest covers a power grid scare triggered by AI data centers, librarians going viral for teaching people how to *turn off* AI, and a community that killed a school robot project before it even started.",
-      "articleCount": 7,
-      "urlPath": "/issues/2026-07-26.html",
-      "contentHash": "3f1ddf1a110aacf2caf7b62e49897232e21855b80d3f69339f2741eef8c98bfb"
     }
   ]
 }
