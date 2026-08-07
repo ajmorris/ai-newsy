@@ -23,6 +23,7 @@ from execution.database import (
     get_digest_extra,
     get_sent_articles,
     get_unsent_articles,
+    get_unsent_articles_for_digest,
     upsert_digest_extra,
 )
 from execution.story_text_normalizer import (
@@ -46,8 +47,11 @@ TOPIC_TO_CATEGORY: Dict[str, str] = {
 }
 DEFAULT_CATEGORY = "Other AI News"
 
-DEFAULT_MAX_STORIES = int(os.getenv("DIGEST_MAX_STORIES", "8"))
+DEFAULT_MAX_STORIES = int(os.getenv("DIGEST_MAX_STORIES", "16"))
 DEFAULT_MAX_HEADLINES = int(os.getenv("DIGEST_MAX_HEADLINES", "6"))
+DEFAULT_MAX_TWEET_HEADLINES = int(os.getenv("DIGEST_MAX_TWEET_HEADLINES", "18"))
+DEFAULT_MAX_COMMUNITY_HEADLINES = int(os.getenv("DIGEST_MAX_COMMUNITY_HEADLINES", "12"))
+DEFAULT_MAX_PER_SOURCE = int(os.getenv("DIGEST_MAX_PER_SOURCE", "3"))
 
 DEFAULT_INTRO_PROMPT = """You are writing the opening paragraph for my daily AI news digest email.
 Write as me, in first person, like we are talking over coffee.
@@ -76,6 +80,9 @@ class DigestBuildOptions:
     use_sent: bool = False
     max_stories: int = DEFAULT_MAX_STORIES
     max_headlines: int = DEFAULT_MAX_HEADLINES
+    max_tweet_headlines: int = DEFAULT_MAX_TWEET_HEADLINES
+    max_community_headlines: int = DEFAULT_MAX_COMMUNITY_HEADLINES
+    max_per_source: int = DEFAULT_MAX_PER_SOURCE
 
 
 def _issue_id_from_digest_date(digest_date: str) -> str:
@@ -225,16 +232,23 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
         day_start = datetime.combine(target_date, datetime.min.time())
         day_end = day_start + timedelta(days=1)
         rows = get_sent_articles(require_summary=True, since=day_start, until=day_end)
+        normalized = [_normalize_article(row) for row in rows]
+        for row in normalized:
+            _assign_category(row)
+        normalized.sort(key=lambda row: row.get("published_at") or row.get("fetched_at") or "", reverse=True)
+        stories = normalized[: max(0, options.max_stories)]
     else:
         since = datetime.now(timezone.utc) - timedelta(hours=options.window_hours)
-        rows = get_unsent_articles(topic=None, require_summary=True, since=since, until=None)
-
-    normalized = [_normalize_article(row) for row in rows]
-    for row in normalized:
-        _assign_category(row)
-    normalized.sort(key=lambda row: row.get("published_at") or row.get("fetched_at") or "", reverse=True)
-
-    stories = normalized[: max(0, options.max_stories)]
+        rows = get_unsent_articles_for_digest(
+            max_per_source=options.max_per_source,
+            interleave=True,
+            since=since,
+            until=None,
+        )
+        normalized = [_normalize_article(row) for row in rows]
+        for row in normalized:
+            _assign_category(row)
+        stories = normalized[: max(0, options.max_stories)]
 
     heal_digest_story_opinions(stories)
     assert_digest_stories_have_opinions(stories)
@@ -243,13 +257,13 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
     tweet_headlines = []
     tweet_payload = tweet_extra.get("payload")
     if isinstance(tweet_payload, dict):
-        tweet_headlines = list(tweet_payload.get("headlines", []) or [])[: max(0, options.max_headlines)]
+        tweet_headlines = list(tweet_payload.get("headlines", []) or [])[: max(0, options.max_tweet_headlines)]
 
     community_extra = get_digest_extra(digest_date=digest_date, key="community_headlines") or {}
     community_headlines = []
     community_payload = community_extra.get("payload")
     if isinstance(community_payload, dict):
-        community_headlines = list(community_payload.get("headlines", []) or [])[: max(0, options.max_headlines)]
+        community_headlines = list(community_payload.get("headlines", []) or [])[: max(0, options.max_community_headlines)]
 
     issue_id = _issue_id_from_digest_date(digest_date)
     subject_line = _build_subject_line(issue_id, len(stories))
@@ -352,7 +366,12 @@ if __name__ == "__main__":
     parser.add_argument("--window-hours", type=int, default=int(os.getenv("DIGEST_WINDOW_HOURS", "24")))
     parser.add_argument("--use-sent", action="store_true")
     parser.add_argument("--max-stories", type=int, default=DEFAULT_MAX_STORIES)
-    parser.add_argument("--max-headlines", type=int, default=DEFAULT_MAX_HEADLINES)
+    parser.add_argument("--max-headlines", type=int, default=DEFAULT_MAX_HEADLINES,
+                        help="Legacy fallback; prefer --max-tweet-headlines / --max-community-headlines")
+    parser.add_argument("--max-tweet-headlines", type=int, default=DEFAULT_MAX_TWEET_HEADLINES)
+    parser.add_argument("--max-community-headlines", type=int, default=DEFAULT_MAX_COMMUNITY_HEADLINES)
+    parser.add_argument("--max-per-source", type=int, default=DEFAULT_MAX_PER_SOURCE,
+                        help="Max articles from any single RSS source for diversity")
     args = parser.parse_args()
 
     payload = build_digest_payload(
@@ -362,6 +381,9 @@ if __name__ == "__main__":
             use_sent=args.use_sent,
             max_stories=args.max_stories,
             max_headlines=args.max_headlines,
+            max_tweet_headlines=args.max_tweet_headlines,
+            max_community_headlines=args.max_community_headlines,
+            max_per_source=args.max_per_source,
         )
     )
     path = write_digest_payload(payload)

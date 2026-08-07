@@ -164,7 +164,7 @@ For Notion tweet ingestion + headline generation, configure:
 - `NOTION_TWEETS_DATABASE_ID`: the Notion database id for `Tweets`
 - `TWEET_LOOKBACK_HOURS` (optional, default `24`)
 - `TWEET_FETCH_LIMIT` (optional, default `100`)
-- `TWEET_MAX_HEADLINES` (optional, default `12`)
+- `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
 - `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
 
 GitHub Actions:
@@ -183,7 +183,7 @@ For Reddit/HN/YC ingestion + headline generation, configure:
 
 - `COMMUNITY_LOOKBACK_HOURS` (optional, default `24`)
 - `COMMUNITY_FETCH_LIMIT` (optional, default `120`)
-- `COMMUNITY_MAX_HEADLINES` (optional, default `12`)
+- `COMMUNITY_MAX_HEADLINES` (optional, default `24`) — max headlines after curation; digest builder caps further
 - `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
 - `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
 - `REDDIT_USER_AGENT` (optional but recommended)
@@ -193,6 +193,30 @@ GitHub Actions:
 
 - Add optional community settings as repository **Variables**
 - `prepare_community_headlines.yml` runs source extraction + persistence to `digest_extras` key `community_headlines`
+
+## Digest payload configuration
+
+Controls how the final digest is assembled from articles and headline extras.
+
+### Article limits and source diversity
+
+- `DIGEST_MAX_STORIES` (optional, default `16`) — max RSS articles in the digest
+- `DIGEST_MAX_PER_SOURCE` (optional, default `3`) — max articles from any single RSS source; prevents one prolific feed from dominating. Articles are interleaved round-robin across sources.
+
+### Headline limits
+
+- `DIGEST_MAX_TWEET_HEADLINES` (optional, default `18`) — max Twitter/X headlines in the digest
+- `DIGEST_MAX_COMMUNITY_HEADLINES` (optional, default `12`) — max Reddit/HN/YC headlines in the digest
+- `DIGEST_MAX_HEADLINES` (optional, default `6`) — legacy fallback; prefer the specific limits above
+
+### Generation vs digest limits
+
+The headline generation pipelines (`TWEET_MAX_HEADLINES`, `COMMUNITY_MAX_HEADLINES`) control how many headlines are curated and stored. The digest payload builder then caps to `DIGEST_MAX_TWEET_HEADLINES` / `DIGEST_MAX_COMMUNITY_HEADLINES`. Set generation limits higher than digest limits to allow curation flexibility:
+
+| Stage | Tweet | Community |
+|-------|-------|-----------|
+| Generation/curation | `TWEET_MAX_HEADLINES=36` | `COMMUNITY_MAX_HEADLINES=24` |
+| Final digest | `DIGEST_MAX_TWEET_HEADLINES=18` | `DIGEST_MAX_COMMUNITY_HEADLINES=12` |
 
 ## Signup API protection environment
 

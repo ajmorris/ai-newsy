@@ -704,7 +704,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max-headlines",
         type=int,
-        default=_env_int("TWEET_MAX_HEADLINES", 12),
+        default=_env_int("TWEET_MAX_HEADLINES", 36),
     )
     parser.add_argument("--digest-date", type=str, default=None, help="YYYY-MM-DD (UTC)")
     parser.add_argument("--dry-run", action="store_true")
