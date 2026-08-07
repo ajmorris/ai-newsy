@@ -234,6 +234,26 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/Austin_Hart00/status/2085365343418286125",
+      "author": "Austin_Hart00",
+      "headline": "A sleep doctor with 26 years of experience explains why __8 hours is a myth__, melatonin is misunderstood, and everyone wakes at 3AM.",
+      "tweet_id": "3b51eba9-b6bc-81ef-95ba-cf5e699bda5b",
+      "source_text": "A sleep doctor with 26 years of experience just revealed why everything you believe about sleeping is wrong.\n\n- 8 hours is a myth.\n- Melatonin is a hormone.\n- Waking up at 3AM happens to every person on earth.\n\nHere are his 6 rules that will change how you sleep tonight: https://t.co/T8TNl0D7CM",
+      "created_time": "2026-08-07T02:02:00.000Z",
+      "canonical_url": "https://twitter.com/Austin_Hart00/status/2085365343418286125",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/KeychronMK/status/2085183927334170896",
+      "author": "KeychronMK",
+      "headline": "Keychron is prototyping a __tiny wireless AI companion for vibe coding__ — built-in mic, scroll wheel, three programmable buttons.",
+      "tweet_id": "3b51eba9-b6bc-814d-9807-e9f0291de673",
+      "source_text": "We're experimenting with something new.\n\nA tiny wireless AI companion for vibe coding.\n\n• Built-in mic 🎙️\n• Wireless\n• Scroll wheel\n• 3 programmable buttons\nImagine talking to your coding agent without switching windows.\nWhat would you map the 3 buttons to?\n👀 Interested? https://t.co/7EixofcKKc",
+      "created_time": "2026-08-07T01:52:00.000Z",
+      "canonical_url": "https://twitter.com/KeychronMK/status/2085183927334170896",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/markgurman/status/2085457233194737931",
       "author": "markgurman",
       "headline": "Mark Gurman reports OpenAI's hardware device will be a __doughnut-shaped smart speaker the size of a hockey puck__ — camera, moving parts, $300–400.",
@@ -254,16 +274,6 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/lotte_verheyden/status/2085161454668513642",
-      "author": "lotte_verheyden",
-      "headline": "Lotte Verheyden's guide to writing evaluators: prefer code-based checks, __don't trust what the agent says it did__, and calibrate LLM judges against labeled data.",
-      "tweet_id": "3b41eba9-b6bc-816d-9438-f59d83d10b52",
-      "source_text": "Wrote a piece on writing good evaluators, main take-aways: \n- go for a code evaluator when you can\n- don't rely on what the agent said it did, you need to actually verify\n- calibrate your LLM as a judge against labeled data https://t.co/3wWoS5eDh6",
-      "created_time": "2026-08-06T16:57:00.000Z",
-      "canonical_url": "https://twitter.com/lotte_verheyden/status/2085161454668513642",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/PawelHuryn/status/2085422682640622052",
       "author": "PawelHuryn",
       "headline": "Pawel Huryn open-sourced __110 Claude skills for product managers__ — the top 30 have racked up 24K GitHub stars.",
@@ -272,103 +282,93 @@
       "created_time": "2026-08-07T02:02:00.000Z",
       "canonical_url": "https://twitter.com/PawelHuryn/status/2085422682640622052",
       "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/gokulr/status/2085425044495458543",
-      "author": "gokulr",
-      "headline": "Gokul Rajaram argues coding agents can build an app in a day but the company still takes months — invested in __Naïve to close that gap__ with payments, company ops, and infra via one API.",
-      "tweet_id": "3b51eba9-b6bc-81b5-a76f-d30840fb4fd0",
-      "source_text": "Coding agents can build an app in a day, building the company around it still takes months.\n\nThat gap is why I invested in @usenaive .\n\nNaïve gives AI agents the infrastructure to run entire businesses. With one config file and one API, developers can provision payments, company https://t.co/rtOqq3HRYN",
-      "created_time": "2026-08-07T02:02:00.000Z",
-      "canonical_url": "https://twitter.com/gokulr/status/2085425044495458543",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
-      "url": "https://twitter.com/patio11/status/2085504491458105732",
-      "author": "reasonableklout",
-      "item_id": "hn:49206728",
-      "headline": "Patrick McKenzie calls the HuggingFace hack the __most important security incident since the Morris worm__.",
+      "url": "https://blog.documentfoundation.org/blog/2026/08/07/why-and-how-the-austrian-military-moved-to-libreoffice-part-1/",
+      "author": "mksaunders2",
+      "item_id": "hn:49207250",
+      "headline": "The Austrian military explains __why and how it moved to LibreOffice__ — a detailed migration playbook in part one of the series.",
       "subreddit": null,
-      "source_text": "Patio11: HuggingFace hack is most important security incident since Morris worm",
+      "source_text": "Why and how the Austrian Military moved to LibreOffice (Part 1)",
       "source_type": "hacker_news",
-      "created_time": "2026-08-07T06:43:15+00:00",
+      "created_time": "2026-08-07T07:59:39+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://twitter.com/patio11/status/2085504491458105732",
+      "canonical_url": "https://blog.documentfoundation.org/blog/2026/08/07/why-and-how-the-austrian-military-moved-to-libreoffice-part-1",
       "learning_score": 3
     },
     {
-      "url": "https://www.theglobeandmail.com/business/article-data-centre-equipment-imports-ai-boom-canada/",
-      "author": "petethomas",
-      "item_id": "hn:49207044",
-      "headline": "Canada's data centre equipment imports are __up 88% year-over-year__, riding the AI infrastructure wave.",
+      "url": "https://grigio.org/deepseek-v4-flash-0731-is-it-cheaper-to-run-it-at-home-or-pay-per-token/",
+      "author": "grigio",
+      "item_id": "hn:49207239",
+      "headline": "Running __DeepSeek V4 Flash 0731__ locally vs. paying per token — a cost breakdown for self-hosters weighing the math.",
       "subreddit": null,
-      "source_text": "Canadian imports for data centre equipment up 88% from prior year",
+      "source_text": "DeepSeek V4 Flash 0731: Is It Cheaper to Run It at Home or Pay per Token?",
       "source_type": "hacker_news",
-      "created_time": "2026-08-07T07:31:46+00:00",
+      "created_time": "2026-08-07T07:58:38+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://theglobeandmail.com/business/article-data-centre-equipment-imports-ai-boom-canada",
+      "canonical_url": "https://grigio.org/deepseek-v4-flash-0731-is-it-cheaper-to-run-it-at-home-or-pay-per-token",
+      "learning_score": 3
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49207122",
+      "author": "alex_x",
+      "item_id": "hn:49207122",
+      "headline": "A developer asks HN: after __20 years of coding__ it's not a fun hobby anymore — and the replies hit a nerve.",
+      "subreddit": null,
+      "source_text": "Ask HN: After 20 years of coding it is not a fun hobby anymore. How about you?",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-07T07:43:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=49207122",
+      "learning_score": 3
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.02691",
+      "author": "yunuyean",
+      "item_id": "hn:49207056",
+      "headline": "__INT2 KV-cache quantization__ is getting surprisingly good — new results suggest aggressive compression may finally be practical.",
+      "subreddit": null,
+      "source_text": "INT2 KV-cache quantization is getting surprisingly good",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-07T07:33:25+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arxiv.org/abs/2608.02691",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.transformernews.ai/p/the-ai-slowdown-is-coming",
+      "author": "reasonableklout",
+      "item_id": "hn:49207318",
+      "headline": "A new analysis makes the case that __the AI slowdown is coming__ — and the reasons aren't what the hype cycle wants to hear.",
+      "subreddit": null,
+      "source_text": "The AI slowdown is coming",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-07T08:10:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://transformernews.ai/p/the-ai-slowdown-is-coming",
       "learning_score": 2
     },
     {
-      "url": "https://lea.verou.me/blog/2026/dark-mode-toggles/",
-      "author": "aratahikaru5",
-      "item_id": "hn:49206992",
-      "headline": "Lea Verou makes the case that __dark mode toggles need only two states__ — and the third one is hurting you.",
+      "url": "https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out",
+      "author": "inigyou",
+      "item_id": "hn:49207236",
+      "headline": "Every byte of __memory manufactured in 2027 has already been sold out__ as the capacity crunch rolls into another year.",
       "subreddit": null,
-      "source_text": "Dark mode toggles: two states are enough",
+      "source_text": "All memory manufactured in 2027 has been sold out",
       "source_type": "hacker_news",
-      "created_time": "2026-08-07T07:23:56+00:00",
+      "created_time": "2026-08-07T07:58:24+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://lea.verou.me/blog/2026/dark-mode-toggles",
-      "learning_score": 2
-    },
-    {
-      "url": "https://xsaf.ilha.build/",
-      "author": "ryuzyy",
-      "item_id": "hn:49206971",
-      "headline": "XSAF is an __extra-small agent framework__ that tries to strip agentic AI down to the bare minimum.",
-      "subreddit": null,
-      "source_text": "Show HN: XSAF – Extra Small Agent Framework",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-07T07:20:18+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://xsaf.ilha.build",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/tbille/check-github-status",
-      "author": "totostache",
-      "item_id": "hn:49206945",
-      "headline": "A small GitHub skill that __stops AI agents from retry-looping__ when GitHub itself is down.",
-      "subreddit": null,
-      "source_text": "Show HN: Skill to stop AI agents from retry-looping during GitHub outages",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-07T07:14:35+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/tbille/check-github-status",
-      "learning_score": 2
-    },
-    {
-      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7244220",
-      "author": "Ai_Sycophancy",
-      "item_id": "hn:49206857",
-      "headline": "A paper on __frame-level correction in a deployed bridge companion__ — one of the more unusual applied-AI case studies.",
-      "subreddit": null,
-      "source_text": "Frame-Level Correction in a Deployed Bridge Companion",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-07T07:01:05+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7244220",
+      "canonical_url": "https://ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-07T07:33:55.474363+00:00",
+    "generated_at": "2026-08-07T08:18:55.475244+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "3af8f2e1e678a4d4d629d597a6508cfa3d05cbcef18ae6616be00927f78362a5"
+  "content_hash": "a84550d977e6f9670841579d0fe0f79173ae66cd12bd0fbb23e561cc6c615874"
 }
