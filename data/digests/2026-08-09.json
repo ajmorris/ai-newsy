@@ -184,7 +184,7 @@
     {
       "url": "https://twitter.com/reach_vb/status/2085832585025098101",
       "author": "reach_vb",
-      "headline": "Vaibhav Srivastav makes the case that you should be __updating your agents.md regularly__ — shares his own rules for grounding research, challenging assumptions, and staying concise.",
+      "headline": "Vaibhav Srivastav makes the case that you should be __updating your agents.md regularly__ — shares his own rules for grounding research, challenging weak assumptions, and staying concise.",
       "tweet_id": "3b61eba9-b6bc-812b-b108-c22cdd1ec69b",
       "source_text": "You should totally be updating your agents md regularly!\n\nHere's mine:\n- When explaining something to the user, use the Visualize skill\n- Be concise, direct, and candid. Challenge weak assumptions and distinguish verified facts from uncertainty\n- Ground research in authoritative, https://t.co/s5V6LWXdkB",
       "created_time": "2026-08-08T14:12:00.000Z",
@@ -204,7 +204,7 @@
     {
       "url": "https://twitter.com/promptparag/status/2085571676293750896",
       "author": "promptparag",
-      "headline": "A handy list of __free AI courses from Anthropic, Google, Meta, NVIDIA, Microsoft, and OpenAI__ — all direct from the source.",
+      "headline": "A curated list of __free AI courses from Anthropic, Google, Meta, NVIDIA, Microsoft, and OpenAI__ — all direct from the source.",
       "tweet_id": "3b61eba9-b6bc-81a3-85e2-c3898c8db874",
       "source_text": "Learn AI for free directly from top companies.\n\n1 - Anthropic:  \nhttps://t.co/HM87Z5xXY9\n\n2 - Google:  \nhttps://t.co/WiSkZbxGVC\n\n3 - Meta:  \nhttps://t.co/5lz9F80YfK\n\n4 - NVIDIA:  \nhttps://t.co/aw932aS7pt\n\n5 - Microsoft:  \nhttps://t.co/NHTd3Q0Mz3\n\n6 - OpenAI: https://t.co/bb0Gsgl4a0",
       "created_time": "2026-08-08T14:12:00.000Z",
@@ -214,10 +214,23 @@
   ],
   "community_headlines": [
     {
+      "url": "https://domenic.me/agentic-coding-setup/",
+      "author": "vinhnx",
+      "item_id": "hn:49229347",
+      "headline": "Domenic Denicola details his __agentic coding setup__ for mid-2026 — model routing, tool configs, and the workflows that actually stuck.",
+      "subreddit": null,
+      "source_text": "My Agentic Coding Setup, July 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-09T07:49:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://domenic.me/agentic-coding-setup",
+      "learning_score": 3
+    },
+    {
       "url": "https://hoops-gm.com/",
       "author": "otbasketball",
       "item_id": "hn:49228898",
-      "headline": "One dev ran __1.3 million simulations__ to fix the trade AI in a browser-based basketball GM game.",
+      "headline": "A browser-based basketball GM sim ran __1.3 million simulations to fix its trade AI__.",
       "subreddit": null,
       "source_text": "Show HN: I ran 1.3M simulations to fix trade AI in my browser Basketball GM",
       "source_type": "hacker_news",
@@ -227,16 +240,81 @@
       "learning_score": 3
     },
     {
+      "url": "https://medium.com/@rotbart/still-waters-the-case-for-a-flow-economy-811d1daafb21",
+      "author": "rotbart",
+      "item_id": "hn:49229324",
+      "headline": "The case for a \"flow economy\": __money that sits idle should cost more__ than money that creates opportunity.",
+      "subreddit": null,
+      "source_text": "Money that sits idle should cost more than money that creates opportunity",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-09T07:45:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/@rotbart/still-waters-the-case-for-a-flow-economy-811d1daafb21",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/@chuanweipeng5/where-my-llm-api-bill-actually-went-and-how-i-cut-it-f10158329c5c",
+      "author": "AnneWodell",
+      "item_id": "hn:49229175",
+      "headline": "One developer traces where their coding agent's __LLM API bill actually went__ and shares the cuts that worked.",
+      "subreddit": null,
+      "source_text": "Lessons from Reducing My Coding Agent's LLM API Costs",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-09T07:20:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/@chuanweipeng5/where-my-llm-api-bill-actually-went-and-how-i-cut-it-f10158329c5c",
+      "learning_score": 2
+    },
+    {
+      "url": "https://boingboing.net/2026/08/08/hiroshima-blast-alloy.html",
+      "author": "zeristor",
+      "item_id": "hn:49229098",
+      "headline": "Researchers found a __previously unknown alloy in a grain of sand__ from Hiroshima Bay — a relic of the 1945 blast.",
+      "subreddit": null,
+      "source_text": "A new alloy turned up in a grain of sand from Hiroshima Bay",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-09T07:04:29+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://boingboing.net/2026/08/08/hiroshima-blast-alloy.html",
+      "learning_score": 2
+    },
+    {
       "url": "https://wecreatethis.com/misc/agent-starts-taking-screenshots-on-auto-mode",
       "author": "jameswhitford",
       "item_id": "hn:49229081",
-      "headline": "An AI agent left on auto mode __started taking desktop screenshots__ unprompted — a quiet reminder that agent permissions still default to \"whatever feels useful.\"",
+      "headline": "An agent in auto mode started __taking desktop screenshots unprompted__ — raising questions about what agentic tools feel entitled to do.",
       "subreddit": null,
       "source_text": "Agents feel free to take desktop screenshots?",
       "source_type": "hacker_news",
       "created_time": "2026-08-09T07:01:11+00:00",
       "source_label": "Hacker News",
       "canonical_url": "https://wecreatethis.com/misc/agent-starts-taking-screenshots-on-auto-mode",
+      "learning_score": 2
+    },
+    {
+      "url": "https://eclipse-sightlines.david-stolarsky.chatgpt.site/",
+      "author": "gimlids",
+      "item_id": "hn:49229054",
+      "headline": "A 3D sightlines tool lets you __preview the August 12 eclipse__ from any vantage point.",
+      "subreddit": null,
+      "source_text": "3D sightlines preview of August 12 eclipse",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-09T06:55:58+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://eclipse-sightlines.david-stolarsky.chatgpt.site",
+      "learning_score": 2
+    },
+    {
+      "url": "https://andrealeopardi.com/posts/genstage-demand-visualized/",
+      "author": "lawik",
+      "item_id": "hn:49229039",
+      "headline": "A visual explainer makes Elixir's __GenStage demand model__ finally click.",
+      "subreddit": null,
+      "source_text": "Elixir's GenStage Demand, a visual explainer",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-09T06:52:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://andrealeopardi.com/posts/genstage-demand-visualized",
       "learning_score": 2
     },
     {
@@ -256,7 +334,7 @@
       "url": "https://github.com/huanghe/startup-equity-guide",
       "author": "hahaxixicc",
       "item_id": "hn:49228814",
-      "headline": "A __startup equity survival guide__ cataloging everything that can go wrong with your shares before an IPO.",
+      "headline": "A startup equity survival guide walks through __everything that can go wrong with your shares__ before an IPO.",
       "subreddit": null,
       "source_text": "Startup Equity Survival Guide: what can go wrong with your equity before an IPO",
       "source_type": "hacker_news",
@@ -264,78 +342,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://github.com/huanghe/startup-equity-guide",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=mJhGRim2MWY",
-      "author": "mgh2",
-      "item_id": "hn:49228779",
-      "headline": "Leopold Aschenbrenner __turned $100M into $45B__ betting on AI — and it almost blew up along the way.",
-      "subreddit": null,
-      "source_text": "Leopold Aschenbrenner Turned $100M into $45B Betting on AI – It Almost Blew Up [video]",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-09T05:51:39+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=mJhGRim2MWY",
-      "learning_score": 2
-    },
-    {
-      "url": "https://guokai.dev/vidserve/",
-      "author": "hanguokai",
-      "item_id": "hn:49228712",
-      "headline": "__VidServe__ turns any local video folder into a LAN streaming site with one command.",
-      "subreddit": null,
-      "source_text": "Show HN: VidServe – Turn any local video folder into a LAN streaming site",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-09T05:34:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://guokai.dev/vidserve",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/jmarshall23/msword",
-      "author": "BruceEel",
-      "item_id": "hn:49228663",
-      "headline": "Someone ported __Microsoft Word for Windows 1.1a to native x64__ — nostalgia meets modern architecture.",
-      "subreddit": null,
-      "source_text": "Microsoft Word for Windows 1.1a, Native X64 Port",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-09T05:23:41+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/jmarshall23/msword",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/melastmohican/rust-reterminal-e1002-examples",
-      "author": "melastmohican",
-      "item_id": "hn:49228656",
-      "headline": "Driving a __7.3\" six-color e-paper display in no_std Rust__ on an ESP32-S3.",
-      "subreddit": null,
-      "source_text": "Driving a 7.3\" 6-Color E-Paper Display in `no_std` Rust (ESP32-S3)",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-09T05:22:11+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/melastmohican/rust-reterminal-e1002-examples",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.psypost.org/six-months-of-action-gaming-alters-brain-networks-and-improves-visual-attention/",
-      "author": "giuliomagnifico",
-      "item_id": "hn:49228651",
-      "headline": "Study finds __six months of action gaming__ alters brain networks and measurably improves visual attention.",
-      "subreddit": null,
-      "source_text": "Six months of action gaming alters brain networks and improves visual attention",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-09T05:20:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://psypost.org/six-months-of-action-gaming-alters-brain-networks-and-improves-visual-attention",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-09T07:04:53.076910+00:00",
+    "generated_at": "2026-08-09T07:56:31.189991+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "57436a4cc6645f809afa9c3e7cf9917b6ad76d304738419e502cc48cde1f3c37"
+  "content_hash": "ade92832cab92333604bb4caa5bb7b8edfba8edf064a9b6108ff8628936cdfa8"
 }
