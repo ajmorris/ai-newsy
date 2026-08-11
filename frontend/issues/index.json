@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-10T00:00:00Z",
-  "issueCount": 112,
+  "generatedAt": "2026-08-11T00:00:00Z",
+  "issueCount": 113,
   "latestIssue": {
-    "slug": "2026-08-10",
-    "digestDate": "2026-08-10",
-    "displayDate": "Aug 10, 2026",
-    "issueNumber": "60810",
-    "subject": "ISSUE 60810 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "South Australia just announced a royal commission into artificial intelligence \u2014 a sign that governments are grappling in real time with how to respond to AI's expanding reach into every corner of society. That tension runs through today's stories, from Anthropic flipping Claude Code's auto mode on by default (with data suggesting the AI is actually better than humans at catching dangerous actions) to AI detectors fueling a crisis of distrust in schools and publishing, to historian Jill Lepore warning that Silicon Valley is quietly replacing democratic institutions. It's a packed day that also includes a major $400 million chip bet from Leopold Aschenbrenner's embattled hedge fund and a look at how AI-generated political propaganda is flooding Facebook \u2014 so let's dig in.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-08-10.html",
-    "contentHash": "6fdce22d03c57d03265d9482a1ca268258a259678eb1de0c5ed64a755d101574"
+    "slug": "2026-08-11",
+    "digestDate": "2026-08-11",
+    "displayDate": "Aug 11, 2026",
+    "issueNumber": "60811",
+    "subject": "ISSUE 60811 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "OpenAI is dominating today's headlines \u2014 from hitting the safety brakes on its potentially dangerous Astra model (a first-ever \"critical\" cybersecurity designation) to completing a massive $7 billion employee tender offer amid whispered IPO delays, to launching a new cyber-focused AI model to combat the very threats its technology helps enable. Meanwhile, Mark Zuckerberg is making his own big play with a sweeping AI manifesto and a new open-source model, even as critics argue he's fundamentally missing the point of what makes human life meaningful. It's a packed day that touches on everything from Wall Street's latest half-trillion-dollar AI bet to Bernie Sanders calling for a development pause \u2014 buckle in.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-08-11.html",
+    "contentHash": "88376e9a9171625125dc4f7d5701c0d00481a0739d26357c99693dd25be95ce4"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-11",
+      "digestDate": "2026-08-11",
+      "displayDate": "Aug 11, 2026",
+      "issueNumber": "60811",
+      "subject": "ISSUE 60811 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "OpenAI is dominating today's headlines \u2014 from hitting the safety brakes on its potentially dangerous Astra model (a first-ever \"critical\" cybersecurity designation) to completing a massive $7 billion employee tender offer amid whispered IPO delays, to launching a new cyber-focused AI model to combat the very threats its technology helps enable. Meanwhile, Mark Zuckerberg is making his own big play with a sweeping AI manifesto and a new open-source model, even as critics argue he's fundamentally missing the point of what makes human life meaningful. It's a packed day that touches on everything from Wall Street's latest half-trillion-dollar AI bet to Bernie Sanders calling for a development pause \u2014 buckle in.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-08-11.html",
+      "contentHash": "88376e9a9171625125dc4f7d5701c0d00481a0739d26357c99693dd25be95ce4"
+    },
     {
       "slug": "2026-08-10",
       "digestDate": "2026-08-10",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-07-31.html",
       "contentHash": "1c75c9a0ae28804594428bbb47c27a3f3ad9a0d85d59abe62f30821ada240baa"
-    },
-    {
-      "slug": "2026-07-30",
-      "digestDate": "2026-07-30",
-      "displayDate": "Jul 30, 2026",
-      "issueNumber": "60730",
-      "subject": "ISSUE 60730 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Tech's biggest players are drawing battle lines around AI agents and enterprise dominance, and this week's earnings calls made it crystal clear. Microsoft is openly gunning for its own partners OpenAI and Anthropic with a \"super app\" and swappable-model strategy, while Zuckerberg is betting billions\u2014despite Wall Street's skepticism and $88 billion in Reality Labs losses\u2014that personal AI agents will be as ubiquitous as smartphones within five years. From corporate power plays to Anthropic's AI cracking a post-quantum encryption candidate, today's digest is packed with stories that show just how fast the competitive landscape is shifting.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-30.html",
-      "contentHash": "f39d54ed9b90ec9fddc73204de9a63aa247041846d01cf615b4393d780c612df"
     }
   ]
 }
