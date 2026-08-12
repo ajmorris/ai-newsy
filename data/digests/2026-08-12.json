@@ -434,7 +434,7 @@
     {
       "url": "https://twitter.com/businessbarista/status/2087255255834558842",
       "author": "businessbarista",
-      "headline": "Alex Lieberman is launching \"Talk Nerdy to Me\" — a __15-minute show-and-tell format__ where AI power users demo a single killer agent or workflow. Goal: highest value per minute on the internet.",
+      "headline": "Alex Lieberman is launching Talk Nerdy to Me — a 15-minute show-and-tell format aiming for __highest value per minute of any show on the internet__.",
       "tweet_id": "3ba1eba9-b6bc-81ee-93df-d8b72e36408a",
       "source_text": "starting to record episodes of talk nerdy to me this week. \n\ngoal is to achieve highest value per minute of any show on the internet. \n\nformat is 15-minute show & tell, where a cracked AI knowledge worker takes me through a killer agent/workflow/use case. \n\neach show & tell",
       "created_time": "2026-08-12T03:57:00.000Z",
@@ -444,7 +444,7 @@
     {
       "url": "https://twitter.com/0x0SojalSec/status/2087229571716510133",
       "author": "0x0SojalSec",
-      "headline": "A developer claims adding explicit sub-agent guidance to CLAUDE.md __eliminated session limits despite burning 500M–1B tokens per day__.",
+      "headline": "Add explicit sub-agent guidance to your CLAUDE.md and your __effective token usage will drop dramatically__ — one dev claims it eliminated session limits despite burning 500M–1B tokens daily.",
       "tweet_id": "3ba1eba9-b6bc-81f9-b076-c58a10de5f85",
       "source_text": "After adding this to  CLAUDE.md weekly or session limits once despite going through 500m - 1b tokens per day and using dynamic workflows heavily. \n\nGive Claude explicit sub-agent guidance, you won't regret it and your effective token usage will come way down. https://t.co/o9Xvc8Q90f",
       "created_time": "2026-08-12T03:52:00.000Z",
@@ -454,7 +454,7 @@
     {
       "url": "https://twitter.com/ThijsVerreck/status/2087088956236013653",
       "author": "ThijsVerreck",
-      "headline": "Thijs Verreck makes the case that asking agents to build a __\"design graph\" of all screens, components, and states__ dramatically improves UI quality.",
+      "headline": "Thijs Verreck's trick for better agent-built UI: ask it to generate a __\"design graph\" breaking every screen into all possible component states__.",
       "tweet_id": "3ba1eba9-b6bc-8193-8ee1-c99fa5c46a20",
       "source_text": "A super effective way to improve the effectiveness of agents on building quality UI is to ask it build you a \"design graph\".\n\nA design graph ensures that your agents can break down all your screens, components and their states into all the possible permutations N. \n\nThe design https://t.co/2PKvJ7HMUh",
       "created_time": "2026-08-12T03:52:00.000Z",
@@ -462,9 +462,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/cathrynlavery/status/2087277922658955564",
+      "author": "cathrynlavery",
+      "headline": "Cathryn Lavery's Diagram Design skill hit __#1 trending on GitHub__ — 29 editorial diagram types for",
+      "tweet_id": "3ba1eba9-b6bc-813d-a3a7-d97633da3c88",
+      "source_text": "#1 Trending Today on Github w/ Diagram Design skill ☺️\n\n29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.\n\nhere's why I made it: https://t.co/EQlmOqEvYu",
+      "created_time": "2026-08-12T03:52:00.000Z",
+      "canonical_url": "https://twitter.com/cathrynlavery/status/2087277922658955564",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/dhh/status/2087272392557007042",
       "author": "dhh",
-      "headline": "DHH gave Claude a local admin account on his Ubiquiti network and had it __optimize radio channels, tune mesh settings, and manage device roaming__ across his apartment. Sci-fi, apparently.",
+      "headline": "DHH gave Claude a local admin account on his Ubiquiti network and had it __optimize all the radio channels and mesh settings__ across his apartment. Sci-fi, apparently.",
       "tweet_id": "3ba1eba9-b6bc-8175-8ad5-fca37b05cd78",
       "source_text": "Ubiquity is so ridiculously good. Just did a full apartment upgrade. Cloud router, three U7 Pros. Added a local admin account for an agent. Had Claude optimize all the radio channels, tune mesh settings, and ensure all devices roamed ideally. SCI-FI!",
       "created_time": "2026-08-12T04:17:00.000Z",
@@ -484,7 +494,7 @@
     {
       "url": "https://twitter.com/shadcn/status/2087283211994894814",
       "author": "shadcn",
-      "headline": "shadcn/helpers now supports __human-in-the-loop flows__ — approvals, deny actions, and dynamic tool calls that pause for user input, all wired through the AI SDK useChat lifecycle.",
+      "headline": "shadcn/helpers now supports __human-in-the-loop flows__ — approvals, deny actions, and dynamic tool calls that pause for user input, all through the AI SDK useChat lifecycle.",
       "tweet_id": "3ba1eba9-b6bc-818b-8344-f276422da62d",
       "source_text": "You can now script human-in-the-loop flows in @shadcn/helpers.\n\nApprovals with approve/deny and dynamic tool calls that pause for user input e.g. user questions.\n\nAll through the @aisdk useChat lifecycle. https://t.co/b3uAiUtnil",
       "created_time": "2026-08-12T04:12:00.000Z",
@@ -494,7 +504,7 @@
     {
       "url": "https://twitter.com/swombat/status/2087114680842002445",
       "author": "swombat",
-      "headline": "Daniel Tenner argues the Claude watermark backlash is theatre — metadata stripping is already trivial, and a __\"CleanClaude\" tool__ was inevitable the moment the EU law passed.",
+      "headline": "Daniel Tenner argues the Claude watermark backlash is theatre — __image metadata stripping is already standard__, and a \"CleanClaude\" tool was inevitable.",
       "tweet_id": "3ba1eba9-b6bc-81a4-9c5b-f0ccd04e9911",
       "source_text": "Everyone up in arms about this Claude watermark thing is totally missing the point.\n\nThis battle is already lost, this is just ceremony/theatre to please the new (dumb) EU law.\n\n1) image metadata stripping is already part of the toolchain (see: exiftool)\n\n2) a \"CleanClaude\" tool",
       "created_time": "2026-08-12T04:12:00.000Z",
@@ -504,7 +514,7 @@
     {
       "url": "https://twitter.com/petergyang/status/2087345374633824486",
       "author": "petergyang",
-      "headline": "Peter Yang's /human-review skill for Claude Code hit __717 GitHub stars__ and climbing.",
+      "headline": "Peter Yang's /human-review skill hit __717 GitHub stars__ and counting.",
       "tweet_id": "3ba1eba9-b6bc-8143-bbc9-c25ef70d0714",
       "source_text": "Getting many messages like these for /human-review.\n\nIt's now at 717 GitHub stars! \n\nTry it here for free and ⭐ it if you like it: https://t.co/iKZH4GceFn https://t.co/xVT7rH0nEI https://t.co/AfjdpMbwTX",
       "created_time": "2026-08-12T04:12:00.000Z",
@@ -514,7 +524,7 @@
     {
       "url": "https://twitter.com/markgurman/status/2087247500843667588",
       "author": "markgurman",
-      "headline": "Mark Gurman reports Apple is facing a __demographic wave of retiring top executives__ who became wealthy over decades and no longer need to work.",
+      "headline": "Mark Gurman reports Apple is facing a __wave of top executives hitting retirement age__ simultaneously — wealthy enough to walk, and no longer needing to stay.",
       "tweet_id": "3ba1eba9-b6bc-8171-8a0d-ce463bc32092",
       "source_text": "Apple is facing a demographic challenge: A generation of top executives, who became wealthy during their decades at the tech giant, are now reaching retirement age at the same time and no longer need to work. https://t.co/Wfh6y6jALo",
       "created_time": "2026-08-12T04:02:00.000Z",
@@ -524,7 +534,7 @@
     {
       "url": "https://twitter.com/fayazara/status/2087170871739953651",
       "author": "fayazara",
-      "headline": "Fayaz Ara wrote a walkthrough explaining __Cloudflare's /computer__ browser-use agent infrastructure.",
+      "headline": "Fayaz Ara wrote a breakdown explaining __how Cloudflare's /computer works__ under the hood.",
       "tweet_id": "3ba1eba9-b6bc-8103-86dd-de9336e026d4",
       "source_text": "Wrote a small article explaining @cloudflare/computer https://t.co/mDLSGSclPx",
       "created_time": "2026-08-12T04:02:00.000Z",
@@ -534,7 +544,7 @@
     {
       "url": "https://twitter.com/elie2222/status/2087333867086630936",
       "author": "elie2222",
-      "headline": "Elie Steinbock pitched an __open-source Grok Bot alternative__ — use any model, hackable, cross-platform.",
+      "headline": "Elie Steinbock pitches an __open-source Grok Bot alternative__ — use any model, hackable, cross-platform.",
       "tweet_id": "3ba1eba9-b6bc-8172-8605-e7a07e8e6e35",
       "source_text": "Open source Grok Bot, anyone?\n\nUse the model of your choice. Hackable. Cross-platform. https://t.co/FFAnuUWSX2",
       "created_time": "2026-08-12T03:57:00.000Z",
@@ -544,7 +554,7 @@
     {
       "url": "https://twitter.com/dannyvankooten/status/2087189846473290085",
       "author": "dannyvankooten",
-      "headline": "Danny van Kooten's GoatCounter weathered a DDoS attack — __5M requests in one hour__ — with no real damage.",
+      "headline": "Danny van Kooten's GoatCounter weathered a DDoS — __5M requests in one hour__ — with no real damage.",
       "tweet_id": "3ba1eba9-b6bc-814b-8e0f-d861b02697e0",
       "source_text": "Fighting a DDOS attack on https://t.co/T904aNzh14 right now. Server handled 5M requests in the last hour. 😅No real harm done though.",
       "created_time": "2026-08-12T03:57:00.000Z",
@@ -554,7 +564,7 @@
     {
       "url": "https://twitter.com/vedolos/status/2087150269704687983",
       "author": "vedolos",
-      "headline": "Someone already built a __Claude Watermark Remover__ — paste text, kill the statistical mark, keep the meaning. Free, no signup, shipped the same day the watermark was announced.",
+      "headline": "Hours after Anthropic's watermarking news, someone already shipped a __Claude Watermark Remover__ — free, no signup, built in a day.",
       "tweet_id": "3ba1eba9-b6bc-8192-8338-e22490b69c0e",
       "source_text": "Claude can now watermark every sentence it writes.\n\nInvisible. Travels with copy/paste. Survives light edits.\n\nIntroducing Claude Watermark Remover.\n\nPaste Claude text. Kill the statistical mark. Keep the meaning.\n\nFree. No signup. Built today after reading this @paulg post, https://t.co/bYgr9gwQZ2 https://t.co/ctrwJuDcNU",
       "created_time": "2026-08-12T03:57:00.000Z",
@@ -564,7 +574,7 @@
     {
       "url": "https://twitter.com/emilkowalski/status/2087150812761858367",
       "author": "emilkowalski",
-      "headline": "Emil Kowalski shared a set of __tricks to make web apps feel native on mobile__.",
+      "headline": "Emil Kowalski shares __tricks to make your web app feel native on mobile__.",
       "tweet_id": "3ba1eba9-b6bc-81e9-8160-f1cc1307d3c8",
       "source_text": "Few tricks to make your app feel more native on mobile https://t.co/u6MLMDgUOY",
       "created_time": "2026-08-12T03:57:00.000Z",
@@ -574,7 +584,7 @@
     {
       "url": "https://twitter.com/retttx/status/2087142305559917042",
       "author": "retttx",
-      "headline": "Clay's internal AI writing policy: stand behind every idea, writing is thinking, spend more time writing than others spend reading, __longer is not better__. Authored by Sophie Alpert.",
+      "headline": "Clay's internal AI writing policy: stand behind every idea, writing is thinking, longer is not better. __Authored by Sophie Alpert__.",
       "tweet_id": "3ba1eba9-b6bc-8192-a991-d2b757ea2284",
       "source_text": "Clay’s AI writing policy \n\n1. Stand behind every idea\n2. Writing is thinking \n3. Spend more time writing than others spend reading \n4. Longer is not better \n\nAuthored by @sophiebits https://t.co/VdFZIomVIu",
       "created_time": "2026-08-12T03:57:00.000Z",
@@ -584,29 +594,81 @@
   ],
   "community_headlines": [
     {
-      "url": "http://prize.hutter1.net/",
-      "author": "cosmojg",
-      "item_id": "hn:49268737",
-      "headline": "The Hutter Prize is offering __€500,000 for compressing human knowledge__ — still the purest benchmark for intelligence.",
+      "url": "https://discoveredmaterials.com/research/",
+      "author": "advaith08",
+      "item_id": "hn:49269090",
+      "headline": "Discovered Materials (YC P26) launches __AI agents to discover new materials__ for R&D.",
       "subreddit": null,
-      "source_text": "500'000€ Prize for Compressing Human Knowledge",
+      "source_text": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
       "source_type": "hacker_news",
-      "created_time": "2026-08-12T06:59:03+00:00",
+      "created_time": "2026-08-12T07:51:20+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "http://prize.hutter1.net",
+      "canonical_url": "https://discoveredmaterials.com/research",
       "learning_score": 3
     },
     {
-      "url": "https://news.ycombinator.com/item?id=49268880",
-      "author": "dima853",
-      "item_id": "hn:49268880",
-      "headline": "An 18-year-old solved __823 LeetCode problems__ and wrote up why the whole system is broken.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
+      "author": "gherkinnn",
+      "item_id": "hn:49269307",
+      "headline": "The Verge's take: Mark Zuckerberg's AI manifesto reveals a __dim vision of how to live__.",
       "subreddit": null,
-      "source_text": "I solved 823 LeetCode problems by age 18. Here is why LeetCode is broken",
+      "source_text": "Mark Zuckerberg doesn't understand how to live",
       "source_type": "hacker_news",
-      "created_time": "2026-08-12T07:18:54+00:00",
+      "created_time": "2026-08-12T08:21:14+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=49268880",
+      "canonical_url": "https://theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.livescience.com/technology/electronics/new-ai-chip-mimics-the-human-brains-capacity-for-split-second-motor-control-it-solved-problems-using-10-000-times-fewer-calculations",
+      "author": "01-_-",
+      "item_id": "hn:49269234",
+      "headline": "A new AI chip mimics the brain's motor control and solves problems using __10,000 times fewer calculations__.",
+      "subreddit": null,
+      "source_text": "New AI chip mimics the human brain's capacity for split-second motor control",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-12T08:11:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://livescience.com/technology/electronics/new-ai-chip-mimics-the-human-brains-capacity-for-split-second-motor-control-it-solved-problems-using-10-000-times-fewer-calculations",
+      "learning_score": 2
+    },
+    {
+      "url": "https://codemusings.nl/@jaytaph/p/9A6TCthSHwFEZwGbzSumbN",
+      "author": "jaytaph",
+      "item_id": "hn:49269147",
+      "headline": "Three years of writing a __browser engine from scratch__, documented across 50 posts.",
+      "subreddit": null,
+      "source_text": "Three years of writing a browser engine, in 50 posts",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-12T07:58:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://codemusings.nl/@jaytaph/p/9A6TCthSHwFEZwGbzSumbN",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/triuzzi/brave-devtools-mcp",
+      "author": "triuzzi",
+      "item_id": "hn:49268975",
+      "headline": "Brave DevTools MCP lets you __control Brave from Claude, Codex, and Cursor__.",
+      "subreddit": null,
+      "source_text": "Show HN: Brave DevTools MCP – Control Brave from Claude, Codex, and Cursor",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-12T07:33:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/triuzzi/brave-devtools-mcp",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S147264832600372X",
+      "author": "barry-cotter",
+      "item_id": "hn:49268960",
+      "headline": "A new study maps the __global fertility freefall__ — trends, drivers, and what's still uncertain.",
+      "subreddit": null,
+      "source_text": "The global fertility freefall: trends, drivers and uncertainties",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-12T07:30:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sciencedirect.com/science/article/abs/pii/S147264832600372X",
       "learning_score": 2
     },
     {
@@ -621,26 +683,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://phys.org/news/2026-08-large-scale-link-crime-unauthorized.html",
       "learning_score": 2
-    },
-    {
-      "url": "https://www.theguardian.com/us-news/2026/aug/11/ice-electric-shock-gloves",
-      "author": "OutOfHere",
-      "item_id": "hn:49268604",
-      "headline": "ICE plans to spend up to __$20M on gloves that deliver electric shocks__.",
-      "subreddit": null,
-      "source_text": "ICE to spend up to $20M on gloves that can deliver painful electric shocks",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-12T06:37:31+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://theguardian.com/us-news/2026/aug/11/ice-electric-shock-gloves",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-12T07:51:37.722874+00:00",
+    "generated_at": "2026-08-12T08:23:13.813766+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "9fbee9e341715f96210b0ed0e16bdded2c9f33fcbd99049107e215a2194a7d07"
+  "content_hash": "999873dd59ae721b6bde82f3cc5574351f4e97d1aa0c100dc119f0344c8494e2"
 }
