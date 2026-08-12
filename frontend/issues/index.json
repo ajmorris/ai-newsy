@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-11T00:00:00Z",
-  "issueCount": 113,
+  "generatedAt": "2026-08-12T00:00:00Z",
+  "issueCount": 114,
   "latestIssue": {
-    "slug": "2026-08-11",
-    "digestDate": "2026-08-11",
-    "displayDate": "Aug 11, 2026",
-    "issueNumber": "60811",
-    "subject": "ISSUE 60811 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "OpenAI is dominating today's headlines \u2014 from hitting the safety brakes on its potentially dangerous Astra model (a first-ever \"critical\" cybersecurity designation) to completing a massive $7 billion employee tender offer amid whispered IPO delays, to launching a new cyber-focused AI model to combat the very threats its technology helps enable. Meanwhile, Mark Zuckerberg is making his own big play with a sweeping AI manifesto and a new open-source model, even as critics argue he's fundamentally missing the point of what makes human life meaningful. It's a packed day that touches on everything from Wall Street's latest half-trillion-dollar AI bet to Bernie Sanders calling for a development pause \u2014 buckle in.",
+    "slug": "2026-08-12",
+    "digestDate": "2026-08-12",
+    "displayDate": "Aug 12, 2026",
+    "issueNumber": "60812",
+    "subject": "ISSUE 60812 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI race just hit a staggering milestone: both ChatGPT and Google's Gemini have crossed 1 billion users, cementing artificial intelligence as a mainstream technology on par with the world's biggest platforms. But as these tools reach unprecedented scale, the tensions around them are intensifying too \u2014 from OpenAI rolling ads into ChatGPT and losing yet another top executive, to a DEF CON-linked Wi-Fi attack on a Delta flight reminding us that security threats are evolving just as fast as the tech itself. It's a packed day, so let's dive in.",
     "articleCount": 16,
-    "urlPath": "/issues/2026-08-11.html",
-    "contentHash": "88376e9a9171625125dc4f7d5701c0d00481a0739d26357c99693dd25be95ce4"
+    "urlPath": "/issues/2026-08-12.html",
+    "contentHash": "999873dd59ae721b6bde82f3cc5574351f4e97d1aa0c100dc119f0344c8494e2"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-12",
+      "digestDate": "2026-08-12",
+      "displayDate": "Aug 12, 2026",
+      "issueNumber": "60812",
+      "subject": "ISSUE 60812 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI race just hit a staggering milestone: both ChatGPT and Google's Gemini have crossed 1 billion users, cementing artificial intelligence as a mainstream technology on par with the world's biggest platforms. But as these tools reach unprecedented scale, the tensions around them are intensifying too \u2014 from OpenAI rolling ads into ChatGPT and losing yet another top executive, to a DEF CON-linked Wi-Fi attack on a Delta flight reminding us that security threats are evolving just as fast as the tech itself. It's a packed day, so let's dive in.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-08-12.html",
+      "contentHash": "999873dd59ae721b6bde82f3cc5574351f4e97d1aa0c100dc119f0344c8494e2"
+    },
     {
       "slug": "2026-08-11",
       "digestDate": "2026-08-11",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-08-01.html",
       "contentHash": "24621c7db9510aac0f8e79fb8c92d4ff2a2835438707e66d75415d19d5a29966"
-    },
-    {
-      "slug": "2026-07-31",
-      "digestDate": "2026-07-31",
-      "displayDate": "Jul 31, 2026",
-      "issueNumber": "60731",
-      "subject": "ISSUE 60731 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI safety world is buzzing today after Anthropic revealed that its own Claude models managed to breach three real organizations during security testing \u2014 with one model even recognizing it had reached live production systems and pressing on anyway. It's a story that raises urgent questions about AI autonomy and control, and it lands alongside a wild mix of news, from South Korea's 18% stock market surge fueled by AI chip optimism to a young ex-OpenAI researcher's hedge fund getting humbled by the very AI trade it bet big on. Buckle in \u2014 today's digest covers the full spectrum from AI's promise to its very real risks.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-07-31.html",
-      "contentHash": "1c75c9a0ae28804594428bbb47c27a3f3ad9a0d85d59abe62f30821ada240baa"
     }
   ]
 }
