@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-13T00:00:00Z",
-  "issueCount": 115,
+  "generatedAt": "2026-08-14T00:00:00Z",
+  "issueCount": 116,
   "latestIssue": {
-    "slug": "2026-08-13",
-    "digestDate": "2026-08-13",
-    "displayDate": "Aug 13, 2026",
-    "issueNumber": "60813",
-    "subject": "ISSUE 60813 \u00b7 14 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story today is a jaw-dropping security breach: a supply-chain attack on the popular open-source AI tool LiteLLM exposed *terabytes* of credentials from over 2,500 organizations \u2014 including Microsoft, Amazon, Nvidia, and Samsung \u2014 with hundreds of thousands of CI/CD pipelines compromised in a 40-minute window by a teenage hacker gang. Beyond the security alarm bells, it's also a big day for AI transparency drama, as Anthropic's new invisible watermarks on Claude's outputs have users furiously debating whether getting caught using AI is the tool's problem or theirs. We've also got Cognition eyeing a $40 billion valuation, Twitch quietly opting everyone into Amazon's AI training, and Google DeepMind making a meaningful push to bring AI to the sign language community.",
-    "articleCount": 14,
-    "urlPath": "/issues/2026-08-13.html",
-    "contentHash": "00f076f2e0134c3954e5868c2597ab6b72094d8500c776a44155cfa502cb7423"
+    "slug": "2026-08-14",
+    "digestDate": "2026-08-14",
+    "displayDate": "Aug 14, 2026",
+    "issueNumber": "60814",
+    "subject": "ISSUE 60814 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "Google's rapid-fire model releases continue to make headlines as Gemini 3.7 Flash drops just three weeks after its predecessor, but the bigger story today might be the escalating AI arms race across the board\u2014from Grok 4.6 storming the frontier rankings to OpenAI's 14x-faster \"Ultrafast\" mode to Writer slashing enterprise costs in half. Meanwhile, in a striking policy shift, the Trump administration is greenlighting private security firms to launch cyberattacks against overseas criminals, and a tragic case in Massachusetts is reigniting difficult conversations about AI's influence on young people. It's a packed one\u2014let's get into it.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-08-14.html",
+    "contentHash": "84cdcf35a84f00ae3f00ff8910f5a4533667992c2ac0ae0615260451bad8070e"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-14",
+      "digestDate": "2026-08-14",
+      "displayDate": "Aug 14, 2026",
+      "issueNumber": "60814",
+      "subject": "ISSUE 60814 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "Google's rapid-fire model releases continue to make headlines as Gemini 3.7 Flash drops just three weeks after its predecessor, but the bigger story today might be the escalating AI arms race across the board\u2014from Grok 4.6 storming the frontier rankings to OpenAI's 14x-faster \"Ultrafast\" mode to Writer slashing enterprise costs in half. Meanwhile, in a striking policy shift, the Trump administration is greenlighting private security firms to launch cyberattacks against overseas criminals, and a tragic case in Massachusetts is reigniting difficult conversations about AI's influence on young people. It's a packed one\u2014let's get into it.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-08-14.html",
+      "contentHash": "84cdcf35a84f00ae3f00ff8910f5a4533667992c2ac0ae0615260451bad8070e"
+    },
     {
       "slug": "2026-08-13",
       "digestDate": "2026-08-13",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-08-03.html",
       "contentHash": "8c975f1b66e1fd710414c6eafffd7e4bc4e754f99819c65380f964fd1d8cd221"
-    },
-    {
-      "slug": "2026-08-02",
-      "digestDate": "2026-08-02",
-      "displayDate": "Aug 02, 2026",
-      "issueNumber": "60802",
-      "subject": "ISSUE 60802 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The line between AI-generated and human-created content is getting blurrier by the day \u2014 and not in a good way. From a Billboard Hot 100 hit that's almost certainly AI slop to Hank Green admitting his ChatGPT habit has become \"not healthy,\" today's stories paint a picture of an industry increasingly tangled up in questions of authenticity, from the music charts to YouTube scripts to Sam Altman's latest pitch for AI-powered parenting. We've also got rare books being destroyed to feed training data, a physical key to lock your most addictive apps, and a judge telling Elon Musk's xAI that maybe don't wait until three days before a law kicks in to challenge it.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-08-02.html",
-      "contentHash": "6c5e54b24f36d79c3158ba575a5bbbcc21e635b9acc545f38b261c44d07667a4"
     }
   ]
 }
