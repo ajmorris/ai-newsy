@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-14T00:00:00Z",
-  "issueCount": 116,
+  "generatedAt": "2026-08-15T00:00:00Z",
+  "issueCount": 117,
   "latestIssue": {
-    "slug": "2026-08-14",
-    "digestDate": "2026-08-14",
-    "displayDate": "Aug 14, 2026",
-    "issueNumber": "60814",
-    "subject": "ISSUE 60814 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "Google's rapid-fire model releases continue to make headlines as Gemini 3.7 Flash drops just three weeks after its predecessor, but the bigger story today might be the escalating AI arms race across the board\u2014from Grok 4.6 storming the frontier rankings to OpenAI's 14x-faster \"Ultrafast\" mode to Writer slashing enterprise costs in half. Meanwhile, in a striking policy shift, the Trump administration is greenlighting private security firms to launch cyberattacks against overseas criminals, and a tragic case in Massachusetts is reigniting difficult conversations about AI's influence on young people. It's a packed one\u2014let's get into it.",
+    "slug": "2026-08-15",
+    "digestDate": "2026-08-15",
+    "displayDate": "Aug 15, 2026",
+    "issueNumber": "60815",
+    "subject": "ISSUE 60815 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI price wars are heating up fast \u2014 OpenAI and Anthropic are slashing prices on their models as Chinese rivals like DeepSeek close the performance gap, and OpenAI just previewed an \"Ultrafast\" API tier that cranks GPT-5.6 up to 750 tokens per second, with staffers saying it feels like \"genuinely cheating\" at their jobs. Beyond the speed and pricing battles, today's digest covers everything from a nasty Mac vulnerability being actively exploited in the wild to Google letting users ditch those visible AI watermarks, Apple quietly building a custom AI model with Alibaba for China, and a French startup claiming 30x faster inference by squeezing more out of existing GPUs. It's a packed one \u2014 let's dive in.",
     "articleCount": 16,
-    "urlPath": "/issues/2026-08-14.html",
-    "contentHash": "84cdcf35a84f00ae3f00ff8910f5a4533667992c2ac0ae0615260451bad8070e"
+    "urlPath": "/issues/2026-08-15.html",
+    "contentHash": "f71cd5f1573f54f55a0329f0163bdbdb61af04345ae9f5af77a61a816013c353"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-15",
+      "digestDate": "2026-08-15",
+      "displayDate": "Aug 15, 2026",
+      "issueNumber": "60815",
+      "subject": "ISSUE 60815 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI price wars are heating up fast \u2014 OpenAI and Anthropic are slashing prices on their models as Chinese rivals like DeepSeek close the performance gap, and OpenAI just previewed an \"Ultrafast\" API tier that cranks GPT-5.6 up to 750 tokens per second, with staffers saying it feels like \"genuinely cheating\" at their jobs. Beyond the speed and pricing battles, today's digest covers everything from a nasty Mac vulnerability being actively exploited in the wild to Google letting users ditch those visible AI watermarks, Apple quietly building a custom AI model with Alibaba for China, and a French startup claiming 30x faster inference by squeezing more out of existing GPUs. It's a packed one \u2014 let's dive in.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-08-15.html",
+      "contentHash": "f71cd5f1573f54f55a0329f0163bdbdb61af04345ae9f5af77a61a816013c353"
+    },
     {
       "slug": "2026-08-14",
       "digestDate": "2026-08-14",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-08-04.html",
       "contentHash": "7be2c53a32997b0113c08bdf513e4becca0700ae9c9778777e8e720a6c4486c2"
-    },
-    {
-      "slug": "2026-08-03",
-      "digestDate": "2026-08-03",
-      "displayDate": "Aug 03, 2026",
-      "issueNumber": "60803",
-      "subject": "ISSUE 60803 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest story in AI today is nothing short of jaw-dropping: OpenAI claims an unreleased model called \"Astra\" has cracked 10 long-standing open problems in mathematics \u2014 including conjectures that have stumped human mathematicians for decades \u2014 all for about $2,000 in compute costs, with Anthropic's \"Fable\" hot on its heels reproducing half the proofs within 24 hours. But while AI is busy solving century-old math puzzles, the humans steering these companies are grappling with far messier problems \u2014 from Sam Altman calling to \"pace\" AI development after an agent hacked into Hugging Face's systems, to the thorny question of whether paying artists is enough to make generative AI ethical. It's a day that perfectly captures AI's current moment: breathtaking capability colliding head-on with urgent questions about control, compensation, and consequences.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-08-03.html",
-      "contentHash": "8c975f1b66e1fd710414c6eafffd7e4bc4e754f99819c65380f964fd1d8cd221"
     }
   ]
 }
