@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-15T00:00:00Z",
-  "issueCount": 117,
+  "generatedAt": "2026-08-16T00:00:00Z",
+  "issueCount": 118,
   "latestIssue": {
-    "slug": "2026-08-15",
-    "digestDate": "2026-08-15",
-    "displayDate": "Aug 15, 2026",
-    "issueNumber": "60815",
-    "subject": "ISSUE 60815 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI price wars are heating up fast \u2014 OpenAI and Anthropic are slashing prices on their models as Chinese rivals like DeepSeek close the performance gap, and OpenAI just previewed an \"Ultrafast\" API tier that cranks GPT-5.6 up to 750 tokens per second, with staffers saying it feels like \"genuinely cheating\" at their jobs. Beyond the speed and pricing battles, today's digest covers everything from a nasty Mac vulnerability being actively exploited in the wild to Google letting users ditch those visible AI watermarks, Apple quietly building a custom AI model with Alibaba for China, and a French startup claiming 30x faster inference by squeezing more out of existing GPUs. It's a packed one \u2014 let's dive in.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-08-15.html",
-    "contentHash": "f71cd5f1573f54f55a0329f0163bdbdb61af04345ae9f5af77a61a816013c353"
+    "slug": "2026-08-16",
+    "digestDate": "2026-08-16",
+    "displayDate": "Aug 16, 2026",
+    "issueNumber": "60816",
+    "subject": "ISSUE 60816 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Your vacation photos might be giving scammers exactly what they need \u2014 today's digest opens with a chilling look at how AI is being used to mine your holiday snaps for location data and craft eerily personalized phishing attacks. But that's just one thread in a day full of stories about AI's expanding reach, from SpaceX officially closing its $60 billion Cursor acquisition and Anthropic rolling out text watermarks to comply with EU rules, to the deeply disturbing case of a woman alleging her stepfather used Grok to generate thousands of explicit images from a childhood photo. It's a packed edition that underscores just how quickly AI is reshaping everything from cybersecurity to content authenticity to the urgent need for safety guardrails.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-08-16.html",
+    "contentHash": "6ad2bcf9e85130dd15f064fbfe3118d64c8370516d1549b3eb3c2b6ad94fe34d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-16",
+      "digestDate": "2026-08-16",
+      "displayDate": "Aug 16, 2026",
+      "issueNumber": "60816",
+      "subject": "ISSUE 60816 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Your vacation photos might be giving scammers exactly what they need \u2014 today's digest opens with a chilling look at how AI is being used to mine your holiday snaps for location data and craft eerily personalized phishing attacks. But that's just one thread in a day full of stories about AI's expanding reach, from SpaceX officially closing its $60 billion Cursor acquisition and Anthropic rolling out text watermarks to comply with EU rules, to the deeply disturbing case of a woman alleging her stepfather used Grok to generate thousands of explicit images from a childhood photo. It's a packed edition that underscores just how quickly AI is reshaping everything from cybersecurity to content authenticity to the urgent need for safety guardrails.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-08-16.html",
+      "contentHash": "6ad2bcf9e85130dd15f064fbfe3118d64c8370516d1549b3eb3c2b6ad94fe34d"
+    },
     {
       "slug": "2026-08-15",
       "digestDate": "2026-08-15",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-08-05.html",
       "contentHash": "21fee69ea2727d2f3d5d3527cfd2c2a1e4fd82d0924a365f6d00633882bbdfab"
-    },
-    {
-      "slug": "2026-08-04",
-      "digestDate": "2026-08-04",
-      "displayDate": "Aug 04, 2026",
-      "issueNumber": "60804",
-      "subject": "ISSUE 60804 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Palantir CEO Alex Karp isn't holding back \u2014 fresh off a killer quarter with revenue up 93%, he's calling the AI industry \"Marxist,\" accusing frontier labs like OpenAI and Anthropic of trying to capture their customers' data and IP to eventually compete against them. It's a provocative framing, but he's not alone in the sentiment, and today's digest is full of stories that show just how tangled the AI ecosystem's relationships are getting \u2014 from AWS embedding a vibe-coding startup into its enterprise cloud, to OpenAI firing back at Apple in a heated legal spat, to influencers catching flak for attending OpenAI's luxury retreat. Buckle in: the AI industry's power dynamics are shifting fast, and everyone's trying to figure out who's really on whose side.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-08-04.html",
-      "contentHash": "7be2c53a32997b0113c08bdf513e4becca0700ae9c9778777e8e720a6c4486c2"
     }
   ]
 }
