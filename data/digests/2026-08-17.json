@@ -314,7 +314,7 @@
     {
       "url": "https://twitter.com/rammcodes/status/2089008576371237062",
       "author": "rammcodes",
-      "headline": "Boneyard __auto-generates pixel-perfect skeleton loading screens__ from your real UI so you never have to design them by hand.",
+      "headline": "Boneyard __auto-generates pixel-perfect skeleton loading screens__ from your real UI so you never have to design them manually again.",
       "tweet_id": "3bf1eba9-b6bc-8168-ac51-ebb50ec332c2",
       "source_text": "Brooooooooooooo... this feels like a dream come true for every developer & designer. 🦴\n\nNow you don't have to manually design skeleton screens for your UI.\n\nBoneyard automatically extracts the layout from your real UI and generates pixel-perfect skeleton loading screens from it. https://t.co/LqgTP7igcD",
       "created_time": "2026-08-17T04:52:00.000Z",
@@ -322,9 +322,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/dhh/status/2089008725335867598",
+      "author": "dhh",
+      "headline": "DHH makes the case that ideas are immortal but __inspiration has an expiration date__ — if you want to build something, build it now.",
+      "tweet_id": "3bf1eba9-b6bc-816f-a8a0-c1d537495e16",
+      "source_text": "We all have ideas. Ideas are immortal. They last forever. \n\nWhat doesn’t last forever is inspiration. Inspiration is like fresh fruit or milk: It has an expiration date. \n\nIf you want to do something, you’ve got to do it now. You can’t put it on a shelf and wait two months to get https://t.co/pHcXITo7YE",
+      "created_time": "2026-08-17T04:37:00.000Z",
+      "canonical_url": "https://twitter.com/dhh/status/2089008725335867598",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/EXM7777/status/2089053598068212030",
       "author": "EXM7777",
-      "headline": "A leaked production pipeline shows how one studio is making __multi-million dollar AI movies with Seedance 2.5__ at 1080p on Higgsfield.",
+      "headline": "A leaked internal workflow shows how one studio is producing __multi-million dollar AI movies with Seedance 2.5__ at 1080p on Higgsfield.",
       "tweet_id": "3bf1eba9-b6bc-8167-8856-c34212bf0723",
       "source_text": "i'm about to leak an internal document from a BIG company...\n\nit details the exact process they're using to produce multi-million dollar AI movies with Seedance 2.5 at 1080p on Higgsfield\n\nsteal the workflow:\n\n> the model has no memory, so the pipeline is built to remember for it https://t.co/BtmnmksMMd https://t.co/Oymf2k2vDt",
       "created_time": "2026-08-17T04:22:00.000Z",
@@ -334,7 +344,7 @@
     {
       "url": "https://twitter.com/leerob/status/2089169319099777364",
       "author": "leerob",
-      "headline": "Lee Robinson believes Grok Bot's best design decision is that __the best UI is none at all__ — dramatically simpler than alternatives without losing functionality.",
+      "headline": "Lee Robinson says Grok Bot's best design decision is that __the best UI is none at all__ — dramatically simpler than alternatives without losing functionality.",
       "tweet_id": "3bf1eba9-b6bc-812a-85cd-f4828cb661c9",
       "source_text": "Grok @Bot has made a few simple yet powerful technical decisions that I believe make it easy and enjoyable to use.\n\n1. The best UI is none at all. The product interface is dramatically simpler than alternatives without sacrificing functionality. How is this possible? It's one of",
       "created_time": "2026-08-17T04:17:00.000Z",
@@ -342,9 +352,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/promptparag/status/2088845585747235004",
+      "author": "promptparag",
+      "headline": "Nine Claude skills that __basically write your prompts for you__ — from dumping a half-baked idea to getting a clean task spec back.",
+      "tweet_id": "3bf1eba9-b6bc-8127-81cc-d7af34cf8699",
+      "source_text": "9 Claude Skills that basically write your prompts for you\n\n1: Start With The Chaos\n\nPrompt Maker — /prompt-master. dump your half-baked idea in, get a clean task spec back\n\n2: Sharpen It Up\n\nGrill Me — /grill-me. keeps firing questions until every vague spot gets nailed down\n\nHow https://t.co/Vb0ciyr5QG",
+      "created_time": "2026-08-17T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/promptparag/status/2088845585747235004",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/adamwathan/status/2089065858479890781",
       "author": "adamwathan",
-      "headline": "Adam Wathan started using Grok Bot to __auto-pick his weekly Factor lunches__ — and says it's making the shift in how we use the web feel real.",
+      "headline": "Adam Wathan started using Grok Bot to __auto-pick his weekly Factor lunches__ — says it's easy to see how the way we use the web is about to change.",
       "tweet_id": "3bf1eba9-b6bc-812d-bc20-fe7faa552b10",
       "source_text": "Started playing with @bot this week, first problem I'm using it to solve is automatically picking my lunches from Factor every week because any time I forget they send me stuff I don't like.\n\nBecoming really easy to see how the way we use the web is going to totally change. https://t.co/79gBpKjlMQ",
       "created_time": "2026-08-17T01:37:00.000Z",
@@ -364,7 +384,7 @@
     {
       "url": "https://twitter.com/Granite0x/status/2089094025970139218",
       "author": "Granite0x",
-      "headline": "Rakazo open-sourced the full Grok Bot stack and hit __531 GitHub stars in three days__ — giving any agent its own computer with any LLM you pick.",
+      "headline": "Rakazo open-sourced the full Grok Bot stack and hit __531 GitHub stars in three days__ — gives your agent its own computer with any LLM you pick.",
       "tweet_id": "3bf1eba9-b6bc-81d6-98f9-f8b182c5bb57",
       "source_text": "🤯 YOUR AGENT NOW GETS ITS OWN COMPUTER - WITHOUT PAYING FOR GROK\n\nsomeone open-sourced the entire Grok Bot stack.\n\nRakazo. 531 stars in 3 days on GitHub.\n\n-> https://t.co/hNbkiMi9cN\n\ninstall it - and your agent gets:\n\n- any LLM you pick (OpenRouter, ChatGPT, Copilot, or sign in https://t.co/6WFpjJE6wb",
       "created_time": "2026-08-17T04:52:00.000Z",
@@ -374,7 +394,7 @@
     {
       "url": "https://twitter.com/dani_avila7/status/2089007222651011469",
       "author": "dani_avila7",
-      "headline": "Dani Avila mapped the __full Claude feature ecosystem__ — every integration, every build path, and which approach actually makes sense for your company.",
+      "headline": "Dani Avila maps the __full Claude ecosystem__ — every feature, integration, and approach — and which ones actually make sense for your company.",
       "tweet_id": "3bf1eba9-b6bc-814d-aad5-ef213f616e49",
       "source_text": "The Claude Ecosystem... and everything I’ve learned along the way\n\nEvery week, Claude gets new features, integrations, and ways to build\n\nAnd every day, it becomes harder to understand how everything connects, and which approach actually makes sense for your company.\n\nBuilding a https://t.co/bYxEJPwcbi",
       "created_time": "2026-08-17T04:52:00.000Z",
@@ -384,7 +404,7 @@
     {
       "url": "https://twitter.com/levelsio/status/2089055964309671944",
       "author": "levelsio",
-      "headline": "Pieter Levels recreated a quality-of-life-vs-cost chart with __flipped axes so top-right is best__, sourced from Nomad List data on climate, healthcare, and livability.",
+      "headline": "Pieter Levels recreated a quality-of-life-vs-cost chart using __Nomad List data__ — flipped the axis so top-right is best.",
       "tweet_id": "3bf1eba9-b6bc-81cd-a69f-ed6cb5c3fd1d",
       "source_text": "I liked this chart so much I had to recreate it\n\nI flipped the axis so that top right is best (tip by @marckohlbrugge and @daniellockyer) \n\nMy chart is based on https://t.co/1z6UN2d0nh data, which for quality of life includes people actually liking the place, climate, healthcare, https://t.co/AjVz82RjPs https://t.co/cAZ1hkXAcI",
       "created_time": "2026-08-17T04:47:00.000Z",
@@ -392,19 +412,9 @@
       "learning_score": 2
     },
     {
-      "url": "https://twitter.com/dhh/status/2089008725335867598",
-      "author": "dhh",
-      "headline": "David Heinemeier Hansson says ideas are immortal but __inspiration has an expiration date__ — if you want to do something, do it now.",
-      "tweet_id": "3bf1eba9-b6bc-816f-a8a0-c1d537495e16",
-      "source_text": "We all have ideas. Ideas are immortal. They last forever. \n\nWhat doesn’t last forever is inspiration. Inspiration is like fresh fruit or milk: It has an expiration date. \n\nIf you want to do something, you’ve got to do it now. You can’t put it on a shelf and wait two months to get https://t.co/pHcXITo7YE",
-      "created_time": "2026-08-17T04:37:00.000Z",
-      "canonical_url": "https://twitter.com/dhh/status/2089008725335867598",
-      "learning_score": 2
-    },
-    {
       "url": "https://twitter.com/coreyhainesco/status/2089087821860782438",
       "author": "coreyhainesco",
-      "headline": "Magister __posts natively to 12 social platforms__ for free — give it one product update and it writes a thread for X, a carousel for LinkedIn, a 30-second TikTok cut.",
+      "headline": "Magister __posts natively to 12 social platforms__ for free — give it one product update and it writes a thread, a carousel, and a 30-second TikTok cut.",
       "tweet_id": "3bf1eba9-b6bc-8148-b86f-c4f048529d70",
       "source_text": "Magister posts directly to 12 social platforms — natively, and for free.\n\nGive it one product update and it writes a thread for X, a carousel for LinkedIn, a 30-second cut for TikTok — each one native to the platform, not copy-paste — then schedules and publishes through your https://t.co/ZAMCBP08Jn",
       "created_time": "2026-08-17T04:37:00.000Z",
@@ -412,19 +422,9 @@
       "learning_score": 2
     },
     {
-      "url": "https://twitter.com/sushilwtf/status/2088884720394449296",
-      "author": "sushilwtf",
-      "headline": "Find a boring problem, build a tiny SaaS, charge $50/month, get 200 customers, hit __$10K MRR__, do it again — why are we making this harder?",
-      "tweet_id": "3bf1eba9-b6bc-8106-b2bd-d1eef4b6d212",
-      "source_text": "You could literally\n\n– Find a boring problem\n– Build a tiny SaaS around it\n– Charge $50/month\n– Get 200 customers\n– Make $10K MRR\n– Do it again\n\nWhy are we making this harder than it is https://t.co/NyoMDTvU4x",
-      "created_time": "2026-08-17T04:37:00.000Z",
-      "canonical_url": "https://twitter.com/sushilwtf/status/2088884720394449296",
-      "learning_score": 2
-    },
-    {
       "url": "https://twitter.com/PrajwalTomar_/status/2088996708999172395",
       "author": "PrajwalTomar_",
-      "headline": "Prajwal Tomar says Grok Bot is the closest thing to a __24/7 employee__ he's seen this AI cycle — one $300 sub covers the whole stack.",
+      "headline": "Prajwal Tomar believes Grok Bot is __the closest thing to a 24/7 employee__ this AI cycle has produced — one $300 sub covers the whole stack.",
       "tweet_id": "3bf1eba9-b6bc-815e-b6c1-d948dbdda285",
       "source_text": "I'm not exaggerating when I say this: Grok Bot is the closest thing to a 24/7 employee I've seen in this entire AI cycle.\n\nPeople are handing it whole departments. And one $300 sub covers the WHOLE stack.\n\nHere's what it's already running for people on its built-in cloud https://t.co/Rr4Bq9d4ar",
       "created_time": "2026-08-17T02:12:00.000Z",
@@ -432,9 +432,19 @@
       "learning_score": 2
     },
     {
+      "url": "https://twitter.com/justwatt/status/2089161302153502723",
+      "author": "justwatt",
+      "headline": "AI deployment is __20% tech, 30% process design, 50%",
+      "tweet_id": "3bf1eba9-b6bc-8144-8eaa-d996f406a388",
+      "source_text": "AI deployment is 20% tech, 30% process design, 50% change management. https://t.co/GNNxraKXnV",
+      "created_time": "2026-08-17T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/justwatt/status/2089161302153502723",
+      "learning_score": 2
+    },
+    {
       "url": "https://twitter.com/petergyang/status/2089068517979283639",
       "author": "petergyang",
-      "headline": "Riley Brown uses WisprFlow to walk around for ten minutes talking, then gets back __80% of the diagrams__ he shares in his videos.",
+      "headline": "Riley Brown says ten minutes of talking into __Whispr Flow__ gives him 80% of the Excalidraw diagrams he shares in his videos.",
       "tweet_id": "3bf1eba9-b6bc-81c7-a805-edb0ed271741",
       "source_text": "Ten minutes of talking gives Riley 80% of the diagrams that he shares in his videos.\n\nFrom @rileybrown:\n\n“I use @WisprFlow for everything. I’ll walk around for 10 minutes speaking all my ideas, then ask for an Excalidraw diagram with nine slides.”\n\n“When I come back, it has 80% https://t.co/J9bXbVCzk5 https://t.co/PfaCoQozXK",
       "created_time": "2026-08-17T01:37:00.000Z",
@@ -444,23 +454,23 @@
   ],
   "community_headlines": [
     {
-      "url": "https://www.technologyreview.com/2026/08/13/1141788/summer-heat-el-nino/",
-      "author": "joozio",
-      "item_id": "hn:49327352",
-      "headline": "El Niño and compounding climate factors explain __this summer's brutal heat__ — and 2027 could be worse.",
+      "url": "https://medium.com/@joeymills19/public-coding-benchmarks-dont-match-my-repo-so-i-built-my-own-305444e4db61",
+      "author": "AnneWodell",
+      "item_id": "hn:49327604",
+      "headline": "Public coding benchmarks didn't match his repo, so Joey Mills evaluated models on __40 real tickets__ instead.",
       "subreddit": null,
-      "source_text": "What's behind this summer's heat, and why 2027 could be worse",
+      "source_text": "Evaluating coding models on 40 real tickets",
       "source_type": "hacker_news",
-      "created_time": "2026-08-17T07:01:40+00:00",
+      "created_time": "2026-08-17T07:45:38+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://technologyreview.com/2026/08/13/1141788/summer-heat-el-nino",
+      "canonical_url": "https://medium.com/@joeymills19/public-coding-benchmarks-dont-match-my-repo-so-i-built-my-own-305444e4db61",
       "learning_score": 3
     },
     {
       "url": "https://larstofus.com/2026/08/16/speeding-up-the-unreal-editor-launch-again-by-not-loading-1585-files/",
       "author": "jay_kyburz",
       "item_id": "hn:49327292",
-      "headline": "Shaving Unreal Editor launch time by __skipping 1,585 unnecessary file loads__ on startup.",
+      "headline": "Shaving seconds off Unreal Editor launch by __skipping 1,585 files__ it didn't need to load.",
       "subreddit": null,
       "source_text": "Speeding up the Unreal Editor launch (again) by not loading 1585 files",
       "source_type": "hacker_news",
@@ -470,23 +480,88 @@
       "learning_score": 3
     },
     {
-      "url": "https://www.tapdiary.app/en",
-      "author": "sangkwun",
-      "item_id": "hn:49327347",
-      "headline": "TapDiary is a __one-tap time and count tracker__ that works entirely offline.",
+      "url": "https://ben.page/cheating",
+      "author": "jer0me",
+      "item_id": "hn:49327620",
+      "headline": "Ben Page makes the case that __every student is already cheating__ with AI, and pretending otherwise is the real problem.",
       "subreddit": null,
-      "source_text": "Show HN: TapDiary – a one-tap time and count tracker, works offline",
+      "source_text": "Every student is cheating with AI",
       "source_type": "hacker_news",
-      "created_time": "2026-08-17T07:00:22+00:00",
+      "created_time": "2026-08-17T07:47:56+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://tapdiary.app/en",
+      "canonical_url": "https://ben.page/cheating",
+      "learning_score": 2
+    },
+    {
+      "url": "https://juleskreuer.eu/research/tabbench-llm",
+      "author": "not_a_feature",
+      "item_id": "hn:49327601",
+      "headline": "New research asks whether LLMs are any good as __in-context tabular classifiers__ — results are mixed.",
+      "subreddit": null,
+      "source_text": "Are LLMs good in-context tabular classifiers?",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-17T07:45:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://juleskreuer.eu/research/tabbench-llm",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.wsj.com/world/india/500-000-applicants-583-jobs-the-frantic-scramble-for-work-in-india-0fefa2b3",
+      "author": "rustoo",
+      "item_id": "hn:49327497",
+      "headline": "__500,000 applicants for 583 jobs__ — the WSJ documents India's white-knuckle scramble for employment.",
+      "subreddit": null,
+      "source_text": "500k Applicants, 583 Jobs: The Frantic Scramble for Work in India",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-17T07:30:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://wsj.com/world/india/500-000-applicants-583-jobs-the-frantic-scramble-for-work-in-india-0fefa2b3",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/radium0090/Compute-Gateway",
+      "author": "radium90",
+      "item_id": "hn:49327446",
+      "headline": "RAX Compute Gateway offers __one API across OpenAI, Anthropic, and Gemini__ — open-source routing for multi-model setups.",
+      "subreddit": null,
+      "source_text": "Show HN: RAX Compute Gateway – One API for OpenAI, Anthropic, and Gemini",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-17T07:21:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/radium0090/Compute-Gateway",
+      "learning_score": 2
+    },
+    {
+      "url": "https://gist.github.com/philfreo/7257723",
+      "author": "zdkaster",
+      "item_id": "hn:49327376",
+      "headline": "A time capsule: __Facebook's Perl source code from 2005__ resurfaces on GitHub.",
+      "subreddit": null,
+      "source_text": "Facebook Perl source code from 2005",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-17T07:05:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://gist.github.com/philfreo/7257723",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.technologyreview.com/2026/08/13/1141788/summer-heat-el-nino/",
+      "author": "joozio",
+      "item_id": "hn:49327352",
+      "headline": "What's behind this summer's brutal heat — and why __2027 could be worse__ thanks to El Niño.",
+      "subreddit": null,
+      "source_text": "What's behind this summer's heat, and why 2027 could be worse",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-17T07:01:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://technologyreview.com/2026/08/13/1141788/summer-heat-el-nino",
       "learning_score": 2
     },
     {
       "url": "https://viterbischool.usc.edu/news/2026/08/can-ai-read-the-room-usc-study-finds-ai-is-better-at-reading-than-listening/",
       "author": "shymaple",
       "item_id": "hn:49327313",
-      "headline": "USC study finds AI is __better at reading than listening__ — strong on text, weak on tone of voice.",
+      "headline": "USC study finds AI is __better at reading text than interpreting audio__ — it can't really read the room.",
       "subreddit": null,
       "source_text": "USC Study Finds AI Is Better at Reading Than Listening",
       "source_type": "hacker_news",
@@ -499,7 +574,7 @@
       "url": "https://theworkingmodel.co/analysis/null-result-openai-enterprise-paper/",
       "author": "aicoding",
       "item_id": "hn:49327276",
-      "headline": "OpenAI's enterprise AI paper contains __a null result__ that deserves more attention than it's getting.",
+      "headline": "OpenAI's enterprise AI paper quietly contains a __null result__ — the productivity gains aren't what the headline suggested.",
       "subreddit": null,
       "source_text": "The null result in OpenAI's enterprise AI paper",
       "source_type": "hacker_news",
@@ -507,91 +582,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://theworkingmodel.co/analysis/null-result-openai-enterprise-paper",
       "learning_score": 2
-    },
-    {
-      "url": "https://github.com/kubara-io/kubara",
-      "author": "tuunit",
-      "item_id": "hn:49327257",
-      "headline": "Kubara launches as a __package manager and framework for Kubernetes platforms__.",
-      "subreddit": null,
-      "source_text": "Show HN: Kubara a package manager and framework for Kubernetes platforms",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-17T06:48:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/kubara-io/kubara",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/huawei-noah/noah-research/tree/master/ScienceFlow",
-      "author": "d3ron",
-      "item_id": "hn:49327231",
-      "headline": "Huawei open-sources __ScienceFlow__, a long-horizon agent designed to run ML research end to end.",
-      "subreddit": null,
-      "source_text": "ScienceFlow – A Long-Horizon Agent for ML Research",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-17T06:45:21+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/huawei-noah/noah-research/tree/master/ScienceFlow",
-      "learning_score": 2
-    },
-    {
-      "url": "https://contextgoblin.com/",
-      "author": "clemens1010",
-      "item_id": "hn:49327220",
-      "headline": "Context Goblin does code review that __follows callers across your repos__ instead of reviewing files in isolation.",
-      "subreddit": null,
-      "source_text": "Show HN: Code review that follows callers across your repos",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-17T06:43:03+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://contextgoblin.com",
-      "learning_score": 2
-    },
-    {
-      "url": "https://newatlas.com/military/ghost-gives-rocket-launch-sites-flat-pack-treatment/",
-      "author": "Gaishan",
-      "item_id": "hn:49327002",
-      "headline": "Rocket Lab's GHOST gives launch infrastructure __the flat-pack treatment__ — mobile, modular, deployable anywhere.",
-      "subreddit": null,
-      "source_text": "Rocket Lab's GHOST mobile rocket launch infrastructure",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-17T05:59:59+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://newatlas.com/military/ghost-gives-rocket-launch-sites-flat-pack-treatment",
-      "learning_score": 2
-    },
-    {
-      "url": "https://blog.makeplans.com/2026/08/15/your-ai-assistant-can-now-manage-your-bookings.html",
-      "author": "sleepyhead",
-      "item_id": "hn:49326992",
-      "headline": "MakePlans ships an MCP server so your __AI assistant can manage appointment bookings__ directly.",
-      "subreddit": null,
-      "source_text": "Show HN: MCP Server for Appointment Booking",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-17T05:58:02+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://blog.makeplans.com/2026/08/15/your-ai-assistant-can-now-manage-your-bookings.html",
-      "learning_score": 2
-    },
-    {
-      "url": "https://ferd.ca/control-and-complexity-tension-in-systems-design.html",
-      "author": "r4um",
-      "item_id": "hn:49326986",
-      "headline": "Fred Hébert on the __tension between control and complexity__ in systems design — and why you can't optimize for both.",
-      "subreddit": null,
-      "source_text": "Control and complexity: tension in systems design",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-17T05:56:24+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://ferd.ca/control-and-complexity-tension-in-systems-design.html",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-17T07:07:59.551012+00:00",
+    "generated_at": "2026-08-17T07:57:03.161576+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "873f62d4dc8518c0bad113d9e1cb8719142ce5043099ad21895551507447243a"
+  "content_hash": "7ece4e994b4c6d720cd2ad9ec9e28bcf29b0f8b547957e5be668744122cf6e69"
 }
