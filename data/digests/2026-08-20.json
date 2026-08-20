@@ -354,9 +354,39 @@
   ],
   "tweet_headlines": [
     {
+      "url": "https://twitter.com/danshipper/status/2090122240025071907",
+      "author": "danshipper",
+      "headline": "Dan Shipper says Every now has a __frontier team__ dedicated to mapping and experimenting at the edge of AI.",
+      "tweet_id": "3c11eba9-b6bc-815e-831a-cb6c8577cc39",
+      "source_text": "we now have a frontier team! \n\na group of people inside of every explicitly dedicated to mapping and experimenting at the edge of ai https://t.co/Fr6mIuvRwt",
+      "created_time": "2026-08-19T18:12:00.000Z",
+      "canonical_url": "https://twitter.com/danshipper/status/2090122240025071907",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/Av1dlive/status/2090011470608384277",
+      "author": "Av1dlive",
+      "headline": "Av1dlive ditched ChatGPT and Hermes, argues Grok Bot is the __single most powerful agent stack__ he's ever used — then mapped the entire agentic workflow.",
+      "tweet_id": "3c11eba9-b6bc-812f-8855-f6c793ec979c",
+      "source_text": "call me insane... but grok bot is the single most powerful agent stack i've ever used.\n\nit will have your entire business run by agent teams working for you 24/7.\n\nI just cancelled chatgpt and hermes to replace them with it \n\nthen mapped  the entire grok bot agentic workflows https://t.co/HnCjvm9PmG https://t.co/v8rUs1mtid",
+      "created_time": "2026-08-19T18:12:00.000Z",
+      "canonical_url": "https://twitter.com/Av1dlive/status/2090011470608384277",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/everestchris6/status/2090102162043052145",
+      "author": "everestchris6",
+      "headline": "@everestchris6 built an agent that replicates the Reddit workflow that made him __$1,000/day__ — monitors subreddits, profiles buyers, finds problems, ships the product.",
+      "tweet_id": "3c11eba9-b6bc-814b-b062-f56b32b204da",
+      "source_text": "i made $1,000/day off reddit doing this manually\n\nthis is the version where the whole process runs on an agent\n\n- monitor the subreddits your buyers are in\n- build a profile of who's actually in there\n- find the problem people keep asking about\n- build the product and put it live https://t.co/16bMvGOkS4 https://t.co/dU8xumKahf",
+      "created_time": "2026-08-19T18:12:00.000Z",
+      "canonical_url": "https://twitter.com/everestchris6/status/2090102162043052145",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/ataiiam/status/2090125716767773120",
       "author": "ataiiam",
-      "headline": "@ataiiam launches __Open Bot__, an open-source Grok Bot alternative that works with any agent harness — includes AI coworkers, generative UI, and computer use.",
+      "headline": "Open Bot drops as an __open-source Grok Bot alternative__ that works with any agent harness — includes AI coworkers, generative UI, computer use, and agent-human handoffs.",
       "tweet_id": "3c11eba9-b6bc-81e2-bc3c-fd14519203db",
       "source_text": "🎉 Introducing 𝙾𝚙𝚎𝚗 𝙱𝚘𝚝\n\nAn open source Grok Bot that works with ANY agent harness, designed for real companies.\n\nIt includes:\n\n- AI Coworkers\n- Generative UI\n- Computer use (remote/local)\n- Agent-human handoffs\n- Full data recording, owned by you\n\nRepo → https://t.co/7UuVoRkc40 https://t.co/qfELsTSt8L",
       "created_time": "2026-08-19T18:07:00.000Z",
@@ -364,19 +394,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/BHolmesDev/status/2090103288540569728",
-      "author": "BHolmesDev",
-      "headline": "Ben Holmes automates prompt triage: file issues on GitHub, have an agent check scope, and if it's well-defined, __implement right away — if not, grill me__.",
-      "tweet_id": "3c11eba9-b6bc-81cb-9556-f8c924a8659d",
-      "source_text": "/grill-me is awesome, but I've really enjoyed \"auto-grilling\" to save some time.\n\nMy flow:\n- File would-be prompts as issues on GitHub\n- Have an agent check the scope\n- If it's well-defined, implement right away\n- If not, grill me https://t.co/V5FBwAVTs1",
-      "created_time": "2026-08-19T16:57:00.000Z",
-      "canonical_url": "https://twitter.com/BHolmesDev/status/2090103288540569728",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/akshay_pachaar/status/2090111634245357787",
       "author": "akshay_pachaar",
-      "headline": "An open-source harness shipped a month after Sam Altman's call for one, and it's __more efficient than most managed harnesses__ by cutting redundant token reads.",
+      "headline": "An open-source harness shipped a month after Sam Altman made the case for one — it cuts token costs by stopping agents from __rereading things they already read__.",
       "tweet_id": "3c11eba9-b6bc-8131-bb75-ca2379cf7f7e",
       "source_text": "Sam Altman made the case for open-source harnesses in July.\n\na month later, someone shipped it, and it's more efficient than most managed harnesses.\n\nhere is the problem it was aimed at:\n\na large share of your agent's token bill is the model rereading things it already read. https://t.co/XlPvG3D4CE https://t.co/XRa3WasKAK",
       "created_time": "2026-08-19T16:57:00.000Z",
@@ -384,44 +404,44 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/_avichawla/status/2089817006065496530",
-      "author": "_avichawla",
-      "headline": "Grok Bot lets you __teach a task by doing it once__ on screen instead of writing it down — turn any screen recording into an agent skill.",
-      "tweet_id": "3c11eba9-b6bc-81a2-91a7-e227bfb67c7c",
-      "source_text": "Turn any screen recording into an Agent skill!\n\nGrok @bot has a really interesting feature that lets you teach a task by doing it once instead of writing it down.\n\nOpen a computer view of a Bot conversation, select Teach a task, and run through the whole workflow yourself while https://t.co/STHnvIdTfO https://t.co/saoVbVpwo6",
+      "url": "https://twitter.com/BHolmesDev/status/2090103288540569728",
+      "author": "BHolmesDev",
+      "headline": "Ben Holmes shares his \"auto-grilling\" flow: file prompts as GitHub issues, have an agent check scope, and __implement well-defined ones automatically__ — or grill him if not.",
+      "tweet_id": "3c11eba9-b6bc-81cb-9556-f8c924a8659d",
+      "source_text": "/grill-me is awesome, but I've really enjoyed \"auto-grilling\" to save some time.\n\nMy flow:\n- File would-be prompts as issues on GitHub\n- Have an agent check the scope\n- If it's well-defined, implement right away\n- If not, grill me https://t.co/V5FBwAVTs1",
+      "created_time": "2026-08-19T16:57:00.000Z",
+      "canonical_url": "https://twitter.com/BHolmesDev/status/2090103288540569728",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/divinprnc/status/2090061511100109002",
+      "author": "divinprnc",
+      "headline": "@divinprnc built a free, open-source macOS menu bar app that __tracks your daily Git commit streak__ and throws confetti when you hit your goal.",
+      "tweet_id": "3c11eba9-b6bc-81a5-9a68-ed773982c30d",
+      "source_text": "I built a tiny macOS app that keeps my daily Git commits visible.\n\nCommit Tracker lives in the menu bar, tracks your streak and tasks, and shows your progress in an always-on-top widget.\n\nHit the daily goal and it throws confetti.\n\nEverything stays local. Free and open source https://t.co/ZOG4vZijGa",
+      "created_time": "2026-08-19T16:52:00.000Z",
+      "canonical_url": "https://twitter.com/divinprnc/status/2090061511100109002",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/divinprnc/status/2090065319804998130",
+      "author": "divinprnc",
+      "headline": "QuickMail lets you go from a domain to a __working inbox on Cloudflare in under",
+      "tweet_id": "3c11eba9-b6bc-81d8-8018-d9c157e5e7dc",
+      "source_text": "I just recorded a complete QuickMail setup guide.\n\nIn under 5 minutes, I went from a domain to a working inbox that can send and receive real email, running entirely on @Cloudflare.\n\nNo Google Workspace or monthly per-user mailbox subscription.\n\nQuickMail is free and open source https://t.co/NMzNYwWbC7 https://t.co/8anRakaGOH",
       "created_time": "2026-08-19T16:17:00.000Z",
-      "canonical_url": "https://twitter.com/_avichawla/status/2089817006065496530",
+      "canonical_url": "https://twitter.com/divinprnc/status/2090065319804998130",
       "learning_score": 3
     },
     {
       "url": "https://twitter.com/dani_avila7/status/2089864893092540763",
       "author": "dani_avila7",
-      "headline": "Dani Avila demos a workflow using __session-to-session messaging in Claude Code__ where the first session orchestrates and panel agents execute.",
+      "headline": "Dani Avila demos __session-to-session messaging in Claude Code__ + Ghostty, using one session as an orchestrator that creates context for parallel agent panels.",
       "tweet_id": "3c11eba9-b6bc-81d7-b059-fdefc778a4aa",
       "source_text": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it in your own workflows)\n\n1- I always start with a regular session and a panel running claude agents\n\n2- The first session becomes the orchestrator. It creates the initial context, https://t.co/x6R9psAfKd",
       "created_time": "2026-08-19T16:07:00.000Z",
       "canonical_url": "https://twitter.com/dani_avila7/status/2089864893092540763",
       "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/alex_prompter/status/2090079457440887040",
-      "author": "alex_prompter",
-      "headline": "@alex_prompter makes the case that your AI agent needs babysitting because __you kept a job you could've handed off__ — every level of delegation compounds.",
-      "tweet_id": "3c11eba9-b6bc-81e2-a6e8-ea76e3b0fc28",
-      "source_text": "Your AI agent needs babysitting because you kept a job you could've handed off.\n\nWhen you run an AI task by hand, you own two jobs. You start the run by typing the prompt, and you decide it's done by reading the output and stopping. You do both, every single time.\n\nEvery level of https://t.co/AH5xRqEbPg https://t.co/CSJi3KzS7N",
-      "created_time": "2026-08-19T14:57:00.000Z",
-      "canonical_url": "https://twitter.com/alex_prompter/status/2090079457440887040",
-      "learning_score": 3
-    },
-    {
-      "url": "https://twitter.com/everestchris6/status/2090102162043052145",
-      "author": "everestchris6",
-      "headline": "@everestchris6 says he made __$1,000/day off Reddit__ manually — now the whole process runs on an agent that monitors subreddits, profiles buyers, and ships the product.",
-      "tweet_id": "3c11eba9-b6bc-814b-b062-f56b32b204da",
-      "source_text": "i made $1,000/day off reddit doing this manually\n\nthis is the version where the whole process runs on an agent\n\n- monitor the subreddits your buyers are in\n- build a profile of who's actually in there\n- find the problem people keep asking about\n- build the product and put it live https://t.co/16bMvGOkS4 https://t.co/dU8xumKahf",
-      "created_time": "2026-08-19T18:12:00.000Z",
-      "canonical_url": "https://twitter.com/everestchris6/status/2090102162043052145",
-      "learning_score": 2
     },
     {
       "url": "https://twitter.com/BenceRedmond/status/2089772277542089103",
@@ -446,7 +466,7 @@
     {
       "url": "https://twitter.com/cursor_ai/status/2090136956101414982",
       "author": "cursor_ai",
-      "headline": "Cursor keeps improving __cloud agents that hold a goal until it's met__ and stay on course through long sessions.",
+      "headline": "Cursor is improving cloud agents that __pick up work from events__, hold a goal until it's met, and stay on course through long sessions.",
       "tweet_id": "3c11eba9-b6bc-8143-9d7a-c1a26b759b6e",
       "source_text": "We're continuing to improve cloud agents in Cursor.\n\nThey pick up work from events, hold a goal until it's met, and stay on course through long sessions. https://t.co/vACdkc7gOT",
       "created_time": "2026-08-19T18:07:00.000Z",
@@ -456,7 +476,7 @@
     {
       "url": "https://twitter.com/iannuttall/status/2090108198292242499",
       "author": "iannuttall",
-      "headline": "Ian Nuttall hired an AI bot as __Entrepreneur in Residence__ for his company — objective: 20k email subs and $20k MRR by year end.",
+      "headline": "Ian Nuttall hired an AI bot as __Entrepreneur in Residence__ for his company — objective: 20k email subs and $20k MRR by year end, with the bot deciding product strategy, growth, and advertiser negotiations.",
       "tweet_id": "3c11eba9-b6bc-81af-a5c4-e74273f119ec",
       "source_text": "I just hired @bot as my Entrepreneur in Residence for https://t.co/kCTLjvMkKe\n\n(follow them @swipedotmd)\n\nThe objective: 20k email subs and $20k MRR by year end\n\nThey will decide everything:\n\n- Product strategy and growth\n- Negotiating with advertisers by email\n- Marketing the https://t.co/vWgnLpPBGn",
       "created_time": "2026-08-19T18:07:00.000Z",
@@ -466,7 +486,7 @@
     {
       "url": "https://twitter.com/jaimintf/status/2090059849577177546",
       "author": "jaimintf",
-      "headline": "@jaimintf built a skill trained on __850+ apps and 35,000+ screens__ from Mobbin that can recreate motion, animations, and visual systems for iOS apps.",
+      "headline": "Jaime built a skill trained on __850+ apps and 35,000+ screens__ from Mobbin that can recreate motion, animations, typography, and visual systems for iOS apps.",
       "tweet_id": "3c11eba9-b6bc-814d-86d1-d74ce0d414bc",
       "source_text": "Save this skill if you want to create high quality iOS apps\n\ntrained on 850+ apps and 35,000+ screens from https://t.co/25YlQDDM2s\n\ngive it any screen and it can recreate the:\n> motion\n> animations\n> typography\n> visual system\n\nput an end to ai slop. more ↓ https://t.co/Qqshnboqeh",
       "created_time": "2026-08-19T18:07:00.000Z",
@@ -476,30 +496,46 @@
     {
       "url": "https://twitter.com/rseroter/status/2089850075937947747",
       "author": "rseroter",
-      "headline": "Code review eats the vast majority of tokens in the SDLC — Swizec believes you can __stop burning tokens by using custom linters__ instead.",
+      "headline": "Code review eats the vast majority of tokens spent in the SDLC — Swizec argues you can __stop burning tokens by using custom linters__ instead.",
       "tweet_id": "3c11eba9-b6bc-815f-a4c4-f6d588086975",
       "source_text": "Code review eats up the vast majority of the tokens you spend in the SDLC (https://t.co/soaQiSN7to).\n\n@Swizec says you can stop burning so many tokens here by using custom linters ... https://t.co/uJ2REjkLal",
       "created_time": "2026-08-19T16:07:00.000Z",
       "canonical_url": "https://twitter.com/rseroter/status/2089850075937947747",
       "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/amasad/status/2090079496124674377",
-      "author": "amasad",
-      "headline": "Amjad Masad argues agents made software cheaper but coding expensive — Replit and OpenAI are __partnering to change that__.",
-      "tweet_id": "3c11eba9-b6bc-8141-96f5-d9b75c3c591e",
-      "source_text": "Agents made software cheaper but made coding expensive.\n\nToday, together with @OpenAI, we’re changing this: https://t.co/OI3eowMt5s",
-      "created_time": "2026-08-19T14:57:00.000Z",
-      "canonical_url": "https://twitter.com/amasad/status/2090079496124674377",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
+      "url": "https://donely.ai/ai-employees/autonomous-security-agent",
+      "author": "Stanlyya",
+      "item_id": "hn:49371484",
+      "headline": "Donely says its autonomous security agent can __hack to root access 9 out of 10 times__.",
+      "subreddit": null,
+      "source_text": "Our security harness can hack to get root 9/10 times",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-20T07:24:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://donely.ai/ai-employees/autonomous-security-agent",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.datadoghq.com/blog/engineering/gitretriever/",
+      "author": "mcbain",
+      "item_id": "hn:49371419",
+      "headline": "Datadog rebuilt its Git serving layer to handle __20× the CI traffic without getting slower__.",
+      "subreddit": null,
+      "source_text": "20× the CI traffic without getting slower: How we rebuilt Git serving at Datadog",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-20T07:12:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://datadoghq.com/blog/engineering/gitretriever",
+      "learning_score": 3
+    },
+    {
       "url": "https://pgdog.dev/blog/pgdog-vs-rds-proxy",
       "author": "levkk",
       "item_id": "hn:49371092",
-      "headline": "PgDog benchmarks show it running __2x faster than RDS Proxy__ for Postgres connection pooling.",
+      "headline": "PgDog benchmarks itself at __2× faster than RDS Proxy__ for PostgreSQL connection pooling.",
       "subreddit": null,
       "source_text": "PgDog is 2x faster than RDS Proxy",
       "source_type": "hacker_news",
@@ -509,23 +545,36 @@
       "learning_score": 3
     },
     {
-      "url": "https://phpunit.expert/articles/how-php-executes-bytecode.html",
-      "author": "pow-tac",
-      "item_id": "hn:49371372",
-      "headline": "A deep dive into how __PHP executes bytecode__ under the hood — from opcode generation to the virtual machine loop.",
+      "url": "https://www.dexerto.com/entertainment/florida-police-officer-accused-of-using-ai-flock-cameras-to-track-ex-wife-717-times-3400226/",
+      "author": "01-_-",
+      "item_id": "hn:49371587",
+      "headline": "A Florida police officer allegedly used __Flock AI cameras to track his ex-wife 717 times__.",
       "subreddit": null,
-      "source_text": "PHP Executes Bytecode – Deepdive",
+      "source_text": "Florida police officer accused of using Flock AI cameras",
       "source_type": "hacker_news",
-      "created_time": "2026-08-20T07:03:45+00:00",
+      "created_time": "2026-08-20T07:39:22+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://phpunit.expert/articles/how-php-executes-bytecode.html",
+      "canonical_url": "https://dexerto.com/entertainment/florida-police-officer-accused-of-using-ai-flock-cameras-to-track-ex-wife-717-times-3400226",
+      "learning_score": 2
+    },
+    {
+      "url": "https://joecode.com/2026-08-19-sqlite3/",
+      "author": "mpweiher",
+      "item_id": "hn:49371496",
+      "headline": "The case for using __SQLite for everything__ — and actually meaning it.",
+      "subreddit": null,
+      "source_text": "SQLite for Everything",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-20T07:25:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://joecode.com/2026-08-19-sqlite3",
       "learning_score": 2
     },
     {
       "url": "https://www.seangoedecke.com/good-writing-is-obvious-not-original/",
       "author": "gfysfm",
       "item_id": "hn:49371342",
-      "headline": "Sean Goedecke makes the case that __good writing is obvious, not original__ — clarity beats cleverness every time.",
+      "headline": "Sean Goedecke makes the case that __good writing is obvious, not original__.",
       "subreddit": null,
       "source_text": "Good writing is obvious, not original",
       "source_type": "hacker_news",
@@ -538,7 +587,7 @@
       "url": "https://github.com/CaydenChik/doover",
       "author": "Cayden27",
       "item_id": "hn:49371211",
-      "headline": "Do-over gives AI agents something they've been missing — an __undo command for shell operations__ that actually works.",
+      "headline": "Do-over gives AI agent shell commands an __undo button__ — because agents break things.",
       "subreddit": null,
       "source_text": "Show HN: Do-over, undo for AI agent shell commands",
       "source_type": "hacker_news",
@@ -546,78 +595,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://github.com/CaydenChik/doover",
       "learning_score": 2
-    },
-    {
-      "url": "https://en.yna.co.kr/view/AEN20260819007000315",
-      "author": "riffraff",
-      "item_id": "hn:49370902",
-      "headline": "Seoul plans to __cover all sidewalks with shade by 2028__ to protect residents from intensifying heat waves.",
-      "subreddit": null,
-      "source_text": "Seoul to cover all sidewalks with shade by 2028 to combat heat waves",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-20T06:00:26+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://en.yna.co.kr/view/AEN20260819007000315",
-      "learning_score": 2
-    },
-    {
-      "url": "https://github.com/Sma1lboy/rove",
-      "author": "zhallen_work",
-      "item_id": "hn:49370885",
-      "headline": "Rove spins up __parallel coding agents that fan out subtasks__ and report back — like a foreman for your AI dev team.",
-      "subreddit": null,
-      "source_text": "Show HN: Rove – parallel coding agents that can fan out subtasks and report back",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-20T05:58:20+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://github.com/Sma1lboy/rove",
-      "learning_score": 2
-    },
-    {
-      "url": "https://openai.com/index/asana/",
-      "author": "tosh",
-      "item_id": "hn:49370862",
-      "headline": "Asana says it __cleared 5 years of engineering work in 2 weeks__ using OpenAI's Codex.",
-      "subreddit": null,
-      "source_text": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-20T05:54:20+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://openai.com/index/asana",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.reuters.com/business/autos-transportation/samsung-hikes-chipmaking-prices-by-up-15-demand-spike-sources-say-2026-08-19/",
-      "author": "giuliomagnifico",
-      "item_id": "hn:49370854",
-      "headline": "Samsung is __hiking chipmaking prices by up to 15%__ on new orders as demand spikes.",
-      "subreddit": null,
-      "source_text": "Samsung hikes chipmaking prices by up to 15% for new orders, on demand spike",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-20T05:52:40+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://reuters.com/business/autos-transportation/samsung-hikes-chipmaking-prices-by-up-15-demand-spike-sources-say-2026-08-19",
-      "learning_score": 2
-    },
-    {
-      "url": "https://grok.bot/",
-      "author": "mrpadie",
-      "item_id": "hn:49370775",
-      "headline": "The owner of grok.bot is publicly __asking xAI for $1M__ for the domain.",
-      "subreddit": null,
-      "source_text": "Owner of grok.bot asks xAI for $1M",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-20T05:41:55+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://grok.bot",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-20T07:05:39.189816+00:00",
+    "generated_at": "2026-08-20T07:46:34.627011+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "c6582198e3a9ab465a7ed2d5ba4d1c0574e2849c826c68fe2679422490fb0cf1"
+  "content_hash": "607bfa50c568939fe8b39203849bf959030e278c9ff4669987b4815a951cd8e2"
 }
