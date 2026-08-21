@@ -418,7 +418,7 @@
     {
       "url": "https://twitter.com/alex_prompter/status/2090444916350656813",
       "author": "alex_prompter",
-      "headline": "Stripe, Vercel, and OpenAI all published how their AI agents perform internally — the biggest takeaway is that __the setup around the model matters more__ than which model you pick.",
+      "headline": "Stripe, Vercel, and OpenAI all published how their AI agents perform internally — the biggest takeaway was __the setup around the model__, not the model itself.",
       "tweet_id": "3c31eba9-b6bc-81c3-a751-c162c6cd2e46",
       "source_text": "The next time your AI gives you bad output, the model probably isn't your problem.\n\nStripe, Vercel, OpenAI, and other companies have published how their AI agents actually perform internally. The biggest takeaway had nothing to do with which model they picked.\n\nThe setup around https://t.co/x4mKetNy06 https://t.co/AOLOjravGs",
       "created_time": "2026-08-21T01:52:00.000Z",
@@ -428,7 +428,7 @@
     {
       "url": "https://twitter.com/RayFernando1337/status/2090195841822998888",
       "author": "RayFernando1337",
-      "headline": "Ray Fernando made a Grok Bot the boss of his repo, and from there __it recruited more Grok Bots__ — he warns you'll get \"AI Psychosis\" if you try this workflow.",
+      "headline": "Ray Fernando made a Grok Bot __the boss of his repo__ — from there it recruited more Grok Bots. He warns you will get \"AI Psychosis\" if you try this workflow.",
       "tweet_id": "3c21eba9-b6bc-818e-b66d-f5fa8369dc1b",
       "source_text": "I was the bottleneck. So I made a Grok Bot the boss of my repo. From there it recruited more Grok Bots. All of this with two prompts + pstack. WARNING you will get \"AI Psychosis\" if you do this workflow. https://t.co/SHiwIudV7n",
       "created_time": "2026-08-20T12:12:00.000Z",
@@ -438,7 +438,7 @@
     {
       "url": "https://twitter.com/EricNewcomer/status/2090133049291788434",
       "author": "EricNewcomer",
-      "headline": "Eric Newcomer leaks __Stripe's letter to investors explaining its acquisition of OpenRouter__.",
+      "headline": "Eric Newcomer obtained Stripe's __leaked letter to investors explaining its acquisition of OpenRouter__.",
       "tweet_id": "3c21eba9-b6bc-81bd-9625-e2a632194412",
       "source_text": "Here's Stripe's letter to investors explaining its acquisition of OpenRouter (LEAKED) https://t.co/IDH5rIbDq0",
       "created_time": "2026-08-20T12:12:00.000Z",
@@ -448,7 +448,7 @@
     {
       "url": "https://twitter.com/lennysan/status/2090177314630029679",
       "author": "lennysan",
-      "headline": "Lenny Rachitsky suggests creating a Grok Bot trained on his __500+ podcast episodes and newsletter posts__ to use as a product, growth, and career advisor.",
+      "headline": "Lenny Rachitsky built a Grok Bot trained on his __500+ podcast episodes and newsletter posts__ — use it as your product, growth, and career advisor.",
       "tweet_id": "3c21eba9-b6bc-81b3-87c5-ecff6deca8a8",
       "source_text": "Hot tip: Create a Grok Bot that's trained on my 500+ podcasts episodes and newsletter posts.\n\nTreat it as your product/strategy/growth/career advisor.\n\nAsk it:\n+ How do I find my first 1,000 users?\n+ How do I get promoted?\n+ What are some non-obvious growth ideas?\n+ What are some https://t.co/Fj6L9v6Yni https://t.co/tF2tInPrQQ",
       "created_time": "2026-08-20T12:12:00.000Z",
@@ -456,9 +456,19 @@
       "learning_score": 3
     },
     {
+      "url": "https://twitter.com/CasJam/status/2090241073196978368",
+      "author": "CasJam",
+      "headline": "CasJam makes the case that __SuperGrok Heavy at $300/month__ is the best value in AI right now — Grok's highest tier plus Cursor Ultra bundled in.",
+      "tweet_id": "3c21eba9-b6bc-81ab-b422-eaf419c50a30",
+      "source_text": "SuperGrok Heavy really is the best value right now.  They're on land grab right now.\n\nFrom what I understand, for $300/month, you're getting:\n\n- Grok's highest tier, access to most/fastest/best useage on Grok properties (grok, bot, and image gen).\n\n- Cursor Ultra thrown in. So if",
+      "created_time": "2026-08-20T12:12:00.000Z",
+      "canonical_url": "https://twitter.com/CasJam/status/2090241073196978368",
+      "learning_score": 3
+    },
+    {
       "url": "https://twitter.com/MichLieben/status/2090445506401153361",
       "author": "MichLieben",
-      "headline": "MichLieben says the best outbound channel depends on account value — after running outbound for __275+ companies__, you rank accounts first and let the tier pick the channel.",
+      "headline": "MichLieben argues the right outbound channel depends on account value — a lesson from running outbound for __275+ companies__.",
       "tweet_id": "3c31eba9-b6bc-819f-8c47-c8c190b07ded",
       "source_text": "When someone asks me which channel books more meetings, cold email, LinkedIn DMs or cold calling, my first question back is what the account is worth.\n\nYou rank the accounts first, and the channel follows from the tier. We've run outbound for 275+ companies and that's genuinely https://t.co/n44pQPpiDz https://t.co/xex1AlSlQY",
       "created_time": "2026-08-21T01:57:00.000Z",
@@ -468,7 +478,7 @@
     {
       "url": "https://twitter.com/ClaudeDevs/status/2090511582531072265",
       "author": "ClaudeDevs",
-      "headline": "Claude Managed Agents get a new cookbook pairing them with __AG-UI, CopilotKit's open Agent-User Interaction Protocol__.",
+      "headline": "Anthropic's new cookbook pairs __Claude Managed Agents with AG-UI__, CopilotKit's open Agent-User Interaction Protocol.",
       "tweet_id": "3c31eba9-b6bc-812c-8c05-e11466e6fd4c",
       "source_text": "Claude Managed Agents can power many different UIs. \n\nOur new cookbook pairs Claude Managed Agents with AG-UI, @CopilotKit's open Agent-User Interaction Protocol. https://t.co/3OAp5HMFQM",
       "created_time": "2026-08-21T01:52:00.000Z",
@@ -478,7 +488,7 @@
     {
       "url": "https://twitter.com/Saboo_Shubham_/status/2090549386782937134",
       "author": "Saboo_Shubham_",
-      "headline": "Shubham Saboo says his one-person company now runs on __6 Grok Bots, 7 cron jobs, and 0 human employees__ — it figured out everything on its own.",
+      "headline": "Shubham Saboo says he's running a company with __6 Grok bots, 7 cron jobs, and 0 human employees__ — it figured out everything on its own.",
       "tweet_id": "3c31eba9-b6bc-8196-9c59-f0dc853a21d7",
       "source_text": "This is what a one-person Grok bot run company looks like in 2026.\n\nJust asked it to move my FRIENDS and THE Office squad from OpenClaw and Hermes.\n\n6 Grok bots. 7 cron jobs. 0 human employees.\n\nIt figured out everything on its OWN. https://t.co/rnkapSjC9z",
       "created_time": "2026-08-21T01:47:00.000Z",
@@ -488,7 +498,7 @@
     {
       "url": "https://twitter.com/claudeai/status/2090518650251804742",
       "author": "claudeai",
-      "headline": "__Claude Academy__ is live — free courses and tutorials for anyone from AI beginners to daily Claude users.",
+      "headline": "__Claude Academy__ is live — free courses and tutorials for everyone from AI beginners to daily Claude users.",
       "tweet_id": "3c31eba9-b6bc-8134-b2a6-cf1dc38df266",
       "source_text": "Claude Academy is now live.\n\nWhether you're figuring out what AI is or already using Claude every day, there's a path that meets you where you are. The courses and tutorials are free and open to anyone at https://t.co/WRiSRAvK6l https://t.co/llx2W0VIIy",
       "created_time": "2026-08-21T01:47:00.000Z",
@@ -498,30 +508,59 @@
     {
       "url": "https://twitter.com/0xCarnagee/status/2090130673713758559",
       "author": "0xCarnagee",
-      "headline": "xAI's chief engineer describes the core training loop: have agents attempt solutions, collect rewards, then __use reinforcement learning to update the weights__ — \"that loop is the whole thing.\"",
+      "headline": "xAI's chief engineer on the core training loop: have your agent attempt many solutions, collect rewards, then __use reinforcement learning to update the weights__ — \"that loop is the whole thing.\"",
       "tweet_id": "3c21eba9-b6bc-8172-b437-e97e3a66f6c4",
       "source_text": "xAI co-founder and chief engineer:\n\n\"you have your Grok bot agent attempt many solutions, you collect the rewards\n\nthen you use reinforcement learning to update the weights. that loop is the whole thing\"\n\nhe built Colossus, the cluster everyone else quoted at over a year, by https://t.co/mqPCWpfDJg https://t.co/oZJO2apXjk",
       "created_time": "2026-08-20T12:22:00.000Z",
       "canonical_url": "https://twitter.com/0xCarnagee/status/2090130673713758559",
       "learning_score": 2
-    },
-    {
-      "url": "https://twitter.com/CasJam/status/2090241073196978368",
-      "author": "CasJam",
-      "headline": "CasJam argues SuperGrok Heavy is the best value in AI right now — __$300/month gets you Grok's highest tier plus Cursor Ultra__ thrown in during the land grab.",
-      "tweet_id": "3c21eba9-b6bc-81ab-b422-eaf419c50a30",
-      "source_text": "SuperGrok Heavy really is the best value right now.  They're on land grab right now.\n\nFrom what I understand, for $300/month, you're getting:\n\n- Grok's highest tier, access to most/fastest/best useage on Grok properties (grok, bot, and image gen).\n\n- Cursor Ultra thrown in. So if",
-      "created_time": "2026-08-20T12:12:00.000Z",
-      "canonical_url": "https://twitter.com/CasJam/status/2090241073196978368",
-      "learning_score": 2
     }
   ],
   "community_headlines": [
     {
+      "url": "https://www.red5.net/blog/moq-video-streaming-for-robots-drones-and-embedded-devices/",
+      "author": "mondainx",
+      "item_id": "hn:49385002",
+      "headline": "Red5 brings __MOQ video streaming__ to robots, drones, and embedded devices — low-latency by design.",
+      "subreddit": null,
+      "source_text": "MOQ Video Streaming for Robots, Drones, and Embedded Devices",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:38:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://red5.net/blog/moq-video-streaming-for-robots-drones-and-embedded-devices",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/blueray313164-a11y/Quantum-Drive-Solver",
+      "author": "blueray313164",
+      "item_id": "hn:49384910",
+      "headline": "Meg processed __259M nodes on a laptop using just 6.91MB of RAM__ — open-source graph solver pushing memory efficiency to absurd levels.",
+      "subreddit": null,
+      "source_text": "Show HN: Meg – I processed 259M nodes on my laptop using 6.91MB RAM",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:25:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/blueray313164-a11y/Quantum-Drive-Solver",
+      "learning_score": 3
+    },
+    {
+      "url": "https://pdf4wcag.com/blog-news/analysis-pdf-file-size",
+      "author": "smartdev01",
+      "item_id": "hn:49384572",
+      "headline": "An analysis of PDF file sizes from 2006–2025 asks: __are PDFs getting bigger__? (Spoiler: yes.)",
+      "subreddit": null,
+      "source_text": "Are PDFs Getting Bigger? Analyzing PDF File Sizes from 2006–2025",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T06:39:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://pdf4wcag.com/blog-news/analysis-pdf-file-size",
+      "learning_score": 3
+    },
+    {
       "url": "https://Argentic.network",
       "author": "Ag0146",
       "item_id": "hn:49384477",
-      "headline": "Argentic puts an __L402 Lightning toll booth__ in front of your content so AI scraping agents have to pay per request.",
+      "headline": "Argentic ships an __L402 Lightning toll booth__ that charges AI scraping agents per-request via Bitcoin micropayments.",
       "subreddit": null,
       "source_text": "Show HN: Argentic – An L402 Lightning toll booth for AI scraping agents",
       "source_type": "hacker_news",
@@ -531,23 +570,88 @@
       "learning_score": 3
     },
     {
-      "url": "https://vgel.me/posts/elven-rope-and-llms/",
-      "author": "networked",
-      "item_id": "hn:49384304",
-      "headline": "An open-source harness for __testing CUDA kernel correctness__ — catch GPU execution bugs before they silently corrupt results.",
+      "url": "https://zenodo.org/records/21696066",
+      "author": "aiagenttester",
+      "item_id": "hn:49384957",
+      "headline": "Claude Opus 4.6 __returned nothing 900 out of 900 times__ — raising the question of whether agents should auto-retry on empty responses.",
       "subreddit": null,
-      "source_text": "Elven Rope, Ultra-High Molecular Weight Polyethylene, and LLMs (2025)",
+      "source_text": "Claude Opus 4.6 returned nothing 900/900 times. Should agents retry?",
       "source_type": "hacker_news",
-      "created_time": "2026-08-21T05:55:59+00:00",
+      "created_time": "2026-08-21T07:33:12+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://vgel.me/posts/elven-rope-and-llms",
-      "learning_score": 3
+      "canonical_url": "https://zenodo.org/records/21696066",
+      "learning_score": 2
+    },
+    {
+      "url": "https://paulgraham.com/badeconomy.html",
+      "author": "tosh",
+      "item_id": "hn:49384951",
+      "headline": "Paul Graham's 2008 essay on __why a bad economy is actually a good time__ to start a startup holds up.",
+      "subreddit": null,
+      "source_text": "Why to Start a Startup in a Bad Economy (2008)",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:32:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://paulgraham.com/badeconomy.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/",
+      "author": "spankibalt",
+      "item_id": "hn:49384896",
+      "headline": "A deep dive into __the lost treasure of Sid Meier's Pirates__ and the design decisions buried with it.",
+      "subreddit": null,
+      "source_text": "The Lost Treasure of Sid Meier's Pirates",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:23:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates",
+      "learning_score": 2
+    },
+    {
+      "url": "https://vgel.me/posts/qwen-introspection/",
+      "author": "networked",
+      "item_id": "hn:49384859",
+      "headline": "New research suggests __small models can introspect, too__ — not just a capability reserved for frontier-scale LLMs.",
+      "subreddit": null,
+      "source_text": "Small Models Can Introspect, Too (2025)",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:18:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://vgel.me/posts/qwen-introspection",
+      "learning_score": 2
+    },
+    {
+      "url": "https://threedots.tech/post/ddd-and-ai-coding/",
+      "author": "BerislavLopac",
+      "item_id": "hn:49384807",
+      "headline": "Three Dots Tech argues __Domain-Driven Design matters more__ when AI is writing your code, not less.",
+      "subreddit": null,
+      "source_text": "Domain-Driven Design matters more when AI writes your code",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:11:39+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://threedots.tech/post/ddd-and-ai-coding",
+      "learning_score": 2
+    },
+    {
+      "url": "https://benhoyt.com/writings/updating-gifty-with-ai/",
+      "author": "ingve",
+      "item_id": "hn:49384790",
+      "headline": "Ben Hoyt updated a side project with AI across __275 commits__ and documented what actually worked.",
+      "subreddit": null,
+      "source_text": "Updating a side project with AI in 275 commits",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-21T07:09:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://benhoyt.com/writings/updating-gifty-with-ai",
+      "learning_score": 2
     },
     {
       "url": "https://martinylu.com/real-chess",
       "author": "martinAsdf",
       "item_id": "hn:49384714",
-      "headline": "Real Valued Chess throws out the grid: __chess on a continuous board__ where pieces move in any direction, any distance.",
+      "headline": "__Real Valued Chess__ puts the game on a continuous board — no grid, pieces move to any coordinate.",
       "subreddit": null,
       "source_text": "Show HN: Real Valued Chess – chess on a continuous board",
       "source_type": "hacker_news",
@@ -568,78 +672,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://books.vizuara.ai/book/pretraining-a-mini-k3",
       "learning_score": 2
-    },
-    {
-      "url": "https://pdf4wcag.com/blog-news/analysis-pdf-file-size",
-      "author": "smartdev01",
-      "item_id": "hn:49384572",
-      "headline": "Someone analyzed two decades of PDFs and found __file sizes have ballooned__ since 2006 — the data is wilder than you'd think.",
-      "subreddit": null,
-      "source_text": "Are PDFs Getting Bigger? Analyzing PDF File Sizes from 2006–2025",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-21T06:39:30+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://pdf4wcag.com/blog-news/analysis-pdf-file-size",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.latent.space/p/wayfinder-skill",
-      "author": "swyx",
-      "item_id": "hn:49384442",
-      "headline": "swyx makes the case for a __/Wayfinder skill__ that helps AI agents navigate the \"fog of war\" when planning multi-step tasks.",
-      "subreddit": null,
-      "source_text": "The /Wayfinder Skill: Navigating the \"Fog of War\" of Planning",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-21T06:19:35+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://latent.space/p/wayfinder-skill",
-      "learning_score": 2
-    },
-    {
-      "url": "https://stefan-marr.de/2026/08/pitfalls-of-benchmarking-on-modern-systems/",
-      "author": "matt_d",
-      "item_id": "hn:49384266",
-      "headline": "Stefan Marr catalogs the __pitfalls of benchmarking on modern systems__ — thermal throttling, turbo boost, and other traps that silently skew results.",
-      "subreddit": null,
-      "source_text": "Pitfalls of Benchmarking on Modern Systems",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-21T05:49:12+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://stefan-marr.de/2026/08/pitfalls-of-benchmarking-on-modern-systems",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.reddit.com/r/jellyfin/comments/1vtcltb/meet_jellydinosaur_the_superfast_very_compatible/",
-      "author": "wise_blood",
-      "item_id": "hn:49384182",
-      "headline": "Jellydinosaur is a __sub-100kb pure HTML Jellyfin front-end__ that's superfast and works on basically everything.",
-      "subreddit": null,
-      "source_text": "The superfast and compatible < 100kb pure HTML/oldJS Jellyfin front-end",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-21T05:31:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://reddit.com/r/jellyfin/comments/1vtcltb/meet_jellydinosaur_the_superfast_very_compatible",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.innerkore.com/blog/code-doesnt-speak-it-compiles-small-models-win/",
-      "author": "gagan2020",
-      "item_id": "hn:49384134",
-      "headline": "The case that __small models win for code__ — code doesn't speak, it compiles, and smaller specialized models compile better.",
-      "subreddit": null,
-      "source_text": "Code Doesn't Speak – It Compiles: Why Small Models Win",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-21T05:23:44+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://innerkore.com/blog/code-doesnt-speak-it-compiles-small-models-win",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-21T07:04:20.839612+00:00",
+    "generated_at": "2026-08-21T07:49:19.039278+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "03b081c396c66b783ae1342424924081835521cb8298a58457f392e228d6e257"
+  "content_hash": "3063d56b7e78385b118e145a1e428897524efa025d4185bb52ed27262ff29c0f"
 }
