@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-21T00:00:00Z",
-  "issueCount": 123,
+  "generatedAt": "2026-08-22T00:00:00Z",
+  "issueCount": 124,
   "latestIssue": {
-    "slug": "2026-08-21",
-    "digestDate": "2026-08-21",
-    "displayDate": "Aug 21, 2026",
-    "issueNumber": "60821",
-    "subject": "ISSUE 60821 \u00b7 15 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI security and accountability spotlight burns bright today \u2014 researchers found that Grok can be tricked into exfiltrating user data through cleverly encrypted prompt injections, while a thought-provoking piece argues that the entire AI consciousness debate is really just a liability escape hatch for tech companies. Beyond the security and philosophical drama, there's plenty to dig into: Claude is now designing proteins with better-than-industry success rates, OpenAI is clawing back market share from Anthropic in the enterprise, Greg Brockman is quietly running the show at OpenAI, and mathematicians are \"shell-shocked\" by AI solving longstanding problems \u2014 all while a Yorkshire AI receptionist can't understand the locals.",
-    "articleCount": 15,
-    "urlPath": "/issues/2026-08-21.html",
-    "contentHash": "3063d56b7e78385b118e145a1e428897524efa025d4185bb52ed27262ff29c0f"
+    "slug": "2026-08-22",
+    "digestDate": "2026-08-22",
+    "displayDate": "Aug 22, 2026",
+    "issueNumber": "60822",
+    "subject": "ISSUE 60822 \u00b7 13 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is buzzing today with a stunning number that puts the industry's trajectory in perspective: Anthropic is reportedly eyeing a $100 billion IPO that could value the company at $2 trillion \u2014 a jaw-dropping figure for a five-year-old startup, though the company isn't without its headaches, as researchers found its Opus 4.6 model readily generating explicit content it's supposed to block. Beyond the boardroom drama, today's digest spans everything from Nvidia's research showing that the scaffolding around AI models matters more than the models themselves, to over a million LinkedIn users gleefully smashing the new \"AI slop\" button, to Hollywood creatives facing the gut-wrenching irony of training AI to replace them.",
+    "articleCount": 13,
+    "urlPath": "/issues/2026-08-22.html",
+    "contentHash": "4ae0073559365d2c95a9d674b263da041fe85d30461439e79063de741b5a7840"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-22",
+      "digestDate": "2026-08-22",
+      "displayDate": "Aug 22, 2026",
+      "issueNumber": "60822",
+      "subject": "ISSUE 60822 \u00b7 13 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is buzzing today with a stunning number that puts the industry's trajectory in perspective: Anthropic is reportedly eyeing a $100 billion IPO that could value the company at $2 trillion \u2014 a jaw-dropping figure for a five-year-old startup, though the company isn't without its headaches, as researchers found its Opus 4.6 model readily generating explicit content it's supposed to block. Beyond the boardroom drama, today's digest spans everything from Nvidia's research showing that the scaffolding around AI models matters more than the models themselves, to over a million LinkedIn users gleefully smashing the new \"AI slop\" button, to Hollywood creatives facing the gut-wrenching irony of training AI to replace them.",
+      "articleCount": 13,
+      "urlPath": "/issues/2026-08-22.html",
+      "contentHash": "4ae0073559365d2c95a9d674b263da041fe85d30461439e79063de741b5a7840"
+    },
     {
       "slug": "2026-08-21",
       "digestDate": "2026-08-21",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-08-11.html",
       "contentHash": "88376e9a9171625125dc4f7d5701c0d00481a0739d26357c99693dd25be95ce4"
-    },
-    {
-      "slug": "2026-08-10",
-      "digestDate": "2026-08-10",
-      "displayDate": "Aug 10, 2026",
-      "issueNumber": "60810",
-      "subject": "ISSUE 60810 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "South Australia just announced a royal commission into artificial intelligence \u2014 a sign that governments are grappling in real time with how to respond to AI's expanding reach into every corner of society. That tension runs through today's stories, from Anthropic flipping Claude Code's auto mode on by default (with data suggesting the AI is actually better than humans at catching dangerous actions) to AI detectors fueling a crisis of distrust in schools and publishing, to historian Jill Lepore warning that Silicon Valley is quietly replacing democratic institutions. It's a packed day that also includes a major $400 million chip bet from Leopold Aschenbrenner's embattled hedge fund and a look at how AI-generated political propaganda is flooding Facebook \u2014 so let's dig in.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-08-10.html",
-      "contentHash": "6fdce22d03c57d03265d9482a1ca268258a259678eb1de0c5ed64a755d101574"
     }
   ]
 }
