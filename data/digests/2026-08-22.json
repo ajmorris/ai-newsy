@@ -366,7 +366,7 @@
     {
       "url": "https://twitter.com/CasJam/status/2090816210958979273",
       "author": "CasJam",
-      "headline": "CasJam's framework for trusting code he never reads: heavy up-front PRDs, __agent self-verification loops__, and manual QA only on critical paths.",
+      "headline": "CasJam's framework for trusting code he never reads: heavy up-front specs, __agent self-verification loops__, and manual QA only on critical paths.",
       "tweet_id": "3c41eba9-b6bc-81a3-ab04-ef8660f21e9b",
       "source_text": "How I trust code I never read:\n\n1. Heavy up-front planning sessions, PRD, specs\n2. Agent self-verification loops before delivery\n3. Manual QA on critical paths only\n\nNo surprises. No hallucinations. A few refinements, then ready. https://t.co/cGjvDRtMlY",
       "created_time": "2026-08-22T03:42:00.000Z",
@@ -376,7 +376,7 @@
     {
       "url": "https://twitter.com/ttunguz/status/2090883437335101506",
       "author": "ttunguz",
-      "headline": "Local AI models can already match frontier cloud models on __89% of everyday chat and reasoning queries__, per a study of 1M+ real requests across 20+ models.",
+      "headline": "Local AI models can already match frontier cloud models on __89% of everyday chat and reasoning queries__, across 1M+ real queries and 20+ models tested.",
       "tweet_id": "3c41eba9-b6bc-815d-a072-e91d7d5e7e4d",
       "source_text": "Local AI models can already answer 89% of everyday chat & reasoning queries as well as a frontier cloud model, a result that holds broadly across more than a million real queries & 20+ local models tested. https://t.co/0gjbCeCxbG",
       "created_time": "2026-08-22T00:57:00.000Z",
@@ -386,7 +386,7 @@
     {
       "url": "https://twitter.com/debs_obrien/status/2090851981375963199",
       "author": "debs_obrien",
-      "headline": "Debbie O'Brien asked her Grok Bot chief of staff to research the new channels feature and got back __a full breakdown of when and how to use them__.",
+      "headline": "Debbie O'Brien says Grok Bot now has __channels__ — she asked her chief-of-staff bot to research how they work and got a full breakdown.",
       "tweet_id": "3c31eba9-b6bc-81f3-810e-e675efe3bf31",
       "source_text": "I heard @bot got channels now but didn't know when it made sense to use them so I asked my chief of staff:\n\nyou now have channels in here. want to take a look and see if it makes sense for us to use channels and how they work. lets find any documentation you can find on it\n\nI now https://t.co/ZKguif2tC0",
       "created_time": "2026-08-21T20:22:00.000Z",
@@ -396,7 +396,7 @@
     {
       "url": "https://twitter.com/trq212/status/2090884854590382515",
       "author": "trq212",
-      "headline": "A skill Anthropic's own team uses a lot: __/eli5__, which generates HTML artifacts with big pictures and few words to explain any topic.",
+      "headline": "An Anthropic insider shares a skill the team uses constantly: __/eli5__, which generates visual HTML artifacts that explain any topic with big pictures and few words.",
       "tweet_id": "3c31eba9-b6bc-81ec-a4ca-d13341063221",
       "source_text": "a skill people at Anthropic have been using a lot recently: ELI5\n\n/eli5 <what you want explained>\n\n\"explain like I'm someone who knows nothing about this topic, using a HTML artifact with big pictures and few words\" https://t.co/OZqzjAyFdT",
       "created_time": "2026-08-21T20:17:00.000Z",
@@ -406,11 +406,21 @@
     {
       "url": "https://twitter.com/CasJam/status/2090852790809620631",
       "author": "CasJam",
-      "headline": "CasJam details his",
+      "headline": "CasJam details his full Grok Bot org chart: a chief of staff that owns the week, __product heads per portfolio item__, and a bench of specialist agents.",
       "tweet_id": "3c31eba9-b6bc-81be-bca7-e724c5161dc9",
       "source_text": "How I'm setting up my @bot team: \n\nChief\nOf staff. Owns my week and the whole portfolio: intake, priorities, trend watching, operations.\n\nHeads\nOne owner per product in my portfolio. Strategic planning, reporting, project management, hires from the bench. Has their product's https://t.co/zRtgENU7Tl",
       "created_time": "2026-08-21T20:17:00.000Z",
       "canonical_url": "https://twitter.com/CasJam/status/2090852790809620631",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/claudeai/status/2090852314319880425",
+      "author": "claudeai",
+      "headline": "Claude Security scans now run on __Claude",
+      "tweet_id": "3c31eba9-b6bc-8102-9891-d0f6780f21fd",
+      "source_text": "Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut our most capable security model to work on your codebase, no separate model access needed. https://t.co/zJSUgGjtZF",
+      "created_time": "2026-08-21T20:17:00.000Z",
+      "canonical_url": "https://twitter.com/claudeai/status/2090852314319880425",
       "learning_score": 3
     },
     {
@@ -446,7 +456,7 @@
     {
       "url": "https://twitter.com/adamanzzz/status/2090570726231142654",
       "author": "adamanzzz",
-      "headline": "adamanzzz built a skill that lets Cursor __spin up armies of Grok Bots__ to keep working while you log off.",
+      "headline": "adamanzzz wrote a local skill that lets Cursor __spin up armies of Grok Bots__ to keep working while you log off.",
       "tweet_id": "3c31eba9-b6bc-8103-a186-e777ff846853",
       "source_text": "Wanted Cursor to spin up armies of Grok Bots to keep working while I log off.\n\nSo I wrote a local skill. Use any model on Cursor to create a plan then let @bot cook! \n\nnpx skills add adamanz/grok-bot-skill -g -a cursor https://t.co/vRmXCslo4x",
       "created_time": "2026-08-21T20:27:00.000Z",
@@ -456,7 +466,7 @@
     {
       "url": "https://twitter.com/charliejhills/status/2090448570386428171",
       "author": "charliejhills",
-      "headline": "Charlie Hills argues you're missing half of Claude Code's power without repos — the community has built __saved skills and plugins__ you can install in a minute.",
+      "headline": "Charlie Hills argues you're missing half of Claude Code's power if you're not using __community-built repos and plugins__ — installable in about a minute.",
       "tweet_id": "3c31eba9-b6bc-813c-8673-d63675f80f19",
       "source_text": "If you are using Claude Code without repos.\n\nYou are missing 50% of what it can do.\n\nThese are saved skills and plugins the community has built. You can install one in about a minute.\n\n1. Click any of the links below\n2. Click on the green \"Code\" button\n3. Copy the HTTPS to your https://t.co/cSaf3gazrD https://t.co/q6BtFAnYDh",
       "created_time": "2026-08-21T20:22:00.000Z",
@@ -466,7 +476,7 @@
     {
       "url": "https://twitter.com/mardehaym/status/2090391915296444482",
       "author": "mardehaym",
-      "headline": "A PE firm hired mardehaym to rebuild an enterprise kitchen management platform powering chains like KFC — __one developer, six months__. The product owner had vibe-coded v1 in Replit with no engineering background.",
+      "headline": "A PE firm asked mardehaym to rebuild an enterprise kitchen management platform powering chains like KFC — __one developer, six months__, after the product owner had vibe-coded v1 in Replit.",
       "tweet_id": "3c31eba9-b6bc-8136-9e49-de9110cc2e5c",
       "source_text": "A PE firm asked us to rebuild an enterprise kitchen management platform for a company that powers chains like KFC.\n\nWe built it with one developer in six months.\n\nTheir Product Owner had vibe-coded the first version of the platform in Replit without any engineering background,",
       "created_time": "2026-08-21T20:22:00.000Z",
@@ -476,7 +486,7 @@
     {
       "url": "https://twitter.com/BrianRoemmele/status/2090650933776769082",
       "author": "BrianRoemmele",
-      "headline": "Brian Roemmele breaks down the cheapest path to Grok Bot access: __$200/month via Cursor Ultra__, with no standalone subscription available.",
+      "headline": "Brian Roemmele breaks down the cheapest path to Grok Bot: __$200/month via Cursor Ultra__, with no standalone subscription available.",
       "tweet_id": "3c31eba9-b6bc-8136-af10-f6421d71f9b7",
       "source_text": "There is a beautiful way to get @Grok @Bot for $200 per month!\n\nLowest cost for a single person today: $200/month via Cursor Ultra.\n\nGrok Bot has no standalone subscription. Access is only available by being on one of three eligible plans. There is no free tier or cheaper https://t.co/fevIeHVEJk https://t.co/nDQgayypAK",
       "created_time": "2026-08-21T20:22:00.000Z",
@@ -486,10 +496,75 @@
   ],
   "community_headlines": [
     {
+      "url": "https://github.com/tgo-app-dev/vpipe",
+      "author": "t-go",
+      "item_id": "hn:49397410",
+      "headline": "Someone got __MiniMax H3 running on a 16GB Mac__ five days after the open weights dropped.",
+      "subreddit": null,
+      "source_text": "Show HN: MiniMax H3 on a 16GB Mac, 5 days after open weights",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-22T07:21:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/tgo-app-dev/vpipe",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/SamiSalah221/3mf-to-glb",
+      "author": "SamiSalah221",
+      "item_id": "hn:49397327",
+      "headline": "Reverse-engineered Bambu's 3MF color format so __3MF-to-GLB conversions actually preserve colors__.",
+      "subreddit": null,
+      "source_text": "Show HN: I reverse-engineered Bambu's 3MF color format so GLB keeps the colors",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-22T07:02:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/SamiSalah221/3mf-to-glb",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/cwyr0l45xjro",
+      "author": "geox",
+      "item_id": "hn:49397481",
+      "headline": "TikTok agrees to __pay $400M to the US__ in one of the largest child privacy settlements ever.",
+      "subreddit": null,
+      "source_text": "TikTok to pay $400M to US in one of largest child privacy settlements",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-22T07:32:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bbc.com/news/articles/cwyr0l45xjro",
+      "learning_score": 2
+    },
+    {
+      "url": "https://corvi.careers/blog/did-nyc-pass-sf-bay-area-tech-openings/",
+      "author": "sp1982",
+      "item_id": "hn:49397472",
+      "headline": "August data from Corvi suggests __NYC may have passed the Bay Area__ in tech job openings.",
+      "subreddit": null,
+      "source_text": "Tech Openings in the Bay Area and New York: What Our August Data Shows",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-22T07:31:13+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://corvi.careers/blog/did-nyc-pass-sf-bay-area-tech-openings",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/borborich/pgextassure",
+      "author": "borborich",
+      "item_id": "hn:49397454",
+      "headline": "PgExtAssure generates __pre-admission security evidence for PostgreSQL extensions__ before they touch production.",
+      "subreddit": null,
+      "source_text": "Show HN: PgExtAssure – pre-admission security evidence for PostgreSQL extensions",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-22T07:28:39+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/borborich/pgextassure",
+      "learning_score": 2
+    },
+    {
       "url": "https://www.pewresearch.org/data-labs/2026/08/20/how-much-of-the-internet-is-written-with-ai/",
       "author": "01-_-",
       "item_id": "hn:49397162",
-      "headline": "Pew Research tries to answer __how much of the internet is now written with AI__.",
+      "headline": "Pew Research tries to answer the question everyone's asking: __how much of the internet is now written with AI__?",
       "subreddit": null,
       "source_text": "How Much of the Internet Is Written with AI?",
       "source_type": "hacker_news",
@@ -499,10 +574,23 @@
       "learning_score": 2
     },
     {
+      "url": "https://www.theguardian.com/world/2026/aug/22/canada-tariffs-trump-trade-deal-talks-fail",
+      "author": "JSR_FDED",
+      "item_id": "hn:49397134",
+      "headline": "Canada vows to __match Trump's 50% tariffs dollar for dollar__ after negotiations collapse.",
+      "subreddit": null,
+      "source_text": "Canada vows to match Trump's 50% tariffs after trade deal talks fail",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-22T06:27:23+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theguardian.com/world/2026/aug/22/canada-tariffs-trump-trade-deal-talks-fail",
+      "learning_score": 2
+    },
+    {
       "url": "https://github.com/michael-lehn/not-abc",
       "author": "michael-lehn",
       "item_id": "hn:49397021",
-      "headline": "A math professor built a __self-hosting compiler__ as an undergraduate course project — now open-sourced.",
+      "headline": "A __self-hosting compiler built for an undergraduate math course__ — the whole thing fits on GitHub.",
       "subreddit": null,
       "source_text": "Show HN: A self-hosting compiler from an undergraduate mathematics course",
       "source_type": "hacker_news",
@@ -515,7 +603,7 @@
       "url": "https://github.com/bitbank2/bb_epaper/wiki/How-e%E2%80%90Paper-works-and-how-to-work-with-it",
       "author": "sohkamyung",
       "item_id": "hn:49396969",
-      "headline": "Deep dive into __how e-paper works__ and how to actually work with it.",
+      "headline": "A thorough wiki walkthrough of __how e-paper actually works__ and how to drive it yourself.",
       "subreddit": null,
       "source_text": "How e‐Paper works and how to work with it",
       "source_type": "hacker_news",
@@ -525,50 +613,24 @@
       "learning_score": 2
     },
     {
-      "url": "https://arxiv.org/abs/2511.07885",
-      "author": "helsinkiandrew",
-      "item_id": "hn:49396954",
-      "headline": "New paper proposes measuring __intelligence per watt__ as the benchmark for local AI.",
+      "url": "https://spessasus.github.io/SpessaSynth/",
+      "author": "gregsadetsky",
+      "item_id": "hn:49396962",
+      "headline": "SpessaSynth is a __full SF2/DLS synthesizer running in JavaScript__ you can play in your browser right now.",
       "subreddit": null,
-      "source_text": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
+      "source_text": "SpessaSynth: SF2/DLS JavaScript Synthesizer Online Demo",
       "source_type": "hacker_news",
-      "created_time": "2026-08-22T05:54:49+00:00",
+      "created_time": "2026-08-22T05:56:26+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2511.07885",
-      "learning_score": 2
-    },
-    {
-      "url": "https://krishna-modi12.github.io/frontend-design-pro/",
-      "author": "KrishnaModi12",
-      "item_id": "hn:49396937",
-      "headline": "Show HN: a __front-end skill pack for AI agents__ with machine-enforced quality gates.",
-      "subreddit": null,
-      "source_text": "Show HN: Front end skill pack for AI agents, with machine-enforced quality gates",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-22T05:52:19+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://krishna-modi12.github.io/frontend-design-pro",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.uea.ac.uk/about/news/article/why-memories-get-fuzzier-with-age-and-what-replaces-them",
-      "author": "XzetaU8",
-      "item_id": "hn:49396920",
-      "headline": "New research explains why __memories get fuzzier with age__ — and what the brain substitutes in their place.",
-      "subreddit": null,
-      "source_text": "Why memories get fuzzier with age – and what replaces them",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-22T05:49:12+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://uea.ac.uk/about/news/article/why-memories-get-fuzzier-with-age-and-what-replaces-them",
+      "canonical_url": "https://spessasus.github.io/SpessaSynth",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-22T06:51:58.385381+00:00",
+    "generated_at": "2026-08-22T07:37:01.677425+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "1c6b1b080638e08352119ec44d0b2d9f6b1498aeaf87b5139da95cbadbb8bd1f"
+  "content_hash": "4ae0073559365d2c95a9d674b263da041fe85d30461439e79063de741b5a7840"
 }
