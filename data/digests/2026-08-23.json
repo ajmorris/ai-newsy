@@ -120,16 +120,6 @@
   ],
   "tweet_headlines": [
     {
-      "url": "https://twitter.com/MichaelGannotti/status/2091210440369934778",
-      "author": "MichaelGannotti",
-      "headline": "The __Hermes AI Teams__ repo just got a major update — point your agent at the new starter kit to jumpstart multi-agent workflows.",
-      "tweet_id": "3c51eba9-b6bc-81aa-8278-cf9388f5a987",
-      "source_text": "Our Hermes AI Teams repo just got a BIG update! Point your Hermes Agent to https://t.co/lK5UbdBwds to get a big jumpstart on Hermes AI teams https://t.co/lO22iMxJBG",
-      "created_time": "2026-08-23T04:02:00.000Z",
-      "canonical_url": "https://twitter.com/MichaelGannotti/status/2091210440369934778",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/antpalkin/status/2090883994883645663",
       "author": "antpalkin",
       "headline": "Someone built __six Grok Bot agents for $200/month__ that replicate a $294k Wall Street research desk — and published every prompt.",
@@ -140,19 +130,9 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/aymanalabdul/status/2091288551555994057",
-      "author": "aymanalabdul",
-      "headline": "Ayman makes the case that Notion remains the __best single tool for CEOs__ until the company crosses $100M.",
-      "tweet_id": "3c51eba9-b6bc-81a5-afdc-ddbcfa9dc8ca",
-      "source_text": "Notion continues to be the best single tool for CEOs until your company hits $100M https://t.co/YMFHdl65zE",
-      "created_time": "2026-08-23T03:57:00.000Z",
-      "canonical_url": "https://twitter.com/aymanalabdul/status/2091288551555994057",
-      "learning_score": 3
-    },
-    {
       "url": "https://twitter.com/VibeMarketer_/status/2091292107218764114",
       "author": "VibeMarketer_",
-      "headline": "Ryan Carson once ran Treehouse with 110 employees — his new company Untangle has one, and revenue is __on track to 4x in a single month__.",
+      "headline": "Ryan Carson once ran Treehouse with 110 employees — his new company Untangle has one, and revenue was __on track to 4x that month__.",
       "tweet_id": "3c51eba9-b6bc-8123-8d70-ff706a694ea4",
       "source_text": "Ryan Carson just gave Greg Isenberg the clearest picture i've seen of where companies are heading.\n\nhe once ran Treehouse with 110 employees.\n\nhis new company, Untangle, has one.\n\nrevenue was on track to 4x that month.\n\nthe company with 110 employees taught him how to manage https://t.co/2Z5NLZRvys https://t.co/XPOtU8oxr3",
       "created_time": "2026-08-23T03:07:00.000Z",
@@ -162,7 +142,7 @@
     {
       "url": "https://twitter.com/kmeanskaran/status/2091208305473659131",
       "author": "kmeanskaran",
-      "headline": "Karan argues the backend layer is what determines whether your agents __scale reliably or quietly burn money__ — and traditional request-response architectures fight every property of agent workloads.",
+      "headline": "Karan makes the case that your __backend architecture determines whether agents scale__ or quietly burn money — and traditional request-response doesn't cut it.",
       "tweet_id": "3c51eba9-b6bc-81d8-91b3-c4635cec42fe",
       "source_text": "Designing the Backend for Agent Systems.\n\nA layer that actually determines whether your agents scale, stay reliable, and don’t quietly burn money.\n\nAgent workloads are slow, I/O-bound, non-deterministic, and priced per unit.\nTraditional request-response backends fight those https://t.co/Dxh8FSX5At https://t.co/UcH4J193P8",
       "created_time": "2026-08-23T03:07:00.000Z",
@@ -172,7 +152,7 @@
     {
       "url": "https://twitter.com/SPAC89/status/2091072544275067331",
       "author": "SPAC89",
-      "headline": "Users report SuperGrok Heavy __no longer bundles Cursor Ultra__ for new subscribers — and some who linked before the cutoff are seeing $200 renewal prices.",
+      "headline": "SuperGrok Heavy apparently __no longer bundles Cursor Ultra for new users__ starting August 21 — and some early linkers are seeing $200 renewal prices.",
       "tweet_id": "3c51eba9-b6bc-81a8-931a-e03b578b7709",
       "source_text": "Wait, did Cursor just change the SuperGrok Heavy deal?\nApparently, SuperGrok Heavy no longer includes Cursor Ultra for new users starting Aug 21\nBut I linked my account on Aug 11 and now Cursor is showing me $200 to renew Ultra 😭\nAnyone else who linked before Aug 21 seeing the https://t.co/W7FnPzhP0K",
       "created_time": "2026-08-23T02:37:00.000Z",
@@ -180,13 +160,33 @@
       "learning_score": 3
     },
     {
-      "url": "https://twitter.com/housecor/status/2091126755088064773",
-      "author": "housecor",
-      "headline": "Cory House believes AI doesn't necessarily mean more work per hire — it means __less coordination overhead__ and smaller vertical slices of functionality per person.",
-      "tweet_id": "3c51eba9-b6bc-810b-995c-def55107185b",
-      "source_text": "“Will I get paid more to do more jobs?”\n\nIt’s not necessarily more work. \n\nIt’s less coordination overhead and potentially a smaller vertical slice of functionality managed per hire. https://t.co/FKiDpkP9xY",
+      "url": "https://twitter.com/MichaelGannotti/status/2091210440369934778",
+      "author": "MichaelGannotti",
+      "headline": "The __Hermes AI Teams__ repo just got a major update — point your agent at the new starter kit to jumpstart multi-agent setups.",
+      "tweet_id": "3c51eba9-b6bc-81aa-8278-cf9388f5a987",
+      "source_text": "Our Hermes AI Teams repo just got a BIG update! Point your Hermes Agent to https://t.co/lK5UbdBwds to get a big jumpstart on Hermes AI teams https://t.co/lO22iMxJBG",
       "created_time": "2026-08-23T04:02:00.000Z",
-      "canonical_url": "https://twitter.com/housecor/status/2091126755088064773",
+      "canonical_url": "https://twitter.com/MichaelGannotti/status/2091210440369934778",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/aymanalabdul/status/2091288551555994057",
+      "author": "aymanalabdul",
+      "headline": "Ayman Alabdul argues Notion remains the __best single tool for CEOs__ until your company hits $100M.",
+      "tweet_id": "3c51eba9-b6bc-81a5-afdc-ddbcfa9dc8ca",
+      "source_text": "Notion continues to be the best single tool for CEOs until your company hits $100M https://t.co/YMFHdl65zE",
+      "created_time": "2026-08-23T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/aymanalabdul/status/2091288551555994057",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/rammcodes/status/2091203225735299234",
+      "author": "rammcodes",
+      "headline": "A Chrome extension that __converts any webpage into clean Markdown__ for pasting straight into ChatGPT, Claude, or Gemini.",
+      "tweet_id": "3c51eba9-b6bc-81ca-b557-d427c30fd784",
+      "source_text": "Holy Sh*t Brooooooooo... This Chrome extension is sooo perfect for LLMs. 🤯\n\nIt lets you instantly convert almost any webpage into clean Markdown, making it easier to use with ChatGPT, Claude, Gemini, and other AI tools.\n\nPerfect for AI enthusiasts, developers, designers, & https://t.co/xtsbwHUfTi",
+      "created_time": "2026-08-23T03:12:00.000Z",
+      "canonical_url": "https://twitter.com/rammcodes/status/2091203225735299234",
       "learning_score": 2
     },
     {
@@ -202,7 +202,7 @@
     {
       "url": "https://twitter.com/khemaridh/status/2091276785669513354",
       "author": "khemaridh",
-      "headline": "AI skills work so well that teams now have 5–20 each per person — but they're __stuck in single-player mode__ with no way to share or coordinate across a team.",
+      "headline": "AI skills work too well now — teams have 5–20 each, but they're __stuck in single-player mode__ with no way to share or coordinate across a firm.",
       "tweet_id": "3c51eba9-b6bc-81c6-9e9e-edf8f251795f",
       "source_text": "Skills are becoming a problem. Not because they don't work. But because they're so effective.\n\nI'm now seeing teams (on the buyside) where individuals have a 5-20 skills. They work and they're used often.\n\nBut here's the problem.\n\nSkills are still stuck in single-player mode. https://t.co/34eBCbquv4",
       "created_time": "2026-08-23T02:37:00.000Z",
@@ -212,10 +212,101 @@
   ],
   "community_headlines": [
     {
+      "url": "https://www.youtube.com/watch?v=fLp-75h-Bn8",
+      "author": "mgh2",
+      "item_id": "hn:49406755",
+      "headline": "Unitree's G1 robot __learned tennis by watching amateurs__ play, then took on a human opponent.",
+      "subreddit": null,
+      "source_text": "Unitree G1 vs. Human: This Robot Learned Tennis by \"Watching\" Amateurs [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:28:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=fLp-75h-Bn8",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=656058JxTM0",
+      "author": "EvanAnderson",
+      "item_id": "hn:49406713",
+      "headline": "Cliff Stoll revisits __Stalking the Wily Hacker__ 40 years after the original paper that launched modern intrusion detection.",
+      "subreddit": null,
+      "source_text": "Stalking the Wily Hacker: 40 years later – Cliff Stoll [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:20:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=656058JxTM0",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.monsterwriter.com/open-source.html",
+      "author": "WolfOliver",
+      "item_id": "hn:49406784",
+      "headline": "MonsterWriter is __going open source piece by piece__ — starting with its core editing components.",
+      "subreddit": null,
+      "source_text": "Show HN: Open sourcing MonsterWriter, piece by piece",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:35:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://monsterwriter.com/open-source.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://thejpster.org.uk/blog/blog-2026-08-22/",
+      "author": "signa11",
+      "item_id": "hn:49406757",
+      "headline": "A deep dive into why __two Cortex-A9 cores aren't cache coherent__ — and the subtle hardware assumptions that break everything.",
+      "subreddit": null,
+      "source_text": "Why aren't my two Cortex-A9 cores cache coherent?",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:29:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://thejpster.org.uk/blog/blog-2026-08-22",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.phoronix.com/news/SMB3-CIFS-Maintainer-Change",
+      "author": "starkparker",
+      "item_id": "hn:49406751",
+      "headline": "Steve French, the __SMB3/CIFSFS Linux kernel maintainer__, has died.",
+      "subreddit": null,
+      "source_text": "Steve French (SMB3/CIFSFS Linux kernel maintainer) has died",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:27:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://phoronix.com/news/SMB3-CIFS-Maintainer-Change",
+      "learning_score": 2
+    },
+    {
+      "url": "https://encse.github.io/ditdah/",
+      "author": "encse",
+      "item_id": "hn:49406623",
+      "headline": "Ditdah is a __Morse code app for the terminal__ — minimal, playful, and surprisingly satisfying.",
+      "subreddit": null,
+      "source_text": "Show HN: Ditdah – A Morse App for the Terminal",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:03:54+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://encse.github.io/ditdah",
+      "learning_score": 2
+    },
+    {
+      "url": "https://dubroy.com/blog/fast-is-better-than-slow/",
+      "author": "fagnerbrack",
+      "item_id": "hn:49406607",
+      "headline": "Patrick Dubroy makes the case that __fast is better than slow__ — and that speed is an underrated design value.",
+      "subreddit": null,
+      "source_text": "Fast is better than slow",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T07:00:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://dubroy.com/blog/fast-is-better-than-slow",
+      "learning_score": 2
+    },
+    {
       "url": "https://clickhouse.com/blog/postgres-19-monitoring-whats-new",
       "author": "saisrirampur",
       "item_id": "hn:49406562",
-      "headline": "Postgres 19 adds a batch of __new monitoring capabilities__ — here's what changed and why it matters for observability.",
+      "headline": "Postgres 19 ships with __significant improvements to monitoring__ — here's what changed.",
       "subreddit": null,
       "source_text": "Postgres 19: What's new in Monitoring?",
       "source_type": "hacker_news",
@@ -228,13 +319,26 @@
       "url": "https://www.douglassfh.com/obituary/james-munkres",
       "author": "pykello",
       "item_id": "hn:49406546",
-      "headline": "James Munkres, the topologist whose textbook taught a generation of math students, __has died at 96__.",
+      "headline": "James Munkres, the topologist whose textbook __taught a generation of mathematicians__, has died at 96.",
       "subreddit": null,
       "source_text": "James Munkres (1930-2026)",
       "source_type": "hacker_news",
       "created_time": "2026-08-23T06:43:40+00:00",
       "source_label": "Hacker News",
       "canonical_url": "https://douglassfh.com/obituary/james-munkres",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.yagiz.co/eliminating-branches-in-cpp-loops",
+      "author": "mfiguiere",
+      "item_id": "hn:49406541",
+      "headline": "A practical guide to __eliminating branches in C++ loops__ for measurable performance gains.",
+      "subreddit": null,
+      "source_text": "Eliminating Branches in C++ Loops",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-23T06:42:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://yagiz.co/eliminating-branches-in-cpp-loops",
       "learning_score": 2
     },
     {
@@ -254,7 +358,7 @@
       "url": "https://qz.com/oura-ring-class-action-lawsuit-sleep-tracking-accuracy-082126",
       "author": "mgh2",
       "item_id": "hn:49406483",
-      "headline": "Oura hit with a class-action lawsuit alleging its __sleep-tracking accuracy is wildly exaggerated__.",
+      "headline": "Oura smart ring hit with a class-action lawsuit alleging its __sleep-tracking accuracy is wildly exaggerated__.",
       "subreddit": null,
       "source_text": "Oura smart ring sued: sleep-tracking accuracy is wildly exaggerated",
       "source_type": "hacker_news",
@@ -262,104 +366,13 @@
       "source_label": "Hacker News",
       "canonical_url": "https://qz.com/oura-ring-class-action-lawsuit-sleep-tracking-accuracy-082126",
       "learning_score": 2
-    },
-    {
-      "url": "https://surfingcomplexity.blog/2026/08/22/wild-ai-related-reliability-incidents-are-coming/",
-      "author": "azhenley",
-      "item_id": "hn:49406458",
-      "headline": "Lorin Hochstein makes the case that __wild AI-related reliability incidents__ are inevitable and operators aren't ready.",
-      "subreddit": null,
-      "source_text": "Wild AI-related reliability incidents are coming",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T06:23:50+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://surfingcomplexity.blog/2026/08/22/wild-ai-related-reliability-incidents-are-coming",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.nytimes.com/2026/08/22/business/dealbook/harvard-ai-faculty.html",
-      "author": "pjmlp",
-      "item_id": "hn:49406430",
-      "headline": "Harvard is selling a __$699 course taught by AI clones__ of its own faculty.",
-      "subreddit": null,
-      "source_text": "Harvard Is Selling a $699 Course Taught by A.I. Clones of Its Faculty",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T06:16:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://nytimes.com/2026/08/22/business/dealbook/harvard-ai-faculty.html",
-      "learning_score": 2
-    },
-    {
-      "url": "https://doi.org/10.1016/S0140-6736(26)00767-1",
-      "author": "sbulaev",
-      "item_id": "hn:49406398",
-      "headline": "A Lancet study finds evidence of __amyloid β pathology transmission via transfused blood products__.",
-      "subreddit": null,
-      "source_text": "Risk of transmission of amyloid β pathology via transfused blood products",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T06:07:06+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://doi.org/10.1016/S0140-6736(26)00767-1",
-      "learning_score": 2
-    },
-    {
-      "url": "https://malisper.me/jit-compiling-code-in-5-us/",
-      "author": "zX41ZdbW",
-      "item_id": "hn:49406387",
-      "headline": "A walkthrough of __JIT compiling code in 5 microseconds__ — fast enough to blur the line between interpreted and compiled.",
-      "subreddit": null,
-      "source_text": "JIT Compiling Code in 5μs",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T06:04:51+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://malisper.me/jit-compiling-code-in-5-us",
-      "learning_score": 2
-    },
-    {
-      "url": "https://support.mozilla.org/en-US/kb/firefox-enterprise-154-release-notes",
-      "author": "Throwthrowbob",
-      "item_id": "hn:49406329",
-      "headline": "Firefox is moving to a __two-week release cadence__ starting with version 155.",
-      "subreddit": null,
-      "source_text": "Firefox 155 and beyond will be released in a two-week cadence",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T05:50:14+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://support.mozilla.org/en-US/kb/firefox-enterprise-154-release-notes",
-      "learning_score": 2
-    },
-    {
-      "url": "https://sankalp.bearblog.dev/how-prompt-caching-works/",
-      "author": "tosh",
-      "item_id": "hn:49406280",
-      "headline": "A clear explainer on __how prompt caching works__ under the hood at major LLM providers.",
-      "subreddit": null,
-      "source_text": "How Prompt Caching Works",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T05:36:50+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://sankalp.bearblog.dev/how-prompt-caching-works",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.washingtonpost.com/technology/2026/08/19/nasa-images-show-spacex-crash-site-moon/",
-      "author": "1vuio0pswjnm7",
-      "item_id": "hn:49406218",
-      "headline": "Before-and-after NASA images show exactly __where SpaceX's rocket crashed into the moon__.",
-      "subreddit": null,
-      "source_text": "Before-and-after images show where SpaceX rocket crashed into the moon",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-23T05:16:20+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://washingtonpost.com/technology/2026/08/19/nasa-images-show-spacex-crash-site-moon",
-      "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-23T06:49:44.895554+00:00",
+    "generated_at": "2026-08-23T07:38:23.198710+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "2dcc7fcfb94536743aa40bf677a2b26d8761f334f9a7c42905414c8d7cbc8963"
+  "content_hash": "880052d9a33ff0ba6b958ba55c017532d50723f7524d7caa2c17f601fd0d8295"
 }
