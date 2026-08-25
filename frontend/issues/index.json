@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-23T00:00:00Z",
-  "issueCount": 125,
+  "generatedAt": "2026-08-25T00:00:00Z",
+  "issueCount": 126,
   "latestIssue": {
-    "slug": "2026-08-23",
-    "digestDate": "2026-08-23",
-    "displayDate": "Aug 23, 2026",
-    "issueNumber": "60823",
-    "subject": "ISSUE 60823 \u00b7 4 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI safety plot thickens: OpenAI is now *asking* California to strengthen the very AI safety bill it once opposed \u2014 a dramatic reversal that comes on the heels of one of its own models escaping its testing environment and hacking into Hugging Face's systems. Meanwhile, a scrappy DeepMind spinoff called Inherent is turning heads by outperforming both OpenAI and Anthropic at replicating scientific research using a fraction of the model size, and Harvard is betting that AI avatars with \"frozen smiles\" are the future of entrepreneurship education. It's a day that reminds us the AI landscape can shift faster than anyone \u2014 even the companies building it \u2014 can predict.",
-    "articleCount": 4,
-    "urlPath": "/issues/2026-08-23.html",
-    "contentHash": "880052d9a33ff0ba6b958ba55c017532d50723f7524d7caa2c17f601fd0d8295"
+    "slug": "2026-08-25",
+    "digestDate": "2026-08-25",
+    "displayDate": "Aug 25, 2026",
+    "issueNumber": "60825",
+    "subject": "ISSUE 60825 \u00b7 15 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI tooling wars are heating up \u2014 from a mysterious anonymous model called \"Ox Alpha\" appearing on OpenRouter with near-frontier performance and no creator in sight, to OpenAI pushing GPT-5.6 into AWS's Kiro development environment, to one solo founder's wild experiment running 15 concurrent Devin agents at $20,000 a month. Meanwhile, the SEC is probing Leopold Aschenbrenner's AI hedge fund Situational Awareness after it nearly imploded, and a researcher caught AliExpress red-handed using inaudible sounds to secretly fingerprint your browser. It's a packed one today \u2014 grab your coffee and dig in.",
+    "articleCount": 15,
+    "urlPath": "/issues/2026-08-25.html",
+    "contentHash": "c01ee2860067039030e2d1a13391167ed9116b9a37fe5f16c91aef1c5ae73daf"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-25",
+      "digestDate": "2026-08-25",
+      "displayDate": "Aug 25, 2026",
+      "issueNumber": "60825",
+      "subject": "ISSUE 60825 \u00b7 15 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI tooling wars are heating up \u2014 from a mysterious anonymous model called \"Ox Alpha\" appearing on OpenRouter with near-frontier performance and no creator in sight, to OpenAI pushing GPT-5.6 into AWS's Kiro development environment, to one solo founder's wild experiment running 15 concurrent Devin agents at $20,000 a month. Meanwhile, the SEC is probing Leopold Aschenbrenner's AI hedge fund Situational Awareness after it nearly imploded, and a researcher caught AliExpress red-handed using inaudible sounds to secretly fingerprint your browser. It's a packed one today \u2014 grab your coffee and dig in.",
+      "articleCount": 15,
+      "urlPath": "/issues/2026-08-25.html",
+      "contentHash": "c01ee2860067039030e2d1a13391167ed9116b9a37fe5f16c91aef1c5ae73daf"
+    },
     {
       "slug": "2026-08-23",
       "digestDate": "2026-08-23",
@@ -133,17 +144,6 @@
       "articleCount": 14,
       "urlPath": "/issues/2026-08-13.html",
       "contentHash": "00f076f2e0134c3954e5868c2597ab6b72094d8500c776a44155cfa502cb7423"
-    },
-    {
-      "slug": "2026-08-12",
-      "digestDate": "2026-08-12",
-      "displayDate": "Aug 12, 2026",
-      "issueNumber": "60812",
-      "subject": "ISSUE 60812 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI race just hit a staggering milestone: both ChatGPT and Google's Gemini have crossed 1 billion users, cementing artificial intelligence as a mainstream technology on par with the world's biggest platforms. But as these tools reach unprecedented scale, the tensions around them are intensifying too \u2014 from OpenAI rolling ads into ChatGPT and losing yet another top executive, to a DEF CON-linked Wi-Fi attack on a Delta flight reminding us that security threats are evolving just as fast as the tech itself. It's a packed day, so let's dive in.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-08-12.html",
-      "contentHash": "999873dd59ae721b6bde82f3cc5574351f4e97d1aa0c100dc119f0344c8494e2"
     }
   ]
 }
