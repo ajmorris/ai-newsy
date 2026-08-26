@@ -2,9 +2,9 @@
   "schema_version": "digest-json-v1",
   "digest_date": "2026-08-26",
   "issue_id": "20260826",
-  "subject_line": "ISSUE 60826 · 13 STORIES · 11 MIN READ",
+  "subject_line": "ISSUE 60826 · 16 STORIES · 11 MIN READ",
   "intro": "The AI hardware race is heating up — OpenAI dropped benchmarks showing its custom Jalapeño chip outperforming Nvidia's best on inference, while SpaceX and Nvidia announced plans to literally launch data centers into orbit by late 2027. Meanwhile, the robotics boom continues at a breathtaking pace, with startup Generalist hitting a $3 billion valuation barely a year after its founding, and a Shanghai robot carnival showcasing China's dominance in humanoid manufacturing. It's a day where the physical infrastructure of AI — chips, data centers, and robots — is stealing the spotlight from the models themselves.",
-  "article_count": 13,
+  "article_count": 16,
   "stories": [
     {
       "id": 6798,
@@ -20,6 +20,19 @@
       "fetched_at": "2026-08-26T06:54:12.859302+00:00"
     },
     {
+      "id": 6801,
+      "source": "DATAVERSITY Smart Data",
+      "title": "Day-One Architecture: The Hidden Determinant of Enterprise AI Success",
+      "url": "https://www.dataversity.net/articles/day-one-architecture-the-hidden-determinant-of-enterprise-ai-success/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "This article argues that the primary reason enterprise AI projects fail to scale beyond proof-of-concept is not the AI model itself, but the underlying enterprise architecture. With over 80% of AI projects failing to reach production and 42% of companies abandoning most AI initiatives, the author contends that organizations must treat AI as a core platform decision from day one rather than bolting it onto existing infrastructure. Key architectural decisions include how the platform structures its relationship with data — since AI cannot reconcile contradictory definitions across siloed tools the way humans can — and adopting a composable, governable, platform-first strategy. The article emphasizes that without proper data architecture, governance, and workflow integration, AI tools remain siloed and unable to deliver enterprise-wide value, regardless of how well they perform in demonstr…",
+      "opinion": "This article makes a valid and important point that resonates with well-documented patterns in enterprise technology adoption: the infrastructure and architecture decisions made early on are far more consequential than the choice of AI model. The framing of 'day-one architecture' is compelling and practical. However, the article feels somewhat incomplete — it cuts off mid-sentence and doesn't fully deliver on its promise to explain the specific architectural decisions that matter. The statistic…",
+      "image_url": "https://www.dataversity.net/wp-content/uploads/2026/08/KalaichelviEaswaran_600x375.jpg",
+      "published_at": "2026-08-26T07:49:00+00:00",
+      "fetched_at": "2026-08-26T07:50:53.687166+00:00"
+    },
+    {
       "id": 6781,
       "source": "Guardian AI",
       "title": "Around the world, people are rejecting divisive and dangerous politics. We can – and must – build on that | Gordon Brown",
@@ -33,30 +46,30 @@
       "fetched_at": "2026-08-26T06:53:52.939673+00:00"
     },
     {
-      "id": 6793,
+      "id": 6800,
       "source": "MIT Tech Review AI",
-      "title": "I spent a day at a robot “carnival” in Shanghai. Here’s what I saw.",
-      "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
+      "title": "Bill Gates says we’ve passed AI’s danger thresholds. Now what?",
+      "url": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
       "topic": "Industry",
       "category": "Business, Deals & Funding",
-      "summary": "The article describes a reporter's visit to a robot carnival held at an R&D center on the outskirts of Shanghai, where over 100 robotics companies showcased their technologies to curious families on a public holiday. Attendees could buy mini robotic dogs, learn to operate quadrupedal robots, watch water-bead-firing robot duels, and see humanoids perform martial arts and front flips. The piece contextualizes the event within China's broader strategy to integrate embodied AI into daily life, noting that nearly 90% of the 13,000+ humanoid robots delivered globally last year were made in China. Companies like DexForce demonstrated practical applications like coffee-making and T-shirt-folding humanoids. While the article acknowledges ongoing challenges with humanoid robots—including safety concerns, high prices, short battery life, and skepticism about the humanoid form—it notes that Chinese…",
-      "opinion": "This is a well-crafted dispatch piece that effectively captures the atmosphere and enthusiasm surrounding China's humanoid robotics push, though it reads more like a colorful travelogue than deep tech journalism. The article does a good job of balancing the excitement of the carnival with brief acknowledgments of real limitations—safety, battery life, cost, and the fundamental question of whether humanoid form is even optimal. However, I wish it had dug deeper into those criticisms rather than…",
-      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/08/DSC_7770-thumb.jpg?resize=1200,600",
-      "published_at": "2026-08-25T09:00:00+00:00",
-      "fetched_at": "2026-08-26T06:54:03.895418+00:00"
+      "summary": "In an August 2026 interview with MIT Technology Review, Bill Gates warns that AI has surpassed multiple danger thresholds, including bio-capabilities, cyber-capabilities, psychosocial manipulation, job-market destruction, and loss of control, while guardrails have failed to keep pace. Gates is particularly alarmed about bioterrorism risks enabled by frontier AI models, calling them roughly 50 times more concerning than natural pandemic risks, and advocates for monitoring any model capable of making novel molecules. He proposes policy ideas including designating certain 'human-reserved jobs' that must remain performed by people, and implementing taxes on robots and AI tokens to offset displaced human labor. While Gates remains optimistic about AI's potential to transform agriculture, healthcare, education, and bureaucracy, and believes society will eventually reach abundance, he warns of…",
+      "opinion": "Gates's warnings carry significant weight given his deep involvement in both the technology industry and global philanthropy. His framing of having already 'crossed thresholds' rather than approaching them is notably urgent and suggests the window for proactive regulation may be narrowing. The bioterrorism concern is particularly compelling — AI models that can design novel molecules represent a genuinely unprecedented risk category. His policy proposals, such as human-reserved jobs and token t…",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MIT_07_21_2026_0057.jpg?resize=1200,600",
+      "published_at": "2026-08-26T07:01:00+00:00",
+      "fetched_at": "2026-08-26T07:50:47.076653+00:00"
     },
     {
-      "id": 6778,
+      "id": 6799,
       "source": "NY Times",
-      "title": "Why Irregular’s A.I. Tests for Meta, Anthropic and OpenAI Went Off the Rails",
-      "url": "https://www.nytimes.com/2026/08/25/technology/irregular-ai-test-hacks.html",
+      "title": "Bill Gates Is Warning That A.I. Is More Dangerous Than Big Tech Will Admit",
+      "url": "https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.html",
       "topic": "Industry",
       "category": "Business, Deals & Funding",
-      "summary": "Irregular, an Israeli startup that collaborated with OpenAI, Anthropic, and Meta to assess the security of their AI models, made a mistake during testing that caused the AI security assessments to go off the rails.",
-      "opinion": "This article highlights the inherent challenges and risks in AI security testing. The fact that a company specifically hired to evaluate AI model security made errors that derailed the process underscores how difficult and unpredictable this work is. It also raises important questions about the rigor and oversight of third-party AI safety evaluations, and whether the current ecosystem of AI testing firms is mature enough to handle the complexity of modern AI systems.",
+      "summary": "Bill Gates warned in an interview that the AI industry is downplaying significant risks posed by artificial intelligence, including the potential for mass unemployment and bioterrorism, arguing that big tech companies are not being honest about the dangers.",
+      "opinion": "This article highlights an important and credible voice raising concerns about AI risks. When someone of Bill Gates's stature and insider knowledge warns that the industry is minimizing dangers, it carries significant weight. The specific risks he identifies—mass unemployment and bioterrorism—are substantive and well-documented concerns among AI safety researchers. However, it's worth noting that Gates himself has historically oscillated between AI optimism and caution, and his warnings should…",
       "image_url": "",
-      "published_at": "2026-08-25T21:59:39+00:00",
-      "fetched_at": "2026-08-26T06:53:51.3275+00:00"
+      "published_at": "2026-08-26T07:01:07+00:00",
+      "fetched_at": "2026-08-26T07:50:34.079159+00:00"
     },
     {
       "id": 6769,
@@ -111,17 +124,30 @@
       "fetched_at": "2026-08-26T06:53:53.103203+00:00"
     },
     {
-      "id": 6779,
-      "source": "NY Times",
-      "title": "E.P.A. Moves to Curb Public Input on Air Pollution Permits for Data Centers",
-      "url": "https://www.nytimes.com/2026/08/25/climate/epa-data-centers-public-comment.html",
+      "id": 6793,
+      "source": "MIT Tech Review AI",
+      "title": "I spent a day at a robot “carnival” in Shanghai. Here’s what I saw.",
+      "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
       "topic": "Industry",
       "category": "Business, Deals & Funding",
-      "summary": "The EPA has proposed a rule change that would eliminate the requirement for states to provide public notice or solicit public comments on air pollution permits for data centers and other projects, effectively reducing public participation in the environmental permitting process for these facilities.",
-      "opinion": "This is a concerning development that prioritizes expediting permits for data centers—likely driven by the AI boom's massive energy and infrastructure demands—over environmental transparency and public accountability. Reducing public input on air pollution permits undermines a foundational principle of environmental regulation: that communities affected by pollution should have a voice in permitting decisions. Data centers are increasingly significant sources of energy consumption and associate…",
+      "summary": "The article describes a reporter's visit to a robot carnival held at an R&D center on the outskirts of Shanghai, where over 100 robotics companies showcased their technologies to curious families on a public holiday. Attendees could buy mini robotic dogs, learn to operate quadrupedal robots, watch water-bead-firing robot duels, and see humanoids perform martial arts and front flips. The piece contextualizes the event within China's broader strategy to integrate embodied AI into daily life, noting that nearly 90% of the 13,000+ humanoid robots delivered globally last year were made in China. Companies like DexForce demonstrated practical applications like coffee-making and T-shirt-folding humanoids. While the article acknowledges ongoing challenges with humanoid robots—including safety concerns, high prices, short battery life, and skepticism about the humanoid form—it notes that Chinese…",
+      "opinion": "This is a well-crafted dispatch piece that effectively captures the atmosphere and enthusiasm surrounding China's humanoid robotics push, though it reads more like a colorful travelogue than deep tech journalism. The article does a good job of balancing the excitement of the carnival with brief acknowledgments of real limitations—safety, battery life, cost, and the fundamental question of whether humanoid form is even optimal. However, I wish it had dug deeper into those criticisms rather than…",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/08/DSC_7770-thumb.jpg?resize=1200,600",
+      "published_at": "2026-08-25T09:00:00+00:00",
+      "fetched_at": "2026-08-26T06:54:03.895418+00:00"
+    },
+    {
+      "id": 6778,
+      "source": "NY Times",
+      "title": "Why Irregular’s A.I. Tests for Meta, Anthropic and OpenAI Went Off the Rails",
+      "url": "https://www.nytimes.com/2026/08/25/technology/irregular-ai-test-hacks.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Irregular, an Israeli startup that collaborated with OpenAI, Anthropic, and Meta to assess the security of their AI models, made a mistake during testing that caused the AI security assessments to go off the rails.",
+      "opinion": "This article highlights the inherent challenges and risks in AI security testing. The fact that a company specifically hired to evaluate AI model security made errors that derailed the process underscores how difficult and unpredictable this work is. It also raises important questions about the rigor and oversight of third-party AI safety evaluations, and whether the current ecosystem of AI testing firms is mature enough to handle the complexity of modern AI systems.",
       "image_url": "",
-      "published_at": "2026-08-25T16:45:28+00:00",
-      "fetched_at": "2026-08-26T06:53:51.811259+00:00"
+      "published_at": "2026-08-25T21:59:39+00:00",
+      "fetched_at": "2026-08-26T06:53:51.3275+00:00"
     },
     {
       "id": 6770,
@@ -163,6 +189,19 @@
       "fetched_at": "2026-08-26T06:53:53.265275+00:00"
     },
     {
+      "id": 6779,
+      "source": "NY Times",
+      "title": "E.P.A. Moves to Curb Public Input on Air Pollution Permits for Data Centers",
+      "url": "https://www.nytimes.com/2026/08/25/climate/epa-data-centers-public-comment.html",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The EPA has proposed a rule change that would eliminate the requirement for states to provide public notice or solicit public comments on air pollution permits for data centers and other projects, effectively reducing public participation in the environmental permitting process for these facilities.",
+      "opinion": "This is a concerning development that prioritizes expediting permits for data centers—likely driven by the AI boom's massive energy and infrastructure demands—over environmental transparency and public accountability. Reducing public input on air pollution permits undermines a foundational principle of environmental regulation: that communities affected by pollution should have a voice in permitting decisions. Data centers are increasingly significant sources of energy consumption and associate…",
+      "image_url": "",
+      "published_at": "2026-08-25T16:45:28+00:00",
+      "fetched_at": "2026-08-26T06:53:51.811259+00:00"
+    },
+    {
       "id": 6771,
       "source": "TechCrunch AI",
       "title": "OpenAI loses a top data center exec as stream of high-profile departures continues",
@@ -194,6 +233,19 @@
           "fetched_at": "2026-08-26T06:54:12.859302+00:00"
         },
         {
+          "id": 6801,
+          "source": "DATAVERSITY Smart Data",
+          "title": "Day-One Architecture: The Hidden Determinant of Enterprise AI Success",
+          "url": "https://www.dataversity.net/articles/day-one-architecture-the-hidden-determinant-of-enterprise-ai-success/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "This article argues that the primary reason enterprise AI projects fail to scale beyond proof-of-concept is not the AI model itself, but the underlying enterprise architecture. With over 80% of AI projects failing to reach production and 42% of companies abandoning most AI initiatives, the author contends that organizations must treat AI as a core platform decision from day one rather than bolting it onto existing infrastructure. Key architectural decisions include how the platform structures its relationship with data — since AI cannot reconcile contradictory definitions across siloed tools the way humans can — and adopting a composable, governable, platform-first strategy. The article emphasizes that without proper data architecture, governance, and workflow integration, AI tools remain siloed and unable to deliver enterprise-wide value, regardless of how well they perform in demonstr…",
+          "opinion": "This article makes a valid and important point that resonates with well-documented patterns in enterprise technology adoption: the infrastructure and architecture decisions made early on are far more consequential than the choice of AI model. The framing of 'day-one architecture' is compelling and practical. However, the article feels somewhat incomplete — it cuts off mid-sentence and doesn't fully deliver on its promise to explain the specific architectural decisions that matter. The statistic…",
+          "image_url": "https://www.dataversity.net/wp-content/uploads/2026/08/KalaichelviEaswaran_600x375.jpg",
+          "published_at": "2026-08-26T07:49:00+00:00",
+          "fetched_at": "2026-08-26T07:50:53.687166+00:00"
+        },
+        {
           "id": 6781,
           "source": "Guardian AI",
           "title": "Around the world, people are rejecting divisive and dangerous politics. We can – and must – build on that | Gordon Brown",
@@ -207,30 +259,30 @@
           "fetched_at": "2026-08-26T06:53:52.939673+00:00"
         },
         {
-          "id": 6793,
+          "id": 6800,
           "source": "MIT Tech Review AI",
-          "title": "I spent a day at a robot “carnival” in Shanghai. Here’s what I saw.",
-          "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
+          "title": "Bill Gates says we’ve passed AI’s danger thresholds. Now what?",
+          "url": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
           "topic": "Industry",
           "category": "Business, Deals & Funding",
-          "summary": "The article describes a reporter's visit to a robot carnival held at an R&D center on the outskirts of Shanghai, where over 100 robotics companies showcased their technologies to curious families on a public holiday. Attendees could buy mini robotic dogs, learn to operate quadrupedal robots, watch water-bead-firing robot duels, and see humanoids perform martial arts and front flips. The piece contextualizes the event within China's broader strategy to integrate embodied AI into daily life, noting that nearly 90% of the 13,000+ humanoid robots delivered globally last year were made in China. Companies like DexForce demonstrated practical applications like coffee-making and T-shirt-folding humanoids. While the article acknowledges ongoing challenges with humanoid robots—including safety concerns, high prices, short battery life, and skepticism about the humanoid form—it notes that Chinese…",
-          "opinion": "This is a well-crafted dispatch piece that effectively captures the atmosphere and enthusiasm surrounding China's humanoid robotics push, though it reads more like a colorful travelogue than deep tech journalism. The article does a good job of balancing the excitement of the carnival with brief acknowledgments of real limitations—safety, battery life, cost, and the fundamental question of whether humanoid form is even optimal. However, I wish it had dug deeper into those criticisms rather than…",
-          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/08/DSC_7770-thumb.jpg?resize=1200,600",
-          "published_at": "2026-08-25T09:00:00+00:00",
-          "fetched_at": "2026-08-26T06:54:03.895418+00:00"
+          "summary": "In an August 2026 interview with MIT Technology Review, Bill Gates warns that AI has surpassed multiple danger thresholds, including bio-capabilities, cyber-capabilities, psychosocial manipulation, job-market destruction, and loss of control, while guardrails have failed to keep pace. Gates is particularly alarmed about bioterrorism risks enabled by frontier AI models, calling them roughly 50 times more concerning than natural pandemic risks, and advocates for monitoring any model capable of making novel molecules. He proposes policy ideas including designating certain 'human-reserved jobs' that must remain performed by people, and implementing taxes on robots and AI tokens to offset displaced human labor. While Gates remains optimistic about AI's potential to transform agriculture, healthcare, education, and bureaucracy, and believes society will eventually reach abundance, he warns of…",
+          "opinion": "Gates's warnings carry significant weight given his deep involvement in both the technology industry and global philanthropy. His framing of having already 'crossed thresholds' rather than approaching them is notably urgent and suggests the window for proactive regulation may be narrowing. The bioterrorism concern is particularly compelling — AI models that can design novel molecules represent a genuinely unprecedented risk category. His policy proposals, such as human-reserved jobs and token t…",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/08/MIT_07_21_2026_0057.jpg?resize=1200,600",
+          "published_at": "2026-08-26T07:01:00+00:00",
+          "fetched_at": "2026-08-26T07:50:47.076653+00:00"
         },
         {
-          "id": 6778,
+          "id": 6799,
           "source": "NY Times",
-          "title": "Why Irregular’s A.I. Tests for Meta, Anthropic and OpenAI Went Off the Rails",
-          "url": "https://www.nytimes.com/2026/08/25/technology/irregular-ai-test-hacks.html",
+          "title": "Bill Gates Is Warning That A.I. Is More Dangerous Than Big Tech Will Admit",
+          "url": "https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.html",
           "topic": "Industry",
           "category": "Business, Deals & Funding",
-          "summary": "Irregular, an Israeli startup that collaborated with OpenAI, Anthropic, and Meta to assess the security of their AI models, made a mistake during testing that caused the AI security assessments to go off the rails.",
-          "opinion": "This article highlights the inherent challenges and risks in AI security testing. The fact that a company specifically hired to evaluate AI model security made errors that derailed the process underscores how difficult and unpredictable this work is. It also raises important questions about the rigor and oversight of third-party AI safety evaluations, and whether the current ecosystem of AI testing firms is mature enough to handle the complexity of modern AI systems.",
+          "summary": "Bill Gates warned in an interview that the AI industry is downplaying significant risks posed by artificial intelligence, including the potential for mass unemployment and bioterrorism, arguing that big tech companies are not being honest about the dangers.",
+          "opinion": "This article highlights an important and credible voice raising concerns about AI risks. When someone of Bill Gates's stature and insider knowledge warns that the industry is minimizing dangers, it carries significant weight. The specific risks he identifies—mass unemployment and bioterrorism—are substantive and well-documented concerns among AI safety researchers. However, it's worth noting that Gates himself has historically oscillated between AI optimism and caution, and his warnings should…",
           "image_url": "",
-          "published_at": "2026-08-25T21:59:39+00:00",
-          "fetched_at": "2026-08-26T06:53:51.3275+00:00"
+          "published_at": "2026-08-26T07:01:07+00:00",
+          "fetched_at": "2026-08-26T07:50:34.079159+00:00"
         },
         {
           "id": 6769,
@@ -285,17 +337,30 @@
           "fetched_at": "2026-08-26T06:53:53.103203+00:00"
         },
         {
-          "id": 6779,
-          "source": "NY Times",
-          "title": "E.P.A. Moves to Curb Public Input on Air Pollution Permits for Data Centers",
-          "url": "https://www.nytimes.com/2026/08/25/climate/epa-data-centers-public-comment.html",
+          "id": 6793,
+          "source": "MIT Tech Review AI",
+          "title": "I spent a day at a robot “carnival” in Shanghai. Here’s what I saw.",
+          "url": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
           "topic": "Industry",
           "category": "Business, Deals & Funding",
-          "summary": "The EPA has proposed a rule change that would eliminate the requirement for states to provide public notice or solicit public comments on air pollution permits for data centers and other projects, effectively reducing public participation in the environmental permitting process for these facilities.",
-          "opinion": "This is a concerning development that prioritizes expediting permits for data centers—likely driven by the AI boom's massive energy and infrastructure demands—over environmental transparency and public accountability. Reducing public input on air pollution permits undermines a foundational principle of environmental regulation: that communities affected by pollution should have a voice in permitting decisions. Data centers are increasingly significant sources of energy consumption and associate…",
+          "summary": "The article describes a reporter's visit to a robot carnival held at an R&D center on the outskirts of Shanghai, where over 100 robotics companies showcased their technologies to curious families on a public holiday. Attendees could buy mini robotic dogs, learn to operate quadrupedal robots, watch water-bead-firing robot duels, and see humanoids perform martial arts and front flips. The piece contextualizes the event within China's broader strategy to integrate embodied AI into daily life, noting that nearly 90% of the 13,000+ humanoid robots delivered globally last year were made in China. Companies like DexForce demonstrated practical applications like coffee-making and T-shirt-folding humanoids. While the article acknowledges ongoing challenges with humanoid robots—including safety concerns, high prices, short battery life, and skepticism about the humanoid form—it notes that Chinese…",
+          "opinion": "This is a well-crafted dispatch piece that effectively captures the atmosphere and enthusiasm surrounding China's humanoid robotics push, though it reads more like a colorful travelogue than deep tech journalism. The article does a good job of balancing the excitement of the carnival with brief acknowledgments of real limitations—safety, battery life, cost, and the fundamental question of whether humanoid form is even optimal. However, I wish it had dug deeper into those criticisms rather than…",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/08/DSC_7770-thumb.jpg?resize=1200,600",
+          "published_at": "2026-08-25T09:00:00+00:00",
+          "fetched_at": "2026-08-26T06:54:03.895418+00:00"
+        },
+        {
+          "id": 6778,
+          "source": "NY Times",
+          "title": "Why Irregular’s A.I. Tests for Meta, Anthropic and OpenAI Went Off the Rails",
+          "url": "https://www.nytimes.com/2026/08/25/technology/irregular-ai-test-hacks.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Irregular, an Israeli startup that collaborated with OpenAI, Anthropic, and Meta to assess the security of their AI models, made a mistake during testing that caused the AI security assessments to go off the rails.",
+          "opinion": "This article highlights the inherent challenges and risks in AI security testing. The fact that a company specifically hired to evaluate AI model security made errors that derailed the process underscores how difficult and unpredictable this work is. It also raises important questions about the rigor and oversight of third-party AI safety evaluations, and whether the current ecosystem of AI testing firms is mature enough to handle the complexity of modern AI systems.",
           "image_url": "",
-          "published_at": "2026-08-25T16:45:28+00:00",
-          "fetched_at": "2026-08-26T06:53:51.811259+00:00"
+          "published_at": "2026-08-25T21:59:39+00:00",
+          "fetched_at": "2026-08-26T06:53:51.3275+00:00"
         },
         {
           "id": 6770,
@@ -335,6 +400,19 @@
           "image_url": "https://i.guim.co.uk/img/media/965358070d91ced32bc9e5c1dac0b33af486d074/372_0_1200_960/master/1200.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d72cee7a40a858d6ed9687d2a6a78268",
           "published_at": "2026-08-26T02:00:30+00:00",
           "fetched_at": "2026-08-26T06:53:53.265275+00:00"
+        },
+        {
+          "id": 6779,
+          "source": "NY Times",
+          "title": "E.P.A. Moves to Curb Public Input on Air Pollution Permits for Data Centers",
+          "url": "https://www.nytimes.com/2026/08/25/climate/epa-data-centers-public-comment.html",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The EPA has proposed a rule change that would eliminate the requirement for states to provide public notice or solicit public comments on air pollution permits for data centers and other projects, effectively reducing public participation in the environmental permitting process for these facilities.",
+          "opinion": "This is a concerning development that prioritizes expediting permits for data centers—likely driven by the AI boom's massive energy and infrastructure demands—over environmental transparency and public accountability. Reducing public input on air pollution permits undermines a foundational principle of environmental regulation: that communities affected by pollution should have a voice in permitting decisions. Data centers are increasingly significant sources of energy consumption and associate…",
+          "image_url": "",
+          "published_at": "2026-08-25T16:45:28+00:00",
+          "fetched_at": "2026-08-26T06:53:51.811259+00:00"
         },
         {
           "id": 6771,
@@ -386,7 +464,7 @@
     {
       "url": "https://x.com/hooeem/status/2092371742488457498",
       "author": "hooeem",
-      "headline": "Grok Bot makes sub-agent management dead simple, but it __costs 6–34x more__ than Hermes — and you get less customization.",
+      "headline": "Grok Bot is easy but costs __6–34x more than Hermes__ — here's what's tripping up first-time Hermes users.",
       "tweet_id": "3c81eba9-b6bc-81f9-9236-c25db8a6ba9e",
       "source_text": "Grokbot is amazing because of how easy it is for users to manage sub-agents.\n\nHowever, not only does it cost 6-34x more to use, you also have less customisation.\n\nI went and found what the common barriers were when people first download and opened Hermes for the first time and I https://t.co/5UrCcvTsLj",
       "created_time": "2026-08-26T04:32:00.000Z",
@@ -416,7 +494,7 @@
     {
       "url": "https://x.com/nektos/status/2092328751111516403",
       "author": "nektos",
-      "headline": "Anthropic's new AI-native SDLC playbook tackles the real bottleneck: Claude Code can __open a PR in an afternoon__, but security review and sign-off still take a week.",
+      "headline": "Anthropic's new AI-native SDLC playbook tackles the real bottleneck: Claude Code can open a PR in an afternoon, but __security review and sign-off still take a week__.",
       "tweet_id": "3c81eba9-b6bc-81b4-ae3d-fb4bf920ebf7",
       "source_text": "Anthropic published an AI-native SDLC playbook last week.\n\nThey talk about how Claude Code can open a PR in an afternoon but security review, product sign-off, and the release meeting still take a week. Those groups were sized for people typing the code.\n\nWhen the agent outruns https://t.co/eFxQ1ayySN",
       "created_time": "2026-08-26T01:37:00.000Z",
@@ -436,7 +514,7 @@
     {
       "url": "https://x.com/nurijanian/status/2092296956194558096",
       "author": "nurijanian",
-      "headline": "A 1990s Russian private equity firm wrote the kind of strategy doc most companies can't: __crystal-clear rules that actually balanced risk and action__.",
+      "headline": "A 1990s Russian private equity firm wrote the kind of strategy doc most companies can't — __crystal-clear rules that actually balanced risk__.",
       "tweet_id": "3c81eba9-b6bc-81b5-9879-c80861132fdc",
       "source_text": "Most strategy documents read like fortune cookies:\n\n\"Build what customers want\"\n\"Focus on growth\"\n\"Be innovative\"\n\nBut I found a fascinating example of what * useful* strategy looks like ⚡️\n\nA private equity firm in 1990s Russia created crystal clear rules that perfectly balanced https://t.co/DVXe5A06uU",
       "created_time": "2026-08-26T04:42:00.000Z",
@@ -476,7 +554,7 @@
     {
       "url": "https://x.com/SPCXTSLA/status/2092356603349815435",
       "author": "SPCXTSLA",
-      "headline": "For $15 on Bland, one user gave his Grok Bot __a phone number that makes calls__, has conversations, and reports back.",
+      "headline": "For $15 on Bland, one user gave his Grok Bot __a real phone number that makes calls__, has conversations, and reports back.",
       "tweet_id": "3c81eba9-b6bc-81cd-ab86-d0afc93102d7",
       "source_text": "It was really easy to give my Grok @bot a phone number using the bland service, I purchased a phone number for $15, gave my bot the the API key and it works out the rest.\n\nNow I can just ask it to call someone with some instructions and it does it, has the conversation and https://t.co/Hkwy9ZEynw",
       "created_time": "2026-08-26T01:27:00.000Z",
@@ -484,9 +562,19 @@
       "learning_score": 2
     },
     {
+      "url": "https://x.com/arunaswp/status/2092327354488229895",
+      "author": "arunaswp",
+      "headline": "A preferred paying partner appears to have broken the rules on WordPress — __so sad, says the community__.",
+      "tweet_id": "3c81eba9-b6bc-81fa-a264-d19c2b31f297",
+      "source_text": "No no no, a preferred paying partner could not possibly have broken the rules... So sad, @wordpress https://t.co/vMBpfdSRX0 https://t.co/T5wnhYBAkz",
+      "created_time": "2026-08-26T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/arunaswp/status/2092327354488229895",
+      "learning_score": 2
+    },
+    {
       "url": "https://x.com/LLMJunky/status/2092318901849788452",
       "author": "LLMJunky",
-      "headline": "The maxed-out 256GB M5 Ultra Studio can be leased for __$257/month__ — on-device intelligence that never runs out of tokens.",
+      "headline": "The maxed-out 256GB M5 Ultra Studio",
       "tweet_id": "3c81eba9-b6bc-819f-9d16-f993cdab5dae",
       "source_text": "Did you catch that?\n\nThe new maxed out 256GB M5 Ultra Studio can be leased for *basically* the same price as a Max subscription across providers. \n\nFor $257 a month, you can have on device intelligence that never runs out of tokens, and sips power. \n\nBest part is you can buy out https://t.co/9NksOHjRbW",
       "created_time": "2026-08-26T01:27:00.000Z",
@@ -496,36 +584,114 @@
   ],
   "community_headlines": [
     {
-      "url": "https://www.servethehome.com/ibm-z-and-linuxone-dual-isa-processor-and-ai-acceleration-at-hot-chips-2026/",
-      "author": "lambda_foo",
-      "item_id": "hn:49444940",
-      "headline": "IBM showed off a __dual-ISA processor with AI acceleration__ for Z and LinuxONE at Hot Chips 2026.",
+      "url": "https://www.quantamagazine.org/a-new-framework-for-how-the-brain-compresses-our-noisy-world-20260824/",
+      "author": "isaacfrond",
+      "item_id": "hn:49445394",
+      "headline": "Quanta explores a __new framework for how the brain compresses__ sensory noise into usable representations.",
       "subreddit": null,
-      "source_text": "IBM Z and LinuxONE Dual-ISA Processor",
+      "source_text": "A New Framework for How the Brain Compresses Our Noisy World",
       "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:47:06+00:00",
+      "created_time": "2026-08-26T07:51:51+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://servethehome.com/ibm-z-and-linuxone-dual-isa-processor-and-ai-acceleration-at-hot-chips-2026",
-      "learning_score": 3
+      "canonical_url": "https://quantamagazine.org/a-new-framework-for-how-the-brain-compresses-our-noisy-world-20260824",
+      "learning_score": 2
     },
     {
-      "url": "https://github.com/mulgadc/spinifex",
-      "author": "toddyholiday",
-      "item_id": "hn:49444782",
-      "headline": "Spinifex lets you __run EC2, S3, IAM, and EKS on your own hardware__ with the AWS CLI unchanged.",
+      "url": "https://www.ithome.com/0/993/865.htm",
+      "author": "JulianVance",
+      "item_id": "hn:49445377",
+      "headline": "ByteDance launches __Doubao Work__, an AI-native office suite aimed squarely at the productivity stack.",
       "subreddit": null,
-      "source_text": "Show HN: Spinifex – run EC2/S3/IAM/EKS on your own hardware, AWS CLI unchanged",
+      "source_text": "ByteDance Launches AI Office Product \"Doubao Work\"",
       "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:23:18+00:00",
+      "created_time": "2026-08-26T07:48:50+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/mulgadc/spinifex",
-      "learning_score": 3
+      "canonical_url": "https://ithome.com/0/993/865.htm",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/tim_smart/status/2092430414837407896",
+      "author": "tosh",
+      "item_id": "hn:49445357",
+      "headline": "Effect v4's core package now ships with __no external dependencies__ — zero, none, zilch.",
+      "subreddit": null,
+      "source_text": "Effect v4 core package now has no external dependencies",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-26T07:46:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/tim_smart/status/2092430414837407896",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.nature.com/articles/d41586-026-01706-2",
+      "author": "isaacfrond",
+      "item_id": "hn:49445231",
+      "headline": "Researchers flag __more than 100 suspicious images__ in Thermo Fisher's antibody catalogue — a quiet credibility crisis for lab science.",
+      "subreddit": null,
+      "source_text": "More than 100 suspicious images in Thermo Fisher antibody catalogue",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-26T07:29:26+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nature.com/articles/d41586-026-01706-2",
+      "learning_score": 2
+    },
+    {
+      "url": "https://arstechnica.com/cars/2026/08/chinese-regulators-tell-tesla-to-fix-nearly-3-million-cars/",
+      "author": "rbanffy",
+      "item_id": "hn:49445224",
+      "headline": "Chinese regulators order Tesla to __fix nearly 3 million cars__ over safety concerns.",
+      "subreddit": null,
+      "source_text": "Chinese regulators tell Tesla to fix nearly 3M cars",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-26T07:28:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arstechnica.com/cars/2026/08/chinese-regulators-tell-tesla-to-fix-nearly-3-million-cars",
+      "learning_score": 2
+    },
+    {
+      "url": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames/",
+      "author": "robin_reala",
+      "item_id": "hn:49445170",
+      "headline": "The world humanoid robot games delivered runners __breaking records and bursting into flames__ in equal measure.",
+      "subreddit": null,
+      "source_text": "World humanoid robot games show runners breaking records, bursting into flames",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-26T07:19:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames",
+      "learning_score": 2
+    },
+    {
+      "url": "https://octomind.run/blog/routines-scheduled-agents",
+      "author": "donk8r",
+      "item_id": "hn:49445150",
+      "headline": "Octomind ships Routines — __scheduled agents on persistent cloud machines__ that run your test workflows on autopilot.",
+      "subreddit": null,
+      "source_text": "Show HN: Octomind Routines – scheduled agents on persistent cloud machines",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-26T07:16:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://octomind.run/blog/routines-scheduled-agents",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.reuters.com/world/middle-east/france-saudi-arabia-agree-6-billion-dragon-ball-z-theme-park-project-near-paris-2026-08-24/",
+      "author": "mmarian",
+      "item_id": "hn:49445146",
+      "headline": "France and Saudi Arabia agree on a __€6B Dragon Ball Z theme park__ near Paris, because why not.",
+      "subreddit": null,
+      "source_text": "France, Saudi Arabia agree on €6B Dragon Ball Z theme park project near Paris",
+      "source_type": "hacker_news",
+      "created_time": "2026-08-26T07:16:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://reuters.com/world/middle-east/france-saudi-arabia-agree-6-billion-dragon-ball-z-theme-park-project-near-paris-2026-08-24",
+      "learning_score": 2
     },
     {
       "url": "https://glyphcss.com/gallery/",
       "author": "zakxxi",
       "item_id": "hn:49445063",
-      "headline": "__Glyphcss__ is an ASCII render playground that turns OBJ, glTF, STL, and .vox models into character-art in the browser.",
+      "headline": "Glyphcss is an __ASCII render playground for 3D models__ — feed it OBJ, glTF, STL, or .vox and watch the characters do the work.",
       "subreddit": null,
       "source_text": "Glyphcss › an ASCII render playground for 3D models (OBJ, glTF, STL, .vox)",
       "source_type": "hacker_news",
@@ -535,23 +701,10 @@
       "learning_score": 2
     },
     {
-      "url": "https://news.ycombinator.com/item?id=49444984",
-      "author": "idose",
-      "item_id": "hn:49444984",
-      "headline": "Ask HN thread surfaces how developers actually __handle code review__ — processes range from meticulous to nonexistent.",
-      "subreddit": null,
-      "source_text": "Ask HN: How do you code review?",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:54:23+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://news.ycombinator.com/item?id=49444984",
-      "learning_score": 2
-    },
-    {
       "url": "https://www.mrwhooidc.com/index.html",
       "author": "popicka70",
       "item_id": "hn:49444943",
-      "headline": "__MrWhoOidc__ is an open-source OIDC identity provider built on .NET 10.",
+      "headline": "MrWhoOidc brings a fully __open-source OIDC identity provider__ to .NET 10.",
       "subreddit": null,
       "source_text": "MrWhoOidc – Open-source OIDC identity provider on .NET 10",
       "source_type": "hacker_news",
@@ -561,102 +714,24 @@
       "learning_score": 2
     },
     {
-      "url": "https://github.com/heronapp/hostflip",
-      "author": "heroncoder",
-      "item_id": "hn:49444897",
-      "headline": "Hostflip is a tiny macOS utility that __switches /etc/hosts profiles__ and detects when something else edits the file.",
+      "url": "https://www.servethehome.com/ibm-z-and-linuxone-dual-isa-processor-and-ai-acceleration-at-hot-chips-2026/",
+      "author": "lambda_foo",
+      "item_id": "hn:49444940",
+      "headline": "IBM's latest Z and LinuxONE chip runs a __dual-ISA processor with on-die AI acceleration__, detailed at Hot Chips 2026.",
       "subreddit": null,
-      "source_text": "Show HN: Hostflip – a macOS /etc/hosts switcher that detects external edits",
+      "source_text": "IBM Z and LinuxONE Dual-ISA Processor",
       "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:40:27+00:00",
+      "created_time": "2026-08-26T06:47:06+00:00",
       "source_label": "Hacker News",
-      "canonical_url": "https://github.com/heronapp/hostflip",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.14614",
-      "author": "montalbano",
-      "item_id": "hn:49444874",
-      "headline": "DumpsterCluster: researchers went dumpster diving and ended up __serving Llama-70B on $60 GPUs__.",
-      "subreddit": null,
-      "source_text": "DumpsterCluster: From Dumpster Diving to Serving Llama-70B on $60 GPUs",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:36:19+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2608.14614",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=-8ZY74LW4W4",
-      "author": "proftom",
-      "item_id": "hn:49444845",
-      "headline": "Someone built a gaming controller out of a __cast iron drill press, a mouse, and an ESP-32__.",
-      "subreddit": null,
-      "source_text": "Gaming with a cast iron drill press, a mouse, and an ESP-32 [video]",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:31:49+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://youtube.com/watch?v=-8ZY74LW4W4",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.jack.bio/blog/parkingtickets",
-      "author": "7777777phil",
-      "item_id": "hn:49444827",
-      "headline": "A security researcher scraped a city's parking ticket portal and found __every ticket was publicly accessible__ with zero authentication.",
-      "subreddit": null,
-      "source_text": "All Your Parking Tickets Are Belong to Me",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:29:06+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://jack.bio/blog/parkingtickets",
-      "learning_score": 2
-    },
-    {
-      "url": "https://expressed.effective-flow.com",
-      "author": "johncclayton",
-      "item_id": "hn:49444779",
-      "headline": "A new tool turns __any phone or tablet into a handwriting input__ for your desktop — just scribble and it appears on screen.",
-      "subreddit": null,
-      "source_text": "Show HN: Scribble/write on your desktop, with any phone/tablet",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:23:09+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://expressed.effective-flow.com",
-      "learning_score": 2
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.23228",
-      "author": "dannas",
-      "item_id": "hn:49444726",
-      "headline": "New paper details __Mold, a parallel linker__ designed to make large C/C++ builds link dramatically faster.",
-      "subreddit": null,
-      "source_text": "Mold: A Parallel Linker",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:16:08+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://arxiv.org/abs/2608.23228",
-      "learning_score": 2
-    },
-    {
-      "url": "https://www.cnn.com/2026/08/25/health/measles-deaths-pennsylvania",
-      "author": "helsinkiandrew",
-      "item_id": "hn:49444674",
-      "headline": "Two unvaccinated people in Pennsylvania become the __first measles-related U.S. deaths in 2026__.",
-      "subreddit": null,
-      "source_text": "Two unvaccinated people in Pennsylvania are first measles-related 2026 US deaths",
-      "source_type": "hacker_news",
-      "created_time": "2026-08-26T06:08:34+00:00",
-      "source_label": "Hacker News",
-      "canonical_url": "https://cnn.com/2026/08/25/health/measles-deaths-pennsylvania",
+      "canonical_url": "https://servethehome.com/ibm-z-and-linuxone-dual-isa-processor-and-ai-acceleration-at-hot-chips-2026",
       "learning_score": 2
     }
   ],
   "build_meta": {
-    "generated_at": "2026-08-26T07:10:02.444836+00:00",
+    "generated_at": "2026-08-26T07:53:43.334809+00:00",
     "source_window_hours": 24,
     "use_sent": false,
     "source": "canonical"
   },
-  "content_hash": "4847ee5763b0e0ff3f7597da9c508b4329f601405e49e43d9593238b82872d09"
+  "content_hash": "4e880aa228dbee96ab29b7333880ef52fbf4bc0ad278af4a7385e028e6a97a31"
 }
