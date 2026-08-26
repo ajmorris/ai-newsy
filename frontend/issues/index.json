@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-08-25T00:00:00Z",
-  "issueCount": 126,
+  "generatedAt": "2026-08-26T00:00:00Z",
+  "issueCount": 127,
   "latestIssue": {
-    "slug": "2026-08-25",
-    "digestDate": "2026-08-25",
-    "displayDate": "Aug 25, 2026",
-    "issueNumber": "60825",
-    "subject": "ISSUE 60825 \u00b7 15 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI tooling wars are heating up \u2014 from a mysterious anonymous model called \"Ox Alpha\" appearing on OpenRouter with near-frontier performance and no creator in sight, to OpenAI pushing GPT-5.6 into AWS's Kiro development environment, to one solo founder's wild experiment running 15 concurrent Devin agents at $20,000 a month. Meanwhile, the SEC is probing Leopold Aschenbrenner's AI hedge fund Situational Awareness after it nearly imploded, and a researcher caught AliExpress red-handed using inaudible sounds to secretly fingerprint your browser. It's a packed one today \u2014 grab your coffee and dig in.",
-    "articleCount": 15,
-    "urlPath": "/issues/2026-08-25.html",
-    "contentHash": "c01ee2860067039030e2d1a13391167ed9116b9a37fe5f16c91aef1c5ae73daf"
+    "slug": "2026-08-26",
+    "digestDate": "2026-08-26",
+    "displayDate": "Aug 26, 2026",
+    "issueNumber": "60826",
+    "subject": "ISSUE 60826 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI hardware race is heating up \u2014 OpenAI dropped benchmarks showing its custom Jalape\u00f1o chip outperforming Nvidia's best on inference, while SpaceX and Nvidia announced plans to literally launch data centers into orbit by late 2027. Meanwhile, the robotics boom continues at a breathtaking pace, with startup Generalist hitting a $3 billion valuation barely a year after its founding, and a Shanghai robot carnival showcasing China's dominance in humanoid manufacturing. It's a day where the physical infrastructure of AI \u2014 chips, data centers, and robots \u2014 is stealing the spotlight from the models themselves.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-08-26.html",
+    "contentHash": "4e880aa228dbee96ab29b7333880ef52fbf4bc0ad278af4a7385e028e6a97a31"
   },
   "recentIssues": [
+    {
+      "slug": "2026-08-26",
+      "digestDate": "2026-08-26",
+      "displayDate": "Aug 26, 2026",
+      "issueNumber": "60826",
+      "subject": "ISSUE 60826 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI hardware race is heating up \u2014 OpenAI dropped benchmarks showing its custom Jalape\u00f1o chip outperforming Nvidia's best on inference, while SpaceX and Nvidia announced plans to literally launch data centers into orbit by late 2027. Meanwhile, the robotics boom continues at a breathtaking pace, with startup Generalist hitting a $3 billion valuation barely a year after its founding, and a Shanghai robot carnival showcasing China's dominance in humanoid manufacturing. It's a day where the physical infrastructure of AI \u2014 chips, data centers, and robots \u2014 is stealing the spotlight from the models themselves.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-08-26.html",
+      "contentHash": "4e880aa228dbee96ab29b7333880ef52fbf4bc0ad278af4a7385e028e6a97a31"
+    },
     {
       "slug": "2026-08-25",
       "digestDate": "2026-08-25",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-08-14.html",
       "contentHash": "84cdcf35a84f00ae3f00ff8910f5a4533667992c2ac0ae0615260451bad8070e"
-    },
-    {
-      "slug": "2026-08-13",
-      "digestDate": "2026-08-13",
-      "displayDate": "Aug 13, 2026",
-      "issueNumber": "60813",
-      "subject": "ISSUE 60813 \u00b7 14 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest story today is a jaw-dropping security breach: a supply-chain attack on the popular open-source AI tool LiteLLM exposed *terabytes* of credentials from over 2,500 organizations \u2014 including Microsoft, Amazon, Nvidia, and Samsung \u2014 with hundreds of thousands of CI/CD pipelines compromised in a 40-minute window by a teenage hacker gang. Beyond the security alarm bells, it's also a big day for AI transparency drama, as Anthropic's new invisible watermarks on Claude's outputs have users furiously debating whether getting caught using AI is the tool's problem or theirs. We've also got Cognition eyeing a $40 billion valuation, Twitch quietly opting everyone into Amazon's AI training, and Google DeepMind making a meaningful push to bring AI to the sign language community.",
-      "articleCount": 14,
-      "urlPath": "/issues/2026-08-13.html",
-      "contentHash": "00f076f2e0134c3954e5868c2597ab6b72094d8500c776a44155cfa502cb7423"
     }
   ]
 }
