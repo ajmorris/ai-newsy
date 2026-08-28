@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 import sys
 sys.path.insert(0, ".")
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import DEFAULT_MODEL, generate_text
 from execution.database import upsert_digest_extra
 
 load_dotenv()
@@ -289,8 +289,8 @@ def generate_headlines_for_items(items: List[dict], skill_prompt: str) -> List[d
     if not items:
         return []
     prompt = _build_generation_prompt(skill_prompt, items)
-    model_name = _env_str("COMMUNITY_HEADLINES_MODEL", "gemini-2.0-flash")
-    text = generate_text_with_fallback(prompt=prompt, gemini_model=model_name)
+    model_name = _env_str("COMMUNITY_HEADLINES_MODEL", DEFAULT_MODEL)
+    text = generate_text(prompt=prompt, model=model_name)
     item_index = {item["item_id"]: item for item in items}
     headlines: List[dict] = []
 

@@ -34,11 +34,12 @@ from execution.database import (
     release_failed_digest_send,
     try_claim_digest_send,
 )
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import DEFAULT_MODEL, generate_text
 from execution.digest_payload import (
     DigestBuildOptions,
     assert_digest_stories_have_opinions,
     heal_digest_story_opinions,
+    load_digest_payload,
     load_sent_snapshot,
     load_or_build_digest_payload,
     refresh_digest_payload_after_story_edit,
@@ -141,9 +142,9 @@ def generate_intro(articles: list) -> str:
         
         prompt = INTRO_PROMPT.format(article_summaries=article_summaries)
 
-        return generate_text_with_fallback(
+        return generate_text(
             prompt=prompt,
-            gemini_model="gemini-2.0-flash",
+            model=DEFAULT_MODEL,
         )
     except Exception as e:
         print(f"    Error generating intro: {e}")
@@ -575,6 +576,7 @@ def send_daily_digest(
     overwrite_snapshot: bool = False,
     force_send: bool = False,
     send_reason: str = "",
+    no_llm: bool = False,
 ) -> dict:
     """
     Send daily digest to all active subscribers (or only to test_email if set).
@@ -591,13 +593,27 @@ def send_daily_digest(
     print(f"  Trigger: {event_name}")
     print(f"{'='*50}\n")
 
-    payload = load_or_build_digest_payload(
-        DigestBuildOptions(
-            digest_date=digest_date,
-            window_hours=int(os.getenv("DIGEST_WINDOW_HOURS", "24")),
-            use_sent=sent_yesterday,
+    if no_llm:
+        resolved_date = digest_date or datetime.utcnow().strftime("%Y-%m-%d")
+        payload = load_digest_payload(digest_date=resolved_date)
+        if not payload:
+            raise SystemExit(
+                f"Missing canonical digest payload for {resolved_date}. "
+                "Run the local Claude pipeline before sending."
+            )
+        if not str(payload.get("intro", "")).strip():
+            raise SystemExit(
+                f"Canonical digest {resolved_date} is missing intro. "
+                "Rebuild locally with Claude before sending."
+            )
+    else:
+        payload = load_or_build_digest_payload(
+            DigestBuildOptions(
+                digest_date=digest_date,
+                window_hours=int(os.getenv("DIGEST_WINDOW_HOURS", "24")),
+                use_sent=sent_yesterday,
+            )
         )
-    )
     digest_date = str(payload.get("digest_date"))
     payload_hash = str(payload.get("content_hash", "")).strip()
     payload_source = str((payload.get("build_meta") or {}).get("source", "canonical")).strip()
@@ -668,9 +684,12 @@ def send_daily_digest(
             print("🔓 Released digest send claim (no stories to send).")
         return {"articles": 0, "sent": 0, "failed": 0}
 
-    heal_digest_story_opinions(stories)
-    assert_digest_stories_have_opinions(stories)
-    refresh_digest_payload_after_story_edit(payload, stories)
+    if no_llm:
+        assert_digest_stories_have_opinions(stories)
+    else:
+        heal_digest_story_opinions(stories)
+        assert_digest_stories_have_opinions(stories)
+        refresh_digest_payload_after_story_edit(payload, stories)
 
     articles = [normalize_article_for_email(article) for article in stories]
 
@@ -843,6 +862,8 @@ if __name__ == "__main__":
                         help="Bypass production duplicate-send guard for intentional resends")
     parser.add_argument('--send-reason', type=str, default="",
                         help="Optional reason to log when a send is forced/manual")
+    parser.add_argument('--no-llm', action='store_true',
+                        help="Send from committed canonical JSON only; fail if intro/opinions are missing")
     args = parser.parse_args()
 
     # Check for API key
@@ -859,5 +880,6 @@ if __name__ == "__main__":
         overwrite_snapshot=args.overwrite_snapshot,
         force_send=args.force_send,
         send_reason=args.send_reason,
+        no_llm=args.no_llm,
     )
     print(f"Done! Sent digest with {result['articles']} articles to {result['sent']} subscribers.")

@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import sys
 sys.path.insert(0, '.')
 from execution.database import get_articles_without_topic, update_article_topic
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import DEFAULT_MODEL, generate_text
 
 load_dotenv()
 
@@ -39,14 +39,14 @@ TOPIC_PROMPT = os.getenv("PROMPT_TOPIC", DEFAULT_TOPIC_PROMPT)
 
 
 def assign_topic_for_article(title: str, content_snippet: str = "") -> str:
-    """Call Gemini to assign one topic. Returns topic label or 'Industry' as fallback."""
+    """Call Claude to assign one topic. Returns topic label or 'Industry' as fallback."""
     try:
         context = f"Title: {title}"
         if content_snippet:
             context += f"\nSnippet: {content_snippet[:500]}"
-        text = generate_text_with_fallback(
+        text = generate_text(
             prompt=f"{TOPIC_PROMPT}\n\n{context}",
-            gemini_model="gemini-2.0-flash",
+            model=DEFAULT_MODEL,
         )
         for t in TOPICS:
             if t.lower() in text.lower() or text == t:
@@ -82,8 +82,8 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Print only, do not update")
     parser.add_argument("--limit", type=int, default=None, help="Max articles to process")
     args = parser.parse_args()
-    if not os.getenv("GEMINI_API_KEY") and not os.getenv("ANTHROPIC_KEY"):
-        print("No AI key configured. Set GEMINI_API_KEY and/or ANTHROPIC_KEY in .env")
+    if not os.getenv("ANTHROPIC_KEY"):
+        print("No AI key configured. Set ANTHROPIC_KEY in .env")
         exit(1)
     n = assign_all(dry_run=args.dry_run, limit=args.limit)
     print(f"\nDone. Assigned topic to {n} article(s).")

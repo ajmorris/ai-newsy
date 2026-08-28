@@ -18,8 +18,8 @@ Rebuild flows used mutable DB state (`unsent` selection) instead of immutable se
 3. `execution/build_web_archive.py`
 - If web build consumes mutable payload files, stale/overwritten date payloads can publish incorrect story counts.
 
-4. `.github/workflows/publish_web_archive.yml`
-- If workflow publishes from generic digest files rather than sent snapshots, archive may drift from what was emailed.
+4. Local archive publish (`./scripts/run_local_digest.sh` → `execution/build_web_archive.py`)
+- If the archive is built from generic digest files rather than sent snapshots, it may drift from what was emailed.
 
 ## Guardrail now expected
 

@@ -14,7 +14,7 @@ from execution.database import (
     update_article_image,
     supabase,
 )
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import DEFAULT_MODEL, generate_text
 from execution.story_text_normalizer import normalize_story_text
 
 load_dotenv()
@@ -81,17 +81,17 @@ def extract_og_image(url: str) -> Optional[str]:
 
 def summarize_article(title: str, content: str, url: str) -> tuple:
     """
-    Generate a summary and opinion for a single article using Gemini.
+    Generate a summary and opinion for a single article using Claude.
     Returns (summary, opinion).
     """
     try:
-        # Combine content for Gemini
+        # Combine content for the model
         context = f"Title: {title}\nURL: {url}\nContent: {content}"
         
         prompt = f"{SYSTEM_PROMPT}\n\n{context}"
-        text = generate_text_with_fallback(
+        text = generate_text(
             prompt=prompt,
-            gemini_model="gemini-2.0-flash",
+            model=DEFAULT_MODEL,
         )
         
         summary = ""
@@ -133,7 +133,7 @@ def summarize_all(dry_run: bool = False, limit: int = None) -> int:
         articles = articles[:limit]
     
     print(f"\n{'='*50}")
-    print(f"AI Analysis (Gemini) - {len(articles)} articles to process")
+    print(f"AI Analysis (Claude) - {len(articles)} articles to process")
     print(f"{'='*50}\n")
     
     if not articles:
@@ -230,8 +230,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Check for API key
-    if not os.getenv("GEMINI_API_KEY") and not os.getenv("ANTHROPIC_KEY"):
-        print("⚠️  No AI key configured. Set GEMINI_API_KEY and/or ANTHROPIC_KEY in .env")
+    if not os.getenv("ANTHROPIC_KEY"):
+        print("⚠️  No AI key configured. Set ANTHROPIC_KEY in .env")
         exit(1)
     
     count = summarize_all(dry_run=args.dry_run, limit=args.limit)

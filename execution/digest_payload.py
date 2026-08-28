@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 import sys
 
 sys.path.insert(0, ".")
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import DEFAULT_MODEL, generate_text
 from execution.database import (
     get_digest_extra,
     get_sent_articles,
@@ -134,7 +134,7 @@ def _get_or_create_intro(digest_date: str, stories: List[Dict[str, Any]]) -> str
         if story.get("summary")
     )
     prompt = os.getenv("PROMPT_INTRO", DEFAULT_INTRO_PROMPT).format(article_summaries=summaries)
-    intro = generate_text_with_fallback(prompt=prompt, gemini_model="gemini-2.0-flash").strip()
+    intro = generate_text(prompt=prompt, model=DEFAULT_MODEL).strip()
     if not intro:
         intro = "Here's what's making waves in AI today."
 
@@ -159,7 +159,7 @@ def group_stories_into_sections(stories: List[Dict[str, Any]]) -> List[Dict[str,
 def heal_digest_story_opinions(
     stories: List[Dict[str, Any]],
     *,
-    gemini_model: str = "gemini-2.0-flash",
+    model: str = DEFAULT_MODEL,
     derive_fn: Optional[Callable[[str, str, str], str]] = None,
 ) -> None:
     """
@@ -180,7 +180,7 @@ def heal_digest_story_opinions(
         if not summary:
             continue
         title = str(story.get("title", "") or "").strip()
-        derived = derive(title, summary, gemini_model)
+        derived = derive(title, summary, model)
         story["opinion"] = normalize_story_text(derived, max_chars=DIGEST_OPINION_MAX_CHARS)
 
 
