@@ -1,29 +1,16 @@
 import os
-from abc import ABC, abstractmethod
-from dataclasses import dataclass
-from typing import Any, Dict, List, Optional
+from typing import Optional
 
 import requests
-from google import genai
-from google.genai import types as genai_types
-from openai import OpenAI
 
 
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
-DEFAULT_PROVIDER_CHAIN = "anthropic,gemini,openai"
-DEFAULT_MODELS = {
-    "anthropic": "claude-opus-4-6",
-    "gemini": "gemini-2.0-flash",
-    "openai": "gpt-4o-mini",
-}
-PROVIDER_MODEL_ENV_KEYS = {
-    "anthropic": "ANTHROPIC_MODEL",
-    "gemini": "GEMINI_MODEL",
-    "openai": "OPENAI_MODEL",
-}
-
-# When json_mode is on, model returns a small JSON object; 2048 avoids mid-JSON truncation.
-_JSON_COMPLETION_MAX_TOKENS = 2048
+DEFAULT_MODEL = "claude-opus-5"
+ALLOWED_EFFORTS = ("low", "medium", "high")
+DEFAULT_EFFORT = "low"
+JSON_COMPLETION_MAX_TOKENS = 8192
+TEXT_COMPLETION_MAX_TOKENS = 4096
+REQUEST_TIMEOUT_SECONDS = 120
 
 
 def _response_preview(response: requests.Response, max_len: int = 500) -> str:
@@ -46,226 +33,72 @@ def _extract_anthropic_text(payload: dict) -> str:
     return "".join(parts).strip()
 
 
-def _model_looks_compatible(provider: str, model: str) -> bool:
-    normalized = (model or "").strip().lower()
-    if not normalized:
-        return False
-    if provider == "anthropic":
-        return normalized.startswith("claude")
-    if provider == "gemini":
-        return normalized.startswith("gemini")
-    if provider == "openai":
-        return normalized.startswith(("gpt", "o1", "o3", "o4"))
-    return False
+def resolve_model(model: Optional[str] = None) -> str:
+    chosen = (model or os.getenv("ANTHROPIC_MODEL") or DEFAULT_MODEL).strip()
+    return chosen or DEFAULT_MODEL
 
 
-def _error_category(error: Exception) -> str:
-    message = str(error).lower()
-    if any(token in message for token in ["401", "403", "unauthorized", "forbidden", "invalid api key"]):
-        return "auth"
-    if any(token in message for token in ["429", "rate limit", "too many requests", "resource_exhausted"]):
-        return "rate-limit"
-    if any(token in message for token in ["timeout", "timed out", "connection reset", "service unavailable", "503", "502", "500"]):
-        return "transient"
-    return "provider-error"
+def resolve_effort() -> str:
+    raw = (os.getenv("ANTHROPIC_EFFORT") or DEFAULT_EFFORT).strip().lower()
+    if raw not in ALLOWED_EFFORTS:
+        allowed = ", ".join(ALLOWED_EFFORTS)
+        raise RuntimeError(f"ANTHROPIC_EFFORT must be one of: {allowed}")
+    return raw
 
 
-class LLMProvider(ABC):
-    name: str
-
-    @abstractmethod
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
-        """Generate text for the given prompt."""
-
-
-class AnthropicProvider(LLMProvider):
-    name = "anthropic"
-
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
-        anthropic_key = (os.getenv("ANTHROPIC_KEY") or "").strip()
-        if not anthropic_key:
-            raise RuntimeError("ANTHROPIC_KEY is not configured")
-
-        max_tokens = _JSON_COMPLETION_MAX_TOKENS if json_mode else 1024
-        response = requests.post(
-            ANTHROPIC_API_URL,
-            headers={
-                "x-api-key": anthropic_key,
-                "anthropic-version": "2023-06-01",
-                "content-type": "application/json",
-            },
-            json={
-                "model": model,
-                "max_tokens": max_tokens,
-                "temperature": temperature,
-                "messages": [{"role": "user", "content": prompt}],
-            },
-            timeout=45,
-        )
-        if not response.ok:
-            detail = _response_preview(response)
-            raise RuntimeError(
-                "Anthropic request failed "
-                f"(status={response.status_code}, model={model}, url={ANTHROPIC_API_URL}, response={detail})"
-            )
-        return _extract_anthropic_text(response.json())
-
-
-class GeminiProvider(LLMProvider):
-    name = "gemini"
-
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
-        gemini_key = (os.getenv("GEMINI_API_KEY") or "").strip()
-        if not gemini_key:
-            raise RuntimeError("GEMINI_API_KEY is not configured")
-        client = genai.Client(api_key=gemini_key)
-        if json_mode:
-            config = genai_types.GenerateContentConfig(
-                temperature=temperature,
-                max_output_tokens=_JSON_COMPLETION_MAX_TOKENS,
-                response_mime_type="application/json",
-            )
-        else:
-            config = genai_types.GenerateContentConfig(
-                temperature=temperature,
-                max_output_tokens=_JSON_COMPLETION_MAX_TOKENS,
-            )
-        response = client.models.generate_content(
-            model=model,
-            contents=prompt,
-            config=config,
-        )
-        return (response.text or "").strip()
-
-
-class OpenAIProvider(LLMProvider):
-    name = "openai"
-
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
-        openai_key = (os.getenv("OPENAI_API_KEY") or "").strip()
-        if not openai_key:
-            raise RuntimeError("OPENAI_API_KEY is not configured")
-        client = OpenAI(api_key=openai_key)
-        kwargs: Dict[str, Any] = {
-            "model": model,
-            "temperature": temperature,
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": _JSON_COMPLETION_MAX_TOKENS,
-        }
-        if json_mode:
-            kwargs["response_format"] = {"type": "json_object"}
-        response = client.chat.completions.create(**kwargs)
-        return (response.choices[0].message.content or "").strip()
-
-
-@dataclass
-class AttemptFailure:
-    provider: str
-    model: str
-    category: str
-    error: str
-
-
-def _provider_chain_from_env() -> List[str]:
-    raw_chain = os.getenv("LLM_PROVIDER_CHAIN", DEFAULT_PROVIDER_CHAIN)
-    providers = [entry.strip().lower() for entry in raw_chain.split(",") if entry.strip()]
-    if not providers:
-        return [entry.strip() for entry in DEFAULT_PROVIDER_CHAIN.split(",")]
-    return providers
-
-
-def _provider_default_model(provider: str) -> str:
-    env_key = PROVIDER_MODEL_ENV_KEYS.get(provider, "")
-    model_from_env = (os.getenv(env_key) or "").strip() if env_key else ""
-    if model_from_env:
-        return model_from_env
-    return DEFAULT_MODELS[provider]
-
-
-def _resolve_model_for_provider(
-    provider: str,
-    logical_model: str,
-    anthropic_model_override: Optional[str],
-    openai_model_override: Optional[str],
-) -> str:
-    if provider == "anthropic" and anthropic_model_override:
-        return anthropic_model_override
-    if provider == "openai" and openai_model_override:
-        return openai_model_override
-    if _model_looks_compatible(provider=provider, model=logical_model):
-        return logical_model
-    return _provider_default_model(provider)
-
-
-def generate_text_with_fallback(
+def generate_text(
     prompt: str,
-    gemini_model: str = "gemini-2.0-flash",
-    anthropic_model: Optional[str] = None,
+    model: Optional[str] = None,
     temperature: float = 0.2,
-    openai_model: Optional[str] = None,
     json_mode: bool = False,
 ) -> str:
     """
-    Generate text with provider chain fallback.
-    Default chain: Anthropic -> Gemini -> OpenAI.
+    Generate text with Claude Opus 5 via the Anthropic Messages API.
 
-    When json_mode is True, providers request JSON-shaped output (Gemini/OpenAI native;
-    Anthropic uses a larger max_tokens budget so prompt-only JSON fits).
+    Thinking is on by default for Opus 5; max_tokens covers thinking plus
+    visible text. Effort defaults to low for short structured digest tasks.
+    Temperature is omitted so it does not conflict with default thinking.
     """
-    provider_registry: Dict[str, LLMProvider] = {
-        "anthropic": AnthropicProvider(),
-        "gemini": GeminiProvider(),
-        "openai": OpenAIProvider(),
-    }
-    failures: List[AttemptFailure] = []
+    del temperature  # unused: Opus 5 thinking rejects custom temperature
+    anthropic_key = (os.getenv("ANTHROPIC_KEY") or "").strip()
+    if not anthropic_key:
+        raise RuntimeError("ANTHROPIC_KEY is not configured")
 
-    for provider_name in _provider_chain_from_env():
-        provider = provider_registry.get(provider_name)
-        if provider is None:
-            failures.append(
-                AttemptFailure(
-                    provider=provider_name,
-                    model="n/a",
-                    category="config",
-                    error="Unknown provider in LLM_PROVIDER_CHAIN",
-                )
-            )
-            continue
+    chosen_model = resolve_model(model)
+    effort = resolve_effort()
+    max_tokens = JSON_COMPLETION_MAX_TOKENS if json_mode else TEXT_COMPLETION_MAX_TOKENS
 
-        chosen_model = _resolve_model_for_provider(
-            provider=provider_name,
-            logical_model=gemini_model,
-            anthropic_model_override=anthropic_model,
-            openai_model_override=openai_model,
-        )
-        try:
-            text = provider.generate(
-                prompt=prompt,
-                model=chosen_model,
-                temperature=temperature,
-                json_mode=json_mode,
-            ).strip()
-            print(f"    LLM provider selected: {provider_name} (model={chosen_model})")
-            return text
-        except Exception as error:
-            category = _error_category(error)
-            print(
-                f"    LLM provider failed: {provider_name} "
-                f"(model={chosen_model}, category={category}); trying next provider..."
-            )
-            failures.append(
-                AttemptFailure(
-                    provider=provider_name,
-                    model=chosen_model,
-                    category=category,
-                    error=str(error),
-                )
-            )
-
-    details = "; ".join(
-        [
-            f"{item.provider}[model={item.model}, category={item.category}] failed ({item.error})"
-            for item in failures
-        ]
+    response = requests.post(
+        ANTHROPIC_API_URL,
+        headers={
+            "x-api-key": anthropic_key,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        json={
+            "model": chosen_model,
+            "max_tokens": max_tokens,
+            "output_config": {"effort": effort},
+            "messages": [{"role": "user", "content": prompt}],
+        },
+        timeout=REQUEST_TIMEOUT_SECONDS,
     )
-    raise RuntimeError(f"All configured LLM providers failed: {details}")
+    if not response.ok:
+        detail = _response_preview(response)
+        raise RuntimeError(
+            "Anthropic request failed "
+            f"(status={response.status_code}, model={chosen_model}, "
+            f"url={ANTHROPIC_API_URL}, response={detail})"
+        )
+    text = _extract_anthropic_text(response.json())
+    print(f"    LLM provider selected: anthropic (model={chosen_model}, effort={effort})")
+    return text
+
+
+def generate_text_with_fallback(*args, **kwargs) -> str:
+    """Backward-compatible alias. Prefer generate_text()."""
+    if "gemini_model" in kwargs and "model" not in kwargs:
+        kwargs["model"] = kwargs.pop("gemini_model")
+    kwargs.pop("anthropic_model", None)
+    kwargs.pop("openai_model", None)
+    return generate_text(*args, **kwargs)

@@ -33,7 +33,7 @@ class AnalyzeArticleTests(unittest.TestCase):
         payload = (
             '{"topic":"Industry","summary":"Summary here.","opinion":"Opinion here.","confidence":0.9}'
         )
-        with patch("execution.analyze_articles_single_pass.generate_text_with_fallback") as gen:
+        with patch("execution.analyze_articles_single_pass.generate_text") as gen:
             gen.return_value = payload
             out = analyze_article("Title", "body", "https://example.com")
             self.assertEqual(out["opinion_source"], "model")
@@ -41,7 +41,7 @@ class AnalyzeArticleTests(unittest.TestCase):
 
     def test_retry_path_second_call_complete(self) -> None:
         ok = '{"topic":"Industry","summary":"S2","opinion":"O2","confidence":0.8}'
-        with patch("execution.analyze_articles_single_pass.generate_text_with_fallback") as gen:
+        with patch("execution.analyze_articles_single_pass.generate_text") as gen:
             gen.side_effect = ["not valid json {", ok]
             out = analyze_article("T", "c", "https://e")
             self.assertEqual(out["opinion_source"], "retry")
@@ -50,7 +50,7 @@ class AnalyzeArticleTests(unittest.TestCase):
 
     def test_derived_path_when_both_json_missing_opinion(self) -> None:
         j = '{"topic":"Industry","summary":"Only summary.","opinion":"","confidence":1}'
-        with patch("execution.analyze_articles_single_pass.generate_text_with_fallback") as gen:
+        with patch("execution.analyze_articles_single_pass.generate_text") as gen:
             gen.side_effect = [j, j, "I am watching how this unfolds for builders."]
             out = analyze_article("T", "c", "https://e")
             self.assertEqual(out["opinion_source"], "derived")
@@ -59,7 +59,7 @@ class AnalyzeArticleTests(unittest.TestCase):
 
     def test_none_when_no_summary_anywhere(self) -> None:
         bad = '{"topic":"Industry","summary":"","opinion":"","confidence":0}'
-        with patch("execution.analyze_articles_single_pass.generate_text_with_fallback") as gen:
+        with patch("execution.analyze_articles_single_pass.generate_text") as gen:
             gen.side_effect = [bad, "still not json"]
             out = analyze_article("T", "c", "https://e")
             self.assertEqual(out["opinion_source"], "none")
@@ -68,9 +68,9 @@ class AnalyzeArticleTests(unittest.TestCase):
 
 class DeriveOpinionTests(unittest.TestCase):
     def test_derive_calls_llm(self) -> None:
-        with patch("execution.analyze_articles_single_pass.generate_text_with_fallback") as gen:
+        with patch("execution.analyze_articles_single_pass.generate_text") as gen:
             gen.return_value = "  Watching this closely.  "
-            out = derive_opinion_from_summary("My title", "My summary", "gemini-2.0-flash")
+            out = derive_opinion_from_summary("My title", "My summary", "claude-opus-5")
             self.assertIn("Watching", out)
             gen.assert_called_once()
             call_kw = gen.call_args.kwargs

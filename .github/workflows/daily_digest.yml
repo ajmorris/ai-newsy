@@ -1,11 +1,11 @@
-# Daily AI Digest Workflow
-# Runs once daily at a fixed UTC time (09:00).
+# Daily AI Digest send
+# Sends from the canonical JSON already committed by the local Claude pipeline.
+# Does not call any LLM.
 
 name: Daily AI Digest
 
 on:
   schedule:
-    # Runs 20 minutes after archive publish (08:40 UTC).
     - cron: '0 9 * * *'
   workflow_dispatch:
     inputs:
@@ -28,11 +28,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Decide once whether this run should proceed past setup. Setting an output
-      # (instead of `exit 0`) lets every later step gate on `steps.guard.outputs.should_send`,
-      # so an out-of-window cron trigger or a manual run without force_send no longer
-      # leaks through to the actual send. The DB claim in send_daily_email.py is the
-      # second, durable layer that catches anything this guard misses.
       - name: Guard run (time window + manual override)
         id: guard
         run: |
@@ -97,16 +92,33 @@ jobs:
             exit 1
           fi
 
-      - name: Validate canonical digest payload exists
+      - name: Validate committed canonical digest
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         run: |
-          expected_payload="data/digests/$(date -u +%F).json"
-          echo "Looking for canonical payload: ${expected_payload}"
-          if [ ! -f "${expected_payload}" ]; then
-            echo "Missing canonical digest payload for today."
-            ls -la data/digests || true
-            exit 1
-          fi
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          digest_date = datetime.now(timezone.utc).date().isoformat()
+          path = Path("data/digests") / f"{digest_date}.json"
+          print(f"Looking for canonical payload: {path}")
+          if not path.exists():
+              raise SystemExit(f"Missing canonical digest payload for {digest_date}. Run the local Claude pipeline and push first.")
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          intro = str(payload.get("intro") or "").strip()
+          if not intro:
+              raise SystemExit(f"Canonical digest {digest_date} is missing intro.")
+          stories = payload.get("stories") or []
+          missing = [
+              story.get("id", story.get("title", "unknown"))
+              for story in stories
+              if not str(story.get("opinion") or "").strip()
+          ]
+          if missing:
+              raise SystemExit(f"Canonical digest {digest_date} is missing opinions for: {missing!r}")
+          print(f"Canonical digest OK: intro present, {len(stories)} stories with opinions.")
+          PY
 
       - name: Send daily email digest
         if: ${{ steps.guard.outputs.should_send == 'true' }}
@@ -117,23 +129,16 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           GITHUB_RUN_ID: ${{ github.run_id }}
           GITHUB_RUN_ATTEMPT: ${{ github.run_attempt }}
         run: |
-          python execution/digest_payload.py
-          python execution/build_digest_markdown.py
           FORCE_SEND_FLAG=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_send }}" = "true" ]; then
             FORCE_SEND_FLAG="--force-send"
           fi
           SEND_REASON="${{ inputs.send_reason || '' }}"
-          python execution/send_daily_email.py ${FORCE_SEND_FLAG} --send-reason "${SEND_REASON}"
+          python execution/send_daily_email.py --no-llm ${FORCE_SEND_FLAG} --send-reason "${SEND_REASON}"
 
       - name: Verify scheduled run produced today's sent snapshot
         if: ${{ github.event_name == 'schedule' && steps.guard.outputs.should_send == 'true' }}

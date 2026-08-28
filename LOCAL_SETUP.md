@@ -40,7 +40,7 @@ Edit `.env` and set at least:
 | `SUPABASE_URL` | Fetch, DB, digest, cleanup            | [Supabase](https://supabase.com/dashboard) → Project → Settings → API |
 | `SUPABASE_PUBLISHABLE_KEY` | Public/non-privileged client usage | Same (publishable key) |
 | `SUPABASE_SECRET_KEY` | Server-side writes/admin operations | Same (secret key) |
-| `GEMINI_API_KEY` | Topic assignment, summarization, email | [Google AI Studio](https://aistudio.google.com/apikey) |
+| `ANTHROPIC_KEY` | Topic assignment, summarization, headlines, intro | [Anthropic Console](https://console.anthropic.com/) |
 | `RESEND_API_KEY` | Sending the daily email            | [Resend](https://resend.com/api-keys) |
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
 | `APP_URL`      | Links in the email                   | Your app URL (e.g. Vercel URL or `http://localhost:3000`) |
@@ -50,7 +50,7 @@ Edit `.env` and set at least:
 
 - **RSS-only (no DB):** You can run `scripts/check_feeds.py` without any env vars (it only needs `feedparser` and `requests`).
 - **Fetch + DB:** You need `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
-- **Full digest (assign topics, summarize, send email):** You need all of the above.
+- **Full digest (analyze with Claude Opus 5, send email):** You need all of the above.
 - **Signup Slack alerts (optional):** Set `SLACK_WEBHOOK_URL` to post a message when a brand-new subscriber is created.
 - **Signup API:** `frontend/api/subscribe.js` and `frontend/api/unsubscribe.js` use `SUPABASE_SECRET_KEY` (server-side only) for subscriber writes.
 - **Signup abuse controls (optional):** Configure one captcha provider plus optional `SUBSCRIBE_RATE_LIMIT_WINDOW_MS` / `SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS`.
@@ -90,13 +90,13 @@ python3 execution/fetch_ai_news.py --dry-run --limit 3
 python3 execution/fetch_ai_news.py --limit 10
 ```
 
-**Assign topics (needs `GEMINI_API_KEY` and Supabase):**
+**Run the full local digest (needs `ANTHROPIC_KEY` and Supabase):**
 
 ```bash
-python3 execution/assign_topics.py
+./scripts/run_local_digest.sh
 ```
 
-**Summarize and send daily email:** see `execution/summarize_articles.py` and `execution/send_daily_email.py` (need Gemini + Resend + Supabase).
+**Summarize and send daily email:** `./scripts/run_local_digest.sh --test-email you@example.com` (needs Claude + Resend + Supabase). After review, commit generated `data/digests/*.json` and `frontend/issues/`, then push `main` so Vercel deploys the site.
 
 ## 6. Frontend (optional)
 

@@ -109,40 +109,28 @@ pip install -r requirements.txt
 Then run scripts with the venv active:
 
 ```bash
+./scripts/run_local_digest.sh
 python execution/fetch_ai_news.py --limit 5
-python execution/assign_topics.py
-python execution/summarize_articles.py
+python execution/analyze_articles_single_pass.py
 python execution/generate_tweet_headlines.py --dry-run
 python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
 
-## AI provider fallback chain
+## Claude Opus 5 (local only)
 
-All LLM scripts use `execution/ai_client.py` with a provider-chain fallback.
+All LLM scripts use `execution/ai_client.py` and call Anthropic Claude Opus 5.
 
-- **Default order**: Anthropic -> Gemini -> OpenAI
-- **Override order** with `LLM_PROVIDER_CHAIN`:
+- Required: `ANTHROPIC_KEY`
+- Optional: `ANTHROPIC_MODEL` (default `claude-opus-5`)
+- Optional: `ANTHROPIC_EFFORT` (`low`, `medium`, or `high`; default `low`)
 
-  ```bash
-  LLM_PROVIDER_CHAIN=anthropic,gemini,openai
-  ```
+Per-task vars `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
+`COMMUNITY_HEADLINES_MODEL` still override the model name for that step.
+They should be Claude model ids (default `claude-opus-5`).
 
-Required API keys for full fallback coverage:
-
-- `ANTHROPIC_KEY` (primary provider)
-- `GEMINI_API_KEY` (first fallback)
-- `OPENAI_API_KEY` (second fallback)
-
-Provider model defaults (override with env vars):
-
-- `ANTHROPIC_MODEL` default: `claude-opus-4-6`
-- `GEMINI_MODEL` default: `gemini-2.0-flash`
-- `OPENAI_MODEL` default: `gpt-4o-mini`
-
-Per-task vars like `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
-`COMMUNITY_HEADLINES_MODEL` remain supported as logical model hints. If a hint
-does not match the active provider, the provider default model is used.
+There is no Gemini or OpenAI fallback. Generation runs on your machine;
+GitHub Actions do not call Claude.
 
 ### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
 
@@ -165,12 +153,12 @@ For Notion tweet ingestion + headline generation, configure:
 - `TWEET_LOOKBACK_HOURS` (optional, default `24`)
 - `TWEET_FETCH_LIMIT` (optional, default `100`)
 - `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
-- `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+- `TWEET_HEADLINES_MODEL` (optional, default `claude-opus-5`)
 
-GitHub Actions:
+Local only (not used by GitHub Actions):
 
-- Add `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in repository **Secrets**
-- Add optional tweet settings as repository **Variables**
+- Set `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in `.env`
+- Optional tweet settings can stay in `.env` as well
 
 Database:
 
@@ -184,15 +172,12 @@ For Reddit/HN/YC ingestion + headline generation, configure:
 - `COMMUNITY_LOOKBACK_HOURS` (optional, default `24`)
 - `COMMUNITY_FETCH_LIMIT` (optional, default `120`)
 - `COMMUNITY_MAX_HEADLINES` (optional, default `24`) — max headlines after curation; digest builder caps further
-- `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+- `COMMUNITY_HEADLINES_MODEL` (optional, default `claude-opus-5`)
 - `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
 - `REDDIT_USER_AGENT` (optional but recommended)
 - `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)
 
-GitHub Actions:
-
-- Add optional community settings as repository **Variables**
-- `prepare_community_headlines.yml` runs source extraction + persistence to `digest_extras` key `community_headlines`
+Community headline generation runs in `./scripts/run_local_digest.sh` and persists to `digest_extras` key `community_headlines`.
 
 ## Digest payload configuration
 
@@ -249,14 +234,13 @@ Local Vercel dev with repo `.env`:
 
 GitHub Actions configuration:
 
-- Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
-- `daily_digest.yml` also requires `APP_URL` in repository secrets; use the same canonical origin as Vercel `APP_URL`.
-- Source-specific prep workflows are split by source:
-  - `prepare_digest_content.yml` (RSS)
-  - `prepare_twitter_headlines.yml` (Twitter/X extras)
-  - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
+- `daily_digest.yml` is send-only. It needs `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`. Use the same canonical origin as Vercel `APP_URL`.
+- It does **not** need `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, or `NOTION_*`. Those can be removed from repository secrets in the GitHub UI.
+- `cleanup_old_articles.yml` still needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
+
+After a local digest run, push `frontend/issues/` on `main`. Vercel deploys the static site from the `frontend/` directory. Optional CLI: `cd frontend && npx vercel --prod` if the project is already linked.
 
 ## Confirmation and unsubscribe verification checklist
 
@@ -269,8 +253,8 @@ GitHub Actions configuration:
 
 ## Matching GitHub
 
-- **CI**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.
-- **Local**: Use Python 3.10 (Homebrew or pyenv) and the same `requirements.txt` so behavior matches.
+- **CI send-only**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.
+- **Local generation**: Use Python 3.10 (Homebrew or pyenv) and the same `requirements.txt`. All Claude calls happen locally.
 
 ## Troubleshooting
 

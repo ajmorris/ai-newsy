@@ -4,7 +4,7 @@ Generate daily tweet headlines for digest extras.
 Pipeline:
 1. Pull Notion rows from the last 24 hours (by Notion created_time).
 2. Normalize tweet fields (author/text/url).
-3. Apply headline-writing skill guidance via Gemini.
+3. Apply headline-writing skill guidance via Claude.
 4. Persist generated bullets for today's digest send.
 """
 
@@ -27,7 +27,7 @@ from notion_client import Client as NotionClient
 import sys
 sys.path.insert(0, '.')
 from execution.database import upsert_digest_extra
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import DEFAULT_MODEL, generate_text
 
 load_dotenv()
 
@@ -339,10 +339,10 @@ def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List
         return []
 
     prompt = _build_generation_prompt(skill_prompt, tweets)
-    model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
-    text = generate_text_with_fallback(
+    model_name = _env_str("TWEET_HEADLINES_MODEL", DEFAULT_MODEL)
+    text = generate_text(
         prompt=prompt,
-        gemini_model=model_name,
+        model=model_name,
     )
 
     tweet_index = {tweet["tweet_id"]: tweet for tweet in tweets}
