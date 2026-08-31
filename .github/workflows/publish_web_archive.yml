@@ -1,0 +1,130 @@
+name: Publish Web Archive
+
+on:
+  schedule:
+    - cron: '40 8 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/digests/*.json'
+      - 'data/digests/snapshots/*.sent.json'
+      - 'execution/build_web_archive.py'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish-web-archive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Log trigger context
+        run: |
+          echo "Trigger event: ${{ github.event_name }}"
+          echo "UTC now: $(date -u +'%Y-%m-%d %H:%M:%S')"
+          echo "Building archive from canonical digest payloads."
+
+      - name: Validate canonical digest payloads exist
+        run: |
+          canonical_count=$(ls -1 data/digests/*.json 2>/dev/null | wc -l | tr -d ' ')
+          echo "Canonical digest payload count: ${canonical_count}"
+          if [ "${canonical_count}" -eq 0 ]; then
+            echo "No canonical digest payloads found; refusing to publish archive."
+            ls -1 data/digests || true
+            exit 1
+          fi
+          latest_canonical=$(ls -1 data/digests/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)
+          echo "Latest canonical digest date: ${latest_canonical}"
+
+      - name: Build archive pages and manifest
+        run: python execution/build_web_archive.py --use-canonical-fallback
+
+      - name: Validate digest parity
+        run: |
+          latest_digest=$(ls -1 data/digests/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)
+          python execution/validate_digest_parity.py --digest-date "${latest_digest}" --snapshot-dir data/digests/snapshots --report parity-report.json
+
+      - name: Validate archive manifest matches canonical digest inputs
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          digest_files = sorted(
+              p for p in Path("data/digests").glob("*.json")
+              if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", p.name)
+          )
+          if not digest_files:
+              raise SystemExit("No canonical digest files found in data/digests.")
+
+          expected_latest = max(p.name.replace(".json", "") for p in digest_files)
+          expected_count = len(digest_files)
+
+          manifest_path = Path("frontend/issues/index.json")
+          if not manifest_path.exists():
+              raise SystemExit("Archive manifest missing: frontend/issues/index.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          actual_count = int(manifest.get("issueCount", -1))
+          latest_issue = manifest.get("latestIssue") or {}
+          actual_latest = str(latest_issue.get("digestDate", ""))
+
+          print(f"Expected digest count: {expected_count} | Manifest issueCount: {actual_count}")
+          print(f"Expected latest digest date: {expected_latest} | Manifest latestIssue: {actual_latest}")
+
+          if actual_count < expected_count:
+              raise SystemExit("Manifest issueCount is below digest snapshot count.")
+          if actual_latest != expected_latest:
+              raise SystemExit("Manifest latestIssue.digestDate does not match latest digest markdown date.")
+          PY
+
+      - name: Detect stale publication window
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          manifest = json.loads(Path("frontend/issues/index.json").read_text(encoding="utf-8"))
+          latest = (manifest.get("latestIssue") or {}).get("digestDate")
+          if not latest:
+              raise SystemExit("latestIssue.digestDate missing in frontend/issues/index.json")
+
+          latest_dt = datetime.strptime(str(latest), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+          now_dt = datetime.now(timezone.utc)
+          age_days = (now_dt.date() - latest_dt.date()).days
+
+          print(f"Latest published digest date: {latest_dt.date().isoformat()} (age={age_days} day(s))")
+          if age_days > 1:
+              raise SystemExit("Latest published issue is older than 1 day; publication is stale.")
+          PY
+
+      - name: Commit and push generated archive updates
+        run: |
+          git add frontend/issues
+          if git diff --staged --quiet; then
+            echo "No generated archive changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: publish web issue archive"
+          git push origin "HEAD:${{ github.ref_name }}"

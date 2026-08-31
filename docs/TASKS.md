@@ -43,7 +43,10 @@ Equivalent individual steps:
 7. Optional: `python execution/send_daily_email.py --test-email you@example.com`
 
 Remaining GitHub Actions:
-- `.github/workflows/daily_digest.yml` (send-only from committed JSON, no LLM)
+- `.github/workflows/prepare_digest_content.yml` (fetch + Claude analysis + canonical JSON)
+- `.github/workflows/prepare_twitter_headlines.yml` / `prepare_community_headlines.yml`
+- `.github/workflows/publish_web_archive.yml`
+- `.github/workflows/daily_digest.yml` (send from committed JSON; generate in CI if missing)
 - `.github/workflows/cleanup_old_articles.yml` (weekly retention)
 
 Extras are persisted in `digest_extras` under keys:

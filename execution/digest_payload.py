@@ -350,6 +350,72 @@ def load_digest_payload(digest_date: str, output_dir: Optional[Path] = None) -> 
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def inspect_canonical_digest(
+    digest_date: str,
+    output_dir: Optional[Path] = None,
+) -> Dict[str, Any]:
+    """
+    Inspect a committed canonical digest without generating.
+
+    Returns a status dict used by GitHub Actions to decide whether CI should
+    generate today's payload so the scheduled email can still send.
+    """
+    payload = load_digest_payload(digest_date=digest_date, output_dir=output_dir)
+    if not payload:
+        return {
+            "ok": False,
+            "needs_generate": True,
+            "reason": "missing",
+            "story_count": 0,
+            "digest_date": digest_date,
+        }
+
+    intro = str(payload.get("intro") or "").strip()
+    stories = list(payload.get("stories") or [])
+    missing_opinions = [
+        story.get("id", story.get("title", "unknown"))
+        for story in stories
+        if not str(story.get("opinion") or "").strip()
+    ]
+    if not intro:
+        return {
+            "ok": False,
+            "needs_generate": True,
+            "reason": "missing_intro",
+            "story_count": len(stories),
+            "digest_date": digest_date,
+        }
+    if missing_opinions:
+        return {
+            "ok": False,
+            "needs_generate": True,
+            "reason": "missing_opinions",
+            "story_count": len(stories),
+            "missing_opinions": missing_opinions,
+            "digest_date": digest_date,
+        }
+    return {
+        "ok": True,
+        "needs_generate": False,
+        "reason": "ok",
+        "story_count": len(stories),
+        "digest_date": digest_date,
+    }
+
+
+def _write_github_output(status: Dict[str, Any]) -> None:
+    output_path = (os.getenv("GITHUB_OUTPUT") or "").strip()
+    if not output_path:
+        return
+    payload_ok = "true" if status.get("ok") else "false"
+    needs_generate = "true" if status.get("needs_generate") else "false"
+    with open(output_path, "a", encoding="utf-8") as handle:
+        handle.write(f"payload_ok={payload_ok}\n")
+        handle.write(f"needs_generate={needs_generate}\n")
+        handle.write(f"reason={status.get('reason', '')}\n")
+        handle.write(f"story_count={int(status.get('story_count') or 0)}\n")
+
+
 def load_or_build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
     digest_date = options.digest_date or datetime.now(timezone.utc).date().isoformat()
     existing = load_digest_payload(digest_date=digest_date)
@@ -372,11 +438,29 @@ if __name__ == "__main__":
     parser.add_argument("--max-community-headlines", type=int, default=DEFAULT_MAX_COMMUNITY_HEADLINES)
     parser.add_argument("--max-per-source", type=int, default=DEFAULT_MAX_PER_SOURCE,
                         help="Max articles from any single RSS source for diversity")
+    parser.add_argument(
+        "--inspect",
+        action="store_true",
+        help="Check today's committed payload and write GitHub Actions outputs; do not generate",
+    )
     args = parser.parse_args()
+    digest_date = args.digest_date or datetime.now(timezone.utc).date().isoformat()
+
+    if args.inspect:
+        status = inspect_canonical_digest(digest_date=digest_date)
+        _write_github_output(status)
+        print(
+            f"Canonical digest {status['digest_date']}: "
+            f"ok={status['ok']} needs_generate={status['needs_generate']} "
+            f"reason={status['reason']} stories={status['story_count']}"
+        )
+        if status.get("missing_opinions"):
+            print(f"Missing opinions for: {status['missing_opinions']!r}")
+        raise SystemExit(0)
 
     payload = build_digest_payload(
         DigestBuildOptions(
-            digest_date=args.digest_date,
+            digest_date=digest_date,
             window_hours=args.window_hours,
             use_sent=args.use_sent,
             max_stories=args.max_stories,

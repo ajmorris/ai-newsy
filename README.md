@@ -219,16 +219,22 @@ For signup or web UX changes:
 3. Keep secrets server-side only and validate inputs defensively.
 4. Test with `npm run dev:env` and real end-to-end form submission.
 
-### Local generation, Vercel, and remaining Actions
+### Local generation, Vercel, and GitHub Actions
 
-Digest AI runs locally (Claude Opus 5). GitHub Actions no longer generate content.
+Preferred: run digest AI locally (Claude Opus 5), then push so Vercel deploys the site.
 
 - `./scripts/run_local_digest.sh`: fetch + Claude analysis + extras + archive
 - Push `frontend/issues/` on `main`: Vercel deploys the static site
-- `daily_digest.yml`: send-only at `0 9 * * *` UTC from committed JSON (`--no-llm`)
+
+GitHub Actions still send email even if the local pipeline was not run:
+
+- `prepare_digest_content.yml`: fetch, analyze, and commit today's canonical JSON
+- `prepare_twitter_headlines.yml` / `prepare_community_headlines.yml`: extras
+- `publish_web_archive.yml`: rebuild `frontend/issues/` from committed JSON
+- `daily_digest.yml`: send at `0 9 * * *` UTC from committed JSON (`--no-llm`). If that JSON is missing, CI generates it with Claude Opus 5 and then sends.
 - `cleanup_old_articles.yml`: weekly retention cleanup
 
-Repo secrets that can be removed from GitHub Actions after this change: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, and `NOTION_*` (Notion is only used by the local tweet-headline step). Delete those in the GitHub UI; this repo cannot remove them for you.
+Keep these repository secrets for Actions: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL`, and `ANTHROPIC_KEY`. Optional for tweet extras: `NOTION_API_KEY`, `NOTION_TWEETS_DATABASE_ID`. `GEMINI_API_KEY` and `OPENAI_API_KEY` are unused.
 
 ## Roadmap Guidance (Lightweight)
 
@@ -253,7 +259,7 @@ When adding new functionality, prioritize:
 - If signup fails with server configuration errors, verify `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - If digest send fails, verify `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`.
 - Manual digest dispatches require `force_send=true`; this intentionally bypasses duplicate-send protection.
-- Scheduled send fails if today's `data/digests/YYYY-MM-DD.json` is missing intro or opinions; generate locally first.
+- Scheduled send generates today's digest in CI if `data/digests/YYYY-MM-DD.json` is missing or incomplete, then sends. Keep `ANTHROPIC_KEY` in GitHub Actions secrets.
 - If confirm/unsubscribe links open the wrong host, verify `APP_URL` matches your canonical deployed frontend origin in both Vercel env vars and GitHub Actions secrets.
 - Keep `SUPABASE_SECRET_KEY` and provider API keys out of frontend/client code.
 - Prefer dry-run/test modes before running production-impacting commands.
