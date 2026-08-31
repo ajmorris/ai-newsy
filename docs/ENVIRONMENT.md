@@ -117,7 +117,7 @@ python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
 
-## Claude Opus 5 (local only)
+## Claude Opus 5
 
 All LLM scripts use `execution/ai_client.py` and call Anthropic Claude Opus 5.
 
@@ -129,8 +129,9 @@ Per-task vars `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
 `COMMUNITY_HEADLINES_MODEL` still override the model name for that step.
 They should be Claude model ids (default `claude-opus-5`).
 
-There is no Gemini or OpenAI fallback. Generation runs on your machine;
-GitHub Actions do not call Claude.
+There is no Gemini or OpenAI fallback. Preferred generation is local.
+GitHub Actions call Claude when today's canonical JSON is missing so the
+scheduled email can still send.
 
 ### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
 
@@ -155,10 +156,11 @@ For Notion tweet ingestion + headline generation, configure:
 - `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
 - `TWEET_HEADLINES_MODEL` (optional, default `claude-opus-5`)
 
-Local only (not used by GitHub Actions):
+GitHub Actions and local:
 
-- Set `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in `.env`
+- Set `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in `.env` and as GitHub secrets
 - Optional tweet settings can stay in `.env` as well
+- If those secrets are missing, tweet extras are skipped; RSS + community digest still send
 
 Database:
 
@@ -177,7 +179,7 @@ For Reddit/HN/YC ingestion + headline generation, configure:
 - `REDDIT_USER_AGENT` (optional but recommended)
 - `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)
 
-Community headline generation runs in `./scripts/run_local_digest.sh` and persists to `digest_extras` key `community_headlines`.
+Community headline generation runs in `./scripts/run_local_digest.sh` and in GitHub Actions, and persists to `digest_extras` key `community_headlines`.
 
 ## Digest payload configuration
 
@@ -234,8 +236,10 @@ Local Vercel dev with repo `.env`:
 
 GitHub Actions configuration:
 
-- `daily_digest.yml` is send-only. It needs `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`. Use the same canonical origin as Vercel `APP_URL`.
-- It does **not** need `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, or `NOTION_*`. Those can be removed from repository secrets in the GitHub UI.
+- `daily_digest.yml` sends at 09:00 UTC. If today's committed JSON is complete, it sends with `--no-llm`. If the JSON is missing, CI fetches, analyzes with Claude Opus 5, builds the JSON, and then sends.
+- Required secrets: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL`, and `ANTHROPIC_KEY` (needed whenever CI has to generate). Use the same canonical origin as Vercel `APP_URL`.
+- Optional for tweet extras: `NOTION_API_KEY`, `NOTION_TWEETS_DATABASE_ID`. Missing Notion secrets skip tweets; RSS + community digest still send.
+- `GEMINI_API_KEY` and `OPENAI_API_KEY` are unused.
 - `cleanup_old_articles.yml` still needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
@@ -253,7 +257,7 @@ After a local digest run, push `frontend/issues/` on `main`. Vercel deploys the 
 
 ## Matching GitHub
 
-- **CI send-only**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.
+- **CI**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`. Keep `ANTHROPIC_KEY` in repo secrets so scheduled send can generate when local JSON is missing.
 - **Local generation**: Use Python 3.10 (Homebrew or pyenv) and the same `requirements.txt`. All Claude calls happen locally.
 
 ## Troubleshooting
