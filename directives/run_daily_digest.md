@@ -1,61 +1,87 @@
-# Run Daily Digest Locally
+# Daily digest (Claude Desktop scheduled task)
 
 ## Purpose
 
-Build today's AI Newsy digest on this machine using Claude Opus 5, then commit the generated artifacts so Vercel can publish the web archive.
+Build today’s digest on this machine. You are the model — write the summaries, opinions, intro, and headlines yourself. Deterministic scripts fetch, persist, and publish files. Do not call the Anthropic API and do not read `ANTHROPIC_KEY`.
 
-You are the orchestrator. Do not write summaries yourself. Call the execution scripts in order.
+You are Layer 2. Use the scripts. Do not scrape sites by hand when a script exists.
 
 ## Inputs
 
-- `.env` with `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `ANTHROPIC_KEY`
-- Optional: `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL` if sending email
-- Optional: `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` for tweet extras
+- `.env` with `SUPABASE_URL` and `SUPABASE_SECRET_KEY` only
+- Optional Notion vars for tweet extras
+- Working directory: repo root, branch `main`
 
 ## Execution
 
-Preferred: one command from repo root.
+1. `git checkout main` and `git pull origin main`. This picks up yesterday’s sent snapshots from the Daily AI Digest Action. Do not write or invent `data/digests/snapshots/*.sent.json`.
+2. Fetch sources and export what you must write:
+
+   ```bash
+   ./scripts/run_local_digest.sh --fetch
+   ```
+
+   Read `.tmp/pending-digest.json`.
+3. Write `.tmp/claude-digest.json` yourself. Follow the voice in that file (first person, coffee conversation, no guru certainty).
+
+   ```json
+   {
+     "digest_date": "UTC-TODAY",
+     "intro": "2-3 sentences",
+     "analyses": [
+       {"id": 123, "topic": "Models", "summary": "...", "opinion": "...", "confidence": 0.8}
+     ],
+     "tweet_headlines": [{"headline": "...", "url": "..."}],
+     "community_headlines": [{"headline": "...", "url": "..."}]
+   }
+   ```
+
+   Every analysis needs a non-empty `summary` and `opinion`. Topic must be one of the `allowed_topics` on each article. Intro is required.
+4. Assemble, then check the site files before commit:
+
+   ```bash
+   ./scripts/run_local_digest.sh --assemble
+   ```
+
+   Confirm all of the following. If any fail, fix `.tmp/claude-digest.json` and `--assemble` again. Do not push.
+
+   - `data/digests/YYYY-MM-DD.json` has a non-empty `intro` and every story a non-empty `opinion`
+   - `frontend/issues/index.json` `latestIssue.digestDate` is UTC today
+   - today’s `frontend/issues/<slug>.html` exists
+5. Commit and push so Vercel deploys **before** the 09:00 UTC send Action:
+
+   ```bash
+   ./scripts/run_local_digest.sh --assemble --commit
+   git push origin main
+   ```
+
+   The commit must include `data/digests/YYYY-MM-DD.json` **and** `frontend/issues/` (HTML + `index.json`). A JSON-only push is a hard failure — the live site would lag the email.
+6. Do not send email. Do not run `--send`. Do not `gh workflow run`. Do not write or invent `data/digests/snapshots/*.sent.json`. Snapshots are written by the Daily AI Digest Action after Resend and committed back to `main`. The next morning’s `git pull` will pick them up.
+
+Optional QA (never required for a green daily run):
 
 ```bash
-./scripts/run_local_digest.sh
+./scripts/validate_digest_parity_local.sh
+./scripts/test_email_local.sh you@example.com
 ```
 
-Options:
+If `git push origin main` is rejected (protected branch), stop and report the error. Do not open a PR for the daily digest unless a human asks.
 
-- `--test-email you@example.com` — send a one-recipient test (does not mark articles sent)
-- `--send` — production subscriber send
-- `--commit` — commit `data/digests/*.json` and `frontend/issues` locally (does not push)
+## Validate before push
 
-Equivalent individual steps, in this order:
+UTC date. `data/digests/YYYY-MM-DD.json` must have a non-empty `intro` and every story a non-empty `opinion`. If not, stop and fix `.tmp/claude-digest.json`, then `--assemble` again.
 
-1. `python3 execution/fetch_ai_news.py --limit 10`
-2. `python3 execution/analyze_articles_single_pass.py`
-3. `python3 execution/generate_tweet_headlines.py`
-4. `python3 execution/generate_community_headlines.py`
-5. `python3 execution/digest_payload.py`
-6. `python3 execution/build_digest_markdown.py`
-7. `python3 execution/build_web_archive.py --use-canonical-fallback`
-8. Optional: `python3 execution/send_daily_email.py --test-email you@example.com`
+## Output to leave in the session
 
-All LLM calls go through `execution/ai_client.py` to Claude Opus 5 (`claude-opus-5`). There is no Gemini or OpenAI fallback.
-
-## Output
-
-- Canonical JSON: `data/digests/YYYY-MM-DD.json`
-- Markdown: `data/digests/YYYY-MM-DD.md`
-- Web archive: `frontend/issues/*.html` and `frontend/issues/index.json`
-
-## After a successful run
-
-This directive is generate-only. To push GitHub and fire Resend, use [`publish_daily_digest.md`](publish_daily_digest.md) or paste [`prompts/publish-daily-digest.md`](../prompts/publish-daily-digest.md).
-
-1. Review the generated digest JSON and archive HTML.
-2. Commit with `--commit` or a manual commit of those paths.
-3. Push `main`. Vercel deploys `frontend/`.
-4. Dispatch `Daily AI Digest` with `force_send=true` so Resend sends from the committed JSON (`--no-llm`).
+- UTC digest date, story count
+- Commit SHA
+- Confirmation that `frontend/issues/` was pushed so Vercel can deploy before email
+- Confirmation that email is left to the 09:00 UTC Action
 
 ## Edge cases
 
-- Missing `ANTHROPIC_KEY`: stop and ask the operator to set it.
-- Tweet extras fail without Notion secrets: report the error; community + RSS digest can still proceed if you rerun remaining steps.
-- Do not call GitHub Actions to generate content. Generation is local only.
+- Missing Supabase env: stop.
+- Tweet export fails without Notion: continue with RSS + community.
+- Assemble fails: do not push a partial digest.
+- Leave `cleanup_old_articles.yml` alone.
+- If the send Action already ran today and you are late, still push the archive; do not force-send unless a human asks.

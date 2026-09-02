@@ -1,27 +1,36 @@
 #!/usr/bin/env bash
-# Run the full pipeline locally and send one test email to aj+supabase@ajmorris.me
-# Requires: .env with SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, SUPABASE_SECRET_KEY, ANTHROPIC_KEY, RESEND_API_KEY, EMAIL_FROM, APP_URL
-# Run from repo root: ./scripts/test_email_local.sh
+# Send one test email from the Desktop/canonical digest path.
+# Does not mark articles sent_at and does not call the Anthropic API.
+#
+#   ./scripts/test_email_local.sh [you@example.com]
+#
+# Uses .tmp/claude-digest.json when present (assemble first).
+# Otherwise sends from today's committed data/digests/YYYY-MM-DD.json (--no-llm).
+# Requires Resend vars in .env for the send itself.
 
-set -e
+set -euo pipefail
 cd "$(dirname "$0")/.."
-TEST_EMAIL="${1:-aj+supabase@ajmorris.me}"
 
-if [ ! -f .env ]; then
-  echo "Create .env from .env.example and set SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, SUPABASE_SECRET_KEY, ANTHROPIC_KEY, RESEND_API_KEY, EMAIL_FROM, APP_URL"
+TEST_EMAIL="${1:-aj+supabase@ajmorris.me}"
+DIGEST_DATE="$(date -u +%F)"
+
+if [[ ! -f .env ]]; then
+  echo "Create .env from .env.example. Local generate needs SUPABASE_URL and SUPABASE_SECRET_KEY."
+  echo "A test send also needs RESEND_API_KEY, EMAIL_FROM, and APP_URL."
   exit 1
 fi
 
-echo "=== 1. Fetch AI news (limit 3 per feed) ==="
-python3 execution/fetch_ai_news.py --limit 3
+if [[ -f .tmp/claude-digest.json ]]; then
+  echo "=== Assemble Claude Desktop digest, then test-email ${TEST_EMAIL} ==="
+  ./scripts/run_local_digest.sh --assemble --test-email "${TEST_EMAIL}"
+elif [[ -f "data/digests/${DIGEST_DATE}.json" ]]; then
+  echo "=== Test email from committed canonical JSON (${DIGEST_DATE}) to ${TEST_EMAIL} ==="
+  python3 execution/send_daily_email.py --no-llm --test-email "${TEST_EMAIL}" --digest-date "${DIGEST_DATE}"
+else
+  echo "Need .tmp/claude-digest.json or data/digests/${DIGEST_DATE}.json."
+  echo "Write the Desktop digest first, then assemble, or wait until today's JSON is in the repo."
+  exit 1
+fi
 
 echo ""
-echo "=== 2. Assign topics ==="
-python3 execution/assign_topics.py
-
-echo ""
-echo "=== 3. Send test email to $TEST_EMAIL ==="
-python3 execution/send_daily_email.py --test-email "$TEST_EMAIL"
-
-echo ""
-echo "Done. Check inbox for $TEST_EMAIL"
+echo "Done. Check inbox for ${TEST_EMAIL}. sent_at was not marked."

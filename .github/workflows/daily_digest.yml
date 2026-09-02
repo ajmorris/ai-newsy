@@ -1,6 +1,7 @@
 # Daily AI Digest send
 # Sends from the canonical JSON already committed by the local Claude pipeline.
-# Does not call any LLM.
+# Does not call any LLM. After a successful Resend send, commits
+# data/digests/snapshots/*.sent.json and *.status.json only (no archive rebuild).
 
 name: Daily AI Digest
 
@@ -23,9 +24,14 @@ concurrency:
   group: daily-ai-digest-schedule
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   send-digest:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Guard run (time window + manual override)
@@ -56,6 +62,9 @@ jobs:
       - name: Checkout repository
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         if: ${{ steps.guard.outputs.should_send == 'true' }}
@@ -150,6 +159,27 @@ jobs:
             ls -la data/digests/snapshots || true
             exit 1
           fi
+
+      - name: Commit sent snapshots
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
+        run: |
+          # Persist what was emailed. Do not rebuild frontend/issues here.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p data/digests/snapshots
+          shopt -s nullglob
+          snapshot_files=(data/digests/snapshots/*.sent.json data/digests/snapshots/*.status.json)
+          if [ ${#snapshot_files[@]} -eq 0 ]; then
+            echo "No sent snapshots to commit."
+            exit 0
+          fi
+          git add "${snapshot_files[@]}"
+          if git diff --staged --quiet; then
+            echo "No sent snapshot changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: persist sent digest snapshots"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Upload digest artifacts
         if: ${{ steps.guard.outputs.should_send == 'true' }}

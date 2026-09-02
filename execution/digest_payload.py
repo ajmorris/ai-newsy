@@ -83,6 +83,7 @@ class DigestBuildOptions:
     max_tweet_headlines: int = DEFAULT_MAX_TWEET_HEADLINES
     max_community_headlines: int = DEFAULT_MAX_COMMUNITY_HEADLINES
     max_per_source: int = DEFAULT_MAX_PER_SOURCE
+    no_llm: bool = False
 
 
 def _issue_id_from_digest_date(digest_date: str) -> str:
@@ -121,12 +122,22 @@ def _assign_category(article: Dict[str, Any]) -> None:
     article["category"] = TOPIC_TO_CATEGORY.get(topic, DEFAULT_CATEGORY)
 
 
-def _get_or_create_intro(digest_date: str, stories: List[Dict[str, Any]]) -> str:
+def _get_or_create_intro(
+    digest_date: str,
+    stories: List[Dict[str, Any]],
+    no_llm: bool = False,
+) -> str:
     stored = get_digest_extra(digest_date=digest_date, key="digest_intro")
     if stored and isinstance(stored.get("payload"), dict):
         intro = str(stored["payload"].get("text", "")).strip()
         if intro:
             return intro
+
+    if no_llm:
+        raise SystemExit(
+            f"Missing digest intro for {digest_date}. "
+            "Apply Claude Desktop output first (execution/apply_claude_digest.py)."
+        )
 
     summaries = "\n".join(
         f"- {story.get('title', '')}: {story.get('summary', '')}"
@@ -250,8 +261,11 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
             _assign_category(row)
         stories = normalized[: max(0, options.max_stories)]
 
-    heal_digest_story_opinions(stories)
-    assert_digest_stories_have_opinions(stories)
+    if options.no_llm:
+        assert_digest_stories_have_opinions(stories)
+    else:
+        heal_digest_story_opinions(stories)
+        assert_digest_stories_have_opinions(stories)
 
     tweet_extra = get_digest_extra(digest_date=digest_date, key="tweet_headlines") or {}
     tweet_headlines = []
@@ -267,7 +281,11 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
 
     issue_id = _issue_id_from_digest_date(digest_date)
     subject_line = _build_subject_line(issue_id, len(stories))
-    intro = _get_or_create_intro(digest_date=digest_date, stories=stories) if stories else "No stories selected."
+    intro = (
+        _get_or_create_intro(digest_date=digest_date, stories=stories, no_llm=options.no_llm)
+        if stories
+        else "No stories selected."
+    )
 
     sections = group_stories_into_sections(stories)
 
@@ -372,6 +390,11 @@ if __name__ == "__main__":
     parser.add_argument("--max-community-headlines", type=int, default=DEFAULT_MAX_COMMUNITY_HEADLINES)
     parser.add_argument("--max-per-source", type=int, default=DEFAULT_MAX_PER_SOURCE,
                         help="Max articles from any single RSS source for diversity")
+    parser.add_argument(
+        "--no-llm",
+        action="store_true",
+        help="Assemble from stored Claude Desktop output only; do not call the Anthropic API",
+    )
     args = parser.parse_args()
 
     payload = build_digest_payload(
@@ -384,6 +407,7 @@ if __name__ == "__main__":
             max_tweet_headlines=args.max_tweet_headlines,
             max_community_headlines=args.max_community_headlines,
             max_per_source=args.max_per_source,
+            no_llm=args.no_llm,
         )
     )
     path = write_digest_payload(payload)
