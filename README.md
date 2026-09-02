@@ -64,9 +64,12 @@ Add email vars to send digests:
 
 That fetches RSS, analyzes with Claude Opus 5, builds canonical JSON, and writes `frontend/issues/`. Then commit and push `main` so Vercel deploys the site.
 
+To have Claude do the full publish (local generation → git push → Resend Action), paste [`prompts/publish-daily-digest.md`](prompts/publish-daily-digest.md). The SOP is [`directives/publish_daily_digest.md`](directives/publish_daily_digest.md).
+
 ```bash
 ./scripts/run_local_digest.sh --commit
 git push origin main
+gh workflow run "Daily AI Digest" --ref main -f force_send=true -f send_reason="Published from local Claude pipeline"
 ```
 
 Optional email from the same run:
