@@ -12,7 +12,8 @@ AI Newsy is an AI-news ingestion and digest system:
 
 - `execution/`: Python pipeline scripts (ingest, analysis, digest build/send, archive, cleanup)
 - `scripts/`: local digest runner, RSS feed checks, and parity helpers
-- `directives/`: operator SOPs (including `run_daily_digest.md`)
+- `directives/`: operator SOPs (including `publish_daily_digest.md`)
+- `prompts/`: copy-paste prompts for Claude (including `publish-daily-digest.md`)
 - `frontend/`: static site + Vercel serverless API routes (`/api/subscribe`, `/api/confirm`, `/api/unsubscribe`)
 - `data/digests/`: generated daily digest markdown files
 - `.github/workflows/`: scheduled and manual automation workflows
