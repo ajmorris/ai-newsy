@@ -91,13 +91,20 @@ python3 execution/fetch_ai_news.py --limit 10
 
 **One-time Claude Desktop setup** (paste [`prompts/setup-claude-desktop.md`](prompts/setup-claude-desktop.md)):
 
-That schedules the daily job. Manual stages:
+That schedules the daily job. After `directives/run_daily_digest.md` changes on `main`, replace the Desktop task Instructions. Manual stages:
 
 ```bash
 ./scripts/run_local_digest.sh --fetch
 # Claude writes .tmp/claude-digest.json
 ./scripts/run_local_digest.sh --assemble --commit
 git push origin main
+```
+
+Push must include `frontend/issues/` so Vercel deploys before the 09:00 UTC send. Optional QA:
+
+```bash
+./scripts/validate_digest_parity_local.sh
+./scripts/test_email_local.sh you@example.com
 ```
 
 ## 6. Frontend (optional)

@@ -1,79 +1,96 @@
 #!/usr/bin/env bash
-# Local-only parity validation:
-# - builds canonical digest in temp dir
-# - sends a test email only (no sent_at writes)
-# - builds web issue files in temp dir
-# - validates parity and outputs a local report
+# Compare repo canonical digest JSON vs frontend/issues (pre-send / Vercel inputs).
+# If data/digests/snapshots/YYYY-MM-DD.sent.json exists, it is the email source of truth.
+# Does not call the Anthropic API. Test email is optional and does not mark sent_at.
 #
-# Usage:
-#   ./scripts/validate_digest_parity_local.sh you@example.com [YYYY-MM-DD]
+#   ./scripts/validate_digest_parity_local.sh
+#   ./scripts/validate_digest_parity_local.sh 2026-04-23
+#   ./scripts/validate_digest_parity_local.sh --test-email you@example.com
+#   ./scripts/validate_digest_parity_local.sh --test-email you@example.com 2026-04-23
 
 set -euo pipefail
-
 cd "$(dirname "$0")/.."
 
-TEST_EMAIL="${1:-}"
-DIGEST_DATE="${2:-}"
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/validate_digest_parity_local.sh [--test-email EMAIL] [YYYY-MM-DD]
 
-if [[ -z "${TEST_EMAIL}" ]]; then
-  echo "Usage: ./scripts/validate_digest_parity_local.sh you@example.com [YYYY-MM-DD]"
-  exit 1
-fi
+Compares repo data/digests/YYYY-MM-DD.json to frontend/issues/.
+A sent snapshot, if present, is preferred as the email source of truth.
+EOF
+}
 
-if [[ ! -f ".env" ]]; then
-  echo "Missing .env file. Create it from .env.example first."
-  exit 1
-fi
+TEST_EMAIL=""
+DIGEST_DATE=""
 
-TEMP_ROOT="$(mktemp -d "${TMPDIR:-/tmp}/ai-newsy-parity.XXXXXX")"
-export DIGEST_MARKDOWN_DIR="${TEMP_ROOT}/digests"
-export DIGEST_SNAPSHOT_DIR="${TEMP_ROOT}/digests/snapshots"
-export WEB_ARCHIVE_OUTPUT_DIR="${TEMP_ROOT}/issues"
-REPORT_PATH="${TEMP_ROOT}/parity-report.json"
-
-mkdir -p "${DIGEST_MARKDOWN_DIR}" "${DIGEST_SNAPSHOT_DIR}" "${WEB_ARCHIVE_OUTPUT_DIR}"
-
-echo "Using temporary workspace:"
-echo "  DIGEST_MARKDOWN_DIR=${DIGEST_MARKDOWN_DIR}"
-echo "  DIGEST_SNAPSHOT_DIR=${DIGEST_SNAPSHOT_DIR}"
-echo "  WEB_ARCHIVE_OUTPUT_DIR=${WEB_ARCHIVE_OUTPUT_DIR}"
-
-DIGEST_DATE_ARGS=()
-if [[ -n "${DIGEST_DATE}" ]]; then
-  DIGEST_DATE_ARGS+=(--digest-date "${DIGEST_DATE}")
-fi
-
-echo ""
-echo "=== 1) Build canonical payload + markdown (temp) ==="
-python3 execution/digest_payload.py "${DIGEST_DATE_ARGS[@]}"
-python3 execution/build_digest_markdown.py "${DIGEST_DATE_ARGS[@]}"
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --test-email)
+      TEST_EMAIL="${2:-}"
+      if [[ -z "${TEST_EMAIL}" ]]; then
+        echo "--test-email requires an address."
+        exit 1
+      fi
+      shift 2
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      if [[ "$1" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+        DIGEST_DATE="$1"
+      elif [[ "$1" == *@* && -z "${TEST_EMAIL}" ]]; then
+        TEST_EMAIL="$1"
+      else
+        echo "Unknown argument: $1"
+        usage
+        exit 1
+      fi
+      shift
+      ;;
+  esac
+done
 
 if [[ -z "${DIGEST_DATE}" ]]; then
-  DIGEST_DATE="$(ls -1 "${DIGEST_MARKDOWN_DIR}"/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)"
+  DIGEST_DATE="$(date -u +%F)"
 fi
 
-echo ""
-echo "=== 2) Send test email only (no production sent_at writes) ==="
-python3 execution/send_daily_email.py --test-email "${TEST_EMAIL}" --digest-date "${DIGEST_DATE}"
+if [[ ! -f "data/digests/${DIGEST_DATE}.json" ]]; then
+  echo "Missing data/digests/${DIGEST_DATE}.json. Assemble the Desktop digest first."
+  exit 1
+fi
 
-echo ""
-echo "=== 3) Build local web archive (temp) ==="
-python3 execution/build_web_archive.py
+if [[ ! -f "frontend/issues/index.json" ]]; then
+  echo "Missing frontend/issues/index.json. Assemble so Vercel has today's issue."
+  exit 1
+fi
 
-echo ""
-echo "=== 4) Validate parity ==="
+mkdir -p .tmp
+REPORT_PATH=".tmp/parity-report.json"
+
+echo "=== Parity: repo canonical JSON vs frontend/issues (${DIGEST_DATE}) ==="
+if [[ -f "data/digests/snapshots/${DIGEST_DATE}.sent.json" ]]; then
+  echo "Using sent snapshot as email source of truth."
+else
+  echo "No sent snapshot yet; comparing canonical JSON to the archive (pre-send)."
+fi
+
 python3 execution/validate_digest_parity.py \
   --digest-date "${DIGEST_DATE}" \
-  --digest-dir "${DIGEST_MARKDOWN_DIR}" \
-  --snapshot-dir "${DIGEST_SNAPSHOT_DIR}" \
-  --issues-dir "${WEB_ARCHIVE_OUTPUT_DIR}" \
+  --digest-dir data/digests \
+  --snapshot-dir data/digests/snapshots \
+  --issues-dir frontend/issues \
   --report "${REPORT_PATH}"
+
+if [[ -n "${TEST_EMAIL}" ]]; then
+  echo ""
+  echo "=== Optional test email to ${TEST_EMAIL} (no sent_at) ==="
+  python3 execution/send_daily_email.py --no-llm --test-email "${TEST_EMAIL}" --digest-date "${DIGEST_DATE}"
+fi
 
 echo ""
 echo "Parity validation passed."
-echo "Artifacts:"
-echo "  Canonical digest: ${DIGEST_MARKDOWN_DIR}/${DIGEST_DATE}.json"
-echo "  Markdown digest:  ${DIGEST_MARKDOWN_DIR}/${DIGEST_DATE}.md"
-echo "  Sent snapshot:   ${DIGEST_SNAPSHOT_DIR}/${DIGEST_DATE}.sent.json"
-echo "  Web issue:        ${WEB_ARCHIVE_OUTPUT_DIR}/${DIGEST_DATE}.html"
+echo "  Canonical digest: data/digests/${DIGEST_DATE}.json"
+echo "  Web issue:        frontend/issues/${DIGEST_DATE}.html"
 echo "  Report:           ${REPORT_PATH}"

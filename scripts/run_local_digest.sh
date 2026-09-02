@@ -110,6 +110,8 @@ if [[ "${ASSEMBLE}" -eq 1 ]]; then
   python3 execution/build_digest_markdown.py
   echo "=== Web archive ==="
   python3 execution/build_web_archive.py --use-canonical-fallback
+  echo "=== Confirm today's archive is ready for Vercel ==="
+  python3 execution/assert_today_archive.py
 fi
 
 if [[ -n "${TEST_EMAIL}" ]]; then
@@ -121,13 +123,17 @@ elif [[ "${SEND}" -eq 1 ]]; then
 fi
 
 if [[ "${COMMIT}" -eq 1 ]]; then
+  echo "=== Confirm today's archive is ready for Vercel ==="
+  python3 execution/assert_today_archive.py
   echo "=== Commit generated artifacts ==="
+  # Snapshots are written after Resend by the send Action. Do not add them here.
   git add data/digests/*.json frontend/issues
+  python3 execution/assert_today_archive.py --require-staged
   if git diff --staged --quiet; then
     echo "No digest or archive changes to commit."
   else
     git commit -m "chore: persist local Claude digest and web archive"
-    echo "Committed locally. Push main so Vercel deploys and the send Action can email."
+    echo "Committed locally. git push origin main so Vercel deploys frontend/issues before the 09:00 UTC send."
   fi
 fi
 

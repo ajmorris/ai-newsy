@@ -67,9 +67,11 @@ After setup, each morning Claude Desktop:
 1. Fetches RSS (`./scripts/run_local_digest.sh --fetch`)
 2. Writes analyses, intro, and headlines into `.tmp/claude-digest.json`
 3. Assembles and commits (`./scripts/run_local_digest.sh --assemble --commit`)
-4. Pushes `main` (Vercel deploys `frontend/`)
+4. Pushes `main` with today’s digest JSON **and** `frontend/issues/` (Vercel deploys the live issue first)
 
-The scheduled **Daily AI Digest** Action at 09:00 UTC then sends email via Resend from that JSON. Do not dispatch it from Desktop.
+The scheduled **Daily AI Digest** Action at 09:00 UTC then sends email via Resend from that JSON and commits `data/digests/snapshots/*.sent.json`. Do not dispatch it from Desktop. Do not write sent snapshots locally.
+
+After this repo change is on `main`, replace the Desktop scheduled-task Instructions with the current [`directives/run_daily_digest.md`](directives/run_daily_digest.md).
 
 Manual stages:
 
@@ -132,23 +134,21 @@ python3 execution/send_daily_email.py --test-email you@example.com
 python3 execution/build_web_archive.py
 ```
 
-### Local parity validation (no production sent writes, no git changes required)
+### Local QA (no Anthropic API; stand-ins for the deleted test/parity Actions)
+
+Compare the **repo** canonical JSON to `frontend/issues/`. A sent snapshot, if present, is the email source of truth.
 
 ```bash
-./scripts/validate_digest_parity_local.sh you@example.com
+./scripts/validate_digest_parity_local.sh
+./scripts/validate_digest_parity_local.sh 2026-04-23
+./scripts/validate_digest_parity_local.sh --test-email you@example.com
 ```
 
-Optional date replay:
+Send one test email from `.tmp/claude-digest.json` or today’s committed JSON (`--no-llm`). Does not mark `sent_at`.
 
 ```bash
-./scripts/validate_digest_parity_local.sh you@example.com 2026-04-23
+./scripts/test_email_local.sh you@example.com
 ```
-
-This local validator:
-
-- writes canonical digest + web output to a temporary directory (not `data/digests` / `frontend/issues`)
-- sends using `--test-email` so `sent_at` is not marked on articles
-- runs parity checks and writes a local `parity-report.json`
 
 ### Cleanup old articles
 
@@ -226,8 +226,9 @@ For signup or web UX changes:
 Digest AI runs in Claude Desktop. GitHub Actions no longer generate content.
 
 - One-time setup: [`prompts/setup-claude-desktop.md`](prompts/setup-claude-desktop.md)
-- Daily Desktop task: fetch → Claude writes copy → assemble/commit/push
-- `daily_digest.yml`: send-only at `0 9 * * *` UTC from committed JSON (`--no-llm`)
+- Daily Desktop task: fetch → Claude writes copy → assemble/commit/push JSON **and** `frontend/issues/`
+- Vercel deploys the live issue from that push
+- `daily_digest.yml`: send-only at `0 9 * * *` UTC from committed JSON (`--no-llm`), then commits sent snapshots
 - `cleanup_old_articles.yml`: weekly retention cleanup
 
 Repo secrets that can be removed from GitHub Actions: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, and `NOTION_*`. Keep Resend + Supabase + `APP_URL` for the send Action.
@@ -256,6 +257,8 @@ When adding new functionality, prioritize:
 - If digest send fails, verify `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`.
 - Manual digest dispatches require `force_send=true`; this intentionally bypasses duplicate-send protection.
 - Scheduled send fails if today's `data/digests/YYYY-MM-DD.json` is missing intro or opinions; generate locally first.
+- A JSON-only push (no `frontend/issues/`) leaves the live site behind the email. `--assemble` / `--commit` now refuse that.
+- If `git push origin main` is rejected, stop. The daily digest must land on `main` before 09:00 UTC; do not open a PR unless a human asks.
 - If confirm/unsubscribe links open the wrong host, verify `APP_URL` matches your canonical deployed frontend origin in both Vercel env vars and GitHub Actions secrets.
 - Keep `SUPABASE_SECRET_KEY` and provider API keys out of frontend/client code.
 - Prefer dry-run/test modes before running production-impacting commands.

@@ -31,11 +31,20 @@ Each scheduled morning:
 1. `./scripts/run_local_digest.sh --fetch`
 2. Claude Desktop writes `.tmp/claude-digest.json` (analyses, intro, headlines)
 3. `./scripts/run_local_digest.sh --assemble --commit`
-4. `git push origin main` (Vercel deploys the archive)
-5. Scheduled `daily_digest.yml` at 09:00 UTC sends via Resend (`--no-llm`)
+4. `git push origin main` (digest JSON **and** `frontend/issues/`; Vercel deploys first)
+5. Scheduled `daily_digest.yml` at 09:00 UTC sends via Resend (`--no-llm`) and commits sent snapshots
+
+Refresh the Desktop scheduled-task Instructions after this SOP changes on `main`.
+
+Local QA (no Anthropic API; stand-ins for the deleted test/parity Actions):
+
+```bash
+./scripts/validate_digest_parity_local.sh
+./scripts/test_email_local.sh you@example.com
+```
 
 Remaining GitHub Actions:
-- `.github/workflows/daily_digest.yml` (send-only from committed JSON)
+- `.github/workflows/daily_digest.yml` (send-only from committed JSON, then snapshot commit)
 - `.github/workflows/cleanup_old_articles.yml` (weekly retention)
 
 Extras are persisted in `digest_extras` under keys:

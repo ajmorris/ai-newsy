@@ -14,7 +14,7 @@ You are Layer 2. Use the scripts. Do not scrape sites by hand when a script exis
 
 ## Execution
 
-1. `git checkout main` and `git pull origin main`.
+1. `git checkout main` and `git pull origin main`. This picks up yesterday’s sent snapshots from the Daily AI Digest Action. Do not write or invent `data/digests/snapshots/*.sent.json`.
 2. Fetch sources and export what you must write:
 
    ```bash
@@ -37,15 +37,35 @@ You are Layer 2. Use the scripts. Do not scrape sites by hand when a script exis
    ```
 
    Every analysis needs a non-empty `summary` and `opinion`. Topic must be one of the `allowed_topics` on each article. Intro is required.
-4. Assemble, commit, and push (this is what used to be the prep/archive Actions):
+4. Assemble, then check the site files before commit:
+
+   ```bash
+   ./scripts/run_local_digest.sh --assemble
+   ```
+
+   Confirm all of the following. If any fail, fix `.tmp/claude-digest.json` and `--assemble` again. Do not push.
+
+   - `data/digests/YYYY-MM-DD.json` has a non-empty `intro` and every story a non-empty `opinion`
+   - `frontend/issues/index.json` `latestIssue.digestDate` is UTC today
+   - today’s `frontend/issues/<slug>.html` exists
+5. Commit and push so Vercel deploys **before** the 09:00 UTC send Action:
 
    ```bash
    ./scripts/run_local_digest.sh --assemble --commit
    git push origin main
    ```
 
-   Vercel deploys `frontend/` from `main`.
-5. **Do not send email.** Do not run `--send`. Do not `gh workflow run`. The scheduled **Daily AI Digest** Action at 09:00 UTC sends via Resend from the JSON you just pushed. It fails if intro or opinions are missing.
+   The commit must include `data/digests/YYYY-MM-DD.json` **and** `frontend/issues/` (HTML + `index.json`). A JSON-only push is a hard failure — the live site would lag the email.
+6. Do not send email. Do not run `--send`. Do not `gh workflow run`. Do not write or invent `data/digests/snapshots/*.sent.json`. Snapshots are written by the Daily AI Digest Action after Resend and committed back to `main`. The next morning’s `git pull` will pick them up.
+
+Optional QA (never required for a green daily run):
+
+```bash
+./scripts/validate_digest_parity_local.sh
+./scripts/test_email_local.sh you@example.com
+```
+
+If `git push origin main` is rejected (protected branch), stop and report the error. Do not open a PR for the daily digest unless a human asks.
 
 ## Validate before push
 
@@ -55,6 +75,7 @@ UTC date. `data/digests/YYYY-MM-DD.json` must have a non-empty `intro` and every
 
 - UTC digest date, story count
 - Commit SHA
+- Confirmation that `frontend/issues/` was pushed so Vercel can deploy before email
 - Confirmation that email is left to the 09:00 UTC Action
 
 ## Edge cases

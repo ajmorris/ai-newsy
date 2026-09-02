@@ -128,10 +128,29 @@ Required locally:
 - `SUPABASE_SECRET_KEY`
 
 One-time setup: paste `prompts/setup-claude-desktop.md` into Claude Desktop.
-The scheduled task follows `directives/run_daily_digest.md`.
+The scheduled task follows `directives/run_daily_digest.md`. After that file
+changes on `main`, replace the Desktop task Instructions (or recreate
+`ai-newsy-daily-digest`).
+
+Order of operations:
+
+1. Desktop pushes `data/digests/YYYY-MM-DD.json` **and** `frontend/issues/`
+2. Vercel deploys the live issue
+3. 09:00 UTC Action emails from the committed JSON (`--no-llm`)
+4. The same Action commits `data/digests/snapshots/*.sent.json` and `*.status.json`
+
+Desktop never sends production email and never writes sent snapshots. Archive
+HTML is built pre-send from canonical JSON. Snapshots are post-send history.
 
 `execution/ai_client.py` remains only for optional off-Desktop API experiments.
 Do not use it in the daily Desktop path.
+
+Local QA (no Anthropic API):
+
+```bash
+./scripts/validate_digest_parity_local.sh
+./scripts/test_email_local.sh you@example.com
+```
 
 ### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
 
@@ -235,13 +254,30 @@ Local Vercel dev with repo `.env`:
 
 GitHub Actions configuration:
 
-- `daily_digest.yml` is send-only. It needs `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`. Use the same canonical origin as Vercel `APP_URL`.
+- `daily_digest.yml` is send-only, then commits sent snapshots. It needs `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`. Use the same canonical origin as Vercel `APP_URL`.
+- The send job uses `permissions: contents: write` so `github-actions[bot]` can push `data/digests/snapshots/` only. It does **not** rebuild `frontend/issues/`.
 - It does **not** need `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, or `NOTION_*`. Those can be removed from repository secrets in the GitHub UI.
 - `cleanup_old_articles.yml` still needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
 
-After a local digest run, push `frontend/issues/` on `main`. Vercel deploys the static site from the `frontend/` directory. Optional CLI: `cd frontend && npx vercel --prod` if the project is already linked.
+After a local digest run, push `frontend/issues/` on `main` **before** 09:00 UTC. Vercel deploys the static site from the `frontend/` directory. Optional CLI: `cd frontend && npx vercel --prod` if the project is already linked.
+
+## Protected `main` (Desktop + Actions push)
+
+Checked 2026-09-02 from this agent:
+
+- Repository rulesets: none (`GET /repos/ajmorris/ai-newsy/rulesets` → `[]`; `GET .../rules/branches/main` → `[]`).
+- Classic branch protection API returned **403** (`Resource not accessible by integration`). This token cannot read whether required reviews or status checks are configured.
+- Recent `main` history shows `github-actions[bot]` already pushing digest artifacts directly (`chore: persist canonical digest payload`, `chore: publish web issue archive`). The snapshot commit should work with `contents: write` on the same pattern.
+- This environment is not the Desktop machine, so Desktop credentials were not used to push a probe commit to `main`. Confirm `git push origin main` during Claude Desktop setup.
+
+If `main` later requires a PR, the daily loop breaks. Fallback (do not change protection from an agent unless a human confirms):
+
+- Allow the Desktop git user and `github-actions[bot]` to push `data/digests/**` and `frontend/issues/**`, or
+- Add a deploy key / `GH_PUSH_TOKEN` secret with permission to push those paths.
+
+A `workflow_dispatch` with `force_send=false` will **not** exercise the snapshot push (the guard skips). The first successful scheduled send is the live snapshot-push test.
 
 ## Confirmation and unsubscribe verification checklist
 
