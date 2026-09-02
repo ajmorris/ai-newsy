@@ -40,8 +40,7 @@ Edit `.env` and set at least:
 | `SUPABASE_URL` | Fetch, DB, digest, cleanup            | [Supabase](https://supabase.com/dashboard) → Project → Settings → API |
 | `SUPABASE_PUBLISHABLE_KEY` | Public/non-privileged client usage | Same (publishable key) |
 | `SUPABASE_SECRET_KEY` | Server-side writes/admin operations | Same (secret key) |
-| `ANTHROPIC_KEY` | Topic assignment, summarization, headlines, intro | [Anthropic Console](https://console.anthropic.com/) |
-| `RESEND_API_KEY` | Sending the daily email            | [Resend](https://resend.com/api-keys) |
+| `RESEND_API_KEY` | Sending the daily email (GitHub Actions / Vercel, not required for Desktop generate) | [Resend](https://resend.com/api-keys) |
 | `EMAIL_FROM`   | Sending email                        | Your sending address (e.g. `newsletter@yourdomain.com`) |
 | `APP_URL`      | Links in the email                   | Your app URL (e.g. Vercel URL or `http://localhost:3000`) |
 | `SLACK_WEBHOOK_URL` | Slack alerts for new signups (optional) | Slack Incoming Webhooks app settings |
@@ -50,7 +49,7 @@ Edit `.env` and set at least:
 
 - **RSS-only (no DB):** You can run `scripts/check_feeds.py` without any env vars (it only needs `feedparser` and `requests`).
 - **Fetch + DB:** You need `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
-- **Full digest (analyze with Claude Opus 5, send email):** You need all of the above.
+- **Full digest:** Supabase locally; Claude Desktop writes the copy (no `ANTHROPIC_KEY`). Email send uses Resend in GitHub Actions.
 - **Signup Slack alerts (optional):** Set `SLACK_WEBHOOK_URL` to post a message when a brand-new subscriber is created.
 - **Signup API:** `frontend/api/subscribe.js` and `frontend/api/unsubscribe.js` use `SUPABASE_SECRET_KEY` (server-side only) for subscriber writes.
 - **Signup abuse controls (optional):** Configure one captcha provider plus optional `SUBSCRIBE_RATE_LIMIT_WINDOW_MS` / `SUBSCRIBE_RATE_LIMIT_MAX_REQUESTS`.
@@ -90,13 +89,16 @@ python3 execution/fetch_ai_news.py --dry-run --limit 3
 python3 execution/fetch_ai_news.py --limit 10
 ```
 
-**Run the full local digest (needs `ANTHROPIC_KEY` and Supabase):**
+**One-time Claude Desktop setup** (paste [`prompts/setup-claude-desktop.md`](prompts/setup-claude-desktop.md)):
+
+That schedules the daily job. Manual stages:
 
 ```bash
-./scripts/run_local_digest.sh
+./scripts/run_local_digest.sh --fetch
+# Claude writes .tmp/claude-digest.json
+./scripts/run_local_digest.sh --assemble --commit
+git push origin main
 ```
-
-**Summarize and send daily email:** `./scripts/run_local_digest.sh --test-email you@example.com` (needs Claude + Resend + Supabase). After review, commit generated `data/digests/*.json` and `frontend/issues/`, then push `main` so Vercel deploys the site.
 
 ## 6. Frontend (optional)
 

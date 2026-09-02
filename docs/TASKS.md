@@ -22,28 +22,20 @@ Phases 1–6 are **done**. Phase 7 is **future** (not in scope).
 
 ---
 
-## Daily pipeline (local Claude Opus 5, then Vercel)
+## Daily pipeline (Claude Desktop, then Vercel + Resend Action)
 
-Preferred:
+One-time: paste `prompts/setup-claude-desktop.md` into Claude Desktop.
 
-```bash
-./scripts/run_local_digest.sh
-./scripts/run_local_digest.sh --commit
-git push origin main
-```
+Each scheduled morning:
 
-Equivalent individual steps:
-
-1. `python execution/fetch_ai_news.py`
-2. `python execution/analyze_articles_single_pass.py` (Claude Opus 5)
-3. `python execution/generate_tweet_headlines.py` (pulls last 24h saved tweets from Notion and stores digest extras)
-4. `python execution/generate_community_headlines.py` (pulls Reddit/HN/YC posts and stores `community_headlines` extra)
-5. `python execution/digest_payload.py`
-6. `python execution/build_web_archive.py --use-canonical-fallback`
-7. Optional: `python execution/send_daily_email.py --test-email you@example.com`
+1. `./scripts/run_local_digest.sh --fetch`
+2. Claude Desktop writes `.tmp/claude-digest.json` (analyses, intro, headlines)
+3. `./scripts/run_local_digest.sh --assemble --commit`
+4. `git push origin main` (Vercel deploys the archive)
+5. Scheduled `daily_digest.yml` at 09:00 UTC sends via Resend (`--no-llm`)
 
 Remaining GitHub Actions:
-- `.github/workflows/daily_digest.yml` (send-only from committed JSON, no LLM)
+- `.github/workflows/daily_digest.yml` (send-only from committed JSON)
 - `.github/workflows/cleanup_old_articles.yml` (weekly retention)
 
 Extras are persisted in `digest_extras` under keys:

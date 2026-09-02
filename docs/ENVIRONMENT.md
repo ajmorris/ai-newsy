@@ -117,20 +117,21 @@ python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
 
-## Claude Opus 5 (local only)
+## Claude Desktop (no API key)
 
-All LLM scripts use `execution/ai_client.py` and call Anthropic Claude Opus 5.
+Daily analysis, intro, and headlines are written by Claude Desktop. Local
+`.env` does **not** need `ANTHROPIC_KEY`.
 
-- Required: `ANTHROPIC_KEY`
-- Optional: `ANTHROPIC_MODEL` (default `claude-opus-5`)
-- Optional: `ANTHROPIC_EFFORT` (`low`, `medium`, or `high`; default `low`)
+Required locally:
 
-Per-task vars `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
-`COMMUNITY_HEADLINES_MODEL` still override the model name for that step.
-They should be Claude model ids (default `claude-opus-5`).
+- `SUPABASE_URL`
+- `SUPABASE_SECRET_KEY`
 
-There is no Gemini or OpenAI fallback. Generation runs on your machine;
-GitHub Actions do not call Claude.
+One-time setup: paste `prompts/setup-claude-desktop.md` into Claude Desktop.
+The scheduled task follows `directives/run_daily_digest.md`.
+
+`execution/ai_client.py` remains only for optional off-Desktop API experiments.
+Do not use it in the daily Desktop path.
 
 ### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
 
