@@ -12,8 +12,8 @@ AI Newsy is an AI-news ingestion and digest system:
 
 - `execution/`: Python pipeline scripts (ingest, analysis, digest build/send, archive, cleanup)
 - `scripts/`: local digest runner, RSS feed checks, and parity helpers
-- `directives/`: operator SOPs (`setup_claude_desktop.md`, `run_daily_digest.md`)
-- `prompts/`: one-time Claude Desktop setup prompt (`setup-claude-desktop.md`)
+- `directives/`: operator SOPs (`setup_claude_desktop.md`, `run_daily_digest.md`; `publish_daily_digest.md` is superseded)
+- `prompts/`: one-time Claude Desktop setup (`setup-claude-desktop.md`; `publish-daily-digest.md` is a pointer only)
 - `frontend/`: static site + Vercel serverless API routes (`/api/subscribe`, `/api/confirm`, `/api/unsubscribe`)
 - `data/digests/`: generated daily digest markdown files
 - `.github/workflows/`: scheduled and manual automation workflows
@@ -81,6 +81,8 @@ Manual stages:
 ./scripts/run_local_digest.sh --assemble --commit
 git push origin main
 ```
+
+Do not `gh workflow run` from Desktop. The 09:00 UTC Action sends from the pushed JSON.
 
 ## Running Scripts (Local Runbook)
 
