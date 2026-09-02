@@ -12,7 +12,8 @@ AI Newsy is an AI-news ingestion and digest system:
 
 - `execution/`: Python pipeline scripts (ingest, analysis, digest build/send, archive, cleanup)
 - `scripts/`: local digest runner, RSS feed checks, and parity helpers
-- `directives/`: operator SOPs (including `run_daily_digest.md`)
+- `directives/`: operator SOPs (including `publish_daily_digest.md`)
+- `prompts/`: copy-paste prompts for Claude (including `publish-daily-digest.md`)
 - `frontend/`: static site + Vercel serverless API routes (`/api/subscribe`, `/api/confirm`, `/api/unsubscribe`)
 - `data/digests/`: generated daily digest markdown files
 - `.github/workflows/`: scheduled and manual automation workflows
@@ -64,9 +65,12 @@ Add email vars to send digests:
 
 That fetches RSS, analyzes with Claude Opus 5, builds canonical JSON, and writes `frontend/issues/`. Then commit and push `main` so Vercel deploys the site.
 
+To have Claude do the full publish (local generation → git push → Resend Action), paste [`prompts/publish-daily-digest.md`](prompts/publish-daily-digest.md). The SOP is [`directives/publish_daily_digest.md`](directives/publish_daily_digest.md).
+
 ```bash
 ./scripts/run_local_digest.sh --commit
 git push origin main
+gh workflow run "Daily AI Digest" --ref main -f force_send=true -f send_reason="Published from local Claude pipeline"
 ```
 
 Optional email from the same run:

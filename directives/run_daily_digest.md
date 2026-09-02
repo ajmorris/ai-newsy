@@ -47,14 +47,15 @@ All LLM calls go through `execution/ai_client.py` to Claude Opus 5 (`claude-opus
 
 ## After a successful run
 
+This directive is generate-only. To push GitHub and fire Resend, use [`publish_daily_digest.md`](publish_daily_digest.md) or paste [`prompts/publish-daily-digest.md`](../prompts/publish-daily-digest.md).
+
 1. Review the generated digest JSON and archive HTML.
 2. Commit with `--commit` or a manual commit of those paths.
 3. Push `main`. Vercel deploys `frontend/`.
-4. Scheduled `daily_digest.yml` can send email from the committed JSON (`--no-llm`). It will fail if intro or opinions are missing.
+4. Dispatch `Daily AI Digest` with `force_send=true` so Resend sends from the committed JSON (`--no-llm`).
 
 ## Edge cases
 
 - Missing `ANTHROPIC_KEY`: stop and ask the operator to set it.
 - Tweet extras fail without Notion secrets: report the error; community + RSS digest can still proceed if you rerun remaining steps.
-- Do not push without the operator reviewing generated content.
 - Do not call GitHub Actions to generate content. Generation is local only.
