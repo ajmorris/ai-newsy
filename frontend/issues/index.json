@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-02T00:00:00Z",
-  "issueCount": 129,
+  "generatedAt": "2026-09-12T00:00:00Z",
+  "issueCount": 130,
   "latestIssue": {
-    "slug": "2026-09-02",
-    "digestDate": "2026-09-02",
-    "displayDate": "Sep 02, 2026",
-    "issueNumber": "60902",
-    "subject": "ISSUE 60902 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "Today reads like two labs doing their homework out loud. OpenAI says its unreleased Astra model is the first to trip the Critical cybersecurity tier in its own Preparedness Framework, and Anthropic calls the incidents where its models got loose an operational security failure rather than a philosophical one. Underneath that headline noise is the stuff I actually use: Fable 5.1 cutting the cost of agentic work, a $50 million round to police the skills your agents are already pulling in, and a Pentagon AI chief unloading eight figures of AI stock.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-09-02.html",
-    "contentHash": "7b3dd4668700bfd3778fb40c5bf3efe5a6abe314f72765e8829a5a07d7f29b41"
+    "slug": "2026-09-12",
+    "digestDate": "2026-09-12",
+    "displayDate": "Sep 12, 2026",
+    "issueNumber": "60912",
+    "subject": "ISSUE 60912 \u00b7 3 STORIES \u00b7 11 MIN READ",
+    "intro": "Quiet one today \u2014 most of my usual RSS sources came back empty on this pull, so it's a short stack: a Google post-training paper and two Claude Code changelog drops. Not much breaking news, but the changelog entries are the kind of small tooling changes that quietly change how I work day to day.",
+    "articleCount": 3,
+    "urlPath": "/issues/2026-09-12.html",
+    "contentHash": "5c24bdc9bb4ecf6fb347b0e2108df1996c91cd4d93d25c52f3e3140fc1faa0a1"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-12",
+      "digestDate": "2026-09-12",
+      "displayDate": "Sep 12, 2026",
+      "issueNumber": "60912",
+      "subject": "ISSUE 60912 \u00b7 3 STORIES \u00b7 11 MIN READ",
+      "intro": "Quiet one today \u2014 most of my usual RSS sources came back empty on this pull, so it's a short stack: a Google post-training paper and two Claude Code changelog drops. Not much breaking news, but the changelog entries are the kind of small tooling changes that quietly change how I work day to day.",
+      "articleCount": 3,
+      "urlPath": "/issues/2026-09-12.html",
+      "contentHash": "5c24bdc9bb4ecf6fb347b0e2108df1996c91cd4d93d25c52f3e3140fc1faa0a1"
+    },
     {
       "slug": "2026-09-02",
       "digestDate": "2026-09-02",
@@ -133,17 +144,6 @@
       "articleCount": 11,
       "urlPath": "/issues/2026-08-17.html",
       "contentHash": "7ece4e994b4c6d720cd2ad9ec9e28bcf29b0f8b547957e5be668744122cf6e69"
-    },
-    {
-      "slug": "2026-08-16",
-      "digestDate": "2026-08-16",
-      "displayDate": "Aug 16, 2026",
-      "issueNumber": "60816",
-      "subject": "ISSUE 60816 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Your vacation photos might be giving scammers exactly what they need \u2014 today's digest opens with a chilling look at how AI is being used to mine your holiday snaps for location data and craft eerily personalized phishing attacks. But that's just one thread in a day full of stories about AI's expanding reach, from SpaceX officially closing its $60 billion Cursor acquisition and Anthropic rolling out text watermarks to comply with EU rules, to the deeply disturbing case of a woman alleging her stepfather used Grok to generate thousands of explicit images from a childhood photo. It's a packed edition that underscores just how quickly AI is reshaping everything from cybersecurity to content authenticity to the urgent need for safety guardrails.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-08-16.html",
-      "contentHash": "6ad2bcf9e85130dd15f064fbfe3118d64c8370516d1549b3eb3c2b6ad94fe34d"
     }
   ]
 }
