@@ -45,24 +45,31 @@ jobs:
         run: python execution/digest_payload.py
 
       - name: Verify payload intro and opinions
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: |
           python - <<'PY'
+          import json
           from datetime import datetime
-          from execution.digest_payload import assert_digest_stories_have_opinions, load_digest_payload
+          from pathlib import Path
 
           digest_date = datetime.utcnow().date().isoformat()
-          payload = load_digest_payload(digest_date=digest_date)
-          if not payload:
+          path = Path("data/digests") / f"{digest_date}.json"
+          if not path.exists():
               raise SystemExit(f"Canonical digest payload missing for {digest_date}")
+          payload = json.loads(path.read_text(encoding="utf-8"))
           intro = str(payload.get("intro") or "").strip()
           if not intro:
               raise SystemExit(f"Digest intro is empty for {digest_date}")
           stories = list(payload.get("stories") or [])
-          assert_digest_stories_have_opinions(stories)
+          missing = [
+              story.get("id", story.get("title", "unknown"))
+              for story in stories
+              if not str(story.get("opinion", "") or "").strip()
+          ]
+          if missing:
+              raise SystemExit(
+                  "Digest invariant failed: every story must have a non-empty opinion "
+                  f"(Why it matters). Missing for: {missing!r}"
+              )
           print(
               f"finalize verification for {digest_date}: "
               f"stories={len(stories)}, "
