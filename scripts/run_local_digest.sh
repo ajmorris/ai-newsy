@@ -78,7 +78,7 @@ fi
 if ! python3 - <<'PY'
 import os
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(".env")
 url = (os.getenv("SUPABASE_URL") or "").strip()
 key = (os.getenv("SUPABASE_SECRET_KEY") or "").strip()
 if not url or url.startswith("https://your-project") or not key or key == "your-secret-key":

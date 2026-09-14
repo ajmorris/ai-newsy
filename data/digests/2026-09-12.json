@@ -1,0 +1,109 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-09-12",
+  "issue_id": "20260912",
+  "subject_line": "ISSUE 60912 · 3 STORIES · 11 MIN READ",
+  "intro": "Quiet one today — most of my usual RSS sources came back empty on this pull, so it's a short stack: a Google post-training paper and two Claude Code changelog drops. Not much breaking news, but the changelog entries are the kind of small tooling changes that quietly change how I work day to day.",
+  "article_count": 3,
+  "stories": [
+    {
+      "id": 7153,
+      "source": "Claude Code Changelog",
+      "title": "v2.1.268",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21268",
+      "topic": "Agents & Tools",
+      "category": "Tools, Infrastructure & Open Source",
+      "summary": "v2.1.268 adds enterprise gateway features: a `pricing:` setting in `gateway.yaml` so signed-in Claude Code clients get consistent rates through managed settings (keeping `/cost` and telemetry in sync with the spend meter), a startup warning when a gateway's `access_control.allow_cidrs` is empty, a one-time warning on the first request from a public address, and a `gatewayInternalNetworks` managed setting for allowing internal `/login` access.",
+      "opinion": "This reads like Anthropic hardening the self-hosted gateway path for larger orgs — the empty-CIDR warning in particular looks aimed at catching a real misconfiguration people were probably hitting. Not flashy, but exactly the kind of guardrail I'd want if I were running one of these gateways myself.",
+      "image_url": "",
+      "published_at": "2026-09-12T11:02:29.895309+00:00",
+      "fetched_at": "2026-09-12T11:02:29.895309+00:00"
+    },
+    {
+      "id": 7151,
+      "source": "Google AI Blog",
+      "title": "Autonomous LLM post-training with Tunix on TPUs",
+      "url": "https://developers.googleblog.com/autonomous-llm-post-training-with-tunix-on-tpus/",
+      "topic": "Models",
+      "category": "Model Releases & Capabilities",
+      "summary": "Google published a piece on Tunix, their JAX-native library for post-training LLMs on TPUs, framed around a scenario where you write a single Markdown spec and an agent handles the RL fine-tuning loop autonomously overnight. It's part of the broader push to make post-training (especially RL-based fine-tuning) something you can hand off to an agent rather than babysit.",
+      "opinion": "I'm intrigued but wary of the framing — 'write a spec, wake up to a trained model' is the kind of pitch that undersells how much eval and guardrail work still has to happen before you'd trust the output. Still, TPU-native tooling for RL post-training is an area I don't think gets enough attention compared to pretraining, so I'll be watching where this goes.",
+      "image_url": "",
+      "published_at": "2026-09-12T11:02:17.958719+00:00",
+      "fetched_at": "2026-09-12T11:02:17.958719+00:00"
+    },
+    {
+      "id": 7152,
+      "source": "Claude Code Changelog",
+      "title": "v2.1.269",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21269",
+      "topic": "Agents & Tools",
+      "category": "Tools, Infrastructure & Open Source",
+      "summary": "Claude Code v2.1.269 adds `claude plugin eval` for scored, reproducible eval runs against a plugin (JSON + HTML report), a `/output-style` command to list and switch output styles — including over Remote Control and headless sessions — a diff of files a Bash command changed surfaced in the Bash tool result, and an `OTEL_METRICS_INCLUDE_REPOSITORY` flag for tagging telemetry by repo.",
+      "opinion": "The plugin eval command is the one I care about most — it turns 'does my plugin actually work' from a vibe check into something you can run in CI. The Bash-edit diff is a small but genuinely useful visibility win too; I've lost track of file changes from a Bash call more than once.",
+      "image_url": "",
+      "published_at": "2026-09-12T11:02:29.655358+00:00",
+      "fetched_at": "2026-09-12T11:02:29.655358+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Model Releases & Capabilities",
+      "articles": [
+        {
+          "id": 7151,
+          "source": "Google AI Blog",
+          "title": "Autonomous LLM post-training with Tunix on TPUs",
+          "url": "https://developers.googleblog.com/autonomous-llm-post-training-with-tunix-on-tpus/",
+          "topic": "Models",
+          "category": "Model Releases & Capabilities",
+          "summary": "Google published a piece on Tunix, their JAX-native library for post-training LLMs on TPUs, framed around a scenario where you write a single Markdown spec and an agent handles the RL fine-tuning loop autonomously overnight. It's part of the broader push to make post-training (especially RL-based fine-tuning) something you can hand off to an agent rather than babysit.",
+          "opinion": "I'm intrigued but wary of the framing — 'write a spec, wake up to a trained model' is the kind of pitch that undersells how much eval and guardrail work still has to happen before you'd trust the output. Still, TPU-native tooling for RL post-training is an area I don't think gets enough attention compared to pretraining, so I'll be watching where this goes.",
+          "image_url": "",
+          "published_at": "2026-09-12T11:02:17.958719+00:00",
+          "fetched_at": "2026-09-12T11:02:17.958719+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Tools, Infrastructure & Open Source",
+      "articles": [
+        {
+          "id": 7153,
+          "source": "Claude Code Changelog",
+          "title": "v2.1.268",
+          "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21268",
+          "topic": "Agents & Tools",
+          "category": "Tools, Infrastructure & Open Source",
+          "summary": "v2.1.268 adds enterprise gateway features: a `pricing:` setting in `gateway.yaml` so signed-in Claude Code clients get consistent rates through managed settings (keeping `/cost` and telemetry in sync with the spend meter), a startup warning when a gateway's `access_control.allow_cidrs` is empty, a one-time warning on the first request from a public address, and a `gatewayInternalNetworks` managed setting for allowing internal `/login` access.",
+          "opinion": "This reads like Anthropic hardening the self-hosted gateway path for larger orgs — the empty-CIDR warning in particular looks aimed at catching a real misconfiguration people were probably hitting. Not flashy, but exactly the kind of guardrail I'd want if I were running one of these gateways myself.",
+          "image_url": "",
+          "published_at": "2026-09-12T11:02:29.895309+00:00",
+          "fetched_at": "2026-09-12T11:02:29.895309+00:00"
+        },
+        {
+          "id": 7152,
+          "source": "Claude Code Changelog",
+          "title": "v2.1.269",
+          "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21269",
+          "topic": "Agents & Tools",
+          "category": "Tools, Infrastructure & Open Source",
+          "summary": "Claude Code v2.1.269 adds `claude plugin eval` for scored, reproducible eval runs against a plugin (JSON + HTML report), a `/output-style` command to list and switch output styles — including over Remote Control and headless sessions — a diff of files a Bash command changed surfaced in the Bash tool result, and an `OTEL_METRICS_INCLUDE_REPOSITORY` flag for tagging telemetry by repo.",
+          "opinion": "The plugin eval command is the one I care about most — it turns 'does my plugin actually work' from a vibe check into something you can run in CI. The Bash-edit diff is a small but genuinely useful visibility win too; I've lost track of file changes from a Bash call more than once.",
+          "image_url": "",
+          "published_at": "2026-09-12T11:02:29.655358+00:00",
+          "fetched_at": "2026-09-12T11:02:29.655358+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [],
+  "community_headlines": [],
+  "build_meta": {
+    "generated_at": "2026-09-12T11:04:45.988589+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical"
+  },
+  "content_hash": "5c24bdc9bb4ecf6fb347b0e2108df1996c91cd4d93d25c52f3e3140fc1faa0a1"
+}
