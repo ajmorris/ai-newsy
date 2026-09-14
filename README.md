@@ -22,7 +22,7 @@ AI Newsy is an AI-news ingestion and digest system:
 - Python `3.10+` (CI uses `3.10`)
 - Node.js `20+` and npm (for frontend local dev)
 - Supabase project credentials
-- At least one LLM provider key (`ANTHROPIC_KEY`, `GEMINI_API_KEY`, or `OPENAI_API_KEY`)
+- At least one LLM credential (`CLAUDE_CODE_OAUTH_TOKEN` with the Claude CLI, or `ANTHROPIC_KEY` / `GEMINI_API_KEY` / `OPENAI_API_KEY`)
 - Resend credentials for email sending
 
 ## Quickstart (End-to-End Local)
@@ -47,7 +47,7 @@ Minimum vars for core pipeline:
 
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY`
-- one LLM key (`ANTHROPIC_KEY` or `GEMINI_API_KEY` or `OPENAI_API_KEY`)
+- one LLM credential (`CLAUDE_CODE_OAUTH_TOKEN` with `claude` on PATH, or `ANTHROPIC_KEY` / `GEMINI_API_KEY` / `OPENAI_API_KEY`)
 
 Add email vars to send digests:
 
@@ -180,8 +180,8 @@ Notes:
 See `.env.example` for full reference. Common groups:
 
 - Core DB: `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`
-- AI providers: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`
-- AI selection/tuning: `LLM_PROVIDER_CHAIN`, `ANTHROPIC_MODEL`, `GEMINI_MODEL`, `OPENAI_MODEL`
+- AI providers: `CLAUDE_CODE_OAUTH_TOKEN`, `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`
+- AI selection/tuning: `LLM_PROVIDER_CHAIN`, `CLAUDE_CODE_MODEL`, `ANTHROPIC_MODEL`, `GEMINI_MODEL`, `OPENAI_MODEL`
 - Email: `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL`
 - Signup protections: `SUBSCRIBE_RATE_LIMIT_*`, `TURNSTILE_*` or `HCAPTCHA_*`
 - Optional notifications: `SLACK_WEBHOOK_URL`

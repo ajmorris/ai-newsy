@@ -18,7 +18,7 @@ Env vars live in `.env.example` and `docs/ENVIRONMENT.md`. Never commit secrets.
 - Document new env vars in `.env.example`.
 - If a change affects scheduled jobs, match the existing workflow env (do not add API keys or OAuth tokens to files).
 
-Digest LLM calls go through `execution/ai_client.py` (Anthropic / Gemini / OpenAI HTTP APIs). That path is separate from this Claude Code GitHub Action.
+Digest LLM calls go through `execution/ai_client.py`. GitHub Actions digest jobs use the Claude CLI (`LLM_PROVIDER_CHAIN=claude_code`) with `CLAUDE_CODE_OAUTH_TOKEN`. Local runs can still use Anthropic / Gemini / OpenAI HTTP APIs. `@claude` comments use `.github/workflows/claude.yml`, which is separate from digest generation.
 
 ## Tests
 

@@ -1,0 +1,11 @@
+name: Setup Claude CLI
+description: Install the stable Claude Code CLI and add it to PATH
+
+runs:
+  using: composite
+  steps:
+    - name: Install Claude CLI
+      shell: bash
+      run: |
+        curl -fsSL https://claude.ai/install.sh | bash -s stable
+        echo "$HOME/.local/bin" >> "$GITHUB_PATH"

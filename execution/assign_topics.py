@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import sys
 sys.path.insert(0, '.')
 from execution.database import get_articles_without_topic, update_article_topic
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import generate_text_with_fallback, llm_credentials_configured
 
 load_dotenv()
 
@@ -82,8 +82,11 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Print only, do not update")
     parser.add_argument("--limit", type=int, default=None, help="Max articles to process")
     args = parser.parse_args()
-    if not os.getenv("GEMINI_API_KEY") and not os.getenv("ANTHROPIC_KEY"):
-        print("No AI key configured. Set GEMINI_API_KEY and/or ANTHROPIC_KEY in .env")
+    if not llm_credentials_configured():
+        print(
+            "No AI credentials configured. Set CLAUDE_CODE_OAUTH_TOKEN, "
+            "ANTHROPIC_KEY, GEMINI_API_KEY, and/or OPENAI_API_KEY in .env"
+        )
         exit(1)
     n = assign_all(dry_run=args.dry_run, limit=args.limit)
     print(f"\nDone. Assigned topic to {n} article(s).")
