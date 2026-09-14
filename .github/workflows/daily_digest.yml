@@ -1,4 +1,5 @@
 # Daily AI Digest Workflow
+# Compiles finalized JSON into markdown/HTML and sends via Resend.
 # Runs once daily at a fixed UTC time (09:00).
 
 name: Daily AI Digest
@@ -62,10 +63,6 @@ jobs:
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/checkout@v4
 
-      - name: Set up Claude CLI
-        if: ${{ steps.guard.outputs.should_send == 'true' }}
-        uses: ./.github/actions/setup-claude-cli
-
       - name: Set up Python
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/setup-python@v5
@@ -101,16 +98,29 @@ jobs:
             exit 1
           fi
 
-      - name: Validate canonical digest payload exists
+      - name: Wait for canonical digest payload
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         run: |
           expected_payload="data/digests/$(date -u +%F).json"
           echo "Looking for canonical payload: ${expected_payload}"
-          if [ ! -f "${expected_payload}" ]; then
-            echo "Missing canonical digest payload for today."
-            ls -la data/digests || true
-            exit 1
-          fi
+          git fetch origin "${{ github.ref_name }}"
+          for attempt in $(seq 1 30); do
+            if [ -f "${expected_payload}" ]; then
+              echo "Found ${expected_payload} on attempt ${attempt}."
+              exit 0
+            fi
+            echo "Payload missing; waiting 30s for finalize commit (attempt ${attempt}/30)."
+            git fetch origin "${{ github.ref_name }}"
+            git checkout "origin/${{ github.ref_name }}" -- "${expected_payload}" || true
+            if [ -f "${expected_payload}" ]; then
+              echo "Fetched ${expected_payload} from origin."
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "Missing canonical digest payload for today after waiting."
+          ls -la data/digests || true
+          exit 1
 
       - name: Send daily email digest
         if: ${{ steps.guard.outputs.should_send == 'true' }}
@@ -121,15 +131,10 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          LLM_PROVIDER_CHAIN: claude_code
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           GITHUB_RUN_ID: ${{ github.run_id }}
           GITHUB_RUN_ATTEMPT: ${{ github.run_attempt }}
         run: |
-          python execution/digest_payload.py
           python execution/build_digest_markdown.py
           FORCE_SEND_FLAG=""
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_send }}" = "true" ]; then

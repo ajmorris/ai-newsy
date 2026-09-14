@@ -37,6 +37,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Claude CLI
+        if: ${{ inputs.prepare_content }}
         uses: ./.github/actions/setup-claude-cli
 
       - name: Set up Python
@@ -188,6 +189,18 @@ jobs:
           )
           PY
 
+      - name: Finalize digest payload
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
+        run: python execution/digest_payload.py
+
       - name: Send test digest to single recipient
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -196,8 +209,4 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          LLM_PROVIDER_CHAIN: claude_code
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: python execution/send_daily_email.py --test-email "${{ inputs.test_email }}"

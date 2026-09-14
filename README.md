@@ -213,8 +213,10 @@ For signup or web UX changes:
 
 Match local changes to automation:
 
-- `prepare_digest_content.yml`: fetch + single-pass analysis + extras generation
-- `daily_digest.yml`: build digest + send once daily on `0 9 * * *` UTC (early New York morning)
+- `prepare_digest_content.yml`: 2:00 AM NY RSS fetch + single-pass analysis
+- `prepare_twitter_headlines.yml` / `prepare_community_headlines.yml`: 2:00 AM NY extras (parallel with RSS)
+- `finalize_digest_payload.yml`: 4:00 AM NY rebuild/commit digest JSON
+- `daily_digest.yml`: compile markdown/HTML and send once daily on `0 9 * * *` UTC
 - `publish_web_archive.yml`: regenerate static issue archive on digest updates; fails if fresh daily snapshot is missing
 - `cleanup_old_articles.yml`: scheduled retention cleanup
 - `test_digest.yml`: manual one-recipient test digest

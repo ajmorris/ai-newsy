@@ -36,12 +36,9 @@ from execution.database import (
 )
 from execution.ai_client import generate_text_with_fallback
 from execution.digest_payload import (
-    DigestBuildOptions,
     assert_digest_stories_have_opinions,
-    heal_digest_story_opinions,
+    load_digest_payload,
     load_sent_snapshot,
-    load_or_build_digest_payload,
-    refresh_digest_payload_after_story_edit,
     write_sent_snapshot,
 )
 
@@ -591,14 +588,11 @@ def send_daily_digest(
     print(f"  Trigger: {event_name}")
     print(f"{'='*50}\n")
 
-    payload = load_or_build_digest_payload(
-        DigestBuildOptions(
-            digest_date=digest_date,
-            window_hours=int(os.getenv("DIGEST_WINDOW_HOURS", "24")),
-            use_sent=sent_yesterday,
-        )
-    )
-    digest_date = str(payload.get("digest_date"))
+    resolved_date = digest_date or datetime.utcnow().date().isoformat()
+    payload = load_digest_payload(digest_date=resolved_date)
+    if not payload:
+        raise SystemExit(f"Canonical digest payload missing for {resolved_date}")
+    digest_date = str(payload.get("digest_date") or resolved_date)
     payload_hash = str(payload.get("content_hash", "")).strip()
     payload_source = str((payload.get("build_meta") or {}).get("source", "canonical")).strip()
     stories = list(payload.get("stories") or [])
@@ -668,9 +662,7 @@ def send_daily_digest(
             print("🔓 Released digest send claim (no stories to send).")
         return {"articles": 0, "sent": 0, "failed": 0}
 
-    heal_digest_story_opinions(stories)
     assert_digest_stories_have_opinions(stories)
-    refresh_digest_payload_after_story_edit(payload, stories)
 
     articles = [normalize_article_for_email(article) for article in stories]
 

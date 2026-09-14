@@ -258,10 +258,12 @@ GitHub Actions configuration:
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
 - Digest LLM steps use `CLAUDE_CODE_OAUTH_TOKEN` and `LLM_PROVIDER_CHAIN=claude_code` (not `ANTHROPIC_KEY` / Gemini / OpenAI).
 - `daily_digest.yml` also requires `APP_URL` in repository secrets; use the same canonical origin as Vercel `APP_URL`.
-- Source-specific prep workflows are split by source:
-  - `prepare_digest_content.yml` (RSS)
-  - `prepare_twitter_headlines.yml` (Twitter/X extras)
-  - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
+- Source-specific prep workflows start together at 2:00 AM America/New_York:
+  - `prepare_digest_content.yml` (RSS fetch + analyze into `articles`)
+  - `prepare_twitter_headlines.yml` (`digest_extras.tweet_headlines`)
+  - `prepare_community_headlines.yml` (`digest_extras.community_headlines`)
+- `finalize_digest_payload.yml` at 4:00 AM America/New_York rebuilds and commits `data/digests/YYYY-MM-DD.json` (intro/opinion LLM plus extras).
+- `daily_digest.yml` at 09:00 UTC compiles markdown/HTML and sends via Resend. It does not call Claude; it loads the finalized JSON.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
 

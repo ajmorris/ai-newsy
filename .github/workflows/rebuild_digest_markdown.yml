@@ -26,9 +26,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Claude CLI
-        uses: ./.github/actions/setup-claude-cli
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -44,10 +41,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          LLM_PROVIDER_CHAIN: claude_code
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: |
           digest_date_input="${{ github.event.inputs.digest_date }}"
           window_hours_input="${{ github.event.inputs.window_hours }}"
