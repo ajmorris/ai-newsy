@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 from execution.ai_client import (
     ClaudeCodeProvider,
+    _claude_cli_timeout_seconds,
     _error_category,
     _model_looks_compatible,
     _preview_cli_output,
@@ -75,6 +76,7 @@ class ClaudeCodeProviderTests(unittest.TestCase):
         self.assertIn("json", command)
         self.assertIn("--max-turns", command)
         self.assertNotIn("token", command)
+        self.assertEqual(run.call_args.kwargs["timeout"], 600)
 
     def test_dash_prefixed_prompt_is_not_passed_as_cli_arg(self) -> None:
         payload = json.dumps({"result": "ok", "is_error": False})
@@ -115,6 +117,12 @@ class ClaudeCodeProviderTests(unittest.TestCase):
         preview = _preview_cli_output("error: unknown option '---\nname: ai-newsy\n")
         self.assertNotIn("\n", preview)
         self.assertIn("unknown option", preview)
+
+    def test_timeout_reads_env_override(self) -> None:
+        with patch.dict(os.environ, {"CLAUDE_CODE_TIMEOUT_SECONDS": "180"}, clear=True):
+            self.assertEqual(_claude_cli_timeout_seconds(), 180)
+        with patch.dict(os.environ, {}, clear=True):
+            self.assertEqual(_claude_cli_timeout_seconds(), 600)
 
 
 if __name__ == "__main__":

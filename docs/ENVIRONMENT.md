@@ -142,6 +142,7 @@ Credentials:
 Provider model defaults (override with env vars):
 
 - `CLAUDE_CODE_MODEL` (falls back to `ANTHROPIC_MODEL`) default: `claude-opus-4-6`
+- `CLAUDE_CODE_TIMEOUT_SECONDS` default: `600` (Claude CLI subprocess budget)
 - `ANTHROPIC_MODEL` default: `claude-opus-4-6`
 - `GEMINI_MODEL` default: `gemini-2.0-flash`
 - `OPENAI_MODEL` default: `gpt-4o-mini`
@@ -171,7 +172,8 @@ For Notion tweet ingestion + headline generation, configure:
 - `TWEET_LOOKBACK_HOURS` (optional, default `24`)
 - `TWEET_FETCH_LIMIT` (optional, default `100`)
 - `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
-- `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+- `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`; ignored in CI when the provider is `claude_code`)
+- `TWEET_HEADLINES_CLAUDE_MODEL` (optional GitHub Actions variable, default `claude-sonnet-4-6`)
 
 GitHub Actions:
 
@@ -190,7 +192,8 @@ For Reddit/HN/YC ingestion + headline generation, configure:
 - `COMMUNITY_LOOKBACK_HOURS` (optional, default `24`)
 - `COMMUNITY_FETCH_LIMIT` (optional, default `120`)
 - `COMMUNITY_MAX_HEADLINES` (optional, default `24`) — max headlines after curation; digest builder caps further
-- `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
+- `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`; ignored in CI when the provider is `claude_code`)
+- `COMMUNITY_HEADLINES_CLAUDE_MODEL` (optional GitHub Actions variable, default `claude-sonnet-4-6`)
 - `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
 - `REDDIT_USER_AGENT` (optional but recommended)
 - `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)

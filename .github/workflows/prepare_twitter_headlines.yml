@@ -47,6 +47,8 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           LLM_PROVIDER_CHAIN: claude_code
+          CLAUDE_CODE_MODEL: ${{ vars.TWEET_HEADLINES_CLAUDE_MODEL || 'claude-sonnet-4-6' }}
+          CLAUDE_CODE_TIMEOUT_SECONDS: ${{ vars.CLAUDE_CODE_TIMEOUT_SECONDS || '600' }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}

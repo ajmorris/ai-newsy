@@ -28,7 +28,7 @@ PROVIDER_MODEL_ENV_KEYS = {
     "gemini": "GEMINI_MODEL",
     "openai": "OPENAI_MODEL",
 }
-_CLAUDE_CLI_TIMEOUT_SECONDS = 120
+_DEFAULT_CLAUDE_CLI_TIMEOUT_SECONDS = 600
 _LLM_CREDENTIAL_ENV_KEYS = (
     "CLAUDE_CODE_OAUTH_TOKEN",
     "ANTHROPIC_KEY",
@@ -99,6 +99,18 @@ def llm_credentials_configured() -> bool:
     return any((os.getenv(name) or "").strip() for name in _LLM_CREDENTIAL_ENV_KEYS)
 
 
+def _claude_cli_timeout_seconds() -> int:
+    raw = (os.getenv("CLAUDE_CODE_TIMEOUT_SECONDS") or "").strip()
+    if raw:
+        try:
+            value = int(raw)
+            if value > 0:
+                return value
+        except ValueError:
+            pass
+    return _DEFAULT_CLAUDE_CLI_TIMEOUT_SECONDS
+
+
 def _preview_cli_output(text: str, max_len: int = 500) -> str:
     cleaned = " ".join((text or "").split())
     if len(cleaned) <= max_len:
@@ -132,6 +144,7 @@ class ClaudeCodeProvider(LLMProvider):
             "--model",
             model,
         ]
+        timeout_seconds = _claude_cli_timeout_seconds()
         with tempfile.TemporaryDirectory(prefix="claude-code-llm-") as tmpdir:
             try:
                 completed = subprocess.run(
@@ -139,13 +152,13 @@ class ClaudeCodeProvider(LLMProvider):
                     input=prompt,
                     capture_output=True,
                     text=True,
-                    timeout=_CLAUDE_CLI_TIMEOUT_SECONDS,
+                    timeout=timeout_seconds,
                     cwd=tmpdir,
                     check=False,
                 )
             except subprocess.TimeoutExpired as exc:
                 raise RuntimeError(
-                    f"Claude CLI timed out after {_CLAUDE_CLI_TIMEOUT_SECONDS}s (model={model})"
+                    f"Claude CLI timed out after {timeout_seconds}s (model={model})"
                 ) from exc
 
         stdout = completed.stdout or ""
