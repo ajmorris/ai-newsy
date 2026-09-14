@@ -14,7 +14,7 @@ from execution.database import (
     update_article_image,
     supabase,
 )
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import generate_text_with_fallback, llm_credentials_configured
 from execution.story_text_normalizer import normalize_story_text
 
 load_dotenv()
@@ -229,9 +229,11 @@ if __name__ == "__main__":
                         help="Limit number of articles to analyze")
     args = parser.parse_args()
     
-    # Check for API key
-    if not os.getenv("GEMINI_API_KEY") and not os.getenv("ANTHROPIC_KEY"):
-        print("⚠️  No AI key configured. Set GEMINI_API_KEY and/or ANTHROPIC_KEY in .env")
+    if not llm_credentials_configured():
+        print(
+            "No AI credentials configured. Set CLAUDE_CODE_OAUTH_TOKEN, "
+            "ANTHROPIC_KEY, GEMINI_API_KEY, and/or OPENAI_API_KEY in .env"
+        )
         exit(1)
     
     count = summarize_all(dry_run=args.dry_run, limit=args.limit)

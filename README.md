@@ -22,7 +22,7 @@ AI Newsy is an AI-news ingestion and digest system:
 - Python `3.10+` (CI uses `3.10`)
 - Node.js `20+` and npm (for frontend local dev)
 - Supabase project credentials
-- At least one LLM provider key (`ANTHROPIC_KEY`, `GEMINI_API_KEY`, or `OPENAI_API_KEY`)
+- At least one LLM credential (`CLAUDE_CODE_OAUTH_TOKEN` with the Claude CLI, or `ANTHROPIC_KEY` / `GEMINI_API_KEY` / `OPENAI_API_KEY`)
 - Resend credentials for email sending
 
 ## Quickstart (End-to-End Local)
@@ -47,7 +47,7 @@ Minimum vars for core pipeline:
 
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY`
-- one LLM key (`ANTHROPIC_KEY` or `GEMINI_API_KEY` or `OPENAI_API_KEY`)
+- one LLM credential (`CLAUDE_CODE_OAUTH_TOKEN` with `claude` on PATH, or `ANTHROPIC_KEY` / `GEMINI_API_KEY` / `OPENAI_API_KEY`)
 
 Add email vars to send digests:
 
@@ -180,8 +180,8 @@ Notes:
 See `.env.example` for full reference. Common groups:
 
 - Core DB: `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`
-- AI providers: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`
-- AI selection/tuning: `LLM_PROVIDER_CHAIN`, `ANTHROPIC_MODEL`, `GEMINI_MODEL`, `OPENAI_MODEL`
+- AI providers: `CLAUDE_CODE_OAUTH_TOKEN`, `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`
+- AI selection/tuning: `LLM_PROVIDER_CHAIN`, `CLAUDE_CODE_MODEL`, `ANTHROPIC_MODEL`, `GEMINI_MODEL`, `OPENAI_MODEL`
 - Email: `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL`
 - Signup protections: `SUBSCRIBE_RATE_LIMIT_*`, `TURNSTILE_*` or `HCAPTCHA_*`
 - Optional notifications: `SLACK_WEBHOOK_URL`
@@ -213,8 +213,10 @@ For signup or web UX changes:
 
 Match local changes to automation:
 
-- `prepare_digest_content.yml`: fetch + single-pass analysis + extras generation
-- `daily_digest.yml`: build digest + send once daily on `0 9 * * *` UTC (early New York morning)
+- `prepare_digest_content.yml`: 2:00 AM NY RSS fetch + single-pass analysis
+- `prepare_twitter_headlines.yml` / `prepare_community_headlines.yml`: 2:00 AM NY extras (parallel with RSS)
+- `finalize_digest_payload.yml`: 4:00 AM NY rebuild/commit digest JSON
+- `daily_digest.yml`: compile markdown/HTML and send once daily on `0 9 * * *` UTC
 - `publish_web_archive.yml`: regenerate static issue archive on digest updates; fails if fresh daily snapshot is missing
 - `cleanup_old_articles.yml`: scheduled retention cleanup
 - `test_digest.yml`: manual one-recipient test digest

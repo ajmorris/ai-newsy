@@ -1,4 +1,8 @@
+import json
 import os
+import shutil
+import subprocess
+import tempfile
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
@@ -11,16 +15,26 @@ from openai import OpenAI
 
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_PROVIDER_CHAIN = "anthropic,gemini,openai"
+DEFAULT_CLAUDE_MODEL = "claude-opus-4-6"
 DEFAULT_MODELS = {
-    "anthropic": "claude-opus-4-6",
+    "claude_code": DEFAULT_CLAUDE_MODEL,
+    "anthropic": DEFAULT_CLAUDE_MODEL,
     "gemini": "gemini-2.0-flash",
     "openai": "gpt-4o-mini",
 }
 PROVIDER_MODEL_ENV_KEYS = {
+    "claude_code": "CLAUDE_CODE_MODEL",
     "anthropic": "ANTHROPIC_MODEL",
     "gemini": "GEMINI_MODEL",
     "openai": "OPENAI_MODEL",
 }
+_CLAUDE_CLI_TIMEOUT_SECONDS = 120
+_LLM_CREDENTIAL_ENV_KEYS = (
+    "CLAUDE_CODE_OAUTH_TOKEN",
+    "ANTHROPIC_KEY",
+    "GEMINI_API_KEY",
+    "OPENAI_API_KEY",
+)
 
 # When json_mode is on, model returns a small JSON object; 2048 avoids mid-JSON truncation.
 _JSON_COMPLETION_MAX_TOKENS = 2048
@@ -50,7 +64,7 @@ def _model_looks_compatible(provider: str, model: str) -> bool:
     normalized = (model or "").strip().lower()
     if not normalized:
         return False
-    if provider == "anthropic":
+    if provider in ("anthropic", "claude_code"):
         return normalized.startswith("claude")
     if provider == "gemini":
         return normalized.startswith("gemini")
@@ -61,7 +75,10 @@ def _model_looks_compatible(provider: str, model: str) -> bool:
 
 def _error_category(error: Exception) -> str:
     message = str(error).lower()
-    if any(token in message for token in ["401", "403", "unauthorized", "forbidden", "invalid api key"]):
+    if any(
+        token in message
+        for token in ["401", "403", "unauthorized", "forbidden", "invalid api key", "oauth"]
+    ):
         return "auth"
     if any(token in message for token in ["429", "rate limit", "too many requests", "resource_exhausted"]):
         return "rate-limit"
@@ -76,6 +93,87 @@ class LLMProvider(ABC):
     @abstractmethod
     def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
         """Generate text for the given prompt."""
+
+
+def llm_credentials_configured() -> bool:
+    return any((os.getenv(name) or "").strip() for name in _LLM_CREDENTIAL_ENV_KEYS)
+
+
+def _preview_cli_output(text: str, max_len: int = 500) -> str:
+    cleaned = (text or "").strip()
+    if len(cleaned) <= max_len:
+        return cleaned
+    return f"{cleaned[:max_len]}..."
+
+
+class ClaudeCodeProvider(LLMProvider):
+    name = "claude_code"
+
+    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
+        oauth_token = (os.getenv("CLAUDE_CODE_OAUTH_TOKEN") or "").strip()
+        if not oauth_token:
+            raise RuntimeError("CLAUDE_CODE_OAUTH_TOKEN is not configured")
+
+        claude_bin = shutil.which("claude")
+        if not claude_bin:
+            raise RuntimeError("Claude CLI is not installed or not on PATH")
+
+        command = [
+            claude_bin,
+            "-p",
+            prompt,
+            "--output-format",
+            "json",
+            "--max-turns",
+            "1",
+            "--permission-mode",
+            "dontAsk",
+            "--model",
+            model,
+        ]
+        with tempfile.TemporaryDirectory(prefix="claude-code-llm-") as tmpdir:
+            try:
+                completed = subprocess.run(
+                    command,
+                    capture_output=True,
+                    text=True,
+                    timeout=_CLAUDE_CLI_TIMEOUT_SECONDS,
+                    cwd=tmpdir,
+                    stdin=subprocess.DEVNULL,
+                    check=False,
+                )
+            except subprocess.TimeoutExpired as exc:
+                raise RuntimeError(
+                    f"Claude CLI timed out after {_CLAUDE_CLI_TIMEOUT_SECONDS}s (model={model})"
+                ) from exc
+
+        stdout = completed.stdout or ""
+        if not stdout.strip():
+            stderr_preview = _preview_cli_output(completed.stderr)
+            raise RuntimeError(
+                "Claude CLI returned empty stdout "
+                f"(status={completed.returncode}, model={model}, stderr={stderr_preview})"
+            )
+        try:
+            payload = json.loads(stdout)
+        except ValueError as exc:
+            raise RuntimeError(
+                "Claude CLI returned non-JSON output "
+                f"(status={completed.returncode}, model={model}, stdout={_preview_cli_output(stdout)})"
+            ) from exc
+
+        if not isinstance(payload, dict):
+            raise RuntimeError(f"Claude CLI JSON was not an object (model={model})")
+        if payload.get("is_error") or completed.returncode != 0:
+            detail = payload.get("result") or payload.get("error") or _preview_cli_output(completed.stderr)
+            raise RuntimeError(
+                "Claude CLI request failed "
+                f"(status={completed.returncode}, model={model}, error={detail})"
+            )
+        result = str(payload.get("result") or "").strip()
+        if not result:
+            raise RuntimeError(f"Claude CLI returned empty result (model={model})")
+        return result
 
 
 class AnthropicProvider(LLMProvider):
@@ -179,6 +277,10 @@ def _provider_default_model(provider: str) -> str:
     model_from_env = (os.getenv(env_key) or "").strip() if env_key else ""
     if model_from_env:
         return model_from_env
+    if provider == "claude_code":
+        anthropic_model = (os.getenv("ANTHROPIC_MODEL") or "").strip()
+        if anthropic_model:
+            return anthropic_model
     return DEFAULT_MODELS[provider]
 
 
@@ -188,7 +290,7 @@ def _resolve_model_for_provider(
     anthropic_model_override: Optional[str],
     openai_model_override: Optional[str],
 ) -> str:
-    if provider == "anthropic" and anthropic_model_override:
+    if provider in ("anthropic", "claude_code") and anthropic_model_override:
         return anthropic_model_override
     if provider == "openai" and openai_model_override:
         return openai_model_override
@@ -208,11 +310,14 @@ def generate_text_with_fallback(
     """
     Generate text with provider chain fallback.
     Default chain: Anthropic -> Gemini -> OpenAI.
+    GitHub Actions sets LLM_PROVIDER_CHAIN=claude_code to use the Claude CLI.
 
     When json_mode is True, providers request JSON-shaped output (Gemini/OpenAI native;
     Anthropic uses a larger max_tokens budget so prompt-only JSON fits).
+    The claude_code provider still returns the CLI text result; prompts must ask for JSON.
     """
     provider_registry: Dict[str, LLMProvider] = {
+        "claude_code": ClaudeCodeProvider(),
         "anthropic": AnthropicProvider(),
         "gemini": GeminiProvider(),
         "openai": OpenAIProvider(),

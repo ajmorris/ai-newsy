@@ -121,21 +121,27 @@ python execution/send_daily_email.py --test-email you@example.com
 
 All LLM scripts use `execution/ai_client.py` with a provider-chain fallback.
 
-- **Default order**: Anthropic -> Gemini -> OpenAI
+- **GitHub Actions digest jobs**: `LLM_PROVIDER_CHAIN=claude_code`. Runners install the Claude CLI and authenticate with `CLAUDE_CODE_OAUTH_TOKEN` (from `claude setup-token`). This is your Claude subscription, not an Anthropic API key.
+- **Local default order**: Anthropic -> Gemini -> OpenAI
 - **Override order** with `LLM_PROVIDER_CHAIN`:
 
   ```bash
+  LLM_PROVIDER_CHAIN=claude_code
   LLM_PROVIDER_CHAIN=anthropic,gemini,openai
   ```
 
-Required API keys for full fallback coverage:
+`@claude` comments still use `.github/workflows/claude.yml` (Claude Code GitHub Action). Digest jobs do not call that workflow; they invoke `claude -p` through `ai_client.py`.
 
-- `ANTHROPIC_KEY` (primary provider)
-- `GEMINI_API_KEY` (first fallback)
-- `OPENAI_API_KEY` (second fallback)
+Credentials:
+
+- `CLAUDE_CODE_OAUTH_TOKEN` (CI digest jobs; optional locally if `claude` is on PATH)
+- `ANTHROPIC_KEY` (local Messages API)
+- `GEMINI_API_KEY` (local first fallback)
+- `OPENAI_API_KEY` (local second fallback)
 
 Provider model defaults (override with env vars):
 
+- `CLAUDE_CODE_MODEL` (falls back to `ANTHROPIC_MODEL`) default: `claude-opus-4-6`
 - `ANTHROPIC_MODEL` default: `claude-opus-4-6`
 - `GEMINI_MODEL` default: `gemini-2.0-flash`
 - `OPENAI_MODEL` default: `gpt-4o-mini`
@@ -250,11 +256,14 @@ Local Vercel dev with repo `.env`:
 GitHub Actions configuration:
 
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- Digest LLM steps use `CLAUDE_CODE_OAUTH_TOKEN` and `LLM_PROVIDER_CHAIN=claude_code` (not `ANTHROPIC_KEY` / Gemini / OpenAI).
 - `daily_digest.yml` also requires `APP_URL` in repository secrets; use the same canonical origin as Vercel `APP_URL`.
-- Source-specific prep workflows are split by source:
-  - `prepare_digest_content.yml` (RSS)
-  - `prepare_twitter_headlines.yml` (Twitter/X extras)
-  - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
+- Source-specific prep workflows start together at 2:00 AM America/New_York:
+  - `prepare_digest_content.yml` (RSS fetch + analyze into `articles`)
+  - `prepare_twitter_headlines.yml` (`digest_extras.tweet_headlines`)
+  - `prepare_community_headlines.yml` (`digest_extras.community_headlines`)
+- `finalize_digest_payload.yml` at 4:00 AM America/New_York rebuilds and commits `data/digests/YYYY-MM-DD.json` (intro/opinion LLM plus extras).
+- `daily_digest.yml` at 09:00 UTC compiles markdown/HTML and sends via Resend. It does not call Claude; it loads the finalized JSON.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
 

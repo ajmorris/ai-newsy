@@ -41,11 +41,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: |
           digest_date_input="${{ github.event.inputs.digest_date }}"
           window_hours_input="${{ github.event.inputs.window_hours }}"

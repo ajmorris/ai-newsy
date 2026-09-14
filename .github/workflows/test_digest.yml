@@ -36,6 +36,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Claude CLI
+        if: ${{ inputs.prepare_content }}
+        uses: ./.github/actions/setup-claude-cli
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -68,9 +72,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           PROMPT_TOPIC: ${{ vars.PROMPT_TOPIC }}
         run: python execution/assign_topics.py
@@ -81,9 +84,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           PROMPT_SUMMARIZE: ${{ vars.PROMPT_SUMMARIZE }}
         run: python execution/summarize_articles.py
@@ -94,9 +96,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
@@ -116,9 +117,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           COMMUNITY_LOOKBACK_HOURS: ${{ vars.COMMUNITY_LOOKBACK_HOURS || '24' }}
           COMMUNITY_FETCH_LIMIT: ${{ vars.COMMUNITY_FETCH_LIMIT || '120' }}
@@ -189,6 +189,18 @@ jobs:
           )
           PY
 
+      - name: Finalize digest payload
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
+        run: python execution/digest_payload.py
+
       - name: Send test digest to single recipient
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -197,9 +209,4 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
         run: python execution/send_daily_email.py --test-email "${{ inputs.test_email }}"

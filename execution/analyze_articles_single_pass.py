@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 import sys
 
 sys.path.insert(0, ".")
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import generate_text_with_fallback, llm_credentials_configured
 from execution.database import (
     get_articles_by_analysis_run_id,
     get_articles_without_analysis,
@@ -314,8 +314,11 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    if not os.getenv("GEMINI_API_KEY") and not os.getenv("ANTHROPIC_KEY"):
-        print("No AI key configured. Set GEMINI_API_KEY and/or ANTHROPIC_KEY in .env")
+    if not llm_credentials_configured():
+        print(
+            "No AI credentials configured. Set CLAUDE_CODE_OAUTH_TOKEN, "
+            "ANTHROPIC_KEY, GEMINI_API_KEY, and/or OPENAI_API_KEY in .env"
+        )
         raise SystemExit(1)
 
     count, run_id = run_single_pass(

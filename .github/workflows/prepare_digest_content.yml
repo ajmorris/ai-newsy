@@ -32,6 +32,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Claude CLI
+        uses: ./.github/actions/setup-claude-cli
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -54,38 +57,13 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          LLM_PROVIDER_CHAIN: claude_code
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
           PROMPT_SINGLE_PASS_ANALYSIS: ${{ vars.PROMPT_SINGLE_PASS_ANALYSIS }}
           SINGLE_PASS_MODEL: ${{ vars.SINGLE_PASS_MODEL || 'gemini-2.0-flash' }}
           SINGLE_PASS_RUN_ID: gha-${{ github.run_id }}-${{ github.run_attempt }}
         run: python execution/analyze_articles_single_pass.py
-
-      - name: Generate tweet headlines and persist
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
-        run: python execution/generate_tweet_headlines.py
-
-      - name: Generate community headlines and persist
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-        run: python execution/generate_community_headlines.py
 
       - name: Verify RSS summaries available for digest
         env:
@@ -103,30 +81,6 @@ jobs:
           print(f"rss verification: summarized_unsent_last_24h={len(rows)}")
           print(f"rss verification: pending_single_pass_articles={len(pending)}")
           PY
-
-      - name: Build canonical digest payload JSON
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
-          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
-        run: python execution/digest_payload.py
-
-      - name: Commit canonical digest payload updates
-        run: |
-          git add data/digests/*.json
-          if git diff --staged --quiet; then
-            echo "No canonical digest JSON changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: persist canonical digest payload"
-          git push origin "HEAD:${{ github.ref_name }}"
 
       - name: Upload prepare-step digest markdown artifacts
         if: always()
