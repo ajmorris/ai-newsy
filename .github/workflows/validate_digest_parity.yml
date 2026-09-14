@@ -1,0 +1,139 @@
+name: Validate Digest Parity (Email + Web)
+
+on:
+  workflow_dispatch:
+    inputs:
+      digest_date:
+        description: 'Digest date (YYYY-MM-DD). Leave blank for UTC today.'
+        required: false
+        type: string
+      test_email:
+        description: 'Email address for single-recipient test send'
+        required: true
+        type: string
+      prepare_content:
+        description: 'Run fetch/analyze/headline prep before building test digest'
+        required: false
+        type: boolean
+        default: false
+      publish_test_issue:
+        description: 'Build test-prefixed web issue pages'
+        required: false
+        type: boolean
+        default: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: emails/package-lock.json
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          npm ci --prefix emails
+
+      - name: Prepare optional content inputs
+        if: ${{ inputs.prepare_content }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_TWEETS_DATABASE_ID: ${{ secrets.NOTION_TWEETS_DATABASE_ID }}
+          REDDIT_USER_AGENT: ${{ vars.REDDIT_USER_AGENT || 'ai-newsy-digest/1.0 (+https://github.com/ajmorris/ai-newsy)' }}
+          YC_RSS_URL: ${{ vars.YC_RSS_URL || 'https://www.ycombinator.com/blog/feed' }}
+        run: |
+          python execution/fetch_ai_news.py --limit 10
+          python execution/analyze_articles_single_pass.py
+          python execution/generate_tweet_headlines.py
+          python execution/generate_community_headlines.py
+
+      - name: Resolve digest date
+        id: digest_date
+        run: |
+          selected="${{ inputs.digest_date }}"
+          if [ -z "${selected}" ]; then
+            selected="$(date -u +%F)"
+          fi
+          echo "value=${selected}" >> "$GITHUB_OUTPUT"
+          echo "Using digest date: ${selected}"
+
+      - name: Build canonical digest and markdown
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
+        run: |
+          python execution/digest_payload.py --digest-date "${{ steps.digest_date.outputs.value }}"
+          python execution/build_digest_markdown.py --digest-date "${{ steps.digest_date.outputs.value }}"
+
+      - name: Send single-recipient test digest
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          APP_URL: ${{ secrets.APP_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-4-6' }}
+          PROMPT_INTRO: ${{ vars.PROMPT_INTRO }}
+        run: |
+          python execution/send_daily_email.py \
+            --digest-date "${{ steps.digest_date.outputs.value }}" \
+            --test-email "${{ inputs.test_email }}"
+
+      - name: Build web archive for parity check
+        run: |
+          if [ "${{ inputs.publish_test_issue }}" = "true" ]; then
+            python execution/build_web_archive.py --slug-prefix "test-"
+          else
+            python execution/build_web_archive.py
+          fi
+
+      - name: Run parity validator
+        run: |
+          python execution/validate_digest_parity.py \
+            --digest-date "${{ steps.digest_date.outputs.value }}" \
+            --snapshot-dir data/digests/snapshots \
+            --report parity-report.json
+
+      - name: Upload parity artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: parity-validation-${{ github.run_id }}
+          path: |
+            parity-report.json
+            data/digests/${{ steps.digest_date.outputs.value }}.json
+            data/digests/${{ steps.digest_date.outputs.value }}.md
+            data/digests/snapshots/${{ steps.digest_date.outputs.value }}.sent.json
+            frontend/issues/*.html
+            frontend/issues/index.json
+          if-no-files-found: error

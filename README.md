@@ -11,9 +11,7 @@ AI Newsy is an AI-news ingestion and digest system:
 ## Repository Layout
 
 - `execution/`: Python pipeline scripts (ingest, analysis, digest build/send, archive, cleanup)
-- `scripts/`: local digest runner, RSS feed checks, and parity helpers
-- `directives/`: operator SOPs (`setup_claude_desktop.md`, `run_daily_digest.md`; `publish_daily_digest.md` is superseded)
-- `prompts/`: one-time Claude Desktop setup (`setup-claude-desktop.md`; `publish-daily-digest.md` is a pointer only)
+- `scripts/`: utility scripts like RSS feed checks
 - `frontend/`: static site + Vercel serverless API routes (`/api/subscribe`, `/api/confirm`, `/api/unsubscribe`)
 - `data/digests/`: generated daily digest markdown files
 - `.github/workflows/`: scheduled and manual automation workflows
@@ -24,8 +22,8 @@ AI Newsy is an AI-news ingestion and digest system:
 - Python `3.10+` (CI uses `3.10`)
 - Node.js `20+` and npm (for frontend local dev)
 - Supabase project credentials
-- Claude Desktop (daily scheduled task; no `ANTHROPIC_KEY`)
-- Resend credentials in GitHub Actions secrets for the send-only email job
+- At least one LLM provider key (`ANTHROPIC_KEY`, `GEMINI_API_KEY`, or `OPENAI_API_KEY`)
+- Resend credentials for email sending
 
 ## Quickstart (End-to-End Local)
 
@@ -49,40 +47,25 @@ Minimum vars for core pipeline:
 
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY`
+- one LLM key (`ANTHROPIC_KEY` or `GEMINI_API_KEY` or `OPENAI_API_KEY`)
 
-Do **not** put `ANTHROPIC_KEY` in `.env`. Claude Desktop is the model.
-
-Resend vars stay in GitHub Actions (and Vercel for signup mail):
+Add email vars to send digests:
 
 - `RESEND_API_KEY`
 - `EMAIL_FROM`
 - `APP_URL`
 
-### 3) One-time Claude Desktop setup
-
-Paste [`prompts/setup-claude-desktop.md`](prompts/setup-claude-desktop.md) into Claude Desktop once. That creates a daily local scheduled task from [`directives/run_daily_digest.md`](directives/run_daily_digest.md).
-
-After setup, each morning Claude Desktop:
-
-1. Fetches RSS (`./scripts/run_local_digest.sh --fetch`)
-2. Writes analyses, intro, and headlines into `.tmp/claude-digest.json`
-3. Assembles and commits (`./scripts/run_local_digest.sh --assemble --commit`)
-4. Pushes `main` with today’s digest JSON **and** `frontend/issues/` (Vercel deploys the live issue first)
-
-The scheduled **Daily AI Digest** Action at 09:00 UTC then sends email via Resend from that JSON and commits `data/digests/snapshots/*.sent.json`. Do not dispatch it from Desktop. Do not write sent snapshots locally.
-
-After this repo change is on `main`, replace the Desktop scheduled-task Instructions with the current [`directives/run_daily_digest.md`](directives/run_daily_digest.md).
-
-Manual stages:
+### 3) Run a minimal local pipeline
 
 ```bash
-./scripts/run_local_digest.sh --fetch
-# write .tmp/claude-digest.json
-./scripts/run_local_digest.sh --assemble --commit
-git push origin main
+python3 scripts/check_feeds.py
+python3 execution/fetch_ai_news.py --limit 10
+python3 execution/analyze_articles_single_pass.py --window-hours 48
+python3 execution/build_digest_markdown.py
+python3 execution/send_daily_email.py --test-email you@example.com
 ```
 
-Do not `gh workflow run` from Desktop. The 09:00 UTC Action sends from the pushed JSON.
+`--test-email` sends to one recipient and does not mark articles as sent.
 
 ## Running Scripts (Local Runbook)
 
@@ -136,21 +119,23 @@ python3 execution/send_daily_email.py --test-email you@example.com
 python3 execution/build_web_archive.py
 ```
 
-### Local QA (no Anthropic API; stand-ins for the deleted test/parity Actions)
-
-Compare the **repo** canonical JSON to `frontend/issues/`. A sent snapshot, if present, is the email source of truth.
+### Local parity validation (no production sent writes, no git changes required)
 
 ```bash
-./scripts/validate_digest_parity_local.sh
-./scripts/validate_digest_parity_local.sh 2026-04-23
-./scripts/validate_digest_parity_local.sh --test-email you@example.com
+./scripts/validate_digest_parity_local.sh you@example.com
 ```
 
-Send one test email from `.tmp/claude-digest.json` or today’s committed JSON (`--no-llm`). Does not mark `sent_at`.
+Optional date replay:
 
 ```bash
-./scripts/test_email_local.sh you@example.com
+./scripts/validate_digest_parity_local.sh you@example.com 2026-04-23
 ```
+
+This local validator:
+
+- writes canonical digest + web output to a temporary directory (not `data/digests` / `frontend/issues`)
+- sends using `--test-email` so `sent_at` is not marked on articles
+- runs parity checks and writes a local `parity-report.json`
 
 ### Cleanup old articles
 
@@ -195,7 +180,8 @@ Notes:
 See `.env.example` for full reference. Common groups:
 
 - Core DB: `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SECRET_KEY`
-- AI: Claude Desktop (no `ANTHROPIC_KEY` in `.env`)
+- AI providers: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`
+- AI selection/tuning: `LLM_PROVIDER_CHAIN`, `ANTHROPIC_MODEL`, `GEMINI_MODEL`, `OPENAI_MODEL`
 - Email: `RESEND_API_KEY`, `EMAIL_FROM`, `APP_URL`
 - Signup protections: `SUBSCRIBE_RATE_LIMIT_*`, `TURNSTILE_*` or `HCAPTCHA_*`
 - Optional notifications: `SLACK_WEBHOOK_URL`
@@ -223,17 +209,15 @@ For signup or web UX changes:
 3. Keep secrets server-side only and validate inputs defensively.
 4. Test with `npm run dev:env` and real end-to-end form submission.
 
-### Local generation, Vercel, and remaining Actions
+### CI/workflow alignment
 
-Digest AI runs in Claude Desktop. GitHub Actions no longer generate content.
+Match local changes to automation:
 
-- One-time setup: [`prompts/setup-claude-desktop.md`](prompts/setup-claude-desktop.md)
-- Daily Desktop task: fetch → Claude writes copy → assemble/commit/push JSON **and** `frontend/issues/`
-- Vercel deploys the live issue from that push
-- `daily_digest.yml`: send-only at `0 9 * * *` UTC from committed JSON (`--no-llm`), then commits sent snapshots
-- `cleanup_old_articles.yml`: weekly retention cleanup
-
-Repo secrets that can be removed from GitHub Actions: `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, and `NOTION_*`. Keep Resend + Supabase + `APP_URL` for the send Action.
+- `prepare_digest_content.yml`: fetch + single-pass analysis + extras generation
+- `daily_digest.yml`: build digest + send once daily on `0 9 * * *` UTC (early New York morning)
+- `publish_web_archive.yml`: regenerate static issue archive on digest updates; fails if fresh daily snapshot is missing
+- `cleanup_old_articles.yml`: scheduled retention cleanup
+- `test_digest.yml`: manual one-recipient test digest
 
 ## Roadmap Guidance (Lightweight)
 
@@ -258,9 +242,7 @@ When adding new functionality, prioritize:
 - If signup fails with server configuration errors, verify `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
 - If digest send fails, verify `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`.
 - Manual digest dispatches require `force_send=true`; this intentionally bypasses duplicate-send protection.
-- Scheduled send fails if today's `data/digests/YYYY-MM-DD.json` is missing intro or opinions; generate locally first.
-- A JSON-only push (no `frontend/issues/`) leaves the live site behind the email. `--assemble` / `--commit` now refuse that.
-- If `git push origin main` is rejected, stop. The daily digest must land on `main` before 09:00 UTC; do not open a PR unless a human asks.
+- Archive publishing blocks stale output when latest published digest date is older than one day.
 - If confirm/unsubscribe links open the wrong host, verify `APP_URL` matches your canonical deployed frontend origin in both Vercel env vars and GitHub Actions secrets.
 - Keep `SUPABASE_SECRET_KEY` and provider API keys out of frontend/client code.
 - Prefer dry-run/test modes before running production-impacting commands.

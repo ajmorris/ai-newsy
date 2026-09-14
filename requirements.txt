@@ -9,8 +9,9 @@ feedparser>=6.0.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
-# AI summarization (Claude Opus 5 via Anthropic HTTP API + requests)
-# Tweet extras
+# AI Summarization (Google Gemini - new unified SDK)
+google-genai
+openai
 notion-client
 
 # Email

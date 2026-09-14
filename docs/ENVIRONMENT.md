@@ -109,48 +109,40 @@ pip install -r requirements.txt
 Then run scripts with the venv active:
 
 ```bash
-./scripts/run_local_digest.sh
 python execution/fetch_ai_news.py --limit 5
-python execution/analyze_articles_single_pass.py
+python execution/assign_topics.py
+python execution/summarize_articles.py
 python execution/generate_tweet_headlines.py --dry-run
 python execution/generate_community_headlines.py --dry-run
 python execution/send_daily_email.py --test-email you@example.com
 ```
 
-## Claude Desktop (no API key)
+## AI provider fallback chain
 
-Daily analysis, intro, and headlines are written by Claude Desktop. Local
-`.env` does **not** need `ANTHROPIC_KEY`.
+All LLM scripts use `execution/ai_client.py` with a provider-chain fallback.
 
-Required locally:
+- **Default order**: Anthropic -> Gemini -> OpenAI
+- **Override order** with `LLM_PROVIDER_CHAIN`:
 
-- `SUPABASE_URL`
-- `SUPABASE_SECRET_KEY`
+  ```bash
+  LLM_PROVIDER_CHAIN=anthropic,gemini,openai
+  ```
 
-One-time setup: paste `prompts/setup-claude-desktop.md` into Claude Desktop.
-The scheduled task follows `directives/run_daily_digest.md`. After that file
-changes on `main`, replace the Desktop task Instructions (or recreate
-`ai-newsy-daily-digest`).
+Required API keys for full fallback coverage:
 
-Order of operations:
+- `ANTHROPIC_KEY` (primary provider)
+- `GEMINI_API_KEY` (first fallback)
+- `OPENAI_API_KEY` (second fallback)
 
-1. Desktop pushes `data/digests/YYYY-MM-DD.json` **and** `frontend/issues/`
-2. Vercel deploys the live issue
-3. 09:00 UTC Action emails from the committed JSON (`--no-llm`)
-4. The same Action commits `data/digests/snapshots/*.sent.json` and `*.status.json`
+Provider model defaults (override with env vars):
 
-Desktop never sends production email and never writes sent snapshots. Archive
-HTML is built pre-send from canonical JSON. Snapshots are post-send history.
+- `ANTHROPIC_MODEL` default: `claude-opus-4-6`
+- `GEMINI_MODEL` default: `gemini-2.0-flash`
+- `OPENAI_MODEL` default: `gpt-4o-mini`
 
-`execution/ai_client.py` remains only for optional off-Desktop API experiments.
-Do not use it in the daily Desktop path.
-
-Local QA (no Anthropic API):
-
-```bash
-./scripts/validate_digest_parity_local.sh
-./scripts/test_email_local.sh you@example.com
-```
+Per-task vars like `SINGLE_PASS_MODEL`, `TWEET_HEADLINES_MODEL`, and
+`COMMUNITY_HEADLINES_MODEL` remain supported as logical model hints. If a hint
+does not match the active provider, the provider default model is used.
 
 ### Prompt voice contract (`PROMPT_INTRO`, `PROMPT_SUMMARIZE`)
 
@@ -173,12 +165,12 @@ For Notion tweet ingestion + headline generation, configure:
 - `TWEET_LOOKBACK_HOURS` (optional, default `24`)
 - `TWEET_FETCH_LIMIT` (optional, default `100`)
 - `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
-- `TWEET_HEADLINES_MODEL` (optional, default `claude-opus-5`)
+- `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
 
-Local only (not used by GitHub Actions):
+GitHub Actions:
 
-- Set `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in `.env`
-- Optional tweet settings can stay in `.env` as well
+- Add `NOTION_API_KEY` and `NOTION_TWEETS_DATABASE_ID` in repository **Secrets**
+- Add optional tweet settings as repository **Variables**
 
 Database:
 
@@ -192,12 +184,15 @@ For Reddit/HN/YC ingestion + headline generation, configure:
 - `COMMUNITY_LOOKBACK_HOURS` (optional, default `24`)
 - `COMMUNITY_FETCH_LIMIT` (optional, default `120`)
 - `COMMUNITY_MAX_HEADLINES` (optional, default `24`) — max headlines after curation; digest builder caps further
-- `COMMUNITY_HEADLINES_MODEL` (optional, default `claude-opus-5`)
+- `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`)
 - `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
 - `REDDIT_USER_AGENT` (optional but recommended)
 - `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)
 
-Community headline generation runs in `./scripts/run_local_digest.sh` and persists to `digest_extras` key `community_headlines`.
+GitHub Actions:
+
+- Add optional community settings as repository **Variables**
+- `prepare_community_headlines.yml` runs source extraction + persistence to `digest_extras` key `community_headlines`
 
 ## Digest payload configuration
 
@@ -254,30 +249,14 @@ Local Vercel dev with repo `.env`:
 
 GitHub Actions configuration:
 
-- `daily_digest.yml` is send-only, then commits sent snapshots. It needs `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, `RESEND_API_KEY`, `EMAIL_FROM`, and `APP_URL`. Use the same canonical origin as Vercel `APP_URL`.
-- The send job uses `permissions: contents: write` so `github-actions[bot]` can push `data/digests/snapshots/` only. It does **not** rebuild `frontend/issues/`.
-- It does **not** need `ANTHROPIC_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`, or `NOTION_*`. Those can be removed from repository secrets in the GitHub UI.
-- `cleanup_old_articles.yml` still needs `SUPABASE_URL` and `SUPABASE_SECRET_KEY`.
+- Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
+- `daily_digest.yml` also requires `APP_URL` in repository secrets; use the same canonical origin as Vercel `APP_URL`.
+- Source-specific prep workflows are split by source:
+  - `prepare_digest_content.yml` (RSS)
+  - `prepare_twitter_headlines.yml` (Twitter/X extras)
+  - `prepare_community_headlines.yml` (Reddit/HN/YC extras)
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.
-
-After a local digest run, push `frontend/issues/` on `main` **before** 09:00 UTC. Vercel deploys the static site from the `frontend/` directory. Optional CLI: `cd frontend && npx vercel --prod` if the project is already linked.
-
-## Protected `main` (Desktop + Actions push)
-
-Checked 2026-09-02 from this agent:
-
-- Repository rulesets: none (`GET /repos/ajmorris/ai-newsy/rulesets` → `[]`; `GET .../rules/branches/main` → `[]`).
-- Classic branch protection API returned **403** (`Resource not accessible by integration`). This token cannot read whether required reviews or status checks are configured.
-- Recent `main` history shows `github-actions[bot]` already pushing digest artifacts directly (`chore: persist canonical digest payload`, `chore: publish web issue archive`). The snapshot commit should work with `contents: write` on the same pattern.
-- This environment is not the Desktop machine, so Desktop credentials were not used to push a probe commit to `main`. Confirm `git push origin main` during Claude Desktop setup.
-
-If `main` later requires a PR, the daily loop breaks. Fallback (do not change protection from an agent unless a human confirms):
-
-- Allow the Desktop git user and `github-actions[bot]` to push `data/digests/**` and `frontend/issues/**`, or
-- Add a deploy key / `GH_PUSH_TOKEN` secret with permission to push those paths.
-
-A `workflow_dispatch` with `force_send=false` will **not** exercise the snapshot push (the guard skips). The first successful scheduled send is the live snapshot-push test.
 
 ## Confirmation and unsubscribe verification checklist
 
@@ -290,8 +269,8 @@ A `workflow_dispatch` with `force_send=false` will **not** exercise the snapshot
 
 ## Matching GitHub
 
-- **CI send-only**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.
-- **Local generation**: Use Python 3.10 (Homebrew or pyenv) and the same `requirements.txt`. All Claude calls happen locally.
+- **CI**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.
+- **Local**: Use Python 3.10 (Homebrew or pyenv) and the same `requirements.txt` so behavior matches.
 
 ## Troubleshooting
 
