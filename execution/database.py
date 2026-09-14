@@ -10,7 +10,7 @@ import time
 import base64
 from pathlib import Path
 from datetime import datetime
-from typing import Any, Dict, Optional
+from typing import Any, Callable, Dict, Optional, TypeVar
 from supabase import create_client, Client
 from dotenv import load_dotenv
 
@@ -134,6 +134,64 @@ def subscriber_exists(email: str) -> bool:
 # ARTICLE OPERATIONS
 # ===========================================
 
+_TRANSIENT_STATUS_CODES = {502, 503, 504}
+_SUPABASE_RETRY_ATTEMPTS = 3
+_T = TypeVar("_T")
+
+
+def _error_status_code(error: Exception) -> Optional[int]:
+    raw = getattr(error, "code", None)
+    try:
+        return int(raw)
+    except (TypeError, ValueError):
+        return None
+
+
+def _is_duplicate_article_error(error: Exception) -> bool:
+    message = str(error).lower()
+    return "23505" in message or "duplicate" in message or "unique constraint" in message
+
+
+def _is_transient_supabase_error(error: Exception) -> bool:
+    if _error_status_code(error) in _TRANSIENT_STATUS_CODES:
+        return True
+    message = str(error).lower()
+    return any(
+        token in message
+        for token in (
+            "gateway timeout",
+            "json could not be generated",
+            "timed out",
+            "timeout",
+            "502",
+            "503",
+            "504",
+        )
+    )
+
+
+def _execute_with_retry(operation: Callable[[], _T], *, attempts: int = _SUPABASE_RETRY_ATTEMPTS) -> _T:
+    delay = 1.0
+    last_error: Optional[Exception] = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return operation()
+        except Exception as error:
+            last_error = error
+            if _is_duplicate_article_error(error) or not _is_transient_supabase_error(error):
+                raise
+            if attempt == attempts:
+                raise
+            print(
+                f"Transient Supabase error (attempt {attempt}/{attempts}): {error}; "
+                f"retrying in {delay:.0f}s..."
+            )
+            time.sleep(delay)
+            delay *= 2
+    assert last_error is not None
+    raise last_error
+
+
 def add_article(
     url: str,
     title: str,
@@ -145,22 +203,30 @@ def add_article(
     Add a new article if URL doesn't exist (deduplication).
     Returns the article or None if already exists.
     """
-    # Check for existing
-    existing = supabase.table("articles").select("id").eq("url", url).execute()
+    existing = _execute_with_retry(
+        lambda: supabase.table("articles").select("id").eq("url", url).execute()
+    )
     if existing.data:
         return None  # Already exists
 
     now_iso = datetime.utcnow().isoformat()
     pub_iso = published_at or now_iso
 
-    result = supabase.table("articles").insert({
-        "url": url,
-        "title": title,
-        "source": source,
-        "content": content,
-        "fetched_at": now_iso,
-        "published_at": pub_iso,
-    }).execute()
+    try:
+        result = _execute_with_retry(
+            lambda: supabase.table("articles").insert({
+                "url": url,
+                "title": title,
+                "source": source,
+                "content": content,
+                "fetched_at": now_iso,
+                "published_at": pub_iso,
+            }).execute()
+        )
+    except Exception as error:
+        if _is_duplicate_article_error(error):
+            return None
+        raise
     return result.data[0] if result.data else None
 
 
