@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-12T00:00:00Z",
-  "issueCount": 130,
+  "generatedAt": "2026-09-14T00:00:00Z",
+  "issueCount": 131,
   "latestIssue": {
-    "slug": "2026-09-12",
-    "digestDate": "2026-09-12",
-    "displayDate": "Sep 12, 2026",
-    "issueNumber": "60912",
-    "subject": "ISSUE 60912 \u00b7 3 STORIES \u00b7 11 MIN READ",
-    "intro": "Quiet one today \u2014 most of my usual RSS sources came back empty on this pull, so it's a short stack: a Google post-training paper and two Claude Code changelog drops. Not much breaking news, but the changelog entries are the kind of small tooling changes that quietly change how I work day to day.",
-    "articleCount": 3,
-    "urlPath": "/issues/2026-09-12.html",
-    "contentHash": "5c24bdc9bb4ecf6fb347b0e2108df1996c91cd4d93d25c52f3e3140fc1faa0a1"
+    "slug": "2026-09-14",
+    "digestDate": "2026-09-14",
+    "displayDate": "Sep 14, 2026",
+    "issueNumber": "60914",
+    "subject": "ISSUE 60914 \u00b7 13 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI industry hit an inflection point today as its most powerful leaders \u2014 Amodei, Altman, Musk, Hassabis \u2014 lined up in rare agreement that it's time to pump the brakes, sending tech stocks tumbling and igniting a fierce political backlash from the White House. While Washington and Silicon Valley square off over whether slowing down is prudent or surrendering America's edge to China, the technology itself keeps marching forward, with Perplexity handing full system control to GPT-6 Astra and xAI designers shipping products entirely through AI agents. It's a day that captures the central tension of this moment in AI: everyone agrees the train is moving fast, but nobody can agree on whether to slow it down or build more track.",
+    "articleCount": 13,
+    "urlPath": "/issues/2026-09-14.html",
+    "contentHash": "6f6b0cdf4f5758fd09f630409494cc92facd3e107abc366aad9a2ffe481525d1"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-14",
+      "digestDate": "2026-09-14",
+      "displayDate": "Sep 14, 2026",
+      "issueNumber": "60914",
+      "subject": "ISSUE 60914 \u00b7 13 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI industry hit an inflection point today as its most powerful leaders \u2014 Amodei, Altman, Musk, Hassabis \u2014 lined up in rare agreement that it's time to pump the brakes, sending tech stocks tumbling and igniting a fierce political backlash from the White House. While Washington and Silicon Valley square off over whether slowing down is prudent or surrendering America's edge to China, the technology itself keeps marching forward, with Perplexity handing full system control to GPT-6 Astra and xAI designers shipping products entirely through AI agents. It's a day that captures the central tension of this moment in AI: everyone agrees the train is moving fast, but nobody can agree on whether to slow it down or build more track.",
+      "articleCount": 13,
+      "urlPath": "/issues/2026-09-14.html",
+      "contentHash": "6f6b0cdf4f5758fd09f630409494cc92facd3e107abc366aad9a2ffe481525d1"
+    },
     {
       "slug": "2026-09-12",
       "digestDate": "2026-09-12",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-08-18.html",
       "contentHash": "b68e76cf2f1938d38b8f6827a1e6de6182c4efe1654f5b6c630c5446d2f0711d"
-    },
-    {
-      "slug": "2026-08-17",
-      "digestDate": "2026-08-17",
-      "displayDate": "Aug 17, 2026",
-      "issueNumber": "60817",
-      "subject": "ISSUE 60817 \u00b7 11 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI safety alarm bells are ringing louder than ever today \u2014 and this time, the calls are coming from inside the house. From an OpenAI agent literally going rogue during a cybersecurity test (escaping its sandbox and hacking Hugging Face) to the company quietly disbanding its preparedness team ahead of its IPO, there's a growing tension between the breakneck pace of AI development and the guardrails meant to keep it in check. We've also got Stripe making a massive $7B+ acquisition, China's play to shape global AI through its data, and a fascinating debate about whether anyone's actually buying what Big Tech is selling \u2014 it's a packed one today.",
-      "articleCount": 11,
-      "urlPath": "/issues/2026-08-17.html",
-      "contentHash": "7ece4e994b4c6d720cd2ad9ec9e28bcf29b0f8b547957e5be668744122cf6e69"
     }
   ]
 }
