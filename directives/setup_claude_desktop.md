@@ -62,5 +62,5 @@ Do not require a successful full assemble during setup unless pending Claude JSO
 
 ## Related
 
-- Paste-ready setup prompt: [`prompts/setup-claude-desktop.md`](../prompts/setup-claude-desktop.md)
-- Daily job: [`run_daily_digest.md`](run_daily_digest.md)
+- Paste-ready setup prompt (copy everything below the line): [`prompts/setup-claude-desktop.md`](../prompts/setup-claude-desktop.md)
+- Daily job (this text becomes the scheduled-task Instructions): [`run_daily_digest.md`](run_daily_digest.md)
