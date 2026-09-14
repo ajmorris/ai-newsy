@@ -1,0 +1,89 @@
+# Daily digest orchestrator.
+# Prep RSS + Twitter + Community in parallel, then finalize JSON, then send.
+# Dual crons cover 2:00 AM America/New_York in both EST and EDT. The decide job
+# uses github.event.schedule (which cron fired) vs today's NY offset so a late
+# GitHub start still runs the correct DST slot.
+
+name: Daily Digest Pipeline
+
+on:
+  schedule:
+    # 2:00 AM America/New_York (EDT = 06:00 UTC, EST = 07:00 UTC)
+    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: digest-pipeline
+  cancel-in-progress: false
+
+jobs:
+  decide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      should_run: ${{ steps.guard.outputs.should_run }}
+    steps:
+      - name: Guard scheduled run to 2:00 AM America/New_York
+        id: guard
+        run: |
+          should_run="false"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            should_run="true"
+            echo "Guard: proceeding (workflow_dispatch)."
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            ny_offset=$(TZ=America/New_York date +%z)
+            offset_hours=$((10#${ny_offset:1:2}))
+            if [ "${ny_offset:0:1}" = "-" ]; then
+              utc_hour=$((2 + offset_hours))
+            else
+              utc_hour=$((2 - offset_hours))
+            fi
+            wanted="0 ${utc_hour} * * *"
+            echo "America/New_York offset: ${ny_offset}"
+            echo "Wanted cron for 02:00 NY: ${wanted}"
+            echo "Triggered cron: ${{ github.event.schedule }}"
+            if [ "${{ github.event.schedule }}" = "${wanted}" ]; then
+              should_run="true"
+              echo "Guard: proceeding (DST-correct cron slot)."
+            else
+              echo "Guard: skipping later jobs (wrong DST cron slot)."
+            fi
+          else
+            echo "Guard: skipping later jobs (unsupported event ${{ github.event_name }})."
+          fi
+          echo "should_run=${should_run}" >> "$GITHUB_OUTPUT"
+
+  prepare-rss:
+    needs: [decide]
+    if: ${{ needs.decide.outputs.should_run == 'true' }}
+    uses: ./.github/workflows/prepare_digest_content.yml
+    secrets: inherit
+
+  prepare-twitter:
+    needs: [decide]
+    if: ${{ needs.decide.outputs.should_run == 'true' }}
+    uses: ./.github/workflows/prepare_twitter_headlines.yml
+    secrets: inherit
+
+  prepare-community:
+    needs: [decide]
+    if: ${{ needs.decide.outputs.should_run == 'true' }}
+    uses: ./.github/workflows/prepare_community_headlines.yml
+    secrets: inherit
+
+  finalize:
+    needs: [prepare-rss, prepare-twitter, prepare-community]
+    if: ${{ always() && needs.prepare-rss.result == 'success' }}
+    uses: ./.github/workflows/finalize_digest_payload.yml
+    secrets: inherit
+
+  send:
+    needs: [finalize]
+    if: ${{ needs.finalize.result == 'success' }}
+    uses: ./.github/workflows/daily_digest.yml
+    secrets: inherit

@@ -1,13 +1,23 @@
 # Daily AI Digest Workflow
 # Compiles finalized JSON into markdown/HTML and sends via Resend.
-# Runs once daily at a fixed UTC time (09:00).
+# Production sends are invoked by digest_pipeline.yml after Finalize commits
+# data/digests/YYYY-MM-DD.json. Manual dispatch still requires force_send.
 
 name: Daily AI Digest
 
 on:
-  schedule:
-    # Runs 20 minutes after archive publish (08:40 UTC).
-    - cron: '0 9 * * *'
+  workflow_call:
+    inputs:
+      force_send:
+        description: "Allow production send (bypasses duplicate-send guard)"
+        required: false
+        type: boolean
+        default: false
+      send_reason:
+        description: "Reason for production send override"
+        required: false
+        type: string
+        default: ""
   workflow_dispatch:
     inputs:
       force_send:
@@ -20,6 +30,9 @@ on:
         required: false
         type: string
 
+permissions:
+  contents: write
+
 concurrency:
   group: daily-ai-digest-schedule
   cancel-in-progress: false
@@ -27,24 +40,26 @@ concurrency:
 jobs:
   send-digest:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       # Decide once whether this run should proceed past setup. Setting an output
-      # (instead of `exit 0`) lets every later step gate on `steps.guard.outputs.should_send`,
-      # so an out-of-window cron trigger or a manual run without force_send no longer
-      # leaks through to the actual send. The DB claim in send_daily_email.py is the
-      # second, durable layer that catches anything this guard misses.
-      - name: Guard run (time window + manual override)
+      # (instead of `exit 0`) lets every later step gate on `steps.guard.outputs.should_send`.
+      # workflow_call is the digest pipeline (always send). Manual dispatch still
+      # requires force_send. The DB claim in send_daily_email.py is the second,
+      # durable layer that catches anything this guard misses.
+      - name: Guard run (pipeline + manual override)
         id: guard
         run: |
           should_send="false"
           reason=""
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "workflow_call" ]; then
             should_send="true"
-            reason="Scheduled run at fixed UTC cadence."
+            reason="Called from digest pipeline after finalize."
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if [ "${{ inputs.force_send }}" = "true" ]; then
               should_send="true"
+              reason="Manual run with force_send=true."
             else
               reason="Manual run blocked unless force_send=true."
             fi
@@ -62,6 +77,8 @@ jobs:
       - name: Checkout repository
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         if: ${{ steps.guard.outputs.should_send == 'true' }}
@@ -98,27 +115,17 @@ jobs:
             exit 1
           fi
 
-      - name: Wait for canonical digest payload
+      - name: Require canonical digest payload
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         run: |
           expected_payload="data/digests/$(date -u +%F).json"
           echo "Looking for canonical payload: ${expected_payload}"
           git fetch origin "${{ github.ref_name }}"
-          for attempt in $(seq 1 30); do
-            if [ -f "${expected_payload}" ]; then
-              echo "Found ${expected_payload} on attempt ${attempt}."
-              exit 0
-            fi
-            echo "Payload missing; waiting 30s for finalize commit (attempt ${attempt}/30)."
-            git fetch origin "${{ github.ref_name }}"
-            git checkout "origin/${{ github.ref_name }}" -- "${expected_payload}" || true
-            if [ -f "${expected_payload}" ]; then
-              echo "Fetched ${expected_payload} from origin."
-              exit 0
-            fi
-            sleep 30
-          done
-          echo "Missing canonical digest payload for today after waiting."
+          if git checkout "origin/${{ github.ref_name }}" -- "${expected_payload}"; then
+            echo "Found ${expected_payload}."
+            exit 0
+          fi
+          echo "Missing canonical digest payload for today."
           ls -la data/digests || true
           exit 1
 
@@ -137,22 +144,43 @@ jobs:
         run: |
           python execution/build_digest_markdown.py
           FORCE_SEND_FLAG=""
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_send }}" = "true" ]; then
+          if [ "${{ inputs.force_send }}" = "true" ]; then
             FORCE_SEND_FLAG="--force-send"
           fi
           SEND_REASON="${{ inputs.send_reason || '' }}"
           python execution/send_daily_email.py ${FORCE_SEND_FLAG} --send-reason "${SEND_REASON}"
 
-      - name: Verify scheduled run produced today's sent snapshot
-        if: ${{ github.event_name == 'schedule' && steps.guard.outputs.should_send == 'true' }}
+      - name: Verify send produced today's sent snapshot
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
         run: |
           expected_snapshot="data/digests/snapshots/$(date -u +%F).sent.json"
           echo "Checking for expected snapshot: ${expected_snapshot}"
           if [ ! -f "${expected_snapshot}" ]; then
-            echo "Missing scheduled snapshot for today."
+            echo "Missing sent snapshot for today."
             ls -la data/digests/snapshots || true
             exit 1
           fi
+
+      - name: Commit sent snapshots
+        if: ${{ steps.guard.outputs.should_send == 'true' }}
+        run: |
+          # Persist what was emailed. Do not rebuild frontend/issues here.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p data/digests/snapshots
+          shopt -s nullglob
+          snapshot_files=(data/digests/snapshots/*.sent.json data/digests/snapshots/*.status.json)
+          if [ ${#snapshot_files[@]} -eq 0 ]; then
+            echo "No sent snapshots to commit."
+            exit 0
+          fi
+          git add "${snapshot_files[@]}"
+          if git diff --staged --quiet; then
+            echo "No sent snapshot changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: persist sent digest snapshots"
+          git push origin "HEAD:${{ github.ref_name }}"
 
       - name: Upload digest artifacts
         if: ${{ steps.guard.outputs.should_send == 'true' }}

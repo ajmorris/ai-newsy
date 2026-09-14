@@ -20,7 +20,7 @@ Env vars live in `.env.example` and `docs/ENVIRONMENT.md`. Never commit secrets.
 
 Digest LLM calls go through `execution/ai_client.py`. GitHub Actions prep/finalize jobs use the Claude CLI (`LLM_PROVIDER_CHAIN=claude_code`) with `CLAUDE_CODE_OAUTH_TOKEN`. Daily send compiles markdown/HTML from the finalized JSON and does not call Claude. Local runs can still use Anthropic / Gemini / OpenAI HTTP APIs. `@claude` comments use `.github/workflows/claude.yml`, which is separate from digest generation.
 
-Scheduled clock: RSS + Twitter + Community at 2:00 AM America/New_York; finalize payload at 4:00 AM America/New_York; send at 09:00 UTC.
+Scheduled clock: one `digest_pipeline.yml` run at 2:00 AM America/New_York. RSS + Twitter + Community run in parallel, then finalize commits `data/digests/YYYY-MM-DD.json`, then send. Email goes out when that pipeline finishes, not on a separate 09:00 UTC cron. Stage workflows stay callable/manual via `workflow_dispatch`.
 
 ## Tests
 
