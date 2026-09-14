@@ -100,7 +100,7 @@ def llm_credentials_configured() -> bool:
 
 
 def _preview_cli_output(text: str, max_len: int = 500) -> str:
-    cleaned = (text or "").strip()
+    cleaned = " ".join((text or "").split())
     if len(cleaned) <= max_len:
         return cleaned
     return f"{cleaned[:max_len]}..."
@@ -118,10 +118,11 @@ class ClaudeCodeProvider(LLMProvider):
         if not claude_bin:
             raise RuntimeError("Claude CLI is not installed or not on PATH")
 
+        # Pass the prompt on stdin. `claude -p <prompt>` treats a prompt that
+        # starts with `-` (including skill YAML `---`) as an unknown option.
         command = [
             claude_bin,
             "-p",
-            prompt,
             "--output-format",
             "json",
             "--max-turns",
@@ -135,11 +136,11 @@ class ClaudeCodeProvider(LLMProvider):
             try:
                 completed = subprocess.run(
                     command,
+                    input=prompt,
                     capture_output=True,
                     text=True,
                     timeout=_CLAUDE_CLI_TIMEOUT_SECONDS,
                     cwd=tmpdir,
-                    stdin=subprocess.DEVNULL,
                     check=False,
                 )
             except subprocess.TimeoutExpired as exc:

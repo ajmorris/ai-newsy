@@ -10,6 +10,7 @@ from execution.ai_client import (
     ClaudeCodeProvider,
     _error_category,
     _model_looks_compatible,
+    _preview_cli_output,
     _provider_default_model,
     llm_credentials_configured,
 )
@@ -68,12 +69,30 @@ class ClaudeCodeProviderTests(unittest.TestCase):
         command = run.call_args.args[0]
         self.assertEqual(command[0], "/usr/bin/claude")
         self.assertEqual(command[1], "-p")
-        self.assertEqual(command[2], "Summarize this")
+        self.assertNotIn("Summarize this", command)
+        self.assertEqual(run.call_args.kwargs["input"], "Summarize this")
         self.assertIn("--output-format", command)
         self.assertIn("json", command)
         self.assertIn("--max-turns", command)
-        self.assertEqual(run.call_args.kwargs["stdin"], subprocess.DEVNULL)
         self.assertNotIn("token", command)
+
+    def test_dash_prefixed_prompt_is_not_passed_as_cli_arg(self) -> None:
+        payload = json.dumps({"result": "ok", "is_error": False})
+        completed = subprocess.CompletedProcess(
+            args=["claude"],
+            returncode=0,
+            stdout=payload,
+            stderr="",
+        )
+        skill_prompt = "---\nname: ai-newsy\n---\nWrite headlines"
+        with patch.dict(os.environ, {"CLAUDE_CODE_OAUTH_TOKEN": "token"}, clear=True):
+            with patch("execution.ai_client.shutil.which", return_value="/usr/bin/claude"):
+                with patch("execution.ai_client.subprocess.run", return_value=completed) as run:
+                    ClaudeCodeProvider().generate(skill_prompt, "claude-opus-4-6", 0.2)
+
+        command = run.call_args.args[0]
+        self.assertNotIn(skill_prompt, command)
+        self.assertEqual(run.call_args.kwargs["input"], skill_prompt)
 
     def test_is_error_raises(self) -> None:
         payload = json.dumps({"result": "rate limited", "is_error": True})
@@ -91,6 +110,11 @@ class ClaudeCodeProviderTests(unittest.TestCase):
 
     def test_oauth_error_is_auth_category(self) -> None:
         self.assertEqual(_error_category(RuntimeError("oauth token expired")), "auth")
+
+    def test_cli_error_preview_is_single_line(self) -> None:
+        preview = _preview_cli_output("error: unknown option '---\nname: ai-newsy\n")
+        self.assertNotIn("\n", preview)
+        self.assertIn("unknown option", preview)
 
 
 if __name__ == "__main__":

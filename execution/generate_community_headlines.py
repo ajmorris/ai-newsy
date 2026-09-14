@@ -19,6 +19,7 @@ import sys
 sys.path.insert(0, ".")
 from execution.ai_client import generate_text_with_fallback
 from execution.database import upsert_digest_extra
+from execution.markdown_utils import parse_frontmatter
 
 load_dotenv()
 
@@ -105,7 +106,9 @@ def _normalize_anchor(headline: str) -> str:
 def load_skill_prompt(skill_path: Path = SKILL_PATH) -> str:
     if not skill_path.exists():
         raise FileNotFoundError(f"Skill prompt not found at {skill_path}")
-    return skill_path.read_text(encoding="utf-8").strip()
+    raw = skill_path.read_text(encoding="utf-8")
+    _, body = parse_frontmatter(raw)
+    return (body or raw).strip()
 
 
 def _subreddit_allowlist() -> Set[str]:
