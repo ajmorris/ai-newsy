@@ -78,7 +78,7 @@ jobs:
           PROMPT_SINGLE_PASS_ANALYSIS: ${{ vars.PROMPT_SINGLE_PASS_ANALYSIS }}
           SINGLE_PASS_MODEL: ${{ vars.SINGLE_PASS_MODEL || 'gemini-2.0-flash' }}
           SINGLE_PASS_RUN_ID: gha-${{ github.run_id }}-${{ github.run_attempt }}
-        run: python execution/analyze_articles_single_pass.py
+        run: python -u execution/analyze_articles_single_pass.py
 
       - name: Verify RSS summaries available for digest
         if: ${{ steps.guard.outputs.should_run == 'true' }}

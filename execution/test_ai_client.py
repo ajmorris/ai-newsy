@@ -9,6 +9,7 @@ from unittest.mock import patch
 from execution.ai_client import (
     ClaudeCodeProvider,
     _claude_cli_timeout_seconds,
+    _cli_failure_detail,
     _error_category,
     _model_looks_compatible,
     _preview_cli_output,
@@ -117,6 +118,11 @@ class ClaudeCodeProviderTests(unittest.TestCase):
         preview = _preview_cli_output("error: unknown option '---\nname: ai-newsy\n")
         self.assertNotIn("\n", preview)
         self.assertIn("unknown option", preview)
+
+    def test_cli_failure_detail_dumps_payload_when_fields_empty(self) -> None:
+        detail = _cli_failure_detail({"is_error": True, "session_id": "abc"}, "")
+        self.assertIn("keys=", detail)
+        self.assertIn("is_error", detail)
 
     def test_timeout_reads_env_override(self) -> None:
         with patch.dict(os.environ, {"CLAUDE_CODE_TIMEOUT_SECONDS": "180"}, clear=True):

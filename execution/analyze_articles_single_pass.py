@@ -252,7 +252,11 @@ def run_single_pass(
             continue
 
         context = _build_context(article)
-        payload = analyze_article(title=title, content=context, url=url)
+        try:
+            payload = analyze_article(title=title, content=context, url=url)
+        except Exception as exc:
+            print(f"    Skipped: analysis error: {exc}")
+            continue
         if not payload.get("summary"):
             print("    Skipped: empty summary")
             continue

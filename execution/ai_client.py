@@ -118,6 +118,21 @@ def _preview_cli_output(text: str, max_len: int = 500) -> str:
     return f"{cleaned[:max_len]}..."
 
 
+def _cli_failure_detail(payload: Dict[str, Any], stderr: str) -> str:
+    parts = []
+    for key in ("result", "error", "message", "subtype", "errors"):
+        value = payload.get(key)
+        if value not in (None, "", []):
+            parts.append(f"{key}={_preview_cli_output(str(value), 240)}")
+    stderr_preview = _preview_cli_output(stderr)
+    if stderr_preview:
+        parts.append(f"stderr={stderr_preview}")
+    if not parts:
+        parts.append(f"keys={list(payload.keys())}")
+        parts.append(f"payload={_preview_cli_output(json.dumps(payload), 400)}")
+    return "; ".join(parts)
+
+
 class ClaudeCodeProvider(LLMProvider):
     name = "claude_code"
 
@@ -179,7 +194,7 @@ class ClaudeCodeProvider(LLMProvider):
         if not isinstance(payload, dict):
             raise RuntimeError(f"Claude CLI JSON was not an object (model={model})")
         if payload.get("is_error") or completed.returncode != 0:
-            detail = payload.get("result") or payload.get("error") or _preview_cli_output(completed.stderr)
+            detail = _cli_failure_detail(payload, completed.stderr or "")
             raise RuntimeError(
                 "Claude CLI request failed "
                 f"(status={completed.returncode}, model={model}, error={detail})"
