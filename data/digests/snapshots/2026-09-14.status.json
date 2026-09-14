@@ -1,0 +1,15 @@
+{
+  "digest_date": "2026-09-14",
+  "event_name": "workflow_dispatch",
+  "github_run_id": "34885590447",
+  "github_run_attempt": "1",
+  "send_mode": "production",
+  "force_send": true,
+  "send_reason": "Catch-up: 2026-09-14 JSON is on main; last production send was 2026-09-02; pipeline has never run.",
+  "status": "completed",
+  "status_updated_at": "2026-09-14T19:14:18.596292",
+  "articles": 13,
+  "sent": 10,
+  "failed": 0,
+  "sent_snapshot_path": "data/digests/snapshots/2026-09-14.sent.json"
+}
