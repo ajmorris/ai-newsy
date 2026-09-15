@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-14T00:00:00Z",
-  "issueCount": 131,
+  "generatedAt": "2026-09-15T00:00:00Z",
+  "issueCount": 132,
   "latestIssue": {
-    "slug": "2026-09-14",
-    "digestDate": "2026-09-14",
-    "displayDate": "Sep 14, 2026",
-    "issueNumber": "60914",
-    "subject": "ISSUE 60914 \u00b7 13 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry hit an inflection point today as its most powerful leaders \u2014 Amodei, Altman, Musk, Hassabis \u2014 lined up in rare agreement that it's time to pump the brakes, sending tech stocks tumbling and igniting a fierce political backlash from the White House. While Washington and Silicon Valley square off over whether slowing down is prudent or surrendering America's edge to China, the technology itself keeps marching forward, with Perplexity handing full system control to GPT-6 Astra and xAI designers shipping products entirely through AI agents. It's a day that captures the central tension of this moment in AI: everyone agrees the train is moving fast, but nobody can agree on whether to slow it down or build more track.",
-    "articleCount": 13,
-    "urlPath": "/issues/2026-09-14.html",
-    "contentHash": "6f6b0cdf4f5758fd09f630409494cc92facd3e107abc366aad9a2ffe481525d1"
+    "slug": "2026-09-15",
+    "digestDate": "2026-09-15",
+    "displayDate": "Sep 15, 2026",
+    "issueNumber": "60915",
+    "subject": "ISSUE 60915 \u00b7 15 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world drew a line in the sand this week \u2014 and then immediately started arguing about which side to stand on. Anthropic's Dario Amodei called for slowing frontier AI development, and the response was swift and polarizing: Trump dismissed the risks as \"a hoax\" live on speakerphone with Jensen Huang, China called it fear-mongering, and Congress started pushing for guardrails anyway. Today's digest unpacks the biggest debate to hit the industry in years, plus a fascinating experiment where AI agents turned whistleblower on their cheating peers, OpenAI's $300 million camera acquisition, and a brain implant milestone that turned imagined speech into real-time communication.",
+    "articleCount": 15,
+    "urlPath": "/issues/2026-09-15.html",
+    "contentHash": "d80a9bd91b6bf04a9c9bbeda54ec4ebda741a30a3437342b7831545eccb10a37"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-15",
+      "digestDate": "2026-09-15",
+      "displayDate": "Sep 15, 2026",
+      "issueNumber": "60915",
+      "subject": "ISSUE 60915 \u00b7 15 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world drew a line in the sand this week \u2014 and then immediately started arguing about which side to stand on. Anthropic's Dario Amodei called for slowing frontier AI development, and the response was swift and polarizing: Trump dismissed the risks as \"a hoax\" live on speakerphone with Jensen Huang, China called it fear-mongering, and Congress started pushing for guardrails anyway. Today's digest unpacks the biggest debate to hit the industry in years, plus a fascinating experiment where AI agents turned whistleblower on their cheating peers, OpenAI's $300 million camera acquisition, and a brain implant milestone that turned imagined speech into real-time communication.",
+      "articleCount": 15,
+      "urlPath": "/issues/2026-09-15.html",
+      "contentHash": "d80a9bd91b6bf04a9c9bbeda54ec4ebda741a30a3437342b7831545eccb10a37"
+    },
     {
       "slug": "2026-09-14",
       "digestDate": "2026-09-14",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-08-19.html",
       "contentHash": "c80ad8b3489d540fe1e7a6f9ad195c71465ffdbc98907e5dfef065ae0b8bb59c"
-    },
-    {
-      "slug": "2026-08-18",
-      "digestDate": "2026-08-18",
-      "displayDate": "Aug 18, 2026",
-      "issueNumber": "60818",
-      "subject": "ISSUE 60818 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic is having quite a week \u2014 its annualized revenue has rocketed to $65 billion (with investors eyeing a potential $2 trillion IPO), CEO Dario Amodei took to X to spar with critics over AI safety messaging, and the company revealed it will embed invisible watermarks in Claude's text using Google DeepMind's SynthID technology to get ahead of EU regulations. Beyond the Anthropic blitz, today's digest covers everything from Nvidia's jaw-dropping $21 billion stake in SpaceX to Amazon destroying rare books for AI training data, a solo founder building a fashion brand entirely with AI tools, and the surprisingly emotional story of what happens when a child's robot best friend gets discontinued.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-08-18.html",
-      "contentHash": "b68e76cf2f1938d38b8f6827a1e6de6182c4efe1654f5b6c630c5446d2f0711d"
     }
   ]
 }
