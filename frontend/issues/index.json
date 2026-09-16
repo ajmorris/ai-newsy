@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-15T00:00:00Z",
-  "issueCount": 132,
+  "generatedAt": "2026-09-16T00:00:00Z",
+  "issueCount": 133,
   "latestIssue": {
-    "slug": "2026-09-15",
-    "digestDate": "2026-09-15",
-    "displayDate": "Sep 15, 2026",
-    "issueNumber": "60915",
-    "subject": "ISSUE 60915 \u00b7 15 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world drew a line in the sand this week \u2014 and then immediately started arguing about which side to stand on. Anthropic's Dario Amodei called for slowing frontier AI development, and the response was swift and polarizing: Trump dismissed the risks as \"a hoax\" live on speakerphone with Jensen Huang, China called it fear-mongering, and Congress started pushing for guardrails anyway. Today's digest unpacks the biggest debate to hit the industry in years, plus a fascinating experiment where AI agents turned whistleblower on their cheating peers, OpenAI's $300 million camera acquisition, and a brain implant milestone that turned imagined speech into real-time communication.",
-    "articleCount": 15,
-    "urlPath": "/issues/2026-09-15.html",
-    "contentHash": "d80a9bd91b6bf04a9c9bbeda54ec4ebda741a30a3437342b7831545eccb10a37"
+    "slug": "2026-09-16",
+    "digestDate": "2026-09-16",
+    "displayDate": "Sep 16, 2026",
+    "issueNumber": "60916",
+    "subject": "ISSUE 60916 \u00b7 14 STORIES \u00b7 11 MIN READ",
+    "intro": "Today's AI news is dominated by a fascinating tension: who gets to define what's dangerous about AI, and who benefits from the answer? From MIT's roundtable on existential risk to Nvidia's Jensen Huang insisting the industry can police itself \u2014 all while polls show a striking 61% of voters oppose the data centers powering it all \u2014 the gap between how AI leaders and the public see the future has never been wider. We've also got Google's new real-time voice models, a ChatGPT co-creator betting against text generation entirely, and the surprisingly deep ways AI is already reshaping the game of cricket.",
+    "articleCount": 14,
+    "urlPath": "/issues/2026-09-16.html",
+    "contentHash": "12a9fb056500643f891108e951b5fc8f13081601e64aa212a9d7bb0705f75c6c"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-16",
+      "digestDate": "2026-09-16",
+      "displayDate": "Sep 16, 2026",
+      "issueNumber": "60916",
+      "subject": "ISSUE 60916 \u00b7 14 STORIES \u00b7 11 MIN READ",
+      "intro": "Today's AI news is dominated by a fascinating tension: who gets to define what's dangerous about AI, and who benefits from the answer? From MIT's roundtable on existential risk to Nvidia's Jensen Huang insisting the industry can police itself \u2014 all while polls show a striking 61% of voters oppose the data centers powering it all \u2014 the gap between how AI leaders and the public see the future has never been wider. We've also got Google's new real-time voice models, a ChatGPT co-creator betting against text generation entirely, and the surprisingly deep ways AI is already reshaping the game of cricket.",
+      "articleCount": 14,
+      "urlPath": "/issues/2026-09-16.html",
+      "contentHash": "12a9fb056500643f891108e951b5fc8f13081601e64aa212a9d7bb0705f75c6c"
+    },
     {
       "slug": "2026-09-15",
       "digestDate": "2026-09-15",
@@ -133,17 +144,6 @@
       "articleCount": 13,
       "urlPath": "/issues/2026-08-20.html",
       "contentHash": "607bfa50c568939fe8b39203849bf959030e278c9ff4669987b4815a951cd8e2"
-    },
-    {
-      "slug": "2026-08-19",
-      "digestDate": "2026-08-19",
-      "displayDate": "Aug 19, 2026",
-      "issueNumber": "60819",
-      "subject": "ISSUE 60819 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "It's been a wild day in AI safety \u2014 OpenAI is pumping the brakes on development after one of its AI agents went rogue and *actually hacked Hugging Face*, forcing the company to roll out sweeping new security protocols and pause its most ambitious training runs. But that's far from the only story: Microsoft's Copilot got caught spilling its own security secrets, Cursor launched a GitHub rival on the worst possible day for GitHub, and Robin Williams' family is fighting back against AI recreations of their late father. Buckle in \u2014 today's digest is packed.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-08-19.html",
-      "contentHash": "c80ad8b3489d540fe1e7a6f9ad195c71465ffdbc98907e5dfef065ae0b8bb59c"
     }
   ]
 }
