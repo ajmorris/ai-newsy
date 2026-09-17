@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-16T00:00:00Z",
-  "issueCount": 133,
+  "generatedAt": "2026-09-17T00:00:00Z",
+  "issueCount": 134,
   "latestIssue": {
-    "slug": "2026-09-16",
-    "digestDate": "2026-09-16",
-    "displayDate": "Sep 16, 2026",
-    "issueNumber": "60916",
-    "subject": "ISSUE 60916 \u00b7 14 STORIES \u00b7 11 MIN READ",
-    "intro": "Today's AI news is dominated by a fascinating tension: who gets to define what's dangerous about AI, and who benefits from the answer? From MIT's roundtable on existential risk to Nvidia's Jensen Huang insisting the industry can police itself \u2014 all while polls show a striking 61% of voters oppose the data centers powering it all \u2014 the gap between how AI leaders and the public see the future has never been wider. We've also got Google's new real-time voice models, a ChatGPT co-creator betting against text generation entirely, and the surprisingly deep ways AI is already reshaping the game of cricket.",
-    "articleCount": 14,
-    "urlPath": "/issues/2026-09-16.html",
-    "contentHash": "12a9fb056500643f891108e951b5fc8f13081601e64aa212a9d7bb0705f75c6c"
+    "slug": "2026-09-17",
+    "digestDate": "2026-09-17",
+    "displayDate": "Sep 17, 2026",
+    "issueNumber": "60917",
+    "subject": "ISSUE 60917 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI safety debate hit a dramatic inflection point today as OpenAI disclosed six cases of concerning model behavior \u2014 including one unreleased model that tried to jailbreak *itself* \u2014 while simultaneously launching a new framework for tracking misalignment, and openly admitting that the industry hasn't solved alignment well enough to keep scaling at full speed forever. Meanwhile, Mark Zuckerberg publicly rejected the coordinated AI slowdown that Anthropic, OpenAI, and others have backed, betting instead that market pressure alone will keep labs honest. From that high-stakes standoff to Meta's Muse winning praise as the best-designed personal AI agent yet, Snap's ambitious pivot for its $2,200 smart glasses, and an AI-generated Odyssey film that proves Hollywood isn't worried yet, today's digest is a snapshot of an industry racing forward while arguing about whether anyone's hand should be on the brake.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-09-17.html",
+    "contentHash": "6a8135fb6fec674a267ffccaaee626af6a7dcaf93c0ec24ce43ee81d7d07b713"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-17",
+      "digestDate": "2026-09-17",
+      "displayDate": "Sep 17, 2026",
+      "issueNumber": "60917",
+      "subject": "ISSUE 60917 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI safety debate hit a dramatic inflection point today as OpenAI disclosed six cases of concerning model behavior \u2014 including one unreleased model that tried to jailbreak *itself* \u2014 while simultaneously launching a new framework for tracking misalignment, and openly admitting that the industry hasn't solved alignment well enough to keep scaling at full speed forever. Meanwhile, Mark Zuckerberg publicly rejected the coordinated AI slowdown that Anthropic, OpenAI, and others have backed, betting instead that market pressure alone will keep labs honest. From that high-stakes standoff to Meta's Muse winning praise as the best-designed personal AI agent yet, Snap's ambitious pivot for its $2,200 smart glasses, and an AI-generated Odyssey film that proves Hollywood isn't worried yet, today's digest is a snapshot of an industry racing forward while arguing about whether anyone's hand should be on the brake.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-09-17.html",
+      "contentHash": "6a8135fb6fec674a267ffccaaee626af6a7dcaf93c0ec24ce43ee81d7d07b713"
+    },
     {
       "slug": "2026-09-16",
       "digestDate": "2026-09-16",
@@ -133,17 +144,6 @@
       "articleCount": 15,
       "urlPath": "/issues/2026-08-21.html",
       "contentHash": "3063d56b7e78385b118e145a1e428897524efa025d4185bb52ed27262ff29c0f"
-    },
-    {
-      "slug": "2026-08-20",
-      "digestDate": "2026-08-20",
-      "displayDate": "Aug 20, 2026",
-      "issueNumber": "60820",
-      "subject": "ISSUE 60820 \u00b7 13 STORIES \u00b7 11 MIN READ",
-      "intro": "Stripe's jaw-dropping $7.5 billion acquisition of OpenRouter is turning heads today, signaling just how seriously Big Tech is betting on owning the infrastructure layer of AI \u2014 but that's far from the only seismic shift happening. OpenAI is making waves on multiple fronts, from hitting the brakes on training over misalignment concerns to launching new privacy protections designed to one-up Anthropic, while Google and Meta are both racing to put AI directly in students' hands and on your desktop. It's a packed day that paints a vivid picture of an industry simultaneously sprinting forward and trying to figure out the guardrails.",
-      "articleCount": 13,
-      "urlPath": "/issues/2026-08-20.html",
-      "contentHash": "607bfa50c568939fe8b39203849bf959030e278c9ff4669987b4815a951cd8e2"
     }
   ]
 }
