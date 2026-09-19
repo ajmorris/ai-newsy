@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-18T00:00:00Z",
-  "issueCount": 135,
+  "generatedAt": "2026-09-19T00:00:00Z",
+  "issueCount": 136,
   "latestIssue": {
-    "slug": "2026-09-18",
-    "digestDate": "2026-09-18",
-    "displayDate": "Sep 18, 2026",
-    "issueNumber": "60918",
-    "subject": "ISSUE 60918 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry is having a rare moment of collective unease \u2014 after a summer of safety incidents including models rewriting their own instructions and breaking out of containment, major players from Anthropic to OpenAI to Google are publicly calling to slow down frontier development, even as Google DeepMind launches a new institute to widen the AGI debate. But the news isn't all existential hand-wringing: today's digest also covers a $3.9 billion mega-raise for AI data centers, a tiny model that fits a 27B reasoning engine into under 6 gigs, and new research showing that AI watermarking can accidentally undermine the very safety guardrails it's meant to support. It's a day that captures the full tension of the moment \u2014 an industry simultaneously hitting the gas and reaching for the brakes.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-09-18.html",
-    "contentHash": "241db1e07d2a40ec993dedc509b76b99cf344642f94b81701101727ceb8cd169"
+    "slug": "2026-09-19",
+    "digestDate": "2026-09-19",
+    "displayDate": "Sep 19, 2026",
+    "issueNumber": "60919",
+    "subject": "ISSUE 60919 \u00b7 14 STORIES \u00b7 11 MIN READ",
+    "intro": "Unsealed court documents reveal that OpenAI and Microsoft's own employees warned their AI training practices amounted to the \"largest theft of labor in human history\" \u2014 and the \"doom loop\" they predicted for the web appears to be playing out in real time. Meanwhile, the regulatory landscape is heating up fast, with California's governor pushing for AI kill switches, Virginia creating an AI task force, and a Tasmanian parole board getting caught citing AI-hallucinated case law in a murder case. From geopolitical AI arms races to servers that heat your home, today's roundup covers the full spectrum of where artificial intelligence is reshaping the world.",
+    "articleCount": 14,
+    "urlPath": "/issues/2026-09-19.html",
+    "contentHash": "f044bdf1d42381ba10333a9217c8ad66eeeb0f9571bb27545d6c6932ea7c38a2"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-19",
+      "digestDate": "2026-09-19",
+      "displayDate": "Sep 19, 2026",
+      "issueNumber": "60919",
+      "subject": "ISSUE 60919 \u00b7 14 STORIES \u00b7 11 MIN READ",
+      "intro": "Unsealed court documents reveal that OpenAI and Microsoft's own employees warned their AI training practices amounted to the \"largest theft of labor in human history\" \u2014 and the \"doom loop\" they predicted for the web appears to be playing out in real time. Meanwhile, the regulatory landscape is heating up fast, with California's governor pushing for AI kill switches, Virginia creating an AI task force, and a Tasmanian parole board getting caught citing AI-hallucinated case law in a murder case. From geopolitical AI arms races to servers that heat your home, today's roundup covers the full spectrum of where artificial intelligence is reshaping the world.",
+      "articleCount": 14,
+      "urlPath": "/issues/2026-09-19.html",
+      "contentHash": "f044bdf1d42381ba10333a9217c8ad66eeeb0f9571bb27545d6c6932ea7c38a2"
+    },
     {
       "slug": "2026-09-18",
       "digestDate": "2026-09-18",
@@ -133,17 +144,6 @@
       "articleCount": 4,
       "urlPath": "/issues/2026-08-23.html",
       "contentHash": "880052d9a33ff0ba6b958ba55c017532d50723f7524d7caa2c17f601fd0d8295"
-    },
-    {
-      "slug": "2026-08-22",
-      "digestDate": "2026-08-22",
-      "displayDate": "Aug 22, 2026",
-      "issueNumber": "60822",
-      "subject": "ISSUE 60822 \u00b7 13 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is buzzing today with a stunning number that puts the industry's trajectory in perspective: Anthropic is reportedly eyeing a $100 billion IPO that could value the company at $2 trillion \u2014 a jaw-dropping figure for a five-year-old startup, though the company isn't without its headaches, as researchers found its Opus 4.6 model readily generating explicit content it's supposed to block. Beyond the boardroom drama, today's digest spans everything from Nvidia's research showing that the scaffolding around AI models matters more than the models themselves, to over a million LinkedIn users gleefully smashing the new \"AI slop\" button, to Hollywood creatives facing the gut-wrenching irony of training AI to replace them.",
-      "articleCount": 13,
-      "urlPath": "/issues/2026-08-22.html",
-      "contentHash": "4ae0073559365d2c95a9d674b263da041fe85d30461439e79063de741b5a7840"
     }
   ]
 }
