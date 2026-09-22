@@ -1,0 +1,15 @@
+{
+  "digest_date": "2026-09-22",
+  "event_name": "workflow_dispatch",
+  "github_run_id": "35726798192",
+  "github_run_attempt": "1",
+  "send_mode": "production",
+  "force_send": true,
+  "send_reason": "Ensuring it works",
+  "status": "completed",
+  "status_updated_at": "2026-09-22T12:23:17.875518",
+  "articles": 12,
+  "sent": 10,
+  "failed": 0,
+  "sent_snapshot_path": "data/digests/snapshots/2026-09-22.sent.json"
+}
