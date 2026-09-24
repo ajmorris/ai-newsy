@@ -1,0 +1,15 @@
+{
+  "digest_date": "2026-09-24",
+  "event_name": "schedule",
+  "github_run_id": "35990427403",
+  "github_run_attempt": "1",
+  "send_mode": "production",
+  "force_send": false,
+  "send_reason": "",
+  "status": "completed",
+  "status_updated_at": "2026-09-24T11:23:07.100841",
+  "articles": 16,
+  "sent": 10,
+  "failed": 0,
+  "sent_snapshot_path": "data/digests/snapshots/2026-09-24.sent.json"
+}
