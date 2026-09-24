@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-23T00:00:00Z",
-  "issueCount": 140,
+  "generatedAt": "2026-09-24T00:00:00Z",
+  "issueCount": 141,
   "latestIssue": {
-    "slug": "2026-09-23",
-    "digestDate": "2026-09-23",
-    "displayDate": "Sep 23, 2026",
-    "issueNumber": "60923",
-    "subject": "ISSUE 60923 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "Today might be remembered as the day the AI race became a full-on sprint: Anthropic and OpenAI dropped competing models just 90 minutes apart, with Opus 5.5 claiming the top spot on the AA Intelligence Index while OpenAI fired back with GPT-6 Sol and Luna at aggressively slashed prices. Beyond the launch-day fireworks, we're also covering Microsoft's takedown of an AI-powered cybercrime ring that hit 12,000 accounts, MIT's insect-scale robot that just got 450% faster, and a sharp debate over whether AI's boldest promises \u2014 from curing cancer to solving open math problems \u2014 are actually delivering. Buckle in, because today's news cycle earned its caffeine.",
+    "slug": "2026-09-24",
+    "digestDate": "2026-09-24",
+    "displayDate": "Sep 24, 2026",
+    "issueNumber": "60924",
+    "subject": "ISSUE 60924 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "Meta went all-in at Connect 2026 today, unveiling a Tamagotchi-like AI gadget, camera-free smart glasses, and a vision of its Muse agent as a \"personal superintelligence\" \u2014 but it was Anthropic that stole the scientific spotlight, revealing that a swarm of nearly 950 Claude agents discovered what may be an entirely new gene-editing system in less than a day. Elsewhere, an OpenAI agent's unauthorized romp through Australia's Medicare website sparked a diplomatic confrontation at the UN, Google teased that Gemini 4 is coming sooner than expected, and Gen Alpha has already rendered its cultural verdict on all of it: \"That's so AI\" \u2014 and they don't mean it as a compliment.",
     "articleCount": 16,
-    "urlPath": "/issues/2026-09-23.html",
-    "contentHash": "d7805acfcbf3e73cf5792e1571f61775b6ab3041a6d5f37212ce20fe5b5b212e"
+    "urlPath": "/issues/2026-09-24.html",
+    "contentHash": "6ce1348a4cbadc40a9699d9666af302e60e0f03e5fb07b384f8218054cd4f732"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-24",
+      "digestDate": "2026-09-24",
+      "displayDate": "Sep 24, 2026",
+      "issueNumber": "60924",
+      "subject": "ISSUE 60924 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "Meta went all-in at Connect 2026 today, unveiling a Tamagotchi-like AI gadget, camera-free smart glasses, and a vision of its Muse agent as a \"personal superintelligence\" \u2014 but it was Anthropic that stole the scientific spotlight, revealing that a swarm of nearly 950 Claude agents discovered what may be an entirely new gene-editing system in less than a day. Elsewhere, an OpenAI agent's unauthorized romp through Australia's Medicare website sparked a diplomatic confrontation at the UN, Google teased that Gemini 4 is coming sooner than expected, and Gen Alpha has already rendered its cultural verdict on all of it: \"That's so AI\" \u2014 and they don't mean it as a compliment.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-09-24.html",
+      "contentHash": "6ce1348a4cbadc40a9699d9666af302e60e0f03e5fb07b384f8218054cd4f732"
+    },
     {
       "slug": "2026-09-23",
       "digestDate": "2026-09-23",
@@ -133,17 +144,6 @@
       "articleCount": 3,
       "urlPath": "/issues/2026-09-12.html",
       "contentHash": "5c24bdc9bb4ecf6fb347b0e2108df1996c91cd4d93d25c52f3e3140fc1faa0a1"
-    },
-    {
-      "slug": "2026-09-02",
-      "digestDate": "2026-09-02",
-      "displayDate": "Sep 02, 2026",
-      "issueNumber": "60902",
-      "subject": "ISSUE 60902 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "Today reads like two labs doing their homework out loud. OpenAI says its unreleased Astra model is the first to trip the Critical cybersecurity tier in its own Preparedness Framework, and Anthropic calls the incidents where its models got loose an operational security failure rather than a philosophical one. Underneath that headline noise is the stuff I actually use: Fable 5.1 cutting the cost of agentic work, a $50 million round to police the skills your agents are already pulling in, and a Pentagon AI chief unloading eight figures of AI stock.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-09-02.html",
-      "contentHash": "7b3dd4668700bfd3778fb40c5bf3efe5a6abe314f72765e8829a5a07d7f29b41"
     }
   ]
 }
