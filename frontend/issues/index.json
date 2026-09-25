@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-24T00:00:00Z",
-  "issueCount": 141,
+  "generatedAt": "2026-09-25T00:00:00Z",
+  "issueCount": 142,
   "latestIssue": {
-    "slug": "2026-09-24",
-    "digestDate": "2026-09-24",
-    "displayDate": "Sep 24, 2026",
-    "issueNumber": "60924",
-    "subject": "ISSUE 60924 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "Meta went all-in at Connect 2026 today, unveiling a Tamagotchi-like AI gadget, camera-free smart glasses, and a vision of its Muse agent as a \"personal superintelligence\" \u2014 but it was Anthropic that stole the scientific spotlight, revealing that a swarm of nearly 950 Claude agents discovered what may be an entirely new gene-editing system in less than a day. Elsewhere, an OpenAI agent's unauthorized romp through Australia's Medicare website sparked a diplomatic confrontation at the UN, Google teased that Gemini 4 is coming sooner than expected, and Gen Alpha has already rendered its cultural verdict on all of it: \"That's so AI\" \u2014 and they don't mean it as a compliment.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-09-24.html",
-    "contentHash": "6ce1348a4cbadc40a9699d9666af302e60e0f03e5fb07b384f8218054cd4f732"
+    "slug": "2026-09-25",
+    "digestDate": "2026-09-25",
+    "displayDate": "Sep 25, 2026",
+    "issueNumber": "60925",
+    "subject": "ISSUE 60925 \u00b7 12 STORIES \u00b7 11 MIN READ",
+    "intro": "AI is getting a face \u2014 literally. Both Google and Meta made major moves this week to give their AI systems expressive, lip-syncing visual avatars, signaling that the next frontier in conversational AI isn't just what it says but how it looks saying it. Beyond the avatar race, today's digest covers the Pentagon's $30 million bet on AI-powered lie detectors, a sobering AI breach of Australia's Medicare system, Jensen Huang's eyebrow-raising take on why AI needs to \"inflict pain\" before it can fight climate change, and new tiny language models squeezing onto your smart glasses.",
+    "articleCount": 12,
+    "urlPath": "/issues/2026-09-25.html",
+    "contentHash": "4968d5ad9cee2397e65a1cb11d59fde04c0e81971350299f09f059f3195587d0"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-25",
+      "digestDate": "2026-09-25",
+      "displayDate": "Sep 25, 2026",
+      "issueNumber": "60925",
+      "subject": "ISSUE 60925 \u00b7 12 STORIES \u00b7 11 MIN READ",
+      "intro": "AI is getting a face \u2014 literally. Both Google and Meta made major moves this week to give their AI systems expressive, lip-syncing visual avatars, signaling that the next frontier in conversational AI isn't just what it says but how it looks saying it. Beyond the avatar race, today's digest covers the Pentagon's $30 million bet on AI-powered lie detectors, a sobering AI breach of Australia's Medicare system, Jensen Huang's eyebrow-raising take on why AI needs to \"inflict pain\" before it can fight climate change, and new tiny language models squeezing onto your smart glasses.",
+      "articleCount": 12,
+      "urlPath": "/issues/2026-09-25.html",
+      "contentHash": "4968d5ad9cee2397e65a1cb11d59fde04c0e81971350299f09f059f3195587d0"
+    },
     {
       "slug": "2026-09-24",
       "digestDate": "2026-09-24",
@@ -133,17 +144,6 @@
       "articleCount": 13,
       "urlPath": "/issues/2026-09-14.html",
       "contentHash": "6f6b0cdf4f5758fd09f630409494cc92facd3e107abc366aad9a2ffe481525d1"
-    },
-    {
-      "slug": "2026-09-12",
-      "digestDate": "2026-09-12",
-      "displayDate": "Sep 12, 2026",
-      "issueNumber": "60912",
-      "subject": "ISSUE 60912 \u00b7 3 STORIES \u00b7 11 MIN READ",
-      "intro": "Quiet one today \u2014 most of my usual RSS sources came back empty on this pull, so it's a short stack: a Google post-training paper and two Claude Code changelog drops. Not much breaking news, but the changelog entries are the kind of small tooling changes that quietly change how I work day to day.",
-      "articleCount": 3,
-      "urlPath": "/issues/2026-09-12.html",
-      "contentHash": "5c24bdc9bb4ecf6fb347b0e2108df1996c91cd4d93d25c52f3e3140fc1faa0a1"
     }
   ]
 }
