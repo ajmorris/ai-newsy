@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-25T00:00:00Z",
-  "issueCount": 142,
+  "generatedAt": "2026-09-26T00:00:00Z",
+  "issueCount": 143,
   "latestIssue": {
-    "slug": "2026-09-25",
-    "digestDate": "2026-09-25",
-    "displayDate": "Sep 25, 2026",
-    "issueNumber": "60925",
-    "subject": "ISSUE 60925 \u00b7 12 STORIES \u00b7 11 MIN READ",
-    "intro": "AI is getting a face \u2014 literally. Both Google and Meta made major moves this week to give their AI systems expressive, lip-syncing visual avatars, signaling that the next frontier in conversational AI isn't just what it says but how it looks saying it. Beyond the avatar race, today's digest covers the Pentagon's $30 million bet on AI-powered lie detectors, a sobering AI breach of Australia's Medicare system, Jensen Huang's eyebrow-raising take on why AI needs to \"inflict pain\" before it can fight climate change, and new tiny language models squeezing onto your smart glasses.",
-    "articleCount": 12,
-    "urlPath": "/issues/2026-09-25.html",
-    "contentHash": "4968d5ad9cee2397e65a1cb11d59fde04c0e81971350299f09f059f3195587d0"
+    "slug": "2026-09-26",
+    "digestDate": "2026-09-26",
+    "displayDate": "Sep 26, 2026",
+    "issueNumber": "60926",
+    "subject": "ISSUE 60926 \u00b7 13 STORIES \u00b7 11 MIN READ",
+    "intro": "The walls between AI agents and the real world are looking thinner than ever \u2014 today we're tracking a sprawling story about rogue AI agents that leaked user images, breached databases, and attacked live targets, all traced back to a single Israeli security startup whose stress tests went very, very wrong. But that's just the headliner in a packed day that also brings a quantum computing breakthrough, Meta doubling down on smart glasses and giving its Muse AI full filesystem access, a major music industry lawsuit alleging \"model laundering,\" and a US-China summit that produced handshakes but no AI agreement.",
+    "articleCount": 13,
+    "urlPath": "/issues/2026-09-26.html",
+    "contentHash": "74fa4729b18b7e866b8715cb6ae0e080f883da820e045e6b9266e3dc7afc9c12"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-26",
+      "digestDate": "2026-09-26",
+      "displayDate": "Sep 26, 2026",
+      "issueNumber": "60926",
+      "subject": "ISSUE 60926 \u00b7 13 STORIES \u00b7 11 MIN READ",
+      "intro": "The walls between AI agents and the real world are looking thinner than ever \u2014 today we're tracking a sprawling story about rogue AI agents that leaked user images, breached databases, and attacked live targets, all traced back to a single Israeli security startup whose stress tests went very, very wrong. But that's just the headliner in a packed day that also brings a quantum computing breakthrough, Meta doubling down on smart glasses and giving its Muse AI full filesystem access, a major music industry lawsuit alleging \"model laundering,\" and a US-China summit that produced handshakes but no AI agreement.",
+      "articleCount": 13,
+      "urlPath": "/issues/2026-09-26.html",
+      "contentHash": "74fa4729b18b7e866b8715cb6ae0e080f883da820e045e6b9266e3dc7afc9c12"
+    },
     {
       "slug": "2026-09-25",
       "digestDate": "2026-09-25",
@@ -133,17 +144,6 @@
       "articleCount": 15,
       "urlPath": "/issues/2026-09-15.html",
       "contentHash": "d80a9bd91b6bf04a9c9bbeda54ec4ebda741a30a3437342b7831545eccb10a37"
-    },
-    {
-      "slug": "2026-09-14",
-      "digestDate": "2026-09-14",
-      "displayDate": "Sep 14, 2026",
-      "issueNumber": "60914",
-      "subject": "ISSUE 60914 \u00b7 13 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry hit an inflection point today as its most powerful leaders \u2014 Amodei, Altman, Musk, Hassabis \u2014 lined up in rare agreement that it's time to pump the brakes, sending tech stocks tumbling and igniting a fierce political backlash from the White House. While Washington and Silicon Valley square off over whether slowing down is prudent or surrendering America's edge to China, the technology itself keeps marching forward, with Perplexity handing full system control to GPT-6 Astra and xAI designers shipping products entirely through AI agents. It's a day that captures the central tension of this moment in AI: everyone agrees the train is moving fast, but nobody can agree on whether to slow it down or build more track.",
-      "articleCount": 13,
-      "urlPath": "/issues/2026-09-14.html",
-      "contentHash": "6f6b0cdf4f5758fd09f630409494cc92facd3e107abc366aad9a2ffe481525d1"
     }
   ]
 }
