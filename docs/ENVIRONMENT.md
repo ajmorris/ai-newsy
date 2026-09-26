@@ -143,6 +143,7 @@ Provider model defaults (override with env vars):
 
 - `CLAUDE_CODE_MODEL` (falls back to `ANTHROPIC_MODEL`) default: `claude-opus-4-6`
 - `CLAUDE_CODE_TIMEOUT_SECONDS` default: `600` (Claude CLI subprocess budget)
+- `HEADLINE_BATCH_TIMEOUT_SECONDS` default: `120` (per-batch Claude CLI budget for tweet and community headlines; does not change the RSS analysis budget)
 - `ANTHROPIC_MODEL` default: `claude-opus-4-6`
 - `GEMINI_MODEL` default: `gemini-2.0-flash`
 - `OPENAI_MODEL` default: `gpt-4o-mini`
@@ -174,6 +175,8 @@ For Notion tweet ingestion + headline generation, configure:
 - `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
 - `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`; ignored in CI when the provider is `claude_code`)
 - `TWEET_HEADLINES_CLAUDE_MODEL` (optional GitHub Actions variable, default `claude-sonnet-4-6`)
+- `TWEET_HEADLINE_BATCH_SIZE` (optional, default `20`) — tweets per Claude call
+- `HEADLINE_BATCH_TIMEOUT_SECONDS` (optional, default `120`) — per-batch Claude CLI budget; a timeout retries that batch once
 
 GitHub Actions:
 
@@ -194,6 +197,8 @@ For Reddit/HN/YC ingestion + headline generation, configure:
 - `COMMUNITY_MAX_HEADLINES` (optional, default `24`) — max headlines after curation; digest builder caps further
 - `COMMUNITY_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`; ignored in CI when the provider is `claude_code`)
 - `COMMUNITY_HEADLINES_CLAUDE_MODEL` (optional GitHub Actions variable, default `claude-sonnet-4-6`)
+- `COMMUNITY_HEADLINE_BATCH_SIZE` (optional, default `20`) — posts per Claude call
+- `HEADLINE_BATCH_TIMEOUT_SECONDS` (optional, default `120`) — per-batch Claude CLI budget; a timeout retries that batch once
 - `COMMUNITY_SUBREDDITS` (optional, comma-separated allowlist)
 - `REDDIT_USER_AGENT` (optional but recommended)
 - `YC_RSS_URL` (optional, default `https://www.ycombinator.com/blog/feed`)

@@ -27,7 +27,7 @@ from notion_client import Client as NotionClient
 import sys
 sys.path.insert(0, '.')
 from execution.database import upsert_digest_extra
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import _error_category, generate_text_with_fallback
 from execution.markdown_utils import parse_frontmatter
 
 load_dotenv()
@@ -337,17 +337,25 @@ def _normalize_headline_anchors(headline: str) -> str:
     return normalized.strip()
 
 
-def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List[dict]:
-    if not tweets:
-        return []
+def _chunk_items(items: List[dict], size: int) -> List[List[dict]]:
+    step = size if size > 0 else 1
+    return [items[index:index + step] for index in range(0, len(items), step)]
 
-    prompt = _build_generation_prompt(skill_prompt, tweets)
-    model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
-    text = generate_text_with_fallback(
-        prompt=prompt,
-        gemini_model=model_name,
-    )
 
+def _headline_batch_timeout_seconds(override: Optional[int]) -> int:
+    if override is not None and override > 0:
+        return override
+    return _env_int("HEADLINE_BATCH_TIMEOUT_SECONDS", 120)
+
+
+def _is_timeout_error(error: Exception) -> bool:
+    if _error_category(error) != "transient":
+        return False
+    message = str(error).lower()
+    return "timed out" in message or "timeout" in message
+
+
+def _parse_tweet_headline_lines(text: str, tweets: List[dict]) -> List[dict]:
     tweet_index = {tweet["tweet_id"]: tweet for tweet in tweets}
     headlines = []
     for line in text.splitlines():
@@ -370,6 +378,77 @@ def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List
                 "created_time": source.get("created_time", ""),
                 "source_text": source.get("text", ""),
             }
+        )
+    return headlines
+
+
+def _generate_tweet_batch(
+    tweets: List[dict],
+    skill_prompt: str,
+    timeout_seconds: int,
+) -> List[dict]:
+    prompt = _build_generation_prompt(skill_prompt, tweets)
+    model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
+    text = generate_text_with_fallback(
+        prompt=prompt,
+        gemini_model=model_name,
+        timeout_seconds=timeout_seconds,
+    )
+    return _parse_tweet_headline_lines(text, tweets)
+
+
+def _generate_tweet_batch_with_retry(
+    tweets: List[dict],
+    skill_prompt: str,
+    timeout_seconds: int,
+    label: str,
+) -> List[dict]:
+    try:
+        return _generate_tweet_batch(tweets, skill_prompt, timeout_seconds)
+    except Exception as error:
+        if not _is_timeout_error(error):
+            raise
+        print(f"Tweet headline batch {label} timed out ({error}); retrying once...")
+        return _generate_tweet_batch(tweets, skill_prompt, timeout_seconds)
+
+
+def generate_headlines_for_tweets(
+    tweets: List[dict],
+    skill_prompt: str,
+    batch_size: Optional[int] = None,
+    timeout_seconds: Optional[int] = None,
+) -> List[dict]:
+    if not tweets:
+        return []
+
+    size = batch_size if batch_size is not None else _env_int("TWEET_HEADLINE_BATCH_SIZE", 20)
+    budget = _headline_batch_timeout_seconds(timeout_seconds)
+    batches = _chunk_items(tweets, size)
+    headlines: List[dict] = []
+    failures: List[str] = []
+    any_success = False
+    for index, batch in enumerate(batches, start=1):
+        label = f"{index}/{len(batches)}"
+        try:
+            batch_headlines = _generate_tweet_batch_with_retry(
+                batch,
+                skill_prompt,
+                budget,
+                label,
+            )
+        except Exception as error:
+            print(f"Tweet headline batch {label} failed: {error}")
+            failures.append(f"batch {label}: {error}")
+            continue
+        any_success = True
+        headlines.extend(batch_headlines)
+
+    if not any_success:
+        raise RuntimeError("All tweet headline batches failed: " + "; ".join(failures))
+    if failures:
+        print(
+            "Tweet headline generation continued after failed batches: "
+            + "; ".join(failures)
         )
     return headlines
 

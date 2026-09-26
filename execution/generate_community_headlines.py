@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 import sys
 sys.path.insert(0, ".")
-from execution.ai_client import generate_text_with_fallback
+from execution.ai_client import _error_category, generate_text_with_fallback
 from execution.database import upsert_digest_extra
 from execution.markdown_utils import parse_frontmatter
 
@@ -288,15 +288,27 @@ def _build_generation_prompt(skill_prompt: str, items: List[dict]) -> str:
     )
 
 
-def generate_headlines_for_items(items: List[dict], skill_prompt: str) -> List[dict]:
-    if not items:
-        return []
-    prompt = _build_generation_prompt(skill_prompt, items)
-    model_name = _env_str("COMMUNITY_HEADLINES_MODEL", "gemini-2.0-flash")
-    text = generate_text_with_fallback(prompt=prompt, gemini_model=model_name)
+def _chunk_items(items: List[dict], size: int) -> List[List[dict]]:
+    step = size if size > 0 else 1
+    return [items[index:index + step] for index in range(0, len(items), step)]
+
+
+def _headline_batch_timeout_seconds(override: Optional[int]) -> int:
+    if override is not None and override > 0:
+        return override
+    return _env_int("HEADLINE_BATCH_TIMEOUT_SECONDS", 120)
+
+
+def _is_timeout_error(error: Exception) -> bool:
+    if _error_category(error) != "transient":
+        return False
+    message = str(error).lower()
+    return "timed out" in message or "timeout" in message
+
+
+def _parse_community_headline_lines(text: str, items: List[dict]) -> List[dict]:
     item_index = {item["item_id"]: item for item in items}
     headlines: List[dict] = []
-
     for line in text.splitlines():
         if "|" not in line:
             continue
@@ -320,6 +332,77 @@ def generate_headlines_for_items(items: List[dict], skill_prompt: str) -> List[d
                 "source_label": source.get("source_label", ""),
                 "subreddit": source.get("subreddit"),
             }
+        )
+    return headlines
+
+
+def _generate_community_batch(
+    items: List[dict],
+    skill_prompt: str,
+    timeout_seconds: int,
+) -> List[dict]:
+    prompt = _build_generation_prompt(skill_prompt, items)
+    model_name = _env_str("COMMUNITY_HEADLINES_MODEL", "gemini-2.0-flash")
+    text = generate_text_with_fallback(
+        prompt=prompt,
+        gemini_model=model_name,
+        timeout_seconds=timeout_seconds,
+    )
+    return _parse_community_headline_lines(text, items)
+
+
+def _generate_community_batch_with_retry(
+    items: List[dict],
+    skill_prompt: str,
+    timeout_seconds: int,
+    label: str,
+) -> List[dict]:
+    try:
+        return _generate_community_batch(items, skill_prompt, timeout_seconds)
+    except Exception as error:
+        if not _is_timeout_error(error):
+            raise
+        print(f"Community headline batch {label} timed out ({error}); retrying once...")
+        return _generate_community_batch(items, skill_prompt, timeout_seconds)
+
+
+def generate_headlines_for_items(
+    items: List[dict],
+    skill_prompt: str,
+    batch_size: Optional[int] = None,
+    timeout_seconds: Optional[int] = None,
+) -> List[dict]:
+    if not items:
+        return []
+
+    size = batch_size if batch_size is not None else _env_int("COMMUNITY_HEADLINE_BATCH_SIZE", 20)
+    budget = _headline_batch_timeout_seconds(timeout_seconds)
+    batches = _chunk_items(items, size)
+    headlines: List[dict] = []
+    failures: List[str] = []
+    any_success = False
+    for index, batch in enumerate(batches, start=1):
+        label = f"{index}/{len(batches)}"
+        try:
+            batch_headlines = _generate_community_batch_with_retry(
+                batch,
+                skill_prompt,
+                budget,
+                label,
+            )
+        except Exception as error:
+            print(f"Community headline batch {label} failed: {error}")
+            failures.append(f"batch {label}: {error}")
+            continue
+        any_success = True
+        headlines.extend(batch_headlines)
+
+    if not any_success:
+        raise RuntimeError("All community headline batches failed: " + "; ".join(failures))
+    if failures:
+        print(
+            "Community headline generation continued after failed batches: "
+            + "; ".join(failures)
         )
     return headlines
 
