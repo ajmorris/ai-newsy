@@ -1,4 +1,8 @@
-"""Build static web archive pages from canonical digest JSON files."""
+"""Build static web archive pages from digest JSON files.
+
+Prefers sent snapshots (what was emailed) over canonical JSON when both exist
+for a date, matching validate_digest_parity.py source-of-truth.
+"""
 
 from __future__ import annotations
 
@@ -546,33 +550,51 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
 """
 
 
+def select_archive_issue_files(
+    archive_dir: Path,
+    snapshot_dir: Path,
+    use_canonical_fallback: bool = False,
+) -> List[Path]:
+    """Choose one JSON file per digest date.
+
+    Sent snapshots win when both a canonical payload and a sent snapshot exist,
+    so the published archive matches what was emailed.
+    """
+    canonical_issue_files = sorted(
+        path
+        for path in archive_dir.glob("*.json")
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", path.name)
+    )
+    snapshot_issue_files = (
+        sorted(snapshot_dir.glob("*.sent.json")) if snapshot_dir.exists() else []
+    )
+
+    files_by_date: Dict[str, Path] = {}
+    for path in canonical_issue_files:
+        files_by_date[path.stem] = path
+    for snap in snapshot_issue_files:
+        digest_date = snap.name.replace(".sent.json", "")
+        files_by_date[digest_date] = snap
+
+    issue_files = [files_by_date[key] for key in sorted(files_by_date)]
+    if not issue_files and use_canonical_fallback:
+        issue_files = sorted(archive_dir.glob("*.json"))
+    return issue_files
+
+
 def build_web_archive(slug_prefix: str = "", use_canonical_fallback: bool = False) -> Dict[str, int]:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    canonical_issue_files = sorted(
-        path
-        for path in ARCHIVE_DIR.glob("*.json")
-        if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", path.name)
+    issue_files = select_archive_issue_files(
+        ARCHIVE_DIR,
+        SNAPSHOT_DIR,
+        use_canonical_fallback=use_canonical_fallback,
     )
-    snapshot_issue_files = sorted(SNAPSHOT_DIR.glob("*.sent.json")) if SNAPSHOT_DIR.exists() else []
-
-    issue_files: List[Path] = []
-    if canonical_issue_files:
-        issue_files.extend(canonical_issue_files)
-        # Include snapshot-only dates for backward compatibility, but prefer canonical.
-        canonical_dates = {path.stem for path in canonical_issue_files}
-        for snap in snapshot_issue_files:
-            digest_date = snap.name.replace(".sent.json", "")
-            if digest_date not in canonical_dates:
-                issue_files.append(snap)
-    elif snapshot_issue_files:
-        issue_files.extend(snapshot_issue_files)
-    elif use_canonical_fallback:
-        issue_files = sorted(ARCHIVE_DIR.glob("*.json"))
 
     if not issue_files:
         raise FileNotFoundError(
-            "No canonical digest payloads found. Expected files like data/digests/YYYY-MM-DD.json"
+            "No digest payloads found. Expected data/digests/YYYY-MM-DD.json "
+            "or data/digests/snapshots/YYYY-MM-DD.sent.json"
         )
 
     issues: List[DigestIssue] = []

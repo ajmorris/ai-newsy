@@ -45,9 +45,9 @@ jobs:
           digest_date_input="${{ github.event.inputs.digest_date }}"
           window_hours_input="${{ github.event.inputs.window_hours }}"
           if [ -n "${digest_date_input}" ]; then
-            python execution/build_digest_markdown.py --digest-date "${digest_date_input}" --window-hours "${window_hours_input}"
+            python execution/build_digest_markdown.py --rebuild --digest-date "${digest_date_input}" --window-hours "${window_hours_input}"
           else
-            python execution/build_digest_markdown.py --window-hours "${window_hours_input}"
+            python execution/build_digest_markdown.py --rebuild --window-hours "${window_hours_input}"
           fi
 
       - name: Upload digest markdown artifact

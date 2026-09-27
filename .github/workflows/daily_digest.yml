@@ -127,7 +127,9 @@ jobs:
           GITHUB_RUN_ID: ${{ github.run_id }}
           GITHUB_RUN_ATTEMPT: ${{ github.run_attempt }}
         run: |
-          python execution/build_digest_markdown.py
+          # Compile markdown from the finalized JSON already checked out above.
+          # Do not pass --rebuild; that would regenerate from current DB state.
+          python execution/build_digest_markdown.py --digest-date "$(date -u +%F)"
           FORCE_SEND_FLAG=""
           if [ "${{ inputs.force_send }}" = "true" ]; then
             FORCE_SEND_FLAG="--force-send"
