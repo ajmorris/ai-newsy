@@ -1,5 +1,8 @@
 """
-Build a daily digest markdown file with YAML frontmatter from persisted storage.
+Build a daily digest markdown file with YAML frontmatter.
+
+Default: compile from the existing canonical JSON (data/digests/YYYY-MM-DD.json).
+Pass --rebuild to regenerate that JSON from storage (replay/backfill only).
 """
 
 import argparse
@@ -16,6 +19,7 @@ sys.path.insert(0, ".")
 from execution.digest_payload import (
     DigestBuildOptions,
     build_digest_payload,
+    load_digest_payload,
     write_digest_payload,
 )
 
@@ -131,15 +135,29 @@ def build_digest_markdown(
     digest_date: Optional[str] = None,
     window_hours: int = 24,
     use_sent: bool = False,
+    rebuild: bool = False,
 ) -> Tuple[Path, int]:
-    payload = build_digest_payload(
-        DigestBuildOptions(
-            digest_date=digest_date,
-            window_hours=window_hours,
-            use_sent=use_sent,
+    resolved_date = digest_date or datetime.now(timezone.utc).date().isoformat()
+    if rebuild:
+        payload = build_digest_payload(
+            DigestBuildOptions(
+                digest_date=digest_date,
+                window_hours=window_hours,
+                use_sent=use_sent,
+            )
         )
-    )
-    write_digest_payload(payload)
+        write_digest_payload(payload)
+    else:
+        if use_sent:
+            raise SystemExit(
+                "--use-sent requires --rebuild (replay from already-sent DB rows)."
+            )
+        payload = load_digest_payload(digest_date=resolved_date)
+        if not payload:
+            raise SystemExit(
+                f"Canonical digest payload missing for {resolved_date}. "
+                "Run finalize first, or pass --rebuild to rebuild from storage."
+            )
     safe_date = str(payload["digest_date"])
     sections = list(payload.get("sections", []))
     tweet_headlines = list(payload.get("tweet_headlines", []))
@@ -164,18 +182,26 @@ def build_digest_markdown(
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build daily digest markdown from storage")
+    parser = argparse.ArgumentParser(
+        description="Compile daily digest markdown from canonical JSON (or rebuild from storage)"
+    )
     parser.add_argument("--digest-date", type=str, default=None, help="YYYY-MM-DD (UTC)")
     parser.add_argument("--window-hours", type=int, default=int(os.getenv("DIGEST_WINDOW_HOURS", "24")))
     parser.add_argument(
         "--use-sent",
         action="store_true",
-        help="Build from already-sent stories for --digest-date (UTC day window), useful for archive replay",
+        help="With --rebuild, select already-sent stories for --digest-date (UTC day window)",
+    )
+    parser.add_argument(
+        "--rebuild",
+        action="store_true",
+        help="Rebuild canonical JSON from storage (default: compile markdown from existing JSON)",
     )
     args = parser.parse_args()
     path, count = build_digest_markdown(
         digest_date=args.digest_date,
         window_hours=args.window_hours,
         use_sent=args.use_sent,
+        rebuild=args.rebuild,
     )
     print(f"Done. articles={count} markdown={path}")

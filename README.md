@@ -113,6 +113,8 @@ python3 execution/build_digest_markdown.py
 python3 execution/send_daily_email.py --test-email you@example.com
 ```
 
+`build_digest_markdown.py` compiles from the existing `data/digests/YYYY-MM-DD.json`. Pass `--rebuild` only when you intentionally want to regenerate that JSON from current DB state.
+
 ### Build web archive
 
 ```bash
