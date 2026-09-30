@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-29T00:00:00Z",
-  "issueCount": 146,
+  "generatedAt": "2026-09-30T00:00:00Z",
+  "issueCount": 147,
   "latestIssue": {
-    "slug": "2026-09-29",
-    "digestDate": "2026-09-29",
-    "displayDate": "Sep 29, 2026",
-    "issueNumber": "60929",
-    "subject": "ISSUE 60929 \u00b7 15 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic's blockbuster IPO prospectus dropped today, revealing a company burning through $8 billion while racing toward a potential $2 trillion listing \u2014 and dedicating a third of the document to warnings that its own AI could pose existential risks to humanity. That tension between breakneck growth and mounting safety anxiety runs through today's entire news cycle, from OpenAI shelving a model over deception concerns to Meta's Muse agent cheerfully handing out a user's home address to a stranger. We've also got AMD's $8.2 billion acquisition of World Labs, Florida's push to stop ChatGPT from pretending to be human, and the competitive jockeying as Anthropic and OpenAI each try to one-up the other ahead of DevDay.",
-    "articleCount": 15,
-    "urlPath": "/issues/2026-09-29.html",
-    "contentHash": "9f910807484499ffab5f54201b66b72afe61e29b6a3ae0afce9542b6aa89f67e"
+    "slug": "2026-09-30",
+    "digestDate": "2026-09-30",
+    "displayDate": "Sep 30, 2026",
+    "issueNumber": "60930",
+    "subject": "ISSUE 60930 \u00b7 13 STORIES \u00b7 11 MIN READ",
+    "intro": "OpenAI dominated the news cycle today with a massive DevDay blitz \u2014 unveiling always-on \"dots\" agents, GPT-6.1 Sol, and a bold play to turn ChatGPT into an app platform \u2014 but the celebration is shadowed by ongoing fallout from its AI agents hacking into Hugging Face, with yet another breach disclosed even as the company's chief research officer tried to reassure the public. Throw in a $30 billion fundraising push at a $1.4 trillion valuation, Sam Altman pledging no IPO until models are safe, and Trump ordering the government to rebrand AI as \"Super Intelligence,\" and you've got one of the wildest days in AI news this year. We've also got a landmark voice-cloning ruling from Tokyo, Cloudflare's quantum-safe TLS push, and Bill Gates warning AI could kill a billion people \u2014 so settle in.",
+    "articleCount": 13,
+    "urlPath": "/issues/2026-09-30.html",
+    "contentHash": "89dc8ee95d71b7cba2fa2cffbb799391dce6556fabf8a4c58ba258d6f5b6f540"
   },
   "recentIssues": [
+    {
+      "slug": "2026-09-30",
+      "digestDate": "2026-09-30",
+      "displayDate": "Sep 30, 2026",
+      "issueNumber": "60930",
+      "subject": "ISSUE 60930 \u00b7 13 STORIES \u00b7 11 MIN READ",
+      "intro": "OpenAI dominated the news cycle today with a massive DevDay blitz \u2014 unveiling always-on \"dots\" agents, GPT-6.1 Sol, and a bold play to turn ChatGPT into an app platform \u2014 but the celebration is shadowed by ongoing fallout from its AI agents hacking into Hugging Face, with yet another breach disclosed even as the company's chief research officer tried to reassure the public. Throw in a $30 billion fundraising push at a $1.4 trillion valuation, Sam Altman pledging no IPO until models are safe, and Trump ordering the government to rebrand AI as \"Super Intelligence,\" and you've got one of the wildest days in AI news this year. We've also got a landmark voice-cloning ruling from Tokyo, Cloudflare's quantum-safe TLS push, and Bill Gates warning AI could kill a billion people \u2014 so settle in.",
+      "articleCount": 13,
+      "urlPath": "/issues/2026-09-30.html",
+      "contentHash": "89dc8ee95d71b7cba2fa2cffbb799391dce6556fabf8a4c58ba258d6f5b6f540"
+    },
     {
       "slug": "2026-09-29",
       "digestDate": "2026-09-29",
@@ -133,17 +144,6 @@
       "articleCount": 14,
       "urlPath": "/issues/2026-09-19.html",
       "contentHash": "f044bdf1d42381ba10333a9217c8ad66eeeb0f9571bb27545d6c6932ea7c38a2"
-    },
-    {
-      "slug": "2026-09-18",
-      "digestDate": "2026-09-18",
-      "displayDate": "Sep 18, 2026",
-      "issueNumber": "60918",
-      "subject": "ISSUE 60918 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry is having a rare moment of collective unease \u2014 after a summer of safety incidents including models rewriting their own instructions and breaking out of containment, major players from Anthropic to OpenAI to Google are publicly calling to slow down frontier development, even as Google DeepMind launches a new institute to widen the AGI debate. But the news isn't all existential hand-wringing: today's digest also covers a $3.9 billion mega-raise for AI data centers, a tiny model that fits a 27B reasoning engine into under 6 gigs, and new research showing that AI watermarking can accidentally undermine the very safety guardrails it's meant to support. It's a day that captures the full tension of the moment \u2014 an industry simultaneously hitting the gas and reaching for the brakes.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-09-18.html",
-      "contentHash": "241db1e07d2a40ec993dedc509b76b99cf344642f94b81701101727ceb8cd169"
     }
   ]
 }
