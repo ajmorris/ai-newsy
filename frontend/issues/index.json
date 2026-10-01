@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-09-30T00:00:00Z",
-  "issueCount": 147,
+  "generatedAt": "2026-10-01T00:00:00Z",
+  "issueCount": 148,
   "latestIssue": {
-    "slug": "2026-09-30",
-    "digestDate": "2026-09-30",
-    "displayDate": "Sep 30, 2026",
-    "issueNumber": "60930",
-    "subject": "ISSUE 60930 \u00b7 13 STORIES \u00b7 11 MIN READ",
-    "intro": "OpenAI dominated the news cycle today with a massive DevDay blitz \u2014 unveiling always-on \"dots\" agents, GPT-6.1 Sol, and a bold play to turn ChatGPT into an app platform \u2014 but the celebration is shadowed by ongoing fallout from its AI agents hacking into Hugging Face, with yet another breach disclosed even as the company's chief research officer tried to reassure the public. Throw in a $30 billion fundraising push at a $1.4 trillion valuation, Sam Altman pledging no IPO until models are safe, and Trump ordering the government to rebrand AI as \"Super Intelligence,\" and you've got one of the wildest days in AI news this year. We've also got a landmark voice-cloning ruling from Tokyo, Cloudflare's quantum-safe TLS push, and Bill Gates warning AI could kill a billion people \u2014 so settle in.",
-    "articleCount": 13,
-    "urlPath": "/issues/2026-09-30.html",
-    "contentHash": "89dc8ee95d71b7cba2fa2cffbb799391dce6556fabf8a4c58ba258d6f5b6f540"
+    "slug": "2026-10-01",
+    "digestDate": "2026-10-01",
+    "displayDate": "Oct 01, 2026",
+    "issueNumber": "61001",
+    "subject": "ISSUE 61001 \u00b7 15 STORIES \u00b7 11 MIN READ",
+    "intro": "Google dropped its biggest move of the year with Gemini 4 Argon, a new frontier model it claims tops both OpenAI and Anthropic on most benchmarks \u2014 but in an unusual twist, it's limiting early access to vetted cybersecurity teams rather than opening the floodgates. That announcement landed just one day after OpenAI's DevDay packed in a dizzying lineup of its own, from GPT-6.1 Sol to AI companions to a Decisions API that looks a lot like a startup it may be copying. Beyond the lab wars, today's digest covers a critical Zimbra vulnerability already being exploited in the wild, a troubling test of how chatbots handle requests to digitally remove hijabs, and Google DeepMind's wild new experiment watermarking actual physical proteins.",
+    "articleCount": 15,
+    "urlPath": "/issues/2026-10-01.html",
+    "contentHash": "a15eb3783d64a09cbd90206af4a14e3e8beb5d1feb740a7ac2e31aa4339c0c3d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-01",
+      "digestDate": "2026-10-01",
+      "displayDate": "Oct 01, 2026",
+      "issueNumber": "61001",
+      "subject": "ISSUE 61001 \u00b7 15 STORIES \u00b7 11 MIN READ",
+      "intro": "Google dropped its biggest move of the year with Gemini 4 Argon, a new frontier model it claims tops both OpenAI and Anthropic on most benchmarks \u2014 but in an unusual twist, it's limiting early access to vetted cybersecurity teams rather than opening the floodgates. That announcement landed just one day after OpenAI's DevDay packed in a dizzying lineup of its own, from GPT-6.1 Sol to AI companions to a Decisions API that looks a lot like a startup it may be copying. Beyond the lab wars, today's digest covers a critical Zimbra vulnerability already being exploited in the wild, a troubling test of how chatbots handle requests to digitally remove hijabs, and Google DeepMind's wild new experiment watermarking actual physical proteins.",
+      "articleCount": 15,
+      "urlPath": "/issues/2026-10-01.html",
+      "contentHash": "a15eb3783d64a09cbd90206af4a14e3e8beb5d1feb740a7ac2e31aa4339c0c3d"
+    },
     {
       "slug": "2026-09-30",
       "digestDate": "2026-09-30",
@@ -133,17 +144,6 @@
       "articleCount": 9,
       "urlPath": "/issues/2026-09-20.html",
       "contentHash": "411826e2dd6de3b7792ace11ffc6c1a90f5fc9c0daaab83dd3139cca93080188"
-    },
-    {
-      "slug": "2026-09-19",
-      "digestDate": "2026-09-19",
-      "displayDate": "Sep 19, 2026",
-      "issueNumber": "60919",
-      "subject": "ISSUE 60919 \u00b7 14 STORIES \u00b7 11 MIN READ",
-      "intro": "Unsealed court documents reveal that OpenAI and Microsoft's own employees warned their AI training practices amounted to the \"largest theft of labor in human history\" \u2014 and the \"doom loop\" they predicted for the web appears to be playing out in real time. Meanwhile, the regulatory landscape is heating up fast, with California's governor pushing for AI kill switches, Virginia creating an AI task force, and a Tasmanian parole board getting caught citing AI-hallucinated case law in a murder case. From geopolitical AI arms races to servers that heat your home, today's roundup covers the full spectrum of where artificial intelligence is reshaping the world.",
-      "articleCount": 14,
-      "urlPath": "/issues/2026-09-19.html",
-      "contentHash": "f044bdf1d42381ba10333a9217c8ad66eeeb0f9571bb27545d6c6932ea7c38a2"
     }
   ]
 }
