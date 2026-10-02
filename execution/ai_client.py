@@ -91,7 +91,14 @@ class LLMProvider(ABC):
     name: str
 
     @abstractmethod
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
+    def generate(
+        self,
+        prompt: str,
+        model: str,
+        temperature: float,
+        json_mode: bool = False,
+        timeout_seconds: Optional[int] = None,
+    ) -> str:
         """Generate text for the given prompt."""
 
 
@@ -109,6 +116,13 @@ def _claude_cli_timeout_seconds() -> int:
         except ValueError:
             pass
     return _DEFAULT_CLAUDE_CLI_TIMEOUT_SECONDS
+
+
+def _resolve_cli_timeout_seconds(timeout_seconds: Optional[int]) -> int:
+    """Use a caller budget when set; otherwise the process-wide Claude CLI timeout."""
+    if timeout_seconds is not None and timeout_seconds > 0:
+        return timeout_seconds
+    return _claude_cli_timeout_seconds()
 
 
 def _preview_cli_output(text: str, max_len: int = 500) -> str:
@@ -136,7 +150,14 @@ def _cli_failure_detail(payload: Dict[str, Any], stderr: str) -> str:
 class ClaudeCodeProvider(LLMProvider):
     name = "claude_code"
 
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
+    def generate(
+        self,
+        prompt: str,
+        model: str,
+        temperature: float,
+        json_mode: bool = False,
+        timeout_seconds: Optional[int] = None,
+    ) -> str:
         oauth_token = (os.getenv("CLAUDE_CODE_OAUTH_TOKEN") or "").strip()
         if not oauth_token:
             raise RuntimeError("CLAUDE_CODE_OAUTH_TOKEN is not configured")
@@ -159,7 +180,7 @@ class ClaudeCodeProvider(LLMProvider):
             "--model",
             model,
         ]
-        timeout_seconds = _claude_cli_timeout_seconds()
+        cli_timeout_seconds = _resolve_cli_timeout_seconds(timeout_seconds)
         with tempfile.TemporaryDirectory(prefix="claude-code-llm-") as tmpdir:
             try:
                 completed = subprocess.run(
@@ -167,13 +188,13 @@ class ClaudeCodeProvider(LLMProvider):
                     input=prompt,
                     capture_output=True,
                     text=True,
-                    timeout=timeout_seconds,
+                    timeout=cli_timeout_seconds,
                     cwd=tmpdir,
                     check=False,
                 )
             except subprocess.TimeoutExpired as exc:
                 raise RuntimeError(
-                    f"Claude CLI timed out after {timeout_seconds}s (model={model})"
+                    f"Claude CLI timed out after {cli_timeout_seconds}s (model={model})"
                 ) from exc
 
         stdout = completed.stdout or ""
@@ -208,7 +229,15 @@ class ClaudeCodeProvider(LLMProvider):
 class AnthropicProvider(LLMProvider):
     name = "anthropic"
 
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
+    def generate(
+        self,
+        prompt: str,
+        model: str,
+        temperature: float,
+        json_mode: bool = False,
+        timeout_seconds: Optional[int] = None,
+    ) -> str:
+        del timeout_seconds
         anthropic_key = (os.getenv("ANTHROPIC_KEY") or "").strip()
         if not anthropic_key:
             raise RuntimeError("ANTHROPIC_KEY is not configured")
@@ -241,7 +270,15 @@ class AnthropicProvider(LLMProvider):
 class GeminiProvider(LLMProvider):
     name = "gemini"
 
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
+    def generate(
+        self,
+        prompt: str,
+        model: str,
+        temperature: float,
+        json_mode: bool = False,
+        timeout_seconds: Optional[int] = None,
+    ) -> str:
+        del timeout_seconds
         gemini_key = (os.getenv("GEMINI_API_KEY") or "").strip()
         if not gemini_key:
             raise RuntimeError("GEMINI_API_KEY is not configured")
@@ -268,7 +305,15 @@ class GeminiProvider(LLMProvider):
 class OpenAIProvider(LLMProvider):
     name = "openai"
 
-    def generate(self, prompt: str, model: str, temperature: float, json_mode: bool = False) -> str:
+    def generate(
+        self,
+        prompt: str,
+        model: str,
+        temperature: float,
+        json_mode: bool = False,
+        timeout_seconds: Optional[int] = None,
+    ) -> str:
+        del timeout_seconds
         openai_key = (os.getenv("OPENAI_API_KEY") or "").strip()
         if not openai_key:
             raise RuntimeError("OPENAI_API_KEY is not configured")
@@ -335,6 +380,7 @@ def generate_text_with_fallback(
     temperature: float = 0.2,
     openai_model: Optional[str] = None,
     json_mode: bool = False,
+    timeout_seconds: Optional[int] = None,
 ) -> str:
     """
     Generate text with provider chain fallback.
@@ -344,6 +390,9 @@ def generate_text_with_fallback(
     When json_mode is True, providers request JSON-shaped output (Gemini/OpenAI native;
     Anthropic uses a larger max_tokens budget so prompt-only JSON fits).
     The claude_code provider still returns the CLI text result; prompts must ask for JSON.
+
+    timeout_seconds overrides the Claude CLI budget for this call only. Other
+    providers ignore it and keep their own HTTP timeouts.
     """
     provider_registry: Dict[str, LLMProvider] = {
         "claude_code": ClaudeCodeProvider(),
@@ -378,6 +427,7 @@ def generate_text_with_fallback(
                 model=chosen_model,
                 temperature=temperature,
                 json_mode=json_mode,
+                timeout_seconds=timeout_seconds,
             ).strip()
             print(f"    LLM provider selected: {provider_name} (model={chosen_model})")
             return text

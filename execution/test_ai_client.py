@@ -14,6 +14,7 @@ from execution.ai_client import (
     _model_looks_compatible,
     _preview_cli_output,
     _provider_default_model,
+    generate_text_with_fallback,
     llm_credentials_configured,
 )
 
@@ -129,6 +130,27 @@ class ClaudeCodeProviderTests(unittest.TestCase):
             self.assertEqual(_claude_cli_timeout_seconds(), 180)
         with patch.dict(os.environ, {}, clear=True):
             self.assertEqual(_claude_cli_timeout_seconds(), 600)
+
+    def test_caller_timeout_overrides_env_for_that_call_only(self) -> None:
+        payload = json.dumps({"result": "ok", "is_error": False})
+        completed = subprocess.CompletedProcess(
+            args=["claude"],
+            returncode=0,
+            stdout=payload,
+            stderr="",
+        )
+        env = {
+            "CLAUDE_CODE_OAUTH_TOKEN": "token",
+            "CLAUDE_CODE_TIMEOUT_SECONDS": "180",
+            "LLM_PROVIDER_CHAIN": "claude_code",
+        }
+        with patch.dict(os.environ, env, clear=True):
+            with patch("execution.ai_client.shutil.which", return_value="/usr/bin/claude"):
+                with patch("execution.ai_client.subprocess.run", return_value=completed) as run:
+                    generate_text_with_fallback("hello", timeout_seconds=45)
+                    self.assertEqual(run.call_args.kwargs["timeout"], 45)
+                    generate_text_with_fallback("again")
+                    self.assertEqual(run.call_args.kwargs["timeout"], 180)
 
 
 if __name__ == "__main__":
