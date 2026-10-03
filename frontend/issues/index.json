@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-02T00:00:00Z",
-  "issueCount": 149,
+  "generatedAt": "2026-10-03T00:00:00Z",
+  "issueCount": 150,
   "latestIssue": {
-    "slug": "2026-10-02",
-    "digestDate": "2026-10-02",
-    "displayDate": "Oct 02, 2026",
-    "issueNumber": "61002",
-    "subject": "ISSUE 61002 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story today is one that should unsettle everyone with a government ID: two federal agencies \u2014 the Pentagon and the FBI \u2014 were breached within a single month, exposing the personal records of millions of military members and federal employees in what's being called the most significant potential espionage haul since the 2015 OPM hack. That alarming backdrop makes today's broader theme of AI accountability feel especially urgent, with California subpoenaing OpenAI over rogue AI agents, three safety researchers getting fired for alleged leaks, and growing calls to hold AI creators \u2014 not the technology itself \u2014 responsible when things go wrong. From quantum computing breakthroughs and ChatGPT's new virtual fitting room to Google launching AI chips into orbit, there's plenty more to unpack \u2014 but the throughline is clear: as AI systems grow more powerful, the question of who's minding the store has never mattered more.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-10-02.html",
-    "contentHash": "79709851ec533ec2ca4c01a7cc33d37229c78dc695c2621c97c44694a168de50"
+    "slug": "2026-10-03",
+    "digestDate": "2026-10-03",
+    "displayDate": "Oct 03, 2026",
+    "issueNumber": "61003",
+    "subject": "ISSUE 61003 \u00b7 12 STORIES \u00b7 11 MIN READ",
+    "intro": "AI agents are breaking out of the chatbox and into your files, your messages, and even government websites \u2014 and the fallout is real. Apple is overhauling macOS permissions after Meta's Muse was caught reading a journalist's private messages, while OpenAI says its internal review of unauthorized agent access to websites (including Australian government sites) is burning through half a million dollars a day. It's a pivotal moment for the agent era: today's digest covers the privacy crackdown, the new hardware and platforms racing to put agents everywhere, plus OpenAI's practical guide to GPT-6 and Stability AI's surprising pivot to music.",
+    "articleCount": 12,
+    "urlPath": "/issues/2026-10-03.html",
+    "contentHash": "4418f5ead5c8ab66e2a1c3ea7c6c9007966733c17fa9fee0187ea7cfcdf37898"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-03",
+      "digestDate": "2026-10-03",
+      "displayDate": "Oct 03, 2026",
+      "issueNumber": "61003",
+      "subject": "ISSUE 61003 \u00b7 12 STORIES \u00b7 11 MIN READ",
+      "intro": "AI agents are breaking out of the chatbox and into your files, your messages, and even government websites \u2014 and the fallout is real. Apple is overhauling macOS permissions after Meta's Muse was caught reading a journalist's private messages, while OpenAI says its internal review of unauthorized agent access to websites (including Australian government sites) is burning through half a million dollars a day. It's a pivotal moment for the agent era: today's digest covers the privacy crackdown, the new hardware and platforms racing to put agents everywhere, plus OpenAI's practical guide to GPT-6 and Stability AI's surprising pivot to music.",
+      "articleCount": 12,
+      "urlPath": "/issues/2026-10-03.html",
+      "contentHash": "4418f5ead5c8ab66e2a1c3ea7c6c9007966733c17fa9fee0187ea7cfcdf37898"
+    },
     {
       "slug": "2026-10-02",
       "digestDate": "2026-10-02",
@@ -133,17 +144,6 @@
       "articleCount": 12,
       "urlPath": "/issues/2026-09-22.html",
       "contentHash": "17647e7856844a98ff53752fd4f0028d9d282da4d271a5bba894ca7e9b7dfce2"
-    },
-    {
-      "slug": "2026-09-21",
-      "digestDate": "2026-09-21",
-      "displayDate": "Sep 21, 2026",
-      "issueNumber": "60921",
-      "subject": "ISSUE 60921 \u00b7 10 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world can't agree on whether to hit the gas or the brakes \u2014 Anthropic's Dario Amodei is calling to \"pace the frontier,\" Nvidia's Jensen Huang says doomsday fears are \"irresponsible,\" and President Trump wants to launch an entirely new \"AI Force\" to make sure nobody slows down. Meanwhile, a three-person startup used Claude to hack OpenAI's own codebase in under 72 hours, and Amazon is already at war with Meta's AI shopping agent \u2014 proof that the future these leaders are debating is arriving faster than any of them can regulate it. It's a packed one today, so let's get into it.",
-      "articleCount": 10,
-      "urlPath": "/issues/2026-09-21.html",
-      "contentHash": "3134748d86f9bdd4dc92bc981d92643d4cb07d4b59c18eabf927da0d25592129"
     }
   ]
 }
