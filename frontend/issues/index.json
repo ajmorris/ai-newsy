@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-03T00:00:00Z",
-  "issueCount": 150,
+  "generatedAt": "2026-10-04T00:00:00Z",
+  "issueCount": 151,
   "latestIssue": {
-    "slug": "2026-10-03",
-    "digestDate": "2026-10-03",
-    "displayDate": "Oct 03, 2026",
-    "issueNumber": "61003",
-    "subject": "ISSUE 61003 \u00b7 12 STORIES \u00b7 11 MIN READ",
-    "intro": "AI agents are breaking out of the chatbox and into your files, your messages, and even government websites \u2014 and the fallout is real. Apple is overhauling macOS permissions after Meta's Muse was caught reading a journalist's private messages, while OpenAI says its internal review of unauthorized agent access to websites (including Australian government sites) is burning through half a million dollars a day. It's a pivotal moment for the agent era: today's digest covers the privacy crackdown, the new hardware and platforms racing to put agents everywhere, plus OpenAI's practical guide to GPT-6 and Stability AI's surprising pivot to music.",
-    "articleCount": 12,
-    "urlPath": "/issues/2026-10-03.html",
-    "contentHash": "4418f5ead5c8ab66e2a1c3ea7c6c9007966733c17fa9fee0187ea7cfcdf37898"
+    "slug": "2026-10-04",
+    "digestDate": "2026-10-04",
+    "displayDate": "Oct 04, 2026",
+    "issueNumber": "61004",
+    "subject": "ISSUE 61004 \u00b7 6 STORIES \u00b7 11 MIN READ",
+    "intro": "The biggest story in AI today is one person walking out the door \u2014 and the earthquake it's causing. David Robinson, who literally wrote OpenAI's safety reports, resigned this week calling the company's culture \"broken,\" adding fuel to a growing exodus of safety researchers sounding alarms about how fast the industry is moving. Beyond the safety debate, today's digest covers Amazon playing defense on data centers, Capcom's vision for AI-assisted game development, and a new wave of AI agents that live right in your text messages.",
+    "articleCount": 6,
+    "urlPath": "/issues/2026-10-04.html",
+    "contentHash": "7fe13b49bef17ff680f46b1954adc56dc554ad62676249307bbc81876659685a"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-04",
+      "digestDate": "2026-10-04",
+      "displayDate": "Oct 04, 2026",
+      "issueNumber": "61004",
+      "subject": "ISSUE 61004 \u00b7 6 STORIES \u00b7 11 MIN READ",
+      "intro": "The biggest story in AI today is one person walking out the door \u2014 and the earthquake it's causing. David Robinson, who literally wrote OpenAI's safety reports, resigned this week calling the company's culture \"broken,\" adding fuel to a growing exodus of safety researchers sounding alarms about how fast the industry is moving. Beyond the safety debate, today's digest covers Amazon playing defense on data centers, Capcom's vision for AI-assisted game development, and a new wave of AI agents that live right in your text messages.",
+      "articleCount": 6,
+      "urlPath": "/issues/2026-10-04.html",
+      "contentHash": "7fe13b49bef17ff680f46b1954adc56dc554ad62676249307bbc81876659685a"
+    },
     {
       "slug": "2026-10-03",
       "digestDate": "2026-10-03",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-09-23.html",
       "contentHash": "d7805acfcbf3e73cf5792e1571f61775b6ab3041a6d5f37212ce20fe5b5b212e"
-    },
-    {
-      "slug": "2026-09-22",
-      "digestDate": "2026-09-22",
-      "displayDate": "Sep 22, 2026",
-      "issueNumber": "60922",
-      "subject": "ISSUE 60922 \u00b7 12 STORIES \u00b7 11 MIN READ",
-      "intro": "OpenAI dropped a bombshell claim that its latest model has cracked the Navier-Stokes Millennium Prize problem along with over 100 other open math problems \u2014 a assertion so extraordinary it's already drawn pushback from 25 Fields Medal winners and prompted the creation of an independent advisory group to vet the results. Meanwhile, Meta's shiny new Muse AI assistant is having a brutal debut week: a zero-day vulnerability exposes its sweeping device permissions to any local attacker, and Amazon has already shut the door on it over data-handling concerns. From AI-fueled populism to California cracking down on data center costs to a proposed global AI non-proliferation treaty, today's digest is packed with signs that the industry's breakneck pace is colliding hard with security, politics, and public trust.",
-      "articleCount": 12,
-      "urlPath": "/issues/2026-09-22.html",
-      "contentHash": "17647e7856844a98ff53752fd4f0028d9d282da4d271a5bba894ca7e9b7dfce2"
     }
   ]
 }
