@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-04T00:00:00Z",
-  "issueCount": 151,
+  "generatedAt": "2026-10-05T00:00:00Z",
+  "issueCount": 152,
   "latestIssue": {
-    "slug": "2026-10-04",
-    "digestDate": "2026-10-04",
-    "displayDate": "Oct 04, 2026",
-    "issueNumber": "61004",
-    "subject": "ISSUE 61004 \u00b7 6 STORIES \u00b7 11 MIN READ",
-    "intro": "The biggest story in AI today is one person walking out the door \u2014 and the earthquake it's causing. David Robinson, who literally wrote OpenAI's safety reports, resigned this week calling the company's culture \"broken,\" adding fuel to a growing exodus of safety researchers sounding alarms about how fast the industry is moving. Beyond the safety debate, today's digest covers Amazon playing defense on data centers, Capcom's vision for AI-assisted game development, and a new wave of AI agents that live right in your text messages.",
-    "articleCount": 6,
-    "urlPath": "/issues/2026-10-04.html",
-    "contentHash": "7fe13b49bef17ff680f46b1954adc56dc554ad62676249307bbc81876659685a"
+    "slug": "2026-10-05",
+    "digestDate": "2026-10-05",
+    "displayDate": "Oct 05, 2026",
+    "issueNumber": "61005",
+    "subject": "ISSUE 61005 \u00b7 12 STORIES \u00b7 11 MIN READ",
+    "intro": "It's a rough week for OpenAI's safety narrative \u2014 a former insider just called the company's safety culture \"broken\" in *The Atlantic*, and CEO Sam Altman isn't exactly helping by telling the world to accept \"bad things\" like hacks and scams as the price of AI progress. Meanwhile, the tension between AI enthusiasm and AI anxiety is playing out everywhere: Google had to freeze its bug bounty program because AI-generated slop overwhelmed it, the White House is trying to rebrand the whole field as \"super intelligence,\" and a billion people are using ChatGPT every month even as public opinion sours \u2014 proving that our complicated relationship with this technology is only getting more complicated.",
+    "articleCount": 12,
+    "urlPath": "/issues/2026-10-05.html",
+    "contentHash": "402d38d4e34c0e0d241fb00ed981c0680b20c2528ff3a356784277efca54135d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-05",
+      "digestDate": "2026-10-05",
+      "displayDate": "Oct 05, 2026",
+      "issueNumber": "61005",
+      "subject": "ISSUE 61005 \u00b7 12 STORIES \u00b7 11 MIN READ",
+      "intro": "It's a rough week for OpenAI's safety narrative \u2014 a former insider just called the company's safety culture \"broken\" in *The Atlantic*, and CEO Sam Altman isn't exactly helping by telling the world to accept \"bad things\" like hacks and scams as the price of AI progress. Meanwhile, the tension between AI enthusiasm and AI anxiety is playing out everywhere: Google had to freeze its bug bounty program because AI-generated slop overwhelmed it, the White House is trying to rebrand the whole field as \"super intelligence,\" and a billion people are using ChatGPT every month even as public opinion sours \u2014 proving that our complicated relationship with this technology is only getting more complicated.",
+      "articleCount": 12,
+      "urlPath": "/issues/2026-10-05.html",
+      "contentHash": "402d38d4e34c0e0d241fb00ed981c0680b20c2528ff3a356784277efca54135d"
+    },
     {
       "slug": "2026-10-04",
       "digestDate": "2026-10-04",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-09-24.html",
       "contentHash": "6ce1348a4cbadc40a9699d9666af302e60e0f03e5fb07b384f8218054cd4f732"
-    },
-    {
-      "slug": "2026-09-23",
-      "digestDate": "2026-09-23",
-      "displayDate": "Sep 23, 2026",
-      "issueNumber": "60923",
-      "subject": "ISSUE 60923 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "Today might be remembered as the day the AI race became a full-on sprint: Anthropic and OpenAI dropped competing models just 90 minutes apart, with Opus 5.5 claiming the top spot on the AA Intelligence Index while OpenAI fired back with GPT-6 Sol and Luna at aggressively slashed prices. Beyond the launch-day fireworks, we're also covering Microsoft's takedown of an AI-powered cybercrime ring that hit 12,000 accounts, MIT's insect-scale robot that just got 450% faster, and a sharp debate over whether AI's boldest promises \u2014 from curing cancer to solving open math problems \u2014 are actually delivering. Buckle in, because today's news cycle earned its caffeine.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-09-23.html",
-      "contentHash": "d7805acfcbf3e73cf5792e1571f61775b6ab3041a6d5f37212ce20fe5b5b212e"
     }
   ]
 }
