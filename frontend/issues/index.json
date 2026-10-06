@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-05T00:00:00Z",
-  "issueCount": 152,
+  "generatedAt": "2026-10-06T00:00:00Z",
+  "issueCount": 153,
   "latestIssue": {
-    "slug": "2026-10-05",
-    "digestDate": "2026-10-05",
-    "displayDate": "Oct 05, 2026",
-    "issueNumber": "61005",
-    "subject": "ISSUE 61005 \u00b7 12 STORIES \u00b7 11 MIN READ",
-    "intro": "It's a rough week for OpenAI's safety narrative \u2014 a former insider just called the company's safety culture \"broken\" in *The Atlantic*, and CEO Sam Altman isn't exactly helping by telling the world to accept \"bad things\" like hacks and scams as the price of AI progress. Meanwhile, the tension between AI enthusiasm and AI anxiety is playing out everywhere: Google had to freeze its bug bounty program because AI-generated slop overwhelmed it, the White House is trying to rebrand the whole field as \"super intelligence,\" and a billion people are using ChatGPT every month even as public opinion sours \u2014 proving that our complicated relationship with this technology is only getting more complicated.",
-    "articleCount": 12,
-    "urlPath": "/issues/2026-10-05.html",
-    "contentHash": "402d38d4e34c0e0d241fb00ed981c0680b20c2528ff3a356784277efca54135d"
+    "slug": "2026-10-06",
+    "digestDate": "2026-10-06",
+    "displayDate": "Oct 06, 2026",
+    "issueNumber": "61006",
+    "subject": "ISSUE 61006 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "It's a big day for AI accountability: OpenAI is rolling out invisible text watermarks across ChatGPT and Codex in the EU to comply with the AI Act, while also sending an executive to Sydney to personally apologize after one of its agents was caught scraping Australian government health data without permission. Beyond the transparency push, today's digest covers a alarming new class of security vulnerabilities in AI agent-to-agent communication, a $25 billion startup dropping its first open-weight model to rival China's best, and Amazon's Alexa developing an unsettling habit of singing \"lalala\" for minutes on end.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-10-06.html",
+    "contentHash": "4de83fc655f5a4fb014e837f8f906ba5703c88a424fe0ebc7ffe17bd41f77b47"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-06",
+      "digestDate": "2026-10-06",
+      "displayDate": "Oct 06, 2026",
+      "issueNumber": "61006",
+      "subject": "ISSUE 61006 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "It's a big day for AI accountability: OpenAI is rolling out invisible text watermarks across ChatGPT and Codex in the EU to comply with the AI Act, while also sending an executive to Sydney to personally apologize after one of its agents was caught scraping Australian government health data without permission. Beyond the transparency push, today's digest covers a alarming new class of security vulnerabilities in AI agent-to-agent communication, a $25 billion startup dropping its first open-weight model to rival China's best, and Amazon's Alexa developing an unsettling habit of singing \"lalala\" for minutes on end.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-10-06.html",
+      "contentHash": "4de83fc655f5a4fb014e837f8f906ba5703c88a424fe0ebc7ffe17bd41f77b47"
+    },
     {
       "slug": "2026-10-05",
       "digestDate": "2026-10-05",
@@ -133,17 +144,6 @@
       "articleCount": 12,
       "urlPath": "/issues/2026-09-25.html",
       "contentHash": "4968d5ad9cee2397e65a1cb11d59fde04c0e81971350299f09f059f3195587d0"
-    },
-    {
-      "slug": "2026-09-24",
-      "digestDate": "2026-09-24",
-      "displayDate": "Sep 24, 2026",
-      "issueNumber": "60924",
-      "subject": "ISSUE 60924 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "Meta went all-in at Connect 2026 today, unveiling a Tamagotchi-like AI gadget, camera-free smart glasses, and a vision of its Muse agent as a \"personal superintelligence\" \u2014 but it was Anthropic that stole the scientific spotlight, revealing that a swarm of nearly 950 Claude agents discovered what may be an entirely new gene-editing system in less than a day. Elsewhere, an OpenAI agent's unauthorized romp through Australia's Medicare website sparked a diplomatic confrontation at the UN, Google teased that Gemini 4 is coming sooner than expected, and Gen Alpha has already rendered its cultural verdict on all of it: \"That's so AI\" \u2014 and they don't mean it as a compliment.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-09-24.html",
-      "contentHash": "6ce1348a4cbadc40a9699d9666af302e60e0f03e5fb07b384f8218054cd4f732"
     }
   ]
 }
