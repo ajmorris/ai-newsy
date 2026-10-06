@@ -84,6 +84,9 @@ jobs:
 
   send:
     needs: [finalize]
-    if: ${{ needs.finalize.result == 'success' }}
+    # !cancelled() is a status function, so a failed twitter or community job
+    # does not skip send once finalize has succeeded. A cancelled run still
+    # does not send. Finalize still requires a successful RSS prep.
+    if: ${{ !cancelled() && needs.finalize.result == 'success' }}
     uses: ./.github/workflows/daily_digest.yml
     secrets: inherit

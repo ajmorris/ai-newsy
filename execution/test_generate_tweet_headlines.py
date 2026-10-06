@@ -1,5 +1,6 @@
 import unittest
 from datetime import datetime, timezone
+from unittest.mock import patch
 import types
 import sys
 
@@ -9,7 +10,11 @@ if "notion_client" not in sys.modules:
     notion_client_stub.__version__ = "test"
     sys.modules["notion_client"] = notion_client_stub
 
-from execution.generate_tweet_headlines import _lookback_start, curate_headlines
+from execution.generate_tweet_headlines import (
+    _lookback_start,
+    curate_headlines,
+    generate_headlines_for_tweets,
+)
 
 
 class TweetHeadlineCurationTests(unittest.TestCase):
@@ -128,6 +133,85 @@ class TweetHeadlineCurationTests(unittest.TestCase):
         )
         self.assertEqual(len(curated), 1)
         self.assertEqual(curated[0]["tweet_id"], "b")
+
+
+def _sample_tweets(count: int) -> list:
+    return [
+        {
+            "tweet_id": str(index),
+            "author": "author",
+            "url": f"https://twitter.com/author/status/{index}",
+            "text": f"tweet text {index}",
+            "created_time": "2026-04-19T10:00:00+00:00",
+        }
+        for index in range(count)
+    ]
+
+
+class TweetHeadlineBatchTests(unittest.TestCase):
+    def test_two_batches_become_two_llm_calls(self) -> None:
+        tweets = _sample_tweets(21)
+
+        def fake_generate(prompt: str, **kwargs):
+            self.assertEqual(kwargs.get("timeout_seconds"), 120)
+            lines = [
+                f"{tweet['tweet_id']}|A __headline__"
+                for tweet in tweets
+                if f"TWEET_ID: {tweet['tweet_id']}" in prompt
+            ]
+            return "\n".join(lines)
+
+        with patch(
+            "execution.generate_tweet_headlines.generate_text_with_fallback",
+            side_effect=fake_generate,
+        ) as generate:
+            headlines = generate_headlines_for_tweets(
+                tweets,
+                "skill",
+                batch_size=20,
+                timeout_seconds=120,
+            )
+
+        self.assertEqual(generate.call_count, 2)
+        self.assertEqual(len(headlines), 21)
+
+    def test_timeout_on_first_batch_keeps_second_batch(self) -> None:
+        tweets = _sample_tweets(2)
+
+        def fake_generate(prompt: str, **kwargs):
+            if "TWEET_ID: 0" in prompt:
+                raise RuntimeError("Claude CLI timed out after 120s")
+            return "1|Second __headline__"
+
+        with patch(
+            "execution.generate_tweet_headlines.generate_text_with_fallback",
+            side_effect=fake_generate,
+        ) as generate:
+            headlines = generate_headlines_for_tweets(
+                tweets,
+                "skill",
+                batch_size=1,
+                timeout_seconds=120,
+            )
+
+        self.assertEqual(generate.call_count, 3)
+        self.assertEqual([item["tweet_id"] for item in headlines], ["1"])
+
+    def test_all_batches_failing_raises(self) -> None:
+        tweets = _sample_tweets(2)
+        with patch(
+            "execution.generate_tweet_headlines.generate_text_with_fallback",
+            side_effect=RuntimeError("Claude CLI timed out after 120s"),
+        ) as generate:
+            with self.assertRaisesRegex(RuntimeError, "All tweet headline batches failed"):
+                generate_headlines_for_tweets(
+                    tweets,
+                    "skill",
+                    batch_size=1,
+                    timeout_seconds=120,
+                )
+
+        self.assertEqual(generate.call_count, 4)
 
 
 if __name__ == "__main__":
