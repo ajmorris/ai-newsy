@@ -174,6 +174,8 @@ For Notion tweet ingestion + headline generation, configure:
 - `TWEET_MAX_HEADLINES` (optional, default `36`) — max headlines after curation; digest builder caps further
 - `TWEET_HEADLINES_MODEL` (optional, default `gemini-2.0-flash`; ignored in CI when the provider is `claude_code`)
 - `TWEET_HEADLINES_CLAUDE_MODEL` (optional GitHub Actions variable, default `claude-sonnet-4-6`)
+- `TWEET_HEADLINE_BATCH_SIZE` (optional, default `20`) — likes are sent to the model in batches so one oversized prompt cannot come back as prose with no `ID|HEADLINE` lines
+- `TWEET_HEADLINE_CALL_TIMEOUT_SECONDS` (optional, default `180`) — per-batch Claude CLI budget
 
 GitHub Actions:
 

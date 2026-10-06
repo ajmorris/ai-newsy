@@ -11,7 +11,7 @@ concurrency:
 jobs:
   prepare-twitter-headlines:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
 
     steps:
       - name: Checkout repository
@@ -50,6 +50,8 @@ jobs:
           TWEET_THEME_SIMILARITY_THRESHOLD: ${{ vars.TWEET_THEME_SIMILARITY_THRESHOLD || '0.38' }}
           TWEET_MAX_PER_THEME: ${{ vars.TWEET_MAX_PER_THEME || '2' }}
           TWEET_DISTINCTNESS_THRESHOLD: ${{ vars.TWEET_DISTINCTNESS_THRESHOLD || '0.45' }}
+          TWEET_HEADLINE_BATCH_SIZE: ${{ vars.TWEET_HEADLINE_BATCH_SIZE || '20' }}
+          TWEET_HEADLINE_CALL_TIMEOUT_SECONDS: ${{ vars.TWEET_HEADLINE_CALL_TIMEOUT_SECONDS || '180' }}
         run: python execution/generate_tweet_headlines.py
 
       - name: Verify tweet headlines payload

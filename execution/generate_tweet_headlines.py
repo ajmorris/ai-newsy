@@ -297,32 +297,55 @@ def fetch_recent_tweets(limit: int = 100, hours: int = 24) -> List[dict]:
     return [row for row in rows if row.get("text")]
 
 
-def _build_generation_prompt(skill_prompt: str, tweets: List[dict]) -> str:
+_TWEET_TEXT_LIMIT = 800
+
+
+def _clip_tweet_text(text: str) -> str:
+    cleaned = " ".join((text or "").split())
+    if len(cleaned) <= _TWEET_TEXT_LIMIT:
+        return cleaned
+    return cleaned[:_TWEET_TEXT_LIMIT].rstrip() + "..."
+
+
+def _build_generation_prompt(skill_prompt: str, tweets: List[dict], strict: bool = False) -> str:
     tweet_blocks = []
-    for tweet in tweets:
+    for index, tweet in enumerate(tweets, start=1):
         tweet_blocks.append(
             "\n".join(
                 [
-                    f"TWEET_ID: {tweet['tweet_id']}",
+                    f"ID: {index}",
                     f"AUTHOR: {tweet.get('author', 'Unknown')}",
                     f"URL: {tweet.get('url', '')}",
-                    f"TEXT: {tweet.get('text', '')}",
+                    f"TEXT: {_clip_tweet_text(tweet.get('text', ''))}",
                 ]
             )
         )
 
     rows_blob = "\n\n---\n\n".join(tweet_blocks)
+    # The skill asks for a bulleted list. That conflicts with the line format the
+    # parser requires, and a single oversized prompt was returned as prose with no
+    # ID|HEADLINE lines (Oct 4–5 digests stored zero likes).
+    format_rules = (
+        "Output requirements (these override every earlier instruction, including any bulleted list):\n"
+        "1. One line per included tweet.\n"
+        "2. Format exactly: ID|HEADLINE\n"
+        "3. ID is the integer from that tweet's ID: line. Copy it unchanged.\n"
+        "4. HEADLINE must include exactly one __anchor phrase__ wrapped in double underscores.\n"
+        "   Example: 1|The __anchor phrase__ is the only part that will be linked.\n"
+        "   Do NOT use asterisks for emphasis (no **like this**).\n"
+        "5. Omit low-signal tweets entirely.\n"
+        "6. No markdown bullets, numbering, code fences, or preamble.\n\n"
+    )
+    if strict:
+        return (
+            "Rewrite the tweets below as newsletter headlines.\n"
+            f"{format_rules}"
+            f"{rows_blob}"
+        )
     return (
         f"{skill_prompt}\n\n"
         "Generate headlines for these tweets.\n"
-        "Output requirements (strict):\n"
-        "1. One line per included tweet.\n"
-        "2. Format: TWEET_ID|HEADLINE\n"
-        "3. HEADLINE must include exactly one __anchor phrase__ wrapped in double underscores.\n"
-        "   Example: The __anchor phrase__ is the only part that will be linked.\n"
-        "   Do NOT use asterisks for emphasis (no **like this**).\n"
-        "4. Omit low-signal tweets entirely.\n"
-        "5. No markdown bullets, numbering, or preamble.\n\n"
+        f"{format_rules}"
         f"{rows_blob}"
     )
 
@@ -337,39 +360,149 @@ def _normalize_headline_anchors(headline: str) -> str:
     return normalized.strip()
 
 
-def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List[dict]:
-    if not tweets:
-        return []
+def _preview_model_output(text: str, limit: int = 400) -> str:
+    cleaned = " ".join((text or "").split())
+    if len(cleaned) <= limit:
+        return cleaned
+    return f"{cleaned[:limit]}..."
 
-    prompt = _build_generation_prompt(skill_prompt, tweets)
-    model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
-    text = generate_text_with_fallback(
-        prompt=prompt,
-        gemini_model=model_name,
-    )
 
-    tweet_index = {tweet["tweet_id"]: tweet for tweet in tweets}
-    headlines = []
-    for line in text.splitlines():
-        if "|" not in line:
+def _response_lines(text: str) -> List[str]:
+    without_fences = re.sub(r"```[a-zA-Z0-9_+-]*", "", text or "")
+    return without_fences.splitlines()
+
+
+def _lookup_tweet(token: str, by_key: Dict[str, dict], by_url: Dict[str, dict]) -> Optional[dict]:
+    candidate = (token or "").strip().strip("`").strip()
+    candidate = re.sub(r"^(id|tweet_id)\s*:\s*", "", candidate, flags=re.IGNORECASE).strip()
+    candidate = candidate.rstrip(".").strip()
+    if not candidate:
+        return None
+
+    pieces = candidate.split()
+    last_piece = pieces[-1].rstrip(".").strip("`") if pieces else ""
+    for piece in (candidate, last_piece):
+        if not piece:
             continue
-        tweet_id, raw_headline = line.split("|", 1)
-        tweet_id = tweet_id.strip()
-        raw_headline = _normalize_headline_anchors(raw_headline.strip().lstrip("-").strip())
-        if not tweet_id or not raw_headline:
+        if piece in by_key:
+            return by_key[piece]
+        compact = piece.replace("-", "").lower()
+        if compact in by_key:
+            return by_key[compact]
+        matched = by_url.get(_canonicalize_url(piece))
+        if matched:
+            return matched
+    return None
+
+
+def parse_headline_response(text: str, tweets: List[dict]) -> List[dict]:
+    """Map model lines back to tweets.
+
+    Prompts use short integer IDs. Also accept the Notion page id (with or
+    without dashes) and the tweet URL, including when the model wraps the
+    line in a bullet or a code fence.
+    """
+    by_key: Dict[str, dict] = {}
+    by_url: Dict[str, dict] = {}
+    for index, tweet in enumerate(tweets, start=1):
+        by_key[str(index)] = tweet
+        raw_id = str(tweet.get("tweet_id") or "").strip()
+        if raw_id:
+            by_key[raw_id] = tweet
+            by_key[raw_id.replace("-", "").lower()] = tweet
+        url = _canonicalize_url(tweet.get("url") or "")
+        if url:
+            by_url[url] = tweet
+
+    headlines: List[dict] = []
+    seen: Set[str] = set()
+    for raw_line in _response_lines(text):
+        line = raw_line.strip().lstrip("-*• ").strip()
+        if "|" in line:
+            left, right = line.split("|", 1)
+        elif ":" in line:
+            left, right = line.split(":", 1)
+        else:
             continue
-        source = tweet_index.get(tweet_id)
-        if not source:
+        source = _lookup_tweet(left, by_key, by_url)
+        if source is None:
             continue
+        headline = _normalize_headline_anchors(right.strip().lstrip("-").strip())
+        if source is None or not headline:
+            continue
+        tweet_id = str(source.get("tweet_id") or "")
+        if not tweet_id or tweet_id in seen:
+            continue
+        seen.add(tweet_id)
         headlines.append(
             {
                 "tweet_id": tweet_id,
-                "headline": raw_headline,
+                "headline": headline,
                 "url": source.get("url", ""),
                 "author": source.get("author", "Unknown"),
                 "created_time": source.get("created_time", ""),
                 "source_text": source.get("text", ""),
             }
+        )
+    return headlines
+
+
+def _batched(items: List[dict], size: int):
+    step = max(size, 1)
+    for start in range(0, len(items), step):
+        yield items[start : start + step]
+
+
+def _generate_with_call_timeout(prompt: str, model_name: str) -> str:
+    timeout = max(1, _env_int("TWEET_HEADLINE_CALL_TIMEOUT_SECONDS", 180))
+    previous = os.environ.get("CLAUDE_CODE_TIMEOUT_SECONDS")
+    os.environ["CLAUDE_CODE_TIMEOUT_SECONDS"] = str(timeout)
+    try:
+        return generate_text_with_fallback(
+            prompt=prompt,
+            gemini_model=model_name,
+        )
+    finally:
+        if previous is None:
+            os.environ.pop("CLAUDE_CODE_TIMEOUT_SECONDS", None)
+        else:
+            os.environ["CLAUDE_CODE_TIMEOUT_SECONDS"] = previous
+
+
+def generate_headlines_for_tweets(tweets: List[dict], skill_prompt: str) -> List[dict]:
+    if not tweets:
+        return []
+
+    model_name = _env_str("TWEET_HEADLINES_MODEL", "gemini-2.0-flash")
+    batch_size = max(1, _env_int("TWEET_HEADLINE_BATCH_SIZE", 20))
+    headlines: List[dict] = []
+    for batch_number, batch in enumerate(_batched(tweets, batch_size), start=1):
+        print(f"Generating headlines for tweet batch {batch_number} ({len(batch)} tweets)")
+        text = _generate_with_call_timeout(
+            _build_generation_prompt(skill_prompt, batch),
+            model_name,
+        )
+        parsed = parse_headline_response(text, batch)
+        if not parsed:
+            print(
+                f"    Batch {batch_number} returned 0 headlines. "
+                f"Model output preview: {_preview_model_output(text)}"
+            )
+            text = _generate_with_call_timeout(
+                _build_generation_prompt(skill_prompt, batch, strict=True),
+                model_name,
+            )
+            parsed = parse_headline_response(text, batch)
+            if not parsed:
+                print(
+                    f"    Batch {batch_number} retry returned 0 headlines. "
+                    f"Model output preview: {_preview_model_output(text)}"
+                )
+        headlines.extend(parsed)
+
+    if not headlines:
+        raise RuntimeError(
+            f"Tweet headline model returned no parseable lines for {len(tweets)} tweets"
         )
     return headlines
 

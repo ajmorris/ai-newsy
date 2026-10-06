@@ -1,7 +1,12 @@
+import os
 import unittest
 from datetime import datetime, timezone
+from unittest.mock import patch
 import types
 import sys
+
+os.environ.setdefault("SUPABASE_URL", "https://example.supabase.co")
+os.environ.setdefault("SUPABASE_SECRET_KEY", "test-secret")
 
 if "notion_client" not in sys.modules:
     notion_client_stub = types.ModuleType("notion_client")
@@ -9,7 +14,13 @@ if "notion_client" not in sys.modules:
     notion_client_stub.__version__ = "test"
     sys.modules["notion_client"] = notion_client_stub
 
-from execution.generate_tweet_headlines import _lookback_start, curate_headlines
+from execution.generate_tweet_headlines import (
+    _build_generation_prompt,
+    _lookback_start,
+    curate_headlines,
+    generate_headlines_for_tweets,
+    parse_headline_response,
+)
 
 
 class TweetHeadlineCurationTests(unittest.TestCase):
@@ -128,6 +139,79 @@ class TweetHeadlineCurationTests(unittest.TestCase):
         )
         self.assertEqual(len(curated), 1)
         self.assertEqual(curated[0]["tweet_id"], "b")
+
+
+class TweetHeadlineParseTests(unittest.TestCase):
+    def _tweets(self):
+        return [
+            {
+                "tweet_id": "11111111-2222-3333-4444-555555555555",
+                "author": "Ada",
+                "text": "A long note about agent evals and a benchmark table",
+                "url": "https://x.com/ada/status/10",
+                "created_time": "2026-10-05T01:00:00+00:00",
+            },
+            {
+                "tweet_id": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+                "author": "Bea",
+                "text": "Another note about prompt design tradeoffs",
+                "url": "https://x.com/bea/status/11?utm_source=x",
+                "created_time": "2026-10-05T02:00:00+00:00",
+            },
+        ]
+
+    def test_parses_short_ids_fences_and_bullets(self) -> None:
+        text = """```text
+* 1|Ada published an __agent eval benchmark__
+2: Bea shares __prompt design tradeoffs__
+```"""
+        parsed = parse_headline_response(text, self._tweets())
+        self.assertEqual([item["tweet_id"] for item in parsed], [
+            "11111111-2222-3333-4444-555555555555",
+            "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        ])
+        self.assertIn("__agent eval benchmark__", parsed[0]["headline"])
+
+    def test_parses_notion_id_without_dashes_and_url(self) -> None:
+        text = "\n".join(
+            [
+                "11111111222233334444555555555555|Ada published an __agent eval benchmark__",
+                "https://twitter.com/bea/status/11|Bea shares __prompt design tradeoffs__",
+            ]
+        )
+        parsed = parse_headline_response(text, self._tweets())
+        self.assertEqual(len(parsed), 2)
+
+    def test_prompt_uses_short_ids(self) -> None:
+        prompt = _build_generation_prompt("skill", self._tweets())
+        self.assertIn("ID: 1", prompt)
+        self.assertNotIn("11111111-2222-3333-4444-555555555555", prompt)
+        self.assertIn("override every earlier instruction", prompt)
+
+    def test_retries_unparsed_batch_then_keeps_matches(self) -> None:
+        tweets = self._tweets()
+        with patch.dict(os.environ, {"TWEET_HEADLINE_BATCH_SIZE": "20"}, clear=False):
+            with patch(
+                "execution.generate_tweet_headlines.generate_text_with_fallback",
+                side_effect=[
+                    "* A headline with __no id__",
+                    "1|Ada published an __agent eval benchmark__",
+                ],
+            ) as generate:
+                parsed = generate_headlines_for_tweets(tweets, skill_prompt="skill")
+        self.assertEqual(generate.call_count, 2)
+        self.assertEqual(len(parsed), 1)
+        second_prompt = generate.call_args_list[1].kwargs["prompt"]
+        self.assertNotIn("skill", second_prompt)
+        self.assertIn("ID: 1", second_prompt)
+
+    def test_raises_when_every_batch_is_unparsed(self) -> None:
+        with patch(
+            "execution.generate_tweet_headlines.generate_text_with_fallback",
+            return_value="Here are some thoughts, but no lines.",
+        ):
+            with self.assertRaises(RuntimeError):
+                generate_headlines_for_tweets(self._tweets(), skill_prompt="skill")
 
 
 if __name__ == "__main__":
