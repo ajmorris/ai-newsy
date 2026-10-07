@@ -188,6 +188,16 @@ def _render_body_from_payload(payload: Dict[str, Any]) -> str:
     if community_section:
         parts.append(community_section)
 
+    dev_items = []
+    for item in payload.get("dev_headlines") or []:
+        tag = str(item.get("tag", "") or "").strip()
+        headline = str(item.get("headline", "") or "").strip()
+        display = f"{tag} · {headline}" if tag else headline
+        dev_items.append(_render_tweet_headline_html({"headline": display, "url": item.get("url", "")}))
+    dev_section = render_quick_hit_section("Developer and open source", dev_items)
+    if dev_section:
+        parts.append(dev_section)
+
     for extra in payload.get("quick_hit_sections") or []:
         title = str(extra.get("title", "") or "").strip()
         extra_items = []

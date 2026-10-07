@@ -340,6 +340,7 @@ def generate_email_html(
     intro: str,
     tweet_headlines: Optional[List[dict]] = None,
     community_headlines: Optional[List[dict]] = None,
+    dev_headlines: Optional[List[dict]] = None,
     unsubscribe_token: str = "",
     digest_summary_line: str = "",
 ) -> str:
@@ -417,6 +418,26 @@ def generate_email_html(
         </div>
         """
 
+    dev_headlines = dev_headlines or []
+    dev_section_html = ""
+    if dev_headlines:
+        dev_items_html = "".join(
+            [
+                f"<li style=\"margin-bottom: 10px; line-height: 1.6; color: #a3a099;\">{render_tweet_headline_html(item)}</li>"
+                for item in dev_headlines
+            ]
+        )
+        dev_section_html = f"""
+        <div style="margin-bottom: 32px;">
+            <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
+                Developer and open source
+            </h2>
+            <ul style="padding-left: 20px; margin: 0;">
+                {dev_items_html}
+            </ul>
+        </div>
+        """
+
     community_section_html = ""
     if community_headlines:
         community_items_html = "".join(
@@ -456,6 +477,7 @@ def generate_email_html(
             </div>
             <div style="padding: 0 28px 0 28px;">{tweet_section_html}</div>
             <div style="padding: 0 28px 0 28px;">{community_section_html}</div>
+            <div style="padding: 0 28px 0 28px;">{dev_section_html}</div>
             <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
                 <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
                     You're receiving this because you subscribed to AI Newsy.
@@ -711,6 +733,12 @@ def send_daily_digest(
     sections = list(payload.get("sections", [])) or group_articles_by_category(articles)
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
+    dev_headlines = list(payload.get("dev_headlines", []))
+    quick_hit_sections = []
+    if dev_headlines:
+        quick_hit_sections.append(
+            {"title": "Developer and open source", "items": dev_headlines}
+        )
     intro = str(payload.get("intro", ""))
 
     send_started_at = datetime.utcnow().isoformat()
@@ -737,6 +765,7 @@ def send_daily_digest(
             digest_date=digest_date,
             tweet_headlines=tweet_headlines,
             community_headlines=community_headlines,
+            quick_hit_sections=quick_hit_sections,
         )
         rendered_html = _render_email_with_mjml(renderer_payload)
 
@@ -758,6 +787,7 @@ def send_daily_digest(
                     intro=intro,
                     tweet_headlines=tweet_headlines,
                     community_headlines=community_headlines,
+                    dev_headlines=dev_headlines,
                     unsubscribe_token=token,
                     digest_summary_line=digest_summary_line,
                 )
