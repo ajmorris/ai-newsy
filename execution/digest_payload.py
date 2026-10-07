@@ -26,6 +26,7 @@ from execution.database import (
     get_unsent_articles_for_digest,
     upsert_digest_extra,
 )
+from execution.section_routing import llm_dev_judge, split_main_and_dev
 from execution.story_text_normalizer import (
     DIGEST_OPINION_MAX_CHARS,
     DIGEST_SUMMARY_MAX_CHARS,
@@ -236,7 +237,8 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
         for row in normalized:
             _assign_category(row)
         normalized.sort(key=lambda row: row.get("published_at") or row.get("fetched_at") or "", reverse=True)
-        stories = normalized[: max(0, options.max_stories)]
+        stories, dev_headlines = split_main_and_dev(normalized, judge=llm_dev_judge)
+        stories = stories[: max(0, options.max_stories)]
     else:
         since = datetime.now(timezone.utc) - timedelta(hours=options.window_hours)
         rows = get_unsent_articles_for_digest(
@@ -248,7 +250,8 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
         normalized = [_normalize_article(row) for row in rows]
         for row in normalized:
             _assign_category(row)
-        stories = normalized[: max(0, options.max_stories)]
+        stories, dev_headlines = split_main_and_dev(normalized, judge=llm_dev_judge)
+        stories = stories[: max(0, options.max_stories)]
 
     heal_digest_story_opinions(stories)
     assert_digest_stories_have_opinions(stories)
@@ -282,6 +285,7 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
         "sections": sections,
         "tweet_headlines": tweet_headlines,
         "community_headlines": community_headlines,
+        "dev_headlines": dev_headlines,
         "build_meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "source_window_hours": options.window_hours,

@@ -77,7 +77,12 @@ def _render_frontmatter(
     return "\n".join(lines)
 
 
-def _render_body(sections: List[dict], tweet_headlines: List[dict], community_headlines: List[dict]) -> str:
+def _render_body(
+    sections: List[dict],
+    tweet_headlines: List[dict],
+    community_headlines: List[dict],
+    dev_headlines: Optional[List[dict]] = None,
+) -> str:
     parts: List[str] = []
     for section in sections:
         parts.append(f"## {section['name']}\n")
@@ -128,6 +133,16 @@ def _render_body(sections: List[dict], tweet_headlines: List[dict], community_he
             parts.append(f"- [{source}] {headline} ([Source]({url}))")
         parts.append("")
 
+    if dev_headlines:
+        parts.append("## Developer and open source\n")
+        for item in dev_headlines:
+            tag = str(item.get("tag", "") or "").strip()
+            prefix = f"{tag} · " if tag else ""
+            headline = item.get("headline", "")
+            url = item.get("url", "")
+            parts.append(f"- {prefix}{headline} ([Source]({url}))")
+        parts.append("")
+
     return "\n".join(parts).strip() + "\n"
 
 
@@ -162,6 +177,7 @@ def build_digest_markdown(
     sections = list(payload.get("sections", []))
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
+    dev_headlines = list(payload.get("dev_headlines", []))
 
     frontmatter = _render_frontmatter(
         digest_date=safe_date,
@@ -171,7 +187,12 @@ def build_digest_markdown(
         tweet_count=len(tweet_headlines),
         community_count=len(community_headlines),
     )
-    body = _render_body(sections, tweet_headlines=tweet_headlines, community_headlines=community_headlines)
+    body = _render_body(
+        sections,
+        tweet_headlines=tweet_headlines,
+        community_headlines=community_headlines,
+        dev_headlines=dev_headlines,
+    )
 
     output_dir = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))
     output_dir.mkdir(parents=True, exist_ok=True)
