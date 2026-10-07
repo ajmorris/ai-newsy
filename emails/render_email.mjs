@@ -79,6 +79,34 @@ const renderQuickHitHeadline = (item) => {
   return `${esc(before)}<a class="dm-link" href="${esc(url)}" style="color:${DB.accent};text-decoration:underline;">${esc(anchorText)}</a>${esc(after)}`;
 };
 
+const renderClusterLine = (story) => {
+  const cluster = story && story.cluster;
+  if (!cluster || typeof cluster !== "object") {
+    return "";
+  }
+  const count = Number(cluster.badge_count || 0);
+  if (count < 2 && !cluster.is_update) {
+    return "";
+  }
+  let label = cluster.is_update && count < 2 ? "Update" : `Covered by ${count} sources`;
+  if (cluster.is_update && count > 1) {
+    label = `Update · ${label}`;
+  }
+  const also = (cluster.sources || [])
+    .slice(1)
+    .map((source) => {
+      const name = esc(source.source || "Source");
+      const url = esc(source.url || "#");
+      return `<a class="dm-link" href="${url}" style="color:${DB.accent};">${name}</a>`;
+    })
+    .join(" · ");
+  const conflicts = (cluster.conflicts || []).map((line) => esc(line)).join(" ");
+  return `
+      <mj-text css-class="dm-accent" color="${DB.accent}" font-size="12px" padding="0 0 8px">
+        ${esc(label)}${also ? `<br/>Also covered by ${also}` : ""}${conflicts ? `<br/>Where coverage differs: ${conflicts}` : ""}
+      </mj-text>`;
+};
+
 const tldrItems = stories
   .map(
     (story, idx) => `
@@ -107,6 +135,7 @@ const storyItems = stories
       <mj-text css-class="dm-mute" color="${DB.textMute}" font-size="15px" line-height="1.65" padding="0 0 14px">
         ${esc(story.summary || "No summary available.")}
       </mj-text>
+      ${renderClusterLine(story)}
       <mj-table padding="0 0 14px">
         <tr>
           <td class="dm-text" style="border-left:2px solid ${DB.accent};padding-left:12px;font-family:'JetBrains Mono', Menlo, monospace;color:${DB.text};font-size:12px;line-height:1.6;">

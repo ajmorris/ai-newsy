@@ -116,6 +116,34 @@ def _render_story(story: Dict[str, Any]) -> str:
             f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{image_alt}" '
             f'style="max-width: 100%; height: auto; border-radius: 8px;" /></div>'
         )
+    cluster = story.get("cluster") if isinstance(story.get("cluster"), dict) else {}
+    cluster_html = ""
+    badge_count = int(cluster.get("badge_count") or 0)
+    if badge_count > 1 or cluster.get("is_update"):
+        label = "Update" if cluster.get("is_update") and badge_count <= 1 else f"Covered by {badge_count} sources"
+        if cluster.get("is_update") and badge_count > 1:
+            label = f"Update · {label}"
+        also = []
+        for source in (cluster.get("sources") or [])[1:]:
+            source_name = html.escape(str(source.get("source", "") or "Source"))
+            source_url = html.escape(str(source.get("url", "") or "#"), quote=True)
+            also.append(f'<a href="{source_url}" style="color: var(--brand);">{source_name}</a>')
+        also_html = ""
+        if also:
+            also_html = f'<p style="margin: 6px 0 0; color: var(--muted);">Also covered by {" · ".join(also)}</p>'
+        conflicts = cluster.get("conflicts") or []
+        conflict_html = ""
+        if conflicts:
+            conflict_html = (
+                '<p style="margin: 6px 0 0; color: var(--fg);">Where coverage differs: '
+                + html.escape(" ".join(str(line) for line in conflicts))
+                + "</p>"
+            )
+        cluster_html = (
+            f'<p style="margin: 8px 0 0; color: var(--brand); font-family: JetBrains Mono, monospace; '
+            f'font-size: 11px; letter-spacing: 0.04em;">{html.escape(label)}</p>'
+            f"{also_html}{conflict_html}"
+        )
     opinion_html = ""
     if opinion:
         opinion_html = (
@@ -135,6 +163,7 @@ def _render_story(story: Dict[str, Any]) -> str:
         f'<a href="{link}" style="color: var(--fg); text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
         '</h3>'
         f'<p style="margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6;">{summary}</p>'
+        f'{cluster_html}'
         f'{opinion_html}'
         '</article>'
     )

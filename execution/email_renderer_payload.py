@@ -125,6 +125,7 @@ def build_email_renderer_payload(
                     "why": normalized_article.get("opinion", ""),
                     "url": normalized_article.get("url", "#"),
                     "imageUrl": normalized_article.get("image_url", ""),
+                    "cluster": normalized_article.get("cluster") or None,
                 }
             )
 

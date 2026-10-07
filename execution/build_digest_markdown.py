@@ -104,6 +104,20 @@ def _render_body(
 
             parts.append(f"### [{article.get('title', 'Untitled')}]({article.get('url', '#')})")
             parts.append(f"*{article.get('source', 'Unknown Source')}*")
+            cluster = article.get("cluster") if isinstance(article.get("cluster"), dict) else {}
+            badge_count = int(cluster.get("badge_count") or 0)
+            if badge_count > 1 or cluster.get("is_update"):
+                label = "Update" if cluster.get("is_update") and badge_count <= 1 else f"Covered by {badge_count} sources"
+                if cluster.get("is_update") and badge_count > 1:
+                    label = f"Update · {label}"
+                parts.append(f"_{label}_")
+                also = []
+                for source in (cluster.get("sources") or [])[1:]:
+                    name = str(source.get("source", "") or "Source")
+                    url = str(source.get("url", "") or "#")
+                    also.append(f"[{name}]({url})")
+                if also:
+                    parts.append("Also covered by " + ", ".join(also))
             article_payload = {
                 "topic": normalized_topic,
                 "summary": normalized_summary or "No summary available.",

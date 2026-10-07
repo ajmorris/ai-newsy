@@ -27,6 +27,7 @@ from execution.database import (
     upsert_digest_extra,
 )
 from execution.section_routing import llm_dev_judge, split_main_and_dev
+from execution.story_clusters import cluster_with_model
 from execution.story_text_normalizer import (
     DIGEST_OPINION_MAX_CHARS,
     DIGEST_SUMMARY_MAX_CHARS,
@@ -209,17 +210,41 @@ def refresh_digest_payload_after_story_edit(payload: Dict[str, Any], stories: Li
     payload["content_hash"] = _content_hash(payload)
 
 
+def _stories_for_hash(stories: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Cluster metadata is rendered, but it is not part of the parity hash."""
+    hashed = []
+    for story in stories:
+        if isinstance(story, dict):
+            hashed.append({key: value for key, value in story.items() if key != "cluster"})
+        else:
+            hashed.append(story)
+    return hashed
+
+
 def _content_hash(payload: Dict[str, Any]) -> str:
     canonical_subset = {
         "digest_date": payload.get("digest_date"),
         "subject_line": payload.get("subject_line"),
         "intro": payload.get("intro"),
-        "stories": payload.get("stories", []),
+        "stories": _stories_for_hash(list(payload.get("stories", []) or [])),
         "tweet_headlines": payload.get("tweet_headlines", []),
         "community_headlines": payload.get("community_headlines", []),
     }
     blob = json.dumps(canonical_subset, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(blob.encode("utf-8")).hexdigest()
+
+
+def _already_covered_stories(digest_date: str) -> List[Dict[str, Any]]:
+    """Stories from yesterday's sent snapshot, used to flag a repeat as an update."""
+    try:
+        day = datetime.strptime(digest_date, "%Y-%m-%d").date() - timedelta(days=1)
+    except ValueError:
+        return []
+    snapshot = load_sent_snapshot(digest_date=day.isoformat())
+    if not isinstance(snapshot, dict):
+        return []
+    stories = snapshot.get("stories") or []
+    return list(stories) if isinstance(stories, list) else []
 
 
 def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
@@ -238,6 +263,7 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
             _assign_category(row)
         normalized.sort(key=lambda row: row.get("published_at") or row.get("fetched_at") or "", reverse=True)
         stories, dev_headlines = split_main_and_dev(normalized, judge=llm_dev_judge)
+        stories, cluster_log = cluster_with_model(stories, _already_covered_stories(digest_date))
         stories = stories[: max(0, options.max_stories)]
     else:
         since = datetime.now(timezone.utc) - timedelta(hours=options.window_hours)
@@ -251,6 +277,7 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
         for row in normalized:
             _assign_category(row)
         stories, dev_headlines = split_main_and_dev(normalized, judge=llm_dev_judge)
+        stories, cluster_log = cluster_with_model(stories, _already_covered_stories(digest_date))
         stories = stories[: max(0, options.max_stories)]
 
     heal_digest_story_opinions(stories)
@@ -291,6 +318,7 @@ def build_digest_payload(options: DigestBuildOptions) -> Dict[str, Any]:
             "source_window_hours": options.window_hours,
             "use_sent": options.use_sent,
             "source": "canonical",
+            "cluster_log": cluster_log,
         },
     }
     payload["content_hash"] = _content_hash(payload)

@@ -374,6 +374,24 @@ def generate_email_html(
                 title_esc = (article.get("title") or "Article").replace('"', "&quot;")
                 image_html = f'<div style="margin-bottom: 12px;"><img src="{image_url}" alt="{title_esc}" style="max-width: 100%; height: auto; max-height: 200px; object-fit: cover; display: block; border-radius: 6px;" width="560" /></div>'
 
+            cluster = article.get("cluster") if isinstance(article.get("cluster"), dict) else {}
+            cluster_html = ""
+            badge_count = int(cluster.get("badge_count") or 0)
+            if badge_count > 1 or cluster.get("is_update"):
+                label = "Update" if cluster.get("is_update") and badge_count <= 1 else f"Covered by {badge_count} sources"
+                if cluster.get("is_update") and badge_count > 1:
+                    label = f"Update · {label}"
+                also = []
+                for source in (cluster.get("sources") or [])[1:]:
+                    name = html.escape(str(source.get("source", "") or "Source"))
+                    url = html.escape(str(source.get("url", "") or "#"), quote=True)
+                    also.append(f'<a href="{url}" style="color: #39ff88;">{name}</a>')
+                also_html = f" Also covered by {' · '.join(also)}" if also else ""
+                cluster_html = (
+                    f'<p style="margin: 8px 0 0; color: #39ff88; font-size: 12px;">'
+                    f'{html.escape(label)}{also_html}</p>'
+                )
+
             article_cards += f"""
             <div style="padding: 24px 0; border-bottom: 1px solid #1d1d21;">
                 <p style="margin: 0 0 8px 0; color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">
@@ -386,6 +404,7 @@ def generate_email_html(
                 <p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.6;">
                     {article.get("summary", "No summary available.")}
                 </p>
+                {cluster_html}
                 {opinion_html}
             </div>
             """
@@ -802,7 +821,15 @@ def send_daily_digest(
     
     # Mark articles as sent (only if not dry run, not test mode, and we sent to at least one person)
     if not dry_run and not test_email and sent > 0:
-        article_ids = [a.get('id') for a in articles if a.get("id") is not None]
+        article_ids = []
+        for article in articles:
+            if article.get("id") is not None:
+                article_ids.append(article.get("id"))
+            cluster = article.get("cluster") if isinstance(article.get("cluster"), dict) else {}
+            for source in cluster.get("sources") or []:
+                if isinstance(source, dict) and source.get("id") is not None:
+                    article_ids.append(source.get("id"))
+        article_ids = list(dict.fromkeys(article_ids))
         mark_articles_sent(article_ids)
         print(f"\n📌 Marked {len(article_ids)} articles as sent")
         # Log each digest topic for this send
