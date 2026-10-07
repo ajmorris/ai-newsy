@@ -8,6 +8,9 @@ if (!inputPath) {
 }
 
 const payload = JSON.parse(fs.readFileSync(inputPath, "utf8"));
+const tokens = JSON.parse(
+  fs.readFileSync(new URL("./tokens.json", import.meta.url), "utf8")
+);
 
 const esc = (value = "") =>
   String(value)
@@ -16,20 +19,7 @@ const esc = (value = "") =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 
-const DB = {
-  bg: "#0b0b0c",
-  bgRaised: "#121214",
-  card: "#17171a",
-  border: "#26262b",
-  borderSoft: "#1d1d21",
-  text: "#f4f3ef",
-  textMute: "#a3a099",
-  textDim: "#6b6a65",
-  accent: "#39ff88",
-  accentInk: "#0b0b0c",
-  danger: "#ff5a4e",
-  amber: "#ffb930"
-};
+const DB = tokens.dark;
 
 const stories = (payload.stories || []).slice(0, 8);
 const tweetHeadlines = payload.tweetHeadlines || [];
@@ -108,23 +98,42 @@ const storyItems = stories
   )
   .join("");
 
-const tweetHitItems = tweetHeadlines
-  .map(
-    (item) => `
+const renderQuickHitSection = (title, items, padding) => {
+  const rendered = (items || [])
+    .map(
+      (item) => `
       <mj-text color="${DB.textMute}" font-size="14px" padding="5px 0">
         <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}
       </mj-text>
     `
-  )
-  .join("");
+    )
+    .join("");
+  if (!rendered.trim()) {
+    return "";
+  }
+  return `<mj-section padding="${padding}">
+        <mj-column>
+          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
+            ◆ ${esc(title)}
+          </mj-text>
+          ${rendered}
+        </mj-column>
+      </mj-section>`;
+};
 
-const communityHitItems = communityHeadlines
-  .map(
-    (item) => `
-      <mj-text color="${DB.textMute}" font-size="14px" padding="5px 0">
-        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}
-      </mj-text>
-    `
+const tweetSection = renderQuickHitSection(
+  "Here's what's going on in Twitter/X",
+  tweetHeadlines,
+  "2px 36px 18px"
+);
+const communitySection = renderQuickHitSection(
+  "Here's what we're hearing from the community",
+  communityHeadlines,
+  "2px 36px 30px"
+);
+const extraQuickHitSections = (payload.quickHitSections || [])
+  .map((section) =>
+    renderQuickHitSection(section.title || "More", section.items || [], "2px 36px 18px")
   )
   .join("");
 
@@ -180,30 +189,9 @@ const mjml = `
           ${storyItems}
         </mj-column>
       </mj-section>
-      ${
-        tweetHitItems
-          ? `<mj-section padding="2px 36px 18px">
-        <mj-column>
-          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
-            ◆ Here's what's going on in Twitter/X
-          </mj-text>
-          ${tweetHitItems}
-        </mj-column>
-      </mj-section>`
-          : ""
-      }
-      ${
-        communityHitItems
-          ? `<mj-section padding="2px 36px 30px">
-        <mj-column>
-          <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700" padding="0 0 10px">
-            ◆ Here's what we're hearing from the community
-          </mj-text>
-          ${communityHitItems}
-        </mj-column>
-      </mj-section>`
-          : ""
-      }
+      ${tweetSection}
+      ${communitySection}
+      ${extraQuickHitSections}
       <mj-section background-color="${DB.bgRaised}" padding="28px 36px" border-top="1px solid ${DB.border}">
         <mj-column>
           <mj-text font-family="'JetBrains Mono', Menlo, monospace" color="${DB.accent}" font-size="10px" text-transform="uppercase" letter-spacing="2px" font-weight="700">

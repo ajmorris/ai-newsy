@@ -21,6 +21,11 @@ on:
         required: false
         type: boolean
         default: true
+      send_for_real:
+        description: 'Send a real test email. Leave false to dry-run.'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   validate:
@@ -100,9 +105,16 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
         run: |
-          python execution/send_daily_email.py \
-            --digest-date "${{ steps.digest_date.outputs.value }}" \
-            --test-email "${{ inputs.test_email }}"
+          if [ "${{ inputs.send_for_real }}" = "true" ]; then
+            python execution/send_daily_email.py \
+              --digest-date "${{ steps.digest_date.outputs.value }}" \
+              --test-email "${{ inputs.test_email }}"
+          else
+            python execution/send_daily_email.py \
+              --dry-run \
+              --digest-date "${{ steps.digest_date.outputs.value }}" \
+              --test-email "${{ inputs.test_email }}"
+          fi
 
       - name: Build web archive for parity check
         run: |
@@ -130,4 +142,4 @@ jobs:
             data/digests/snapshots/${{ steps.digest_date.outputs.value }}.sent.json
             frontend/issues/*.html
             frontend/issues/index.json
-          if-no-files-found: error
+          if-no-files-found: warn

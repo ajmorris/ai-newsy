@@ -1,5 +1,7 @@
 # Dependencies
 node_modules/
+.coverage
+coverage.xml
 __pycache__/
 *.pyc
 .venv/

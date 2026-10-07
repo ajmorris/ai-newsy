@@ -1,0 +1,63 @@
+name: Digest heartbeat
+
+on:
+  schedule:
+    - cron: "30 9 * * *"
+  workflow_dispatch:
+
+jobs:
+  check-send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Require a production send snapshot
+        run: python execution/check_digest_heartbeat.py
+
+      - name: Email the publisher when the send is missing
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          HEARTBEAT_EMAIL: ${{ vars.HEARTBEAT_EMAIL }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          recipient = os.environ.get("HEARTBEAT_EMAIL", "").strip()
+          api_key = os.environ.get("RESEND_API_KEY", "").strip()
+          sender = os.environ.get("EMAIL_FROM", "").strip()
+          if not recipient or not api_key or not sender:
+              raise SystemExit(
+                  "Set HEARTBEAT_EMAIL (repository variable) plus RESEND_API_KEY and EMAIL_FROM"
+              )
+          body = json.dumps(
+              {
+                  "from": f"AI Newsy <{sender}>",
+                  "to": [recipient],
+                  "subject": "AI Newsy missed digest send",
+                  "html": (
+                      "<p>No production send snapshot was recorded for today's digest. "
+                      "Check the digest pipeline run.</p>"
+                  ),
+              }
+          ).encode("utf-8")
+          request = urllib.request.Request(
+              "https://api.resend.com/emails",
+              data=body,
+              headers={
+                  "Authorization": f"Bearer {api_key}",
+                  "Content-Type": "application/json",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print(f"Heartbeat alert status: {response.status}")
+          PY

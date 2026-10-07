@@ -41,6 +41,7 @@ from execution.digest_payload import (
     load_sent_snapshot,
     write_sent_snapshot,
 )
+from execution.mailer import EmailMessage, RecordingSender, ResendSender, Sender
 
 load_dotenv()
 
@@ -526,17 +527,23 @@ def render_tweet_headline_html(item: dict) -> str:
     return html.escape(replaced).replace(html.escape(linked), linked)
 
 
-def send_email(to_email: str, html_content: str, subject: str) -> bool:
-    """Send a single email via Resend."""
+def send_email(
+    to_email: str,
+    html_content: str,
+    subject: str,
+    sender: Optional[Sender] = None,
+) -> bool:
+    """Send a single email. The default sender is Resend."""
+    active = sender or ResendSender(api_key=RESEND_API_KEY or "", from_addr=EMAIL_FROM)
     try:
-        params = {
-            "from": f"AI Newsy <{EMAIL_FROM}>",
-            "to": [to_email],
-            "subject": subject,
-            "html": html_content,
-        }
-        resend.Emails.send(params)
-        return True
+        return active.send(
+            EmailMessage(
+                to=to_email,
+                subject=subject,
+                html=html_content,
+                from_addr=EMAIL_FROM,
+            )
+        )
     except Exception as e:
         print(f"    Error sending to {to_email}: {e}")
         return False
@@ -572,6 +579,7 @@ def send_daily_digest(
     overwrite_snapshot: bool = False,
     force_send: bool = False,
     send_reason: str = "",
+    sender: Optional[Sender] = None,
 ) -> dict:
     """
     Send daily digest to all active subscribers (or only to test_email if set).
@@ -624,8 +632,9 @@ def send_daily_digest(
         print("   Use --force-send for intentional resend.")
         run_status["status"] = "duplicate_prevented"
         run_status["status_updated_at"] = datetime.utcnow().isoformat()
-        status_path = _write_send_status_artifact(digest_date, run_status)
-        print(f"🗒️ Send status path: {status_path}")
+        if not dry_run:
+            status_path = _write_send_status_artifact(digest_date, run_status)
+            print(f"🗒️ Send status path: {status_path}")
         return {"articles": len(stories), "sent": 0, "failed": 0}
 
     claim_acquired = False
@@ -651,8 +660,9 @@ def send_daily_digest(
         print("No matching articles to include in digest.")
         run_status["status"] = "no_stories"
         run_status["status_updated_at"] = datetime.utcnow().isoformat()
-        status_path = _write_send_status_artifact(digest_date, run_status)
-        print(f"🗒️ Send status path: {status_path}")
+        if not dry_run:
+            status_path = _write_send_status_artifact(digest_date, run_status)
+            print(f"🗒️ Send status path: {status_path}")
         if claim_acquired:
             release_failed_digest_send(
                 digest_date=digest_date,
@@ -677,8 +687,9 @@ def send_daily_digest(
             print("No active subscribers.")
             run_status["status"] = "no_subscribers"
             run_status["status_updated_at"] = datetime.utcnow().isoformat()
-            status_path = _write_send_status_artifact(digest_date, run_status)
-            print(f"🗒️ Send status path: {status_path}")
+            if not dry_run:
+                status_path = _write_send_status_artifact(digest_date, run_status)
+                print(f"🗒️ Send status path: {status_path}")
             if claim_acquired:
                 release_failed_digest_send(
                     digest_date=digest_date,
@@ -715,6 +726,9 @@ def send_daily_digest(
             sent += 1
             continue
 
+        if sender is not None and isinstance(sender, RecordingSender):
+            print("    [RECORDING] Capturing message without a provider call")
+
         renderer_payload = build_email_renderer_payload(
             sections=sections,
             intro=intro,
@@ -749,7 +763,7 @@ def send_daily_digest(
                 )
                 subject_to_send = subject
         
-        if send_email(email, html, subject_to_send):
+        if send_email(email, html, subject_to_send, sender=sender):
             print(f"    ✓ Sent!")
             sent += 1
         else:
@@ -793,8 +807,9 @@ def send_daily_digest(
             "sent_snapshot_path": str(snapshot_path) if snapshot_path else "",
         }
     )
-    status_path = _write_send_status_artifact(digest_date, run_status)
-    print(f"🗒️ Send status path: {status_path}")
+    if not dry_run:
+        status_path = _write_send_status_artifact(digest_date, run_status)
+        print(f"🗒️ Send status path: {status_path}")
 
     if claim_acquired:
         if sent > 0:
@@ -837,8 +852,8 @@ if __name__ == "__main__":
                         help="Optional reason to log when a send is forced/manual")
     args = parser.parse_args()
 
-    # Check for API key
-    if not RESEND_API_KEY or RESEND_API_KEY.strip() == "":
+    # Dry runs never send, so they must not require a provider key.
+    if not args.dry_run and (not RESEND_API_KEY or RESEND_API_KEY.strip() == ""):
         print("RESEND_API_KEY not configured in .env")
         print("   Get one at: https://resend.com/api-keys")
         exit(1)

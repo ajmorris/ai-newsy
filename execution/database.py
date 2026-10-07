@@ -64,11 +64,31 @@ def _resolve_supabase_key() -> str:
     return os.getenv("SUPABASE_SECRET_KEY", "")
 
 
-# Initialize Supabase client
-supabase: Client = create_client(
-    os.getenv("SUPABASE_URL", ""),
-    _resolve_supabase_key(),
-)
+_supabase_client: Optional[Client] = None
+
+
+def get_supabase() -> Client:
+    """Build the Supabase client on first use so imports do not need credentials."""
+    global _supabase_client
+    if _supabase_client is None:
+        url = os.getenv("SUPABASE_URL", "").strip()
+        key = _resolve_supabase_key().strip()
+        if not url or not key:
+            raise RuntimeError(
+                "SUPABASE_URL and SUPABASE_SECRET_KEY are required for database access"
+            )
+        _supabase_client = create_client(url, key)
+    return _supabase_client
+
+
+class _LazySupabase:
+    """Proxy that constructs the client only when a query attribute is used."""
+
+    def __getattr__(self, name: str):
+        return getattr(get_supabase(), name)
+
+
+supabase: Any = _LazySupabase()
 
 
 # ===========================================

@@ -9,8 +9,6 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
-
 import feedparser
 import requests
 from dotenv import load_dotenv
@@ -60,23 +58,9 @@ def _sanitize_date(value: Optional[str]) -> str:
 
 
 def _canonicalize_url(url: str) -> str:
-    if not url:
-        return ""
-    try:
-        parsed = urlparse(url.strip())
-    except ValueError:
-        return url.strip().lower()
-    host = parsed.netloc.lower()
-    if host.startswith("www."):
-        host = host[4:]
-    clean_query = [
-        (k, v)
-        for k, v in parse_qsl(parsed.query, keep_blank_values=True)
-        if not k.lower().startswith("utm_") and k.lower() not in {"ref", "source"}
-    ]
-    query = urlencode(clean_query, doseq=True)
-    path = parsed.path.rstrip("/")
-    return urlunparse((parsed.scheme.lower() or "https", host, path, "", query, ""))
+    from execution.url_dedup import canonical_url
+
+    return canonical_url(url)
 
 
 def _tokenize(text: str) -> Set[str]:

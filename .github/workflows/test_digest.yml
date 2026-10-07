@@ -23,7 +23,12 @@ on:
         required: true
         type: string
       prepare_content:
-        description: 'Run content prep (fetch RSS, assign topics, summarize, Twitter + Reddit/HN/YC headlines) before sending'
+        description: 'Run content prep before sending. This writes to the production database.'
+        required: false
+        type: boolean
+        default: false
+      send_for_real:
+        description: 'Send a real email. Leave false to dry-run with no Resend call and no snapshot write.'
         required: false
         type: boolean
         default: false
@@ -213,4 +218,9 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           APP_URL: ${{ secrets.APP_URL }}
-        run: python execution/send_daily_email.py --test-email "${{ inputs.test_email }}"
+        run: |
+          if [ "${{ inputs.send_for_real }}" = "true" ]; then
+            python execution/send_daily_email.py --test-email "${{ inputs.test_email }}"
+          else
+            python execution/send_daily_email.py --dry-run --test-email "${{ inputs.test_email }}"
+          fi

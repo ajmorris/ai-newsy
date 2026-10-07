@@ -27,3 +27,5 @@ Scheduled clock: one `digest_pipeline.yml` run at 2:00 AM America/New_York. RSS 
 ```bash
 python -m unittest discover -s execution -p 'test_*.py'
 ```
+
+`.github/workflows/ci.yml` runs that suite on every pull request, plus an email render smoke test and `actionlint`. Require the `CI` check in branch protection so a red build cannot merge.

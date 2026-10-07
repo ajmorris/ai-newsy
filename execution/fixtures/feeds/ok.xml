@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>OK</title>
+    <item>
+      <title>Alpha launch</title>
+      <link>https://example.com/alpha?utm_source=rss</link>
+      <description>First take</description>
+    </item>
+    <item>
+      <title>Alpha launch again</title>
+      <link>https://www.example.com/alpha</link>
+      <description>Duplicate link</description>
+    </item>
+    <item>
+      <title>Beta notes</title>
+      <link>https://example.com/beta</link>
+      <description>Different story</description>
+    </item>
+  </channel>
+</rss>

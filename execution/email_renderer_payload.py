@@ -79,6 +79,27 @@ def normalize_article_for_email(article: Dict[str, object]) -> Dict[str, object]
     return normalized
 
 
+def _normalize_quick_hit_sections(sections: Optional[List[dict]]) -> List[Dict[str, object]]:
+    """Extra headline blocks (dev, human) rendered by the shared quick-hit helper."""
+    normalized: List[Dict[str, object]] = []
+    for section in sections or []:
+        title = str(section.get("title", "") or "").strip()
+        items = []
+        for item in section.get("items") or []:
+            headline = str(item.get("headline", "") or "").strip()
+            if not headline:
+                continue
+            items.append(
+                {
+                    "headline": headline,
+                    "url": str(item.get("url", "") or "").strip(),
+                }
+            )
+        if title and items:
+            normalized.append({"title": title, "items": items})
+    return normalized
+
+
 def build_email_renderer_payload(
     sections: List[dict],
     intro: str,
@@ -87,6 +108,7 @@ def build_email_renderer_payload(
     digest_date: str,
     tweet_headlines: Optional[List[dict]] = None,
     community_headlines: Optional[List[dict]] = None,
+    quick_hit_sections: Optional[List[dict]] = None,
 ) -> Dict[str, object]:
     stories: List[Dict[str, str]] = []
     for section in sections:
@@ -140,6 +162,7 @@ def build_email_renderer_payload(
         "stories": stories[:8],
         "tweetHeadlines": tweet_quick_hits,
         "communityHeadlines": community_quick_hits,
+        "quickHitSections": _normalize_quick_hit_sections(quick_hit_sections),
         "unsubscribeUrl": build_unsubscribe_url(unsubscribe_token),
         "viewInBrowserUrl": f"{app_url}/issues/{digest_date}.html",
         "archiveUrl": archive_url,

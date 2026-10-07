@@ -344,7 +344,16 @@ def generate_text_with_fallback(
     When json_mode is True, providers request JSON-shaped output (Gemini/OpenAI native;
     Anthropic uses a larger max_tokens budget so prompt-only JSON fits).
     The claude_code provider still returns the CLI text result; prompts must ask for JSON.
+
+    When LLM_FIXTURE_PATH is set, a recorded response is returned and no provider is called.
     """
+    from execution.llm_fixtures import fixture_response_for_prompt
+
+    recorded = fixture_response_for_prompt(prompt)
+    if recorded is not None:
+        print("    LLM provider selected: fixture")
+        return recorded.strip()
+
     provider_registry: Dict[str, LLMProvider] = {
         "claude_code": ClaudeCodeProvider(),
         "anthropic": AnthropicProvider(),

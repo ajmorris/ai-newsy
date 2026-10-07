@@ -18,8 +18,6 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
-
 from dotenv import load_dotenv
 import notion_client
 from notion_client import Client as NotionClient
@@ -550,27 +548,9 @@ def _env_float(name: str, default: float) -> float:
 
 
 def _canonicalize_url(url: str) -> str:
-    if not url:
-        return ""
-    try:
-        parsed = urlparse(url.strip())
-    except ValueError:
-        return url.strip().lower()
+    from execution.url_dedup import canonical_url
 
-    host = parsed.netloc.lower()
-    if host.startswith("www."):
-        host = host[4:]
-    if host == "x.com":
-        host = "twitter.com"
-
-    clean_query = [
-        (k, v)
-        for k, v in parse_qsl(parsed.query, keep_blank_values=True)
-        if not k.lower().startswith("utm_") and k.lower() not in {"ref", "source"}
-    ]
-    query = urlencode(clean_query, doseq=True)
-    path = parsed.path.rstrip("/")
-    return urlunparse((parsed.scheme.lower() or "https", host, path, "", query, ""))
+    return canonical_url(url)
 
 
 def _parse_datetime(value: str) -> Optional[datetime]:

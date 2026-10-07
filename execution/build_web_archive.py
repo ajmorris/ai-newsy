@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 sys.path.insert(0, ".")
+from execution.design_tokens import archive_root_css
 from execution.story_text_normalizer import (
     DIGEST_OPINION_MAX_CHARS,
     DIGEST_SUMMARY_MAX_CHARS,
@@ -139,6 +140,26 @@ def _render_story(story: Dict[str, Any]) -> str:
     )
 
 
+def render_quick_hit_section(title: str, item_html: List[str]) -> str:
+    """One headline list. Dev and human sections call this with their own items."""
+    rendered = [piece for piece in item_html if piece]
+    if not rendered:
+        return ""
+    items = "\n".join(
+        '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
+        f"{piece}</li>"
+        for piece in rendered
+    )
+    return "\n".join(
+        [
+            f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">{html.escape(title)}</h2>',
+            '<ul style="padding-left: 22px; margin: 10px 0 18px;">',
+            items,
+            "</ul>",
+        ]
+    )
+
+
 def _render_body_from_payload(payload: Dict[str, Any]) -> str:
     parts: List[str] = []
     for section in payload.get("sections", []):
@@ -149,31 +170,32 @@ def _render_body_from_payload(payload: Dict[str, Any]) -> str:
         for story in section.get("articles", []):
             parts.append(_render_story(story))
 
-    tweet_headlines = payload.get("tweet_headlines", [])
-    if tweet_headlines:
-        parts.append('<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">From X/Twitter</h2>')
-        parts.append('<ul style="padding-left: 22px; margin: 10px 0 18px;">')
-        for item in tweet_headlines:
-            parts.append(
-                '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
-                f'{_render_tweet_headline_html(item)}</li>'
-            )
-        parts.append("</ul>")
+    tweet_html = [
+        _render_tweet_headline_html(item) for item in payload.get("tweet_headlines", [])
+    ]
+    tweet_section = render_quick_hit_section("From X/Twitter", tweet_html)
+    if tweet_section:
+        parts.append(tweet_section)
 
-    community_headlines = payload.get("community_headlines", [])
-    if community_headlines:
-        parts.append('<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">From Reddit/HN/YC</h2>')
-        parts.append('<ul style="padding-left: 22px; margin: 10px 0 18px;">')
-        for item in community_headlines:
-            label = str(item.get("source_label", "")).strip()
-            headline = str(item.get("headline", "")).strip()
-            url = str(item.get("url", "")).strip()
-            display = f"[{label}] {headline}" if label else headline
-            parts.append(
-                '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
-                f'{_render_tweet_headline_html({"headline": display, "url": url})}</li>'
-            )
-        parts.append("</ul>")
+    community_items: List[str] = []
+    for item in payload.get("community_headlines", []):
+        label = str(item.get("source_label", "")).strip()
+        headline = str(item.get("headline", "")).strip()
+        url = str(item.get("url", "")).strip()
+        display = f"[{label}] {headline}" if label else headline
+        community_items.append(_render_tweet_headline_html({"headline": display, "url": url}))
+    community_section = render_quick_hit_section("From Reddit/HN/YC", community_items)
+    if community_section:
+        parts.append(community_section)
+
+    for extra in payload.get("quick_hit_sections") or []:
+        title = str(extra.get("title", "") or "").strip()
+        extra_items = []
+        for item in extra.get("items") or []:
+            extra_items.append(_render_tweet_headline_html(item))
+        extra_section = render_quick_hit_section(title, extra_items)
+        if extra_section:
+            parts.append(extra_section)
 
     return "\n".join(parts)
 
@@ -280,18 +302,7 @@ def _render_issue_page(issue: DigestIssue) -> str:
   <title>{issue.subject} | AI News Daily</title>
   <meta name="description" content="Read the {issue.display_date} issue of {SITE_TITLE}.">
   <style>
-    :root {{
-      --bg: #0b0b0c;
-      --bg-raised: #121214;
-      --card: #17171a;
-      --line: #26262b;
-      --line-soft: #1d1d21;
-      --fg: #f4f3ef;
-      --muted: #a3a099;
-      --dim: #6b6a65;
-      --brand: #39ff88;
-      --brand-ink: #0b0b0c;
-    }}
+{archive_root_css()}
     * {{ box-sizing: border-box; }}
     body {{
       margin: 0;
@@ -458,18 +469,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI News Daily Archive</title>
   <style>
-    :root {{
-      --bg: #0b0b0c;
-      --bg-raised: #121214;
-      --card: #17171a;
-      --line: #26262b;
-      --line-soft: #1d1d21;
-      --fg: #f4f3ef;
-      --muted: #a3a099;
-      --dim: #6b6a65;
-      --brand: #39ff88;
-      --brand-ink: #0b0b0c;
-    }}
+{archive_root_css()}
     * {{ box-sizing: border-box; }}
     body {{
       margin: 0;

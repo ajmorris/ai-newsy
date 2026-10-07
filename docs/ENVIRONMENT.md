@@ -282,6 +282,17 @@ GitHub Actions configuration:
 5. Verify unsubscribe state in Supabase `subscribers` table: `unsubscribed_at` is set for that token row.
 6. Re-open both links to confirm idempotent behavior ("Already Confirmed" / "Already Unsubscribed").
 
+## Digest heartbeat
+
+`.github/workflows/digest_heartbeat.yml` runs at 09:30 UTC. It exits successfully only when `data/digests/snapshots/YYYY-MM-DD.sent.json` for the America/New_York date records `send_mode=production`. On failure it emails `HEARTBEAT_EMAIL` through Resend.
+
+- Repository variable: `HEARTBEAT_EMAIL`
+- Repository secrets already used by send: `RESEND_API_KEY`, `EMAIL_FROM`
+
+Local dry runs (`python execution/send_daily_email.py --dry-run`) do not require `RESEND_API_KEY` and do not write sent snapshots or claim `digest_sends`. Manual test workflows stay on that dry-run path unless `send_for_real` is checked.
+
+`LLM_FIXTURE_PATH` points at a JSON file of recorded model responses. Tests set it so a run never calls a live model.
+
 ## Matching GitHub
 
 - **CI**: `.github/workflows/daily_digest.yml` uses `actions/setup-python@v5` with `python-version: '3.10'`.

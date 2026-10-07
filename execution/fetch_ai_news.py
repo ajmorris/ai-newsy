@@ -17,6 +17,8 @@ import sys
 sys.path.insert(0, '.')
 from execution.database import add_article, get_article_count
 from execution.feed_config import get_merged_feeds
+from execution.feed_ingest import FeedSkipped, gather_feed_articles
+from execution.url_dedup import dedupe_by_canonical_url
 
 # Keywords to filter AI-related content (for general feeds)
 AI_KEYWORDS = [
@@ -166,11 +168,15 @@ def fetch_feed(feed_config: dict, limit: int = 10) -> list:
                     'published_at': published_dt.isoformat() if published_dt else None,
                 })
 
+            articles = dedupe_by_canonical_url(articles)
             print(f"    Found {len(articles)} articles")
+            break
+        except FeedSkipped as e:
+            print(f"    Warning: skipping feed {name}: {e}")
             break
         except Exception as e:
             if is_fallback:
-                print(f"    Error fetching {name} (fallback): {e}")
+                print(f"    Warning: skipping feed {name}: {e}")
                 break
             print(f"    Primary failed: {e}, trying fallback...")
     if not articles:
@@ -194,28 +200,33 @@ def fetch_all_feeds(limit_per_feed: int = 10, dry_run: bool = False) -> int:
     total_new = 0
     total_found = 0
 
-    for feed_config in feeds:
-        articles = fetch_feed(feed_config, limit=limit_per_feed)
-        total_found += len(articles)
-        
-        for article in articles:
-            if dry_run:
-                print(f"    [DRY RUN] Would add: {article['title'][:60]}...")
+    gathered = gather_feed_articles(
+        feeds,
+        lambda feed_config: fetch_feed(feed_config, limit=limit_per_feed),
+        log=print,
+    )
+    for skipped in gathered.skipped:
+        print(f"    Warning: {skipped['warning']}")
+
+    for article in gathered.articles:
+        total_found += 1
+        if dry_run:
+            print(f"    [DRY RUN] Would add: {article['title'][:60]}...")
+            total_new += 1
+        else:
+            result = add_article(
+                url=article['url'],
+                title=article['title'],
+                source=article['source'],
+                content=article['content'],
+                published_at=article.get('published_at'),
+            )
+            if result:
+                print(f"    ✓ Added: {article['title'][:60]}...")
                 total_new += 1
-            else:
-                result = add_article(
-                    url=article['url'],
-                    title=article['title'],
-                    source=article['source'],
-                    content=article['content'],
-                    published_at=article.get('published_at'),
-                )
-                if result:
-                    print(f"    ✓ Added: {article['title'][:60]}...")
-                    total_new += 1
-                # If result is None, article already exists (dedup)
-        
-        # Small delay between feeds to be polite
+            # If result is None, article already exists (dedup)
+
+    if feeds:
         time.sleep(0.5)
     
     print(f"\n{'='*50}")

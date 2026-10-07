@@ -17,6 +17,11 @@ AI Newsy uses one canonical issue artifact per date at `data/digests/YYYY-MM-DD.
 - `sections` (grouped stories for rendering)
 - `tweet_headlines` (ordered quick hits list)
 - `community_headlines` (ordered quick hits list)
+- `dev_headlines` (optional; headline-style developer items, empty or absent on older issues)
+- `human_items` (optional; human-side items, empty or absent on older issues)
+- `quick_hit_sections` (optional render list of `{title, items}` used by the archive)
+
+Story objects may include an optional `cluster` object (`sources`, `badge_count`, `conflicts`, `is_update`). Renderers treat a missing `cluster`, `dev_headlines`, or `human_items` as empty so older issues still build.
 - `build_meta` (generation metadata, provenance)
 - `content_hash` (sha256 hash over canonical content fields)
 
@@ -46,7 +51,7 @@ For a given `digest_date`, parity-sensitive renderers must use only:
 - `tweet_headlines`
 - `community_headlines`
 
-Any recomputation of these fields outside canonical payload generation is disallowed.
+`dev_headlines`, `human_items`, `quick_hit_sections`, and `cluster` are not part of the hash. Any recomputation of the parity fields outside canonical payload generation is disallowed.
 
 ## Example (truncated)
 

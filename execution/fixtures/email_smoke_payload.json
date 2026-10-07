@@ -1,0 +1,23 @@
+{
+  "subject": "ISSUE 00115 · 1 STORIES · 11 MIN READ",
+  "intro": "A short intro.",
+  "heroHeadline": "The AI feed, distilled.",
+  "issueNumber": "00115",
+  "stories": [
+    {
+      "tag": "Story",
+      "source": "Example",
+      "headline": "Smoke story",
+      "summary": "One sentence summary.",
+      "why": "Why it matters.",
+      "url": "https://example.com/story"
+    }
+  ],
+  "tweetHeadlines": [],
+  "communityHeadlines": [],
+  "quickHitSections": [],
+  "unsubscribeUrl": "https://example.com/unsub",
+  "viewInBrowserUrl": "https://example.com/issues/2026-01-15.html",
+  "archiveUrl": "https://example.com/issues/",
+  "forwardUrl": "https://example.com/issues/"
+}
