@@ -1,18 +1,37 @@
 :root {
-    --bg: #0b0b0c;
-    --bg-raised: #121214;
-    --card: #17171a;
-    --border: #26262b;
-    --border-soft: #1d1d21;
-    --text: #f4f3ef;
-    --text-mute: #a3a099;
-    --text-dim: #6b6a65;
-    --danger: #ff5a4e;
-    --traffic-amber: #ffb930;
-    --accent: #39ff88;
-    --glow: #39ff88;
-    --accent-deep: #1f9e4f;
-    --accent-ink: #0b0b0c;
+    color-scheme: light dark;
+    --bg: #f3f2ec;
+    --bg-raised: #e7e6e0;
+    --card: #f7f6f1;
+    --border: #d4d1c8;
+    --border-soft: #e0ddd4;
+    --text: #16161a;
+    --text-mute: #3a3935;
+    --text-dim: #5e5d57;
+    --danger: #b42318;
+    --traffic-amber: #8a5a00;
+    --accent: #0b7a3a;
+    --glow: #0b7a3a;
+    --accent-deep: #0b7a3a;
+    --accent-ink: #f4f3ef;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0b0b0c;
+        --bg-raised: #121214;
+        --card: #17171a;
+        --border: #26262b;
+        --border-soft: #1d1d21;
+        --text: #f4f3ef;
+        --text-mute: #a3a099;
+        --text-dim: #84837d;
+        --danger: #ff5a4e;
+        --traffic-amber: #ffb930;
+        --accent: #39ff88;
+        --glow: #39ff88;
+        --accent-deep: #1f9e4f;
+        --accent-ink: #0b0b0c;
+    }
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -161,7 +180,7 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
     height: 32px;
     object-fit: contain;
     border-radius: 6px;
-    background: #fff;
+    background: var(--bg-raised);
     padding: 4px;
 }
 .source-card span {

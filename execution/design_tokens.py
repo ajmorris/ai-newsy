@@ -24,12 +24,11 @@ def load_design_tokens() -> Dict[str, Dict[str, str]]:
     return {"dark": {str(k): str(v) for k, v in dark.items()}, "light": {str(k): str(v) for k, v in light.items()}}
 
 
-def archive_root_css(theme: str = "dark") -> str:
-    """CSS variables for generated issue pages. Names match the archive template."""
-    tokens = load_design_tokens()[theme]
+def _archive_variable_block(tokens: Dict[str, str], selector: str) -> str:
     return "\n".join(
         [
-            "    :root {",
+            f"    {selector} {{",
+            "      color-scheme: light dark;",
             f"      --bg: {tokens['bg']};",
             f"      --bg-raised: {tokens['bgRaised']};",
             f"      --card: {tokens['card']};",
@@ -40,6 +39,23 @@ def archive_root_css(theme: str = "dark") -> str:
             f"      --dim: {tokens['textDim']};",
             f"      --brand: {tokens['accent']};",
             f"      --brand-ink: {tokens['accentInk']};",
+            "    }",
+        ]
+    )
+
+
+def archive_root_css(theme: str = "dark") -> str:
+    """Light variables by default, swapped when the OS is in dark mode.
+
+    `theme` is accepted so older callers keep working. Both palettes are always emitted.
+    """
+    del theme
+    tokens = load_design_tokens()
+    return "\n".join(
+        [
+            _archive_variable_block(tokens["light"], ":root"),
+            "    @media (prefers-color-scheme: dark) {",
+            _archive_variable_block(tokens["dark"], ":root"),
             "    }",
         ]
     )

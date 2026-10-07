@@ -89,13 +89,13 @@ def _render_tweet_headline_html(item: Dict[str, object]) -> str:
     if not match:
         return (
             f"{html.escape(headline)} "
-            f'<a href="{html.escape(url, quote=True)}" style="color: #39ff88; text-decoration: underline;">Source</a>'
+            f'<a href="{html.escape(url, quote=True)}" style="color: var(--brand); text-decoration: underline;">Source</a>'
         )
 
     anchor_text = match.group(1)
     safe_anchor = html.escape(anchor_text)
     safe_url = html.escape(url, quote=True)
-    linked = f'<a href="{safe_url}" style="color: #39ff88; text-decoration: underline;">{safe_anchor}</a>'
+    linked = f'<a href="{safe_url}" style="color: var(--brand); text-decoration: underline;">{safe_anchor}</a>'
     replaced = headline[:match.start()] + linked + headline[match.end():]
     return html.escape(replaced).replace(html.escape(linked), linked)
 
@@ -119,22 +119,22 @@ def _render_story(story: Dict[str, Any]) -> str:
     opinion_html = ""
     if opinion:
         opinion_html = (
-            '<div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; '
-            'border-left: 2px solid #39ff88; border-radius: 0 2px 2px 0;">'
-            '<p style="margin: 0 0 4px 0; color: #39ff88; font-family: JetBrains Mono, monospace; '
+            '<div style="margin-top: 12px; padding: 12px 14px; background-color: var(--bg-raised); '
+            'border-left: 2px solid var(--brand); border-radius: 0 2px 2px 0;">'
+            '<p style="margin: 0 0 4px 0; color: var(--brand); font-family: JetBrains Mono, monospace; '
             'font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Why it matters</p>'
-            f'<p style="margin: 0; color: #f4f3ef; font-size: 14px; line-height: 1.5;">{opinion}</p>'
+            f'<p style="margin: 0; color: var(--fg); font-size: 14px; line-height: 1.5;">{opinion}</p>'
             '</div>'
         )
     return (
-        '<article style="padding: 24px 0; border-bottom: 1px solid #1d1d21;">'
-        f'<p style="margin: 0 0 8px 0; color: #6b6a65; font-family: JetBrains Mono, monospace; '
+        '<article style="padding: 24px 0; border-bottom: 1px solid var(--line-soft);">'
+        f'<p style="margin: 0 0 8px 0; color: var(--dim); font-family: JetBrains Mono, monospace; '
         f'font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">{source}</p>'
         f'{image_html}'
         f'<h3 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em;">'
-        f'<a href="{link}" style="color: #f4f3ef; text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
+        f'<a href="{link}" style="color: var(--fg); text-decoration: none; padding: 4px 0; display: inline-block;">{title}</a>'
         '</h3>'
-        f'<p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.6;">{summary}</p>'
+        f'<p style="margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6;">{summary}</p>'
         f'{opinion_html}'
         '</article>'
     )
@@ -146,13 +146,13 @@ def render_quick_hit_section(title: str, item_html: List[str]) -> str:
     if not rendered:
         return ""
     items = "\n".join(
-        '<li style="margin-bottom: 10px; color: #a3a099; font-size: 15px; line-height: 1.6;">'
+        '<li style="margin-bottom: 10px; color: var(--muted); font-size: 15px; line-height: 1.6;">'
         f"{piece}</li>"
         for piece in rendered
     )
     return "\n".join(
         [
-            f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">{html.escape(title)}</h2>',
+            f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: var(--fg);">{html.escape(title)}</h2>',
             '<ul style="padding-left: 22px; margin: 10px 0 18px;">',
             items,
             "</ul>",
@@ -165,7 +165,7 @@ def _render_body_from_payload(payload: Dict[str, Any]) -> str:
     for section in payload.get("sections", []):
         section_name = html.escape(str(section.get("name", "")))
         parts.append(
-            f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">{section_name}</h2>'
+            f'<h2 style="margin: 28px 0 10px; font-size: 20px; color: var(--fg);">{section_name}</h2>'
         )
         for story in section.get("articles", []):
             parts.append(_render_story(story))
@@ -299,6 +299,7 @@ def _render_issue_page(issue: DigestIssue) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>{issue.subject} | AI News Daily</title>
   <meta name="description" content="Read the {issue.display_date} issue of {SITE_TITLE}.">
   <style>
@@ -467,6 +468,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>AI News Daily Archive</title>
   <style>
 {archive_root_css()}

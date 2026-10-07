@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>ISSUE 60115 · 1 STORIES · 11 MIN READ | AI News Daily</title>
   <meta name="description" content="Read the Jan 15, 2026 issue of AI Newsy.">
   <style>
     :root {
+      color-scheme: light dark;
+      --bg: #f3f2ec;
+      --bg-raised: #e7e6e0;
+      --card: #f7f6f1;
+      --line: #d4d1c8;
+      --line-soft: #e0ddd4;
+      --fg: #16161a;
+      --muted: #3a3935;
+      --dim: #5e5d57;
+      --brand: #0b7a3a;
+      --brand-ink: #f4f3ef;
+    }
+    @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light dark;
       --bg: #0b0b0c;
       --bg-raised: #121214;
       --card: #17171a;
@@ -14,9 +30,10 @@
       --line-soft: #1d1d21;
       --fg: #f4f3ef;
       --muted: #a3a099;
-      --dim: #6b6a65;
+      --dim: #84837d;
       --brand: #39ff88;
       --brand-ink: #0b0b0c;
+    }
     }
     * { box-sizing: border-box; }
     body {
@@ -144,8 +161,8 @@
     </section>
 
     <article class="content">
-      <h2 style="margin: 28px 0 10px; font-size: 20px; color: #f4f3ef;">Other AI News</h2>
-<article style="padding: 24px 0; border-bottom: 1px solid #1d1d21;"><p style="margin: 0 0 8px 0; color: #6b6a65; font-family: JetBrains Mono, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">Example</p><h3 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em;"><a href="https://example.com/story" style="color: #f4f3ef; text-decoration: none; padding: 4px 0; display: inline-block;">Smoke story</a></h3><p style="margin: 0; color: #a3a099; font-size: 15px; line-height: 1.6;">One sentence summary.</p><div style="margin-top: 12px; padding: 12px 14px; background-color: #121214; border-left: 2px solid #39ff88; border-radius: 0 2px 2px 0;"><p style="margin: 0 0 4px 0; color: #39ff88; font-family: JetBrains Mono, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Why it matters</p><p style="margin: 0; color: #f4f3ef; font-size: 14px; line-height: 1.5;">Why it matters.</p></div></article>
+      <h2 style="margin: 28px 0 10px; font-size: 20px; color: var(--fg);">Other AI News</h2>
+<article style="padding: 24px 0; border-bottom: 1px solid var(--line-soft);"><p style="margin: 0 0 8px 0; color: var(--dim); font-family: JetBrains Mono, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600;">Example</p><h3 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; line-height: 1.3; letter-spacing: -0.03em;"><a href="https://example.com/story" style="color: var(--fg); text-decoration: none; padding: 4px 0; display: inline-block;">Smoke story</a></h3><p style="margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6;">One sentence summary.</p><div style="margin-top: 12px; padding: 12px 14px; background-color: var(--bg-raised); border-left: 2px solid var(--brand); border-radius: 0 2px 2px 0;"><p style="margin: 0 0 4px 0; color: var(--brand); font-family: JetBrains Mono, monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Why it matters</p><p style="margin: 0; color: var(--fg); font-size: 14px; line-height: 1.5;">Why it matters.</p></div></article>
     </article>
 
     <section class="cta">

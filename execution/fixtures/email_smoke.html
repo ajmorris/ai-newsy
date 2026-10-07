@@ -54,43 +54,67 @@
   
     
     
-    
+    <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+      <style>
+    :root { color-scheme: light dark; supported-color-schemes: light dark; }
+    @media (prefers-color-scheme: dark) {
+      .dm-page, .dm-page > div, .dm-page > table { background-color: #0b0b0c !important; }
+      .dm-card, .dm-card > table { background-color: #17171a !important; border-color: #26262b !important; }
+      .dm-raised, .dm-raised > table { background-color: #121214 !important; }
+      .dm-text div, .dm-text p, .dm-text span { color: #f4f3ef !important; }
+      .dm-mute div, .dm-mute p, .dm-mute span { color: #a3a099 !important; }
+      .dm-dim div, .dm-dim p, .dm-dim span { color: #84837d !important; }
+      .dm-accent div, .dm-accent p, .dm-accent span { color: #39ff88 !important; }
+      .dm-link { color: #39ff88 !important; }
+      .dm-chip { background-color: #39ff88 !important; color: #0b0b0c !important; }
+      .dm-button table, .dm-button a { background-color: #39ff88 !important; color: #0b0b0c !important; }
+    }
+    [data-ogsc] .dm-text div, [data-ogsc] .dm-text p, [data-ogsb] .dm-text div, [data-ogsb] .dm-text p { color: #f4f3ef !important; }
+    [data-ogsc] .dm-mute div, [data-ogsc] .dm-mute p, [data-ogsb] .dm-mute div, [data-ogsb] .dm-mute p { color: #a3a099 !important; }
+    [data-ogsc] .dm-dim div, [data-ogsb] .dm-dim div { color: #84837d !important; }
+    [data-ogsc] .dm-accent div, [data-ogsb] .dm-accent div { color: #39ff88 !important; }
+    [data-ogsc] .dm-link, [data-ogsb] .dm-link { color: #39ff88 !important; }
+    [data-ogsc] .dm-page, [data-ogsb] .dm-page, [data-ogsc] .dm-card, [data-ogsb] .dm-card { background-color: #0b0b0c !important; }
+    [data-ogsc] .dm-raised, [data-ogsb] .dm-raised { background-color: #121214 !important; }
+    [data-ogsc] .dm-chip, [data-ogsb] .dm-chip { background-color: #39ff88 !important; color: #0b0b0c !important; }
+</style>
   </head>
-  <body style="word-spacing:normal;background-color:#0b0b0c;">
+  <body style="word-spacing:normal;background-color:#f3f2ec;">
     
     <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">ISSUE 00115 · 1 STORIES · 11 MIN READ</div>
   
     
       <div
-         aria-roledescription="email" style="background-color:#0b0b0c;" role="article" lang="und" dir="auto"
+         aria-roledescription="email" class="dm-page" style="background-color:#f3f2ec;" role="article" lang="und" dir="auto"
       >
         
       
-      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#17171a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="dm-card-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#f7f6f1" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#17171a;background-color:#17171a;margin:0px auto;max-width:600px;">
+      <div  class="dm-card" style="background:#f7f6f1;background-color:#f7f6f1;margin:0px auto;max-width:600px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#17171a;background-color:#17171a;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f7f6f1;background-color:#f7f6f1;width:100%;"
         >
           <tbody>
             <tr>
               <td
-                 style="border:1px solid #26262b;direction:ltr;font-size:0px;padding:0;text-align:center;"
+                 style="border:1px solid #d4d1c8;direction:ltr;font-size:0px;padding:0;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:598px;" width="598" bgcolor="#121214" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="dm-raised-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="dm-raised-outlook" role="presentation" style="width:598px;" width="598" bgcolor="#e7e6e0" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#121214;background-color:#121214;margin:0px auto;max-width:598px;">
+      <div  class="dm-raised" style="background:#e7e6e0;background-color:#e7e6e0;margin:0px auto;max-width:598px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#121214;background-color:#121214;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#e7e6e0;background-color:#e7e6e0;width:100%;"
         >
           <tbody>
             <tr>
               <td
-                 style="border-bottom:1px solid #1d1d21;direction:ltr;font-size:0px;padding:30px 36px 22px;text-align:center;"
+                 style="border-bottom:1px solid #e0ddd4;direction:ltr;font-size:0px;padding:30px 36px 22px;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:526px;" ><![endif]-->
             
@@ -120,13 +144,13 @@
       >
         <tr>
               <td style="width:28px;vertical-align:middle;">
-                <div style="width:28px;height:28px;background:#39ff88;color:#0b0b0c;text-align:center;line-height:28px;border-radius:2px;font-family:'JetBrains Mono',Menlo,monospace;font-size:14px;font-weight:800;box-shadow:0 0 14px rgba(57,255,136,0.45);">◼</div>
+                <div class="dm-chip" style="width:28px;height:28px;background:#0b7a3a;color:#f4f3ef;text-align:center;line-height:28px;border-radius:2px;font-family:'JetBrains Mono',Menlo,monospace;font-size:14px;font-weight:800;">◼</div>
               </td>
               <td style="vertical-align:middle;padding-left:10px;">
-                <div style="font-family:Inter,Arial,sans-serif;color:#f4f3ef;font-size:14px;font-weight:700;">AI News Daily</div>
+                <div class="dm-text" style="font-family:Inter,Arial,sans-serif;color:#16161a;font-size:14px;font-weight:700;">AI News Daily</div>
               </td>
               <td style="vertical-align:middle;text-align:right;">
-                <div style="font-family:'JetBrains Mono',Menlo,monospace;color:#6b6a65;font-size:10px;letter-spacing:1px;text-transform:uppercase;">ISSUE 00115 · 1 STORIES · 11 MIN READ</div>
+                <div class="dm-dim" style="font-family:'JetBrains Mono',Menlo,monospace;color:#5e5d57;font-size:10px;letter-spacing:1px;text-transform:uppercase;">ISSUE 00115 · 1 STORIES · 11 MIN READ</div>
               </td>
             </tr>
       </table>
@@ -136,11 +160,11 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0 0 12px;word-break:break-word;"
+                   align="left" class="dm-text" style="font-size:0px;padding:0 0 12px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:Inter, Arial, sans-serif;font-size:36px;font-weight:700;letter-spacing:-1.5px;line-height:1.1;text-align:left;color:#f4f3ef;"
+         style="font-family:Inter, Arial, sans-serif;font-size:36px;font-weight:700;letter-spacing:-1.5px;line-height:1.1;text-align:left;color:#16161a;"
       >The AI feed, distilled.</div>
     
                 </td>
@@ -148,11 +172,11 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                   align="left" class="dm-mute" style="font-size:0px;padding:0;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:Inter, Arial, sans-serif;font-size:14px;line-height:1.6;text-align:left;color:#a3a099;"
+         style="font-family:Inter, Arial, sans-serif;font-size:14px;line-height:1.6;text-align:left;color:#3a3935;"
       >A short intro.</div>
     
                 </td>
@@ -177,18 +201,18 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:598px;" width="598" bgcolor="#121214" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="dm-raised-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="dm-raised-outlook" role="presentation" style="width:598px;" width="598" bgcolor="#e7e6e0" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#121214;background-color:#121214;margin:0px auto;max-width:598px;">
+      <div  class="dm-raised" style="background:#e7e6e0;background-color:#e7e6e0;margin:0px auto;max-width:598px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#121214;background-color:#121214;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#e7e6e0;background-color:#e7e6e0;width:100%;"
         >
           <tbody>
             <tr>
               <td
-                 style="border-bottom:1px solid #1d1d21;direction:ltr;font-size:0px;padding:22px 36px;text-align:center;"
+                 style="border-bottom:1px solid #e0ddd4;direction:ltr;font-size:0px;padding:22px 36px;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:526px;" ><![endif]-->
             
@@ -210,11 +234,11 @@
           
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0 0 8px;word-break:break-word;"
+                   align="left" class="dm-accent" style="font-size:0px;padding:0 0 8px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;font-weight:700;letter-spacing:2px;line-height:1;text-align:left;text-transform:uppercase;color:#39ff88;"
+         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;font-weight:700;letter-spacing:2px;line-height:1;text-align:left;text-transform:uppercase;color:#0b7a3a;"
       >◆ TL;DR</div>
     
                 </td>
@@ -222,12 +246,12 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:5px 0;word-break:break-word;"
+                   align="left" class="dm-dim" style="font-size:0px;padding:5px 0;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:11px;line-height:1;text-align:left;color:#6b6a65;"
-      >01 · <span style="color:#f4f3ef;">Smoke story</span></div>
+         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:11px;line-height:1;text-align:left;color:#5e5d57;"
+      >01 · <span class="dm-text" style="color:#16161a;">Smoke story</span></div>
     
                 </td>
               </tr>
@@ -284,12 +308,12 @@
           
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0 0 10px;word-break:break-word;"
+                   align="left" class="dm-dim" style="font-size:0px;padding:0 0 10px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;letter-spacing:1.4px;line-height:1;text-align:left;text-transform:uppercase;color:#6b6a65;"
-      ><span style="background:#39ff88;color:#0b0b0c;padding:2px 7px;border-radius:2px;font-weight:700;">Story</span>
+         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;letter-spacing:1.4px;line-height:1;text-align:left;text-transform:uppercase;color:#5e5d57;"
+      ><span class="dm-chip" style="background:#0b7a3a;color:#f4f3ef;padding:2px 7px;border-radius:2px;font-weight:700;">Story</span>
         &nbsp;&nbsp;01 · Example</div>
     
                 </td>
@@ -297,11 +321,11 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0 0 8px;word-break:break-word;"
+                   align="left" class="dm-text" style="font-size:0px;padding:0 0 8px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:Inter, Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:-0.6px;line-height:1.2;text-align:left;color:#f4f3ef;"
+         style="font-family:Inter, Arial, sans-serif;font-size:24px;font-weight:700;letter-spacing:-0.6px;line-height:1.2;text-align:left;color:#16161a;"
       >Smoke story</div>
     
                 </td>
@@ -309,11 +333,11 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0 0 14px;word-break:break-word;"
+                   align="left" class="dm-mute" style="font-size:0px;padding:0 0 14px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:Inter, Arial, sans-serif;font-size:15px;line-height:1.65;text-align:left;color:#a3a099;"
+         style="font-family:Inter, Arial, sans-serif;font-size:15px;line-height:1.65;text-align:left;color:#3a3935;"
       >One sentence summary.</div>
     
                 </td>
@@ -328,8 +352,8 @@
          cellpadding="0" cellspacing="0" width="100%" border="0" style="color:#000000;font-family:Inter, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;"
       >
         <tr>
-          <td style="border-left:2px solid #39ff88;padding-left:12px;font-family:'JetBrains Mono', Menlo, monospace;color:#f4f3ef;font-size:12px;line-height:1.6;">
-            <span style="display:block;color:#39ff88;text-transform:uppercase;letter-spacing:1.8px;font-size:10px;font-weight:700;margin-bottom:4px;">Why it matters</span>
+          <td class="dm-text" style="border-left:2px solid #0b7a3a;padding-left:12px;font-family:'JetBrains Mono', Menlo, monospace;color:#16161a;font-size:12px;line-height:1.6;">
+            <span class="dm-accent" style="display:block;color:#0b7a3a;text-transform:uppercase;letter-spacing:1.8px;font-size:10px;font-weight:700;margin-bottom:4px;">Why it matters</span>
             Why it matters.
           </td>
         </tr>
@@ -345,7 +369,7 @@
                   
       <div
          style="font-family:'JetBrains Mono', Menlo, monospace;font-size:12px;letter-spacing:0.5px;line-height:1;text-align:left;color:#000000;"
-      ><a href="https://example.com/story" style="color:#39ff88;text-decoration:underline;">→ read at example</a></div>
+      ><a class="dm-link" href="https://example.com/story" style="color:#0b7a3a;text-decoration:underline;">→ read at example</a></div>
     
                 </td>
               </tr>
@@ -356,11 +380,11 @@
                 >
                   
       <p
-         style="border-top:solid 4px #1d1d21;font-size:1px;margin:0px auto;width:100%;"
+         style="border-top:solid 4px #e0ddd4;font-size:1px;margin:0px auto;width:100%;"
       >
       </p>
       
-      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 4px #1d1d21;font-size:1px;margin:0px auto;width:476px;" role="presentation" width="476px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 4px #e0ddd4;font-size:1px;margin:0px auto;width:476px;" role="presentation" width="476px" ><tr><td style="height:0;line-height:0;"> &nbsp;
 </td></tr></table><![endif]-->
     
     
@@ -386,18 +410,18 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:598px;" width="598" bgcolor="#121214" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="dm-raised-outlook" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="dm-raised-outlook" role="presentation" style="width:598px;" width="598" bgcolor="#e7e6e0" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#121214;background-color:#121214;margin:0px auto;max-width:598px;">
+      <div  class="dm-raised" style="background:#e7e6e0;background-color:#e7e6e0;margin:0px auto;max-width:598px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#121214;background-color:#121214;width:100%;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#e7e6e0;background-color:#e7e6e0;width:100%;"
         >
           <tbody>
             <tr>
               <td
-                 style="border-top:1px solid #26262b;direction:ltr;font-size:0px;padding:28px 36px;text-align:center;"
+                 style="border-top:1px solid #d4d1c8;direction:ltr;font-size:0px;padding:28px 36px;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:526px;" ><![endif]-->
             
@@ -419,11 +443,11 @@
           
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                   align="left" class="dm-accent" style="font-size:0px;padding:0;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;font-weight:700;letter-spacing:2px;line-height:1;text-align:left;text-transform:uppercase;color:#39ff88;"
+         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;font-weight:700;letter-spacing:2px;line-height:1;text-align:left;text-transform:uppercase;color:#0b7a3a;"
       >◆ End of edition</div>
     
                 </td>
@@ -431,11 +455,11 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:5px 0 5px;word-break:break-word;"
+                   align="left" class="dm-text" style="font-size:0px;padding:5px 0 5px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:Inter, Arial, sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.4px;line-height:1;text-align:left;color:#f4f3ef;"
+         style="font-family:Inter, Arial, sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.4px;line-height:1;text-align:left;color:#16161a;"
       >See you tomorrow.</div>
     
                 </td>
@@ -443,11 +467,11 @@
             
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0 0 14px;word-break:break-word;"
+                   align="left" class="dm-mute" style="font-size:0px;padding:0 0 14px;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:Inter, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#a3a099;"
+         style="font-family:Inter, Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#3a3935;"
       >Got a tip? Just reply — a human reads every one.</div>
     
                 </td>
@@ -455,7 +479,7 @@
             
               <tr>
                 <td
-                   align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+                   align="center" class="dm-button" style="font-size:0px;padding:10px 25px;word-break:break-word;"
                 >
                   
       <table
@@ -464,10 +488,10 @@
         <tbody>
           <tr>
             <td
-               align="center" bgcolor="#39ff88" role="presentation" style="border:none;border-radius:2px;cursor:auto;mso-padding-alt:10px 16px;background:#39ff88;" valign="middle"
+               align="center" bgcolor="#0b7a3a" role="presentation" style="border:none;border-radius:2px;cursor:auto;mso-padding-alt:10px 16px;background:#0b7a3a;" valign="middle"
             >
               <a
-                 href="https://example.com/issues/" style="display:inline-block;background:#39ff88;color:#0b0b0c;font-family:'JetBrains Mono', Menlo, monospace;font-size:12px;font-weight:700;line-height:120%;letter-spacing:1.2px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 16px;mso-padding-alt:0px;border-radius:2px;" target="_blank"
+                 href="https://example.com/issues/" style="display:inline-block;background:#0b7a3a;color:#f4f3ef;font-family:'JetBrains Mono', Menlo, monospace;font-size:12px;font-weight:700;line-height:120%;letter-spacing:1.2px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 16px;mso-padding-alt:0px;border-radius:2px;" target="_blank"
               >
                 Forward to a friend →
               </a>
@@ -509,7 +533,7 @@
           <tbody>
             <tr>
               <td
-                 style="border-top:1px solid #1d1d21;direction:ltr;font-size:0px;padding:18px 36px 24px;text-align:center;"
+                 style="border-top:1px solid #e0ddd4;direction:ltr;font-size:0px;padding:18px 36px 24px;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:526px;" ><![endif]-->
             
@@ -531,15 +555,15 @@
           
               <tr>
                 <td
-                   align="left" style="font-size:0px;padding:0;word-break:break-word;"
+                   align="left" class="dm-dim" style="font-size:0px;padding:0;word-break:break-word;"
                 >
                   
       <div
-         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;line-height:1.8;text-align:left;color:#6b6a65;"
-      >© 2026 AI News Daily · v4.137 · status: operational <span style="color:#39ff88">●</span><br/>
-            <a href="https://example.com/unsub" style="color:#a3a099;">unsubscribe</a> ·
-            <a href="https://example.com/issues/2026-01-15.html" style="color:#a3a099;">view in browser</a> ·
-            <a href="https://example.com/issues/" style="color:#a3a099;">archive</a></div>
+         style="font-family:'JetBrains Mono', Menlo, monospace;font-size:10px;line-height:1.8;text-align:left;color:#5e5d57;"
+      >© 2026 AI News Daily · v4.137 · status: operational <span class="dm-accent" style="color:#0b7a3a">●</span><br/>
+            <a class="dm-link" href="https://example.com/unsub" style="color:#3a3935;">unsubscribe</a> ·
+            <a class="dm-link" href="https://example.com/issues/2026-01-15.html" style="color:#3a3935;">view in browser</a> ·
+            <a class="dm-link" href="https://example.com/issues/" style="color:#3a3935;">archive</a></div>
     
                 </td>
               </tr>
