@@ -212,6 +212,7 @@ Controls how the final digest is assembled from articles and headline extras.
 ### Article limits and source diversity
 
 - `DIGEST_MAX_STORIES` (optional, default `16`) — max RSS articles in the digest
+- `HUMAN_LLM_TIEBREAKER` (optional) — set to `1` to let the model tag a human-side item the rules missed. The human-side section is still omitted when fewer than two items qualify.
 - `DIGEST_MAX_PER_SOURCE` (optional, default `3`) — max articles from any single RSS source; prevents one prolific feed from dominating. Articles are interleaved round-robin across sources.
 
 ### Headline limits

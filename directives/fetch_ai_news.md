@@ -33,6 +33,22 @@ Current RSS feeds:
 - Lenny's Newsletter: https://www.lennysnewsletter.com/feed
 - DATAVERSITY Smart Data: https://www.dataversity.net/resource-topic/smart-data/feed/
 
+Human-side RSS feeds:
+- MIT Sloan Management Review: https://sloanreview.mit.edu/feed/
+- Harvard Business Review: https://feeds.feedburner.com/harvardbusiness
+- Fast Company Work Life: https://www.fastcompany.com/section/work-life/rss
+- HR Dive: https://www.hrdive.com/feeds/news/
+- The Conversation Work and Careers: https://theconversation.com/us/topics/work-and-careers-9/articles.atom
+- Aeon: https://aeon.co/feed.rss
+- Rest of World: https://restofworld.org/feed/latest/
+- Pew Research Center: https://www.pewresearch.org/feed/
+- Charter: https://www.charterworks.com/feed
+- One Useful Thing: https://www.oneusefulthing.org/feed
+- Data and Society: https://datasociety.net/feed/
+- Partnership on AI: https://www.partnershiponai.org/feed/
+- Guardian Work and Careers: https://www.theguardian.com/money/work-and-careers/rss
+- Behavioral Scientist: https://behavioralscientist.org/feed/
+
 ## Output
 - New articles inserted into `articles` table
 - Returns count of new articles found

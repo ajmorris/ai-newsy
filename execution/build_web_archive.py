@@ -227,6 +227,27 @@ def _render_body_from_payload(payload: Dict[str, Any]) -> str:
     if dev_section:
         parts.append(dev_section)
 
+    human_items = []
+    for item in payload.get("human_items") or []:
+        headline = _render_tweet_headline_html(item)
+        summary = html.escape(str(item.get("summary", "") or "").strip())
+        meaning = html.escape(str(item.get("meaning", "") or "").strip())
+        extra = ""
+        if summary:
+            extra += f'<div style="margin-top: 4px;">{summary}</div>'
+        if meaning:
+            extra += (
+                '<div style="margin-top: 4px;">What this means for people leading change: '
+                f"{meaning}</div>"
+            )
+        cluster = item.get("cluster") if isinstance(item.get("cluster"), dict) else {}
+        if int(cluster.get("badge_count") or 0) > 1:
+            extra += f'<div style="margin-top: 4px;">Covered by {int(cluster["badge_count"])} sources</div>'
+        human_items.append(headline + extra)
+    human_section = render_quick_hit_section("The human side", human_items)
+    if human_section:
+        parts.append(human_section)
+
     for extra in payload.get("quick_hit_sections") or []:
         title = str(extra.get("title", "") or "").strip()
         extra_items = []

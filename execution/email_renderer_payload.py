@@ -89,12 +89,19 @@ def _normalize_quick_hit_sections(sections: Optional[List[dict]]) -> List[Dict[s
             headline = str(item.get("headline", "") or "").strip()
             if not headline:
                 continue
-            items.append(
-                {
-                    "headline": headline,
-                    "url": str(item.get("url", "") or "").strip(),
-                }
-            )
+            entry = {
+                "headline": headline,
+                "url": str(item.get("url", "") or "").strip(),
+            }
+            summary = str(item.get("summary", "") or "").strip()
+            meaning = str(item.get("meaning", "") or "").strip()
+            if summary:
+                entry["summary"] = summary
+            if meaning:
+                entry["meaning"] = meaning
+            if isinstance(item.get("cluster"), dict):
+                entry["cluster"] = item.get("cluster")
+            items.append(entry)
         if title and items:
             normalized.append({"title": title, "items": items})
     return normalized

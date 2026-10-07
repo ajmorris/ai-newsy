@@ -12,6 +12,37 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DIRECTIVE_PATH = REPO_ROOT / "directives" / "fetch_ai_news.md"
 FEED_URLS_PATH = REPO_ROOT / "feed_urls.md"
 
+FEED_CATEGORIES = ("tech", "dev", "human", "community")
+HUMAN_SECTION_HEADER = "Human-side RSS feeds:"
+
+
+def _parse_feed_section(text: str, header: str) -> list[dict]:
+    """Parse a '- Name: https://...' list that starts at header."""
+    feeds = []
+    in_sources = False
+    for line in text.splitlines():
+        line = line.strip()
+        if line.startswith(header):
+            in_sources = True
+            continue
+        if in_sources:
+            if not line or (line.startswith("##") and feeds):
+                break
+            if line.startswith("- ") and ("http://" in line or "https://" in line):
+                idx = line.find(": http")
+                if idx == -1:
+                    idx = line.find(": https")
+                if idx != -1:
+                    name = line[2:idx].strip()
+                    url = line[idx + 2 :].strip()
+                    if name and url:
+                        feeds.append({
+                            "name": name,
+                            "source": name,
+                            "url": url,
+                        })
+    return feeds
+
 
 def load_directive_feeds() -> list[dict]:
     """
@@ -21,32 +52,15 @@ def load_directive_feeds() -> list[dict]:
     if not DIRECTIVE_PATH.exists():
         return []
     text = DIRECTIVE_PATH.read_text(encoding="utf-8")
-    feeds = []
-    in_sources = False
-    for line in text.splitlines():
-        line = line.strip()
-        if line.startswith("Current RSS feeds:"):
-            in_sources = True
-            continue
-        if in_sources:
-            if not line or (line.startswith("##") and feeds):
-                break
-            # Format: "- Name: https://..."
-            if line.startswith("- ") and ("http://" in line or "https://" in line):
-                # Split on first ": " that precedes http
-                idx = line.find(": http")
-                if idx == -1:
-                    idx = line.find(": https")
-                if idx != -1:
-                    name = line[2:idx].strip()  # drop "- " and take name
-                    url = line[idx + 2 :].strip()  # ": " is 2 chars
-                    if name and url:
-                        feeds.append({
-                            "name": name,
-                            "source": name,
-                            "url": url,
-                        })
-    return feeds
+    return _parse_feed_section(text, "Current RSS feeds:")
+
+
+def load_human_side_feeds() -> list[dict]:
+    """Public human-side feeds. Merging the registry is the approval to fetch them."""
+    if not DIRECTIVE_PATH.exists():
+        return []
+    text = DIRECTIVE_PATH.read_text(encoding="utf-8")
+    return _parse_feed_section(text, HUMAN_SECTION_HEADER)
 
 
 def load_feed_urls() -> list[dict]:
@@ -135,4 +149,19 @@ def get_merged_feeds() -> list[dict]:
     """Load directive + feed_urls, merge and de-dupe. Single entry point for fetch_ai_news.py."""
     directive = load_directive_feeds()
     feed_urls = load_feed_urls()
-    return build_merged_feeds(directive, feed_urls)
+    merged = build_merged_feeds(directive, feed_urls)
+    for feed in merged:
+        feed["category"] = "tech"
+    seen = {feed["source"] for feed in merged}
+    for human in load_human_side_feeds():
+        if human["source"] in seen or any(_is_same_source(existing, human["source"]) for existing in seen):
+            continue
+        merged.append({
+            "name": human["name"],
+            "source": human["source"],
+            "primary_url": human["url"],
+            "fallback_url": None,
+            "category": "human",
+        })
+        seen.add(human["source"])
+    return merged

@@ -154,13 +154,18 @@ const storyItems = stories
 
 const renderQuickHitSection = (title, items, padding) => {
   const rendered = (items || [])
-    .map(
-      (item) => `
+    .map((item) => {
+      const summary = item.summary ? `<div style="margin-top:4px;">${esc(item.summary)}</div>` : "";
+      const meaning = item.meaning
+        ? `<div style="margin-top:4px;">What this means for people leading change: ${esc(item.meaning)}</div>`
+        : "";
+      const count = Number(item.cluster && item.cluster.badge_count) || 0;
+      const covered = count > 1 ? `<div style="margin-top:4px;">Covered by ${count} sources</div>` : "";
+      return `
       <mj-text css-class="dm-mute" color="${DB.textMute}" font-size="14px" padding="5px 0">
-        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}
-      </mj-text>
-    `
-    )
+        <span style="color:${DB.accent};font-family:'JetBrains Mono', Menlo, monospace;">»</span> ${renderQuickHitHeadline(item)}${summary}${meaning}${covered}
+      </mj-text>`;
+    })
     .join("");
   if (!rendered.trim()) {
     return "";

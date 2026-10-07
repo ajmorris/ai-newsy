@@ -82,6 +82,7 @@ def _render_body(
     tweet_headlines: List[dict],
     community_headlines: List[dict],
     dev_headlines: Optional[List[dict]] = None,
+    human_items: Optional[List[dict]] = None,
 ) -> str:
     parts: List[str] = []
     for section in sections:
@@ -157,6 +158,21 @@ def _render_body(
             parts.append(f"- {prefix}{headline} ([Source]({url}))")
         parts.append("")
 
+    human_items = list(human_items or [])
+    if len(human_items) >= 2:
+        parts.append("## The human side\n")
+        for item in human_items:
+            headline = item.get("headline", "")
+            url = item.get("url", "")
+            parts.append(f"- {headline} ([Source]({url}))")
+            summary = str(item.get("summary", "") or "").strip()
+            meaning = str(item.get("meaning", "") or "").strip()
+            if summary:
+                parts.append(f"  {summary}")
+            if meaning:
+                parts.append(f"  What this means for people leading change: {meaning}")
+        parts.append("")
+
     return "\n".join(parts).strip() + "\n"
 
 
@@ -192,6 +208,7 @@ def build_digest_markdown(
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
     dev_headlines = list(payload.get("dev_headlines", []))
+    human_items = list(payload.get("human_items") or [])
 
     frontmatter = _render_frontmatter(
         digest_date=safe_date,
@@ -206,6 +223,7 @@ def build_digest_markdown(
         tweet_headlines=tweet_headlines,
         community_headlines=community_headlines,
         dev_headlines=dev_headlines,
+        human_items=human_items,
     )
 
     output_dir = Path(os.getenv("DIGEST_MARKDOWN_DIR", "data/digests"))

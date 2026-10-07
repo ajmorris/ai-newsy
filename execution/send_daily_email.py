@@ -341,6 +341,7 @@ def generate_email_html(
     tweet_headlines: Optional[List[dict]] = None,
     community_headlines: Optional[List[dict]] = None,
     dev_headlines: Optional[List[dict]] = None,
+    human_items: Optional[List[dict]] = None,
     unsubscribe_token: str = "",
     digest_summary_line: str = "",
 ) -> str:
@@ -457,6 +458,32 @@ def generate_email_html(
         </div>
         """
 
+    human_items = human_items or []
+    human_section_html = ""
+    if len(human_items) >= 2:
+        human_bits = []
+        for item in human_items:
+            summary = html.escape(str(item.get("summary", "") or "").strip())
+            meaning = html.escape(str(item.get("meaning", "") or "").strip())
+            detail = ""
+            if summary:
+                detail += f'<div style="margin-top: 4px;">{summary}</div>'
+            if meaning:
+                detail += f'<div style="margin-top: 4px;">What this means for people leading change: {meaning}</div>'
+            human_bits.append(
+                f'<li style="margin-bottom: 10px; line-height: 1.6; color: #a3a099;">{render_tweet_headline_html(item)}{detail}</li>'
+            )
+        human_section_html = f"""
+        <div style="margin-bottom: 32px;">
+            <h2 style="margin: 0 0 12px 0; font-size: 20px; font-weight: 700; color: #f4f3ef; letter-spacing: -0.03em;">
+                The human side
+            </h2>
+            <ul style="padding-left: 20px; margin: 0;">
+                {''.join(human_bits)}
+            </ul>
+        </div>
+        """
+
     community_section_html = ""
     if community_headlines:
         community_items_html = "".join(
@@ -497,6 +524,7 @@ def generate_email_html(
             <div style="padding: 0 28px 0 28px;">{tweet_section_html}</div>
             <div style="padding: 0 28px 0 28px;">{community_section_html}</div>
             <div style="padding: 0 28px 0 28px;">{dev_section_html}</div>
+            <div style="padding: 0 28px 0 28px;">{human_section_html}</div>
             <div style="padding: 18px 28px 24px 28px; border-top: 1px solid #1d1d21;">
                 <p style="color: #6b6a65; font-family: 'JetBrains Mono', Menlo, monospace; font-size: 10px; margin: 0; line-height: 1.8;">
                     You're receiving this because you subscribed to AI Newsy.
@@ -753,11 +781,14 @@ def send_daily_digest(
     tweet_headlines = list(payload.get("tweet_headlines", []))
     community_headlines = list(payload.get("community_headlines", []))
     dev_headlines = list(payload.get("dev_headlines", []))
+    human_items = list(payload.get("human_items") or [])
     quick_hit_sections = []
     if dev_headlines:
         quick_hit_sections.append(
             {"title": "Developer and open source", "items": dev_headlines}
         )
+    if len(human_items) >= 2:
+        quick_hit_sections.append({"title": "The human side", "items": human_items})
     intro = str(payload.get("intro", ""))
 
     send_started_at = datetime.utcnow().isoformat()
@@ -807,6 +838,7 @@ def send_daily_digest(
                     tweet_headlines=tweet_headlines,
                     community_headlines=community_headlines,
                     dev_headlines=dev_headlines,
+                    human_items=human_items,
                     unsubscribe_token=token,
                     digest_summary_line=digest_summary_line,
                 )
@@ -826,6 +858,13 @@ def send_daily_digest(
             if article.get("id") is not None:
                 article_ids.append(article.get("id"))
             cluster = article.get("cluster") if isinstance(article.get("cluster"), dict) else {}
+            for source in cluster.get("sources") or []:
+                if isinstance(source, dict) and source.get("id") is not None:
+                    article_ids.append(source.get("id"))
+        for item in payload.get("human_items") or []:
+            if item.get("id") is not None:
+                article_ids.append(item.get("id"))
+            cluster = item.get("cluster") if isinstance(item.get("cluster"), dict) else {}
             for source in cluster.get("sources") or []:
                 if isinstance(source, dict) and source.get("id") is not None:
                     article_ids.append(source.get("id"))

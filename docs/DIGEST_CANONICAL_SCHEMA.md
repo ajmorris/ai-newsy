@@ -22,6 +22,8 @@ AI Newsy uses one canonical issue artifact per date at `data/digests/YYYY-MM-DD.
 - `quick_hit_sections` (optional render list of `{title, items}` used by the archive)
 
 Story objects may include an optional `cluster` object (`sources`, `badge_count`, `conflicts`, `is_update`). Renderers treat a missing `cluster`, `dev_headlines`, or `human_items` as empty so older issues still build.
+
+`human_items` entries, when present, include `headline`, `url`, `summary`, `tag`, and `meaning` (the line shown as “What this means for people leading change”). A `cluster` is copied onto the item when the story was grouped. The list is omitted or empty when fewer than two items qualify, and it never holds more than four.
 - `build_meta` (generation metadata, provenance)
 - `content_hash` (sha256 hash over canonical content fields)
 
