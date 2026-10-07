@@ -43,14 +43,14 @@ jobs:
 
       - name: Validate canonical digest payloads exist
         run: |
-          canonical_count=$(ls -1 data/digests/*.json 2>/dev/null | wc -l | tr -d ' ')
+          canonical_count=$(find data/digests -maxdepth 1 -type f -name '*.json' -printf '%f\n' | wc -l | tr -d ' ')
           echo "Canonical digest payload count: ${canonical_count}"
           if [ "${canonical_count}" -eq 0 ]; then
             echo "No canonical digest payloads found; refusing to publish archive."
-            ls -1 data/digests || true
+            find data/digests -maxdepth 1 -printf '%f\n' || true
             exit 1
           fi
-          latest_canonical=$(ls -1 data/digests/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)
+          latest_canonical=$(find data/digests -maxdepth 1 -type f -name '*.json' -printf '%f\n' | sed -E 's|\.json$||' | sort | tail -n 1)
           echo "Latest canonical digest date: ${latest_canonical}"
 
       - name: Build archive pages and manifest
@@ -58,7 +58,7 @@ jobs:
 
       - name: Validate digest parity
         run: |
-          latest_digest=$(ls -1 data/digests/*.json | sed -E 's|.*/||' | sed -E 's|\.json$||' | sort | tail -n 1)
+          latest_digest=$(find data/digests -maxdepth 1 -type f -name '*.json' -printf '%f\n' | sed -E 's|\.json$||' | sort | tail -n 1)
           python execution/validate_digest_parity.py --digest-date "${latest_digest}" --snapshot-dir data/digests/snapshots --report parity-report.json
 
       - name: Validate archive manifest matches canonical digest inputs
