@@ -89,3 +89,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: persist canonical digest payload"
           git push origin "HEAD:${{ github.ref_name }}"
+
+      - name: Copy the issue to Cloudflare when configured
+        if: ${{ vars.CLOUDFLARE_PUBLISH_URL != '' }}
+        env:
+          CLOUDFLARE_PUBLISH_URL: ${{ vars.CLOUDFLARE_PUBLISH_URL }}
+          CLOUDFLARE_PUBLISH_TOKEN: ${{ secrets.CLOUDFLARE_PUBLISH_TOKEN }}
+        run: python execution/publish_issue.py --digest-date "$(date -u +%F)"

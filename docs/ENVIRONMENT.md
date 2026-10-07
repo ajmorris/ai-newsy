@@ -213,6 +213,7 @@ Controls how the final digest is assembled from articles and headline extras.
 
 - `DIGEST_MAX_STORIES` (optional, default `16`) — max RSS articles in the digest
 - `HUMAN_LLM_TIEBREAKER` (optional) — set to `1` to let the model tag a human-side item the rules missed. The human-side section is still omitted when fewer than two items qualify.
+- `CLOUDFLARE_PUBLISH_URL` and `CLOUDFLARE_PUBLISH_TOKEN` (optional) — when both are set, finalize also POSTs the issue JSON to the Worker. Leave them unset to keep Supabase, Vercel, and Resend as the live path. See `docs/CLOUDFLARE_CUTOVER.md`.
 - `DIGEST_MAX_PER_SOURCE` (optional, default `3`) — max articles from any single RSS source; prevents one prolific feed from dominating. Articles are interleaved round-robin across sources.
 
 ### Headline limits

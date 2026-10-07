@@ -1,0 +1,5 @@
+{
+  "name": "ai-newsy-digest-worker",
+  "private": true,
+  "type": "module"
+}

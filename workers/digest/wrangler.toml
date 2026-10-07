@@ -1,0 +1,23 @@
+name = "ai-newsy-digest"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# This worker is not attached to the production domain in this change.
+# Vercel keeps serving the site. GitHub Actions keeps generating the issue.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-newsy"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "ISSUE_ARCHIVE"
+bucket_name = "ai-newsy-issues"
+
+[triggers]
+crons = ["30 6 * * *"]
+
+[vars]
+EMAIL_ADAPTER = "resend"
+SEND_CRON_ENABLED = "0"

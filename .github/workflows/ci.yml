@@ -37,6 +37,9 @@ jobs:
           coverage report --fail-under=80 \
             --include='execution/url_dedup.py,execution/feed_ingest.py,execution/mailer.py,execution/llm_fixtures.py,execution/design_tokens.py,execution/check_digest_heartbeat.py,execution/section_routing.py,execution/story_clusters.py,execution/human_side.py'
 
+      - name: Worker tests
+        run: node --test workers/digest/test/*.test.mjs
+
       - name: Email render smoke
         run: |
           node emails/render_email.mjs execution/fixtures/email_smoke_payload.json > /tmp/email.html
