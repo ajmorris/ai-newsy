@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>AI News Daily Archive</title>
   <style>
     :root {
+      color-scheme: light dark;
+      --bg: #f3f2ec;
+      --bg-raised: #e7e6e0;
+      --card: #f7f6f1;
+      --line: #d4d1c8;
+      --line-soft: #e0ddd4;
+      --fg: #16161a;
+      --muted: #3a3935;
+      --dim: #5e5d57;
+      --brand: #0b7a3a;
+      --brand-ink: #f4f3ef;
+    }
+    @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light dark;
       --bg: #0b0b0c;
       --bg-raised: #121214;
       --card: #17171a;
@@ -13,9 +29,10 @@
       --line-soft: #1d1d21;
       --fg: #f4f3ef;
       --muted: #a3a099;
-      --dim: #6b6a65;
+      --dim: #84837d;
       --brand: #39ff88;
       --brand-ink: #0b0b0c;
+    }
     }
     * { box-sizing: border-box; }
     body {
