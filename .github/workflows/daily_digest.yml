@@ -45,10 +45,24 @@ jobs:
     steps:
       # Checkout first so the shared Python guard can run. Later steps still
       # gate on should_send so blocked manual runs skip install/send.
+      # DIGEST_PUSH_TOKEN is ajmorris's PAT so the snapshot push satisfies the
+      # CI ruleset bypass. Pull requests still require CI / test.
+      - name: Require digest push token
+        env:
+          DIGEST_PUSH_TOKEN: ${{ secrets.DIGEST_PUSH_TOKEN }}
+        run: |
+          if [ -z "${DIGEST_PUSH_TOKEN}" ]; then
+            echo "Repository secret DIGEST_PUSH_TOKEN is missing."
+            echo "Create a fine-grained PAT for ajmorris with Contents read and write on this repository,"
+            echo "store it as DIGEST_PUSH_TOKEN, and add ajmorris to the CI ruleset bypass list (Always allow)."
+            exit 1
+          fi
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+          token: ${{ secrets.DIGEST_PUSH_TOKEN }}
 
       # Decide once whether this run should proceed past setup. Setting an output
       # (instead of `exit 0`) lets every later step gate on `steps.guard.outputs.should_send`.

@@ -21,10 +21,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Require digest push token
+        env:
+          DIGEST_PUSH_TOKEN: ${{ secrets.DIGEST_PUSH_TOKEN }}
+        run: |
+          if [ -z "${DIGEST_PUSH_TOKEN}" ]; then
+            echo "Repository secret DIGEST_PUSH_TOKEN is missing."
+            echo "Create a fine-grained PAT for ajmorris with Contents read and write on this repository,"
+            echo "store it as DIGEST_PUSH_TOKEN, and add ajmorris to the CI ruleset bypass list (Always allow)."
+            exit 1
+          fi
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.DIGEST_PUSH_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
