@@ -152,6 +152,8 @@ jobs:
 
       - name: Commit sent snapshots
         if: ${{ steps.guard.outputs.should_send == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           # Persist what was emailed. Do not rebuild frontend/issues here.
           git config user.name "github-actions[bot]"

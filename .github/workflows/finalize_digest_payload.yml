@@ -81,6 +81,8 @@ jobs:
           PY
 
       - name: Commit canonical digest payload updates
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git add data/digests/*.json
           if git diff --staged --quiet; then

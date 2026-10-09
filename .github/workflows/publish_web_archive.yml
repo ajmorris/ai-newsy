@@ -129,6 +129,8 @@ jobs:
           PY
 
       - name: Commit and push generated archive updates
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git add frontend/issues
           if git diff --staged --quiet; then
