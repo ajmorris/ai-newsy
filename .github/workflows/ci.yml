@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+  # The digest jobs open pull requests with the Actions token, which does not
+  # start pull_request workflows. They dispatch this workflow on the branch.
+  workflow_dispatch:
 
 jobs:
   test:

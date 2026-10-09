@@ -5,7 +5,9 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
+  pull-requests: write
 
 concurrency:
   group: finalize-digest-payload-schedule
@@ -14,7 +16,7 @@ concurrency:
 jobs:
   finalize-payload:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
 
     steps:
       - name: Checkout repository
@@ -88,7 +90,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: persist canonical digest payload"
-          git push origin "HEAD:${{ github.ref_name }}"
+          python execution/open_automerge_pr.py \
+            --branch "automation/digest-${{ github.run_id }}" \
+            --base "${{ github.ref_name }}" \
+            --title "chore: persist canonical digest payload"
 
       - name: Copy the issue to Cloudflare when configured
         if: ${{ vars.CLOUDFLARE_PUBLISH_URL != '' }}

@@ -16,6 +16,7 @@ on:
 permissions:
   actions: write
   contents: write
+  pull-requests: write
 
 concurrency:
   group: digest-pipeline
@@ -86,4 +87,12 @@ jobs:
     needs: [finalize]
     if: ${{ needs.finalize.result == 'success' }}
     uses: ./.github/workflows/daily_digest.yml
+    secrets: inherit
+
+  # A merge performed by the Actions token does not start the archive workflow's
+  # push trigger, so publish runs here after the sent snapshot is on main.
+  publish:
+    needs: [send]
+    if: ${{ needs.send.result == 'success' }}
+    uses: ./.github/workflows/publish_web_archive.yml
     secrets: inherit
