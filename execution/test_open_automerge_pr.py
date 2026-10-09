@@ -126,6 +126,7 @@ class WorkflowWiringTests(unittest.TestCase):
     def test_ci_can_be_dispatched_onto_the_automation_branch(self) -> None:
         text = (REPO_ROOT / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
         self.assertIn("workflow_dispatch:", text)
+        self.assertIn('name: "CI / test"', text)
 
     def test_pipeline_grants_pull_request_permission_and_publishes_after_send(self) -> None:
         text = (REPO_ROOT / ".github" / "workflows" / "digest_pipeline.yml").read_text(encoding="utf-8")

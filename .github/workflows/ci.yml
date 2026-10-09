@@ -11,6 +11,9 @@ on:
 
 jobs:
   test:
+    # The ruleset requires the check context "CI / test". Actions reports the
+    # job's name, which otherwise defaults to the id "test" and never satisfies it.
+    name: "CI / test"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
