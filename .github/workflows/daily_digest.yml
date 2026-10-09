@@ -1,8 +1,8 @@
 # Daily AI Digest Workflow
 # Compiles finalized JSON into markdown/HTML and sends via Resend.
 # Production sends are invoked by digest_pipeline.yml with pipeline_run=true.
-# The email is sent from the finalized JSON artifact. Saving that file on main
-# happens after the send, so a pull-request failure cannot block the email.
+# The email is sent from the finalized JSON artifact. The digest file and sent
+# snapshot are pushed to main after the send.
 # A direct manual dispatch of this workflow still requires force_send.
 
 name: Daily AI Digest
@@ -40,7 +40,6 @@ on:
 permissions:
   actions: write
   contents: write
-  pull-requests: write
 
 concurrency:
   group: daily-ai-digest-schedule
@@ -176,8 +175,6 @@ jobs:
 
       - name: Commit sent snapshots
         if: ${{ steps.guard.outputs.should_send == 'true' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           # The email has already been sent. This only saves the record on main.
           git config user.name "github-actions[bot]"
@@ -197,16 +194,8 @@ jobs:
             exit 0
           fi
           git commit -m "chore: persist sent digest for ${digest_date}"
-          if ! python execution/open_automerge_pr.py \
-            --branch "automation/snapshot-${{ github.run_id }}" \
-            --base "${{ github.ref_name }}" \
-            --title "chore: persist sent digest for ${digest_date}"; then
+          if ! git push origin "HEAD:${{ github.ref_name }}"; then
             echo "::error::The email was already sent. Saving the digest on main failed."
-            {
-              echo "## Email sent, files not saved"
-              echo "Subscribers already received today's digest."
-              echo "Turn on **Allow GitHub Actions to create and approve pull requests** under Settings → Actions → General → Workflow permissions, then run the pipeline again."
-            } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
 

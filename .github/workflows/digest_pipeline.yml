@@ -16,7 +16,6 @@ on:
 permissions:
   actions: write
   contents: write
-  pull-requests: write
 
 concurrency:
   group: digest-pipeline
@@ -96,8 +95,8 @@ jobs:
       pipeline_run: true
     secrets: inherit
 
-  # A merge performed by the Actions token does not start the archive workflow's
-  # push trigger, so publish runs here after the sent snapshot is on main.
+  # A push from this token does not start the archive workflow's push trigger,
+  # so publish runs here after the sent snapshot is on main.
   publish:
     needs: [send]
     if: ${{ needs.send.result == 'success' }}

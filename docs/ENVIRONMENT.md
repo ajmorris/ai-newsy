@@ -269,11 +269,10 @@ GitHub Actions configuration:
   - `prepare_digest_content.yml` (RSS fetch + analyze into `articles`)
   - `prepare_twitter_headlines.yml` (`digest_extras.tweet_headlines`)
   - `prepare_community_headlines.yml` (`digest_extras.community_headlines`)
-  - `finalize_digest_payload.yml` rebuilds `data/digests/YYYY-MM-DD.json` after prep (waits for all three; requires RSS success so a Twitter/community failure cannot block send). It opens a pull request and waits for `CI / test` plus auto-merge before send starts.
-  - `daily_digest.yml` compiles markdown/HTML and sends via Resend after that merge. It does not call Claude; it loads the finalized JSON and fails immediately if that file is missing (`timeout-minutes: 30`). The sent snapshot lands through a second pull request.
-  - `publish_web_archive.yml` runs after send and opens a pull request for `frontend/issues`.
-- Those generated-file pull requests are merged by auto-merge after `CI / test` passes. **Allow auto-merge** stays enabled on the repository. Direct pushes to `main` remain blocked until the check is green. The GitHub CLI in those jobs authenticates with `GH_TOKEN` set to `github.token`.
-- Under Settings → Actions → General → Workflow permissions, **Allow GitHub Actions to create and approve pull requests** must stay on. Without it the night job can send the email and then fail while saving the digest file.
+  - `finalize_digest_payload.yml` rebuilds `data/digests/YYYY-MM-DD.json` after prep (waits for all three; requires RSS success so a Twitter/community failure cannot block send) and uploads it as an artifact. It does not commit.
+  - `daily_digest.yml` compiles markdown/HTML from that artifact and sends via Resend. It does not call Claude. It fails immediately if the JSON is missing (`timeout-minutes: 30`), then pushes the digest file and sent snapshot straight to `main`.
+  - `publish_web_archive.yml` runs after send and pushes `frontend/issues` straight to `main`.
+- Generated commits use the workflow `contents: write` token. `CI / test` still runs on pull requests and on pushes to `main`. It is not a required check for those generated pushes.
 - A manual **Run workflow** on Daily Digest Pipeline sends the real issue and still respects the duplicate-send claim. The other daily clock slot is green on purpose and does not send.
 - Stage workflows keep `workflow_dispatch` for manual single-stage runs. They are not independently scheduled.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
