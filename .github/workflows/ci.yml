@@ -5,9 +5,15 @@ on:
   push:
     branches:
       - main
+  # The digest jobs open pull requests with the Actions token, which does not
+  # start pull_request workflows. They dispatch this workflow on the branch.
+  workflow_dispatch:
 
 jobs:
   test:
+    # The ruleset requires the check context "CI / test". Actions reports the
+    # job's name, which otherwise defaults to the id "test" and never satisfies it.
+    name: "CI / test"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

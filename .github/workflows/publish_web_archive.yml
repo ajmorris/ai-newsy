@@ -10,20 +10,32 @@ on:
       - 'data/digests/snapshots/*.sent.json'
       - 'execution/build_web_archive.py'
   workflow_dispatch:
+  workflow_call:
 
 permissions:
-  actions: read
+  actions: write
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: publish-web-archive
+  cancel-in-progress: false
 
 jobs:
   publish-web-archive:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Use the latest base branch
+        run: |
+          git fetch origin "${{ github.ref_name }}"
+          git checkout --detach "origin/${{ github.ref_name }}"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -126,4 +138,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: publish web issue archive"
-          git push origin "HEAD:${{ github.ref_name }}"
+          python execution/open_automerge_pr.py \
+            --branch "automation/archive-${{ github.run_id }}" \
+            --base "${{ github.ref_name }}" \
+            --title "chore: publish web issue archive"

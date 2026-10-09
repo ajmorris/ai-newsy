@@ -31,7 +31,9 @@ on:
         type: string
 
 permissions:
+  actions: write
   contents: write
+  pull-requests: write
 
 concurrency:
   group: daily-ai-digest-schedule
@@ -40,7 +42,7 @@ concurrency:
 jobs:
   send-digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
 
     steps:
       # Checkout first so the shared Python guard can run. Later steps still
@@ -161,13 +163,19 @@ jobs:
             echo "No sent snapshots to commit."
             exit 0
           fi
+          # The payload checkout above leaves today's JSON staged. This commit
+          # should record only the sent snapshot.
+          git restore --staged -- data/digests || true
           git add "${snapshot_files[@]}"
           if git diff --staged --quiet; then
             echo "No sent snapshot changes to commit."
             exit 0
           fi
           git commit -m "chore: persist sent digest snapshots"
-          git push origin "HEAD:${{ github.ref_name }}"
+          python execution/open_automerge_pr.py \
+            --branch "automation/snapshot-${{ github.run_id }}" \
+            --base "${{ github.ref_name }}" \
+            --title "chore: persist sent digest snapshots"
 
       - name: Upload digest artifacts
         if: ${{ steps.guard.outputs.should_send == 'true' }}
