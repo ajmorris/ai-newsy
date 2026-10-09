@@ -15,7 +15,6 @@ on:
 permissions:
   actions: write
   contents: write
-  pull-requests: write
 
 concurrency:
   group: publish-web-archive
@@ -129,8 +128,6 @@ jobs:
           PY
 
       - name: Commit and push generated archive updates
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           git add frontend/issues
           if git diff --staged --quiet; then
@@ -140,7 +137,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: publish web issue archive"
-          python execution/open_automerge_pr.py \
-            --branch "automation/archive-${{ github.run_id }}" \
-            --base "${{ github.ref_name }}" \
-            --title "chore: publish web issue archive"
+          git push origin "HEAD:${{ github.ref_name }}"
