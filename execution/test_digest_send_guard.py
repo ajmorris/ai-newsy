@@ -38,6 +38,11 @@ class DecideShouldSendTests(unittest.TestCase):
         self.assertTrue(ok)
         self.assertIn("force_send=true", reason)
 
+    def test_pipeline_dispatch_sends_without_force(self) -> None:
+        ok, reason = decide_should_send("workflow_dispatch", force_send=False, pipeline_run=True)
+        self.assertTrue(ok)
+        self.assertIn("pipeline", reason.lower())
+
     def test_unsupported_event_blocks(self) -> None:
         ok, reason = decide_should_send("push")
         self.assertFalse(ok)
@@ -106,7 +111,7 @@ class GuardCliTests(unittest.TestCase):
         import execution.digest_send_guard as guard_mod
 
         original = guard_mod.decide_should_send
-        guard_mod.decide_should_send = lambda event_name, force_send=False: (
+        guard_mod.decide_should_send = lambda event_name, force_send=False, pipeline_run=False: (
             False,
             "injected block",
         )
@@ -128,6 +133,9 @@ class WorkflowWiresGuardTests(unittest.TestCase):
         self.assertIn("execution/digest_send_guard.py", text)
         self.assertIn("github.event_name", text)
         self.assertIn("inputs.force_send", text)
+        self.assertIn("inputs.pipeline_run", text)
+        pipeline = (REPO_ROOT / ".github" / "workflows" / "digest_pipeline.yml").read_text(encoding="utf-8")
+        self.assertIn("pipeline_run: true", pipeline)
 
 
 if __name__ == "__main__":

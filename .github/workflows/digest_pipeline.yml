@@ -53,6 +53,11 @@ jobs:
               echo "Guard: proceeding (DST-correct cron slot)."
             else
               echo "Guard: skipping later jobs (wrong DST cron slot)."
+              {
+                echo "## No email sent"
+                echo "This run is the extra clock slot. It is green because nothing was supposed to happen."
+                echo "The 2:00 AM America/New_York run is the one that sends the digest."
+              } >> "$GITHUB_STEP_SUMMARY"
             fi
           else
             echo "Guard: skipping later jobs (unsupported event ${{ github.event_name }})."
@@ -87,6 +92,8 @@ jobs:
     needs: [finalize]
     if: ${{ needs.finalize.result == 'success' }}
     uses: ./.github/workflows/daily_digest.yml
+    with:
+      pipeline_run: true
     secrets: inherit
 
   # A merge performed by the Actions token does not start the archive workflow's

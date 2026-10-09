@@ -15,12 +15,18 @@ import sys
 from typing import Tuple
 
 
-def decide_should_send(event_name: str, force_send: bool = False) -> Tuple[bool, str]:
+def decide_should_send(
+    event_name: str,
+    force_send: bool = False,
+    pipeline_run: bool = False,
+) -> Tuple[bool, str]:
     """Return (should_send, reason) for the Daily AI Digest guard."""
     name = (event_name or "").strip()
 
-    # Pipeline cron (reusable workflow inherits caller event) or explicit call.
-    if name in ("schedule", "workflow_call"):
+    # The daily pipeline passes pipeline_run for both its cron and a manual
+    # Run workflow click. That click arrives here as workflow_dispatch, which
+    # would otherwise skip the send. It does not bypass the database claim.
+    if pipeline_run or name in ("schedule", "workflow_call"):
         return True, "Called from digest pipeline after finalize."
 
     if name == "workflow_dispatch":
@@ -53,10 +59,20 @@ def main(argv: list[str] | None = None) -> int:
         default="false",
         help="inputs.force_send as true/false string",
     )
+    parser.add_argument(
+        "--pipeline-run",
+        default="false",
+        help="inputs.pipeline_run as true/false string",
+    )
     args = parser.parse_args(argv)
 
     force = str(args.force_send).strip().lower() in ("1", "true", "yes")
-    should_send, reason = decide_should_send(args.event_name, force_send=force)
+    pipeline_run = str(args.pipeline_run).strip().lower() in ("1", "true", "yes")
+    should_send, reason = decide_should_send(
+        args.event_name,
+        force_send=force,
+        pipeline_run=pipeline_run,
+    )
 
     if should_send:
         print(f"Guard: proceeding with send. Reason: {reason}")
