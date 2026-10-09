@@ -1,0 +1,1001 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-10-09",
+  "issue_id": "20261009",
+  "subject_line": "ISSUE 61009 · 16 STORIES · 11 MIN READ",
+  "intro": "It's a rough news cycle for OpenAI: fired safety researchers are pushing back with an open letter warning of a \"chilling effect\" on the company's safety culture, while separately, the company told investors its 2026 revenue will land around $50 billion — a full $20 billion below earlier expectations. Beyond the OpenAI drama, today's digest covers everything from a study showing female-presenting AI agents get paid less than their male counterparts, to Sophos slashing threat investigation times by 96% with AI agents, to the California athletic commission trying to shut down a human-vs-robot fighting league (yes, really).",
+  "article_count": 16,
+  "stories": [
+    {
+      "id": 8408,
+      "source": "The Rundown AI",
+      "title": "Fired OpenAI safety researchers publish open letter; OpenAI doubles down",
+      "url": "https://therundownai.beehiiv.com/p/fired-openai-safety-researchers-hit-back",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Three OpenAI safety researchers — Tomek Korbak, Jasmine Wang, and Mikita Balesni — fired for allegedly mishandling sensitive information published an open letter denying the claims and warning the terminations are chilling safety culture. They say they acted within their job mandates. OpenAI doubled down, claiming a 'significant breach of trust' and saying its internal investigation found breaches beyond what the researchers described, without providing details. The researchers warned the firings could give OpenAI cover to avoid embedding outside auditors, while Anthropic has already onboarded its first external evaluator.",
+      "opinion": "A significant flashpoint in the ongoing tension between AI safety culture and corporate control at OpenAI. The lack of specifics from OpenAI undermines its position, while the researchers' public stand could embolden other whistleblowers — or further chill internal dissent depending on how the public reacts. Where coverage differs: The Rundown AI reports the researchers warned firings could give OpenAI cover to avoid embedding outside auditors; The Verge focuses on OpenAI claiming a 'significant breach of trust' and breaches beyond what the researchers described",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/74d5cf96-3a62-4342-ae9c-cf076be41edb/0b82e823-cc82-4263-87fa-7005c6878890.png?t=1791518397",
+      "published_at": "2026-10-09T09:00:00+00:00",
+      "fetched_at": "2026-10-09T12:29:33.598051+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 8408,
+            "source": "The Rundown AI",
+            "title": "Fired OpenAI safety researchers hit back",
+            "url": "https://therundownai.beehiiv.com/p/fired-openai-safety-researchers-hit-back"
+          },
+          {
+            "id": 8409,
+            "source": "The Verge AI",
+            "title": "OpenAI doubles down on decision to fire three AI safety researchers",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "The Rundown AI reports the researchers warned firings could give OpenAI cover to avoid embedding outside auditors; The Verge focuses on OpenAI claiming a 'significant breach of trust' and breaches beyond what the researchers described"
+        ],
+        "is_update": false,
+        "reason": "Both cover the same event: three fired OpenAI safety researchers (Korbak, Wang, Balesni) publishing an open letter and OpenAI's response doubling down on the firings."
+      }
+    },
+    {
+      "id": 8398,
+      "source": "Guardian AI",
+      "title": "Robert Reich argues liability lawsuits can curb AI and climate risks",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/09/ai-climate-change-liability-lawsuits",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Robert Reich argues that liability lawsuits could hold AI companies and fossil fuel industries accountable for harms, drawing parallels to past legal actions against tobacco and pharmaceutical companies. He suggests litigation may compel investors and corporations to take risks more seriously where government regulation has fallen short.",
+      "opinion": "An advocacy piece that frames legal liability as a practical lever in the absence of regulation — familiar territory for Reich, but the AI angle gives it fresh relevance as AI harms become more concrete.",
+      "image_url": "https://i.guim.co.uk/img/media/bab2e6d22a44b9888f42b090d83347f017a75df1/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e5d0fe06c3eb0c4c3aca80e1ee0d3c3c",
+      "published_at": "2026-10-09T11:00:26+00:00",
+      "fetched_at": "2026-10-09T12:29:29.189611+00:00"
+    },
+    {
+      "id": 8447,
+      "source": "HR Dive",
+      "title": "DHS proposes up to $100K in fees for international student work program",
+      "url": "https://www.hrdive.com/news/dhs-proposes-70k-fee-for-initial-optional-practical-training-participation/832499/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The U.S. Department of Homeland Security proposed requiring colleges to pay up to $100,000 in fees ($70,000 initial plus $30,000 for extensions) for each international student seeking Optional Practical Training post-graduation work authorization. DHS says the change targets fraud and abuse, but critics warn it could drive international students to other countries and harm U.S. innovation. About 294,000 students participated in OPT in 2024-25.",
+      "opinion": "A potentially transformative policy that could reshape international enrollment in U.S. higher education. The fee burden on colleges could effectively end OPT for many institutions unable or unwilling to absorb the cost.",
+      "image_url": "https://imgproxy.divecdn.com/SbswBb_CKjg3WvKR6R7ci1xSxOzjpPY7UfdgxDBoUY0/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjAyNDYwNzE0X3lPOXJJblouanBn.webp",
+      "published_at": "2026-10-09T15:03:00+00:00",
+      "fetched_at": "2026-10-09T16:32:43.930021+00:00"
+    },
+    {
+      "id": 8419,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Tech Review warns AI safety refusals are fundamentally unreliable",
+      "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Arthur Holland Michel argues in MIT Technology Review that AI refusal mechanisms are fundamentally unreliable and dangerous in two directions: determined bad actors can break through safety guardrails, while the underlying dangerous knowledge remains embedded in models. The article compares refusal to 'fitting every car with a machine gun and hiding the trigger somewhere under the hood.'",
+      "opinion": "A thought-provoking critique that challenges the industry's reliance on refusal as a primary safety mechanism, raising uncomfortable questions about whether current approaches are security theater.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/0924OP.jpg?resize=1200,600",
+      "published_at": "2026-10-09T09:00:00+00:00",
+      "fetched_at": "2026-10-09T12:29:38.236209+00:00"
+    },
+    {
+      "id": 8421,
+      "source": "OpenAI",
+      "title": "Sophos cuts threat investigation time 96% using OpenAI AI agents",
+      "url": "https://openai.com/index/sophos",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Sophos partnered with OpenAI through its Daybreak program to integrate AI agents into its Managed Detection and Response service, reducing average case investigation time from 38 minutes to 89 seconds. Now 52% of MDR cases are resolved end-to-end by AI, with human oversight maintained through tiered customer operating modes.",
+      "opinion": "A compelling enterprise AI success story with concrete metrics, though the 96% reduction figure invites scrutiny about whether speed gains come at the cost of investigation thoroughness.",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/4pg31JOD6Z3cO31LCR6GYq/8c1cedfd2e85c6dd80d2ea8c5ea0c9a1/sophos-social.png?w=1600&h=900&fit=fill",
+      "published_at": "2026-10-09T07:00:00+00:00",
+      "fetched_at": "2026-10-09T12:29:39.606322+00:00"
+    },
+    {
+      "id": 8438,
+      "source": "Partnership on AI",
+      "title": "Partnership on AI adds eight mental health organizations ahead of World Mental Health Day",
+      "url": "https://partnershiponai.org/partnership-on-ai-welcomes-eight-new-partners-advancing-mental-health-and-well-being/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Partnership on AI announced eight new partner organizations focused on mental health, including the American Foundation for Suicide Prevention, Crisis Text Line, and The Trevor Project. The group is launching an AI and Psychological Well-being Working Group to develop guidance on how AI chatbots should respond when users may be at risk of suicide or self-harm.",
+      "opinion": "A meaningful step toward establishing norms for AI chatbot responses to mental health crises — an area where the gap between current practice and responsible practice is wide and the stakes are high.",
+      "image_url": "https://partnershiponai.org/wp-content/uploads/2026/10/new-partners-oct26-1800x832-1.webp",
+      "published_at": "2026-10-08T18:24:46+00:00",
+      "fetched_at": "2026-10-09T12:29:55.678833+00:00"
+    },
+    {
+      "id": 8449,
+      "source": "Pew Research Center",
+      "title": "Pew survey: most countries say social media good for democracy, but concern is growing",
+      "url": "https://www.pewresearch.org/newsletter/global/global-september-2026-newsletter/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew Research Center global survey finds majorities in most countries say social media has been more good than bad for democracy, though the share seeing it as harmful is growing in wealthier nations. In 34 of 37 countries, people believe AI will lead to fewer jobs and greater inequality, and only 13% of adults across 37 countries are more excited than concerned about AI.",
+      "opinion": "A sobering snapshot of global AI sentiment that undercuts industry optimism narratives — the gap between how AI companies talk about their products and how the global public perceives them is widening.",
+      "image_url": "",
+      "published_at": "2026-10-09T15:17:01+00:00",
+      "fetched_at": "2026-10-09T16:32:46.234502+00:00"
+    },
+    {
+      "id": 8440,
+      "source": "TechCrunch AI",
+      "title": "a16z report: consumer AI still early, needs to move beyond subscriptions",
+      "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Andreessen Horowitz partner Olivia Moore released a report on the top 100 consumer AI apps, finding that while ChatGPT dominates, only 2.2% of U.S. households pay for AI. She argues the industry needs to embrace ad-supported models and cheaper/open-source models, and that consumer AI is still in its early days with many categories untouched.",
+      "opinion": "A useful reality check on consumer AI monetization — the 2.2% household penetration figure is a stark reminder that the AI boom remains largely an enterprise and developer story.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/Olivia-Moore-Headshot-2026.jpg?w=896",
+      "published_at": "2026-10-09T15:43:33+00:00",
+      "fetched_at": "2026-10-09T16:32:21.40391+00:00"
+    },
+    {
+      "id": 8443,
+      "source": "The Verge AI",
+      "title": "Trump orders government to stop using term 'artificial intelligence'",
+      "url": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "President Trump issued an executive order forbidding the use of 'artificial intelligence' in government contexts, pushing to rebrand it as 'super intelligence' because the word 'artificial' makes the technology sound fake. Major AI industry figures have gone along with the rebranding, but the article suggests the linguistic campaign faces an uphill battle.",
+      "opinion": "A surreal branding exercise that reveals more about the administration's relationship with the AI industry than about the technology itself. The industry's compliance signals its eagerness to stay in the administration's good graces.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2297777001.jpg?quality=90&strip=all&crop=0%2C10.728009376723%2C100%2C78.543981246555&w=1200",
+      "published_at": "2026-10-09T14:25:43+00:00",
+      "fetched_at": "2026-10-09T16:32:28.719909+00:00"
+    },
+    {
+      "id": 8399,
+      "source": "Guardian AI",
+      "title": "OpenAI tells investors 2026 revenue will be $50B, $20B below prior signals",
+      "url": "https://www.theguardian.com/technology/2026/oct/09/openai-forecast-revenue-gap",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI has informed investors that its projected 2026 revenue will be approximately $50 billion, $20 billion less than the $70 billion previously signaled. The revised forecast is based on sales data through September 2026, suggesting the rapid expansion investors anticipated for ChatGPT and related products may be decelerating.",
+      "opinion": "A significant reality check for AI valuations. A $50 billion revenue year is still enormous, but the $20 billion miss signals that even the leading AI company is finding it harder than expected to convert hype into sustained commercial growth.",
+      "image_url": "https://i.guim.co.uk/img/media/3433ad629edc6fc8336d5bdd159016ad273ae9f8/1094_240_6444_5155/master/6444.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=68124361613a687707a7f02acadc4699",
+      "published_at": "2026-10-09T08:06:09+00:00",
+      "fetched_at": "2026-10-09T12:29:29.42598+00:00"
+    },
+    {
+      "id": 8448,
+      "source": "HR Dive",
+      "title": "ACLU alleges Emotify hiring tool discriminates against autistic applicants",
+      "url": "https://www.hrdive.com/news/aclu-files-california-complaint-over-emotify-hiring-assessment-tool/832596/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The ACLU filed a complaint with the California Civil Rights Department alleging that Criteria Corp's Emotify emotional intelligence hiring assessment may disproportionately screen out applicants with autism, violating California's Fair Employment and Housing Act. The complaint claims Emotify closely parallels clinical diagnostic tools for autism and may constitute a prohibited pre-offer medical examination.",
+      "opinion": "A strategically important test case that could set precedent for how emotional intelligence assessments in hiring are regulated — and whether they constitute de facto medical screenings under disability law.",
+      "image_url": "https://imgproxy.divecdn.com/ZlqJPxAPlLSoHCOauwu5Y44CeXP_NemSqAjoZckGcjA/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjEyNzc1MTE5LmpwZw==.webp",
+      "published_at": "2026-10-09T15:02:00+00:00",
+      "fetched_at": "2026-10-09T16:32:44.161907+00:00"
+    },
+    {
+      "id": 8436,
+      "source": "Pew Research Center",
+      "title": "Skydance CEO vows CNN editorial independence after Paramount merger",
+      "url": "https://www.pewresearch.org/newsletter/the-briefing/the-briefing-2026-10-08/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Paramount-Skydance merger has been finalized, with CEO David Ellison vowing CNN will retain complete editorial independence under current leader Mark Thompson. Pew Research findings show about 75% of Americans find it unacceptable for news organization owners to kill stories conflicting with their political interests.",
+      "opinion": "Ellison's pledge follows a well-worn script of new media owners promising editorial independence — the real test will be whether that promise holds when coverage conflicts with Skydance's business interests.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2023/07/briefing_featured_image_2-1.png?w=1200&h=628&crop=1",
+      "published_at": "2026-10-08T20:30:54+00:00",
+      "fetched_at": "2026-10-09T12:29:53.875885+00:00"
+    },
+    {
+      "id": 8441,
+      "source": "TechCrunch AI",
+      "title": "TechCrunch Disrupt 2026 begins October 13 in San Francisco",
+      "url": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch Disrupt 2026 takes place October 13-15 at Moscone West in San Francisco, expecting 10,000 attendees. The event features 200+ sessions, 250+ speakers, Startup Battlefield 200 pitch competitions, and last-chance ticket savings before door prices.",
+      "opinion": "Standard event promotion with limited news value, though the event itself will likely generate newsworthy announcements from the AI startup ecosystem.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/TCD26_4Days-16X9-Dark.png?resize=1200,675",
+      "published_at": "2026-10-09T14:00:00+00:00",
+      "fetched_at": "2026-10-09T16:32:21.702874+00:00"
+    },
+    {
+      "id": 8444,
+      "source": "The Verge AI",
+      "title": "AI agent startup Instinct faces Big Tech competition from OpenAI Muse and Meta Dots",
+      "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Instinct, a buzzy AI agent startup with a text message-based interface for everyday tasks like booking appointments, now faces competition from OpenAI's Muse and Meta's Dots. Founder Noah Shinn argues the startup's singular focus on personal assistance differentiates it. The Verge's testing found Instinct holds its own against both competitors.",
+      "opinion": "A classic startup-vs-platform story playing out in real time. Instinct's text-first approach is clever but the moat is thin when Big Tech can replicate the interface and bring vastly more data and distribution.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DSC04328_processed_1.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+      "published_at": "2026-10-09T14:00:00+00:00",
+      "fetched_at": "2026-10-09T16:32:28.965468+00:00"
+    },
+    {
+      "id": 8400,
+      "source": "Guardian AI",
+      "title": "Palantir's Tom Watson warns against 'mob rule' on UK government contracts",
+      "url": "https://www.theguardian.com/technology/2026/oct/09/palantir-tom-watson-mob-rule-government-contracts",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Tom Watson, former Labour deputy leader and now Palantir senior vice-president, warned against 'mob rule' influencing UK government contract awards. He cautioned ministers could face trouble over government-Palantir relations and indicated the firm would work with a Reform UK government on immigration crackdowns.",
+      "opinion": "Watson's willingness to work with Reform UK on immigration signals Palantir's political flexibility and appetite for controversial government work, which will likely intensify scrutiny from civil liberties groups.",
+      "image_url": "https://i.guim.co.uk/img/media/feaa93bb4c00e44a655ff9ed1d226f783dc7d75c/0_0_2750_2200/master/2750.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ef33074b1b3e59672d9524790d1e779f",
+      "published_at": "2026-10-09T07:20:33+00:00",
+      "fetched_at": "2026-10-09T12:29:29.645467+00:00"
+    },
+    {
+      "id": 8432,
+      "source": "HR Dive",
+      "title": "HR Dive roundup: AI gender pay gap, manager development boosts retention",
+      "url": "https://www.hrdive.com/news/manager-led-development-can-aid-retention/832519/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Key figures from the week: AI agents with female appearances were paid 10% less than male-presenting ones for identical work; the federal contractor minimum wage is rising to $14.05/hour; 71% of Americans believe diverse workforces are more profitable; 84% of employees say they're very likely to stay when managers invest in their development; and a Miami company agreed to pay $1.3 million to settle EEOC hiring bias allegations.",
+      "opinion": "The AI gender pay gap finding is the standout — it suggests human biases are being replicated and possibly amplified in AI-mediated labor markets, adding empirical weight to concerns about algorithmic discrimination.",
+      "image_url": "https://imgproxy.divecdn.com/L-PXcbOxtFcaD5mUNA4If3i9AcbmCIvrf6VExSr_CDs/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMjkwNDkyMjc2LmpwZw==.webp",
+      "published_at": "2026-10-08T20:46:00+00:00",
+      "fetched_at": "2026-10-09T12:29:51.338419+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 8408,
+          "source": "The Rundown AI",
+          "title": "Fired OpenAI safety researchers publish open letter; OpenAI doubles down",
+          "url": "https://therundownai.beehiiv.com/p/fired-openai-safety-researchers-hit-back",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Three OpenAI safety researchers — Tomek Korbak, Jasmine Wang, and Mikita Balesni — fired for allegedly mishandling sensitive information published an open letter denying the claims and warning the terminations are chilling safety culture. They say they acted within their job mandates. OpenAI doubled down, claiming a 'significant breach of trust' and saying its internal investigation found breaches beyond what the researchers described, without providing details. The researchers warned the firings could give OpenAI cover to avoid embedding outside auditors, while Anthropic has already onboarded its first external evaluator.",
+          "opinion": "A significant flashpoint in the ongoing tension between AI safety culture and corporate control at OpenAI. The lack of specifics from OpenAI undermines its position, while the researchers' public stand could embolden other whistleblowers — or further chill internal dissent depending on how the public reacts. Where coverage differs: The Rundown AI reports the researchers warned firings could give OpenAI cover to avoid embedding outside auditors; The Verge focuses on OpenAI claiming a 'significant breach of trust' and breaches beyond what the researchers described",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/74d5cf96-3a62-4342-ae9c-cf076be41edb/0b82e823-cc82-4263-87fa-7005c6878890.png?t=1791518397",
+          "published_at": "2026-10-09T09:00:00+00:00",
+          "fetched_at": "2026-10-09T12:29:33.598051+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 8408,
+                "source": "The Rundown AI",
+                "title": "Fired OpenAI safety researchers hit back",
+                "url": "https://therundownai.beehiiv.com/p/fired-openai-safety-researchers-hit-back"
+              },
+              {
+                "id": 8409,
+                "source": "The Verge AI",
+                "title": "OpenAI doubles down on decision to fire three AI safety researchers",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "The Rundown AI reports the researchers warned firings could give OpenAI cover to avoid embedding outside auditors; The Verge focuses on OpenAI claiming a 'significant breach of trust' and breaches beyond what the researchers described"
+            ],
+            "is_update": false,
+            "reason": "Both cover the same event: three fired OpenAI safety researchers (Korbak, Wang, Balesni) publishing an open letter and OpenAI's response doubling down on the firings."
+          }
+        },
+        {
+          "id": 8398,
+          "source": "Guardian AI",
+          "title": "Robert Reich argues liability lawsuits can curb AI and climate risks",
+          "url": "https://www.theguardian.com/commentisfree/2026/oct/09/ai-climate-change-liability-lawsuits",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Robert Reich argues that liability lawsuits could hold AI companies and fossil fuel industries accountable for harms, drawing parallels to past legal actions against tobacco and pharmaceutical companies. He suggests litigation may compel investors and corporations to take risks more seriously where government regulation has fallen short.",
+          "opinion": "An advocacy piece that frames legal liability as a practical lever in the absence of regulation — familiar territory for Reich, but the AI angle gives it fresh relevance as AI harms become more concrete.",
+          "image_url": "https://i.guim.co.uk/img/media/bab2e6d22a44b9888f42b090d83347f017a75df1/688_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e5d0fe06c3eb0c4c3aca80e1ee0d3c3c",
+          "published_at": "2026-10-09T11:00:26+00:00",
+          "fetched_at": "2026-10-09T12:29:29.189611+00:00"
+        },
+        {
+          "id": 8447,
+          "source": "HR Dive",
+          "title": "DHS proposes up to $100K in fees for international student work program",
+          "url": "https://www.hrdive.com/news/dhs-proposes-70k-fee-for-initial-optional-practical-training-participation/832499/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The U.S. Department of Homeland Security proposed requiring colleges to pay up to $100,000 in fees ($70,000 initial plus $30,000 for extensions) for each international student seeking Optional Practical Training post-graduation work authorization. DHS says the change targets fraud and abuse, but critics warn it could drive international students to other countries and harm U.S. innovation. About 294,000 students participated in OPT in 2024-25.",
+          "opinion": "A potentially transformative policy that could reshape international enrollment in U.S. higher education. The fee burden on colleges could effectively end OPT for many institutions unable or unwilling to absorb the cost.",
+          "image_url": "https://imgproxy.divecdn.com/SbswBb_CKjg3WvKR6R7ci1xSxOzjpPY7UfdgxDBoUY0/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjAyNDYwNzE0X3lPOXJJblouanBn.webp",
+          "published_at": "2026-10-09T15:03:00+00:00",
+          "fetched_at": "2026-10-09T16:32:43.930021+00:00"
+        },
+        {
+          "id": 8419,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Tech Review warns AI safety refusals are fundamentally unreliable",
+          "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Arthur Holland Michel argues in MIT Technology Review that AI refusal mechanisms are fundamentally unreliable and dangerous in two directions: determined bad actors can break through safety guardrails, while the underlying dangerous knowledge remains embedded in models. The article compares refusal to 'fitting every car with a machine gun and hiding the trigger somewhere under the hood.'",
+          "opinion": "A thought-provoking critique that challenges the industry's reliance on refusal as a primary safety mechanism, raising uncomfortable questions about whether current approaches are security theater.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/0924OP.jpg?resize=1200,600",
+          "published_at": "2026-10-09T09:00:00+00:00",
+          "fetched_at": "2026-10-09T12:29:38.236209+00:00"
+        },
+        {
+          "id": 8421,
+          "source": "OpenAI",
+          "title": "Sophos cuts threat investigation time 96% using OpenAI AI agents",
+          "url": "https://openai.com/index/sophos",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Sophos partnered with OpenAI through its Daybreak program to integrate AI agents into its Managed Detection and Response service, reducing average case investigation time from 38 minutes to 89 seconds. Now 52% of MDR cases are resolved end-to-end by AI, with human oversight maintained through tiered customer operating modes.",
+          "opinion": "A compelling enterprise AI success story with concrete metrics, though the 96% reduction figure invites scrutiny about whether speed gains come at the cost of investigation thoroughness.",
+          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/4pg31JOD6Z3cO31LCR6GYq/8c1cedfd2e85c6dd80d2ea8c5ea0c9a1/sophos-social.png?w=1600&h=900&fit=fill",
+          "published_at": "2026-10-09T07:00:00+00:00",
+          "fetched_at": "2026-10-09T12:29:39.606322+00:00"
+        },
+        {
+          "id": 8438,
+          "source": "Partnership on AI",
+          "title": "Partnership on AI adds eight mental health organizations ahead of World Mental Health Day",
+          "url": "https://partnershiponai.org/partnership-on-ai-welcomes-eight-new-partners-advancing-mental-health-and-well-being/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Partnership on AI announced eight new partner organizations focused on mental health, including the American Foundation for Suicide Prevention, Crisis Text Line, and The Trevor Project. The group is launching an AI and Psychological Well-being Working Group to develop guidance on how AI chatbots should respond when users may be at risk of suicide or self-harm.",
+          "opinion": "A meaningful step toward establishing norms for AI chatbot responses to mental health crises — an area where the gap between current practice and responsible practice is wide and the stakes are high.",
+          "image_url": "https://partnershiponai.org/wp-content/uploads/2026/10/new-partners-oct26-1800x832-1.webp",
+          "published_at": "2026-10-08T18:24:46+00:00",
+          "fetched_at": "2026-10-09T12:29:55.678833+00:00"
+        },
+        {
+          "id": 8449,
+          "source": "Pew Research Center",
+          "title": "Pew survey: most countries say social media good for democracy, but concern is growing",
+          "url": "https://www.pewresearch.org/newsletter/global/global-september-2026-newsletter/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew Research Center global survey finds majorities in most countries say social media has been more good than bad for democracy, though the share seeing it as harmful is growing in wealthier nations. In 34 of 37 countries, people believe AI will lead to fewer jobs and greater inequality, and only 13% of adults across 37 countries are more excited than concerned about AI.",
+          "opinion": "A sobering snapshot of global AI sentiment that undercuts industry optimism narratives — the gap between how AI companies talk about their products and how the global public perceives them is widening.",
+          "image_url": "",
+          "published_at": "2026-10-09T15:17:01+00:00",
+          "fetched_at": "2026-10-09T16:32:46.234502+00:00"
+        },
+        {
+          "id": 8440,
+          "source": "TechCrunch AI",
+          "title": "a16z report: consumer AI still early, needs to move beyond subscriptions",
+          "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Andreessen Horowitz partner Olivia Moore released a report on the top 100 consumer AI apps, finding that while ChatGPT dominates, only 2.2% of U.S. households pay for AI. She argues the industry needs to embrace ad-supported models and cheaper/open-source models, and that consumer AI is still in its early days with many categories untouched.",
+          "opinion": "A useful reality check on consumer AI monetization — the 2.2% household penetration figure is a stark reminder that the AI boom remains largely an enterprise and developer story.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/Olivia-Moore-Headshot-2026.jpg?w=896",
+          "published_at": "2026-10-09T15:43:33+00:00",
+          "fetched_at": "2026-10-09T16:32:21.40391+00:00"
+        },
+        {
+          "id": 8443,
+          "source": "The Verge AI",
+          "title": "Trump orders government to stop using term 'artificial intelligence'",
+          "url": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "President Trump issued an executive order forbidding the use of 'artificial intelligence' in government contexts, pushing to rebrand it as 'super intelligence' because the word 'artificial' makes the technology sound fake. Major AI industry figures have gone along with the rebranding, but the article suggests the linguistic campaign faces an uphill battle.",
+          "opinion": "A surreal branding exercise that reveals more about the administration's relationship with the AI industry than about the technology itself. The industry's compliance signals its eagerness to stay in the administration's good graces.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2297777001.jpg?quality=90&strip=all&crop=0%2C10.728009376723%2C100%2C78.543981246555&w=1200",
+          "published_at": "2026-10-09T14:25:43+00:00",
+          "fetched_at": "2026-10-09T16:32:28.719909+00:00"
+        },
+        {
+          "id": 8399,
+          "source": "Guardian AI",
+          "title": "OpenAI tells investors 2026 revenue will be $50B, $20B below prior signals",
+          "url": "https://www.theguardian.com/technology/2026/oct/09/openai-forecast-revenue-gap",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI has informed investors that its projected 2026 revenue will be approximately $50 billion, $20 billion less than the $70 billion previously signaled. The revised forecast is based on sales data through September 2026, suggesting the rapid expansion investors anticipated for ChatGPT and related products may be decelerating.",
+          "opinion": "A significant reality check for AI valuations. A $50 billion revenue year is still enormous, but the $20 billion miss signals that even the leading AI company is finding it harder than expected to convert hype into sustained commercial growth.",
+          "image_url": "https://i.guim.co.uk/img/media/3433ad629edc6fc8336d5bdd159016ad273ae9f8/1094_240_6444_5155/master/6444.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=68124361613a687707a7f02acadc4699",
+          "published_at": "2026-10-09T08:06:09+00:00",
+          "fetched_at": "2026-10-09T12:29:29.42598+00:00"
+        },
+        {
+          "id": 8448,
+          "source": "HR Dive",
+          "title": "ACLU alleges Emotify hiring tool discriminates against autistic applicants",
+          "url": "https://www.hrdive.com/news/aclu-files-california-complaint-over-emotify-hiring-assessment-tool/832596/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The ACLU filed a complaint with the California Civil Rights Department alleging that Criteria Corp's Emotify emotional intelligence hiring assessment may disproportionately screen out applicants with autism, violating California's Fair Employment and Housing Act. The complaint claims Emotify closely parallels clinical diagnostic tools for autism and may constitute a prohibited pre-offer medical examination.",
+          "opinion": "A strategically important test case that could set precedent for how emotional intelligence assessments in hiring are regulated — and whether they constitute de facto medical screenings under disability law.",
+          "image_url": "https://imgproxy.divecdn.com/ZlqJPxAPlLSoHCOauwu5Y44CeXP_NemSqAjoZckGcjA/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjEyNzc1MTE5LmpwZw==.webp",
+          "published_at": "2026-10-09T15:02:00+00:00",
+          "fetched_at": "2026-10-09T16:32:44.161907+00:00"
+        },
+        {
+          "id": 8436,
+          "source": "Pew Research Center",
+          "title": "Skydance CEO vows CNN editorial independence after Paramount merger",
+          "url": "https://www.pewresearch.org/newsletter/the-briefing/the-briefing-2026-10-08/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Paramount-Skydance merger has been finalized, with CEO David Ellison vowing CNN will retain complete editorial independence under current leader Mark Thompson. Pew Research findings show about 75% of Americans find it unacceptable for news organization owners to kill stories conflicting with their political interests.",
+          "opinion": "Ellison's pledge follows a well-worn script of new media owners promising editorial independence — the real test will be whether that promise holds when coverage conflicts with Skydance's business interests.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2023/07/briefing_featured_image_2-1.png?w=1200&h=628&crop=1",
+          "published_at": "2026-10-08T20:30:54+00:00",
+          "fetched_at": "2026-10-09T12:29:53.875885+00:00"
+        },
+        {
+          "id": 8441,
+          "source": "TechCrunch AI",
+          "title": "TechCrunch Disrupt 2026 begins October 13 in San Francisco",
+          "url": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch Disrupt 2026 takes place October 13-15 at Moscone West in San Francisco, expecting 10,000 attendees. The event features 200+ sessions, 250+ speakers, Startup Battlefield 200 pitch competitions, and last-chance ticket savings before door prices.",
+          "opinion": "Standard event promotion with limited news value, though the event itself will likely generate newsworthy announcements from the AI startup ecosystem.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/02/TCD26_4Days-16X9-Dark.png?resize=1200,675",
+          "published_at": "2026-10-09T14:00:00+00:00",
+          "fetched_at": "2026-10-09T16:32:21.702874+00:00"
+        },
+        {
+          "id": 8444,
+          "source": "The Verge AI",
+          "title": "AI agent startup Instinct faces Big Tech competition from OpenAI Muse and Meta Dots",
+          "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Instinct, a buzzy AI agent startup with a text message-based interface for everyday tasks like booking appointments, now faces competition from OpenAI's Muse and Meta's Dots. Founder Noah Shinn argues the startup's singular focus on personal assistance differentiates it. The Verge's testing found Instinct holds its own against both competitors.",
+          "opinion": "A classic startup-vs-platform story playing out in real time. Instinct's text-first approach is clever but the moat is thin when Big Tech can replicate the interface and bring vastly more data and distribution.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DSC04328_processed_1.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+          "published_at": "2026-10-09T14:00:00+00:00",
+          "fetched_at": "2026-10-09T16:32:28.965468+00:00"
+        },
+        {
+          "id": 8400,
+          "source": "Guardian AI",
+          "title": "Palantir's Tom Watson warns against 'mob rule' on UK government contracts",
+          "url": "https://www.theguardian.com/technology/2026/oct/09/palantir-tom-watson-mob-rule-government-contracts",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Tom Watson, former Labour deputy leader and now Palantir senior vice-president, warned against 'mob rule' influencing UK government contract awards. He cautioned ministers could face trouble over government-Palantir relations and indicated the firm would work with a Reform UK government on immigration crackdowns.",
+          "opinion": "Watson's willingness to work with Reform UK on immigration signals Palantir's political flexibility and appetite for controversial government work, which will likely intensify scrutiny from civil liberties groups.",
+          "image_url": "https://i.guim.co.uk/img/media/feaa93bb4c00e44a655ff9ed1d226f783dc7d75c/0_0_2750_2200/master/2750.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ef33074b1b3e59672d9524790d1e779f",
+          "published_at": "2026-10-09T07:20:33+00:00",
+          "fetched_at": "2026-10-09T12:29:29.645467+00:00"
+        },
+        {
+          "id": 8432,
+          "source": "HR Dive",
+          "title": "HR Dive roundup: AI gender pay gap, manager development boosts retention",
+          "url": "https://www.hrdive.com/news/manager-led-development-can-aid-retention/832519/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Key figures from the week: AI agents with female appearances were paid 10% less than male-presenting ones for identical work; the federal contractor minimum wage is rising to $14.05/hour; 71% of Americans believe diverse workforces are more profitable; 84% of employees say they're very likely to stay when managers invest in their development; and a Miami company agreed to pay $1.3 million to settle EEOC hiring bias allegations.",
+          "opinion": "The AI gender pay gap finding is the standout — it suggests human biases are being replicated and possibly amplified in AI-mediated labor markets, adding empirical weight to concerns about algorithmic discrimination.",
+          "image_url": "https://imgproxy.divecdn.com/L-PXcbOxtFcaD5mUNA4If3i9AcbmCIvrf6VExSr_CDs/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMjkwNDkyMjc2LmpwZw==.webp",
+          "published_at": "2026-10-08T20:46:00+00:00",
+          "fetched_at": "2026-10-09T12:29:51.338419+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/hnshah/status/2108332864030818480",
+      "author": "hnshah",
+      "headline": "Hiten Shah says Claude's __win/loss skill__ stopped it from fabricating deal insights and asked for evidence instead — the right behavior.",
+      "tweet_id": "3f41eba9-b6bc-8119-b3a6-ea1262364b8b",
+      "source_text": "AI can tell you why you lost a deal even when it has no idea.\n\nI asked Claude why Linear is losing deals to Jira.\n\nAll it had was public web research. There were no buyer interviews, call notes, or deal records behind the answer.\n\nClaude still gave me reasons.\n\nWith the win/loss skill, it treated those reasons as things to investigate and told me what evidence we’d need before making the call.\n\nThat’s the kind of answer I want before a team makes a decision.\n\nTomorrow at 10 AM PT I’m opening up three tests I ran like this and showing the exact outputs.\n\nhttps://t.co/whx2BUp8Af",
+      "created_time": "2026-10-09T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/hnshah/status/2108332864030818480",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/twid/status/2108298337938223129",
+      "author": "twid",
+      "headline": "@twid argues companies aren't leaving Macs over Apple Intelligence — the real blocker is __Private Cloud Compute__ and Apple's missing HIPAA BAA.",
+      "tweet_id": "3f41eba9-b6bc-8165-aaa2-d8a60bfbc0af",
+      "source_text": "Agree with this @appleinsider article: companies aren't quitting Macs because Apple Intelligence ships installed by default.\n\n1. Many large companies have already audited and approved it.\n\n2. The rest have enough control through MDM and third-party tools to shut off what they don't want. Apple has no single off switch, but the granular controls satisfy most corporate needs.\n\n3. The bigger issue isn't on-device AI. It's Private Cloud Compute. Plenty of large companies want none of their data going to an unmanaged cloud they don't have a contract with, however secure it may be. Apple also doesn't offer what many companies expect from an AI cloud, like a HIPAA BAA or FedRAMP authorization. You can't shut off PCC on its own, so if you want none of your data going to PCC, you have to shut off every feature that uses it. Apple doesn't document which features those are, but there's plenty of unofficial documentation out there. So companies that haven't approved it turn off Apple Intelligence features entirely.\n\nMost of my CIO-level conversations at Apple were about AI spend, stopping employees from shipping AI slop, and having observability into what AI was being used for. Many companies also have a public partnership with Microsoft, Anthropic or OpenAI and they want *all* AI to go through that partner (and through IT), not Apple.\n\nhttps://t.co/mUBId0imFi",
+      "created_time": "2026-10-09T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/twid/status/2108298337938223129",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mentalium_/status/2108229863580610992",
+      "author": "mentalium_",
+      "headline": "Someone claims this __10-course free ML curriculum__ is what Anthropic pays $650,000 a year to teach — 3Blue1Brown to Karpathy to Hugging Face agents.",
+      "tweet_id": "3f41eba9-b6bc-818a-a930-cf55c3817781",
+      "source_text": "Anthropic pays $650,000 a year for this exact stack.\n\nTen courses. All free. This is the interview, written out.\n\nmath → the network by hand → language → the model from scratch → code-first deep learning → fine-tune → agents → tools → evals → the system you ship.\n\n01 Math, visual. 3Blue1Brown. Essence of Linear Algebra\n▸ https://t.co/5efA8X3QZi\n\n02 The network, by hand. Andrej Karpathy. Zero to Hero\n▸ https://t.co/RpQHvjFMIC\n\n03 Language. Stanford CS224n. Chris Manning\n▸ https://t.co/qXXQhFpTmv\n\n04 The model, from scratch. Stanford CS336.\n▸ https://t.co/RSxur9JGfH\n\n05 Code first. fast. ai. Practical Deep Learning for Coders\n▸ https://t.co/GtMUms12p2\n\n06 Fine-tune. Hugging Face LLM Course\n▸ https://t.co/swEyJG7EGY\n\n07 Agents. Hugging Face Agents Course\n▸ https://t.co/gfWkr10k7k\n\n08 Tools. Microsoft. AI Agents for Beginners\n▸ https://t.co/udhcdgisMn\n\n09 Evals. Anthropic courses. Prompting, tool use, evaluations\n▸ https://t.co/hNbt5cIrvq\n\n10 Ship it. Full Stack Deep Learning. LLM Bootcamp\n▸ https://t.co/PdfpR7wOb8\n\nsave this ⭣",
+      "created_time": "2026-10-09T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/mentalium_/status/2108229863580610992",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/aiedge_/status/2108135432823452049",
+      "author": "aiedge_",
+      "headline": "Garry Tan open-sourced his entire __Claude Code setup__ on GitHub — YC's CEO showing his actual AI development workflow.",
+      "tweet_id": "3f41eba9-b6bc-813c-9c6b-fc9ca8620cd7",
+      "source_text": "Most people don't know this, but Garry Tan, YC's CEO, open-sourced his entire Claude Code setup.\n\nGenuinely one of the best GitHub repos ever.\n\n→ https://t.co/CQ4vRPnKrc https://t.co/dI5ooqMH2q",
+      "created_time": "2026-10-09T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/aiedge_/status/2108135432823452049",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/kaijucode/status/2108151256766197802",
+      "author": "kaijucode",
+      "headline": "Claude Code creator Boris Cherny shared his real daily setup: __plan mode first, CLAUDE.md that learns from every mistake__, and a browser check before anything counts as done.",
+      "tweet_id": "3f41eba9-b6bc-811f-9f40-ffd51a91d63a",
+      "source_text": "Claude Code's creator, Boris Cherny, shared the setup he actually uses every day, and one tip in it matters more than the rest\n\nthis is f*cking insane...\n\nI built his rules into an Opus 5.5 website prompt: plan mode first, a CLAUDE.md that learns from every mistake, and a browser check before anything counts as done.\n\nsend it to Claude, and thank me later. Then read the full course with examples below.👇",
+      "created_time": "2026-10-09T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/kaijucode/status/2108151256766197802",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/clairevo/status/2108335408790765937",
+      "author": "clairevo",
+      "headline": "Claire Vo's free __How I AI ChatGPT plugin__ lets you search episodes, discover workflows, and download skills right from the chat interface.",
+      "tweet_id": "3f41eba9-b6bc-81f2-bcf1-da6c9ca5f02a",
+      "source_text": "The official How I AI @ChatGPT plugin is now available!\n\nInstall it to:\n- search episodes\n- discover helpful workflows\n- download skills + implement in your system\n\nTotally free. Enjoy!\n https://t.co/xU7HWBUvHA https://t.co/JGBUHoYDJF",
+      "created_time": "2026-10-09T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/clairevo/status/2108335408790765937",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/irabukht/status/2107906491869229532",
+      "author": "irabukht",
+      "headline": "Ryze AI's MCP connects your agent to __100+ marketing tools__ — Meta ads, PostHog, DataForSEO — in a single plug-in for Claude, ChatGPT, or Grok.",
+      "tweet_id": "3f41eba9-b6bc-8105-8320-f059981abbbf",
+      "source_text": "top 5 resources to build a marketing agent that outmarkets the rest\n\n1) https://t.co/xfTXHXcjpF: the best courses in the industry on agentic marketing\n\n2) ryze ai mcp: one connection that gives your agent 100+ marketing tools (meta ads, posthog, dataforseo) and the skills to use them\n-> plug it into claude, chatgpt or grok and the agent runs your ads, seo and analytics from there\ntake it here: https://t.co/8opIDDNbM8\n\n3) follow @antinertia for the playbooks behind taking startups from $0 to $100M\n\n4) follow @joshkim to see how marketers at spacex use ai for growth\n\n5) corey haines' marketing skills, 53k stars on github: https://t.co/ZpoNI6mHwK\n-> one command in claude code and your agent knows cro, copywriting, seo and analytics",
+      "created_time": "2026-10-09T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/irabukht/status/2107906491869229532",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMorlex/status/2108171726412464173",
+      "author": "0xMorlex",
+      "headline": "With Claude Opus 5.5 in the stack, a Grok Bot can run __an entire AI team__ that researches, writes code, uses tools, and delivers finished work.",
+      "tweet_id": "3f31eba9-b6bc-811c-89c8-fb153d1d9437",
+      "source_text": "Grok Bot just got a serious brain upgrade\n\nWith Claude Opus 5.5 entering the stack, one Bot could run an entire AI team that researches, writes code, uses tools, verifies results, and delivers finished work\n\nHere's how to build it in 10 steps: https://t.co/SysbtXuqoJ",
+      "created_time": "2026-10-08T22:37:00.000Z",
+      "canonical_url": "https://twitter.com/0xMorlex/status/2108171726412464173",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/EmDashCMS/status/2107832197516304505",
+      "author": "EmDashCMS",
+      "headline": "__EmDash 1.2__ arrives five days after 1.1: redesigned editor, video blocks, numbered pages, domain moves, and one-command upgrades.",
+      "tweet_id": "3f31eba9-b6bc-81cb-9eed-de29dad3a150",
+      "source_text": "Five days after 1.1, EmDash 1.2 is here! \n\nA redesigned editor, video blocks, numbered pages, domain moves and one-command upgrades.\n\nHere's what's new. https://t.co/WbK0LVOTjp",
+      "created_time": "2026-10-08T21:17:00.000Z",
+      "canonical_url": "https://twitter.com/EmDashCMS/status/2107832197516304505",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2108284696698192144",
+      "author": "noahkagan",
+      "headline": "Noah Kagan's prompt scores X posts against __X's open-source ranking weights__ — where copying a link counts 40x more than a like.",
+      "tweet_id": "3f31eba9-b6bc-8192-a811-f1c9101cdb88",
+      "source_text": "Steal this prompt. I run every X post through it now.\n\nIt uses X's open-source ranking, where copying your link is weighted 40x a like.\n\n\"Score my X post 1 to 10 using X's ranking weights: copy link 20, reply 5, quote 5, DM share 5, follow 4, repost 1, like 0.5. Tell me which actions it will earn. Then rewrite it to earn a share or a reply. My post: [paste]\"\n\nIt took my Marc Lou post from 6/10 to 9.5/10 (27K views).\n\nThe weights:\nSomeone copies your link: 20\nReply: 5 (+15 if you follow each other)\nQuote: 5\nDM'd to a friend: 5\nNew follow: 4\nRepost: 1\nLike: 0.5\nProfile click: 0\nBookmark: not in the list",
+      "created_time": "2026-10-08T20:07:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2108284696698192144",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/tessak22/status/2108225782678167851",
+      "author": "tessak22",
+      "headline": "Tessa Kriesel built __Tabstack's entire marketing operation__ as an agentic system — one source of truth in Quiver, every context change versioned and approved.",
+      "tweet_id": "3f31eba9-b6bc-812a-834b-f949dc117588",
+      "source_text": "My entire marketing operation at Tabstack is agentic, and I built it like an engineer. One source of truth in Quiver. Nothing hard-coded. Every context change versioned and approved. Agents do the work and I make the calls. Here's how it runs.\nhttps://t.co/9MaVOu8HbJ",
+      "created_time": "2026-10-08T20:07:00.000Z",
+      "canonical_url": "https://twitter.com/tessak22/status/2108225782678167851",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/LunarResearcher/status/2108165665060180454",
+      "author": "LunarResearcher",
+      "headline": "Claude Opus 5.5 can turn __agent corrections into reusable skills and memory__ so your AI system improves with each run instead of starting from scratch.",
+      "tweet_id": "3f31eba9-b6bc-81af-b9b1-e0fc393ff0f8",
+      "source_text": "Opus 5.5 could turn every AI agent run into an improvement for the next one.\n\nIt turns corrections into reusable skills, tests, rules and memory, so your AI system gets smarter instead of starting from scratch.\n\nIn this article, I show you how. https://t.co/7CEYQMKHsn",
+      "created_time": "2026-10-08T20:07:00.000Z",
+      "canonical_url": "https://twitter.com/LunarResearcher/status/2108165665060180454",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/MacRumors/status/2108257516811694561",
+      "author": "MacRumors",
+      "headline": "Tim Cook explains why he __stepped down as Apple CEO__ before the iPhone Duo launch.",
+      "tweet_id": "3f31eba9-b6bc-81a0-8ee3-f69a1729c630",
+      "source_text": "Tim Cook Explains Why He Stepped Down as Apple CEO Before iPhone Duo Launch https://t.co/hmm7WqNGpL https://t.co/dDEJEQlabC",
+      "created_time": "2026-10-08T19:57:00.000Z",
+      "canonical_url": "https://twitter.com/MacRumors/status/2108257516811694561",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2108228391404966005",
+      "author": "ClaudeDevs",
+      "headline": "Anthropic now bundles __monthly API credits on Max and Team plans__ — $100 on Max 5x, $200 on Max 20x, and up to $500 pooled for teams.",
+      "tweet_id": "3f31eba9-b6bc-8149-adcd-c3fa9804db07",
+      "source_text": "Monthly API credits are now available on Max and Team plans: $100 on Max 5x, $200 on Max 20x, and up to $500 pooled on Team. Use them on any Claude model.\n\nHow it works and full terms: https://t.co/qmWL6xV8GT https://t.co/sSgZFQ7aEH",
+      "created_time": "2026-10-08T19:57:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2108228391404966005",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Cloudflare/status/2108196156824015026",
+      "author": "Cloudflare",
+      "headline": "Cloudflare redesigned __Radar__ to make real-time global traffic and outage data accessible to journalists and non-technical researchers.",
+      "tweet_id": "3f31eba9-b6bc-818f-a2ed-e37cca7eaacd",
+      "source_text": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. https://t.co/W43TgRF6hQ",
+      "created_time": "2026-10-08T19:57:00.000Z",
+      "canonical_url": "https://twitter.com/Cloudflare/status/2108196156824015026",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mattpocockuk/status/2108273349847810479",
+      "author": "mattpocockuk",
+      "headline": "Matt Pocock's users are stuck on __v1.2 of his Claude Code skills plugin__ while he waits on Anthropic to manually refresh the cache.",
+      "tweet_id": "3f41eba9-b6bc-81d3-b34a-cf5d13cd40e7",
+      "source_text": "Can I get someone at Anthropic to bump their cached version of mattpocock/skills?\n\nSeems like someone needs to manually update my plugin version. All my users are stuck on v1.2.\n\nAlso, maybe we can make this process more automatic while we're at it\n\nhttps://t.co/Sj9RuJFy6d",
+      "created_time": "2026-10-09T03:22:00.000Z",
+      "canonical_url": "https://twitter.com/mattpocockuk/status/2108273349847810479",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/CFchangelog/status/2108256287586910432",
+      "author": "CFchangelog",
+      "headline": "__Cloudflare One Client for macOS__ goes GA at v2026.8.2100.0 with split tunnel reconnect fixes and lower memory usage.",
+      "tweet_id": "3f41eba9-b6bc-81e5-a9de-c4049ad5024f",
+      "source_text": "Cloudflare One Client for macOS is GA at version 2026.8.2100.0. Split tunnel traffic is no longer blocked during reconnects and memory usage is lower.\n\nhttps://t.co/rUgG5LHXK2",
+      "created_time": "2026-10-09T03:22:00.000Z",
+      "canonical_url": "https://twitter.com/CFchangelog/status/2108256287586910432",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/sachinrekhi/status/2108211088533893350",
+      "author": "sachinrekhi",
+      "headline": "Sachin Rekhi makes the case that AI-forward product teams are converting designers and researchers into __agent managers__ who build fleets instead of doing the work.",
+      "tweet_id": "3f41eba9-b6bc-8198-b202-fd2957e2d9dc",
+      "source_text": "The most AI-pilled product teams are converting their best designers, researchers, and data analysts to agent managers.\n\nAn agent manager no longer perform's the specialty's function. Instead, they build and maintain a fleet of function-specific agents that automate their job away so anyone on the product team can leverage them to significantly accelerate velocity.\n\nDESIGNERS\nAs agent managers, designers are building and iterating on their design system and making it machine-legible, enabling anyone on the team to now prototype consistently and on brand. They also often own the prototyping skill definition as well as the base templates that are offered for prototyping.\n\nRESEARCHERS\nAs agent managers, researchers are building a robust set of agents to automate drafting interview guides, synthesizing customer surveys & interviews, scheduling customer interviews, and so much more. They are also often building feedback systems of records that aggregate all customer feedback across channels so that it can easily be queried for insights. This removes the researcher from being the bottleneck to scaling research broadly across the team.\n\nDATA ANALYSTS\nAs agent managers, they are building and maintaining the data analyst agent that enables anyone to self serve answers to their data questions through natural language prompts. To do so with high accuracy, they are providing golden examples, adding a semantic layer to explain each table and it's relationships, and doing ongoing error analysis to improve accuracy. Once implemented, anyone can get their data questions answered in minutes.\n\nHave you converted anyone on your team to an agent manager?",
+      "created_time": "2026-10-09T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/sachinrekhi/status/2108211088533893350",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50022739",
+      "author": "ymarkov",
+      "item_id": "hn:50022739",
+      "headline": "An experiment gave an AI a phone and __called 1,000 San Francisco businesses__ with the same question to see what's actually discoverable.",
+      "subreddit": null,
+      "source_text": "We gave an AI a phone and asked 1000 SF businesses a question",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:18:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=50022739",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/loopai-hq/pulsar",
+      "author": "darkbatman",
+      "item_id": "hn:50022690",
+      "headline": "Pulsar runs __Qwen3 27B at 148 tokens per second__ for code generation on an M5 Max, making local inference a serious alternative to cloud APIs.",
+      "subreddit": null,
+      "source_text": "Show HN: Pulsar – Qwen3.8-27B at 148 tok/s writing code on M5 Max",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:15:43+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/loopai-hq/pulsar",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/",
+      "author": "Brajeshwar",
+      "item_id": "hn:50022493",
+      "headline": "Security researchers earned __$1.26M for 98 zero-days__ at Pwn2Own Ireland, hitting NAS devices, routers, and cameras.",
+      "subreddit": null,
+      "source_text": "Hackers get $1,262,000 for 98 zero-days at Pwn2Own Ireland",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:03:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/PeterShershov/vite-svgee-plugin",
+      "author": "pistolpete_",
+      "item_id": "hn:50022450",
+      "headline": "Svgee imports SVGs as __React components in Vite 16× faster than SVGR__, with zero configuration.",
+      "subreddit": null,
+      "source_text": "How HN: Svgee – Import SVGs as React components in Vite, 16x faster than SVGR",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:00:56+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/PeterShershov/vite-svgee-plugin",
+      "learning_score": 3
+    },
+    {
+      "url": "https://cadent.studio/",
+      "author": "eddyariki",
+      "item_id": "hn:50022896",
+      "headline": "Cadent Studio built a hotel where __AI agents can book rooms directly__, no MCP middleware required.",
+      "subreddit": null,
+      "source_text": "Show HN: This hotel is hella AI-ready. Book directly from AI without MCPs",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:27:25+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cadent.studio",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/attilatorda/open-codenames",
+      "author": "AttilaT",
+      "item_id": "hn:50022892",
+      "headline": "Open Codenames turns the classic word game into an __LLM benchmark for social reasoning__ that standard coding evals can't capture.",
+      "subreddit": null,
+      "source_text": "Open Codenames: a new way to benchmark LLMs",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:27:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/attilatorda/open-codenames",
+      "learning_score": 2
+    },
+    {
+      "url": "https://tatiyants.com/fabrika/",
+      "author": "atatiyan",
+      "item_id": "hn:50022852",
+      "headline": "__Fabrika__ is an opinionated software factory — pick your stack and get enforced conventions, scaffolding, and architecture from day one.",
+      "subreddit": null,
+      "source_text": "Show HN: Fabrika, Opinionated Software Factory",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:25:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tatiyants.com/fabrika",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/vercel-labs/eve-contentful-agent-template",
+      "author": "flashbrew",
+      "item_id": "hn:50022834",
+      "headline": "Vercel Labs released an __AI agent template for Contentful__ to wire structured content management into agent workflows.",
+      "subreddit": null,
+      "source_text": "Contentful Agent Template",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:24:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/vercel-labs/eve-contentful-agent-template",
+      "learning_score": 2
+    },
+    {
+      "url": "https://blog.ohaithe.re/post/829974396980641792/id-like-to-alert-people-that-several-of-the",
+      "author": "unprovable",
+      "item_id": "hn:50022754",
+      "headline": "A blogger details __several major bugs in OpenAI's math release__, with concrete cases of confident wrong answers at the edges.",
+      "subreddit": null,
+      "source_text": "Several major bugs in OpenAI's Math release",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:18:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.ohaithe.re/post/829974396980641792/id-like-to-alert-people-that-several-of-the",
+      "learning_score": 2
+    },
+    {
+      "url": "https://lexifina.com/blog/agent-guis",
+      "author": "alansaber",
+      "item_id": "hn:50022688",
+      "headline": "Lexifina makes the case that __agent GUIs need their own design patterns__ — conventions built for human users routinely break when the primary actor is an AI.",
+      "subreddit": null,
+      "source_text": "Design for Agent GUIs",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:15:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lexifina.com/blog/agent-guis",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
+      "author": "sbulaev",
+      "item_id": "hn:50022564",
+      "headline": "A max-severity __SonicWall SMA1000 vulnerability__ is now being actively exploited in the wild — patches have been available, and the window to act is closing.",
+      "subreddit": null,
+      "source_text": "Max severity SonicWall SMA1000 flaw now exploited in attacks",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T16:07:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks",
+      "learning_score": 2
+    },
+    {
+      "url": "https://senro.ai",
+      "author": "nartmadi",
+      "item_id": "hn:50022328",
+      "headline": "Senro brings __evals and observability to WebMCP__, giving builders a way to measure and debug agent tool calls in production.",
+      "subreddit": null,
+      "source_text": "Show HN: Senro – WebMCP Evals and Observability",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-09T15:53:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://senro.ai",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__v2.1.295__",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21295",
+      "tag": "Release",
+      "source": "Claude Code Changelog"
+    }
+  ],
+  "human_items": [
+    {
+      "id": 8398,
+      "headline": "Robert Reich argues liability lawsuits can curb AI and climate risks",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/09/ai-climate-change-liability-lawsuits",
+      "source": "Guardian AI",
+      "summary": "Robert Reich argues that liability lawsuits could hold AI companies and fossil fuel industries accountable for harms, drawing parallels to past legal actions against tobacco and pharmaceutical companies. He suggests litigation may compel investors and corporations to take risks more seriously where government regulation has fallen short.",
+      "tag": "environment",
+      "meaning": "Count the energy and resource cost next to the capability gain.",
+      "published_at": "2026-10-09T11:00:26+00:00"
+    },
+    {
+      "id": 8432,
+      "headline": "HR Dive roundup: AI gender pay gap, manager development boosts retention",
+      "url": "https://www.hrdive.com/news/manager-led-development-can-aid-retention/832519/",
+      "source": "HR Dive",
+      "summary": "Key figures from the week: AI agents with female appearances were paid 10% less than male-presenting ones for identical work; the federal contractor minimum wage is rising to $14.05/hour; 71% of Americans believe diverse workforces are more profitable; 84% of employees say they're very likely to stay when managers invest in their development; and a Miami company agreed to pay $1.3 million to settle EEOC hiring bias allegations.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-10-08T20:46:00+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-10-09T16:42:44.283801+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          8408,
+          8409
+        ],
+        "reason": "Both cover the same event: three fired OpenAI safety researchers (Korbak, Wang, Balesni) publishing an open letter and OpenAI's response doubling down on the firings.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8398
+        ],
+        "reason": "Standalone op-ed by Robert Reich on using liability lawsuits against AI and fossil fuel companies.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8447
+        ],
+        "reason": "Standalone report on DHS proposing fees for OPT participation by international students.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8419
+        ],
+        "reason": "Standalone MIT Technology Review analysis on the unreliability of AI refusal mechanisms.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8421
+        ],
+        "reason": "Standalone case study on Sophos using OpenAI's Daybreak program for cybersecurity.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8438
+        ],
+        "reason": "Standalone announcement of Partnership on AI's new mental health partners and working group.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8449
+        ],
+        "reason": "Standalone Pew Research Center newsletter summarizing global survey findings on social media, AI, and other topics.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8440
+        ],
+        "reason": "Standalone report from a16z's Olivia Moore on the state of consumer AI apps and business models.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8443
+        ],
+        "reason": "Standalone report on Trump's executive order to rebrand 'artificial intelligence' as 'super intelligence.'",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8399
+        ],
+        "reason": "Standalone report on OpenAI's revenue forecast falling $20 billion short of expectations.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8448
+        ],
+        "reason": "Standalone report on ACLU filing a complaint against Criteria Corp's Emotify hiring assessment tool.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8436
+        ],
+        "reason": "Standalone report on Paramount-Skydance merger and CNN editorial independence assurances.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8441
+        ],
+        "reason": "Standalone promotional article for TechCrunch Disrupt 2026 event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8444
+        ],
+        "reason": "Standalone profile of AI agent startup Instinct facing competition from OpenAI's Muse and Meta's Dots.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8400
+        ],
+        "reason": "Standalone report on Palantir executive Tom Watson's comments about UK government contracts.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8432
+        ],
+        "reason": "Standalone HR Dive weekly roundup of five workforce statistics.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8437
+        ],
+        "reason": "Standalone Pew Research Center survey on American opinion about the Iran conflict.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8387
+        ],
+        "reason": "Standalone feature about an interactive website simulating Elizabeth Holmes' desk using trial documents.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "aa902750b681c36cada76a6326fdec9128df6e8d4ed2ae60762a86ba69c7e973"
+}
