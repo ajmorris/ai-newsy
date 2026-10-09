@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -98,6 +99,18 @@ def _run(
         text=True,
         capture_output=True,
     )
+
+
+def ensure_gh_token() -> None:
+    """Point gh at the Actions token. gh reads GH_TOKEN and ignores GITHUB_TOKEN."""
+    if (os.environ.get("GH_TOKEN") or "").strip():
+        return
+    github_token = (os.environ.get("GITHUB_TOKEN") or "").strip()
+    if not github_token:
+        raise SystemExit(
+            "GH_TOKEN is not set. In GitHub Actions set GH_TOKEN to github.token."
+        )
+    os.environ["GH_TOKEN"] = github_token
 
 
 def _validate_ref(name: str, label: str) -> str:
@@ -291,6 +304,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     branch = _validate_ref(args.branch, "branch")
     base = _validate_ref(args.base, "base")
+    ensure_gh_token()
     if _cherry_pick_onto_base(base, branch) == "empty":
         return 0
     number = _pr_number(branch, base, args.title, args.body)

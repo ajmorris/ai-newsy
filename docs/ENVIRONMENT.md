@@ -272,7 +272,7 @@ GitHub Actions configuration:
   - `finalize_digest_payload.yml` rebuilds `data/digests/YYYY-MM-DD.json` after prep (waits for all three; requires RSS success so a Twitter/community failure cannot block send). It opens a pull request and waits for `CI / test` plus auto-merge before send starts.
   - `daily_digest.yml` compiles markdown/HTML and sends via Resend after that merge. It does not call Claude; it loads the finalized JSON and fails immediately if that file is missing (`timeout-minutes: 30`). The sent snapshot lands through a second pull request.
   - `publish_web_archive.yml` runs after send and opens a pull request for `frontend/issues`.
-- Those generated-file pull requests are merged by auto-merge after `CI / test` passes. **Allow auto-merge** stays enabled on the repository. Direct pushes to `main` remain blocked until the check is green.
+- Those generated-file pull requests are merged by auto-merge after `CI / test` passes. **Allow auto-merge** stays enabled on the repository. Direct pushes to `main` remain blocked until the check is green. The GitHub CLI in those jobs authenticates with `GH_TOKEN` set to `github.token`.
 - Stage workflows keep `workflow_dispatch` for manual single-stage runs. They are not independently scheduled.
 - No new captcha secrets are required for current scheduled jobs (they do not call `/api/subscribe`).
 - If you add API integration tests in GitHub Actions later, mirror captcha and rate-limit vars in repository secrets/vars.

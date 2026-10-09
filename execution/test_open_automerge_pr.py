@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import os
 import subprocess
 import unittest
 from pathlib import Path
 
 from execution.open_automerge_pr import (
     check_outcome,
+    ensure_gh_token,
     interpret_pull_request,
     main,
 )
@@ -111,6 +113,36 @@ class InterpretPullRequestTests(unittest.TestCase):
         self.assertEqual(check_outcome({"context": "CI / test", "state": "FAILURE"}), "fail")
 
 
+class EnsureGhTokenTests(unittest.TestCase):
+    def test_copies_actions_token(self) -> None:
+        saved = {key: os.environ.get(key) for key in ("GH_TOKEN", "GITHUB_TOKEN")}
+        os.environ.pop("GH_TOKEN", None)
+        os.environ["GITHUB_TOKEN"] = "actions-token"
+        try:
+            ensure_gh_token()
+            self.assertEqual(os.environ["GH_TOKEN"], "actions-token")
+        finally:
+            for key, value in saved.items():
+                if value is None:
+                    os.environ.pop(key, None)
+                else:
+                    os.environ[key] = value
+
+    def test_missing_token_fails(self) -> None:
+        saved = {key: os.environ.get(key) for key in ("GH_TOKEN", "GITHUB_TOKEN")}
+        os.environ.pop("GH_TOKEN", None)
+        os.environ.pop("GITHUB_TOKEN", None)
+        try:
+            with self.assertRaises(SystemExit):
+                ensure_gh_token()
+        finally:
+            for key, value in saved.items():
+                if value is None:
+                    os.environ.pop(key, None)
+                else:
+                    os.environ[key] = value
+
+
 class WorkflowWiringTests(unittest.TestCase):
     def test_generated_commits_open_pull_requests(self) -> None:
         for name in (
@@ -121,6 +153,7 @@ class WorkflowWiringTests(unittest.TestCase):
         ):
             text = (REPO_ROOT / ".github" / "workflows" / name).read_text(encoding="utf-8")
             self.assertIn("execution/open_automerge_pr.py", text, name)
+            self.assertIn("GH_TOKEN: ${{ github.token }}", text, name)
             self.assertNotIn('git push origin "HEAD:', text, name)
 
     def test_ci_can_be_dispatched_onto_the_automation_branch(self) -> None:

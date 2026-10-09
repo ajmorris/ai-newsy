@@ -64,6 +64,7 @@ jobs:
       - name: Commit and push digest markdown
         env:
           BRANCH_NAME: ${{ github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           git add data/digests
           if git diff --staged --quiet; then
