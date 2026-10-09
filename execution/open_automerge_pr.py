@@ -164,6 +164,20 @@ def _update_branch(base: str, branch: str) -> None:
         shutil.rmtree(parent, ignore_errors=True)
 
 
+def explain_gh_failure(text: str) -> str:
+    """Add the repository setting that matches a known gh refusal."""
+    if "not permitted to create or approve pull requests" not in text:
+        return ""
+    repo = (os.environ.get("GITHUB_REPOSITORY") or "").strip()
+    where = f"https://github.com/{repo}/settings/actions" if repo else "Settings → Actions → General"
+    return (
+        "GitHub Actions is not allowed to open pull requests. "
+        "Under Workflow permissions, turn on "
+        "“Allow GitHub Actions to create and approve pull requests” "
+        f"({where})."
+    )
+
+
 def _pr_number(branch: str, base: str, title: str, body: str) -> str:
     listed = _run(
         [
@@ -198,8 +212,13 @@ def _pr_number(branch: str, base: str, title: str, body: str) -> str:
             title,
             "--body",
             body,
-        ]
+        ],
+        check=False,
     )
+    if created.returncode != 0:
+        detail = (created.stderr or created.stdout or "").strip()
+        extra = explain_gh_failure(detail)
+        raise SystemExit("\n".join(part for part in (detail, extra) if part))
     url = (created.stdout or "").strip()
     print(url)
     viewed = _run(["gh", "pr", "view", url or branch, "--json", "number", "--jq", ".number"])

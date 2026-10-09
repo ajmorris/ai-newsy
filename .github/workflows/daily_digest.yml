@@ -1,7 +1,9 @@
 # Daily AI Digest Workflow
 # Compiles finalized JSON into markdown/HTML and sends via Resend.
-# Production sends are invoked by digest_pipeline.yml after Finalize commits
-# data/digests/YYYY-MM-DD.json. Manual dispatch still requires force_send.
+# Production sends are invoked by digest_pipeline.yml with pipeline_run=true.
+# The email is sent from the finalized JSON artifact. Saving that file on main
+# happens after the send, so a pull-request failure cannot block the email.
+# A direct manual dispatch of this workflow still requires force_send.
 
 name: Daily AI Digest
 
@@ -18,6 +20,11 @@ on:
         required: false
         type: string
         default: ""
+      pipeline_run:
+        description: "Called by the daily digest pipeline (does not bypass the duplicate-send claim)"
+        required: false
+        type: boolean
+        default: false
   workflow_dispatch:
     inputs:
       force_send:
@@ -65,7 +72,8 @@ jobs:
         run: |
           python3 execution/digest_send_guard.py \
             --event-name "${{ github.event_name }}" \
-            --force-send "${{ inputs.force_send }}"
+            --force-send "${{ inputs.force_send }}" \
+            --pipeline-run "${{ inputs.pipeline_run }}"
 
       - name: Set up Python
         if: ${{ steps.guard.outputs.should_send == 'true' }}
@@ -102,14 +110,25 @@ jobs:
             exit 1
           fi
 
+      - name: Download canonical digest payload
+        if: ${{ inputs.pipeline_run && steps.guard.outputs.should_send == 'true' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: canonical-digest
+          path: data/digests
+
       - name: Require canonical digest payload
         if: ${{ steps.guard.outputs.should_send == 'true' }}
         run: |
           expected_payload="data/digests/$(date -u +%F).json"
           echo "Looking for canonical payload: ${expected_payload}"
+          if [ -f "${expected_payload}" ]; then
+            echo "Using ${expected_payload} from this run."
+            exit 0
+          fi
           git fetch origin "${{ github.ref_name }}"
           if git checkout "origin/${{ github.ref_name }}" -- "${expected_payload}"; then
-            echo "Found ${expected_payload}."
+            echo "Found ${expected_payload} on ${{ github.ref_name }}."
             exit 0
           fi
           echo "Missing canonical digest payload for today."
@@ -145,6 +164,11 @@ jobs:
           expected_snapshot="data/digests/snapshots/$(date -u +%F).sent.json"
           echo "Checking for expected snapshot: ${expected_snapshot}"
           if [ ! -f "${expected_snapshot}" ]; then
+            status_file="data/digests/snapshots/$(date -u +%F).status.json"
+            if [ -f "${status_file}" ] && grep -q "duplicate_prevented" "${status_file}"; then
+              echo "Digest was already sent. Saving the payload without sending again."
+              exit 0
+            fi
             echo "Missing sent snapshot for today."
             ls -la data/digests/snapshots || true
             exit 1
@@ -155,29 +179,36 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Persist what was emailed. Do not rebuild frontend/issues here.
+          # The email has already been sent. This only saves the record on main.
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          digest_date="$(date -u +%F)"
           mkdir -p data/digests/snapshots
           shopt -s nullglob
           snapshot_files=(data/digests/snapshots/*.sent.json data/digests/snapshots/*.status.json)
-          if [ ${#snapshot_files[@]} -eq 0 ]; then
-            echo "No sent snapshots to commit."
-            exit 0
+          if [ -f "data/digests/${digest_date}.json" ]; then
+            git add "data/digests/${digest_date}.json"
           fi
-          # The payload checkout above leaves today's JSON staged. This commit
-          # should record only the sent snapshot.
-          git restore --staged -- data/digests || true
-          git add "${snapshot_files[@]}"
+          if [ ${#snapshot_files[@]} -gt 0 ]; then
+            git add "${snapshot_files[@]}"
+          fi
           if git diff --staged --quiet; then
-            echo "No sent snapshot changes to commit."
+            echo "No digest files to commit."
             exit 0
           fi
-          git commit -m "chore: persist sent digest snapshots"
-          python execution/open_automerge_pr.py \
+          git commit -m "chore: persist sent digest for ${digest_date}"
+          if ! python execution/open_automerge_pr.py \
             --branch "automation/snapshot-${{ github.run_id }}" \
             --base "${{ github.ref_name }}" \
-            --title "chore: persist sent digest snapshots"
+            --title "chore: persist sent digest for ${digest_date}"; then
+            echo "::error::The email was already sent. Saving the digest on main failed."
+            {
+              echo "## Email sent, files not saved"
+              echo "Subscribers already received today's digest."
+              echo "Turn on **Allow GitHub Actions to create and approve pull requests** under Settings → Actions → General → Workflow permissions, then run the pipeline again."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
 
       - name: Upload digest artifacts
         if: ${{ steps.guard.outputs.should_send == 'true' }}

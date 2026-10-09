@@ -10,6 +10,7 @@ from pathlib import Path
 from execution.open_automerge_pr import (
     check_outcome,
     ensure_gh_token,
+    explain_gh_failure,
     interpret_pull_request,
     main,
 )
@@ -113,6 +114,17 @@ class InterpretPullRequestTests(unittest.TestCase):
         self.assertEqual(check_outcome({"context": "CI / test", "state": "FAILURE"}), "fail")
 
 
+class ExplainGhFailureTests(unittest.TestCase):
+    def test_actions_pr_permission(self) -> None:
+        message = explain_gh_failure(
+            "GraphQL: GitHub Actions is not permitted to create or approve pull requests"
+        )
+        self.assertIn("Allow GitHub Actions to create and approve pull requests", message)
+
+    def test_other_errors_have_no_extra_hint(self) -> None:
+        self.assertEqual(explain_gh_failure("something else"), "")
+
+
 class EnsureGhTokenTests(unittest.TestCase):
     def test_copies_actions_token(self) -> None:
         saved = {key: os.environ.get(key) for key in ("GH_TOKEN", "GITHUB_TOKEN")}
@@ -146,7 +158,6 @@ class EnsureGhTokenTests(unittest.TestCase):
 class WorkflowWiringTests(unittest.TestCase):
     def test_generated_commits_open_pull_requests(self) -> None:
         for name in (
-            "finalize_digest_payload.yml",
             "daily_digest.yml",
             "publish_web_archive.yml",
             "rebuild_digest_markdown.yml",

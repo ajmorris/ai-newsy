@@ -5,9 +5,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: write
-  contents: write
-  pull-requests: write
+  contents: read
 
 concurrency:
   group: finalize-digest-payload-schedule
@@ -80,22 +78,17 @@ jobs:
           )
           PY
 
-      - name: Commit canonical digest payload updates
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          git add data/digests/*.json
-          if git diff --staged --quiet; then
-            echo "No canonical digest JSON changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: persist canonical digest payload"
-          python execution/open_automerge_pr.py \
-            --branch "automation/digest-${{ github.run_id }}" \
-            --base "${{ github.ref_name }}" \
-            --title "chore: persist canonical digest payload"
+      - name: Note today's digest date
+        id: digest_date
+        run: echo "value=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Upload canonical digest payload
+        uses: actions/upload-artifact@v4
+        with:
+          name: canonical-digest
+          path: data/digests/${{ steps.digest_date.outputs.value }}.json
+          if-no-files-found: error
+          retention-days: 7
 
       - name: Copy the issue to Cloudflare when configured
         if: ${{ vars.CLOUDFLARE_PUBLISH_URL != '' }}
