@@ -265,6 +265,7 @@ GitHub Actions configuration:
 - Existing digest workflows continue using `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and `RESEND_API_KEY`.
 - Digest LLM steps use `CLAUDE_CODE_OAUTH_TOKEN` and `LLM_PROVIDER_CHAIN=claude_code` (not `ANTHROPIC_KEY` / Gemini / OpenAI).
 - `daily_digest.yml` also requires `APP_URL` in repository secrets; use the same canonical origin as Vercel `APP_URL`.
+- Workflows that commit to `main` (`finalize_digest_payload.yml`, `daily_digest.yml`, `publish_web_archive.yml`, `rebuild_digest_markdown.yml`) check out and push with repository secret `DIGEST_PUSH_TOKEN`. That secret is a fine-grained personal access token owned by `ajmorris`, with Contents read and write on this repository only. The CI ruleset lists `ajmorris` as a bypass actor set to Always allow, so those night pushes land on `main`. Pull requests still require the `CI / test` check.
 - `digest_pipeline.yml` is the only scheduled digest cron (2:00 AM America/New_York, EST and EDT slots). Job order:
   - `prepare_digest_content.yml` (RSS fetch + analyze into `articles`)
   - `prepare_twitter_headlines.yml` (`digest_extras.tweet_headlines`)
