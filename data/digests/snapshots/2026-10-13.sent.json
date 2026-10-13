@@ -1,0 +1,862 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-10-13",
+  "issue_id": "20261013",
+  "subject_line": "ISSUE 61013 · 12 STORIES · 11 MIN READ",
+  "intro": "Meta dropped a bombshell today, launching its Muse Wonder AI models — and going closed-source to do it, signaling a dramatic break from its open Llama playbook just as the debate over open versus closed models heats up. Meanwhile, the AI world keeps reshuffling: Character.AI is filing for bankruptcy with Disney swooping in, the UAE is making AI a required school subject starting in kindergarten, and American Express is building guardrails to keep AI agents from going on unauthorized shopping sprees. It's a day that makes one thing clear — AI isn't just changing the tech industry anymore, it's rewriting the rules for education, finance, regulation, and everything in between.",
+  "article_count": 12,
+  "stories": [
+    {
+      "id": 8628,
+      "source": "The Verge AI",
+      "title": "Meta launches Muse Wonder and Wonder Full AI models",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Meta Superintelligence Labs released two new AI models, Muse Wonder and Muse Wonder Full (codenamed Watermelon). The models are available to Muse Code subscribers and via the Meta Model API, and Meta claims they rival leading competitors including OpenAI's GPT-6 Astra, Anthropic's Claude Opus 5.5, and Claude Fable 5.1. Both models are closed-source, marking a departure from Meta's open Llama era. Meta plans to eventually power its Muse AI agent with Wonder, though no timeline has been provided.",
+      "opinion": "Meta's shift to closed-source frontier models signals a strategic reversal that prioritizes competitive positioning over the open-ecosystem philosophy that defined the Llama era. Whether Wonder Full's strong benchmark showings translate to real-world dominance remains to be seen. Where coverage differs: The Rundown AI reports Wonder Full scored 55 on the Artificial Analysis Intelligence Index, landing #2 behind Opus 5.5 (57) and ahead of Gemini 4 Argon, GPT-6 Astra, and Claude Fable 5.1 (all 53); The Verge references only Meta's internal benchmarks without specific scores The Rundown AI specifies Muse Code pricing at $50 or $200/month and notes API pricing below OpenAI and Anthropic's top tiers; The Verge does not mention pricing",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+      "published_at": "2026-10-12T17:00:00+00:00",
+      "fetched_at": "2026-10-13T13:25:52.589881+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 8628,
+            "source": "The Verge AI",
+            "title": "Meta has some Wonder Full new AI models",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model"
+          },
+          {
+            "id": 8627,
+            "source": "The Rundown AI",
+            "title": "Meta's Watermelon ripens into a frontier model",
+            "url": "https://therundownai.beehiiv.com/p/meta-watermelon-ripens-into-a-frontier-model"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "The Rundown AI reports Wonder Full scored 55 on the Artificial Analysis Intelligence Index, landing #2 behind Opus 5.5 (57) and ahead of Gemini 4 Argon, GPT-6 Astra, and Claude Fable 5.1 (all 53); The Verge references only Meta's internal benchmarks without specific scores",
+          "The Rundown AI specifies Muse Code pricing at $50 or $200/month and notes API pricing below OpenAI and Anthropic's top tiers; The Verge does not mention pricing"
+        ],
+        "is_update": false,
+        "reason": "Both report Meta's release of the Muse Wonder and Muse Wonder Full AI models"
+      }
+    },
+    {
+      "id": 8642,
+      "source": "Charter",
+      "title": "Harvard professor argues reading fiction builds better leaders for the AI age",
+      "url": "https://www.charterworks.com/how-reading-fiction-builds-better-leaders-for-the-ai-age/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Harvard Business School professor Sandra Sucher teaches MBA students moral leadership through novels, poems, and plays without AI assistance. UCLA professor Maryanne Wolf's neuroscience research supports the claim that deep reading strengthens critical thinking, empathy, and decision-making—skills the article argues become more valuable as AI handles routine information processing.",
+      "opinion": "A compelling case that the soft skills cultivated by literary engagement may be the hardest to automate—and therefore the most strategically important for future leaders to develop.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/size/w1200/2026/10/charter-novels-ai-leadership-kilito-han-getty.jpg",
+      "published_at": "2026-10-13T10:30:00+00:00",
+      "fetched_at": "2026-10-13T13:26:10.816262+00:00"
+    },
+    {
+      "id": 8626,
+      "source": "Guardian AI",
+      "title": "Former UK attorney general warns AI faces less regulation than household appliances",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/12/ai-regulation-fridge-risk-humanity-public-debate-international-law",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Richard Hermer, former UK attorney general, argues that AI currently faces less regulatory oversight than ordinary household appliances like refrigerators. Drawing on national security experience, he calls for urgent public debate and robust application of international law, warning that existing governance frameworks are inadequate for the scale of AI's risks.",
+      "opinion": "The comparison to appliance regulation is attention-grabbing, but the piece is more a call to action than a policy blueprint—the harder question of what effective AI regulation looks like remains unanswered.",
+      "image_url": "https://i.guim.co.uk/img/media/b87c0ff79e67d42c06605e438dc9d5a8b14b4b09/243_0_3335_2668/master/3335.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=00b37952dffcda52d97f88c829d41d95",
+      "published_at": "2026-10-12T17:33:41+00:00",
+      "fetched_at": "2026-10-13T13:25:49.15341+00:00"
+    },
+    {
+      "id": 8638,
+      "source": "HR Dive",
+      "title": "5th Circuit rules FedEx worker's harassment reports not protected under Title VII",
+      "url": "https://www.hrdive.com/news/fedex-worker-harassment-reports-not-protected-by-title-vii/832777/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The 5th U.S. Circuit Court of Appeals ruled that a former FedEx Office employee's six harassment reports did not constitute protected activity under Title VII because the reported conduct—bullying, aggressive, and hostile behavior—was not sufficiently linked to a protected characteristic such as race. The court held that any adverse actions taken in response could not be classified as retaliation.",
+      "opinion": "The ruling underscores the importance of explicitly tying workplace complaints to protected characteristics when seeking Title VII protection, a nuance employees and HR departments alike should note.",
+      "image_url": "https://imgproxy.divecdn.com/IuVMaddiEHJNHYg25G-JYVD7__rQx3EU85pgrN4RGek/g:nowe:3:0/c:2997:1693/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDYxNDY2NzMxLmpwZw==.webp",
+      "published_at": "2026-10-12T20:23:00+00:00",
+      "fetched_at": "2026-10-13T13:26:08.024014+00:00"
+    },
+    {
+      "id": 8631,
+      "source": "Lenny's Newsletter",
+      "title": "Meta design director shares how Muse AI agent was designed",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-meta-designed-muse-with",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Alex Cornell, design director at Meta, discusses Muse's design principles: treating AI conversations like human interactions, using progressive disclosure, keeping generative UI structurally fixed while varying content, and maintaining a single persistent chat thread as an ongoing relationship. He also shares personal AI workflows including turning Instagram saves into shopping catalogs.",
+      "opinion": "The emphasis on relationship-like interaction design rather than task-oriented UI reflects a bet that users will engage with AI agents more like companions than tools—a design philosophy with significant implications for retention and trust.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!4mk6!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F135a1e19-04d6-423c-86c8-c957635b14f1_1456x1048.png",
+      "published_at": "2026-10-12T15:00:38+00:00",
+      "fetched_at": "2026-10-13T13:25:57.561567+00:00"
+    },
+    {
+      "id": 8629,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Technology Review weighs open AI models' benefits against their risks",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article examines whether open AI models' benefits outweigh their risks, prompted by Anthropic's report claiming Z.ai's openly available GLM-5.3 model poses cyberattack risks. It notes that commercial incentives shape both sides of the debate—Nvidia advocates for open models while Anthropic urges caution. Currently closed models remain more capable but open models trail by only months.",
+      "opinion": "The piece effectively surfaces how financial incentives color the safety debate on both sides, making it hard to take any company's position at face value without accounting for their business model.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_openaimodels.jpg?resize=1200,600",
+      "published_at": "2026-10-13T10:00:00+00:00",
+      "fetched_at": "2026-10-13T13:25:55.04033+00:00"
+    },
+    {
+      "id": 8641,
+      "source": "Rest of World",
+      "title": "UAE becomes first country to mandate AI as a required subject from kindergarten through 12th grade",
+      "url": "https://restofworld.org/2026/uae-mandates-k12-ai-education-schools/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The UAE has become the first country to require AI as a subject across all K-12 grades, including kindergarten. Rather than giving young children generative AI tools, schools use role-play, storytelling, and guided discussions. Dubai's Knowledge and Human Development Authority is developing a 10-year roadmap for personalized, technology-integrated learning.",
+      "opinion": "The UAE's approach of teaching AI literacy through age-appropriate methods rather than direct tool access is a thoughtful middle ground in a global debate that too often frames the choice as all-or-nothing.",
+      "image_url": "https://restofworld.org/wp-content/uploads/2026/10/School-AI-UAE_5.jpg",
+      "published_at": "2026-10-13T10:00:00+00:00",
+      "fetched_at": "2026-10-13T13:26:09.302266+00:00"
+    },
+    {
+      "id": 8612,
+      "source": "TechCrunch AI",
+      "title": "American Express launches framework to prevent unauthorized AI agent purchases",
+      "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "American Express introduced an 'Intent Intelligence Framework' to ensure AI agents only make purchases users have explicitly authorized. The system captures purchase instructions via a Create Intent API, generates a unique Intent ID and Proof of Intent Token, and issues a secure digital payment credential for checkout instead of using actual credit card numbers. The framework is part of Amex's ACE Developer Toolkit launched in April 2026.",
+      "opinion": "As AI agents increasingly handle transactions, Amex is positioning itself as the trust layer between autonomous agents and consumer wallets—a smart strategic move that could set industry standards if widely adopted.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/amex-GettyImages-171311164.jpg?resize=1200,800",
+      "published_at": "2026-10-13T13:00:00+00:00",
+      "fetched_at": "2026-10-13T13:25:44.495514+00:00"
+    },
+    {
+      "id": 8637,
+      "source": "HR Dive",
+      "title": "Whole Foods wins summary judgment after catching plaintiff falsifying time records",
+      "url": "https://www.hrdive.com/news/whole-foods-defeats-bias-suit-after-catching-plaintiff-faking-time-records/832779/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A federal judge granted summary judgment to Whole Foods after security camera footage showed the plaintiff routinely left the facility immediately after clocking in, misrepresenting his work hours. The plaintiff had alleged race discrimination, retaliation, and FMLA violations, but the judge found the time falsification was legitimate grounds for termination and that the company had fired employees of various races for similar conduct.",
+      "opinion": "The case illustrates how documented evidence of policy violations can decisively undermine discrimination claims, reinforcing the importance of consistent enforcement and surveillance records for employers.",
+      "image_url": "https://imgproxy.divecdn.com/fNa2CqDJUKhkVXRx96cQrXhu4Z8EtJWjl8DxseWKlAc/g:nowe:0:242/c:4032:2278/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUctNzY2MC5qcGc=.webp",
+      "published_at": "2026-10-12T20:23:00+00:00",
+      "fetched_at": "2026-10-13T13:26:07.802151+00:00"
+    },
+    {
+      "id": 8630,
+      "source": "MIT Tech Review AI",
+      "title": "AI labs increasingly buying data from defunct startups to train models",
+      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI labs are purchasing code, emails, chats, and workspace data from failed startups through brokers like SimpleClosure and Sunset. SimpleClosure's Asset Hub has handled over 150 deals and expects to return over $10 million to startups by end of 2026. The trend emerged as AI labs hit limits of public and synthetic datasets, with buyers seeking authentic workplace interactions. Prices vary widely since valuations are based on speculative research theses about data utility.",
+      "opinion": "This emerging market turns startup failure into a data supply chain, but the lack of published benchmarks comparing real-world training data against alternatives means buyers are operating largely on faith.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/AI-Death_Redamonti_MIT-thumb.jpg?resize=1200,600",
+      "published_at": "2026-10-13T09:00:00+00:00",
+      "fetched_at": "2026-10-13T13:25:55.2887+00:00"
+    },
+    {
+      "id": 8613,
+      "source": "TechCrunch AI",
+      "title": "Character.AI files for Chapter 11 bankruptcy, agrees to sell assets to Disney for $20 million",
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Character.AI, the chatbot platform founded in 2021 by former Google engineers, has filed for Chapter 11 bankruptcy. The company agreed to sell some assets to Disney for $20 million along with a non-exclusive perpetual license for its technology. The bankruptcy follows Google's $2.7 billion deal to license its models and poach its founders in 2024, multiple lawsuits related to child safety, and operational struggles to scale.",
+      "opinion": "Character.AI's rapid rise and fall—from unicorn to bankruptcy in under five years—is a cautionary tale about consumer AI companies that achieve massive user growth without a sustainable business model or adequate safety infrastructure.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/Screenshot-2025-04-22-at-1.24.23PM.png?resize=1200,672",
+      "published_at": "2026-10-13T12:23:42+00:00",
+      "fetched_at": "2026-10-13T13:25:44.744596+00:00"
+    },
+    {
+      "id": 8639,
+      "source": "HR Dive",
+      "title": "Texas logistics company pays $500K to settle EEOC claims of rejecting female applicants",
+      "url": "https://www.hrdive.com/news/companys-male-only-job-openings-lead-to-500k-settlement-with-eeoc/832733/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Birchstone Management, a Texas-based logistics company, agreed to pay $500,000 to settle EEOC claims that it rejected female job applicants for pallet repairer positions since 2020, hiring men with similar or fewer qualifications. The settlement includes appointing an HR professional to revise hiring policies and conduct training.",
+      "opinion": "The case is part of a broader pattern of EEOC enforcement against employers who exclude women from physical labor roles, signaling that sex-based hiring assumptions remain a costly compliance risk.",
+      "image_url": "https://imgproxy.divecdn.com/R4l9col3TionUYiyacCI_zBUpdN2kVAG-rO46ypqU6o/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUctNzM2MS5KUEc=.webp",
+      "published_at": "2026-10-12T15:36:00+00:00",
+      "fetched_at": "2026-10-13T13:26:08.258182+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 8628,
+          "source": "The Verge AI",
+          "title": "Meta launches Muse Wonder and Wonder Full AI models",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Meta Superintelligence Labs released two new AI models, Muse Wonder and Muse Wonder Full (codenamed Watermelon). The models are available to Muse Code subscribers and via the Meta Model API, and Meta claims they rival leading competitors including OpenAI's GPT-6 Astra, Anthropic's Claude Opus 5.5, and Claude Fable 5.1. Both models are closed-source, marking a departure from Meta's open Llama era. Meta plans to eventually power its Muse AI agent with Wonder, though no timeline has been provided.",
+          "opinion": "Meta's shift to closed-source frontier models signals a strategic reversal that prioritizes competitive positioning over the open-ecosystem philosophy that defined the Llama era. Whether Wonder Full's strong benchmark showings translate to real-world dominance remains to be seen. Where coverage differs: The Rundown AI reports Wonder Full scored 55 on the Artificial Analysis Intelligence Index, landing #2 behind Opus 5.5 (57) and ahead of Gemini 4 Argon, GPT-6 Astra, and Claude Fable 5.1 (all 53); The Verge references only Meta's internal benchmarks without specific scores The Rundown AI specifies Muse Code pricing at $50 or $200/month and notes API pricing below OpenAI and Anthropic's top tiers; The Verge does not mention pricing",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+          "published_at": "2026-10-12T17:00:00+00:00",
+          "fetched_at": "2026-10-13T13:25:52.589881+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 8628,
+                "source": "The Verge AI",
+                "title": "Meta has some Wonder Full new AI models",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model"
+              },
+              {
+                "id": 8627,
+                "source": "The Rundown AI",
+                "title": "Meta's Watermelon ripens into a frontier model",
+                "url": "https://therundownai.beehiiv.com/p/meta-watermelon-ripens-into-a-frontier-model"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "The Rundown AI reports Wonder Full scored 55 on the Artificial Analysis Intelligence Index, landing #2 behind Opus 5.5 (57) and ahead of Gemini 4 Argon, GPT-6 Astra, and Claude Fable 5.1 (all 53); The Verge references only Meta's internal benchmarks without specific scores",
+              "The Rundown AI specifies Muse Code pricing at $50 or $200/month and notes API pricing below OpenAI and Anthropic's top tiers; The Verge does not mention pricing"
+            ],
+            "is_update": false,
+            "reason": "Both report Meta's release of the Muse Wonder and Muse Wonder Full AI models"
+          }
+        },
+        {
+          "id": 8642,
+          "source": "Charter",
+          "title": "Harvard professor argues reading fiction builds better leaders for the AI age",
+          "url": "https://www.charterworks.com/how-reading-fiction-builds-better-leaders-for-the-ai-age/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Harvard Business School professor Sandra Sucher teaches MBA students moral leadership through novels, poems, and plays without AI assistance. UCLA professor Maryanne Wolf's neuroscience research supports the claim that deep reading strengthens critical thinking, empathy, and decision-making—skills the article argues become more valuable as AI handles routine information processing.",
+          "opinion": "A compelling case that the soft skills cultivated by literary engagement may be the hardest to automate—and therefore the most strategically important for future leaders to develop.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/size/w1200/2026/10/charter-novels-ai-leadership-kilito-han-getty.jpg",
+          "published_at": "2026-10-13T10:30:00+00:00",
+          "fetched_at": "2026-10-13T13:26:10.816262+00:00"
+        },
+        {
+          "id": 8626,
+          "source": "Guardian AI",
+          "title": "Former UK attorney general warns AI faces less regulation than household appliances",
+          "url": "https://www.theguardian.com/commentisfree/2026/oct/12/ai-regulation-fridge-risk-humanity-public-debate-international-law",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Richard Hermer, former UK attorney general, argues that AI currently faces less regulatory oversight than ordinary household appliances like refrigerators. Drawing on national security experience, he calls for urgent public debate and robust application of international law, warning that existing governance frameworks are inadequate for the scale of AI's risks.",
+          "opinion": "The comparison to appliance regulation is attention-grabbing, but the piece is more a call to action than a policy blueprint—the harder question of what effective AI regulation looks like remains unanswered.",
+          "image_url": "https://i.guim.co.uk/img/media/b87c0ff79e67d42c06605e438dc9d5a8b14b4b09/243_0_3335_2668/master/3335.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=00b37952dffcda52d97f88c829d41d95",
+          "published_at": "2026-10-12T17:33:41+00:00",
+          "fetched_at": "2026-10-13T13:25:49.15341+00:00"
+        },
+        {
+          "id": 8638,
+          "source": "HR Dive",
+          "title": "5th Circuit rules FedEx worker's harassment reports not protected under Title VII",
+          "url": "https://www.hrdive.com/news/fedex-worker-harassment-reports-not-protected-by-title-vii/832777/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The 5th U.S. Circuit Court of Appeals ruled that a former FedEx Office employee's six harassment reports did not constitute protected activity under Title VII because the reported conduct—bullying, aggressive, and hostile behavior—was not sufficiently linked to a protected characteristic such as race. The court held that any adverse actions taken in response could not be classified as retaliation.",
+          "opinion": "The ruling underscores the importance of explicitly tying workplace complaints to protected characteristics when seeking Title VII protection, a nuance employees and HR departments alike should note.",
+          "image_url": "https://imgproxy.divecdn.com/IuVMaddiEHJNHYg25G-JYVD7__rQx3EU85pgrN4RGek/g:nowe:3:0/c:2997:1693/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDYxNDY2NzMxLmpwZw==.webp",
+          "published_at": "2026-10-12T20:23:00+00:00",
+          "fetched_at": "2026-10-13T13:26:08.024014+00:00"
+        },
+        {
+          "id": 8631,
+          "source": "Lenny's Newsletter",
+          "title": "Meta design director shares how Muse AI agent was designed",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-meta-designed-muse-with",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Alex Cornell, design director at Meta, discusses Muse's design principles: treating AI conversations like human interactions, using progressive disclosure, keeping generative UI structurally fixed while varying content, and maintaining a single persistent chat thread as an ongoing relationship. He also shares personal AI workflows including turning Instagram saves into shopping catalogs.",
+          "opinion": "The emphasis on relationship-like interaction design rather than task-oriented UI reflects a bet that users will engage with AI agents more like companions than tools—a design philosophy with significant implications for retention and trust.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!4mk6!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F135a1e19-04d6-423c-86c8-c957635b14f1_1456x1048.png",
+          "published_at": "2026-10-12T15:00:38+00:00",
+          "fetched_at": "2026-10-13T13:25:57.561567+00:00"
+        },
+        {
+          "id": 8629,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Technology Review weighs open AI models' benefits against their risks",
+          "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article examines whether open AI models' benefits outweigh their risks, prompted by Anthropic's report claiming Z.ai's openly available GLM-5.3 model poses cyberattack risks. It notes that commercial incentives shape both sides of the debate—Nvidia advocates for open models while Anthropic urges caution. Currently closed models remain more capable but open models trail by only months.",
+          "opinion": "The piece effectively surfaces how financial incentives color the safety debate on both sides, making it hard to take any company's position at face value without accounting for their business model.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_openaimodels.jpg?resize=1200,600",
+          "published_at": "2026-10-13T10:00:00+00:00",
+          "fetched_at": "2026-10-13T13:25:55.04033+00:00"
+        },
+        {
+          "id": 8641,
+          "source": "Rest of World",
+          "title": "UAE becomes first country to mandate AI as a required subject from kindergarten through 12th grade",
+          "url": "https://restofworld.org/2026/uae-mandates-k12-ai-education-schools/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The UAE has become the first country to require AI as a subject across all K-12 grades, including kindergarten. Rather than giving young children generative AI tools, schools use role-play, storytelling, and guided discussions. Dubai's Knowledge and Human Development Authority is developing a 10-year roadmap for personalized, technology-integrated learning.",
+          "opinion": "The UAE's approach of teaching AI literacy through age-appropriate methods rather than direct tool access is a thoughtful middle ground in a global debate that too often frames the choice as all-or-nothing.",
+          "image_url": "https://restofworld.org/wp-content/uploads/2026/10/School-AI-UAE_5.jpg",
+          "published_at": "2026-10-13T10:00:00+00:00",
+          "fetched_at": "2026-10-13T13:26:09.302266+00:00"
+        },
+        {
+          "id": 8612,
+          "source": "TechCrunch AI",
+          "title": "American Express launches framework to prevent unauthorized AI agent purchases",
+          "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "American Express introduced an 'Intent Intelligence Framework' to ensure AI agents only make purchases users have explicitly authorized. The system captures purchase instructions via a Create Intent API, generates a unique Intent ID and Proof of Intent Token, and issues a secure digital payment credential for checkout instead of using actual credit card numbers. The framework is part of Amex's ACE Developer Toolkit launched in April 2026.",
+          "opinion": "As AI agents increasingly handle transactions, Amex is positioning itself as the trust layer between autonomous agents and consumer wallets—a smart strategic move that could set industry standards if widely adopted.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/amex-GettyImages-171311164.jpg?resize=1200,800",
+          "published_at": "2026-10-13T13:00:00+00:00",
+          "fetched_at": "2026-10-13T13:25:44.495514+00:00"
+        },
+        {
+          "id": 8637,
+          "source": "HR Dive",
+          "title": "Whole Foods wins summary judgment after catching plaintiff falsifying time records",
+          "url": "https://www.hrdive.com/news/whole-foods-defeats-bias-suit-after-catching-plaintiff-faking-time-records/832779/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A federal judge granted summary judgment to Whole Foods after security camera footage showed the plaintiff routinely left the facility immediately after clocking in, misrepresenting his work hours. The plaintiff had alleged race discrimination, retaliation, and FMLA violations, but the judge found the time falsification was legitimate grounds for termination and that the company had fired employees of various races for similar conduct.",
+          "opinion": "The case illustrates how documented evidence of policy violations can decisively undermine discrimination claims, reinforcing the importance of consistent enforcement and surveillance records for employers.",
+          "image_url": "https://imgproxy.divecdn.com/fNa2CqDJUKhkVXRx96cQrXhu4Z8EtJWjl8DxseWKlAc/g:nowe:0:242/c:4032:2278/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUctNzY2MC5qcGc=.webp",
+          "published_at": "2026-10-12T20:23:00+00:00",
+          "fetched_at": "2026-10-13T13:26:07.802151+00:00"
+        },
+        {
+          "id": 8630,
+          "source": "MIT Tech Review AI",
+          "title": "AI labs increasingly buying data from defunct startups to train models",
+          "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI labs are purchasing code, emails, chats, and workspace data from failed startups through brokers like SimpleClosure and Sunset. SimpleClosure's Asset Hub has handled over 150 deals and expects to return over $10 million to startups by end of 2026. The trend emerged as AI labs hit limits of public and synthetic datasets, with buyers seeking authentic workplace interactions. Prices vary widely since valuations are based on speculative research theses about data utility.",
+          "opinion": "This emerging market turns startup failure into a data supply chain, but the lack of published benchmarks comparing real-world training data against alternatives means buyers are operating largely on faith.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/AI-Death_Redamonti_MIT-thumb.jpg?resize=1200,600",
+          "published_at": "2026-10-13T09:00:00+00:00",
+          "fetched_at": "2026-10-13T13:25:55.2887+00:00"
+        },
+        {
+          "id": 8613,
+          "source": "TechCrunch AI",
+          "title": "Character.AI files for Chapter 11 bankruptcy, agrees to sell assets to Disney for $20 million",
+          "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Character.AI, the chatbot platform founded in 2021 by former Google engineers, has filed for Chapter 11 bankruptcy. The company agreed to sell some assets to Disney for $20 million along with a non-exclusive perpetual license for its technology. The bankruptcy follows Google's $2.7 billion deal to license its models and poach its founders in 2024, multiple lawsuits related to child safety, and operational struggles to scale.",
+          "opinion": "Character.AI's rapid rise and fall—from unicorn to bankruptcy in under five years—is a cautionary tale about consumer AI companies that achieve massive user growth without a sustainable business model or adequate safety infrastructure.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/Screenshot-2025-04-22-at-1.24.23PM.png?resize=1200,672",
+          "published_at": "2026-10-13T12:23:42+00:00",
+          "fetched_at": "2026-10-13T13:25:44.744596+00:00"
+        },
+        {
+          "id": 8639,
+          "source": "HR Dive",
+          "title": "Texas logistics company pays $500K to settle EEOC claims of rejecting female applicants",
+          "url": "https://www.hrdive.com/news/companys-male-only-job-openings-lead-to-500k-settlement-with-eeoc/832733/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Birchstone Management, a Texas-based logistics company, agreed to pay $500,000 to settle EEOC claims that it rejected female job applicants for pallet repairer positions since 2020, hiring men with similar or fewer qualifications. The settlement includes appointing an HR professional to revise hiring policies and conduct training.",
+          "opinion": "The case is part of a broader pattern of EEOC enforcement against employers who exclude women from physical labor roles, signaling that sex-based hiring assumptions remain a costly compliance risk.",
+          "image_url": "https://imgproxy.divecdn.com/R4l9col3TionUYiyacCI_zBUpdN2kVAG-rO46ypqU6o/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUctNzM2MS5KUEc=.webp",
+          "published_at": "2026-10-12T15:36:00+00:00",
+          "fetched_at": "2026-10-13T13:26:08.258182+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2109952292116210029",
+      "author": "Zephyr_hg",
+      "headline": "A viral Monday prompt has Claude __read your sent emails and draft follow-ups in your voice__ — nothing goes out until you approve.",
+      "tweet_id": "3f81eba9-b6bc-811f-8d8f-e2b12f9e07ed",
+      "source_text": "Paste this into Claude every Monday.\n\nIt reads last week's sent emails, asks you 3 questions, and drafts every follow-up in your voice. Nothing goes out until you approve it.\n\nIt's f*cking unreal… thank me later.\n\nFull prompt below: https://t.co/PwooMHV3cv https://t.co/4RbuAyY2RG",
+      "created_time": "2026-10-13T11:07:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2109952292116210029",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/tibo_maker/status/2109939775121637600",
+      "author": "tibo_maker",
+      "headline": "Tibo shared a breakdown of __how Anthropic engineers prompt Claude Code__ — straight from inside the company.",
+      "tweet_id": "3f81eba9-b6bc-812c-836d-e26254f5381e",
+      "source_text": "how Anthropic engineers prompt Claude Code https://t.co/5bTguoO197",
+      "created_time": "2026-10-13T11:07:00.000Z",
+      "canonical_url": "https://twitter.com/tibo_maker/status/2109939775121637600",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mddanishyusuf/status/2109925670071759187",
+      "author": "mddanishyusuf",
+      "headline": "Piqo Analytics relaunched with simpler pricing: __500k events for $5/month__.",
+      "tweet_id": "3f81eba9-b6bc-8193-8e99-d86113854df3",
+      "source_text": "Piqo Analytics is completely redesigned, with simpler pricing.\n\nPlans start at just $5/month for 500k events.\n\n→ https://t.co/j8J3npQjje https://t.co/0j6lISNPwH",
+      "created_time": "2026-10-13T11:07:00.000Z",
+      "canonical_url": "https://twitter.com/mddanishyusuf/status/2109925670071759187",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/yannnis/status/2109615227679506706",
+      "author": "yannnis",
+      "headline": "The co-founder of Moosend is building __MX Zero__, an analytics and campaign layer on top of SES and SendGrid — inspired by vibe-coders slashing newsletter bills from $4k to under $300.",
+      "tweet_id": "3f81eba9-b6bc-8183-886a-fd34e525929b",
+      "source_text": "Last week, @marclou  vibe-coded a Beehiiv alternative and cut his newsletter bill from $4,000 a year to under $300.  \n\nI couldnt stop thinking about this over the weekend. So I am thinking of building something.  \n\nWith AI, more people can build software that fits exactly how they work. I think we are seeing the dawn of the era of personal software. \n\nI co-founded Moosend. For ten years, I built exactly the kind of platform people are now walking away from. Sitecore acquired us in 2021.\n\nEveryone can send emails with Amazon SES and Sendgrid. The problem with these tools is they come with no frills (no campaigns, or recipient tracking, location or email client analytics etc)\n\nSo I'm building the frills. It's called MX Zero.\n\nMX Zero connects to SES, SendGrid or Postmark. It figures out what you're sending, then shows you the reporting you used to get from your email platform: opens, clicks and delivery for every campaign, by country, email client and day, down to each recipient.\n\nLiterally 30 seconds to your first dashboard.\n\nSo you can build your very own email marketing tool on top of SES and still get your fancy analytics back.\n\nI'm gauging demand and will be onboarding in small batches.\n\nComment or DM me if you're interested and I'll move you up the waitlist. The link is in the first comment.",
+      "created_time": "2026-10-13T11:07:00.000Z",
+      "canonical_url": "https://twitter.com/yannnis/status/2109615227679506706",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/BrianRoemmele/status/2109853221808435364",
+      "author": "BrianRoemmele",
+      "headline": "Brian Roemmele built a __Grok Bot for transferring Claude and ChatGPT memory__ to a new AI, reviewing each item line by line before anything gets imported.",
+      "tweet_id": "3f81eba9-b6bc-81c0-9327-f5faa5b368eb",
+      "source_text": "NEW GROK BOT!\n\nAI MEMORY TRANSFER!\n\nYour old AI knows you. \n\nYour new one shouldn't have to start from zero. 🧠➡️\n\nMeet Memory Transfer, a @Grok @Bot that brings over what Claude or ChatGPT learned about you, so you don't spend weeks re-explaining yourself.\n\nThere are two ways to bring it over:\n\n• Paste one prompt into your old chat and send me the answer.\n\n• Or drop in your full ChatGPT or Claude data export.\n\nThe part that matters most is that nothing gets in automatically. \n\nWe review every item together, one line at a time. Only what you keep gets saved, and each item is tagged with where it came from and when. \n\nOther AIs' guesses don't become facts, and nothing you've already saved gets overwritten unless you say so.\n\nSwitch assistants and keep your context, without the junk.\n\nTry Memory Transfer on Grok Bot today. \n\nhttps://t.co/c9r2Vsw2Ek",
+      "created_time": "2026-10-13T04:12:00.000Z",
+      "canonical_url": "https://twitter.com/BrianRoemmele/status/2109853221808435364",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/abduzeedo/status/2109816482855284989",
+      "author": "abduzeedo",
+      "headline": "MaPC is a free public beta Mac app that __runs Steam, Epic, and GOG games on Apple Silicon__ with zero Wine configuration.",
+      "tweet_id": "3f81eba9-b6bc-8112-8fe4-fd621d935613",
+      "source_text": "As promised, I’ve been vibe building MaPC, a Mac app that installs and runs my Steam, Epic, and GOG games on Apple Silicon. Zero Wine config; just hit Play.\n\nNote: Compatibility isn't universal yet (more on the site), as I’ve only tested what I own and it's a lot of fun. But let me know how it works for you.\n\nFree public beta, built to learn with a lot of AI help. https://t.co/gj62pX5Y9V",
+      "created_time": "2026-10-13T03:52:00.000Z",
+      "canonical_url": "https://twitter.com/abduzeedo/status/2109816482855284989",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/LunarResearcher/status/2109686459120627817",
+      "author": "LunarResearcher",
+      "headline": "xAI is said to have released __slide decks for Grok Bot__, and a prompt is circulating that turns Grok plus Opus 5.5 into a pitch deck studio.",
+      "tweet_id": "3f81eba9-b6bc-8141-8fd0-fabba03574d5",
+      "source_text": "Elon Musk's xAI just released slide decks for Grok Bot. This prompt turns Grok Bot & Opus 5.5 into an entire AI pitch deck studio.\n\nIt's f*cking unreal...\n\nSend it to Grok Bot & Opus 5.5, and thank me later. Then read the full roadmap with examples below. https://t.co/rsU5JKK6u8 https://t.co/RafU1qiDN0",
+      "created_time": "2026-10-13T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/LunarResearcher/status/2109686459120627817",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/9to5mac/status/2109820036642664568",
+      "author": "9to5mac",
+      "headline": "9to5Mac digs into __how the iPhone Duo's hinge doubles as a cooling system__ — clever thermal engineering in a folding form factor.",
+      "tweet_id": "3f81eba9-b6bc-819c-b24b-c6dd8f8378c3",
+      "source_text": "The iPhone Duo’s cooling system hides a clever trick inside its hinge https://t.co/AjBADhGwm1 by @mvcmendes",
+      "created_time": "2026-10-13T03:42:00.000Z",
+      "canonical_url": "https://twitter.com/9to5mac/status/2109820036642664568",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/jakemor/status/2109798818124353659",
+      "author": "jakemor",
+      "headline": "Jake Mor built __FindMyWifePhone__, an iOS shortcut that texts !ping to bypass silent mode, solving the eternal \"where's your phone?\" standoff.",
+      "tweet_id": "3f81eba9-b6bc-8112-a1ad-e118838739a8",
+      "source_text": "introducing FindMyWifePhone™️ my latest shortcut squarely placed on the pareto frontier. there is no easier & cheaper way to find your wife's phone. \n\n\"honey, do you know where my phone is?\"\n\nthe fuck I dont!\n\n\"can you call me?!\"\n\nshe keeps her phone on silent.\n\nso i made this shortcut to help.\n\ntrigger = i send her a text with !ping in it\naction = hey phone sets a timer for 1s\n\ntimer always works, we like to keep our phones on silent + dnd and we dont use apple watches. so finding each other's phones used to be a challenge. we both have this set up in reverse, and its worked well.\n\nbonus shortcut = button in home screen widget to send !ping to my wife\n\n(we also have one called !awaken which disables silent, sets volume to max & disables do not disturb in case of emergency)",
+      "created_time": "2026-10-13T03:42:00.000Z",
+      "canonical_url": "https://twitter.com/jakemor/status/2109798818124353659",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/santtiagom_/status/2109688787924090983",
+      "author": "santtiagom_",
+      "headline": "A comprehensive __Harness Engineering guide__ covers everything behind agents like Claude Code — context management, memory, MCP, orchestration, and security.",
+      "tweet_id": "3f81eba9-b6bc-818d-a8cb-c13669c096cc",
+      "source_text": "hoy leí esta guía sobre Harness Engineering que me pareció muy buena.\n\nexplica cómo se diseñan y construyen agentes de IA, cubriendo temas como:\n\n- gestión del contexto y memoria\n- tools y MCP\n- orquestación de agentes\n- seguridad y permisos\n- validación, observabilidad y manejo de errores\n\nmuy buen recurso para entender todo lo que hay detrás de agentes como Claude Code o Codex.\n\ndocumento:\nhttps://t.co/8PIeRN24e4\n\nademás, les dejo un artículo que escribí sobre Harness Engineering para complementar y seguir profundizando.",
+      "created_time": "2026-10-13T03:42:00.000Z",
+      "canonical_url": "https://twitter.com/santtiagom_/status/2109688787924090983",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Mrjohn_18/status/2109740171512188940",
+      "author": "Mrjohn_18",
+      "headline": "The __7 iPhone Duo poses__ every app designer should know: Closed, Compact, Partially Folded, Flat, Portrait, Handheld, Tent, and Table Top.",
+      "tweet_id": "3f81eba9-b6bc-8141-9c97-cf50f78bec25",
+      "source_text": "The 7 iPhone Duo poses you should design your app for\nClosed / Compact Pose\nPartially Folded Pose\nFully Opened / Flat Pose\nOpened Portrait Pose\nHandheld Pose\nTent / Standing Pose\nTable Top Pose https://t.co/q242g9AiXM https://t.co/ZPWaun1gLM",
+      "created_time": "2026-10-13T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/Mrjohn_18/status/2109740171512188940",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/distortgeekin/status/2109637916922159360",
+      "author": "distortgeekin",
+      "headline": "Lauren Tan merged __2,500 PRs last month__ with Grok Bots — her secret: 12 rules her agents can never skip, including \"no proof, no merge\" and \"every failure becomes a skill.\"",
+      "tweet_id": "3f81eba9-b6bc-8143-b326-c7af496921b5",
+      "source_text": "Lauren Tan merged 2,500 PRs last month with a team of Grok Bots\n\nShe read almost none of them\n\nHer agents are not smarter than yours\n\nThey are just not allowed to break 12 rules\n\nI pulled all 12 from 4 hours of her talks and put them in one file:\n\n> No proof, no merge\n> Every failure becomes a skill\n> A rule the model can forget is not a rule\n\nMost people fix their agent with a longer prompt. She fixes it with a rule it can't skip\n\nSpaceXAI pays $750K-$1.2M for engineers who work like this\n\nBookmark the file and paste it into your AGENTS.md\n\nThen read how to build the full Grok Bot team in the article below ↓",
+      "created_time": "2026-10-13T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/distortgeekin/status/2109637916922159360",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ericosiu/status/2109660375352242525",
+      "author": "ericosiu",
+      "headline": "Eric Siu screens AI-native hires with __six questions__, including how much of your tactical work AI does today and which products you've stopped using because of it.",
+      "tweet_id": "3f81eba9-b6bc-812c-82e5-e197705aae4d",
+      "source_text": "We're hiring AI-native people. If you apply, these are the six questions we'll send you.\n\nAnswer them well, and you move to the shortlist.\n\n1. How many hours are you spending per week on X?\n2. What percent of your tactical work is done by AI right now?\n3. What is your daily AI driver, and how are you using it specifically?\n4. How much are you spending out of pocket when it comes to AI?\n5. What is the most impactful build you've made, and are you able to share it?\n6. What workflows or products have you stopped using in the last six months?\n\nWhy these six:\n\n• Hours on X: X is where the AI action is happening right now. It shows whether you're obsessed with learning this stuff.\n• Tactical work done by AI: shows whether robots are doing the robot work, so you can do the human work.\n• Daily driver: shows how deep your day-to-day use actually goes.\n• Out of pocket: shows whether you're putting your own dollars behind it and investing in yourself.\n• Best build: the rubber meets the road when you show what you've actually built and how you built it.\n• Stopped using: this moves so fast that you have to keep eliminating as you add.\n\nIf that's you, apply. Link below.",
+      "created_time": "2026-10-13T01:22:00.000Z",
+      "canonical_url": "https://twitter.com/ericosiu/status/2109660375352242525",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/adocomplete/status/2109781357924958269",
+      "author": "adocomplete",
+      "headline": "Claude Code starts each session fresh, but __persistent context in CLAUDE.md__ carries your preferences repo-wide — and auto memory lets it learn across sessions.",
+      "tweet_id": "3f81eba9-b6bc-8142-b7c0-f0049adb3736",
+      "source_text": "Each Claude Code session starts with only the system prompt and tools.\n\nBut you can set repo-wide context in the Claude.md (or Agents.md) file and by default auto memory is enabled which allows Claude to remember and learn from your interactions with it. https://t.co/VjhDZy8YQR",
+      "created_time": "2026-10-13T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/adocomplete/status/2109781357924958269",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/seeconvm/status/2109746453203882187",
+      "author": "seeconvm",
+      "headline": "A single prompt turns __Opus 5.5 and Fable 5.5 into a full explainer video studio__ — idea to sourced script to voiced MP4, no animator needed.",
+      "tweet_id": "3f81eba9-b6bc-81a5-b03d-e77f6b928088",
+      "source_text": "This prompt turns Opus 5.5 & Fable 5.5 into a full explainer video studio.\n\none idea → script → storyboard → every claim sourced → voice, captions, MP4\n\nno After Effects. no animator. no $3k per minute.\n\nIt's f*cking unreal...\n\nsend it to Opus 5.5 & Fable 5.5, and thank me later. Then read the full roadmap with examples below.",
+      "created_time": "2026-10-13T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/seeconvm/status/2109746453203882187",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/reinexbt/status/2109655345568030999",
+      "author": "reinexbt",
+      "headline": "Boris Cherny, the creator of Claude Code, released a prompt that turns __Opus 5.5 into a job-finishing harness__ — a framework he's calling Harness Engineering.",
+      "tweet_id": "3f71eba9-b6bc-8141-a457-f1d4a332148f",
+      "source_text": "Boris Cherny (Claude Code creator) just released a prompt that turns Opus 5.5 into a harness that actually finishes any job\n\nIt's f*cking unreal...\n\nSend it to Opus 5.5 and thank me later\n\nThen read the full guide for Harness Engineering https://t.co/E2jSiXQYzU https://t.co/Vl7cZA3TAb",
+      "created_time": "2026-10-12T21:27:00.000Z",
+      "canonical_url": "https://twitter.com/reinexbt/status/2109655345568030999",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/jasonfried/status/2109701002865860869",
+      "author": "jasonfried",
+      "headline": "Jason Fried announces __Basecamp MCP__ is live and shares how Emre runs it alongside Claude and Grok Bot.",
+      "tweet_id": "3f71eba9-b6bc-8134-bd26-dd73111455b4",
+      "source_text": "Emre shares more on his setup w/ Grok Bot, Claude, and Basecamp. And if you haven't heard, Basecamp MCP is out as well. https://t.co/ueLEzyCIxl https://t.co/zPZl9dze15",
+      "created_time": "2026-10-12T20:42:00.000Z",
+      "canonical_url": "https://twitter.com/jasonfried/status/2109701002865860869",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/KatieKeithBarn2/status/2109681248331313485",
+      "author": "KatieKeithBarn2",
+      "headline": "WordPress plugin developer Katie Keith says new sales are __down 48% over two years__ — and peers at pmproplugin and GravityView report nearly identical numbers.",
+      "tweet_id": "3f71eba9-b6bc-81e8-a91e-e2c7fe1c68a9",
+      "source_text": "If you sell WordPress plugins, are your new sales down?Mine are, by 48% in two years.\n\nI assumed we were the worst affected until I compared with @pmproplugin and @GravityView, whose figures match almost exactly.\n\nHow do yours compare over the same period?\n\nhttps://t.co/kAcPQ5IR6W",
+      "created_time": "2026-10-12T20:42:00.000Z",
+      "canonical_url": "https://twitter.com/KatieKeithBarn2/status/2109681248331313485",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "author": "acossta",
+      "item_id": "hn:50071267",
+      "headline": "Nvidia open-sources __Nemotron 3.5 Bolt__, a 74B MoE model designed to run local agents on RTX Spark laptops.",
+      "subreddit": null,
+      "source_text": "Nvidia Nemotron 3.5 Bolt: open 74B MoE for local agents on RTX Spark",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:18:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates",
+      "learning_score": 3
+    },
+    {
+      "url": "https://supadupa.tech/",
+      "author": "carrdenn3",
+      "item_id": "hn:50071151",
+      "headline": "__SupaDupa__ uses a local 4B model to auto-rename chaotic Mac folders — no cloud, no manual effort.",
+      "subreddit": null,
+      "source_text": "Show HN: SupaDupa, naming messy Mac folders with a local 4B model",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:11:02+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://supadupa.tech",
+      "learning_score": 3
+    },
+    {
+      "url": "https://grigio.org/sonia-local-voice-assistant-in-less-than-13gb-ram-no-dedicated-gpu-skills-tool-calling-supported/",
+      "author": "grigio",
+      "item_id": "hn:50071118",
+      "headline": "__Sonia__ runs a full voice assistant on Linux with no GPU — 13GB RAM, tool calling, and skills support out of the box.",
+      "subreddit": null,
+      "source_text": "Show HN: Sonia. Local Voice Assistant Linux. 13Gb RAM, No GPU, Skills Supported",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:08:44+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://grigio.org/sonia-local-voice-assistant-in-less-than-13gb-ram-no-dedicated-gpu-skills-tool-calling-supported",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
+      "author": "corvad",
+      "item_id": "hn:50071310",
+      "headline": "Apple refreshes the __Apple TV 4K__ with Siri AI at the center of the living room experience.",
+      "subreddit": null,
+      "source_text": "Apple unveils the new Apple TV 4K, supercharged by Siri AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:21:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k",
+      "learning_score": 2
+    },
+    {
+      "url": "https://soraven.com/who-closes-the-loop-d6a43833d838",
+      "author": "darkmirage",
+      "item_id": "hn:50071245",
+      "headline": "The missing piece in AI coding workflows: __who closes the loop__ when the agent makes a wrong call.",
+      "subreddit": null,
+      "source_text": "Who closes the loop? Thoughts on using coding agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:17:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://soraven.com/who-closes-the-loop-d6a43833d838",
+      "learning_score": 2
+    },
+    {
+      "url": "https://itzik123.github.io/PaletteAtlas/",
+      "author": "itzikkatz",
+      "item_id": "hn:50071218",
+      "headline": "This Show HN finds __paintings matching any image's color palette__, built with HNSW from scratch and no backend.",
+      "subreddit": null,
+      "source_text": "Show HN: Find paintings in any image's colors (HNSW from scratch, no server)",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:15:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://itzik123.github.io/PaletteAtlas",
+      "learning_score": 2
+    },
+    {
+      "url": "https://docs.hypermass.io/docs/cli/",
+      "author": "gardensalad",
+      "item_id": "hn:50071200",
+      "headline": "__Hypermass__ streams any live open dataset to your terminal in two commands — no scraping or pipeline setup.",
+      "subreddit": null,
+      "source_text": "Show HN: Stream live open data in two commands",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:14:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://docs.hypermass.io/docs/cli",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/sanagnos/taskman",
+      "author": "subparsec",
+      "item_id": "hn:50071199",
+      "headline": "__Taskman__ ties each GitHub ticket to its own Claude Code session, issue, and PR — all in one TUI.",
+      "subreddit": null,
+      "source_text": "Show HN: Taskman – each ticket's Claude Code session, issue and PR in one TUI",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:14:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/sanagnos/taskman",
+      "learning_score": 2
+    },
+    {
+      "url": "https://alecmuffett.com/article/167611",
+      "author": "alecmuffett",
+      "item_id": "hn:50071175",
+      "headline": "Alec Muffett flags __three Signal Android settings__ most users have wrong — worth five minutes to fix.",
+      "subreddit": null,
+      "source_text": "If you use Signal on Android here are 3 default app settings you should fix",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:12:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://alecmuffett.com/article/167611",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.theregister.com/security/2026/10/13/123456-password-linked-to-denmark-data-breach-affecting-88m-people/5302726",
+      "author": "roland_nilsson",
+      "item_id": "hn:50071139",
+      "headline": "A breach affecting __8.8 million Danes__ was traced back to accounts still using the password '123456'.",
+      "subreddit": null,
+      "source_text": "'123456' password linked to Denmark data breach affecting 8.8M people",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:09:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theregister.com/security/2026/10/13/123456-password-linked-to-denmark-data-breach-affecting-88m-people/5302726",
+      "learning_score": 2
+    },
+    {
+      "url": "https://variety.com/2026/biz/news/disney-bids-on-character-ai-assets-chapter-11-bankruptcy-1236909984/",
+      "author": "andsoitis",
+      "item_id": "hn:50071087",
+      "headline": "Disney is bidding on __Character.ai's assets__ as the chatbot startup files for Chapter 11 bankruptcy.",
+      "subreddit": null,
+      "source_text": "Disney Bids on Character.ai Assets as Chatbot Files for Chapter 11 Bankruptcy",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:06:45+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://variety.com/2026/biz/news/disney-bids-on-character-ai-assets-chapter-11-bankruptcy-1236909984",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.bloomberg.com/news/features/2026-10-13/apple-unveils-299-homeview-smart-home-hub-new-apple-tv-4k-homepod-mini-2",
+      "author": "helsinkiandrew",
+      "item_id": "hn:50071081",
+      "headline": "Apple's __$299 HomeView hub__ is the company's first smart home display, combining entertainment and home control in one device.",
+      "subreddit": null,
+      "source_text": "Apple Unveils $299 HomeView Hub as Part of New Smart Home Push",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-13T13:06:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bloomberg.com/news/features/2026-10-13/apple-unveils-299-homeview-smart-home-hub-new-apple-tv-4k-homepod-mini-2",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__Meta releases its first frontier model, Muse Wonder__",
+      "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "tag": "Release",
+      "source": "TechCrunch AI"
+    }
+  ],
+  "human_items": [
+    {
+      "id": 8638,
+      "headline": "5th Circuit rules FedEx worker's harassment reports not protected under Title VII",
+      "url": "https://www.hrdive.com/news/fedex-worker-harassment-reports-not-protected-by-title-vii/832777/",
+      "source": "HR Dive",
+      "summary": "The 5th U.S. Circuit Court of Appeals ruled that a former FedEx Office employee's six harassment reports did not constitute protected activity under Title VII because the reported conduct—bullying, aggressive, and hostile behavior—was not sufficiently linked to a protected characteristic such as race. The court held that any adverse actions taken in response could not be classified as retaliation.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-10-12T20:23:00+00:00"
+    },
+    {
+      "id": 8637,
+      "headline": "Whole Foods wins summary judgment after catching plaintiff falsifying time records",
+      "url": "https://www.hrdive.com/news/whole-foods-defeats-bias-suit-after-catching-plaintiff-faking-time-records/832779/",
+      "source": "HR Dive",
+      "summary": "A federal judge granted summary judgment to Whole Foods after security camera footage showed the plaintiff routinely left the facility immediately after clocking in, misrepresenting his work hours. The plaintiff had alleged race discrimination, retaliation, and FMLA violations, but the judge found the time falsification was legitimate grounds for termination and that the company had fired employees of various races for similar conduct.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-10-12T20:23:00+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-10-13T13:42:19.317439+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          8627,
+          8628
+        ],
+        "reason": "Both report Meta's release of the Muse Wonder and Muse Wonder Full AI models",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8642
+        ],
+        "reason": "Standalone article on reading fiction to build leadership skills in the AI age",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8626
+        ],
+        "reason": "Standalone opinion piece on AI regulation gaps by former UK attorney general",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8638
+        ],
+        "reason": "Standalone ruling on FedEx harassment reports and Title VII",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8631
+        ],
+        "reason": "Standalone interview on design principles behind Meta's Muse AI agent",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8629
+        ],
+        "reason": "Standalone analysis of the open vs. closed AI model debate",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8641
+        ],
+        "reason": "Standalone report on UAE mandating AI education for all K-12 grades",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8612
+        ],
+        "reason": "Standalone announcement of Amex's AI agent purchase authorization framework",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8637
+        ],
+        "reason": "Standalone ruling on Whole Foods defeating a discrimination suit",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8630
+        ],
+        "reason": "Standalone report on AI labs purchasing data from failed startups",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8613
+        ],
+        "reason": "Standalone report on Character.AI filing for bankruptcy",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          8639
+        ],
+        "reason": "Standalone EEOC settlement over sex-based hiring discrimination",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-10-13T13:42:56.463857",
+      "send_completed_at": "2026-10-13T13:43:04.836901",
+      "event_name": "schedule",
+      "github_run_id": "38404746121",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "2d26da3615819e7c2b34d8c748f6407e9628e72a81165dadad2a290adba9addb"
+}
