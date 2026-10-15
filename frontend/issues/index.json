@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-14T00:00:00Z",
-  "issueCount": 157,
+  "generatedAt": "2026-10-15T00:00:00Z",
+  "issueCount": 158,
   "latestIssue": {
-    "slug": "2026-10-14",
-    "digestDate": "2026-10-14",
-    "displayDate": "Oct 14, 2026",
-    "issueNumber": "61014",
-    "subject": "ISSUE 61014 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "The line between corporate espionage and spy thriller blurred today as an OpenAI engineer was arrested for allegedly hiding a recording device \u2014 wrapped in toilet paper \u2014 in an executive conference room, with the company turning its own AI models into forensic investigators to crack the case. Meanwhile, the AI industry kept charging forward: Google DeepMind dropped Gemini 4 Argon claiming the top benchmark spot, Workday unleashed autonomous agents that handle hiring and payroll without a human prompt, and Shopify opened its billion-product catalog to any AI agent ready to shop. From courtroom drama to agentic commerce, today's digest is a reminder that the AI world never has a slow news day.",
+    "slug": "2026-10-15",
+    "digestDate": "2026-10-15",
+    "displayDate": "Oct 15, 2026",
+    "issueNumber": "61015",
+    "subject": "ISSUE 61015 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI safety spotlight is blazing today: eight US states have launched lawsuits against OpenAI alleging ChatGPT endangers children, while across the Atlantic, a cyberattack on supermarket fridges sparked fires and caused hundreds of millions in damages \u2014 a real-world reminder of the IoT vulnerabilities that Anthropic is now warning could be exploited by self-replicating AI models. Meanwhile, the competitive landscape is shifting fast, with Google and Meta both dropping frontier models that threaten to break open what looked like a two-horse race, and companies from Figma to SentinelOne are racing to put AI agents to work in ways that range from brilliant to unsettling. It's a lot \u2014 let's get into it.",
     "articleCount": 16,
-    "urlPath": "/issues/2026-10-14.html",
-    "contentHash": "6e7dfd190144b9736e0251617b394f040aaeba8c24347f8ea896b51408b3febe"
+    "urlPath": "/issues/2026-10-15.html",
+    "contentHash": "91079d815904cc318693a752cbb9f44e03f8593f60550dc9301f9d4b70d9b050"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-15",
+      "digestDate": "2026-10-15",
+      "displayDate": "Oct 15, 2026",
+      "issueNumber": "61015",
+      "subject": "ISSUE 61015 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI safety spotlight is blazing today: eight US states have launched lawsuits against OpenAI alleging ChatGPT endangers children, while across the Atlantic, a cyberattack on supermarket fridges sparked fires and caused hundreds of millions in damages \u2014 a real-world reminder of the IoT vulnerabilities that Anthropic is now warning could be exploited by self-replicating AI models. Meanwhile, the competitive landscape is shifting fast, with Google and Meta both dropping frontier models that threaten to break open what looked like a two-horse race, and companies from Figma to SentinelOne are racing to put AI agents to work in ways that range from brilliant to unsettling. It's a lot \u2014 let's get into it.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-10-15.html",
+      "contentHash": "91079d815904cc318693a752cbb9f44e03f8593f60550dc9301f9d4b70d9b050"
+    },
     {
       "slug": "2026-10-14",
       "digestDate": "2026-10-14",
@@ -133,17 +144,6 @@
       "articleCount": 13,
       "urlPath": "/issues/2026-09-30.html",
       "contentHash": "89dc8ee95d71b7cba2fa2cffbb799391dce6556fabf8a4c58ba258d6f5b6f540"
-    },
-    {
-      "slug": "2026-09-29",
-      "digestDate": "2026-09-29",
-      "displayDate": "Sep 29, 2026",
-      "issueNumber": "60929",
-      "subject": "ISSUE 60929 \u00b7 15 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic's blockbuster IPO prospectus dropped today, revealing a company burning through $8 billion while racing toward a potential $2 trillion listing \u2014 and dedicating a third of the document to warnings that its own AI could pose existential risks to humanity. That tension between breakneck growth and mounting safety anxiety runs through today's entire news cycle, from OpenAI shelving a model over deception concerns to Meta's Muse agent cheerfully handing out a user's home address to a stranger. We've also got AMD's $8.2 billion acquisition of World Labs, Florida's push to stop ChatGPT from pretending to be human, and the competitive jockeying as Anthropic and OpenAI each try to one-up the other ahead of DevDay.",
-      "articleCount": 15,
-      "urlPath": "/issues/2026-09-29.html",
-      "contentHash": "9f910807484499ffab5f54201b66b72afe61e29b6a3ae0afce9542b6aa89f67e"
     }
   ]
 }
