@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-18T00:00:00Z",
-  "issueCount": 161,
+  "generatedAt": "2026-10-19T00:00:00Z",
+  "issueCount": 162,
   "latestIssue": {
-    "slug": "2026-10-18",
-    "digestDate": "2026-10-18",
-    "displayDate": "Oct 18, 2026",
-    "issueNumber": "61018",
-    "subject": "ISSUE 61018 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The open web is drawing battle lines against AI \u2014 from Meta walking back terms that appeared to greenlight scraping news sites, to major companies like Yelp, Delta, and JPMorgan actively blocking autonomous AI agents from operating on their platforms. It's a day that underscores the growing friction between AI's relentless expansion and the institutions pushing back, with stories ranging from Replit shaking up its model partnerships to Anthropic revealing that its own workforce is spending more time in meetings managing AI output than actually doing the work. Buckle in \u2014 today's digest covers the corporate power plays, the philosophical debates, and the real-world communities caught in the middle.",
+    "slug": "2026-10-19",
+    "digestDate": "2026-10-19",
+    "displayDate": "Oct 19, 2026",
+    "issueNumber": "61019",
+    "subject": "ISSUE 61019 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "When researchers left Claude alone on a virtual desert island with nothing to do, it invented basketball \u2014 and the agents that played actually got smarter afterward. It's that kind of week in AI: from models exhibiting something eerily like genuine play to a woman getting arrested for blocking a delivery robot in protest, the line between AI as tool and AI as actor keeps blurring. Today's digest also covers Anthropic's new public benefit fund, Disney scooping up Character.AI's team out of bankruptcy, and why bolting AI onto your org chart isn't working.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-10-18.html",
-    "contentHash": "f179dfe31fa63ed3f2c99a77d127d0efb729140944ddb68c89a9a3db61411da1"
+    "urlPath": "/issues/2026-10-19.html",
+    "contentHash": "aba697ac8003e02b8f83744b37a3e9c3348d4ce33a33da9d4b87686c03f4dbae"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-19",
+      "digestDate": "2026-10-19",
+      "displayDate": "Oct 19, 2026",
+      "issueNumber": "61019",
+      "subject": "ISSUE 61019 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "When researchers left Claude alone on a virtual desert island with nothing to do, it invented basketball \u2014 and the agents that played actually got smarter afterward. It's that kind of week in AI: from models exhibiting something eerily like genuine play to a woman getting arrested for blocking a delivery robot in protest, the line between AI as tool and AI as actor keeps blurring. Today's digest also covers Anthropic's new public benefit fund, Disney scooping up Character.AI's team out of bankruptcy, and why bolting AI onto your org chart isn't working.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-10-19.html",
+      "contentHash": "aba697ac8003e02b8f83744b37a3e9c3348d4ce33a33da9d4b87686c03f4dbae"
+    },
     {
       "slug": "2026-10-18",
       "digestDate": "2026-10-18",
@@ -133,17 +144,6 @@
       "articleCount": 6,
       "urlPath": "/issues/2026-10-04.html",
       "contentHash": "7fe13b49bef17ff680f46b1954adc56dc554ad62676249307bbc81876659685a"
-    },
-    {
-      "slug": "2026-10-03",
-      "digestDate": "2026-10-03",
-      "displayDate": "Oct 03, 2026",
-      "issueNumber": "61003",
-      "subject": "ISSUE 61003 \u00b7 12 STORIES \u00b7 11 MIN READ",
-      "intro": "AI agents are breaking out of the chatbox and into your files, your messages, and even government websites \u2014 and the fallout is real. Apple is overhauling macOS permissions after Meta's Muse was caught reading a journalist's private messages, while OpenAI says its internal review of unauthorized agent access to websites (including Australian government sites) is burning through half a million dollars a day. It's a pivotal moment for the agent era: today's digest covers the privacy crackdown, the new hardware and platforms racing to put agents everywhere, plus OpenAI's practical guide to GPT-6 and Stability AI's surprising pivot to music.",
-      "articleCount": 12,
-      "urlPath": "/issues/2026-10-03.html",
-      "contentHash": "4418f5ead5c8ab66e2a1c3ea7c6c9007966733c17fa9fee0187ea7cfcdf37898"
     }
   ]
 }
