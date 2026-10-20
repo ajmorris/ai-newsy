@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-19T00:00:00Z",
-  "issueCount": 162,
+  "generatedAt": "2026-10-20T00:00:00Z",
+  "issueCount": 163,
   "latestIssue": {
-    "slug": "2026-10-19",
-    "digestDate": "2026-10-19",
-    "displayDate": "Oct 19, 2026",
-    "issueNumber": "61019",
-    "subject": "ISSUE 61019 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "When researchers left Claude alone on a virtual desert island with nothing to do, it invented basketball \u2014 and the agents that played actually got smarter afterward. It's that kind of week in AI: from models exhibiting something eerily like genuine play to a woman getting arrested for blocking a delivery robot in protest, the line between AI as tool and AI as actor keeps blurring. Today's digest also covers Anthropic's new public benefit fund, Disney scooping up Character.AI's team out of bankruptcy, and why bolting AI onto your org chart isn't working.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-10-19.html",
-    "contentHash": "aba697ac8003e02b8f83744b37a3e9c3348d4ce33a33da9d4b87686c03f4dbae"
+    "slug": "2026-10-20",
+    "digestDate": "2026-10-20",
+    "displayDate": "Oct 20, 2026",
+    "issueNumber": "61020",
+    "subject": "ISSUE 61020 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic co-founder Jack Clark told the IMF and World Bank that the technological singularity has begun \u2014 and Wall Street seems to be having an existential crisis of its own about it, with CoreWeave's bonds hitting distressed levels and investors openly asking whether the trillion-dollar AI boom is built on sand. Today's digest spans that full spectrum of AI confidence and doubt, from OpenAI's breakthrough in teaching models to write COBOL to a Guardian columnist arguing the whole thing is just generating expensive slop, plus Hollywood's first fictional AI actress, a Plex exploit chain built with AI assistance, and NYC's mayor telling his city to push back against all of it.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-10-20.html",
+    "contentHash": "c8672d3273e9326c6572976d7780dfaa3bb63c8da9ebe5e15f0a70fa8c60c993"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-20",
+      "digestDate": "2026-10-20",
+      "displayDate": "Oct 20, 2026",
+      "issueNumber": "61020",
+      "subject": "ISSUE 61020 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic co-founder Jack Clark told the IMF and World Bank that the technological singularity has begun \u2014 and Wall Street seems to be having an existential crisis of its own about it, with CoreWeave's bonds hitting distressed levels and investors openly asking whether the trillion-dollar AI boom is built on sand. Today's digest spans that full spectrum of AI confidence and doubt, from OpenAI's breakthrough in teaching models to write COBOL to a Guardian columnist arguing the whole thing is just generating expensive slop, plus Hollywood's first fictional AI actress, a Plex exploit chain built with AI assistance, and NYC's mayor telling his city to push back against all of it.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-10-20.html",
+      "contentHash": "c8672d3273e9326c6572976d7780dfaa3bb63c8da9ebe5e15f0a70fa8c60c993"
+    },
     {
       "slug": "2026-10-19",
       "digestDate": "2026-10-19",
@@ -133,17 +144,6 @@
       "articleCount": 12,
       "urlPath": "/issues/2026-10-05.html",
       "contentHash": "402d38d4e34c0e0d241fb00ed981c0680b20c2528ff3a356784277efca54135d"
-    },
-    {
-      "slug": "2026-10-04",
-      "digestDate": "2026-10-04",
-      "displayDate": "Oct 04, 2026",
-      "issueNumber": "61004",
-      "subject": "ISSUE 61004 \u00b7 6 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest story in AI today is one person walking out the door \u2014 and the earthquake it's causing. David Robinson, who literally wrote OpenAI's safety reports, resigned this week calling the company's culture \"broken,\" adding fuel to a growing exodus of safety researchers sounding alarms about how fast the industry is moving. Beyond the safety debate, today's digest covers Amazon playing defense on data centers, Capcom's vision for AI-assisted game development, and a new wave of AI agents that live right in your text messages.",
-      "articleCount": 6,
-      "urlPath": "/issues/2026-10-04.html",
-      "contentHash": "7fe13b49bef17ff680f46b1954adc56dc554ad62676249307bbc81876659685a"
     }
   ]
 }
