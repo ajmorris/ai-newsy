@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-20T00:00:00Z",
-  "issueCount": 163,
+  "generatedAt": "2026-10-21T00:00:00Z",
+  "issueCount": 164,
   "latestIssue": {
-    "slug": "2026-10-20",
-    "digestDate": "2026-10-20",
-    "displayDate": "Oct 20, 2026",
-    "issueNumber": "61020",
-    "subject": "ISSUE 61020 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic co-founder Jack Clark told the IMF and World Bank that the technological singularity has begun \u2014 and Wall Street seems to be having an existential crisis of its own about it, with CoreWeave's bonds hitting distressed levels and investors openly asking whether the trillion-dollar AI boom is built on sand. Today's digest spans that full spectrum of AI confidence and doubt, from OpenAI's breakthrough in teaching models to write COBOL to a Guardian columnist arguing the whole thing is just generating expensive slop, plus Hollywood's first fictional AI actress, a Plex exploit chain built with AI assistance, and NYC's mayor telling his city to push back against all of it.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-10-20.html",
-    "contentHash": "c8672d3273e9326c6572976d7780dfaa3bb63c8da9ebe5e15f0a70fa8c60c993"
+    "slug": "2026-10-21",
+    "digestDate": "2026-10-21",
+    "displayDate": "Oct 21, 2026",
+    "issueNumber": "61021",
+    "subject": "ISSUE 61021 \u00b7 15 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic's leaked S-1 filing dropped a jaw-dropping number on the AI world today: an $80.7 billion net loss in the first half of 2026, even as the company gears up for a November IPO and scrambles to secure compute from cloud partners who increasingly see it as a rival. It's a fitting backdrop for a day dominated by the question of who controls AI and at what cost \u2014 from Sam Altman sketching out three possible endgames for AI safety (and saying OpenAI has roughly a year to pick one) to Anthropic shopping a draft bill in Congress that could block model releases deemed catastrophically dangerous. Add in a TLS certificate debacle security experts say will take longer to clean up than Heartbleed, Meta pulling Muse's sharing feature after thousands of private conversations leaked via DNS, and the 2026 midterms shaping up as a referendum on tech power itself, and you've got a newsletter worth reading all the way through.",
+    "articleCount": 15,
+    "urlPath": "/issues/2026-10-21.html",
+    "contentHash": "650009991c78e19188a3d71612be8386db62021dc548d4adbe48503088d0fb28"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-21",
+      "digestDate": "2026-10-21",
+      "displayDate": "Oct 21, 2026",
+      "issueNumber": "61021",
+      "subject": "ISSUE 61021 \u00b7 15 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic's leaked S-1 filing dropped a jaw-dropping number on the AI world today: an $80.7 billion net loss in the first half of 2026, even as the company gears up for a November IPO and scrambles to secure compute from cloud partners who increasingly see it as a rival. It's a fitting backdrop for a day dominated by the question of who controls AI and at what cost \u2014 from Sam Altman sketching out three possible endgames for AI safety (and saying OpenAI has roughly a year to pick one) to Anthropic shopping a draft bill in Congress that could block model releases deemed catastrophically dangerous. Add in a TLS certificate debacle security experts say will take longer to clean up than Heartbleed, Meta pulling Muse's sharing feature after thousands of private conversations leaked via DNS, and the 2026 midterms shaping up as a referendum on tech power itself, and you've got a newsletter worth reading all the way through.",
+      "articleCount": 15,
+      "urlPath": "/issues/2026-10-21.html",
+      "contentHash": "650009991c78e19188a3d71612be8386db62021dc548d4adbe48503088d0fb28"
+    },
     {
       "slug": "2026-10-20",
       "digestDate": "2026-10-20",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-10-06.html",
       "contentHash": "4de83fc655f5a4fb014e837f8f906ba5703c88a424fe0ebc7ffe17bd41f77b47"
-    },
-    {
-      "slug": "2026-10-05",
-      "digestDate": "2026-10-05",
-      "displayDate": "Oct 05, 2026",
-      "issueNumber": "61005",
-      "subject": "ISSUE 61005 \u00b7 12 STORIES \u00b7 11 MIN READ",
-      "intro": "It's a rough week for OpenAI's safety narrative \u2014 a former insider just called the company's safety culture \"broken\" in *The Atlantic*, and CEO Sam Altman isn't exactly helping by telling the world to accept \"bad things\" like hacks and scams as the price of AI progress. Meanwhile, the tension between AI enthusiasm and AI anxiety is playing out everywhere: Google had to freeze its bug bounty program because AI-generated slop overwhelmed it, the White House is trying to rebrand the whole field as \"super intelligence,\" and a billion people are using ChatGPT every month even as public opinion sours \u2014 proving that our complicated relationship with this technology is only getting more complicated.",
-      "articleCount": 12,
-      "urlPath": "/issues/2026-10-05.html",
-      "contentHash": "402d38d4e34c0e0d241fb00ed981c0680b20c2528ff3a356784277efca54135d"
     }
   ]
 }
