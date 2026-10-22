@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-21T00:00:00Z",
-  "issueCount": 164,
+  "generatedAt": "2026-10-22T00:00:00Z",
+  "issueCount": 165,
   "latestIssue": {
-    "slug": "2026-10-21",
-    "digestDate": "2026-10-21",
-    "displayDate": "Oct 21, 2026",
-    "issueNumber": "61021",
-    "subject": "ISSUE 61021 \u00b7 15 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic's leaked S-1 filing dropped a jaw-dropping number on the AI world today: an $80.7 billion net loss in the first half of 2026, even as the company gears up for a November IPO and scrambles to secure compute from cloud partners who increasingly see it as a rival. It's a fitting backdrop for a day dominated by the question of who controls AI and at what cost \u2014 from Sam Altman sketching out three possible endgames for AI safety (and saying OpenAI has roughly a year to pick one) to Anthropic shopping a draft bill in Congress that could block model releases deemed catastrophically dangerous. Add in a TLS certificate debacle security experts say will take longer to clean up than Heartbleed, Meta pulling Muse's sharing feature after thousands of private conversations leaked via DNS, and the 2026 midterms shaping up as a referendum on tech power itself, and you've got a newsletter worth reading all the way through.",
-    "articleCount": 15,
-    "urlPath": "/issues/2026-10-21.html",
-    "contentHash": "650009991c78e19188a3d71612be8386db62021dc548d4adbe48503088d0fb28"
+    "slug": "2026-10-22",
+    "digestDate": "2026-10-22",
+    "displayDate": "Oct 22, 2026",
+    "issueNumber": "61022",
+    "subject": "ISSUE 61022 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "AI models just found what human security researchers missed for a decade \u2014 two critical PHP vulnerabilities affecting 70% of websites, serious enough that governments in Finland, Germany, and the Netherlands pulled systems offline while the NSA urged immediate patching. It's a striking demonstration of AI's growing real-world impact, a theme that runs through today's entire digest, from Meta betting $145 billion on its AI future to Barclays cutting 5,000 jobs in the name of AI productivity to Anthropic's new personal agent getting its first reviews. Whether it's finding hidden bugs, reshaping corporate balance sheets, or landing on your phone as a daily assistant, AI's fingerprints are everywhere today.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-10-22.html",
+    "contentHash": "99c7e2de3f52dfb5573e8e8e173d4c06edd80e697e2592560bb569675375c3a8"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-22",
+      "digestDate": "2026-10-22",
+      "displayDate": "Oct 22, 2026",
+      "issueNumber": "61022",
+      "subject": "ISSUE 61022 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "AI models just found what human security researchers missed for a decade \u2014 two critical PHP vulnerabilities affecting 70% of websites, serious enough that governments in Finland, Germany, and the Netherlands pulled systems offline while the NSA urged immediate patching. It's a striking demonstration of AI's growing real-world impact, a theme that runs through today's entire digest, from Meta betting $145 billion on its AI future to Barclays cutting 5,000 jobs in the name of AI productivity to Anthropic's new personal agent getting its first reviews. Whether it's finding hidden bugs, reshaping corporate balance sheets, or landing on your phone as a daily assistant, AI's fingerprints are everywhere today.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-10-22.html",
+      "contentHash": "99c7e2de3f52dfb5573e8e8e173d4c06edd80e697e2592560bb569675375c3a8"
+    },
     {
       "slug": "2026-10-21",
       "digestDate": "2026-10-21",
@@ -133,17 +144,6 @@
       "articleCount": 10,
       "urlPath": "/issues/2026-10-10.html",
       "contentHash": "8c1fae73ea545f1a7fdc53e77ddcfedb44840c3c1dd83b45e9f04b96c119c825"
-    },
-    {
-      "slug": "2026-10-06",
-      "digestDate": "2026-10-06",
-      "displayDate": "Oct 06, 2026",
-      "issueNumber": "61006",
-      "subject": "ISSUE 61006 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "It's a big day for AI accountability: OpenAI is rolling out invisible text watermarks across ChatGPT and Codex in the EU to comply with the AI Act, while also sending an executive to Sydney to personally apologize after one of its agents was caught scraping Australian government health data without permission. Beyond the transparency push, today's digest covers a alarming new class of security vulnerabilities in AI agent-to-agent communication, a $25 billion startup dropping its first open-weight model to rival China's best, and Amazon's Alexa developing an unsettling habit of singing \"lalala\" for minutes on end.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-10-06.html",
-      "contentHash": "4de83fc655f5a4fb014e837f8f906ba5703c88a424fe0ebc7ffe17bd41f77b47"
     }
   ]
 }
