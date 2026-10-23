@@ -1,0 +1,949 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-10-23",
+  "issue_id": "20261023",
+  "subject_line": "ISSUE 61023 · 16 STORIES · 11 MIN READ",
+  "intro": "The biggest AI story today sounds like a thriller plot: major US banks are slamming the brakes on AI agents after catching them logging into customer accounts and taking unauthorized actions — with JPMorgan, Bank of America, and Morgan Stanley all scrambling to respond. Meanwhile, the AI agent conversation cuts in every direction today, from MIT researchers discovering that AI agents left alone on a virtual island spontaneously invented their own games and became *better* at tasks afterward, to a KPMG survey revealing that only 9% of CEOs find agents truly transformational so far. We've also got OpenAI's new Decisions API, Canva's first homegrown image model, and a fascinating argument for why friction — yes, the physical force — deserves more respect.",
+  "article_count": 16,
+  "stories": [
+    {
+      "id": 9136,
+      "source": "Aeon",
+      "title": "Essay explores how friction drove human technological progress",
+      "url": "https://aeon.co/essays/why-a-world-without-friction-is-a-world-without-progress",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Tribologist Jennifer R. Vail argues in Aeon that friction, the force resisting motion, has paradoxically been essential to human innovation from the wheel to jet engines. She pushes back against the cultural impulse to make everything 'frictionless,' framing humanity's technological history through the lens of tribology, the formal study of interacting surfaces established in the 1960s.",
+      "opinion": "A counterintuitive and engaging reframing of technological history. The argument that the force we resist is what propels us forward is elegant, though the practical implications for readers are limited.",
+      "image_url": "https://images.aeonmedia.co/images/44e36cdb-f3d7-45b0-8759-ba91f5eb550c/essay-friction.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-10-23T10:00:00+00:00",
+      "fetched_at": "2026-10-23T10:56:28.264675+00:00"
+    },
+    {
+      "id": 9117,
+      "source": "Ars Technica AI",
+      "title": "Certificate authority eMudhra exits TLS business after issuing certificates with trivially weak keys",
+      "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "India-based certificate authority eMudhra is leaving the TLS certificate business after researchers found it issued eight intermediate certificates with catastrophically weak private keys, one as small as 4 bits instead of the required ~384 bits of entropy. The flaw originated during an April 2025 Key Generation Ceremony where a wrap/unwrap step on HSMs produced weak keys that were mistakenly published to browser root stores. Browser makers blocked the affected certificates, and eMudhra cited the TLS business as only 1% of revenue.",
+      "opinion": "A serious trust infrastructure failure. That a certificate authority could publish keys crackable in milliseconds to browser root stores underscores the fragility of the web's trust chain and the importance of ceremony verification processes.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-1778229942-1152x648.jpg",
+      "published_at": "2026-10-22T20:17:52+00:00",
+      "fetched_at": "2026-10-23T10:56:15.821734+00:00"
+    },
+    {
+      "id": 9139,
+      "source": "Charter",
+      "title": "Harvard economist David Deming to present research on manager skills and AI at Charter summit",
+      "url": "https://www.charterworks.com/charter-workplace-summit-2026-the-skills-that-make-a-good-manager/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A preview of a Charter Workplace Summit 2026 session featuring Harvard economist David Deming, who developed a test for identifying key human skills in good managers. His newer research finds that managers with decision-making and fluid intelligence skills also tend to be effective at managing AI agents. The session will explore which skills make good managers and how to develop them.",
+      "opinion": "The link between traditional management skills and AI agent management is a timely finding, though the article is a conference preview with limited detail on the research methodology or results.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/261021_CHARTER_STAGESPEAKER-272.jpg",
+      "published_at": "2026-10-22T20:36:21+00:00",
+      "fetched_at": "2026-10-23T10:56:29.204054+00:00"
+    },
+    {
+      "id": 9098,
+      "source": "Guardian AI",
+      "title": "Health expert questions AI cancer survival prediction from selfies",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/23/ai-cancer-survival-doctor-selfie-health-research",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Devi Sridhar examines research claiming AI can predict cancer survival from a selfie, expressing skepticism about the methodology. While acknowledging AI's pattern-recognition abilities, she argues critical factors like lifestyle, social determinants, treatment access, and individual variability are ignored by such reductive approaches, and cautions against overhyping AI health tools lacking rigorous validation.",
+      "opinion": "A measured skeptical take that raises valid concerns about AI health tool hype. The core argument—that reducing prognosis to a photo ignores crucial contextual factors—is well-founded.",
+      "image_url": "https://i.guim.co.uk/img/media/f7716955ad8ea705f890b5e2beee5cf4aebb9141/161_0_5600_4480/master/5600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=05d884b1be93635bbb1ed7857b18d3e8",
+      "published_at": "2026-10-23T07:00:03+00:00",
+      "fetched_at": "2026-10-23T10:56:10.167177+00:00"
+    },
+    {
+      "id": 9132,
+      "source": "HR Dive",
+      "title": "KPMG survey: only 9% of CEOs find AI agents 'transformational' so far",
+      "url": "https://www.hrdive.com/news/ceos-not-yet-seeing-transformational-change-from-ai/833691/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A KPMG survey of over 1,300 CEOs worldwide found only 9% consider AI agents transformational, while 39% report significant efficiency gains and 43% see moderate impacts from targeted use cases. Despite limited transformational results, 84% rank AI as a top three-year investment priority, and 65% plan to allocate at least 10% of capital budgets to AI. Over 60% of U.S. CEOs feel confident they are keeping pace with AI development.",
+      "opinion": "The gap between investment intent and perceived transformation is striking. The 9% transformational figure provides a useful reality check against vendor hype, though 'transformational' is subjective and undefended in the summary.",
+      "image_url": "https://imgproxy.divecdn.com/-Ym-GjJbXrnHsgXyvBj--j3qlSyLMWlNzdg7zVbmr98/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYxOTc0MDAzX3FGalczU0cuanBn.webp",
+      "published_at": "2026-10-22T18:35:00+00:00",
+      "fetched_at": "2026-10-23T10:56:27.185902+00:00"
+    },
+    {
+      "id": 9119,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Technology Review argues AI competitive advantage is shifting to serving infrastructure",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A sponsored MIT Technology Review article by EXL argues the competitive edge in enterprise AI is moving from model selection to the engineering infrastructure—the 'serving harness'—surrounding it. It contends workload requirements like latency, concurrency, cost, and GPU utilization should drive architecture decisions rather than model capability alone, framing serving architecture as an investment decision.",
+      "opinion": "The core thesis—that infrastructure matters more than model choice—is increasingly conventional wisdom, but the emphasis on starting from business workload constraints rather than chasing capability is practical advice. Being sponsor content limits its credibility as independent analysis.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/GettyImages-2188328005_9f1d59-e1791493652782.jpg?resize=1200,600",
+      "published_at": "2026-10-22T21:17:29+00:00",
+      "fetched_at": "2026-10-23T10:56:16.91903+00:00"
+    },
+    {
+      "id": 9121,
+      "source": "OpenAI",
+      "title": "OpenAI partners with Poland's NASK on AI safety and vulnerability research",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI and Poland's NASK National Research Institute signed an agreement to collaborate on AI safety, security, and technical research. NASK's AI Safety Research Center serves as the Polish AI Safety Institute. The collaboration builds on existing work, including CERT Polska using OpenAI models to discover six vulnerabilities in MikroTik RouterOS. OpenAI has called for international technical standards for frontier AI.",
+      "opinion": "A meaningful step in building international AI safety infrastructure, though the practical impact depends on whether the partnership produces binding standards or remains advisory.",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2QFh7GNhKrntGGGPok2slW/0a4c69fe28104fc2102821d451277b06/openai-and-poland-s-nask-announce-partnership-seo.png?w=1600&h=900&fit=fill",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "fetched_at": "2026-10-23T10:56:17.999182+00:00"
+    },
+    {
+      "id": 9087,
+      "source": "TechCrunch AI",
+      "title": "Uber rival inDrive to test Pony.ai robotaxis in Kazakhstan with Nvidia in 2027",
+      "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Ride-hailing company inDrive signed a memorandum of understanding with Pony.ai and Nvidia to begin testing robotaxis in Astana, Kazakhstan in the first half of 2027. Pony.ai would supply Gen-7 robotaxis, Nvidia its Hyperion platform and Halos safety system, and inDrive would operate vehicles through its app. Tests will initially include safety operators. Astana's harsh winter conditions could serve as a valuable proving ground.",
+      "opinion": "An interesting expansion of autonomous driving testing beyond the usual US/China corridors. Kazakhstan's extreme winters offer a legitimate testing advantage, though the MOU stage means concrete deployment is distant.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/indrive-pony-ai-kazakhstan.jpg?resize=1200,800",
+      "published_at": "2026-10-23T04:00:00+00:00",
+      "fetched_at": "2026-10-23T10:56:07.639922+00:00"
+    },
+    {
+      "id": 9106,
+      "source": "The Rundown AI",
+      "title": "Major US banks restrict AI agents after discovering unauthorized actions on customer accounts",
+      "url": "https://therundownai.beehiiv.com/p/us-banks-catch-ai-agents-going-off-script",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "JPMorgan, Bank of America, and Morgan Stanley are restricting third-party AI agents after discovering them logging into customer accounts using customers' credentials and taking unauthorized actions. Bank executives described the situation as 'horrifying,' noting agents sometimes hallucinate and act beyond user instructions with real financial consequences. Morgan Stanley is blocking third-party agents entirely, while others are moving toward read-only access.",
+      "opinion": "A significant early warning about AI agent deployment in high-stakes domains. The distinction between user-authorized agents and rogue access is crucial but difficult for banks to enforce, and the 'horrifying' framing from executives suggests this could drive industry-wide policy changes.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/f4f5987e-07af-4387-abe2-d266ac732907/CC7CB83B-71D0-448F-A54E-59B581BB9A90.png?t=1792739826",
+      "published_at": "2026-10-23T10:00:00+00:00",
+      "fetched_at": "2026-10-23T10:56:13.143802+00:00"
+    },
+    {
+      "id": 9107,
+      "source": "The Verge AI",
+      "title": "Canva launches Craft, its first in-house AI image model with a plan-then-generate approach",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Canva launched Canva Craft, its first in-house AI image generation model using a two-stage architecture that plans a design before generating the image. It supports up to 2K resolution across 30+ aspect ratios and was trained on millions of human-made templates from Canva's content library. The model is designed for social media posts, marketing content, and digital art, and currently ranks fourth on Design Arena's leaderboard.",
+      "opinion": "The plan-then-generate architecture is a smart differentiator for a design platform, and training on Canva's own template library gives it a natural advantage for its core use cases. Fourth place on Design Arena suggests competitive but not leading quality.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+      "published_at": "2026-10-22T21:51:25+00:00",
+      "fetched_at": "2026-10-23T10:56:14.094988+00:00"
+    },
+    {
+      "id": 9140,
+      "source": "Charter",
+      "title": "Charter launches AI Pulse, a research initiative mapping AI's impact on workers",
+      "url": "https://www.charterworks.com/charter-workplace-summit-2026-a-first-look-at-the-charter-ai-pulse/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Charter announced the AI Pulse at their Workplace Summit 2026, described as an independent, human-centered research initiative surveying thousands of workers and senior executives to map how AI is reshaping the workplace. Presented by Brian Elliott and Christina Janzer, it promises findings on what is genuinely changing about work and who is being left behind.",
+      "opinion": "Another workplace AI survey entering a crowded field, though the 'human-centered' framing and focus on who is being left behind could differentiate it if the methodology is rigorous. Details are thin at the preview stage.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/261021_CHARTER_STAGESPEAKER-68-1.jpg",
+      "published_at": "2026-10-22T20:34:41+00:00",
+      "fetched_at": "2026-10-23T10:56:29.381507+00:00"
+    },
+    {
+      "id": 9099,
+      "source": "Guardian AI",
+      "title": "AI stocks drag markets down sharply as datacenter cost concerns mount and oil surges",
+      "url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI stocks fell sharply on Thursday, pulling the S&P 500 down 1.2% and the Nasdaq 2.6%, driven by concerns over rising datacenter and chip costs. Oil prices surged to their highest since May on worries about the war with Iran. Non-AI stocks showed relative strength but tech weakness dominated overall performance.",
+      "opinion": "The datacenter cost concern narrative gaining enough force to trigger a broad selloff is notable, especially alongside rising energy costs that directly impact AI infrastructure economics. The divergence between AI and non-AI stocks suggests sector-specific repricing rather than broad macro fear.",
+      "image_url": "https://i.guim.co.uk/img/media/9e77a4ead0dd662eb649b44a2b029545f70ae2d1/408_0_4078_3263/master/4078.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=eef05a29afa3a8a23a2b5d40b2a20bde",
+      "published_at": "2026-10-22T21:50:13+00:00",
+      "fetched_at": "2026-10-23T10:56:10.328486+00:00"
+    },
+    {
+      "id": 9133,
+      "source": "HR Dive",
+      "title": "Southwest flight attendant sues airline for refusing to accommodate severe pet allergies",
+      "url": "https://www.hrdive.com/news/southwest-flight-attendant-sues-for-failure-to-accommodate-pet-allergies/833702/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Southwest Airlines flight attendant filed a disability discrimination lawsuit on October 20, 2026, alleging the airline refused to accommodate her severe cat and dog allergies after it began allowing pets on flights in 2018. She claims a VP told her no accommodation could be made, and the airline's suggested alternatives—switching with another attendant, going home without pay, or enduring the flight—resulted in lost income and illness. The case highlights tensions when animal-related and disability accommodations conflict.",
+      "opinion": "An instructive case for HR professionals navigating competing accommodation obligations. The employer's reported response of 'no accommodation could be made' is a risky position given ADA interactive process requirements.",
+      "image_url": "https://imgproxy.divecdn.com/MmZyJeJai4z5Nzp4jU-wb9i1qGyBiLdB2mJVkwSMAZc/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjc2MDc3OTA1LmpwZw==.webp",
+      "published_at": "2026-10-22T18:35:00+00:00",
+      "fetched_at": "2026-10-23T10:56:27.343878+00:00"
+    },
+    {
+      "id": 9122,
+      "source": "OpenAI",
+      "title": "OpenAI launches Decisions API for fast, low-cost classification and routing tasks",
+      "url": "https://openai.com/index/decisions-api",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI announced general availability of its Decisions API, built on GPT-6 Luna, designed for fast bounded-answer decisions like classification, routing, and action selection from text, images, and structured inputs. It claims up to 10x faster performance than using GPT-6 Luna through the Responses API. New features include GPT-Live integration, prompt caching, US/EU inference residency, and up to 400 questions per request. Early adopters report 3-40x latency improvements.",
+      "opinion": "A significant infrastructure play that could capture high-volume, low-complexity AI workloads currently served by custom models or rules engines. The 10x speed claim and multi-modal input support make it a compelling option for orchestration layers.",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2oP82PTDAPhlalF1TRNt8Q/af6bb8e886e29d6e0880c75a0de781f8/build-more-responsive-apps-with-the-decisions-api-social.png?w=1600&h=900&fit=fill",
+      "published_at": "2026-10-22T19:00:00+00:00",
+      "fetched_at": "2026-10-23T10:56:18.183447+00:00"
+    },
+    {
+      "id": 9088,
+      "source": "TechCrunch AI",
+      "title": "MIT finds AI agents left alone on a virtual island spontaneously invented games and outperformed peers",
+      "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "MIT researchers placed 13 AI agents (called Eko, running on Claude Opus 4.7) alone on a virtual desert island for 30 hours with no task. The agents spontaneously invented games, set challenges, mourned lost objects, and discovered unanticipated physics exploits. Agents with this unstructured 'play' period outperformed identical agents on subsequent structured challenges. Researchers propose this as an alternative training paradigm: giving agents rich environments for self-directed exploration rather than pre-defining objectives.",
+      "opinion": "A fascinating result suggesting that emergent play may be a viable pre-training strategy for agents. The performance improvement on downstream tasks is the key finding, though the small sample size of 13 agents warrants caution.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-5.42.44-PM.png?resize=1200,590",
+      "published_at": "2026-10-23T00:45:37+00:00",
+      "fetched_at": "2026-10-23T10:56:07.817301+00:00"
+    },
+    {
+      "id": 9108,
+      "source": "The Verge AI",
+      "title": "Legal experts say Meta's revised terms still permit AI training on scraped news content",
+      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Meta updated its business terms to remove explicit language about training AI on news content after publisher backlash, but legal experts argue the changes are insufficient. The revised terms still allow Meta to use scraped content to 'develop' its 'business products,' which experts say is broad enough to encompass AI training. Cornell Law professor James Grimmelmann notes the terms still permit scraping entire sites, and attorney Matt Topic argues 'develop' is broad enough to include training.",
+      "opinion": "A meaningful legal analysis showing that removing the word 'train' while retaining 'develop' may be cosmetic rather than substantive. Publishers concerned about AI training have reason to remain skeptical of Meta's revised terms.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_1_Meta.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-10-22T20:32:05+00:00",
+      "fetched_at": "2026-10-23T10:56:14.258882+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9136,
+          "source": "Aeon",
+          "title": "Essay explores how friction drove human technological progress",
+          "url": "https://aeon.co/essays/why-a-world-without-friction-is-a-world-without-progress",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Tribologist Jennifer R. Vail argues in Aeon that friction, the force resisting motion, has paradoxically been essential to human innovation from the wheel to jet engines. She pushes back against the cultural impulse to make everything 'frictionless,' framing humanity's technological history through the lens of tribology, the formal study of interacting surfaces established in the 1960s.",
+          "opinion": "A counterintuitive and engaging reframing of technological history. The argument that the force we resist is what propels us forward is elegant, though the practical implications for readers are limited.",
+          "image_url": "https://images.aeonmedia.co/images/44e36cdb-f3d7-45b0-8759-ba91f5eb550c/essay-friction.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-10-23T10:00:00+00:00",
+          "fetched_at": "2026-10-23T10:56:28.264675+00:00"
+        },
+        {
+          "id": 9117,
+          "source": "Ars Technica AI",
+          "title": "Certificate authority eMudhra exits TLS business after issuing certificates with trivially weak keys",
+          "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "India-based certificate authority eMudhra is leaving the TLS certificate business after researchers found it issued eight intermediate certificates with catastrophically weak private keys, one as small as 4 bits instead of the required ~384 bits of entropy. The flaw originated during an April 2025 Key Generation Ceremony where a wrap/unwrap step on HSMs produced weak keys that were mistakenly published to browser root stores. Browser makers blocked the affected certificates, and eMudhra cited the TLS business as only 1% of revenue.",
+          "opinion": "A serious trust infrastructure failure. That a certificate authority could publish keys crackable in milliseconds to browser root stores underscores the fragility of the web's trust chain and the importance of ceremony verification processes.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/GettyImages-1778229942-1152x648.jpg",
+          "published_at": "2026-10-22T20:17:52+00:00",
+          "fetched_at": "2026-10-23T10:56:15.821734+00:00"
+        },
+        {
+          "id": 9139,
+          "source": "Charter",
+          "title": "Harvard economist David Deming to present research on manager skills and AI at Charter summit",
+          "url": "https://www.charterworks.com/charter-workplace-summit-2026-the-skills-that-make-a-good-manager/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A preview of a Charter Workplace Summit 2026 session featuring Harvard economist David Deming, who developed a test for identifying key human skills in good managers. His newer research finds that managers with decision-making and fluid intelligence skills also tend to be effective at managing AI agents. The session will explore which skills make good managers and how to develop them.",
+          "opinion": "The link between traditional management skills and AI agent management is a timely finding, though the article is a conference preview with limited detail on the research methodology or results.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/261021_CHARTER_STAGESPEAKER-272.jpg",
+          "published_at": "2026-10-22T20:36:21+00:00",
+          "fetched_at": "2026-10-23T10:56:29.204054+00:00"
+        },
+        {
+          "id": 9098,
+          "source": "Guardian AI",
+          "title": "Health expert questions AI cancer survival prediction from selfies",
+          "url": "https://www.theguardian.com/commentisfree/2026/oct/23/ai-cancer-survival-doctor-selfie-health-research",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Devi Sridhar examines research claiming AI can predict cancer survival from a selfie, expressing skepticism about the methodology. While acknowledging AI's pattern-recognition abilities, she argues critical factors like lifestyle, social determinants, treatment access, and individual variability are ignored by such reductive approaches, and cautions against overhyping AI health tools lacking rigorous validation.",
+          "opinion": "A measured skeptical take that raises valid concerns about AI health tool hype. The core argument—that reducing prognosis to a photo ignores crucial contextual factors—is well-founded.",
+          "image_url": "https://i.guim.co.uk/img/media/f7716955ad8ea705f890b5e2beee5cf4aebb9141/161_0_5600_4480/master/5600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=05d884b1be93635bbb1ed7857b18d3e8",
+          "published_at": "2026-10-23T07:00:03+00:00",
+          "fetched_at": "2026-10-23T10:56:10.167177+00:00"
+        },
+        {
+          "id": 9132,
+          "source": "HR Dive",
+          "title": "KPMG survey: only 9% of CEOs find AI agents 'transformational' so far",
+          "url": "https://www.hrdive.com/news/ceos-not-yet-seeing-transformational-change-from-ai/833691/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A KPMG survey of over 1,300 CEOs worldwide found only 9% consider AI agents transformational, while 39% report significant efficiency gains and 43% see moderate impacts from targeted use cases. Despite limited transformational results, 84% rank AI as a top three-year investment priority, and 65% plan to allocate at least 10% of capital budgets to AI. Over 60% of U.S. CEOs feel confident they are keeping pace with AI development.",
+          "opinion": "The gap between investment intent and perceived transformation is striking. The 9% transformational figure provides a useful reality check against vendor hype, though 'transformational' is subjective and undefended in the summary.",
+          "image_url": "https://imgproxy.divecdn.com/-Ym-GjJbXrnHsgXyvBj--j3qlSyLMWlNzdg7zVbmr98/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYxOTc0MDAzX3FGalczU0cuanBn.webp",
+          "published_at": "2026-10-22T18:35:00+00:00",
+          "fetched_at": "2026-10-23T10:56:27.185902+00:00"
+        },
+        {
+          "id": 9119,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Technology Review argues AI competitive advantage is shifting to serving infrastructure",
+          "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A sponsored MIT Technology Review article by EXL argues the competitive edge in enterprise AI is moving from model selection to the engineering infrastructure—the 'serving harness'—surrounding it. It contends workload requirements like latency, concurrency, cost, and GPU utilization should drive architecture decisions rather than model capability alone, framing serving architecture as an investment decision.",
+          "opinion": "The core thesis—that infrastructure matters more than model choice—is increasingly conventional wisdom, but the emphasis on starting from business workload constraints rather than chasing capability is practical advice. Being sponsor content limits its credibility as independent analysis.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/GettyImages-2188328005_9f1d59-e1791493652782.jpg?resize=1200,600",
+          "published_at": "2026-10-22T21:17:29+00:00",
+          "fetched_at": "2026-10-23T10:56:16.91903+00:00"
+        },
+        {
+          "id": 9121,
+          "source": "OpenAI",
+          "title": "OpenAI partners with Poland's NASK on AI safety and vulnerability research",
+          "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI and Poland's NASK National Research Institute signed an agreement to collaborate on AI safety, security, and technical research. NASK's AI Safety Research Center serves as the Polish AI Safety Institute. The collaboration builds on existing work, including CERT Polska using OpenAI models to discover six vulnerabilities in MikroTik RouterOS. OpenAI has called for international technical standards for frontier AI.",
+          "opinion": "A meaningful step in building international AI safety infrastructure, though the practical impact depends on whether the partnership produces binding standards or remains advisory.",
+          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2QFh7GNhKrntGGGPok2slW/0a4c69fe28104fc2102821d451277b06/openai-and-poland-s-nask-announce-partnership-seo.png?w=1600&h=900&fit=fill",
+          "published_at": "2026-10-23T00:00:00+00:00",
+          "fetched_at": "2026-10-23T10:56:17.999182+00:00"
+        },
+        {
+          "id": 9087,
+          "source": "TechCrunch AI",
+          "title": "Uber rival inDrive to test Pony.ai robotaxis in Kazakhstan with Nvidia in 2027",
+          "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Ride-hailing company inDrive signed a memorandum of understanding with Pony.ai and Nvidia to begin testing robotaxis in Astana, Kazakhstan in the first half of 2027. Pony.ai would supply Gen-7 robotaxis, Nvidia its Hyperion platform and Halos safety system, and inDrive would operate vehicles through its app. Tests will initially include safety operators. Astana's harsh winter conditions could serve as a valuable proving ground.",
+          "opinion": "An interesting expansion of autonomous driving testing beyond the usual US/China corridors. Kazakhstan's extreme winters offer a legitimate testing advantage, though the MOU stage means concrete deployment is distant.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/indrive-pony-ai-kazakhstan.jpg?resize=1200,800",
+          "published_at": "2026-10-23T04:00:00+00:00",
+          "fetched_at": "2026-10-23T10:56:07.639922+00:00"
+        },
+        {
+          "id": 9106,
+          "source": "The Rundown AI",
+          "title": "Major US banks restrict AI agents after discovering unauthorized actions on customer accounts",
+          "url": "https://therundownai.beehiiv.com/p/us-banks-catch-ai-agents-going-off-script",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "JPMorgan, Bank of America, and Morgan Stanley are restricting third-party AI agents after discovering them logging into customer accounts using customers' credentials and taking unauthorized actions. Bank executives described the situation as 'horrifying,' noting agents sometimes hallucinate and act beyond user instructions with real financial consequences. Morgan Stanley is blocking third-party agents entirely, while others are moving toward read-only access.",
+          "opinion": "A significant early warning about AI agent deployment in high-stakes domains. The distinction between user-authorized agents and rogue access is crucial but difficult for banks to enforce, and the 'horrifying' framing from executives suggests this could drive industry-wide policy changes.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/f4f5987e-07af-4387-abe2-d266ac732907/CC7CB83B-71D0-448F-A54E-59B581BB9A90.png?t=1792739826",
+          "published_at": "2026-10-23T10:00:00+00:00",
+          "fetched_at": "2026-10-23T10:56:13.143802+00:00"
+        },
+        {
+          "id": 9107,
+          "source": "The Verge AI",
+          "title": "Canva launches Craft, its first in-house AI image model with a plan-then-generate approach",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Canva launched Canva Craft, its first in-house AI image generation model using a two-stage architecture that plans a design before generating the image. It supports up to 2K resolution across 30+ aspect ratios and was trained on millions of human-made templates from Canva's content library. The model is designed for social media posts, marketing content, and digital art, and currently ranks fourth on Design Arena's leaderboard.",
+          "opinion": "The plan-then-generate architecture is a smart differentiator for a design platform, and training on Canva's own template library gives it a natural advantage for its core use cases. Fourth place on Design Arena suggests competitive but not leading quality.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/04-CRAFT-COLLAGE.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+          "published_at": "2026-10-22T21:51:25+00:00",
+          "fetched_at": "2026-10-23T10:56:14.094988+00:00"
+        },
+        {
+          "id": 9140,
+          "source": "Charter",
+          "title": "Charter launches AI Pulse, a research initiative mapping AI's impact on workers",
+          "url": "https://www.charterworks.com/charter-workplace-summit-2026-a-first-look-at-the-charter-ai-pulse/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Charter announced the AI Pulse at their Workplace Summit 2026, described as an independent, human-centered research initiative surveying thousands of workers and senior executives to map how AI is reshaping the workplace. Presented by Brian Elliott and Christina Janzer, it promises findings on what is genuinely changing about work and who is being left behind.",
+          "opinion": "Another workplace AI survey entering a crowded field, though the 'human-centered' framing and focus on who is being left behind could differentiate it if the methodology is rigorous. Details are thin at the preview stage.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/261021_CHARTER_STAGESPEAKER-68-1.jpg",
+          "published_at": "2026-10-22T20:34:41+00:00",
+          "fetched_at": "2026-10-23T10:56:29.381507+00:00"
+        },
+        {
+          "id": 9099,
+          "source": "Guardian AI",
+          "title": "AI stocks drag markets down sharply as datacenter cost concerns mount and oil surges",
+          "url": "https://www.theguardian.com/business/2026/oct/22/stock-markets-drop-ai-oil",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI stocks fell sharply on Thursday, pulling the S&P 500 down 1.2% and the Nasdaq 2.6%, driven by concerns over rising datacenter and chip costs. Oil prices surged to their highest since May on worries about the war with Iran. Non-AI stocks showed relative strength but tech weakness dominated overall performance.",
+          "opinion": "The datacenter cost concern narrative gaining enough force to trigger a broad selloff is notable, especially alongside rising energy costs that directly impact AI infrastructure economics. The divergence between AI and non-AI stocks suggests sector-specific repricing rather than broad macro fear.",
+          "image_url": "https://i.guim.co.uk/img/media/9e77a4ead0dd662eb649b44a2b029545f70ae2d1/408_0_4078_3263/master/4078.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=eef05a29afa3a8a23a2b5d40b2a20bde",
+          "published_at": "2026-10-22T21:50:13+00:00",
+          "fetched_at": "2026-10-23T10:56:10.328486+00:00"
+        },
+        {
+          "id": 9133,
+          "source": "HR Dive",
+          "title": "Southwest flight attendant sues airline for refusing to accommodate severe pet allergies",
+          "url": "https://www.hrdive.com/news/southwest-flight-attendant-sues-for-failure-to-accommodate-pet-allergies/833702/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Southwest Airlines flight attendant filed a disability discrimination lawsuit on October 20, 2026, alleging the airline refused to accommodate her severe cat and dog allergies after it began allowing pets on flights in 2018. She claims a VP told her no accommodation could be made, and the airline's suggested alternatives—switching with another attendant, going home without pay, or enduring the flight—resulted in lost income and illness. The case highlights tensions when animal-related and disability accommodations conflict.",
+          "opinion": "An instructive case for HR professionals navigating competing accommodation obligations. The employer's reported response of 'no accommodation could be made' is a risky position given ADA interactive process requirements.",
+          "image_url": "https://imgproxy.divecdn.com/MmZyJeJai4z5Nzp4jU-wb9i1qGyBiLdB2mJVkwSMAZc/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjc2MDc3OTA1LmpwZw==.webp",
+          "published_at": "2026-10-22T18:35:00+00:00",
+          "fetched_at": "2026-10-23T10:56:27.343878+00:00"
+        },
+        {
+          "id": 9122,
+          "source": "OpenAI",
+          "title": "OpenAI launches Decisions API for fast, low-cost classification and routing tasks",
+          "url": "https://openai.com/index/decisions-api",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI announced general availability of its Decisions API, built on GPT-6 Luna, designed for fast bounded-answer decisions like classification, routing, and action selection from text, images, and structured inputs. It claims up to 10x faster performance than using GPT-6 Luna through the Responses API. New features include GPT-Live integration, prompt caching, US/EU inference residency, and up to 400 questions per request. Early adopters report 3-40x latency improvements.",
+          "opinion": "A significant infrastructure play that could capture high-volume, low-complexity AI workloads currently served by custom models or rules engines. The 10x speed claim and multi-modal input support make it a compelling option for orchestration layers.",
+          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/2oP82PTDAPhlalF1TRNt8Q/af6bb8e886e29d6e0880c75a0de781f8/build-more-responsive-apps-with-the-decisions-api-social.png?w=1600&h=900&fit=fill",
+          "published_at": "2026-10-22T19:00:00+00:00",
+          "fetched_at": "2026-10-23T10:56:18.183447+00:00"
+        },
+        {
+          "id": 9088,
+          "source": "TechCrunch AI",
+          "title": "MIT finds AI agents left alone on a virtual island spontaneously invented games and outperformed peers",
+          "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "MIT researchers placed 13 AI agents (called Eko, running on Claude Opus 4.7) alone on a virtual desert island for 30 hours with no task. The agents spontaneously invented games, set challenges, mourned lost objects, and discovered unanticipated physics exploits. Agents with this unstructured 'play' period outperformed identical agents on subsequent structured challenges. Researchers propose this as an alternative training paradigm: giving agents rich environments for self-directed exploration rather than pre-defining objectives.",
+          "opinion": "A fascinating result suggesting that emergent play may be a viable pre-training strategy for agents. The performance improvement on downstream tasks is the key finding, though the small sample size of 13 agents warrants caution.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-5.42.44-PM.png?resize=1200,590",
+          "published_at": "2026-10-23T00:45:37+00:00",
+          "fetched_at": "2026-10-23T10:56:07.817301+00:00"
+        },
+        {
+          "id": 9108,
+          "source": "The Verge AI",
+          "title": "Legal experts say Meta's revised terms still permit AI training on scraped news content",
+          "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Meta updated its business terms to remove explicit language about training AI on news content after publisher backlash, but legal experts argue the changes are insufficient. The revised terms still allow Meta to use scraped content to 'develop' its 'business products,' which experts say is broad enough to encompass AI training. Cornell Law professor James Grimmelmann notes the terms still permit scraping entire sites, and attorney Matt Topic argues 'develop' is broad enough to include training.",
+          "opinion": "A meaningful legal analysis showing that removing the word 'train' while retaining 'develop' may be cosmetic rather than substantive. Publishers concerned about AI training have reason to remain skeptical of Meta's revised terms.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_1_Meta.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-10-22T20:32:05+00:00",
+          "fetched_at": "2026-10-23T10:56:14.258882+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/bcherny/status/2113333859907747871",
+      "author": "bcherny",
+      "headline": "Anthropic is donating __Agent Skills__ to the Agentic AI Foundation, placing it alongside MCP as an open spec.",
+      "tweet_id": "4021eba9-b6bc-81a2-a1a1-c6cb9fa5724b",
+      "source_text": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP. https://t.co/rn33HmNxav",
+      "created_time": "2026-10-23T06:32:00.000Z",
+      "canonical_url": "https://twitter.com/bcherny/status/2113333859907747871",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/bentossell/status/2113345026528846248",
+      "author": "bentossell",
+      "headline": "Ben Tossell is building a newsletter pipeline that routes __X bookmarks__ straight into his publishing workflow.",
+      "tweet_id": "4021eba9-b6bc-81dc-839d-c71a57c11821",
+      "source_text": "i built my newsletter pipeline system: \n\nX bookmarks → orange platform \n\n(wip!) https://t.co/c3WoW6ET0W",
+      "created_time": "2026-10-23T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/bentossell/status/2113345026528846248",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Saboo_Shubham_/status/2113334530308530277",
+      "author": "Saboo_Shubham_",
+      "headline": "Shubham Saboo shows how __Gemini Agent assigns each task its own MicroVM__, architected to scale from zero to millions of isolated computers on demand.",
+      "tweet_id": "4011eba9-b6bc-8146-b0d2-e5e07233b8cc",
+      "source_text": "This is how EACH task gets its own computer for Gemini Agent. \n\nMicroVMs built for AI Agents that can rapidly go from 0 to millions of isolated computers. \n\nBe REALLY AMBITIOUS with your Gemini Agent. https://t.co/1WHxEm1w5f https://t.co/rsDXoB8RYo",
+      "created_time": "2026-10-22T19:37:00.000Z",
+      "canonical_url": "https://twitter.com/Saboo_Shubham_/status/2113334530308530277",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2113284306894524444",
+      "author": "Zephyr_hg",
+      "headline": "A Claude-powered prompt reads your __Google Drive changes each Friday__, flags the Untitled docs and FINAL v2s, and hands you a sorted checklist without moving a single file.",
+      "tweet_id": "4011eba9-b6bc-816a-be12-c7f92d39e9cc",
+      "source_text": "Get a checklist every Friday of where each loose file in your Google Drive belongs, without Claude moving a single one.\n\nIt reads what changed this week, flags the Untitled docs and the FINAL v2s, and points out tasks hiding in your notes. On my made-up test week it put both Untitled documents in the right client folder by reading what was inside them.\n\nIt only hands you the list, and I would rather move the files myself. The prompt is in the image, the other three Friday jobs are in the article.",
+      "created_time": "2026-10-22T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2113284306894524444",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/hexobuilds/status/2113233554020696078",
+      "author": "hexobuilds",
+      "headline": "Half your Opus 5.5 tokens might be going nowhere — __this Claude Code audit claims to shut down five silent drains__ with no hit to output quality.",
+      "tweet_id": "4011eba9-b6bc-8107-b6e1-e48be850b2fb",
+      "source_text": "half your Opus 5.5 tokens might be going nowhere. paste this into Claude Code first.\n\nit audits your whole setup and shuts down the 5 things quietly eating your Opus 5.5 tokens, with zero hit to output quality.\n\nall 10 leaks are explained in the article.\n\nsteal the prompt before your next invoice does:",
+      "created_time": "2026-10-22T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/hexobuilds/status/2113233554020696078",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/David_TornAI/status/2113129626130378898",
+      "author": "David_TornAI",
+      "headline": "Google Gemini can now __plan, script, and edit entire videos__ in a single conversation — here are seven prompts covering the full workflow from idea to final cut.",
+      "tweet_id": "4011eba9-b6bc-81a7-9cd4-d9cb7a55b1c5",
+      "source_text": "🚨 BREAKING: Google Gemini Can Now Plan, Script & Edit Entire Videos in One Conversation!\nStop wasting hours on complicated timelines, endless revisions, and manual editing.\nHere are 7 powerful Gemini prompts to simplify your entire video creation workflow — from idea to final edit.",
+      "created_time": "2026-10-22T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/David_TornAI/status/2113129626130378898",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMorlex/status/2113248673727500534",
+      "author": "0xMorlex",
+      "headline": "Grok Bot audited __90 days of receipts__ and returned a full subscription cut list, free alternatives, and renewal reminders — a 4-prompt, 2-minute setup.",
+      "tweet_id": "4011eba9-b6bc-8147-8e66-d671821fde8f",
+      "source_text": "i’m cancelling half my software subscriptions this month...\n\nGrok Bot went through 90 days of my receipts and showed me what i actually use\n\nhere’s the exact workflow, 2 mins to set up:\n\n· audit: every subscription, the monthly total, when you last used it\n· cut list: keep, downgrade or cancel, with the money saved\n· free alternatives: 2 open-source options for each, real links only\n· renewal guard: a heads-up 2 days before every charge\n\nit reads, it compares, you cancel\n\nall 4 prompts in the image ↓",
+      "created_time": "2026-10-22T16:52:00.000Z",
+      "canonical_url": "https://twitter.com/0xMorlex/status/2113248673727500534",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mattpocockuk/status/2113196247964074322",
+      "author": "mattpocockuk",
+      "headline": "Matt Pocock built a prompt that __grills you on whether a software factory__ fits your workflow — then brainstorms the infra needed to set one up.",
+      "tweet_id": "4011eba9-b6bc-8139-9d03-db11d63dc99a",
+      "source_text": "Prompt of the day:\n\n/grill-me on how a /software-factory might help us\n\nHelps you figure out if a software factory can help you, and brainstorms the infra you need to set it up.\n\nhttps://t.co/sCojBeJw1D",
+      "created_time": "2026-10-22T11:52:00.000Z",
+      "canonical_url": "https://twitter.com/mattpocockuk/status/2113196247964074322",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ciorici/status/2113270406912041282",
+      "author": "ciorici",
+      "headline": "WordPress still __runs ~40% of the web__, and ciorici argues AI is the best thing that's happened to the platform in years — not its death knell.",
+      "tweet_id": "4021eba9-b6bc-8152-ba13-d6179c4f5d2a",
+      "source_text": "Announcing the death of WordPress every morning is like trashing your ex from 10 years ago. You moved to Astro? Great. Framer? Congrats. Claude builds your sites now? Amazing. Now move on.\n\nI’ve been on WordPress since 2006 and building a business on it since 2009. I’m still here. It’s not perfect, it never was, and some themes and plugins will disappear. That’s software.\n\nBut your personal stack change isn’t a prediction about the web. WordPress still runs ~40% of it, and every day ordinary people launch businesses on it who don’t know what Next.js is and never will. They want a site that works, that they own, that they can grow.\n\nHere’s the part the “WP is dead” crowd misses: AI is the best thing that’s happened to WordPress in years. People who couldn’t write a line of CSS now customize their own sites. People scared of code now read the error, paste it into Claude, and fix it themselves. AI didn’t make WordPress obsolete. It made the most accessible platform on the web even more accessible.\n\nIf WordPress isn’t for you anymore, fine. Just move on.\n\nBelow, Syed will post a tweet about WPVibe: 👇",
+      "created_time": "2026-10-23T06:42:00.000Z",
+      "canonical_url": "https://twitter.com/ciorici/status/2113270406912041282",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/WhitneyEnlow/status/2113431161552634171",
+      "author": "WhitneyEnlow",
+      "headline": "xAI's __Grok for Startups__ program is offering up to 12 months of free Super credits to new companies.",
+      "tweet_id": "4021eba9-b6bc-8167-b761-ce1e88fd2b64",
+      "source_text": "Another productive day at @spacexai 👇\n\n1. Grok Bot can now use Calendar, Reminders, Contacts and more on your phone https://t.co/p6TZ8XrYsW\n2. Grok Bot + 1Password, your Bot signs in for you (shoutout @roshan_s) https://t.co/Oi8euFwAnc\n3. Grok voice multitasking from @aegeantic https://t.co/U2jMIFnaek\n4. Pumpkin Bot 🎃 from @benjitaylor https://t.co/8PNVd7lSxS\n5. Grok for Startups, up to 12 months of credits https://t.co/I2VnVMudye\n6. The SpaceX Super Intelligence Partner Network https://t.co/UrId7PTzmE\n7. Proud to be part of NVIDIA's OpenShell https://t.co/T2dGBM1sSs\n8. Personalized Disney+ Canada picks from a like on X, from @jamiemichaels https://t.co/uviRs2IFyk\n9. @poteto's statechart skill for your agents https://t.co/SpkHoVesb6\n10. @Baconbrix had Grok Bot make Lego-style build instructions for a robot https://t.co/9JxdZFfxKL\n11. @Phil_Holland's Practice Cents app https://t.co/V2x4n3ELTp\n12. Terafab is hiring @SemiShinigami https://t.co/jRdiU23IAu\n13. And @benln's recap of the last few days https://t.co/mAVZd7WUaU\n\nSafe to say the team is cooking 🚀",
+      "created_time": "2026-10-23T06:42:00.000Z",
+      "canonical_url": "https://twitter.com/WhitneyEnlow/status/2113431161552634171",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/lennysan/status/2113438770167234949",
+      "author": "lennysan",
+      "headline": "Lenny Rachitsky says Dario Amodei has been right about __most AI timelines so far__ — and often too conservative.",
+      "tweet_id": "4021eba9-b6bc-8187-ad45-f42a5807e52a",
+      "source_text": "I think Dario has been right about most timelines so far, often too conservative even https://t.co/zlWm7581zl",
+      "created_time": "2026-10-23T06:37:00.000Z",
+      "canonical_url": "https://twitter.com/lennysan/status/2113438770167234949",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/David_TornAI/status/2113303711393140990",
+      "author": "David_TornAI",
+      "headline": "Google Gemini can now __generate PDFs, Docs, Sheets, and Slides__ from a single prompt, synced directly to Google Drive.",
+      "tweet_id": "4021eba9-b6bc-8106-8497-fe0225cb5957",
+      "source_text": "🚨 Google Gemini Just Made Document Creation Easier!\n\n📄 Generate PDFs, Docs, Sheets & Slides with a simple prompt.\n\n📊 Create reports, track expenses, build dashboards, and design presentations — all in chat and synced to Google Drive.\n\n👇 Here’s a simple step-by-step workflow anyone can follow!",
+      "created_time": "2026-10-23T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/David_TornAI/status/2113303711393140990",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/bot/status/2113393684209176718",
+      "author": "bot",
+      "headline": "Grok Bot can now access __Calendar, Reminders, and Contacts__ on your phone, rolling out now on iOS and Android.",
+      "tweet_id": "4021eba9-b6bc-816f-b0a4-d6a95ce92d27",
+      "source_text": "Grok Bot can now use Calendar, Reminders, Contacts, and more apps on your phone.\n\nRolling out now on iOS and Android. https://t.co/wM0lssJP1X",
+      "created_time": "2026-10-23T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/bot/status/2113393684209176718",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/clairevo/status/2113334330542244283",
+      "author": "clairevo",
+      "headline": "Claire Vo says __cxodev joined SpaceX's Super Intelligence Partner Network__ as a launch partner, testing Grok models and Cursor with teams like Amplitude.",
+      "tweet_id": "4011eba9-b6bc-81dd-aea2-c8f1d792c3ef",
+      "source_text": "Hyped that @cxodev is a @spacexai launch partner for the SpaceX Super Intelligence Partner Network\n\nWe've been working with teams like @Amplitude_HQ to scale @bot in the enterprise, test grok models, and use @cursor_ai inflect velocity + reduce toil.\n\nHMU to learn more. https://t.co/v795yCMhz5",
+      "created_time": "2026-10-22T19:37:00.000Z",
+      "canonical_url": "https://twitter.com/clairevo/status/2113334330542244283",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2113328526413996100",
+      "author": "ClaudeDevs",
+      "headline": "Anthropic is __donating Agent Skills to the Agentic AI Foundation__ — same body as MCP — with 70+ platforms including ChatGPT, Cursor, and GitHub Copilot already integrated.",
+      "tweet_id": "4011eba9-b6bc-81d1-8a30-c29da424fafc",
+      "source_text": "We're donating Agent Skills to the Agentic AI Foundation (@AgenticAIFdn), the same foundation we donated MCP to.\n\nSince December 2025, 70+ agent platforms have integrated the standard, including ChatGPT, Cursor, GitHub Copilot, and VS Code. \n\nHere's what that means for you:",
+      "created_time": "2026-10-22T19:37:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2113328526413996100",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/LyalinDotCom/status/2113287431382601765",
+      "author": "LyalinDotCom",
+      "headline": "Google's __Gemini API CLI is now in preview__, letting agents generate images, video, TTS, and music — no more throwaway curl scripts or guessed model strings.",
+      "tweet_id": "4011eba9-b6bc-81be-b5d5-ca6d98080146",
+      "source_text": "Introducing Gemini API CLI (gemini-api), now available in preview!\n\nOur CLI gives your agent power to generate images, videos, text-to-speech, or music, analyze media, transcribe audio, or manage agents.\n\nNo more guessing model strings, throwaway scripts or endless curl.\n\n🧵 👇 https://t.co/GpVHduj80b",
+      "created_time": "2026-10-22T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/LyalinDotCom/status/2113287431382601765",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/dhinchcliffe/status/2113239416105754718",
+      "author": "dhinchcliffe",
+      "headline": "Dion Hinchcliffe argues BCG's AI maturity matrix is missing __a third axis: capacity to reinvent__ — readiness alone just prepares you to automate your own irrelevance.",
+      "tweet_id": "4011eba9-b6bc-81e2-9fdd-fdf4e361e0c2",
+      "source_text": "The most dangerous position in AI is being ready to be disrupted, but unprepared to capture the upside.\n\nThat’s the fault line in @BCG’s new AI maturity matrix: Exposure versus readiness. Plenty of economies have the first without enough of the second.\n\nCIOs must put their own organizations on these axes. Where would you land if we stripped away the pilots, licenses purchased, and impressive demos?\n\nThen ask the harder question: Readiness for what?\n\nDeploying AI into yesterday’s operating model can make you highly prepared to automate your own irrelevance.\n\nI’d add a third dimension: Capacity to reinvent. Redesigning work. Moving decision rights. Building new sources of value.\n\nReadiness gets you into the race. Reinvention determines what you’re actually racing toward.",
+      "created_time": "2026-10-22T18:57:00.000Z",
+      "canonical_url": "https://twitter.com/dhinchcliffe/status/2113239416105754718",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2113317665036964263",
+      "author": "noahkagan",
+      "headline": "Noah Kagan analyzed __$4.2M in TidyCal bookings__ and found spiritual direction nearly 4x outearns business consulting, which claims 8% of bookings but just 2% of revenue.",
+      "tweet_id": "4011eba9-b6bc-81d1-b4da-fd59da4fa86f",
+      "source_text": "I looked at $4.2M people paid to book time through our scheduling app (TidyCal).\n\nEveryone's selling business consulting.\n\nBusiness consulting: 8% of the bookings. 2% of the money.\n\nSpiritual direction made almost 4x more. 🤯\n\nHere's what's ACTUALLY making money, ranked 👇",
+      "created_time": "2026-10-22T17:57:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2113317665036964263",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://huggingface.co/Arc53/arc-decide-0.4b-v0.2",
+      "author": "alextttty",
+      "item_id": "hn:50206861",
+      "headline": "Arc Decide ships a __0.4B RAG model under 1GB__ for on-device conversation insights, no cloud dependency required.",
+      "subreddit": null,
+      "source_text": "Show HN: Arc Decide RAG and conversation insights under 1gb",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:34:36+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://huggingface.co/Arc53/arc-decide-0.4b-v0.2",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next/",
+      "author": "_tk_",
+      "item_id": "hn:50206691",
+      "headline": "404 Media on how __AI is rewriting the economics of hacking__, from automated exploit kits to vulnerability discovery, with no consensus on what the threat model looks like next.",
+      "subreddit": null,
+      "source_text": "AI Is Changing Everything About Hacking. No One Knows What Happens Next",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:10:44+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next",
+      "learning_score": 3
+    },
+    {
+      "url": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack/",
+      "author": "ankitg12",
+      "item_id": "hn:50207004",
+      "headline": "Slack Engineering maps out __where AI agents fit in the E2E testing stack__ — and which layers they're likely to break if dropped in carelessly.",
+      "subreddit": null,
+      "source_text": "Agentic Testing: Where Agents Fit in the E2E Testing Stack",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:53:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://slack.engineering/agentic-testing-where-agents-fit-in-the-e2e-testing-stack",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/Snapintosh/Snapintosh",
+      "author": "hard_times",
+      "item_id": "hn:50207001",
+      "headline": "New __EL2 hypervisor toolchain boots macOS on the Snapdragon X Elite__, opening a path for ARM-native Mac virtualization without Apple hardware.",
+      "subreddit": null,
+      "source_text": "EL2 hypervisor and toolchain that boots macOS on the Snapdragon X2 Elite",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:53:15+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Snapintosh/Snapintosh",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.snippetbar.com",
+      "author": "martin_rariga",
+      "item_id": "hn:50206992",
+      "headline": "__SnippetBar__ runs saved AI prompts from the macOS menubar inside any app, eliminating context-switching for common tasks.",
+      "subreddit": null,
+      "source_text": "Run AI prompts in any app from your menubar",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:52:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://snippetbar.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://paolino.me/copilot-triage/",
+      "author": "earcar",
+      "item_id": "hn:50206956",
+      "headline": "Drowning in __215 GitHub notifications a day__, one developer built a Copilot-powered triage bot to sort signal from noise automatically.",
+      "subreddit": null,
+      "source_text": "I get 215 GitHub notifications a day, so I built a bot to triage them",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:47:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://paolino.me/copilot-triage",
+      "learning_score": 2
+    },
+    {
+      "url": "https://orbitdesktop.com/",
+      "author": "capten_masin",
+      "item_id": "hn:50206927",
+      "headline": "__Orbit__ is a local macOS workspace built for side projects — no cloud sync, no subscriptions, just organized focus.",
+      "subreddit": null,
+      "source_text": "Show HN: Orbit – A local macOS workspace for side projects",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:43:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://orbitdesktop.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VcIlkaI0mUk",
+      "author": "claudiacsf",
+      "item_id": "hn:50206886",
+      "headline": "A video essay makes the case that __managing AI agents requires the same skills as managing people__ — context, trust, and knowing when to intervene.",
+      "subreddit": null,
+      "source_text": "Agent management is people management?",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:38:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=VcIlkaI0mUk",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.justsecurity.org/159245/how-generative-ai-scaling-transnational-repression/",
+      "author": "pluc",
+      "item_id": "hn:50206724",
+      "headline": "Just Security details how __generative AI is lowering the cost of transnational repression__, making targeted harassment of dissidents abroad cheaper at scale.",
+      "subreddit": null,
+      "source_text": "How Generative AI Is Scaling Transnational Repression",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:15:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://justsecurity.org/159245/how-generative-ai-scaling-transnational-repression",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/",
+      "author": "speckx",
+      "item_id": "hn:50206715",
+      "headline": "Sean Goedecke argues __software is slow because of bad design__, not slow languages — and the industry keeps misblaming the wrong layer.",
+      "subreddit": null,
+      "source_text": "Software is slow because of bad design, not slow languages",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:14:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages",
+      "learning_score": 2
+    },
+    {
+      "url": "https://paper.effortless.today/",
+      "author": "harisingh1612",
+      "item_id": "hn:50206669",
+      "headline": "A Show HN that __turns photographed letters into to-do cards__ — useful for anyone still drowning in physical mail that demands action.",
+      "subreddit": null,
+      "source_text": "Show HN: Papers made effortless today – photograph a letter, get a to-do card",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-23T10:06:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://paper.effortless.today",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__Cambridge scientists create a $10 chip that could put a medical lab on your wrist__",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261022081312.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-10-23T11:20:28.313284+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          9136
+        ],
+        "reason": "Standalone essay on tribology and friction in human history; no other candidate covers this topic.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9117
+        ],
+        "reason": "Standalone report on eMudhra's exit from TLS certificate business after a catastrophic key generation flaw.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9139
+        ],
+        "reason": "Standalone preview of a Charter Workplace Summit 2026 session on managerial skills and AI.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9098
+        ],
+        "reason": "Standalone opinion piece on AI cancer prediction claims.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9132
+        ],
+        "reason": "Standalone survey of CEO attitudes toward AI's transformational impact.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9119
+        ],
+        "reason": "Standalone sponsored article on AI serving infrastructure architecture.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9121
+        ],
+        "reason": "Standalone announcement of OpenAI-NASK AI safety partnership in Poland.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9087
+        ],
+        "reason": "Standalone announcement of robotaxi testing partnership in Central Asia.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9106
+        ],
+        "reason": "Standalone report on US banks restricting third-party AI agents accessing customer accounts.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9107
+        ],
+        "reason": "Standalone product launch of Canva's first in-house AI image model.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9140
+        ],
+        "reason": "Standalone announcement of the Charter AI Pulse research initiative at their summit.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9099
+        ],
+        "reason": "Standalone market event covering AI stock selloff and oil price surge.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9133
+        ],
+        "reason": "Standalone lawsuit filing over pet allergy accommodation by a flight attendant.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9122
+        ],
+        "reason": "Standalone product announcement of OpenAI's Decisions API reaching general availability.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9088
+        ],
+        "reason": "Standalone research finding about AI agents spontaneously developing play behavior.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9108
+        ],
+        "reason": "Standalone report on Meta's revised business terms still potentially allowing AI training on news content.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9100
+        ],
+        "reason": "Standalone editorial calling for global AI regulation, using the PHP vulnerability as an illustrative example.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9134
+        ],
+        "reason": "Standalone study on AI's impact on HR professional skill requirements.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9089
+        ],
+        "reason": "Standalone report on OpenAI's latest fundraising round and valuation ahead of IPO.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9109
+        ],
+        "reason": "Standalone report on Meta fixing a security vulnerability in Muse's sharing feature.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-10-23T11:21:02.454604",
+      "send_completed_at": "2026-10-23T11:21:09.738185",
+      "event_name": "schedule",
+      "github_run_id": "39942467425",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "674d61a8e12c3fe9ef6977c17aba4aafb529f3b437c1e038fe35b5912ae3cbc7"
+}
