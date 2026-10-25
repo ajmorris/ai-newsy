@@ -1,0 +1,606 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-10-25",
+  "issue_id": "20261025",
+  "subject_line": "ISSUE 61025 · 6 STORIES · 11 MIN READ",
+  "intro": "Only 1 in 10 AI users report major benefits, another wave of high-profile AI products has hit the graveyard, and Pennsylvania is stepping in with new disclosure rules — it's a day that underscores how the industry is still searching for what actually works and who gets to set the guardrails. But it's not all skepticism: Block's eerily human voice model and a new crop of AI agents living in your text messages show the technology keeps pushing into surprising new territory. Plus, the BBC found a delightfully low-tech way to prove its nature footage is real — just leave the imperfections in.",
+  "article_count": 6,
+  "stories": [
+    {
+      "id": 9265,
+      "source": "Charter",
+      "title": "Van Jones discusses bridging political divides at Charter Workplace Summit; new AI Pulse research finds only 1 in 10 AI users see major benefits",
+      "url": "https://www.charterworks.com/van-jones-advice-for-bridging-political-divides-at-work/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Van Jones spoke at the Charter Workplace Summit 2026 about how fragmented media feeds drive workplace political division. Separately, Charter's AI Pulse research found only about 1 in 10 AI users say the technology significantly improves both their work and lives, with agency over AI integration being the strongest predictor of benefit. Additional findings include a gender gap in AI-exposed job growth, a 91% spike in AI safety job openings, and NYC's $10 million AI job training center.",
+      "opinion": "The AI Pulse finding that personal agency over AI adoption matters more than the tool itself is a useful counterpoint to top-down rollout strategies.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/Van-Kevin.png",
+      "published_at": "2026-10-25T10:30:00+00:00",
+      "fetched_at": "2026-10-25T10:36:37.929127+00:00"
+    },
+    {
+      "id": 9178,
+      "source": "TechCrunch AI",
+      "title": "TechCrunch catalogs the AI graveyard: notable failures from Character.ai to Sora",
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch published a running list of notable AI failures including Relay (workflow automation, shut down August 2026), Character.ai (bankruptcy after five years), OpenAI's failed ChatGPT super-app redesign and shuttered ChatGPT Atlas browser, Sora's March 2026 shutdown due to costs, and Apple's repeatedly delayed Siri AI improvements that led to a $250 million settlement over iPhone 16 marketing claims.",
+      "opinion": "A sobering catalog that underscores how even well-funded AI bets fail when they lack clear product-market fit or sustainable unit economics.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?resize=1200,797",
+      "published_at": "2026-10-24T19:00:00+00:00",
+      "fetched_at": "2026-10-25T10:36:21.300034+00:00"
+    },
+    {
+      "id": 9200,
+      "source": "The Verge AI",
+      "title": "Blue Planet III keeps imperfect footage to prove it's real in the age of AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "BBC's Blue Planet III is deliberately keeping imperfect shots — plankton in the water, boats in frame, suboptimal conditions — that would have been cut in previous series. Executive Producer Elizabeth White says this proves the footage is authentic, since AI content tends to look overly polished. The series showcases real animal behaviors including dolphins using sea sponges as tools and inter-species fish communication.",
+      "opinion": "A striking admission that authenticity now requires visible imperfection — the 'uncanny valley' problem inverted.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&strip=all&crop=0%2C3.4695867913185%2C100%2C93.060826417363&w=1200",
+      "published_at": "2026-10-24T21:29:12+00:00",
+      "fetched_at": "2026-10-25T10:36:26.545309+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9200,
+            "source": "The Verge AI",
+            "title": "Blue Planet III is keeping the rough edges in the age of AI",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Same event as yesterday:7 — BBC Blue Planet III deliberately using less polished footage to prove authenticity against AI-generated content"
+      }
+    },
+    {
+      "id": 9179,
+      "source": "TechCrunch AI",
+      "title": "Block's Dessa voice model sounds eerily human, trained entirely on speech",
+      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Block released Dessa, a full-duplex speech-to-speech voice model trained entirely on human speech that produces natural laughs, pauses, and emotional expressions. It can run locally on consumer hardware like a MacBook M4 Max. Block is seeking safety researchers to test it before public release and sees potential applications in powering business and consumer voice experiences at lower cost.",
+      "opinion": "Running a convincingly human voice model locally on consumer hardware is a meaningful threshold — it democratizes the capability while making safety review harder to enforce. Where coverage differs: The Verge reports Dessa was compared against OpenAI's GPT-Live-1 with Block claiming it sounds more natural but demos showing occasional awkwardness; TechCrunch emphasizes the eerily human quality without noting awkwardness",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822",
+      "published_at": "2026-10-24T16:00:00+00:00",
+      "fetched_at": "2026-10-25T10:36:21.452484+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9179,
+            "source": "TechCrunch AI",
+            "title": "Block’s new voice model sounds eerily human",
+            "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [
+          "The Verge reports Dessa was compared against OpenAI's GPT-Live-1 with Block claiming it sounds more natural but demos showing occasional awkwardness; TechCrunch emphasizes the eerily human quality without noting awkwardness"
+        ],
+        "is_update": true,
+        "reason": "Same event as yesterday:10 — Block's release of the Dessa speech-to-speech AI voice model"
+      }
+    },
+    {
+      "id": 9201,
+      "source": "The Verge AI",
+      "title": "Pennsylvania signs law requiring disclosure labels on AI-generated ads",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, requiring AI-generated advertisements to carry disclosure labels across all formats including images, video, audio, and text. Labels must match the ad's format. The law applies regardless of where an ad was created if it runs in Pennsylvania. Notable loopholes include subjective definitions of 'significantly modified,' carve-outs for parody and satire, and a narrow trigger limited to content creating 'false consumer perception' about products or services.",
+      "opinion": "A meaningful first step, but the loopholes — especially the subjective 'significantly modified' threshold — may limit enforcement and invite creative compliance workarounds.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-10-24T18:32:21+00:00",
+      "fetched_at": "2026-10-25T10:36:26.654528+00:00"
+    },
+    {
+      "id": 9181,
+      "source": "TechCrunch AI",
+      "title": "AI agents that live in your text messages are a growing product category",
+      "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch profiles AI agents that operate through SMS, iMessage, and RCS rather than dedicated apps. Notable examples include Ask Proxy ($1/day, proactively anticipates needs), Caddy (turns scattered phone info into tasks via iMessage/RCS), and Comma (manages tasks across Signal, Telegram, and WeChat). Instinct is the highest-profile player at a $10 billion valuation after raising $1 billion. The shared premise: text an agent like a friend instead of downloading another app.",
+      "opinion": "The messaging-native approach cleverly sidesteps app fatigue, but the category's long-term viability depends on whether these agents can maintain utility as phone OS-level AI assistants improve.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+      "published_at": "2026-10-24T14:00:00+00:00",
+      "fetched_at": "2026-10-25T10:36:22.410835+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9265,
+          "source": "Charter",
+          "title": "Van Jones discusses bridging political divides at Charter Workplace Summit; new AI Pulse research finds only 1 in 10 AI users see major benefits",
+          "url": "https://www.charterworks.com/van-jones-advice-for-bridging-political-divides-at-work/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Van Jones spoke at the Charter Workplace Summit 2026 about how fragmented media feeds drive workplace political division. Separately, Charter's AI Pulse research found only about 1 in 10 AI users say the technology significantly improves both their work and lives, with agency over AI integration being the strongest predictor of benefit. Additional findings include a gender gap in AI-exposed job growth, a 91% spike in AI safety job openings, and NYC's $10 million AI job training center.",
+          "opinion": "The AI Pulse finding that personal agency over AI adoption matters more than the tool itself is a useful counterpoint to top-down rollout strategies.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/Van-Kevin.png",
+          "published_at": "2026-10-25T10:30:00+00:00",
+          "fetched_at": "2026-10-25T10:36:37.929127+00:00"
+        },
+        {
+          "id": 9178,
+          "source": "TechCrunch AI",
+          "title": "TechCrunch catalogs the AI graveyard: notable failures from Character.ai to Sora",
+          "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch published a running list of notable AI failures including Relay (workflow automation, shut down August 2026), Character.ai (bankruptcy after five years), OpenAI's failed ChatGPT super-app redesign and shuttered ChatGPT Atlas browser, Sora's March 2026 shutdown due to costs, and Apple's repeatedly delayed Siri AI improvements that led to a $250 million settlement over iPhone 16 marketing claims.",
+          "opinion": "A sobering catalog that underscores how even well-funded AI bets fail when they lack clear product-market fit or sustainable unit economics.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2019/12/GettyImages-95927766-1.jpg?resize=1200,797",
+          "published_at": "2026-10-24T19:00:00+00:00",
+          "fetched_at": "2026-10-25T10:36:21.300034+00:00"
+        },
+        {
+          "id": 9200,
+          "source": "The Verge AI",
+          "title": "Blue Planet III keeps imperfect footage to prove it's real in the age of AI",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "BBC's Blue Planet III is deliberately keeping imperfect shots — plankton in the water, boats in frame, suboptimal conditions — that would have been cut in previous series. Executive Producer Elizabeth White says this proves the footage is authentic, since AI content tends to look overly polished. The series showcases real animal behaviors including dolphins using sea sponges as tools and inter-species fish communication.",
+          "opinion": "A striking admission that authenticity now requires visible imperfection — the 'uncanny valley' problem inverted.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&strip=all&crop=0%2C3.4695867913185%2C100%2C93.060826417363&w=1200",
+          "published_at": "2026-10-24T21:29:12+00:00",
+          "fetched_at": "2026-10-25T10:36:26.545309+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9200,
+                "source": "The Verge AI",
+                "title": "Blue Planet III is keeping the rough edges in the age of AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Same event as yesterday:7 — BBC Blue Planet III deliberately using less polished footage to prove authenticity against AI-generated content"
+          }
+        },
+        {
+          "id": 9179,
+          "source": "TechCrunch AI",
+          "title": "Block's Dessa voice model sounds eerily human, trained entirely on speech",
+          "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Block released Dessa, a full-duplex speech-to-speech voice model trained entirely on human speech that produces natural laughs, pauses, and emotional expressions. It can run locally on consumer hardware like a MacBook M4 Max. Block is seeking safety researchers to test it before public release and sees potential applications in powering business and consumer voice experiences at lower cost.",
+          "opinion": "Running a convincingly human voice model locally on consumer hardware is a meaningful threshold — it democratizes the capability while making safety review harder to enforce. Where coverage differs: The Verge reports Dessa was compared against OpenAI's GPT-Live-1 with Block claiming it sounds more natural but demos showing occasional awkwardness; TechCrunch emphasizes the eerily human quality without noting awkwardness",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822",
+          "published_at": "2026-10-24T16:00:00+00:00",
+          "fetched_at": "2026-10-25T10:36:21.452484+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9179,
+                "source": "TechCrunch AI",
+                "title": "Block’s new voice model sounds eerily human",
+                "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [
+              "The Verge reports Dessa was compared against OpenAI's GPT-Live-1 with Block claiming it sounds more natural but demos showing occasional awkwardness; TechCrunch emphasizes the eerily human quality without noting awkwardness"
+            ],
+            "is_update": true,
+            "reason": "Same event as yesterday:10 — Block's release of the Dessa speech-to-speech AI voice model"
+          }
+        },
+        {
+          "id": 9201,
+          "source": "The Verge AI",
+          "title": "Pennsylvania signs law requiring disclosure labels on AI-generated ads",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, requiring AI-generated advertisements to carry disclosure labels across all formats including images, video, audio, and text. Labels must match the ad's format. The law applies regardless of where an ad was created if it runs in Pennsylvania. Notable loopholes include subjective definitions of 'significantly modified,' carve-outs for parody and satire, and a narrow trigger limited to content creating 'false consumer perception' about products or services.",
+          "opinion": "A meaningful first step, but the loopholes — especially the subjective 'significantly modified' threshold — may limit enforcement and invite creative compliance workarounds.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-10-24T18:32:21+00:00",
+          "fetched_at": "2026-10-25T10:36:26.654528+00:00"
+        },
+        {
+          "id": 9181,
+          "source": "TechCrunch AI",
+          "title": "AI agents that live in your text messages are a growing product category",
+          "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch profiles AI agents that operate through SMS, iMessage, and RCS rather than dedicated apps. Notable examples include Ask Proxy ($1/day, proactively anticipates needs), Caddy (turns scattered phone info into tasks via iMessage/RCS), and Comma (manages tasks across Signal, Telegram, and WeChat). Instinct is the highest-profile player at a $10 billion valuation after raising $1 billion. The shared premise: text an agent like a friend instead of downloading another app.",
+          "opinion": "The messaging-native approach cleverly sidesteps app fatigue, but the category's long-term viability depends on whether these agents can maintain utility as phone OS-level AI assistants improve.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+          "published_at": "2026-10-24T14:00:00+00:00",
+          "fetched_at": "2026-10-25T10:36:22.410835+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2113971284652724481",
+      "author": "Zephyr_hg",
+      "headline": "A one-prompt Claude workflow __audits your business folder for gaps and file-level contradictions__ — found 8 on a simple photographer's test folder.",
+      "tweet_id": "4041eba9-b6bc-81b1-aca1-f05386f70882",
+      "source_text": "Stop Claude guessing the parts of your business nobody wrote down, by asking it once what your folder leaves out.\n\nIt reads every file and lists what it would have to guess, what it would have guessed, and which file the answer should live in. Then it shows every place two files disagree.\n\nOn a made-up test folder for a one-person photographer, it found 8 gaps. The studio address had no house number, nothing said she could use client photos in her portfolio, and a gallery date she'd promised a client didn't match her own delivery rule.\n\nI'd rather hear that from one prompt than from a client. The prompt is in the image, and the article below is why the folder comes before any prompt.",
+      "created_time": "2026-10-25T04:52:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2113971284652724481",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Sumanth_077/status/2113948384113598588",
+      "author": "Sumanth_077",
+      "headline": "Google open-sourced __Harness²__, a framework that recursively improves agent scaffolding at both the task and cross-task level — no model retraining required.",
+      "tweet_id": "4041eba9-b6bc-8141-9bd0-c119baa8bd77",
+      "source_text": "Google open-sourced Harness²!\n\nHarness² is a framework for recursively improving the harness around an agent while keeping the underlying model weights fixed.\n\nThe interesting part is that it does this at two different levels.\n\nFor the current task, Harness² uses a Propose → Probe → Compose loop. It proposes changes to the harness, runs those variants on the same task, compares how the executions behave, and then composes a better harness from that evidence.\n\nThat is the task-level recursion.\n\nBut the process does not reset after every task.\n\nHarness² also keeps the harnesses it adopted and the lessons supported by execution evidence, then uses those to guide how future harnesses should be improved on new tasks.\n\nThat is the harnessing-level recursion.\n\nSo one loop improves the harness for the task in front of the agent.\n\nThe second loop improves how the system learns to build better harnesses over time.\n\nThe editable harness itself can include the system prompt, guardrails, memory, tool guidance, subagents, skills, scripts, and plugins.\n\nYou can also run the recursion in two ways:\n\nParallel recursion explores more candidate harnesses.\n\nSequential recursion carries the refined harness and accumulated evidence through multiple Propose → Probe → Compose steps.\n\nGoogle reports that even a single Harness² step improved GLM-5 and Gemini 3.5 Flash across JobBench, LAB, and WorkBuddy-Bench, with larger task-level recursion budgets bringing further gains.\n\nThat is what makes Harness² more interesting than just another agent framework.\n\nIt is treating the harness itself as something that can be iteratively improved from execution evidence, both within a task and across tasks.\n\n100% open source.\n\nI’ve shared the GitHub repo in the comments!",
+      "created_time": "2026-10-25T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/Sumanth_077/status/2113948384113598588",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/lochhead/status/2114045815807521096",
+      "author": "lochhead",
+      "headline": "Christopher Lochhead argues that __category designers capture 76% of the economics__ in markets they create — and that \"product-market fit\" has the causality backwards.",
+      "tweet_id": "4041eba9-b6bc-8143-8b14-d815a1209889",
+      "source_text": "Product-Market-Fit is backwards.\n\nNo one ever.\nFit.\nA product.\nInto an existing market and won.\n\nIt's actually Market/Product/Fit.\n\nEntrepreneurs who win.\nCategory design their own markets.\n\nAnd earn 76% of the economics in the category they created.\n\nRead: The Big Product Lie\nhttps://t.co/cB7A0whst8\n🏴‍☠️",
+      "created_time": "2026-10-25T04:42:00.000Z",
+      "canonical_url": "https://twitter.com/lochhead/status/2114045815807521096",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMortyx/status/2114035717596733762",
+      "author": "0xMortyx",
+      "headline": "Lauren Tan's chief-of-staff prompt turns Grokbot into a __clean multi-agent pipeline__ — research, implementation, review, artifacts, and handoff format in one structured pass.",
+      "tweet_id": "4041eba9-b6bc-8133-92a2-cce384827e6b",
+      "source_text": "Lauren Tan just revealed the chief-of-staff prompt she uses to run Grokbot systems\n\nThe structure is simple, but powerful:\n\n• define the goal clearly\n• give full context, constraints, and resources\n• assign specialized roles across the K3 team\n• add checks, verification, and review\n• force a clean output + handoff format\n\nSo instead of one messy answer, you get:\n\n→ research → implementation → review → artifacts → next steps\n\nIf you build with Grokbot, study this format.\n\nIt’s one of the clearest prompt architectures I’ve seen for turning a model into an actual multi-agent system.",
+      "created_time": "2026-10-25T04:37:00.000Z",
+      "canonical_url": "https://twitter.com/0xMortyx/status/2114035717596733762",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/kensavage/status/2114137394819539039",
+      "author": "kensavage",
+      "headline": "Ken Savage shares the Reddit lead generation process behind __100M+ impressions__ for clients — full breakdown now public.",
+      "tweet_id": "4041eba9-b6bc-819c-baa2-cee4b48e80fa",
+      "source_text": "A full breakdown of how to generate leads for your company on Reddit:\n\n(The same process we've used to generate over 100M+ impressions for our clients) https://t.co/fKRNZEBejS",
+      "created_time": "2026-10-25T04:32:00.000Z",
+      "canonical_url": "https://twitter.com/kensavage/status/2114137394819539039",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/courtlinholt/status/2114182893039677761",
+      "author": "courtlinholt",
+      "headline": "Most corporate AI upskilling is just __Duolingo streaks in disguise__, and spacing research (Cepeda et al., 2008) points to a better approach: longer gaps for longer retention horizons.",
+      "tweet_id": "4041eba9-b6bc-814d-8665-fc99c152d4e9",
+      "source_text": "Your AI upskilling program is probably a Duolingo streak.\n\nCompletion badges. Seven-day challenges. A dashboard proudly reporting that most staff are \"trained.\"\n\nGencay's (LearnAIWithMe) newest notebook collects the language-acquisition research, and it points away from streaks. What works is hours of input you can understand, plus well-spaced review.\n\nThe spacing evidence is the strongest part. Cepeda et al. (2008, Psychological Science) found that the best gap between study sessions depends on how long you need to retain the material: longer horizon, longer gaps. Krashen's \"comprehensible input\" idea is also in the notebook. It's influential but still debated among second-language researchers, so use it as a heuristic, not a law.\n\nIf you're an engineer, learn a new framework the way polyglots learn a language. Read real codebases slightly above your level. Re-implement from memory a week later, then a month later.\n\nIf you own AI enablement, build literacy around spacing, not sprints. Replace the one-day workshop with short sessions on real internal workflows, revisited at one week, one month and three months. Then measure who is actually shipping with AI at day 90, not who attended. If day-90 usage looks like day-one usage, the program trained attendance.\n\nNotebook: notebooklm. google. com/notebook/c5b816da-9b53-4bdb-a68c-320cd07fe968",
+      "created_time": "2026-10-25T04:27:00.000Z",
+      "canonical_url": "https://twitter.com/courtlinholt/status/2114182893039677761",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AleiahLock/status/2114036786343051540",
+      "author": "AleiahLock",
+      "headline": "@AleiahLock mapped __every Grok Bot feature from A to Z__ on one page — Approvals, Chief of Staff routing, Plaid read-only finance, local computer access, and more.",
+      "tweet_id": "4041eba9-b6bc-81f1-959d-f2f5ec4a303d",
+      "source_text": "SOMEONE FINALLY PUT EVERY GROK BOT FEATURE ON ONE PAGE. A TO Z\n\nA is Approvals. Allow once, Always allow, Deny. Background approvals expire in about 10 minutes\nB is Bots. One Bot, one job\nC is Chief of Staff. The one Bot you talk to. It routes work to the rest\nD is Drafts. Messages wait for your Send\nE is Email. Each Bot can claim its own inbox, with plus aliases\nF is Finance. Plaid, read-only\nG is Group chats. Two to six Bots, one outcome\nH is Handoffs. Bots wake each other up and pass work\nI is Integrations. Connect once, every Bot can use it\nJ is Job description. Owns, delivers, never does without asking\nK is Keyboard. Cmd/Ctrl+K jumps anywhere\nL is Local computer. Off by default, Ask every time when you need it\nM is Memory. Useful, not a source of truth\nN is New Bot. Cmd/Ctrl+N\nO is One computer. Shared by every Bot\nP is Plans. Premium $30 is the entry point\nQ is Quiet. \"Stay silent if nothing changed\"\nR is Routines. Up to 50 per Bot, every 5 minutes at the fastest\nS is Skills. Type / to use one\nT is Teach a task. Up to 10 minutes of screen recording\nU is Usage. One weekly pool\nV is Voice. Dictation, voice chat, voice memos, Action Button\nW is /workspace. The only folder you can count on\nX is X. Search, monitor, DMs, and @bot under any post\nY is Your yes. Send, pay, post, delete, sign, trade\nZ is Zero-to-team. Chief first, specialists second\n\nthe setup, the hacks and the prompts are in the full guide below",
+      "created_time": "2026-10-25T04:27:00.000Z",
+      "canonical_url": "https://twitter.com/AleiahLock/status/2114036786343051540",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMorlex/status/2113980689095774575",
+      "author": "0xMorlex",
+      "headline": "SpaceX AI engineer Matt Palmer runs __eight Grok Bots for work and life__ — including one that waits on hold for him and one that moves his car before a parking ticket.",
+      "tweet_id": "4041eba9-b6bc-818e-9c87-f058de2cdb0a",
+      "source_text": "SpaceXAI engineer Matt Palmer: shared the 8 Grok Bots he runs for work and life, from testing new tools to making phone calls\n\nthis is actually incredible...\n\n· devrel bot: tests one new tool from his bookmarks every morning\n· loops bot: gathers context, writes the prompt for the coding agent\n· x algorithm bot: when to post, how to format, who to reply to\n· writing bot: fixes grammar, keeps his voice\n· personal crm: x mutuals sorted by city before every trip\n· image bot: same style, same palette, every time\n· skippy: tells him when to move the car before a ticket\n· dial bot: makes the call, waits on hold, never pays\n\nbookmark this and paste the recipes into your grok bot",
+      "created_time": "2026-10-25T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/0xMorlex/status/2113980689095774575",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xShoopy/status/2114058147589493093",
+      "author": "0xShoopy",
+      "headline": "Google's free 2.5-hour course walks through __building agents that survive server restarts and run for days__ — covering memory types, polling fixes, and duplicate-charge prevention.",
+      "tweet_id": "4041eba9-b6bc-819e-b21e-c22c88f5f881",
+      "source_text": "Google's free 2.5-hour course on building agents that remember, survive restarts, and run for days:\n\n0:00 → AI harness crash course\n12:16 → the 4 types of agent memory\n50:52 → Memory Bank: agents that rewrite what they know about you\n1:23:05 → why \"I'll check again in 10s\" never runs, and how to fix it\n2:00:26 → kill the server mid-task, the agent resumes where it stopped\n2:20:04 → how to stop your agent from charging twice\n\nAnnie Wang (Google Cloud) builds it step by step, from harness basics to production safeguards. most agents never get past a demo. this is how they do.\n\nthe architecture behind systems like this is in the article below↓",
+      "created_time": "2026-10-25T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/0xShoopy/status/2114058147589493093",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/maestrooth/status/2114052058454131049",
+      "author": "maestrooth",
+      "headline": "A power user shared __10 Grok Bot workflows__ running on autopilot, including a Chief of Staff bot and a Newsjack Bot that triaged 243 media requests by day two.",
+      "tweet_id": "4041eba9-b6bc-81ac-bd0a-ee6d7ca82dee",
+      "source_text": "My top 10 Grok Bot use cases so far:  \n\n1. Chief of Staff bot. \nI delegate to it, it hands work to my other bots, and it catches conflicts like a call overlapping my flight or a podcast invite with no recording link.  \n\n2. Sunday week plan. \nEvery Sunday at 8am it plans my week in Todoist around my day themes (writing day, video day, admin day) and reschedules tasks to fit.  \n\n3. Nightly second brain audit. \nEvery weekday at 6:15pm it checks the day's work against my two second brains on GitHub and suggests edits. Nothing changes without my approval.  \n\n4. Newsjack Bot. \nEvery morning it scans the news for stories I can comment on, drafts pitches to reporters, and sweeps media request platforms. On day two it had 2 pitch packs ready and had triaged 243 media requests.  \n\n5. Connector Bot. \nIt reads my Notion CRM, email, calendar, meeting notes and DMs. Every Monday it gives me the 5 people due for a check in with a draft for each, plus 1 or 2 intros where both sides win.  \n\n6. Speed to Lead bot. \nIt sweeps my inbox for money threads like warm leads and live deals, then drafts the follow up so nothing goes cold.  \n\n7. X Research bot. \nIt finds what performed on X in my niche over the last 14 days and notes why each winner worked.  \n\n8. Analytics Bot. \nEvery week it syncs the last 7 days of my posts and email campaigns into one Notion database with live metrics.  \n\n9. Facebook Marketplace bot. \nIt sells the random things sitting in my garage on Facebook Marketplace and answers buyers for me.  \n\n10. Article finder skill. \nI give it a topic and it pulls X Articles that did 5x their author's median bookmarks, with titles and thumbnails for inspiration.\n\nTry these setups, then read the full breakdown in the article below:",
+      "created_time": "2026-10-25T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/maestrooth/status/2114052058454131049",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/cherry_mx_reds/status/2113969070118666670",
+      "author": "cherry_mx_reds",
+      "headline": "Anthropic now advises companies to __remove unnecessary subagents__, with one customer seeing ~2x faster execution from a single skilled agent over complex multi-agent systems.",
+      "tweet_id": "4041eba9-b6bc-8134-a52e-e9e41b744bd5",
+      "source_text": "Anthropic is now recommending that companies REMOVE unnecessary subagents from their AI systems.\n\nThis is a pretty significant shift in agent architecture, with their team finding that a single agent equipped with skills can frequently outperform complex multi-agent systems, and one customer seeing roughly 2x faster execution.\n\nThe emerging rules of thumb:\n\n→ Skills: Teach the agent HOW to do something, including procedures, expertise, and instructions.\n\n→ Tools / MCP: Give the agent the ability to DO things through APIs, actions, and live data.\n\n→ Subagents: Use for parallel work, isolated context, or tasks a single agent struggles with.\n\nThe interesting part is progressive disclosure. Instead of spawning specialized agents or stuffing everything into a giant prompt, one agent discovers and loads skills and tools as needed.\n\nTheir advice is to fold existing subagents into the main loop, turn their instructions into skills, expose their actions as tools, and run evals to see if performance holds up.\n\nAs models have gotten smarter, improving agent architecture is becoming less about what you can add and more about what you can delete.\n\nhttps://t.co/DNq60Skkmc",
+      "created_time": "2026-10-25T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/cherry_mx_reds/status/2113969070118666670",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/spectnfa/status/2114042545600667659",
+      "author": "spectnfa",
+      "headline": "An xAI engineer demoed __154 free Grok Bot templates__ in the new marketplace, including contributions from the Cursor team.",
+      "tweet_id": "4041eba9-b6bc-811d-8144-d0f779b005c8",
+      "source_text": "HOLY F*CK, ELON MUSK MADE A SPACEXAI ENGINEER SHOW OFF 154 FREE GROK BOTS FROM THE TEAM AND EXACTLY HOW TO USE THEM\n\none engineer, three short videos: the new grok bot marketplace, templates and team bots.\n\nbots from the cursor team and featured creators are in there, like sawyer merritt's home robot setup.\n\nhow to use them, from the videos:\n\nstep 1: open the marketplace button in the bottom left, go to the bots page\nstep 2: pick a bot from the cursor team or a featured creator\nstep 3: open view details, read the context and integrations, then hit add to bot\nstep 4: reconnect the plugins it needs. api keys and custom mcp servers don't come with the template\nstep 5: found a flow that works? tell your bot \"make a team bot copy of yourself for my team\"\nstep 6: install the team bot in slack or teams so people just tag it\n\nthe parts worth watching:\n\n0:18 - where the bots live in the app\n2:18 - turn your own bot into a template\n5:16 - install any template with one link\n8:09 - what to check before installing someone else's bot\n11:41 - make a team bot with one sentence\n\nsave this and study the article below, it has ready-made grok bot configs you can copy ↓",
+      "created_time": "2026-10-25T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/spectnfa/status/2114042545600667659",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/aakashgupta/status/2114039475601129943",
+      "author": "aakashgupta",
+      "headline": "Aakash Gupta's __15-term AI product glossary__ — Hooks, Harness, Skills, Subagents, and more — is the vocabulary chart every builder should bookmark.",
+      "tweet_id": "4041eba9-b6bc-81f7-8877-e965c405976c",
+      "source_text": "Terms every AI product builder should know.\n\nA year ago, only engineers needed to know these.\n\nNow basically everyone does.\n\nHooks = rules enforced by code\nTools = where the agent can act\nMemory = everything it remembers\nHarness = everything around the model\nContext Library = all of its knowledge\nHuman-in-the-Loop = where humans review\nSandbox = a walled-off place to run code\nAgent Loop = keep working until it's done\nSkills = playbook for repeatable workflows\nPermissions = what it can do without asking\nChecks = what catches mistakes before you do\nSubagents = helper clones with a fresh context\nInstructions File = what it reads on every task\nRules = the do-not-violate standing instructions\nFeature Harness = the harness inside an AI feature\n\nA few years ago, only ML engineers needed to know these. Now, across 113 PM job postings I look at, 76% want you to know AI.\n\nSo save this and send it to your buddy who's struggling to keep up.",
+      "created_time": "2026-10-25T00:12:00.000Z",
+      "canonical_url": "https://twitter.com/aakashgupta/status/2114039475601129943",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Codie_Sanchez/status/2113987477773996375",
+      "author": "Codie_Sanchez",
+      "headline": "Codie Sanchez says she wishes she'd had this __live financial command center__ years ago as a CEO — upload your P&L and get a full business diagnostic.",
+      "tweet_id": "4031eba9-b6bc-8132-ae40-d7babfadf31d",
+      "source_text": "I wish I had this product 10 years ago as a CEO.\n\nA live financial command center built into your business. \n\nIt shows: \n\n→ where do you stand on growth targets\n→ what are the bottlenecks slowing you down\n→ what's actually driving revenue and what isn’t\n\nSo you can spot problems early and always know what’s stopping the business from growing.\n\nOne thing we hear all the time from owners inside our scaling advisory is their books aren’t clean enough and they don’t know what to prioritize. \n\nNow they can just upload their P&L + docs and get a full diagnostic of their business.\n\nYou can’t fix what you can’t measure.",
+      "created_time": "2026-10-24T15:27:00.000Z",
+      "canonical_url": "https://twitter.com/Codie_Sanchez/status/2113987477773996375",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dr_cintas/status/2113756925124882770",
+      "author": "dr_cintas",
+      "headline": "Every Mac on macOS 27 now has a __free offline LLM in Terminal__ via `fm` — no account, API key, or internet connection required.",
+      "tweet_id": "4031eba9-b6bc-8197-b852-d4e802b1b986",
+      "source_text": "Every Mac on macOS 27 now has a free LLM built into the Terminal.\n\nNo account. No API key. No internet. No token bill.\n\nSetup (1 minute):\n\n1. sudo fm license (enter your Mac password, one time)\n2. fm available (checks the model is downloaded)\n3. fm respond “your question”\n\nWorks on any Apple Silicon Mac, M1 included.\n\n- Pipe files: cat notes.txt | fm respond -i “summarize this”\n- Get JSON back: build a schema with fm schema object, pass it with --schema\n- Local API: fm serve gives you an OpenAI-compatible endpoint on localhost\n- Resume chats: sessions save to ~/.fm/sessions/\n\nThe limit is 4,096 tokens per session, and your prompt, instructions, and the answer all share it.\n\nSo skip code and math. Use it for summarizing, extracting, classifying, and rewriting.\n\nFree, private, offline, and already on your Mac.",
+      "created_time": "2026-10-24T15:27:00.000Z",
+      "canonical_url": "https://twitter.com/dr_cintas/status/2113756925124882770",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/undefinedKi/status/2113727136729276858",
+      "author": "undefinedKi",
+      "headline": "Boris Cherny says modern Claude only needs __three things in a prompt__: what to do, how much effort to spend, and how to verify it got it right.",
+      "tweet_id": "4031eba9-b6bc-8160-aef4-df9b744a04b7",
+      "source_text": "The creator of Claude Code says there's no secret to prompting. His whole method fits in 3 lines\n\nBoris Cherny says prompt wording mattered a lot back in the Sonnet 3.5 days. Now Claude only needs to know 3 things:\n\n1. What you want it to do.\n2. How much effort to spend.\n3. How to check it did the right thing.\n\nHe showed a real prompt that uses all 3. He asked Opus 5.5 for an interactive website about a podcast episode:\n\nThe goal: \"narrate the entire episode, focus on the business wisdom.\"\nThe effort: \"use lots of tokens.\"\nThe check: \"iterate till you're proud of it.\"\n\nHe also named the look he wanted: \"New Yorker or NYT data viz vibes.\"\n\nNo role-play or templates. One paragraph, the way you'd brief a coworker.\n\nI made a prompt that rewrites any request using his method. It's on the image.",
+      "created_time": "2026-10-24T15:27:00.000Z",
+      "canonical_url": "https://twitter.com/undefinedKi/status/2113727136729276858",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Mike_Scully_/status/2113903323711774798",
+      "author": "Mike_Scully_",
+      "headline": "Mike Scully makes the case that __hourly pricing for AI work punishes speed__ — charge 20–30% of the annual value you're replacing instead.",
+      "tweet_id": "4031eba9-b6bc-8115-9380-c77b4809ed0f",
+      "source_text": "Stop charging by the hour for AI work.\n\nHere’s why it’s costing you.\n\nSay you build an automation in 4 hours that saves a business 10 hours a week. At $50 an hour, you’d charge $200.\n\nBut look at it from the business owner’s side. Those 10 hours a week add up to over 500 hours a year. If the person doing that work costs them $25 an hour, that’s more than $12,500 a year they’re spending on a problem you just fixed.\n\nYou charged $200 for something worth $12,500 to them.\n\nThat’s the problem with hourly pricing for AI work. The better you get, the faster you build, and the less you earn. You’re punished for being good at it.\n\nSo price it by the value instead:\n\nAsk how many hours a week the task takes, and who’s doing it.\nWork out what that costs them over a year.\nCharge somewhere between 20% and 30% of that.\n\nIn this example, that’s $2,500 to $3,750. The client still saves thousands in the first year, and every year after that it’s pure saving for them.\n\nWhen you put it that way, $3,000 is an easy decision for them. $200 makes you look like you don’t know what it’s worth either.\n\nPrice the problem you solve. How long it took you to build is your business, not theirs.",
+      "created_time": "2026-10-24T12:42:00.000Z",
+      "canonical_url": "https://twitter.com/Mike_Scully_/status/2113903323711774798",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/DevinOlsenn/status/2114093741439143948",
+      "author": "DevinOlsenn",
+      "headline": "Spotted in Grok Bot's __0.77 prerelease builds__: phone call handling, iMessage on Mac, shareable bots, and payments settings.",
+      "tweet_id": "4041eba9-b6bc-81be-bbb1-ea2520083cda",
+      "source_text": "Grok Bot's next update looks huge 👀\n\nSpotted in the 0.77 prerelease builds:\n\n📞 A calls panel, so your Bot can make and handle phone calls (hold status, keypad presses)\n💬 Messages on Mac, so your Bot can work in iMessage\n✉️ Share and invite Bots, so you can hand one to a friend or teammate\n💳 Payments settings\n📄 Page widgets and routine buttons, which make Pages feel like real apps\n🤖 Each Bot gets its own separate computer\n\nCalls and iMessage are the big ones for me. These are still prerelease, so not everything might ship.",
+      "created_time": "2026-10-25T04:57:00.000Z",
+      "canonical_url": "https://twitter.com/DevinOlsenn/status/2114093741439143948",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://3blue1brown.substack.com/p/an-artists-take-on-ai-in-math",
+      "author": "Eridanus2",
+      "item_id": "hn:50229822",
+      "headline": "3blue1brown shares __an artist's take on AI in math__, arguing the tools change not just how we prove things but how we think about them.",
+      "subreddit": null,
+      "source_text": "An artist's take on AI in math",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T09:50:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://3blue1brown.substack.com/p/an-artists-take-on-ai-in-math",
+      "learning_score": 3
+    },
+    {
+      "url": "https://healeycodes.com/decompiling-fast-food-tycoon-2-drawing-the-world",
+      "author": "ingve",
+      "item_id": "hn:50229772",
+      "headline": "How __Fast Food Tycoon 2__ renders its world: one developer's reverse-engineering walkthrough of the 90s game's renderer.",
+      "subreddit": null,
+      "source_text": "Decompiling Fast Food Tycoon 2: Drawing the World",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T09:40:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://healeycodes.com/decompiling-fast-food-tycoon-2-drawing-the-world",
+      "learning_score": 3
+    },
+    {
+      "url": "https://inside.java/2026/10/23/confined-pools/",
+      "author": "karussell",
+      "item_id": "hn:50229715",
+      "headline": "__JDK 28's confined memory pools__ deliver 6–18x faster off-heap allocation — a meaningful gain for latency-sensitive Java workloads.",
+      "subreddit": null,
+      "source_text": "Allocating Off-Heap Memory: Typically 6-18x Faster in JDK 28",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T09:29:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://inside.java/2026/10/23/confined-pools",
+      "learning_score": 3
+    },
+    {
+      "url": "https://electrek.co/2026/10/23/rivian-third-dimension-acquisition-self-driving-simulation/",
+      "author": "cisc",
+      "item_id": "hn:50230059",
+      "headline": "Rivian acquires __Third Dimension__ to convert 400,000 daily dashcam clips into self-driving simulation data.",
+      "subreddit": null,
+      "source_text": "Rivian buys startup to turn 400,000 daily clips into 3D sims",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T10:27:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://electrek.co/2026/10/23/rivian-third-dimension-acquisition-self-driving-simulation",
+      "learning_score": 2
+    },
+    {
+      "url": "https://jevontane.com/echoboard/",
+      "author": "jevontane",
+      "item_id": "hn:50229997",
+      "headline": "__Echoboard__ flips the lab model — AI agents run the science experiments while humans only watch.",
+      "subreddit": null,
+      "source_text": "Show HN: Echoboard where AI agents do science and humans only watch",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T10:18:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://jevontane.com/echoboard",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/Nutlope/hallmark",
+      "author": "capex",
+      "item_id": "hn:50229994",
+      "headline": "Nutlope's __Hallmark__ makes the case that one design principle separates polished AI interfaces from slop.",
+      "subreddit": null,
+      "source_text": "The design skill that ends AI slop",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T10:18:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Nutlope/hallmark",
+      "learning_score": 2
+    },
+    {
+      "url": "https://ikrishg.github.io/reseter.css/",
+      "author": "javatuts",
+      "item_id": "hn:50229940",
+      "headline": "__Reseter.css 3.0__ lands with a major overhaul of the lightweight CSS reset library, adding modern defaults and better browser compatibility.",
+      "subreddit": null,
+      "source_text": "Reseter.css 3.0 brings a major overhaul to the lightweight CSS reset library",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T10:09:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ikrishg.github.io/reseter.css",
+      "learning_score": 2
+    },
+    {
+      "url": "https://difftastic.wilfred.me.uk/",
+      "author": "Tomte",
+      "item_id": "hn:50229901",
+      "headline": "__Difftastic__ parses actual syntax trees to show diffs, making code reviews far easier to read than line-by-line comparisons.",
+      "subreddit": null,
+      "source_text": "Difftastic, a Structural Diff",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T10:01:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://difftastic.wilfred.me.uk",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
+      "author": "noplay",
+      "item_id": "hn:50229861",
+      "headline": "France's prime minister reportedly prepared __DNS blocks for major social platforms__ ahead of October 24th unrest — ISPs were quietly briefed.",
+      "subreddit": null,
+      "source_text": "France asked ISPs to prepare temporary DNS blocks for major social platforms",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T09:56:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ",
+      "learning_score": 2
+    },
+    {
+      "url": "https://electrek.co/2026/10/24/chinese-evs-found-back-door-into-western-car-markets-at-40-off-msrp/",
+      "author": "cisc",
+      "item_id": "hn:50229663",
+      "headline": "Chinese EV brands found a back door into Western markets by __selling at 40% below MSRP__ through grey-market channels.",
+      "subreddit": null,
+      "source_text": "Chinese EVs found back door into Western car markets – at 40% off MSRP",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-25T09:19:13+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://electrek.co/2026/10/24/chinese-evs-found-back-door-into-western-car-markets-at-40-off-msrp",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-10-25T10:43:51.549950+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9265
+        ],
+        "reason": "Standalone coverage of Van Jones' session at Charter Workplace Summit 2026 on political divides, plus new Charter AI Pulse research findings — distinct session from previously covered Summit panels",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9178
+        ],
+        "reason": "Unique running list of failed or shut-down AI projects and startups",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9200
+        ],
+        "reason": "Same event as yesterday:7 — BBC Blue Planet III deliberately using less polished footage to prove authenticity against AI-generated content",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9179
+        ],
+        "reason": "Same event as yesterday:10 — Block's release of the Dessa speech-to-speech AI voice model",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9201
+        ],
+        "reason": "Standalone coverage of new Pennsylvania AI advertising disclosure law",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9181
+        ],
+        "reason": "Standalone coverage of the emerging category of AI agents operating through text messaging",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "4ee339c070f76fe40e46408ed596d2c9fe81be44d88a1530593e50da3edcba90"
+}
