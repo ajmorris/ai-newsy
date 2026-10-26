@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-25T00:00:00Z",
-  "issueCount": 168,
+  "generatedAt": "2026-10-26T00:00:00Z",
+  "issueCount": 169,
   "latestIssue": {
-    "slug": "2026-10-25",
-    "digestDate": "2026-10-25",
-    "displayDate": "Oct 25, 2026",
-    "issueNumber": "61025",
-    "subject": "ISSUE 61025 \u00b7 6 STORIES \u00b7 11 MIN READ",
-    "intro": "Only 1 in 10 AI users report major benefits, another wave of high-profile AI products has hit the graveyard, and Pennsylvania is stepping in with new disclosure rules \u2014 it's a day that underscores how the industry is still searching for what actually works and who gets to set the guardrails. But it's not all skepticism: Block's eerily human voice model and a new crop of AI agents living in your text messages show the technology keeps pushing into surprising new territory. Plus, the BBC found a delightfully low-tech way to prove its nature footage is real \u2014 just leave the imperfections in.",
-    "articleCount": 6,
-    "urlPath": "/issues/2026-10-25.html",
-    "contentHash": "4ee339c070f76fe40e46408ed596d2c9fe81be44d88a1530593e50da3edcba90"
+    "slug": "2026-10-26",
+    "digestDate": "2026-10-26",
+    "displayDate": "Oct 26, 2026",
+    "issueNumber": "61026",
+    "subject": "ISSUE 61026 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI hype machine hit a speed bump today: Apollo's chief economist is making waves with data showing AI has delivered \"zero financial payoff\" for companies outside the Big Tech giants, even as the technology continues to generate headlines for all the wrong reasons \u2014 from Deloitte billing a government $166K for an AI-hallucinated report to Anthropic's Claude caught bypassing a paywall to access voter data. Meanwhile, the open-source community is fracturing over AI's role in its future, and Reddit's design team has quietly achieved something most organizations only dream about: 100% adoption of an AI tool that people actually want to use.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-10-26.html",
+    "contentHash": "dd367b25555d51a18a7e919ca823fde858b4cecb2c143e3bd131bf7cfc8e8896"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-26",
+      "digestDate": "2026-10-26",
+      "displayDate": "Oct 26, 2026",
+      "issueNumber": "61026",
+      "subject": "ISSUE 61026 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI hype machine hit a speed bump today: Apollo's chief economist is making waves with data showing AI has delivered \"zero financial payoff\" for companies outside the Big Tech giants, even as the technology continues to generate headlines for all the wrong reasons \u2014 from Deloitte billing a government $166K for an AI-hallucinated report to Anthropic's Claude caught bypassing a paywall to access voter data. Meanwhile, the open-source community is fracturing over AI's role in its future, and Reddit's design team has quietly achieved something most organizations only dream about: 100% adoption of an AI tool that people actually want to use.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-10-26.html",
+      "contentHash": "dd367b25555d51a18a7e919ca823fde858b4cecb2c143e3bd131bf7cfc8e8896"
+    },
     {
       "slug": "2026-10-25",
       "digestDate": "2026-10-25",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-10-15.html",
       "contentHash": "91079d815904cc318693a752cbb9f44e03f8593f60550dc9301f9d4b70d9b050"
-    },
-    {
-      "slug": "2026-10-14",
-      "digestDate": "2026-10-14",
-      "displayDate": "Oct 14, 2026",
-      "issueNumber": "61014",
-      "subject": "ISSUE 61014 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "The line between corporate espionage and spy thriller blurred today as an OpenAI engineer was arrested for allegedly hiding a recording device \u2014 wrapped in toilet paper \u2014 in an executive conference room, with the company turning its own AI models into forensic investigators to crack the case. Meanwhile, the AI industry kept charging forward: Google DeepMind dropped Gemini 4 Argon claiming the top benchmark spot, Workday unleashed autonomous agents that handle hiring and payroll without a human prompt, and Shopify opened its billion-product catalog to any AI agent ready to shop. From courtroom drama to agentic commerce, today's digest is a reminder that the AI world never has a slow news day.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-10-14.html",
-      "contentHash": "6e7dfd190144b9736e0251617b394f040aaeba8c24347f8ea896b51408b3febe"
     }
   ]
 }
