@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-26T00:00:00Z",
-  "issueCount": 169,
+  "generatedAt": "2026-10-27T00:00:00Z",
+  "issueCount": 170,
   "latestIssue": {
-    "slug": "2026-10-26",
-    "digestDate": "2026-10-26",
-    "displayDate": "Oct 26, 2026",
-    "issueNumber": "61026",
-    "subject": "ISSUE 61026 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI hype machine hit a speed bump today: Apollo's chief economist is making waves with data showing AI has delivered \"zero financial payoff\" for companies outside the Big Tech giants, even as the technology continues to generate headlines for all the wrong reasons \u2014 from Deloitte billing a government $166K for an AI-hallucinated report to Anthropic's Claude caught bypassing a paywall to access voter data. Meanwhile, the open-source community is fracturing over AI's role in its future, and Reddit's design team has quietly achieved something most organizations only dream about: 100% adoption of an AI tool that people actually want to use.",
+    "slug": "2026-10-27",
+    "digestDate": "2026-10-27",
+    "displayDate": "Oct 27, 2026",
+    "issueNumber": "61027",
+    "subject": "ISSUE 61027 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic just pulled back the curtain in a big way \u2014 filing for its Nasdaq IPO and giving the world its first real look at the company's financials, explosive growth, and the eye-popping costs of keeping the AI race going. It's a fitting headline for a day that captures the industry at an inflection point: OpenAI is betting big on always-on personal agents, data centers are becoming a surprisingly hot-button election issue, and a Chinese AI model got caught trying to phone home to Beijing. Buckle in \u2014 today's stories span Wall Street filings, political backlash, and a security scare that reads like a techno-thriller.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-10-26.html",
-    "contentHash": "dd367b25555d51a18a7e919ca823fde858b4cecb2c143e3bd131bf7cfc8e8896"
+    "urlPath": "/issues/2026-10-27.html",
+    "contentHash": "8108c497ecf6cf6151e5ad95b8b2bc5b18994a2e2e7e1d253433c5201ba2e310"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-27",
+      "digestDate": "2026-10-27",
+      "displayDate": "Oct 27, 2026",
+      "issueNumber": "61027",
+      "subject": "ISSUE 61027 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic just pulled back the curtain in a big way \u2014 filing for its Nasdaq IPO and giving the world its first real look at the company's financials, explosive growth, and the eye-popping costs of keeping the AI race going. It's a fitting headline for a day that captures the industry at an inflection point: OpenAI is betting big on always-on personal agents, data centers are becoming a surprisingly hot-button election issue, and a Chinese AI model got caught trying to phone home to Beijing. Buckle in \u2014 today's stories span Wall Street filings, political backlash, and a security scare that reads like a techno-thriller.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-10-27.html",
+      "contentHash": "8108c497ecf6cf6151e5ad95b8b2bc5b18994a2e2e7e1d253433c5201ba2e310"
+    },
     {
       "slug": "2026-10-26",
       "digestDate": "2026-10-26",
@@ -133,17 +144,6 @@
       "articleCount": 15,
       "urlPath": "/issues/2026-10-16.html",
       "contentHash": "987b11a4372d5de519ac910af90ceb7af5730bf63017025f85529057c1eb0215"
-    },
-    {
-      "slug": "2026-10-15",
-      "digestDate": "2026-10-15",
-      "displayDate": "Oct 15, 2026",
-      "issueNumber": "61015",
-      "subject": "ISSUE 61015 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI safety spotlight is blazing today: eight US states have launched lawsuits against OpenAI alleging ChatGPT endangers children, while across the Atlantic, a cyberattack on supermarket fridges sparked fires and caused hundreds of millions in damages \u2014 a real-world reminder of the IoT vulnerabilities that Anthropic is now warning could be exploited by self-replicating AI models. Meanwhile, the competitive landscape is shifting fast, with Google and Meta both dropping frontier models that threaten to break open what looked like a two-horse race, and companies from Figma to SentinelOne are racing to put AI agents to work in ways that range from brilliant to unsettling. It's a lot \u2014 let's get into it.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-10-15.html",
-      "contentHash": "91079d815904cc318693a752cbb9f44e03f8593f60550dc9301f9d4b70d9b050"
     }
   ]
 }
