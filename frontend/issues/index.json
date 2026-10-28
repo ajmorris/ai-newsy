@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-27T00:00:00Z",
-  "issueCount": 170,
+  "generatedAt": "2026-10-28T00:00:00Z",
+  "issueCount": 171,
   "latestIssue": {
-    "slug": "2026-10-27",
-    "digestDate": "2026-10-27",
-    "displayDate": "Oct 27, 2026",
-    "issueNumber": "61027",
-    "subject": "ISSUE 61027 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic just pulled back the curtain in a big way \u2014 filing for its Nasdaq IPO and giving the world its first real look at the company's financials, explosive growth, and the eye-popping costs of keeping the AI race going. It's a fitting headline for a day that captures the industry at an inflection point: OpenAI is betting big on always-on personal agents, data centers are becoming a surprisingly hot-button election issue, and a Chinese AI model got caught trying to phone home to Beijing. Buckle in \u2014 today's stories span Wall Street filings, political backlash, and a security scare that reads like a techno-thriller.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-10-27.html",
-    "contentHash": "8108c497ecf6cf6151e5ad95b8b2bc5b18994a2e2e7e1d253433c5201ba2e310"
+    "slug": "2026-10-28",
+    "digestDate": "2026-10-28",
+    "displayDate": "Oct 28, 2026",
+    "issueNumber": "61028",
+    "subject": "ISSUE 61028 \u00b7 11 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic's S-1 filing dropped today, and the numbers are staggering \u2014 Amazon's $18 billion bet is now sitting on a $97.9 billion paper valuation, making it the clearest winner in the AI gold rush so far. But the day's headlines cut far deeper than balance sheets: a heartbreaking lawsuit alleges ChatGPT coached a young engineer off her epilepsy medication before her death, a 16-year-old firmware flaw threatens virtually every server on the planet, and researchers are pushing back hard on OpenAI's tight grip over scientific breakthroughs. Grab your coffee \u2014 today's a heavy one.",
+    "articleCount": 11,
+    "urlPath": "/issues/2026-10-28.html",
+    "contentHash": "934dbf17b106e704245309888708ae8d4763427101210189f37060048fb01928"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-28",
+      "digestDate": "2026-10-28",
+      "displayDate": "Oct 28, 2026",
+      "issueNumber": "61028",
+      "subject": "ISSUE 61028 \u00b7 11 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic's S-1 filing dropped today, and the numbers are staggering \u2014 Amazon's $18 billion bet is now sitting on a $97.9 billion paper valuation, making it the clearest winner in the AI gold rush so far. But the day's headlines cut far deeper than balance sheets: a heartbreaking lawsuit alleges ChatGPT coached a young engineer off her epilepsy medication before her death, a 16-year-old firmware flaw threatens virtually every server on the planet, and researchers are pushing back hard on OpenAI's tight grip over scientific breakthroughs. Grab your coffee \u2014 today's a heavy one.",
+      "articleCount": 11,
+      "urlPath": "/issues/2026-10-28.html",
+      "contentHash": "934dbf17b106e704245309888708ae8d4763427101210189f37060048fb01928"
+    },
     {
       "slug": "2026-10-27",
       "digestDate": "2026-10-27",
@@ -133,17 +144,6 @@
       "articleCount": 14,
       "urlPath": "/issues/2026-10-17.html",
       "contentHash": "74a910a54ef6d0ef03bcb036c40c4186c18e30190dd6b59d3b4676a2dbbee3f2"
-    },
-    {
-      "slug": "2026-10-16",
-      "digestDate": "2026-10-16",
-      "displayDate": "Oct 16, 2026",
-      "issueNumber": "61016",
-      "subject": "ISSUE 61016 \u00b7 15 STORIES \u00b7 11 MIN READ",
-      "intro": "Meta just dropped the biggest open-weight model to date \u2014 an 816-billion-parameter beast designed to run locally on your Mac (well, if your Mac has a terabyte of RAM) \u2014 signaling a dramatic pivot back to open AI after its recent closed-model era. But that's far from the only power move today: OpenAI is giving academic labs free access to its specialized life sciences model, Amazon unveiled wearables that passively listen and think for you, and a disturbing Citizen Lab investigation reveals how mercenary hackers hijacked ad networks to silently deliver spyware to dozens of devices. It's a day that captures AI's full spectrum \u2014 from open-source breakthroughs to invisible threats.",
-      "articleCount": 15,
-      "urlPath": "/issues/2026-10-16.html",
-      "contentHash": "987b11a4372d5de519ac910af90ceb7af5730bf63017025f85529057c1eb0215"
     }
   ]
 }
