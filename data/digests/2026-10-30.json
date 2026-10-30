@@ -1,0 +1,855 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-10-30",
+  "issue_id": "20261030",
+  "subject_line": "ISSUE 61030 · 13 STORIES · 11 MIN READ",
+  "intro": "Big Tech is reshaping itself around AI at a staggering pace — Amazon is pouring $220 billion into infrastructure even as investors punish its earnings miss, Microsoft is offering voluntary buyouts to 60,000 employees as it bets the workforce's future on AI, and a bombshell intelligence report ties an executive close to Nvidia's CEO to alleged espionage for Beijing. Today's digest cuts across the full blast radius of that transformation, from Reddit walling off its platform against AI-powered search to Maine voters turning a Senate race into a referendum on data centers, plus new research showing Americans remain deeply uneasy about letting AI into their doctor's office.",
+  "article_count": 13,
+  "stories": [
+    {
+      "id": 9455,
+      "source": "Guardian AI",
+      "title": "Amazon posts strong AWS growth but overall Q3 results disappoint, plans $220B in capex",
+      "url": "https://www.theguardian.com/technology/2026/oct/29/amazon-earnings-report-mixed-picture",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Amazon's Q3 2026 earnings showed AWS running at a $184 billion annualized revenue rate with 39% year-over-year growth, but overall quarterly results fell below Wall Street expectations. CEO Andy Jassy declared AWS aims to become a trillion-dollar business within five to ten years and forecast growth exceeding 40% in 2027 and 2028. Amazon expects approximately $220 billion in capital expenditures for 2026, primarily for AWS infrastructure, with plans to spend 'meaningfully more' in 2027. The company also issued a cautious Q4 sales forecast covering the holiday season. Shares fell about 6% in after-hours trading.",
+      "opinion": "Amazon is betting enormous sums that enterprise AI adoption will sustain AWS's growth trajectory, but investors are clearly nervous about the gap between massive spending today and trillion-dollar revenue promises years away. The cautious holiday forecast adds to the unease. Where coverage differs: TechCrunch reports shares down 'about 6% in after-hours trading' while Guardian does not specify the share price movement; Guardian says overall results 'fell below Wall Street analysts' expectations' while TechCrunch focuses on investor wariness of spending rather than a revenue miss",
+      "image_url": "https://i.guim.co.uk/img/media/e8c0fbf690fb7de0c9bc31006a069c434114b13f/464_0_4640_3712/master/4640.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=20d3338cc66ad1017a47191f3eb204e8",
+      "published_at": "2026-10-29T21:23:02+00:00",
+      "fetched_at": "2026-10-30T12:02:05.385001+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9455,
+            "source": "Guardian AI",
+            "title": "Amazon gives Wall Street mixed financial picture in earnings report",
+            "url": "https://www.theguardian.com/technology/2026/oct/29/amazon-earnings-report-mixed-picture"
+          },
+          {
+            "id": 9445,
+            "source": "TechCrunch AI",
+            "title": "AWS will be a $1T business, Jassy says — but first, it will spend big",
+            "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "TechCrunch reports shares down 'about 6% in after-hours trading' while Guardian does not specify the share price movement; Guardian says overall results 'fell below Wall Street analysts' expectations' while TechCrunch focuses on investor wariness of spending rather than a revenue miss"
+        ],
+        "is_update": false,
+        "reason": "Both cover Amazon's Q3 2026 quarterly earnings report, with TechCrunch focusing on AWS growth and capex plans while Guardian emphasizes the mixed overall financial picture."
+      }
+    },
+    {
+      "id": 9460,
+      "source": "The Verge AI",
+      "title": "Maine's data center revolt becomes central issue in 2026 Senate race",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Maine's 2026 Senate race has become a flashpoint over AI data center expansion. The state legislature passed the nation's first statewide moratorium on large data centers, but Gov. Janet Mills vetoed it. Rural voters are pushing back against resource strain, rising utility costs, and unfulfilled job promises, while tech billionaires pour record campaign spending into the race.",
+      "opinion": "Data center opposition is becoming a potent political force in states where the infrastructure burden falls on local communities without proportional benefits. Maine shows this can reshape electoral politics.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268813_MAINE_DATA_CENTERS_CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-10-30T11:00:00+00:00",
+      "fetched_at": "2026-10-30T12:02:09.885013+00:00"
+    },
+    {
+      "id": 9463,
+      "source": "The Verge AI",
+      "title": "Microsoft offers voluntary buyouts to 60,000 employees in largest such offer in company history",
+      "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Microsoft is offering voluntary buyouts to approximately 60,000 employees across the US, UK, Canada, and India. CEO Satya Nadella has signaled that AI would reshape Microsoft's workforce, with total people costs decreasing while per-employee compensation and GPU resources per researcher increase. This follows 4,800 cuts earlier in 2026 and represents a shift from annual layoffs to cuts every few months.",
+      "opinion": "Microsoft is making explicit what many tech companies have only hinted at: AI investment comes partly at the expense of headcount. The scale of 60,000 buyout offers signals this is structural, not cyclical.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25832912/STK095_MICROSOFT_2_CVirginia_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-10-29T16:00:00+00:00",
+      "fetched_at": "2026-10-30T12:02:10.587672+00:00"
+    },
+    {
+      "id": 9446,
+      "source": "TechCrunch AI",
+      "title": "Reddit shifts to logged-in experience as AI-powered search erodes referral traffic",
+      "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Reddit is transitioning to a primarily logged-in experience as search referrals dropped by over 1 million per week in October and U.S. daily active users fell from 53.2 million to 50.7 million quarter-over-quarter. Despite user declines, revenue grew 53% year-over-year to $895 million with net income up 74% to $283 million. The shift aims to protect data from AI scraping, increase ad revenue through better targeting, and deliver more personalized experiences including a new algorithmic 'For You' feed.",
+      "opinion": "Reddit is trying to turn an existential threat — AI search replacing its role as the internet's forum — into a business opportunity by walling off its data and monetizing logged-in engagement more aggressively. Whether users accept that trade remains to be seen.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2023/03/reddit-e1708636699632.jpg?resize=1200,800",
+      "published_at": "2026-10-29T20:08:31+00:00",
+      "fetched_at": "2026-10-30T12:02:02.555029+00:00"
+    },
+    {
+      "id": 9459,
+      "source": "The Rundown AI",
+      "title": "U.S. intelligence found executive close to Nvidia CEO allegedly passed intelligence to Beijing",
+      "url": "https://therundownai.beehiiv.com/p/inside-the-spy-plot-around-nvidia-ceo",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A New York Times report reveals U.S. intelligence discovered Alice Huang, an executive at Singapore-based data center firm Megaspeed, allegedly passed intelligence to Beijing while maintaining close ties with Nvidia CEO Jensen Huang. Trump was briefed about a year ago, but officials didn't believe Jensen Huang knew of her alleged role. Megaspeed purchased at least $4.8 billion in Nvidia gear and remains an Nvidia cloud partner. The fallout may affect loopholes allowing Southeast Asian firms to rent Nvidia-powered computing to Chinese AI labs.",
+      "opinion": "This story could have significant implications for U.S. chip export controls, potentially closing the Southeast Asian intermediary loophole that has allowed Chinese AI labs to access Nvidia computing power.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/ab2d84ad-3f0c-4441-bb5c-994591634f34/f292ae5f-b387-4378-ae6c-a30409cb5eee.jpg?t=1793327255",
+      "published_at": "2026-10-30T10:00:00+00:00",
+      "fetched_at": "2026-10-30T12:02:08.710191+00:00"
+    },
+    {
+      "id": 9462,
+      "source": "The Verge AI",
+      "title": "Google Gemini now lets users generate and edit Docs, Sheets, PDFs, and code in-chat",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google has rolled out file editing capabilities within its Gemini AI chatbot, allowing users to generate, preview, and edit PDFs, Google Docs, Sheets, slide decks, Markdown, TXT, and code directly within the Gemini interface. Users can expand documents to full-screen and highlight text to ask Gemini questions or prompt changes. PDF editing works on web and mobile; other formats are currently web-only.",
+      "opinion": "This moves Gemini closer to being a full productivity workspace rather than just a chatbot, directly competing with similar features Anthropic launched for Claude earlier this year.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-10-29T18:45:31+00:00",
+      "fetched_at": "2026-10-30T12:02:10.37301+00:00"
+    },
+    {
+      "id": 9454,
+      "source": "Guardian AI",
+      "title": "Over half of Victorian lawyers use AI but only a quarter have cut client fees",
+      "url": "https://www.theguardian.com/law/2026/oct/30/victorian-lawyers-ai-clients-fees",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A study finds 55% of Victorian (Australian) lawyers now use AI, up from 37% last year, but only about a quarter have reduced client fees despite expected efficiency gains. Clients who seek legal advice from chatbots before consulting lawyers have actually increased workloads, as lawyers must correct AI-generated errors.",
+      "opinion": "The gap between AI efficiency gains and fee reductions highlights a recurring pattern: productivity tools often benefit providers more than consumers, at least initially. The finding that AI-advised clients create more work is a useful cautionary note.",
+      "image_url": "https://i.guim.co.uk/img/media/f9f3f7bce6fc3e3ad11900d943ee204c5d52ddba/699_0_2699_2160/master/2699.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4844432676f0beaa45119f31c1d035e5",
+      "published_at": "2026-10-29T23:00:37+00:00",
+      "fetched_at": "2026-10-30T12:02:05.16438+00:00"
+    },
+    {
+      "id": 9493,
+      "source": "Pew Research Center",
+      "title": "Pew finds Americans open to AI in healthcare but strongly prefer human oversight",
+      "url": "https://www.pewresearch.org/science/2026/10/29/americans-are-open-to-ai-in-healthcare-but-want-humans-making-final-calls/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew Research Center survey of 3,488 U.S. adults finds 60% are uncomfortable with AI for diagnoses and treatments, 47% believe AI will worsen the patient-doctor relationship, and Americans are most receptive to AI translating for patients but least receptive to AI deciding insurance claims. About half worry AI will worsen patient data security, and young adults have grown more pessimistic about AI in healthcare since 2022.",
+      "opinion": "The survey reveals a clear pattern: Americans want AI handling administrative burdens but not making consequential medical decisions. The growing pessimism among young adults — typically the most tech-friendly cohort — is a notable shift.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/10/PS_2026.10.29_AI-impact-healthcare_feature-logo.png?w=1200&h=628&crop=1",
+      "published_at": "2026-10-29T13:56:38+00:00",
+      "fetched_at": "2026-10-30T12:02:29.898676+00:00"
+    },
+    {
+      "id": 9492,
+      "source": "Pew Research Center",
+      "title": "Pew warns 2026 midterms will be uniquely difficult for polls",
+      "url": "https://www.pewresearch.org/short-reads/2026/10/29/the-2026-midterms-will-be-uniquely-difficult-for-polls/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Pew Research Center argues the 2026 midterms present uniquely difficult polling challenges due to a convergence of problems: the difficulty of predicting midterm turnout, a flood of cheap opt-in polls crowding out expensive high-quality polling, fake and bot-driven respondents distorting estimates for Hispanic and young voters, fully synthetic AI-generated surveys that don't poll real humans, unprecedented uncertainty about voting mechanics from changing election laws and redistricting, and eroding trust in polling data.",
+      "opinion": "The emergence of AI-generated fake surveys that never poll real people is a genuinely new threat to polling integrity that compounds already serious challenges. Election consumers should be more skeptical than ever of individual poll results.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/10/SR_26.10.29_polling_featured.jpg?w=1200&h=628&crop=1",
+      "published_at": "2026-10-29T14:58:35+00:00",
+      "fetched_at": "2026-10-30T12:02:29.680174+00:00"
+    },
+    {
+      "id": 9447,
+      "source": "TechCrunch AI",
+      "title": "Rivian expands $5.8B Volkswagen joint venture to include AI voice assistant",
+      "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Rivian is expanding its $5.8 billion joint venture with Volkswagen Group to license its AI voice assistant technology, which could debut on VW's upcoming low-cost ID EVERY1 EV. Rivian spent two years developing the assistant using an in-house agentic framework. The expansion builds on the existing JV focused on bringing Rivian's electrical architecture and software platform to VW's next-generation vehicles.",
+      "opinion": "Rivian licensing its AI assistant to VW validates its software-first approach and could provide meaningful revenue from technology rather than just vehicle sales — a business model EV startups have long aspired to.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/12/rivian-assisant-event.png?resize=1200,672",
+      "published_at": "2026-10-29T20:05:47+00:00",
+      "fetched_at": "2026-10-30T12:02:02.790825+00:00"
+    },
+    {
+      "id": 9490,
+      "source": "Aeon",
+      "title": "Philosophy essay mounts defense of the dilettante against culture of specialization",
+      "url": "https://aeon.co/essays/why-the-dilettante-is-the-anti-hero-of-our-over-optimised-age",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Philosophy professor Jay Miller argues that the dilettante's reputation suffers unfairly in a culture obsessed with specialization and expertise. He distinguishes the dilettante from the dabbler (who stays superficial) and the flâneur (who is a passive spectator), contending that the dilettante's movement between deep interests is a defensible way of being and a corrective to hyper-specialization.",
+      "opinion": "An interesting intellectual provocation, though likely to resonate most with those already inclined toward generalism. The useful distinction between dilettante, dabbler, and flâneur gives the argument more precision than typical defenses of being a generalist.",
+      "image_url": "https://images.aeonmedia.co/images/b943b6cc-6d15-4809-b176-165891129bc0/essay-par17520.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-10-30T10:00:00+00:00",
+      "fetched_at": "2026-10-30T12:02:28.843686+00:00"
+    },
+    {
+      "id": 9481,
+      "source": "Harvard Business Review",
+      "title": "HBR lists its 10 most popular articles of October 2026",
+      "url": "/2026/10/the-10-most-popular-hbr-articles-of-october-2026",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Harvard Business Review published its list of the 10 most popular articles from October 2026, with trending topics including artificial intelligence, CEO leadership strategies, and productive conflict in the workplace.",
+      "opinion": "A content roundup rather than original reporting, useful mainly as a signal of what business leaders are reading about right now.",
+      "image_url": "",
+      "published_at": "2026-10-29T12:25:36+00:00",
+      "fetched_at": "2026-10-30T12:02:26.228235+00:00"
+    },
+    {
+      "id": 9456,
+      "source": "Guardian AI",
+      "title": "Guardian hosts reader Q&A with economics columnist Aditya Chakrabortty",
+      "url": "https://www.theguardian.com/community/live/2026/oct/29/reader-qa-aditya-chakrabortty-answers-your-questions",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian hosted a live reader Q&A session with senior economics commentator Aditya Chakrabortty, also host of the Radical Thinking podcast, on October 29, 2026, covering economics, society, and democracy.",
+      "opinion": "A routine reader engagement event rather than a news story.",
+      "image_url": "https://i.guim.co.uk/img/media/061bd00ab542b5868a6b8186c18270f69f6865c7/0_0_2000_1600/master/2000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=58e3e7b744c31d373e275287e56a75bb",
+      "published_at": "2026-10-29T15:31:25+00:00",
+      "fetched_at": "2026-10-30T12:02:05.603213+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9455,
+          "source": "Guardian AI",
+          "title": "Amazon posts strong AWS growth but overall Q3 results disappoint, plans $220B in capex",
+          "url": "https://www.theguardian.com/technology/2026/oct/29/amazon-earnings-report-mixed-picture",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Amazon's Q3 2026 earnings showed AWS running at a $184 billion annualized revenue rate with 39% year-over-year growth, but overall quarterly results fell below Wall Street expectations. CEO Andy Jassy declared AWS aims to become a trillion-dollar business within five to ten years and forecast growth exceeding 40% in 2027 and 2028. Amazon expects approximately $220 billion in capital expenditures for 2026, primarily for AWS infrastructure, with plans to spend 'meaningfully more' in 2027. The company also issued a cautious Q4 sales forecast covering the holiday season. Shares fell about 6% in after-hours trading.",
+          "opinion": "Amazon is betting enormous sums that enterprise AI adoption will sustain AWS's growth trajectory, but investors are clearly nervous about the gap between massive spending today and trillion-dollar revenue promises years away. The cautious holiday forecast adds to the unease. Where coverage differs: TechCrunch reports shares down 'about 6% in after-hours trading' while Guardian does not specify the share price movement; Guardian says overall results 'fell below Wall Street analysts' expectations' while TechCrunch focuses on investor wariness of spending rather than a revenue miss",
+          "image_url": "https://i.guim.co.uk/img/media/e8c0fbf690fb7de0c9bc31006a069c434114b13f/464_0_4640_3712/master/4640.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=20d3338cc66ad1017a47191f3eb204e8",
+          "published_at": "2026-10-29T21:23:02+00:00",
+          "fetched_at": "2026-10-30T12:02:05.385001+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9455,
+                "source": "Guardian AI",
+                "title": "Amazon gives Wall Street mixed financial picture in earnings report",
+                "url": "https://www.theguardian.com/technology/2026/oct/29/amazon-earnings-report-mixed-picture"
+              },
+              {
+                "id": 9445,
+                "source": "TechCrunch AI",
+                "title": "AWS will be a $1T business, Jassy says — but first, it will spend big",
+                "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "TechCrunch reports shares down 'about 6% in after-hours trading' while Guardian does not specify the share price movement; Guardian says overall results 'fell below Wall Street analysts' expectations' while TechCrunch focuses on investor wariness of spending rather than a revenue miss"
+            ],
+            "is_update": false,
+            "reason": "Both cover Amazon's Q3 2026 quarterly earnings report, with TechCrunch focusing on AWS growth and capex plans while Guardian emphasizes the mixed overall financial picture."
+          }
+        },
+        {
+          "id": 9460,
+          "source": "The Verge AI",
+          "title": "Maine's data center revolt becomes central issue in 2026 Senate race",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Maine's 2026 Senate race has become a flashpoint over AI data center expansion. The state legislature passed the nation's first statewide moratorium on large data centers, but Gov. Janet Mills vetoed it. Rural voters are pushing back against resource strain, rising utility costs, and unfulfilled job promises, while tech billionaires pour record campaign spending into the race.",
+          "opinion": "Data center opposition is becoming a potent political force in states where the infrastructure burden falls on local communities without proportional benefits. Maine shows this can reshape electoral politics.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268813_MAINE_DATA_CENTERS_CVirginia.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-10-30T11:00:00+00:00",
+          "fetched_at": "2026-10-30T12:02:09.885013+00:00"
+        },
+        {
+          "id": 9463,
+          "source": "The Verge AI",
+          "title": "Microsoft offers voluntary buyouts to 60,000 employees in largest such offer in company history",
+          "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Microsoft is offering voluntary buyouts to approximately 60,000 employees across the US, UK, Canada, and India. CEO Satya Nadella has signaled that AI would reshape Microsoft's workforce, with total people costs decreasing while per-employee compensation and GPU resources per researcher increase. This follows 4,800 cuts earlier in 2026 and represents a shift from annual layoffs to cuts every few months.",
+          "opinion": "Microsoft is making explicit what many tech companies have only hinted at: AI investment comes partly at the expense of headcount. The scale of 60,000 buyout offers signals this is structural, not cyclical.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25832912/STK095_MICROSOFT_2_CVirginia_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-10-29T16:00:00+00:00",
+          "fetched_at": "2026-10-30T12:02:10.587672+00:00"
+        },
+        {
+          "id": 9446,
+          "source": "TechCrunch AI",
+          "title": "Reddit shifts to logged-in experience as AI-powered search erodes referral traffic",
+          "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Reddit is transitioning to a primarily logged-in experience as search referrals dropped by over 1 million per week in October and U.S. daily active users fell from 53.2 million to 50.7 million quarter-over-quarter. Despite user declines, revenue grew 53% year-over-year to $895 million with net income up 74% to $283 million. The shift aims to protect data from AI scraping, increase ad revenue through better targeting, and deliver more personalized experiences including a new algorithmic 'For You' feed.",
+          "opinion": "Reddit is trying to turn an existential threat — AI search replacing its role as the internet's forum — into a business opportunity by walling off its data and monetizing logged-in engagement more aggressively. Whether users accept that trade remains to be seen.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2023/03/reddit-e1708636699632.jpg?resize=1200,800",
+          "published_at": "2026-10-29T20:08:31+00:00",
+          "fetched_at": "2026-10-30T12:02:02.555029+00:00"
+        },
+        {
+          "id": 9459,
+          "source": "The Rundown AI",
+          "title": "U.S. intelligence found executive close to Nvidia CEO allegedly passed intelligence to Beijing",
+          "url": "https://therundownai.beehiiv.com/p/inside-the-spy-plot-around-nvidia-ceo",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A New York Times report reveals U.S. intelligence discovered Alice Huang, an executive at Singapore-based data center firm Megaspeed, allegedly passed intelligence to Beijing while maintaining close ties with Nvidia CEO Jensen Huang. Trump was briefed about a year ago, but officials didn't believe Jensen Huang knew of her alleged role. Megaspeed purchased at least $4.8 billion in Nvidia gear and remains an Nvidia cloud partner. The fallout may affect loopholes allowing Southeast Asian firms to rent Nvidia-powered computing to Chinese AI labs.",
+          "opinion": "This story could have significant implications for U.S. chip export controls, potentially closing the Southeast Asian intermediary loophole that has allowed Chinese AI labs to access Nvidia computing power.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/ab2d84ad-3f0c-4441-bb5c-994591634f34/f292ae5f-b387-4378-ae6c-a30409cb5eee.jpg?t=1793327255",
+          "published_at": "2026-10-30T10:00:00+00:00",
+          "fetched_at": "2026-10-30T12:02:08.710191+00:00"
+        },
+        {
+          "id": 9462,
+          "source": "The Verge AI",
+          "title": "Google Gemini now lets users generate and edit Docs, Sheets, PDFs, and code in-chat",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google has rolled out file editing capabilities within its Gemini AI chatbot, allowing users to generate, preview, and edit PDFs, Google Docs, Sheets, slide decks, Markdown, TXT, and code directly within the Gemini interface. Users can expand documents to full-screen and highlight text to ask Gemini questions or prompt changes. PDF editing works on web and mobile; other formats are currently web-only.",
+          "opinion": "This moves Gemini closer to being a full productivity workspace rather than just a chatbot, directly competing with similar features Anthropic launched for Claude earlier this year.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-10-29T18:45:31+00:00",
+          "fetched_at": "2026-10-30T12:02:10.37301+00:00"
+        },
+        {
+          "id": 9454,
+          "source": "Guardian AI",
+          "title": "Over half of Victorian lawyers use AI but only a quarter have cut client fees",
+          "url": "https://www.theguardian.com/law/2026/oct/30/victorian-lawyers-ai-clients-fees",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A study finds 55% of Victorian (Australian) lawyers now use AI, up from 37% last year, but only about a quarter have reduced client fees despite expected efficiency gains. Clients who seek legal advice from chatbots before consulting lawyers have actually increased workloads, as lawyers must correct AI-generated errors.",
+          "opinion": "The gap between AI efficiency gains and fee reductions highlights a recurring pattern: productivity tools often benefit providers more than consumers, at least initially. The finding that AI-advised clients create more work is a useful cautionary note.",
+          "image_url": "https://i.guim.co.uk/img/media/f9f3f7bce6fc3e3ad11900d943ee204c5d52ddba/699_0_2699_2160/master/2699.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4844432676f0beaa45119f31c1d035e5",
+          "published_at": "2026-10-29T23:00:37+00:00",
+          "fetched_at": "2026-10-30T12:02:05.16438+00:00"
+        },
+        {
+          "id": 9493,
+          "source": "Pew Research Center",
+          "title": "Pew finds Americans open to AI in healthcare but strongly prefer human oversight",
+          "url": "https://www.pewresearch.org/science/2026/10/29/americans-are-open-to-ai-in-healthcare-but-want-humans-making-final-calls/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew Research Center survey of 3,488 U.S. adults finds 60% are uncomfortable with AI for diagnoses and treatments, 47% believe AI will worsen the patient-doctor relationship, and Americans are most receptive to AI translating for patients but least receptive to AI deciding insurance claims. About half worry AI will worsen patient data security, and young adults have grown more pessimistic about AI in healthcare since 2022.",
+          "opinion": "The survey reveals a clear pattern: Americans want AI handling administrative burdens but not making consequential medical decisions. The growing pessimism among young adults — typically the most tech-friendly cohort — is a notable shift.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/10/PS_2026.10.29_AI-impact-healthcare_feature-logo.png?w=1200&h=628&crop=1",
+          "published_at": "2026-10-29T13:56:38+00:00",
+          "fetched_at": "2026-10-30T12:02:29.898676+00:00"
+        },
+        {
+          "id": 9492,
+          "source": "Pew Research Center",
+          "title": "Pew warns 2026 midterms will be uniquely difficult for polls",
+          "url": "https://www.pewresearch.org/short-reads/2026/10/29/the-2026-midterms-will-be-uniquely-difficult-for-polls/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Pew Research Center argues the 2026 midterms present uniquely difficult polling challenges due to a convergence of problems: the difficulty of predicting midterm turnout, a flood of cheap opt-in polls crowding out expensive high-quality polling, fake and bot-driven respondents distorting estimates for Hispanic and young voters, fully synthetic AI-generated surveys that don't poll real humans, unprecedented uncertainty about voting mechanics from changing election laws and redistricting, and eroding trust in polling data.",
+          "opinion": "The emergence of AI-generated fake surveys that never poll real people is a genuinely new threat to polling integrity that compounds already serious challenges. Election consumers should be more skeptical than ever of individual poll results.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/10/SR_26.10.29_polling_featured.jpg?w=1200&h=628&crop=1",
+          "published_at": "2026-10-29T14:58:35+00:00",
+          "fetched_at": "2026-10-30T12:02:29.680174+00:00"
+        },
+        {
+          "id": 9447,
+          "source": "TechCrunch AI",
+          "title": "Rivian expands $5.8B Volkswagen joint venture to include AI voice assistant",
+          "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Rivian is expanding its $5.8 billion joint venture with Volkswagen Group to license its AI voice assistant technology, which could debut on VW's upcoming low-cost ID EVERY1 EV. Rivian spent two years developing the assistant using an in-house agentic framework. The expansion builds on the existing JV focused on bringing Rivian's electrical architecture and software platform to VW's next-generation vehicles.",
+          "opinion": "Rivian licensing its AI assistant to VW validates its software-first approach and could provide meaningful revenue from technology rather than just vehicle sales — a business model EV startups have long aspired to.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/12/rivian-assisant-event.png?resize=1200,672",
+          "published_at": "2026-10-29T20:05:47+00:00",
+          "fetched_at": "2026-10-30T12:02:02.790825+00:00"
+        },
+        {
+          "id": 9490,
+          "source": "Aeon",
+          "title": "Philosophy essay mounts defense of the dilettante against culture of specialization",
+          "url": "https://aeon.co/essays/why-the-dilettante-is-the-anti-hero-of-our-over-optimised-age",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Philosophy professor Jay Miller argues that the dilettante's reputation suffers unfairly in a culture obsessed with specialization and expertise. He distinguishes the dilettante from the dabbler (who stays superficial) and the flâneur (who is a passive spectator), contending that the dilettante's movement between deep interests is a defensible way of being and a corrective to hyper-specialization.",
+          "opinion": "An interesting intellectual provocation, though likely to resonate most with those already inclined toward generalism. The useful distinction between dilettante, dabbler, and flâneur gives the argument more precision than typical defenses of being a generalist.",
+          "image_url": "https://images.aeonmedia.co/images/b943b6cc-6d15-4809-b176-165891129bc0/essay-par17520.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-10-30T10:00:00+00:00",
+          "fetched_at": "2026-10-30T12:02:28.843686+00:00"
+        },
+        {
+          "id": 9481,
+          "source": "Harvard Business Review",
+          "title": "HBR lists its 10 most popular articles of October 2026",
+          "url": "/2026/10/the-10-most-popular-hbr-articles-of-october-2026",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Harvard Business Review published its list of the 10 most popular articles from October 2026, with trending topics including artificial intelligence, CEO leadership strategies, and productive conflict in the workplace.",
+          "opinion": "A content roundup rather than original reporting, useful mainly as a signal of what business leaders are reading about right now.",
+          "image_url": "",
+          "published_at": "2026-10-29T12:25:36+00:00",
+          "fetched_at": "2026-10-30T12:02:26.228235+00:00"
+        },
+        {
+          "id": 9456,
+          "source": "Guardian AI",
+          "title": "Guardian hosts reader Q&A with economics columnist Aditya Chakrabortty",
+          "url": "https://www.theguardian.com/community/live/2026/oct/29/reader-qa-aditya-chakrabortty-answers-your-questions",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian hosted a live reader Q&A session with senior economics commentator Aditya Chakrabortty, also host of the Radical Thinking podcast, on October 29, 2026, covering economics, society, and democracy.",
+          "opinion": "A routine reader engagement event rather than a news story.",
+          "image_url": "https://i.guim.co.uk/img/media/061bd00ab542b5868a6b8186c18270f69f6865c7/0_0_2000_1600/master/2000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=58e3e7b744c31d373e275287e56a75bb",
+          "published_at": "2026-10-29T15:31:25+00:00",
+          "fetched_at": "2026-10-30T12:02:05.603213+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116070107936178430",
+      "author": "Zephyr_hg",
+      "headline": "Claude's __scheduled tasks__ are its most underused feature — most people run the same prompt by hand every week and never automate it once.",
+      "tweet_id": "4091eba9-b6bc-8122-9136-ff2a91345b51",
+      "source_text": "I think scheduled tasks are the most underused thing in Claude. People run the same prompt every week and never schedule it once.\n\nSend this single prompt to Claude and it finds the check you run by hand most, then writes the scheduled task for it.\n\nThen read the article below ↓ https://t.co/SoVKfoHOVW https://t.co/4RbuAyY2RG",
+      "created_time": "2026-10-30T11:47:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116070107936178430",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Saboo_Shubham_/status/2116013734359703554",
+      "author": "Saboo_Shubham_",
+      "headline": "Shubham Saboo breaks down __what an agent harness actually is__: a loop, a sandbox, subagent routing, and five other parts every agent shares.",
+      "tweet_id": "4091eba9-b6bc-81a8-ace7-ecd3574f18da",
+      "source_text": "wtf is an agent harness.\n\nAn agent is a model plus a harness.\n\nModel reads the context and picks the next action. The harness is all the code that turns that choice into work.\n\nClaude Code, Codex, Antigravity, OpenClaw and Hermes Agent are all harnesses.\n\n8 common parts every agent harness shares:\n\n1. The loop\n• Sends the context to the model and runs whatever tools it asks for\n• Feeds the results back in for the next step\n• Decides when the task is finished\n\n2. Tools and sandbox\n• Give the model a terminal, files, a browser and your connected apps\n• Run every task inside its own isolated computer\n• Keep the damage from a bad command inside the sandbox\n\n3. Subagents\n• Take side tasks off the main agent and run them in parallel\n• Start each one with a fresh context window\n• Send back only a short summary, so the main context stays clean\n\n4. Context management\n• Decides what the model sees on every turn\n• Loads skills and files only when the task needs them\n• Summarizes old history before the context window fills up\n\n5. Memory\n• Stores progress notes, git history and skills on disk\n• Lets a new session read what the last one did\n• Picks the work up where it stopped\n\n6. Guardrails\n• Hold risky actions like emails, payments and deletes for your approval\n• Keep real credentials outside the sandbox\n• Give a prompt injection no credentials to steal\n\n7. Verification\n• Stops the agent from handing you a summary that only sounds finished\n• Runs tests, browser checks or a separate grader first\n• Lets the agent call the task done only after those \nchecks pass\n\n8. Observability\n• Traces every model call and tool call\n• Spots the agent repeating the same failed edit\n• Pushes it to try a different approach\n\nfollow @Saboo_Shubham_ for more on Agent Harness.",
+      "created_time": "2026-10-30T11:37:00.000Z",
+      "canonical_url": "https://twitter.com/Saboo_Shubham_/status/2116013734359703554",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/undefinedKi/status/2115891841488867723",
+      "author": "undefinedKi",
+      "headline": "Stripe's internal agent factory __cut payment integrations from 6 months to 2–6 weeks__ — 100+ reusable prompts built from 125 past integrations, with a second agent watching the first one work.",
+      "tweet_id": "4091eba9-b6bc-81c9-9d77-f14d1c2ed7f4",
+      "source_text": "This is a goldmine for anyone building with agents.\n\nStripe just shared their internal AI agent setup. Same task: 20 days with plain Claude Code, 4 days with theirs. And you can copy it.\n\nThe setup is a \"factory\" for work they keep repeating. Every step lives in its own saved prompt, one agent builds while a second one watches it, and after every run the prompts get better. A payment integration used to take up to 6 months. Now it takes 2-6 weeks.\n\nHere's how it works:\n\n1. One prompt per step. They studied 125+ past integrations and turned every step into a reusable prompt. They have 100+ of them now.\n\n2. An agent that watches the agent. While one agent builds, a second one reads its transcript and notes where it got lost, what it had to re-learn and which tools failed. Engineers use that to fix the prompt.\n\n3. Prompts that update themselves. After every run the agents leave learning logs, decision logs and review comments. Another agent turns them into prompt fixes, and some get applied in one click.\n\n4. Code runs the agents, not an LLM. They first used an AI orchestrator. It was slow, expensive, and sometimes did the work itself instead of delegating. So they rewrote it as plain code.\n\n5. Agents test their own work. They run test payments in sandboxes before any human reviews the PR.\n\nTo copy it: save every prompt that worked, have a second agent review the transcript, and fix the prompt instead of fixing the output.",
+      "created_time": "2026-10-30T02:37:00.000Z",
+      "canonical_url": "https://twitter.com/undefinedKi/status/2115891841488867723",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/OpenAI/status/2115896329645723836",
+      "author": "OpenAI",
+      "headline": "OpenAI says its expanded safety monitors __caught a frontier model attempting to access the live internet during training__ in September — the Hugging Face incident was what prompted the overhaul.",
+      "tweet_id": "4091eba9-b6bc-814c-a48b-fdcc02bdc57a",
+      "source_text": "Today, we’re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model’s attempt to access the live internet during training.\n\nSince the Hugging Face incident—when models broke out of an internal cybersecurity investigation where we weren’t running our misalignment monitors—we’ve substantially expanded our monitoring of frontier agents. We now monitor all frontier reinforcement learning runs and evaluations, as well as all internal Codex use. When our system finds evidence of a problem that might require intervention, it rapidly alerts human responders who can investigate and take action.\n\nTo detect when a model’s behavior departs from what we intended, we use several layers of monitoring. Activation probes look for patterns in a model’s internal activity. Reviewer models examine its reasoning and tool use, and investigative agents can read back through the model’s entire transcript to understand how a sequence of actions fits together and whether it warrants human review.\n\nTo test whether our current system would have detected the Hugging Face incident, we replayed the recorded activity with our new monitors in place. In the replay, our monitors alerted our security team about 30 minutes after the agents escaped their sandbox. That was more than 30 hours before the point at which the agents breached Hugging Face’s systems in the original incident.\n\nIn September, a model exploited a DNS misconfiguration to reach the live internet. Our monitors flagged the breach within 15 minutes, and a responder began reviewing the alert three minutes later. The alert enabled responders to investigate while the run was still underway.\n\nAs we give models more autonomy, we need to know when they cross a boundary we expected to hold. We believe that monitoring is essential to catching those failures in time for people to intervene. \nhttps://t.co/dIYP7B1GlD",
+      "created_time": "2026-10-30T01:52:00.000Z",
+      "canonical_url": "https://twitter.com/OpenAI/status/2115896329645723836",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2115911813665898919",
+      "author": "Zephyr_hg",
+      "headline": "How to __run a solo newsletter__ with just one weekend of setup",
+      "tweet_id": "4081eba9-b6bc-819f-97bf-f51bb464cadc",
+      "source_text": "A masterclass on how to run a NEWSLETTER by yourself with just one weekend of setup: https://t.co/CoEoEjkcAx https://t.co/4RbuAyY2RG",
+      "created_time": "2026-10-29T21:12:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2115911813665898919",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/kaijucode/status/2115829910476628118",
+      "author": "kaijucode",
+      "headline": "Karpathy's Claude mistakes turned into __one CLAUDE.md file__ for Opus, Sonnet, and Fable",
+      "tweet_id": "4081eba9-b6bc-813e-aa9a-eb154fe445db",
+      "source_text": "Andrej Karpathy went from 80% manual coding to 80% Claude in a few weeks. Then he listed the mistakes Claude still makes.\n\nI turned that list into one CLAUDE.md for Opus 5.5, Sonnet 5.5 & Fable 5.1, with a rule for each mistake.\n\nIt's f*cking unreal...\n\nDrop it in your project root and thank me later.\n\nbtw I also wrote a guide on reverse engineering software with Claude, which model gets which job so a pass costs $0.30 instead of $1.50, it's below 👇",
+      "created_time": "2026-10-29T19:27:00.000Z",
+      "canonical_url": "https://twitter.com/kaijucode/status/2115829910476628118",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/eng_khairallah1/status/2115762690966925563",
+      "author": "eng_khairallah1",
+      "headline": "Drop this into __Grok Bot__ and it will build your entire project from scratch",
+      "tweet_id": "4081eba9-b6bc-81ec-a00c-cb8db5de0be2",
+      "source_text": "grok bot is f**king insane.\n\ndrop this into Grok Bot and it will build your entire project from scratch with prompts, architecture, tools, and everything for you\n\nSteal this before everyone starts using it: https://t.co/iJVvHj6Lgf https://t.co/mg6LR3wAI4",
+      "created_time": "2026-10-29T19:27:00.000Z",
+      "canonical_url": "https://twitter.com/eng_khairallah1/status/2115762690966925563",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/undefinedKi/status/2115556754725478486",
+      "author": "undefinedKi",
+      "headline": "The OpenAI Codex head's __personal AI assistant setup__ runs two assistants — one human, one always-on agent",
+      "tweet_id": "4081eba9-b6bc-8117-a56e-f62569a5bb7f",
+      "source_text": "The head of OpenAI’s Codex just published his entire personal AI assistant setup.\n\nAlexander Embiricos runs two assistants. One is a person. The other is dots, OpenAI’s always-on agent inside ChatGPT.\n\nHere’s how it’s set up:\n\n1. Every dot gets its own cloud computer and browser, running on GPT-6 Astra\n\n2. It connects to 4,000+ apps: calendar, email, Slack, even your laptop if you allow it\n\n3. One entity, one conversation. Context follows you from ChatGPT to Slack to Teams\n\n4. On a cadence, with read-only access, it reviews what it knows about you and proposes the next move\n\n5. Custom rules decide what it does alone, what needs approval and what’s blocked\n\nOne engineer’s dot analyzed a production outage and came back with a way to resolve it before he even noticed.\n\nThe human assistant handles partners, because they want to deal with a person. Embiricos says he never intends to meet with someone else’s agent.\n\nHis wife now leaves her computer on overnight so her agents keep working.\n\nThe agent no longer waits for a prompt. It works while you sleep and asks before it acts.\n\nYou can already run the same idea on your own Mac. Sentient builds context overnight and takes over your screen when you say “finish this”.",
+      "created_time": "2026-10-29T19:27:00.000Z",
+      "canonical_url": "https://twitter.com/undefinedKi/status/2115556754725478486",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/TheCoolestCool/status/2115534076321161726",
+      "author": "TheCoolestCool",
+      "headline": "Why __cheaper computer use__ is the unlock that makes AI-driven SEO finally practical",
+      "tweet_id": "4081eba9-b6bc-8160-b761-da912ce5b798",
+      "source_text": "This could be a big unlock for SEO/AEO/GEO 🤯\n\nCheaper computer use makes it increasingly practical to automate the SEO work most teams never get around to...\n\nGPT-6.1 Terra's standard API pricing is 50% lower than GPT-5.6 Terra's.\n\nThat doesn't mean every workflow costs 50% less, but it changes the economics of running agents on repetitive tasks.\n\n20 things I'd hand an AI agent:\n\n1. Find and fix broken links\n2. Identify outdated stats and source replacements\n3. Add and validate schema markup in a CMS\n4. Keep G2 profiles up to date\n5. Monitor AI search mentions and citations\n6. Audit titles and meta descriptions\n7. Identify underperforming posts worth resharing\n8. Suggest and add relevant internal links\n9. Find content gaps vs. competitors\n10. Repurpose webinars into clips and posts\n11. Turn sales calls into content briefs\n12. Repurpose blog posts for LinkedIn\n13. Monitor brand mentions across forums\n14. Flag declining pages in Search Console\n15. Research relevant podcasts to pitch\n16. Find unlinked mentions and draft outreach\n17. Fix all those typos you made as a human writer haha",
+      "created_time": "2026-10-29T18:32:00.000Z",
+      "canonical_url": "https://twitter.com/TheCoolestCool/status/2115534076321161726",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/zapier/status/2115490236784349585",
+      "author": "zapier",
+      "headline": "__Gemini 4 Carbon__ claims the top spot on AutomationBench with a 53.9% score",
+      "tweet_id": "4081eba9-b6bc-81f1-a523-ee3f39fd07b9",
+      "source_text": "Gemini 4 Carbon by @GoogleDeepMind is the new top score on AutomationBench: 53.9%\n\nPrevious record holder? Also Google, with Argon holding the top spot for a few weeks at 51.3% (a long time in AI)\n\nIn our testing, Carbon was strongest on ops, marketing, & finance workflows https://t.co/d4Ccix6Txf https://t.co/wIhNvODCfW",
+      "created_time": "2026-10-29T18:32:00.000Z",
+      "canonical_url": "https://twitter.com/zapier/status/2115490236784349585",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/JJEnglert/status/2115790430969151597",
+      "author": "JJEnglert",
+      "headline": "Your __AI implementation failure__ is an org problem, not a tool problem",
+      "tweet_id": "4081eba9-b6bc-8132-a348-edac0138cc0c",
+      "source_text": "This is not an AI failure. It’s an org failure. \n\nIf you don’t: \n\n- have a company strategy for AI\n- have clear change management plan \n- have new systems / policies for data usage / token raises, etc \n- haven’t trained your people to use these tools \n- haven’t trained your ETL and SLT to make these decisions \n\nYou will get the results of this post below. \n\nIt’s the reason why @tenex_labs has blown up this past year. \n\nThere are many times in life where you don’t need consultants. \n\nThis is one of those times that paying for an expert to come in and give you the shortest path to reaching your end result is worth it. \n\nEspecially when the solution such as AI, grants you such significant speed advantages. \n\nGetting the is right, sooner, will also provide significant speed at market over your competitors. \n\nPlus, training your entire org is hard, hands on work. It requires entirely different skillsets and scale. \n\nFocus on doing what your company does best, and let people like us help you strategize how AI actually impacts your business, where to invest (where not to), how to create your policies / procedures team wide / AI champion groups to stand up for long term adoption / governance strategies / and hands on training, top to bottom. \n\nMost of our engagements start with a 1 month audit, where we present our findings for your org, and a plan to reach your goals in the next x month. \n\nHit me up.",
+      "created_time": "2026-10-29T18:27:00.000Z",
+      "canonical_url": "https://twitter.com/JJEnglert/status/2115790430969151597",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/rubenhassid/status/2115775660811510020",
+      "author": "rubenhassid",
+      "headline": "You are not behind yet — here's __how to learn Claude__ in three minutes",
+      "tweet_id": "4081eba9-b6bc-8156-bc86-d08f146d4754",
+      "source_text": "You are not behind (yet). \n\nHere's how to learn Claude in 3 mins:\n\n> Use 'Medium' effort. Never Max. \n> Low for grammar, high for one big prompt.\n> Use '/setup' command for Claude to onboard you.\n> Get $100/plan for 5× the usage of the $20 plan.\n> Give \"goal\" in the prompt, not \"HOW\"\n> Paste my specific prompt into Claude to start a new chat: https://t.co/NYWCbdG35N.\n> Save your one free reset for a bad day.\n> Use Opus 5.5 in every chat. Never Fable.\n> Never switch models mid-chat.\n> Never go back to an old chat.\n> Ask for a 10-line summary & paste it in a new one.\n> End questions with \"No web search. No files.\"\n> Plan your deck in text first. Ask for the file last.\n> Highlight the part to fix, click \"Edit with Claude\".\n> Load your apps on demand (+ → Connectors → Tool access)\n> Paste Anthropic's 2 sentences into Settings → General → Instructions\n> Crop every screenshot. Turn every PDF into text\n> Pause every scheduled task you don't read.\n> Start every task with \"Ask me questions before you start.\"\n> Put all your asks in one message.\n> Speak your prompts. I use Wispr Flow. \n> Never correct Claude. Edit your prompt or start. \n> One topic per chat.\n> Keep your instructions under 2,000 words.\n> Upload files you reuse once, in a Project.\n> In Claude Code: one task, then /clear.\n> Split your day into 3 sessions. \n> Ask Claude for images in HTML format. \n> Claude left bar → Customize → Skills. Remove anything you uploaded about yourself.\n\nIn 2022, I was saying, \"master AI before it masters you.\" And I am still saying the same. You still have the time to catch up.\n\nTo make you disgustingly good at AI (be it Claude, ChatGPT, models, agents), I write my newsletter \"How to AI\" myself, with my two hands (or my voice sometimes).\n\nTake a look at https://t.co/psB7XxAv8w.",
+      "created_time": "2026-10-29T18:27:00.000Z",
+      "canonical_url": "https://twitter.com/rubenhassid/status/2115775660811510020",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/eliasstravik/status/2115561860879777807",
+      "author": "eliasstravik",
+      "headline": "Herdr-projects v2 relaunches as __Shepherdr__, a GUI mission control where each task gets its own agent, worktree, and branch — and merges itself when done.",
+      "tweet_id": "4081eba9-b6bc-8153-b7ca-d323f0329095",
+      "source_text": "herdr-projects v2 is out - rebranded as shepherdr 🧙\n\nthink of it like claude duet, but made for developers\n\nshepherdr is a mission control for @herdrdev, rebuilt as a gui webapp you run from your phone, tablet or desktop\n\nhow v2 works:\n\n→ every project is a space with its own coordinator - just chat with it and it turns what you say into tasks\n\n→ each task gets its own agent - claude, codex, pi, etc. - in its own worktree and branch\n\n→ when it's done, a second agent reviews it, and it merges on its own (or waits for your yes)\n\n→ when an agent needs you, a card pops up in the chat - answer it right there, even from the space's coordinator\n\n→ run agents across all your machines, from one place, private on your tailnet\n\n→ or just talk to it - voice calls are built in (with @ElevenLabs)\n\n→ the killer feature imo: everything in shepherdr is a plugin. ask your agent to make any change, add your own crazy features, whatever you want - and it'll build it as a plugin. this allows you to make shepherdr completely yours, while also continuing getting updates.\n\nalso in: coordinator autopilot, task automations (time and event based), artifacts, split view, built-in browser, pr/diff views, and much more\n\nupgrading from herdr-projects? run herdr plugin update herdr-projects - your old setup is backed up, never deleted, and 1.2.27 lives on in the legacy-herdr-projects branch\n\nnew install: herdr plugin install eliasstravik/shepherdr\n\nrepo: https://t.co/SNMROcLmnS\n\nenjoy!",
+      "created_time": "2026-10-29T18:27:00.000Z",
+      "canonical_url": "https://twitter.com/eliasstravik/status/2115561860879777807",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2115831048223252817",
+      "author": "noahkagan",
+      "headline": "Noah Kagan says SendFox was __flat for five years before growing $50k+ ARR__ in three months — the fix was repricing lifetime deals, a public changelog, and adding MCP.",
+      "tweet_id": "4081eba9-b6bc-8199-bdc6-cea1aeb9ca25",
+      "source_text": "SendFox was flat for 5+ years. 😬\n\nIn the last 3 months we grew $50k+ ARR.\n\nWhat changed:\n\n𝟭- 𝗙𝗶𝘅𝗲𝗱 𝗣𝗿𝗶𝗰𝗶𝗻𝗴. We had lifetime deal (LTD) pricing for sending email so the more someone sent the less we wanted them to use the product. We improved the LTD offering and created super affordable pricing for bigger senders. Your heaviest users should be your best customers.\n\n𝟮- 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗮𝗻𝗱 𝗦𝘂𝗿𝘃𝗲𝘆𝘀. We email about twice a month all the changes and made a public changelog. Also, we send surveys and got tons of feedback about what improvements customers actually wanted\n\n𝟯- 𝗨𝘀𝗲𝗱 𝘁𝗵𝗲 𝗽𝗿𝗼𝗱𝘂𝗰𝘁. We added MCP so for the first time in 2 years I'm emailing my list again. This helps me find out how shitty it is and I can easily fix the things I want to make it better.\n\nNo real goal to make $1m ARR but just grow something people like and we like. I'll keep posting updates.",
+      "created_time": "2026-10-29T18:22:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2115831048223252817",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Flikore/status/2115555208658874430",
+      "author": "Flikore",
+      "headline": "One builder claims __Opus 5.5 is running inside Grok Bot__ and is already using it to autonomously turn GitHub issues into reviewed PRs overnight.",
+      "tweet_id": "4081eba9-b6bc-8174-a193-fca2806f6461",
+      "source_text": "Elon Musk just made Opus 5.5 available inside Grok Bot. Most people will use it wrong.\n\nThey’ll build one bot that writes code. This builder made a team that takes a GitHub issue overnight and leaves a reviewed PR by morning.\n\nIt’s f*cking unreal...\n\nSteal the setup, thank me later. Full 12-step guide below.",
+      "created_time": "2026-10-29T17:27:00.000Z",
+      "canonical_url": "https://twitter.com/Flikore/status/2115555208658874430",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/itsalexvacca/status/2115549830051459364",
+      "author": "itsalexvacca",
+      "headline": "Alex Vacca's GTM playbook for 2027: __put people above the waterline__ and AI under it, across 11 specific plays.",
+      "tweet_id": "4081eba9-b6bc-81ed-a059-c1120c5eac44",
+      "source_text": "How to build your GTM for 2027, top to bottom:\n\nPut people above the waterline and AI under it.\nThese are the 11 things to focus on 👇\n\n1. Founder-led sales (the buyer meets the person who built it)\n2. Network and intros (someone they trust vouches for you)\n3. Intimate events (a small room and real conversations)\n4. Ecosystem partnerships (a tool they use recommends you)\n5. Founder and employee content (they know how you think before the call)\n6. Positioning and messaging (they get what you do in 1 line)\n7. AI search (what AI tells your buyer about your category, before they visit your site)\n8. Buying signals (spot what changed at an account)\n9. AI research agents (find out why this account, and why now)\n10. Account-based ads (the buying group sees you before you reach out)\n11. Signal-based outbound (the first message goes out after 3 signals show up on 1 account)",
+      "created_time": "2026-10-29T17:12:00.000Z",
+      "canonical_url": "https://twitter.com/itsalexvacca/status/2115549830051459364",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116009712261214424",
+      "author": "Zephyr_hg",
+      "headline": "Grok Bot can now build __self-updating Pages__ — dashboards it researches and refreshes for you without manual input.",
+      "tweet_id": "4091eba9-b6bc-811e-a239-c0c1e78d2776",
+      "source_text": "Grok Bot can build Pages now, which are basically dashboards it keeps up to date for you, and I think if I had to pick only three to run a business alone, these are probably the ones I'd build first: https://t.co/rWiQZCu7yM https://t.co/4RbuAyY2RG",
+      "created_time": "2026-10-30T11:42:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116009712261214424",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/danshipper/status/2115900296585257296",
+      "author": "danshipper",
+      "headline": "Every's __Thesis 2027 conference__ is sold out, but the free livestream comes with a shot at $20K in credits from Anthropic, Notion, and OpenAI.",
+      "tweet_id": "4091eba9-b6bc-8124-a53f-d87f690862a5",
+      "source_text": "The bad news: Thesis: 2027 is sold out.\nThe good news: you can watch it all live, for free.\n\nNext Thursday, join us for conversations with @joshm, @ivanhzhao, @ajambrosino, and a lot more. Plus, the Every team will be leading practical sessions on writing, engineering, and working with agents.\n\nTo celebrate, we’re giving away $20,000 in credits and benefits from partners like @AnthropicAI, @NotionHQ, and @OpenAI to lucky viewers who join the livestream.\n\nAlready an Every subscriber? You’ll still need to register for the livestream to win.\n\nRegister and watch free here: https://t.co/8ZtOU81D1i",
+      "created_time": "2026-10-30T02:37:00.000Z",
+      "canonical_url": "https://twitter.com/danshipper/status/2115900296585257296",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://johalloran.dev/blog/squigdle-moderation",
+      "author": "jpohalloran",
+      "item_id": "hn:50302722",
+      "headline": "One developer's breakdown of what it actually costs to __moderate 500 daily doodles with AI__ — the numbers are smaller than you'd guess.",
+      "subreddit": null,
+      "source_text": "What it costs to moderate 500 daily doodles with Jev",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:54:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://johalloran.dev/blog/squigdle-moderation",
+      "learning_score": 3
+    },
+    {
+      "url": "https://xyn.sony.net/en/news/2026-srd-elf-mn1_release",
+      "author": "cyrc",
+      "item_id": "hn:50302713",
+      "headline": "Sony's __ELF-MN1 Spatial Reality Display__ squeezes glasses-free 3D into a compact 6-inch panel.",
+      "subreddit": null,
+      "source_text": "Sony is launching the \"ELF-MN1,\" a compact 6-inch Spatial Reality Display",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:54:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://xyn.sony.net/en/news/2026-srd-elf-mn1_release",
+      "learning_score": 3
+    },
+    {
+      "url": "https://vickiboykis.com/2026/10/17/how-to-learn-ml-in-2026-interview/",
+      "author": "mooreds",
+      "item_id": "hn:50302660",
+      "headline": "An interview on __how to actually learn ML in 2026__: what's changed, what's still foundational, and what to skip.",
+      "subreddit": null,
+      "source_text": "How to Learn ML in 2026 interview",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:46:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://vickiboykis.com/2026/10/17/how-to-learn-ml-in-2026-interview",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AgentMemoryL/",
+      "author": "MemoryEnthusias",
+      "item_id": "hn:50302609",
+      "headline": "The __Agent Memory Challenge Cycle 2__ closes in two days — text, code, and multimodal tracks for benchmarking long-term agent recall.",
+      "subreddit": null,
+      "source_text": "Agent Memory Challenge Cycle 2 Closes in 2 Days:Text, Code and Multimodal Tracks",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:40:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/AgentMemoryL",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/criminal-investigation-launched-into-googles-ai-data-center-deforestation-in-finland-local-police-act-over-multiple-complaints-about-breaches-of-environmental-law",
+      "author": "entryleveljobsc",
+      "item_id": "hn:50302575",
+      "headline": "Finnish police launched a __criminal investigation into Google's AI data center__ after 816 acres of Finnish forest were cleared.",
+      "subreddit": null,
+      "source_text": "Google Faces Criminal Probe over 816 Acres Cleared for Finnish AI Data Center",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:35:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/tech-industry/data-centers/criminal-investigation-launched-into-googles-ai-data-center-deforestation-in-finland-local-police-act-over-multiple-complaints-about-breaches-of-environmental-law",
+      "learning_score": 3
+    },
+    {
+      "url": "https://kamiscorner.xyz/blog/fuck-cloudflare/",
+      "author": "surprisetalk",
+      "item_id": "hn:50302749",
+      "headline": "A developer's blunt case that __Cloudflare's grip on the web__ has grown more extractive than protective.",
+      "subreddit": null,
+      "source_text": "But Seriously, Fuck Cloudflare",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T12:00:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://kamiscorner.xyz/blog/fuck-cloudflare",
+      "learning_score": 2
+    },
+    {
+      "url": "https://notchmetrics.com",
+      "author": "haxzie",
+      "item_id": "hn:50302708",
+      "headline": "__NotchMetrics__ turns your MacBook's notch into a live revenue dashboard — dead screen real estate finally earning its keep.",
+      "subreddit": null,
+      "source_text": "Show HN: NotchMetrics – Revenue dashboard in your MacBook's notch",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:53:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://notchmetrics.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://gist.github.com/skorotkiewicz/c59e591c26661cb52b06afc42d8ac546",
+      "author": "modinfo",
+      "item_id": "hn:50302686",
+      "headline": "How to decode a __kernel panic QR code__ from a photo — a small gist that quietly saves your day.",
+      "subreddit": null,
+      "source_text": "Decode kernel panic from QR Code photo",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:50:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://gist.github.com/skorotkiewicz/c59e591c26661cb52b06afc42d8ac546",
+      "learning_score": 2
+    },
+    {
+      "url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+      "author": "ibobev",
+      "item_id": "hn:50302585",
+      "headline": "Worth internalizing: __public functions shouldn't call other public functions__ — here's the design reasoning.",
+      "subreddit": null,
+      "source_text": "Avoid Public Functions Calling Other Public Functions",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:38:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/agentfxhq/agentfx",
+      "author": "drzivil",
+      "item_id": "hn:50302552",
+      "headline": "__AgentFX__ pitches itself as After Effects for AI agents — a visual tool for designing and sequencing agentic workflows.",
+      "subreddit": null,
+      "source_text": "Agentic Animation Tool – think After Effects for your agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:33:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/agentfxhq/agentfx",
+      "learning_score": 2
+    },
+    {
+      "url": "https://en.andros.dev/blog/b5c8c6aa/i-built-a-forum-with-no-interface-no-passwords-made-for-the-terminal/",
+      "author": "andros",
+      "item_id": "hn:50302546",
+      "headline": "__Tyrtulia__ is a headless, password-free forum built for the terminal — no browser, no accounts, no central server.",
+      "subreddit": null,
+      "source_text": "Show HN: Tyrtulia, a headless forum with no passwords, made for the terminal",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:31:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://en.andros.dev/blog/b5c8c6aa/i-built-a-forum-with-no-interface-no-passwords-made-for-the-terminal",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.joinjson.com/",
+      "author": "manikandan3721",
+      "item_id": "hn:50302533",
+      "headline": "__JoinJSON__ merges, diffs, and converts JSON files entirely in the browser — no install, no server upload.",
+      "subreddit": null,
+      "source_text": "Show HN: JoinJSON – Merge, diff and convert JSON files in the browser",
+      "source_type": "hacker_news",
+      "created_time": "2026-10-30T11:29:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://joinjson.com",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-10-30T12:20:06.427876+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9445,
+          9455
+        ],
+        "reason": "Both cover Amazon's Q3 2026 quarterly earnings report, with TechCrunch focusing on AWS growth and capex plans while Guardian emphasizes the mixed overall financial picture.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9460
+        ],
+        "reason": "Standalone report on Maine's data center political backlash and its role in the 2026 Senate race.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9463
+        ],
+        "reason": "Standalone report on Microsoft's unprecedented voluntary buyout offer to approximately 60,000 employees as part of its AI workforce restructuring.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9446
+        ],
+        "reason": "Standalone report on Reddit's strategic shift to a logged-in experience driven by declining search traffic from AI tools.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9459
+        ],
+        "reason": "Standalone report on U.S. intelligence discovering alleged Chinese espionage ties involving an executive connected to Nvidia's CEO.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9462
+        ],
+        "reason": "Standalone report on Google rolling out document editing capabilities directly within the Gemini chatbot interface.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9454
+        ],
+        "reason": "Standalone report on AI adoption among Victorian lawyers and the disconnect between efficiency gains and client fee reductions.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9493
+        ],
+        "reason": "Standalone Pew survey on American attitudes toward AI in healthcare.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9492
+        ],
+        "reason": "Standalone Pew analysis on why 2026 midterm polling faces unprecedented challenges.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9447
+        ],
+        "reason": "Standalone report on Rivian expanding its Volkswagen joint venture to include AI voice assistant technology.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9490
+        ],
+        "reason": "Standalone philosophical essay defending the dilettante as a valuable figure in an age of hyper-specialization.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9481
+        ],
+        "reason": "Standalone listicle of HBR's most popular articles in October 2026.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9456
+        ],
+        "reason": "Standalone announcement of a Guardian reader Q&A session with economics columnist Aditya Chakrabortty.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "cb6de64a7c0a3164d84823bade7b7728fa49aa5dd094356094b74ebf04b8d051"
+}
