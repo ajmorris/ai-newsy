@@ -202,7 +202,7 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
 .archive-list li:first-child { border-top: none; }
 .archive-list .mono { font-size: 12px; color: var(--text-dim); }
 .archive-list .archive-date {
-    color: var(--text); font-size: 15px; font-weight: 700; letter-spacing: 0;
+    color: var(--accent); font-size: 15px; font-weight: 700; letter-spacing: 0;
     text-transform: none; white-space: nowrap;
 }
 .archive-list .archive-headline {
