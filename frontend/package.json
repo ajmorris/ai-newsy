@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "echo \"Use npm run dev:env for local Vercel API testing.\"",
+        "preview": "python3 -m http.server 3000",
         "dev:env": "dotenv -e ../.env -- vercel dev --yes --local",
         "vercel:dev": "vercel dev --yes --local"
     },

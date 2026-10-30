@@ -2,14 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const forms = Array.from(document.querySelectorAll('.subscribe-form'));
     const navSubscribeButton = document.getElementById('nav-subscribe-btn');
     const recentIssuesList = document.getElementById('recent-issues-list');
-    const nextIssueNumberEl = document.getElementById('next-issue-number');
-    const nextIssueCountdownEl = document.getElementById('next-issue-countdown');
     const globalMessageEl = document.getElementById('form-message');
     const captchaContainer = document.getElementById('captcha-container');
     const hcaptchaWidget = document.getElementById('hcaptcha-widget');
-    const NEWSLETTER_TIME_ZONE = 'America/New_York';
-    const FALLBACK_ISSUE_NUMBER = '001';
-    const COUNTDOWN_FALLBACK_TEXT = 'ships daily at 5:00 AM ET';
     const hcaptchaSiteKey = (
         window.HCAPTCHA_SITE_KEY ||
         document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
@@ -25,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     loadRecentIssues();
-    initializeHeroCountdown();
 
     function setCaptchaToken(token, provider) {
         forms.forEach((form) => {
@@ -227,78 +221,40 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             const mergedIssues = await mergeIssuesFromArchive(data);
             renderRecentIssues(mergedIssues);
-            updateHeroIssueNumber(data, mergedIssues);
         } catch (error) {
             console.error('Issue archive load error:', error);
             try {
                 const fallbackIssues = await loadIssuesFromArchiveHtml();
                 if (fallbackIssues.length > 0) {
                     renderRecentIssues(fallbackIssues);
-                    updateHeroIssueNumber(null, fallbackIssues);
                     return;
                 }
             } catch (fallbackError) {
                 console.error('Archive HTML fallback failed:', fallbackError);
             }
             recentIssuesList.innerHTML = '<li class="issues-loading">No issues published yet. Check back soon.</li>';
-            updateHeroIssueNumber(null, []);
         }
     }
 
-    function initializeHeroCountdown() {
-        if (!nextIssueCountdownEl) {
-            return;
+    function firstSentence(value) {
+        const text = String(value || '').replace(/\s+/g, ' ').trim();
+        if (!text) {
+            return '';
         }
-
-        updateHeroCountdown();
-        setInterval(updateHeroCountdown, 60 * 1000);
+        const sentence = text.match(/^.*?[.!?](?=\s|$)/);
+        return sentence ? sentence[0].trim() : text;
     }
 
-    function updateHeroIssueNumber(manifestData, renderedIssues = []) {
-        if (!nextIssueNumberEl) {
-            return;
+    function editionHeadline(issue) {
+        const fromIntro = firstSentence(issue && issue.intro);
+        if (fromIntro) {
+            return fromIntro;
         }
-
-        const manifestCount = Number(manifestData && manifestData.issueCount);
-        const derivedCount = Array.isArray(renderedIssues) ? renderedIssues.length : 0;
-        const issueCount = Number.isFinite(manifestCount) && manifestCount >= derivedCount
-            ? manifestCount
-            : derivedCount;
-        if (!Number.isFinite(issueCount) || issueCount < 0) {
-            nextIssueNumberEl.textContent = FALLBACK_ISSUE_NUMBER;
-            return;
+        const subject = String((issue && issue.subject) || '').trim();
+        if (subject && !/^ISSUE\s+\d+/i.test(subject)) {
+            return subject;
         }
-
-        const nextIssue = issueCount + 1;
-        nextIssueNumberEl.textContent = String(nextIssue).padStart(3, '0');
-    }
-
-    function updateHeroCountdown() {
-        try {
-            const minutesRemaining = getMinutesUntilNextSend();
-            const hours = Math.floor(minutesRemaining / 60);
-            const minutes = minutesRemaining % 60;
-            nextIssueCountdownEl.textContent = `ships in ${hours}h ${minutes}m`;
-        } catch (error) {
-            console.error('Countdown update error:', error);
-            nextIssueCountdownEl.textContent = COUNTDOWN_FALLBACK_TEXT;
-        }
-    }
-
-    function getMinutesUntilNextSend() {
-        const now = new Date();
-        const nowInNewsletterTz = new Date(
-            now.toLocaleString('en-US', { timeZone: NEWSLETTER_TIME_ZONE })
-        );
-
-        const nextSendInNewsletterTz = new Date(nowInNewsletterTz);
-        nextSendInNewsletterTz.setHours(5, 0, 0, 0);
-        if (nowInNewsletterTz >= nextSendInNewsletterTz) {
-            nextSendInNewsletterTz.setDate(nextSendInNewsletterTz.getDate() + 1);
-        }
-
-        const msRemaining = nextSendInNewsletterTz.getTime() - nowInNewsletterTz.getTime();
-        return Math.max(0, Math.floor(msRemaining / (60 * 1000)));
+        return 'Daily briefing';
     }
 
     function renderRecentIssues(recentIssues) {
@@ -309,18 +265,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const items = recentIssues
             .map((issue) => {
-                const subject = escapeHtml(issue.subject || 'Untitled issue');
+                const headline = escapeHtml(editionHeadline(issue));
                 const displayDate = escapeHtml(issue.displayDate || issue.digestDate || '');
                 const articleCount = Number.isFinite(issue.articleCount) ? `${issue.articleCount} stories` : '';
-                const issueNumber = escapeHtml(
-                    issue.issueNumber || (issue.slug ? issue.slug.replace(/[^0-9]/g, '').slice(-5) : '')
-                );
                 const safeUrl = issue.urlPath || '/issues/';
                 return `<li>
-                    <span class="mono">${issueNumber ? `#${issueNumber}` : '#00000'}</span>
                     <span class="mono archive-date">${displayDate}</span>
-                    <a class="archive-headline" href="${safeUrl}">${subject}</a>
-                    <span class="mono archive-tag">[issue]</span>
+                    <a class="archive-headline" href="${safeUrl}">${headline}</a>
                     <span class="mono archive-count">${escapeHtml(articleCount)}</span>
                     <span class="archive-chevron">→</span>
                 </li>`;
@@ -400,7 +351,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const slug = slugMatch[1];
                 const row = anchor.closest('li');
                 const dateEl = row ? row.querySelector('.issue-date') : null;
-                const countText = row ? (row.textContent || '') : '';
+                const countEl = row ? row.querySelector('.story-count') : null;
+                const countText = countEl ? countEl.textContent : (row ? (row.textContent || '') : '');
                 const countMatch = countText.match(/(\d+)\s+stories/i);
                 return {
                     slug,
