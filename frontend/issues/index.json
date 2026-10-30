@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-29T00:00:00Z",
-  "issueCount": 172,
+  "generatedAt": "2026-10-30T00:00:00Z",
+  "issueCount": 173,
   "latestIssue": {
-    "slug": "2026-10-29",
-    "digestDate": "2026-10-29",
-    "displayDate": "Oct 29, 2026",
-    "issueNumber": "61029",
-    "subject": "ISSUE 61029 \u00b7 11 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI giants are showing their cards today \u2014 Microsoft disclosed Azure and OpenAI revenue in dollars for the first time, revealing a combined $43 billion quarter that cements AI as the engine of its business, while Alphabet's $127.6 billion quarter was overshadowed by decelerating Search ad growth that sent shares tumbling 8%. Meanwhile, Google DeepMind dropped Gemini 4 Carbon, a frontier model laser-focused on cybersecurity that's claiming the top spot on nearly every benchmark it touches. From billion-dollar balance sheets to benchmark battles to Arizona residents fighting data centers over water rights, today's roundup is a snapshot of an industry racing forward while the world scrambles to keep up.",
-    "articleCount": 11,
-    "urlPath": "/issues/2026-10-29.html",
-    "contentHash": "2ae23f4587ab17b8f88bbeb038e7e5f2851568996228b7e665ae2a6c8755d4eb"
+    "slug": "2026-10-30",
+    "digestDate": "2026-10-30",
+    "displayDate": "Oct 30, 2026",
+    "issueNumber": "61030",
+    "subject": "ISSUE 61030 \u00b7 13 STORIES \u00b7 11 MIN READ",
+    "intro": "Big Tech is reshaping itself around AI at a staggering pace \u2014 Amazon is pouring $220 billion into infrastructure even as investors punish its earnings miss, Microsoft is offering voluntary buyouts to 60,000 employees as it bets the workforce's future on AI, and a bombshell intelligence report ties an executive close to Nvidia's CEO to alleged espionage for Beijing. Today's digest cuts across the full blast radius of that transformation, from Reddit walling off its platform against AI-powered search to Maine voters turning a Senate race into a referendum on data centers, plus new research showing Americans remain deeply uneasy about letting AI into their doctor's office.",
+    "articleCount": 13,
+    "urlPath": "/issues/2026-10-30.html",
+    "contentHash": "cb6de64a7c0a3164d84823bade7b7728fa49aa5dd094356094b74ebf04b8d051"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-30",
+      "digestDate": "2026-10-30",
+      "displayDate": "Oct 30, 2026",
+      "issueNumber": "61030",
+      "subject": "ISSUE 61030 \u00b7 13 STORIES \u00b7 11 MIN READ",
+      "intro": "Big Tech is reshaping itself around AI at a staggering pace \u2014 Amazon is pouring $220 billion into infrastructure even as investors punish its earnings miss, Microsoft is offering voluntary buyouts to 60,000 employees as it bets the workforce's future on AI, and a bombshell intelligence report ties an executive close to Nvidia's CEO to alleged espionage for Beijing. Today's digest cuts across the full blast radius of that transformation, from Reddit walling off its platform against AI-powered search to Maine voters turning a Senate race into a referendum on data centers, plus new research showing Americans remain deeply uneasy about letting AI into their doctor's office.",
+      "articleCount": 13,
+      "urlPath": "/issues/2026-10-30.html",
+      "contentHash": "cb6de64a7c0a3164d84823bade7b7728fa49aa5dd094356094b74ebf04b8d051"
+    },
     {
       "slug": "2026-10-29",
       "digestDate": "2026-10-29",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-10-19.html",
       "contentHash": "aba697ac8003e02b8f83744b37a3e9c3348d4ce33a33da9d4b87686c03f4dbae"
-    },
-    {
-      "slug": "2026-10-18",
-      "digestDate": "2026-10-18",
-      "displayDate": "Oct 18, 2026",
-      "issueNumber": "61018",
-      "subject": "ISSUE 61018 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The open web is drawing battle lines against AI \u2014 from Meta walking back terms that appeared to greenlight scraping news sites, to major companies like Yelp, Delta, and JPMorgan actively blocking autonomous AI agents from operating on their platforms. It's a day that underscores the growing friction between AI's relentless expansion and the institutions pushing back, with stories ranging from Replit shaking up its model partnerships to Anthropic revealing that its own workforce is spending more time in meetings managing AI output than actually doing the work. Buckle in \u2014 today's digest covers the corporate power plays, the philosophical debates, and the real-world communities caught in the middle.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-10-18.html",
-      "contentHash": "f179dfe31fa63ed3f2c99a77d127d0efb729140944ddb68c89a9a3db61411da1"
     }
   ]
 }
