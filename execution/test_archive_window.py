@@ -8,6 +8,7 @@ from datetime import date
 from execution.build_web_archive import (
     DigestIssue,
     archive_headline,
+    issue_date_label,
     listing_cutoff_date,
     select_issues_for_public_index,
 )
@@ -41,20 +42,32 @@ class ArchiveWindowTests(unittest.TestCase):
             ["2026-10-30", "2026-09-30"],
         )
 
-    def test_headline_uses_the_first_intro_sentence(self) -> None:
+    def test_headline_uses_a_short_subject(self) -> None:
         issue = _issue(
             "2026-10-30",
-            intro="Amazon is spending big. The rest of the briefing follows.",
+            intro="Amazon is spending big.",
             subject="ISSUE 61030 · 13 STORIES · 11 MIN READ",
         )
-        self.assertEqual(archive_headline(issue), "Amazon is spending big.")
+        self.assertEqual(archive_headline(issue), "Amazon spending big")
+
+    def test_headline_matches_the_homepage_subject(self) -> None:
+        issue = _issue(
+            "2026-10-30",
+            intro=(
+                "Big Tech is reshaping itself around AI at a staggering pace — "
+                "Amazon is pouring $220 billion into infrastructure"
+            ),
+        )
+        self.assertEqual(archive_headline(issue), "Big Tech reshaping itself")
+        self.assertEqual(issue_date_label(issue), "Issue 10/30/2026:")
 
     def test_headline_skips_issue_number_subjects(self) -> None:
         issue = _issue(
             "2026-10-30",
             subject="ISSUE 61030 · 13 STORIES · 11 MIN READ",
         )
-        self.assertEqual(archive_headline(issue), "Oct 30, 2026")
+        self.assertEqual(archive_headline(issue), "Daily briefing")
+        self.assertEqual(issue_date_label(_issue("2026-10-06")), "Issue 10/6/2026:")
 
 
 if __name__ == "__main__":

@@ -120,15 +120,104 @@ def first_sentence(text: str) -> str:
     return match.group(0).strip() if match else cleaned
 
 
+_SUBJECT_SKIP = {"is", "are", "was", "were", "just"}
+_SUBJECT_STOP = {
+    "around", "after", "while", "even", "during", "before", "into", "over", "for", "in",
+}
+_SUBJECT_DANGLING = {
+    "a", "an", "the", "and", "or", "of", "to", "in", "on", "at", "for", "with", "as",
+    "that", "from", "by", "its", "their", "what", "like",
+}
+
+
+def _bare_word(word: str) -> str:
+    return re.sub(r"[^A-Za-z0-9']", "", word).lower()
+
+
+def short_subject(value: str) -> str:
+    """Compress an intro into the few-word subject used on the homepage."""
+    text = re.sub(r"\s+", " ", value or "").strip()
+    if not text:
+        return ""
+
+    parts = re.split(r"\s+[—–]\s+|:\s+", text)
+    lead = parts[0]
+    rest = parts[1] if len(parts) > 1 else ""
+    if rest and re.search(r"\b(biggest|sounds like|thriller|kind of week)\b", lead, flags=re.IGNORECASE):
+        lead = rest
+    lead = re.sub(r"\btoday\b", " ", lead, flags=re.IGNORECASE)
+    lead = re.sub(r"\s+", " ", lead).strip()
+
+    that_split = re.split(r"\s+that\s+", lead, flags=re.IGNORECASE)
+    if len(that_split) > 1 and len(that_split[0].split(" ")) > 6:
+        lead = " that ".join(that_split[1:])
+
+    if len(lead.split(" ")) > 8 and "," in lead:
+        clauses = lead.split(",")
+        first_clause = clauses[0].strip()
+        next_clause = ",".join(clauses[1:]).strip()
+        if len(first_clause.split(" ")) > 8 and re.match(r"^it\b", next_clause, flags=re.IGNORECASE):
+            lead = next_clause
+        elif len(first_clause.split(" ")) >= 3:
+            lead = first_clause
+
+    words: List[str] = []
+    for word in re.sub(r"[.,]+$", "", lead).split(" "):
+        cleaned = re.sub(r"^[.,]+|[.,]+$", "", word)
+        bare = _bare_word(cleaned)
+        if not bare:
+            continue
+        if words and bare in _SUBJECT_SKIP:
+            continue
+        words.append(cleaned)
+
+    stop_at = next(
+        (index for index, word in enumerate(words) if index >= 3 and _bare_word(word) in _SUBJECT_STOP),
+        -1,
+    )
+    if stop_at != -1:
+        kept = words[:stop_at]
+    elif len(words) > 9:
+        kept = words[:8]
+    else:
+        kept = words[:]
+
+    conjunction_at = next(
+        (index for index, word in enumerate(kept) if index >= 4 and _bare_word(word) in {"and", "or"}),
+        -1,
+    )
+    if conjunction_at != -1:
+        kept = kept[:conjunction_at]
+    while len(kept) > 3 and _bare_word(kept[-1]) in _SUBJECT_DANGLING:
+        kept.pop()
+
+    subject = " ".join(kept).strip()
+    if not subject:
+        return ""
+    if re.match(r"^it\b", subject, flags=re.IGNORECASE) and re.search(r"\bclaude\b", text, flags=re.IGNORECASE):
+        subject = re.sub(r"^it\b", "Claude", subject, count=1, flags=re.IGNORECASE)
+    return subject[0].upper() + subject[1:]
+
+
+def issue_date_label(issue: DigestIssue) -> str:
+    """Homepage date label, for example Issue 10/30/2026:."""
+    parsed = _parse_digest_date(issue.digest_date)
+    if parsed is None:
+        return "Issue"
+    return f"Issue {parsed.month}/{parsed.day}/{parsed.year}:"
+
+
 def archive_headline(issue: DigestIssue) -> str:
-    """Public link text for an edition. Avoids date-coded issue numbers."""
-    sentence = first_sentence(issue.intro)
-    if sentence:
-        return sentence
+    """Short public subject for an edition. Avoids date-coded issue numbers."""
+    from_intro = short_subject(issue.intro)
+    if from_intro:
+        return from_intro
     subject = (issue.subject or "").strip()
     if subject and not re.match(r"^ISSUE\s+\d+", subject, flags=re.IGNORECASE):
-        return subject
-    return issue.display_date
+        shortened = short_subject(subject)
+        if shortened:
+            return shortened
+    return "Daily briefing"
 
 
 def _render_tweet_headline_html(item: Dict[str, object]) -> str:
@@ -567,7 +656,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
         [
             (
                 f'<li>'
-                f'<span class="issue-date">{issue.display_date}</span>'
+                f'<span class="issue-date">{html.escape(issue_date_label(issue))}</span>'
                 f'<a href="{issue.slug}.html">{html.escape(archive_headline(issue))}</a>'
                 f'<span class="story-count">{issue.article_count} stories</span>'
                 f'<span class="chev">→</span>'
@@ -629,25 +718,42 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
     }}
     li {{
       display: grid;
-      grid-template-columns: 140px 1fr 90px 20px;
-      gap: 12px;
+      grid-template-columns: max-content minmax(0, 1fr) max-content 20px;
+      gap: 16px;
       align-items: center;
-      padding: 16px 16px;
+      padding: 16px 24px;
       border-bottom: 1px solid var(--line-soft);
       background: var(--card);
     }}
     li:last-child {{ border-bottom: 0; }}
     a {{ color: var(--fg); text-decoration: none; font-weight: 600; line-height: 1.35; }}
+    li a {{
+      display: block;
+      min-width: 0;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }}
     span {{ color: var(--dim); font-size: 12px; font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: 1px; }}
-    .issue-date {{ color: var(--dim); }}
+    .issue-date {{
+      color: var(--brand);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: none;
+      white-space: nowrap;
+    }}
     .chev {{ text-align: right; color: var(--muted); }}
     @media (max-width: 640px) {{
       h1 {{ font-size: 32px; letter-spacing: -1.2px; }}
-      li {{ grid-template-columns: 1fr 20px; }}
-      .issue-date {{ grid-column: 1; }}
+      li {{ grid-template-columns: max-content minmax(0, 1fr) 16px; gap: 10px; padding: 14px; }}
+      .issue-date {{ font-size: 12px; }}
       .story-count {{ display: none; }}
-      li a {{ grid-column: 1; }}
-      .chev {{ grid-column: 2; grid-row: 1 / span 2; align-self: center; }}
+      li a {{ font-size: 13px; }}
     }}
   </style>
 </head>
