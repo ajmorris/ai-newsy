@@ -24,6 +24,7 @@ from execution.markdown_utils import parse_frontmatter as _parse_frontmatter
 from execution.email_renderer_payload import (
     build_email_renderer_payload,
     normalize_article_for_email,
+    quick_hit_sections_from_digest,
 )
 from execution.email_links import build_unsubscribe_url
 from execution.database import (
@@ -782,13 +783,7 @@ def send_daily_digest(
     community_headlines = list(payload.get("community_headlines", []))
     dev_headlines = list(payload.get("dev_headlines", []))
     human_items = list(payload.get("human_items") or [])
-    quick_hit_sections = []
-    if dev_headlines:
-        quick_hit_sections.append(
-            {"title": "Developer and open source", "items": dev_headlines}
-        )
-    if len(human_items) >= 2:
-        quick_hit_sections.append({"title": "The human side", "items": human_items})
+    quick_hit_sections = quick_hit_sections_from_digest(payload)
     intro = str(payload.get("intro", ""))
 
     send_started_at = datetime.utcnow().isoformat()

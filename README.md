@@ -115,6 +115,18 @@ python3 execution/send_daily_email.py --test-email you@example.com
 
 `build_digest_markdown.py` compiles from the existing `data/digests/YYYY-MM-DD.json`. Pass `--rebuild` only when you intentionally want to regenerate that JSON from current DB state.
 
+### Preview the email locally
+
+This does not send mail and does not need `.env`.
+
+```bash
+npm ci --prefix emails
+docker compose -f emails/docker-compose.mailpit.yml up -d
+./scripts/preview_email.sh
+```
+
+That writes `emails/preview/index.html` (open it in a browser) and injects the same message into Mailpit at `http://localhost:8025`. The default sample includes every story and quick-hit variant. `./scripts/preview_email.sh --date 2026-10-30` renders that digest instead. See [docs/EMAIL_CLIENT_MATRIX.md](docs/EMAIL_CLIENT_MATRIX.md) for what the sample covers and what Mailpit does not emulate.
+
 ### Build web archive
 
 ```bash

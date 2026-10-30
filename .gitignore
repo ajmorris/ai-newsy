@@ -37,3 +37,6 @@ Thumbs.db
 supabase/.temp/
 .vercel
 .env*.local
+
+# Local email preview output
+emails/preview/

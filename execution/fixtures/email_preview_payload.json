@@ -1,0 +1,230 @@
+{
+  "subject": "ISSUE 00137 · 8 STORIES · 11 MIN READ",
+  "intro": "A local preview of every story and quick-hit variant the daily email can render, from multi-source clusters to a section that only appears when a day has enough human-side items.",
+  "heroHeadline": "The AI feed, distilled.",
+  "issueNumber": "00137",
+  "stories": [
+    {
+      "tag": "Business, Deals & Funding",
+      "source": "Guardian AI",
+      "read": "4 min",
+      "headline": "Amazon's cloud unit posts record growth while the rest of the quarter misses",
+      "summary": "AWS growth stayed ahead of the company total, and the spending plan for next year is larger than the one investors had already priced in. Shares moved after the close.",
+      "why": "The gap between today's capital plan and the revenue promised years out is the part operators will be asked about first.",
+      "url": "https://example.com/stories/amazon-cloud",
+      "imageUrl": "https://i.guim.co.uk/img/media/e8c0fbf690fb7de0c9bc31006a069c434114b13f/464_0_4640_3712/master/4640.jpg?width=1200&height=630&quality=85&auto=format&fit=crop",
+      "cluster": {
+        "badge_count": 2,
+        "is_update": false,
+        "sources": [
+          {
+            "source": "Guardian AI",
+            "url": "https://example.com/stories/amazon-cloud"
+          },
+          {
+            "source": "TechCrunch AI",
+            "url": "https://example.com/stories/amazon-cloud-techcrunch"
+          }
+        ],
+        "conflicts": [
+          "One outlet quotes a 6 percent after-hours drop. The other describes investor nerves and does not give a price move."
+        ]
+      }
+    },
+    {
+      "tag": "Research",
+      "source": "MIT Tech Review",
+      "read": "6 min",
+      "headline": "A lab's new eval harness shows up in three writeups on the same morning",
+      "summary": "The paper is an update to a scorecard published last quarter. Two follow-ups disagree on whether the gain is on the same task mix.",
+      "why": "If the task mix changed, last quarter's number is not a baseline you can cite.",
+      "url": "https://example.com/stories/eval-harness",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268813_MAINE_DATA_CENTERS_CVirginia.jpg?quality=90&strip=all&w=1200",
+      "cluster": {
+        "badge_count": 3,
+        "is_update": true,
+        "sources": [
+          {
+            "source": "MIT Tech Review",
+            "url": "https://example.com/stories/eval-harness"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://example.com/stories/eval-harness-verge"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://example.com/stories/eval-harness-ars"
+          }
+        ],
+        "conflicts": [
+          "The Verge treats the release as a new benchmark. Ars Technica calls it a rerun of the March suite."
+        ]
+      }
+    },
+    {
+      "tag": "Policy",
+      "source": "Reuters",
+      "read": "3 min",
+      "headline": "A regulator files a short update on an investigation it opened in the spring",
+      "summary": "The notice adds a hearing date and does not change the claims. No second outlet has matched it.",
+      "why": "The date is the only new fact. The substance of the case is unchanged.",
+      "url": "https://example.com/stories/regulator-update",
+      "imageUrl": "",
+      "cluster": {
+        "badge_count": 1,
+        "is_update": true,
+        "sources": [
+          {
+            "source": "Reuters",
+            "url": "https://example.com/stories/regulator-update"
+          }
+        ],
+        "conflicts": []
+      }
+    },
+    {
+      "tag": "Products",
+      "source": "The Information",
+      "headline": "Four outlets describe the same model release and none of them disagree",
+      "summary": "The notes line up on context length, price, and the day it reaches the API. There is no second source link beyond the count.",
+      "why": "When the writeups match, the useful question is who ships access first, not which quote to trust.",
+      "url": "https://example.com/stories/model-release",
+      "cluster": {
+        "badge_count": 4,
+        "is_update": false,
+        "sources": [
+          {
+            "source": "The Information",
+            "url": "https://example.com/stories/model-release"
+          }
+        ],
+        "conflicts": []
+      }
+    },
+    {
+      "tag": "Industry",
+      "source": "Financial Times",
+      "headline": "A chip supplier's factory tour is covered by one reporter",
+      "summary": "The piece is a single-source visit. Nothing else in today's set is the same event.",
+      "why": "Treat the capacity numbers as one newsroom's notes until someone else confirms them.",
+      "url": "https://example.com/stories/factory-tour"
+    },
+    {
+      "tag": "Tools",
+      "source": "Example Labs",
+      "headline": "A one-source tool launch that the cluster step still attached",
+      "summary": "The cluster badge is below two and it is not an update, so the email should not print a covered-by line.",
+      "why": "This row exists so a silent cluster stays silent.",
+      "url": "https://example.com/stories/silent-cluster",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2023/03/reddit-e1708636699632.jpg?resize=1200,800",
+      "cluster": {
+        "badge_count": 1,
+        "is_update": false,
+        "sources": [
+          {
+            "source": "Example Labs",
+            "url": "https://example.com/stories/silent-cluster"
+          }
+        ],
+        "conflicts": []
+      }
+    },
+    {
+      "tag": "Labs",
+      "source": "Wired",
+      "read": "2 min",
+      "headline": "A story that arrived without a summary or a takeaway",
+      "summary": "",
+      "why": "",
+      "url": "https://example.com/stories/missing-copy"
+    },
+    {
+      "tag": "Open Source",
+      "source": "GitHub Blog",
+      "read": "5 min",
+      "headline": "Maintainers publish a long note on how a widely used library will version its next break",
+      "summary": "The post lists the symbols that move, the release it lands in, and a one-year window before the old names go away.",
+      "why": "Teams that pin this library need the window, not the announcement, on the calendar.",
+      "url": "https://example.com/stories/library-break",
+      "imageUrl": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200/uploads/asset/file/ab2d84ad-3f0c-4441-bb5c-994591634f34/f292ae5f-b387-4378-ae6c-a30409cb5eee.jpg"
+    }
+  ],
+  "tweetHeadlines": [
+    {
+      "headline": "Claude's __scheduled tasks__ are the feature most people still run by hand.",
+      "url": "https://example.com/twitter/scheduled-tasks"
+    },
+    {
+      "headline": "A thread argues agent harnesses are eight parts, not a single prompt.",
+      "url": "https://example.com/twitter/harness"
+    },
+    {
+      "headline": "Someone posts a checklist for running a newsletter alone and does not include a link."
+    },
+    {
+      "headline": "Three posts describe the __same eval harness__ before noon.",
+      "url": "https://example.com/twitter/eval-harness",
+      "summary": "The thread compares the harness with two earlier internal scorecards.",
+      "cluster": {
+        "badge_count": 2,
+        "is_update": false
+      }
+    }
+  ],
+  "communityHeadlines": [
+    {
+      "headline": "A forum thread collects __launch-day bugs__ from people who tried the new API this morning.",
+      "url": "https://example.com/community/launch-bugs",
+      "summary": "Most reports are timeouts on the first request, not wrong answers."
+    },
+    {
+      "headline": "A clinic paused its __AI scribe pilot__ after nurses flagged note drift.",
+      "url": "https://example.com/community/scribe",
+      "meaning": "Keep a human review step when a tool writes the record of care."
+    },
+    {
+      "headline": "Two communities are tracking the __same outage__ with different start times.",
+      "url": "https://example.com/community/outage",
+      "cluster": {
+        "badge_count": 2
+      }
+    }
+  ],
+  "quickHitSections": [
+    {
+      "title": "Developer and open source",
+      "items": [
+        {
+          "headline": "An open-source runtime __cut cold starts__ on the same hardware.",
+          "url": "https://example.com/dev/runtime",
+          "cluster": {
+            "badge_count": 2
+          }
+        },
+        {
+          "headline": "A maintainer posts the migration notes for next month's break.",
+          "url": "https://example.com/dev/migration"
+        }
+      ]
+    },
+    {
+      "title": "The human side",
+      "items": [
+        {
+          "headline": "A hospital pauses an __AI scribe__ after staff catch notes that were never said.",
+          "url": "https://example.com/human/scribe",
+          "meaning": "The review step has to sit with the people whose names are on the note."
+        },
+        {
+          "headline": "A newsroom tells reporters which beats the model is not allowed to draft.",
+          "url": "https://example.com/human/newsroom"
+        }
+      ]
+    }
+  ],
+  "unsubscribeUrl": "https://example.com/api/unsubscribe?token=preview",
+  "viewInBrowserUrl": "https://example.com/issues/preview.html",
+  "archiveUrl": "https://example.com/issues/",
+  "forwardUrl": "https://example.com/issues/"
+}

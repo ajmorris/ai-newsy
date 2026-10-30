@@ -14,6 +14,9 @@ from execution.story_text_normalizer import (
 from execution.email_links import build_unsubscribe_url, get_app_url
 
 DEFAULT_CATEGORY = "Other AI News"
+DEV_QUICK_HIT_TITLE = "Developer and open source"
+HUMAN_QUICK_HIT_TITLE = "The human side"
+HUMAN_QUICK_HIT_MIN = 2
 
 
 def _issue_number_from_digest_date(digest_date: str) -> str:
@@ -105,6 +108,18 @@ def _normalize_quick_hit_sections(sections: Optional[List[dict]]) -> List[Dict[s
         if title and items:
             normalized.append({"title": title, "items": items})
     return normalized
+
+
+def quick_hit_sections_from_digest(payload: Dict[str, object]) -> List[Dict[str, object]]:
+    """Dev and human blocks, using the same rules as the daily send."""
+    dev_headlines = list(payload.get("dev_headlines") or [])
+    human_items = list(payload.get("human_items") or [])
+    sections: List[Dict[str, object]] = []
+    if dev_headlines:
+        sections.append({"title": DEV_QUICK_HIT_TITLE, "items": dev_headlines})
+    if len(human_items) >= HUMAN_QUICK_HIT_MIN:
+        sections.append({"title": HUMAN_QUICK_HIT_TITLE, "items": human_items})
+    return sections
 
 
 def build_email_renderer_payload(
