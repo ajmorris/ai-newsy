@@ -13,9 +13,10 @@ import os
 import re
 import sys
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, ".")
 from execution.design_tokens import archive_root_css
@@ -31,6 +32,8 @@ OUTPUT_DIR = Path(os.getenv("WEB_ARCHIVE_OUTPUT_DIR", "frontend/issues"))
 MANIFEST_PATH = OUTPUT_DIR / "index.json"
 SITE_TITLE = "AI Newsy"
 MAX_RECENT_ISSUES = int(os.getenv("WEB_ARCHIVE_RECENT_COUNT", "12"))
+ARCHIVE_LISTING_DAYS = 30
+ARCHIVE_TIME_ZONE = "America/New_York"
 
 
 @dataclass
@@ -75,6 +78,57 @@ class DigestIssue:
 
 def _issue_label_from_issue_id(issue_id: str) -> str:
     return issue_id[-5:] if issue_id else "00137"
+
+
+def listing_cutoff_date(today: Optional[date] = None) -> date:
+    """First digest date still shown on the public archive index."""
+    if today is None:
+        today = datetime.now(ZoneInfo(ARCHIVE_TIME_ZONE)).date()
+    return today - timedelta(days=ARCHIVE_LISTING_DAYS)
+
+
+def _parse_digest_date(digest_date: str) -> Optional[date]:
+    try:
+        return datetime.strptime(digest_date, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def select_issues_for_public_index(
+    issues: List[DigestIssue],
+    today: Optional[date] = None,
+) -> List[DigestIssue]:
+    """Keep editions on or after today minus 30 days.
+
+    Older issue pages stay on disk. They leave the public index.
+    """
+    cutoff = listing_cutoff_date(today)
+    selected: List[DigestIssue] = []
+    for issue in issues:
+        digest_day = _parse_digest_date(issue.digest_date)
+        if digest_day is not None and digest_day >= cutoff:
+            selected.append(issue)
+    return selected
+
+
+def first_sentence(text: str) -> str:
+    """Return the first sentence, or the full text when it has no terminator."""
+    cleaned = re.sub(r"\s+", " ", text or "").strip()
+    if not cleaned:
+        return ""
+    match = re.match(r"^.*?[.!?](?=\s|$)", cleaned)
+    return match.group(0).strip() if match else cleaned
+
+
+def archive_headline(issue: DigestIssue) -> str:
+    """Public link text for an edition. Avoids date-coded issue numbers."""
+    sentence = first_sentence(issue.intro)
+    if sentence:
+        return sentence
+    subject = (issue.subject or "").strip()
+    if subject and not re.match(r"^ISSUE\s+\d+", subject, flags=re.IGNORECASE):
+        return subject
+    return issue.display_date
 
 
 def _render_tweet_headline_html(item: Dict[str, object]) -> str:
@@ -262,7 +316,7 @@ def _render_body_from_payload(payload: Dict[str, Any]) -> str:
 
 _HTML_TITLE_RE = re.compile(r"<title>(.*?)\s*\|\s*AI News Daily</title>", re.DOTALL)
 _HTML_HEADER_LINE_RE = re.compile(
-    r"<p>Issue\s+(\d+)\s+·\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})\s+·\s+(\d+)\s+stories</p>"
+    r"<p>(?:Issue\s+#?\d+\s+·\s+)?([A-Za-z]+\s+\d{1,2},\s+\d{4})\s+·\s+(\d+)\s+stories</p>"
 )
 _HTML_INTRO_RE = re.compile(
     r'<section class="intro">\s*(.*?)\s*</section>', re.DOTALL
@@ -289,8 +343,8 @@ def _read_existing_html_issue(html_path: Path) -> Optional[DigestIssue]:
         return None
 
     subject = html.unescape(title_match.group(1)).strip()
-    issue_label = header_match.group(1)[-5:]
-    article_count = int(header_match.group(3))
+    issue_label = _issue_label_from_issue_id(re.sub(r"\D", "", slug))
+    article_count = int(header_match.group(2))
 
     intro = ""
     intro_match = _HTML_INTRO_RE.search(text)
@@ -476,7 +530,7 @@ def _render_issue_page(issue: DigestIssue) -> str:
     </nav>
     <header class="issue-header">
       <h1>AI News Daily</h1>
-      <p>Issue {issue.issue_label} · {issue.display_date} · {issue.article_count} stories</p>
+      <p>{issue.display_date} · {issue.article_count} stories</p>
     </header>
 
     <section class="cta">
@@ -513,10 +567,9 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
         [
             (
                 f'<li>'
-                f'<span class="issue-id">#{issue.issue_label}</span>'
                 f'<span class="issue-date">{issue.display_date}</span>'
-                f'<a href="{issue.slug}.html">{html.escape(issue.subject)}</a>'
-                f'<span>{issue.article_count} stories</span>'
+                f'<a href="{issue.slug}.html">{html.escape(archive_headline(issue))}</a>'
+                f'<span class="story-count">{issue.article_count} stories</span>'
                 f'<span class="chev">→</span>'
                 f'</li>'
             )
@@ -576,7 +629,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
     }}
     li {{
       display: grid;
-      grid-template-columns: 100px 110px 1fr 90px 20px;
+      grid-template-columns: 140px 1fr 90px 20px;
       gap: 12px;
       align-items: center;
       padding: 16px 16px;
@@ -584,14 +637,17 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
       background: var(--card);
     }}
     li:last-child {{ border-bottom: 0; }}
-    a {{ color: var(--fg); text-decoration: none; font-weight: 600; }}
+    a {{ color: var(--fg); text-decoration: none; font-weight: 600; line-height: 1.35; }}
     span {{ color: var(--dim); font-size: 12px; font-family: "JetBrains Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: 1px; }}
-    .issue-id, .issue-date {{ color: var(--dim); }}
+    .issue-date {{ color: var(--dim); }}
     .chev {{ text-align: right; color: var(--muted); }}
     @media (max-width: 640px) {{
       h1 {{ font-size: 32px; letter-spacing: -1.2px; }}
-      li {{ grid-template-columns: 74px 1fr 20px; }}
-      .issue-date, li span:nth-child(4) {{ display: none; }}
+      li {{ grid-template-columns: 1fr 20px; }}
+      .issue-date {{ grid-column: 1; }}
+      .story-count {{ display: none; }}
+      li a {{ grid-column: 1; }}
+      .chev {{ grid-column: 2; grid-row: 1 / span 2; align-self: center; }}
     }}
   </style>
 </head>
@@ -599,7 +655,7 @@ def _render_archive_index(issues: List[DigestIssue]) -> str:
   <main>
     <a class="back-link" href="/">← Back to home</a>
     <h1>Recent editions.</h1>
-    <p>Browse every published issue.</p>
+    <p>The last 30 days.</p>
     <div class="cta">
       Prefer this in your inbox? <a href="/#subscribe-form">Subscribe to AI Newsy</a>.
     </div>
@@ -681,10 +737,11 @@ def build_web_archive(slug_prefix: str = "", use_canonical_fallback: bool = Fals
         output_file = OUTPUT_DIR / f"{issue.slug}.html"
         output_file.write_text(_render_issue_page(issue), encoding="utf-8")
 
-    (OUTPUT_DIR / "index.html").write_text(_render_archive_index(issues), encoding="utf-8")
+    listed = select_issues_for_public_index(issues)
+    (OUTPUT_DIR / "index.html").write_text(_render_archive_index(listed), encoding="utf-8")
 
     latest = issues[0].to_manifest_item() if issues else None
-    recent = [issue.to_manifest_item() for issue in issues[:MAX_RECENT_ISSUES]]
+    recent = [issue.to_manifest_item() for issue in listed[:MAX_RECENT_ISSUES]]
     generated_at = (
         f"{latest['digestDate']}T00:00:00Z" if latest else "1970-01-01T00:00:00Z"
     )

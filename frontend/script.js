@@ -2,14 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const forms = Array.from(document.querySelectorAll('.subscribe-form'));
     const navSubscribeButton = document.getElementById('nav-subscribe-btn');
     const recentIssuesList = document.getElementById('recent-issues-list');
-    const nextIssueNumberEl = document.getElementById('next-issue-number');
-    const nextIssueCountdownEl = document.getElementById('next-issue-countdown');
     const globalMessageEl = document.getElementById('form-message');
     const captchaContainer = document.getElementById('captcha-container');
     const hcaptchaWidget = document.getElementById('hcaptcha-widget');
-    const NEWSLETTER_TIME_ZONE = 'America/New_York';
-    const FALLBACK_ISSUE_NUMBER = '001';
-    const COUNTDOWN_FALLBACK_TEXT = 'ships daily at 5:00 AM ET';
     const hcaptchaSiteKey = (
         window.HCAPTCHA_SITE_KEY ||
         document.querySelector('meta[name="hcaptcha-site-key"]')?.content ||
@@ -25,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     loadRecentIssues();
-    initializeHeroCountdown();
 
     function setCaptchaToken(token, provider) {
         forms.forEach((form) => {
@@ -227,78 +221,110 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             const mergedIssues = await mergeIssuesFromArchive(data);
             renderRecentIssues(mergedIssues);
-            updateHeroIssueNumber(data, mergedIssues);
         } catch (error) {
             console.error('Issue archive load error:', error);
             try {
                 const fallbackIssues = await loadIssuesFromArchiveHtml();
                 if (fallbackIssues.length > 0) {
                     renderRecentIssues(fallbackIssues);
-                    updateHeroIssueNumber(null, fallbackIssues);
                     return;
                 }
             } catch (fallbackError) {
                 console.error('Archive HTML fallback failed:', fallbackError);
             }
             recentIssuesList.innerHTML = '<li class="issues-loading">No issues published yet. Check back soon.</li>';
-            updateHeroIssueNumber(null, []);
         }
     }
 
-    function initializeHeroCountdown() {
-        if (!nextIssueCountdownEl) {
-            return;
+    function shortSubject(value) {
+        let text = String(value || '').replace(/\s+/g, ' ').trim();
+        if (!text) {
+            return '';
         }
 
-        updateHeroCountdown();
-        setInterval(updateHeroCountdown, 60 * 1000);
+        const parts = text.split(/\s+[—–]\s+|:\s+/);
+        let lead = parts[0];
+        const rest = parts.length > 1 ? parts[1] : '';
+        if (rest && /\b(biggest|sounds like|thriller|kind of week)\b/i.test(lead)) {
+            lead = rest;
+        }
+        lead = lead.replace(/\btoday\b/gi, ' ').replace(/\s+/g, ' ').trim();
+        const thatSplit = lead.split(/\s+that\s+/i);
+        if (thatSplit.length > 1 && thatSplit[0].split(' ').length > 6) {
+            lead = thatSplit.slice(1).join(' that ');
+        }
+        if (lead.split(' ').length > 8 && lead.includes(',')) {
+            const clauses = lead.split(',');
+            const firstClause = clauses[0].trim();
+            const nextClause = clauses.slice(1).join(',').trim();
+            if (firstClause.split(' ').length > 8 && /^it\b/i.test(nextClause)) {
+                lead = nextClause;
+            } else if (firstClause.split(' ').length >= 3) {
+                lead = firstClause;
+            }
+        }
+
+        const skip = new Set(['is', 'are', 'was', 'were', 'just']);
+        const stop = new Set(['around', 'after', 'while', 'even', 'during', 'before', 'into', 'over', 'for', 'in']);
+        const dangling = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'to', 'in', 'on', 'at', 'for', 'with', 'as', 'that', 'from', 'by', 'its', 'their', 'what', 'like']);
+        const words = [];
+        lead.replace(/[.,]+$/g, '').split(' ').forEach((word) => {
+            const cleaned = word.replace(/^[.,]+|[.,]+$/g, '');
+            const bare = cleaned.replace(/[^A-Za-z0-9']/g, '').toLowerCase();
+            if (!bare) {
+                return;
+            }
+            if (words.length && skip.has(bare)) {
+                return;
+            }
+            words.push(cleaned);
+        });
+
+        const bareWord = (word) => word.replace(/[^A-Za-z0-9']/g, '').toLowerCase();
+        let kept = words.slice();
+        const stopAt = words.findIndex((word, index) => index >= 3 && stop.has(bareWord(word)));
+        if (stopAt !== -1) {
+            kept = words.slice(0, stopAt);
+        } else if (words.length > 9) {
+            kept = words.slice(0, 8);
+        }
+        const conjunctionAt = kept.findIndex((word, index) => index >= 4 && /^(and|or)$/i.test(bareWord(word)));
+        if (conjunctionAt !== -1) {
+            kept = kept.slice(0, conjunctionAt);
+        }
+        while (kept.length > 3 && dangling.has(bareWord(kept[kept.length - 1]))) {
+            kept.pop();
+        }
+
+        let subject = kept.join(' ').trim();
+        if (!subject) {
+            return '';
+        }
+        if (/^it\b/i.test(subject) && /\bclaude\b/i.test(text)) {
+            subject = subject.replace(/^it\b/i, 'Claude');
+        }
+        return subject.charAt(0).toUpperCase() + subject.slice(1);
     }
 
-    function updateHeroIssueNumber(manifestData, renderedIssues = []) {
-        if (!nextIssueNumberEl) {
-            return;
+    function editionSubject(issue) {
+        const fromIntro = shortSubject(issue && issue.intro);
+        if (fromIntro) {
+            return fromIntro;
         }
-
-        const manifestCount = Number(manifestData && manifestData.issueCount);
-        const derivedCount = Array.isArray(renderedIssues) ? renderedIssues.length : 0;
-        const issueCount = Number.isFinite(manifestCount) && manifestCount >= derivedCount
-            ? manifestCount
-            : derivedCount;
-        if (!Number.isFinite(issueCount) || issueCount < 0) {
-            nextIssueNumberEl.textContent = FALLBACK_ISSUE_NUMBER;
-            return;
+        const subject = String((issue && issue.subject) || '').trim();
+        if (subject && !/^ISSUE\s+\d+/i.test(subject)) {
+            return shortSubject(subject) || 'Daily briefing';
         }
-
-        const nextIssue = issueCount + 1;
-        nextIssueNumberEl.textContent = String(nextIssue).padStart(3, '0');
+        return 'Daily briefing';
     }
 
-    function updateHeroCountdown() {
-        try {
-            const minutesRemaining = getMinutesUntilNextSend();
-            const hours = Math.floor(minutesRemaining / 60);
-            const minutes = minutesRemaining % 60;
-            nextIssueCountdownEl.textContent = `ships in ${hours}h ${minutes}m`;
-        } catch (error) {
-            console.error('Countdown update error:', error);
-            nextIssueCountdownEl.textContent = COUNTDOWN_FALLBACK_TEXT;
+    function issueDateLabel(issue) {
+        const slug = String((issue && (issue.digestDate || issue.slug)) || '');
+        const match = slug.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+        if (!match) {
+            return 'Issue';
         }
-    }
-
-    function getMinutesUntilNextSend() {
-        const now = new Date();
-        const nowInNewsletterTz = new Date(
-            now.toLocaleString('en-US', { timeZone: NEWSLETTER_TIME_ZONE })
-        );
-
-        const nextSendInNewsletterTz = new Date(nowInNewsletterTz);
-        nextSendInNewsletterTz.setHours(5, 0, 0, 0);
-        if (nowInNewsletterTz >= nextSendInNewsletterTz) {
-            nextSendInNewsletterTz.setDate(nextSendInNewsletterTz.getDate() + 1);
-        }
-
-        const msRemaining = nextSendInNewsletterTz.getTime() - nowInNewsletterTz.getTime();
-        return Math.max(0, Math.floor(msRemaining / (60 * 1000)));
+        return `Issue ${Number(match[2])}/${Number(match[3])}/${match[1]}:`;
     }
 
     function renderRecentIssues(recentIssues) {
@@ -309,18 +335,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const items = recentIssues
             .map((issue) => {
-                const subject = escapeHtml(issue.subject || 'Untitled issue');
-                const displayDate = escapeHtml(issue.displayDate || issue.digestDate || '');
+                const headline = escapeHtml(editionSubject(issue));
+                const dateLabel = escapeHtml(issueDateLabel(issue));
                 const articleCount = Number.isFinite(issue.articleCount) ? `${issue.articleCount} stories` : '';
-                const issueNumber = escapeHtml(
-                    issue.issueNumber || (issue.slug ? issue.slug.replace(/[^0-9]/g, '').slice(-5) : '')
-                );
                 const safeUrl = issue.urlPath || '/issues/';
                 return `<li>
-                    <span class="mono">${issueNumber ? `#${issueNumber}` : '#00000'}</span>
-                    <span class="mono archive-date">${displayDate}</span>
-                    <a class="archive-headline" href="${safeUrl}">${subject}</a>
-                    <span class="mono archive-tag">[issue]</span>
+                    <span class="mono archive-date">${dateLabel}</span>
+                    <a class="archive-headline" href="${safeUrl}">${headline}</a>
                     <span class="mono archive-count">${escapeHtml(articleCount)}</span>
                     <span class="archive-chevron">→</span>
                 </li>`;
@@ -400,7 +421,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const slug = slugMatch[1];
                 const row = anchor.closest('li');
                 const dateEl = row ? row.querySelector('.issue-date') : null;
-                const countText = row ? (row.textContent || '') : '';
+                const countEl = row ? row.querySelector('.story-count') : null;
+                const countText = countEl ? countEl.textContent : (row ? (row.textContent || '') : '');
                 const countMatch = countText.match(/(\d+)\s+stories/i);
                 return {
                     slug,

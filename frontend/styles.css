@@ -98,10 +98,6 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
 .subscribe-form { max-width: 520px; }
 .subscribe-row { display: flex; border: 1px solid var(--border); border-radius: 2px; background: var(--bg-raised); }
 .subscribe-form.form-error .subscribe-row { border-color: var(--danger); }
-.subscribe-prefix {
-    display: grid; place-items: center; padding: 0 14px; font-size: 13px;
-    color: var(--text-dim); border-right: 1px solid var(--border);
-}
 .subscribe-row input {
     flex: 1; min-width: 0; border: none; outline: none; background: transparent;
     color: var(--text); font-family: "JetBrains Mono", ui-monospace, monospace; padding: 16px;
@@ -126,9 +122,11 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
 .success-body { margin: 0; font-size: 13px; }
 .bot-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .stats { margin-top: 32px; display: grid; grid-template-columns: repeat(3, auto); gap: 40px; }
-.stats p { margin: 0; display: grid; gap: 6px; text-transform: none; letter-spacing: 0; }
+.stats p { margin: 0; display: flex; align-items: center; gap: 12px; text-transform: none; letter-spacing: 0; }
+.stat-copy { display: grid; gap: 6px; }
+.stat-icon { width: 22px; height: 22px; flex: none; color: var(--accent); }
 .stats strong { font-size: 28px; color: var(--text); letter-spacing: -1px; font-family: Inter, sans-serif; }
-.stats span { font-size: 11px; color: var(--text-dim); }
+.stats .stat-copy span { font-size: 11px; color: var(--text-dim); }
 
 .sample-card { position: relative; border-radius: 4px; border: 1px solid var(--border); background: var(--card); overflow: hidden; box-shadow: 0 30px 80px -20px rgba(0,0,0,.6), 0 0 60px color-mix(in oklab, var(--glow) 13%, transparent); }
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--text-mute); padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--bg-raised); }
@@ -198,12 +196,20 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
 .archive-list-wrap { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
 .archive-list { list-style: none; margin: 0; padding: 0; }
 .archive-list li {
-    display: grid; grid-template-columns: 110px 120px 1fr 140px 90px 40px;
-    gap: 20px; align-items: center; padding: 22px 24px; border-top: 1px solid var(--border-soft); background: var(--card);
+    display: grid; grid-template-columns: max-content minmax(0, 1fr) max-content 24px;
+    gap: 16px; align-items: center; padding: 16px 24px; border-top: 1px solid var(--border-soft); background: var(--card);
 }
 .archive-list li:first-child { border-top: none; }
 .archive-list .mono { font-size: 12px; color: var(--text-dim); }
-.archive-list .archive-headline { color: var(--text); text-decoration: none; font-size: 17px; }
+.archive-list .archive-date {
+    color: var(--accent); font-size: 15px; font-weight: 700; letter-spacing: 0;
+    text-transform: none; white-space: nowrap;
+}
+.archive-list .archive-headline {
+    display: block; min-width: 0; color: var(--text-mute); text-decoration: none;
+    font-size: 16px; font-weight: 500; line-height: 1.2;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 .archive-list .archive-tag { color: var(--accent); font-size: 10px; font-weight: 700; }
 .archive-list .archive-chevron { text-align: right; color: var(--text-mute); }
 .issues-loading { padding: 20px 24px !important; display: block !important; color: var(--text-mute); }
@@ -245,8 +251,7 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
     }
     .source-card:nth-child(n+13) { display: none; }
     .archive-heading h2, .testimonials h2 { font-size: 42px; }
-    .archive-list li { grid-template-columns: 90px 1fr 100px 90px 24px; }
-    .archive-list .archive-date { display: none; }
+    .archive-list li { grid-template-columns: max-content minmax(0, 1fr) max-content 20px; }
     .cta { padding: 72px 24px; }
     .cta h2 { font-size: 64px; }
     .quote-grid { grid-template-columns: 1fr; }
@@ -261,11 +266,12 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
     h1 { font-size: 48px; letter-spacing: -2.2px; }
     .hero-lead { font-size: 15px; margin: 20px 0 24px; }
     .subscribe-row { flex-direction: column; }
-    .subscribe-prefix { display: none; }
     .subscribe-row input { border-bottom: 1px solid var(--border); padding: 14px; font-size: 14px; }
     .submit-btn { padding: 14px 16px; font-size: 12px; width: 100%; }
-    .stats { gap: 16px; grid-template-columns: repeat(3, 1fr); }
-    .stats strong { font-size: 20px; }
+    .stats { gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .stats p { gap: 6px; align-items: flex-start; }
+    .stat-icon { width: 16px; height: 16px; margin-top: 2px; }
+    .stats strong { font-size: 16px; letter-spacing: -.4px; }
     .card-top { padding: 10px 12px; font-size: 9px; }
     .card-head { padding: 18px 16px 4px; }
     .card-head h3 { font-size: 18px; }
@@ -286,9 +292,10 @@ h1 { margin: 0; font-size: 96px; line-height: .92; letter-spacing: -4.5px; }
     .archive { padding: 40px 16px; }
     .archive-heading { margin-bottom: 24px; }
     .archive-heading h2 { font-size: 32px; letter-spacing: -1.2px; }
-    .archive-list li { grid-template-columns: 72px 1fr 20px; gap: 12px; padding: 16px 14px; }
+    .archive-list li { grid-template-columns: max-content minmax(0, 1fr) 16px; gap: 10px; padding: 14px; }
+    .archive-list .archive-date { font-size: 12px; white-space: nowrap; }
     .archive-list .archive-tag, .archive-list .archive-count { display: none; }
-    .archive-list .archive-headline { font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .archive-list .archive-headline { font-size: 13px; white-space: nowrap; display: block; overflow: hidden; }
     .testimonials { padding: 40px 16px; }
     .testimonials h2 { font-size: 30px; margin-bottom: 24px; letter-spacing: -1.2px; }
     .quote-grid article { padding: 20px; }
