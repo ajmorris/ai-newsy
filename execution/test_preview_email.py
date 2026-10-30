@@ -93,6 +93,15 @@ class PreviewPayloadTests(unittest.TestCase):
         self.assertNotIn("Covered by 1", html)
         self.assertIn(">Source</a>", html)
         self.assertGreaterEqual(html.lower().count("<img"), 4)
+        self.assertIn("line-height:1.5", html)
+        self.assertIn("line-height:1.25", html)
+        self.assertNotIn("margin-top:4px", html)
+        self.assertNotIn("line-height:1.65", html)
+
+        renderer = (REPO_ROOT / "emails" / "render_email.mjs").read_text(encoding="utf-8")
+        self.assertNotIn('padding="5px 0"', renderer)
+        self.assertNotIn("margin-top:4px", renderer)
+        self.assertNotIn('letter-spacing="2px"', renderer)
 
 
 if __name__ == "__main__":
