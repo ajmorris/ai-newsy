@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-30T00:00:00Z",
-  "issueCount": 173,
+  "generatedAt": "2026-10-31T00:00:00Z",
+  "issueCount": 174,
   "latestIssue": {
-    "slug": "2026-10-30",
-    "digestDate": "2026-10-30",
-    "displayDate": "Oct 30, 2026",
-    "issueNumber": "61030",
-    "subject": "ISSUE 61030 \u00b7 13 STORIES \u00b7 11 MIN READ",
-    "intro": "Big Tech is reshaping itself around AI at a staggering pace \u2014 Amazon is pouring $220 billion into infrastructure even as investors punish its earnings miss, Microsoft is offering voluntary buyouts to 60,000 employees as it bets the workforce's future on AI, and a bombshell intelligence report ties an executive close to Nvidia's CEO to alleged espionage for Beijing. Today's digest cuts across the full blast radius of that transformation, from Reddit walling off its platform against AI-powered search to Maine voters turning a Senate race into a referendum on data centers, plus new research showing Americans remain deeply uneasy about letting AI into their doctor's office.",
-    "articleCount": 13,
-    "urlPath": "/issues/2026-10-30.html",
-    "contentHash": "cb6de64a7c0a3164d84823bade7b7728fa49aa5dd094356094b74ebf04b8d051"
+    "slug": "2026-10-31",
+    "digestDate": "2026-10-31",
+    "displayDate": "Oct 31, 2026",
+    "issueNumber": "61031",
+    "subject": "ISSUE 61031 \u00b7 9 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI industry's insatiable appetite for hardware is reshaping the entire tech landscape \u2014 Nvidia is backing billions in debt for a massive new Anthropic data center, Intel's stock just cratered 28% as AI devours the components PCs need, and Sam Altman is openly arguing your laptop's RAM would be better off in the cloud. Meanwhile, the big four AI companies are finally uniting on a shared standard to let publishers opt out of data scraping, Apple Intelligence is making its long-awaited debut in China, and a Stanford professor has a warning for anyone rushing to flatten their org chart with AI.",
+    "articleCount": 9,
+    "urlPath": "/issues/2026-10-31.html",
+    "contentHash": "8009ef7749bd3425dfdf14c78a16f29f0b6112000ebb5961df2d65310448590d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-10-31",
+      "digestDate": "2026-10-31",
+      "displayDate": "Oct 31, 2026",
+      "issueNumber": "61031",
+      "subject": "ISSUE 61031 \u00b7 9 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI industry's insatiable appetite for hardware is reshaping the entire tech landscape \u2014 Nvidia is backing billions in debt for a massive new Anthropic data center, Intel's stock just cratered 28% as AI devours the components PCs need, and Sam Altman is openly arguing your laptop's RAM would be better off in the cloud. Meanwhile, the big four AI companies are finally uniting on a shared standard to let publishers opt out of data scraping, Apple Intelligence is making its long-awaited debut in China, and a Stanford professor has a warning for anyone rushing to flatten their org chart with AI.",
+      "articleCount": 9,
+      "urlPath": "/issues/2026-10-31.html",
+      "contentHash": "8009ef7749bd3425dfdf14c78a16f29f0b6112000ebb5961df2d65310448590d"
+    },
     {
       "slug": "2026-10-30",
       "digestDate": "2026-10-30",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-10-20.html",
       "contentHash": "c8672d3273e9326c6572976d7780dfaa3bb63c8da9ebe5e15f0a70fa8c60c993"
-    },
-    {
-      "slug": "2026-10-19",
-      "digestDate": "2026-10-19",
-      "displayDate": "Oct 19, 2026",
-      "issueNumber": "61019",
-      "subject": "ISSUE 61019 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "When researchers left Claude alone on a virtual desert island with nothing to do, it invented basketball \u2014 and the agents that played actually got smarter afterward. It's that kind of week in AI: from models exhibiting something eerily like genuine play to a woman getting arrested for blocking a delivery robot in protest, the line between AI as tool and AI as actor keeps blurring. Today's digest also covers Anthropic's new public benefit fund, Disney scooping up Character.AI's team out of bankruptcy, and why bolting AI onto your org chart isn't working.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-10-19.html",
-      "contentHash": "aba697ac8003e02b8f83744b37a3e9c3348d4ce33a33da9d4b87686c03f4dbae"
     }
   ]
 }
