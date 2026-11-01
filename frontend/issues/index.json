@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-10-31T00:00:00Z",
-  "issueCount": 174,
+  "generatedAt": "2026-11-01T00:00:00Z",
+  "issueCount": 175,
   "latestIssue": {
-    "slug": "2026-10-31",
-    "digestDate": "2026-10-31",
-    "displayDate": "Oct 31, 2026",
-    "issueNumber": "61031",
-    "subject": "ISSUE 61031 \u00b7 9 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry's insatiable appetite for hardware is reshaping the entire tech landscape \u2014 Nvidia is backing billions in debt for a massive new Anthropic data center, Intel's stock just cratered 28% as AI devours the components PCs need, and Sam Altman is openly arguing your laptop's RAM would be better off in the cloud. Meanwhile, the big four AI companies are finally uniting on a shared standard to let publishers opt out of data scraping, Apple Intelligence is making its long-awaited debut in China, and a Stanford professor has a warning for anyone rushing to flatten their org chart with AI.",
-    "articleCount": 9,
-    "urlPath": "/issues/2026-10-31.html",
-    "contentHash": "8009ef7749bd3425dfdf14c78a16f29f0b6112000ebb5961df2d65310448590d"
+    "slug": "2026-11-01",
+    "digestDate": "2026-11-01",
+    "displayDate": "Nov 01, 2026",
+    "issueNumber": "61101",
+    "subject": "ISSUE 61101 \u00b7 7 STORIES \u00b7 11 MIN READ",
+    "intro": "Today's AI news carries a unmistakable theme: pushback. From thousands of Australian artists \u2014 including Indigenous creators calling AI-generated art \"Temu slop\" \u2014 rallying against proposed copyright changes, to Apple's new CEO insisting the company won't \"ship AI for AI's sake,\" to a federal judge greenlighting an NAACP pollution lawsuit against xAI's data center, the humans are pushing back on all fronts. We've also got a Senate bill proposing two years of income support for AI-displaced workers, a Goldman Sachs finding that those workers are struggling to land new jobs, and \u2014 on the lighter side \u2014 a journalist who beat Meta to market by building a $50 DIY AI Tamagotchi with a dev kit and some vibe coding.",
+    "articleCount": 7,
+    "urlPath": "/issues/2026-11-01.html",
+    "contentHash": "ee099b5137f6e2b3ea361480f020e3807ebb1a264d67bc6e8e21027cba83d007"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-01",
+      "digestDate": "2026-11-01",
+      "displayDate": "Nov 01, 2026",
+      "issueNumber": "61101",
+      "subject": "ISSUE 61101 \u00b7 7 STORIES \u00b7 11 MIN READ",
+      "intro": "Today's AI news carries a unmistakable theme: pushback. From thousands of Australian artists \u2014 including Indigenous creators calling AI-generated art \"Temu slop\" \u2014 rallying against proposed copyright changes, to Apple's new CEO insisting the company won't \"ship AI for AI's sake,\" to a federal judge greenlighting an NAACP pollution lawsuit against xAI's data center, the humans are pushing back on all fronts. We've also got a Senate bill proposing two years of income support for AI-displaced workers, a Goldman Sachs finding that those workers are struggling to land new jobs, and \u2014 on the lighter side \u2014 a journalist who beat Meta to market by building a $50 DIY AI Tamagotchi with a dev kit and some vibe coding.",
+      "articleCount": 7,
+      "urlPath": "/issues/2026-11-01.html",
+      "contentHash": "ee099b5137f6e2b3ea361480f020e3807ebb1a264d67bc6e8e21027cba83d007"
+    },
     {
       "slug": "2026-10-31",
       "digestDate": "2026-10-31",
@@ -133,17 +144,6 @@
       "articleCount": 15,
       "urlPath": "/issues/2026-10-21.html",
       "contentHash": "650009991c78e19188a3d71612be8386db62021dc548d4adbe48503088d0fb28"
-    },
-    {
-      "slug": "2026-10-20",
-      "digestDate": "2026-10-20",
-      "displayDate": "Oct 20, 2026",
-      "issueNumber": "61020",
-      "subject": "ISSUE 61020 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic co-founder Jack Clark told the IMF and World Bank that the technological singularity has begun \u2014 and Wall Street seems to be having an existential crisis of its own about it, with CoreWeave's bonds hitting distressed levels and investors openly asking whether the trillion-dollar AI boom is built on sand. Today's digest spans that full spectrum of AI confidence and doubt, from OpenAI's breakthrough in teaching models to write COBOL to a Guardian columnist arguing the whole thing is just generating expensive slop, plus Hollywood's first fictional AI actress, a Plex exploit chain built with AI assistance, and NYC's mayor telling his city to push back against all of it.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-10-20.html",
-      "contentHash": "c8672d3273e9326c6572976d7780dfaa3bb63c8da9ebe5e15f0a70fa8c60c993"
     }
   ]
 }
