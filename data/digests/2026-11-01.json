@@ -1,0 +1,614 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-01",
+  "issue_id": "20261101",
+  "subject_line": "ISSUE 61101 · 7 STORIES · 11 MIN READ",
+  "intro": "Today's AI news carries a unmistakable theme: pushback. From thousands of Australian artists — including Indigenous creators calling AI-generated art \"Temu slop\" — rallying against proposed copyright changes, to Apple's new CEO insisting the company won't \"ship AI for AI's sake,\" to a federal judge greenlighting an NAACP pollution lawsuit against xAI's data center, the humans are pushing back on all fronts. We've also got a Senate bill proposing two years of income support for AI-displaced workers, a Goldman Sachs finding that those workers are struggling to land new jobs, and — on the lighter side — a journalist who beat Meta to market by building a $50 DIY AI Tamagotchi with a dev kit and some vibe coding.",
+  "article_count": 7,
+  "stories": [
+    {
+      "id": 9552,
+      "source": "Guardian AI",
+      "title": "Australian artists rally against proposed AI copyright changes allowing scraping",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/01/artists-against-ai-proposal-anthony-albanese-grayndler-sydney-inner-west",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Pitjantjatjara artist Sally Scales, who chairs the National Gallery of Australia's First Nations advisory group, has spoken out against AI systems that scrape and replicate Indigenous Australian art, calling the output 'Temu slop.' Meanwhile, over 3,000 creative professionals in Prime Minister Albanese's own electorate of Grayndler are organizing against the federal government's proposal to allow AI companies to scrape online content, creating political discomfort in his own backyard.",
+      "opinion": "The backlash is broadening from constitutional lawyers to the artists themselves, and the fact that it's reaching Albanese's own electorate adds real political pressure that could force revisions to the proposal.",
+      "image_url": "https://i.guim.co.uk/img/media/807757f27fc7edd5bb144e03b8fbb5e5681bfa56/196_36_2835_2268/master/2835.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=23cf51cf0f12fac30fc916f42c80696f",
+      "published_at": "2026-10-31T19:00:52+00:00",
+      "fetched_at": "2026-11-01T14:05:04.358309+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9552,
+            "source": "Guardian AI",
+            "title": "Disquiet grows in Albanese’s back yard as Grayndler artists unite against ‘insane’ AI proposal",
+            "url": "https://www.theguardian.com/australia-news/2026/nov/01/artists-against-ai-proposal-anthony-albanese-grayndler-sydney-inner-west"
+          },
+          {
+            "id": 9551,
+            "source": "Guardian AI",
+            "title": "AI is stealing Indigenous Australian art and churning out ‘Temu slop’, artist says",
+            "url": "https://www.theguardian.com/artanddesign/2026/nov/02/ai-stealing-indigenous-australian-art-temu-slop-artist-says-ntwnfb"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Both cover Australian artists' backlash against the federal government's proposed AI copyright changes that would allow scraping of their work."
+      }
+    },
+    {
+      "id": 9639,
+      "source": "Charter",
+      "title": "Patagonia's people-first leadership philosophy and AI workforce impact roundup",
+      "url": "https://www.charterworks.com/how-patagonia-leads-by-treating-workers-like-humans/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Patagonia Chief People and Culture Officer Theresita Richard shared the company's philosophy of treating employees 'like humans' and 'like adults' at the Charter Workplace Summit, emphasizing authenticity, entrepreneurship, agency, and mutual accountability. The article also covers AI-and-work developments: a US Senate bill proposing two years of income support for AI-displaced workers, an Apollo Global Management report finding 'zero financial payoff' from AI outside tech, Goldman Sachs data showing AI-displaced workers take longer to find new jobs, and Anthropic's IPO filing identifying loss of worker trust as a risk factor.",
+      "opinion": "The juxtaposition of Patagonia's human-centered culture with data showing AI's uneven economic payoff and growing displacement concerns underscores a widening gap between companies treating the AI transition thoughtfully and those that aren't.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/charter-theresita-erin-1.jpg",
+      "published_at": "2026-11-01T11:30:00+00:00",
+      "fetched_at": "2026-11-01T14:05:17.789649+00:00"
+    },
+    {
+      "id": 9544,
+      "source": "TechCrunch AI",
+      "title": "Apple CEO Ternus says the company doesn't 'want to ship AI for AI's sake'",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Apple CEO John Ternus, who took the role in September 2026, defended Apple's AI positioning in a Wired interview. He acknowledged criticism over being behind on AI, particularly after delaying a more powerful Siri that launched in summer 2026, but said he likes where Apple is and emphasized that users shouldn't have to think about whether AI or traditional software powers a feature. When asked about AI agents making apps unnecessary, Ternus called product creation 'a deeply human and personal thing.'",
+      "opinion": "The messaging is classic Apple restraint, but after years of playing catch-up on AI, the 'we don't ship for AI's sake' line will only hold if Apple Intelligence delivers meaningfully differentiated user experiences soon.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2302418320.jpg?w=1024",
+      "published_at": "2026-10-31T21:41:00+00:00",
+      "fetched_at": "2026-11-01T14:05:02.546246+00:00"
+    },
+    {
+      "id": 9566,
+      "source": "The Verge AI",
+      "title": "Verge writer builds $50 DIY AI Tamagotchi before Meta's Muse Charm ships",
+      "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Sean Hollister of The Verge built a DIY AI Tamagotchi pendant for $50 using a Waveshare ESP32-S3 touchscreen devkit, connecting it to Meta's Muse AI cloud with open-source code. The device features push-to-talk AI interaction, cute avatars, and doubles as a pocket watch and remote camera viewfinder. While it lacks the Muse Charm's cameras and 5G radio, Hollister found the build required significant 'vibe coding' to add features like smart home control.",
+      "opinion": "A fun demonstration of how accessible AI hardware tinkering has become, though it also highlights that Meta's upcoming Muse Charm will need to offer substantially more polish to justify a premium over hobbyist alternatives.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/verge-sean-hollister-muse-gadget-331A2564-01-3.jpg?quality=90&strip=all&crop=4%2C9.7534360513847%2C96%2C75.393048208485&w=1200",
+      "published_at": "2026-10-31T16:05:00+00:00",
+      "fetched_at": "2026-11-01T14:05:06.880986+00:00"
+    },
+    {
+      "id": 9545,
+      "source": "TechCrunch AI",
+      "title": "TechCrunch promotes Founder Summit in Boston on November 4",
+      "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch is promoting its Founder Summit happening November 4, 2026 at Boston's SoWa Power Station, featuring a Networking Lounge powered by Braindate, roundtables, breakout sessions, an Expo Hall, and a closing reception. The event is presented by Fidelity Private Shares and targets founders and VCs.",
+      "opinion": "Event promotion rather than news; only notable as a signal of continued strong demand for in-person founder and VC networking events.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?resize=1200,800",
+      "published_at": "2026-10-31T21:36:07+00:00",
+      "fetched_at": "2026-11-01T14:05:02.673213+00:00"
+    },
+    {
+      "id": 9553,
+      "source": "Guardian AI",
+      "title": "High-street brands stage comeback with AI stylists and A-list collaborations",
+      "url": "https://www.theguardian.com/fashion/2026/oct/31/a-listers-ai-stylists-high-street-brands-fashion-comeback",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "High street brands like Gap, M&S, and Topshop are borrowing strategies from luxury fashion, pursuing A-list celebrity collaborations, AI-powered styling services, and enhanced shopping experiences to win over sustainability-conscious consumers who had drifted toward luxury labels or ultra-cheap online retailers.",
+      "opinion": "AI styling tools are an interesting differentiator for mid-market fashion, but the real test is whether these brands can sustain the strategy beyond the novelty phase and translate it into lasting customer loyalty.",
+      "image_url": "https://i.guim.co.uk/img/media/392bac3568445a08a38ac339fc9393a9fd479db7/0_507_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4e9eef00565409901f767c7c68bb3a47",
+      "published_at": "2026-10-31T16:00:47+00:00",
+      "fetched_at": "2026-11-01T14:05:04.529585+00:00"
+    },
+    {
+      "id": 9546,
+      "source": "TechCrunch AI",
+      "title": "Judge allows NAACP lawsuit over xAI Colossus data center pollution to proceed",
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A federal judge denied xAI's motion to dismiss an NAACP lawsuit alleging the company operated gas turbines at its Colossus data center near Memphis without required Clean Air Act permits. Judge Debra M. Brown rejected xAI's arguments that the turbines qualify as exempt mobile sources. The NAACP claims xAI installed at least 35 combustion turbines without preconstruction or operating air permits. The ruling comes amid growing backlash against data centers, including a New York moratorium on new facilities.",
+      "opinion": "A significant legal precedent that could force AI infrastructure companies to comply with existing environmental regulations rather than claiming exemptions, and adds to mounting political pressure on data center expansion.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800",
+      "published_at": "2026-10-31T21:17:03+00:00",
+      "fetched_at": "2026-11-01T14:05:02.797027+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9552,
+          "source": "Guardian AI",
+          "title": "Australian artists rally against proposed AI copyright changes allowing scraping",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/01/artists-against-ai-proposal-anthony-albanese-grayndler-sydney-inner-west",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Pitjantjatjara artist Sally Scales, who chairs the National Gallery of Australia's First Nations advisory group, has spoken out against AI systems that scrape and replicate Indigenous Australian art, calling the output 'Temu slop.' Meanwhile, over 3,000 creative professionals in Prime Minister Albanese's own electorate of Grayndler are organizing against the federal government's proposal to allow AI companies to scrape online content, creating political discomfort in his own backyard.",
+          "opinion": "The backlash is broadening from constitutional lawyers to the artists themselves, and the fact that it's reaching Albanese's own electorate adds real political pressure that could force revisions to the proposal.",
+          "image_url": "https://i.guim.co.uk/img/media/807757f27fc7edd5bb144e03b8fbb5e5681bfa56/196_36_2835_2268/master/2835.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=23cf51cf0f12fac30fc916f42c80696f",
+          "published_at": "2026-10-31T19:00:52+00:00",
+          "fetched_at": "2026-11-01T14:05:04.358309+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9552,
+                "source": "Guardian AI",
+                "title": "Disquiet grows in Albanese’s back yard as Grayndler artists unite against ‘insane’ AI proposal",
+                "url": "https://www.theguardian.com/australia-news/2026/nov/01/artists-against-ai-proposal-anthony-albanese-grayndler-sydney-inner-west"
+              },
+              {
+                "id": 9551,
+                "source": "Guardian AI",
+                "title": "AI is stealing Indigenous Australian art and churning out ‘Temu slop’, artist says",
+                "url": "https://www.theguardian.com/artanddesign/2026/nov/02/ai-stealing-indigenous-australian-art-temu-slop-artist-says-ntwnfb"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Both cover Australian artists' backlash against the federal government's proposed AI copyright changes that would allow scraping of their work."
+          }
+        },
+        {
+          "id": 9639,
+          "source": "Charter",
+          "title": "Patagonia's people-first leadership philosophy and AI workforce impact roundup",
+          "url": "https://www.charterworks.com/how-patagonia-leads-by-treating-workers-like-humans/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Patagonia Chief People and Culture Officer Theresita Richard shared the company's philosophy of treating employees 'like humans' and 'like adults' at the Charter Workplace Summit, emphasizing authenticity, entrepreneurship, agency, and mutual accountability. The article also covers AI-and-work developments: a US Senate bill proposing two years of income support for AI-displaced workers, an Apollo Global Management report finding 'zero financial payoff' from AI outside tech, Goldman Sachs data showing AI-displaced workers take longer to find new jobs, and Anthropic's IPO filing identifying loss of worker trust as a risk factor.",
+          "opinion": "The juxtaposition of Patagonia's human-centered culture with data showing AI's uneven economic payoff and growing displacement concerns underscores a widening gap between companies treating the AI transition thoughtfully and those that aren't.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2026/10/charter-theresita-erin-1.jpg",
+          "published_at": "2026-11-01T11:30:00+00:00",
+          "fetched_at": "2026-11-01T14:05:17.789649+00:00"
+        },
+        {
+          "id": 9544,
+          "source": "TechCrunch AI",
+          "title": "Apple CEO Ternus says the company doesn't 'want to ship AI for AI's sake'",
+          "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Apple CEO John Ternus, who took the role in September 2026, defended Apple's AI positioning in a Wired interview. He acknowledged criticism over being behind on AI, particularly after delaying a more powerful Siri that launched in summer 2026, but said he likes where Apple is and emphasized that users shouldn't have to think about whether AI or traditional software powers a feature. When asked about AI agents making apps unnecessary, Ternus called product creation 'a deeply human and personal thing.'",
+          "opinion": "The messaging is classic Apple restraint, but after years of playing catch-up on AI, the 'we don't ship for AI's sake' line will only hold if Apple Intelligence delivers meaningfully differentiated user experiences soon.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2302418320.jpg?w=1024",
+          "published_at": "2026-10-31T21:41:00+00:00",
+          "fetched_at": "2026-11-01T14:05:02.546246+00:00"
+        },
+        {
+          "id": 9566,
+          "source": "The Verge AI",
+          "title": "Verge writer builds $50 DIY AI Tamagotchi before Meta's Muse Charm ships",
+          "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Sean Hollister of The Verge built a DIY AI Tamagotchi pendant for $50 using a Waveshare ESP32-S3 touchscreen devkit, connecting it to Meta's Muse AI cloud with open-source code. The device features push-to-talk AI interaction, cute avatars, and doubles as a pocket watch and remote camera viewfinder. While it lacks the Muse Charm's cameras and 5G radio, Hollister found the build required significant 'vibe coding' to add features like smart home control.",
+          "opinion": "A fun demonstration of how accessible AI hardware tinkering has become, though it also highlights that Meta's upcoming Muse Charm will need to offer substantially more polish to justify a premium over hobbyist alternatives.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/verge-sean-hollister-muse-gadget-331A2564-01-3.jpg?quality=90&strip=all&crop=4%2C9.7534360513847%2C96%2C75.393048208485&w=1200",
+          "published_at": "2026-10-31T16:05:00+00:00",
+          "fetched_at": "2026-11-01T14:05:06.880986+00:00"
+        },
+        {
+          "id": 9545,
+          "source": "TechCrunch AI",
+          "title": "TechCrunch promotes Founder Summit in Boston on November 4",
+          "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch is promoting its Founder Summit happening November 4, 2026 at Boston's SoWa Power Station, featuring a Networking Lounge powered by Braindate, roundtables, breakout sessions, an Expo Hall, and a closing reception. The event is presented by Fidelity Private Shares and targets founders and VCs.",
+          "opinion": "Event promotion rather than news; only notable as a signal of continued strong demand for in-person founder and VC networking events.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?resize=1200,800",
+          "published_at": "2026-10-31T21:36:07+00:00",
+          "fetched_at": "2026-11-01T14:05:02.673213+00:00"
+        },
+        {
+          "id": 9553,
+          "source": "Guardian AI",
+          "title": "High-street brands stage comeback with AI stylists and A-list collaborations",
+          "url": "https://www.theguardian.com/fashion/2026/oct/31/a-listers-ai-stylists-high-street-brands-fashion-comeback",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "High street brands like Gap, M&S, and Topshop are borrowing strategies from luxury fashion, pursuing A-list celebrity collaborations, AI-powered styling services, and enhanced shopping experiences to win over sustainability-conscious consumers who had drifted toward luxury labels or ultra-cheap online retailers.",
+          "opinion": "AI styling tools are an interesting differentiator for mid-market fashion, but the real test is whether these brands can sustain the strategy beyond the novelty phase and translate it into lasting customer loyalty.",
+          "image_url": "https://i.guim.co.uk/img/media/392bac3568445a08a38ac339fc9393a9fd479db7/0_507_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4e9eef00565409901f767c7c68bb3a47",
+          "published_at": "2026-10-31T16:00:47+00:00",
+          "fetched_at": "2026-11-01T14:05:04.529585+00:00"
+        },
+        {
+          "id": 9546,
+          "source": "TechCrunch AI",
+          "title": "Judge allows NAACP lawsuit over xAI Colossus data center pollution to proceed",
+          "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A federal judge denied xAI's motion to dismiss an NAACP lawsuit alleging the company operated gas turbines at its Colossus data center near Memphis without required Clean Air Act permits. Judge Debra M. Brown rejected xAI's arguments that the turbines qualify as exempt mobile sources. The NAACP claims xAI installed at least 35 combustion turbines without preconstruction or operating air permits. The ruling comes amid growing backlash against data centers, including a New York moratorium on new facilities.",
+          "opinion": "A significant legal precedent that could force AI infrastructure companies to comply with existing environmental regulations rather than claiming exemptions, and adds to mounting political pressure on data center expansion.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2217198328.jpeg?resize=1200,800",
+          "published_at": "2026-10-31T21:17:03+00:00",
+          "fetched_at": "2026-11-01T14:05:02.797027+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116719386245644512",
+      "author": "Zephyr_hg",
+      "headline": "Weekend walkthrough: build __a seven-part harness for Claude__ by running each component against your own real work.",
+      "tweet_id": "40b1eba9-b6bc-81f5-8010-c32fecc6fe98",
+      "source_text": "A masterclass on how to build a HARNESS for Claude in one weekend, by setting up seven parts and then running them on your real work: https://t.co/Zz9gNP7DKl https://t.co/HBB4R7U7Xh",
+      "created_time": "2026-11-01T13:12:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116719386245644512",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/xiaomovps/status/2116452246431150121",
+      "author": "xiaomovps",
+      "headline": "Five official Grok Bot guides cover the full range from __email triage bots to a solo mobile game studio run by six agents__.",
+      "tweet_id": "40b1eba9-b6bc-816e-b82b-c1c7782af028",
+      "source_text": "学习 Grok Bot 必须收藏的 5 篇官方实战指南🔥\n\n1、Grok Bot for Work｜日常办公\n\n官方分享了自己日常使用的 4 个 Bot，分别负责邮件整理、日程管理、情报收集和统一调度\n\n连具体的提示词都放出来了，我认为最适合刚入门的朋友照着搭\n\nhttps://t.co/y9WaHVrVgv\n\n2、Grok Bot for Engineering｜自动化编程\n\n这篇我个人比较推荐，毕竟 Grok Bot 团队自己就在用 Grok Bot 开发 Grok Bot\n\n公开了 5 个工程 Bot 的分工，包括调用 Cursor Cloud、代码审查、截图验证和自动跟进任务，做开发的朋友建议看看\n\nhttps://t.co/BajaWIpe5J\n\n3、Multiple Teams of Grok Bots｜多 Agent 团队\n\n一个项目建一个频道，配一组专属 Bot，再通过 Notion 看板管理任务\n\n相当于把原来管理人类团队的方式搬到 AI Agent 上，让不同 Bot 自己领取任务、汇报进度，适合同时管理多个项目的朋友\n\nhttps://t.co/7hQcHZQ6nD\n\n4、Mobile App Development｜独立开发\n\n这个案例也挺有意思，一个人用 6 个 Bot 经营移动游戏项目\n\n从用户增长、广告素材、代码开发，到部署上线、Bug 修复都有专门的 Bot 负责\n\n如果你想用 Grok Bot 做独立产品，这篇值得收藏\n\nhttps://t.co/CYJ69cGarE\n\n5、Grok Bot for Support｜客服自动化\n\n官方分享了自己如何用 Grok Bot 处理客服工单\n\n包括自动复现 Bug、分析用户流失原因、审核退款请求、生成客服报表，还能结合 Routine 定时执行\n\n有自己产品或者做 SaaS 的朋友，可以参考这个思路\n\nhttps://t.co/AtuMYtvHHJ",
+      "created_time": "2026-11-01T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/xiaomovps/status/2116452246431150121",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xKiyoro/status/2116558389870289115",
+      "author": "0xKiyoro",
+      "headline": "A Grok Bot setup replaced __a $120-a-year budgeting app__ for zero cost, built by pasting one guide into the bot and letting it walk you through setup.",
+      "tweet_id": "40a1eba9-b6bc-8186-afff-d9583268db2f",
+      "source_text": "This Grok Bot setup is f*cking unfair. It costs $0 and replaced the budgeting app I paid $120 a year for...\n\nDon't write a line of code. Paste the guide below into Grok Bot and it builds your money assistant with you piece by piece, then keeps it running 24/7.\n\nSave it before your feed is full of copies ↓",
+      "created_time": "2026-10-31T21:27:00.000Z",
+      "canonical_url": "https://twitter.com/0xKiyoro/status/2116558389870289115",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/PawelHuryn/status/2116518625582682409",
+      "author": "PawelHuryn",
+      "headline": "Pawel Huryn open-sourced __43 agent skills for non-coders shipping real products__, drawn from 190K installs across six packs from idea to paying users.",
+      "tweet_id": "40a1eba9-b6bc-81d5-a599-cc6a9b9e4779",
+      "source_text": "I open-sourced 43 agent skills for shipping real products. No coding.\n\nEverything I learned from 190K installs and sign ups.\n\nWhy was it needed?\n\nPopular AI engineering skill collections are for people who work with the code a lot. They skip discovery, go-to-market, and product analytics. \n\nI wanted to create something for people focused on the user and business value. A set of skills that helps you: \n\n→ research the market and competitors\n→ listen to the users, e.g., on Reddit\n→ identify your value proposition and value curve\n→ decide how to grow\n→ learn from people using your product for real\n\nThen agents build, review each other's work, and ship. You approve the release.\n\nInside, 6 packs from the first idea to paying users:\n\n→ Product (8): discovering what to build\n→ AI shipping (10): a reliable, secure AI-built app you can sign off on\n→ App stack (14): sign-in, payments, email, analytics, and legal pages\n→ Agent teams (4): other agents as partners, e.g., Codex\n→ Agent harness (6): a reliable setup, with you in the loop\n→ Work humanizer (1): work writing that doesn't read as AI\n\nYou don't have to memorize them. Type /start-here and it explains where you are, what's done, and the next steps.\n\nFree repo (GitHub): https://t.co/VSLGyLdMsn\n\nIf it helps, star the repo so the next person finds it.",
+      "created_time": "2026-10-31T16:12:00.000Z",
+      "canonical_url": "https://twitter.com/PawelHuryn/status/2116518625582682409",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/de1lymoon/status/2116537102187844016",
+      "author": "de1lymoon",
+      "headline": "de1lymoon condensed Lauren Tan's bug discipline into __a single Grok Bot prompt__ that blocks all code until the agent restates and reproduces the issue.",
+      "tweet_id": "40a1eba9-b6bc-8123-bd3d-ceadbd474f96",
+      "source_text": "SpaceXAI engineer Lauren has a simple loop for taking one bug from report to merge\n\na few short lines, used at the right moments:\n\n· “restate it in your own words”\n· “use /how first ... then /why”\n· “repro this with /verify-<app>”\n· “show me a video as proof”\n· “/interrogate ... but\nskeptically”\n· “keep a decision log i can audit”\n\nsame mistake twice? /correct\n\nthe trick: no code until the agent has restated the bug and reproduced it\n\ni turned it into one prompt for Grok Bot + Opus 5.5 ↓\n\nsave this for your next bug",
+      "created_time": "2026-10-31T15:27:00.000Z",
+      "canonical_url": "https://twitter.com/de1lymoon/status/2116537102187844016",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Av1dlive/status/2116527254390067489",
+      "author": "Av1dlive",
+      "headline": "One prompt reportedly __cut Grok Bot usage 30%__ by making each bot audit and rewrite its own weakest instructions, then prove the fix on a real task.",
+      "tweet_id": "40a1eba9-b6bc-81ae-83e9-c1b9252034c6",
+      "source_text": "this prompt cut my grok bot usage by 30%... \n\npaste it tonight and by morning every bot you run has fixed its own mistakes.\n\nit finds what each one got wrong, rewrites the weak spots in its instructions, and proves the fix on a real task.\n\ncopy it 👇 https://t.co/K0dCEt5j8L https://t.co/EU4Xa5336D",
+      "created_time": "2026-10-31T15:27:00.000Z",
+      "canonical_url": "https://twitter.com/Av1dlive/status/2116527254390067489",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/humzaakhalid/status/2116475769488802281",
+      "author": "humzaakhalid",
+      "headline": "Describing a video once in ChatGPT with the CapCut plugin __builds the full timeline — scenes, captions, and audio__ — without dragging a single clip.",
+      "tweet_id": "40a1eba9-b6bc-81a5-aef5-c7695d84c063",
+      "source_text": "Paste this prompt into ChatGPT with the CapCut plugin.\n\nIt turns one idea into a video with a real CapCut timeline.\n\nYou describe the video once:\n\n- Platform, length, and format\n- Your brand colors and font\n- Music style and captions\n\nThen it runs the edit for you:\n\n- Shows a scene-by-scene brief before it builds\n- Waits for your approval\n- Builds the draft with text, caption, and audio\n- Takes your edits one at a time, by chat\n- Opens the project in CapCut so you can export\n\n(I made a 20-second video with it in one chat, without dragging a single clip)\n\nYou also get:\n\n- 4 copy-paste edit commands\n- Rules that keep every scene on-brand\n- Final checks before you export\n\nGet the copy-paste prompt here: https://t.co/Hp3qoiIww0\n\n♻️ REPOST to share it with your friends\nhttps://t.co/l850JyjvU3",
+      "created_time": "2026-10-31T15:17:00.000Z",
+      "canonical_url": "https://twitter.com/humzaakhalid/status/2116475769488802281",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/maestrooth/status/2116221831635997080",
+      "author": "maestrooth",
+      "headline": "Grok bot roundup: one __starts free trials and cancels them before they charge you__, another writes and posts resale listings straight from product photos.",
+      "tweet_id": "40a1eba9-b6bc-816f-a9fc-d93a0d665085",
+      "source_text": "Today's Top 10 Grok Bots\n\npick one and try it:\n\n1. Resell  \nWrites listings from product photos, prices them from recent sales and posts to multiple sites at once. Delists and logs revenue when something sells.  \nhttps://t.co/KPYeCEcYkw\n\n2. Family Care Ops  \nManages hospital visits, medication refills, message templates and a shared family calendar for people caring for parents.  \nhttps://t.co/mszTZPMzv5\n\n3. Try it, don't pay for it  \nStarts free trials for you and cancels or reminds you before billing. Stops forgotten trials from charging you.  \nhttps://t.co/tbEcRRIzKv\n\n4. Moodboard  \nSend it images, links or posts. It organizes them, adds tags and remembers your preferences so shopping bots can recommend better.  \nhttps://t.co/oGJA7vNcw6\n\n5. Watch subscription prices  \nCompares what you pay with the public price of the same plan. Checks again before renewal so price hikes don’t surprise you.  \nhttps://t.co/1yFRPtB9HR\n\n6. Recipe Suggestion Bot  \nSaves recipe posts from cooking accounts. Send ingredient names and it returns matching recipes with links to the originals.  \nhttps://t.co/ryMQrAEbZY\n\n7. Find unused subscriptions  \nScans your receipt emails for plans you’re still paying for but no longer use. Shows the amounts and dates so you only cancel what you choose.  \nhttps://t.co/jNpJOTZNHL\n\n8. The Meter Reader  \nTracks how much each bot uses and shows the total plus per-bot percentage of your plan. Easy to see what’s eating the most.  \nhttps://t.co/JnHzEu4zsN\n\n9. JingleScript MV  \nPick a piano piece, instruments and theme. It builds a 3D music video that moves with the sound on your computer.  \nhttps://t.co/ivL8hZYzHF\n\n10. Email Unsubscribe  \nFinds unread newsletters and promos. You pick what to keep, it unsubscribes from the rest. Important stuff stays.  \nhttps://t.co/pp2lyen5Sf",
+      "created_time": "2026-10-31T15:12:00.000Z",
+      "canonical_url": "https://twitter.com/maestrooth/status/2116221831635997080",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116515607541936498",
+      "author": "Zephyr_hg",
+      "headline": "A prompt for Claude Opus 5.5 __interviews you and surfaces three posts only you can write__, filtering out overdone angles and supplying a first line for each.",
+      "tweet_id": "40a1eba9-b6bc-813e-8273-ed828e160c4b",
+      "source_text": "Most people ask AI for post ideas. This prompt does the opposite.\n\nIt interviews you, kills every idea your feed has seen to death, and hands back the 3 posts only you can write, with the proof and the first line for each.\n\nSend it to Claude Opus 5.5 and answer its 5 questions.\n\nThen read why this one skill sits behind the first one-person businesses ↓",
+      "created_time": "2026-10-31T14:37:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116515607541936498",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/pratikg/status/2116383901115711897",
+      "author": "pratikg",
+      "headline": "Microsoft's Mage, a __4B open-weight computer-use agent__, scores 66% on OSWorld-Verified — just below the human benchmark — and runs 19 moves a minute on a Mac mini.",
+      "tweet_id": "40a1eba9-b6bc-814b-90de-d782b3387ba6",
+      "source_text": "🚨 RESULTS: @Microsoft's Mage, the 4B open-weight computer-use agent, on my 64GB M5 Pro Mac mini, as promised.\n\nMicrosoft quietly released it this morning.\n\nMage looks at the screen, then either clicks like a person or types a terminal command. It decides at every step.\n\nThe model card made a big claim. 66% on OSWorld-Verified, a few points under the 72.4% humans score. Qwen3.6-27B, almost 6x its size, scores 63.9%.\n\nI wanted to see it on my own machine. There was no MLX build yet, so I converted it myself. (Link below) \n\nAt 4-bit it fits in under 9GB of memory. It runs 96 tok/s at 512 context and 34 tok/s at the full 32K.\n\nEach turn, from reading a 1080p screenshot to picking its next move, takes 3.1 seconds. That's up to 19 moves a minute, on a Mac mini.\n\nI gave it 3 real tasks. It totaled a CSV's revenue correctly and renamed a file on the first try. It missed the Dark Mode toggle by 42 pixels at 4-bit. Full precision nailed it.\n\nAn agent like this sees everything on your screen, your email and your bank tab included. I'd rather those screenshots never leave my desk. With Mage, they don't.\n\nIt's Apache 2.0, so anyone can build on it.",
+      "created_time": "2026-10-31T14:37:00.000Z",
+      "canonical_url": "https://twitter.com/pratikg/status/2116383901115711897",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116802442038067633",
+      "author": "Zephyr_hg",
+      "headline": "Grok Bot's new Pages let it build __self-updating dashboards__ — Zephyr_hg's three picks for client work worth building next.",
+      "tweet_id": "40b1eba9-b6bc-81b5-b17f-d0161a61052c",
+      "source_text": "Grok Bot can build Pages now, which are basically dashboards it keeps up to date for you, and I think if I had to pick only three for client work, these are probably the ones I'd build next: https://t.co/tPN8WLySUX https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-01T14:02:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116802442038067633",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/0xChaseTM/status/2116666972544831853",
+      "author": "0xChaseTM",
+      "headline": "SpaceX AI engineer Lauren Tan demos how __pstack routes tasks through playbooks__, builds verification skills per repo, and blocks merges without reproducible evidence.",
+      "tweet_id": "40b1eba9-b6bc-81af-80c9-cc814205038a",
+      "source_text": "this is f***ing gold\n\nSpaceXAI engineer Lauren Tan shows how pstack works:\n\nstart with /poteto-mode to route the task through the right playbook\n\n> Define the task\n\ngoal / constraints / observable_success\n\n/poteto-mode selects the playbook. skills such as /how, /why and /architect supply context and design work when needed\n\n> Verify the running app\n\n/create-verification-skill\n\nBuilds and trials a repo-specific procedure:\n\nlaunch → doctor → drive → evidence → cleanup\n\nThe proof depends on the change:\n\n→ UI: complete the affected user journey\n→ CLI: capture the command, output and exit status\n→ storage: read back the written value\n→ performance: compare profiles under equivalent conditions\n\n> Hand off the tested change\n\ntested_commit / diff / commands + results / evidence_paths\n\nFailed checks send the change back for repair\n\nUnavailable checks stay listed under unverified_checks, with the missing dependency explained\n\n> Prevent recurring failures\n\n/reflect - captures the lesson\n\n/correct - helps encode it through architecture, types, lint, CI or tests\n\npredictable mechanical work moves into scripts so the next run can reuse it\n\nSave this to spend less time supervising fixes ↓",
+      "created_time": "2026-11-01T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/0xChaseTM/status/2116666972544831853",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/ArtuGrande/status/2116546140879323313",
+      "author": "ArtuGrande",
+      "headline": "Cursor and SpaceX AI opened __ambassador applications__ for people who already teach others to build with AI — perks include event funding and early feature access.",
+      "tweet_id": "40b1eba9-b6bc-810c-8f80-c2b40e693225",
+      "source_text": "Cursor will fund your AI meetups.\n\n@spacexai x @cursor_ai just opened ambassador applications.\n\nAmbassadors get:\n\n• Free credits for personal use\n• Early access to new features\n• Funding for community events\n• A private Slack with the team\n• Merch for your meetups\n\nIf you already teach people to build with AI, apply.\n\nLink below 👇\nhttps://t.co/2HFRSpslob",
+      "created_time": "2026-11-01T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/ArtuGrande/status/2116546140879323313",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116561088372506974",
+      "author": "Zephyr_hg",
+      "headline": "Anthropic lifted the five-hour cap on its $200 plan and __renamed it Claude Ultra__ — the weekly usage limit, notably, didn't move.",
+      "tweet_id": "40a1eba9-b6bc-81b3-9cb7-d027724edbc7",
+      "source_text": "Claude just took the 5-hour limit off its $200 plan and renamed it Ultra, and I think the line I'd read twice is the one under it, because the weekly limit did not move at all. https://t.co/EYeC6vGJMc",
+      "created_time": "2026-10-31T16:12:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116561088372506974",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/vasuman/status/2116275571131117569",
+      "author": "vasuman",
+      "headline": "Varick says the __market for AI transformation__ will grow 100x in three years — and finance is the best beachhead.",
+      "tweet_id": "40a1eba9-b6bc-81d6-b07a-f077aab0e282",
+      "source_text": "We're still in the early innings of AI transformation. Varick estimates the market for AI transformation will grow 100x over the next 3 years.\n\nFinance is one of the best places to start, for a few reasons:\n\n- Most of the time is spent waiting. One invoice exception takes 25 minutes of work, but 11 days to clear.\n- Finance leaves a better data trail than any other function. Every invoice, approval, and journal entry is timestamped somewhere, even if half of it lives in Excel.\n- Much of the work is rule-based. You can't afford for agents to hallucinate in the finance function, and by incorporating heavy determinism, you de-risk the agents.\n\nIn the article below, our COO Eyad breaks down the exact playbook we've used to roll out AI in finance at some of the largest companies in the world.\n\nIf you're working on agents in finance, or you're an FDE, this playbook is a gold mine.",
+      "created_time": "2026-10-31T15:22:00.000Z",
+      "canonical_url": "https://twitter.com/vasuman/status/2116275571131117569",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/AISystems_hq/status/2116456649049420215",
+      "author": "AISystems_hq",
+      "headline": "Claude's desktop app Code tab lets non-coders __build client portals and calculators in plain English__ — describe the end goal, have it interview you, then let it build.",
+      "tweet_id": "40a1eba9-b6bc-81a3-a60a-c7ae7cb6434a",
+      "source_text": "You won't write a line of code. It builds client portals, calculators, and small tools, you describe them, you never read code.\n\nIt's not for you if you want a one-off doc or spreadsheet (that's Cowork), a single image (that's ChatGPT), a chart you'll look at once (that's an Artifact), or just an answer to a question (that's Claude Chat). Still here? Then it's for you.\n\nSetup takes a few minutes: download the Claude desktop app, Pro is enough, open the Code tab, make one empty folder with nothing private in it, and point Claude at that folder.\n\nThe prompt that works: tell Claude it's the developer and you're the owner, you don't read code, plain English only. Give it your end goal, have it interview you one question at a time, make it show you the plan, then let it build.\n\nThe constant loop: run it and click through it like a customer would, write down what's wrong as a numbered list in plain words, paste the list back, and repeat until the list is empty. Read every permission it asks for before you click allow.\n\nWhat to build: a client portal where people see where their project stands, a quote calculator for your website, a tool that turns your messy export into the monthly report you send. Build the thing you keep doing by hand in a spreadsheet.\n\nDon't look like every AI tool: screenshot one app whose look you like, drop it in the folder, and tell Claude to match it for all the styling. Stop typing \"make it look good.\"\n\nWhat it costs: Pro is enough to start. Start a new chat for every task, point it at the files in the folder instead of pasting big text, and type /usage to see where you stand. You pay for every wrong turn, so ask for the plan first.\n\nDelete the belief that the Code tab is for developers, the one giant chat you never close, the weekend build nobody ever opens, and the idea you'll start once things calm down.\n\nFollow @AISystems_hq for more Claude setups.",
+      "created_time": "2026-10-31T14:47:00.000Z",
+      "canonical_url": "https://twitter.com/AISystems_hq/status/2116456649049420215",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://latent.space/p/opus55/",
+      "author": "torutofu",
+      "item_id": "hn:50325787",
+      "headline": "Latent Space breaks down how Anthropic built __Claude Opus 5.5__ by separating the model's reasoning 'brain' from its tool-using 'hands.'",
+      "subreddit": null,
+      "source_text": "Anthropic Ships Claude with Claude: Separating the Brain from the Hands",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T14:02:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://latent.space/p/opus55",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "author": "entryleveljobsc",
+      "item_id": "hn:50325662",
+      "headline": "50-agent AI teams set loose in Minecraft to build a civilization __fell into paralyzing bureaucracy__ instead of laying a single block.",
+      "subreddit": null,
+      "source_text": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:47:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.airandspaceforces.com/air-force-autonomous-drones-cca-mma-2032/",
+      "author": "airhangerf15",
+      "item_id": "hn:50325637",
+      "headline": "The US Air Force has a concrete plan to deploy __autonomous fighter and surveillance drones__ by 2032 — the CCA and MMA programs are moving from concept to contract.",
+      "subreddit": null,
+      "source_text": "Air Force Plans Autonomous Fighter and ISR Drones by 2032",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:44:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://airandspaceforces.com/air-force-autonomous-drones-cca-mma-2032",
+      "learning_score": 2
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50325635",
+      "author": "sid1992",
+      "item_id": "hn:50325635",
+      "headline": "HN is searching for __open-weight alternatives to Claude Code__ — the thread is a live snapshot of where local coding agents actually stand in 2026.",
+      "subreddit": null,
+      "source_text": "Ask HN: What is a good open-weight alternative to Claude Code?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:43:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=50325635",
+      "learning_score": 2
+    },
+    {
+      "url": "https://anurbasic.com/blog/live-by-the-claude/",
+      "author": "anurbasic",
+      "item_id": "hn:50325615",
+      "headline": "One builder's honest post-mortem on __full Claude dependency__ — what it costs when your 10x tool becomes your single point of failure.",
+      "subreddit": null,
+      "source_text": "Live by the Claude, Die by the Claude",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:42:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://anurbasic.com/blog/live-by-the-claude",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/31/elon-musk-midterms-spending-visualized",
+      "author": "DeepLogin",
+      "item_id": "hn:50325601",
+      "headline": "The Guardian visualized __$446M of Elon Musk's midterm spending__ — the scale of one tech billionaire's political footprint, mapped district by district.",
+      "subreddit": null,
+      "source_text": "The staggering $446M Elon Musk has spent on the US midterms – visualized",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:40:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theguardian.com/us-news/ng-interactive/2026/oct/31/elon-musk-midterms-spending-visualized",
+      "learning_score": 2
+    },
+    {
+      "url": "https://thoughts.wyounas.com/p/what-does-good-ai-mean",
+      "author": "simplegeek",
+      "item_id": "hn:50325593",
+      "headline": "Waseem Younas takes on __what 'good AI' actually means__ — a harder question to answer than any benchmark score.",
+      "subreddit": null,
+      "source_text": "What does good AI mean?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:39:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://thoughts.wyounas.com/p/what-does-good-ai-mean",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.economist.com/by-invitation/2026/10/28/ai-is-a-technological-version-of-the-homeric-songs",
+      "author": "andsoitis",
+      "item_id": "hn:50325580",
+      "headline": "The Economist makes the case that AI output is __a technological version of the Homeric songs__ — collective human authorship distilled and remixed, not original creation.",
+      "subreddit": null,
+      "source_text": "AI is a technological version of the Homeric songs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:38:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://economist.com/by-invitation/2026/10/28/ai-is-a-technological-version-of-the-homeric-songs",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/@vishwanathanraman/vibe-coding-an-autonomous-agent-harness-in-go-from-zero-to-self-healing-ai-workflows-785d82f981b6",
+      "author": "andsoitis",
+      "item_id": "hn:50325578",
+      "headline": "A builder vibe-coded a __self-healing AI agent harness in Go__ from scratch — complete with autonomous error recovery and iterative workflow loops.",
+      "subreddit": null,
+      "source_text": "Vibe Coding an Autonomous Agent Harness in Go: Self-Healing AI Workflows",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:37:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/@vishwanathanraman/vibe-coding-an-autonomous-agent-harness-in-go-from-zero-to-self-healing-ai-workflows-785d82f981b6",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/fritzprix/devloops",
+      "author": "72ave2",
+      "item_id": "hn:50325483",
+      "headline": "Devloops structures AI work as __adversarial agent loops__ — two agents debate every decision so the human only weighs in at the fork.",
+      "subreddit": null,
+      "source_text": "Show HN: Devloops – Adversarial agent loops so humans only make the key decision",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:26:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/fritzprix/devloops",
+      "learning_score": 2
+    },
+    {
+      "url": "https://fossil-scm.org/draft/doc/trunk/www/hundredandone.md",
+      "author": "DASD",
+      "item_id": "hn:50325435",
+      "headline": "Fossil's maintainers published __101 reasons Fossil beats Git__ — compelling if you care about built-in wikis and tickets, less convincing if you just want GitHub.",
+      "subreddit": null,
+      "source_text": "101 Reasons Why Fossil Is Better Than Git",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-01T13:22:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://fossil-scm.org/draft/doc/trunk/www/hundredandone.md",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-01T14:14:48.339827+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9551,
+          9552
+        ],
+        "reason": "Both cover Australian artists' backlash against the federal government's proposed AI copyright changes that would allow scraping of their work.",
+        "badge_count": 2,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9639
+        ],
+        "reason": "Standalone article on Patagonia's workplace culture philosophy and a roundup of AI-and-work news.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9544
+        ],
+        "reason": "Standalone interview with Apple CEO John Ternus on the company's AI philosophy.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9566
+        ],
+        "reason": "Standalone article about a DIY AI Tamagotchi built ahead of Meta's Muse Charm.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9545
+        ],
+        "reason": "Standalone promotional article for a TechCrunch event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9553
+        ],
+        "reason": "Standalone article on high-street fashion brands using AI and celebrity partnerships to compete.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9546
+        ],
+        "reason": "Standalone article on a federal judge allowing an NAACP environmental lawsuit against xAI to proceed.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "ee099b5137f6e2b3ea361480f020e3807ebb1a264d67bc6e8e21027cba83d007"
+}
