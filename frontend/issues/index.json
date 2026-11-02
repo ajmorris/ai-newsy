@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-01T00:00:00Z",
-  "issueCount": 175,
+  "generatedAt": "2026-11-02T00:00:00Z",
+  "issueCount": 176,
   "latestIssue": {
-    "slug": "2026-11-01",
-    "digestDate": "2026-11-01",
-    "displayDate": "Nov 01, 2026",
-    "issueNumber": "61101",
-    "subject": "ISSUE 61101 \u00b7 7 STORIES \u00b7 11 MIN READ",
-    "intro": "Today's AI news carries a unmistakable theme: pushback. From thousands of Australian artists \u2014 including Indigenous creators calling AI-generated art \"Temu slop\" \u2014 rallying against proposed copyright changes, to Apple's new CEO insisting the company won't \"ship AI for AI's sake,\" to a federal judge greenlighting an NAACP pollution lawsuit against xAI's data center, the humans are pushing back on all fronts. We've also got a Senate bill proposing two years of income support for AI-displaced workers, a Goldman Sachs finding that those workers are struggling to land new jobs, and \u2014 on the lighter side \u2014 a journalist who beat Meta to market by building a $50 DIY AI Tamagotchi with a dev kit and some vibe coding.",
-    "articleCount": 7,
-    "urlPath": "/issues/2026-11-01.html",
-    "contentHash": "ee099b5137f6e2b3ea361480f020e3807ebb1a264d67bc6e8e21027cba83d007"
+    "slug": "2026-11-02",
+    "digestDate": "2026-11-02",
+    "displayDate": "Nov 02, 2026",
+    "issueNumber": "61102",
+    "subject": "ISSUE 61102 \u00b7 11 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI agent revolution is officially here \u2014 MIT Tech Review declares the \"agentic web\" has arrived, Figma's PMs are running 31 shared Claude Code skills, and benchmarks are pitting personal AI agents head-to-head \u2014 but so is the reality check. From Musk throttling Grok Bot over \"unsustainably high\" serving costs to Uber burning its entire 2026 AI budget by April to 20 US communities voting on data center bans, today's stories paint a picture of an industry sprinting forward while the bills come due. We've also got a Guardian investigation catching NHS trusts barely touching their \u00a3330M Palantir platform, a startup claiming it can predict human behavior, and Ryanair eyeing AI to dodge fuel costs.",
+    "articleCount": 11,
+    "urlPath": "/issues/2026-11-02.html",
+    "contentHash": "97dd2f6f24f26283b00dc12681e1374c430b5709828fe5aec28d7bc5e24d4bfb"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-02",
+      "digestDate": "2026-11-02",
+      "displayDate": "Nov 02, 2026",
+      "issueNumber": "61102",
+      "subject": "ISSUE 61102 \u00b7 11 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI agent revolution is officially here \u2014 MIT Tech Review declares the \"agentic web\" has arrived, Figma's PMs are running 31 shared Claude Code skills, and benchmarks are pitting personal AI agents head-to-head \u2014 but so is the reality check. From Musk throttling Grok Bot over \"unsustainably high\" serving costs to Uber burning its entire 2026 AI budget by April to 20 US communities voting on data center bans, today's stories paint a picture of an industry sprinting forward while the bills come due. We've also got a Guardian investigation catching NHS trusts barely touching their \u00a3330M Palantir platform, a startup claiming it can predict human behavior, and Ryanair eyeing AI to dodge fuel costs.",
+      "articleCount": 11,
+      "urlPath": "/issues/2026-11-02.html",
+      "contentHash": "97dd2f6f24f26283b00dc12681e1374c430b5709828fe5aec28d7bc5e24d4bfb"
+    },
     {
       "slug": "2026-11-01",
       "digestDate": "2026-11-01",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-10-22.html",
       "contentHash": "99c7e2de3f52dfb5573e8e8e173d4c06edd80e697e2592560bb569675375c3a8"
-    },
-    {
-      "slug": "2026-10-21",
-      "digestDate": "2026-10-21",
-      "displayDate": "Oct 21, 2026",
-      "issueNumber": "61021",
-      "subject": "ISSUE 61021 \u00b7 15 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic's leaked S-1 filing dropped a jaw-dropping number on the AI world today: an $80.7 billion net loss in the first half of 2026, even as the company gears up for a November IPO and scrambles to secure compute from cloud partners who increasingly see it as a rival. It's a fitting backdrop for a day dominated by the question of who controls AI and at what cost \u2014 from Sam Altman sketching out three possible endgames for AI safety (and saying OpenAI has roughly a year to pick one) to Anthropic shopping a draft bill in Congress that could block model releases deemed catastrophically dangerous. Add in a TLS certificate debacle security experts say will take longer to clean up than Heartbleed, Meta pulling Muse's sharing feature after thousands of private conversations leaked via DNS, and the 2026 midterms shaping up as a referendum on tech power itself, and you've got a newsletter worth reading all the way through.",
-      "articleCount": 15,
-      "urlPath": "/issues/2026-10-21.html",
-      "contentHash": "650009991c78e19188a3d71612be8386db62021dc548d4adbe48503088d0fb28"
     }
   ]
 }
