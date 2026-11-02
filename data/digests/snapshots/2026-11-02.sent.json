@@ -1,0 +1,678 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-02",
+  "issue_id": "20261102",
+  "subject_line": "ISSUE 61102 · 11 STORIES · 11 MIN READ",
+  "intro": "The AI agent revolution is officially here — MIT Tech Review declares the \"agentic web\" has arrived, Figma's PMs are running 31 shared Claude Code skills, and benchmarks are pitting personal AI agents head-to-head — but so is the reality check. From Musk throttling Grok Bot over \"unsustainably high\" serving costs to Uber burning its entire 2026 AI budget by April to 20 US communities voting on data center bans, today's stories paint a picture of an industry sprinting forward while the bills come due. We've also got a Guardian investigation catching NHS trusts barely touching their £330M Palantir platform, a startup claiming it can predict human behavior, and Ryanair eyeing AI to dodge fuel costs.",
+  "article_count": 11,
+  "stories": [
+    {
+      "id": 9679,
+      "source": "Lenny's Newsletter",
+      "title": "Lenny's Newsletter benchmarks personal AI agents and profiles Figma's PM OS built on Claude Code",
+      "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Claire benchmarks four personal AI agents—Grok Bot, Dot, Meta's Muse, and Claude Duet—across nine real-world tasks, with Grok Bot scoring highest overall (93%) for professional workflows and Muse dominating personal tasks. No single agent wins everything. In a second segment, Figma growth PM Ezra Mechaber discusses PM OS, a shared repo of 31 Claude Code skills now used by 60+ PMs at Figma, and introduces AutoXP, an automated growth PM agent that found a significant win on its first experiment.",
+      "opinion": "A useful real-world comparison showing AI agents are best selected per task rather than as all-in-one solutions. The Figma PM OS story is a compelling example of bottom-up AI adoption inside a product org.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Lh51!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11f4fa87-2e46-4a6a-b3ab-6f110e781154_728x524.png",
+      "published_at": "2026-11-02T13:04:11+00:00",
+      "fetched_at": "2026-11-02T16:52:14.686733+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9679,
+            "source": "Lenny's Newsletter",
+            "title": "How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)",
+            "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every"
+          },
+          {
+            "id": 9678,
+            "source": "Lenny's Newsletter",
+            "title": "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day",
+            "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [],
+        "is_update": false,
+        "reason": "Both cover the same Lenny's Newsletter podcast episode featuring Claire's AI agent benchmark and Ezra Mechaber's Figma PM OS segment"
+      }
+    },
+    {
+      "id": 9665,
+      "source": "Guardian AI",
+      "title": "Gen Z voters cite ICE, inflation, and Trump as top concerns for 2026 midterms",
+      "url": "https://www.theguardian.com/us-news/2026/nov/02/gen-z-voting-issues",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nearly 50 million Americans aged 18-29 are eligible to vote in the 2026 midterms, but almost half remain unregistered or civically disengaged per US Census Bureau data. Gen Z voters share many of the same concerns as the broader electorate, including immigration enforcement, inflation, and Trump's political influence.",
+      "opinion": "Relevant context for the midterm elections but light on AI-specific substance.",
+      "image_url": "https://i.guim.co.uk/img/media/44e37206c84891dfa851a68254f83728da7ab9ef/9_0_4561_3648/master/4561.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7b33a7476bc95e5835fdcae512f2b540",
+      "published_at": "2026-11-02T14:00:42+00:00",
+      "fetched_at": "2026-11-02T16:52:03.831179+00:00"
+    },
+    {
+      "id": 9675,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Tech Review argues enterprises should measure AI coding by cost per merged PR, not tokens",
+      "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article argues enterprises should stop measuring AI coding costs by token consumption and instead track cost per merged pull request. Agentic coding tools use 10-50x more tokens than simple chat prompts, creating financial pressure—Uber reportedly burned its entire 2026 AI budget by April. The piece advocates routing tasks to appropriate models and shifting from per-token inference to owned on-premises capacity for heavy usage.",
+      "opinion": "A timely reframing that could shift how enterprises evaluate AI developer tools. The Uber anecdote is striking and likely to resonate with CTOs under budget pressure.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/iStock-2297734847.jpg?resize=1200,600",
+      "published_at": "2026-11-02T13:10:32+00:00",
+      "fetched_at": "2026-11-02T16:52:11.681434+00:00"
+    },
+    {
+      "id": 9677,
+      "source": "OpenAI",
+      "title": "OpenAI launches Grid Protectors Program to work with utilities on data center energy impact",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI announced a 'Grid Protectors Program' to collaborate with utilities, aiming to ensure future compute campuses support grid reliability and protect consumer electricity costs.",
+      "opinion": "A brief PR-oriented announcement that signals OpenAI is trying to get ahead of growing political backlash against data center energy consumption.",
+      "image_url": "",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "fetched_at": "2026-11-02T16:52:13.154094+00:00"
+    },
+    {
+      "id": 9656,
+      "source": "TechCrunch AI",
+      "title": "Israeli startup 42AI exits stealth with $62.5M to predict human behavior using psychological modeling",
+      "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "42AI emerged from stealth with $62.5 million in seed funding, claiming a 'behavioral world model' that predicts human behavior by modeling underlying psychological tendencies rather than extrapolating from past actions. The transformer-based model analyzes diverse behavioral signals and converts them into mathematical trait representations. Initially deployed at financial brokerages, it was developed over three years using psychological research, neuroscience, genetics data, and datasets covering roughly 30 million people.",
+      "opinion": "The claims are ambitious and the psychological-trait approach is differentiated, but predicting human behavior from genetics data and psychological profiling will raise serious ethical questions.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/IMG_3572.jpeg?resize=1200,895",
+      "published_at": "2026-11-02T16:30:00+00:00",
+      "fetched_at": "2026-11-02T16:51:59.943571+00:00"
+    },
+    {
+      "id": 9674,
+      "source": "The Rundown AI",
+      "title": "Roughly 20 US communities vote on data center bans as AI backlash reaches the ballot box",
+      "url": "https://therundownai.beehiiv.com/p/ai-backlash-heads-to-the-polls",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "About 20 US communities are voting on data center bans or pauses in the 2026 midterms, with Democrats projected to flip the House and potentially end favorable treatment for AI firms. OpenAI is reportedly planning to rebrand data centers as 'AI compute campuses' and pitch them as local economic boosts. The article also notes Gartner data showing 42% of enterprises plan to deploy AI agents by end of 2026.",
+      "opinion": "The data center ballot measures are a significant political signal that grassroots AI backlash is crystallizing into concrete policy action at the local level.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/4573226a-10f6-40d5-8da9-d1e359308299/cc-datacenters.png?t=1793570059",
+      "published_at": "2026-11-02T11:00:00+00:00",
+      "fetched_at": "2026-11-02T16:52:07.982817+00:00"
+    },
+    {
+      "id": 9666,
+      "source": "Guardian AI",
+      "title": "Ryanair considers pay freezes and increased AI use to offset soaring fuel costs",
+      "url": "https://www.theguardian.com/business/2026/nov/02/ryanair-considers-pay-freezes-reducing-crew-on-flights-fuel-costs-soar-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Ryanair is considering pay freezes, reducing crew numbers on flights, and increasing AI use as cost-cutting measures to offset soaring fuel costs driven by the Middle East conflict, which is expected to lead to a confrontation with unions.",
+      "opinion": "AI is secondary to the broader labor-cost story here; the real tension is between the airline's cost pressures and union resistance.",
+      "image_url": "https://i.guim.co.uk/img/media/b52864d4c0b9d2ab7fa534706c339430bddbd71f/504_201_1818_1455/master/1818.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9af650b10add3055722bcc7fdc84e3e1",
+      "published_at": "2026-11-02T12:57:53+00:00",
+      "fetched_at": "2026-11-02T16:52:04.053071+00:00"
+    },
+    {
+      "id": 9676,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Tech Review declares the 'agentic web' has arrived, fulfilling Berners-Lee's 2001 vision via LLMs",
+      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article argues Tim Berners-Lee's 2001 Semantic Web vision of autonomous software agents navigating the web has been realized through LLM-based agents rather than semantic HTML tags. Tools like Meta's Muse, OpenAI's Dots, and Anthropic's offerings now access email and bank accounts on users' behalf. The piece warns the 'agentic web' is developing out of sight and may fundamentally alter the human-facing web, flagging incidents where OpenAI agents escaped sandboxes and caused problems online.",
+      "opinion": "A thought-provoking framing that connects today's AI agents to a decades-old vision. The sandbox escape incidents deserve more attention than a passing mention.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MAIN-top.jpg?resize=1200,600",
+      "published_at": "2026-11-02T09:35:19+00:00",
+      "fetched_at": "2026-11-02T16:52:11.920792+00:00"
+    },
+    {
+      "id": 9657,
+      "source": "TechCrunch AI",
+      "title": "Elon Musk throttles Grok Bot usage limits citing 'unsustainably high' serving costs",
+      "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Elon Musk confirmed SpaceX throttled Grok Bot weekly usage limits over Halloween weekend because serving costs were 'unsustainably high relative to revenue.' Users noticed usage meters jumping to 100% overnight without actual use. This comes despite Musk touting Grok Bot as having the fastest product growth he's ever seen, and SpaceX's AI division reporting $431 million in profit last month—though that figure would have been higher without $1.2 billion in one-time costs from acquiring Cursor.",
+      "opinion": "The tension between rapid growth claims and unsustainable costs undercuts the bullish narrative. The Cursor acquisition cost is a notable detail.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+      "published_at": "2026-11-02T16:23:21+00:00",
+      "fetched_at": "2026-11-02T16:52:00.281482+00:00"
+    },
+    {
+      "id": 9668,
+      "source": "Guardian AI",
+      "title": "29 NHS trusts listed as benefiting from Palantir's £330M platform are barely using it",
+      "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Guardian investigation found that 29 NHS hospital trusts listed by NHS England as 'realising benefits' from Palantir's £330 million federated data platform are either not using the system at all or not using most of its AI-powered features. A senior health official described the gap between official claims and actual usage as 'very misleading.'",
+      "opinion": "A damaging investigation for both Palantir and NHS England, revealing a significant gap between procurement narratives and ground-level adoption of AI health tools.",
+      "image_url": "https://i.guim.co.uk/img/media/ba117415b0ce5a84437694933b4777aa0c31cd19/493_0_2500_2000/master/2500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c2e61772be9e934562ca82b471371626",
+      "published_at": "2026-11-02T10:19:46+00:00",
+      "fetched_at": "2026-11-02T16:52:04.531483+00:00"
+    },
+    {
+      "id": 9658,
+      "source": "TechCrunch AI",
+      "title": "Omen AI acquires Aquatic Labs for $16M to build unified data center cooling sensor",
+      "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Omen AI, which builds real-time sensors to monitor data center cooling fluids, is acquiring competitor Aquatic Labs for $16 million in cash and stock. Founded in 2024 with a $31 million Series A, Omen plans to integrate both companies' technologies into a single sensor by early 2027. US data centers currently use 17-19 billion gallons of cooling water. Aquatic Labs' CEO Allan Adams, a former MIT professor, becomes chief science officer.",
+      "opinion": "A niche but well-timed play given growing scrutiny of data center water usage. Consolidating complementary sensor technologies makes strategic sense.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/DSCF1932.jpg?resize=1200,800",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "fetched_at": "2026-11-02T16:52:00.641202+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9679,
+          "source": "Lenny's Newsletter",
+          "title": "Lenny's Newsletter benchmarks personal AI agents and profiles Figma's PM OS built on Claude Code",
+          "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Claire benchmarks four personal AI agents—Grok Bot, Dot, Meta's Muse, and Claude Duet—across nine real-world tasks, with Grok Bot scoring highest overall (93%) for professional workflows and Muse dominating personal tasks. No single agent wins everything. In a second segment, Figma growth PM Ezra Mechaber discusses PM OS, a shared repo of 31 Claude Code skills now used by 60+ PMs at Figma, and introduces AutoXP, an automated growth PM agent that found a significant win on its first experiment.",
+          "opinion": "A useful real-world comparison showing AI agents are best selected per task rather than as all-in-one solutions. The Figma PM OS story is a compelling example of bottom-up AI adoption inside a product org.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!Lh51!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11f4fa87-2e46-4a6a-b3ab-6f110e781154_728x524.png",
+          "published_at": "2026-11-02T13:04:11+00:00",
+          "fetched_at": "2026-11-02T16:52:14.686733+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9679,
+                "source": "Lenny's Newsletter",
+                "title": "How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)",
+                "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every"
+              },
+              {
+                "id": 9678,
+                "source": "Lenny's Newsletter",
+                "title": "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day",
+                "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [],
+            "is_update": false,
+            "reason": "Both cover the same Lenny's Newsletter podcast episode featuring Claire's AI agent benchmark and Ezra Mechaber's Figma PM OS segment"
+          }
+        },
+        {
+          "id": 9665,
+          "source": "Guardian AI",
+          "title": "Gen Z voters cite ICE, inflation, and Trump as top concerns for 2026 midterms",
+          "url": "https://www.theguardian.com/us-news/2026/nov/02/gen-z-voting-issues",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nearly 50 million Americans aged 18-29 are eligible to vote in the 2026 midterms, but almost half remain unregistered or civically disengaged per US Census Bureau data. Gen Z voters share many of the same concerns as the broader electorate, including immigration enforcement, inflation, and Trump's political influence.",
+          "opinion": "Relevant context for the midterm elections but light on AI-specific substance.",
+          "image_url": "https://i.guim.co.uk/img/media/44e37206c84891dfa851a68254f83728da7ab9ef/9_0_4561_3648/master/4561.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7b33a7476bc95e5835fdcae512f2b540",
+          "published_at": "2026-11-02T14:00:42+00:00",
+          "fetched_at": "2026-11-02T16:52:03.831179+00:00"
+        },
+        {
+          "id": 9675,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Tech Review argues enterprises should measure AI coding by cost per merged PR, not tokens",
+          "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article argues enterprises should stop measuring AI coding costs by token consumption and instead track cost per merged pull request. Agentic coding tools use 10-50x more tokens than simple chat prompts, creating financial pressure—Uber reportedly burned its entire 2026 AI budget by April. The piece advocates routing tasks to appropriate models and shifting from per-token inference to owned on-premises capacity for heavy usage.",
+          "opinion": "A timely reframing that could shift how enterprises evaluate AI developer tools. The Uber anecdote is striking and likely to resonate with CTOs under budget pressure.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/iStock-2297734847.jpg?resize=1200,600",
+          "published_at": "2026-11-02T13:10:32+00:00",
+          "fetched_at": "2026-11-02T16:52:11.681434+00:00"
+        },
+        {
+          "id": 9677,
+          "source": "OpenAI",
+          "title": "OpenAI launches Grid Protectors Program to work with utilities on data center energy impact",
+          "url": "https://openai.com/index/grid-protectors-program",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI announced a 'Grid Protectors Program' to collaborate with utilities, aiming to ensure future compute campuses support grid reliability and protect consumer electricity costs.",
+          "opinion": "A brief PR-oriented announcement that signals OpenAI is trying to get ahead of growing political backlash against data center energy consumption.",
+          "image_url": "",
+          "published_at": "2026-11-02T15:00:00+00:00",
+          "fetched_at": "2026-11-02T16:52:13.154094+00:00"
+        },
+        {
+          "id": 9656,
+          "source": "TechCrunch AI",
+          "title": "Israeli startup 42AI exits stealth with $62.5M to predict human behavior using psychological modeling",
+          "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "42AI emerged from stealth with $62.5 million in seed funding, claiming a 'behavioral world model' that predicts human behavior by modeling underlying psychological tendencies rather than extrapolating from past actions. The transformer-based model analyzes diverse behavioral signals and converts them into mathematical trait representations. Initially deployed at financial brokerages, it was developed over three years using psychological research, neuroscience, genetics data, and datasets covering roughly 30 million people.",
+          "opinion": "The claims are ambitious and the psychological-trait approach is differentiated, but predicting human behavior from genetics data and psychological profiling will raise serious ethical questions.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/IMG_3572.jpeg?resize=1200,895",
+          "published_at": "2026-11-02T16:30:00+00:00",
+          "fetched_at": "2026-11-02T16:51:59.943571+00:00"
+        },
+        {
+          "id": 9674,
+          "source": "The Rundown AI",
+          "title": "Roughly 20 US communities vote on data center bans as AI backlash reaches the ballot box",
+          "url": "https://therundownai.beehiiv.com/p/ai-backlash-heads-to-the-polls",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "About 20 US communities are voting on data center bans or pauses in the 2026 midterms, with Democrats projected to flip the House and potentially end favorable treatment for AI firms. OpenAI is reportedly planning to rebrand data centers as 'AI compute campuses' and pitch them as local economic boosts. The article also notes Gartner data showing 42% of enterprises plan to deploy AI agents by end of 2026.",
+          "opinion": "The data center ballot measures are a significant political signal that grassroots AI backlash is crystallizing into concrete policy action at the local level.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/4573226a-10f6-40d5-8da9-d1e359308299/cc-datacenters.png?t=1793570059",
+          "published_at": "2026-11-02T11:00:00+00:00",
+          "fetched_at": "2026-11-02T16:52:07.982817+00:00"
+        },
+        {
+          "id": 9666,
+          "source": "Guardian AI",
+          "title": "Ryanair considers pay freezes and increased AI use to offset soaring fuel costs",
+          "url": "https://www.theguardian.com/business/2026/nov/02/ryanair-considers-pay-freezes-reducing-crew-on-flights-fuel-costs-soar-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Ryanair is considering pay freezes, reducing crew numbers on flights, and increasing AI use as cost-cutting measures to offset soaring fuel costs driven by the Middle East conflict, which is expected to lead to a confrontation with unions.",
+          "opinion": "AI is secondary to the broader labor-cost story here; the real tension is between the airline's cost pressures and union resistance.",
+          "image_url": "https://i.guim.co.uk/img/media/b52864d4c0b9d2ab7fa534706c339430bddbd71f/504_201_1818_1455/master/1818.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9af650b10add3055722bcc7fdc84e3e1",
+          "published_at": "2026-11-02T12:57:53+00:00",
+          "fetched_at": "2026-11-02T16:52:04.053071+00:00"
+        },
+        {
+          "id": 9676,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Tech Review declares the 'agentic web' has arrived, fulfilling Berners-Lee's 2001 vision via LLMs",
+          "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article argues Tim Berners-Lee's 2001 Semantic Web vision of autonomous software agents navigating the web has been realized through LLM-based agents rather than semantic HTML tags. Tools like Meta's Muse, OpenAI's Dots, and Anthropic's offerings now access email and bank accounts on users' behalf. The piece warns the 'agentic web' is developing out of sight and may fundamentally alter the human-facing web, flagging incidents where OpenAI agents escaped sandboxes and caused problems online.",
+          "opinion": "A thought-provoking framing that connects today's AI agents to a decades-old vision. The sandbox escape incidents deserve more attention than a passing mention.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MAIN-top.jpg?resize=1200,600",
+          "published_at": "2026-11-02T09:35:19+00:00",
+          "fetched_at": "2026-11-02T16:52:11.920792+00:00"
+        },
+        {
+          "id": 9657,
+          "source": "TechCrunch AI",
+          "title": "Elon Musk throttles Grok Bot usage limits citing 'unsustainably high' serving costs",
+          "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Elon Musk confirmed SpaceX throttled Grok Bot weekly usage limits over Halloween weekend because serving costs were 'unsustainably high relative to revenue.' Users noticed usage meters jumping to 100% overnight without actual use. This comes despite Musk touting Grok Bot as having the fastest product growth he's ever seen, and SpaceX's AI division reporting $431 million in profit last month—though that figure would have been higher without $1.2 billion in one-time costs from acquiring Cursor.",
+          "opinion": "The tension between rapid growth claims and unsustainable costs undercuts the bullish narrative. The Cursor acquisition cost is a notable detail.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+          "published_at": "2026-11-02T16:23:21+00:00",
+          "fetched_at": "2026-11-02T16:52:00.281482+00:00"
+        },
+        {
+          "id": 9668,
+          "source": "Guardian AI",
+          "title": "29 NHS trusts listed as benefiting from Palantir's £330M platform are barely using it",
+          "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Guardian investigation found that 29 NHS hospital trusts listed by NHS England as 'realising benefits' from Palantir's £330 million federated data platform are either not using the system at all or not using most of its AI-powered features. A senior health official described the gap between official claims and actual usage as 'very misleading.'",
+          "opinion": "A damaging investigation for both Palantir and NHS England, revealing a significant gap between procurement narratives and ground-level adoption of AI health tools.",
+          "image_url": "https://i.guim.co.uk/img/media/ba117415b0ce5a84437694933b4777aa0c31cd19/493_0_2500_2000/master/2500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c2e61772be9e934562ca82b471371626",
+          "published_at": "2026-11-02T10:19:46+00:00",
+          "fetched_at": "2026-11-02T16:52:04.531483+00:00"
+        },
+        {
+          "id": 9658,
+          "source": "TechCrunch AI",
+          "title": "Omen AI acquires Aquatic Labs for $16M to build unified data center cooling sensor",
+          "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Omen AI, which builds real-time sensors to monitor data center cooling fluids, is acquiring competitor Aquatic Labs for $16 million in cash and stock. Founded in 2024 with a $31 million Series A, Omen plans to integrate both companies' technologies into a single sensor by early 2027. US data centers currently use 17-19 billion gallons of cooling water. Aquatic Labs' CEO Allan Adams, a former MIT professor, becomes chief science officer.",
+          "opinion": "A niche but well-timed play given growing scrutiny of data center water usage. Consolidating complementary sensor technologies makes strategic sense.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/DSCF1932.jpg?resize=1200,800",
+          "published_at": "2026-11-02T15:00:00+00:00",
+          "fetched_at": "2026-11-02T16:52:00.641202+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2117164841941225549",
+      "author": "Zephyr_hg",
+      "headline": "@Zephyr_hg runs every post through a bot benchmarked against __their own median__ — 3x fires two follow-ups, 5x triggers a five-post series.",
+      "tweet_id": "40c1eba9-b6bc-817e-b36f-cbf4cd027f8a",
+      "source_text": "The best thing I did for my X account was give one bot a single job: check every post at 24 hours against my own median.\n\nBelow the median, I let it go.\n\n3x the median or 120+ bookmarks, I write two follow-ups with the same hook shape. 5x, it turns into a five-post series.\n\nSo the next post I write is usually a new version of one that already worked.\n\nThe whole page, with the prompt I gave the bot:",
+      "created_time": "2026-11-02T13:27:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2117164841941225549",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/omarsar0/status/2117053859516285354",
+      "author": "omarsar0",
+      "headline": "Omar Sayed built __Hacker Papers__, an arXiv-powered take on Karpathy's HackerTube concept, now indexing 1K+ research papers.",
+      "tweet_id": "40c1eba9-b6bc-8171-81d3-e2f0dfba612a",
+      "source_text": "Introducing Hacker Papers!\n\nI absolutely love this HackerTube idea from @karpathy.\n\nSo I took his prompt and similar data sources and asked my agent to build the arXiv papers version of it.\n\nAbsolute bangers there. \n\nFind all 1K+ papers here: https://t.co/KXoYv5jjYc https://t.co/2homUSmbMX https://t.co/kILntqBJ70",
+      "created_time": "2026-11-02T04:02:00.000Z",
+      "canonical_url": "https://twitter.com/omarsar0/status/2117053859516285354",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/aiedge_/status/2116772271763427517",
+      "author": "aiedge_",
+      "headline": "Anthropic has a public GitHub repo of __12+ free Claude Skills__ for Opus 5.5 — frontend design, agentic workflows, and coding included.",
+      "tweet_id": "40c1eba9-b6bc-81eb-b6aa-d3e5bab14851",
+      "source_text": "🚨 Anthropic has a PUBLIC GitHub repo of 12+ Claude Skills for Opus 5.5\n\nSkills for frontend design, creating agentic skills, coding & more.\n\n100% free.\n\n👉 https://t.co/qMVrDzKIto https://t.co/8FQELpYQcx",
+      "created_time": "2026-11-02T04:02:00.000Z",
+      "canonical_url": "https://twitter.com/aiedge_/status/2116772271763427517",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/suraj_sharma14/status/2117074214083838004",
+      "author": "suraj_sharma14",
+      "headline": "Suraj Sharma catalogued __15 agentic AI projects__ — PR review bots, RAG-over-GitHub codebases, multi-agent research teams — that Forward Deployed Engineer roles now demand on resumes.",
+      "tweet_id": "40c1eba9-b6bc-814d-a7e7-d968a0b5683e",
+      "source_text": "I was going through Forward Deployed Engineer roles on LinkedIn.\n\nAlmost every one asks for the same thing: proof you've shipped agents.\n\nHere are 15 agentic AI projects that will make your resume stand out:\n\n• Customer support agent that reads docs, answers tickets and escalates to a human\n• Sales research agent that finds leads and writes personalised outreach\n• Meeting agent that joins calls, takes notes and updates the CRM\n• Invoice agent that reads PDFs and pushes data into accounting software\n• Codebase Q&A agent using RAG over a real GitHub repo\n• PR review agent that comments on bugs and security issues\n• Data analyst agent that turns plain-English questions into SQL and charts\n• Browser agent that fills forms and books appointments\n• Multi-agent research team: planner, researcher, writer, critic\n• MCP server that connects an AI to your company's internal tools\n• Onboarding agent that sets up accounts and walks new hires through docs\n• Recruiting agent that screens resumes and schedules interviews\n• Incident agent that reads logs and suggests fixes\n• Eval dashboard that scores your agent on accuracy, cost and latency\n• Guardrails layer that blocks prompt injection and risky actions\n\nPick 2–3.\nDeploy them.\nWrite about what broke.\n\nThat's your resume.\n\nBookmark this and send it to someone applying for AI roles.",
+      "created_time": "2026-11-02T03:37:00.000Z",
+      "canonical_url": "https://twitter.com/suraj_sharma14/status/2117074214083838004",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/levelsio/status/2116843791214629021",
+      "author": "levelsio",
+      "headline": "Pieter Levels says there are __many things left to do__ in a world where AI can build everything — and makes the case.",
+      "tweet_id": "40b1eba9-b6bc-813b-b3d3-ccc2cfe8a5f7",
+      "source_text": "What's left to do when AI can build everything?\n\nMany things actually! https://t.co/aLwbVNoemN https://t.co/HkzkurJHi9",
+      "created_time": "2026-11-01T20:37:00.000Z",
+      "canonical_url": "https://twitter.com/levelsio/status/2116843791214629021",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Sankew06/status/2116772207020188026",
+      "author": "Sankew06",
+      "headline": "Sankew06 built a custom macOS display app for the __Dell S2725QC__ that beats BetterDisplay and Dell's own DDPM at color accuracy and brightness control.",
+      "tweet_id": "40b1eba9-b6bc-8142-82aa-cb4beb74112f",
+      "source_text": "i got tired of my monitor(Dell S2725QC) not matching my MacBook's display colors, and having no proper software control over the display's brightness and volume\n\nso i built my own that let's me adjust various aspects of the monitor without it breaking\n\nwhile it still not close enough, it does a far better job for me than most other display apps on macOS(including BetterDisplay), and Dell's own DDPM app, and comes with a much more color accurate color profile, and if you have issues, you can still tweak the colors to match your Mac's display\n\nmy final goal is to make it as native as i can to macOS, so many key aspects could be modified on System Settings, like a Studio Display",
+      "created_time": "2026-11-01T20:32:00.000Z",
+      "canonical_url": "https://twitter.com/Sankew06/status/2116772207020188026",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2116877975769764279",
+      "author": "Zephyr_hg",
+      "headline": "A Claude workflow that hooks into mail and Drive to sort your last 7 days — __nothing counts as shipped__ until someone other than you actually received it.",
+      "tweet_id": "40b1eba9-b6bc-8168-9b1c-f7e93f71666b",
+      "source_text": "I'd paste this into Claude with my mail and Drive connected and let it sort my last 7 days into shipped and busy. The rule that makes it sting is that nothing counts as shipped until someone other than me actually got it. https://t.co/aOTC9wC5Pc https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-01T20:02:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2116877975769764279",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/reasonmachines/status/2117075693226136046",
+      "author": "reasonmachines",
+      "headline": "Reason, formerly Grokbot, now offers __unlimited AI coding sessions__ if you bring your own Claude or Codex subscription.",
+      "tweet_id": "40c1eba9-b6bc-810c-9603-cbfb4eba2d3f",
+      "source_text": "We made Grokbot with unlimited usage!\n\nMeet Reason\n\nBring your own Claude or Codex Subs, and code with a frontier agent that has no limits!\n\nTry it for free at https://t.co/khpbVAeSZr https://t.co/3nXII0J5xg https://t.co/9D6ZpqQDIF",
+      "created_time": "2026-11-02T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/reasonmachines/status/2117075693226136046",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/bibryam/status/2116675082823319671",
+      "author": "bibryam",
+      "headline": "Anthropic documented __skill authoring best practices__ for Claude Code.",
+      "tweet_id": "40b1eba9-b6bc-817a-9a54-fc1215a09a5a",
+      "source_text": "Anthropic's Skill authoring best practices \nhttps://t.co/5EjVtMWAfw",
+      "created_time": "2026-11-01T20:37:00.000Z",
+      "canonical_url": "https://twitter.com/bibryam/status/2116675082823319671",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://www.secwest.net/realigned/presentations/open-the-box-not-the-weights-a-two-tier-disclosure-model-for-auditable-edge-security-engines",
+      "author": "Zierax",
+      "item_id": "hn:50339336",
+      "headline": "A SecWest presentation details a __37KB embedded C malware classifier__ running at 34ns latency — deterministic, no weights, no neural inference.",
+      "subreddit": null,
+      "source_text": "A 37KB deterministic embedded C malware classifier with 34ns latency",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:31:47+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://secwest.net/realigned/presentations/open-the-box-not-the-weights-a-two-tier-disclosure-model-for-auditable-edge-security-engines",
+      "learning_score": 3
+    },
+    {
+      "url": "https://alignment.anthropic.com/2026/automated-em-search/",
+      "author": "gmays",
+      "item_id": "hn:50339590",
+      "headline": "Anthropic's automated search method hunts for __subtle emergent misalignment__ without human-crafted test cases — a scalable step in AI safety evaluation.",
+      "subreddit": null,
+      "source_text": "Automated Subtle Emergent Misalignment Research",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:46:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://alignment.anthropic.com/2026/automated-em-search",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/TheVixhal/status/2116938733815738516",
+      "author": "vixhal",
+      "item_id": "hn:50339572",
+      "headline": "Someone built a __deterministic SIMT GPU__ inside Qwen3.5 — fully functional, software-only, and apparently working as advertised.",
+      "subreddit": null,
+      "source_text": "QwenGPU: A functioning, deterministic SIMT GPU inside Qwen3.5",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:45:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/TheVixhal/status/2116938733815738516",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/graalvm/chasing-the-perfect-assembly-d0edb5387a5e",
+      "author": "mike_hearn",
+      "item_id": "hn:50339564",
+      "headline": "GraalVM's team shows how __a Java-written interpreter__ can match hand-written assembly speeds — and documents every optimization that gets you there.",
+      "subreddit": null,
+      "source_text": "Matching the Speed of Hand-Written Assembly with an Interpreter Written in Java",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:44:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/graalvm/chasing-the-perfect-assembly-d0edb5387a5e",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/nfx/go-ownfunc",
+      "author": "nf-x",
+      "item_id": "hn:50339422",
+      "headline": "__go-ownfunc__ is a Go linter that catches dangling package-level functions and nudges code toward better encapsulation.",
+      "subreddit": null,
+      "source_text": "Show HN: Go (style) linter for dangling package-level functions",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:36:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/nfx/go-ownfunc",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/data-science-collective/5-best-mcp-gateways-in-2026-bifrost-ibm-contextforge-obot-docker-and-microsoft-compared-03d4c566cb08",
+      "author": "sebuzdugan",
+      "item_id": "hn:50339356",
+      "headline": "Five __MCP gateways__ go head-to-head in 2026 — Bifrost, ContextForge, Obot, Docker, and Microsoft compared in depth.",
+      "subreddit": null,
+      "source_text": "MCP Gateways Compared: Bifrost, ContextForge, Obot, Docker and Microsoft",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:32:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/data-science-collective/5-best-mcp-gateways-in-2026-bifrost-ibm-contextforge-obot-docker-and-microsoft-compared-03d4c566cb08",
+      "learning_score": 2
+    },
+    {
+      "url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
+      "author": "SteveGallag",
+      "item_id": "hn:50339224",
+      "headline": "A practicing architect says __Claude Opus 5.5__ can produce permit-level architectural drawings — detailed enough for regulatory submission.",
+      "subreddit": null,
+      "source_text": "Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:25:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now",
+      "learning_score": 2
+    },
+    {
+      "url": "https://mindmademany.com/",
+      "author": "esamust",
+      "item_id": "hn:50339212",
+      "headline": "__Mind Made Many__ lets you structure AI agents into org-like hierarchies with teams, roles, and delegation chains.",
+      "subreddit": null,
+      "source_text": "Show HN: Mind Made Many – Platform to organize your agents into orgs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:25:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://mindmademany.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://sohom.dev/writeups/cross-boundary-mobile-tracking",
+      "author": "sohom_datta",
+      "item_id": "hn:50339166",
+      "headline": "Android apps are leaking __device identifiers across the native–web boundary__ — a cross-context tracking vector hiding inside standard SDK behavior.",
+      "subreddit": null,
+      "source_text": "How Android Apps Leak Device Identifiers Across the Native–Web Boundary",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:22:36+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sohom.dev/writeups/cross-boundary-mobile-tracking",
+      "learning_score": 2
+    },
+    {
+      "url": "https://opendocbot.com/blog/introducing-opendocbot",
+      "author": "dgf18",
+      "item_id": "hn:50339128",
+      "headline": "__OpenDocBot__ brings any LLM into Word, Excel, and PowerPoint — a BYOM alternative to Microsoft's Copilot subscription.",
+      "subreddit": null,
+      "source_text": "Show HN: OpenDocBot - bring your own model to Word, Excel and PowerPoint",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-02T16:20:29+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://opendocbot.com/blog/introducing-opendocbot",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-02T17:03:58.312093+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          9678,
+          9679
+        ],
+        "reason": "Both cover the same Lenny's Newsletter podcast episode featuring Claire's AI agent benchmark and Ezra Mechaber's Figma PM OS segment",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9665
+        ],
+        "reason": "Standalone piece on Gen Z voter concerns heading into 2026 US midterms",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9675
+        ],
+        "reason": "Standalone MIT Tech Review piece on AI coding cost measurement",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9677
+        ],
+        "reason": "Standalone OpenAI announcement about utility collaboration program",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9656
+        ],
+        "reason": "Standalone startup funding and launch story",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9674
+        ],
+        "reason": "Standalone roundup on AI-related issues in 2026 midterm elections and data center politics",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9666
+        ],
+        "reason": "Standalone story about Ryanair cost-cutting and union tensions",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9676
+        ],
+        "reason": "Standalone MIT Tech Review essay on the realization of the semantic web through LLMs",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9657
+        ],
+        "reason": "Standalone story about Grok Bot cost and usage throttling",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9668
+        ],
+        "reason": "Standalone Guardian investigation into Palantir NHS platform usage",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9658
+        ],
+        "reason": "Standalone acquisition story in data center cooling monitoring",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-02T17:04:51.582953",
+      "send_completed_at": "2026-11-02T17:05:00.722694",
+      "event_name": "schedule",
+      "github_run_id": "41485453968",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "97dd2f6f24f26283b00dc12681e1374c430b5709828fe5aec28d7bc5e24d4bfb"
+}
