@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-02T00:00:00Z",
-  "issueCount": 176,
+  "generatedAt": "2026-11-03T00:00:00Z",
+  "issueCount": 177,
   "latestIssue": {
-    "slug": "2026-11-02",
-    "digestDate": "2026-11-02",
-    "displayDate": "Nov 02, 2026",
-    "issueNumber": "61102",
-    "subject": "ISSUE 61102 \u00b7 11 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI agent revolution is officially here \u2014 MIT Tech Review declares the \"agentic web\" has arrived, Figma's PMs are running 31 shared Claude Code skills, and benchmarks are pitting personal AI agents head-to-head \u2014 but so is the reality check. From Musk throttling Grok Bot over \"unsustainably high\" serving costs to Uber burning its entire 2026 AI budget by April to 20 US communities voting on data center bans, today's stories paint a picture of an industry sprinting forward while the bills come due. We've also got a Guardian investigation catching NHS trusts barely touching their \u00a3330M Palantir platform, a startup claiming it can predict human behavior, and Ryanair eyeing AI to dodge fuel costs.",
-    "articleCount": 11,
-    "urlPath": "/issues/2026-11-02.html",
-    "contentHash": "97dd2f6f24f26283b00dc12681e1374c430b5709828fe5aec28d7bc5e24d4bfb"
+    "slug": "2026-11-03",
+    "digestDate": "2026-11-03",
+    "displayDate": "Nov 03, 2026",
+    "issueNumber": "61103",
+    "subject": "ISSUE 61103 \u00b7 14 STORIES \u00b7 11 MIN READ",
+    "intro": "Today's biggest headline sounds like science fiction: MIT researchers demonstrated that GPT-6 Astra can reach into another AI model's brain and rewrite its internal weights \u2014 no retraining required \u2014 turning a 7.9% math score into 48.1% by tweaking just 0.016% of the model's parameters. Meanwhile, the AI industry's insatiable appetite for power is reshaping the physical world, with OpenAI pledging 1,000 MW of emergency backup power in Georgia and the UK's dirtiest power plant cutting a \u00a320 billion deal to become its largest AI data center. From a Kentucky college granting religious accommodation to an AI objector to a UK prosecutor citing an AI-hallucinated case in a child rape trial, today's digest is a vivid snapshot of a technology moving faster than the institutions trying to keep up.",
+    "articleCount": 14,
+    "urlPath": "/issues/2026-11-03.html",
+    "contentHash": "45369a6b2bf08e6138ab56cb615933a4eedb427274f99223a716b108c24b8634"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-03",
+      "digestDate": "2026-11-03",
+      "displayDate": "Nov 03, 2026",
+      "issueNumber": "61103",
+      "subject": "ISSUE 61103 \u00b7 14 STORIES \u00b7 11 MIN READ",
+      "intro": "Today's biggest headline sounds like science fiction: MIT researchers demonstrated that GPT-6 Astra can reach into another AI model's brain and rewrite its internal weights \u2014 no retraining required \u2014 turning a 7.9% math score into 48.1% by tweaking just 0.016% of the model's parameters. Meanwhile, the AI industry's insatiable appetite for power is reshaping the physical world, with OpenAI pledging 1,000 MW of emergency backup power in Georgia and the UK's dirtiest power plant cutting a \u00a320 billion deal to become its largest AI data center. From a Kentucky college granting religious accommodation to an AI objector to a UK prosecutor citing an AI-hallucinated case in a child rape trial, today's digest is a vivid snapshot of a technology moving faster than the institutions trying to keep up.",
+      "articleCount": 14,
+      "urlPath": "/issues/2026-11-03.html",
+      "contentHash": "45369a6b2bf08e6138ab56cb615933a4eedb427274f99223a716b108c24b8634"
+    },
     {
       "slug": "2026-11-02",
       "digestDate": "2026-11-02",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-10-23.html",
       "contentHash": "674d61a8e12c3fe9ef6977c17aba4aafb529f3b437c1e038fe35b5912ae3cbc7"
-    },
-    {
-      "slug": "2026-10-22",
-      "digestDate": "2026-10-22",
-      "displayDate": "Oct 22, 2026",
-      "issueNumber": "61022",
-      "subject": "ISSUE 61022 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "AI models just found what human security researchers missed for a decade \u2014 two critical PHP vulnerabilities affecting 70% of websites, serious enough that governments in Finland, Germany, and the Netherlands pulled systems offline while the NSA urged immediate patching. It's a striking demonstration of AI's growing real-world impact, a theme that runs through today's entire digest, from Meta betting $145 billion on its AI future to Barclays cutting 5,000 jobs in the name of AI productivity to Anthropic's new personal agent getting its first reviews. Whether it's finding hidden bugs, reshaping corporate balance sheets, or landing on your phone as a daily assistant, AI's fingerprints are everywhere today.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-10-22.html",
-      "contentHash": "99c7e2de3f52dfb5573e8e8e173d4c06edd80e697e2592560bb569675375c3a8"
     }
   ]
 }
