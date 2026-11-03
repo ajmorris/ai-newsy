@@ -1,0 +1,918 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-03",
+  "issue_id": "20261103",
+  "subject_line": "ISSUE 61103 · 14 STORIES · 11 MIN READ",
+  "intro": "Today's biggest headline sounds like science fiction: MIT researchers demonstrated that GPT-6 Astra can reach into another AI model's brain and rewrite its internal weights — no retraining required — turning a 7.9% math score into 48.1% by tweaking just 0.016% of the model's parameters. Meanwhile, the AI industry's insatiable appetite for power is reshaping the physical world, with OpenAI pledging 1,000 MW of emergency backup power in Georgia and the UK's dirtiest power plant cutting a £20 billion deal to become its largest AI data center. From a Kentucky college granting religious accommodation to an AI objector to a UK prosecutor citing an AI-hallucinated case in a child rape trial, today's digest is a vivid snapshot of a technology moving faster than the institutions trying to keep up.",
+  "article_count": 14,
+  "stories": [
+    {
+      "id": 9696,
+      "source": "TechCrunch AI",
+      "title": "TechCrunch Founder Summit takes over Boston on November 4",
+      "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch Founder Summit 2026 takes place November 4 at SoWa Power Station in Boston, presented by Fidelity Private Shares. The event features a Build Stage (fundraising, distribution, pitching) and an Impact Stage (scaling, product-market fit, leadership), with speakers from NEA, Fidelity Private Shares, True Ventures, Glasswing Ventures, Bessemer, and Toast co-founder. Roundtable discussions, a live pitch competition, and networking via Braindate are included. Discount tiers offer up to $100 off, BOGO for co-founders, 15% off groups of 4-12, and 30% off for 13+.",
+      "opinion": "A promotional event roundup with no news value beyond the startup community.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?resize=1200,800",
+      "published_at": "2026-11-03T14:00:00+00:00",
+      "fetched_at": "2026-11-03T14:53:03.381174+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9696,
+            "source": "TechCrunch AI",
+            "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
+            "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/"
+          },
+          {
+            "id": 9695,
+            "source": "TechCrunch AI",
+            "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
+            "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [],
+        "is_update": false,
+        "reason": "Both describe the same TechCrunch Founder Summit event on November 4, 2026, at SoWa Power Station in Boston, with overlapping details on stages, speakers, and ticket pricing."
+      }
+    },
+    {
+      "id": 9711,
+      "source": "The Verge AI",
+      "title": "OpenAI pilots Grid Protectors Program in Georgia, pledging 1,000 MW emergency backup",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI announced a Grid Protectors Program pilot at a planned data center in Effingham County, Georgia, promising to release up to 1,000 megawatts during extreme weather or emergencies — enough to run air conditioners in about 700,000 homes. The initiative positions data center power plants as backup resources for local utilities amid growing public opposition and new state laws preventing AI companies from passing energy costs to residents.",
+      "opinion": "A more concrete look at the program than yesterday's announcement, but still fundamentally a PR exercise until the data center is actually built and tested under real emergency conditions.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_A.png?quality=90&strip=all&crop=0%2C10.742221417566%2C100%2C78.515557164868&w=1200",
+      "published_at": "2026-11-02T18:01:30+00:00",
+      "fetched_at": "2026-11-03T14:53:11.780658+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9711,
+            "source": "The Verge AI",
+            "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Describes OpenAI's Grid Protectors Program, the same initiative covered yesterday, now with additional detail about the Georgia pilot site and 1,000 MW capacity."
+      }
+    },
+    {
+      "id": 9706,
+      "source": "Guardian AI",
+      "title": "UK's most polluting power plant strikes £20bn deal to host country's largest AI datacentre",
+      "url": "https://www.theguardian.com/business/2026/nov/03/uk-drax-power-station-ai-datacentre",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Drax, the UK's most polluting power plant in North Yorkshire, has struck a £20bn deal with Brookfield and Radiant to build the country's largest AI datacentre on its site, repurposing existing power infrastructure to supply energy directly to AI computing facilities.",
+      "opinion": "A striking irony — the UK's dirtiest power plant becoming an AI hub — but the deal highlights how AI's enormous energy appetite is reshaping even legacy fossil fuel infrastructure.",
+      "image_url": "https://i.guim.co.uk/img/media/4d21e0d98938a7f32ce928bb10cea2221b6aa2d5/0_0_5600_4480/master/5600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c7a86f1031c4cec9b6a96d3133937e76",
+      "published_at": "2026-11-03T11:55:28+00:00",
+      "fetched_at": "2026-11-03T14:53:06.735788+00:00"
+    },
+    {
+      "id": 9737,
+      "source": "HR Dive",
+      "title": "Kentucky college grants religious accommodation excusing humanist from AI use",
+      "url": "https://www.hrdive.com/news/kentucky-college-grants-religious-accommodation-excusing-humanist-from-ai/873491/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Kentucky college granted a religious accommodation to a humanist who objected to using AI tools, signaling that sincerely held ethical or philosophical beliefs — not just traditional religious ones — may require accommodation under civil rights law when organizations mandate AI use.",
+      "opinion": "A small case with potentially large implications as AI mandates spread across workplaces and schools. Employers should watch this space.",
+      "image_url": "",
+      "published_at": "2026-11-02T20:57:00+00:00",
+      "fetched_at": "2026-11-03T14:53:29.938192+00:00"
+    },
+    {
+      "id": 9713,
+      "source": "MIT Tech Review AI",
+      "title": "'Reverse game theory' proposed as new approach to keeping AI agents in check",
+      "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "MIT Technology Review reports on mechanism design — 'reverse game theory' — as an alignment approach where external incentive structures make it rational for AI agents to behave well regardless of their internal states. Researchers including MIT economist Stephen Morris and Princeton's Elad Hazan propose techniques like cross-checking models against each other, competitive pitting, and pairing oppositely-biased agents.",
+      "opinion": "A genuinely interesting intellectual framework that sidesteps the hard problem of interpretability, though it assumes AI agents are rational optimizers — an assumption that may not hold for all failure modes.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/cake.jpg?resize=1200,600",
+      "published_at": "2026-11-03T10:43:41+00:00",
+      "fetched_at": "2026-11-03T14:53:14.27034+00:00"
+    },
+    {
+      "id": 9716,
+      "source": "OpenAI",
+      "title": "Heimstaden uses ChatGPT Enterprise and Codex to transform property management",
+      "url": "https://openai.com/index/heimstaden",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "European residential real estate management company Heimstaden is using OpenAI's ChatGPT Enterprise and Codex products to transform property management operations, reduce costs, and improve employee productivity across its European operations.",
+      "opinion": "A corporate case study from OpenAI's blog — light on specifics and heavy on marketing framing.",
+      "image_url": "",
+      "published_at": "2026-11-03T08:00:00+00:00",
+      "fetched_at": "2026-11-03T14:53:15.807399+00:00"
+    },
+    {
+      "id": 9709,
+      "source": "The Rundown AI",
+      "title": "MIT shows GPT-6 Astra can improve other AI models by directly rewriting their weights",
+      "url": "https://therundownai.beehiiv.com/p/mit-shows-ai-improving-ai-no-training-required",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "MIT researchers published a study showing OpenAI's GPT-6 Astra can improve other AI models by directly rewriting their internal weights without retraining. In one test, modifying just 0.016% of Alibaba's Qwen model's weights fixed a repetition bug and boosted its math score from 7.9% to 48.1%. The technique was less effective on Google's Gemma 3. Separately, OpenAI introduced LifeVal, a benchmark for everyday tasks where GPT-6 Astra scored 80.6% on average and 100% on 10 of 16 tasks.",
+      "opinion": "The weight-editing result is genuinely novel and raises profound questions about AI models modifying each other — both exciting for debugging and alarming for safety. The LifeVal benchmark feels tacked on.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/98926339-3ac9-4c17-8dbd-e30dd5db8995/mitreserach.png?t=1793657359",
+      "published_at": "2026-11-03T11:00:00+00:00",
+      "fetched_at": "2026-11-03T14:53:10.177289+00:00"
+    },
+    {
+      "id": 9710,
+      "source": "The Verge AI",
+      "title": "Anthropic updates Claude Code to prevent users from cloning specific video games",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic has updated Claude Code's system prompt on Opus 5.5 to prevent users from recreating specific existing video games, citing its usage policy against IP infringement. Users can still create original games, genre-based games, and games from their own designs. Anthropic's Addy Osmani acknowledged the update and said the company will iterate on the balance.",
+      "opinion": "A reasonable IP guardrail, though the line between 'clone' and 'genre-based game inspired by' will be hard to enforce consistently.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-02T18:56:02+00:00",
+      "fetched_at": "2026-11-03T14:53:11.539297+00:00"
+    },
+    {
+      "id": 9705,
+      "source": "Guardian AI",
+      "title": "UK prosecutor cites AI-fabricated case in high court child rape proceedings",
+      "url": "https://www.theguardian.com/technology/2026/nov/03/a-serious-failure-cps-prosecutor-cites-imaginary-case-to-high-court-after-ai-search",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A senior Crown Prosecution Service prosecutor, Ravinder Dhillon, cited a completely fabricated legal precedent in a high court case involving alleged child rape. The nonexistent case was generated by an AI search tool, adding to a growing pattern of dozens of AI-related errors in UK court proceedings.",
+      "opinion": "A deeply troubling incident in one of the most serious possible legal contexts. The justice system's failure to mandate verification of AI-sourced citations is becoming indefensible.",
+      "image_url": "https://i.guim.co.uk/img/media/00c1de4ba03f6807582e6a7932fadc08aaf73c71/676_0_6659_5331/master/6659.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=693645a6f881e7761e508e95eefb4695",
+      "published_at": "2026-11-03T06:00:40+00:00",
+      "fetched_at": "2026-11-03T14:53:06.501313+00:00"
+    },
+    {
+      "id": 9714,
+      "source": "MIT Tech Review AI",
+      "title": "Trump's 'Super Intelligence' rebrand of AI meets uneven government adoption one month in",
+      "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "One month after Trump signed an executive order directing agencies to rebrand 'artificial intelligence' as 'Super Intelligence,' adoption remains inconsistent. The term, which won an X poll over alternatives like 'Extreme Intelligence,' is appearing in government websites and ICE surveillance solicitations, but the Pentagon, FTC, and HHS have stumbled or ignored the change. The article frames this as a political loyalty test in the pattern of other Trump-era rebrands.",
+      "opinion": "The rebrand is transparently a loyalty-signaling mechanism rather than a substantive policy change, but its enforcement dynamics reveal how executive power works through language.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/superai-trump.jpg?resize=1200,600",
+      "published_at": "2026-11-03T04:18:47+00:00",
+      "fetched_at": "2026-11-03T14:53:14.497611+00:00"
+    },
+    {
+      "id": 9707,
+      "source": "Guardian AI",
+      "title": "UK cyber agency warns AI-powered malware 'highly likely' to hit critical infrastructure by 2028",
+      "url": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The UK's National Cyber Security Centre warns that AI-powered malware is 'highly likely' to be used in cyberattacks against critical national infrastructure — including power stations, airports, and hospitals — by 2028, expecting AI to enable ransomware attacks on these systems within two years.",
+      "opinion": "A credible warning from a respected agency, though the 'highly likely by 2028' framing is vague enough to be unfalsifiable in the near term.",
+      "image_url": "https://i.guim.co.uk/img/media/107178ded18463015d20aa92a1ff25a038c7ea31/0_0_4994_3996/master/4994.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dd08c5027a73a8a76ad369f6870be69d",
+      "published_at": "2026-11-03T00:01:32+00:00",
+      "fetched_at": "2026-11-03T14:53:06.98088+00:00"
+    },
+    {
+      "id": 9715,
+      "source": "MIT Tech Review AI",
+      "title": "Only 48% of AI agent-generated insights lead to business-improving actions, report finds",
+      "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A MIT Technology Review report sponsored by Snowflake finds only 48% of agent-generated insights currently lead to business-improving actions (up from 37% a year ago). The primary culprit is insufficient business context (55% of executives), followed by fragmented data (45%). 'Insight leaders' achieving over 70% actionable insights invest in semantic layers and AI governance rather than bigger models. 52% of organizations report 'insight overload' from agents.",
+      "opinion": "Useful data points buried in a vendor-sponsored report. The 'insight overload' finding — agents generating more noise than signal — is the most interesting takeaway.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Snowflake-Social-Card-2026.png?resize=1200,600",
+      "published_at": "2026-11-02T17:00:00+00:00",
+      "fetched_at": "2026-11-03T14:53:14.736122+00:00"
+    },
+    {
+      "id": 9697,
+      "source": "TechCrunch AI",
+      "title": "Apple Watch Series 12 'Audio Intelligence' features enter beta testing",
+      "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Apple is beta testing 'Audio Intelligence' features for Apple Watch Series 12 in iOS 27.3, including sound recognition for deaf/hard-of-hearing users, Shazam song ID, 'Live Rewind' (capturing the last 15 seconds of conversation as text via double-pressing the digital crown), and 'Siri Recaps' (bullet-point conversation summaries). Privacy signals include audible chimes, visual animations, and auto-deletion of snippets after 30 seconds if not saved. The beta launched via Apple India's press release.",
+      "opinion": "Live Rewind and Siri Recaps are genuinely useful accessibility and productivity features, and Apple's privacy-first design with chimes and auto-delete is the right approach for always-listening wearables.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/live-rewind-restaurant.jpg?resize=1200,669",
+      "published_at": "2026-11-03T07:20:00+00:00",
+      "fetched_at": "2026-11-03T14:53:03.672866+00:00"
+    },
+    {
+      "id": 9712,
+      "source": "The Verge AI",
+      "title": "New York Times and other publishers sue Brave for AI scraping and paywall bypassing",
+      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The New York Times, New York Daily News, Chicago Tribune, and Orlando Sentinel have sued Brave Software, alleging it unlawfully scraped their content to build the Brave Index, which was sold to Anthropic, Perplexity, Mistral, xAI, and Cohere for model training. The lawsuits also target Brave's paywall-blocker feature. Publishers claim Brave never sought permission, never compensated them, and circumvented access-blocking measures.",
+      "opinion": "A significant legal escalation that opens a new front in the AI copyright wars — targeting the intermediary data broker rather than the AI companies directly.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2289911637.jpg?quality=90&strip=all&crop=0%2C10.232235952618%2C100%2C79.535528094764&w=1200",
+      "published_at": "2026-11-02T17:51:19+00:00",
+      "fetched_at": "2026-11-03T14:53:12.018524+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9696,
+          "source": "TechCrunch AI",
+          "title": "TechCrunch Founder Summit takes over Boston on November 4",
+          "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch Founder Summit 2026 takes place November 4 at SoWa Power Station in Boston, presented by Fidelity Private Shares. The event features a Build Stage (fundraising, distribution, pitching) and an Impact Stage (scaling, product-market fit, leadership), with speakers from NEA, Fidelity Private Shares, True Ventures, Glasswing Ventures, Bessemer, and Toast co-founder. Roundtable discussions, a live pitch competition, and networking via Braindate are included. Discount tiers offer up to $100 off, BOGO for co-founders, 15% off groups of 4-12, and 30% off for 13+.",
+          "opinion": "A promotional event roundup with no news value beyond the startup community.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?resize=1200,800",
+          "published_at": "2026-11-03T14:00:00+00:00",
+          "fetched_at": "2026-11-03T14:53:03.381174+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9696,
+                "source": "TechCrunch AI",
+                "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
+                "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/"
+              },
+              {
+                "id": 9695,
+                "source": "TechCrunch AI",
+                "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on Nov. 4",
+                "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [],
+            "is_update": false,
+            "reason": "Both describe the same TechCrunch Founder Summit event on November 4, 2026, at SoWa Power Station in Boston, with overlapping details on stages, speakers, and ticket pricing."
+          }
+        },
+        {
+          "id": 9711,
+          "source": "The Verge AI",
+          "title": "OpenAI pilots Grid Protectors Program in Georgia, pledging 1,000 MW emergency backup",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI announced a Grid Protectors Program pilot at a planned data center in Effingham County, Georgia, promising to release up to 1,000 megawatts during extreme weather or emergencies — enough to run air conditioners in about 700,000 homes. The initiative positions data center power plants as backup resources for local utilities amid growing public opposition and new state laws preventing AI companies from passing energy costs to residents.",
+          "opinion": "A more concrete look at the program than yesterday's announcement, but still fundamentally a PR exercise until the data center is actually built and tested under real emergency conditions.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_A.png?quality=90&strip=all&crop=0%2C10.742221417566%2C100%2C78.515557164868&w=1200",
+          "published_at": "2026-11-02T18:01:30+00:00",
+          "fetched_at": "2026-11-03T14:53:11.780658+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9711,
+                "source": "The Verge AI",
+                "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Describes OpenAI's Grid Protectors Program, the same initiative covered yesterday, now with additional detail about the Georgia pilot site and 1,000 MW capacity."
+          }
+        },
+        {
+          "id": 9706,
+          "source": "Guardian AI",
+          "title": "UK's most polluting power plant strikes £20bn deal to host country's largest AI datacentre",
+          "url": "https://www.theguardian.com/business/2026/nov/03/uk-drax-power-station-ai-datacentre",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Drax, the UK's most polluting power plant in North Yorkshire, has struck a £20bn deal with Brookfield and Radiant to build the country's largest AI datacentre on its site, repurposing existing power infrastructure to supply energy directly to AI computing facilities.",
+          "opinion": "A striking irony — the UK's dirtiest power plant becoming an AI hub — but the deal highlights how AI's enormous energy appetite is reshaping even legacy fossil fuel infrastructure.",
+          "image_url": "https://i.guim.co.uk/img/media/4d21e0d98938a7f32ce928bb10cea2221b6aa2d5/0_0_5600_4480/master/5600.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c7a86f1031c4cec9b6a96d3133937e76",
+          "published_at": "2026-11-03T11:55:28+00:00",
+          "fetched_at": "2026-11-03T14:53:06.735788+00:00"
+        },
+        {
+          "id": 9737,
+          "source": "HR Dive",
+          "title": "Kentucky college grants religious accommodation excusing humanist from AI use",
+          "url": "https://www.hrdive.com/news/kentucky-college-grants-religious-accommodation-excusing-humanist-from-ai/873491/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Kentucky college granted a religious accommodation to a humanist who objected to using AI tools, signaling that sincerely held ethical or philosophical beliefs — not just traditional religious ones — may require accommodation under civil rights law when organizations mandate AI use.",
+          "opinion": "A small case with potentially large implications as AI mandates spread across workplaces and schools. Employers should watch this space.",
+          "image_url": "",
+          "published_at": "2026-11-02T20:57:00+00:00",
+          "fetched_at": "2026-11-03T14:53:29.938192+00:00"
+        },
+        {
+          "id": 9713,
+          "source": "MIT Tech Review AI",
+          "title": "'Reverse game theory' proposed as new approach to keeping AI agents in check",
+          "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "MIT Technology Review reports on mechanism design — 'reverse game theory' — as an alignment approach where external incentive structures make it rational for AI agents to behave well regardless of their internal states. Researchers including MIT economist Stephen Morris and Princeton's Elad Hazan propose techniques like cross-checking models against each other, competitive pitting, and pairing oppositely-biased agents.",
+          "opinion": "A genuinely interesting intellectual framework that sidesteps the hard problem of interpretability, though it assumes AI agents are rational optimizers — an assumption that may not hold for all failure modes.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/cake.jpg?resize=1200,600",
+          "published_at": "2026-11-03T10:43:41+00:00",
+          "fetched_at": "2026-11-03T14:53:14.27034+00:00"
+        },
+        {
+          "id": 9716,
+          "source": "OpenAI",
+          "title": "Heimstaden uses ChatGPT Enterprise and Codex to transform property management",
+          "url": "https://openai.com/index/heimstaden",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "European residential real estate management company Heimstaden is using OpenAI's ChatGPT Enterprise and Codex products to transform property management operations, reduce costs, and improve employee productivity across its European operations.",
+          "opinion": "A corporate case study from OpenAI's blog — light on specifics and heavy on marketing framing.",
+          "image_url": "",
+          "published_at": "2026-11-03T08:00:00+00:00",
+          "fetched_at": "2026-11-03T14:53:15.807399+00:00"
+        },
+        {
+          "id": 9709,
+          "source": "The Rundown AI",
+          "title": "MIT shows GPT-6 Astra can improve other AI models by directly rewriting their weights",
+          "url": "https://therundownai.beehiiv.com/p/mit-shows-ai-improving-ai-no-training-required",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "MIT researchers published a study showing OpenAI's GPT-6 Astra can improve other AI models by directly rewriting their internal weights without retraining. In one test, modifying just 0.016% of Alibaba's Qwen model's weights fixed a repetition bug and boosted its math score from 7.9% to 48.1%. The technique was less effective on Google's Gemma 3. Separately, OpenAI introduced LifeVal, a benchmark for everyday tasks where GPT-6 Astra scored 80.6% on average and 100% on 10 of 16 tasks.",
+          "opinion": "The weight-editing result is genuinely novel and raises profound questions about AI models modifying each other — both exciting for debugging and alarming for safety. The LifeVal benchmark feels tacked on.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/98926339-3ac9-4c17-8dbd-e30dd5db8995/mitreserach.png?t=1793657359",
+          "published_at": "2026-11-03T11:00:00+00:00",
+          "fetched_at": "2026-11-03T14:53:10.177289+00:00"
+        },
+        {
+          "id": 9710,
+          "source": "The Verge AI",
+          "title": "Anthropic updates Claude Code to prevent users from cloning specific video games",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic has updated Claude Code's system prompt on Opus 5.5 to prevent users from recreating specific existing video games, citing its usage policy against IP infringement. Users can still create original games, genre-based games, and games from their own designs. Anthropic's Addy Osmani acknowledged the update and said the company will iterate on the balance.",
+          "opinion": "A reasonable IP guardrail, though the line between 'clone' and 'genre-based game inspired by' will be hard to enforce consistently.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-02T18:56:02+00:00",
+          "fetched_at": "2026-11-03T14:53:11.539297+00:00"
+        },
+        {
+          "id": 9705,
+          "source": "Guardian AI",
+          "title": "UK prosecutor cites AI-fabricated case in high court child rape proceedings",
+          "url": "https://www.theguardian.com/technology/2026/nov/03/a-serious-failure-cps-prosecutor-cites-imaginary-case-to-high-court-after-ai-search",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A senior Crown Prosecution Service prosecutor, Ravinder Dhillon, cited a completely fabricated legal precedent in a high court case involving alleged child rape. The nonexistent case was generated by an AI search tool, adding to a growing pattern of dozens of AI-related errors in UK court proceedings.",
+          "opinion": "A deeply troubling incident in one of the most serious possible legal contexts. The justice system's failure to mandate verification of AI-sourced citations is becoming indefensible.",
+          "image_url": "https://i.guim.co.uk/img/media/00c1de4ba03f6807582e6a7932fadc08aaf73c71/676_0_6659_5331/master/6659.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=693645a6f881e7761e508e95eefb4695",
+          "published_at": "2026-11-03T06:00:40+00:00",
+          "fetched_at": "2026-11-03T14:53:06.501313+00:00"
+        },
+        {
+          "id": 9714,
+          "source": "MIT Tech Review AI",
+          "title": "Trump's 'Super Intelligence' rebrand of AI meets uneven government adoption one month in",
+          "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "One month after Trump signed an executive order directing agencies to rebrand 'artificial intelligence' as 'Super Intelligence,' adoption remains inconsistent. The term, which won an X poll over alternatives like 'Extreme Intelligence,' is appearing in government websites and ICE surveillance solicitations, but the Pentagon, FTC, and HHS have stumbled or ignored the change. The article frames this as a political loyalty test in the pattern of other Trump-era rebrands.",
+          "opinion": "The rebrand is transparently a loyalty-signaling mechanism rather than a substantive policy change, but its enforcement dynamics reveal how executive power works through language.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/superai-trump.jpg?resize=1200,600",
+          "published_at": "2026-11-03T04:18:47+00:00",
+          "fetched_at": "2026-11-03T14:53:14.497611+00:00"
+        },
+        {
+          "id": 9707,
+          "source": "Guardian AI",
+          "title": "UK cyber agency warns AI-powered malware 'highly likely' to hit critical infrastructure by 2028",
+          "url": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The UK's National Cyber Security Centre warns that AI-powered malware is 'highly likely' to be used in cyberattacks against critical national infrastructure — including power stations, airports, and hospitals — by 2028, expecting AI to enable ransomware attacks on these systems within two years.",
+          "opinion": "A credible warning from a respected agency, though the 'highly likely by 2028' framing is vague enough to be unfalsifiable in the near term.",
+          "image_url": "https://i.guim.co.uk/img/media/107178ded18463015d20aa92a1ff25a038c7ea31/0_0_4994_3996/master/4994.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dd08c5027a73a8a76ad369f6870be69d",
+          "published_at": "2026-11-03T00:01:32+00:00",
+          "fetched_at": "2026-11-03T14:53:06.98088+00:00"
+        },
+        {
+          "id": 9715,
+          "source": "MIT Tech Review AI",
+          "title": "Only 48% of AI agent-generated insights lead to business-improving actions, report finds",
+          "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A MIT Technology Review report sponsored by Snowflake finds only 48% of agent-generated insights currently lead to business-improving actions (up from 37% a year ago). The primary culprit is insufficient business context (55% of executives), followed by fragmented data (45%). 'Insight leaders' achieving over 70% actionable insights invest in semantic layers and AI governance rather than bigger models. 52% of organizations report 'insight overload' from agents.",
+          "opinion": "Useful data points buried in a vendor-sponsored report. The 'insight overload' finding — agents generating more noise than signal — is the most interesting takeaway.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/Snowflake-Social-Card-2026.png?resize=1200,600",
+          "published_at": "2026-11-02T17:00:00+00:00",
+          "fetched_at": "2026-11-03T14:53:14.736122+00:00"
+        },
+        {
+          "id": 9697,
+          "source": "TechCrunch AI",
+          "title": "Apple Watch Series 12 'Audio Intelligence' features enter beta testing",
+          "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Apple is beta testing 'Audio Intelligence' features for Apple Watch Series 12 in iOS 27.3, including sound recognition for deaf/hard-of-hearing users, Shazam song ID, 'Live Rewind' (capturing the last 15 seconds of conversation as text via double-pressing the digital crown), and 'Siri Recaps' (bullet-point conversation summaries). Privacy signals include audible chimes, visual animations, and auto-deletion of snippets after 30 seconds if not saved. The beta launched via Apple India's press release.",
+          "opinion": "Live Rewind and Siri Recaps are genuinely useful accessibility and productivity features, and Apple's privacy-first design with chimes and auto-delete is the right approach for always-listening wearables.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/live-rewind-restaurant.jpg?resize=1200,669",
+          "published_at": "2026-11-03T07:20:00+00:00",
+          "fetched_at": "2026-11-03T14:53:03.672866+00:00"
+        },
+        {
+          "id": 9712,
+          "source": "The Verge AI",
+          "title": "New York Times and other publishers sue Brave for AI scraping and paywall bypassing",
+          "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The New York Times, New York Daily News, Chicago Tribune, and Orlando Sentinel have sued Brave Software, alleging it unlawfully scraped their content to build the Brave Index, which was sold to Anthropic, Perplexity, Mistral, xAI, and Cohere for model training. The lawsuits also target Brave's paywall-blocker feature. Publishers claim Brave never sought permission, never compensated them, and circumvented access-blocking measures.",
+          "opinion": "A significant legal escalation that opens a new front in the AI copyright wars — targeting the intermediary data broker rather than the AI companies directly.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2289911637.jpg?quality=90&strip=all&crop=0%2C10.232235952618%2C100%2C79.535528094764&w=1200",
+          "published_at": "2026-11-02T17:51:19+00:00",
+          "fetched_at": "2026-11-03T14:53:12.018524+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/KanikaBK/status/2117459002804318716",
+      "author": "KanikaBK",
+      "headline": "Karpathy had Claude read __43 million Hacker News comments__ to surface the most-recommended videos from 20 years of threads — and the same pipeline is buildable by anyone.",
+      "tweet_id": "40d1eba9-b6bc-810e-8338-d0c64fdb8b3f",
+      "source_text": "THIS IS CRAZY!!\n\n43 MILLION COMMENTS. 6,454 VIDEOS. 2 HOURS.\n\nKarpathy had Claude read 20 years of Hacker News comments and keep only the videos people kept recommending again and again.\n\n3.5+ M people saw his post, and I still keep meeting people who have no idea you can build the same thing yourself.\n\nMy article shows exactly how, 3 different ways.",
+      "created_time": "2026-11-03T04:57:00.000Z",
+      "canonical_url": "https://twitter.com/KanikaBK/status/2117459002804318716",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0x_kaize/status/2117302013985972356",
+      "author": "0x_kaize",
+      "headline": "@0x_kaize built Saver Bot after finding one news digest was eating __28% of a week's Grok usage__ — it now maps every spike, flags looping routines, and ranks fixes by impact.",
+      "tweet_id": "40d1eba9-b6bc-815b-8054-e9f8c63dc4c3",
+      "source_text": "I built a Grok Bot that watches my Grok Bot usage and tells me HOW TO SAVE\n\nAfter usage meters jumped overnight for thousands of people with nothing running, everyone was furious, so I built my own watchdog\n\nIt’s called Saver Bot, and it shows:\n\n> Where my usage goes, broken down by bot, routine, day and activity\n\n> An animated dashboard with a 30-day trend\n\n> Spike days, looping routines and the bot eating my week\n\n> Saving tips ranked by impact\n\nNo made-up token counts or fake forecasts, just real usage data\n\nThe first check already paid off. One news digest routine was 28% of my week. And when everyone's meter jumped on Oct 31, my daily usage proved the spike wasn't me\n\nInstall it and it:\n\n1/ Reads your usage and when it resets\n2/ Builds your dashboard\n3/ Flags anything unusual\n4/ Suggests up to 3 fixes, biggest first\n5/ Applies the one you pick, with an undo\n\nAnd yes, the template is completely Free: https://t.co/u6aY4YGFQs",
+      "created_time": "2026-11-03T04:57:00.000Z",
+      "canonical_url": "https://twitter.com/0x_kaize/status/2117302013985972356",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/bot/status/2117349540168876334",
+      "author": "bot",
+      "headline": "One team built a __Data Bot that gives every employee on-demand access to a data scientist__, letting PMs investigate product usage and marketers measure campaigns without a ticket queue.",
+      "tweet_id": "40d1eba9-b6bc-81c8-915c-f9cab653d507",
+      "source_text": "Our team built a Team Bot that gives everyone at the company on-demand access to a data scientist.\n\nPMs use Data Bot to investigate product usage, marketers use it to measure campaign results, and teams across the company use it to build dashboards and track key metrics. https://t.co/dM5b5z1XUF",
+      "created_time": "2026-11-03T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/bot/status/2117349540168876334",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xCodez/status/2117329233110507981",
+      "author": "0xCodez",
+      "headline": "0xCodez canceled their $199/year WHOOP subscription and __reverse-engineered the entire app__ for Apple Watch with Claude Opus 5.5 in 2 hours — then open-sourced it.",
+      "tweet_id": "40d1eba9-b6bc-81d6-95bc-eb51046cb809",
+      "source_text": "I just canceled my $199 / year WHOOP subscription, and…\n\nreverse-engineered their entire app for my Apple Watch with Opus 5.5 in 2 hours, then i made it open-source:\n\n→ https://t.co/JGXFCr001i\n\nrecovery. strain. sleep. one beating orb. free and open-source.\n\nwhat it does:\n\n→ Recovery 0–100% from your overnight HRV, resting heart rate and sleep\n→ Strain 0-21 with a daily target based on your recovery\n→ how much sleep you need tonight + a recommended bedtime\n→ stress monitor, health monitor and a “body age” estimate\n→ a journal that shows which habits help or hurt your recovery\n→ an AI coach that runs on-device. no API key\n→ an Apple Watch app, light and dark mode\n→ no subscription, no account. your data never leaves your iPhone\n\nFind full prompt below ↓\n\nThen, read how to rebuild any app from scratch with Opus 5.5 in the article below.",
+      "created_time": "2026-11-03T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/0xCodez/status/2117329233110507981",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2117240373471068509",
+      "author": "Zephyr_hg",
+      "headline": "A Grok Bot prompt that scans your __X DMs for your audience's repeating questions__ — and generates a post or product idea for each one.",
+      "tweet_id": "40d1eba9-b6bc-814a-9657-dbdf39b15afc",
+      "source_text": "Drop this into Grok Bot and let it read your inbox for you, it will change how you pick what to make next...\n\nIt reads your DMs and replies and hands you the questions your audience keeps asking, with a post or product idea for each one.\n\nSteal the full prompt: https://t.co/JEXeElVlss https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-03T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2117240373471068509",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Divyyanshishrma/status/2117231951707066503",
+      "author": "Divyyanshishrma",
+      "headline": "Everything you need to become a __Claude Certified Architect__ in one place — 13 free courses, exam guide, practice questions, and MCP docs.",
+      "tweet_id": "40d1eba9-b6bc-81ba-a325-ffd617661989",
+      "source_text": "Become a Claude Certified Architect\n\nHere are all the required resource in one place: (save it)\n\nTraining courses: https://t.co/RDFGv4W1i2 (13 free courses)\nCookbook: https://t.co/1oYip6mo8V…\nExam Guide: https://t.co/DMYGbJ8oP8…\nPractice questions: https://t.co/Wr4aXkRp2v (free)\nMCP documentation: https://t.co/kFv5R2VW5o (free)\nAPI documentation: https://t.co/zwCkwHWymI (free)\nPartner Network: https://t.co/29FGAtFJLb (free to join)\nLink to join: https://t.co/x5F1Esjoss…\nPersonal Playbook someone created after the exam: https://t.co/3Y360ZRjWE…",
+      "created_time": "2026-11-03T01:42:00.000Z",
+      "canonical_url": "https://twitter.com/Divyyanshishrma/status/2117231951707066503",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/tomcrawshaw01/status/2117255935366480032",
+      "author": "tomcrawshaw01",
+      "headline": "Tom Crawshaw grew his site from __6 to 1,260 clicks a day in 90 days__ by tracking what buyers type into ChatGPT and optimizing for AI search answers.",
+      "tweet_id": "40c1eba9-b6bc-8197-9b2f-e53e488e1fda",
+      "source_text": "I started using AI search strategies on my own website 90 days ago, and it's gone from six clicks a day to over 1,260 clicks in the last 28 days.\n\nMost of that work starts with what your buyers type into ChatGPT, and which businesses get named in the answer.\n\nSo I wrote the whole process up as a free 7-step plan.\n\nIt shows you how to pick the buyer questions worth tracking, and how to measure every change against a starting point you recorded first.\n\nIt's all in the article below 👇",
+      "created_time": "2026-11-02T21:37:00.000Z",
+      "canonical_url": "https://twitter.com/tomcrawshaw01/status/2117255935366480032",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/webjuice_ie/status/2117248863505690703",
+      "author": "webjuice_ie",
+      "headline": "webjuice_ie migrated __40 WordPress sites to Astro on Cloudflare Workers__ for free — saving ~$90/month and dropping the endless plugin maintenance.",
+      "tweet_id": "40c1eba9-b6bc-814a-8d0e-e9c70caa4af5",
+      "source_text": "We moved 40 WordPress sites to Astro. They now run on Cloudflare Workers for free.\n\nIt took us 2-3 months. Before that we paid for Hetzner servers plus Plesk to keep them alive. Updates, plugins, security patches, the usual WordPress tax.\n\nWhat we did:\n1. Pulled the content out of WordPress\n2. Rebuilt each site in Astro, static pages, no plugins\n3. Deployed to Cloudflare Workers\n4. Switched DNS site by site and checked each one live\n5. Backed everything up, then cancelled Hetzner and Plesk\n\nResult: around $90 a month saved and the sites are faster and all we can control with AI agents team\n\nStill running WordPress for clients in 2026?",
+      "created_time": "2026-11-02T21:37:00.000Z",
+      "canonical_url": "https://twitter.com/webjuice_ie/status/2117248863505690703",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/KanikaBK/status/2117308009273815504",
+      "author": "KanikaBK",
+      "headline": "KanikaBK used a single Claude prompt to build a __personal YouTube clone modeled on Karpathy's HackerTube__ — no login, no account, three different implementation approaches.",
+      "tweet_id": "40c1eba9-b6bc-81d3-aded-db4181173ccb",
+      "source_text": "Paste this into Claude tonight, it will fix your YouTube...\n\nit will build your own YouTube like Karpathy's HackerTube with no login.\n\nSave this before it takes over your timeline:\n\n(There is more...I tried to build the same in 3 different ways. Everything is in the article)\n\n🔖Save for later",
+      "created_time": "2026-11-02T17:52:00.000Z",
+      "canonical_url": "https://twitter.com/KanikaBK/status/2117308009273815504",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/JamesonCamp/status/2117463847108059205",
+      "author": "JamesonCamp",
+      "headline": "JamesonCamp spends $1k/month on Codex, Claude Code, and Grok — and argues the labs are running __the Uber playbook__, keeping prices low until IPO demands force margins up.",
+      "tweet_id": "40d1eba9-b6bc-81d4-be8e-f0c344e20593",
+      "source_text": "I spend about $1,000 a month on Codex, Claude code, and Grok. \n\nBy my math I'm getting $10,000 to $20,000 of usage out of it.\n\nThat math won't last.\n\nOpenAI and Anthropic are both heading toward IPOs, and public investors are going to want margins.\n\nRight now the labs eat the cost on heavy users to get everyone hooked. It's the Uber playbook. \n\nCheap rides until everyone depends on it, then the price goes up.\n\nTick tock... Time is gonna run out when these guys go public!",
+      "created_time": "2026-11-03T04:57:00.000Z",
+      "canonical_url": "https://twitter.com/JamesonCamp/status/2117463847108059205",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/zeke/status/2117293034060878321",
+      "author": "zeke",
+      "headline": "Zeke says the fastest iOS/macOS onramp in 2026 is to __point your agent at the GitHub profiles of @fayazara and @mattt__ as reference material.",
+      "tweet_id": "40d1eba9-b6bc-81a8-85ed-f3e36bfdd392",
+      "source_text": "Building an iOS or MacOS app in 2026 and have no idea what you're doing? Point your agent at the GitHub profiles of @fayazara and @mattt for reference and you'll be fine.\n\nhttps://t.co/C8CgQzqxPS\nhttps://t.co/XlsXoIoWdU",
+      "created_time": "2026-11-03T04:52:00.000Z",
+      "canonical_url": "https://twitter.com/zeke/status/2117293034060878321",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/pfernan95dev/status/2117440627109400939",
+      "author": "pfernan95dev",
+      "headline": "The __$99 Apple developer account__ is more generous than most devs realize: 25 CI/CD compute hours, 1 PB of CloudKit storage, an on-device Foundation Models LLM, and a halved App Store cut.",
+      "tweet_id": "40d1eba9-b6bc-8144-9e79-f5439f6c5ff6",
+      "source_text": "Your $99 Apple developer account is the most underrated free tier:\n\n• Xcode Cloud: 25 compute hours a month of CI/CD\n• CloudKit: up to 1 PB of free iCloud storage per app\n• Background Assets: 200 GB of Apple-hosted downloads\n• WeatherKit: 500K calls a month\n• TestFlight: 10,000 external testers\n• Foundation Models: an on-device LLM, no API keys\n• Small Business Program: 15% commission instead of 30%\n\nmost indie devs pay for half of this somewhere else.",
+      "created_time": "2026-11-03T03:52:00.000Z",
+      "canonical_url": "https://twitter.com/pfernan95dev/status/2117440627109400939",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/AnthropicAI/status/2117343929960112486",
+      "author": "AnthropicAI",
+      "headline": "__Anthropic's paid AI safety residency__ is open to academics, technical founders, and staff engineers — no ML background required. Deadline: November 22.",
+      "tweet_id": "40c1eba9-b6bc-813d-8b23-f1ee879a542e",
+      "source_text": "Applications are now open for the Anthropic Residency, a paid, fixed-term research program for academics, technical founders, and staff-level engineers who want to make AI safe and beneficial for everyone. No ML background is required.\n\nApply by November 22: https://t.co/uhcXhKTgnO",
+      "created_time": "2026-11-02T22:27:00.000Z",
+      "canonical_url": "https://twitter.com/AnthropicAI/status/2117343929960112486",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://www.youtube.com/watch?v=LCwQw21zLHA",
+      "author": "lroe",
+      "item_id": "hn:50352442",
+      "headline": "Weight-space programming gets a visual treatment in __this 16-minute explainer__ — one of the cleaner on-ramps to the research area.",
+      "subreddit": null,
+      "source_text": "Weight-space programming explained visually in 16 mins",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:29:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=LCwQw21zLHA",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/elithril/blender-kiln",
+      "author": "elithril",
+      "item_id": "hn:50352686",
+      "headline": "__Blender-kiln__ is an open-source tool that lets Claude build and measure 3D models directly inside Blender.",
+      "subreddit": null,
+      "source_text": "Blender-kiln – Claude builds 3D models in Blender and measures them",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:48:59+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/elithril/blender-kiln",
+      "learning_score": 2
+    },
+    {
+      "url": "https://turso.tech/blog/2-million-databases-and-counting-the-architecture-behind-saunas-ai-teammate",
+      "author": "argoeris",
+      "item_id": "hn:50352647",
+      "headline": "Sauna's AI teammate now runs across __2 million databases__ — and the team published the full architecture behind it.",
+      "subreddit": null,
+      "source_text": "2M databases and counting: the architecture behind Sauna's AI teammate",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:46:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://turso.tech/blog/2-million-databases-and-counting-the-architecture-behind-saunas-ai-teammate",
+      "learning_score": 2
+    },
+    {
+      "url": "https://vault.hyperiux.com",
+      "author": "bvarshney",
+      "item_id": "hn:50352620",
+      "headline": "Hyperiux Vault brings __MCP-powered React and Next.js interaction patterns__ to AI-assisted coding workflows.",
+      "subreddit": null,
+      "source_text": "Show HN: React and NextJS Interactions with MCP for AI Coding – Hyperiux Vault",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:43:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://vault.hyperiux.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://machinelearningmastery.com/choosing-an-llm-inference-optimization-technique-a-decision-tree-approach/",
+      "author": "eigenBasis",
+      "item_id": "hn:50352595",
+      "headline": "Decision-tree guide to __choosing the right LLM inference optimization__ — quantization, speculative decoding, or batching.",
+      "subreddit": null,
+      "source_text": "Choosing an LLM Inference Optimization Technique: A Decision-Tree Approach",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:42:05+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://machinelearningmastery.com/choosing-an-llm-inference-optimization-technique-a-decision-tree-approach",
+      "learning_score": 2
+    },
+    {
+      "url": "https://howtodisableaioverview.com/",
+      "author": "fireflywedding",
+      "item_id": "hn:50352590",
+      "headline": "Demand for __disabling Google's AI Overview__ is strong enough someone built a whole site for it.",
+      "subreddit": null,
+      "source_text": "Show HN: How to Disable Google AI Overview",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:41:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://howtodisableaioverview.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://blog.tripton.dev/rooting-an-echo-plus-2-with-ai/",
+      "author": "speckx",
+      "item_id": "hn:50352557",
+      "headline": "Using AI to __root an Echo Plus 2__ — someone documented the full process in a surprisingly clean walkthrough.",
+      "subreddit": null,
+      "source_text": "Rooting an Echo Plus 2 with AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:39:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.tripton.dev/rooting-an-echo-plus-2-with-ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.ainvest.com/news/intel-45-october-foundry-bet-repricing-19-20-foundry-dollars-2611/",
+      "author": "AInvest",
+      "item_id": "hn:50352531",
+      "headline": "Intel's __45% October rally__ looks more like the market repricing its foundry bet than any fundamental shift.",
+      "subreddit": null,
+      "source_text": "Intel's 45% October is the foundry bet repricing",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:38:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ainvest.com/news/intel-45-october-foundry-bet-repricing-19-20-foundry-dollars-2611",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks",
+      "author": "sumnole",
+      "item_id": "hn:50352520",
+      "headline": "Anthropic confirms __new Claude Code limits blocking game cloning__ and reverse engineering, with Opus 5.5 also actively refusing such tasks.",
+      "subreddit": null,
+      "source_text": "New Claude Limits to Prevent Game Cloning and Reverse Engineering",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:37:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks",
+      "learning_score": 2
+    },
+    {
+      "url": "https://qlabs.sh/research/parameters",
+      "author": "frozenseven",
+      "item_id": "hn:50352518",
+      "headline": "QLabs Research makes the case for __quadrillion-parameter transformers__ and what it actually takes to train them.",
+      "subreddit": null,
+      "source_text": "Quadrillion-parameter transformers and how to train them",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:37:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://qlabs.sh/research/parameters",
+      "learning_score": 2
+    },
+    {
+      "url": "https://kliqo.ai/tools/ai-page-audit",
+      "author": "crovillas",
+      "item_id": "hn:50352485",
+      "headline": "Kliqo's new tool shows you __how AI crawlers like ChatGPT and Claude see your web pages__ — handy for AI-era SEO.",
+      "subreddit": null,
+      "source_text": "Show HN: See a web page the way ChatGPT and Claude's crawlers see it",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:34:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://kliqo.ai/tools/ai-page-audit",
+      "learning_score": 2
+    },
+    {
+      "url": "https://toolang.ai/",
+      "author": "xby",
+      "item_id": "hn:50352456",
+      "headline": "Toolang asks __what if agent loops were just functions__, turning agentic workflows into composable, testable primitives.",
+      "subreddit": null,
+      "source_text": "Show HN: Toolang – What if agent loops were functions?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-03T14:31:56+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://toolang.ai",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [
+    {
+      "id": 9716,
+      "headline": "Heimstaden uses ChatGPT Enterprise and Codex to transform property management",
+      "url": "https://openai.com/index/heimstaden",
+      "source": "OpenAI",
+      "summary": "European residential real estate management company Heimstaden is using OpenAI's ChatGPT Enterprise and Codex products to transform property management operations, reduce costs, and improve employee productivity across its European operations.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-03T08:00:00+00:00"
+    },
+    {
+      "id": 9714,
+      "headline": "Trump's 'Super Intelligence' rebrand of AI meets uneven government adoption one month in",
+      "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+      "source": "MIT Tech Review AI",
+      "summary": "One month after Trump signed an executive order directing agencies to rebrand 'artificial intelligence' as 'Super Intelligence,' adoption remains inconsistent. The term, which won an X poll over alternatives like 'Extreme Intelligence,' is appearing in government websites and ICE surveillance solicitations, but the Pentagon, FTC, and HHS have stumbled or ignored the change. The article frames this as a political loyalty test in the pattern of other Trump-era rebrands.",
+      "tag": "ethics",
+      "meaning": "Decide the boundary before the tool is in daily use.",
+      "published_at": "2026-11-03T04:18:47+00:00"
+    },
+    {
+      "id": 9711,
+      "headline": "OpenAI pilots Grid Protectors Program in Georgia, pledging 1,000 MW emergency backup",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+      "source": "The Verge AI",
+      "summary": "OpenAI announced a Grid Protectors Program pilot at a planned data center in Effingham County, Georgia, promising to release up to 1,000 megawatts during extreme weather or emergencies — enough to run air conditioners in about 700,000 homes. The initiative positions data center power plants as backup resources for local utilities amid growing public opposition and new state laws preventing AI companies from passing energy costs to residents.",
+      "tag": "environment",
+      "meaning": "Count the energy and resource cost next to the capability gain.",
+      "published_at": "2026-11-02T18:01:30+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9711,
+            "source": "The Verge AI",
+            "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Describes OpenAI's Grid Protectors Program, the same initiative covered yesterday, now with additional detail about the Georgia pilot site and 1,000 MW capacity."
+      }
+    },
+    {
+      "id": 9737,
+      "headline": "Kentucky college grants religious accommodation excusing humanist from AI use",
+      "url": "https://www.hrdive.com/news/kentucky-college-grants-religious-accommodation-excusing-humanist-from-ai/873491/",
+      "source": "HR Dive",
+      "summary": "A Kentucky college granted a religious accommodation to a humanist who objected to using AI tools, signaling that sincerely held ethical or philosophical beliefs — not just traditional religious ones — may require accommodation under civil rights law when organizations mandate AI use.",
+      "tag": "ethics",
+      "meaning": "Decide the boundary before the tool is in daily use.",
+      "published_at": "2026-11-02T20:57:00+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-11-03T15:08:54.095277+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9695,
+          9696
+        ],
+        "reason": "Both describe the same TechCrunch Founder Summit event on November 4, 2026, at SoWa Power Station in Boston, with overlapping details on stages, speakers, and ticket pricing.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9711
+        ],
+        "reason": "Describes OpenAI's Grid Protectors Program, the same initiative covered yesterday, now with additional detail about the Georgia pilot site and 1,000 MW capacity.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9706
+        ],
+        "reason": "Standalone story about Drax power plant repurposing for UK AI datacentre.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9737
+        ],
+        "reason": "Standalone story about religious accommodation for AI objection at a Kentucky college.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9713
+        ],
+        "reason": "Standalone story about mechanism design as an AI alignment approach.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9716
+        ],
+        "reason": "Standalone OpenAI customer story about Heimstaden.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9709
+        ],
+        "reason": "Standalone story about MIT research on GPT-6 Astra rewriting other models' weights.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9710
+        ],
+        "reason": "Standalone story about Anthropic's Claude Code policy change on video game clones.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9705
+        ],
+        "reason": "Standalone story about a UK prosecutor citing AI-fabricated legal precedent.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9714
+        ],
+        "reason": "Standalone story about Trump's 'Super Intelligence' rebranding of AI across government.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9707
+        ],
+        "reason": "Standalone story about UK NCSC warning on AI-powered malware.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9715
+        ],
+        "reason": "Standalone sponsored report on agentic analytics quality challenges.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9697
+        ],
+        "reason": "Standalone story about Apple Watch Audio Intelligence beta features.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9712
+        ],
+        "reason": "Standalone story about NYT and other publishers suing Brave for AI scraping.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "45369a6b2bf08e6138ab56cb615933a4eedb427274f99223a716b108c24b8634"
+}
