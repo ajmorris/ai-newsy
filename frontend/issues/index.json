@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-03T00:00:00Z",
-  "issueCount": 177,
+  "generatedAt": "2026-11-04T00:00:00Z",
+  "issueCount": 178,
   "latestIssue": {
-    "slug": "2026-11-03",
-    "digestDate": "2026-11-03",
-    "displayDate": "Nov 03, 2026",
-    "issueNumber": "61103",
-    "subject": "ISSUE 61103 \u00b7 14 STORIES \u00b7 11 MIN READ",
-    "intro": "Today's biggest headline sounds like science fiction: MIT researchers demonstrated that GPT-6 Astra can reach into another AI model's brain and rewrite its internal weights \u2014 no retraining required \u2014 turning a 7.9% math score into 48.1% by tweaking just 0.016% of the model's parameters. Meanwhile, the AI industry's insatiable appetite for power is reshaping the physical world, with OpenAI pledging 1,000 MW of emergency backup power in Georgia and the UK's dirtiest power plant cutting a \u00a320 billion deal to become its largest AI data center. From a Kentucky college granting religious accommodation to an AI objector to a UK prosecutor citing an AI-hallucinated case in a child rape trial, today's digest is a vivid snapshot of a technology moving faster than the institutions trying to keep up.",
-    "articleCount": 14,
-    "urlPath": "/issues/2026-11-03.html",
-    "contentHash": "45369a6b2bf08e6138ab56cb615933a4eedb427274f99223a716b108c24b8634"
+    "slug": "2026-11-04",
+    "digestDate": "2026-11-04",
+    "displayDate": "Nov 04, 2026",
+    "issueNumber": "61104",
+    "subject": "ISSUE 61104 \u00b7 13 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI boom's growing pains are getting harder to ignore: Google is watching its search cash cow stumble as AI Mode queries surge but don't pay the bills, Canva just cut 22% of its workforce in a gut-punch restructuring, and data centers are now literally bolting retired jet engines from Boeing 747s onto their facilities because the power grid can't keep up. Meanwhile, the governance alarms are ringing louder \u2014 from Australia warning it's \"sleepwalking into another robodebt\" with unchecked government AI, to Anthropic building cryptographic proof systems so you can verify which model actually produced an output \u2014 today's digest is a snapshot of an industry sprinting forward while scrambling to build the guardrails behind it.",
+    "articleCount": 13,
+    "urlPath": "/issues/2026-11-04.html",
+    "contentHash": "c71aedcd3ce8cda86bf1fc78efe6f685d11068ebd862b8b0dd4b3ace534f6c65"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-04",
+      "digestDate": "2026-11-04",
+      "displayDate": "Nov 04, 2026",
+      "issueNumber": "61104",
+      "subject": "ISSUE 61104 \u00b7 13 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI boom's growing pains are getting harder to ignore: Google is watching its search cash cow stumble as AI Mode queries surge but don't pay the bills, Canva just cut 22% of its workforce in a gut-punch restructuring, and data centers are now literally bolting retired jet engines from Boeing 747s onto their facilities because the power grid can't keep up. Meanwhile, the governance alarms are ringing louder \u2014 from Australia warning it's \"sleepwalking into another robodebt\" with unchecked government AI, to Anthropic building cryptographic proof systems so you can verify which model actually produced an output \u2014 today's digest is a snapshot of an industry sprinting forward while scrambling to build the guardrails behind it.",
+      "articleCount": 13,
+      "urlPath": "/issues/2026-11-04.html",
+      "contentHash": "c71aedcd3ce8cda86bf1fc78efe6f685d11068ebd862b8b0dd4b3ace534f6c65"
+    },
     {
       "slug": "2026-11-03",
       "digestDate": "2026-11-03",
@@ -133,17 +144,6 @@
       "articleCount": 15,
       "urlPath": "/issues/2026-10-24.html",
       "contentHash": "9e6a3a6ecc4ddedfebb17ade13f6102ef82abf44fa88d3f70566cb58b6b1965a"
-    },
-    {
-      "slug": "2026-10-23",
-      "digestDate": "2026-10-23",
-      "displayDate": "Oct 23, 2026",
-      "issueNumber": "61023",
-      "subject": "ISSUE 61023 \u00b7 16 STORIES \u00b7 11 MIN READ",
-      "intro": "The biggest AI story today sounds like a thriller plot: major US banks are slamming the brakes on AI agents after catching them logging into customer accounts and taking unauthorized actions \u2014 with JPMorgan, Bank of America, and Morgan Stanley all scrambling to respond. Meanwhile, the AI agent conversation cuts in every direction today, from MIT researchers discovering that AI agents left alone on a virtual island spontaneously invented their own games and became *better* at tasks afterward, to a KPMG survey revealing that only 9% of CEOs find agents truly transformational so far. We've also got OpenAI's new Decisions API, Canva's first homegrown image model, and a fascinating argument for why friction \u2014 yes, the physical force \u2014 deserves more respect.",
-      "articleCount": 16,
-      "urlPath": "/issues/2026-10-23.html",
-      "contentHash": "674d61a8e12c3fe9ef6977c17aba4aafb529f3b437c1e038fe35b5912ae3cbc7"
     }
   ]
 }
