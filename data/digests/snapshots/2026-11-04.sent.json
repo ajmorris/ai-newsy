@@ -1,0 +1,852 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-04",
+  "issue_id": "20261104",
+  "subject_line": "ISSUE 61104 · 13 STORIES · 11 MIN READ",
+  "intro": "The AI boom's growing pains are getting harder to ignore: Google is watching its search cash cow stumble as AI Mode queries surge but don't pay the bills, Canva just cut 22% of its workforce in a gut-punch restructuring, and data centers are now literally bolting retired jet engines from Boeing 747s onto their facilities because the power grid can't keep up. Meanwhile, the governance alarms are ringing louder — from Australia warning it's \"sleepwalking into another robodebt\" with unchecked government AI, to Anthropic building cryptographic proof systems so you can verify which model actually produced an output — today's digest is a snapshot of an industry sprinting forward while scrambling to build the guardrails behind it.",
+  "article_count": 13,
+  "stories": [
+    {
+      "id": 9792,
+      "source": "Aeon",
+      "title": "Argentinian artist seals living ecosystems in closed containers as climate art",
+      "url": "https://aeon.co/videos/in-tiny-biospheres-an-artist-reflects-the-fragility-of-our-own",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A short film profiles Argentinian artist-engineer Joaquín Fargas and his 'Biosphere Project,' which seals natural ecosystems inside completely closed containers where only heat and light can enter or exit, serving as living metaphors for Earth's fragility.",
+      "opinion": "A poetic, visually striking intersection of art and ecology — worth including if the newsletter has room for a creative/culture angle, though it has no AI or tech-industry connection.",
+      "image_url": "https://images.aeonmedia.co/images/6f812564-7b90-4b1d-8500-f9d94bcdab28/like-aliens-landscape-2.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-04T11:01:00+00:00",
+      "fetched_at": "2026-11-04T15:10:35.400474+00:00"
+    },
+    {
+      "id": 9769,
+      "source": "Ars Technica AI",
+      "title": "New UEFI bootkit 'BlackX' infects fully patched Windows machines via lingering Secure Boot flaw",
+      "url": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A UEFI bootkit called BlackX has compromised fully patched Windows systems by exploiting the same Baton Drop vulnerability (CVE-2022-21894) that BlackLotus used in 2023. Despite multiple rounds of patches, Microsoft's mitigation process never fully revoked trust in older vulnerable boot managers, leaving a gap that attackers exploited.",
+      "opinion": "A significant security story that raises uncomfortable questions about whether Microsoft's multi-year Secure Boot mitigation strategy is fundamentally broken. Relevant to any audience tracking endpoint security.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2020/10/malware-1000x648.jpg",
+      "published_at": "2026-11-03T16:03:13+00:00",
+      "fetched_at": "2026-11-04T15:10:25.829234+00:00"
+    },
+    {
+      "id": 9748,
+      "source": "Guardian AI",
+      "title": "Australian thinktank warns government is 'sleepwalking into another robodebt' with AI use",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/05/albanese-government-warned-its-sleepwalking-into-another-robodebt-scenario-over-use-of-algorithms-and-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Australia's Centre for Public Integrity warned the Albanese government that insufficient transparency and oversight of algorithms and AI in federal decision-making risks repeating a robodebt-like scandal, calling for a mandatory audit and public register of all automated decision-making systems.",
+      "opinion": "A politically charged warning with direct parallels to a real past scandal — strong governance angle for readers interested in public-sector AI accountability.",
+      "image_url": "https://i.guim.co.uk/img/media/38e22593e1c54e33678c19366ab991e6f23ed601/623_0_6202_4965/master/6202.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=73e51b682bc7e3b3af88f81d77396983",
+      "published_at": "2026-11-04T14:00:37+00:00",
+      "fetched_at": "2026-11-04T15:10:21.305783+00:00"
+    },
+    {
+      "id": 9770,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Tech Review argues 'data lineage' is the new security perimeter for agentic AI",
+      "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A sponsored MIT Technology Review article (with Cyberhaven) argues that traditional security approaches fail for agentic AI workflows where multiple agents pass data without human oversight, and that tracking data lineage — how data moves, is copied, and transformed across agents — is essential for governance and trust.",
+      "opinion": "Conceptually interesting framing of agentic AI security, but readers should note this is a vendor-sponsored piece promoting Cyberhaven's product category.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR2026_CyberhavenV1COV1200SocialCards.png?resize=1200,600",
+      "published_at": "2026-11-04T13:00:00+00:00",
+      "fetched_at": "2026-11-04T15:10:26.56439+00:00"
+    },
+    {
+      "id": 9739,
+      "source": "TechCrunch AI",
+      "title": "Anthropic building open-source system to cryptographically prove which AI model produced an output",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic is developing FlashProve, an open-source system that uses published model 'fingerprints' to cryptographically verify which AI model generated a given output, without revealing proprietary weights. The system aims to prevent secret model swapping and let third parties audit model claims. Code and specs are on GitHub but deployment is not yet planned.",
+      "opinion": "A trust-infrastructure play that could become important as AI model provenance grows in regulatory and commercial significance. The open-source approach is notable.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294192768.jpg?resize=1200,798",
+      "published_at": "2026-11-03T22:41:03+00:00",
+      "fetched_at": "2026-11-04T15:10:19.579941+00:00"
+    },
+    {
+      "id": 9758,
+      "source": "The Rundown AI",
+      "title": "Apple opens Siri AI to third-party developers in new beta preview",
+      "url": "https://therundownai.beehiiv.com/p/apple-cracks-the-door-open-to-siri-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Apple released a developer preview of Siri AI in its latest betas, letting app developers build custom actions and multi-step 'skills' into the rebuilt assistant. App Store submissions won't begin until spring. The article also notes Google is bundling AI features inseparably with Google Search for K-12 school accounts, and CrowdStrike is developing a kill switch for rogue AI agents.",
+      "opinion": "The Siri AI developer opening is the headline item — it signals Apple's strategy for making its assistant an extensible platform. The Google K-12 bundling is a notable policy story in its own right.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/6583d359-4779-4daf-a2fb-77992e363b1e/siriai1.png?t=1793742012",
+      "published_at": "2026-11-04T11:00:00+00:00",
+      "fetched_at": "2026-11-04T15:10:23.748666+00:00"
+    },
+    {
+      "id": 9759,
+      "source": "The Verge AI",
+      "title": "Sam Altman rebrands as 'Ram Altman' after backlash over PC memory comments",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI CEO Sam Altman responded to criticism of his remarks calling personal DRAM 'quite terrible' by rebranding himself 'Ram Altman' on X during election night, insisting his comments were taken out of context. The backdrop is a global DRAM shortage driven by AI data center demand, with Intel expecting shortages through next year and SK Hynix predicting they could last until 2030.",
+      "opinion": "A lighter story on its surface, but the underlying DRAM shortage is a real and growing constraint on consumer hardware pricing — the Altman drama is the hook for a substantive supply-chain issue.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2236544097.jpg?quality=90&strip=all&crop=0%2C10.737892056687%2C100%2C78.524215886627&w=1200",
+      "published_at": "2026-11-04T14:46:01+00:00",
+      "fetched_at": "2026-11-04T15:10:24.479909+00:00"
+    },
+    {
+      "id": 9749,
+      "source": "Guardian AI",
+      "title": "Australian social cohesion report finds cost of living and AI now top future concerns",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/social-cohesion-report-australia-cost-of-living-economy-immigration-multiculturalism-ai-ntwnfb",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The 2026 Scanlon Foundation social cohesion report finds growing pessimism, financial stress, and distrust of government among Australians, with cost of living and AI overtaking climate change and war as top concerns about the future, even as support for immigration and multiculturalism remains high.",
+      "opinion": "Notable as a signal that AI anxiety has crossed from a tech-sector concern into mainstream public worry in Australia, displacing previously dominant issues.",
+      "image_url": "https://i.guim.co.uk/img/media/ba8090dd915d3f60ac81fa4f1f4a307dd27175ef/0_0_2500_2000/master/2500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ba635d473b6caf43f69f391cb0289ddd",
+      "published_at": "2026-11-04T14:00:36+00:00",
+      "fetched_at": "2026-11-04T15:10:21.433803+00:00"
+    },
+    {
+      "id": 9740,
+      "source": "TechCrunch AI",
+      "title": "Data centers turn to retired jet engines as grid connection waits stretch to seven years",
+      "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Facing years-long waits for grid connections, data center operators including xAI, OpenAI, and Crusoe are converting retired jet engines to burn natural gas for on-site power. Supplier ProEnergy rebuilds GE engines from Boeing jets. A jet-powered facility can run in 24 months versus ~7 years for a 100 MW grid connection in Northern Virginia, but the engines are less efficient, more polluting, and likely a stopgap.",
+      "opinion": "A vivid illustration of how urgent AI power demand is reshaping energy infrastructure — the image of Boeing jet engines powering data centers captures the improvisation happening at the frontier.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/Commercial-plane-clouds.jpg?w=719",
+      "published_at": "2026-11-03T22:19:53+00:00",
+      "fetched_at": "2026-11-04T15:10:19.736434+00:00"
+    },
+    {
+      "id": 9760,
+      "source": "The Verge AI",
+      "title": "Google's AI Mode queries are growing fast but monetizing poorly, weighing on search revenue",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Alphabet reported search queries growing at their fastest rate in five years, but search revenue growth slowed to 12% YoY in Q3 (from ~17% prior quarter) and paid click growth fell from 13% to 8%. AI Mode queries are growing strongly but monetize at lower rates than traditional searches. Shares fell ~14% post-earnings. The company plans ~$200B in AI infrastructure spending this year.",
+      "opinion": "This may be the first concrete evidence that AI is disrupting Google's core search economics from within — a significant inflection point for the company and the broader AI business model debate.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-106058340.jpg?quality=90&strip=all&crop=0%2C9.3445766662078%2C100%2C81.310846667584&w=1200",
+      "published_at": "2026-11-04T12:00:00+00:00",
+      "fetched_at": "2026-11-04T15:10:24.608432+00:00"
+    },
+    {
+      "id": 9751,
+      "source": "Guardian AI",
+      "title": "Canva cuts 1,200+ jobs — 22% of workforce — in major restructure",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Australian design platform Canva is cutting or relocating more than 1,200 jobs (22% of its global workforce). CEO Melanie Perkins called it 'without doubt the hardest moment in our thirteen-year history.' The cuts reflect a broader pattern of significant workforce reductions across software companies.",
+      "opinion": "A major layoff at one of the biggest private tech companies — notable both for its scale and as a data point in the ongoing tech workforce contraction trend.",
+      "image_url": "https://i.guim.co.uk/img/media/1df62ce1cc8ffecf2d4291f28ff2212397c08553/473_0_3000_2400/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b7b5b88c0a93861253074c5f831d2cc4",
+      "published_at": "2026-11-04T00:14:49+00:00",
+      "fetched_at": "2026-11-04T15:10:21.728117+00:00"
+    },
+    {
+      "id": 9741,
+      "source": "TechCrunch AI",
+      "title": "Cybersecurity VC Ballistic Ventures seeks $490M amid AI-driven security boom",
+      "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Ballistic Ventures, co-founded by former Kleiner Perkins partner Ted Schlein, is raising $490M across two funds ($360M flagship, $130M Fund B). U.S. cybersecurity startups raised $11.5B in 2025 and AI-enabled companies accounted for 72% of U.S. cybersecurity venture deals through May 2026. Notable portfolio exits include Talon (to Palo Alto Networks) and Pangea (to CrowdStrike).",
+      "opinion": "Useful as a market-signal story — the fundraise size and the 72% AI-enabled deal stat together paint a picture of how central AI has become to cybersecurity investing.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/Ballistic-Ventures-GP-team.jpg?resize=1200,801",
+      "published_at": "2026-11-03T21:43:08+00:00",
+      "fetched_at": "2026-11-04T15:10:19.895697+00:00"
+    },
+    {
+      "id": 9761,
+      "source": "The Verge AI",
+      "title": "Nexus Mods introduces mandatory AI disclosure for all new mod uploads",
+      "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nexus Mods, the largest PC gaming mod repository, is requiring all new uploads to declare whether AI was used, with AI-tagged mods needing a public explanation of how and where AI was utilized. Owner Victor Folmann positioned the site as 'pro-human creativity' but stopped short of banning AI mods, arguing that AI is already embedded throughout the creative process and a ban would just push usage underground. The site confirmed it will not use uploaded mods to train AI models.",
+      "opinion": "A pragmatic middle path in the AI-in-creative-work debate — transparency over prohibition. The reasoning that bans drive underground use mirrors arguments in other creative communities.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-04T00:42:10+00:00",
+      "fetched_at": "2026-11-04T15:10:24.739019+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9792,
+          "source": "Aeon",
+          "title": "Argentinian artist seals living ecosystems in closed containers as climate art",
+          "url": "https://aeon.co/videos/in-tiny-biospheres-an-artist-reflects-the-fragility-of-our-own",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A short film profiles Argentinian artist-engineer Joaquín Fargas and his 'Biosphere Project,' which seals natural ecosystems inside completely closed containers where only heat and light can enter or exit, serving as living metaphors for Earth's fragility.",
+          "opinion": "A poetic, visually striking intersection of art and ecology — worth including if the newsletter has room for a creative/culture angle, though it has no AI or tech-industry connection.",
+          "image_url": "https://images.aeonmedia.co/images/6f812564-7b90-4b1d-8500-f9d94bcdab28/like-aliens-landscape-2.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-04T11:01:00+00:00",
+          "fetched_at": "2026-11-04T15:10:35.400474+00:00"
+        },
+        {
+          "id": 9769,
+          "source": "Ars Technica AI",
+          "title": "New UEFI bootkit 'BlackX' infects fully patched Windows machines via lingering Secure Boot flaw",
+          "url": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A UEFI bootkit called BlackX has compromised fully patched Windows systems by exploiting the same Baton Drop vulnerability (CVE-2022-21894) that BlackLotus used in 2023. Despite multiple rounds of patches, Microsoft's mitigation process never fully revoked trust in older vulnerable boot managers, leaving a gap that attackers exploited.",
+          "opinion": "A significant security story that raises uncomfortable questions about whether Microsoft's multi-year Secure Boot mitigation strategy is fundamentally broken. Relevant to any audience tracking endpoint security.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2020/10/malware-1000x648.jpg",
+          "published_at": "2026-11-03T16:03:13+00:00",
+          "fetched_at": "2026-11-04T15:10:25.829234+00:00"
+        },
+        {
+          "id": 9748,
+          "source": "Guardian AI",
+          "title": "Australian thinktank warns government is 'sleepwalking into another robodebt' with AI use",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/05/albanese-government-warned-its-sleepwalking-into-another-robodebt-scenario-over-use-of-algorithms-and-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Australia's Centre for Public Integrity warned the Albanese government that insufficient transparency and oversight of algorithms and AI in federal decision-making risks repeating a robodebt-like scandal, calling for a mandatory audit and public register of all automated decision-making systems.",
+          "opinion": "A politically charged warning with direct parallels to a real past scandal — strong governance angle for readers interested in public-sector AI accountability.",
+          "image_url": "https://i.guim.co.uk/img/media/38e22593e1c54e33678c19366ab991e6f23ed601/623_0_6202_4965/master/6202.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=73e51b682bc7e3b3af88f81d77396983",
+          "published_at": "2026-11-04T14:00:37+00:00",
+          "fetched_at": "2026-11-04T15:10:21.305783+00:00"
+        },
+        {
+          "id": 9770,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Tech Review argues 'data lineage' is the new security perimeter for agentic AI",
+          "url": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A sponsored MIT Technology Review article (with Cyberhaven) argues that traditional security approaches fail for agentic AI workflows where multiple agents pass data without human oversight, and that tracking data lineage — how data moves, is copied, and transformed across agents — is essential for governance and trust.",
+          "opinion": "Conceptually interesting framing of agentic AI security, but readers should note this is a vendor-sponsored piece promoting Cyberhaven's product category.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/MITTR2026_CyberhavenV1COV1200SocialCards.png?resize=1200,600",
+          "published_at": "2026-11-04T13:00:00+00:00",
+          "fetched_at": "2026-11-04T15:10:26.56439+00:00"
+        },
+        {
+          "id": 9739,
+          "source": "TechCrunch AI",
+          "title": "Anthropic building open-source system to cryptographically prove which AI model produced an output",
+          "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic is developing FlashProve, an open-source system that uses published model 'fingerprints' to cryptographically verify which AI model generated a given output, without revealing proprietary weights. The system aims to prevent secret model swapping and let third parties audit model claims. Code and specs are on GitHub but deployment is not yet planned.",
+          "opinion": "A trust-infrastructure play that could become important as AI model provenance grows in regulatory and commercial significance. The open-source approach is notable.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294192768.jpg?resize=1200,798",
+          "published_at": "2026-11-03T22:41:03+00:00",
+          "fetched_at": "2026-11-04T15:10:19.579941+00:00"
+        },
+        {
+          "id": 9758,
+          "source": "The Rundown AI",
+          "title": "Apple opens Siri AI to third-party developers in new beta preview",
+          "url": "https://therundownai.beehiiv.com/p/apple-cracks-the-door-open-to-siri-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Apple released a developer preview of Siri AI in its latest betas, letting app developers build custom actions and multi-step 'skills' into the rebuilt assistant. App Store submissions won't begin until spring. The article also notes Google is bundling AI features inseparably with Google Search for K-12 school accounts, and CrowdStrike is developing a kill switch for rogue AI agents.",
+          "opinion": "The Siri AI developer opening is the headline item — it signals Apple's strategy for making its assistant an extensible platform. The Google K-12 bundling is a notable policy story in its own right.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/6583d359-4779-4daf-a2fb-77992e363b1e/siriai1.png?t=1793742012",
+          "published_at": "2026-11-04T11:00:00+00:00",
+          "fetched_at": "2026-11-04T15:10:23.748666+00:00"
+        },
+        {
+          "id": 9759,
+          "source": "The Verge AI",
+          "title": "Sam Altman rebrands as 'Ram Altman' after backlash over PC memory comments",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI CEO Sam Altman responded to criticism of his remarks calling personal DRAM 'quite terrible' by rebranding himself 'Ram Altman' on X during election night, insisting his comments were taken out of context. The backdrop is a global DRAM shortage driven by AI data center demand, with Intel expecting shortages through next year and SK Hynix predicting they could last until 2030.",
+          "opinion": "A lighter story on its surface, but the underlying DRAM shortage is a real and growing constraint on consumer hardware pricing — the Altman drama is the hook for a substantive supply-chain issue.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2236544097.jpg?quality=90&strip=all&crop=0%2C10.737892056687%2C100%2C78.524215886627&w=1200",
+          "published_at": "2026-11-04T14:46:01+00:00",
+          "fetched_at": "2026-11-04T15:10:24.479909+00:00"
+        },
+        {
+          "id": 9749,
+          "source": "Guardian AI",
+          "title": "Australian social cohesion report finds cost of living and AI now top future concerns",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/04/social-cohesion-report-australia-cost-of-living-economy-immigration-multiculturalism-ai-ntwnfb",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The 2026 Scanlon Foundation social cohesion report finds growing pessimism, financial stress, and distrust of government among Australians, with cost of living and AI overtaking climate change and war as top concerns about the future, even as support for immigration and multiculturalism remains high.",
+          "opinion": "Notable as a signal that AI anxiety has crossed from a tech-sector concern into mainstream public worry in Australia, displacing previously dominant issues.",
+          "image_url": "https://i.guim.co.uk/img/media/ba8090dd915d3f60ac81fa4f1f4a307dd27175ef/0_0_2500_2000/master/2500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ba635d473b6caf43f69f391cb0289ddd",
+          "published_at": "2026-11-04T14:00:36+00:00",
+          "fetched_at": "2026-11-04T15:10:21.433803+00:00"
+        },
+        {
+          "id": 9740,
+          "source": "TechCrunch AI",
+          "title": "Data centers turn to retired jet engines as grid connection waits stretch to seven years",
+          "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Facing years-long waits for grid connections, data center operators including xAI, OpenAI, and Crusoe are converting retired jet engines to burn natural gas for on-site power. Supplier ProEnergy rebuilds GE engines from Boeing jets. A jet-powered facility can run in 24 months versus ~7 years for a 100 MW grid connection in Northern Virginia, but the engines are less efficient, more polluting, and likely a stopgap.",
+          "opinion": "A vivid illustration of how urgent AI power demand is reshaping energy infrastructure — the image of Boeing jet engines powering data centers captures the improvisation happening at the frontier.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/Commercial-plane-clouds.jpg?w=719",
+          "published_at": "2026-11-03T22:19:53+00:00",
+          "fetched_at": "2026-11-04T15:10:19.736434+00:00"
+        },
+        {
+          "id": 9760,
+          "source": "The Verge AI",
+          "title": "Google's AI Mode queries are growing fast but monetizing poorly, weighing on search revenue",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Alphabet reported search queries growing at their fastest rate in five years, but search revenue growth slowed to 12% YoY in Q3 (from ~17% prior quarter) and paid click growth fell from 13% to 8%. AI Mode queries are growing strongly but monetize at lower rates than traditional searches. Shares fell ~14% post-earnings. The company plans ~$200B in AI infrastructure spending this year.",
+          "opinion": "This may be the first concrete evidence that AI is disrupting Google's core search economics from within — a significant inflection point for the company and the broader AI business model debate.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-106058340.jpg?quality=90&strip=all&crop=0%2C9.3445766662078%2C100%2C81.310846667584&w=1200",
+          "published_at": "2026-11-04T12:00:00+00:00",
+          "fetched_at": "2026-11-04T15:10:24.608432+00:00"
+        },
+        {
+          "id": 9751,
+          "source": "Guardian AI",
+          "title": "Canva cuts 1,200+ jobs — 22% of workforce — in major restructure",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Australian design platform Canva is cutting or relocating more than 1,200 jobs (22% of its global workforce). CEO Melanie Perkins called it 'without doubt the hardest moment in our thirteen-year history.' The cuts reflect a broader pattern of significant workforce reductions across software companies.",
+          "opinion": "A major layoff at one of the biggest private tech companies — notable both for its scale and as a data point in the ongoing tech workforce contraction trend.",
+          "image_url": "https://i.guim.co.uk/img/media/1df62ce1cc8ffecf2d4291f28ff2212397c08553/473_0_3000_2400/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b7b5b88c0a93861253074c5f831d2cc4",
+          "published_at": "2026-11-04T00:14:49+00:00",
+          "fetched_at": "2026-11-04T15:10:21.728117+00:00"
+        },
+        {
+          "id": 9741,
+          "source": "TechCrunch AI",
+          "title": "Cybersecurity VC Ballistic Ventures seeks $490M amid AI-driven security boom",
+          "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Ballistic Ventures, co-founded by former Kleiner Perkins partner Ted Schlein, is raising $490M across two funds ($360M flagship, $130M Fund B). U.S. cybersecurity startups raised $11.5B in 2025 and AI-enabled companies accounted for 72% of U.S. cybersecurity venture deals through May 2026. Notable portfolio exits include Talon (to Palo Alto Networks) and Pangea (to CrowdStrike).",
+          "opinion": "Useful as a market-signal story — the fundraise size and the 72% AI-enabled deal stat together paint a picture of how central AI has become to cybersecurity investing.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/Ballistic-Ventures-GP-team.jpg?resize=1200,801",
+          "published_at": "2026-11-03T21:43:08+00:00",
+          "fetched_at": "2026-11-04T15:10:19.895697+00:00"
+        },
+        {
+          "id": 9761,
+          "source": "The Verge AI",
+          "title": "Nexus Mods introduces mandatory AI disclosure for all new mod uploads",
+          "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nexus Mods, the largest PC gaming mod repository, is requiring all new uploads to declare whether AI was used, with AI-tagged mods needing a public explanation of how and where AI was utilized. Owner Victor Folmann positioned the site as 'pro-human creativity' but stopped short of banning AI mods, arguing that AI is already embedded throughout the creative process and a ban would just push usage underground. The site confirmed it will not use uploaded mods to train AI models.",
+          "opinion": "A pragmatic middle path in the AI-in-creative-work debate — transparency over prohibition. The reasoning that bans drive underground use mirrors arguments in other creative communities.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-04T00:42:10+00:00",
+          "fetched_at": "2026-11-04T15:10:24.739019+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/0xKiyoro/status/2117954656714314206",
+      "author": "0xKiyoro",
+      "headline": "One developer turned Elon Musk's __5-step Algorithm into a Grok Bot prompt__ that cuts first — it removed 4 of 11 agents before touching the rest.",
+      "tweet_id": "40e1eba9-b6bc-8129-be10-c05c081b7729",
+      "source_text": "Elon Musk says the best part is no part. I turned his 5-step Algorithm into a Grok Bot prompt, and now the bot's first move is always to cut.\n\nHonestly, this one's absurd..\n\nQuestion every requirement, delete, simplify, accelerate, automate. Never in reverse.\n\nI pointed it at my 11-agent desk. It removed 4 before it touched the other 7.\n\nSend it to Grok Bot and see what it removes first.\n\nThe full prompt and the article sit below ↓",
+      "created_time": "2026-11-04T14:07:00.000Z",
+      "canonical_url": "https://twitter.com/0xKiyoro/status/2117954656714314206",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AISystems_hq/status/2117906200293732745",
+      "author": "AISystems_hq",
+      "headline": "Claude Artifacts can turn a PDF into __a page-by-page interactive tutor__, with 7 starter prompts to walk you through it.",
+      "tweet_id": "40e1eba9-b6bc-813b-857c-f3d5059afbd8",
+      "source_text": "Claude can now turn any boring document into an app you tap through, like a $100 per hour tutor who explains it page by page.\n\nOpen Claude, start an Artifact, upload the PDF and use these 7 prompts: https://t.co/IWm22PcAof https://t.co/2nfDy1tW9r",
+      "created_time": "2026-11-04T14:02:00.000Z",
+      "canonical_url": "https://twitter.com/AISystems_hq/status/2117906200293732745",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/csaba_kissi/status/2117875535787536702",
+      "author": "csaba_kissi",
+      "headline": "A free dev resource indexes __314 open-source AI agent skills__ alongside 6,200+ SVG icons, canvas components, and 23 AI coding workflows.",
+      "tweet_id": "40e1eba9-b6bc-81cb-8910-ef2bb2c67a5d",
+      "source_text": "5 Web dev resources you should be aware of\n\nhttps://t.co/6QcK5gNoSf - 314 open-source AI agent skills\n\nhttps://t.co/3nyzXkOhV8 - 6200+ free SVG icons\n\nhttps://t.co/Ul05UvXMZG - Flex with your AI coding usage\n\nhttps://t.co/2P9XmaTKSt - 35 free interactive canvas components\n\nhttps://t.co/QLAVv2dRmn - 23 AI coding workflows",
+      "created_time": "2026-11-04T13:47:00.000Z",
+      "canonical_url": "https://twitter.com/csaba_kissi/status/2117875535787536702",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/rubenhassid/status/2117859387637465489",
+      "author": "rubenhassid",
+      "headline": "Ruben Hassid made a free guide for un-slopping AI reports, citing Shopify's CEO's __\"slop grenades\"__ framing as the problem worth solving.",
+      "tweet_id": "40e1eba9-b6bc-8112-8b59-f155e1b10c10",
+      "source_text": "Stop sending Claude-slop to your boss.\nIt's putting you on the edge of getting fired.\nI am sure you're (definitely) sending a report with:\n\n> unnecessary wall of text.\n> titles/headings that sound like poetry.\n> 12 cluttered boxes, and no idea where to start.\n> no clue what you yourself are looking at, and why.\n\nI like how Shopify's CEO calls it \"slop grenades.\"\n\nI spent an entire day figuring out how to un-slop those reports, whether you are the one sending or receiving them.\n\nHere's how:\n\nStep 1. Copy the prompt from my guide: https://t.co/4GBb1RcBDp\n\nIt has my free GitHub repo link. No, it's not technical\n\n→ If you're making a new report\nCopy the \"make a page\" prompt from the guide.\n\n→ If you are fixing an existing one\nCopy the \"fix a page\" prompt from the same guide.\n\nStep 2. Attach your AI slop report to Claude.\n\n> Your meeting notes.\n> Your spreadsheet.\n> Your existing report.\n> Or an overwhelmingly slopped page someone just sent you to do the job, they are supposed to.\n\nStep 3. Tell Claude (specifically) WHO will read it.\n\nYour prompt \"For Dana, my colleague\" is a NO-go\nBe painfully specific like: \"For Dana, my CFO\".\nThen tell it what Dana needs to do after reading.\n\nStep 4. The report needs to only have ONE job.\n\n→ Either to make a decision? Put the ask on top.\n→ Or to catch up? Lead with 3 or 4 numbers.\n→ Or to learn a process? One step per screen.\n→ Or to approve a proposal? One idea per slide.\n\nStep 5. Now, go back to Step 1 and paste the prompt from the guide.\n\nDo not ignore that prompt, it is going to un-slop by Claude reading my rules, then building the page for your reader.\n\nDon't worry. You install nothing.\n\nThe prompts, before-and-after examples, and 7 types of pages are here:\n\nhttps://t.co/4GBb1RcBDp\n\nTake the last report you sent. Fix that one first.",
+      "created_time": "2026-11-04T11:12:00.000Z",
+      "canonical_url": "https://twitter.com/rubenhassid/status/2117859387637465489",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/LoganTGott/status/2117721091929956591",
+      "author": "LoganTGott",
+      "headline": "Someone in this feed is about to land a __$200k Head of Marketing & Distribution role__.",
+      "tweet_id": "40e1eba9-b6bc-81a0-91ef-f412d3a19421",
+      "source_text": "Head of Marketing & Distribution role, explained:\n\nSomeone reading this is about to get hired for $200k https://t.co/1f8cfW4tph https://t.co/kwams0JXXR",
+      "created_time": "2026-11-04T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/LoganTGott/status/2117721091929956591",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2117804532998738201",
+      "author": "Zephyr_hg",
+      "headline": "A weekend walkthrough for __building a seven-part research desk with Claude__ that runs on your real sources.",
+      "tweet_id": "40e1eba9-b6bc-8113-af5f-c15381ee5133",
+      "source_text": "A masterclass on how to build a RESEARCH DESK with Claude in one weekend, by setting up seven parts and then running them on your real sources: https://t.co/NXb3872woP https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-04T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2117804532998738201",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/aiedge_/status/2117747404053385319",
+      "author": "aiedge_",
+      "headline": "Step-by-step guide to __installing Supermemory into your Grok bot__, with the exact system prompt included.",
+      "tweet_id": "40e1eba9-b6bc-811b-a384-c9fba03b9a90",
+      "source_text": "How to install Supermemory into your Grok @bot.\n\n(exact prompt attached): https://t.co/aFO0TUrhXd https://t.co/jnVzwcAEgJ",
+      "created_time": "2026-11-04T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/aiedge_/status/2117747404053385319",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/SIAxiom/status/2117666674790781058",
+      "author": "SIAxiom",
+      "headline": "__Grok Bot Guides__ has collected 122 practical walkthroughs covering multi-agent workflows, skills, and automations.",
+      "tweet_id": "40e1eba9-b6bc-81bd-bdae-eed62c647696",
+      "source_text": "玩 Grok Bot 的朋友，强烈建议收藏这个宝藏网站！\n\nGrok Bot Guides 收录了 122 篇实战指南，涵盖：\n\n多智能体协作\nSkills 技能开发\nAI 自动化工作流\nX 内容运营\nBot 搭建与进阶技巧\n\n从入门到高级玩法都有，很多思路可以直接借鉴，少走不少弯路。\n\n与其到处找零散教程，不如直接研究高手是怎么搭建和使用 Bot 的。\n\n🔗 https://t.co/DnnlljiK7e\n\n建议先收藏，再挑几个适合自己的案例动手复现。",
+      "created_time": "2026-11-04T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/SIAxiom/status/2117666674790781058",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/BuildingWaves/status/2117614519396835608",
+      "author": "BuildingWaves",
+      "headline": "The __47 Claude SEO and AEO skills__ that took one builder to $10k MRR and 25k monthly clicks from Google and ChatGPT.",
+      "tweet_id": "40e1eba9-b6bc-811f-a0ee-daec88cd7421",
+      "source_text": "Claude + 47 SEO/AEO Skills = SEO SOLVED\n\nEvery single skill I used to get to $10k MRR and 25k clicks a month from Google + ChatGPT\n\nIt took forever, but it's finally done. \n\nHave fun❤️\n\n1) SEO strategy plan\n2) SEO opportunity research\n3) Topic cluster map\n4) Search intent match\n5) Technical SEO audit\n6) On-page SEO review\n7) SEO performance audit\n8) Keyword cannibalization check\n9) Internal linking plan\n10) Schema markup\n11) XML sitemap check\n12) Hreflang and international SEO\n13) Image SEO\n14) Site migration check\n15) SEO change monitor\n16) Backlink profile review\n17) SEO content brief\n18) SEO blog writer\n19) Comparison page writer\n20) SEO content QA\n21) Title and meta CTR rewrite\n22) E-E-A-T trust review\n23) Programmatic SEO plan\n24) AI search visibility\n25) AI prompt research\n26) AI brand facts\n27) AI-citable pages\n28) Query fan-out coverage\n29) Google AI Overviews audit\n30) Best-of list inclusion\n31) Reviews for AI answers\n32) YouTube for AI answers\n33) Local AI visibility\n34) AI shopping visibility\n35) AI traffic analytics\n36) DataForSEO AI tracker\n37) AI agent readiness\n38) Parasite SEO plan\n39) Page to social posts\n40) Reddit and Quora answers\n41) LinkedIn for AI search\n42) Sponsored placement vetting\n43) Local SEO audit\n44) E-commerce SEO audit\n45) CMS publishing adapter\n46) SEO starter pack\n47) Site content inventory\n\nGet them all here: https://t.co/wKF2XPpS93\n\nP.S. SEO takes time. Give it at least 3 months. \nAnd it's not a one and done thing. \n\nSpend at least an hour every week on these skills with Claude and I can guarantee you'll see changes.",
+      "created_time": "2026-11-04T02:07:00.000Z",
+      "canonical_url": "https://twitter.com/BuildingWaves/status/2117614519396835608",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/GrokBotRadar/status/2117451517884248229",
+      "author": "GrokBotRadar",
+      "headline": "One Grok Bot audit uncovered __78% of 965M monthly tokens__ spent on bots re-reading themselves — here's how to check yours.",
+      "tweet_id": "40e1eba9-b6bc-811e-b367-df39c647cb65",
+      "source_text": "How to tell if Grok Bot changed your usage, or your BOTS did 👀\n\nMine was back at 45% this morning with a day left. My Oct 25 export: 965 MILLION tokens, 78% of them my Bots re-reading 😳\n\nThe play: Tokens per day vs your weekly % > Export > ask your Bot\n\nHere's how 👇\n\n✅ Go to https://t.co/EgtMSQWvLo and open Usage\n✅ Look at Tokens per day for this week\n✅ Tokens flat but your % jumped? That points to the meter\n✅ Tokens jumped too? Your Bots did more\n✅ Scroll to Usage events and hit Export (top right)\n✅ Upload the file to your main Bot and paste:\n\n\"Check this usage file. Compare my tokens per day across the week, tell me which days jumped, and what I should slow down. Don't change anything yet.\"\n\nThe catch ⚠️\n→ The export isn't an official feature. It could move or disappear\n→ No per-Bot column. It shows re-reading, not WHICH Bot\n→ Your email is in every row. Don't post the file\n→ Your Bot reading the file costs usage too\n→ Some people's % looked glitchy this weekend. Trust today's number, not Sunday's\n\nDon't 🚫\n→ Cancel or upgrade over one bad day\n→ Screenshot the export with your email showing\n\nCheck the chart before you decide anything.\n\nReply: did your tokens jump, or just your %? 👇\n\nBookmark this 🔖 The full fix list is in the article 👇",
+      "created_time": "2026-11-04T02:07:00.000Z",
+      "canonical_url": "https://twitter.com/GrokBotRadar/status/2117451517884248229",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dallastesla/status/2117616822551748757",
+      "author": "dallastesla",
+      "headline": "One Grok Bot user's reset conversation ate __9% of their weekly token budget__ just discussing how to use fewer tokens.",
+      "tweet_id": "40e1eba9-b6bc-81ac-b8aa-e40ae5bd861e",
+      "source_text": "Update: My Grokbot usage reset this morning at 7 AM.\n\nI spent about 15 minutes talking with my bot about how quickly I hit my limit last week, cleaning up our processes to reduce token usage, and removing a few unnecessary bots.\n\nThat conversation alone used 9% of my entire weekly allowance. The irony is that I burned nearly 10% of my weekly usage just discussing how to use less of it moving forward.\n\nI genuinely love Grokbot. It’s easily my favorite agentic AI tool I’ve used, but this level of usage just isn’t sustainable. If a simple conversation about improving efficiency eats up that much of my allowance, I can’t realistically rely on it for the rest of the week.\n\nStarting to seriously consider alternatives like Muse or Dots unfortunately.",
+      "created_time": "2026-11-04T00:07:00.000Z",
+      "canonical_url": "https://twitter.com/dallastesla/status/2117616822551748757",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/tyd3n_/status/2117694233301725635",
+      "author": "tyd3n_",
+      "headline": "An indie dev published __the full ASO playbook__ they wish they'd had before listing on the app stores.",
+      "tweet_id": "40e1eba9-b6bc-8128-a05d-e741968a02c6",
+      "source_text": "Your app won't magically get downloads just because you published it.\n\nSo I put together the ultimate ASO guide with everything I've learned so far.\n\nHope it helps some indie devs out there.\n\nCheck it out 👇 https://t.co/0xlbxenwwg",
+      "created_time": "2026-11-04T00:02:00.000Z",
+      "canonical_url": "https://twitter.com/tyd3n_/status/2117694233301725635",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/KrakowiakK/status/2117536461784318349",
+      "author": "KrakowiakK",
+      "headline": "Two Mac Studios, __one desk-sized supercomputer__: comparing M5 Ultra and M3 Ultra for local LLM inference",
+      "tweet_id": "40e1eba9-b6bc-8118-871c-d5249f4ba973",
+      "source_text": "Twins.. but so different.. 🍎\n\nTwo Mac Studios, two generations, each with its own strengths.\n\nMac Studio M5 Ultra 256GB\n1.2 TB/s memory bandwidth\n80 GPU cores\nGPU Neural Accelerators (NAX)\n\nMac Studio M3 Ultra 512GB\n819 GB/s memory bandwidth\n80 GPU cores\nTwice the unified memory capacity\n\nTogether:\n768GB of unified memory\n~2 TB/s aggregate memory bandwidth\n160 GPU cores\n\nThe M5 Ultra brings faster memory and a newer architecture, while the M3 Ultra offers plenty of room for larger models and more demanding workloads.\n\nBoth are part of my ongoing experiments with local LLM inference, MLX, and AI workloads.\n\nIt’s fascinating how much computing power can now fit on a desk. And I feel there’s still a lot to explore. 🙂",
+      "created_time": "2026-11-04T00:02:00.000Z",
+      "canonical_url": "https://twitter.com/KrakowiakK/status/2117536461784318349",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/clairevo/status/2117754272054141007",
+      "author": "clairevo",
+      "headline": "\"Astra is just much more diligent than I am\" — how to use __AI to relentlessly test release edge cases__",
+      "tweet_id": "40d1eba9-b6bc-814e-afe7-c15ad79699f5",
+      "source_text": "\"Astra is just much, much more diligent than I am\"\n\n@ezramechaber on how to use codex browser user to relentlessly test all the edge cases in your releases.\n\nfull ep on yt: https://t.co/a9rLHtXx35 https://t.co/SgC0xcSsKk",
+      "created_time": "2026-11-03T23:12:00.000Z",
+      "canonical_url": "https://twitter.com/clairevo/status/2117754272054141007",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/vercel/status/2117726156992753721",
+      "author": "vercel",
+      "headline": "Vercel launches __Security Review in public beta__ to catch vulnerabilities on every push",
+      "tweet_id": "40d1eba9-b6bc-81e5-9d64-c672c585b38f",
+      "source_text": "Today we are launching Vercel Security Review in public beta.\n\nRun vulnerability reviews on every push, and ship fixes in one click with Vercel Agent.\n\nRead the blog → https://t.co/Uc5Aw9d1Q7 https://t.co/hB3paqs8Qn",
+      "created_time": "2026-11-03T23:12:00.000Z",
+      "canonical_url": "https://twitter.com/vercel/status/2117726156992753721",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/nifinet/status/2117721475746783648",
+      "author": "nifinet",
+      "headline": "How Grok bots scrape __leads from competitor giveaways__ on X and LinkedIn, for free",
+      "tweet_id": "40d1eba9-b6bc-812c-95a9-ffd8819c01b6",
+      "source_text": "Every lead magnet your competitors post on X and LinkedIn is a few hundred leads you can scrape with Grok @bot, for free.\n\nToday I'm giving away the 3 bots that do it, plus the prompt that sets them up.\n\nWe ran them on one cold email giveaway with 298 replies: they read 172 people and came back with 6 worth an email, first emails written.\n\nFinder picks the giveaways and the competitor or creator posts on X in your niche with 50+ replies. Here's our first run, on a cold email giveaway with 298 replies:\n\n- Finder saved 172 people, with bio and website, before hitting the read limit we'd set for the run\n- Sorter tagged 29 possible buyers, 14 vendors, 8 creators and 1 bot, and kept 1 person per company\n- 120 bios were too thin to judge, so Sorter left them off the shortlist\n- 6 made the shortlist, 2 high fit and 4 medium\n- Drafter read up to 3 public pages on each and wrote an email and a LinkedIn note for all 6, each opening on 1 public fact about the person\n\nWe've connected https://t.co/shO8OijHTg to the bots, so the same loop runs on LinkedIn: point them at any post, they pull everyone who commented or reacted, and Drafter writes to the ones who fit.\n\nApprove a draft and https://t.co/shO8OijHTg finds the email and sends it for you through Overloop AI.\n\nComment \"BOT\" and I'll send you the repo (yeah, I'm aware of the irony lol).",
+      "created_time": "2026-11-03T23:07:00.000Z",
+      "canonical_url": "https://twitter.com/nifinet/status/2117721475746783648",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMfox/status/2117645258993344813",
+      "author": "0xMfox",
+      "headline": "Anthropic renamed Max 20x to Ultra and dropped the 5-hour limit — but only for __verified accounts__",
+      "tweet_id": "40d1eba9-b6bc-8111-87e8-c8dc94726afc",
+      "source_text": "You can pay Claude $200 a month and still not be trusted. One bar on your Usage page tells you.\n\nAnthropic renamed Max 20x to Ultra and dropped its 5-hour limit, but only for verified accounts. The $100 plan is now just Max and keeps the 5-hour limit.\n\nWeekly limits didn't move on either. So on Ultra the weekly cap is the only wall left.\n\nMy worst day in Claude Code cost $208, and my average week costs $182. Now nothing stops a day like that halfway.\n\nHow I run Ultra now:\n\n1. Open Settings > Usage. If there's no \"Current session\" bar, you're verified and the 5-hour limit is gone\n2. If the bar is still there, you're on a temporary limit. Anthropic verifies you on its own from your account and payment history, and a phone check doesn't count\n3. Watch the weekly bar. Fable has a separate one\n4. Give each day about 14% of the week, then switch to Sonnet until tomorrow\n5. Move file reading to Haiku with one file, it's in the reply\n\nOn the $100 Max nothing changed. OpenAI doubled the limits on its $100 Pro tier the same week.",
+      "created_time": "2026-11-03T23:07:00.000Z",
+      "canonical_url": "https://twitter.com/0xMfox/status/2117645258993344813",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AISystems_hq/status/2117611014690906568",
+      "author": "AISystems_hq",
+      "headline": "10 GitHub repos for __AI-powered video transcription, editing, and dubbing__ most creators have never heard of",
+      "tweet_id": "40d1eba9-b6bc-8192-8cc1-ef8b3f3debf2",
+      "source_text": "GitHub is an absolute GOLDMINE for YouTubers and podcasters.\n\nI found 10 insane repos that can help you transcribe, edit, dub and voice your videos using AI.\n\nMost creators have no idea these exist.\n\nBookmark this:\n\n1. Buzz\nTranscribes and translates audio and video offline, on your own computer, powered by Whisper. Exports TXT, SRT and VTT.\nchidiwilliams/buzz\n\n2. WhisperX\nWhisper with word-level timestamps and speaker labels, so you know who said what and when.\nm-bain/whisperX\n\n3. auto-editor\nCuts the silence and dead space out of raw footage automatically, by reading the audio's loudness.\nWyattBlue/auto-editor\n\n4. pyvideotrans\nTranslates a video into another language: transcribes it, translates the subtitles and dubs it with AI voices.\njianchang512/pyvideotrans\n\n5. Chatterbox\nOpen-source text-to-speech from Resemble AI with voice cloning, in 23+ languages.\nresemble-ai/chatterbox\n\n6. Remotion\nMake videos with code in React, or turn an idea into a video using your agent. Good for intros, captions and templates.\nremotion-dev/remotion\n\n7. Fabric\nA library of crowdsourced AI prompts it calls patterns, with one use case being pulling the best parts out of a podcast or YouTube video.\ndanielmiessler/Fabric\n\n8. rembg\nRemoves the background from any image, handy for thumbnails.\ndanielgatis/rembg\n\n9. Upscayl\nFree, open-source AI image upscaler for Mac, Windows and Linux, for sharper thumbnails and stills.\nupscayl/upscayl\n\n10. ComfyUI\nA node-based app for image, video and audio generation with open models, running on your own machine.\nComfy-Org/ComfyUI\n\nSome of these want a decent GPU, and check each model's license before you use it commercially.\n\nWhich one are you adding to your workflow first?",
+      "created_time": "2026-11-03T23:07:00.000Z",
+      "canonical_url": "https://twitter.com/AISystems_hq/status/2117611014690906568",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://github.com/iris-zip/iris",
+      "author": "Dev-Scar",
+      "item_id": "hn:50366645",
+      "headline": "Iris.zip ships __audited post-quantum E2EE__ file transfers using SPAKE2M-KEM-768.",
+      "subreddit": null,
+      "source_text": "Show HN: Iriszip – Audited post-quantum E2EE file transfer (SPAKE2M-KEM-768)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:08:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/iris-zip/iris",
+      "learning_score": 3
+    },
+    {
+      "url": "https://hyperbutler.dev/",
+      "author": "swq115",
+      "item_id": "hn:50366448",
+      "headline": "__Hyperbutler__ runs Docker on Windows without WSL and idles at just 320 MB.",
+      "subreddit": null,
+      "source_text": "Show HN: Hyperbutler – Docker on Windows without WSL, 320 MB at idle",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T14:58:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://hyperbutler.dev",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.citationneeded.news/2026-election-results/",
+      "author": "dmschulman",
+      "item_id": "hn:50366355",
+      "headline": "The __$250M that crypto and AI spent on the 2026 election__ didn't buy the results they were banking on.",
+      "subreddit": null,
+      "source_text": "Crypto and AI's $250M election goes sideways",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T14:53:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://citationneeded.news/2026-election-results",
+      "learning_score": 3
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50366629",
+      "author": "nareshsharma",
+      "item_id": "hn:50366629",
+      "headline": "Zero-collision prime sieving now works at __10^15 scale in C++__ — and the implementation is public.",
+      "subreddit": null,
+      "source_text": "Zero-Collision Prime Sieving at 10^15 Scale in C++",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:07:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=50366629",
+      "learning_score": 2
+    },
+    {
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00526.html?pow_referer=",
+      "author": "SG-",
+      "item_id": "hn:50366575",
+      "headline": "Debian patches a __man-in-the-middle vulnerability in apt__ — update your systems now.",
+      "subreddit": null,
+      "source_text": "Debian apt security update (man-in-the-middle)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:04:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lists.debian.org/debian-security-announce/2026/msg00526.html?pow_referer=",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/DeepInsightLabs/status/2117974725402276248",
+      "author": "nlpnerd",
+      "item_id": "hn:50366559",
+      "headline": "The __\"This Is Fine\" problem in AI accounting agents__ — how clean-room training helps close the books when everything is on fire.",
+      "subreddit": null,
+      "source_text": "\"This Is Fine\": How Clean Rooms Train Agents to Close the Books on Fire",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:03:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/DeepInsightLabs/status/2117974725402276248",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/@stefan_15505/writing-windows-applications-in-x64-assembly-in-2026-5ef2aff293cd",
+      "author": "hofmann-dev",
+      "item_id": "hn:50366537",
+      "headline": "Someone is still writing __Windows apps in x64 assembly in 2026__, and documenting every step.",
+      "subreddit": null,
+      "source_text": "Writing Windows Applications in x64 Assembly in 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:02:26+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/@stefan_15505/writing-windows-applications-in-x64-assembly-in-2026-5ef2aff293cd",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-11-03/security-firm-tied-to-openai-anthropic-ai-hacks-blames-error",
+      "author": "helsinkiandrew",
+      "item_id": "hn:50366534",
+      "headline": "Security firm __linked to AI hacks on OpenAI and Anthropic__ is blaming an internal error.",
+      "subreddit": null,
+      "source_text": "Firm Tied to Some OpenAI, Anthropic AI Hacks Blames 'Error'",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:02:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://bloomberg.com/news/articles/2026-11-03/security-firm-tied-to-openai-anthropic-ai-hacks-blames-error",
+      "learning_score": 2
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "author": "Brajeshwar",
+      "item_id": "hn:50366532",
+      "headline": "IBM Research's Palette teaches __a small model to generate brand-consistent presentation decks__.",
+      "subreddit": null,
+      "source_text": "Palette: Teaching a small model to build decks in your design language",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:02:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "learning_score": 2
+    },
+    {
+      "url": "https://sysbreak.dev",
+      "author": "Saurabh789",
+      "item_id": "hn:50366526",
+      "headline": "__SysBreak__ teaches system design by putting real traffic through architectures until they fail.",
+      "subreddit": null,
+      "source_text": "SysBreak – Learn system design by breaking architectures under real traffic",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T15:01:54+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sysbreak.dev",
+      "learning_score": 2
+    },
+    {
+      "url": "https://wasp.sh/blog/2026/08/13/advice-for-contributing-in-2026",
+      "author": "GarethX",
+      "item_id": "hn:50366435",
+      "headline": "Wasp shares __maintainer advice on contributing to open source in 2026__ — what's shifted and what holds.",
+      "subreddit": null,
+      "source_text": "A Maintainer's Advice on Contributing to Open Source in 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T14:57:46+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://wasp.sh/blog/2026/08/13/advice-for-contributing-in-2026",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/alex0ptr/aigude",
+      "author": "alex0ptr",
+      "item_id": "hn:50366425",
+      "headline": "__AI Gude__ turns your RSS feeds into a personalized daily podcast using AI — a one-person project, revived.",
+      "subreddit": null,
+      "source_text": "Show HN: AI Gude – my feeds as a daily podcast, revived with AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-04T14:57:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/alex0ptr/aigude",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [
+    {
+      "id": 9749,
+      "headline": "Australian social cohesion report finds cost of living and AI now top future concerns",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/social-cohesion-report-australia-cost-of-living-economy-immigration-multiculturalism-ai-ntwnfb",
+      "source": "Guardian AI",
+      "summary": "The 2026 Scanlon Foundation social cohesion report finds growing pessimism, financial stress, and distrust of government among Australians, with cost of living and AI overtaking climate change and war as top concerns about the future, even as support for immigration and multiculturalism remains high.",
+      "tag": "environment",
+      "meaning": "Count the energy and resource cost next to the capability gain.",
+      "published_at": "2026-11-04T14:00:36+00:00"
+    },
+    {
+      "id": 9751,
+      "headline": "Canva cuts 1,200+ jobs — 22% of workforce — in major restructure",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+      "source": "Guardian AI",
+      "summary": "Australian design platform Canva is cutting or relocating more than 1,200 jobs (22% of its global workforce). CEO Melanie Perkins called it 'without doubt the hardest moment in our thirteen-year history.' The cuts reflect a broader pattern of significant workforce reductions across software companies.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-04T00:14:49+00:00"
+    },
+    {
+      "id": 9792,
+      "headline": "Argentinian artist seals living ecosystems in closed containers as climate art",
+      "url": "https://aeon.co/videos/in-tiny-biospheres-an-artist-reflects-the-fragility-of-our-own",
+      "source": "Aeon",
+      "summary": "A short film profiles Argentinian artist-engineer Joaquín Fargas and his 'Biosphere Project,' which seals natural ecosystems inside completely closed containers where only heat and light can enter or exit, serving as living metaphors for Earth's fragility.",
+      "tag": "environment",
+      "meaning": "Count the energy and resource cost next to the capability gain.",
+      "published_at": "2026-11-04T11:01:00+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-11-04T15:30:20.706741+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          9792
+        ],
+        "reason": "Standalone profile of artist Joaquín Fargas and his Biosphere Project; no other candidate covers this topic.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9769
+        ],
+        "reason": "Standalone cybersecurity story about the BlackX UEFI bootkit; no other candidate covers this vulnerability or Microsoft's patching gap.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9748
+        ],
+        "reason": "Standalone story about an Australian thinktank warning the Albanese government on AI/algorithm oversight; no other candidate covers this specific warning.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9770
+        ],
+        "reason": "Standalone sponsored article on data lineage as a security paradigm for agentic AI; no other candidate covers this topic.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9739
+        ],
+        "reason": "Standalone story about Anthropic's FlashProve cryptographic model-identity system; no other candidate covers this.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9758
+        ],
+        "reason": "Standalone roundup-style article covering Apple's Siri AI developer preview, Google bundling AI with K-12 Search, and CrowdStrike's agent kill switch; no other candidate covers these specific items.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9759
+        ],
+        "reason": "Standalone story about Sam Altman responding to backlash over RAM comments amid a DRAM shortage; no other candidate covers this.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9749
+        ],
+        "reason": "Standalone Australian social survey finding; distinct from 9748 (which is a thinktank policy warning, not a public attitudes survey).",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9740
+        ],
+        "reason": "Standalone story about data centers using converted jet engines for power; no other candidate covers this specific trend.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9760
+        ],
+        "reason": "Standalone story about Google/Alphabet earnings showing AI Mode monetization challenges; no other candidate covers this.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9751
+        ],
+        "reason": "Standalone story about Canva's major layoffs; no other candidate covers this.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9741
+        ],
+        "reason": "Standalone VC fundraising story; no other candidate covers Ballistic Ventures or this specific raise.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9761
+        ],
+        "reason": "Standalone story about Nexus Mods implementing AI disclosure rules; no other candidate covers this.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-04T15:31:00.603740",
+      "send_completed_at": "2026-11-04T15:31:10.888099",
+      "event_name": "schedule",
+      "github_run_id": "41854758826",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "c71aedcd3ce8cda86bf1fc78efe6f685d11068ebd862b8b0dd4b3ace534f6c65"
+}
