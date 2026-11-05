@@ -1,0 +1,1007 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-05",
+  "issue_id": "20261105",
+  "subject_line": "ISSUE 61105 · 16 STORIES · 11 MIN READ",
+  "intro": "The AI industry's trillion-dollar infrastructure ambitions slammed into a political wall this week, as US midterm results, European protests, and Australian warnings all signal that voters are fed up with data centers gobbling up their electricity and resources — sending tech stocks tumbling and putting over $720 billion in planned spending at risk. But the backlash isn't the only disruption worth watching: North Korean hackers pulled off a record-shattering $6.34 billion crypto heist from Binance, and a new documentary is forcing a reckoning with the low-paid Global South labor quietly powering the AI revolution. From geopolitics to supply chains to the human costs hidden behind the hype, today's stories reveal an industry facing pressure from every direction.",
+  "article_count": 16,
+  "stories": [
+    {
+      "id": 9825,
+      "source": "MIT Tech Review AI",
+      "title": "US midterm results threaten AI data center expansion as Big Tech plans $720B+ in spending",
+      "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Democratic victories in the 2026 US midterms are disrupting Big Tech's massive AI infrastructure buildout. In Texas, the fastest-growing US data center market, governor-elect Gina Hinojosa is pushing for a moratorium on new facilities, threatening projects like the 1,820 MW Stargate Frontier and a 6,400 MW center intended for Anthropic. Meanwhile, Amazon, Microsoft, Alphabet, and Meta plan at least $720 billion in capex this year, mostly on AI, on top of over $1 trillion in future commitments — despite AI not yet yielding significant returns. Wall Street reacted with a sharp tech selloff, and midterm voters broadly supported protecting ratepayers from data-center-driven electricity cost increases.",
+      "opinion": "The convergence of political backlash and Wall Street skepticism may finally force Big Tech to justify AI infrastructure spending with actual returns rather than speculative promises. Where coverage differs: MIT Tech Review names specific Texas projects (Stargate Frontier at 1,820 MW, Nexus Hubbard at 6,400 MW); The Verge gives aggregate Big Tech capex figures ($720B this year, $1T+ committed) MIT Tech Review focuses on Texas-specific Democratic wins; The Verge frames the issue as needing broader external forces — regulatory, political, or market-driven",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/GettyImages-2303431102.jpg?resize=1200,600",
+      "published_at": "2026-11-04T18:50:55+00:00",
+      "fetched_at": "2026-11-05T15:13:34.394823+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9825,
+            "source": "MIT Tech Review AI",
+            "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+            "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+          },
+          {
+            "id": 9814,
+            "source": "The Verge AI",
+            "title": "Big Tech’s big AI buildout will not end until someone stops it",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "MIT Tech Review names specific Texas projects (Stargate Frontier at 1,820 MW, Nexus Hubbard at 6,400 MW); The Verge gives aggregate Big Tech capex figures ($720B this year, $1T+ committed)",
+          "MIT Tech Review focuses on Texas-specific Democratic wins; The Verge frames the issue as needing broader external forces — regulatory, political, or market-driven"
+        ],
+        "is_update": false,
+        "reason": "Both cover the 2026 US midterm election results creating political backlash against Big Tech's AI data center buildout, with potential moratoriums and regulatory action."
+      }
+    },
+    {
+      "id": 9804,
+      "source": "Guardian AI",
+      "title": "Australia warned AI and datacentre expansion could become 'political kryptonite'",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/06/ai-datacentre-boom-could-be-political-kryptonite-australia",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Australia has yet to see tangible benefits from the AI and datacentre boom, with concerns about copyright changes hurting creatives, special rules around power and water use, and worker displacement. Drawing parallels to US midterm results where voters turned against data center expansion, the article warns the Albanese government that it struggles to articulate how AI will benefit ordinary Australians and risks political backlash.",
+      "opinion": "The warning is well-timed given mounting public skepticism, but without concrete examples of voter consequences in Australia itself, the US parallel may not fully apply to Australian political dynamics.",
+      "image_url": "https://i.guim.co.uk/img/media/f237f8c427d9aa7bac910c3b553c853bfe1d3aa4/42_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=47a0b56db598e5fbcaadae7fce0601d9",
+      "published_at": "2026-11-05T14:00:26+00:00",
+      "fetched_at": "2026-11-05T15:13:29.116816+00:00"
+    },
+    {
+      "id": 9806,
+      "source": "Guardian AI",
+      "title": "100+ groups across 15 European countries plan 'Stop Dirty Data Centres' protests",
+      "url": "https://www.theguardian.com/world/2026/nov/05/activists-across-europe-protests-ai-against-datacentres",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "More than 100 campaign groups across 15 European countries are organizing two days of protests this Friday and Saturday under the banner 'Stop Dirty Data Centres,' calling for a moratorium on large AI datacentre projects and citing unaffordable environmental and social costs.",
+      "opinion": "The scale and coordination of protests across 15 countries signals that opposition to AI infrastructure is becoming a pan-European movement, not isolated local complaints.",
+      "image_url": "https://i.guim.co.uk/img/media/d71ddf5d851c953d692e59f548ed70931dae9c83/474_0_6830_5464/master/6830.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=87f754b9a7c7910d7aa3b0766794ba83",
+      "published_at": "2026-11-05T09:00:01+00:00",
+      "fetched_at": "2026-11-05T15:13:29.471642+00:00"
+    },
+    {
+      "id": 9844,
+      "source": "Aeon",
+      "title": "Documentary exposes Global South gig workers who train self-driving cars under precarious conditions",
+      "url": "https://aeon.co/videos/meet-the-invisible-workers-who-teach-self-driving-cars-to-see",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "French filmmaker Nicolas Gourault's short documentary 'Their Eyes' profiles workers in Kenya, the Philippines, and Venezuela who perform data labeling and image annotation for self-driving car AI under low-paid, precarious conditions. The film argues that machine learning discussions often omit the cheap Global South labor that fuels them, perpetuating geographical inequalities.",
+      "opinion": "The documentary adds a human dimension to an underreported aspect of AI development, highlighting how the benefits and costs of autonomous vehicle technology are distributed unevenly across the globe.",
+      "image_url": "https://images.aeonmedia.co/images/5aa87f08-a1a8-4922-981a-d498103bdf35/their-eyes-landscape-1.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-05T11:01:00+00:00",
+      "fetched_at": "2026-11-05T15:13:42.404314+00:00"
+    },
+    {
+      "id": 9822,
+      "source": "Ars Technica AI",
+      "title": "Russian APT29 hackers exploited patched iOS and Android flaws to infect phones via compromised websites",
+      "url": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Sekoia researchers uncovered a hacking campaign attributed to Russia's APT29 that exploited previously patched iOS and Android vulnerabilities to target website visitors. Attackers used JavaScript injection, proxy domains, and a supply-chain compromise of a Ukrainian analytics service. Targets included america250.org and a proxy of the Raffles London hotel near UK government buildings. The campaign deployed DarkSword, an iOS exploit kit linked to Turkish surveillance vendor PARS Defense.",
+      "opinion": "The supply-chain compromise of a Ukrainian analytics service and targeting of sites near government buildings suggests state-level espionage goals, making this more concerning than typical vulnerability exploitation.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/malware-1000x648.jpg",
+      "published_at": "2026-11-04T22:26:49+00:00",
+      "fetched_at": "2026-11-05T15:13:33.556259+00:00"
+    },
+    {
+      "id": 9845,
+      "source": "Charter",
+      "title": "Bloomberg HR launched 'Project Centurion' challenge to achieve 100 AI wins in 100 days",
+      "url": "https://www.charterworks.com/steal-this-idea-bloombergs-project-centurion-100-ai-wins-in-100-days/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Bloomberg launched 'Project Centurion' in March, a challenge initiated by then-CHRO Ken Cooper for the company's HR department to achieve 100 AI wins in 100 days. Further details are behind a paywall.",
+      "opinion": "The initiative is a notable example of a large enterprise systematically driving AI adoption through internal competition, though the paywall limits evaluation of actual outcomes.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2021/06/profile.png",
+      "published_at": "2026-11-05T10:30:00+00:00",
+      "fetched_at": "2026-11-05T15:13:42.71844+00:00"
+    },
+    {
+      "id": 9826,
+      "source": "OpenAI",
+      "title": "OpenAI introduces community compact and policy blueprint for responsible AI data center development",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI has introduced a National Community Compact and Compute Campus Policy Blueprint to guide responsible AI infrastructure development, with stated goals of protecting local resources and creating jobs in communities where AI data centers are built.",
+      "opinion": "The timing alongside midterm backlash against data centers suggests OpenAI is trying to get ahead of regulatory pressure, though the announcement lacks specifics on enforcement or accountability.",
+      "image_url": "",
+      "published_at": "2026-11-05T02:00:00+00:00",
+      "fetched_at": "2026-11-05T15:13:35.162783+00:00"
+    },
+    {
+      "id": 9794,
+      "source": "TechCrunch AI",
+      "title": "Startup Aina launches $399 smart ring with screen, joystick, and mic for controlling AI agents",
+      "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Hardware startup Aina has launched a $399 smart ring with a built-in screen, joystick, microphone, and speaker designed as a controller for AI agents. The ring allows users to talk to AI agents, take calls, dictate notes, and control smart devices. The company raised $5.5 million in July. Pre-orders start Thursday at $399 early-bird ($499 regular), shipping January 2027.",
+      "opinion": "Adding a screen and physical controls to a ring form factor is an ambitious differentiation in a crowded AI wearables market, but usability at that scale remains a major question.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Aina-Ring-Hands.jpeg?resize=1200,805",
+      "published_at": "2026-11-05T14:42:00+00:00",
+      "fetched_at": "2026-11-05T15:13:26.26531+00:00"
+    },
+    {
+      "id": 9811,
+      "source": "The Rundown AI",
+      "title": "SpaceXSI's Grok Bot AI agent can now make phone calls on users' behalf",
+      "url": "https://therundownai.beehiiv.com/p/ai-agents-can-now-make-your-phone-calls",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "SpaceXSI launched phone call capabilities in its Grok Bot AI agent platform, allowing paid users to have the bot make calls — sitting on hold, booking appointments, and negotiating bills on US phone numbers. Users remain legally responsible as the 'caller of record.' During calls, users can type responses via live transcript for the bot to relay when it encounters questions it can't answer.",
+      "opinion": "Making users the legal 'caller of record' is a clever liability shield, but the feature raises questions about consent and disclosure obligations when the person on the other end doesn't know they're talking to an AI.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/2ec2e783-2a3b-4b97-8aa6-0e0ce195c61e/grokbotphone.png?t=1793828989",
+      "published_at": "2026-11-05T11:00:00+00:00",
+      "fetched_at": "2026-11-05T15:13:31.386312+00:00"
+    },
+    {
+      "id": 9812,
+      "source": "The Verge AI",
+      "title": "Decoder podcast explores hidden supply chain costs of the AI boom with Harvard economist",
+      "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Verge/Decoder podcast features Harvard Business School economist Willy Shih discussing hidden supply chain costs of the AI infrastructure buildout, including why Trump's tariffs failed to reshore manufacturing, 'RAMageddon' memory supply pressures from AI demand, why making iPhones in America is impractical, and why politicians ignore the complex economics of global supply chains.",
+      "opinion": "Shih's framing of AI infrastructure as a supply chain problem rather than just a technology problem adds useful economic context often missing from AI hype coverage.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "fetched_at": "2026-11-05T15:13:32.275986+00:00"
+    },
+    {
+      "id": 9846,
+      "source": "Charter",
+      "title": "NBER paper argues NBA load management offers lessons for preventing workplace burnout",
+      "url": "https://www.charterworks.com/research-spotlight-what-nba-coaches-can-teach-workplace-leaders-about-managing-burnout/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "An NBER working paper argues that NBA load management — benching healthy players to prevent injuries — offers lessons for workplace leaders on managing burnout. The economists found load management effective in basketball and contend the same principle applies to knowledge work: strategically pulling back high performers before they burn out can increase long-term output even if it reduces short-term productivity.",
+      "opinion": "The analogy is intuitive but the leap from physical injuries in athletes to mental burnout in office workers needs more empirical grounding to be actionable beyond the metaphor.",
+      "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2021/06/profile.png",
+      "published_at": "2026-11-05T10:30:00+00:00",
+      "fetched_at": "2026-11-05T15:13:42.853244+00:00"
+    },
+    {
+      "id": 9795,
+      "source": "TechCrunch AI",
+      "title": "Box integrates Nvidia's Nemotron embedding models for faster AI agent content retrieval",
+      "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Box announced Box Content Retrieval at its developer conference, integrating Nvidia's open-weight Nemotron embedding models to enable AI agents to answer queries four times faster with 20% fewer errors and 90% fewer tokens. The system uses LLM-based embeddings to map document concepts rather than keywords, returning relevant chunks with metadata and permissions. Available to Enterprise Advance customers early next year.",
+      "opinion": "The performance claims are impressive but come from Nvidia's own VP, not independent benchmarks — real-world enterprise document retrieval is messier than controlled tests suggest.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/08/GettyImages-1178603809.jpg?w=1024",
+      "published_at": "2026-11-05T14:00:00+00:00",
+      "fetched_at": "2026-11-05T15:13:26.48203+00:00"
+    },
+    {
+      "id": 9813,
+      "source": "The Verge AI",
+      "title": "SoundCloud partners with ElevenLabs for direct AI-generated music publishing",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "SoundCloud has partnered with ElevenLabs to let users publish AI-generated music directly from ElevenLabs to SoundCloud without manual download and re-upload. Songs will be labeled as AI-generated. SoundCloud Artist Pro subscribers get three months of ElevenMusic Pro free. SoundCloud has been more open to AI music than other streaming platforms while encouraging AI content labeling under EU rules.",
+      "opinion": "SoundCloud is positioning itself as the default home for AI-generated music, a strategic bet that could attract creators but risks alienating human musicians who see the platform as a discovery tool.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-1083228772.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "fetched_at": "2026-11-05T15:13:32.4116+00:00"
+    },
+    {
+      "id": 9824,
+      "source": "Ars Technica AI",
+      "title": "North Korean hackers steal $6.34 billion from Binance in largest-ever crypto heist",
+      "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Binance disclosed that North Korean hackers (TraderTraitor) executed a months-long campaign culminating in the theft of $6.34 billion in cryptocurrency — the largest crypto heist ever. Attackers compromised engineers through a trojanized Homebrew installer and fake job interviews delivering zero-day malware, then pivoted via an internal AI tool. Binance has frozen or recovered $2.85 billion and says it has reserves to cover the loss. The FBI and TRM Security attributed the attack to North Korean state-sponsored actors.",
+      "opinion": "The use of a compromised internal AI tool as a pivot point represents a new and alarming attack vector that should put every company deploying internal AI assistants on notice.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-1024x648.jpg",
+      "published_at": "2026-11-04T16:06:03+00:00",
+      "fetched_at": "2026-11-05T15:13:33.806826+00:00"
+    },
+    {
+      "id": 9807,
+      "source": "Guardian AI",
+      "title": "UK parliamentary probe finds 'dangerous' dependence on China for defence and AI critical minerals",
+      "url": "https://www.theguardian.com/world/2026/nov/05/uk-dangerously-reliant-on-china-critical-minerals-military-ai-renewable-energy",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A UK parliamentary business select committee investigation found the UK is 'dangerously' dependent on China for critical raw materials essential to military, renewable energy, and AI sectors. MPs are calling for a 'critical minerals finance facility' to fund rare earth mines and diversify supply chains away from China.",
+      "opinion": "The finding underscores a strategic vulnerability that has been known for years but remains unaddressed — the call for a finance facility is a concrete proposal but faces the same cost and timeline challenges that have stalled similar efforts elsewhere.",
+      "image_url": "https://i.guim.co.uk/img/media/cb4db687d218902c0710319b5c22a27ce31c84f2/446_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2eb28a30a0515f4f055f193555cd883e",
+      "published_at": "2026-11-05T05:00:55+00:00",
+      "fetched_at": "2026-11-05T15:13:29.594743+00:00"
+    },
+    {
+      "id": 9796,
+      "source": "TechCrunch AI",
+      "title": "YC startup Discovered Materials offers $1M for AI solutions to five unsolved materials science problems",
+      "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Discovered Materials, a Y Combinator startup using AI to discover new chip materials, announced a $1 million challenge offering $200,000 each for AI solutions to five unsolved materials science problems including cuprate superconductivity and Density Functional Theory improvements. When frontier AI models were tested on these problems with days of autonomous compute, they made little headway, highlighting materials science as a frontier where AI has yet to break through.",
+      "opinion": "The challenge is a clever way to crowdsource research while demonstrating the limits of current AI — the fact that frontier models failed with days of compute is a useful corrective to AI hype.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/discoverd-materials.jpg?resize=1200,800",
+      "published_at": "2026-11-05T13:00:00+00:00",
+      "fetched_at": "2026-11-05T15:13:26.689751+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9825,
+          "source": "MIT Tech Review AI",
+          "title": "US midterm results threaten AI data center expansion as Big Tech plans $720B+ in spending",
+          "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Democratic victories in the 2026 US midterms are disrupting Big Tech's massive AI infrastructure buildout. In Texas, the fastest-growing US data center market, governor-elect Gina Hinojosa is pushing for a moratorium on new facilities, threatening projects like the 1,820 MW Stargate Frontier and a 6,400 MW center intended for Anthropic. Meanwhile, Amazon, Microsoft, Alphabet, and Meta plan at least $720 billion in capex this year, mostly on AI, on top of over $1 trillion in future commitments — despite AI not yet yielding significant returns. Wall Street reacted with a sharp tech selloff, and midterm voters broadly supported protecting ratepayers from data-center-driven electricity cost increases.",
+          "opinion": "The convergence of political backlash and Wall Street skepticism may finally force Big Tech to justify AI infrastructure spending with actual returns rather than speculative promises. Where coverage differs: MIT Tech Review names specific Texas projects (Stargate Frontier at 1,820 MW, Nexus Hubbard at 6,400 MW); The Verge gives aggregate Big Tech capex figures ($720B this year, $1T+ committed) MIT Tech Review focuses on Texas-specific Democratic wins; The Verge frames the issue as needing broader external forces — regulatory, political, or market-driven",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/GettyImages-2303431102.jpg?resize=1200,600",
+          "published_at": "2026-11-04T18:50:55+00:00",
+          "fetched_at": "2026-11-05T15:13:34.394823+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9825,
+                "source": "MIT Tech Review AI",
+                "title": "Texas was the new epicenter of the AI data center buildout. That might be kaput.",
+                "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+              },
+              {
+                "id": 9814,
+                "source": "The Verge AI",
+                "title": "Big Tech’s big AI buildout will not end until someone stops it",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "MIT Tech Review names specific Texas projects (Stargate Frontier at 1,820 MW, Nexus Hubbard at 6,400 MW); The Verge gives aggregate Big Tech capex figures ($720B this year, $1T+ committed)",
+              "MIT Tech Review focuses on Texas-specific Democratic wins; The Verge frames the issue as needing broader external forces — regulatory, political, or market-driven"
+            ],
+            "is_update": false,
+            "reason": "Both cover the 2026 US midterm election results creating political backlash against Big Tech's AI data center buildout, with potential moratoriums and regulatory action."
+          }
+        },
+        {
+          "id": 9804,
+          "source": "Guardian AI",
+          "title": "Australia warned AI and datacentre expansion could become 'political kryptonite'",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/06/ai-datacentre-boom-could-be-political-kryptonite-australia",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Australia has yet to see tangible benefits from the AI and datacentre boom, with concerns about copyright changes hurting creatives, special rules around power and water use, and worker displacement. Drawing parallels to US midterm results where voters turned against data center expansion, the article warns the Albanese government that it struggles to articulate how AI will benefit ordinary Australians and risks political backlash.",
+          "opinion": "The warning is well-timed given mounting public skepticism, but without concrete examples of voter consequences in Australia itself, the US parallel may not fully apply to Australian political dynamics.",
+          "image_url": "https://i.guim.co.uk/img/media/f237f8c427d9aa7bac910c3b553c853bfe1d3aa4/42_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=47a0b56db598e5fbcaadae7fce0601d9",
+          "published_at": "2026-11-05T14:00:26+00:00",
+          "fetched_at": "2026-11-05T15:13:29.116816+00:00"
+        },
+        {
+          "id": 9806,
+          "source": "Guardian AI",
+          "title": "100+ groups across 15 European countries plan 'Stop Dirty Data Centres' protests",
+          "url": "https://www.theguardian.com/world/2026/nov/05/activists-across-europe-protests-ai-against-datacentres",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "More than 100 campaign groups across 15 European countries are organizing two days of protests this Friday and Saturday under the banner 'Stop Dirty Data Centres,' calling for a moratorium on large AI datacentre projects and citing unaffordable environmental and social costs.",
+          "opinion": "The scale and coordination of protests across 15 countries signals that opposition to AI infrastructure is becoming a pan-European movement, not isolated local complaints.",
+          "image_url": "https://i.guim.co.uk/img/media/d71ddf5d851c953d692e59f548ed70931dae9c83/474_0_6830_5464/master/6830.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=87f754b9a7c7910d7aa3b0766794ba83",
+          "published_at": "2026-11-05T09:00:01+00:00",
+          "fetched_at": "2026-11-05T15:13:29.471642+00:00"
+        },
+        {
+          "id": 9844,
+          "source": "Aeon",
+          "title": "Documentary exposes Global South gig workers who train self-driving cars under precarious conditions",
+          "url": "https://aeon.co/videos/meet-the-invisible-workers-who-teach-self-driving-cars-to-see",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "French filmmaker Nicolas Gourault's short documentary 'Their Eyes' profiles workers in Kenya, the Philippines, and Venezuela who perform data labeling and image annotation for self-driving car AI under low-paid, precarious conditions. The film argues that machine learning discussions often omit the cheap Global South labor that fuels them, perpetuating geographical inequalities.",
+          "opinion": "The documentary adds a human dimension to an underreported aspect of AI development, highlighting how the benefits and costs of autonomous vehicle technology are distributed unevenly across the globe.",
+          "image_url": "https://images.aeonmedia.co/images/5aa87f08-a1a8-4922-981a-d498103bdf35/their-eyes-landscape-1.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-05T11:01:00+00:00",
+          "fetched_at": "2026-11-05T15:13:42.404314+00:00"
+        },
+        {
+          "id": 9822,
+          "source": "Ars Technica AI",
+          "title": "Russian APT29 hackers exploited patched iOS and Android flaws to infect phones via compromised websites",
+          "url": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Sekoia researchers uncovered a hacking campaign attributed to Russia's APT29 that exploited previously patched iOS and Android vulnerabilities to target website visitors. Attackers used JavaScript injection, proxy domains, and a supply-chain compromise of a Ukrainian analytics service. Targets included america250.org and a proxy of the Raffles London hotel near UK government buildings. The campaign deployed DarkSword, an iOS exploit kit linked to Turkish surveillance vendor PARS Defense.",
+          "opinion": "The supply-chain compromise of a Ukrainian analytics service and targeting of sites near government buildings suggests state-level espionage goals, making this more concerning than typical vulnerability exploitation.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/malware-1000x648.jpg",
+          "published_at": "2026-11-04T22:26:49+00:00",
+          "fetched_at": "2026-11-05T15:13:33.556259+00:00"
+        },
+        {
+          "id": 9845,
+          "source": "Charter",
+          "title": "Bloomberg HR launched 'Project Centurion' challenge to achieve 100 AI wins in 100 days",
+          "url": "https://www.charterworks.com/steal-this-idea-bloombergs-project-centurion-100-ai-wins-in-100-days/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Bloomberg launched 'Project Centurion' in March, a challenge initiated by then-CHRO Ken Cooper for the company's HR department to achieve 100 AI wins in 100 days. Further details are behind a paywall.",
+          "opinion": "The initiative is a notable example of a large enterprise systematically driving AI adoption through internal competition, though the paywall limits evaluation of actual outcomes.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2021/06/profile.png",
+          "published_at": "2026-11-05T10:30:00+00:00",
+          "fetched_at": "2026-11-05T15:13:42.71844+00:00"
+        },
+        {
+          "id": 9826,
+          "source": "OpenAI",
+          "title": "OpenAI introduces community compact and policy blueprint for responsible AI data center development",
+          "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI has introduced a National Community Compact and Compute Campus Policy Blueprint to guide responsible AI infrastructure development, with stated goals of protecting local resources and creating jobs in communities where AI data centers are built.",
+          "opinion": "The timing alongside midterm backlash against data centers suggests OpenAI is trying to get ahead of regulatory pressure, though the announcement lacks specifics on enforcement or accountability.",
+          "image_url": "",
+          "published_at": "2026-11-05T02:00:00+00:00",
+          "fetched_at": "2026-11-05T15:13:35.162783+00:00"
+        },
+        {
+          "id": 9794,
+          "source": "TechCrunch AI",
+          "title": "Startup Aina launches $399 smart ring with screen, joystick, and mic for controlling AI agents",
+          "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Hardware startup Aina has launched a $399 smart ring with a built-in screen, joystick, microphone, and speaker designed as a controller for AI agents. The ring allows users to talk to AI agents, take calls, dictate notes, and control smart devices. The company raised $5.5 million in July. Pre-orders start Thursday at $399 early-bird ($499 regular), shipping January 2027.",
+          "opinion": "Adding a screen and physical controls to a ring form factor is an ambitious differentiation in a crowded AI wearables market, but usability at that scale remains a major question.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Aina-Ring-Hands.jpeg?resize=1200,805",
+          "published_at": "2026-11-05T14:42:00+00:00",
+          "fetched_at": "2026-11-05T15:13:26.26531+00:00"
+        },
+        {
+          "id": 9811,
+          "source": "The Rundown AI",
+          "title": "SpaceXSI's Grok Bot AI agent can now make phone calls on users' behalf",
+          "url": "https://therundownai.beehiiv.com/p/ai-agents-can-now-make-your-phone-calls",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "SpaceXSI launched phone call capabilities in its Grok Bot AI agent platform, allowing paid users to have the bot make calls — sitting on hold, booking appointments, and negotiating bills on US phone numbers. Users remain legally responsible as the 'caller of record.' During calls, users can type responses via live transcript for the bot to relay when it encounters questions it can't answer.",
+          "opinion": "Making users the legal 'caller of record' is a clever liability shield, but the feature raises questions about consent and disclosure obligations when the person on the other end doesn't know they're talking to an AI.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/2ec2e783-2a3b-4b97-8aa6-0e0ce195c61e/grokbotphone.png?t=1793828989",
+          "published_at": "2026-11-05T11:00:00+00:00",
+          "fetched_at": "2026-11-05T15:13:31.386312+00:00"
+        },
+        {
+          "id": 9812,
+          "source": "The Verge AI",
+          "title": "Decoder podcast explores hidden supply chain costs of the AI boom with Harvard economist",
+          "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Verge/Decoder podcast features Harvard Business School economist Willy Shih discussing hidden supply chain costs of the AI infrastructure buildout, including why Trump's tariffs failed to reshore manufacturing, 'RAMageddon' memory supply pressures from AI demand, why making iPhones in America is impractical, and why politicians ignore the complex economics of global supply chains.",
+          "opinion": "Shih's framing of AI infrastructure as a supply chain problem rather than just a technology problem adds useful economic context often missing from AI hype coverage.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
+          "published_at": "2026-11-05T15:00:00+00:00",
+          "fetched_at": "2026-11-05T15:13:32.275986+00:00"
+        },
+        {
+          "id": 9846,
+          "source": "Charter",
+          "title": "NBER paper argues NBA load management offers lessons for preventing workplace burnout",
+          "url": "https://www.charterworks.com/research-spotlight-what-nba-coaches-can-teach-workplace-leaders-about-managing-burnout/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "An NBER working paper argues that NBA load management — benching healthy players to prevent injuries — offers lessons for workplace leaders on managing burnout. The economists found load management effective in basketball and contend the same principle applies to knowledge work: strategically pulling back high performers before they burn out can increase long-term output even if it reduces short-term productivity.",
+          "opinion": "The analogy is intuitive but the leap from physical injuries in athletes to mental burnout in office workers needs more empirical grounding to be actionable beyond the metaphor.",
+          "image_url": "https://storage.ghost.io/c/8f/cc/8fccfa65-0986-47a8-8ece-f28e425835ce/content/images/2021/06/profile.png",
+          "published_at": "2026-11-05T10:30:00+00:00",
+          "fetched_at": "2026-11-05T15:13:42.853244+00:00"
+        },
+        {
+          "id": 9795,
+          "source": "TechCrunch AI",
+          "title": "Box integrates Nvidia's Nemotron embedding models for faster AI agent content retrieval",
+          "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Box announced Box Content Retrieval at its developer conference, integrating Nvidia's open-weight Nemotron embedding models to enable AI agents to answer queries four times faster with 20% fewer errors and 90% fewer tokens. The system uses LLM-based embeddings to map document concepts rather than keywords, returning relevant chunks with metadata and permissions. Available to Enterprise Advance customers early next year.",
+          "opinion": "The performance claims are impressive but come from Nvidia's own VP, not independent benchmarks — real-world enterprise document retrieval is messier than controlled tests suggest.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/08/GettyImages-1178603809.jpg?w=1024",
+          "published_at": "2026-11-05T14:00:00+00:00",
+          "fetched_at": "2026-11-05T15:13:26.48203+00:00"
+        },
+        {
+          "id": 9813,
+          "source": "The Verge AI",
+          "title": "SoundCloud partners with ElevenLabs for direct AI-generated music publishing",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "SoundCloud has partnered with ElevenLabs to let users publish AI-generated music directly from ElevenLabs to SoundCloud without manual download and re-upload. Songs will be labeled as AI-generated. SoundCloud Artist Pro subscribers get three months of ElevenMusic Pro free. SoundCloud has been more open to AI music than other streaming platforms while encouraging AI content labeling under EU rules.",
+          "opinion": "SoundCloud is positioning itself as the default home for AI-generated music, a strategic bet that could attract creators but risks alienating human musicians who see the platform as a discovery tool.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-1083228772.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-05T15:00:00+00:00",
+          "fetched_at": "2026-11-05T15:13:32.4116+00:00"
+        },
+        {
+          "id": 9824,
+          "source": "Ars Technica AI",
+          "title": "North Korean hackers steal $6.34 billion from Binance in largest-ever crypto heist",
+          "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Binance disclosed that North Korean hackers (TraderTraitor) executed a months-long campaign culminating in the theft of $6.34 billion in cryptocurrency — the largest crypto heist ever. Attackers compromised engineers through a trojanized Homebrew installer and fake job interviews delivering zero-day malware, then pivoted via an internal AI tool. Binance has frozen or recovered $2.85 billion and says it has reserves to cover the loss. The FBI and TRM Security attributed the attack to North Korean state-sponsored actors.",
+          "opinion": "The use of a compromised internal AI tool as a pivot point represents a new and alarming attack vector that should put every company deploying internal AI assistants on notice.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/binance-1024x648.jpg",
+          "published_at": "2026-11-04T16:06:03+00:00",
+          "fetched_at": "2026-11-05T15:13:33.806826+00:00"
+        },
+        {
+          "id": 9807,
+          "source": "Guardian AI",
+          "title": "UK parliamentary probe finds 'dangerous' dependence on China for defence and AI critical minerals",
+          "url": "https://www.theguardian.com/world/2026/nov/05/uk-dangerously-reliant-on-china-critical-minerals-military-ai-renewable-energy",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A UK parliamentary business select committee investigation found the UK is 'dangerously' dependent on China for critical raw materials essential to military, renewable energy, and AI sectors. MPs are calling for a 'critical minerals finance facility' to fund rare earth mines and diversify supply chains away from China.",
+          "opinion": "The finding underscores a strategic vulnerability that has been known for years but remains unaddressed — the call for a finance facility is a concrete proposal but faces the same cost and timeline challenges that have stalled similar efforts elsewhere.",
+          "image_url": "https://i.guim.co.uk/img/media/cb4db687d218902c0710319b5c22a27ce31c84f2/446_0_3333_2667/master/3333.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2eb28a30a0515f4f055f193555cd883e",
+          "published_at": "2026-11-05T05:00:55+00:00",
+          "fetched_at": "2026-11-05T15:13:29.594743+00:00"
+        },
+        {
+          "id": 9796,
+          "source": "TechCrunch AI",
+          "title": "YC startup Discovered Materials offers $1M for AI solutions to five unsolved materials science problems",
+          "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Discovered Materials, a Y Combinator startup using AI to discover new chip materials, announced a $1 million challenge offering $200,000 each for AI solutions to five unsolved materials science problems including cuprate superconductivity and Density Functional Theory improvements. When frontier AI models were tested on these problems with days of autonomous compute, they made little headway, highlighting materials science as a frontier where AI has yet to break through.",
+          "opinion": "The challenge is a clever way to crowdsource research while demonstrating the limits of current AI — the fact that frontier models failed with days of compute is a useful corrective to AI hype.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/discoverd-materials.jpg?resize=1200,800",
+          "published_at": "2026-11-05T13:00:00+00:00",
+          "fetched_at": "2026-11-05T15:13:26.689751+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/sermakarevich/status/2118272177023938646",
+      "author": "sermakarevich",
+      "headline": "A new __evals cheat sheet__ is making the rounds — worth bookmarking for the next time you're designing AI test suites.",
+      "tweet_id": "40f1eba9-b6bc-8136-9176-e48d8f239229",
+      "source_text": "Evals cheat sheet https://t.co/3u9qgrbp7r https://t.co/G1VHnCOl8z",
+      "created_time": "2026-11-05T13:17:00.000Z",
+      "canonical_url": "https://twitter.com/sermakarevich/status/2118272177023938646",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/seraleev/status/2118159044078903367",
+      "author": "seraleev",
+      "headline": "Apple quietly added __Retention Messaging to App Store Connect__, letting developers target lapsing users without a third-party tool.",
+      "tweet_id": "40f1eba9-b6bc-81df-961e-eb0d99e652c0",
+      "source_text": "Wow, I definitely didn’t see this coming\n\nRetention Messaging are now available directly in App Store Connect! \n\nApple still knows how to surprise us 🎉 https://t.co/4ZlL93HMsu",
+      "created_time": "2026-11-05T12:17:00.000Z",
+      "canonical_url": "https://twitter.com/seraleev/status/2118159044078903367",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/KatieKeithBarn2/status/2118242924827738193",
+      "author": "KatieKeithBarn2",
+      "headline": "DataForSEO data: __AI Overviews now appear on 61% of Google results__ — up from 6% two years ago — and the #1 organic result's CTR has fallen from 18% to 7%.",
+      "tweet_id": "40f1eba9-b6bc-81de-a0ec-dde5e4a328f8",
+      "source_text": "Some key insights from @dataforseo about what’s changing in SEO:\n\n- AI Overviews now appear on 61% of Google results, up from 6% two years ago. When one appears it takes 42-45% of clicks, and the #1 organic result’s desktop clickthrough has fallen from 18% to 7%. (And what a surprise, that exactly fits with the decline in most plugin companies' sales.)\n- Buying-intent searches are no longer safe: their AI Overview rate doubled in a year to 51%, and expensive or easy keywords get them just as often.\n- Visibility is now bigger than your own site. Reddit is in 1/3 of top-10 results and is the #2 cited site in both Google AI and ChatGPT. Google’s AI cites YouTube and social; ChatGPT cites Wikipedia and publishers.\n- Backlinks still matter: Sites with more referring domains rank higher and get more AI citations, and breadth of domains beats volume from any one type of site.\n\nhttps://t.co/QzmaizID41",
+      "created_time": "2026-11-05T11:57:00.000Z",
+      "canonical_url": "https://twitter.com/KatieKeithBarn2/status/2118242924827738193",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2118283939458711788",
+      "author": "Zephyr_hg",
+      "headline": "One prompt __turns Claude Opus into an explainer-video shot list and voiceover studio__, writing scenes, spoken lines, and shot descriptions from a single post.",
+      "tweet_id": "40f1eba9-b6bc-813b-9cfd-c060a296a076",
+      "source_text": "I use this prompt to turn Claude Opus into an explainer-video shot list and voiceover studio.\n\nIt writes the scenes, the spoken lines, and the shot list from one post.\n\nsend it to Claude Opus, then open the full roadmap with examples in the image. https://t.co/zpOoRNKjOu https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-05T11:52:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2118283939458711788",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Kevin_Logan/status/2117980686653304986",
+      "author": "Kevin_Logan",
+      "headline": "Grok Bot's upcoming patch reportedly adds __a per-bot usage breakdown__ and unified Google sign-in across everything, per early pre-patch notes.",
+      "tweet_id": "40e1eba9-b6bc-81f6-acf8-c38c8294557d",
+      "source_text": "Daily Grok Bot Pre-Patch Notes, @bot is not slowing down. \n\nThe big ones are additional usage, a usage breakdown per bot, and one Google sign-in for everything.\n\nCards below, we may or may not see any or all of these: https://t.co/Ll9D2yoXo1",
+      "created_time": "2026-11-04T21:22:00.000Z",
+      "canonical_url": "https://twitter.com/Kevin_Logan/status/2117980686653304986",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/zaneccampbell/status/2118001594771939611",
+      "author": "zaneccampbell",
+      "headline": "Running __50 heavily optimized Grok bots__, one operator says a single team-broadcast message just ate 4% of their entire usage budget.",
+      "tweet_id": "40e1eba9-b6bc-8124-b187-c5e236f19081",
+      "source_text": "I have to say this about Grok Bot, and I'm absolutely floored by what I just experienced.\n\nIf you don't know, I run 50 bots, and all are heavily optimized. I've had no usage issues until last week, when all of a sudden usage rates and tokens became astronomical.\n\nI can't tell you how many times I have a message for the entire team, so I will send a message to my CEO, who then hands it off to each team member. When I do this, 99% of the time it takes 0% to 1% of usage.\n\nI just did this now: right before I sent it, I was sitting at 30% usage. I sent the message, the message got distributed, and I'm now sitting at 34%. My usage jumped 4% from one message, just having a team message sent out to my bots. That is absolutely unbelievable.\n\n@spacexai",
+      "created_time": "2026-11-04T20:37:00.000Z",
+      "canonical_url": "https://twitter.com/zaneccampbell/status/2118001594771939611",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/viticci/status/2117781974764990929",
+      "author": "viticci",
+      "headline": "Federico Viticci got a look at Apple's real Siri AI skills in iOS 27.3, including one that __teaches Siri how to select and insert text in Notes__.",
+      "tweet_id": "40e1eba9-b6bc-81cd-8fde-cf2879856de8",
+      "source_text": "These are some of the actual skills Apple is using for Siri AI in iOS 27.3\n\n- there's a skill to teach Siri how to select and insert text in Notes\n- they made a skill to tell Siri about file types supported in the Files app\n- a lot of examples of what NOT to do (sign of an old model)",
+      "created_time": "2026-11-04T19:02:00.000Z",
+      "canonical_url": "https://twitter.com/viticci/status/2117781974764990929",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/poteto/status/2118017093677494706",
+      "author": "poteto",
+      "headline": "Grok Bot's team says they've __30x'd their code shipping rate__ with an agent-friendly architecture — with ~230 developers landing at least one PR in October.",
+      "tweet_id": "40e1eba9-b6bc-8187-b633-c6e5a2f1a1c9",
+      "source_text": "some fun slides from my upcoming talk @aiDotEngineer \n\nvery excited to share how we ship crazy amounts of code (30x'd) without reading it, yet perf is as good if not better then when we launched\n\nthere's a lot more to improve of course, and the ceiling is far from being reached, but given the relentless shipping speed and our high bar for polish, i think that our agent friendly architecture bets are paying off at taming the slop\n\nfun fact: ~230 people landed at least 1 PR to grok bot in october!",
+      "created_time": "2026-11-04T17:42:00.000Z",
+      "canonical_url": "https://twitter.com/poteto/status/2118017093677494706",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/glasshourxbt/status/2117976711866274060",
+      "author": "glasshourxbt",
+      "headline": "Elon Musk sketched out __Macrohard at the xAI all-hands__: not one AI assistant but agents emulating entire companies where the output is digital.",
+      "tweet_id": "40e1eba9-b6bc-8140-9d12-cf53602e87d2",
+      "source_text": "ELON MUSK JUST CALLED xAI A TODDLER. THEN SPENT 9 MINUTES EXPLAINING WHY NOBODY CAN CATCH IT\n\nthe xAI all-hands, cut down to only Elon talking.\n\nthe line that stuck with me:\n\n\"So it should be possible to completely emulate any company where the output is digital.\"\n\nthat's Macrohard. not one AI assistant, a whole company made of agents.\n\nwhat he covers:\n\n00:00 xAI is only 2.5 years old, and already #1 anyway\n02:57 \"The AI just creates the binary directly\"\n03:41 why most AI compute becomes real-time video\n04:37 Macrohard: emulating entire companies\n05:31 the compute advantage\n06:49 data centers in orbit and a city on the Moon\n\n\"xAI is moving faster than any other company. No one's even close.\"\n\nyou don't need to wait for Macrohard. a small version already runs on Grok Bot: 7 agents, 1 clock, each with one job.\n\nwatch it, then read my article below on how to set it up ↓",
+      "created_time": "2026-11-04T17:42:00.000Z",
+      "canonical_url": "https://twitter.com/glasshourxbt/status/2117976711866274060",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dani_avila7/status/2117786870910263562",
+      "author": "dani_avila7",
+      "headline": "A clean diagram shows how __OpenTelemetry trace context propagates through MCP__ via params._meta, connecting client-to-server spans into a single distributed trace.",
+      "tweet_id": "40e1eba9-b6bc-81f2-9d08-ec460895fcf0",
+      "source_text": "Here’s a simple diagram of how OpenTelemetry works with MCP\n\nTrace context propagates from client to server through params._meta, connecting spans into a single distributed trace\n\nSimple, but a big step for MCP observability https://t.co/MJgbp6yBPy https://t.co/tqSfTVHwe5",
+      "created_time": "2026-11-04T17:37:00.000Z",
+      "canonical_url": "https://twitter.com/dani_avila7/status/2117786870910263562",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ataiiam/status/2117717062726664580",
+      "author": "ataiiam",
+      "headline": "The __CopilotKit Showcase__ now has 35+ open-code examples spanning generative UI, human-in-the-loop, sub-agents, multimodality, and frontend tools.",
+      "tweet_id": "40e1eba9-b6bc-8197-af45-fab9f18ee1b1",
+      "source_text": "Google Antigravity just got every UI feature👇\n\nThe @CopilotKit Showcase has 35+ (open code) examples & demos, including:\n\n1/ Generative UI (A2UI, MCP Apps, Open)\n2/ Human-in-the-loop\n3/ Frontend tools\n4/ Sub-agents\n5/ Chat UI\n6/ Multimodality\n\nTry it: https://t.co/doHaT4Lz3p https://t.co/9nYXRAymh3",
+      "created_time": "2026-11-04T17:37:00.000Z",
+      "canonical_url": "https://twitter.com/ataiiam/status/2117717062726664580",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/CoreyWilksPsyD/status/2117761485145530524",
+      "author": "CoreyWilksPsyD",
+      "headline": "Corey Wilks uses Claude to __analyze coaching call transcripts at scale__ — per session, per client, across all clients — then generates artifacts and content ideas from the patterns.",
+      "tweet_id": "40e1eba9-b6bc-81dc-b359-ded854497bc0",
+      "source_text": "As a coach, sifting through dozens of coaching calls and hundreds of insights is untenable.\n\nBut thanks to Claude, I finally have a system that analyzes the full journey (per session, per client, and overall across clients) founders go through when we work together.\n\n1. It's a super helpful internal document I can refer to.\n2. It's a great artifact to give to clients when they graduate (look at how far you've come!)\n3. I built in prompts to inspire future articles, videos, and podcast episodes (so I never run out of ideas) based on patterns that come up per session/client/overall.\n4. It's creates a useful snapshot of what real founders are going through.\n\nHere's a de-identified snapshot based on dozens of transcripts with real founders building incredible companies.\n\nWhat do you think about these 8 patterns?",
+      "created_time": "2026-11-04T17:32:00.000Z",
+      "canonical_url": "https://twitter.com/CoreyWilksPsyD/status/2117761485145530524",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/viticci/status/2117985693720830067",
+      "author": "viticci",
+      "headline": "Federico Viticci says Apple is __building a Siri Agent in the open__, and it's both surprising and obvious at the same time.",
+      "tweet_id": "40f1eba9-b6bc-8121-9e4d-d65e71829b4b",
+      "source_text": "Apple is basically building a Siri Agent in the open now. \n\nIt's both surprising and obvious at the same time.\n\nMy story: https://t.co/q3FxLHndFC https://t.co/WKgukEQQQa",
+      "created_time": "2026-11-05T11:57:00.000Z",
+      "canonical_url": "https://twitter.com/viticci/status/2117985693720830067",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/viticci/status/2117722301374578773",
+      "author": "viticci",
+      "headline": "Apple's new Siri AI developer framework officially adopts __SKILL.md agent files with Markdown guidance__ — Federico Viticci flags the overlap with existing agent tooling.",
+      "tweet_id": "40e1eba9-b6bc-8137-988c-d581a40b1807",
+      "source_text": "What a journey for Markdown, @gruber \n\nThe new Siri AI developer framework now officially uses skills, with specific Markdown guidance for SKILL .md agent files \n\nhttps://t.co/koi8K541le https://t.co/TF72JJZRXc",
+      "created_time": "2026-11-04T21:22:00.000Z",
+      "canonical_url": "https://twitter.com/viticci/status/2117722301374578773",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/heytafsirul/status/2118074448024834162",
+      "author": "heytafsirul",
+      "headline": "Aether __reads your coding rules from a file in your repo__ so they follow the code to any cloud machine the task runs on.",
+      "tweet_id": "40e1eba9-b6bc-81e5-897d-e8bf21016cf7",
+      "source_text": "Keep your setup, not your laptop.\n\nAether reads your rules from a file in your repo, so they travel with the code to whatever cloud machine the task runs on. https://t.co/sZMwDDT8E4",
+      "created_time": "2026-11-04T20:37:00.000Z",
+      "canonical_url": "https://twitter.com/heytafsirul/status/2118074448024834162",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/thecsguy/status/2117696858403549564",
+      "author": "thecsguy",
+      "headline": "Grok Bot can now __post to X directly__ — write, edit, reply, quote, run polls, and flag AI-made media, with a paid-partnership toggle built in.",
+      "tweet_id": "40e1eba9-b6bc-817b-854b-e6adf13c91ac",
+      "source_text": "grok bot can post to x for you now\n\nchecked the x connector on mine. it can write posts, edit them, reply, quote and run polls\n\nit has a switch to mark paid partnerships and one to flag ai made media\n\nwould you let yours hit send? https://t.co/Y3Jp9KrlZ3",
+      "created_time": "2026-11-04T19:07:00.000Z",
+      "canonical_url": "https://twitter.com/thecsguy/status/2117696858403549564",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2117995554420494385",
+      "author": "noahkagan",
+      "headline": "Noah Kagan's __single-file persistent agent__ reads Search Console and GA4 every Friday, does the work, rewrites the file, and picks up exactly where it left off the next week.",
+      "tweet_id": "40e1eba9-b6bc-8127-9dc3-e61b031f3d10",
+      "source_text": "One file is the brain.\n\nEvery Friday the agent reads it, pulls Search Console and GA4, does the work, then rewrites the file.\n\nNext Friday it starts where it left off. Nothing gets lost between reports. https://t.co/fHPHdIRSdy",
+      "created_time": "2026-11-04T17:42:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2117995554420494385",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/CamilleRoux/status/2117670663007662329",
+      "author": "CamilleRoux",
+      "headline": "__Unslop__ is a Claude Code skill that spots vibe-coded UI sins — purple gradients, emoji labels, uneven spacing — and redesigns screens pass by pass.",
+      "tweet_id": "40e1eba9-b6bc-816b-af15-cddcf84a270c",
+      "source_text": "unslop : un skill pour Claude Code qui transforme vos interfaces vibecodées en vraies interfaces designées.\nIl repère d'abord le slop (dégradés violets, glows, labels en emoji, espacements irréguliers), propose une direction, puis corrige l'écran passe par passe. ⬇️ https://t.co/fLTuPCaHQc",
+      "created_time": "2026-11-04T17:42:00.000Z",
+      "canonical_url": "https://twitter.com/CamilleRoux/status/2117670663007662329",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+      "author": "pseudolus",
+      "item_id": "hn:50380011",
+      "headline": "Canva is cutting or relocating __more than 1,200 jobs__ in a restructure the design giant says will sharpen its AI product focus.",
+      "subreddit": null,
+      "source_text": "Canva layoffs: design giant to cut or relocate more than 1,200 jobs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T15:06:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+      "learning_score": 3
+    },
+    {
+      "url": "https://engx3d.com/",
+      "author": "parth_mecheng",
+      "item_id": "hn:50379977",
+      "headline": "__Engine-X__ lets you disassemble interactive 3D machines right in the browser — no plugin, just pure WebGL.",
+      "subreddit": null,
+      "source_text": "Show HN: Engine-X – Interactive 3D machines you can take apart in the browser",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T15:03:32+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://engx3d.com",
+      "learning_score": 3
+    },
+    {
+      "url": "https://tapoueh.org/blog/2026/09/plan-advice-in-postgresql-19/",
+      "author": "craigkerstiens",
+      "item_id": "hn:50379786",
+      "headline": "PostgreSQL 19 adds __plan advice__, a planner feature that explains query choices and surfaces index improvement suggestions.",
+      "subreddit": null,
+      "source_text": "Plan Advice in PostgreSQL 19",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:50:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tapoueh.org/blog/2026/09/plan-advice-in-postgresql-19",
+      "learning_score": 3
+    },
+    {
+      "url": "https://tryrevline.com",
+      "author": "ZuraMakaradzeHe",
+      "item_id": "hn:50380012",
+      "headline": "__Revline__ is an open-source, AI-native video editor that lets you cut and arrange footage with natural language commands.",
+      "subreddit": null,
+      "source_text": "Show HN: Revline – An open-source AI-native video editor",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T15:06:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tryrevline.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/yubozhao/isoform",
+      "author": "yubozhao",
+      "item_id": "hn:50379970",
+      "headline": "__Isoform__ is an open-source Mac agent that learns your behavior and works in the background as you go about your day.",
+      "subreddit": null,
+      "source_text": "Show HN: Isoform – open-source Mac app that learns you and works as you",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T15:03:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/yubozhao/isoform",
+      "learning_score": 2
+    },
+    {
+      "url": "https://huggingface.co/papers/2611.03998",
+      "author": "sha_rad",
+      "item_id": "hn:50379939",
+      "headline": "__Dory1.0-4B__ uses a looped, normalized GPT architecture to push reasoning quality without scaling parameter count.",
+      "subreddit": null,
+      "source_text": "Dory1.0-4B: A Looped Normalized-GPT",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T15:01:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://huggingface.co/papers/2611.03998",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.businessinsider.com/humble-robotics-raises-51-million-for-cabless-self-driving-trucks-2026-11",
+      "author": "maiagryskiewicz",
+      "item_id": "hn:50379913",
+      "headline": "Humble Robotics raises __$51M__ to build cabless autonomous electric trucks that physically eliminate the driver's compartment.",
+      "subreddit": null,
+      "source_text": "Humble Robotics raises $51M to build autonomous electric self-driving truck",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:59:44+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://businessinsider.com/humble-robotics-raises-51-million-for-cabless-self-driving-trucks-2026-11",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/kaushik333/MaidenRun",
+      "author": "Kaushik47",
+      "item_id": "hn:50379909",
+      "headline": "__MaidenRun__ deploys an AI agent directly to your AWS account and routes real tester feedback back into your dev loop.",
+      "subreddit": null,
+      "source_text": "Show HN: MaidenRun – Deploy an AI agent to your AWS and collect tester feedback",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:59:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/kaushik333/MaidenRun",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lZoS1tr8Cik",
+      "author": "chii",
+      "item_id": "hn:50379907",
+      "headline": "A head-to-head video of __AI models building a C++ physics simulation__ from scratch shows where multi-agent code generation still falls apart.",
+      "subreddit": null,
+      "source_text": "AIs try to create a large C++ physics Simulation [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:59:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=lZoS1tr8Cik",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+      "author": "rafaelc",
+      "item_id": "hn:50379877",
+      "headline": "The NYT profiles __Dario Amodei__, tracing how the Anthropic CEO's fixation on safety shapes decisions at one of AI's most watched companies.",
+      "subreddit": null,
+      "source_text": "The Making of Dario Amodei",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:57:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nytimes.com/2026/11/05/technology/dario-amodei-anthropic-ai.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.emberot.com/resources/blog/french-supermarket-cyberattack/",
+      "author": "TheWiggles",
+      "item_id": "hn:50379847",
+      "headline": "Security researchers map how __the French supermarket cyberattack__ escalated from stolen credentials to physical warehouse damage.",
+      "subreddit": null,
+      "source_text": "From Initial Access to Physical Damage: Map of French Supermarket Cyberattack",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:55:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://emberot.com/resources/blog/french-supermarket-cyberattack",
+      "learning_score": 2
+    },
+    {
+      "url": "https://apps.apple.com/us/app/langlang-live/id6812655455",
+      "author": "zzzzhe",
+      "item_id": "hn:50379839",
+      "headline": "__LangLang__ transcribes meeting notes entirely on-device — no cloud dependency, no connectivity required — now on iPhone.",
+      "subreddit": null,
+      "source_text": "Show HN: LangLang – Meeting notes that work in Airplane Mode, on your iPhone",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-05T14:55:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://apps.apple.com/us/app/langlang-live/id6812655455",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__VMware releases vSphere Express for virtualization on up to 128 cores__",
+      "url": "https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/",
+      "tag": "Release",
+      "source": "Ars Technica AI"
+    }
+  ],
+  "human_items": [
+    {
+      "id": 9804,
+      "headline": "Australia warned AI and datacentre expansion could become 'political kryptonite'",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/06/ai-datacentre-boom-could-be-political-kryptonite-australia",
+      "source": "Guardian AI",
+      "summary": "Australia has yet to see tangible benefits from the AI and datacentre boom, with concerns about copyright changes hurting creatives, special rules around power and water use, and worker displacement. Drawing parallels to US midterm results where voters turned against data center expansion, the article warns the Albanese government that it struggles to articulate how AI will benefit ordinary Australians and risks political backlash.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-05T14:00:26+00:00"
+    },
+    {
+      "id": 9846,
+      "headline": "NBER paper argues NBA load management offers lessons for preventing workplace burnout",
+      "url": "https://www.charterworks.com/research-spotlight-what-nba-coaches-can-teach-workplace-leaders-about-managing-burnout/",
+      "source": "Charter",
+      "summary": "An NBER working paper argues that NBA load management — benching healthy players to prevent injuries — offers lessons for workplace leaders on managing burnout. The economists found load management effective in basketball and contend the same principle applies to knowledge work: strategically pulling back high performers before they burn out can increase long-term output even if it reduces short-term productivity.",
+      "tag": "culture",
+      "meaning": "Watch how the change lands on trust, load, and how people work together.",
+      "published_at": "2026-11-05T10:30:00+00:00"
+    },
+    {
+      "id": 9822,
+      "headline": "Russian APT29 hackers exploited patched iOS and Android flaws to infect phones via compromised websites",
+      "url": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/",
+      "source": "Ars Technica AI",
+      "summary": "Sekoia researchers uncovered a hacking campaign attributed to Russia's APT29 that exploited previously patched iOS and Android vulnerabilities to target website visitors. Attackers used JavaScript injection, proxy domains, and a supply-chain compromise of a Ukrainian analytics service. Targets included america250.org and a proxy of the Raffles London hotel near UK government buildings. The campaign deployed DarkSword, an iOS exploit kit linked to Turkish surveillance vendor PARS Defense.",
+      "tag": "ethics",
+      "meaning": "Decide the boundary before the tool is in daily use.",
+      "published_at": "2026-11-04T22:26:49+00:00"
+    },
+    {
+      "id": 9844,
+      "headline": "Documentary exposes Global South gig workers who train self-driving cars under precarious conditions",
+      "url": "https://aeon.co/videos/meet-the-invisible-workers-who-teach-self-driving-cars-to-see",
+      "source": "Aeon",
+      "summary": "French filmmaker Nicolas Gourault's short documentary 'Their Eyes' profiles workers in Kenya, the Philippines, and Venezuela who perform data labeling and image annotation for self-driving car AI under low-paid, precarious conditions. The film argues that machine learning discussions often omit the cheap Global South labor that fuels them, perpetuating geographical inequalities.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-05T11:01:00+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-11-05T15:36:55.387863+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9825,
+          9814
+        ],
+        "reason": "Both cover the 2026 US midterm election results creating political backlash against Big Tech's AI data center buildout, with potential moratoriums and regulatory action.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9804
+        ],
+        "reason": "Standalone piece about Australia's failure to see AI/datacentre benefits, using US midterms as a cautionary parallel for the Albanese government — distinct from the US-focused midterm coverage.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9806
+        ],
+        "reason": "Standalone event: over 100 European campaign groups planning coordinated protests against datacentres across 15 countries — a distinct mobilization separate from US or Australian politics.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9844
+        ],
+        "reason": "Standalone documentary profiling the invisible Global South workforce doing data labeling for autonomous vehicles — a distinct subject from other AI labor or infrastructure pieces.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9822
+        ],
+        "reason": "Standalone report on a specific Russian APT29 hacking campaign exploiting iOS and Android vulnerabilities across multiple websites.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9845
+        ],
+        "reason": "Standalone piece about Bloomberg HR's internal AI initiative — a distinct corporate program not covered elsewhere.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9826
+        ],
+        "reason": "Standalone OpenAI policy announcement — a distinct corporate initiative separate from the political backlash or infrastructure spending stories.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9794
+        ],
+        "reason": "Standalone product launch — a unique smart ring hardware product not covered by other candidates.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9811
+        ],
+        "reason": "Standalone product launch — SpaceXSI's Grok Bot gaining phone call capabilities is a distinct event from other AI agent or midterm stories.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9812
+        ],
+        "reason": "Standalone podcast episode on AI supply chain economics — distinct from the Ram Altman DRAM story despite touching on memory supply pressures.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9846
+        ],
+        "reason": "Standalone research coverage — an NBER paper on burnout management unrelated to AI or tech industry events.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9795
+        ],
+        "reason": "Standalone product announcement — Box's integration of Nvidia Nemotron for document retrieval is a distinct corporate event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9813
+        ],
+        "reason": "Standalone partnership announcement — SoundCloud and ElevenLabs integration for AI music publishing is a unique event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9824
+        ],
+        "reason": "Standalone cybersecurity event — the largest cryptocurrency heist ever, attributed to North Korean state actors, is a major distinct incident.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9807
+        ],
+        "reason": "Standalone parliamentary finding — the UK's critical minerals dependency on China is a distinct policy event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9796
+        ],
+        "reason": "Standalone challenge announcement — a YC startup offering $1M for unsolved AI materials science problems is a unique event.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "043b4c8392cdceaa2c977001f6ad3740b2570cdfd70eab58e269aa642a255f41"
+}
