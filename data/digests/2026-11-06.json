@@ -1,0 +1,829 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-06",
+  "issue_id": "20261106",
+  "subject_line": "ISSUE 61106 · 13 STORIES · 11 MIN READ",
+  "intro": "The tension between AI's accelerating pace and the public's growing pushback is front and center today: METR's unprecedented look inside Anthropic suggests AI progress is running at double speed — with AI itself driving most of the acceleration — while protesters scale cranes at Microsoft data centers, OpenAI scrambles to rebuild trust after midterm losses, and white-collar workers quit jobs over fears that haven't materialized yet. We've also got Amazon betting big on an AI shopping agent just in time for the holidays, a decade-old SSH vulnerability that could affect billions of Docker containers, and a startup sending humanoid robots in grippy socks to clean San Francisco apartments for $60 a week.",
+  "article_count": 13,
+  "stories": [
+    {
+      "id": 9868,
+      "source": "The Verge AI",
+      "title": "Amazon launches text-based Alexa shopping agent ahead of holiday season",
+      "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Amazon is rolling out a text-based Alexa shopping agent that lets US customers search for products, compare items, add to cart, place orders, track deliveries, and shop by photo—all via text message. The feature supports grocery ordering, gift recommendations, and learns preferences over time. It launches to a small group first and will expand to millions in coming weeks. The rollout comes after Amazon blocked Meta's Muse AI agent from querying its site in September.",
+      "opinion": "A shrewd defensive play: Amazon blocked a rival's shopping agent then launched its own, ensuring it controls the AI-mediated shopping experience on its platform. Timing it before holiday season maximizes adoption pressure. Where coverage differs: TechCrunch emphasizes the Meta Muse blocking context and holiday timing; The Verge focuses more on feature details like grocery ordering and preference learning",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Amazon-Alexa-for-Shopping-text-order.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-06T14:00:00+00:00",
+      "fetched_at": "2026-11-06T14:49:27.542927+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9868,
+            "source": "The Verge AI",
+            "title": "Amazon will let you text Alexa your shopping list",
+            "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders"
+          },
+          {
+            "id": 9847,
+            "source": "TechCrunch AI",
+            "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+            "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "TechCrunch emphasizes the Meta Muse blocking context and holiday timing; The Verge focuses more on feature details like grocery ordering and preference learning"
+        ],
+        "is_update": false,
+        "reason": "Both cover Amazon's launch of a text-based Alexa shopping agent for US customers"
+      }
+    },
+    {
+      "id": 9859,
+      "source": "Guardian AI",
+      "title": "US tech stocks open higher after worst session in 19 months",
+      "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "US tech stocks opened higher on Wall Street following their worst single-day decline in 19 months, driven by AI-related panic after midterm results. Despite the sharp selloff, the Nasdaq Composite remains up 4.6% for the year, though still more than 10% below peak levels. European and Asia-Pacific markets continued sliding. A stronger-than-expected US jobs report provided support.",
+      "opinion": "The rebound suggests the selloff was more panic than fundamental repricing, but the 10%-below-peak figure shows the market is still digesting the political risk to AI infrastructure plans.",
+      "image_url": "https://i.guim.co.uk/img/media/d02c71f8ac66f5a933ce9e066d4f0fc73a05d3a5/282_0_3436_2750/master/3436.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=23f1dc8cd01c91fde43072fe3f935586",
+      "published_at": "2026-11-06T14:45:42+00:00",
+      "fetched_at": "2026-11-06T14:49:19.676752+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9859,
+            "source": "Guardian AI",
+            "title": "US tech stocks open higher on Wall Street after worst day in 19 months – business live",
+            "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Covers the Wall Street rebound following the midterm-driven tech selloff reported yesterday"
+      }
+    },
+    {
+      "id": 9869,
+      "source": "The Verge AI",
+      "title": "Protesters break into Microsoft data center construction site in Amsterdam",
+      "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Around 100 protesters from the group Geef Tegengas broke into a Microsoft data center construction site in Amsterdam on November 6, scaling a crane to hang a 'fuck AI' banner and displaying a 'Microsoft powers genocide' banner with 'free Palestine' chants. The project involves three 85-meter towers proceeding despite Amsterdam's ban on new data centers until 2030, as it predates the ban. The action coincides with other activist actions at Microsoft facilities including a mock Israeli military checkpoint outside a Dublin data center.",
+      "opinion": "This escalation from planned protests to physical site break-ins signals that the European anti-data-center movement is intensifying beyond symbolic demonstrations. The regulatory loophole angle—project approved before the ban—will fuel further backlash.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2303323844.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-06T11:55:19+00:00",
+      "fetched_at": "2026-11-06T14:49:27.773666+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9869,
+            "source": "The Verge AI",
+            "title": "Protesters break into Microsoft data center site in Amsterdam",
+            "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Specific instance of the broader European anti-data-center protest wave covered yesterday"
+      }
+    },
+    {
+      "id": 9870,
+      "source": "The Verge AI",
+      "title": "OpenAI drops NDAs for data center projects in post-midterm pivot",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI announced new commitments for its data center projects following midterm elections where voters opposed data center expansion. Key changes include dropping NDAs with public officials (allowing only narrow security and trade-secret protections), paying full electricity and infrastructure costs, publishing expected job creation numbers, and establishing 'local compacts' for each compute campus. Amazon made a similar move in October.",
+      "opinion": "The timing—right after midterms punished data center expansion—makes this clearly reactive rather than proactive. The NDA retreat and cost-absorption pledges are meaningful concessions that acknowledge the political landscape has shifted against Big Tech infrastructure.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-06T00:37:56+00:00",
+      "fetched_at": "2026-11-06T14:49:27.989119+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9870,
+            "source": "The Verge AI",
+            "title": "OpenAI is stepping back from NDAs for data center projects",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Details the specific NDA and cost commitments within OpenAI's community compact announced yesterday"
+      }
+    },
+    {
+      "id": 9867,
+      "source": "The Rundown AI",
+      "title": "METR finds Anthropic's AI progress running 2x faster, with AI driving 80% of speedup",
+      "url": "https://therundownai.beehiiv.com/p/an-inside-look-at-anthropic-s-ai-speedup",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI-evaluation nonprofit METR published findings from 11 weeks of inside access to Anthropic, estimating the company's AI progress is running roughly 2x faster than its 2024-25 pace, with AI itself responsible for about 80% of the acceleration. METR found no clear bottlenecks to slow this trend. The report revealed two internal models ahead of publicly available Claude Opus 5.5, including a 'Model 4' that cleared 50% on all 15 tested benchmarks. Anthropic heavily redacted the strongest evidence. Anthropic's own IPO filing defined a danger threshold as 'dramatically accelerated progress attributable to AI,' and METR's findings suggest that point may be approaching.",
+      "opinion": "This is the most consequential AI governance disclosure in months. An independent evaluator confirming recursive self-improvement at 2x pace—with AI doing most of the work—puts Anthropic's own stated danger threshold in play. The heavy redactions suggest the full picture is even more striking.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/90c4cf25-8ec8-4498-a13d-6e315ffb72d3/metrreport.png?t=1793919158",
+      "published_at": "2026-11-06T11:00:00+00:00",
+      "fetched_at": "2026-11-06T14:49:26.355739+00:00"
+    },
+    {
+      "id": 9878,
+      "source": "Ars Technica AI",
+      "title": "Decade-old 'sshole' vulnerability lets attackers SSH into Linux devices without a password",
+      "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A decade-old vulnerability nicknamed 'sshole' allows attackers to log into Linux devices via SSH without any password by entering more than 256 characters in the password field. It affects systems running OpenSSH with musl libc without PAM, most notably Alpine Linux. The root cause is disputed between OpenSSH and musl developers, though both have issued patches. Impact is potentially large given Alpine's widespread use in containers (over 1 billion Docker Hub downloads), embedded devices, routers, and IoT, many of which are difficult to update.",
+      "opinion": "The simplicity of exploitation—just type a long password—combined with Alpine's massive container footprint makes this a high-urgency patching event. The finger-pointing between OpenSSH and musl is concerning because it suggests the bug class may recur.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2017/05/getty-hacking-1152x648.jpg",
+      "published_at": "2026-11-05T23:09:36+00:00",
+      "fetched_at": "2026-11-06T14:49:30.644562+00:00"
+    },
+    {
+      "id": 9866,
+      "source": "DeepMind Blog",
+      "title": "Google DeepMind launches Gemini Omni 1.2 Flash with 15-second clips and 30% price cut",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google DeepMind announced Gemini Omni 1.2 Flash, extending video clip length to 15 seconds, improving reference adherence and consistency, adding multi-turn conversational editing for iterative adjustments, and reducing pricing by 30%. The model is generally available via the Gemini API, Google Vids, and Gemini for business, targeting professional video content production at scale.",
+      "opinion": "The 30% price reduction alongside capability improvements signals Google is competing aggressively on video generation economics, likely pressuring OpenAI's Sora and other competitors on the cost dimension that matters most for enterprise adoption.",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png",
+      "published_at": "2026-11-05T17:05:16+00:00",
+      "fetched_at": "2026-11-06T14:49:23.476666+00:00"
+    },
+    {
+      "id": 9879,
+      "source": "MIT Tech Review AI",
+      "title": "Tau Robotics sends remotely piloted humanoid robots to clean San Francisco homes for $60/week",
+      "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "MIT Technology Review tested Tau Robotics' new humanoid-robot cleaning service in San Francisco. The startup sends remotely piloted four-and-a-half-foot-tall humanoid robots to clean homes for $60/week or $100 for a one-time visit. The robots have 3D-printed claw hands and wear grippy socks. While physically capable, they are slow and require significant human guidance—many tasks use kinematic guidance where a human pilot's movements are mirrored. Some tasks like vacuuming can be done autonomously. The real business model is data collection: every session generates training data to eventually build fully autonomous cleaning robots.",
+      "opinion": "This is a clever data flywheel disguised as a cleaning service—customers pay to generate the training data that will eventually replace the human pilots. The $60/week price point is competitive enough with human cleaners to sustain the model while the autonomy improves.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/TauRobot-3up.jpg?resize=1200,600",
+      "published_at": "2026-11-06T10:00:00+00:00",
+      "fetched_at": "2026-11-06T14:49:32.615048+00:00"
+    },
+    {
+      "id": 9892,
+      "source": "Pew Research Center",
+      "title": "Pew survey finds Americans' trust in news organizations rising across party lines",
+      "url": "https://www.pewresearch.org/newsletter/the-briefing/americans-trust-in-local-and-national-news-organizations-increases/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew Research Center survey finds trust in national news organizations rose from 56% to 62% and trust in local news from 70% to 75% over the past year. Increases span both parties, though Democrats remain more trusting overall. Trust in social media as an information source remains lower. The newsletter also notes Trump blaming Fox News for Republican midterm losses, with 57% of Republicans regularly getting news from Fox News per a 2025 survey.",
+      "opinion": "The bipartisan trust increase is notable given the polarized media environment. The Trump-Fox tension after midterm losses could disrupt the tight alignment between conservative media and Republican messaging.",
+      "image_url": "",
+      "published_at": "2026-11-05T21:20:21+00:00",
+      "fetched_at": "2026-11-06T14:49:48.069145+00:00"
+    },
+    {
+      "id": 9860,
+      "source": "Guardian AI",
+      "title": "White-collar workers quitting jobs over AI fears despite no evidence of mass layoffs",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A growing trend of white-collar workers are quitting their jobs due to fears about AI disruption. The article highlights Mrinank Sharma, an AI researcher who left Anthropic and posted a widely-viewed resignation letter on X warning of a world 'in peril' from AI, before pursuing a poetry degree. While there's no evidence linking AI to mass layoffs, the technology has already 'changed worker psychology.'",
+      "opinion": "The psychological impact running ahead of actual job losses is a significant phenomenon—AI anxiety is reshaping career decisions even without material displacement. The Anthropic researcher's exit is particularly striking as an insider signal.",
+      "image_url": "https://i.guim.co.uk/img/media/cc5b8c0e7695f4ff8f85fabfe7e45245dba4b777/1828_516_3920_3136/master/3920.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=57c0bd2f2ca6d0acf95a1feafd430dee",
+      "published_at": "2026-11-06T14:00:45+00:00",
+      "fetched_at": "2026-11-06T14:49:20.05324+00:00"
+    },
+    {
+      "id": 9848,
+      "source": "TechCrunch AI",
+      "title": "Startup Underdog demos 32MB text-to-speech model that runs entirely in the browser",
+      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI startup Underdog demoed Woof, a 32MB (31 million parameters) text-to-speech model that runs entirely in the browser without internet. The company showcased it through an interactive retro-themed game. The open model follows Underdog's recent Bark release, a 167MB speech-to-text model also for edge devices. Founded by Sigil Wen, Underdog focuses on AI models small enough for consumer devices, emphasizing data privacy and open, American-made models.",
+      "opinion": "A 32MB speech model running in-browser is a meaningful technical achievement that could enable a new class of offline-first voice applications. The privacy angle is increasingly compelling as cloud AI providers face scrutiny over data practices.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-05-at-7.02.34-PM.jpg?resize=1200,542",
+      "published_at": "2026-11-06T13:02:16+00:00",
+      "fetched_at": "2026-11-06T14:49:12.389826+00:00"
+    },
+    {
+      "id": 9858,
+      "source": "Guardian AI",
+      "title": "Guardian asks teachers and parents about AI-generated school emails",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/teachers-and-parents-what-are-your-experiences-of-ai-generated-emails",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian is soliciting experiences from teachers and parents about the growing use of AI tools like ChatGPT and Claude to draft emails in school-home communications, asking whether school leaders have noticed AI-generated parent emails and what impact this has had.",
+      "opinion": "This is a callout for reader responses rather than a reported story, but it signals that AI-mediated communication in everyday institutional settings is becoming visible enough to warrant journalistic attention.",
+      "image_url": "https://i.guim.co.uk/img/media/89d945773a376fa67f3d8b076a4b60cd9fd217fc/1537_0_4671_3741/master/4671.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=574390f8f9544586928c3bd6dfa964aa",
+      "published_at": "2026-11-06T13:55:43+00:00",
+      "fetched_at": "2026-11-06T14:49:19.115543+00:00"
+    },
+    {
+      "id": 9849,
+      "source": "TechCrunch AI",
+      "title": "Physicl raises $10M to build high-fidelity 3D environments for robot training",
+      "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Physicl, founded by Alex de Vigan (previously of nfinite), raised $10M in seed funding from Inovia Capital to repurpose e-commerce 3D rendering technology for robotics training. The company addresses the sim-to-real gap by transforming real-world information into 3D physical representations with correct geometry, materials, and physics. Their Studio product offers 10,000 3D environments and 100,000 object assets for generating synthetic training data, focusing on difficult edge cases.",
+      "opinion": "The e-commerce-to-robotics pivot is smart—3D rendering for product visualization and 3D rendering for robot training share core technical requirements but the robotics market has far higher growth potential.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/physicl-studio-hero-kitchen-16x9-1.jpg?resize=1200,675",
+      "published_at": "2026-11-06T13:00:00+00:00",
+      "fetched_at": "2026-11-06T14:49:13.023695+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9868,
+          "source": "The Verge AI",
+          "title": "Amazon launches text-based Alexa shopping agent ahead of holiday season",
+          "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Amazon is rolling out a text-based Alexa shopping agent that lets US customers search for products, compare items, add to cart, place orders, track deliveries, and shop by photo—all via text message. The feature supports grocery ordering, gift recommendations, and learns preferences over time. It launches to a small group first and will expand to millions in coming weeks. The rollout comes after Amazon blocked Meta's Muse AI agent from querying its site in September.",
+          "opinion": "A shrewd defensive play: Amazon blocked a rival's shopping agent then launched its own, ensuring it controls the AI-mediated shopping experience on its platform. Timing it before holiday season maximizes adoption pressure. Where coverage differs: TechCrunch emphasizes the Meta Muse blocking context and holiday timing; The Verge focuses more on feature details like grocery ordering and preference learning",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Amazon-Alexa-for-Shopping-text-order.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-06T14:00:00+00:00",
+          "fetched_at": "2026-11-06T14:49:27.542927+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9868,
+                "source": "The Verge AI",
+                "title": "Amazon will let you text Alexa your shopping list",
+                "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders"
+              },
+              {
+                "id": 9847,
+                "source": "TechCrunch AI",
+                "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+                "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "TechCrunch emphasizes the Meta Muse blocking context and holiday timing; The Verge focuses more on feature details like grocery ordering and preference learning"
+            ],
+            "is_update": false,
+            "reason": "Both cover Amazon's launch of a text-based Alexa shopping agent for US customers"
+          }
+        },
+        {
+          "id": 9859,
+          "source": "Guardian AI",
+          "title": "US tech stocks open higher after worst session in 19 months",
+          "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "US tech stocks opened higher on Wall Street following their worst single-day decline in 19 months, driven by AI-related panic after midterm results. Despite the sharp selloff, the Nasdaq Composite remains up 4.6% for the year, though still more than 10% below peak levels. European and Asia-Pacific markets continued sliding. A stronger-than-expected US jobs report provided support.",
+          "opinion": "The rebound suggests the selloff was more panic than fundamental repricing, but the 10%-below-peak figure shows the market is still digesting the political risk to AI infrastructure plans.",
+          "image_url": "https://i.guim.co.uk/img/media/d02c71f8ac66f5a933ce9e066d4f0fc73a05d3a5/282_0_3436_2750/master/3436.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=23f1dc8cd01c91fde43072fe3f935586",
+          "published_at": "2026-11-06T14:45:42+00:00",
+          "fetched_at": "2026-11-06T14:49:19.676752+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9859,
+                "source": "Guardian AI",
+                "title": "US tech stocks open higher on Wall Street after worst day in 19 months – business live",
+                "url": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Covers the Wall Street rebound following the midterm-driven tech selloff reported yesterday"
+          }
+        },
+        {
+          "id": 9869,
+          "source": "The Verge AI",
+          "title": "Protesters break into Microsoft data center construction site in Amsterdam",
+          "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Around 100 protesters from the group Geef Tegengas broke into a Microsoft data center construction site in Amsterdam on November 6, scaling a crane to hang a 'fuck AI' banner and displaying a 'Microsoft powers genocide' banner with 'free Palestine' chants. The project involves three 85-meter towers proceeding despite Amsterdam's ban on new data centers until 2030, as it predates the ban. The action coincides with other activist actions at Microsoft facilities including a mock Israeli military checkpoint outside a Dublin data center.",
+          "opinion": "This escalation from planned protests to physical site break-ins signals that the European anti-data-center movement is intensifying beyond symbolic demonstrations. The regulatory loophole angle—project approved before the ban—will fuel further backlash.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2303323844.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-06T11:55:19+00:00",
+          "fetched_at": "2026-11-06T14:49:27.773666+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9869,
+                "source": "The Verge AI",
+                "title": "Protesters break into Microsoft data center site in Amsterdam",
+                "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Specific instance of the broader European anti-data-center protest wave covered yesterday"
+          }
+        },
+        {
+          "id": 9870,
+          "source": "The Verge AI",
+          "title": "OpenAI drops NDAs for data center projects in post-midterm pivot",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI announced new commitments for its data center projects following midterm elections where voters opposed data center expansion. Key changes include dropping NDAs with public officials (allowing only narrow security and trade-secret protections), paying full electricity and infrastructure costs, publishing expected job creation numbers, and establishing 'local compacts' for each compute campus. Amazon made a similar move in October.",
+          "opinion": "The timing—right after midterms punished data center expansion—makes this clearly reactive rather than proactive. The NDA retreat and cost-absorption pledges are meaningful concessions that acknowledge the political landscape has shifted against Big Tech infrastructure.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-06T00:37:56+00:00",
+          "fetched_at": "2026-11-06T14:49:27.989119+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9870,
+                "source": "The Verge AI",
+                "title": "OpenAI is stepping back from NDAs for data center projects",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Details the specific NDA and cost commitments within OpenAI's community compact announced yesterday"
+          }
+        },
+        {
+          "id": 9867,
+          "source": "The Rundown AI",
+          "title": "METR finds Anthropic's AI progress running 2x faster, with AI driving 80% of speedup",
+          "url": "https://therundownai.beehiiv.com/p/an-inside-look-at-anthropic-s-ai-speedup",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI-evaluation nonprofit METR published findings from 11 weeks of inside access to Anthropic, estimating the company's AI progress is running roughly 2x faster than its 2024-25 pace, with AI itself responsible for about 80% of the acceleration. METR found no clear bottlenecks to slow this trend. The report revealed two internal models ahead of publicly available Claude Opus 5.5, including a 'Model 4' that cleared 50% on all 15 tested benchmarks. Anthropic heavily redacted the strongest evidence. Anthropic's own IPO filing defined a danger threshold as 'dramatically accelerated progress attributable to AI,' and METR's findings suggest that point may be approaching.",
+          "opinion": "This is the most consequential AI governance disclosure in months. An independent evaluator confirming recursive self-improvement at 2x pace—with AI doing most of the work—puts Anthropic's own stated danger threshold in play. The heavy redactions suggest the full picture is even more striking.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/90c4cf25-8ec8-4498-a13d-6e315ffb72d3/metrreport.png?t=1793919158",
+          "published_at": "2026-11-06T11:00:00+00:00",
+          "fetched_at": "2026-11-06T14:49:26.355739+00:00"
+        },
+        {
+          "id": 9878,
+          "source": "Ars Technica AI",
+          "title": "Decade-old 'sshole' vulnerability lets attackers SSH into Linux devices without a password",
+          "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A decade-old vulnerability nicknamed 'sshole' allows attackers to log into Linux devices via SSH without any password by entering more than 256 characters in the password field. It affects systems running OpenSSH with musl libc without PAM, most notably Alpine Linux. The root cause is disputed between OpenSSH and musl developers, though both have issued patches. Impact is potentially large given Alpine's widespread use in containers (over 1 billion Docker Hub downloads), embedded devices, routers, and IoT, many of which are difficult to update.",
+          "opinion": "The simplicity of exploitation—just type a long password—combined with Alpine's massive container footprint makes this a high-urgency patching event. The finger-pointing between OpenSSH and musl is concerning because it suggests the bug class may recur.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2017/05/getty-hacking-1152x648.jpg",
+          "published_at": "2026-11-05T23:09:36+00:00",
+          "fetched_at": "2026-11-06T14:49:30.644562+00:00"
+        },
+        {
+          "id": 9866,
+          "source": "DeepMind Blog",
+          "title": "Google DeepMind launches Gemini Omni 1.2 Flash with 15-second clips and 30% price cut",
+          "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google DeepMind announced Gemini Omni 1.2 Flash, extending video clip length to 15 seconds, improving reference adherence and consistency, adding multi-turn conversational editing for iterative adjustments, and reducing pricing by 30%. The model is generally available via the Gemini API, Google Vids, and Gemini for business, targeting professional video content production at scale.",
+          "opinion": "The 30% price reduction alongside capability improvements signals Google is competing aggressively on video generation economics, likely pressuring OpenAI's Sora and other competitors on the cost dimension that matters most for enterprise adoption.",
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png",
+          "published_at": "2026-11-05T17:05:16+00:00",
+          "fetched_at": "2026-11-06T14:49:23.476666+00:00"
+        },
+        {
+          "id": 9879,
+          "source": "MIT Tech Review AI",
+          "title": "Tau Robotics sends remotely piloted humanoid robots to clean San Francisco homes for $60/week",
+          "url": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "MIT Technology Review tested Tau Robotics' new humanoid-robot cleaning service in San Francisco. The startup sends remotely piloted four-and-a-half-foot-tall humanoid robots to clean homes for $60/week or $100 for a one-time visit. The robots have 3D-printed claw hands and wear grippy socks. While physically capable, they are slow and require significant human guidance—many tasks use kinematic guidance where a human pilot's movements are mirrored. Some tasks like vacuuming can be done autonomously. The real business model is data collection: every session generates training data to eventually build fully autonomous cleaning robots.",
+          "opinion": "This is a clever data flywheel disguised as a cleaning service—customers pay to generate the training data that will eventually replace the human pilots. The $60/week price point is competitive enough with human cleaners to sustain the model while the autonomy improves.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/TauRobot-3up.jpg?resize=1200,600",
+          "published_at": "2026-11-06T10:00:00+00:00",
+          "fetched_at": "2026-11-06T14:49:32.615048+00:00"
+        },
+        {
+          "id": 9892,
+          "source": "Pew Research Center",
+          "title": "Pew survey finds Americans' trust in news organizations rising across party lines",
+          "url": "https://www.pewresearch.org/newsletter/the-briefing/americans-trust-in-local-and-national-news-organizations-increases/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew Research Center survey finds trust in national news organizations rose from 56% to 62% and trust in local news from 70% to 75% over the past year. Increases span both parties, though Democrats remain more trusting overall. Trust in social media as an information source remains lower. The newsletter also notes Trump blaming Fox News for Republican midterm losses, with 57% of Republicans regularly getting news from Fox News per a 2025 survey.",
+          "opinion": "The bipartisan trust increase is notable given the polarized media environment. The Trump-Fox tension after midterm losses could disrupt the tight alignment between conservative media and Republican messaging.",
+          "image_url": "",
+          "published_at": "2026-11-05T21:20:21+00:00",
+          "fetched_at": "2026-11-06T14:49:48.069145+00:00"
+        },
+        {
+          "id": 9860,
+          "source": "Guardian AI",
+          "title": "White-collar workers quitting jobs over AI fears despite no evidence of mass layoffs",
+          "url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A growing trend of white-collar workers are quitting their jobs due to fears about AI disruption. The article highlights Mrinank Sharma, an AI researcher who left Anthropic and posted a widely-viewed resignation letter on X warning of a world 'in peril' from AI, before pursuing a poetry degree. While there's no evidence linking AI to mass layoffs, the technology has already 'changed worker psychology.'",
+          "opinion": "The psychological impact running ahead of actual job losses is a significant phenomenon—AI anxiety is reshaping career decisions even without material displacement. The Anthropic researcher's exit is particularly striking as an insider signal.",
+          "image_url": "https://i.guim.co.uk/img/media/cc5b8c0e7695f4ff8f85fabfe7e45245dba4b777/1828_516_3920_3136/master/3920.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=57c0bd2f2ca6d0acf95a1feafd430dee",
+          "published_at": "2026-11-06T14:00:45+00:00",
+          "fetched_at": "2026-11-06T14:49:20.05324+00:00"
+        },
+        {
+          "id": 9848,
+          "source": "TechCrunch AI",
+          "title": "Startup Underdog demos 32MB text-to-speech model that runs entirely in the browser",
+          "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI startup Underdog demoed Woof, a 32MB (31 million parameters) text-to-speech model that runs entirely in the browser without internet. The company showcased it through an interactive retro-themed game. The open model follows Underdog's recent Bark release, a 167MB speech-to-text model also for edge devices. Founded by Sigil Wen, Underdog focuses on AI models small enough for consumer devices, emphasizing data privacy and open, American-made models.",
+          "opinion": "A 32MB speech model running in-browser is a meaningful technical achievement that could enable a new class of offline-first voice applications. The privacy angle is increasingly compelling as cloud AI providers face scrutiny over data practices.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-05-at-7.02.34-PM.jpg?resize=1200,542",
+          "published_at": "2026-11-06T13:02:16+00:00",
+          "fetched_at": "2026-11-06T14:49:12.389826+00:00"
+        },
+        {
+          "id": 9858,
+          "source": "Guardian AI",
+          "title": "Guardian asks teachers and parents about AI-generated school emails",
+          "url": "https://www.theguardian.com/technology/2026/nov/06/teachers-and-parents-what-are-your-experiences-of-ai-generated-emails",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian is soliciting experiences from teachers and parents about the growing use of AI tools like ChatGPT and Claude to draft emails in school-home communications, asking whether school leaders have noticed AI-generated parent emails and what impact this has had.",
+          "opinion": "This is a callout for reader responses rather than a reported story, but it signals that AI-mediated communication in everyday institutional settings is becoming visible enough to warrant journalistic attention.",
+          "image_url": "https://i.guim.co.uk/img/media/89d945773a376fa67f3d8b076a4b60cd9fd217fc/1537_0_4671_3741/master/4671.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=574390f8f9544586928c3bd6dfa964aa",
+          "published_at": "2026-11-06T13:55:43+00:00",
+          "fetched_at": "2026-11-06T14:49:19.115543+00:00"
+        },
+        {
+          "id": 9849,
+          "source": "TechCrunch AI",
+          "title": "Physicl raises $10M to build high-fidelity 3D environments for robot training",
+          "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Physicl, founded by Alex de Vigan (previously of nfinite), raised $10M in seed funding from Inovia Capital to repurpose e-commerce 3D rendering technology for robotics training. The company addresses the sim-to-real gap by transforming real-world information into 3D physical representations with correct geometry, materials, and physics. Their Studio product offers 10,000 3D environments and 100,000 object assets for generating synthetic training data, focusing on difficult edge cases.",
+          "opinion": "The e-commerce-to-robotics pivot is smart—3D rendering for product visualization and 3D rendering for robot training share core technical requirements but the robotics market has far higher growth potential.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/physicl-studio-hero-kitchen-16x9-1.jpg?resize=1200,675",
+          "published_at": "2026-11-06T13:00:00+00:00",
+          "fetched_at": "2026-11-06T14:49:13.023695+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/hnshah/status/2118287708657242596",
+      "author": "hnshah",
+      "headline": "Noats transcribes and answers questions about your meetings __entirely on your Mac__ — no bots, no cloud upload, free during beta.",
+      "tweet_id": "4101eba9-b6bc-81ab-995c-e9ead4585f50",
+      "source_text": "Your entire AI meeting workflow can now run on one Mac.\n\nWe built Noats in a month. Then we waited over a year for local AI to catch up.\n\nWhile we waited, Granola took off, Wispr Flow launched a meeting notetaker, and Superhuman acquired Fathom. The category exploded.\n\nNow Noats records without a bot, transcribes the conversation and separates speakers. It writes the notes and answers questions grounded in the transcript. All locally, by default.\n\nThat means your meetings don’t have to leave your Mac. And if you want frontier AI, you can connect it.\n\nNoats is a real-world example of what local AI can do now.\n\nFree during beta.\n\nhttps://t.co/mjiARA6R5G",
+      "created_time": "2026-11-06T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/hnshah/status/2118287708657242596",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Michael_Fenech_/status/2118306331514019882",
+      "author": "Michael_Fenech_",
+      "headline": "Michael Fenech found that iterating on Grok Bot instructions without pruning quietly __inflates instruction length and cost__ with every update.",
+      "tweet_id": "40f1eba9-b6bc-812b-9a30-f6b35487d84b",
+      "source_text": "I found a hidden problem in my Grok Bot setup that could be lurking in yours too.\n\nEvery improvement was potentially making my routines more expensive to run.\n\nBefore I give you the prompt and solution, here's what I discovered:\n\nI've been experimenting with a research routine, constantly refining its instructions to improve the results.\n\nBut I noticed a problem.\n\nSome updates were replacing old instructions. Others were simply adding new ones on top.\n\nThat meant Grok Bot was sometimes reading outdated rules alongside the new ones on every run.\n\nMore instructions. More usage. Potentially conflicting rules.\n\nHere's the 6-step process I'm now using to prevent this.\n\nPaste this into your Grok Bot Chief of Staff:\n\n\"From now on, whenever I ask you to update a Bot, routine, skill or instruction file, follow this process:\n\n1: REPLACE, DON'T ADD. Update the existing rule instead of stacking new instructions on top of old ones.\n\n2: FIND CONFLICTS. Search accessible Bots, routines, skills and instruction files for outdated or contradictory versions of the rule.\n\n3: ARCHIVE OLD VERSIONS. Propose moving superseded files into a dated archive outside the active instructions. Never delete or archive anything without my approval.\n\n4: KEEP ONE SOURCE OF TRUTH. Maintain a version index identifying the current instruction files and which Bots or routines use them.\n\n5: VERIFY WHAT LOADS. After an approved change, check the instructions and files the affected Bot or routine actually uses. Flag anything you cannot inspect.\n\n6: REPORT THE CHANGE. Show me what was replaced, what remains active, any conflicts found and what still needs approval.\n\nAlso propose a monthly audit to identify duplicated, outdated or conflicting instructions across my setup. Do not schedule it without my approval.\"\n\nThe lesson: Improving your Grok Bot instructions shouldn't mean endlessly adding more instructions.\n\nSometimes the biggest upgrade is removing the rules your Bots no longer need.",
+      "created_time": "2026-11-05T20:52:00.000Z",
+      "canonical_url": "https://twitter.com/Michael_Fenech_/status/2118306331514019882",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/kseniam0s/status/2118472331714596993",
+      "author": "kseniam0s",
+      "headline": "ElevenLabs is giving voice AI founders __a free year of its full platform__ — 33M characters, 680+ hours of agent usage, no equity.",
+      "tweet_id": "4101eba9-b6bc-8182-8878-c449652241a4",
+      "source_text": "OPPORTUNITY‼️: founders building with voice AI. ElevenLabs will give you a free year of their full platform, worth $5,500+. No equity.\n\nThis is @ElevenLabs Startup Grants:\n\n- 12 months free on the full platform\n- 33M characters\n- 680+ hours of voice agent usage\n- agents, text to speech, voice cloning, sound effects and music\n- founder events and startup support\n- hear back within a week\n\nWho qualifies:\n- under 25 employees\n- real product you plan to sell\n- not a one-off project\n- business email required\n- bootstrapped is fine, no investor needed\n\nThe catch: it's credits, not cash. When the year ends or the credits run low, you drop to the Free plan. \n\nRolling deadline → https://t.co/OUNWTxqunb",
+      "created_time": "2026-11-06T01:52:00.000Z",
+      "canonical_url": "https://twitter.com/kseniam0s/status/2118472331714596993",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/itspdfu/status/2118435431779897456",
+      "author": "itspdfu",
+      "headline": "Apple is building an __explicit-memory store for Siri__ using BM25 and vector search merged via RRF, running on the Kuzu graph database it acquired.",
+      "tweet_id": "4101eba9-b6bc-81e1-ba2b-d6d4c2e3cb33",
+      "source_text": "Apple is building an explicit-memory store for Siri AI. Memory records are queried via full-text (BM25) and vector search, then merged via RRF.\n\nSiri’s chat recall in 27.2 uses the same search pipeline to find past chats.\n\nBuilt on the Kuzu graph database Apple acquired. https://t.co/fxSNI6Qe3S",
+      "created_time": "2026-11-06T01:52:00.000Z",
+      "canonical_url": "https://twitter.com/itspdfu/status/2118435431779897456",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/ShwetaKukreja_/status/2117899754533490828",
+      "author": "ShwetaKukreja_",
+      "headline": "Canva cuts __1,271 employees__ — 22% of its workforce — as it restructures around AI.",
+      "tweet_id": "40f1eba9-b6bc-8166-b2e2-dae5e3ae6e23",
+      "source_text": "Canva is laying off 22% of its workforce which is 1271 employees, and this is what their CEO said. \n\nWe need more founders like thissss. https://t.co/YFczt81dyR",
+      "created_time": "2026-11-05T20:52:00.000Z",
+      "canonical_url": "https://twitter.com/ShwetaKukreja_/status/2117899754533490828",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/csaba_kissi/status/2118311646389313988",
+      "author": "csaba_kissi",
+      "headline": "A GitHub repo makes it easier to generate __AI architecture diagrams__ for documenting agent systems and pipelines.",
+      "tweet_id": "40f1eba9-b6bc-81a3-94e2-d7000b8af668",
+      "source_text": "Use this GutHub repo to create AI architecture diagrams\n\nhttps://t.co/psfrQQQaEw https://t.co/6vkaxkODyK https://t.co/j2InUy8CFF",
+      "created_time": "2026-11-05T16:22:00.000Z",
+      "canonical_url": "https://twitter.com/csaba_kissi/status/2118311646389313988",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/pcuenq/status/2118294205910987173",
+      "author": "pcuenq",
+      "headline": "Apple's __Core AI models repo__ is now open to third-party contributions — time to submit your model ports.",
+      "tweet_id": "40f1eba9-b6bc-819f-b3c3-f2877a292f80",
+      "source_text": "Apple's Core AI models repo is now accepting third-party contributions 🥳\n\nIf you have developed some cool ports, this is the best place to share your recipes with the community. Looking at you @JackdeS11 @mattt @kevinqz 😂\n\nhttps://t.co/bQpzZiaAcJ",
+      "created_time": "2026-11-05T15:57:00.000Z",
+      "canonical_url": "https://twitter.com/pcuenq/status/2118294205910987173",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://age-of-product.com/food-agile-thought-569-ai-goetterdaemmerung/",
+      "author": "swolpers",
+      "item_id": "hn:50392882",
+      "headline": "An agile practitioner argues we're entering __AI's Götterdämmerung__ — the twilight phase where hype meets cold reality.",
+      "subreddit": null,
+      "source_text": "AI's Götterdämmerung – Food for Agile Thought #569",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:41:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://age-of-product.com/food-agile-thought-569-ai-goetterdaemmerung",
+      "learning_score": 2
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/05/the-new-york-times-reportedly-in-talks-to-buy-letterboxd-for-330-million/",
+      "author": "askadityapandey",
+      "item_id": "hn:50392863",
+      "headline": "The New York Times is said to be in talks to __acquire Letterboxd for $330 million__.",
+      "subreddit": null,
+      "source_text": "The New York Times reportedly in talks to buy Letterboxd for $330M",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:40:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://techcrunch.com/2026/11/05/the-new-york-times-reportedly-in-talks-to-buy-letterboxd-for-330-million",
+      "learning_score": 2
+    },
+    {
+      "url": "https://zapier.com/blog/what-we-learned-watching-claude-read-zapier/",
+      "author": "ayinlaolajide",
+      "item_id": "hn:50392829",
+      "headline": "Zapier documented __what Claude actually sees when it reads Zapier.com__ — an inside look at how LLMs interpret websites.",
+      "subreddit": null,
+      "source_text": "What we learned by watching Claude read Zapier.com",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:38:15+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://zapier.com/blog/what-we-learned-watching-claude-read-zapier",
+      "learning_score": 2
+    },
+    {
+      "url": "https://joinproject2027.org/plan",
+      "author": "pzuraq",
+      "item_id": "hn:50392815",
+      "headline": "__Project 2027__ is an RFC to rebuild public tech infrastructure on the economic model of open source.",
+      "subreddit": null,
+      "source_text": "Project 2027: An RFC to rebuild public tech using the economics of Open Source",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:36:54+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://joinproject2027.org/plan",
+      "learning_score": 2
+    },
+    {
+      "url": "https://utmsnap.com",
+      "author": "vnsamy_code",
+      "item_id": "hn:50392800",
+      "headline": "__UtmSnap__ is a local-first UTM builder with team-level taxonomy governance — no data leaves your browser.",
+      "subreddit": null,
+      "source_text": "Show HN: UtmSnap – A fast, local-first UTM builder with team taxonomy governance",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:36:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://utmsnap.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://developer.repebble.com/guides/plugins/preview/",
+      "author": "droidjj",
+      "item_id": "hn:50392763",
+      "headline": "The revived __Pebble smartwatch__ now has a developer-facing plugin API with guides and preview builds.",
+      "subreddit": null,
+      "source_text": "Pebble Plugins",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:34:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://developer.repebble.com/guides/plugins/preview",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.agent-swarm.dev/blog/automation-savings",
+      "author": "tarasyarema",
+      "item_id": "hn:50392753",
+      "headline": "One team cut AI costs by routing __53% of their token spending to deterministic scripts__, saving $17k.",
+      "subreddit": null,
+      "source_text": "We shifted 53% (+$17k) of our token spending to scripts",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:33:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://agent-swarm.dev/blog/automation-savings",
+      "learning_score": 2
+    },
+    {
+      "url": "https://serce.me/posts/2026-10-30-how-hard-is-it-to-check-for-whitespace",
+      "author": "theanonymousone",
+      "item_id": "hn:50392733",
+      "headline": "Deep in the Unicode spec, __checking for whitespace__ is surprisingly thorny — a developer maps every edge case.",
+      "subreddit": null,
+      "source_text": "How hard is it to check for whitespace?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:31:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://serce.me/posts/2026-10-30-how-hard-is-it-to-check-for-whitespace",
+      "learning_score": 2
+    },
+    {
+      "url": "https://neuromancer.github.io/wc2-re/",
+      "author": "galapago",
+      "item_id": "hn:50392731",
+      "headline": "__Wing Commander 2's Kilrathi Saga source code__ has been reconstructed from binaries and is now fully browsable on GitHub.",
+      "subreddit": null,
+      "source_text": "Wing Commander 2 (The Kilrathi Saga) reconstructed source code ready to browse",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:31:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://neuromancer.github.io/wc2-re",
+      "learning_score": 2
+    },
+    {
+      "url": "https://cacm.acm.org/opinion/the-asml-monopoly-platform-and-ecosystem-leadership-in-euv-lithography/",
+      "author": "fscaramuzza",
+      "item_id": "hn:50392729",
+      "headline": "ASML holds __a near-total monopoly on EUV lithography__, and this ACM piece explains why the entire chip stack depends on it.",
+      "subreddit": null,
+      "source_text": "The ASML Monopoly: Platform and Ecosystem Leadership in EUV Lithography",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:30:46+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cacm.acm.org/opinion/the-asml-monopoly-platform-and-ecosystem-leadership-in-euv-lithography",
+      "learning_score": 2
+    },
+    {
+      "url": "https://skills.wheresryan.sh/anatomy",
+      "author": "smugglerFlynn",
+      "item_id": "hn:50392708",
+      "headline": "Anatomy is a Claude skill that __renders any concept as a browsable 3D machine__ — an unusually creative use of the plugin system.",
+      "subreddit": null,
+      "source_text": "Anatomy, a skill for Claude that draws any concept as a working 3D machine",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:29:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://skills.wheresryan.sh/anatomy",
+      "learning_score": 2
+    },
+    {
+      "url": "https://michaelorenstein.com/blog/missing-whitespace/",
+      "author": "killcoder",
+      "item_id": "hn:50392648",
+      "headline": "__Astra's missing whitespace__ caused a subtle navigation failure — this post-mortem traces exactly how it went undetected.",
+      "subreddit": null,
+      "source_text": "Astra's Missing Whitespace",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-06T14:25:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://michaelorenstein.com/blog/missing-whitespace",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-06T15:11:52.406889+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9847,
+          9868
+        ],
+        "reason": "Both cover Amazon's launch of a text-based Alexa shopping agent for US customers",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9859
+        ],
+        "reason": "Covers the Wall Street rebound following the midterm-driven tech selloff reported yesterday",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9869
+        ],
+        "reason": "Specific instance of the broader European anti-data-center protest wave covered yesterday",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9870
+        ],
+        "reason": "Details the specific NDA and cost commitments within OpenAI's community compact announced yesterday",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9867
+        ],
+        "reason": "Sole candidate covering METR's report on Anthropic's accelerating AI progress",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9878
+        ],
+        "reason": "Sole candidate covering the 'sshole' SSH vulnerability in Alpine Linux and musl libc systems",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9866
+        ],
+        "reason": "Sole candidate covering Google DeepMind's Gemini Omni 1.2 Flash video model update",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9879
+        ],
+        "reason": "Sole candidate covering Tau Robotics' humanoid robot cleaning service",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9892
+        ],
+        "reason": "Sole candidate covering Pew Research survey on news trust",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9860
+        ],
+        "reason": "Sole candidate covering white-collar workers quitting over AI disruption fears",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9848
+        ],
+        "reason": "Sole candidate covering Underdog's tiny text-to-speech model",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9858
+        ],
+        "reason": "Sole candidate; Guardian solicitation about AI-generated emails in schools",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9849
+        ],
+        "reason": "Sole candidate covering Physicl's seed funding for robotics training data",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "dd65d8b59a4c182100f436ff676936f60624c06ca901a169aee80836c858095f"
+}
