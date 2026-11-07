@@ -1,0 +1,684 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-07",
+  "issue_id": "20261107",
+  "subject_line": "ISSUE 61107 · 9 STORIES · 11 MIN READ",
+  "intro": "The AI industry is swimming in money and drowning in contradictions. OpenAI just raised $11 billion at a staggering $1.25 trillion valuation — even as midterm voters signaled deep skepticism about AI's unchecked expansion — while a new METR report from inside Anthropic reveals AI development is accelerating twice as fast as last year, with the technology increasingly building itself. Today's digest is a snapshot of an industry sprinting forward on every front: Google pouring $17 billion into data centers, data center developers quietly abandoning their green energy promises, China allegedly planting spies near Nvidia's CEO, and a major blockchain firm exposing FBI credentials to hackers.",
+  "article_count": 9,
+  "stories": [
+    {
+      "id": 9917,
+      "source": "Ars Technica AI",
+      "title": "Chainalysis discloses major breach exposing credentials for all customers including FBI and Microsoft",
+      "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Blockchain analysis firm Chainalysis disclosed a breach in which hackers stole credentials, password hashes, and live authentication tokens for all customers, including government agencies (FBI, ICE, US Air Force) and companies (Microsoft, Coinbase, Barclays). The company described AI agent-assisted offensive techniques and an on-path attack. Chainalysis took down its login page and is requiring mandatory credential rotation, but key details remain unanswered including the attack source and why disclosure was delayed two days.",
+      "opinion": "The involvement of AI-assisted offensive techniques marks an escalation in real-world cyberattacks, and the high-profile customer list—especially law enforcement and intelligence agencies—makes this breach exceptionally consequential for national security.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/08/getty-blockchain-1152x648.jpg",
+      "published_at": "2026-11-06T20:56:41+00:00",
+      "fetched_at": "2026-11-07T13:46:28.733263+00:00"
+    },
+    {
+      "id": 9901,
+      "source": "Guardian AI",
+      "title": "Steve Jones cartoon comments on dangerous technology innovations",
+      "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/07/steve-jones-dangerous-tech-innovations-cartoon-ai-fire",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian published a Steve Jones editorial cartoon on November 7, 2026, commenting on dangerous technology innovations including AI. The cartoon itself is only viewable on the Guardian's website.",
+      "opinion": "An editorial cartoon with no substantive news content beyond cultural commentary on tech anxieties.",
+      "image_url": "https://i.guim.co.uk/img/media/86994054c0f6a4c972c5c9ffc994a75e79ab91f4/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=ef6c73eafbe63665b783e693dcc512ec",
+      "published_at": "2026-11-07T11:00:09+00:00",
+      "fetched_at": "2026-11-07T13:46:21.236091+00:00"
+    },
+    {
+      "id": 9893,
+      "source": "TechCrunch AI",
+      "title": "Crusoe sells troubled Wyoming data center project to Google for $17 billion investment",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Denver-based data center developer Crusoe (valued at $30.9 billion) sold its unfinished Wyoming data center project to Google, which plans to invest $17 billion to develop the campus. Crusoe had originally announced the project with Blackstone-backed Tallgrass with plans to scale to 10 gigawatts. Google had reportedly raised concerns about cost and timeline under Crusoe's management. Crusoe continues to work with Google on a separate Texas project and counts Oracle, OpenAI, Microsoft, Meta, and Jane Street among its clients.",
+      "opinion": "Google swooping in on a troubled project it was already scrutinizing suggests the hyperscalers are gaining even more leverage over independent data center developers—Crusoe's $30.9B valuation may not insulate it from being a build-to-sell operation for bigger players.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/crusoe-ceo-getty.jpg?resize=1200,800",
+      "published_at": "2026-11-07T01:40:28+00:00",
+      "fetched_at": "2026-11-07T13:46:17.219567+00:00"
+    },
+    {
+      "id": 9909,
+      "source": "The Verge AI",
+      "title": "METR report on Anthropic's AI-accelerated development draws alarm from researchers",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "METR conducted an 11-week investigation inside Anthropic and found AI development is progressing roughly twice as fast as a year ago, with AI driving most of the acceleration. Anthropic was allowed to redact portions of the report, raising transparency concerns. The findings come as Anthropic prepares to go public while CEO Dario Amodei has called for labs to slow down, highlighting tensions between commercial ambitions and safety rhetoric.",
+      "opinion": "The Verge's framing emphasizes the tension between Anthropic's safety messaging and its commercial trajectory, and highlights the transparency problem of allowing a subject to redact its own evaluation—a dynamic that undermines the credibility of third-party safety auditing. Where coverage differs: The Rundown AI (yesterday:4) reports specific figures including AI responsible for 80% of acceleration, two unreleased internal models, and a 'Model 4' clearing 50% on all 15 benchmarks; The Verge does not include these specifics but adds context about Amodei calling for labs to slow down and Anthropic's upcoming IPO",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2280291125.jpg?quality=90&strip=all&crop=0%2C10.752607989199%2C100%2C78.494784021602&w=1200",
+      "published_at": "2026-11-07T12:30:00+00:00",
+      "fetched_at": "2026-11-07T13:46:26.468756+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9909,
+            "source": "The Verge AI",
+            "title": "Why a new report on Anthropic automating AI development is alarming researchers",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [
+          "The Rundown AI (yesterday:4) reports specific figures including AI responsible for 80% of acceleration, two unreleased internal models, and a 'Model 4' clearing 50% on all 15 benchmarks; The Verge does not include these specifics but adds context about Amodei calling for labs to slow down and Anthropic's upcoming IPO"
+        ],
+        "is_update": true,
+        "reason": "Same event as yesterday:4—both cover METR's report on Anthropic's AI-accelerated development, including the 2x speed finding and redactions"
+      }
+    },
+    {
+      "id": 9902,
+      "source": "Guardian AI",
+      "title": "Lanarkshire AI data centre abandons renewables pledge, will draw entirely from National Grid",
+      "url": "https://www.theguardian.com/uk-news/2026/nov/07/lanarkshire-ai-datacentre-datavita-chapelhall-national-grid-renewable-energy",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "DataVita, a data centre company central to the UK's AI strategy, has admitted its massive 1GW AI development near Glasgow will be entirely powered by the National Grid, reversing its original promise to use renewable energy equivalent to the output of a small nuclear reactor or Britain's largest windfarm.",
+      "opinion": "This reversal exposes a pattern where data centre developers use green energy pledges to win planning approvals, then quietly switch to grid power—undermining both climate commitments and public trust in AI infrastructure projects.",
+      "image_url": "https://i.guim.co.uk/img/media/c1b8eb2d05fbcf3925b8a30a9e3d4612d3eaa8c7/1365_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c31b418c813c51421e0737b454b6ad5a",
+      "published_at": "2026-11-07T10:00:08+00:00",
+      "fetched_at": "2026-11-07T13:46:21.454685+00:00"
+    },
+    {
+      "id": 9894,
+      "source": "TechCrunch AI",
+      "title": "OpenAI raises $11 billion at $1.25 trillion valuation as AI funding landscape shifts post-midterms",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI has raised $11 billion in a new funding round valuing the company at $1.25 trillion, making it one of the world's most valuable companies. The round was scaled back from an originally larger target due to declining tech stocks and midterm election results reflecting public opposition to AI and data centers. The round hasn't closed and is expected to total about $20 billion. Meanwhile, Anthropic has filed to go public, and OpenAI has delayed its own IPO plans. The broader AI market faces uncertainty following the Democratic midterm landslide.",
+      "opinion": "The scaled-back raise signals that even the AI sector's biggest name isn't immune to market headwinds—post-midterm regulatory uncertainty and declining public sentiment toward AI infrastructure are now directly constraining valuations and fundraising ambitions. Where coverage differs: TechCrunch reports the target was $30 billion (per late September reports); The Verge specifies the target was $30 billion at a $1.4 trillion valuation TechCrunch reports Anthropic's IPO valuation expectations dropped to ~$1.1 trillion from $2 trillion; The Verge says only that Anthropic filed its S-1 The Verge notes a prior $122 billion raise in March 2026 at $852 billion valuation; TechCrunch does not mention this prior round",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024",
+      "published_at": "2026-11-06T22:53:46+00:00",
+      "fetched_at": "2026-11-07T13:46:17.584506+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9894,
+            "source": "TechCrunch AI",
+            "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+            "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+          },
+          {
+            "id": 9910,
+            "source": "The Verge AI",
+            "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "TechCrunch reports the target was $30 billion (per late September reports); The Verge specifies the target was $30 billion at a $1.4 trillion valuation",
+          "TechCrunch reports Anthropic's IPO valuation expectations dropped to ~$1.1 trillion from $2 trillion; The Verge says only that Anthropic filed its S-1",
+          "The Verge notes a prior $122 billion raise in March 2026 at $852 billion valuation; TechCrunch does not mention this prior round"
+        ],
+        "is_update": false,
+        "reason": "Both report the same event: OpenAI raising $11 billion at a $1.25 trillion valuation, with context about scaled-back targets and Anthropic's IPO"
+      }
+    },
+    {
+      "id": 9903,
+      "source": "Guardian AI",
+      "title": "Southeast Asia's data centre boom hits wall as power and water constraints mount",
+      "url": "https://www.theguardian.com/technology/2026/nov/07/datacentres-southeast-asia",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Southeast Asia's data centre expansion is stalling as power and water constraints create obstacles. Thailand, which had approved $27 billion in data centre projects from TikTok, UAE-based Skyline, and Singapore's Bridge datacentres earlier in 2026, has seen momentum halt. The region is facing practical limits of its energy and water resources.",
+      "opinion": "This is the supply-side reality check the AI infrastructure buildout was always heading toward—approving billions in projects is easy, but the physics of power generation and water supply don't scale on venture timelines.",
+      "image_url": "https://i.guim.co.uk/img/media/97317ac683d16a9b43f8f91ba651c0c5be5113a7/836_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=79165e86d1954daf6e66e67eb9becec8",
+      "published_at": "2026-11-07T10:00:07+00:00",
+      "fetched_at": "2026-11-07T13:46:21.687135+00:00"
+    },
+    {
+      "id": 9896,
+      "source": "TechCrunch AI",
+      "title": "Meta introduces Spaces for Muse agents, adding project-specific collaboration threads",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Meta launched Spaces, a feature for its Muse AI agents that lets users create topic-specific conversation threads for projects like vacation planning or gift tracking. Spaces integrate with third-party apps and auto-update with new information. CEO Zuckerberg demonstrated uses including event tracking and home control. This follows Muse Voice for verbal commands. Meta reported 10 million Muse users in the US and Canada less than two months after launch.",
+      "opinion": "The 10 million user figure in under two months is notable, and Spaces' third-party app integration positions Muse as a platform play rather than just a chatbot—though the actual utility of persistent AI project threads remains unproven at scale.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+      "published_at": "2026-11-06T18:44:20+00:00",
+      "fetched_at": "2026-11-07T13:46:18.373296+00:00"
+    },
+    {
+      "id": 9911,
+      "source": "The Verge AI",
+      "title": "China reportedly recruited AI executive to spy on Nvidia CEO Jensen Huang",
+      "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "China's Ministry of State Security reportedly recruited Alice Huang, an executive at Nvidia customer Megaspeed, to spy on Nvidia CEO Jensen Huang and gather intelligence about American AI chips, potentially to influence Nvidia to make advanced chips available to China. Alice Huang has close relationships with top AI chip industry executives. President Trump was briefed last year but took no action. Three House committees have asked Jensen Huang to appear for a closed-door briefing. The two Huangs are not related but are described as having a 'close' relationship.",
+      "opinion": "This story sits at the intersection of AI chip export controls, espionage, and Congressional oversight—the fact that Trump was briefed and took no action will likely become the political flashpoint, especially given ongoing debates about China AI chip restrictions.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-06T23:00:44+00:00",
+      "fetched_at": "2026-11-07T13:46:27.159398+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9917,
+          "source": "Ars Technica AI",
+          "title": "Chainalysis discloses major breach exposing credentials for all customers including FBI and Microsoft",
+          "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Blockchain analysis firm Chainalysis disclosed a breach in which hackers stole credentials, password hashes, and live authentication tokens for all customers, including government agencies (FBI, ICE, US Air Force) and companies (Microsoft, Coinbase, Barclays). The company described AI agent-assisted offensive techniques and an on-path attack. Chainalysis took down its login page and is requiring mandatory credential rotation, but key details remain unanswered including the attack source and why disclosure was delayed two days.",
+          "opinion": "The involvement of AI-assisted offensive techniques marks an escalation in real-world cyberattacks, and the high-profile customer list—especially law enforcement and intelligence agencies—makes this breach exceptionally consequential for national security.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/08/getty-blockchain-1152x648.jpg",
+          "published_at": "2026-11-06T20:56:41+00:00",
+          "fetched_at": "2026-11-07T13:46:28.733263+00:00"
+        },
+        {
+          "id": 9901,
+          "source": "Guardian AI",
+          "title": "Steve Jones cartoon comments on dangerous technology innovations",
+          "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/07/steve-jones-dangerous-tech-innovations-cartoon-ai-fire",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian published a Steve Jones editorial cartoon on November 7, 2026, commenting on dangerous technology innovations including AI. The cartoon itself is only viewable on the Guardian's website.",
+          "opinion": "An editorial cartoon with no substantive news content beyond cultural commentary on tech anxieties.",
+          "image_url": "https://i.guim.co.uk/img/media/86994054c0f6a4c972c5c9ffc994a75e79ab91f4/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=ef6c73eafbe63665b783e693dcc512ec",
+          "published_at": "2026-11-07T11:00:09+00:00",
+          "fetched_at": "2026-11-07T13:46:21.236091+00:00"
+        },
+        {
+          "id": 9893,
+          "source": "TechCrunch AI",
+          "title": "Crusoe sells troubled Wyoming data center project to Google for $17 billion investment",
+          "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Denver-based data center developer Crusoe (valued at $30.9 billion) sold its unfinished Wyoming data center project to Google, which plans to invest $17 billion to develop the campus. Crusoe had originally announced the project with Blackstone-backed Tallgrass with plans to scale to 10 gigawatts. Google had reportedly raised concerns about cost and timeline under Crusoe's management. Crusoe continues to work with Google on a separate Texas project and counts Oracle, OpenAI, Microsoft, Meta, and Jane Street among its clients.",
+          "opinion": "Google swooping in on a troubled project it was already scrutinizing suggests the hyperscalers are gaining even more leverage over independent data center developers—Crusoe's $30.9B valuation may not insulate it from being a build-to-sell operation for bigger players.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/crusoe-ceo-getty.jpg?resize=1200,800",
+          "published_at": "2026-11-07T01:40:28+00:00",
+          "fetched_at": "2026-11-07T13:46:17.219567+00:00"
+        },
+        {
+          "id": 9909,
+          "source": "The Verge AI",
+          "title": "METR report on Anthropic's AI-accelerated development draws alarm from researchers",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "METR conducted an 11-week investigation inside Anthropic and found AI development is progressing roughly twice as fast as a year ago, with AI driving most of the acceleration. Anthropic was allowed to redact portions of the report, raising transparency concerns. The findings come as Anthropic prepares to go public while CEO Dario Amodei has called for labs to slow down, highlighting tensions between commercial ambitions and safety rhetoric.",
+          "opinion": "The Verge's framing emphasizes the tension between Anthropic's safety messaging and its commercial trajectory, and highlights the transparency problem of allowing a subject to redact its own evaluation—a dynamic that undermines the credibility of third-party safety auditing. Where coverage differs: The Rundown AI (yesterday:4) reports specific figures including AI responsible for 80% of acceleration, two unreleased internal models, and a 'Model 4' clearing 50% on all 15 benchmarks; The Verge does not include these specifics but adds context about Amodei calling for labs to slow down and Anthropic's upcoming IPO",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2280291125.jpg?quality=90&strip=all&crop=0%2C10.752607989199%2C100%2C78.494784021602&w=1200",
+          "published_at": "2026-11-07T12:30:00+00:00",
+          "fetched_at": "2026-11-07T13:46:26.468756+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9909,
+                "source": "The Verge AI",
+                "title": "Why a new report on Anthropic automating AI development is alarming researchers",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [
+              "The Rundown AI (yesterday:4) reports specific figures including AI responsible for 80% of acceleration, two unreleased internal models, and a 'Model 4' clearing 50% on all 15 benchmarks; The Verge does not include these specifics but adds context about Amodei calling for labs to slow down and Anthropic's upcoming IPO"
+            ],
+            "is_update": true,
+            "reason": "Same event as yesterday:4—both cover METR's report on Anthropic's AI-accelerated development, including the 2x speed finding and redactions"
+          }
+        },
+        {
+          "id": 9902,
+          "source": "Guardian AI",
+          "title": "Lanarkshire AI data centre abandons renewables pledge, will draw entirely from National Grid",
+          "url": "https://www.theguardian.com/uk-news/2026/nov/07/lanarkshire-ai-datacentre-datavita-chapelhall-national-grid-renewable-energy",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "DataVita, a data centre company central to the UK's AI strategy, has admitted its massive 1GW AI development near Glasgow will be entirely powered by the National Grid, reversing its original promise to use renewable energy equivalent to the output of a small nuclear reactor or Britain's largest windfarm.",
+          "opinion": "This reversal exposes a pattern where data centre developers use green energy pledges to win planning approvals, then quietly switch to grid power—undermining both climate commitments and public trust in AI infrastructure projects.",
+          "image_url": "https://i.guim.co.uk/img/media/c1b8eb2d05fbcf3925b8a30a9e3d4612d3eaa8c7/1365_0_6827_5464/master/6827.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c31b418c813c51421e0737b454b6ad5a",
+          "published_at": "2026-11-07T10:00:08+00:00",
+          "fetched_at": "2026-11-07T13:46:21.454685+00:00"
+        },
+        {
+          "id": 9894,
+          "source": "TechCrunch AI",
+          "title": "OpenAI raises $11 billion at $1.25 trillion valuation as AI funding landscape shifts post-midterms",
+          "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI has raised $11 billion in a new funding round valuing the company at $1.25 trillion, making it one of the world's most valuable companies. The round was scaled back from an originally larger target due to declining tech stocks and midterm election results reflecting public opposition to AI and data centers. The round hasn't closed and is expected to total about $20 billion. Meanwhile, Anthropic has filed to go public, and OpenAI has delayed its own IPO plans. The broader AI market faces uncertainty following the Democratic midterm landslide.",
+          "opinion": "The scaled-back raise signals that even the AI sector's biggest name isn't immune to market headwinds—post-midterm regulatory uncertainty and declining public sentiment toward AI infrastructure are now directly constraining valuations and fundraising ambitions. Where coverage differs: TechCrunch reports the target was $30 billion (per late September reports); The Verge specifies the target was $30 billion at a $1.4 trillion valuation TechCrunch reports Anthropic's IPO valuation expectations dropped to ~$1.1 trillion from $2 trillion; The Verge says only that Anthropic filed its S-1 The Verge notes a prior $122 billion raise in March 2026 at $852 billion valuation; TechCrunch does not mention this prior round",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024",
+          "published_at": "2026-11-06T22:53:46+00:00",
+          "fetched_at": "2026-11-07T13:46:17.584506+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9894,
+                "source": "TechCrunch AI",
+                "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+                "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+              },
+              {
+                "id": 9910,
+                "source": "The Verge AI",
+                "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "TechCrunch reports the target was $30 billion (per late September reports); The Verge specifies the target was $30 billion at a $1.4 trillion valuation",
+              "TechCrunch reports Anthropic's IPO valuation expectations dropped to ~$1.1 trillion from $2 trillion; The Verge says only that Anthropic filed its S-1",
+              "The Verge notes a prior $122 billion raise in March 2026 at $852 billion valuation; TechCrunch does not mention this prior round"
+            ],
+            "is_update": false,
+            "reason": "Both report the same event: OpenAI raising $11 billion at a $1.25 trillion valuation, with context about scaled-back targets and Anthropic's IPO"
+          }
+        },
+        {
+          "id": 9903,
+          "source": "Guardian AI",
+          "title": "Southeast Asia's data centre boom hits wall as power and water constraints mount",
+          "url": "https://www.theguardian.com/technology/2026/nov/07/datacentres-southeast-asia",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Southeast Asia's data centre expansion is stalling as power and water constraints create obstacles. Thailand, which had approved $27 billion in data centre projects from TikTok, UAE-based Skyline, and Singapore's Bridge datacentres earlier in 2026, has seen momentum halt. The region is facing practical limits of its energy and water resources.",
+          "opinion": "This is the supply-side reality check the AI infrastructure buildout was always heading toward—approving billions in projects is easy, but the physics of power generation and water supply don't scale on venture timelines.",
+          "image_url": "https://i.guim.co.uk/img/media/97317ac683d16a9b43f8f91ba651c0c5be5113a7/836_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=79165e86d1954daf6e66e67eb9becec8",
+          "published_at": "2026-11-07T10:00:07+00:00",
+          "fetched_at": "2026-11-07T13:46:21.687135+00:00"
+        },
+        {
+          "id": 9896,
+          "source": "TechCrunch AI",
+          "title": "Meta introduces Spaces for Muse agents, adding project-specific collaboration threads",
+          "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Meta launched Spaces, a feature for its Muse AI agents that lets users create topic-specific conversation threads for projects like vacation planning or gift tracking. Spaces integrate with third-party apps and auto-update with new information. CEO Zuckerberg demonstrated uses including event tracking and home control. This follows Muse Voice for verbal commands. Meta reported 10 million Muse users in the US and Canada less than two months after launch.",
+          "opinion": "The 10 million user figure in under two months is notable, and Spaces' third-party app integration positions Muse as a platform play rather than just a chatbot—though the actual utility of persistent AI project threads remains unproven at scale.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+          "published_at": "2026-11-06T18:44:20+00:00",
+          "fetched_at": "2026-11-07T13:46:18.373296+00:00"
+        },
+        {
+          "id": 9911,
+          "source": "The Verge AI",
+          "title": "China reportedly recruited AI executive to spy on Nvidia CEO Jensen Huang",
+          "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "China's Ministry of State Security reportedly recruited Alice Huang, an executive at Nvidia customer Megaspeed, to spy on Nvidia CEO Jensen Huang and gather intelligence about American AI chips, potentially to influence Nvidia to make advanced chips available to China. Alice Huang has close relationships with top AI chip industry executives. President Trump was briefed last year but took no action. Three House committees have asked Jensen Huang to appear for a closed-door briefing. The two Huangs are not related but are described as having a 'close' relationship.",
+          "opinion": "This story sits at the intersection of AI chip export controls, espionage, and Congressional oversight—the fact that Trump was briefed and took no action will likely become the political flashpoint, especially given ongoing debates about China AI chip restrictions.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-06T23:00:44+00:00",
+          "fetched_at": "2026-11-07T13:46:27.159398+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/DD_Nanall/status/2118892958237753564",
+      "author": "DD_Nanall",
+      "headline": "KeyDeck's new MCP integration __shows AI your project's key names but never the keys themselves__, requiring Touch ID approval before writing any .env.",
+      "tweet_id": "4111eba9-b6bc-819c-abc9-eac4df9a3f88",
+      "source_text": "I wasn't going to add MCP to KeyDeck.\n\nSomeone asked for it on my last post, and my first thought was: what's the downside? Letting an AI near your API keys felt wrong. Anything you paste into an AI chat goes to the AI company. That's exactly what KeyDeck exists to stop.\n\nThen I found a way to do it without that risk.\n\nHow it works:\n\n• KeyDeck runs a small connection on your Mac, only while it's open. Nothing on the internet can reach it.\n• You connect Claude Code, Cursor or VS Code in one click (or one line for Claude Code).\n• Your AI can see your project names and which keys exist, like \"Stripe, Supabase, Claude\". Never the keys themselves.\n• When it needs your .env, a popup asks you first. You approve with Touch ID, and KeyDeck writes the file into your project.\n• The AI only hears \"done, 5 keys written.\"\n• It can't add, change or delete anything in KeyDeck.\n• Each AI tool gets its own connection key, so you can cut one off without touching the others.\n\nSo it's in.\n\nKeyDeck: every API key in one locked place, now with an AI that can set up your project without ever seeing your keys.",
+      "created_time": "2026-11-07T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/DD_Nanall/status/2118892958237753564",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Hesamation/status/2118799296917070172",
+      "author": "Hesamation",
+      "headline": "Silicon Valley's AI-breaking-encryption finale hits differently now that __OpenAI's math and Anthropic's cryptanalysis__ progress is real.",
+      "tweet_id": "4111eba9-b6bc-8189-8078-d41e4d443d7d",
+      "source_text": "it’s crazy how the Silicon Valley finale ended with AI discovering a math breakthrough that could break up the world’s encryption.\n\nin the show, the AI wasn’t even trying to break encryption. it just stumbled upon the discovery while recursively improving Pied Piper’s compression algorithm and itself, without any engineers guiding the process.\n\nnow 7 years later, with OpenAI’s math and Anthropic’s cryptanalysis progress, watching that ending hits a little different.\n\nman this show was really ahead of its time, not talking about it “predicting” anything but just the sheer range of things its writers could imagine back then.",
+      "created_time": "2026-11-07T03:07:00.000Z",
+      "canonical_url": "https://twitter.com/Hesamation/status/2118799296917070172",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/eng_khairallah1/status/2118789378969682057",
+      "author": "eng_khairallah1",
+      "headline": "Claude Opus 5.5 has a habit of __spinning up five subagents to fix a typo__ — here's a prompt for your AGENTS.md that keeps it in check.",
+      "tweet_id": "4111eba9-b6bc-81c9-a96c-fed2c1e7446d",
+      "source_text": "Claude Opus 5.5 has one bad habit: it turns one job into a team of AI agents.\n\nask it to fix a typo, and it spins up five subagents. ask it to rename a file, and three agents argue over who does it\n\nFull prompt in the first reply. Add these rules to your AGENTS.md: 👇 https://t.co/1VmDN4Kwpz https://t.co/lOmHxvDwj1",
+      "created_time": "2026-11-07T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/eng_khairallah1/status/2118789378969682057",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ecomchasedimond/status/2118786429518225809",
+      "author": "ecomchasedimond",
+      "headline": "Five fixes for the reason __your AI output sounds generic__ — from prompt structure to context.",
+      "tweet_id": "4111eba9-b6bc-8164-b263-e1066a99d779",
+      "source_text": "Why your AI output sounds generic (5 fixes): https://t.co/47TTicjmVI",
+      "created_time": "2026-11-07T00:57:00.000Z",
+      "canonical_url": "https://twitter.com/ecomchasedimond/status/2118786429518225809",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/pdrmnvd/status/2118753972207198349",
+      "author": "pdrmnvd",
+      "headline": "Claude Academy released a free __Introduction to Evals__ course for builders who have working prompts but no way to measure them.",
+      "tweet_id": "4111eba9-b6bc-8184-a5e0-d645cf48df20",
+      "source_text": "We just released a free course on Claude Academy: Introduction to Evals. If you have a working prompt but no way to measure it or are just curious about how to get more structured feedback from your prompts, this short four-lesson course will walk you through it. https://t.co/7l2F82mZfG",
+      "created_time": "2026-11-07T00:57:00.000Z",
+      "canonical_url": "https://twitter.com/pdrmnvd/status/2118753972207198349",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Blum_OG/status/2118781450778722409",
+      "author": "Blum_OG",
+      "headline": "One developer had Claude Code audit its own usage and found __Opus handling file reads that Haiku could do 40x cheaper__.",
+      "tweet_id": "4111eba9-b6bc-8121-98e7-df9b86359ad0",
+      "source_text": "F*ck, Opus was doing all my file reading.\n\nI made Claude Code price its own work, and finally understood why my limits always ran out.\n\nMy file search now runs on a model that costs 40x less, and Opus only sees the plan.\n\nHere's what it set up for me:\n\nstep 1 → paste the prompt below into Claude Code on Sonnet 5.5\n\nstep 2 → a small script reads my last 30 days of logs, and only numbers come out, never my chats\n\nstep 3 → it shows what each model cost and how much of it was Opus just reading files\n\nstep 4 → it prices the same work again as if Haiku did the reading and Sonnet wrote the code\n\nstep 5 → the next time I ask where something is in my code, Haiku goes looking instead of Opus\n\nstep 6 → a Haiku agent runs my tests and brings back only the ones that failed\n\nstep 7 → a Sonnet agent reviews each change before Claude calls it done\n\nstep 8 → Opus only gets called for my plans and for any error that happens twice\n\nFind the full prompt below.\n\nThen read the article below on how to stop paying Opus prices for grunt work.",
+      "created_time": "2026-11-07T00:52:00.000Z",
+      "canonical_url": "https://twitter.com/Blum_OG/status/2118781450778722409",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/angeldot_/status/2118727739033423919",
+      "author": "angeldot_",
+      "headline": "Andrej Karpathy reportedly shared a prompt that pushes __Opus 5.5 to complete any task__ end-to-end.",
+      "tweet_id": "4111eba9-b6bc-81d3-938a-df72f44db023",
+      "source_text": "Andrej Karpathy, miembro fundador de OpenAI, acaba de compartir un prompt para que Opus 5.5 termine cualquier tarea\n\nY es una auténtica locura\n\nEnvíaselo a Opus 5.5, ya me lo agradecerás: https://t.co/tqUAjc76mN https://t.co/31vHqZIOAg",
+      "created_time": "2026-11-07T00:52:00.000Z",
+      "canonical_url": "https://twitter.com/angeldot_/status/2118727739033423919",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/csaba_kissi/status/2118599064946458685",
+      "author": "csaba_kissi",
+      "headline": "A roundup of five free dev resources includes an __open-source self-improving coding agent__ and 300 handcrafted SVG icons.",
+      "tweet_id": "4111eba9-b6bc-817f-8e02-fafbf7a20367",
+      "source_text": "5 must-know resources for web developers.\n\nhttps://t.co/veJVecJdEw - Open-source React-to-agent UI context\n\nhttps://t.co/ZYCHKYzSXC - 121 free animated React components\n\nhttps://t.co/MSPaWl9AGy - 300 free handcrafted SVG icons\n\nhttps://t.co/01DJnuEjaA - 75 curated design inspiration collections\n\nhttps://t.co/OCsGpvo0EV - Open-source self-improving coding\nagent skills",
+      "created_time": "2026-11-07T00:52:00.000Z",
+      "canonical_url": "https://twitter.com/csaba_kissi/status/2118599064946458685",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dsqjaffa/status/2118757806585078148",
+      "author": "dsqjaffa",
+      "headline": "A Grok Bot prompt that acts as a __full social media marketing team__ — with a niche map, outlier finder, competitor watch, and content pipeline.",
+      "tweet_id": "4111eba9-b6bc-8177-a1c3-c7199cd5ea93",
+      "source_text": "📂 social media marketing for Grok Bot\n┃\n┣ 📂 head of social\n┃ ┣ 📂 your brief, saved once\n┃ ┣ 📂 5 video ideas every Monday\n┃ ┗ 📂 a 5-line update every weekday\n┃\n┣ 📂 niche map\n┃ ┣ 📂 the 20 biggest creators in a table\n┃ ┣ 📂 the 5 most common formats\n┃ ┗ 📂 3 formats you could own\n┃\n┣ 📂 outlier finder\n┃ ┣ 📂 5 videos every weekday\n┃ ┣ 📂 first line, hook type, format\n┃ ┗ 📂 could you shoot it this week?\n┃\n┣ 📂 competitor watch\n┃ ┣ 📂 up to 5 handles\n┃ ┣ 📂 reused hooks and formats\n┃ ┗ 📂 the ads they keep paying for\n┃\n┣ 📂 trend radar\n┃ ┣ 📂 formats to copy\n┃ ┣ 📂 topics to talk about\n┃ ┗ 📂 sounds to use\n┃\n┣ 📂 teardown\n┃ ┣ 📂 first line, word for word\n┃ ┣ 📂 each beat in order\n┃ ┗ 📂 5 hooks for your version\n┃\n┣ 📂 comment miner\n┃ ┣ 📂 questions\n┃ ┣ 📂 complaints\n┃ ┗ 📂 requests\n┃\n┣ 📂 pipeline\n┃ ┣ 📂 your voice note\n┃ ┣ 📂 3 scripts to film\n┃ ┗ 📂 a voice file that gets better\n┃\n┣ 📂 creator scout\n┃ ┣ 📂 small accounts with breakouts\n┃ ┣ 📂 more views than followers\n┃ ┗ 📂 who comments on their videos\n┃\n┗ 📂 analyst\n  ┣ 📂 your 3 strongest videos\n  ┣ 📂 your 3 weakest videos\n  ┗ 📂 lessons every bot reads\n\n(every prompt is in the article ↓)",
+      "created_time": "2026-11-07T00:42:00.000Z",
+      "canonical_url": "https://twitter.com/dsqjaffa/status/2118757806585078148",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/PawelHuryn/status/2118826877414490386",
+      "author": "PawelHuryn",
+      "headline": "Pawel Huryn argues __every AI knowledge system degrades without regular pruning__ and proposes a /dream command to merge duplicates and delete stale notes.",
+      "tweet_id": "4111eba9-b6bc-81af-bece-f6a3de0762be",
+      "source_text": "Learn from this. Just don't hand your agent's memory to a lab.\n\nI've been doing a lot of this with plain .md files for months. One small index the agent always loads. Domain files it opens only when a task needs them. It's in my repo, so I can read it, diff it, fix it, and the same files work in Codex.\n\nEven Claude Code's own memory loads just the first 200 lines, as an index.\n\nTheir tests back the rest:\n\n- Better models keep less.\n- Telling the model how to write memory hurt. Say what memory is for, then let it judge.\n- Check notes regularly. They call it dreaming.\n\nI added a /dream to Mini Harness this week: merge duplicates, delete what the code contradicts, keep the index accurate. Without it, every knowledge system degrades over time.",
+      "created_time": "2026-11-07T00:32:00.000Z",
+      "canonical_url": "https://twitter.com/PawelHuryn/status/2118826877414490386",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/beamnxw/status/2118661867602088141",
+      "author": "beamnxw",
+      "headline": "Anthropic engineers published a __blueprint for reliable agent automations__ covering code, memory, guardrails, failure handling, and the full run loop.",
+      "tweet_id": "4101eba9-b6bc-81e8-bc97-fb1f1635afe7",
+      "source_text": "Anthropic engineers shared a blueprint for building reliable agent automations\n\nit includes the code + memory + guardrails + failure handling + the entire run loop\n\ni mapped the system into one map so you can steal the workflow\n\nsave this before you build your next AI agent ↓ https://t.co/LcB13itgXC https://t.co/Vw0cLGOCWv",
+      "created_time": "2026-11-06T22:07:00.000Z",
+      "canonical_url": "https://twitter.com/beamnxw/status/2118661867602088141",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AnthropicAI/status/2118814753154064501",
+      "author": "AnthropicAI",
+      "headline": "Anthropic's engineering blog explains how __\"dreaming\" helps Claude organize memory__, correct mistakes, and surface what it needs on the next turn.",
+      "tweet_id": "4101eba9-b6bc-81e4-a082-fb662bed3c56",
+      "source_text": "Memory is what allows Claude to learn from experience. In a new Engineering Blog post, we share how “dreaming” helps Claude organize what it’s learned, correct its mistakes, and find what it needs more easily the next time. https://t.co/uUEN4bNkr9",
+      "created_time": "2026-11-06T21:52:00.000Z",
+      "canonical_url": "https://twitter.com/AnthropicAI/status/2118814753154064501",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ShaneHummus/status/2118699707132195115",
+      "author": "ShaneHummus",
+      "headline": "Shane Hummus says he automates __90% of his content with Claude__ — from VidIQ idea research to thumbnail mockups, 10 titles, and full scripts in one session.",
+      "tweet_id": "4101eba9-b6bc-81aa-8793-ffe25fc45f6c",
+      "source_text": "How I automate 90% of my content with Claude:\n\n1. Niche: You tell Claude your field, what you know, and what people ask you about. It asks you questions, then hands back a few options in one sentence (e.g., I help X do Y).\n\n2. Video idea: Claude searches VidIQ and TubeLab for videos with 100,000 views or more from channels with 100,000 subscribers or less, at 5 views per subscriber or better. The video itself should be mediocre or preferably bad, because a weak video that still wins proves the idea carried it.\n\n3. Title, thumbnail, and intro: Claude gives you a thumbnail mockup, 10 titles, 5 thumbnail text options, and 5 intros for that idea. Pick one title, one thumbnail, and one intro that tell the same story, because congruence beats quality every single time.\n\n4. Script: Start with a yap session, where you talk to Claude for 5 to 10 minutes about your stories, your numbers, and your mistakes. Claude writes the outline and the word-for-word script from that, and your voice is what keeps it from sounding like AI slop.\n\n5. Recording: If you have a personal brand channel, you're going to be recording yourself. Your phone or your laptop webcam is more than enough to get started.\n\n6. Editing: Claude can edit through the Descript connector, but on a 5-minute video it took 28 minutes and still lost to a 3-minute edit by hand. Edit the transcript yourself in Descript, deleting what you don't want like you are editing a Google Doc.\n\n7. Analytics: Download your YouTube analytics, drop them into Claude, and have it find what went right instead of what went wrong. Your winners are stronger proof than anybody else's video ever will be.\n\n8. Syndication: Cut one long video into shorts and written posts for LinkedIn, Instagram, and Facebook. It only works in that direction, because a LinkedIn post has nothing in it to cut into a video.",
+      "created_time": "2026-11-06T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/ShaneHummus/status/2118699707132195115",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/slash1sol/status/2118683688959385914",
+      "author": "slash1sol",
+      "headline": "Andrej Karpathy's second brain is __a folder of markdown files__, and he released a prompt that turns the whole setup into something Opus 5.5 runs for you.",
+      "tweet_id": "4101eba9-b6bc-81de-8055-e297474cfa19",
+      "source_text": "Andrej Karpathy doesn't use Notion, Obsidian plugins or any notes app. \n\nHis second brain is a folder of markdown files, and he released a prompt that just turned that setup into something Opus 5.5 runs for you.\n\nThis is f*cking goldmine..\n\nSave the raw source before you touch it, one note per idea, every claim linked to where it came from, and a daily note under 20 lines that you actually open.\n\nThen the test: the vault has to answer your questions with no web and no memory, or the gap gets written down.\n\nSend it to Opus 5.5 and thank me later.\n\nThe full prompt and the full article are both below ↓",
+      "created_time": "2026-11-06T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/slash1sol/status/2118683688959385914",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2118807388115660855",
+      "author": "Zephyr_hg",
+      "headline": "Nine Claude prompt skills worth bookmarking: /anti-ai __strips em-dashes and AI giveaway words__, /grill-me tightens vagueness, /write-a-skill packages prompts you reuse.",
+      "tweet_id": "4101eba9-b6bc-81a2-9a79-c5ea6cd741a7",
+      "source_text": "My 9 (most-used) Claude Skills to write prompts.\n\nThe full list is in the card →\n\nEverything below is what you'll get:\n\n1. /brief - turns a brain-dump into a clean task spec before Claude runs anything.\n\n2. /grill-me - keeps asking until nothing is vague. The prompt fixes itself in the answers.\n\n3. /how-to - for when I don't even know what to ask. Maps the steps first, then we prompt.\n\n4. /sonnet-tune - rewrites the optimised prompt for Sonnet. Models read differently.\n\n5. /opus-tune - same job, tuned for Opus. Two models, two ways of prompting.\n\n6. /personal-voice - bakes my STYLE.md into the prompt. Outputs sound like me on the first try.\n\n7. /anti-ai - strips the em-dashes and the dead giveaway AI words before they ever appear.\n\n8. /write-a-skill - turns any prompt I reuse into a new Skill. The library builds itself.\n\n9. /handoff - compresses the whole chat into the opening prompt of the next one. Nothing gets lost.\n\nStop rewriting the same prompt from scratch. Turn the ones that work into Skills once, then stack them.\n\nAdd each one in Claude → Settings → Skills.",
+      "created_time": "2026-11-06T21:32:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2118807388115660855",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/marfinxx/status/2118689949088166189",
+      "author": "marfinxx",
+      "headline": "A self-governing Claude Code harness using all four Claude 5 models reportedly pushes __success rates from 18% to 95%__ — here's the build.",
+      "tweet_id": "4101eba9-b6bc-8179-a2dd-eeade2543505",
+      "source_text": "F*cking genius\n\nAnthropic says Claude Code goes from 18% success in raw chat to 95% in an engineered harness\n\nSet that up with one prompt, and turn Claude Code into a self-governing production machine\n\nIf the harness doesn't sign a verified receipt, git won't let the agent touch main\n\nHere's the build:\n\nstep 1 → paste the prompt below into Claude Code on Opus 5.5\n\nstep 2 → Opus compiles your intent into a bounded task_contract.json before Sonnet generates token 1\n\nstep 3 → it spins up an isolated git worktree so the agent never modifies your active working branch\n\nstep 4 → Haiku 5.5 acts as a sub-second sensor hook, intercepting shell commands and blocking path leaks\n\nstep 5 → Sonnet 5.5 writes the code, but self-approval is physically disabled\n\nstep 6 → an adversarial skeptic subagent on Fable 5.5 attacks the diff and tries to break it under race conditions\n\nstep 7 → a pre-commit hook verifies real test runner outputs and cryptographically signs receipt.json\n\nstep 8 → any failure seen twice crystallizes into CLAUDE.md and regression evals on disk so it never repeats\n\nFind the full prompt below\n\nThen read the full Harness Engineering guide below on how to build unbreakable AI agents ↓",
+      "created_time": "2026-11-06T19:37:00.000Z",
+      "canonical_url": "https://twitter.com/marfinxx/status/2118689949088166189",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/MarketingMax/status/2118834990956036197",
+      "author": "MarketingMax",
+      "headline": "ChatGPT is building its own version of __Google Search Console__, threatening a whole category of third-party SEO, AEO, and GEO tracking tools.",
+      "tweet_id": "4111eba9-b6bc-810d-83e4-f639b5aa5340",
+      "source_text": "🚨 BREAKING NEWS: ChatGPT kills AI SEO/AEO/GEO tracking tools by launching its own modern version of Google Search Console https://t.co/qXWfz037Pc",
+      "created_time": "2026-11-07T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/MarketingMax/status/2118834990956036197",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/undefinedKi/status/2118722808905703684",
+      "author": "undefinedKi",
+      "headline": "Anthropic says Claude Code's first output can __almost always be improved__ — a single self-review prompt consistently catches problems or finds cleaner approaches.",
+      "tweet_id": "4111eba9-b6bc-8185-8464-f99b4e695a10",
+      "source_text": "Just one short prompt can improve whatever Claude Code just made.\n\nAnthropic admits the first result can almost always be better, and you don’t need new product instructions to get there. \n\nJust make it check its own work. It will usually find problems or a cleaner way to do the same thing.",
+      "created_time": "2026-11-07T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/undefinedKi/status/2118722808905703684",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+      "author": "jgalt212",
+      "item_id": "hn:50404412",
+      "headline": "Ramp's corporate card data shows __AI spending stalling__ just as Anthropic approaches its IPO.",
+      "subreddit": null,
+      "source_text": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-07T13:31:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/ProjectFlowmar/project5pi-midi-for-claude",
+      "author": "_project5pi",
+      "item_id": "hn:50404401",
+      "headline": "A new project lets Claude __write FL Studio projects by editing .flp files__ directly — music production via LLM.",
+      "subreddit": null,
+      "source_text": "Show HN: Let Claude write FL Studio projects by editing the .flp file directly",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-07T13:30:44+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/ProjectFlowmar/project5pi-midi-for-claude",
+      "learning_score": 2
+    },
+    {
+      "url": "https://stoppels.ch/tar/",
+      "author": "stabbles",
+      "item_id": "hn:50404356",
+      "headline": "__Tar-minefield__ is an interactive demo showing just how many ways extracting a tar file can go sideways.",
+      "subreddit": null,
+      "source_text": "Show HN: Tar-minefield – extracting tar files is harder than you think",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-07T13:22:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://stoppels.ch/tar",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/leofritsch/web-potions",
+      "author": "leofree",
+      "item_id": "hn:50404138",
+      "headline": "__Web Potions__ is a browser extension that lets ChatGPT or Claude restyle any page you visit.",
+      "subreddit": null,
+      "source_text": "Show HN: Web Potions – let ChatGPT or Claude restyle the web you browse",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-07T12:52:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/leofritsch/web-potions",
+      "learning_score": 2
+    },
+    {
+      "url": "https://railyard.run/blog/pr-previews-per-client-branch-no-vercel-bill/",
+      "author": "RailyardRun",
+      "item_id": "hn:50404104",
+      "headline": "Railyard wrote up how to get __PR previews for every client branch__ without touching a Vercel bill.",
+      "subreddit": null,
+      "source_text": "Pull-request previews for every client branch, without a Vercel bill",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-07T12:49:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://railyard.run/blog/pr-previews-per-client-branch-no-vercel-bill",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/starman-tech/mousepods",
+      "author": "theanonymousone",
+      "item_id": "hn:50404075",
+      "headline": "Head tracking for __AirPods 3 on Linux__ is now real, plus the first published documentation of Apple's RemoteHID protocol.",
+      "subreddit": null,
+      "source_text": "AirPods 3 head tracking on Linux, and first documentation of Apple RemoteHID",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-07T12:44:13+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/starman-tech/mousepods",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__v2.1.319__",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21319",
+      "tag": "Release",
+      "source": "Claude Code Changelog"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-07T14:01:18.367863+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9917
+        ],
+        "reason": "Unique event: Chainalysis cybersecurity breach affecting all customers",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9901
+        ],
+        "reason": "Unique event: editorial cartoon about dangerous tech innovations",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9893
+        ],
+        "reason": "Unique event: Crusoe selling its Wyoming data center project to Google",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9909
+        ],
+        "reason": "Same event as yesterday:4—both cover METR's report on Anthropic's AI-accelerated development, including the 2x speed finding and redactions",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9902
+        ],
+        "reason": "Unique event: UK data centre company backtracks on renewable energy promise",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9894,
+          9910
+        ],
+        "reason": "Both report the same event: OpenAI raising $11 billion at a $1.25 trillion valuation, with context about scaled-back targets and Anthropic's IPO",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9903
+        ],
+        "reason": "Unique event: Southeast Asian data centre expansion stalling due to resource constraints",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9896
+        ],
+        "reason": "Unique event: Meta launches Spaces feature for Muse AI agents",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9911
+        ],
+        "reason": "Unique event: Chinese intelligence allegedly recruited AI executive to spy on Nvidia CEO",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "9e74801404cc895782dd89d1ff145a33157e75d2977fd530f9d40d363023c6aa"
+}
