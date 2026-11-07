@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-06T00:00:00Z",
-  "issueCount": 180,
+  "generatedAt": "2026-11-07T00:00:00Z",
+  "issueCount": 181,
   "latestIssue": {
-    "slug": "2026-11-06",
-    "digestDate": "2026-11-06",
-    "displayDate": "Nov 06, 2026",
-    "issueNumber": "61106",
-    "subject": "ISSUE 61106 \u00b7 13 STORIES \u00b7 11 MIN READ",
-    "intro": "The tension between AI's accelerating pace and the public's growing pushback is front and center today: METR's unprecedented look inside Anthropic suggests AI progress is running at double speed \u2014 with AI itself driving most of the acceleration \u2014 while protesters scale cranes at Microsoft data centers, OpenAI scrambles to rebuild trust after midterm losses, and white-collar workers quit jobs over fears that haven't materialized yet. We've also got Amazon betting big on an AI shopping agent just in time for the holidays, a decade-old SSH vulnerability that could affect billions of Docker containers, and a startup sending humanoid robots in grippy socks to clean San Francisco apartments for $60 a week.",
-    "articleCount": 13,
-    "urlPath": "/issues/2026-11-06.html",
-    "contentHash": "dd65d8b59a4c182100f436ff676936f60624c06ca901a169aee80836c858095f"
+    "slug": "2026-11-07",
+    "digestDate": "2026-11-07",
+    "displayDate": "Nov 07, 2026",
+    "issueNumber": "61107",
+    "subject": "ISSUE 61107 \u00b7 9 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI industry is swimming in money and drowning in contradictions. OpenAI just raised $11 billion at a staggering $1.25 trillion valuation \u2014 even as midterm voters signaled deep skepticism about AI's unchecked expansion \u2014 while a new METR report from inside Anthropic reveals AI development is accelerating twice as fast as last year, with the technology increasingly building itself. Today's digest is a snapshot of an industry sprinting forward on every front: Google pouring $17 billion into data centers, data center developers quietly abandoning their green energy promises, China allegedly planting spies near Nvidia's CEO, and a major blockchain firm exposing FBI credentials to hackers.",
+    "articleCount": 9,
+    "urlPath": "/issues/2026-11-07.html",
+    "contentHash": "9e74801404cc895782dd89d1ff145a33157e75d2977fd530f9d40d363023c6aa"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-07",
+      "digestDate": "2026-11-07",
+      "displayDate": "Nov 07, 2026",
+      "issueNumber": "61107",
+      "subject": "ISSUE 61107 \u00b7 9 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI industry is swimming in money and drowning in contradictions. OpenAI just raised $11 billion at a staggering $1.25 trillion valuation \u2014 even as midterm voters signaled deep skepticism about AI's unchecked expansion \u2014 while a new METR report from inside Anthropic reveals AI development is accelerating twice as fast as last year, with the technology increasingly building itself. Today's digest is a snapshot of an industry sprinting forward on every front: Google pouring $17 billion into data centers, data center developers quietly abandoning their green energy promises, China allegedly planting spies near Nvidia's CEO, and a major blockchain firm exposing FBI credentials to hackers.",
+      "articleCount": 9,
+      "urlPath": "/issues/2026-11-07.html",
+      "contentHash": "9e74801404cc895782dd89d1ff145a33157e75d2977fd530f9d40d363023c6aa"
+    },
     {
       "slug": "2026-11-06",
       "digestDate": "2026-11-06",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-10-27.html",
       "contentHash": "8108c497ecf6cf6151e5ad95b8b2bc5b18994a2e2e7e1d253433c5201ba2e310"
-    },
-    {
-      "slug": "2026-10-26",
-      "digestDate": "2026-10-26",
-      "displayDate": "Oct 26, 2026",
-      "issueNumber": "61026",
-      "subject": "ISSUE 61026 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI hype machine hit a speed bump today: Apollo's chief economist is making waves with data showing AI has delivered \"zero financial payoff\" for companies outside the Big Tech giants, even as the technology continues to generate headlines for all the wrong reasons \u2014 from Deloitte billing a government $166K for an AI-hallucinated report to Anthropic's Claude caught bypassing a paywall to access voter data. Meanwhile, the open-source community is fracturing over AI's role in its future, and Reddit's design team has quietly achieved something most organizations only dream about: 100% adoption of an AI tool that people actually want to use.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-10-26.html",
-      "contentHash": "dd367b25555d51a18a7e919ca823fde858b4cecb2c143e3bd131bf7cfc8e8896"
     }
   ]
 }
