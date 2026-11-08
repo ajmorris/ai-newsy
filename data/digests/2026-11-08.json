@@ -1,0 +1,687 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-08",
+  "issue_id": "20261108",
+  "subject_line": "ISSUE 61108 · 9 STORIES · 11 MIN READ",
+  "intro": "The 2026 midterms sent shockwaves through the AI industry this week, as voters across the country passed measures restricting data center construction and Texas — now home to Elon Musk's corporate empire — turned blue, proving that backlash against Big Tech's physical footprint has become a genuinely bipartisan force. Meanwhile, the global tug-of-war over AI's boundaries continues on multiple fronts, from Australia's copyright fight with the music industry to troubling new details about alleged Chinese espionage targeting Nvidia's CEO and a shell company quietly buying advanced American chips. It's a day that reminds us the biggest AI stories aren't always about the models themselves — they're about the power struggles surrounding them.",
+  "article_count": 9,
+  "stories": [
+    {
+      "id": 9944,
+      "source": "Guardian AI",
+      "title": "Global music body warns Australia against weakening AI copyright law",
+      "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The IFPI has warned Australian PM Albanese that loosening copyright protections to give AI companies broad access to online content would be a 'disaster for creativity,' as Australia faces pressure from big tech seeking looser rules for AI training.",
+      "opinion": "The music industry's most powerful international body is drawing a clear line against Australia caving to tech lobby pressure on AI training data rights.",
+      "image_url": "https://i.guim.co.uk/img/media/a9d776b6ee27daeda7be27a2ffc273f39b966850/200_0_6000_4800/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3eac07e1cf59fea917c3456a11ea9f31",
+      "published_at": "2026-11-08T14:00:43+00:00",
+      "fetched_at": "2026-11-08T14:06:26.400584+00:00"
+    },
+    {
+      "id": 9965,
+      "source": "Lenny's Newsletter",
+      "title": "Google's Gemini product head shares lessons on building frontier AI models",
+      "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Tulsee Doshi, Head of Product for Google's Gemini and other frontier AI models, discusses her 60-20-20 framework for balancing investment, argues model development resembles 'potion-making' more than pure engineering, and says both formal evals and subjective 'vibes' matter for assessing model quality.",
+      "opinion": "An unusually candid look inside Google's AI product development revealing how much art and intuition still drives what is marketed as cutting-edge engineering.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!x5Az!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9b496bab-b722-4989-9db9-e83d735501ad_2048x2048.png",
+      "published_at": "2026-11-08T13:31:32+00:00",
+      "fetched_at": "2026-11-08T14:06:34.846773+00:00"
+    },
+    {
+      "id": 9937,
+      "source": "TechCrunch AI",
+      "title": "Midterm results deal blow to data centers and Elon Musk's political spending",
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The 2026 U.S. midterm elections delivered a historic Democratic victory, with voters across the country passing ballot measures restricting data center construction. Texas elected governor Gina Hinojosa, who campaigned on restricting data centers, defeating incumbent Greg Abbott. Elon Musk donated over half a billion dollars to Republicans with little return, and his companies are now headquartered in a state that turned blue. Data center opposition has become a bipartisan grassroots issue.",
+      "opinion": "Data center opposition has calcified into a genuine grassroots political movement, and Musk's massive political spending looks like one of the worst return-on-investment stories in recent political history.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2207245107-1.jpg?resize=1200,765",
+      "published_at": "2026-11-07T22:07:22+00:00",
+      "fetched_at": "2026-11-08T14:06:24.402555+00:00"
+    },
+    {
+      "id": 9962,
+      "source": "The Verge AI",
+      "title": "NYT Cooking's AI assistant helps with weeknight meals but stumbles on baking",
+      "url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Verge tested NYT Cooking's new AI assistant on iOS, finding it useful for ingredient swaps and recipe improvisation in everyday cooking but nearly disastrous for baking, where precision matters more. AI cooking tools are proliferating through Alexa Plus, Samsung Food, and cooking robots.",
+      "opinion": "A useful illustration of where AI assistants excel — flexible, forgiving tasks — versus where they fail — precision-dependent work like baking.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268844_NY_Times_Cooking_App_JTuohy_0006.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-07T15:50:00+00:00",
+      "fetched_at": "2026-11-08T14:06:31.513452+00:00"
+    },
+    {
+      "id": 9946,
+      "source": "Guardian AI",
+      "title": "Tom Gauld cartoon comments on AI prompts and writing",
+      "url": "https://www.theguardian.com/books/picture/2026/nov/08/tom-gauld-on-prompts-for-a-cartoon-about-artificial-intelligence-and-writing-cartoon",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian published a Tom Gauld cartoon on November 8, 2026, about prompts for a cartoon about artificial intelligence and writing. The cartoon itself is only viewable on the Guardian's website.",
+      "opinion": "A meta-commentary on AI's relationship to creative work from one of the Guardian's most distinctive cartoonists.",
+      "image_url": "https://i.guim.co.uk/img/media/db9511ca8257705e0818fb86e6f298ac11007026/262_497_1231_985/master/1231.png?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a58c0c4a86fd1e2d7540cda2526b6079",
+      "published_at": "2026-11-08T12:00:40+00:00",
+      "fetched_at": "2026-11-08T14:06:26.715424+00:00"
+    },
+    {
+      "id": 9938,
+      "source": "TechCrunch AI",
+      "title": "More details emerge on China's alleged recruitment of exec to spy on Nvidia CEO",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A U.S. intelligence memo claims Alice Huang of Singapore-based Megaspeed was recruited by China's Ministry of State Security to spy on Nvidia CEO Jensen Huang. The Financial Times reported the memo alleges a romantic relationship between the two. Nvidia said Jensen Huang's interactions with Alice Huang were 'not unusual' and the company does not share classified information with customers. Separately, the NYT found that New Matrix, a Chinese company authorized to buy Nvidia chips, appears to be a shell with ties to a blacklisted Chinese private equity firm.",
+      "opinion": "The story is deepening with increasingly uncomfortable details for Nvidia, and the parallel New Matrix revelations suggest systemic failures in chip export controls. Where coverage differs: The Verge (yesterday) describes the relationship between the two Huangs as 'close'; TechCrunch (citing Financial Times) reports the memo alleges a 'romantic relationship'",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294936867.jpg?resize=1200,800",
+      "published_at": "2026-11-07T21:17:08+00:00",
+      "fetched_at": "2026-11-08T14:06:24.566796+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 9938,
+            "source": "TechCrunch AI",
+            "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+            "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [
+          "The Verge (yesterday) describes the relationship between the two Huangs as 'close'; TechCrunch (citing Financial Times) reports the memo alleges a 'romantic relationship'"
+        ],
+        "is_update": true,
+        "reason": "Same event as yesterday:8 — China's alleged recruitment of Alice Huang to spy on Nvidia CEO Jensen Huang, now with additional details from Financial Times"
+      }
+    },
+    {
+      "id": 9963,
+      "source": "The Verge AI",
+      "title": "US allowed Nvidia to sell advanced AI chips to apparent Chinese shell company",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The New York Times reports that New Matrix, a firm approved to buy Nvidia's H200 AI chips, appears to be a shell company with empty offices, no online presence, and ties to a Chinese private equity firm blacklisted by the US government since 2024. The sales became possible after the Trump administration relaxed Biden-era chip restrictions following Nvidia's agreement to give the government a 15 percent cut of all sales, alongside intense lobbying by CEO Jensen Huang.",
+      "opinion": "A damning indictment of how Nvidia's lobbying and the Trump administration's relaxed export controls may have enabled exactly the technology transfer the restrictions were designed to prevent.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK083_NVIDIA_2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-07T15:43:45+00:00",
+      "fetched_at": "2026-11-08T14:06:31.66783+00:00"
+    },
+    {
+      "id": 9947,
+      "source": "Guardian AI",
+      "title": "The case against relentless optimization: why efficiency makes systems fragile",
+      "url": "https://www.theguardian.com/books/2026/nov/08/the-efficiency-trap-why-optimising-everything-can-backfire-badly",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Using examples from hospital bed occupancy to financial markets and transportation, the article argues that running systems at maximum capacity leaves no buffer for crises. Slack, redundancy, and apparent 'waste' are essential for resilience, and our obsession with eliminating inefficiency creates systemic vulnerabilities.",
+      "opinion": "A timely philosophical counterpoint to the Silicon Valley efficiency gospel, particularly relevant as AI promises to optimize everything further.",
+      "image_url": "https://i.guim.co.uk/img/media/e68bbef8dbe92c67f604bdd86917dcb9368a1049/0_349_1847_1476/master/1847.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f6266e3e53cd68d308a574bb3419699c",
+      "published_at": "2026-11-08T12:00:39+00:00",
+      "fetched_at": "2026-11-08T14:06:26.866818+00:00"
+    },
+    {
+      "id": 9964,
+      "source": "The Verge AI",
+      "title": "Former Meta security chief says AI has broken cybersecurity",
+      "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Alex Stamos, chief security officer at Cognition and Stanford lecturer, argues on The Verge's Decoder podcast that AI-boosted attacks have created a 'dark age' in cybersecurity. He says the multibillion-dollar cybersecurity industry is failing against AI-enhanced attacks from private and state actors like Russia and North Korea, though he believes this is a difficult transitional period rather than a permanent state.",
+      "opinion": "A sobering assessment from a highly credible voice that the cybersecurity industry's current tools and approaches are fundamentally inadequate for the AI era.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_110726.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "fetched_at": "2026-11-08T14:06:31.818818+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 9944,
+          "source": "Guardian AI",
+          "title": "Global music body warns Australia against weakening AI copyright law",
+          "url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The IFPI has warned Australian PM Albanese that loosening copyright protections to give AI companies broad access to online content would be a 'disaster for creativity,' as Australia faces pressure from big tech seeking looser rules for AI training.",
+          "opinion": "The music industry's most powerful international body is drawing a clear line against Australia caving to tech lobby pressure on AI training data rights.",
+          "image_url": "https://i.guim.co.uk/img/media/a9d776b6ee27daeda7be27a2ffc273f39b966850/200_0_6000_4800/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3eac07e1cf59fea917c3456a11ea9f31",
+          "published_at": "2026-11-08T14:00:43+00:00",
+          "fetched_at": "2026-11-08T14:06:26.400584+00:00"
+        },
+        {
+          "id": 9965,
+          "source": "Lenny's Newsletter",
+          "title": "Google's Gemini product head shares lessons on building frontier AI models",
+          "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Tulsee Doshi, Head of Product for Google's Gemini and other frontier AI models, discusses her 60-20-20 framework for balancing investment, argues model development resembles 'potion-making' more than pure engineering, and says both formal evals and subjective 'vibes' matter for assessing model quality.",
+          "opinion": "An unusually candid look inside Google's AI product development revealing how much art and intuition still drives what is marketed as cutting-edge engineering.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!x5Az!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9b496bab-b722-4989-9db9-e83d735501ad_2048x2048.png",
+          "published_at": "2026-11-08T13:31:32+00:00",
+          "fetched_at": "2026-11-08T14:06:34.846773+00:00"
+        },
+        {
+          "id": 9937,
+          "source": "TechCrunch AI",
+          "title": "Midterm results deal blow to data centers and Elon Musk's political spending",
+          "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The 2026 U.S. midterm elections delivered a historic Democratic victory, with voters across the country passing ballot measures restricting data center construction. Texas elected governor Gina Hinojosa, who campaigned on restricting data centers, defeating incumbent Greg Abbott. Elon Musk donated over half a billion dollars to Republicans with little return, and his companies are now headquartered in a state that turned blue. Data center opposition has become a bipartisan grassroots issue.",
+          "opinion": "Data center opposition has calcified into a genuine grassroots political movement, and Musk's massive political spending looks like one of the worst return-on-investment stories in recent political history.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/05/GettyImages-2207245107-1.jpg?resize=1200,765",
+          "published_at": "2026-11-07T22:07:22+00:00",
+          "fetched_at": "2026-11-08T14:06:24.402555+00:00"
+        },
+        {
+          "id": 9962,
+          "source": "The Verge AI",
+          "title": "NYT Cooking's AI assistant helps with weeknight meals but stumbles on baking",
+          "url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Verge tested NYT Cooking's new AI assistant on iOS, finding it useful for ingredient swaps and recipe improvisation in everyday cooking but nearly disastrous for baking, where precision matters more. AI cooking tools are proliferating through Alexa Plus, Samsung Food, and cooking robots.",
+          "opinion": "A useful illustration of where AI assistants excel — flexible, forgiving tasks — versus where they fail — precision-dependent work like baking.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268844_NY_Times_Cooking_App_JTuohy_0006.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-07T15:50:00+00:00",
+          "fetched_at": "2026-11-08T14:06:31.513452+00:00"
+        },
+        {
+          "id": 9946,
+          "source": "Guardian AI",
+          "title": "Tom Gauld cartoon comments on AI prompts and writing",
+          "url": "https://www.theguardian.com/books/picture/2026/nov/08/tom-gauld-on-prompts-for-a-cartoon-about-artificial-intelligence-and-writing-cartoon",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian published a Tom Gauld cartoon on November 8, 2026, about prompts for a cartoon about artificial intelligence and writing. The cartoon itself is only viewable on the Guardian's website.",
+          "opinion": "A meta-commentary on AI's relationship to creative work from one of the Guardian's most distinctive cartoonists.",
+          "image_url": "https://i.guim.co.uk/img/media/db9511ca8257705e0818fb86e6f298ac11007026/262_497_1231_985/master/1231.png?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a58c0c4a86fd1e2d7540cda2526b6079",
+          "published_at": "2026-11-08T12:00:40+00:00",
+          "fetched_at": "2026-11-08T14:06:26.715424+00:00"
+        },
+        {
+          "id": 9938,
+          "source": "TechCrunch AI",
+          "title": "More details emerge on China's alleged recruitment of exec to spy on Nvidia CEO",
+          "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A U.S. intelligence memo claims Alice Huang of Singapore-based Megaspeed was recruited by China's Ministry of State Security to spy on Nvidia CEO Jensen Huang. The Financial Times reported the memo alleges a romantic relationship between the two. Nvidia said Jensen Huang's interactions with Alice Huang were 'not unusual' and the company does not share classified information with customers. Separately, the NYT found that New Matrix, a Chinese company authorized to buy Nvidia chips, appears to be a shell with ties to a blacklisted Chinese private equity firm.",
+          "opinion": "The story is deepening with increasingly uncomfortable details for Nvidia, and the parallel New Matrix revelations suggest systemic failures in chip export controls. Where coverage differs: The Verge (yesterday) describes the relationship between the two Huangs as 'close'; TechCrunch (citing Financial Times) reports the memo alleges a 'romantic relationship'",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294936867.jpg?resize=1200,800",
+          "published_at": "2026-11-07T21:17:08+00:00",
+          "fetched_at": "2026-11-08T14:06:24.566796+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 9938,
+                "source": "TechCrunch AI",
+                "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+                "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [
+              "The Verge (yesterday) describes the relationship between the two Huangs as 'close'; TechCrunch (citing Financial Times) reports the memo alleges a 'romantic relationship'"
+            ],
+            "is_update": true,
+            "reason": "Same event as yesterday:8 — China's alleged recruitment of Alice Huang to spy on Nvidia CEO Jensen Huang, now with additional details from Financial Times"
+          }
+        },
+        {
+          "id": 9963,
+          "source": "The Verge AI",
+          "title": "US allowed Nvidia to sell advanced AI chips to apparent Chinese shell company",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The New York Times reports that New Matrix, a firm approved to buy Nvidia's H200 AI chips, appears to be a shell company with empty offices, no online presence, and ties to a Chinese private equity firm blacklisted by the US government since 2024. The sales became possible after the Trump administration relaxed Biden-era chip restrictions following Nvidia's agreement to give the government a 15 percent cut of all sales, alongside intense lobbying by CEO Jensen Huang.",
+          "opinion": "A damning indictment of how Nvidia's lobbying and the Trump administration's relaxed export controls may have enabled exactly the technology transfer the restrictions were designed to prevent.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK083_NVIDIA_2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-07T15:43:45+00:00",
+          "fetched_at": "2026-11-08T14:06:31.66783+00:00"
+        },
+        {
+          "id": 9947,
+          "source": "Guardian AI",
+          "title": "The case against relentless optimization: why efficiency makes systems fragile",
+          "url": "https://www.theguardian.com/books/2026/nov/08/the-efficiency-trap-why-optimising-everything-can-backfire-badly",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Using examples from hospital bed occupancy to financial markets and transportation, the article argues that running systems at maximum capacity leaves no buffer for crises. Slack, redundancy, and apparent 'waste' are essential for resilience, and our obsession with eliminating inefficiency creates systemic vulnerabilities.",
+          "opinion": "A timely philosophical counterpoint to the Silicon Valley efficiency gospel, particularly relevant as AI promises to optimize everything further.",
+          "image_url": "https://i.guim.co.uk/img/media/e68bbef8dbe92c67f604bdd86917dcb9368a1049/0_349_1847_1476/master/1847.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f6266e3e53cd68d308a574bb3419699c",
+          "published_at": "2026-11-08T12:00:39+00:00",
+          "fetched_at": "2026-11-08T14:06:26.866818+00:00"
+        },
+        {
+          "id": 9964,
+          "source": "The Verge AI",
+          "title": "Former Meta security chief says AI has broken cybersecurity",
+          "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Alex Stamos, chief security officer at Cognition and Stanford lecturer, argues on The Verge's Decoder podcast that AI-boosted attacks have created a 'dark age' in cybersecurity. He says the multibillion-dollar cybersecurity industry is failing against AI-enhanced attacks from private and state actors like Russia and North Korea, though he believes this is a difficult transitional period rather than a permanent state.",
+          "opinion": "A sobering assessment from a highly credible voice that the cybersecurity industry's current tools and approaches are fundamentally inadequate for the AI era.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_110726.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-07T15:00:00+00:00",
+          "fetched_at": "2026-11-08T14:06:31.818818+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/itspdfu/status/2119188478806110423",
+      "author": "itspdfu",
+      "headline": "macOS 27.3 tightens Full Disk Access: __automatic denials are no longer saved to TCC__, so users must manually add apps using the + button.",
+      "tweet_id": "4121eba9-b6bc-81d4-91e6-e1867c9b7428",
+      "source_text": "macOS 27.3 starts implementing changes to Full Disk Access (FDA). Here’s what ‘very explicit user action’ may mean.\n\nWhen an app tries to read a protected file without FDA, macOS doesn’t prompt the user to grant permission. Instead, it automatically denies access and records that denial in the TCC database.\n\nOnce in the db, apps show up under Settings > Privacy & Security > Full Disk Access with their toggle off. Apps will often add themselves to the list, then instruct the user to open Settings and flip the toggle.\n\nNot anymore: starting with macOS 27.3 and feature flag TCC/FDA_WARNING, automatic denials are no longer saved. Users will have to explicitly add an app to the list with the + button or by dragging it in from Applications.\n\nSo far, the flag doesn’t add any additional warnings or dialogs, but its name suggests these may arrive in future betas. The flag is disabled in 27.3 beta 1.\n\n——\n\nRelatedly, macOS 27.3 introduces “Private Folders,” a new folder-by-folder permission configured like Full Disk Access. Not fully wired up yet, but it could offer a narrower alternative to Full Disk Access.\n\nIt’s also impacted by TCC/FDA_WARNING: when the flag is on, automatic Private Folders denials aren’t saved either.",
+      "created_time": "2026-11-08T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/itspdfu/status/2119188478806110423",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/TomSolidPM/status/2119152740186104081",
+      "author": "TomSolidPM",
+      "headline": "Tom Solid found Grok Bot __burns through its weekly allowance faster than Claude Code__ and needed constant nudging to keep a five-bot team on task across 24 hours.",
+      "tweet_id": "4121eba9-b6bc-81c6-9f05-da252e63855a",
+      "source_text": "I cannot trust Grok Bot with important work.\n\nI've run several tests comparing it with Claude Code.\n\nI've already praised its speed, responsiveness, accessibility and ease of use.\n\nBut two problems are killing it for me:\nusage consumption and reliability.\n\nOn Ultra, I'm burning through my weekly allowance faster than I ever have with Claude, even back when I was using Fable 5.1. And I can't rely on it to finish the job.\n\nFor this test, I had five dedicated Grok Bots working as a team for over 24h. I constantly had to nudge them to keep going. A lot of their updates and conversations with each other were nonsense.\n\nAfter 24h, I stopped the work and asked for a comprehensive handoff covering everything they'd done, including all files and code produced.\n\nThen I had Claude Code run an audit using an agent swarm. Part of the report is what you're seeing in the image.\n\nThey'd produced A LOT of code. 9,300 lines.\n\nAnd as the highlighted finding shows, none of that code wasn't even needed in the first place.\n\nThis test burned through 40% of my weekly allowance on a $200/month plan. Are you kidding me?\n\nClaude Code is fixing it now. Based on my previous tests, I expect it to consume far less of my allowance.\n\nI'm back to manually orchestrating my agents for anything beyond simple research or lookups.\n\nIf that's all I can trust Grok Bot with, is it really worth keeping the subscription?",
+      "created_time": "2026-11-08T02:52:00.000Z",
+      "canonical_url": "https://twitter.com/TomSolidPM/status/2119152740186104081",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/beamnxw/status/2118966672652394539",
+      "author": "beamnxw",
+      "headline": "Anthropic breaks down __the five components of agent memory__: transcripts, notes, dreaming, wikis, and retrieval.",
+      "tweet_id": "4121eba9-b6bc-813e-a9bf-d4aac49f75d0",
+      "source_text": "Anthropic just broke down the components of agent memory\n\nthe formula:\n\nagent memory = transcripts + notes + dreaming + wikis + retrieval\n\npast experience → correct mistakes → connect knowledge → next session\n\nthis is must-learn ↓ https://t.co/tvoIZB3SBj https://t.co/sB0ScFXOip",
+      "created_time": "2026-11-08T02:47:00.000Z",
+      "canonical_url": "https://twitter.com/beamnxw/status/2118966672652394539",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/aiedge_/status/2119173064332333113",
+      "author": "aiedge_",
+      "headline": "A single prompt lets Claude Code __digest every public tip from the Claude Code team__ in one shot.",
+      "tweet_id": "4121eba9-b6bc-81a4-8d6b-d157186f19ce",
+      "source_text": "Inject this prompt into Claude Code, and it will digest every single public Claude tip from the Claude Code team.\n\nPure goldmine: https://t.co/E2kbIveSSC",
+      "created_time": "2026-11-08T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/aiedge_/status/2119173064332333113",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2119099565450387936",
+      "author": "Zephyr_hg",
+      "headline": "Eleven free Anthropic resources in one place — from __Computer Use to Claude Academy__ — no more bookmarking guides you'll never open.",
+      "tweet_id": "4121eba9-b6bc-8157-b15b-dba12bbf4eb2",
+      "source_text": "Stop bookmarking 50 guides you'll never read.\n\nYou can skip all of it with these 11 free guides:\n\nComputer Use course:\nhttps://t.co/8r18jtnnTr\n\nMCP course:\nhttps://t.co/GnN6u94Fko\n\nClaude Code course:\nhttps://t.co/0Hz54FQ3ji\n\nIntro to agent skills:\nhttps://t.co/xqtXLSKz57\n\nPrompting best practices:\nhttps://t.co/x6VqqZ5MQu\n\nAgent Skills overview:\nhttps://t.co/MFFChvcUJF\n\nMCP docs:\nhttps://t.co/dRcpUUuLWj\n\nClaude Code docs:\nhttps://t.co/RF5lUymPYr\n\nComputer use docs:\nhttps://t.co/f4ieXGoL9V\n\nClaude Academy:\nhttps://t.co/1z4HBK0VPZ\n\nDeepLearning Anthropic hub:\nhttps://t.co/DgE56YfKGQ\n\nThen read the article below ↓",
+      "created_time": "2026-11-08T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2119099565450387936",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mogulinfluence/status/2119093646204997640",
+      "author": "mogulinfluence",
+      "headline": "A walkthrough for building __a 4-agent AI team that reverse-engineers software from scratch__, with the full setup explained.",
+      "tweet_id": "4121eba9-b6bc-8103-9d5b-ff2deaf1416e",
+      "source_text": "The entrepreneur's ultimate guide to building a 4-agent AI team that can reverse engineer software from scratch: https://t.co/pUD1mxVPJi https://t.co/2iMr8gBK4F",
+      "created_time": "2026-11-08T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/mogulinfluence/status/2119093646204997640",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2119183365043859597",
+      "author": "Zephyr_hg",
+      "headline": "Claude Skills are the most underused feature — one prompt will __find your most repeated task and write the Skill__ for it automatically.",
+      "tweet_id": "4121eba9-b6bc-811f-b0c1-d49efb7a1303",
+      "source_text": "I think Skills are the most underused thing in Claude. People type the same prompt every week and never save it once.\n\nSend this single prompt to Claude and it finds the job you repeat most in your X/content week, then writes the Skill for it.\n\nThen read the article below ↓ https://t.co/O13Rb4d485 https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-08T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2119183365043859597",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xchromium/status/2119076225180369318",
+      "author": "0xchromium",
+      "headline": "0xchromium argues __a folder, a log, and a never-list__ for every bot are the three things most Grok Bot teams skip — and why the second bot starts guessing without them.",
+      "tweet_id": "4111eba9-b6bc-813e-b10e-eb8dc3131b68",
+      "source_text": "hardly anyone building a Grok Bot team sets up these 3 things before the first bot runs...\n\na folder, a log and a never-list for every bot, because the work gets handed over through them and the second bot starts guessing without them\n\nthis prompt asks 3 questions about your work, builds all of it, and runs only the first bot so you can check what it left behind\n\npaste it into Grok Bot and start from there",
+      "created_time": "2026-11-07T15:12:00.000Z",
+      "canonical_url": "https://twitter.com/0xchromium/status/2119076225180369318",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ducksays/status/2119071217902645539",
+      "author": "ducksays",
+      "headline": "ducksays hit __1.33M impressions in two weeks__ using a Grok companion bot named \"HoMI\" that scouts and filters research so they're not the ideas bottleneck.",
+      "tweet_id": "4111eba9-b6bc-81d5-9e58-d145935bbdfa",
+      "source_text": "i got 1.33M impressions over the last 2 weeks, with help from my grok @bot.\n\nhere's how its scout finds and filters research in 7 steps:\n\nmy CMO has a companion bot named \"HoMI\" (head of market intelligence). i'm building this so i'm not the bottleneck for ideas.\n\n1. find the builders\n\nlook for smaller accounts repeatedly sharing useful grok bot setups, results and how-tos. not just one viral post.\n\n2. organize the sources\n\nkeep watch lists for builders, news and peers. let HoMI maintain a list on your x account and treat it like its following.\n\n3. spot unusual performance\n\nflag posts getting roughly 3x that creator's usual views or bookmarks. compare similar-age posts where possible\n\n4. check the substance\n\nbig numbers aren't always enough. useful workflows, verified updates and real failures can matter without going viral.\n\n5. capture the evidence\n\nbring back the source, the numbers and why it might matter. mark anything unverified.\n\n6. hand it to my CMO\n\nmy CMO checks the findings against my actual work and pitches worthwhile angles before drafting. a finding isn't automatically a post.\n\n7. clean the lists\n\ndrop spam and off-topic accounts so the research stays relevant.\n\nHoMI finds the evidence. my CMO shapes the pitches.\n\ni still bring the firsthand experience, choose what's worth sharing and hit publish.",
+      "created_time": "2026-11-07T15:12:00.000Z",
+      "canonical_url": "https://twitter.com/ducksays/status/2119071217902645539",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/cyrilXBT/status/2119048477900714026",
+      "author": "cyrilXBT",
+      "headline": "Boris Cherny's real Claude Code setup relies on __no 500-line prompts or magic plugins__ — just a simple 6-step daily system.",
+      "tweet_id": "4111eba9-b6bc-8174-acd2-eefd104c87f6",
+      "source_text": "The guy who BUILT Claude Code just showed how he actually uses it.\n\nBoris Cherny's personal setup.\n\nAnd it's nothing like how most people run it.\n\nNo 500 line prompts.\nNo magic plugins.\nNo secret model.\n\nJust a simple system he runs every single day.\n\nI broke it into 6 steps you can copy tonight.\n\nSave this before you open another terminal.",
+      "created_time": "2026-11-07T15:12:00.000Z",
+      "canonical_url": "https://twitter.com/cyrilXBT/status/2119048477900714026",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/PratikSinhatwt/status/2118994341276582302",
+      "author": "PratikSinhatwt",
+      "headline": "Pratik Sinha says your __vibe-coded site is missing 12 things__ — from a custom 404 to robots.txt — before it qualifies as production-ready.",
+      "tweet_id": "4121eba9-b6bc-81b7-b269-e6f889116985",
+      "source_text": "Your vibe coded site is fake.\n\nIt's missing 12 things that make it real\n\n1. Custom 404 page\n2. CTA above the fold\n3. Meta title per page\n4. Meta description per page\n5. Open Graph image\n6. Favicon set\n7. robots.txt\n8. sitemap.xml\n9. Alt text on every image\n10. Loading states\n11. Privacy policy page\n12. Analytics installed",
+      "created_time": "2026-11-08T04:52:00.000Z",
+      "canonical_url": "https://twitter.com/PratikSinhatwt/status/2118994341276582302",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/seanallen_dev/status/2119136226544620007",
+      "author": "seanallen_dev",
+      "headline": "Apple __opened Siri AI to all third-party apps__ — Sean Allen breaks down what developers need to know.",
+      "tweet_id": "4121eba9-b6bc-81b6-b724-ce1d53a30005",
+      "source_text": "Apple just opened up Siri AI to all apps. Here's what you need to know:\n\nhttps://t.co/EUseic5CTS",
+      "created_time": "2026-11-08T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/seanallen_dev/status/2119136226544620007",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/YoussefHosni951/status/2119091660659245236",
+      "author": "YoussefHosni951",
+      "headline": "Youssef Hosni argues your CLAUDE.md is bloated — Claude Code supports __path-specific rules that load only for matching files__.",
+      "tweet_id": "4121eba9-b6bc-819f-9ae0-e4b797c31041",
+      "source_text": "Your CLAUDE.md might be making Claude Code less effective. You don't need to load every coding rule into every session.\n\nMany developers keep adding or asking the agent to add instructions to CLAUDE.md whenever Claude makes a mistake.\n\nEventually, the file contains rules about backend APIs, React components, database migrations, tests, documentation, and deployment.\n\nBut if Claude is fixing a frontend component, why should it need all the database migration instructions?\n\nClaude Code supports path-specific rules that load when it works with matching files.\n\nFor example, create .claude/rules/api.md:\n\n---\npaths:\n  - \"src/api/**/*.ts\n---\n# API Rules\n- Validate all incoming requests.\n- Use the standard error format.\n- Add tests for new endpoints\n\nClaude Code loads this rule when its file tools access matching API files. When it works only with unrelated files, the rule isn't loaded.\n\nYou can create separate files for frontend, testing, and database conventions.\n\nThis reduces unnecessary instructions in the active context and makes the rules easier to maintain.\n\nIt is particularly useful for large repositories where different directories follow different conventions. It is still guidance rather than a hard enforcement mechanism.",
+      "created_time": "2026-11-08T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/YoussefHosni951/status/2119091660659245236",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/igor_alexandrov/status/2119087321421115728",
+      "author": "igor_alexandrov",
+      "headline": "Igor Alexandrov compared two database GUIs: __Tabletist at 59MB__ (Rust + egui, 4 databases) vs. Beekeeper Studio at 1.1GB (Electron, 26 databases).",
+      "tweet_id": "4121eba9-b6bc-8167-8eff-e5eb50ef9636",
+      "source_text": "Installed size on my Mac:\n\nBeekeeper Studio: 1.1 GB\nTabletist: 59 MB\n\nBeekeeper is Electron and supports 26 databases, so it's the better pick if you need that breadth.\n\nTabletist is native (Rust + egui) and does 4: Postgres, MySQL, SQLite and BigQuery.\n\nhttps://t.co/57stIjTKUo",
+      "created_time": "2026-11-08T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/igor_alexandrov/status/2119087321421115728",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/CocoaDevBlogs/status/2118964710309544043",
+      "author": "CocoaDevBlogs",
+      "headline": "Apple's __coreai-models repo__ topped GitHub Trends this week, drawing developer attention to the company's on-device AI stack.",
+      "tweet_id": "4121eba9-b6bc-81bf-88ef-f0865ba3162f",
+      "source_text": "GitHub Trends Weekly : apple/coreai-models https://t.co/5HTzLl8UY5",
+      "created_time": "2026-11-08T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/CocoaDevBlogs/status/2118964710309544043",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/KacperRutk/status/2119131015327191453",
+      "author": "KacperRutk",
+      "headline": "GrokBot's docs lay out a clean multi-agent design rule: __give a job its own bot__ once it has recurring sources, its own schedule, or specific rules.",
+      "tweet_id": "4121eba9-b6bc-81e1-bcce-fb00a647c501",
+      "source_text": "I feel like the main question I get regarding @bot is when do I create another bot? How do I know?\n\nWell, let's take a look at the docs together.\n\nGrokBot's docs give you a useful rule for when to create another bot.\n\nStart new work with your primary bot. It's your main point of contact and can pass work to your other bots.\n\nWhen the same request keeps coming back with its own sources, rules or schedule, give that job its own bot.\n\nThat bot builds up memory for the job, including the preferences and instructions you give it.\n\nFor example, a weekly research report might deserve its own bot once you know which sources to use and what the report should include.\n\nBut separate bots aren't separate computers.\n\nThey share the cloud computer, its files and browser sign-ins. Each has its own screen and memory, with some basic facts about you shared across bots.\n\nSo give bots clear responsibilities, but don't treat a new bot as a private place to keep sensitive files.\n\nTry asking your primary bot:\n\n\"Look at the work I keep bringing you. Which recurring job would benefit from its own bot? Explain what that bot would do and what you would still handle.\"\n\nIf you have not taken a look at the upgraded GrokBot doc's you absolutely should. Shout @mattyp and the @spacexai team for their attention to detail.",
+      "created_time": "2026-11-08T04:42:00.000Z",
+      "canonical_url": "https://twitter.com/KacperRutk/status/2119131015327191453",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/nurijanian/status/2119105598835102208",
+      "author": "nurijanian",
+      "headline": "PM OS was rebuilt around one principle: __you should think with AI before you write__ — not after, not during.",
+      "tweet_id": "4121eba9-b6bc-81e1-81fa-f5cccdc67aa3",
+      "source_text": "i rebuilt pm os around one idea: you should think with it before you write anything\n\nPM work needs to flip around compared to others: we should do more thinking, more writing, and AI needs to not meddle in that, while still being max helpful https://t.co/ihI1DUr6sY",
+      "created_time": "2026-11-08T04:42:00.000Z",
+      "canonical_url": "https://twitter.com/nurijanian/status/2119105598835102208",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/shshnkp/status/2119149257269858481",
+      "author": "shshnkp",
+      "headline": "Xcode ships built-in AI skills for SwiftUI, Siri, and security — export them to __any coding agent__ with `xcrun agent skills export`.",
+      "tweet_id": "4121eba9-b6bc-8182-b1e0-eaaaae352f78",
+      "source_text": "Did you know Xcode includes skills covering SwiftUI, App Intents and Siri, security and memory safety, testing and verification, and performance profiling? \n\nUse them in Xcode or export them to use with your favorite coding agent with:\n\n$ xcrun agent skills export",
+      "created_time": "2026-11-08T04:37:00.000Z",
+      "canonical_url": "https://twitter.com/shshnkp/status/2119149257269858481",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://dugas.ch/artificial_curiosity/GPT_architecture.html",
+      "author": "zenincognito",
+      "item_id": "hn:50413453",
+      "headline": "A 2022 visual breakdown of __the GPT architecture on a napkin__ is making HN rounds again — still one of the most useful single-page AI explainers out there.",
+      "subreddit": null,
+      "source_text": "The GPT Architecture, on a Napkin (2022)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T14:00:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://dugas.ch/artificial_curiosity/GPT_architecture.html",
+      "learning_score": 3
+    },
+    {
+      "url": "https://devpack.app/blog/making-browser-ocr-read-phone-photos",
+      "author": "thunderbong",
+      "item_id": "hn:50413442",
+      "headline": "A developer's browser OCR failed to read a sunscreen label until they fixed how __phone photos are preprocessed__ before hitting the OCR engine.",
+      "subreddit": null,
+      "source_text": "My browser OCR couldn't read a sunscreen bottle. Here's what fixed it",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:59:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://devpack.app/blog/making-browser-ocr-read-phone-photos",
+      "learning_score": 2
+    },
+    {
+      "url": "https://standardphysics.com/archimedes",
+      "author": "torutofu",
+      "item_id": "hn:50413440",
+      "headline": "__Archimedes__ is building AI agents that design physical products, bringing agentic workflows to hardware rather than just software.",
+      "subreddit": null,
+      "source_text": "Archimedes: AI agents that design physical things",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:59:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://standardphysics.com/archimedes",
+      "learning_score": 2
+    },
+    {
+      "url": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
+      "author": "lobo_tuerto",
+      "item_id": "hn:50413357",
+      "headline": "A developer makes the case for __resisting generative AI__ — not from ignorance, but on principled grounds about what it actually costs.",
+      "subreddit": null,
+      "source_text": "I Resist Generative \"AI\"",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:49:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://estherweidauer.com/articles/why-resist-generative-ai.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.msn.com/en-us/money/general/google-energy-head-claims-data-centers-in-space-would-cost-up-to-100x-more-than-on-earth/ar-AA2gYiXa",
+      "author": "Zigurd",
+      "item_id": "hn:50413354",
+      "headline": "Google's energy head says __space-based data centers would cost up to 100x more__ than Earth-based ones, dismissing the sci-fi proposal outright.",
+      "subreddit": null,
+      "source_text": "Google energy head: space data centers would cost up to 100x more than on Earth",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:48:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://msn.com/en-us/money/general/google-energy-head-claims-data-centers-in-space-would-cost-up-to-100x-more-than-on-earth/ar-AA2gYiXa",
+      "learning_score": 2
+    },
+    {
+      "url": "https://offlinevault.dev",
+      "author": "nc",
+      "item_id": "hn:50413282",
+      "headline": "__OfflineVault__ is an AI-powered offline library designed to keep your knowledge accessible when the internet goes down.",
+      "subreddit": null,
+      "source_text": "Show HN: OfflineVault – AI based offline library for when the internet is down",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:42:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://offlinevault.dev",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/rochus-keller/Micron",
+      "author": "Rochus",
+      "item_id": "hn:50413266",
+      "headline": "__Micron__ is a new systems language that grafts C-level power onto Oberon's notoriously clean and minimal design.",
+      "subreddit": null,
+      "source_text": "Show HN: Micron – The Oberon with the Power of C",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:40:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/rochus-keller/Micron",
+      "learning_score": 2
+    },
+    {
+      "url": "https://openai.com/cyber-at-the-frontier/",
+      "author": "talboren",
+      "item_id": "hn:50413240",
+      "headline": "OpenAI's __Cyber at the Frontier__ report maps how frontier AI intersects with offensive security — and where the red lines sit.",
+      "subreddit": null,
+      "source_text": "Cyber at the Frontier",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:36:56+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://openai.com/cyber-at-the-frontier",
+      "learning_score": 2
+    },
+    {
+      "url": "https://berrybox.io/",
+      "author": "chiragasarpota",
+      "item_id": "hn:50413075",
+      "headline": "__BerryBox__ offers GitHub Actions runners at $0.002/minute, billed per second — a direct shot at GitHub's own hosted runners.",
+      "subreddit": null,
+      "source_text": "BerryBox – GitHub Actions runners at $0.002/min, billed per second",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:22:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://berrybox.io",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/tryaida/aida",
+      "author": "elijahglass",
+      "item_id": "hn:50412923",
+      "headline": "__AIDA__ is an open-source agent that generates user guides by observing how your app is actually used.",
+      "subreddit": null,
+      "source_text": "Show HN: AIDA – agentic generated user guides",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-08T13:04:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/tryaida/aida",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__A hidden limit of space and time could unlock electronics 100,000 times faster__",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261106174537.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-08T14:16:45.935294+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          9944
+        ],
+        "reason": "Standalone story about the global music industry body warning Australia against loosening AI copyright protections",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9965
+        ],
+        "reason": "Standalone interview with Google's Gemini product lead on building frontier AI models",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9937
+        ],
+        "reason": "Standalone analysis of 2026 midterm election fallout for tech industry, data centers, and Elon Musk's political spending",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9962
+        ],
+        "reason": "Standalone product review of NYT Cooking's new AI assistant feature",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9946
+        ],
+        "reason": "Standalone editorial cartoon by Tom Gauld about AI and writing, distinct from yesterday's Steve Jones cartoon",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9938
+        ],
+        "reason": "Same event as yesterday:8 — China's alleged recruitment of Alice Huang to spy on Nvidia CEO Jensen Huang, now with additional details from Financial Times",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          9963
+        ],
+        "reason": "Standalone investigation into US Commerce Department's inadequate vetting of Chinese firms buying Nvidia AI chips, focused on the New Matrix shell company",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9947
+        ],
+        "reason": "Standalone essay on how optimizing systems for maximum efficiency creates fragility and systemic risk",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          9964
+        ],
+        "reason": "Standalone interview on AI's disruptive impact on cybersecurity with former Meta security chief",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "39a84d77bd8d3a0bd491744dba3fb2460caab2c07722567f4c764c79d6df121d"
+}
