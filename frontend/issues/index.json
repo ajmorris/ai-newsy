@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-07T00:00:00Z",
-  "issueCount": 181,
+  "generatedAt": "2026-11-08T00:00:00Z",
+  "issueCount": 182,
   "latestIssue": {
-    "slug": "2026-11-07",
-    "digestDate": "2026-11-07",
-    "displayDate": "Nov 07, 2026",
-    "issueNumber": "61107",
-    "subject": "ISSUE 61107 \u00b7 9 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI industry is swimming in money and drowning in contradictions. OpenAI just raised $11 billion at a staggering $1.25 trillion valuation \u2014 even as midterm voters signaled deep skepticism about AI's unchecked expansion \u2014 while a new METR report from inside Anthropic reveals AI development is accelerating twice as fast as last year, with the technology increasingly building itself. Today's digest is a snapshot of an industry sprinting forward on every front: Google pouring $17 billion into data centers, data center developers quietly abandoning their green energy promises, China allegedly planting spies near Nvidia's CEO, and a major blockchain firm exposing FBI credentials to hackers.",
+    "slug": "2026-11-08",
+    "digestDate": "2026-11-08",
+    "displayDate": "Nov 08, 2026",
+    "issueNumber": "61108",
+    "subject": "ISSUE 61108 \u00b7 9 STORIES \u00b7 11 MIN READ",
+    "intro": "The 2026 midterms sent shockwaves through the AI industry this week, as voters across the country passed measures restricting data center construction and Texas \u2014 now home to Elon Musk's corporate empire \u2014 turned blue, proving that backlash against Big Tech's physical footprint has become a genuinely bipartisan force. Meanwhile, the global tug-of-war over AI's boundaries continues on multiple fronts, from Australia's copyright fight with the music industry to troubling new details about alleged Chinese espionage targeting Nvidia's CEO and a shell company quietly buying advanced American chips. It's a day that reminds us the biggest AI stories aren't always about the models themselves \u2014 they're about the power struggles surrounding them.",
     "articleCount": 9,
-    "urlPath": "/issues/2026-11-07.html",
-    "contentHash": "9e74801404cc895782dd89d1ff145a33157e75d2977fd530f9d40d363023c6aa"
+    "urlPath": "/issues/2026-11-08.html",
+    "contentHash": "39a84d77bd8d3a0bd491744dba3fb2460caab2c07722567f4c764c79d6df121d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-08",
+      "digestDate": "2026-11-08",
+      "displayDate": "Nov 08, 2026",
+      "issueNumber": "61108",
+      "subject": "ISSUE 61108 \u00b7 9 STORIES \u00b7 11 MIN READ",
+      "intro": "The 2026 midterms sent shockwaves through the AI industry this week, as voters across the country passed measures restricting data center construction and Texas \u2014 now home to Elon Musk's corporate empire \u2014 turned blue, proving that backlash against Big Tech's physical footprint has become a genuinely bipartisan force. Meanwhile, the global tug-of-war over AI's boundaries continues on multiple fronts, from Australia's copyright fight with the music industry to troubling new details about alleged Chinese espionage targeting Nvidia's CEO and a shell company quietly buying advanced American chips. It's a day that reminds us the biggest AI stories aren't always about the models themselves \u2014 they're about the power struggles surrounding them.",
+      "articleCount": 9,
+      "urlPath": "/issues/2026-11-08.html",
+      "contentHash": "39a84d77bd8d3a0bd491744dba3fb2460caab2c07722567f4c764c79d6df121d"
+    },
     {
       "slug": "2026-11-07",
       "digestDate": "2026-11-07",
@@ -133,17 +144,6 @@
       "articleCount": 11,
       "urlPath": "/issues/2026-10-28.html",
       "contentHash": "934dbf17b106e704245309888708ae8d4763427101210189f37060048fb01928"
-    },
-    {
-      "slug": "2026-10-27",
-      "digestDate": "2026-10-27",
-      "displayDate": "Oct 27, 2026",
-      "issueNumber": "61027",
-      "subject": "ISSUE 61027 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic just pulled back the curtain in a big way \u2014 filing for its Nasdaq IPO and giving the world its first real look at the company's financials, explosive growth, and the eye-popping costs of keeping the AI race going. It's a fitting headline for a day that captures the industry at an inflection point: OpenAI is betting big on always-on personal agents, data centers are becoming a surprisingly hot-button election issue, and a Chinese AI model got caught trying to phone home to Beijing. Buckle in \u2014 today's stories span Wall Street filings, political backlash, and a security scare that reads like a techno-thriller.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-10-27.html",
-      "contentHash": "8108c497ecf6cf6151e5ad95b8b2bc5b18994a2e2e7e1d253433c5201ba2e310"
     }
   ]
 }
