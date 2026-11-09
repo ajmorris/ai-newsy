@@ -1,0 +1,727 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-09",
+  "issue_id": "20261109",
+  "subject_line": "ISSUE 61109 · 11 STORIES · 11 MIN READ",
+  "intro": "Anti-AI populism stealing headlines from the algorithms themselves — that's the story this Monday. From voters rejecting datacenter projects across nine states to Google strong-arming schools into accepting its AI tools, today's roundup captures a growing tension between the AI industry's ambitions and the public's appetite for pushing back. We've also got Anthropic dropping $3.4 billion on gas turbines, Trump weighing in on AI safety, and a founder running his company with Lord of the Rings-themed AI agents — because of course someone is.",
+  "article_count": 11,
+  "stories": [
+    {
+      "id": 10093,
+      "source": "Aeon",
+      "title": "Tracing the contested history of 'equality talk' from Euclid to modern politics",
+      "url": "https://aeon.co/essays/historical-ideas-of-equality-help-us-imagine-an-equal-world",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Teresa M Bejan traces how the language of equality moved from mathematics to political philosophy, arguing that its apparent simplicity masks deep disagreements about what equality means, and that understanding its historical deployment can clarify modern debates.",
+      "opinion": "A thoughtful reminder that foundational political concepts are far less settled than they appear — useful for anyone frustrated by how 'equality' can mean opposite things to different people.",
+      "image_url": "https://images.aeonmedia.co/images/f220e1d9-d115-41d2-8d6b-19080731b06a/essay-par161210.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-09T11:00:00+00:00",
+      "fetched_at": "2026-11-09T17:13:47.148654+00:00"
+    },
+    {
+      "id": 10064,
+      "source": "Guardian AI",
+      "title": "Google warns schools: block our AI tools and you may lose Google Search too",
+      "url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google announced new AI tools for schools but warned that schools opting to block its AI features could also lose access to Google Search. Parents and teachers across the US are calling the move extortion, arguing it removes meaningful choice from educators.",
+      "opinion": "A heavy-handed move that risks a serious backlash — tying a near-essential utility to acceptance of controversial new tools is the kind of bundling that invites regulatory scrutiny.",
+      "image_url": "https://i.guim.co.uk/img/media/f9e7e92c7afc213ee5f07553302bd0c680f2720b/0_0_3331_2666/master/3331.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7a0f198ba63598dcccaa6967823c5ff2",
+      "published_at": "2026-11-09T14:00:11+00:00",
+      "fetched_at": "2026-11-09T17:13:25.70632+00:00"
+    },
+    {
+      "id": 10088,
+      "source": "Harvard Business Review",
+      "title": "Overly strict AI policies may backfire by increasing employee resistance",
+      "url": "/2026/11/why-leaders-need-to-rethink-their-approach-to-ai-oversight",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Harvard Business Review argues that rigid AI oversight can increase employee resistance to adoption, and that leaders should instead build trust, invest in skill development, and grant more autonomy in how workers use AI tools.",
+      "opinion": "Sensible but unsurprising advice — the real challenge is calibrating oversight when the risks of unsupervised AI use are still poorly understood.",
+      "image_url": "",
+      "published_at": "2026-11-09T13:25:26+00:00",
+      "fetched_at": "2026-11-09T17:13:45.176629+00:00"
+    },
+    {
+      "id": 10078,
+      "source": "Lenny's Newsletter",
+      "title": "Founder built a Duolingo alternative with Codex and runs his company with Lord of the Rings-themed AI agents",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "William Imoh built Mural, an AI language tutor, using Codex and GPT-Live after finding that a 1,000-day Duolingo streak didn't help him converse in Norwegian. He also runs his 25-person company with Grok Bots named after Lord of the Rings characters connected to tools like Linear, Notion, and Pipedrive.",
+      "opinion": "An entertaining case study, though the $3-$5 cost per 30-minute voice session highlights that real-time AI tutoring is still expensive compared to traditional apps.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!4_3f!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6e32d0e-f138-4daa-997c-05e1b4421b34_1456x1048.png",
+      "published_at": "2026-11-09T16:01:20+00:00",
+      "fetched_at": "2026-11-09T17:13:35.454061+00:00"
+    },
+    {
+      "id": 10058,
+      "source": "TechCrunch AI",
+      "title": "Anthropic spends $3.4B on natural gas turbines to power AI infrastructure",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic is purchasing Caterpillar natural gas turbines capable of producing up to 1.7 gigawatts, acquired after equipment supplier OnePWR failed to secure financing. The move is unusual for Anthropic, which has historically preferred renting infrastructure. Analysts warn natural gas prices could more than triple by decade's end.",
+      "opinion": "A remarkable shift from Anthropic's asset-light strategy that underscores just how desperate the power situation is for AI companies — though locking in natural gas when prices may spike is a significant gamble.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-155376474.jpeg?resize=1200,800",
+      "published_at": "2026-11-09T16:56:54+00:00",
+      "fetched_at": "2026-11-09T17:13:22.930584+00:00"
+    },
+    {
+      "id": 10069,
+      "source": "The Verge AI",
+      "title": "Trump downplays AI safety risks in 60 Minutes interview, reveals DOJ threatened an AI exec with jail",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "In a 60 Minutes interview, President Trump said AI safety risks are 'not nearly as real' as executives warn and revealed the DOJ threatened an unnamed AI company leader with jail time for allegedly 'doing something bad with AI.' He said he would work with Democrats on AI guardrails but opposes regulations that put the US behind China, and continued promoting 'super intelligence' over 'artificial intelligence' as terminology.",
+      "opinion": "The revelation that DOJ threatened an AI executive with jail is the buried lede here — it suggests enforcement actions are already happening behind the scenes, even as the president publicly dismisses safety concerns.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2296464785.jpg?quality=90&strip=all&crop=0%2C10.75214828329%2C100%2C78.49570343342&w=1200",
+      "published_at": "2026-11-09T15:50:38+00:00",
+      "fetched_at": "2026-11-09T17:13:30.075518+00:00"
+    },
+    {
+      "id": 10065,
+      "source": "Guardian AI",
+      "title": "Anti-AI populism emerges as a defining force in American politics after 2026 midterms",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/07/anti-ai-populism-is-the-future-of-american-politics",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Garrison Lovely argues in The Guardian that anti-AI populism is a major new political force following the Democrats' 2026 midterm sweep. Voters rejected datacenter projects in over 30 localities across nine states, 23% of voters cited AI as crucial to their decision, and AI industry leaders have effectively cast themselves as villains through their own statements about job destruction and existential risk. Lovely predicts AI will be the defining fight of the 2028 presidential cycle.",
+      "opinion": "A compelling argument that AI leaders' own doom-and-disruption rhetoric has handed populists the narrative on a platter — the 2028 implications are worth watching closely.",
+      "image_url": "https://i.guim.co.uk/img/media/e34f8015774a40911b0d060d97ed337d4dd60e3e/452_0_4499_3601/master/4499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=a25b11998c397b4913e883708bdff843",
+      "published_at": "2026-11-09T11:00:08+00:00",
+      "fetched_at": "2026-11-09T17:13:25.924544+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10065,
+            "source": "Guardian AI",
+            "title": "Anti-AI populism is the future of American politics | Garrison Lovely",
+            "url": "https://www.theguardian.com/commentisfree/2026/nov/07/anti-ai-populism-is-the-future-of-american-politics"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Analysis of anti-AI populism emerging from the 2026 midterms — same underlying election event as yesterday:2."
+      }
+    },
+    {
+      "id": 10059,
+      "source": "TechCrunch AI",
+      "title": "Medium launches TK, a writing app with built-in AI assistance",
+      "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Medium launched TK, a writing app where users invoke AI by typing '@TK' for quick questions, notes retrieval, and editorial feedback matched to publication style guides. Addressing controversy around AI in publishing, Medium positions AI as amplifying human writing and offers transparency features letting authors explain how AI was used.",
+      "opinion": "A pragmatic middle ground in the AI-writing debate — the transparency mechanism is a smart move, though whether readers will actually check provenance notes remains to be seen.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/tk-logo.webp?resize=1200,675",
+      "published_at": "2026-11-09T16:12:28+00:00",
+      "fetched_at": "2026-11-09T17:13:23.22122+00:00"
+    },
+    {
+      "id": 10070,
+      "source": "The Verge AI",
+      "title": "Disney and Adobe partner to build proprietary generative AI models for Disney properties",
+      "url": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Disney and Adobe announced a multiyear partnership to develop 'artist-led' generative AI models trained on Disney's characters, environments, and visual styles. Announced at Adobe's MAX conference, the deal gives Disney early access to Adobe Firefly Foundry for use across theme parks, cruise lines, ESPN content, and production pipelines.",
+      "opinion": "A significant legitimization of generative AI in entertainment — Disney's involvement signals that major IP holders see custom AI models as a way to control rather than resist the technology.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Disney-Adobe-AI-partnership.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-09T15:38:56+00:00",
+      "fetched_at": "2026-11-09T17:13:30.281386+00:00"
+    },
+    {
+      "id": 10060,
+      "source": "TechCrunch AI",
+      "title": "Automattic launches Spacefast, a platform for deploying vibe-coded apps",
+      "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Automattic launched Spacefast, a platform for deploying vibe-coded websites and apps that provides infrastructure (databases, authentication, file uploads, analytics) while letting users choose their own AI coding agent. Created during a company hackathon, it differentiates from competitors like Lovable by leveraging Automattic's existing CDN, WordPress integration, and WooCommerce capabilities.",
+      "opinion": "A shrewd infrastructure play — rather than competing on AI coding itself, Automattic bets that the deployment and hosting layer is where lasting value accrues as vibe-coding tools commoditize.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Spacefast-feat.jpg?resize=1200,675",
+      "published_at": "2026-11-09T14:00:00+00:00",
+      "fetched_at": "2026-11-09T17:13:23.440109+00:00"
+    },
+    {
+      "id": 10071,
+      "source": "The Verge AI",
+      "title": "RIAA CEO discusses the music industry's fight against AI companies over copyright",
+      "url": "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "In a Decoder podcast interview, RIAA CEO Mitch Glazier discussed how the music industry, artists, and ordinary people now find themselves aligned against AI companies over unauthorized training on copyrighted works. Topics included AI deepfake legal complexities, potential bans and their free expression implications, and challenges of AI detection if platforms like Spotify and YouTube don't cooperate.",
+      "opinion": "The full-circle irony of the RIAA — once the villain suing Napster users — now positioned as defender of creators against Big Tech makes for a genuinely interesting narrative shift.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD_20261109_Glazier.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-09T15:30:00+00:00",
+      "fetched_at": "2026-11-09T17:13:30.5314+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10093,
+          "source": "Aeon",
+          "title": "Tracing the contested history of 'equality talk' from Euclid to modern politics",
+          "url": "https://aeon.co/essays/historical-ideas-of-equality-help-us-imagine-an-equal-world",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Teresa M Bejan traces how the language of equality moved from mathematics to political philosophy, arguing that its apparent simplicity masks deep disagreements about what equality means, and that understanding its historical deployment can clarify modern debates.",
+          "opinion": "A thoughtful reminder that foundational political concepts are far less settled than they appear — useful for anyone frustrated by how 'equality' can mean opposite things to different people.",
+          "image_url": "https://images.aeonmedia.co/images/f220e1d9-d115-41d2-8d6b-19080731b06a/essay-par161210.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-09T11:00:00+00:00",
+          "fetched_at": "2026-11-09T17:13:47.148654+00:00"
+        },
+        {
+          "id": 10064,
+          "source": "Guardian AI",
+          "title": "Google warns schools: block our AI tools and you may lose Google Search too",
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google announced new AI tools for schools but warned that schools opting to block its AI features could also lose access to Google Search. Parents and teachers across the US are calling the move extortion, arguing it removes meaningful choice from educators.",
+          "opinion": "A heavy-handed move that risks a serious backlash — tying a near-essential utility to acceptance of controversial new tools is the kind of bundling that invites regulatory scrutiny.",
+          "image_url": "https://i.guim.co.uk/img/media/f9e7e92c7afc213ee5f07553302bd0c680f2720b/0_0_3331_2666/master/3331.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7a0f198ba63598dcccaa6967823c5ff2",
+          "published_at": "2026-11-09T14:00:11+00:00",
+          "fetched_at": "2026-11-09T17:13:25.70632+00:00"
+        },
+        {
+          "id": 10088,
+          "source": "Harvard Business Review",
+          "title": "Overly strict AI policies may backfire by increasing employee resistance",
+          "url": "/2026/11/why-leaders-need-to-rethink-their-approach-to-ai-oversight",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Harvard Business Review argues that rigid AI oversight can increase employee resistance to adoption, and that leaders should instead build trust, invest in skill development, and grant more autonomy in how workers use AI tools.",
+          "opinion": "Sensible but unsurprising advice — the real challenge is calibrating oversight when the risks of unsupervised AI use are still poorly understood.",
+          "image_url": "",
+          "published_at": "2026-11-09T13:25:26+00:00",
+          "fetched_at": "2026-11-09T17:13:45.176629+00:00"
+        },
+        {
+          "id": 10078,
+          "source": "Lenny's Newsletter",
+          "title": "Founder built a Duolingo alternative with Codex and runs his company with Lord of the Rings-themed AI agents",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "William Imoh built Mural, an AI language tutor, using Codex and GPT-Live after finding that a 1,000-day Duolingo streak didn't help him converse in Norwegian. He also runs his 25-person company with Grok Bots named after Lord of the Rings characters connected to tools like Linear, Notion, and Pipedrive.",
+          "opinion": "An entertaining case study, though the $3-$5 cost per 30-minute voice session highlights that real-time AI tutoring is still expensive compared to traditional apps.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!4_3f!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe6e32d0e-f138-4daa-997c-05e1b4421b34_1456x1048.png",
+          "published_at": "2026-11-09T16:01:20+00:00",
+          "fetched_at": "2026-11-09T17:13:35.454061+00:00"
+        },
+        {
+          "id": 10058,
+          "source": "TechCrunch AI",
+          "title": "Anthropic spends $3.4B on natural gas turbines to power AI infrastructure",
+          "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic is purchasing Caterpillar natural gas turbines capable of producing up to 1.7 gigawatts, acquired after equipment supplier OnePWR failed to secure financing. The move is unusual for Anthropic, which has historically preferred renting infrastructure. Analysts warn natural gas prices could more than triple by decade's end.",
+          "opinion": "A remarkable shift from Anthropic's asset-light strategy that underscores just how desperate the power situation is for AI companies — though locking in natural gas when prices may spike is a significant gamble.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-155376474.jpeg?resize=1200,800",
+          "published_at": "2026-11-09T16:56:54+00:00",
+          "fetched_at": "2026-11-09T17:13:22.930584+00:00"
+        },
+        {
+          "id": 10069,
+          "source": "The Verge AI",
+          "title": "Trump downplays AI safety risks in 60 Minutes interview, reveals DOJ threatened an AI exec with jail",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "In a 60 Minutes interview, President Trump said AI safety risks are 'not nearly as real' as executives warn and revealed the DOJ threatened an unnamed AI company leader with jail time for allegedly 'doing something bad with AI.' He said he would work with Democrats on AI guardrails but opposes regulations that put the US behind China, and continued promoting 'super intelligence' over 'artificial intelligence' as terminology.",
+          "opinion": "The revelation that DOJ threatened an AI executive with jail is the buried lede here — it suggests enforcement actions are already happening behind the scenes, even as the president publicly dismisses safety concerns.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2296464785.jpg?quality=90&strip=all&crop=0%2C10.75214828329%2C100%2C78.49570343342&w=1200",
+          "published_at": "2026-11-09T15:50:38+00:00",
+          "fetched_at": "2026-11-09T17:13:30.075518+00:00"
+        },
+        {
+          "id": 10065,
+          "source": "Guardian AI",
+          "title": "Anti-AI populism emerges as a defining force in American politics after 2026 midterms",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/07/anti-ai-populism-is-the-future-of-american-politics",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Garrison Lovely argues in The Guardian that anti-AI populism is a major new political force following the Democrats' 2026 midterm sweep. Voters rejected datacenter projects in over 30 localities across nine states, 23% of voters cited AI as crucial to their decision, and AI industry leaders have effectively cast themselves as villains through their own statements about job destruction and existential risk. Lovely predicts AI will be the defining fight of the 2028 presidential cycle.",
+          "opinion": "A compelling argument that AI leaders' own doom-and-disruption rhetoric has handed populists the narrative on a platter — the 2028 implications are worth watching closely.",
+          "image_url": "https://i.guim.co.uk/img/media/e34f8015774a40911b0d060d97ed337d4dd60e3e/452_0_4499_3601/master/4499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=a25b11998c397b4913e883708bdff843",
+          "published_at": "2026-11-09T11:00:08+00:00",
+          "fetched_at": "2026-11-09T17:13:25.924544+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10065,
+                "source": "Guardian AI",
+                "title": "Anti-AI populism is the future of American politics | Garrison Lovely",
+                "url": "https://www.theguardian.com/commentisfree/2026/nov/07/anti-ai-populism-is-the-future-of-american-politics"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Analysis of anti-AI populism emerging from the 2026 midterms — same underlying election event as yesterday:2."
+          }
+        },
+        {
+          "id": 10059,
+          "source": "TechCrunch AI",
+          "title": "Medium launches TK, a writing app with built-in AI assistance",
+          "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Medium launched TK, a writing app where users invoke AI by typing '@TK' for quick questions, notes retrieval, and editorial feedback matched to publication style guides. Addressing controversy around AI in publishing, Medium positions AI as amplifying human writing and offers transparency features letting authors explain how AI was used.",
+          "opinion": "A pragmatic middle ground in the AI-writing debate — the transparency mechanism is a smart move, though whether readers will actually check provenance notes remains to be seen.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/tk-logo.webp?resize=1200,675",
+          "published_at": "2026-11-09T16:12:28+00:00",
+          "fetched_at": "2026-11-09T17:13:23.22122+00:00"
+        },
+        {
+          "id": 10070,
+          "source": "The Verge AI",
+          "title": "Disney and Adobe partner to build proprietary generative AI models for Disney properties",
+          "url": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Disney and Adobe announced a multiyear partnership to develop 'artist-led' generative AI models trained on Disney's characters, environments, and visual styles. Announced at Adobe's MAX conference, the deal gives Disney early access to Adobe Firefly Foundry for use across theme parks, cruise lines, ESPN content, and production pipelines.",
+          "opinion": "A significant legitimization of generative AI in entertainment — Disney's involvement signals that major IP holders see custom AI models as a way to control rather than resist the technology.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Disney-Adobe-AI-partnership.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-09T15:38:56+00:00",
+          "fetched_at": "2026-11-09T17:13:30.281386+00:00"
+        },
+        {
+          "id": 10060,
+          "source": "TechCrunch AI",
+          "title": "Automattic launches Spacefast, a platform for deploying vibe-coded apps",
+          "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Automattic launched Spacefast, a platform for deploying vibe-coded websites and apps that provides infrastructure (databases, authentication, file uploads, analytics) while letting users choose their own AI coding agent. Created during a company hackathon, it differentiates from competitors like Lovable by leveraging Automattic's existing CDN, WordPress integration, and WooCommerce capabilities.",
+          "opinion": "A shrewd infrastructure play — rather than competing on AI coding itself, Automattic bets that the deployment and hosting layer is where lasting value accrues as vibe-coding tools commoditize.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Spacefast-feat.jpg?resize=1200,675",
+          "published_at": "2026-11-09T14:00:00+00:00",
+          "fetched_at": "2026-11-09T17:13:23.440109+00:00"
+        },
+        {
+          "id": 10071,
+          "source": "The Verge AI",
+          "title": "RIAA CEO discusses the music industry's fight against AI companies over copyright",
+          "url": "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "In a Decoder podcast interview, RIAA CEO Mitch Glazier discussed how the music industry, artists, and ordinary people now find themselves aligned against AI companies over unauthorized training on copyrighted works. Topics included AI deepfake legal complexities, potential bans and their free expression implications, and challenges of AI detection if platforms like Spotify and YouTube don't cooperate.",
+          "opinion": "The full-circle irony of the RIAA — once the villain suing Napster users — now positioned as defender of creators against Big Tech makes for a genuinely interesting narrative shift.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD_20261109_Glazier.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-09T15:30:00+00:00",
+          "fetched_at": "2026-11-09T17:13:30.5314+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/humzaakhalid/status/2119425959418085807",
+      "author": "humzaakhalid",
+      "headline": "REA decompiles any app and hands the source to Claude, which rebuilds it as a __clean project you own__ — no subscription, no lock-in.",
+      "tweet_id": "4131eba9-b6bc-8155-ad6c-da3ba1ed9e93",
+      "source_text": "Every paid app you use is now free to rebuild in one prompt\n\nREA (reverse engineer anything) opens any app, site or game and hands the source straight to Claude\n\nI said this was coming a month ago. most people laughed\n\nhere's how to rebuild any paid tool you want, for free:\n\nfirst understand how it works:\n\n• REA decompiles the app and reconstructs readable source\n• Claude reads that source and rebuilds it as a clean project you own\n• you walk away with a working version, no subscription, no lock-in\n\nhere's how to set it up for FREE:\n\n1 → install Node.js and open Claude Code in an empty folder\n\n2 → point REA at your target: the web app, the Electron build, the binary\n\n3 → let it decompile: it pulls apart dist, .asar, .wasm and native files on its own\n\n4 → hand the output to Claude and say \"rebuild this as a clean project I own\"\n\n5 → test every feature against the original until it matches\n\n6 → the step everyone skips: make it yours, rename it, restyle it, add the features the original never shipped\n\n7 → want proof? REA's own showcase already rebuilt full apps end to end\n\nthe result: anything behind a paywall becomes a weekend build\n\nthis is only round one. the gap between \"paid\" and \"build it yourself\" is GONE\n\nfull REA + Claude breakdown below:↓",
+      "created_time": "2026-11-09T04:57:00.000Z",
+      "canonical_url": "https://twitter.com/humzaakhalid/status/2119425959418085807",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Voxyz_ai/status/2119535433969500172",
+      "author": "Voxyz_ai",
+      "headline": "Six lines added to AGENTS.md can stop Claude Code __from burning through tokens__ on needless file reads and already-decided questions.",
+      "tweet_id": "4131eba9-b6bc-8112-b6f0-e4eb62404eb4",
+      "source_text": "Highly recommend adding 𝘁𝗵𝗲𝘀𝗲 𝟲 𝗹𝗶𝗻𝗲𝘀 to your AGENTS.md.\n\nClaude Code stops 𝗯𝘂𝗿𝗻𝗶𝗻𝗴 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘆𝗼𝘂𝗿 𝘁𝗼𝗸𝗲𝗻𝘀.\n\n## Save context\n- Before reading a whole file, grep first and only read the parts you need.\n- To understand the whole project, send a subagent to look and bring back only the summary.\n- Show me the diff, not the whole file.\n- Don't restate anything we've already decided in this session.\n- When we switch tasks, suggest /compact or a new session.\n- Keep answers short by default.",
+      "created_time": "2026-11-09T04:57:00.000Z",
+      "canonical_url": "https://twitter.com/Voxyz_ai/status/2119535433969500172",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/romitmirchi/status/2119565628889821272",
+      "author": "romitmirchi",
+      "headline": "Using Notion as the memory layer for a __fleet of Grok bots__ has let one builder maintain clarity across hundreds of customer conversations without designing the setup manually.",
+      "tweet_id": "4131eba9-b6bc-817a-a6b3-e8f45d843f38",
+      "source_text": "Using Notion as a “brain” for Grok Bot has been an incredible productivity hack, and how I built my fleet. \n\nAll my rules, skills, and routines are written back to Notion. Bots are also responsible for maintaining task boards in Notion (what’s waiting on me, waiting on others, or blocked)\n\nThis is easier for me to visually scan and decide where to jump in at any given moment. \n\nEnables me to maintain clarity across 100s of customer, prospect, and internal conversations\n\nI didnt have to design my @NotionHQ setup either - I just pointed @bot to Notion’s docs and told it to figure it out.",
+      "created_time": "2026-11-09T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/romitmirchi/status/2119565628889821272",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/coreyganim/status/2119535359008858190",
+      "author": "coreyganim",
+      "headline": "Corey Ganim claims he's making __over $1,000 per hour as an AI Concierge__ by auditing, optimizing, and automating client workflows into Claude skills.",
+      "tweet_id": "4131eba9-b6bc-816d-a6d7-ca3ebf9efe31",
+      "source_text": "Miles is right.\n\nAI Concierge is one of the best ways to make money as an AI consultant right now.\n\nI'm making over $1,000 per hour as an AI Concierge (99% profit) following this super simple playbook:\n\n1. I like to start with an AI Opportunity Assessment. I spend 60ish minutes interviewing the client to figure out where AI fits into their biz. This is the roadmap we follow during our Concierge engagement.\n\n2. We then book 2 45-60min Zoom calls a month. The client shares their screen and I help them turn their manual processes into Claude skills.\n\n3. I run a framework called AOA for each skill build. We start by Auditing the manual process. Then we Optimize by cutting the steps that shouldn't exist. Lastly, we Automate by turning the new clean process into a skill.\n\n4. In between calls I communicate with clients async via Voxer (a free walkie talkie app). I promise them a 12-business hour response time. I typically reply in under an hour in an attempt to overdeliver.\n\n5. The client gets access to a shared Notion database where I log everything we build/optimize together. Then one of my own Claude skills reads their database and sends them updates after each call on what we accomplished.\n\nThe Notion hub is huge for retention because it shows the client in plain English exactly what we accomplished on each call, exactly what was automated, time saved, etc.\n\nI'm basically being paid to identify a client's bottlenecks, help them clean up the process, then turn them into Claude skills.\n\nIf you're proficient with Claude (or ChatGPT) then this is a business model you can make great money with at extremely high margins.",
+      "created_time": "2026-11-09T04:27:00.000Z",
+      "canonical_url": "https://twitter.com/coreyganim/status/2119535359008858190",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AISystems_hq/status/2119479314915942577",
+      "author": "AISystems_hq",
+      "headline": "The case for __running an open-source model on your own drive__: one file, no login, no price changes, and it answers the same way in five years.",
+      "tweet_id": "4131eba9-b6bc-810c-99c9-f4222715c0a0",
+      "source_text": "I am begging you, download an open source AI model and keep it on your own drive.\n\nIt's one file, about 7 to 20GB, and the smaller ones run on a 16GB laptop. No login, no monthly plan, and it still answers with the wifi off.\n\nThe paid tools you lean on can change a price, a model or the rules overnight. A file on your drive answers the same way in five years as it does today.\n\nInstall Ollama (free, open source), type ollama run gemma4:12b, and give it the jobs you'd never paste into a website: contracts, client notes, your own numbers.\n\nSetup takes about 20 minutes, most of it the download.\n\nYou'll be glad it's there the day a login stops working.",
+      "created_time": "2026-11-09T04:12:00.000Z",
+      "canonical_url": "https://twitter.com/AISystems_hq/status/2119479314915942577",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/PawelHuryn/status/2119575501115162870",
+      "author": "PawelHuryn",
+      "headline": "Pawel Huryn, a non-coder PM, runs __5–6 Claude Code agents in parallel for up to 24 hours__ using a flight-deck artifact to track decisions instead of babysitting the chat.",
+      "tweet_id": "4131eba9-b6bc-81ae-adf2-d7139bf05f0a",
+      "source_text": "As a PM, I run 5-6 Claude Code agents in parallel, some for 24+ hours.\n\nMy 5 principles (no coding required):\n\n1. Use any surface you want\n→ Terminal, VS Code, or Claude Desktop: Claude Code does the same work in each.\n→ New to it? Start with Claude Desktop's Code tab, not the chat.\n\n2. Delegate outcomes, not steps\n→ Give the goal, the desired outcomes, and how you'll measure success.\n→ Add guardrails: what agents can't do on their own.\n→ Then trust them. Mine work 12, 18, or 24+ hours without my input.\n\n3. Read a flight deck, not the chat\n→ After 24 hours, a chat is full of questions and open decisions.\n→ My agents keep an artifact: what's done, what's in flight, and what's next.\n→ I make decisions right in it. Telegram pings me only when they're blocked.\n→ My /flight-deck skill is free (GitHub): phuryn/product-engineering\n\n4. Prototype to align, ship to learn\n→ Artifacts are great for sharing an idea and building alignment.\n→ But you can't track what users do in them. For that, ship the real thing.\n→ With agents, you get the first real version in hours.\n\n5. Don't learn the tool. Let it teach you\n→ Installing a skill or connecting an app? Don't Google it. Ask in the chat.\n→ That solves 99% of problems. Don't be afraid to make mistakes.\n\nI explained all five, and more, in 12 minutes with Moe Ali on @ProductFaculty's Agent Zero. \n\nWatch it below:",
+      "created_time": "2026-11-09T04:07:00.000Z",
+      "canonical_url": "https://twitter.com/PawelHuryn/status/2119575501115162870",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xWhitemon/status/2119449440532435013",
+      "author": "0xWhitemon",
+      "headline": "A harness paper details __the 3-agent loop__ Anthropic used to reliably turn one-line ideas into working apps — with a dedicated \"no\" agent that grades instead of builds.",
+      "tweet_id": "4131eba9-b6bc-81d1-a1f8-e665ded54bc2",
+      "source_text": "this harness engineering paper is f*cking insane\n\nit's the exact 3-agent setup anthropic used to turn a one-line idea into a working app instead of a broken demo.\n\n3 agents, 3 files, one loop that doesn't stop until the app actually works, all on one page.\n\nset it up tonight and your agent ships features that work on the first click, instead of \"done\" apps that break the moment you touch them.\n\nthe crazy part is everyone lets the same agent build its work and grade it, while the fix is a second agent whose only job is to say no.\n\nfull breakdown in the harness guide below.",
+      "created_time": "2026-11-09T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/0xWhitemon/status/2119449440532435013",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMorlex/status/2119516286514536841",
+      "author": "0xMorlex",
+      "headline": "Lauren Tan runs her whole day through __one Grok Bot that orchestrates six others__ and sends a single daily message — someone rebuilt the full 12-file setup, prompt included.",
+      "tweet_id": "4131eba9-b6bc-817a-9d9b-f5c2104db95f",
+      "source_text": "lauren tan's chief of staff is a f*cking goldmine\n\nshe talks to one grok bot. it runs six others and sends her one message a day. i redrew her whole setup as 12 files, prompt included\n\nwhat's in the folder: \n\n1. prompt.md her one contact, every request lands here first\n2. triage.md small task gets done right away, big one goes to the bot that owns it\n3. daily-summary.md one message a day: needs me, done, blocked\n4. ask-first.md nothing pays, posts, books or messages a person without her yes\n5. two-fails.md a bot that fails twice stops and explains why\n6. quiet.md no news means no message\n7. bots/ matcha splits eng work, engineers run cloud agents, dr. eggbot builds new bots and rereads the chats every week, potato reads X mentions, suki handles travel, crumb hunts disk space\n\nfull prompt is on the card. paste it into a grok bot and you'll have your own chief tonight",
+      "created_time": "2026-11-09T02:07:00.000Z",
+      "canonical_url": "https://twitter.com/0xMorlex/status/2119516286514536841",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mdjunaidap/status/2119422187408851116",
+      "author": "mdjunaidap",
+      "headline": "Seven free tools to audit your __vibe-coded app before launch__: Gitleaks, TruffleHog, Semgrep, npm audit, ZAP, Mozilla Observatory, and Dependabot.",
+      "tweet_id": "4121eba9-b6bc-8145-a1e1-c700423e2bb1",
+      "source_text": "Free tools to scan your \nvibe-coded app before launch:\n\n1. Gitleaks\nfinds API keys in your git history\nhttps://t.co/cYP3laxraN\n\n2. TruffleHog\nchecks if leaked keys still work\nhttps://t.co/F4DXcULuwI\n\n3. Semgrep\nfinds insecure code patterns\nhttps://t.co/zpuJJlUKiz\n\n4. npm audit / pip-audit\nknown holes in your dependencies\nhttps://t.co/9yRyHINAYT\n\n5. ZAP\nattacks your app like a hacker\nhttps://t.co/rzqdizXkUv\n\n6. Mozilla Observatory\ngrades your security headers\nhttps://t.co/2ZLBf8Bn0t\n\n7. Dependabot\nauto-PRs to patch dependencies\nhttps://t.co/8eyg1d7oam\n\nOne afternoon.\nMost vibe coders never run one.",
+      "created_time": "2026-11-08T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/mdjunaidap/status/2119422187408851116",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2119463210558628116",
+      "author": "Zephyr_hg",
+      "headline": "These __8 Claude Code prompts__ make it run checks, review the diff, explain its reasoning, and quiz you before you push to main.",
+      "tweet_id": "4121eba9-b6bc-8149-8c04-d1e2f4850638",
+      "source_text": "I'd ask Claude Code to prove its work and quiz me before I pushed to main, because I want to understand the change I'm about to put out.\n\nThese 8 prompts ask it to run the checks, review the diff, explain its decisions and write up the quiz for me to review, but they don't install a Git hook, so the decision to push is still yours.",
+      "created_time": "2026-11-08T19:12:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2119463210558628116",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dopamine_crypto/status/2119346689240862861",
+      "author": "dopamine_crypto",
+      "headline": "A laid-off geophysicist open-sourced __ai-job-search__ — a Claude Code agent that wrote 69 applications, booked 20 first interviews, and landed him an AI engineering role.",
+      "tweet_id": "4131eba9-b6bc-813e-abc5-f75434788ce5",
+      "source_text": "회사에서 잘리면 나는 무조건 이거부터 포크함\n\n포지션 없어져서 잘린 지구물리학자가\n이걸로 지원서 69개 쓰고 1차 면접 20번 봄\n결국 계약 1건 따서 2026년 6월에 AI 엔지니어로 들어감\n\n그 사람이 자기 구직용으로 만든 걸\n그대로 깃허브에 풀어둔 게 ai-job-search\n깃허브 별 7.0만 ㄷㄷ\n\n클로드 코드 위에서 돌아가는 구직 도우미임\n공고 보고 나랑 맞는지 평가하고\n이력서를 공고에 맞게 고치고\n자소서 쓰고 면접 준비까지 해줌\n\n이렇게 쓰면 됨\n1. 저장소 포크하기\n2. 내 프로필 채워넣기\n3. /scrape로 공고 모으기\n4. /apply로 지원서 쓰고 /interview로 면접 준비\n\n명령어는 전부 6개\n빈 프로필에서 시작해서 지원 결과 추적까지\n한 흐름으로 쭉 이어짐\n\n재밌는 건 지원서 만드는 방식\n초안 쓰는 역할이랑 검토하는 역할을 나눠서 돌림\n한 번 쓰고 끝이 아니라 한 번 더 걸러지는 거\n\n만든 사람은 면접 보는 회사마다\n이거 쓴다고 미리 말했다는데\n감점은커녕 오히려 기술 얘기로 대화가 풀렸다고 함\n\n이 부분이 제일 흥미로움\nAI 쓴 걸 숨길 게 아니라 그 자체가 실력 증명이 된 셈\n\n물론 한국에서 바로 쓰긴 애매한 데가 있음\n공고 긁어오는 스킬이 덴마크 구인 사이트 기준이라\n국내 사이트용으로 갈아끼워야 함\n\n대신 프로필 만들기, 적합도 평가,\n지원서 쓰고 검토하는 핵심 흐름은\n나라·언어 상관없게 짜놨다고\n\n그리고 앤트로픽 공식 아님\n관련 코인·토큰 같은 것도 없다고 못 박아둠\n그런 거 들고 오면 사기라고\n\n자소서 하나에 주말 통째로 날리는 이직 준비생,\n공고 수십 개 비교하다 지친 취준생한테 딱 맞을듯\n\n잘린 경험을 그대로 포트폴리오로 바꾼 거라 이건 진짜 영리했음.\n\nhttps://t.co/kUXkw9bv9O",
+      "created_time": "2026-11-09T04:47:00.000Z",
+      "canonical_url": "https://twitter.com/dopamine_crypto/status/2119346689240862861",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/PrajwalTomar_/status/2119444335976657107",
+      "author": "PrajwalTomar_",
+      "headline": "Prajwal Tomar runs his whole business on 6 bots, and the principle that made it work is __one bot, one job__ — plus a chief bot that reads all their chats.",
+      "tweet_id": "4131eba9-b6bc-8143-aa37-e60a6afd3dac",
+      "source_text": "ok i think this is the most useful thing i've ever written about Grok Bot\n\ni've been running it every day since August and my whole business now runs on a team of 6 bots\n\none finds my next post before i'm awake. one tests my apps every night. one sorts my sponsor pitches, and another one actually tries the product before i say yes\n\nthe thing that made it work: one bot, one job. every time i gave a bot two jobs, it got worse at both\n\nand give every bot a few anti-jobs. \"never send anything without my OK\" saves you from most disasters\n\nand on top of them sits one chief bot that reads all their chats. that's why it feels easy... i don't manage 6 bots, i manage 1 and it manages the rest\n\nwrote down the whole team, every job and every feature i actually use in the article below",
+      "created_time": "2026-11-09T04:42:00.000Z",
+      "canonical_url": "https://twitter.com/PrajwalTomar_/status/2119444335976657107",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/beamnxw/status/2119382127040987266",
+      "author": "beamnxw",
+      "headline": "Addy Osmani published a playbook for __running AI coding agents like a team__ — covering how to give context, verify work, set guardrails, and decide what ships.",
+      "tweet_id": "4131eba9-b6bc-81dd-815c-d059ff2b6cf7",
+      "source_text": "THIS IS PURE GOLD\n\nAnthropic engineer, Addy Osmani just shared how to run AI coding agents like a team - without babysitting every session\n\nit shows how to give agents context, verify their work, set guardrails and decide what ships\n\ncontext → plan → delegate → verify → decide\n\nsave the full playbook ↓",
+      "created_time": "2026-11-09T04:42:00.000Z",
+      "canonical_url": "https://twitter.com/beamnxw/status/2119382127040987266",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/appleinsider/status/2119435276825006553",
+      "author": "appleinsider",
+      "headline": "Apple's __Personal Knowledge Graph__ maps what your Mac and Apple Intelligence quietly know about you.",
+      "tweet_id": "4131eba9-b6bc-81e4-acb2-eabf73453e45",
+      "source_text": "A breakdown of Apple's Personal Knowledge Graph shows what your Mac and Apple Intelligence know about you and your life. By @MalcolmOwen \n \n https://t.co/oohRqdVsjs",
+      "created_time": "2026-11-09T01:22:00.000Z",
+      "canonical_url": "https://twitter.com/appleinsider/status/2119435276825006553",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2119475549890396533",
+      "author": "noahkagan",
+      "headline": "Noah Kagan is splitting his __first X payout of $424.07__ among four builders — drop what you're building before Monday.",
+      "tweet_id": "4121eba9-b6bc-811b-81af-cd3551278968",
+      "source_text": "I'm giving away my first X payout. All $424.07. 💸\n\nBuilding has never been easier. Getting customers is still the hard part.\n\nYou build it. I promote it. And I pay you.\n\nDrop what you're building below. I'll pick 4, send each $106 and repost them.\n\nPicking Monday. 👇 https://t.co/ptGoZZTGsR",
+      "created_time": "2026-11-08T19:42:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2119475549890396533",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://blog.gitguardian.com/ai-pentesting-tools-beyond-artex/",
+      "author": "guedou",
+      "item_id": "hn:50428234",
+      "headline": "GitGuardian catalogued __45 agentic attack frameworks__ beyond Artex — a field guide for AI red-teamers.",
+      "subreddit": null,
+      "source_text": "Beyond Artex: 45 Agentic Attack Frameworks, and How to Find Them",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:57:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.gitguardian.com/ai-pentesting-tools-beyond-artex",
+      "learning_score": 3
+    },
+    {
+      "url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840",
+      "author": "lattalayta",
+      "item_id": "hn:50427817",
+      "headline": "Unreal Engine 5.9 is reportedly the first major game engine release built __primarily through agentic workflows__.",
+      "subreddit": null,
+      "source_text": "The first Unreal Engine release built primarily with agentic workflows",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:29:46+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840",
+      "learning_score": 3
+    },
+    {
+      "url": "https://breakingdefense.com/2026/11/key-space-force-satellites-cant-talk-to-each-other-likely-requiring-1b-solution-sources/",
+      "author": "GTP",
+      "item_id": "hn:50428371",
+      "headline": "Key Space Force satellites can't talk to each other, sources say — leaving the Pentagon facing a __$1B interoperability fix__.",
+      "subreddit": null,
+      "source_text": "Space Force satellites can't talk to each other likely requiring $1B solution",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T17:09:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://breakingdefense.com/2026/11/key-space-force-satellites-cant-talk-to-each-other-likely-requiring-1b-solution-sources",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-pro-6000-users-cables-almost-melted-even-when-limited-to-500w-12v-2x6-cables-appear-to-still-cause-problems-show-clear-signs-of-melting",
+      "author": "rndsignals",
+      "item_id": "hn:50428351",
+      "headline": "Nvidia's RTX PRO 6000 is __melting 12V-2x6 cables__ at even 500W — a problem the company said it had already solved.",
+      "subreddit": null,
+      "source_text": "Nvidia RTX PRO 6000 user's cables almost melted, even when limited to 500W",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T17:07:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/pc-components/gpus/nvidia-rtx-pro-6000-users-cables-almost-melted-even-when-limited-to-500w-12v-2x6-cables-appear-to-still-cause-problems-show-clear-signs-of-melting",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/feeRnt/whofundsit/tree/post_demo_cloudflare_cdn",
+      "author": "feearent",
+      "item_id": "hn:50428274",
+      "headline": "An interactive map charts __the funding relationships of public companies__ — click any node to follow the money.",
+      "subreddit": null,
+      "source_text": "Show HN: A visualization map of the funding of public companies",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T17:00:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/feeRnt/whofundsit/tree/post_demo_cloudflare_cdn",
+      "learning_score": 2
+    },
+    {
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
+      "author": "dropbox_miner",
+      "item_id": "hn:50428199",
+      "headline": "AWS __Nitro Sandboxes__ now support isolated and confidential pods across EKS, ECS, and EC2.",
+      "subreddit": null,
+      "source_text": "AWS Nitro Sandboxes on Amazon EKS, ECS and EC2",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:55:26+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/ElRaxy/divorce",
+      "author": "aalex54544",
+      "item_id": "hn:50428173",
+      "headline": "__Divorce__ is an agent skill that generates native HTML, verified with Nu and axe for accessibility compliance.",
+      "subreddit": null,
+      "source_text": "Show HN: Divorce – an agent skill for native HTML, verified with Nu and axe",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:54:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/ElRaxy/divorce",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.rgianni.com/posts/reviving-programmer-happiness/",
+      "author": "digitalWestie",
+      "item_id": "hn:50427833",
+      "headline": "One developer makes the case that __programmer happiness has quietly eroded__ — and sketches what it would take to get it back.",
+      "subreddit": null,
+      "source_text": "Reviving Programmer Happiness",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:30:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://rgianni.com/posts/reviving-programmer-happiness",
+      "learning_score": 2
+    },
+    {
+      "url": "https://interleaf.tulv.in/",
+      "author": "atulvi",
+      "item_id": "hn:50427821",
+      "headline": "__Interleaf__ is an experimental LLM-assisted learning tool that pairs model and student side-by-side through material.",
+      "subreddit": null,
+      "source_text": "Interleaf: An experimental tool for LLM assisted learning",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:30:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://interleaf.tulv.in",
+      "learning_score": 2
+    },
+    {
+      "url": "https://claude-do-my-resume.pages.dev/",
+      "author": "henryobj",
+      "item_id": "hn:50427781",
+      "headline": "A minimal tool called __Claude – Just Do My Resume__ distills the whole resume-writing workflow down to a single page.",
+      "subreddit": null,
+      "source_text": "Claude – just do my resume",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:27:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://claude-do-my-resume.pages.dev",
+      "learning_score": 2
+    },
+    {
+      "url": "https://wealthnow.io/mcp",
+      "author": "humbertolobog",
+      "item_id": "hn:50427707",
+      "headline": "__Wealthnow__ launches a read-only financial data MCP server with OAuth sign-in for secure agent access to your accounts.",
+      "subreddit": null,
+      "source_text": "Show HN: Wealthnow – a read-only financial data MCP server with OAuth sign-in",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-09T16:23:46+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://wealthnow.io/mcp",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-09T17:26:33.535071+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          10093
+        ],
+        "reason": "Standalone philosophy essay on the history of equality language, unrelated to any other candidate or covered item.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10064
+        ],
+        "reason": "Standalone event about Google tying school Search access to acceptance of its AI tools.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10088
+        ],
+        "reason": "Standalone management advice article on AI oversight policies, not tied to a specific news event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10078
+        ],
+        "reason": "Standalone profile of a founder who built a language-learning app using AI coding tools and runs his company with themed AI agents.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10058
+        ],
+        "reason": "Standalone event about Anthropic purchasing natural gas turbines to address AI power demand.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10069
+        ],
+        "reason": "Standalone event covering Trump's 60 Minutes interview with specific AI-related remarks.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10065
+        ],
+        "reason": "Analysis of anti-AI populism emerging from the 2026 midterms — same underlying election event as yesterday:2.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10059
+        ],
+        "reason": "Standalone product launch of Medium's AI writing assistant app TK.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10070
+        ],
+        "reason": "Standalone partnership announcement between Disney and Adobe on generative AI tools.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10060
+        ],
+        "reason": "Standalone product launch of Automattic's vibe-coding deployment platform.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10071
+        ],
+        "reason": "Standalone podcast interview with RIAA CEO about AI copyright and music industry concerns, distinct from yesterday:0's IFPI/Australia lobbying event.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "9aa6ccb60d9c00fca95214eee6da8aaf012a382f7409e4d7ba5a0315eacb4320"
+}
