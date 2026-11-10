@@ -1,0 +1,840 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-10",
+  "issue_id": "20261110",
+  "subject_line": "ISSUE 61110 · 12 STORIES · 11 MIN READ",
+  "intro": "Anthropic is having a week for the history books — hot on the heels of Claude Fable 5.2 claiming the top spot on AI leaderboards, the company has set its IPO price range at a staggering $1.4 trillion valuation, which would make it one of the largest public offerings ever. Meanwhile, Adobe is betting big on agentic AI with sweeping Creative Cloud integrations, a critical SSH vulnerability dubbed \"sshole\" is being actively exploited in the wild, and the tech job market is sending mixed signals with PM roles surging while engineering hiring flatlines. Grab your coffee — there's a lot to unpack today.",
+  "article_count": 12,
+  "stories": [
+    {
+      "id": 10116,
+      "source": "The Verge AI",
+      "title": "Adobe goes all in on agentic AI and MCP integrations at MAX 2026",
+      "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Adobe announced a sweeping set of AI features at its MAX conference in Miami. Highlights include local Model Context Protocol (MCP) integrations that let third-party AI agents from OpenAI, Google, and Anthropic directly access and modify native Creative Cloud project files; a new Firefly prototyping tool called Builder that competes with Figma; a proactive always-on AI agent across its tools; Generative Remove for erasing objects from video in Premiere Pro; AI color grading, relighting in Photoshop, blink and blemish correction in Lightroom; and expanded Firefly AI Assistant capabilities including social media management and recurring background tasks. Adobe is also integrating models from Google, Runway, ElevenLabs, OpenAI, and others.",
+      "opinion": "Adobe is making a massive bet that agentic AI and open interoperability via MCP will keep Creative Cloud indispensable as AI-native competitors emerge. The MCP move is particularly shrewd — by letting any AI agent manipulate native Photoshop or Premiere files, Adobe positions itself as the execution layer regardless of which AI assistant wins.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/FF-AIA-No-Logo-4.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+      "published_at": "2026-11-10T14:00:00+00:00",
+      "fetched_at": "2026-11-10T15:26:53.632737+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10116,
+            "source": "The Verge AI",
+            "title": "Adobe is going all in on agentic AI",
+            "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates"
+          },
+          {
+            "id": 10094,
+            "source": "TechCrunch AI",
+            "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+            "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
+          },
+          {
+            "id": 10117,
+            "source": "The Verge AI",
+            "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+            "url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
+          }
+        ],
+        "badge_count": 3,
+        "conflicts": [],
+        "is_update": false,
+        "reason": "All three cover Adobe's AI announcements at its MAX 2026 conference in Miami, including MCP integrations, agentic AI features, and new generative tools across Creative Cloud apps."
+      }
+    },
+    {
+      "id": 10136,
+      "source": "Lenny's Newsletter",
+      "title": "Anthropic releases Claude Fable 5.2 to top AI leaderboard; early reviews praise creative and coding prowess",
+      "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2, which took the top spot on Artificial Analysis' AI leaderboard, edging out Google's unreleased Gemini 4 Carbon by 5 points. Fable 5.2 is 20% cheaper and up to 30% faster than 5.1, priced at $8 in / $40 out per million tokens. Teams of 1,000 Fable agents built an operating system in 8 days and formalized the proof of a famous math problem in 30 hours. Anthropic exec Dianne Penn characterized the approach as 'pacing, not pausing,' with Fable deliberately held near Opus level in certain skills. Early hands-on testing found Fable 5.2 excels at creative and coding tasks and handles spatial reasoning well but still struggles with web design, with the recommendation to route creative tasks to Fable 5.2 and deeper reasoning to Opus 5.5.",
+      "opinion": "The 'pacing, not pausing' framing is clever positioning — Anthropic gets to claim both leadership and responsibility. The real signal is in the pricing: 20% cheaper and faster suggests the cost curve for frontier models is compressing faster than expected, which pressures every competitor's margins. Where coverage differs: The Rundown AI emphasizes benchmark dominance and agent-scale feats (OS in 8 days); Lenny's Newsletter focuses on individual creative and spatial reasoning tests and recommends keeping Opus 5.5 for deeper reasoning.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Cjws!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a0ef2e-0c97-4e9e-a777-29e1dcb59850_728x524.png",
+      "published_at": "2026-11-09T20:37:49+00:00",
+      "fetched_at": "2026-11-10T15:27:02.730578+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10136,
+            "source": "Lenny's Newsletter",
+            "title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
+            "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative"
+          },
+          {
+            "id": 10114,
+            "source": "The Rundown AI",
+            "title": "Anthropic says ‘pacing, not pausing’ with Fable 5.2",
+            "url": "https://therundownai.beehiiv.com/p/anthropic-says-pacing-not-pausing-with-fable-5-2"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "The Rundown AI emphasizes benchmark dominance and agent-scale feats (OS in 8 days); Lenny's Newsletter focuses on individual creative and spatial reasoning tests and recommends keeping Opus 5.5 for deeper reasoning."
+        ],
+        "is_update": false,
+        "reason": "Both cover the release and capabilities of Anthropic's Claude Fable 5.2 model."
+      }
+    },
+    {
+      "id": 10095,
+      "source": "TechCrunch AI",
+      "title": "Anthropic sets IPO price range targeting up to $1.4 trillion valuation",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic has set its IPO price range at $70 to $78 per share, potentially valuing the company at up to $1.404 trillion fully diluted. The offering includes 825 million Class A shares expected to raise $57.75 billion to $64.35 billion, plus a separate $26 billion private sale of non-voting Class N stock to Google, Nvidia, AMD, Broadcom, Microsoft, Micron, and TSMC. Planned to trade on Nasdaq under ticker 'ANT' around November 19, 2026. Run-rate revenue reached $81 billion by end of October with Q3 revenue at $17 billion, though the company reported a nine-month net loss of $104 billion and compute commitments of $900.9 billion. Co-founders are each selling about $250 million in shares.",
+      "opinion": "A $1.4 trillion valuation for a company with $104 billion in losses and $900.9 billion in compute commitments is a staggering bet on AI's future. The strategic investor lineup for the Class N shares reads like an AI supply chain roll call, suggesting these companies see Anthropic as a must-own infrastructure partner, not just a software investment.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?resize=1200,798",
+      "published_at": "2026-11-10T14:01:39+00:00",
+      "fetched_at": "2026-11-10T15:26:37.677979+00:00"
+    },
+    {
+      "id": 10125,
+      "source": "Ars Technica AI",
+      "title": "Critical 'sshole' SSH vulnerability in Linux under active exploitation",
+      "url": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A critical vulnerability tracked as CVE-2026-123158, nicknamed 'sshole,' is being actively exploited to gain unauthenticated SSH access to privileged accounts on Linux systems. The flaw arises from the interaction between OpenSSH and the musl C library: when an attacker supplies a password longer than 256 characters for a passwordless account, musl's password hashing function erroneously returns an empty string that matches the wildcard stored in /etc/shadow. Alpine Linux is particularly affected. Security firms Greynoise, watchTowr, and Previdian have observed active exploitation including botnet activity and cryptocurrency mining.",
+      "opinion": "This is a nasty interaction bug — neither OpenSSH nor musl is broken alone, but together they create an authentication bypass. Alpine Linux's prevalence in Docker containers means the blast radius is enormous, and many container images won't be patched quickly because they're built-and-forgotten.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
+      "published_at": "2026-11-09T19:41:34+00:00",
+      "fetched_at": "2026-11-10T15:26:56.516254+00:00"
+    },
+    {
+      "id": 10126,
+      "source": "MIT Tech Review AI",
+      "title": "Data center backlash may be about electricity, not anti-tech populism",
+      "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "MIT Technology Review argues that the growing US backlash against data centers is fundamentally about electricity rather than a broader culture war against Big Tech. Reporting from Ashburn, Virginia — the world's largest data center hub — the article notes that data centers there average 54 megawatts each, more than Denver International Airport. Data centers face two problematic options: drawing from the grid and straining local infrastructure, or generating power onsite. New state rules in Virginia require data centers to pay for transmission line costs. Activists insist the fight has always been about power consumption, while industry figures like OpenAI's Chris Lehane frame opposition as a proxy for unease about corporate power.",
+      "opinion": "This is a useful corrective to the narrative that data center opposition is purely ideological. When facilities consume more electricity than major airports, NIMBYism doesn't require any opinion about AI — the electric bill and grid strain are sufficient motivation.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/AP23200525499640.jpg?resize=1200,600",
+      "published_at": "2026-11-09T19:35:33+00:00",
+      "fetched_at": "2026-11-10T15:26:58.31036+00:00"
+    },
+    {
+      "id": 10104,
+      "source": "Guardian AI",
+      "title": "Nvidia faces scandal as tech billionaires seek to rebuild ties with Democrats",
+      "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia is facing a scandal that tests its dominance in the tech industry, while tech billionaires are attempting to rebuild relationships with Democrats following the midterm elections, signaling a broader political realignment in Silicon Valley.",
+      "opinion": "The timing is notable — tech companies scrambling to mend Democratic ties right after midterms suggests they read the anti-AI populism results as a genuine political threat to their regulatory environment, not just voter noise.",
+      "image_url": "https://i.guim.co.uk/img/media/1797818fdcdde90e5abd60f32156a3275cad043f/245_0_2435_1949/master/2435.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=eeee111adaa16b73456ec2fd732cbb42",
+      "published_at": "2026-11-10T15:04:38+00:00",
+      "fetched_at": "2026-11-10T15:26:43.72869+00:00"
+    },
+    {
+      "id": 10127,
+      "source": "MIT Tech Review AI",
+      "title": "AI regulation advocate Scott Wiener wins Nancy Pelosi's former congressional seat",
+      "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Scott Wiener, a California state senator known for AI regulation bills like SB 1047 and SB 53, has won the congressional race for Nancy Pelosi's former San Francisco seat. He plans to push for federal AI regulation including a strong federal regulator, whistleblower protections, testing and auditing requirements, a kill switch mandate, and congressional oversight of AI labs. His campaign received over $3 million from Public First Action, a pro-regulation nonprofit funded partly by Anthropic, though he rejects criticism of industry closeness. He opposes broad federal preemption of state AI laws.",
+      "opinion": "Wiener arriving in Congress with a ready-made AI regulation playbook from his California legislative work could accelerate federal action — but the Anthropic funding connection will give opponents an easy line of attack that his 'regulation' is industry-friendly gatekeeping rather than genuine constraint.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/GettyImages-2303769670.jpg?resize=1200,600",
+      "published_at": "2026-11-09T17:05:43+00:00",
+      "fetched_at": "2026-11-10T15:26:58.543142+00:00"
+    },
+    {
+      "id": 10135,
+      "source": "Lenny's Newsletter",
+      "title": "Tech job market reshuffles: PM roles surge 75% while engineering hiring stalls",
+      "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Lenny Rachitsky's late 2026 tech job market report finds product manager openings up 75% from their March 2023 low, with PM's share of hiring growing from 16% to 21%. Engineering demand has stalled for the first time, with open roles growing just 2.5% this year and actual hiring down to about 113,000 annually — less than half the 2022 peak. Design roles are at a record low. AI skills are now table stakes across all roles. Tech jobs are concentrating in the Bay Area while remote work hits a record low. Tech recruiter openings are up nearly 300% since mid-2023, which could signal future reacceleration. Forward deployed engineer roles are also emerging as a growth area.",
+      "opinion": "The PM surge alongside engineering stagnation suggests companies are shifting from building AI tools to figuring out what to do with them — a classic adoption-phase pattern. The recruiter spike is the most interesting signal: it's historically been a reliable 6-9 month leading indicator for broader hiring waves.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!-6sL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8be609d0-ed10-464c-8b94-d052d45956da_2912x1940.png",
+      "published_at": "2026-11-10T15:04:03+00:00",
+      "fetched_at": "2026-11-10T15:27:02.302323+00:00"
+    },
+    {
+      "id": 10105,
+      "source": "Guardian AI",
+      "title": "Storyboard artists face existential threat as Hollywood adopts generative AI",
+      "url": "https://www.theguardian.com/film/2026/nov/10/storyboard-artists-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI adoption in Hollywood is threatening the jobs of storyboard artists — the illustrators who translate directors' visions into visual sequences before filming. While a fully AI-dominated film industry remains a future prospect, the immediate impact is already being felt by behind-the-scenes professionals, with storyboard artists among the most directly jeopardized by generative AI tools that can produce visual mockups quickly and cheaply.",
+      "opinion": "Storyboard artists represent the pattern likely to repeat across creative industries: AI doesn't replace the headline talent but hollows out the skilled supporting roles that make production possible, concentrating both risk and cost savings on the people with the least leverage to resist.",
+      "image_url": "https://i.guim.co.uk/img/media/c9aabe04cbc4724110ea14f7d6a4bfe25a89ef20/58_263_5069_4056/master/5069.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2b0c11315b8bfe41142f048984e56547",
+      "published_at": "2026-11-10T13:00:24+00:00",
+      "fetched_at": "2026-11-10T15:26:44.152616+00:00"
+    },
+    {
+      "id": 10106,
+      "source": "Guardian AI",
+      "title": "Critics warn ChatGPT's Teen Mode may harm adolescent psychological development",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/10/chatgpt-teen-mode-cognitive-skills",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Robin Kirman argues in The Guardian that OpenAI's Teen Mode for ChatGPT, which automatically enrolls users under 18 following a lawsuit alleging ChatGPT contributed to a teenager's suicide, may deprive teenagers of a fundamental developmental need: the ability to develop a reliable sense of their own minds. The piece examines how the tech industry has contested causal links between its products and harms cited in lawsuits, while suggesting that safety-focused modes may still impair young people's critical developmental experiences.",
+      "opinion": "It's a genuinely interesting paradox: a safety mode designed to protect teens might itself cause a subtler harm by replacing the friction and ambiguity that adolescents need to develop independent judgment. Whether that's a real risk or philosophical hand-wringing depends entirely on usage intensity.",
+      "image_url": "https://i.guim.co.uk/img/media/7c4e62acbc9ca4257774b10197f801201e6aa2a9/292_0_2917_2333/master/2917.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=6160a41f6c6b6bdfc6b096b59c9b7892",
+      "published_at": "2026-11-10T11:00:50+00:00",
+      "fetched_at": "2026-11-10T15:26:44.569165+00:00"
+    },
+    {
+      "id": 10096,
+      "source": "TechCrunch AI",
+      "title": "Spotify's AI DJ adds nine voice options and a less-chatty mode",
+      "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Spotify is upgrading its AI DJ feature, used by over 94 million Premium listeners, with new customization options. Users can now choose from nine voices — seven English with various accents and two Spanish — each with distinct personalities, and can toggle off commentary between songs. The original AI DJ voice 'X' remains available. The update rolls out November 10, 2026 across 95+ global markets.",
+      "opinion": "The 'toggle off commentary' option is telling — it suggests a significant chunk of users wanted the curation without the parasocial DJ relationship. The 94 million listener figure confirms AI DJ is one of Spotify's most successful feature launches regardless.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/Spotify-AI-DJ-Header.jpg?w=978",
+      "published_at": "2026-11-10T14:00:00+00:00",
+      "fetched_at": "2026-11-10T15:26:38.146164+00:00"
+    },
+    {
+      "id": 10152,
+      "source": "Aeon",
+      "title": "Profile: Roshi Joan Halifax, Buddhist teacher who has spent 50 years working with suffering and death",
+      "url": "https://aeon.co/essays/how-does-roshi-joan-halifax-make-sense-of-her-buddhist-life",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Aeon profiles Roshi Joan Halifax, an 84-year-old Buddhist teacher, medical anthropologist, and caregiver to the dying who has spent over 50 years working in burn units, prisons, refugee camps, and at bedsides of the terminally ill. The piece traces her life from childhood polio through founding Upaya Zen Center in Santa Fe, prompted by a visit during her recovery from two open-heart surgeries in 12 days. Halifax describes her near-death experience during surgery as her 'latest charnel ground' — a place of confrontation with mortality she has sought throughout her life.",
+      "opinion": "A quietly powerful profile that stands out precisely because it has nothing to do with AI or tech — a reminder that the most interesting human stories are still about the irreducibly human experiences of suffering, service, and mortality.",
+      "image_url": "https://images.aeonmedia.co/images/1f0bf1c6-e0ad-490d-b4c1-685617a95d62/essay-from-kodo-dsc02003.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-10T11:00:00+00:00",
+      "fetched_at": "2026-11-10T15:27:17.392311+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10116,
+          "source": "The Verge AI",
+          "title": "Adobe goes all in on agentic AI and MCP integrations at MAX 2026",
+          "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Adobe announced a sweeping set of AI features at its MAX conference in Miami. Highlights include local Model Context Protocol (MCP) integrations that let third-party AI agents from OpenAI, Google, and Anthropic directly access and modify native Creative Cloud project files; a new Firefly prototyping tool called Builder that competes with Figma; a proactive always-on AI agent across its tools; Generative Remove for erasing objects from video in Premiere Pro; AI color grading, relighting in Photoshop, blink and blemish correction in Lightroom; and expanded Firefly AI Assistant capabilities including social media management and recurring background tasks. Adobe is also integrating models from Google, Runway, ElevenLabs, OpenAI, and others.",
+          "opinion": "Adobe is making a massive bet that agentic AI and open interoperability via MCP will keep Creative Cloud indispensable as AI-native competitors emerge. The MCP move is particularly shrewd — by letting any AI agent manipulate native Photoshop or Premiere files, Adobe positions itself as the execution layer regardless of which AI assistant wins.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/FF-AIA-No-Logo-4.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+          "published_at": "2026-11-10T14:00:00+00:00",
+          "fetched_at": "2026-11-10T15:26:53.632737+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10116,
+                "source": "The Verge AI",
+                "title": "Adobe is going all in on agentic AI",
+                "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates"
+              },
+              {
+                "id": 10094,
+                "source": "TechCrunch AI",
+                "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+                "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/"
+              },
+              {
+                "id": 10117,
+                "source": "The Verge AI",
+                "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+                "url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates"
+              }
+            ],
+            "badge_count": 3,
+            "conflicts": [],
+            "is_update": false,
+            "reason": "All three cover Adobe's AI announcements at its MAX 2026 conference in Miami, including MCP integrations, agentic AI features, and new generative tools across Creative Cloud apps."
+          }
+        },
+        {
+          "id": 10136,
+          "source": "Lenny's Newsletter",
+          "title": "Anthropic releases Claude Fable 5.2 to top AI leaderboard; early reviews praise creative and coding prowess",
+          "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2, which took the top spot on Artificial Analysis' AI leaderboard, edging out Google's unreleased Gemini 4 Carbon by 5 points. Fable 5.2 is 20% cheaper and up to 30% faster than 5.1, priced at $8 in / $40 out per million tokens. Teams of 1,000 Fable agents built an operating system in 8 days and formalized the proof of a famous math problem in 30 hours. Anthropic exec Dianne Penn characterized the approach as 'pacing, not pausing,' with Fable deliberately held near Opus level in certain skills. Early hands-on testing found Fable 5.2 excels at creative and coding tasks and handles spatial reasoning well but still struggles with web design, with the recommendation to route creative tasks to Fable 5.2 and deeper reasoning to Opus 5.5.",
+          "opinion": "The 'pacing, not pausing' framing is clever positioning — Anthropic gets to claim both leadership and responsibility. The real signal is in the pricing: 20% cheaper and faster suggests the cost curve for frontier models is compressing faster than expected, which pressures every competitor's margins. Where coverage differs: The Rundown AI emphasizes benchmark dominance and agent-scale feats (OS in 8 days); Lenny's Newsletter focuses on individual creative and spatial reasoning tests and recommends keeping Opus 5.5 for deeper reasoning.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!Cjws!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd1a0ef2e-0c97-4e9e-a777-29e1dcb59850_728x524.png",
+          "published_at": "2026-11-09T20:37:49+00:00",
+          "fetched_at": "2026-11-10T15:27:02.730578+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10136,
+                "source": "Lenny's Newsletter",
+                "title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
+                "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative"
+              },
+              {
+                "id": 10114,
+                "source": "The Rundown AI",
+                "title": "Anthropic says ‘pacing, not pausing’ with Fable 5.2",
+                "url": "https://therundownai.beehiiv.com/p/anthropic-says-pacing-not-pausing-with-fable-5-2"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "The Rundown AI emphasizes benchmark dominance and agent-scale feats (OS in 8 days); Lenny's Newsletter focuses on individual creative and spatial reasoning tests and recommends keeping Opus 5.5 for deeper reasoning."
+            ],
+            "is_update": false,
+            "reason": "Both cover the release and capabilities of Anthropic's Claude Fable 5.2 model."
+          }
+        },
+        {
+          "id": 10095,
+          "source": "TechCrunch AI",
+          "title": "Anthropic sets IPO price range targeting up to $1.4 trillion valuation",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic has set its IPO price range at $70 to $78 per share, potentially valuing the company at up to $1.404 trillion fully diluted. The offering includes 825 million Class A shares expected to raise $57.75 billion to $64.35 billion, plus a separate $26 billion private sale of non-voting Class N stock to Google, Nvidia, AMD, Broadcom, Microsoft, Micron, and TSMC. Planned to trade on Nasdaq under ticker 'ANT' around November 19, 2026. Run-rate revenue reached $81 billion by end of October with Q3 revenue at $17 billion, though the company reported a nine-month net loss of $104 billion and compute commitments of $900.9 billion. Co-founders are each selling about $250 million in shares.",
+          "opinion": "A $1.4 trillion valuation for a company with $104 billion in losses and $900.9 billion in compute commitments is a staggering bet on AI's future. The strategic investor lineup for the Class N shares reads like an AI supply chain roll call, suggesting these companies see Anthropic as a must-own infrastructure partner, not just a software investment.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?resize=1200,798",
+          "published_at": "2026-11-10T14:01:39+00:00",
+          "fetched_at": "2026-11-10T15:26:37.677979+00:00"
+        },
+        {
+          "id": 10125,
+          "source": "Ars Technica AI",
+          "title": "Critical 'sshole' SSH vulnerability in Linux under active exploitation",
+          "url": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A critical vulnerability tracked as CVE-2026-123158, nicknamed 'sshole,' is being actively exploited to gain unauthenticated SSH access to privileged accounts on Linux systems. The flaw arises from the interaction between OpenSSH and the musl C library: when an attacker supplies a password longer than 256 characters for a passwordless account, musl's password hashing function erroneously returns an empty string that matches the wildcard stored in /etc/shadow. Alpine Linux is particularly affected. Security firms Greynoise, watchTowr, and Previdian have observed active exploitation including botnet activity and cryptocurrency mining.",
+          "opinion": "This is a nasty interaction bug — neither OpenSSH nor musl is broken alone, but together they create an authentication bypass. Alpine Linux's prevalence in Docker containers means the blast radius is enormous, and many container images won't be patched quickly because they're built-and-forgotten.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg",
+          "published_at": "2026-11-09T19:41:34+00:00",
+          "fetched_at": "2026-11-10T15:26:56.516254+00:00"
+        },
+        {
+          "id": 10126,
+          "source": "MIT Tech Review AI",
+          "title": "Data center backlash may be about electricity, not anti-tech populism",
+          "url": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "MIT Technology Review argues that the growing US backlash against data centers is fundamentally about electricity rather than a broader culture war against Big Tech. Reporting from Ashburn, Virginia — the world's largest data center hub — the article notes that data centers there average 54 megawatts each, more than Denver International Airport. Data centers face two problematic options: drawing from the grid and straining local infrastructure, or generating power onsite. New state rules in Virginia require data centers to pay for transmission line costs. Activists insist the fight has always been about power consumption, while industry figures like OpenAI's Chris Lehane frame opposition as a proxy for unease about corporate power.",
+          "opinion": "This is a useful corrective to the narrative that data center opposition is purely ideological. When facilities consume more electricity than major airports, NIMBYism doesn't require any opinion about AI — the electric bill and grid strain are sufficient motivation.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/AP23200525499640.jpg?resize=1200,600",
+          "published_at": "2026-11-09T19:35:33+00:00",
+          "fetched_at": "2026-11-10T15:26:58.31036+00:00"
+        },
+        {
+          "id": 10104,
+          "source": "Guardian AI",
+          "title": "Nvidia faces scandal as tech billionaires seek to rebuild ties with Democrats",
+          "url": "https://www.theguardian.com/global/2026/nov/10/nvidias-silicon-valley-political-power",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia is facing a scandal that tests its dominance in the tech industry, while tech billionaires are attempting to rebuild relationships with Democrats following the midterm elections, signaling a broader political realignment in Silicon Valley.",
+          "opinion": "The timing is notable — tech companies scrambling to mend Democratic ties right after midterms suggests they read the anti-AI populism results as a genuine political threat to their regulatory environment, not just voter noise.",
+          "image_url": "https://i.guim.co.uk/img/media/1797818fdcdde90e5abd60f32156a3275cad043f/245_0_2435_1949/master/2435.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=eeee111adaa16b73456ec2fd732cbb42",
+          "published_at": "2026-11-10T15:04:38+00:00",
+          "fetched_at": "2026-11-10T15:26:43.72869+00:00"
+        },
+        {
+          "id": 10127,
+          "source": "MIT Tech Review AI",
+          "title": "AI regulation advocate Scott Wiener wins Nancy Pelosi's former congressional seat",
+          "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Scott Wiener, a California state senator known for AI regulation bills like SB 1047 and SB 53, has won the congressional race for Nancy Pelosi's former San Francisco seat. He plans to push for federal AI regulation including a strong federal regulator, whistleblower protections, testing and auditing requirements, a kill switch mandate, and congressional oversight of AI labs. His campaign received over $3 million from Public First Action, a pro-regulation nonprofit funded partly by Anthropic, though he rejects criticism of industry closeness. He opposes broad federal preemption of state AI laws.",
+          "opinion": "Wiener arriving in Congress with a ready-made AI regulation playbook from his California legislative work could accelerate federal action — but the Anthropic funding connection will give opponents an easy line of attack that his 'regulation' is industry-friendly gatekeeping rather than genuine constraint.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/GettyImages-2303769670.jpg?resize=1200,600",
+          "published_at": "2026-11-09T17:05:43+00:00",
+          "fetched_at": "2026-11-10T15:26:58.543142+00:00"
+        },
+        {
+          "id": 10135,
+          "source": "Lenny's Newsletter",
+          "title": "Tech job market reshuffles: PM roles surge 75% while engineering hiring stalls",
+          "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Lenny Rachitsky's late 2026 tech job market report finds product manager openings up 75% from their March 2023 low, with PM's share of hiring growing from 16% to 21%. Engineering demand has stalled for the first time, with open roles growing just 2.5% this year and actual hiring down to about 113,000 annually — less than half the 2022 peak. Design roles are at a record low. AI skills are now table stakes across all roles. Tech jobs are concentrating in the Bay Area while remote work hits a record low. Tech recruiter openings are up nearly 300% since mid-2023, which could signal future reacceleration. Forward deployed engineer roles are also emerging as a growth area.",
+          "opinion": "The PM surge alongside engineering stagnation suggests companies are shifting from building AI tools to figuring out what to do with them — a classic adoption-phase pattern. The recruiter spike is the most interesting signal: it's historically been a reliable 6-9 month leading indicator for broader hiring waves.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!-6sL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8be609d0-ed10-464c-8b94-d052d45956da_2912x1940.png",
+          "published_at": "2026-11-10T15:04:03+00:00",
+          "fetched_at": "2026-11-10T15:27:02.302323+00:00"
+        },
+        {
+          "id": 10105,
+          "source": "Guardian AI",
+          "title": "Storyboard artists face existential threat as Hollywood adopts generative AI",
+          "url": "https://www.theguardian.com/film/2026/nov/10/storyboard-artists-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI adoption in Hollywood is threatening the jobs of storyboard artists — the illustrators who translate directors' visions into visual sequences before filming. While a fully AI-dominated film industry remains a future prospect, the immediate impact is already being felt by behind-the-scenes professionals, with storyboard artists among the most directly jeopardized by generative AI tools that can produce visual mockups quickly and cheaply.",
+          "opinion": "Storyboard artists represent the pattern likely to repeat across creative industries: AI doesn't replace the headline talent but hollows out the skilled supporting roles that make production possible, concentrating both risk and cost savings on the people with the least leverage to resist.",
+          "image_url": "https://i.guim.co.uk/img/media/c9aabe04cbc4724110ea14f7d6a4bfe25a89ef20/58_263_5069_4056/master/5069.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2b0c11315b8bfe41142f048984e56547",
+          "published_at": "2026-11-10T13:00:24+00:00",
+          "fetched_at": "2026-11-10T15:26:44.152616+00:00"
+        },
+        {
+          "id": 10106,
+          "source": "Guardian AI",
+          "title": "Critics warn ChatGPT's Teen Mode may harm adolescent psychological development",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/10/chatgpt-teen-mode-cognitive-skills",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Robin Kirman argues in The Guardian that OpenAI's Teen Mode for ChatGPT, which automatically enrolls users under 18 following a lawsuit alleging ChatGPT contributed to a teenager's suicide, may deprive teenagers of a fundamental developmental need: the ability to develop a reliable sense of their own minds. The piece examines how the tech industry has contested causal links between its products and harms cited in lawsuits, while suggesting that safety-focused modes may still impair young people's critical developmental experiences.",
+          "opinion": "It's a genuinely interesting paradox: a safety mode designed to protect teens might itself cause a subtler harm by replacing the friction and ambiguity that adolescents need to develop independent judgment. Whether that's a real risk or philosophical hand-wringing depends entirely on usage intensity.",
+          "image_url": "https://i.guim.co.uk/img/media/7c4e62acbc9ca4257774b10197f801201e6aa2a9/292_0_2917_2333/master/2917.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=6160a41f6c6b6bdfc6b096b59c9b7892",
+          "published_at": "2026-11-10T11:00:50+00:00",
+          "fetched_at": "2026-11-10T15:26:44.569165+00:00"
+        },
+        {
+          "id": 10096,
+          "source": "TechCrunch AI",
+          "title": "Spotify's AI DJ adds nine voice options and a less-chatty mode",
+          "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Spotify is upgrading its AI DJ feature, used by over 94 million Premium listeners, with new customization options. Users can now choose from nine voices — seven English with various accents and two Spanish — each with distinct personalities, and can toggle off commentary between songs. The original AI DJ voice 'X' remains available. The update rolls out November 10, 2026 across 95+ global markets.",
+          "opinion": "The 'toggle off commentary' option is telling — it suggests a significant chunk of users wanted the curation without the parasocial DJ relationship. The 94 million listener figure confirms AI DJ is one of Spotify's most successful feature launches regardless.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/Spotify-AI-DJ-Header.jpg?w=978",
+          "published_at": "2026-11-10T14:00:00+00:00",
+          "fetched_at": "2026-11-10T15:26:38.146164+00:00"
+        },
+        {
+          "id": 10152,
+          "source": "Aeon",
+          "title": "Profile: Roshi Joan Halifax, Buddhist teacher who has spent 50 years working with suffering and death",
+          "url": "https://aeon.co/essays/how-does-roshi-joan-halifax-make-sense-of-her-buddhist-life",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Aeon profiles Roshi Joan Halifax, an 84-year-old Buddhist teacher, medical anthropologist, and caregiver to the dying who has spent over 50 years working in burn units, prisons, refugee camps, and at bedsides of the terminally ill. The piece traces her life from childhood polio through founding Upaya Zen Center in Santa Fe, prompted by a visit during her recovery from two open-heart surgeries in 12 days. Halifax describes her near-death experience during surgery as her 'latest charnel ground' — a place of confrontation with mortality she has sought throughout her life.",
+          "opinion": "A quietly powerful profile that stands out precisely because it has nothing to do with AI or tech — a reminder that the most interesting human stories are still about the irreducibly human experiences of suffering, service, and mortality.",
+          "image_url": "https://images.aeonmedia.co/images/1f0bf1c6-e0ad-490d-b4c1-685617a95d62/essay-from-kodo-dsc02003.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-10T11:00:00+00:00",
+          "fetched_at": "2026-11-10T15:27:17.392311+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/IntuitMachine/status/2119796687728210278",
+      "author": "IntuitMachine",
+      "headline": "Anthropic publishes __new security guidelines for AI agents__, giving builders a clearer framework for safe deployments.",
+      "tweet_id": "4141eba9-b6bc-8141-9f6f-cc3dfbdd3a17",
+      "source_text": "Anthropic publishes new security guidelines for AI agents. https://t.co/BLTI6u4ysc",
+      "created_time": "2026-11-10T02:37:00.000Z",
+      "canonical_url": "https://twitter.com/IntuitMachine/status/2119796687728210278",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2119907134796451958",
+      "author": "Zephyr_hg",
+      "headline": "This __inbox-and-calendar queue prompt__ reads your open loops and sorts each one into decide, draft, or drop.",
+      "tweet_id": "4141eba9-b6bc-8119-a860-c14b74f1446a",
+      "source_text": "Send this queue prompt to any LLM or AI agent\n\nIt reads your inbox and calendar → finds every open loop → sorts each into decide, draft or drop → hands you one queue to clear first...\n\nCopy it below. Thank me later: https://t.co/tTlzo3MAnN https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-10T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2119907134796451958",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/nurijanian/status/2119761169053552851",
+      "author": "nurijanian",
+      "headline": "Three pre-ship skills worth wiring into any agent: __/experiment-design, /success-metric, and /via-negativa__.",
+      "tweet_id": "4141eba9-b6bc-8147-b55f-ebbc1dbc9903",
+      "source_text": "add to the list of pre-ship skills for agents\n\n- /experiment-design: turn a fast idea into a test\n- /success-metric: pick a number that won't fool you\n- /via-negativa: simplify the product by cutting https://t.co/0xNDOBO0oC",
+      "created_time": "2026-11-10T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/nurijanian/status/2119761169053552851",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMovez/status/2119885614640505198",
+      "author": "0xMovez",
+      "headline": "0xMovez claims a single Claude Fable 5.2 prompt can simulate __a team of 20+ senior developers at 10% of the cost__.",
+      "tweet_id": "4141eba9-b6bc-81bd-881e-e6bd83c921bc",
+      "source_text": "Fable 5.2 is insane for building a team of coding agents...  \n\nsend this prompt to Claude Fable 5.2 and it will turn into a team of 20+ senior developers at 10% of the cost  \n\nthen read the full guide to building self-improving agent team Fable in the article below ↓ https://t.co/ufb3ZDE9wg https://t.co/3Otg9lSWlZ",
+      "created_time": "2026-11-10T00:32:00.000Z",
+      "canonical_url": "https://twitter.com/0xMovez/status/2119885614640505198",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/vartekxx/status/2119888915557671408",
+      "author": "vartekxx",
+      "headline": "GrokBot engineers released an __11-page guide to cutting token usage from 100% to 20%__ — the core move is replacing scheduled runs with event triggers.",
+      "tweet_id": "4141eba9-b6bc-818a-a48f-d8df5f960e10",
+      "source_text": "GrokBot engineers just released a 11-page PDF on GrokBot token usage and how to cut it from 100% to 20%:\n\nwhy GrokBot burns your weekly pool, what eats the most and how to cut usage from 100% to 20% in my 11-page research:\n\nstep 1 → usage is one equation: wake-ups × context × steps × fan-out. The factors multiply, so four small cuts beat one big one\n\nstep 2 → it's one pool. Grok chat, GrokBot and Cursor drain the same weekly %. No per-bot breakdown, no warning before 100%\n\nstep 3 → wake-ups burn first. routine every 15 min runs 672 times a week, even when nothing changed. Test runs count too\n\nstep 4 → swap schedules for triggers. Slack mention, email, GitHub event, webhook. Same job, 672 runs → 15\n\nstep 5 → every reply re-reads the whole thread. GrokBot on one job for 6 weeks carries all of it into every run. Retire it with 300-word handoff note\n\nstep 6 → trim the profile and memory. They ride along on every step, thousands of times a week\n\nstep 7 → give every task finish line and a stop rule. Fails twice? Stop and ask. Retry loops are the worst leak\n\nstep 8 → apps over clicking. Open, screenshot, scroll, click is 7 steps. A connected app is 1 call\n\nstep 9 → one owner per job. 4 GrokBots in a group chat = up to 4 billed replies per question. Cap bot-to-bot at 2 messages\n\nstep 10 → at 80% midweek switch to low-usage mode. Pause routines, final results only, set a spend cap before 100%\n\nthe result: same jobs, 2,000 units → 400. Wake-ups alone cut the week in half. pool didn't get bigger. Your GrokBots got leaner.\n\nthis 11-page PDF teaches you how to never hit your GrokBot limit again\n\nsave now, then read how to save GrokBot tokens in the article below",
+      "created_time": "2026-11-10T00:27:00.000Z",
+      "canonical_url": "https://twitter.com/vartekxx/status/2119888915557671408",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2119898687803621427",
+      "author": "ClaudeDevs",
+      "headline": "Anthropic's new guide breaks down __when to use Fable 5.2 vs. Opus 5.5 vs. Sonnet vs. Haiku__ — and when to dial effort up instead of switching models entirely.",
+      "tweet_id": "4131eba9-b6bc-81df-8665-ef194686ab40",
+      "source_text": "Which Claude model should you build with? \n\nOur new guide breaks down when to use Fable 5.2, Opus 5.5, Sonnet or Haiku. It also covers when to adjust effort instead of switching models, and how to save cost by putting subagents on smaller models.\n\nhttps://t.co/1VmXqhkZB0",
+      "created_time": "2026-11-09T21:47:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2119898687803621427",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2119835510369644762",
+      "author": "noahkagan",
+      "headline": "Noah Kagan had Claude grade his last 90 days of work and found __3 pricing changes beat 40 projects__ — worth about $219K a year.",
+      "tweet_id": "4131eba9-b6bc-81dc-8118-e41ee3d09148",
+      "source_text": "This is my FAVORITE prompt of the year. Copy it! 🏆\n\nI had Claude grade every piece of work I did in the last 90 days. \n\nAnd then use that to shape what I'm doing the next month!\n\n3 pricing changes beat 40 projects. Worth about $219K a year. 🤯\n\nPrompt to run it on yours at the end 👇",
+      "created_time": "2026-11-09T20:12:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2119835510369644762",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/lennysan/status/2119957080492966371",
+      "author": "lennysan",
+      "headline": "Lenny Rachitsky launches __The Next 50__, a quarterly ranking of the hottest early-stage startups by growth, funding, and investor interest.",
+      "tweet_id": "4141eba9-b6bc-8179-b83c-eefeb60229d1",
+      "source_text": "The best time to join a rocketship is before everyone knows about it.\n\nI’m excited to launch The Next 50: the 50 hottest early-stage startups to keep an eye on (and try to join).\n\nUsing @harmonic_ai’s data, the juiciest startup dataset out there, we looked at every early-stage startup and ranked them on headcount growth, recent funding, and investor interest.\n\nWe then picked the top 50. \n\nHere's the full list: https://t.co/4NKVmf3qI9\n\nWe’ll update it quarterly, and I’d love your feedback on what other factors we should consider.\n\nP.S. This is in addition to the Lenny 100, the top 100 well-known companies with the highest talent density, tackling the most ambitious problems: https://t.co/zko7uMaIUK",
+      "created_time": "2026-11-10T02:07:00.000Z",
+      "canonical_url": "https://twitter.com/lennysan/status/2119957080492966371",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/doublenickk/status/2119843057948414169",
+      "author": "doublenickk",
+      "headline": "Anthropic found that __splitting Claude into builder and evaluator agents__ produces better UI than any \"make it beautiful\" prompt.",
+      "tweet_id": "4141eba9-b6bc-8111-b177-cb961a1afe49",
+      "source_text": "Anthropic found a way to make Claude build better-looking apps, and the trick isn't a better design prompt\n\nInstead of asking Claude to make an interface “beautiful,” researchers separated the agent that builds it from the one that evaluates it.\n\nThe evaluator checks concrete criteria, including visual coherence and originality, then feeds the results back into another iteration.\n\nThis turns subjective design feedback into a repeatable improvement process.\n\nIf you're building with Claude Code, try the same approach: \n\nDefine visual standards, let a separate agent critique the output, and require revisions before approval.",
+      "created_time": "2026-11-10T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/doublenickk/status/2119843057948414169",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/sarunw/status/2119807420096512398",
+      "author": "sarunw",
+      "headline": "iOS 26 adds __`.tabBarMinimizeBehavior(.onScrollDown)`__ to SwiftUI's TabView, collapsing the tab bar as users scroll.",
+      "tweet_id": "4141eba9-b6bc-818e-b76e-eb4420a0f3a7",
+      "source_text": "iOS 26 can minimize a SwiftUI tab bar as the user scrolls down.\n\nAdd `.tabBarMinimizeBehavior(.onScrollDown)` to `TabView`. It collapses to the selected tab and expands again when the user scrolls up. https://t.co/B5qNP298MU",
+      "created_time": "2026-11-10T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/sarunw/status/2119807420096512398",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/sermakarevich/status/2119698142622789770",
+      "author": "sermakarevich",
+      "headline": "Eval-driven development earns its keep most on __self-deployed SLMs__, where budget constraints make every wasted iteration real.",
+      "tweet_id": "4141eba9-b6bc-81cb-a557-f60beb4a5c36",
+      "source_text": "Eval-driven development is a great approach especially when you have to use SLMs on your project or have strict budget. I am using it atm on a project with European bank where all models have to be self-deployed. \n\nMore about:\n\n- Evals:\nhttps://t.co/qi6KWdzW29\n\n- SLMs vs LLMs:\nhttps://t.co/vpRgptnIkb",
+      "created_time": "2026-11-10T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/sermakarevich/status/2119698142622789770",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/davekiss/status/2119851595836092686",
+      "author": "davekiss",
+      "headline": "Dave Kiss argues every rule in your __AGENTS.md__ should earn its place against a real metric — most never get audited.",
+      "tweet_id": "4141eba9-b6bc-8141-91de-e04c5fba997b",
+      "source_text": "Your AGENTS.md probably only ever grows bc you add a line every time your agent messes up\n\nYou should make most rules you give it keep earning their place against a real number\n\nHere's my approach: https://t.co/KdCdnVdk3L",
+      "created_time": "2026-11-10T00:57:00.000Z",
+      "canonical_url": "https://twitter.com/davekiss/status/2119851595836092686",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/minheo93698092/status/2119765548204515549",
+      "author": "minheo93698092",
+      "headline": "__agent-desktop__ reads the OS accessibility tree as JSON instead of screenshots, cutting token costs for computer-use agents.",
+      "tweet_id": "4131eba9-b6bc-818b-b3b9-ce2cb989444a",
+      "source_text": "GrokBot이나 Claude Code에 컴퓨터 작업을 시킨다면 agent-desktop을 붙여 보세요. \n\n화면을 사진으로 보는 대신 앱 구조를 바로 읽어서 훨씬 많은 토큰을 절약할수 있습니다.\n저는 이걸로 갈아탔습니다.\n\n기본 컴퓨터 유즈는 스크린샷을 보고 좌표를 눌러요.\nagent-desktop은 운영체제 접근성 트리를 JSON으로 읽고, 요소마다 붙은 ref(이름표)를 눌러요.\n\n그래서 이런 점이 달라요.\n1. 이미지가 아니라 글자로 읽어서 픽셀 위치를 맞출 필요가 없어요\n2. 기본은 마우스와 포커스를 안 건드려서 다른 작업과 안 부딪혀요\n3. 화면이 바뀌면 STALE_REF로 알려 줘서 다시 읽고 이어 가요\n4. 다시 해도 되는 실패인지 응답에 적혀 있어요\n\n설치: npm install -g agent-desktop\nMCP로 붙이기: agent-desktop mcp\nmacOS·Windows·Linux, Apache-2.0\n\n봇 컴퓨터 작업에서 더 답답한 건 느린 속도인가요, 엉뚱한 데 누르는 건가요?아니면 망할 토큰인가요?ㅋ\n\nhttps://t.co/yxW3lt5EzU",
+      "created_time": "2026-11-09T23:02:00.000Z",
+      "canonical_url": "https://twitter.com/minheo93698092/status/2119765548204515549",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/coreyhainesco/status/2119876194606907819",
+      "author": "coreyhainesco",
+      "headline": "Corey Haines built a skill that __applies persuasion psychology to your landing page__ — loss aversion in the headline, risk reversal at the CTA, every change annotated with the principle behind it.",
+      "tweet_id": "4131eba9-b6bc-814d-9a63-d7d278b250b3",
+      "source_text": "I made a skill that applies persuasion psychology to your actual page.\n\nLoss aversion in the headline, specificity in the proof, risk reversal at the button — every change annotated with the principle behind it, so the page converts AND you learn why.\n\nnpx skills add coreyhaines31/marketingskills",
+      "created_time": "2026-11-09T22:57:00.000Z",
+      "canonical_url": "https://twitter.com/coreyhainesco/status/2119876194606907819",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://medium.com/@sebuzdugan/100-parallel-harbor-rollouts-on-tensorlake-47-rollouts-minute-at-37-per-batch-46c4f6aefb19",
+      "author": "sebuzdugan",
+      "item_id": "hn:50441559",
+      "headline": "__100 parallel Harbor rollouts on Tensorlake__ hit 47 rollouts per minute at 37¢ per batch — a detailed ML infrastructure benchmark.",
+      "subreddit": null,
+      "source_text": "Harbor: 100 parallel rollouts on Tensorlake, 47 rollouts/minute at 37¢ per batch",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:14:22+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/@sebuzdugan/100-parallel-harbor-rollouts-on-tensorlake-47-rollouts-minute-at-37-per-batch-46c4f6aefb19",
+      "learning_score": 3
+    },
+    {
+      "url": "https://blog.railway.com/p/incident-report-october-security-incident",
+      "author": "meetpateltech",
+      "item_id": "hn:50441465",
+      "headline": "Railway published its __October 21st security incident report__, detailing exactly how the attack unfolded and what it exposed in their infrastructure.",
+      "subreddit": null,
+      "source_text": "Incident Report: October 21st Security Attack",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:08:58+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.railway.com/p/incident-report-october-security-incident",
+      "learning_score": 3
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50441703",
+      "author": "pontes",
+      "item_id": "hn:50441703",
+      "headline": "Hacker News users say __Grok 4.7 got quietly nerfed__, reporting a noticeable drop in reasoning quality after a recent update.",
+      "subreddit": null,
+      "source_text": "Ask HN: Anyone else feels Grok 4.7 got nerfed?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:25:04+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=50441703",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.404media.co/reverse-engineer-anything-ai-companies-crack-down-on-the-coolest-thing-people-were-doing-with-ai/",
+      "author": "toomuchtodo",
+      "item_id": "hn:50441618",
+      "headline": "AI companies are __cracking down on reverse engineering__ — and 404 Media reports it was among the most creative uses people had found for these models.",
+      "subreddit": null,
+      "source_text": "AI Companies Crack Down on the Coolest Thing People Were Doing with AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:18:54+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://404media.co/reverse-engineer-anything-ai-companies-crack-down-on-the-coolest-thing-people-were-doing-with-ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://investors.xanadu.ai/news-releases/news-release-details/xanadu-and-hyperlight-achieve-breakthrough-nearly-3x-reduction",
+      "author": "sshah03",
+      "item_id": "hn:50441593",
+      "headline": "Xanadu and HyperLight report a __nearly 3x reduction in photonic switch loss__, removing a key hardware barrier to practical quantum computing.",
+      "subreddit": null,
+      "source_text": "Xanadu and HyperLight Breakthrough of Nearly 3x Reduction in Optical Switch Loss",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:17:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://investors.xanadu.ai/news-releases/news-release-details/xanadu-and-hyperlight-achieve-breakthrough-nearly-3x-reduction",
+      "learning_score": 2
+    },
+    {
+      "url": "https://clickhouse.com/blog/observability-ui-is-dead-whats-next",
+      "author": "ElasticRetrieve",
+      "item_id": "hn:50441585",
+      "headline": "ClickHouse makes the case that __the observability UI as we know it is dead__ and lays out what the next generation of tooling should look like.",
+      "subreddit": null,
+      "source_text": "The observability UI as we know it is dead. So what comes next?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:16:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://clickhouse.com/blog/observability-ui-is-dead-whats-next",
+      "learning_score": 2
+    },
+    {
+      "url": "https://blog.cloudflare.com/optimizing-core-unit-boot-time/",
+      "author": "birdculture",
+      "item_id": "hn:50441562",
+      "headline": "Cloudflare explains how it cut __core unit boot time from hours to minutes__ — the architectural changes that made it possible.",
+      "subreddit": null,
+      "source_text": "We reduced core unit boot time from hours to minutes",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:14:43+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.cloudflare.com/optimizing-core-unit-boot-time",
+      "learning_score": 2
+    },
+    {
+      "url": "https://persona.earthpilot.ai/models/anthropic/claude-fable-5.2",
+      "author": "ada1981",
+      "item_id": "hn:50441525",
+      "headline": "Anthropic's __Claude Fable 5.2__ lands on Personality Bench, Earthpilot's evaluation platform for testing model personality consistency.",
+      "subreddit": null,
+      "source_text": "Claude Fable 5.2 from Anthropic, Added to Personality Bench",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:12:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://persona.earthpilot.ai/models/anthropic/claude-fable-5.2",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.valin.ai/",
+      "author": "dradu",
+      "item_id": "hn:50441490",
+      "headline": "__Valin__ is a private, local-first memory layer for saving and surfacing everything you've bookmarked, noted, or clipped — no cloud required.",
+      "subreddit": null,
+      "source_text": "Show HN: Valin – your private memory for everything you save",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:10:15+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://valin.ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://mujoco.org/",
+      "author": "pliiight",
+      "item_id": "hn:50441424",
+      "headline": "Google DeepMind ships __MuJoCo 4__, a major update to the physics simulator underlying most modern robotics and reinforcement learning research.",
+      "subreddit": null,
+      "source_text": "MuJoCo 4 – Google DeepMind",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:06:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://mujoco.org",
+      "learning_score": 2
+    },
+    {
+      "url": "https://worktrunk.dev/",
+      "author": "rhazn",
+      "item_id": "hn:50441354",
+      "headline": "__Worktrunk__ is a Git worktree manager built for parallel AI agent workflows — isolated branches for each agent, no manual branch juggling.",
+      "subreddit": null,
+      "source_text": "Worktrunk – Git worktree management for parallel AI agent workflows",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-10T15:01:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://worktrunk.dev",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__Hands-on with Ring’s new AI drone camera for your home__",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "tag": "Release",
+      "source": "The Verge AI"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-10T15:49:22.471516+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          10094,
+          10116,
+          10117
+        ],
+        "reason": "All three cover Adobe's AI announcements at its MAX 2026 conference in Miami, including MCP integrations, agentic AI features, and new generative tools across Creative Cloud apps.",
+        "badge_count": 3,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10114,
+          10136
+        ],
+        "reason": "Both cover the release and capabilities of Anthropic's Claude Fable 5.2 model.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10095
+        ],
+        "reason": "Sole candidate covering Anthropic's IPO pricing and valuation details.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10125
+        ],
+        "reason": "Sole candidate covering the CVE-2026-123158 SSH vulnerability.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10126
+        ],
+        "reason": "Sole candidate arguing the data center backlash is fundamentally about electricity consumption rather than anti-tech sentiment.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10104
+        ],
+        "reason": "Sole candidate covering Nvidia's scandal and the broader tech-Democrat political realignment.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10127
+        ],
+        "reason": "Sole candidate covering Scott Wiener winning Pelosi's congressional seat and his AI regulation agenda.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10135
+        ],
+        "reason": "Sole candidate covering the state of the tech job market in late 2026.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10105
+        ],
+        "reason": "Sole candidate covering AI's impact on storyboard artists in Hollywood.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10106
+        ],
+        "reason": "Sole candidate covering concerns about ChatGPT's Teen Mode and adolescent development.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10096
+        ],
+        "reason": "Sole candidate covering Spotify's AI DJ feature update.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10152
+        ],
+        "reason": "Sole candidate profiling Roshi Joan Halifax; no other candidate covers this subject.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-10T15:50:01.737642",
+      "send_completed_at": "2026-11-10T15:50:09.175871",
+      "event_name": "schedule",
+      "github_run_id": "42844196056",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "78276980bbca89f95828f4fb01fce2986bb91f0928994cb7fedfe1f1a0151670"
+}
