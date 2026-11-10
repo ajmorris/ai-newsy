@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-09T00:00:00Z",
-  "issueCount": 183,
+  "generatedAt": "2026-11-10T00:00:00Z",
+  "issueCount": 184,
   "latestIssue": {
-    "slug": "2026-11-09",
-    "digestDate": "2026-11-09",
-    "displayDate": "Nov 09, 2026",
-    "issueNumber": "61109",
-    "subject": "ISSUE 61109 \u00b7 11 STORIES \u00b7 11 MIN READ",
-    "intro": "Anti-AI populism stealing headlines from the algorithms themselves \u2014 that's the story this Monday. From voters rejecting datacenter projects across nine states to Google strong-arming schools into accepting its AI tools, today's roundup captures a growing tension between the AI industry's ambitions and the public's appetite for pushing back. We've also got Anthropic dropping $3.4 billion on gas turbines, Trump weighing in on AI safety, and a founder running his company with Lord of the Rings-themed AI agents \u2014 because of course someone is.",
-    "articleCount": 11,
-    "urlPath": "/issues/2026-11-09.html",
-    "contentHash": "9aa6ccb60d9c00fca95214eee6da8aaf012a382f7409e4d7ba5a0315eacb4320"
+    "slug": "2026-11-10",
+    "digestDate": "2026-11-10",
+    "displayDate": "Nov 10, 2026",
+    "issueNumber": "61110",
+    "subject": "ISSUE 61110 \u00b7 12 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic is having a week for the history books \u2014 hot on the heels of Claude Fable 5.2 claiming the top spot on AI leaderboards, the company has set its IPO price range at a staggering $1.4 trillion valuation, which would make it one of the largest public offerings ever. Meanwhile, Adobe is betting big on agentic AI with sweeping Creative Cloud integrations, a critical SSH vulnerability dubbed \"sshole\" is being actively exploited in the wild, and the tech job market is sending mixed signals with PM roles surging while engineering hiring flatlines. Grab your coffee \u2014 there's a lot to unpack today.",
+    "articleCount": 12,
+    "urlPath": "/issues/2026-11-10.html",
+    "contentHash": "78276980bbca89f95828f4fb01fce2986bb91f0928994cb7fedfe1f1a0151670"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-10",
+      "digestDate": "2026-11-10",
+      "displayDate": "Nov 10, 2026",
+      "issueNumber": "61110",
+      "subject": "ISSUE 61110 \u00b7 12 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic is having a week for the history books \u2014 hot on the heels of Claude Fable 5.2 claiming the top spot on AI leaderboards, the company has set its IPO price range at a staggering $1.4 trillion valuation, which would make it one of the largest public offerings ever. Meanwhile, Adobe is betting big on agentic AI with sweeping Creative Cloud integrations, a critical SSH vulnerability dubbed \"sshole\" is being actively exploited in the wild, and the tech job market is sending mixed signals with PM roles surging while engineering hiring flatlines. Grab your coffee \u2014 there's a lot to unpack today.",
+      "articleCount": 12,
+      "urlPath": "/issues/2026-11-10.html",
+      "contentHash": "78276980bbca89f95828f4fb01fce2986bb91f0928994cb7fedfe1f1a0151670"
+    },
     {
       "slug": "2026-11-09",
       "digestDate": "2026-11-09",
@@ -133,17 +144,6 @@
       "articleCount": 13,
       "urlPath": "/issues/2026-10-30.html",
       "contentHash": "cb6de64a7c0a3164d84823bade7b7728fa49aa5dd094356094b74ebf04b8d051"
-    },
-    {
-      "slug": "2026-10-29",
-      "digestDate": "2026-10-29",
-      "displayDate": "Oct 29, 2026",
-      "issueNumber": "61029",
-      "subject": "ISSUE 61029 \u00b7 11 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI giants are showing their cards today \u2014 Microsoft disclosed Azure and OpenAI revenue in dollars for the first time, revealing a combined $43 billion quarter that cements AI as the engine of its business, while Alphabet's $127.6 billion quarter was overshadowed by decelerating Search ad growth that sent shares tumbling 8%. Meanwhile, Google DeepMind dropped Gemini 4 Carbon, a frontier model laser-focused on cybersecurity that's claiming the top spot on nearly every benchmark it touches. From billion-dollar balance sheets to benchmark battles to Arizona residents fighting data centers over water rights, today's roundup is a snapshot of an industry racing forward while the world scrambles to keep up.",
-      "articleCount": 11,
-      "urlPath": "/issues/2026-10-29.html",
-      "contentHash": "2ae23f4587ab17b8f88bbeb038e7e5f2851568996228b7e665ae2a6c8755d4eb"
     }
   ]
 }
