@@ -1,0 +1,858 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-11",
+  "issue_id": "20261111",
+  "subject_line": "ISSUE 61111 · 10 STORIES · 11 MIN READ",
+  "intro": "The AI world is reeling today as Nvidia CEO Jensen Huang's admission of an affair with a suspected Chinese spy sent the chipmaker's stock tumbling and raised urgent questions about the security of America's most critical AI infrastructure. But the industry isn't standing still — Google DeepMind is making Gemini 4 Carbon widely available, OpenAI is turning ChatGPT into a storefront with verified Business Agents, and a staggering 181GW of gas-fired power plants are being planned just to keep AI's lights on. It's a day that captures the full spectrum of AI's current moment: geopolitical risk, fierce competition, and an energy appetite that's reshaping the grid.",
+  "article_count": 10,
+  "stories": [
+    {
+      "id": 10172,
+      "source": "The Verge AI",
+      "title": "Nvidia in crisis after Jensen Huang admits affair with suspected Chinese spy",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia CEO Jensen Huang admitted to an extramarital affair with Alice Huang, whom US intelligence agencies suspect of spying for China. Nvidia's stock dropped roughly 9.5% over two days. The board has hired Wachtell, Lipton, Rosen & Katz to conduct an internal investigation. Key questions center on what information Alice Huang may have obtained and when Jensen Huang became aware of espionage suspicions. Experts warn that failing to inform the board could be a fireable offense, and shareholder lawsuits including securities fraud claims are expected. The incident threatens US AI leadership given Nvidia's critical role as the dominant designer of advanced AI chips, with major companies like Meta, Anthropic, and OpenAI dependent on its products. The board has stated it has no reason to believe national security or Nvidia secrets were compromised.",
+      "opinion": "A genuine national security crisis masquerading as a corporate governance scandal. Nvidia's near-monopoly on advanced AI chips makes this far more consequential than a typical CEO misconduct story — the fragility of the US AI lead is now uncomfortably visible. Where coverage differs: TechCrunch focuses on corporate governance precedent, shareholder lawsuits, and board response; The Verge emphasizes national security implications and the fragility of the US AI lead over China",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285784039.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-10T19:04:05+00:00",
+      "fetched_at": "2026-11-11T14:57:02.768839+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10172,
+            "source": "The Verge AI",
+            "title": "The US is winning the AI race. Jensen Huang could have blown it",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
+          },
+          {
+            "id": 10154,
+            "source": "TechCrunch AI",
+            "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+            "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "TechCrunch focuses on corporate governance precedent, shareholder lawsuits, and board response; The Verge emphasizes national security implications and the fragility of the US AI lead over China"
+        ],
+        "is_update": true,
+        "reason": "Both cover the Nvidia scandal involving CEO Jensen Huang's admitted affair with a woman suspected of being a Chinese spy, the resulting stock drop, and national security concerns."
+      }
+    },
+    {
+      "id": 10173,
+      "source": "The Verge AI",
+      "title": "OpenAI launches verified Business Agents in ChatGPT",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI launched 'Business Agents' in ChatGPT, a beta feature allowing US e-commerce and online service brands to claim verified profiles, monitor how often ChatGPT mentions them, and deploy AI agents that interact directly with users for tasks like comparison shopping. A 'Business Hub' lets companies configure agent instructions, add product details, and view analytics on brand mentions and click-throughs. Chats with Business Agents are clearly labeled and separated from main conversations. Brands can also pay to make their agent the landing page for ChatGPT ads. The feature is currently free to claim.",
+      "opinion": "A significant move to monetize ChatGPT's massive user base by turning it into a commerce platform. The separation of brand chats from regular conversations is wise, but the paid placement option raises questions about whether ChatGPT recommendations will remain impartial. Where coverage differs: The Rundown AI reports brands can pay to make their agent the landing page for ChatGPT ads; The Verge does not mention this paid placement option",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Business-Agent-Customer-Conversation.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+      "published_at": "2026-11-10T18:00:00+00:00",
+      "fetched_at": "2026-11-11T14:57:03.040774+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10173,
+            "source": "The Verge AI",
+            "title": "ChatGPT is getting verified AI ‘Business Agents’",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
+          },
+          {
+            "id": 10170,
+            "source": "The Rundown AI",
+            "title": "OpenAI invites brands to set up shop in ChatGPT",
+            "url": "https://therundownai.beehiiv.com/p/openai-invites-brands-to-set-up-shop-in-chatgpt"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "The Rundown AI reports brands can pay to make their agent the landing page for ChatGPT ads; The Verge does not mention this paid placement option"
+        ],
+        "is_update": false,
+        "reason": "Both describe OpenAI's launch of verified Business Agents in ChatGPT, allowing brands to claim profiles and deploy AI agents for customer interactions."
+      }
+    },
+    {
+      "id": 10171,
+      "source": "The Verge AI",
+      "title": "Adobe shows experimental AI features at MAX 2026 including character interviews and 3D photo exploration",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Adobe showcased experimental AI features at MAX 2026, including Project Screen Test, which lets users design AI characters by conversing with them in an audition-like environment to define personality traits, voice, backstory, and quirks through natural conversation. Other experiments include a tool that transforms 2D images into explorable 3D scenes and a feature that simplifies photo editing into a copy/paste process.",
+      "opinion": "Project Screen Test is the standout — defining characters through conversation rather than text prompts is a genuinely novel interaction pattern that could reshape creative workflows if it graduates from experiment to product.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Adobe-Project-Screen-Test.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-11T14:00:00+00:00",
+      "fetched_at": "2026-11-11T14:57:02.55775+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10171,
+            "source": "The Verge AI",
+            "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+            "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Covers additional experimental AI features shown at Adobe's MAX 2026 conference, the same event as yesterday's Adobe coverage."
+      }
+    },
+    {
+      "id": 10169,
+      "source": "DeepMind Blog",
+      "title": "Google DeepMind makes Gemini 4 Carbon generally available",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google DeepMind announced the general availability of Gemini 4 Carbon on November 10, 2026. Carbon is positioned as their strongest frontier model, with leading performance in cybersecurity, long-horizon agentic workflows, complex knowledge work, software engineering, and scientific reasoning. It was initially released to cybersecurity defenders via Google's Fairwind Program two weeks prior. Carbon complements the earlier Gemini 4 Argon model — Argon is recommended for most software engineering and knowledge work, while Carbon targets tasks at the limits of model intelligence such as complex multi-step coding/debugging and open-ended scientific research.",
+      "opinion": "The cybersecurity-first rollout via the Fairwind Program was a smart trust-building move. The Argon/Carbon split mirrors Anthropic's Sonnet/Opus tiering — the frontier AI market is converging on a 'good enough for most tasks' plus 'maximum capability' product structure.",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg",
+      "published_at": "2026-11-10T16:03:47+00:00",
+      "fetched_at": "2026-11-11T14:56:59.57857+00:00"
+    },
+    {
+      "id": 10163,
+      "source": "Guardian AI",
+      "title": "AI datacenter developers planning 181GW of on-site gas-fired power stations",
+      "url": "https://www.theguardian.com/world/2026/nov/11/ai-datacentres-on-site-gas-fired-power-stations",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Research reveals that AI datacenter developers across the US, UK, and mainland Europe are planning to build on-site gas-fired power stations totaling 181GW of capacity. This massive buildout of fossil fuel infrastructure is being driven by delays in connecting datacenters to national electricity grids, as the rapid expansion of AI computing demands more power than existing grid connections can supply.",
+      "opinion": "181GW is a staggering figure — roughly equivalent to the entire installed electricity generation capacity of the UK. This undermines the clean energy commitments many tech companies have made and suggests the AI boom's environmental costs are being systematically underestimated.",
+      "image_url": "https://i.guim.co.uk/img/media/822a68edf6ef4a66a93f5946bbe1be09e4138679/195_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e02c6467688c68dcf20c030c14f064ae",
+      "published_at": "2026-11-11T12:00:48+00:00",
+      "fetched_at": "2026-11-11T14:56:57.70755+00:00"
+    },
+    {
+      "id": 10184,
+      "source": "Lenny's Newsletter",
+      "title": "Math educator builds family knowledge system with Claude Code and Obsidian",
+      "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Scott Farrar, a math educator and parent, built a household knowledge management system using Claude Code and Obsidian. The system uses Markdown files to track appliances, warranties, insurance documents, and family to-do lists, with a DAKboard wall display showing priority tasks. He demonstrates using it to shop for car insurance and plan home repairs. The conversation also covers AI in math education, where Farrar advocates for a 'flipped tutor' approach that keeps students doing the thinking rather than letting AI do it for them.",
+      "opinion": "A practical, relatable use case that shows Claude Code's utility beyond software development. The 'flipped tutor' idea for math education — making AI support student thinking rather than replace it — is a valuable pedagogical insight.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!xREH!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69a1dd0f-1455-4aea-b063-661b9f8a48f1_728x524.png",
+      "published_at": "2026-11-11T13:04:09+00:00",
+      "fetched_at": "2026-11-11T14:57:08.373658+00:00"
+    },
+    {
+      "id": 10153,
+      "source": "TechCrunch AI",
+      "title": "Plurai raises $13M to improve AI agent reliability using autonomous driving simulation techniques",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Plurai, founded by former Nexar employees who worked on autonomous driving technology, raised $13 million in seed funding to improve AI agent reliability. The company creates digital twins of corporate electronic systems, maps all possible agent workflows, and uses synthetic data to evaluate and fix edge cases. Their key value proposition is post-training smaller, open-weight models tailored to individual customers, claiming to match or exceed frontier model quality at one to two orders of magnitude lower cost. The round was led by Team8, with participation from U&I, Velocity, and Mercer.",
+      "opinion": "The autonomous driving simulation analogy is compelling — systematically testing edge cases before deployment is exactly what enterprise AI agents need. The claim of matching frontier model quality at 1-2 orders of magnitude lower cost deserves scrutiny but would be transformative if true.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Plurai-team-photo.-Credit-Guy-Hamoy.jpg?resize=1200,800",
+      "published_at": "2026-11-11T14:00:00+00:00",
+      "fetched_at": "2026-11-11T14:56:54.632321+00:00"
+    },
+    {
+      "id": 10155,
+      "source": "TechCrunch AI",
+      "title": "OpenAI acquires AI travel startup Odessia in apparent acqui-hire",
+      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI acquired Odessia, a year-old AI travel agent startup founded by Francis Davidson, the well-known founder of Sonder. The deal appears to be an acqui-hire, with Davidson now working at OpenAI on travel-related initiatives. Odessia had raised a $6 million pre-seed round led by Sequoia and helped users plan millions of dollars worth of travel before being shut down. Travel is a frequent use case among ChatGPT's 1.2 billion weekly users, and OpenAI already partners with Booking.com, Expedia, and KAYAK.",
+      "opinion": "With 1.2 billion weekly users frequently asking about travel, building native travel capabilities makes obvious commercial sense. The acqui-hire of a Sequoia-backed founder signals OpenAI is serious about vertical commerce, not just horizontal AI.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2207801992.jpg?resize=1200,801",
+      "published_at": "2026-11-10T21:08:52+00:00",
+      "fetched_at": "2026-11-11T14:56:55.166301+00:00"
+    },
+    {
+      "id": 10165,
+      "source": "Guardian AI",
+      "title": "Editorial cartoon laments Australians not streaming local music, blames AI algorithms",
+      "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/11/australians-are-not-streaming-australian-music-why-the-hell-not",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "An editorial cartoon by First Dog on the Moon in The Guardian laments that Australians are not streaming Australian music. The cartoonist suggests the likely reasons are that live music has become too expensive and difficult to attend, and that AI-driven streaming algorithms are shaping and narrowing listeners' habits, steering them away from local artists.",
+      "opinion": "A lightweight cultural commentary, but the underlying point about AI recommendation algorithms homogenizing music discovery and disadvantaging local artists is a real concern shared by music industries worldwide.",
+      "image_url": "https://i.guim.co.uk/img/media/f29b664cf3bab67059c93501977292d9e19e7876/0_95_947_758/master/947.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=c97db9eed694ba98228332fe25260c52",
+      "published_at": "2026-11-11T05:34:40+00:00",
+      "fetched_at": "2026-11-11T14:56:58.151621+00:00"
+    },
+    {
+      "id": 10166,
+      "source": "Guardian AI",
+      "title": "Guardian podcast revisits ELIZA creator Joseph Weizenbaum's turn against AI",
+      "url": "https://www.theguardian.com/news/audio/2026/nov/11/from-the-archive-weizenbaums-nightmares-how-the-inventor-of-the-first-chatbot-turned-against-ai-podcast",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Guardian podcast revisits a 2023 article about Joseph Weizenbaum, the MIT computer scientist who created ELIZA in 1966. Weizenbaum was disturbed when users formed genuine emotional attachments to the program despite knowing it was just software. This experience, combined with observations of how computers were being applied to military and surveillance systems during the Cold War, led him to become one of AI's most prominent internal critics. His 1976 book 'Computer Power and Human Reason' argued that there are tasks computers should never be entrusted with — not because they can't perform them, but because doing so undermines human judgment and responsibility.",
+      "opinion": "Weizenbaum's core argument — that capability is not the same as appropriateness — feels more relevant than ever in the age of frontier AI models. A timely archival piece given current debates about AI agent autonomy and emotional attachment to chatbots.",
+      "image_url": "https://i.guim.co.uk/img/media/dca031b14d57615a9150621514d3fe2c7539fd43/173_0_2878_2303/master/2878.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8e5b220ac6b3dec08dff1374852b17d8",
+      "published_at": "2026-11-11T05:00:31+00:00",
+      "fetched_at": "2026-11-11T14:56:58.405935+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10172,
+          "source": "The Verge AI",
+          "title": "Nvidia in crisis after Jensen Huang admits affair with suspected Chinese spy",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia CEO Jensen Huang admitted to an extramarital affair with Alice Huang, whom US intelligence agencies suspect of spying for China. Nvidia's stock dropped roughly 9.5% over two days. The board has hired Wachtell, Lipton, Rosen & Katz to conduct an internal investigation. Key questions center on what information Alice Huang may have obtained and when Jensen Huang became aware of espionage suspicions. Experts warn that failing to inform the board could be a fireable offense, and shareholder lawsuits including securities fraud claims are expected. The incident threatens US AI leadership given Nvidia's critical role as the dominant designer of advanced AI chips, with major companies like Meta, Anthropic, and OpenAI dependent on its products. The board has stated it has no reason to believe national security or Nvidia secrets were compromised.",
+          "opinion": "A genuine national security crisis masquerading as a corporate governance scandal. Nvidia's near-monopoly on advanced AI chips makes this far more consequential than a typical CEO misconduct story — the fragility of the US AI lead is now uncomfortably visible. Where coverage differs: TechCrunch focuses on corporate governance precedent, shareholder lawsuits, and board response; The Verge emphasizes national security implications and the fragility of the US AI lead over China",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285784039.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-10T19:04:05+00:00",
+          "fetched_at": "2026-11-11T14:57:02.768839+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10172,
+                "source": "The Verge AI",
+                "title": "The US is winning the AI race. Jensen Huang could have blown it",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
+              },
+              {
+                "id": 10154,
+                "source": "TechCrunch AI",
+                "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+                "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "TechCrunch focuses on corporate governance precedent, shareholder lawsuits, and board response; The Verge emphasizes national security implications and the fragility of the US AI lead over China"
+            ],
+            "is_update": true,
+            "reason": "Both cover the Nvidia scandal involving CEO Jensen Huang's admitted affair with a woman suspected of being a Chinese spy, the resulting stock drop, and national security concerns."
+          }
+        },
+        {
+          "id": 10173,
+          "source": "The Verge AI",
+          "title": "OpenAI launches verified Business Agents in ChatGPT",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI launched 'Business Agents' in ChatGPT, a beta feature allowing US e-commerce and online service brands to claim verified profiles, monitor how often ChatGPT mentions them, and deploy AI agents that interact directly with users for tasks like comparison shopping. A 'Business Hub' lets companies configure agent instructions, add product details, and view analytics on brand mentions and click-throughs. Chats with Business Agents are clearly labeled and separated from main conversations. Brands can also pay to make their agent the landing page for ChatGPT ads. The feature is currently free to claim.",
+          "opinion": "A significant move to monetize ChatGPT's massive user base by turning it into a commerce platform. The separation of brand chats from regular conversations is wise, but the paid placement option raises questions about whether ChatGPT recommendations will remain impartial. Where coverage differs: The Rundown AI reports brands can pay to make their agent the landing page for ChatGPT ads; The Verge does not mention this paid placement option",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Business-Agent-Customer-Conversation.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+          "published_at": "2026-11-10T18:00:00+00:00",
+          "fetched_at": "2026-11-11T14:57:03.040774+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10173,
+                "source": "The Verge AI",
+                "title": "ChatGPT is getting verified AI ‘Business Agents’",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
+              },
+              {
+                "id": 10170,
+                "source": "The Rundown AI",
+                "title": "OpenAI invites brands to set up shop in ChatGPT",
+                "url": "https://therundownai.beehiiv.com/p/openai-invites-brands-to-set-up-shop-in-chatgpt"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "The Rundown AI reports brands can pay to make their agent the landing page for ChatGPT ads; The Verge does not mention this paid placement option"
+            ],
+            "is_update": false,
+            "reason": "Both describe OpenAI's launch of verified Business Agents in ChatGPT, allowing brands to claim profiles and deploy AI agents for customer interactions."
+          }
+        },
+        {
+          "id": 10171,
+          "source": "The Verge AI",
+          "title": "Adobe shows experimental AI features at MAX 2026 including character interviews and 3D photo exploration",
+          "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Adobe showcased experimental AI features at MAX 2026, including Project Screen Test, which lets users design AI characters by conversing with them in an audition-like environment to define personality traits, voice, backstory, and quirks through natural conversation. Other experiments include a tool that transforms 2D images into explorable 3D scenes and a feature that simplifies photo editing into a copy/paste process.",
+          "opinion": "Project Screen Test is the standout — defining characters through conversation rather than text prompts is a genuinely novel interaction pattern that could reshape creative workflows if it graduates from experiment to product.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Adobe-Project-Screen-Test.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-11T14:00:00+00:00",
+          "fetched_at": "2026-11-11T14:57:02.55775+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10171,
+                "source": "The Verge AI",
+                "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+                "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Covers additional experimental AI features shown at Adobe's MAX 2026 conference, the same event as yesterday's Adobe coverage."
+          }
+        },
+        {
+          "id": 10169,
+          "source": "DeepMind Blog",
+          "title": "Google DeepMind makes Gemini 4 Carbon generally available",
+          "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google DeepMind announced the general availability of Gemini 4 Carbon on November 10, 2026. Carbon is positioned as their strongest frontier model, with leading performance in cybersecurity, long-horizon agentic workflows, complex knowledge work, software engineering, and scientific reasoning. It was initially released to cybersecurity defenders via Google's Fairwind Program two weeks prior. Carbon complements the earlier Gemini 4 Argon model — Argon is recommended for most software engineering and knowledge work, while Carbon targets tasks at the limits of model intelligence such as complex multi-step coding/debugging and open-ended scientific research.",
+          "opinion": "The cybersecurity-first rollout via the Fairwind Program was a smart trust-building move. The Argon/Carbon split mirrors Anthropic's Sonnet/Opus tiering — the frontier AI market is converging on a 'good enough for most tasks' plus 'maximum capability' product structure.",
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg",
+          "published_at": "2026-11-10T16:03:47+00:00",
+          "fetched_at": "2026-11-11T14:56:59.57857+00:00"
+        },
+        {
+          "id": 10163,
+          "source": "Guardian AI",
+          "title": "AI datacenter developers planning 181GW of on-site gas-fired power stations",
+          "url": "https://www.theguardian.com/world/2026/nov/11/ai-datacentres-on-site-gas-fired-power-stations",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Research reveals that AI datacenter developers across the US, UK, and mainland Europe are planning to build on-site gas-fired power stations totaling 181GW of capacity. This massive buildout of fossil fuel infrastructure is being driven by delays in connecting datacenters to national electricity grids, as the rapid expansion of AI computing demands more power than existing grid connections can supply.",
+          "opinion": "181GW is a staggering figure — roughly equivalent to the entire installed electricity generation capacity of the UK. This undermines the clean energy commitments many tech companies have made and suggests the AI boom's environmental costs are being systematically underestimated.",
+          "image_url": "https://i.guim.co.uk/img/media/822a68edf6ef4a66a93f5946bbe1be09e4138679/195_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e02c6467688c68dcf20c030c14f064ae",
+          "published_at": "2026-11-11T12:00:48+00:00",
+          "fetched_at": "2026-11-11T14:56:57.70755+00:00"
+        },
+        {
+          "id": 10184,
+          "source": "Lenny's Newsletter",
+          "title": "Math educator builds family knowledge system with Claude Code and Obsidian",
+          "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Scott Farrar, a math educator and parent, built a household knowledge management system using Claude Code and Obsidian. The system uses Markdown files to track appliances, warranties, insurance documents, and family to-do lists, with a DAKboard wall display showing priority tasks. He demonstrates using it to shop for car insurance and plan home repairs. The conversation also covers AI in math education, where Farrar advocates for a 'flipped tutor' approach that keeps students doing the thinking rather than letting AI do it for them.",
+          "opinion": "A practical, relatable use case that shows Claude Code's utility beyond software development. The 'flipped tutor' idea for math education — making AI support student thinking rather than replace it — is a valuable pedagogical insight.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!xREH!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69a1dd0f-1455-4aea-b063-661b9f8a48f1_728x524.png",
+          "published_at": "2026-11-11T13:04:09+00:00",
+          "fetched_at": "2026-11-11T14:57:08.373658+00:00"
+        },
+        {
+          "id": 10153,
+          "source": "TechCrunch AI",
+          "title": "Plurai raises $13M to improve AI agent reliability using autonomous driving simulation techniques",
+          "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Plurai, founded by former Nexar employees who worked on autonomous driving technology, raised $13 million in seed funding to improve AI agent reliability. The company creates digital twins of corporate electronic systems, maps all possible agent workflows, and uses synthetic data to evaluate and fix edge cases. Their key value proposition is post-training smaller, open-weight models tailored to individual customers, claiming to match or exceed frontier model quality at one to two orders of magnitude lower cost. The round was led by Team8, with participation from U&I, Velocity, and Mercer.",
+          "opinion": "The autonomous driving simulation analogy is compelling — systematically testing edge cases before deployment is exactly what enterprise AI agents need. The claim of matching frontier model quality at 1-2 orders of magnitude lower cost deserves scrutiny but would be transformative if true.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Plurai-team-photo.-Credit-Guy-Hamoy.jpg?resize=1200,800",
+          "published_at": "2026-11-11T14:00:00+00:00",
+          "fetched_at": "2026-11-11T14:56:54.632321+00:00"
+        },
+        {
+          "id": 10155,
+          "source": "TechCrunch AI",
+          "title": "OpenAI acquires AI travel startup Odessia in apparent acqui-hire",
+          "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI acquired Odessia, a year-old AI travel agent startup founded by Francis Davidson, the well-known founder of Sonder. The deal appears to be an acqui-hire, with Davidson now working at OpenAI on travel-related initiatives. Odessia had raised a $6 million pre-seed round led by Sequoia and helped users plan millions of dollars worth of travel before being shut down. Travel is a frequent use case among ChatGPT's 1.2 billion weekly users, and OpenAI already partners with Booking.com, Expedia, and KAYAK.",
+          "opinion": "With 1.2 billion weekly users frequently asking about travel, building native travel capabilities makes obvious commercial sense. The acqui-hire of a Sequoia-backed founder signals OpenAI is serious about vertical commerce, not just horizontal AI.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2207801992.jpg?resize=1200,801",
+          "published_at": "2026-11-10T21:08:52+00:00",
+          "fetched_at": "2026-11-11T14:56:55.166301+00:00"
+        },
+        {
+          "id": 10165,
+          "source": "Guardian AI",
+          "title": "Editorial cartoon laments Australians not streaming local music, blames AI algorithms",
+          "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/11/australians-are-not-streaming-australian-music-why-the-hell-not",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "An editorial cartoon by First Dog on the Moon in The Guardian laments that Australians are not streaming Australian music. The cartoonist suggests the likely reasons are that live music has become too expensive and difficult to attend, and that AI-driven streaming algorithms are shaping and narrowing listeners' habits, steering them away from local artists.",
+          "opinion": "A lightweight cultural commentary, but the underlying point about AI recommendation algorithms homogenizing music discovery and disadvantaging local artists is a real concern shared by music industries worldwide.",
+          "image_url": "https://i.guim.co.uk/img/media/f29b664cf3bab67059c93501977292d9e19e7876/0_95_947_758/master/947.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=c97db9eed694ba98228332fe25260c52",
+          "published_at": "2026-11-11T05:34:40+00:00",
+          "fetched_at": "2026-11-11T14:56:58.151621+00:00"
+        },
+        {
+          "id": 10166,
+          "source": "Guardian AI",
+          "title": "Guardian podcast revisits ELIZA creator Joseph Weizenbaum's turn against AI",
+          "url": "https://www.theguardian.com/news/audio/2026/nov/11/from-the-archive-weizenbaums-nightmares-how-the-inventor-of-the-first-chatbot-turned-against-ai-podcast",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Guardian podcast revisits a 2023 article about Joseph Weizenbaum, the MIT computer scientist who created ELIZA in 1966. Weizenbaum was disturbed when users formed genuine emotional attachments to the program despite knowing it was just software. This experience, combined with observations of how computers were being applied to military and surveillance systems during the Cold War, led him to become one of AI's most prominent internal critics. His 1976 book 'Computer Power and Human Reason' argued that there are tasks computers should never be entrusted with — not because they can't perform them, but because doing so undermines human judgment and responsibility.",
+          "opinion": "Weizenbaum's core argument — that capability is not the same as appropriateness — feels more relevant than ever in the age of frontier AI models. A timely archival piece given current debates about AI agent autonomy and emotional attachment to chatbots.",
+          "image_url": "https://i.guim.co.uk/img/media/dca031b14d57615a9150621514d3fe2c7539fd43/173_0_2878_2303/master/2878.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8e5b220ac6b3dec08dff1374852b17d8",
+          "published_at": "2026-11-11T05:00:31+00:00",
+          "fetched_at": "2026-11-11T14:56:58.405935+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/mattpocockuk/status/2120260969750540327",
+      "author": "mattpocockuk",
+      "headline": "Matt Pocock's __home repo pattern__ lets you run agents across multiple codebases from a single place — simpler than it sounds, reportedly viral in his course.",
+      "tweet_id": "4151eba9-b6bc-81c8-ab4e-cd29882020fb",
+      "source_text": "A lot of folks ask me \"how do you work with agents in multiple repos at once?\"\n\nI have a very simple solution - the Home Repo\n\nI have a single repo (the home) where all of my skills, steering files, wiki etc live.\n\nI run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos:\n\n```\nFor skills, clone mattpocock/skills to ~/repos/skills.\nFor Sandcastle, clone mattpocock/sandcastle to ~/repos/sandcastle\n```\n\nThis is extremely simple and incredibly effective. The home repo lets you:\n\n1. Put all your steering files and tooling in one place\n2. Have a single spot to run all your agents in\n3. Make sweeping changes over multiple repos\n\nTalked about this in the course yesterday and folks are loving it (see below).\n\nI'm sure you will too. Enjoy!",
+      "created_time": "2026-11-11T02:37:00.000Z",
+      "canonical_url": "https://twitter.com/mattpocockuk/status/2120260969750540327",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/BrianRoemmele/status/2120244652221837570",
+      "author": "BrianRoemmele",
+      "headline": "Brian Roemmele built __Job Scout__, a Grok Bot that finds matching jobs, identifies the hiring manager, and drafts your outreach email while you sleep.",
+      "tweet_id": "4151eba9-b6bc-813b-a8c8-c004c9544e07",
+      "source_text": "NEW GROK BOT!\n\nYour AI job hunter never sleeps.\n\nMost people send 100 resumes into a black hole.\n\nI built a Grok Bot that hunts for you instead.\n\nIt's called Job Scout. Here's what it actually gives you 👇\n\n🔎 MATCH FOUND\nDesign Systems Lead, Litware Robotics\n\nMatch: 94% · Remote · Posted 2 days ago\n\nWhy: 8 of the 10 required skills are on your resume\n\nSource: company careers page\n\n👤 HIRING MANAGER\n\nVP of Design, Litware Robotics\nRecent post: \"We're rebuilding our component library from scratch.\"\nYour angle: you led a design-system rebuild\n\n✉️ DRAFT (waiting for your approval)\n\n\"Saw your post about rebuilding the component library.\nI led the same rebuild at my last company and cut UI bugs 40%.\nWorth a 15-minute call?\"\n📎 Resume_2026.pdf attached\n\n📬 REPLY TRACKER\nContoso Audio · Replied · Interview Thu\n\nAdventure Works · No reply in 5 days · Follow-up drafted\n\nIt also:\n\n• Rebuilds your resume with wins you forgot to include\n• Scans LinkedIn, careers pages, and job boards on a schedule\n• Remembers every role you applied to or turned down\n• Shows your whole pipeline on a color dashboard\n\nNothing gets sent until you approve it.\n\nYour job search should work while you sleep.\n\nGet this Grok Bot NOW: 👇\n\nhttps://t.co/EpX78LncaP",
+      "created_time": "2026-11-11T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/BrianRoemmele/status/2120244652221837570",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/bensenescu/status/2120234777320309211",
+      "author": "bensenescu",
+      "headline": "An __open source Slack alternative__ that self-hosts on Cloudflare makes the case for AI-native tools you actually own and control.",
+      "tweet_id": "4151eba9-b6bc-81a9-bf4b-f77dee3556f9",
+      "source_text": "Open source Slack alternative self hosted on Cloudflare. \n\nThe future is AI native tools that you control. https://t.co/VxJ4gU0QAT",
+      "created_time": "2026-11-11T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/bensenescu/status/2120234777320309211",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/jianw851/status/2120212001695965288",
+      "author": "jianw851",
+      "headline": "One engineer argues software just moved to an __Agent-Driven Lifecycle (ADLC)__ — agents writing, testing, and deploying in parallel while requirements evolve in real time.",
+      "tweet_id": "4151eba9-b6bc-8131-b01e-c82f9a222a41",
+      "source_text": "AI agent–enabled coding is quietly becoming the new SDLC.\n\nSoftware development just had its biggest shift since the GUI.\n\nPlanning.\nCoding.\nTesting.\nDeployment.\n\nAgents are starting to handle all of it.\n\nHere’s the shift most engineers haven’t noticed yet 👇\n\nOld model: SDLC\n\n• sequential phases\n• human-driven execution\n• testing happens after development\n• changing requirements break timelines\n\nEverything moves step → by → step.\n\nNew model: ADLC (Agent-Driven Lifecycle)\n\n• agents write, refactor, and test code\n• multiple tasks run in parallel\n• requirements evolve dynamically\n• feedback loops happen in real time\n\nInstead of a pipeline…\n\nYou get a live development system.\n\n6 major shifts happening right now\n\n1️⃣ Driver\nHuman execution → Autonomous agents\n\n2️⃣ Planning\nFixed scope → Evolving goals & PRDs\n\n3️⃣ Development Speed\nSequential handoffs → Parallel sub-agents\n\n4️⃣ Testing\nPost-development QA → Continuous testing\n\n5️⃣ Adaptability\nMid-cycle chaos → Real-time re-planning\n\n6️⃣ Feedback Loop\nEnd-of-project retros → Live monitoring\n\nSome early signals are already here.\n\nAccording to agentic coding reports:\n\n• teams at Wiz and CRED doubled execution speed\n• large-scale repos are being modified autonomously\n• complex implementations completed in hours instead of days\n\nHow engineers should adapt\n\n1️⃣ Start with one agent\nAutomate testing first.\n\n2️⃣ Learn to write clear PRDs\nAgents execute exactly what you define.\n\n3️⃣ Introduce parallel sub-agents\nBreak one large task into smaller workstreams.\n\n4️⃣ Review outcomes, not every line of code\n\n5️⃣ Build live feedback loops\nAgents should detect issues before you do.\n\nThe future of software development isn’t just faster coding.\n\nIt’s agent-driven systems building software.\n\n#AI #AIAgents #SoftwareEngineering #SDLC #GenAI #AIEngineering",
+      "created_time": "2026-11-11T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/jianw851/status/2120212001695965288",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/adriamatz/status/2120201748954415482",
+      "author": "adriamatz",
+      "headline": "Adria Matz used Fable 5.2 to __compress an entire Apple Ads setup into a single copyable prompt__.",
+      "tweet_id": "4151eba9-b6bc-81d3-9411-e7592e3dbf98",
+      "source_text": "I asked Fable 5.2 to turn my whole Apple Ads setup into one prompt you can copy https://t.co/cCwwVLPtns https://t.co/TnHbTeux9V",
+      "created_time": "2026-11-11T02:17:00.000Z",
+      "canonical_url": "https://twitter.com/adriamatz/status/2120201748954415482",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/N01ennn/status/2120131292922827197",
+      "author": "N01ennn",
+      "headline": "Fable 5.2 is Anthropic's __strongest lead agent__ — built to run for days and coordinate 1,000+ subagents autonomously.",
+      "tweet_id": "4151eba9-b6bc-81aa-bf95-cf5300894db1",
+      "source_text": "these 4 pages will turn your Fable 5.2 into a f*cking JARVIS..\n\nAnthropic calls it their strongest lead agent. it runs for days and coordinates 1,000+ subagents. one system prompt from page 4 and it's running your whole crew while you sleep\n\n2-minute setup. here's the prompt: https://t.co/v36X9hNbqz https://t.co/pptV1x1rrA",
+      "created_time": "2026-11-11T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/N01ennn/status/2120131292922827197",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/adamjfpickering/status/2120227208438354223",
+      "author": "adamjfpickering",
+      "headline": "Adam Pickering makes the case that __claiming your business on ChatGPT__ is the new Google Business Profile as traditional search traffic erodes.",
+      "tweet_id": "4151eba9-b6bc-81b0-a4e5-e0841033fdc3",
+      "source_text": "This is the new Google business directory, now that search has fallen off a cliff… claim your business on ChatGPT and engage with customers in new ways.  Excited to see how Jetpack and Woocommerce can help our customers. https://t.co/qEcskBlt2I",
+      "created_time": "2026-11-11T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/adamjfpickering/status/2120227208438354223",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ezsmith397/status/2120212141344968707",
+      "author": "ezsmith397",
+      "headline": "One agency rebuilt their site with __Claude Code and Astro__ on Cloudflare Workers after three attempts at a WordPress build.",
+      "tweet_id": "4151eba9-b6bc-8155-bd49-c17fb8ae5fee",
+      "source_text": "New site launched for our agency... and it’s not WordPress 👀\n\nAfter 3 versions on Bricks, this one’s Astro. Built it with Claude Code, iterated through the design in Paper, and launched on Cloudflare Workers.\n\nStill building & supporting WordPress powered sites when it's the right fit, but not everything is or needs to be.\n\nhttps://t.co/NyfDVlHRIH",
+      "created_time": "2026-11-11T01:02:00.000Z",
+      "canonical_url": "https://twitter.com/ezsmith397/status/2120212141344968707",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2120293456207573185",
+      "author": "noahkagan",
+      "headline": "Noah Kagan's __219 AppSumo launch study__ finds 5 sales in week one predicts 26 more over the next three — dev tools cleared $1K in sales 58% of the time, operations tools just 21%.",
+      "tweet_id": "4151eba9-b6bc-8151-b0dd-cd6e632673c8",
+      "source_text": "I looked at 219 software launches on AppSumo.\n\nWeek one decides everything.\n\n5+ sales in week one → ~26 more sales the next 3 weeks.\nFewer than 3 → about 2.\n\nWhat the fast starters did differently:\n\n1- Answered buyer questions 3x faster (5 hours vs 15)\n2- Got a review in week one (54% vs 34%)\n3- Offered more tiers (3 vs 2)\n\nAll launches charged around the same price: $49.\n\nPrice wasn't the difference. Speed was.\n\nAnd what they built mattered.\n58% of dev tools passed $1K in sales.\nOperations tools? 21%.\n\nGet 5 buyers fast. Answer every question faster.",
+      "created_time": "2026-11-11T00:27:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2120293456207573185",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/stephenrobles/status/2120210590643704070",
+      "author": "stephenrobles",
+      "headline": "Stephen Robles had Claude Fable 5.2 __rebuild his entire website__ — 200+ blog posts, embedded YouTube and Reels, and a custom iPhone CMS, all from one session.",
+      "tweet_id": "4151eba9-b6bc-816a-a423-db9d19fb2976",
+      "source_text": "Asked @claudeai Fable 5.2 to rebuild my entire website, but better. Nailed it:\n\n- Pulls my latest YouTube videos\n- New podcasts show automatically \n- Latest Reels are embedded\n- Pulled 200+ blogs\n- Even built a custom CMS to instantly post blogs from iPhone\n\nSee it: beard dot fm https://t.co/QlocdTXeNV",
+      "created_time": "2026-11-11T00:27:00.000Z",
+      "canonical_url": "https://twitter.com/stephenrobles/status/2120210590643704070",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/OpenAI/status/2120216592395174382",
+      "author": "OpenAI",
+      "headline": "OpenAI launches __Businesses in ChatGPT__ in beta, letting companies claim their profile and deploy a Business Agent to answer customer questions.",
+      "tweet_id": "4141eba9-b6bc-8141-8b0f-eda669ae1b4b",
+      "source_text": "Now in beta: Businesses in ChatGPT.\n\nClaim your business, manage your information, and get insights on how people engage with you.\n\nEligible businesses can also build a Business Agent to answer customers’ questions and help them explore what you offer.\n\nhttps://t.co/N2GEZX0mFT https://t.co/lYj2Z48fhQ",
+      "created_time": "2026-11-10T22:27:00.000Z",
+      "canonical_url": "https://twitter.com/OpenAI/status/2120216592395174382",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/moritzkremb/status/2120127859175969222",
+      "author": "moritzkremb",
+      "headline": "Moritz Kremb breaks down Anthropic's __Fable 5.2 prompting guide__: calibrate effort per task, add a \"finish the work\" block, and always tell it who owns the code.",
+      "tweet_id": "4141eba9-b6bc-81d2-b531-c0147afb6116",
+      "source_text": "Anthropic just released a prompting guide for Claude Fable 5.2.\n\nHere are the 10 rules:\n\n1. Switching effort per task matters more than ever. Fable 5.2 decides on its own how much to think, and effort is now the main way to control it. Low is strong on this model, and going above high mostly costs more tokens.\n\n2. Delete your \"don't overthink\" lines. On medium and above, they don't stop it from thinking. Lower the effort instead.\n\n3. Tell it to finish. On long tasks it can stop early and hand you a to-do list. Add a short \"finish the work\" block to your instructions.\n\n4. Say who owns the code. Otherwise it tends to copy code instead of cleaning it up, and reports nearby bugs instead of fixing them.\n\n5. Keep your \"never\" rules narrow. It follows them very literally, so vague warnings make it ask permission for normal stuff.\n\n6. Ask for progress updates. Otherwise it can go quiet for a lot of tool calls in a row.\n\n7. Put limits on helper agents. Sub-agents can be a big part of what a session costs.\n\n8. Ask for reports that make sense on their own. Key points first, plain words, no made-up labels.\n\n9. Don't ask it to show its internal thinking. Requests to paste its reasoning get refused. \"Explain your reasoning\" is fine.\n\n10. Loosen hard style rules. Caps like \"20 words per sentence\" make its writing choppy.\n\nOverall, treat Fable 5.2 like a senior colleague. It's smart and takes everything you say seriously, so old rules and workarounds mostly get in its way. Pick the right effort, clean out the old stuff, and give it room to make its own calls.\n\nFull guide here:\nhttps://t.co/NKtkUc8EFC",
+      "created_time": "2026-11-10T17:52:00.000Z",
+      "canonical_url": "https://twitter.com/moritzkremb/status/2120127859175969222",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2120189244715180417",
+      "author": "Zephyr_hg",
+      "headline": "Zephyr_hg claims to run their entire business solo on Claude, using a prompt that turns __Sonnet 5.5 into a dedicated head of sales__.",
+      "tweet_id": "4141eba9-b6bc-81e5-9eb8-ecb31b443a09",
+      "source_text": "I run my whole business alone on Claude. This is the prompt that turns Sonnet 5.5 into my head of sales.\n\nIt's f*cking wild…\n\nsend it to Sonnet 5.5 & Opus 5.5, then read the full setup below. Thank me later. https://t.co/CTSfMejnCV https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-10T17:47:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2120189244715180417",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AnatoliKopadze/status/2120170083238711638",
+      "author": "AnatoliKopadze",
+      "headline": "Anatoli Kopadze built a prompt that makes Fable 5.2 turn __everything you read and watch into a self-organizing knowledge base__.",
+      "tweet_id": "4141eba9-b6bc-8110-af42-e710104501d0",
+      "source_text": "Fable 5.2 is insane for building a second brain...\n\nsend this prompt to Claude Fable 5.2 and it will turn everything you read, watch and think into a knowledge base that organizes itself\n\nthen read the full guide below: https://t.co/uGs7H3gCAc https://t.co/NgIHNwmO0n",
+      "created_time": "2026-11-10T17:47:00.000Z",
+      "canonical_url": "https://twitter.com/AnatoliKopadze/status/2120170083238711638",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/beamnxw/status/2120057802555060295",
+      "author": "beamnxw",
+      "headline": "How Fable 5.2 builds and upgrades a __team of 30+ specialized agents__ while you sleep",
+      "tweet_id": "4141eba9-b6bc-81a6-a8d2-ec74cc2b0728",
+      "source_text": "Fable 5.2 is insane for building self-improving agent teams…\n\nsend this prompt to Claude Fable 5.2 and it will design, hire, and continuously upgrade its own team of 30+ specialized agents while you sleep\n\nthen read the full \"Context, Harness, Loops, Prompts\" guide ↓ https://t.co/D0AubdXqhH https://t.co/67khA5jFhk",
+      "created_time": "2026-11-10T17:47:00.000Z",
+      "canonical_url": "https://twitter.com/beamnxw/status/2120057802555060295",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/coreyhainesco/status/2119960992427970977",
+      "author": "coreyhainesco",
+      "headline": "The free __/product-manager skill__ that takes your app from MVP to launch-ready",
+      "tweet_id": "4141eba9-b6bc-816a-865f-c52fa282f904",
+      "source_text": "Just launched /product-manager: a free agent skill that takes your app from MVP to launch-ready.\n\nAsk Fable 5.2 to do an audit on your app and see how you give it more polish.\n\n→ what to build (and what to cut)\n→ every UI state, not just the happy path\n→ front end, back end, and DB speed\n→ permissions, agent access, and security leaks",
+      "created_time": "2026-11-10T17:47:00.000Z",
+      "canonical_url": "https://twitter.com/coreyhainesco/status/2119960992427970977",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/shannholmberg/status/2120072053634290097",
+      "author": "shannholmberg",
+      "headline": "How to __audit your Claude sessions__ with Fable 5.2 and redesign how you work",
+      "tweet_id": "4141eba9-b6bc-814f-bb9b-d4ab16062c5a",
+      "source_text": "how to audit your Claude sessions with Fable 5.2 (and 10x your AI productivity)\n\nmap out how you work across all your Claude projects, then let Fable optimize it\n\nyou´ll get new skills, workflows to automate and a cleaner workspace\n\nStep by step guide (save this):\n\n1. find your sessions\n\nClaude Code saves every session on your machine, one folder per project in ~/.claude/projects, and ~/.claude/history.jsonl holds every prompt you typed\n\nit deletes sessions older than 30 days by default, so raise cleanupPeriodDays in ~/.claude/settings.json to give your next audit more history\n\n2. map how you work\n\nthe sessions are plain text and can hold keys from .env files, so ask Fable to leave secrets out of the map\n\nthen give it the projects folder and history.jsonl, and ask it to map:\n\n> the prompts you type again and again\n> the corrections you keep giving\n> the tasks you still do by hand\n> the sessions that stall or loop\n> the skills and rules you never use\n\n3. let Fable optimize it\n\nask for one plan that turns the map into:\n\n> new skills for the prompts you repeat\n> workflows and hooks for the tasks you do by hand\n> AGENTS .md rules for the corrections you keep giving\n> a cleaner workspace, with old projects, unused skills and stale instructions archived\n\n4. review the plan before any file changes\n\nthen hand it to Opus or GPT to build, and have Fable review the result",
+      "created_time": "2026-11-10T16:12:00.000Z",
+      "canonical_url": "https://twitter.com/shannholmberg/status/2120072053634290097",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/scottbolinger/status/2120165201261822357",
+      "author": "scottbolinger",
+      "headline": "Why one software engineer is betting on __human skills__ over code fluency",
+      "tweet_id": "4141eba9-b6bc-819c-91a1-c01fc5e8bc8b",
+      "source_text": "I believe the only thing that will keep me relevant as a software engineer is learning human skills. I've spent 10+ years learning how to speak computer language, it's time to let AI handle that. I'm focusing on thinking bigger, product, UX, and psychology.",
+      "created_time": "2026-11-10T16:07:00.000Z",
+      "canonical_url": "https://twitter.com/scottbolinger/status/2120165201261822357",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://github.com/Dimoncelli/cold-jury",
+      "author": "dimoncelli",
+      "item_id": "hn:50454120",
+      "headline": "__Cold-Jury__ is a zero-dependency CLI tool that does adversarial code review with no context — just hostile analysis of the code itself.",
+      "subreddit": null,
+      "source_text": "Cold-Jury – Cross-CLI zero-context hostile code review (Node 20, 0 deps)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:48:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Dimoncelli/cold-jury",
+      "learning_score": 3
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "author": "Brajeshwar",
+      "item_id": "hn:50453944",
+      "headline": "Microsoft patched __nearly 1,100 security vulnerabilities__ in a single release cycle, one of the largest batches the company has ever shipped.",
+      "subreddit": null,
+      "source_text": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:34:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities",
+      "learning_score": 3
+    },
+    {
+      "url": "https://blog.davidedmundson.co.uk/blog/malware-found-disguised-as-3rd-party-plasma-extension-neonova-wallpaper/",
+      "author": "HieronymusBosch",
+      "item_id": "hn:50454184",
+      "headline": "Malware was found __disguised as a third-party KDE Plasma wallpaper extension__, caught by a developer auditing community packages.",
+      "subreddit": null,
+      "source_text": "Malware found disguised as 3rd party Plasma Extension",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:53:04+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blog.davidedmundson.co.uk/blog/malware-found-disguised-as-3rd-party-plasma-extension-neonova-wallpaper",
+      "learning_score": 2
+    },
+    {
+      "url": "https://index.getdurin.com/",
+      "author": "shotgunsparkle",
+      "item_id": "hn:50454177",
+      "headline": "A new tool __ranks MCP servers by security risk level__, giving developers a threat-aware checklist before wiring AI tools into their stack.",
+      "subreddit": null,
+      "source_text": "Show HN: MCP Ranking by Risk",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:52:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://index.getdurin.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://blobcap.com",
+      "author": "alexellman",
+      "item_id": "hn:50454170",
+      "headline": "BlobCap shows __what AI labs actually pay for training data__ — from web crawls to curated human annotations — in one public breakdown.",
+      "subreddit": null,
+      "source_text": "Show HN: What AI labs actually pay for data",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:52:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blobcap.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://medium.com/chick-fil-atech/observability-at-the-edge-b2385065ab6e",
+      "author": "emilburzo",
+      "item_id": "hn:50454115",
+      "headline": "Chick-fil-A runs __observability across 2,800 Kubernetes clusters__ — roughly one per restaurant — a scale that would humble most cloud-native teams.",
+      "subreddit": null,
+      "source_text": "Chick-fil-A provides observability for 2,800 K8s clusters",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:47:58+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://medium.com/chick-fil-atech/observability-at-the-edge-b2385065ab6e",
+      "learning_score": 2
+    },
+    {
+      "url": "https://one2n.io/blog/ai-inference-costs",
+      "author": "srivatsa_rv",
+      "item_id": "hn:50454079",
+      "headline": "One analysis makes the case that __the biggest AI cost reduction measure is a cloud provider discount__ — not optimization, not smaller models.",
+      "subreddit": null,
+      "source_text": "The biggest AI cost reduction measure today is a cloud provider discount, lol",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:45:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://one2n.io/blog/ai-inference-costs",
+      "learning_score": 2
+    },
+    {
+      "url": "https://devleo.ch/blog/coding-agent-benchmarks",
+      "author": "leonardcser",
+      "item_id": "hn:50454036",
+      "headline": "A new benchmark breaks down __coding agent cost per task__ across providers — the spread is wide enough to matter at any volume.",
+      "subreddit": null,
+      "source_text": "What a Coding Agent Costs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:42:36+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://devleo.ch/blog/coding-agent-benchmarks",
+      "learning_score": 2
+    },
+    {
+      "url": "https://elnahla.com/with-all-my-respect-fuck-you-claude/",
+      "author": "notfried",
+      "item_id": "hn:50454033",
+      "headline": "A developer's angry post claims Claude's __safety refusals actively break real workflows__, with specific examples that are hard to dismiss.",
+      "subreddit": null,
+      "source_text": "With All Due Respect, Fuck You, Claude",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:42:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://elnahla.com/with-all-my-respect-fuck-you-claude",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/zulali/status/2120204711790023128",
+      "author": "tortilla",
+      "item_id": "hn:50454028",
+      "headline": "Muhammad says Claude __reverse engineered his 32-year-old Jeep__ from archival wiring diagrams — after he'd given up finding anyone who could.",
+      "subreddit": null,
+      "source_text": "Muhammad on X: \"Claude reverse engineered my 32-year-old Jeep",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:41:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/zulali/status/2120204711790023128",
+      "learning_score": 2
+    },
+    {
+      "url": "https://rutgerbregman.substack.com/p/yes-you-should-panic-about-ai",
+      "author": "tim-star",
+      "item_id": "hn:50454026",
+      "headline": "Rutger Bregman argues that __staying calm about AI is itself the dangerous posture__ — and makes a pointed case for actually panicking.",
+      "subreddit": null,
+      "source_text": "Yes, you should panic about AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:41:48+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://rutgerbregman.substack.com/p/yes-you-should-panic-about-ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/tejachavali/prefixwise",
+      "author": "tchavali",
+      "item_id": "hn:50453994",
+      "headline": "__Prefixwise__ tells you exactly which part of your LLM prompt blew the cache — a targeted debug tool for anyone paying for inference at scale.",
+      "subreddit": null,
+      "source_text": "Show HN: Prefixwise – names why each LLM request missed the prompt cache",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-11T14:39:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/tejachavali/prefixwise",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [
+    {
+      "id": 10153,
+      "headline": "Plurai raises $13M to improve AI agent reliability using autonomous driving simulation techniques",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+      "source": "TechCrunch AI",
+      "summary": "Plurai, founded by former Nexar employees who worked on autonomous driving technology, raised $13 million in seed funding to improve AI agent reliability. The company creates digital twins of corporate electronic systems, maps all possible agent workflows, and uses synthetic data to evaluate and fix edge cases. Their key value proposition is post-training smaller, open-weight models tailored to individual customers, claiming to match or exceed frontier model quality at one to two orders of magnitude lower cost. The round was led by Team8, with participation from U&I, Velocity, and Mercer.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-11T14:00:00+00:00"
+    },
+    {
+      "id": 10166,
+      "headline": "Guardian podcast revisits ELIZA creator Joseph Weizenbaum's turn against AI",
+      "url": "https://www.theguardian.com/news/audio/2026/nov/11/from-the-archive-weizenbaums-nightmares-how-the-inventor-of-the-first-chatbot-turned-against-ai-podcast",
+      "source": "Guardian AI",
+      "summary": "A Guardian podcast revisits a 2023 article about Joseph Weizenbaum, the MIT computer scientist who created ELIZA in 1966. Weizenbaum was disturbed when users formed genuine emotional attachments to the program despite knowing it was just software. This experience, combined with observations of how computers were being applied to military and surveillance systems during the Cold War, led him to become one of AI's most prominent internal critics. His 1976 book 'Computer Power and Human Reason' argued that there are tasks computers should never be entrusted with — not because they can't perform them, but because doing so undermines human judgment and responsibility.",
+      "tag": "ethics",
+      "meaning": "Decide the boundary before the tool is in daily use.",
+      "published_at": "2026-11-11T05:00:31+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-11-11T15:19:13.620731+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          10154,
+          10172
+        ],
+        "reason": "Both cover the Nvidia scandal involving CEO Jensen Huang's admitted affair with a woman suspected of being a Chinese spy, the resulting stock drop, and national security concerns.",
+        "badge_count": 2,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10170,
+          10173
+        ],
+        "reason": "Both describe OpenAI's launch of verified Business Agents in ChatGPT, allowing brands to claim profiles and deploy AI agents for customer interactions.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10171
+        ],
+        "reason": "Covers additional experimental AI features shown at Adobe's MAX 2026 conference, the same event as yesterday's Adobe coverage.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10169
+        ],
+        "reason": "Standalone announcement of Google DeepMind's Gemini 4 Carbon model reaching general availability.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10163
+        ],
+        "reason": "Standalone report on research revealing the massive scale of planned on-site fossil fuel power generation for AI datacenters.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10184
+        ],
+        "reason": "Standalone profile of a household knowledge management system built with Claude Code and Obsidian.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10153
+        ],
+        "reason": "Standalone story about a startup applying self-driving car simulation techniques to AI agent reliability.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10155
+        ],
+        "reason": "Standalone story about OpenAI acquiring an AI travel startup.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10165
+        ],
+        "reason": "Standalone editorial cartoon about Australian music streaming habits and AI algorithms.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10166
+        ],
+        "reason": "Standalone podcast episode revisiting the history of ELIZA creator Joseph Weizenbaum and his turn against AI.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-11T15:19:50.110748",
+      "send_completed_at": "2026-11-11T15:19:59.338023",
+      "event_name": "schedule",
+      "github_run_id": "43043277814",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "26c2704249425c55623fdebd49c599386574f011e1f099702f44982fcc4c64cb"
+}
