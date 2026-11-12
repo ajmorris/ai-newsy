@@ -1,0 +1,620 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-12",
+  "issue_id": "20261112",
+  "subject_line": "ISSUE 61112 · 10 STORIES · 11 MIN READ",
+  "intro": "The AI world is bracing for a seismic leadership shakeup as Nvidia's board reportedly moves to oust CEO Jensen Huang — a stunning development that has already wiped over $427 billion in market value and raises hard questions about how much of the AI boom rests on the shoulders of a few powerful individuals. Beyond the boardroom drama, today's digest spans the full spectrum: from a cyberattack exposing Notion users' AI chat transcripts and United Airlines drawing a line against AI booking agents, to a record $4 billion fund betting big on AI's next wave and new research showing Americans want AI in their doctor's office — but not calling the shots.",
+  "article_count": 10,
+  "stories": [
+    {
+      "id": 10219,
+      "source": "The Rundown AI",
+      "title": "Nvidia board reportedly preparing to oust Jensen Huang after second affair revelation",
+      "url": "https://therundownai.beehiiv.com/p/ai-s-biggest-ceo-may-be-on-his-way-out",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia's board is reportedly preparing to remove CEO Jensen Huang following a second affair revelation involving a VP who reports directly to him. The company has lost over $427 billion in market value across recent trading sessions. A Guardian opinion column uses the episode to argue that individual tech executives hold dangerously outsized power over the global economy, warning it previews worse disruptions when the broader tech/AI bubble eventually bursts.",
+      "opinion": "The second revelation escalates what was already a severe corporate governance crisis into an existential leadership question for the most important company in the AI supply chain. Where coverage differs: The Rundown AI reports the board is 'preparing to remove' Huang; the Guardian column does not report imminent removal but frames the affair as evidence of systemic risk from concentrated tech power.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/2f116ab6-63df-4385-a60d-fb1b90c3e0e4/Jensen_Huang_NVIDIA_Market_Drop_Collage.png?t=1794440946",
+      "published_at": "2026-11-12T10:00:00+00:00",
+      "fetched_at": "2026-11-12T15:48:37.19712+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10219,
+            "source": "The Rundown AI",
+            "title": "AI’s biggest CEO may be on his way out",
+            "url": "https://therundownai.beehiiv.com/p/ai-s-biggest-ceo-may-be-on-his-way-out"
+          },
+          {
+            "id": 10212,
+            "source": "Guardian AI",
+            "title": "Billions lost and markets roiled by one man’s indiscretion. Isn’t it now clear that these tech bros are too powerful? | Aditya Chakrabortty",
+            "url": "https://www.theguardian.com/commentisfree/2026/nov/12/billions-lost-markets-roiled-one-man-indiscretion-tech-bro-jensen-huang-affair-nvidia"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "The Rundown AI reports the board is 'preparing to remove' Huang; the Guardian column does not report imminent removal but frames the affair as evidence of systemic risk from concentrated tech power."
+        ],
+        "is_update": true,
+        "reason": "Both cover the fallout from Jensen Huang's affair(s) and the resulting market losses and questions about tech executive power."
+      }
+    },
+    {
+      "id": 10201,
+      "source": "TechCrunch AI",
+      "title": "Cyberattack on Fireworks AI exposes Notion customers' chat transcripts",
+      "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Fireworks AI suffered a cyberattack where hackers breached its cloud provider to access a development system, exposing customer billing information and datasets. Notion disclosed that approximately 1% of its customers had chat transcripts from its Notion AI 'Insights' feature stolen. Notion disconnected from Fireworks on November 3. This is Fireworks' second breach in two months.",
+      "opinion": "A second breach in two months raises serious questions about Fireworks AI's security posture and the supply-chain risks companies accept when using third-party AI inference providers.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2021/02/notion-glitch-hero.jpg?resize=1200,827",
+      "published_at": "2026-11-12T15:02:28+00:00",
+      "fetched_at": "2026-11-12T15:48:33.394162+00:00"
+    },
+    {
+      "id": 10200,
+      "source": "TechCrunch AI",
+      "title": "Norwest raises record $4B fund to deepen AI investments",
+      "url": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Norwest, backed solely by Wells Fargo, has raised its largest fund ever at $4 billion to deepen investments in AI across consumer, healthcare, and technology sectors. The 65-year-old multi-stage firm plans to invest across the US, India, and Israel, with focus on AI-native applications, physical AI, domain-specific models, agentic cybersecurity, and aerospace.",
+      "opinion": "A $4B fund from a single LP like Wells Fargo signals that major financial institutions remain bullish on AI despite broader market turbulence.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/norwest_team-partner-offsite-2026-1-copy.jpg?resize=1200,805",
+      "published_at": "2026-11-12T15:18:14+00:00",
+      "fetched_at": "2026-11-12T15:48:33.226058+00:00"
+    },
+    {
+      "id": 10223,
+      "source": "The Verge AI",
+      "title": "United Airlines blocks AI agents from booking flights on its platform",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "United Airlines announced it will not allow personal AI agents to book flights, citing privacy concerns, unintended purchase risks, and federal regulatory requirements such as passengers attesting their bags don't contain explosives. AI agents can still display flight options but cannot complete transactions. This mirrors similar moves by eBay and major banks to restrict unauthorized AI agent access.",
+      "opinion": "Airlines and other regulated platforms pushing back against AI agents could significantly limit the practical utility of emerging autonomous assistants from Meta, OpenAI, and others.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23176430/1237621702.jpg?quality=90&strip=all&crop=0%2C10.721800295556%2C100%2C78.556399408888&w=1200",
+      "published_at": "2026-11-11T21:54:21+00:00",
+      "fetched_at": "2026-11-12T15:48:38.157608+00:00"
+    },
+    {
+      "id": 10209,
+      "source": "Guardian AI",
+      "title": "US workers winning fights to protect jobs from government AI adoption",
+      "url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Workers across the US are pushing back against government adoption of AI systems that could increase surveillance, inaccurately evaluate performance, or lead to layoffs. Oakland city workers' union voted 94.1% to authorize a strike on October 22, seeking protections to ensure workers won't be laid off or disciplined by AI. The broader trend shows US workers and unions gaining ground in securing workplace AI safeguards.",
+      "opinion": "A 94% strike authorization vote specifically over AI protections marks a significant escalation in organized labor's engagement with workplace automation concerns.",
+      "image_url": "https://i.guim.co.uk/img/media/56480260b7bf656d9742122815f5137a16b1a1e8/329_0_1706_1365/master/1706.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=486807db511f5cbdb931a0f4d8fcb587",
+      "published_at": "2026-11-12T15:00:44+00:00",
+      "fetched_at": "2026-11-12T15:48:35.064037+00:00"
+    },
+    {
+      "id": 10211,
+      "source": "Guardian AI",
+      "title": "AI helps UK economy defy slowdown expectations",
+      "url": "https://www.theguardian.com/business/2026/nov/12/ai-uk-economy-john-healey",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI has helped the UK economy grow at its fastest pace in over two years, defying forecasters' predictions of a slowdown. Despite ongoing threats from a potential tech slowdown and rising energy bills, the economy continues to outperform expectations four months after Chancellor John Healey took office.",
+      "opinion": "The claim that AI is materially boosting UK GDP growth is notable but the causal mechanism is vague, and the resilience may prove fragile heading into winter.",
+      "image_url": "https://i.guim.co.uk/img/media/9f8f14e2a01ec8c9a4d21b8b65ed45042405e31d/820_0_5862_4690/master/5862.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0bb7e9764b304a7bfe1777acfe980fe9",
+      "published_at": "2026-11-12T13:08:12+00:00",
+      "fetched_at": "2026-11-12T15:48:35.322675+00:00"
+    },
+    {
+      "id": 10220,
+      "source": "The Verge AI",
+      "title": "The Verge reviews Apple's $299 HomeView smart display",
+      "url": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Verge's senior smart home reviewer tested Apple's first smart display, the $299 HomeView, for a week in both tabletop and wall-mounted configurations. She evaluated it for cooking, smart home control, video calls, and Siri AI capabilities in an AMA-style Q&A for Verge subscribers.",
+      "opinion": "Apple entering the smart display market is a significant move but the real question is whether Siri's AI capabilities can compete with Google and Amazon's more mature smart home assistants.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268864_Smart_home_photos_HMCRAE102.jpg?quality=90&strip=all&crop=0%2C38.75799213023%2C100%2C34.929678677754&w=1200",
+      "published_at": "2026-11-12T14:10:00+00:00",
+      "fetched_at": "2026-11-12T15:48:37.878414+00:00"
+    },
+    {
+      "id": 10253,
+      "source": "Pew Research Center",
+      "title": "Pew study finds Americans open to AI in healthcare but want humans making final calls",
+      "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Pew Research Center published an expert brief on November 11, 2026, presenting findings on U.S. adults' views of AI in healthcare. The study finds general openness to AI in medical settings but strong preference that human professionals retain ultimate decision-making authority over patient care.",
+      "opinion": "The finding that Americans want humans making final medical calls is consistent with broader public sentiment and could inform healthcare AI regulation.",
+      "image_url": "",
+      "published_at": "2026-11-11T22:00:30+00:00",
+      "fetched_at": "2026-11-12T15:48:46.614755+00:00"
+    },
+    {
+      "id": 10252,
+      "source": "Pew Research Center",
+      "title": "Pew Research publishes report on dating attitudes of single Black adults",
+      "url": "https://www.pewresearch.org/race-and-ethnicity/2026/11/12/single-black-adults-acknowledgements/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Pew Research Center published a report titled 'The Dating Attitudes of Single Black Adults' on November 12, 2026, authored by Gabriel Piña, Ziyao Tian, and Mark Hugo Lopez, funded by The Pew Charitable Trusts and the People & Voices Initiative.",
+      "opinion": "This is an acknowledgements page for a demographics study, not an AI-related event.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/RE_2026.11.12_Single-Black-Adults_featured.png?w=1200&h=628&crop=1",
+      "published_at": "2026-11-12T14:57:21+00:00",
+      "fetched_at": "2026-11-12T15:48:46.520297+00:00"
+    },
+    {
+      "id": 10203,
+      "source": "TechCrunch AI",
+      "title": "Nine Korean startups pitch at DETO 2026 for TechCrunch Disrupt 2027 spot",
+      "url": "https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nine early-stage South Korean startups pitched at DETO 2026 in Seoul for a chance to compete in TechCrunch's Startup Battlefield 200 at Disrupt 2027. Voinosis, which develops AI that detects brain health changes through voice analysis, won the competition. Startups span healthcare, fintech, energy, semiconductors, and AI sectors.",
+      "opinion": "The focus on deep tech and US market entry reflects South Korea's ambition to compete globally in AI-adjacent hardware and health tech.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-613254398.jpg?resize=1200,800",
+      "published_at": "2026-11-12T13:26:25+00:00",
+      "fetched_at": "2026-11-12T15:48:33.767741+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10219,
+          "source": "The Rundown AI",
+          "title": "Nvidia board reportedly preparing to oust Jensen Huang after second affair revelation",
+          "url": "https://therundownai.beehiiv.com/p/ai-s-biggest-ceo-may-be-on-his-way-out",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia's board is reportedly preparing to remove CEO Jensen Huang following a second affair revelation involving a VP who reports directly to him. The company has lost over $427 billion in market value across recent trading sessions. A Guardian opinion column uses the episode to argue that individual tech executives hold dangerously outsized power over the global economy, warning it previews worse disruptions when the broader tech/AI bubble eventually bursts.",
+          "opinion": "The second revelation escalates what was already a severe corporate governance crisis into an existential leadership question for the most important company in the AI supply chain. Where coverage differs: The Rundown AI reports the board is 'preparing to remove' Huang; the Guardian column does not report imminent removal but frames the affair as evidence of systemic risk from concentrated tech power.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/2f116ab6-63df-4385-a60d-fb1b90c3e0e4/Jensen_Huang_NVIDIA_Market_Drop_Collage.png?t=1794440946",
+          "published_at": "2026-11-12T10:00:00+00:00",
+          "fetched_at": "2026-11-12T15:48:37.19712+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10219,
+                "source": "The Rundown AI",
+                "title": "AI’s biggest CEO may be on his way out",
+                "url": "https://therundownai.beehiiv.com/p/ai-s-biggest-ceo-may-be-on-his-way-out"
+              },
+              {
+                "id": 10212,
+                "source": "Guardian AI",
+                "title": "Billions lost and markets roiled by one man’s indiscretion. Isn’t it now clear that these tech bros are too powerful? | Aditya Chakrabortty",
+                "url": "https://www.theguardian.com/commentisfree/2026/nov/12/billions-lost-markets-roiled-one-man-indiscretion-tech-bro-jensen-huang-affair-nvidia"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "The Rundown AI reports the board is 'preparing to remove' Huang; the Guardian column does not report imminent removal but frames the affair as evidence of systemic risk from concentrated tech power."
+            ],
+            "is_update": true,
+            "reason": "Both cover the fallout from Jensen Huang's affair(s) and the resulting market losses and questions about tech executive power."
+          }
+        },
+        {
+          "id": 10201,
+          "source": "TechCrunch AI",
+          "title": "Cyberattack on Fireworks AI exposes Notion customers' chat transcripts",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Fireworks AI suffered a cyberattack where hackers breached its cloud provider to access a development system, exposing customer billing information and datasets. Notion disclosed that approximately 1% of its customers had chat transcripts from its Notion AI 'Insights' feature stolen. Notion disconnected from Fireworks on November 3. This is Fireworks' second breach in two months.",
+          "opinion": "A second breach in two months raises serious questions about Fireworks AI's security posture and the supply-chain risks companies accept when using third-party AI inference providers.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2021/02/notion-glitch-hero.jpg?resize=1200,827",
+          "published_at": "2026-11-12T15:02:28+00:00",
+          "fetched_at": "2026-11-12T15:48:33.394162+00:00"
+        },
+        {
+          "id": 10200,
+          "source": "TechCrunch AI",
+          "title": "Norwest raises record $4B fund to deepen AI investments",
+          "url": "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Norwest, backed solely by Wells Fargo, has raised its largest fund ever at $4 billion to deepen investments in AI across consumer, healthcare, and technology sectors. The 65-year-old multi-stage firm plans to invest across the US, India, and Israel, with focus on AI-native applications, physical AI, domain-specific models, agentic cybersecurity, and aerospace.",
+          "opinion": "A $4B fund from a single LP like Wells Fargo signals that major financial institutions remain bullish on AI despite broader market turbulence.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/norwest_team-partner-offsite-2026-1-copy.jpg?resize=1200,805",
+          "published_at": "2026-11-12T15:18:14+00:00",
+          "fetched_at": "2026-11-12T15:48:33.226058+00:00"
+        },
+        {
+          "id": 10223,
+          "source": "The Verge AI",
+          "title": "United Airlines blocks AI agents from booking flights on its platform",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "United Airlines announced it will not allow personal AI agents to book flights, citing privacy concerns, unintended purchase risks, and federal regulatory requirements such as passengers attesting their bags don't contain explosives. AI agents can still display flight options but cannot complete transactions. This mirrors similar moves by eBay and major banks to restrict unauthorized AI agent access.",
+          "opinion": "Airlines and other regulated platforms pushing back against AI agents could significantly limit the practical utility of emerging autonomous assistants from Meta, OpenAI, and others.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23176430/1237621702.jpg?quality=90&strip=all&crop=0%2C10.721800295556%2C100%2C78.556399408888&w=1200",
+          "published_at": "2026-11-11T21:54:21+00:00",
+          "fetched_at": "2026-11-12T15:48:38.157608+00:00"
+        },
+        {
+          "id": 10209,
+          "source": "Guardian AI",
+          "title": "US workers winning fights to protect jobs from government AI adoption",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Workers across the US are pushing back against government adoption of AI systems that could increase surveillance, inaccurately evaluate performance, or lead to layoffs. Oakland city workers' union voted 94.1% to authorize a strike on October 22, seeking protections to ensure workers won't be laid off or disciplined by AI. The broader trend shows US workers and unions gaining ground in securing workplace AI safeguards.",
+          "opinion": "A 94% strike authorization vote specifically over AI protections marks a significant escalation in organized labor's engagement with workplace automation concerns.",
+          "image_url": "https://i.guim.co.uk/img/media/56480260b7bf656d9742122815f5137a16b1a1e8/329_0_1706_1365/master/1706.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=486807db511f5cbdb931a0f4d8fcb587",
+          "published_at": "2026-11-12T15:00:44+00:00",
+          "fetched_at": "2026-11-12T15:48:35.064037+00:00"
+        },
+        {
+          "id": 10211,
+          "source": "Guardian AI",
+          "title": "AI helps UK economy defy slowdown expectations",
+          "url": "https://www.theguardian.com/business/2026/nov/12/ai-uk-economy-john-healey",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI has helped the UK economy grow at its fastest pace in over two years, defying forecasters' predictions of a slowdown. Despite ongoing threats from a potential tech slowdown and rising energy bills, the economy continues to outperform expectations four months after Chancellor John Healey took office.",
+          "opinion": "The claim that AI is materially boosting UK GDP growth is notable but the causal mechanism is vague, and the resilience may prove fragile heading into winter.",
+          "image_url": "https://i.guim.co.uk/img/media/9f8f14e2a01ec8c9a4d21b8b65ed45042405e31d/820_0_5862_4690/master/5862.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0bb7e9764b304a7bfe1777acfe980fe9",
+          "published_at": "2026-11-12T13:08:12+00:00",
+          "fetched_at": "2026-11-12T15:48:35.322675+00:00"
+        },
+        {
+          "id": 10220,
+          "source": "The Verge AI",
+          "title": "The Verge reviews Apple's $299 HomeView smart display",
+          "url": "https://www.theverge.com/tech/1031868/i-reviewed-the-apple-homeview-ask-me-anything",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Verge's senior smart home reviewer tested Apple's first smart display, the $299 HomeView, for a week in both tabletop and wall-mounted configurations. She evaluated it for cooking, smart home control, video calls, and Siri AI capabilities in an AMA-style Q&A for Verge subscribers.",
+          "opinion": "Apple entering the smart display market is a significant move but the real question is whether Siri's AI capabilities can compete with Google and Amazon's more mature smart home assistants.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268864_Smart_home_photos_HMCRAE102.jpg?quality=90&strip=all&crop=0%2C38.75799213023%2C100%2C34.929678677754&w=1200",
+          "published_at": "2026-11-12T14:10:00+00:00",
+          "fetched_at": "2026-11-12T15:48:37.878414+00:00"
+        },
+        {
+          "id": 10253,
+          "source": "Pew Research Center",
+          "title": "Pew study finds Americans open to AI in healthcare but want humans making final calls",
+          "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Pew Research Center published an expert brief on November 11, 2026, presenting findings on U.S. adults' views of AI in healthcare. The study finds general openness to AI in medical settings but strong preference that human professionals retain ultimate decision-making authority over patient care.",
+          "opinion": "The finding that Americans want humans making final medical calls is consistent with broader public sentiment and could inform healthcare AI regulation.",
+          "image_url": "",
+          "published_at": "2026-11-11T22:00:30+00:00",
+          "fetched_at": "2026-11-12T15:48:46.614755+00:00"
+        },
+        {
+          "id": 10252,
+          "source": "Pew Research Center",
+          "title": "Pew Research publishes report on dating attitudes of single Black adults",
+          "url": "https://www.pewresearch.org/race-and-ethnicity/2026/11/12/single-black-adults-acknowledgements/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Pew Research Center published a report titled 'The Dating Attitudes of Single Black Adults' on November 12, 2026, authored by Gabriel Piña, Ziyao Tian, and Mark Hugo Lopez, funded by The Pew Charitable Trusts and the People & Voices Initiative.",
+          "opinion": "This is an acknowledgements page for a demographics study, not an AI-related event.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/RE_2026.11.12_Single-Black-Adults_featured.png?w=1200&h=628&crop=1",
+          "published_at": "2026-11-12T14:57:21+00:00",
+          "fetched_at": "2026-11-12T15:48:46.520297+00:00"
+        },
+        {
+          "id": 10203,
+          "source": "TechCrunch AI",
+          "title": "Nine Korean startups pitch at DETO 2026 for TechCrunch Disrupt 2027 spot",
+          "url": "https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nine early-stage South Korean startups pitched at DETO 2026 in Seoul for a chance to compete in TechCrunch's Startup Battlefield 200 at Disrupt 2027. Voinosis, which develops AI that detects brain health changes through voice analysis, won the competition. Startups span healthcare, fintech, energy, semiconductors, and AI sectors.",
+          "opinion": "The focus on deep tech and US market entry reflects South Korea's ambition to compete globally in AI-adjacent hardware and health tech.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-613254398.jpg?resize=1200,800",
+          "published_at": "2026-11-12T13:26:25+00:00",
+          "fetched_at": "2026-11-12T15:48:33.767741+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/ivanfioravanti/status/2120654460003160455",
+      "author": "ivanfioravanti",
+      "headline": "Ivan Fioravanti makes the case for __Apple Containers as a security fence__ for coding agents: mount a read-only folder, run the agent, get the answer, destroy it.",
+      "tweet_id": "4161eba9-b6bc-8100-9b0f-d86d32c22c98",
+      "source_text": "The more I use Apple Containers, the more I like them! \n\nMy latest use: giving a coding agent read-only access to a codebase on the fly for investigation.\n1. Start a disposable container. It takes about half a second 🔥\n2. Mount one folder only, read-only \n3. Run the agent inside (like pi). It can search, read, and reach the web with curl \n4. Get the answer, destroy the container\n\nAn agent with a shell is powerful and risky: it could change files or read anything on your Mac 🤷🏻‍♂️. \n\nThe container here is the fence: total freedom, nothing to break outside. (we hope 🤣)",
+      "created_time": "2026-11-12T13:02:00.000Z",
+      "canonical_url": "https://twitter.com/ivanfioravanti/status/2120654460003160455",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/lennysan/status/2120574811038691488",
+      "author": "lennysan",
+      "headline": "Lenny Rachitsky: __281,000+ open tech roles__, up 17%, but almost none of the growth is in software — AI is creating jobs in hardware, data centers, and supply chain, not code.",
+      "tweet_id": "4161eba9-b6bc-81ed-91c1-c9b360aea0e8",
+      "source_text": "The tech job market is in its best shape in years. But almost none of the growth is coming from software jobs.\n\nThere are 281,000+ open roles at tech companies, up 17% from a year ago and 73% from the March 2023 low.\n\nBut open PM, eng, and design roles grew just 2%. Design (−28%) and UX research (−45%) actually shrank.\n\nSo where’s the growth coming from? Hardware engineering openings doubled. Business ops added ~4,200 openings. Supply chain is up 63%. Many of the fastest-growing jobs are physical: data center technicians, installers, field service engineers.\n\nThe AI boom is creating jobs, but mostly in building and running the physical infrastructure (chips, data centers, hardware), not building software.\n\nTimes, they are a-changin’.\n\nFull report: https://t.co/Gly6uqwKxe",
+      "created_time": "2026-11-12T12:37:00.000Z",
+      "canonical_url": "https://twitter.com/lennysan/status/2120574811038691488",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/richtabor/status/2120547867110649945",
+      "author": "richtabor",
+      "headline": "WordPress Studio 2.2 adds __connectors for Claude, ChatGPT, Cursor, and Grok__, 1.6x faster preview uploads, and Chromium dev tools built into the workspace.",
+      "tweet_id": "4151eba9-b6bc-8101-be4b-d2713c77504c",
+      "source_text": "WordPress Studio 2.2 ✨\n\nyour workspace, now with the tools you reach for, right up top.\n\n✓ tabs: browser, admin, design, emails\n✓ connectors for @claudeai code, @ChatGPT, @cursor_ai  & @grok build\n✓ 1.6x faster preview uploads on @wordpressdotcom\n✓ chromium dev tools\n✓ see all mail sent in the email log\n✓ show/hide the admin bar\n✓ annotate by selecting a region\n✓ run /start & /stop from chat\n✓ start sites via macOS Spotlight\n✓ fullscreen any view",
+      "created_time": "2026-11-11T17:07:00.000Z",
+      "canonical_url": "https://twitter.com/richtabor/status/2120547867110649945",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/TheCoolestCool/status/2120276330097115403",
+      "author": "TheCoolestCool",
+      "headline": "A Fable 5.2 prompt for diagnosing __why AI recommends your competitor__ over you: search buyer questions, compare source citations, then close the gaps.",
+      "tweet_id": "4151eba9-b6bc-81f2-8c9a-e9524eb48cd0",
+      "source_text": "Steal this Fable 5.2 prompt 🤯\n\nIt shows why AI recommends your competitor over you👇\n\nAct as an AI search analyst for a B2B SaaS company. We're [BRAND] [URL]. Our main competitor is [COMPETITOR]. Figure out why AI recommends them over us, then work out why.\n\nPhase 1: Investigate\n\n• Using these sales call notes, write 20 questions our buyers ask before they shortlist vendors: [PASTE NOTES]\n• Search each one. Note who gets recommended, and which pages, reviews, threads, and videos each answer leans on.\n• Add these answers from ChatGPT, Perplexity, or Google's AI Overviews, and keep each tool separate: [PASTE ANSWERS]\n\nPhase 2: Diagnose\n\n• Compare what AI can find about them vs. us: pricing, integrations, proof, comparison pages, reviews, and community mentions.\n• Fetch our key pages as raw HTML and flag anything AI can't see.\n• Find every place we describe ourselves differently across our site, docs, and review profiles.\n\nPhase 3: Plan\n\nGive me a one-page brief:\n• The 5 biggest reasons they win, ranked by how much each one costs us\n• The fix for each, with an owner and a rough effort estimate\n• One thing we should stop doing\n\nGround rules:\nShow your source for every claim. If you can't check something, say so. Don't invent numbers. If you can split the work across agents, run Phase 1 in parallel.",
+      "created_time": "2026-11-11T17:02:00.000Z",
+      "canonical_url": "https://twitter.com/TheCoolestCool/status/2120276330097115403",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://news.ycombinator.com/item?id=50469011",
+      "author": "jkowens",
+      "item_id": "hn:50469011",
+      "headline": "__DeployAngel__ tells you within 20 minutes whether a production deploy broke something.",
+      "subreddit": null,
+      "source_text": "Show HN: DeployAngel – A verdict in ~20 minutes if a deploy broke production",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:30:09+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://news.ycombinator.com/item?id=50469011",
+      "learning_score": 3
+    },
+    {
+      "url": "https://fable52.games",
+      "author": "felixne",
+      "item_id": "hn:50469007",
+      "headline": "__Fable52.games__ lets you play and inspect AI-generated single-file HTML games built with Fable 5.2.",
+      "subreddit": null,
+      "source_text": "Show HN: Fable52.games – Play and inspect Fable 5.2 single-file HTML games",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:30:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://fable52.games",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/ebrake/pulumi-journaling",
+      "author": "unconscionable",
+      "item_id": "hn:50468977",
+      "headline": "Open-source port bringing __Pulumi's 20x faster journaling__ to teams managing their own infrastructure back ends.",
+      "subreddit": null,
+      "source_text": "Show HN: Bringing Pulumi's 20x faster journaling to DIY back ends",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:27:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/ebrake/pulumi-journaling",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/relatedb/relate",
+      "author": "jexp",
+      "item_id": "hn:50469300",
+      "headline": "Neo4j shipped __Relate__, an embedded agent-native graph database built to live inside AI stacks.",
+      "subreddit": null,
+      "source_text": "Relate by Neo4j – embedded, agent-native graph database",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:45:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/relatedb/relate",
+      "learning_score": 2
+    },
+    {
+      "url": "https://shader-learn.vercel.app/en",
+      "author": "huozhi",
+      "item_id": "hn:50469293",
+      "headline": "Even with AI that can write shaders on demand, the case for __learning them from scratch yourself__ still lands.",
+      "subreddit": null,
+      "source_text": "Learning shaders when AI can write them for you",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:44:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://shader-learn.vercel.app/en",
+      "learning_score": 2
+    },
+    {
+      "url": "https://getcinnamon.ai/",
+      "author": "mv4",
+      "item_id": "hn:50469267",
+      "headline": "__Cinnamon AI__ bills itself as an agent for your whole family, not just developers.",
+      "subreddit": null,
+      "source_text": "Show HN: Cinnamon AI – an agent for your family",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:43:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://getcinnamon.ai",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.lttlabs.com/articles/2026/11/12/nvidia-pair",
+      "author": "nwnht",
+      "item_id": "hn:50469252",
+      "headline": "Nvidia's __Pair product can't cluster__ — a technical breakdown landing at an awkward moment for the company.",
+      "subreddit": null,
+      "source_text": "Nvidia Pair Can't Cluster",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:42:58+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lttlabs.com/articles/2026/11/12/nvidia-pair",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/samukbg/Jarvis-Live",
+      "author": "spreadoutai",
+      "item_id": "hn:50469227",
+      "headline": "__Jarvis Live__ is an open-source voice agent that runs entirely on your own machine — no cloud required.",
+      "subreddit": null,
+      "source_text": "Show HN: Jarvis Live – open-source voice agent that runs on your own computer",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:41:45+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/samukbg/Jarvis-Live",
+      "learning_score": 2
+    },
+    {
+      "url": "https://matthewboston.com/blog/acceptance-criteria-must-be-provable.html",
+      "author": "bostonaholic",
+      "item_id": "hn:50469206",
+      "headline": "The case that __acceptance criteria must be provable__ — if you can't write a test for it, it's not a requirement.",
+      "subreddit": null,
+      "source_text": "Acceptance Criteria Must Be Provable",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:40:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://matthewboston.com/blog/acceptance-criteria-must-be-provable.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/vanviegen/tps",
+      "author": "vanviegen",
+      "item_id": "hn:50469196",
+      "headline": "__TPS__ is an open-source agent manager built for running many AI tasks in parallel without losing track.",
+      "subreddit": null,
+      "source_text": "Show HN: TPS – My highly productive agent manager",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:40:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/vanviegen/tps",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.businessinsider.com/elon-musk-hire-nvidia-ceo-jensen-huang-if-board-ousts-2026-11",
+      "author": "Bluestein",
+      "item_id": "hn:50469102",
+      "headline": "Elon Musk says he would __hire Jensen Huang__ if Nvidia's board shows him the door.",
+      "subreddit": null,
+      "source_text": "Elon Musk says he would hire Jensen Huang",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:34:26+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://businessinsider.com/elon-musk-hire-nvidia-ceo-jensen-huang-if-board-ousts-2026-11",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/aperiodic-io/tparquet/",
+      "author": "legothief",
+      "item_id": "hn:50469022",
+      "headline": "__TParquet__ applies Pcodec to time-series Parquet files and claims 50% better compression ratios.",
+      "subreddit": null,
+      "source_text": "TParquet – Parquet for time-series, 50% compression with Pcodec",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-12T15:30:44+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/aperiodic-io/tparquet",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__Inside this quantum computer, memory vibrates like a guitar string__",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261109205416.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-12T16:12:45.519911+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          10219,
+          10212
+        ],
+        "reason": "Both cover the fallout from Jensen Huang's affair(s) and the resulting market losses and questions about tech executive power.",
+        "badge_count": 2,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10201
+        ],
+        "reason": "Unique event: cyberattack on Fireworks AI exposing Notion customer data.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10200
+        ],
+        "reason": "Unique event: Norwest raising a $4B fund focused on AI investments.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10223
+        ],
+        "reason": "Unique event: United Airlines blocking AI agents from booking flights.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10209
+        ],
+        "reason": "Unique event: US workers and unions pushing back against government AI adoption.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10211
+        ],
+        "reason": "Unique event: AI contributing to UK economic resilience beyond expectations.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10220
+        ],
+        "reason": "Unique event: review of Apple's first smart display, the HomeView.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10253
+        ],
+        "reason": "Unique event: Pew Research study on American attitudes toward AI in healthcare.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10252
+        ],
+        "reason": "Standalone acknowledgements page for a Pew dating attitudes report; not an AI event.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10203
+        ],
+        "reason": "Unique event: Korean startups competing at DETO 2026 for TechCrunch Disrupt spot.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "6886631062ca9591534f96e42e6fb6016b2925932aa4bca6e0ca6911db0cf422"
+}
