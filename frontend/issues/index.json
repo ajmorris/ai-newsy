@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-11T00:00:00Z",
-  "issueCount": 185,
+  "generatedAt": "2026-11-12T00:00:00Z",
+  "issueCount": 186,
   "latestIssue": {
-    "slug": "2026-11-11",
-    "digestDate": "2026-11-11",
-    "displayDate": "Nov 11, 2026",
-    "issueNumber": "61111",
-    "subject": "ISSUE 61111 \u00b7 10 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is reeling today as Nvidia CEO Jensen Huang's admission of an affair with a suspected Chinese spy sent the chipmaker's stock tumbling and raised urgent questions about the security of America's most critical AI infrastructure. But the industry isn't standing still \u2014 Google DeepMind is making Gemini 4 Carbon widely available, OpenAI is turning ChatGPT into a storefront with verified Business Agents, and a staggering 181GW of gas-fired power plants are being planned just to keep AI's lights on. It's a day that captures the full spectrum of AI's current moment: geopolitical risk, fierce competition, and an energy appetite that's reshaping the grid.",
+    "slug": "2026-11-12",
+    "digestDate": "2026-11-12",
+    "displayDate": "Nov 12, 2026",
+    "issueNumber": "61112",
+    "subject": "ISSUE 61112 \u00b7 10 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is bracing for a seismic leadership shakeup as Nvidia's board reportedly moves to oust CEO Jensen Huang \u2014 a stunning development that has already wiped over $427 billion in market value and raises hard questions about how much of the AI boom rests on the shoulders of a few powerful individuals. Beyond the boardroom drama, today's digest spans the full spectrum: from a cyberattack exposing Notion users' AI chat transcripts and United Airlines drawing a line against AI booking agents, to a record $4 billion fund betting big on AI's next wave and new research showing Americans want AI in their doctor's office \u2014 but not calling the shots.",
     "articleCount": 10,
-    "urlPath": "/issues/2026-11-11.html",
-    "contentHash": "26c2704249425c55623fdebd49c599386574f011e1f099702f44982fcc4c64cb"
+    "urlPath": "/issues/2026-11-12.html",
+    "contentHash": "6886631062ca9591534f96e42e6fb6016b2925932aa4bca6e0ca6911db0cf422"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-12",
+      "digestDate": "2026-11-12",
+      "displayDate": "Nov 12, 2026",
+      "issueNumber": "61112",
+      "subject": "ISSUE 61112 \u00b7 10 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is bracing for a seismic leadership shakeup as Nvidia's board reportedly moves to oust CEO Jensen Huang \u2014 a stunning development that has already wiped over $427 billion in market value and raises hard questions about how much of the AI boom rests on the shoulders of a few powerful individuals. Beyond the boardroom drama, today's digest spans the full spectrum: from a cyberattack exposing Notion users' AI chat transcripts and United Airlines drawing a line against AI booking agents, to a record $4 billion fund betting big on AI's next wave and new research showing Americans want AI in their doctor's office \u2014 but not calling the shots.",
+      "articleCount": 10,
+      "urlPath": "/issues/2026-11-12.html",
+      "contentHash": "6886631062ca9591534f96e42e6fb6016b2925932aa4bca6e0ca6911db0cf422"
+    },
     {
       "slug": "2026-11-11",
       "digestDate": "2026-11-11",
@@ -133,17 +144,6 @@
       "articleCount": 7,
       "urlPath": "/issues/2026-11-01.html",
       "contentHash": "ee099b5137f6e2b3ea361480f020e3807ebb1a264d67bc6e8e21027cba83d007"
-    },
-    {
-      "slug": "2026-10-31",
-      "digestDate": "2026-10-31",
-      "displayDate": "Oct 31, 2026",
-      "issueNumber": "61031",
-      "subject": "ISSUE 61031 \u00b7 9 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry's insatiable appetite for hardware is reshaping the entire tech landscape \u2014 Nvidia is backing billions in debt for a massive new Anthropic data center, Intel's stock just cratered 28% as AI devours the components PCs need, and Sam Altman is openly arguing your laptop's RAM would be better off in the cloud. Meanwhile, the big four AI companies are finally uniting on a shared standard to let publishers opt out of data scraping, Apple Intelligence is making its long-awaited debut in China, and a Stanford professor has a warning for anyone rushing to flatten their org chart with AI.",
-      "articleCount": 9,
-      "urlPath": "/issues/2026-10-31.html",
-      "contentHash": "8009ef7749bd3425dfdf14c78a16f29f0b6112000ebb5961df2d65310448590d"
     }
   ]
 }
