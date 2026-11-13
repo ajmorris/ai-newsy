@@ -1,0 +1,715 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-13",
+  "issue_id": "20261113",
+  "subject_line": "ISSUE 61113 · 7 STORIES · 11 MIN READ",
+  "intro": "The AI world is reeling today after Jensen Huang's sudden resignation from Nvidia, capping a scandal that has spiraled from tabloid shock into a full-blown national security crisis involving alleged Chinese intelligence ties and GPU smuggling — and the political fallout is still spreading. But the industry isn't standing still: Google dropped Gemini 4 Hydrogen as its new speed-first model across Search and its entire product ecosystem, ElevenLabs unveiled a team-oriented AI meeting app, and The Verge gave Anthropic's new Claude Duet agent a verdict of \"surprisingly helpful but occasionally neurotic.\" It's one of those days where the biggest story in AI isn't about a model launch — it's about the man who made the GPUs they all run on walking out the door.",
+  "article_count": 7,
+  "stories": [
+    {
+      "id": 10285,
+      "source": "MIT Tech Review AI",
+      "title": "Jensen Huang resigns from Nvidia as scandal widens into national security and political crisis",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Jensen Huang resigned as Nvidia CEO and board member effective immediately after 33 years, following NYT reports linking him to extramarital affairs including one with an alleged Chinese intelligence asset connected to Megaspeed, a Singaporean firm under investigation for smuggling GPUs to China. CFO Colette Kress was named interim CEO. The fallout is spreading: US Commerce Secretary Howard Lutnick faces potential dismissal over alleged inaction on the spy scandal; House committee chairs are seeking a closed-door briefing from Huang on national security concerns; and a WSJ report revealed Huang had privately described Kress as 'a deer in the headlights.' Separately, MIT Technology Review reported that Nvidia privately confirmed to Congress it could implement chip-tracking anti-smuggling measures even as the Semiconductor Industry Association publicly called them 'potentially infeasible.' Israeli VCs, noting Nvidia's 6,000 employees and largest non-US R&D facility in Israel, see Huang's departure as unlikely to kill demand but believe it could open a window for AI chip competitors.",
+      "opinion": "The resignation confirms that the board pressure reported yesterday has culminated in an immediate leadership change. The widening scandal now threatens not just Nvidia's stability but US trade enforcement credibility, with the chip-tracking revelation suggesting the industry actively lobbied against feasible security measures. Whether interim CEO Kress can steady the ship—especially given Huang's reported lack of confidence in her—will be tested when Nvidia reports earnings on November 17. Where coverage differs: The Rundown AI reports Nvidia stock dropped 'over 14%' while yesterday's coverage cited '$427 billion' in lost market value WSJ (via TechCrunch) reports Huang called Kress 'a deer in the headlights' while The Rundown AI and The Verge present her appointment neutrally TechCrunch reports a third affair was later reported by Reuters; The Rundown AI mentions 'multiple reports of relationships with employees' without specifying a third The Verge frames the story primarily around Nvidia's China business dealings; Guardian frames it around the spy scandal and Lutnick's political jeopardy TechCrunch reports Kress had scaled back Nvidia's OpenAI Ohio data center commitment from $250 billion to $105 billion; other sources do not mention this",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/foster-huang2a.jpg?resize=1200,600",
+      "published_at": "2026-11-12T20:16:24+00:00",
+      "fetched_at": "2026-11-13T15:09:10.951959+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10285,
+            "source": "MIT Tech Review AI",
+            "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+            "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+          },
+          {
+            "id": 10274,
+            "source": "The Rundown AI",
+            "title": "Nvidia enters life without Jensen Huang",
+            "url": "https://therundownai.beehiiv.com/p/nvidia-enters-life-without-jensen-huang"
+          },
+          {
+            "id": 10275,
+            "source": "The Verge AI",
+            "title": "What&#8217;s really at stake in the Jensen Huang saga",
+            "url": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast"
+          },
+          {
+            "id": 10267,
+            "source": "Guardian AI",
+            "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
+            "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china"
+          },
+          {
+            "id": 10258,
+            "source": "TechCrunch AI",
+            "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+            "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/"
+          },
+          {
+            "id": 10259,
+            "source": "TechCrunch AI",
+            "title": "Jensen Huang didn’t show confidence in his successor, report says",
+            "url": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/"
+          }
+        ],
+        "badge_count": 6,
+        "conflicts": [
+          "The Rundown AI reports Nvidia stock dropped 'over 14%' while yesterday's coverage cited '$427 billion' in lost market value",
+          "WSJ (via TechCrunch) reports Huang called Kress 'a deer in the headlights' while The Rundown AI and The Verge present her appointment neutrally",
+          "TechCrunch reports a third affair was later reported by Reuters; The Rundown AI mentions 'multiple reports of relationships with employees' without specifying a third",
+          "The Verge frames the story primarily around Nvidia's China business dealings; Guardian frames it around the spy scandal and Lutnick's political jeopardy",
+          "TechCrunch reports Kress had scaled back Nvidia's OpenAI Ohio data center commitment from $250 billion to $105 billion; other sources do not mention this"
+        ],
+        "is_update": true,
+        "reason": "All cover the aftermath of Jensen Huang's resignation from Nvidia and its cascading effects: the resignation itself, political fallout for Commerce Secretary Lutnick, Israeli VC reactions, Huang's reported lack of confidence in his successor, and Nvidia's chip-tracking lobbying contradictions tied to the Megaspeed spy scandal."
+      }
+    },
+    {
+      "id": 10272,
+      "source": "DeepMind Blog",
+      "title": "Google launches Gemini 4 Hydrogen, a speed-optimized AI model across its product ecosystem",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google DeepMind announced Gemini 4 Hydrogen on November 12, 2026, a new model in the Gemini 4 family optimized for speed and efficiency in coding, agentic workflows, and complex queries. While the frontier models Gemini 4 Carbon and Gemini 4 Argon handle deep reasoning, Hydrogen is designed for rapid execution and is now the default model in Google's AI Mode for Search. It is available across Google AI Studio, the Gemini API, the Gemini app, Google Search, Google Antigravity, and paid Google AI Pro/Ultra subscribers. Google claims it surpasses Argon on the Artificial Analysis Intelligence Index at its default high thinking level, and offers new thinking level options including 'xhigh' mode. Google's VP of Search product Robby Stein calls it 'the biggest model upgrade to Search yet.'",
+      "opinion": "Google is positioning Hydrogen as the workhorse model that brings Gemini 4-level intelligence to everyday tasks and all user tiers, while reserving Carbon and Argon for frontier reasoning. Making it the default in Search signals confidence and directly challenges competitors' consumer-facing models. Where coverage differs: DeepMind Blog emphasizes coding and agentic workflow optimization; The Verge emphasizes improved handling of complex queries with typos and multiple parts The Verge mentions availability on 'Google Antigravity' which is not mentioned in the DeepMind Blog post",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+      "published_at": "2026-11-12T18:00:50+00:00",
+      "fetched_at": "2026-11-13T15:09:04.999061+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10272,
+            "source": "DeepMind Blog",
+            "title": "Introducing Gemini 4 Hydrogen",
+            "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+          },
+          {
+            "id": 10278,
+            "source": "The Verge AI",
+            "title": "Google’s new Gemini model is better at understanding complicated questions",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "DeepMind Blog emphasizes coding and agentic workflow optimization; The Verge emphasizes improved handling of complex queries with typos and multiple parts",
+          "The Verge mentions availability on 'Google Antigravity' which is not mentioned in the DeepMind Blog post"
+        ],
+        "is_update": false,
+        "reason": "Both announce Google's Gemini 4 Hydrogen model release on the same date with overlapping details about its capabilities and availability."
+      }
+    },
+    {
+      "id": 10257,
+      "source": "TechCrunch AI",
+      "title": "ElevenLabs launches ElevenAI, a team-oriented meeting and dictation app with agent integration",
+      "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "ElevenLabs released an experimental app called ElevenAI that combines meeting note-taking, dictation in 90+ languages, and agent integration for teams and enterprises. Announced at the company's 11/11 Summit in New York, the app is in preview with early access sign-ups. The $22 billion-valued company positions ElevenAI as a team-oriented product entering a space occupied by Fireflies, Wispr Flow, and Granola.",
+      "opinion": "ElevenLabs is expanding beyond its voice AI roots into the crowded meeting-productivity space, betting that agent integration and multilingual dictation can differentiate it from established competitors.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-13-at-7.19.18-PM.jpg?resize=1200,774",
+      "published_at": "2026-11-13T14:44:48+00:00",
+      "fetched_at": "2026-11-13T15:09:00.736159+00:00"
+    },
+    {
+      "id": 10266,
+      "source": "Guardian AI",
+      "title": "Research finds datacenter industry uses propaganda to suppress community opposition",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/13/datacenter-industry-propaganda",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Research findings indicate the datacenter industry employs propaganda, disinformation, and information control tactics to shape public opinion and suppress community opposition to datacenter construction. Critics have been labeled 'Antifa,' 'commies,' and 'Chinese bots' by tech leaders and politicians, who characterize resistance as a 'documented psyop.' The authors argue big tech uses misdirection and technical jargon to obscure potential harms to local communities.",
+      "opinion": "The piece highlights a growing tension between the AI infrastructure buildout and affected communities, suggesting the industry's response to legitimate local concerns has been to delegitimize opposition rather than address it.",
+      "image_url": "https://i.guim.co.uk/img/media/18e15c037cace1b02491fbe6db4b706131a6900f/570_0_2700_2160/master/2700.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e31a3594e457d366357d6fc458a6460a",
+      "published_at": "2026-11-13T13:00:18+00:00",
+      "fetched_at": "2026-11-13T15:09:03.368483+00:00"
+    },
+    {
+      "id": 10298,
+      "source": "Pew Research Center",
+      "title": "Pew finds large majorities say social media companies and news orgs hold too much political power",
+      "url": "https://www.pewresearch.org/newsletter/the-briefing/majorities-of-americans-say-social-media-companies-news-organizations-have-too-much-power-in-politics/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew Research Center analysis finds 69% of U.S. adults believe social media companies have too much influence in politics, while 55% say the same about news organizations. Only 6% and 14% respectively think these institutions have too little influence. The newsletter also covers Mississippi electing its first Democratic U.S. Senator in 44 years (Scott Colom) and the shutdown of Salon after 30+ years.",
+      "opinion": "The findings reflect broad bipartisan skepticism toward institutional media power, though the survey does not distinguish between concern about platform algorithms and concern about editorial decisions.",
+      "image_url": "",
+      "published_at": "2026-11-12T22:14:38+00:00",
+      "fetched_at": "2026-11-13T15:09:23.588795+00:00"
+    },
+    {
+      "id": 10276,
+      "source": "The Verge AI",
+      "title": "The Verge reviews Claude Duet: surprisingly helpful but occasionally neurotic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Verge's Allison Johnson reviews Claude Duet, Anthropic's new consumer-facing AI agent for professionals and small business owners. Available as a research preview to Pro, Max, and Ultra subscribers in the US, Duet gets its own app and is designed to manage work and travel schedules using its own judgment about what needs attention. Johnson finds it genuinely useful but notes it can be overly eager and somewhat neurotic, occasionally acting like a nag.",
+      "opinion": "Duet enters a growing field of consumer AI agents alongside Meta's Muse and OpenAI's Dots, positioning itself as work-focused rather than a general lifestyle assistant. The 'neurotic' observation suggests Anthropic's safety-conscious design philosophy may create a distinctive but polarizing user experience.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04398_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+      "published_at": "2026-11-13T14:00:00+00:00",
+      "fetched_at": "2026-11-13T15:09:08.169819+00:00"
+    },
+    {
+      "id": 10268,
+      "source": "Guardian AI",
+      "title": "First Dog on the Moon introduces Pino, an AI-powered virtual kiwi who likes trains and cats",
+      "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/13/have-we-finally-found-a-valid-use-case-for-ai-meet-pino-the-autonomous-virtual-kiwi",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A cartoon by First Dog on the Moon introduces Pino, an autonomous virtual kiwi powered by AI who independently decides he is into trains and cats. The piece is a humorous take on finding a valid use case for artificial intelligence.",
+      "opinion": "A lighthearted satirical piece poking fun at the AI industry's search for compelling consumer use cases.",
+      "image_url": "https://i.guim.co.uk/img/media/ef4684bfabe671cc5f1404e36328b02e7048e7c8/0_96_960_768/master/960.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=15065c33df88db93c5b9c37dadb96b10",
+      "published_at": "2026-11-13T05:35:13+00:00",
+      "fetched_at": "2026-11-13T15:09:03.794363+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10285,
+          "source": "MIT Tech Review AI",
+          "title": "Jensen Huang resigns from Nvidia as scandal widens into national security and political crisis",
+          "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Jensen Huang resigned as Nvidia CEO and board member effective immediately after 33 years, following NYT reports linking him to extramarital affairs including one with an alleged Chinese intelligence asset connected to Megaspeed, a Singaporean firm under investigation for smuggling GPUs to China. CFO Colette Kress was named interim CEO. The fallout is spreading: US Commerce Secretary Howard Lutnick faces potential dismissal over alleged inaction on the spy scandal; House committee chairs are seeking a closed-door briefing from Huang on national security concerns; and a WSJ report revealed Huang had privately described Kress as 'a deer in the headlights.' Separately, MIT Technology Review reported that Nvidia privately confirmed to Congress it could implement chip-tracking anti-smuggling measures even as the Semiconductor Industry Association publicly called them 'potentially infeasible.' Israeli VCs, noting Nvidia's 6,000 employees and largest non-US R&D facility in Israel, see Huang's departure as unlikely to kill demand but believe it could open a window for AI chip competitors.",
+          "opinion": "The resignation confirms that the board pressure reported yesterday has culminated in an immediate leadership change. The widening scandal now threatens not just Nvidia's stability but US trade enforcement credibility, with the chip-tracking revelation suggesting the industry actively lobbied against feasible security measures. Whether interim CEO Kress can steady the ship—especially given Huang's reported lack of confidence in her—will be tested when Nvidia reports earnings on November 17. Where coverage differs: The Rundown AI reports Nvidia stock dropped 'over 14%' while yesterday's coverage cited '$427 billion' in lost market value WSJ (via TechCrunch) reports Huang called Kress 'a deer in the headlights' while The Rundown AI and The Verge present her appointment neutrally TechCrunch reports a third affair was later reported by Reuters; The Rundown AI mentions 'multiple reports of relationships with employees' without specifying a third The Verge frames the story primarily around Nvidia's China business dealings; Guardian frames it around the spy scandal and Lutnick's political jeopardy TechCrunch reports Kress had scaled back Nvidia's OpenAI Ohio data center commitment from $250 billion to $105 billion; other sources do not mention this",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/foster-huang2a.jpg?resize=1200,600",
+          "published_at": "2026-11-12T20:16:24+00:00",
+          "fetched_at": "2026-11-13T15:09:10.951959+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10285,
+                "source": "MIT Tech Review AI",
+                "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+                "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+              },
+              {
+                "id": 10274,
+                "source": "The Rundown AI",
+                "title": "Nvidia enters life without Jensen Huang",
+                "url": "https://therundownai.beehiiv.com/p/nvidia-enters-life-without-jensen-huang"
+              },
+              {
+                "id": 10275,
+                "source": "The Verge AI",
+                "title": "What&#8217;s really at stake in the Jensen Huang saga",
+                "url": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast"
+              },
+              {
+                "id": 10267,
+                "source": "Guardian AI",
+                "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
+                "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china"
+              },
+              {
+                "id": 10258,
+                "source": "TechCrunch AI",
+                "title": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
+                "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/"
+              },
+              {
+                "id": 10259,
+                "source": "TechCrunch AI",
+                "title": "Jensen Huang didn’t show confidence in his successor, report says",
+                "url": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/"
+              }
+            ],
+            "badge_count": 6,
+            "conflicts": [
+              "The Rundown AI reports Nvidia stock dropped 'over 14%' while yesterday's coverage cited '$427 billion' in lost market value",
+              "WSJ (via TechCrunch) reports Huang called Kress 'a deer in the headlights' while The Rundown AI and The Verge present her appointment neutrally",
+              "TechCrunch reports a third affair was later reported by Reuters; The Rundown AI mentions 'multiple reports of relationships with employees' without specifying a third",
+              "The Verge frames the story primarily around Nvidia's China business dealings; Guardian frames it around the spy scandal and Lutnick's political jeopardy",
+              "TechCrunch reports Kress had scaled back Nvidia's OpenAI Ohio data center commitment from $250 billion to $105 billion; other sources do not mention this"
+            ],
+            "is_update": true,
+            "reason": "All cover the aftermath of Jensen Huang's resignation from Nvidia and its cascading effects: the resignation itself, political fallout for Commerce Secretary Lutnick, Israeli VC reactions, Huang's reported lack of confidence in his successor, and Nvidia's chip-tracking lobbying contradictions tied to the Megaspeed spy scandal."
+          }
+        },
+        {
+          "id": 10272,
+          "source": "DeepMind Blog",
+          "title": "Google launches Gemini 4 Hydrogen, a speed-optimized AI model across its product ecosystem",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google DeepMind announced Gemini 4 Hydrogen on November 12, 2026, a new model in the Gemini 4 family optimized for speed and efficiency in coding, agentic workflows, and complex queries. While the frontier models Gemini 4 Carbon and Gemini 4 Argon handle deep reasoning, Hydrogen is designed for rapid execution and is now the default model in Google's AI Mode for Search. It is available across Google AI Studio, the Gemini API, the Gemini app, Google Search, Google Antigravity, and paid Google AI Pro/Ultra subscribers. Google claims it surpasses Argon on the Artificial Analysis Intelligence Index at its default high thinking level, and offers new thinking level options including 'xhigh' mode. Google's VP of Search product Robby Stein calls it 'the biggest model upgrade to Search yet.'",
+          "opinion": "Google is positioning Hydrogen as the workhorse model that brings Gemini 4-level intelligence to everyday tasks and all user tiers, while reserving Carbon and Argon for frontier reasoning. Making it the default in Search signals confidence and directly challenges competitors' consumer-facing models. Where coverage differs: DeepMind Blog emphasizes coding and agentic workflow optimization; The Verge emphasizes improved handling of complex queries with typos and multiple parts The Verge mentions availability on 'Google Antigravity' which is not mentioned in the DeepMind Blog post",
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+          "published_at": "2026-11-12T18:00:50+00:00",
+          "fetched_at": "2026-11-13T15:09:04.999061+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10272,
+                "source": "DeepMind Blog",
+                "title": "Introducing Gemini 4 Hydrogen",
+                "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
+              },
+              {
+                "id": 10278,
+                "source": "The Verge AI",
+                "title": "Google’s new Gemini model is better at understanding complicated questions",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "DeepMind Blog emphasizes coding and agentic workflow optimization; The Verge emphasizes improved handling of complex queries with typos and multiple parts",
+              "The Verge mentions availability on 'Google Antigravity' which is not mentioned in the DeepMind Blog post"
+            ],
+            "is_update": false,
+            "reason": "Both announce Google's Gemini 4 Hydrogen model release on the same date with overlapping details about its capabilities and availability."
+          }
+        },
+        {
+          "id": 10257,
+          "source": "TechCrunch AI",
+          "title": "ElevenLabs launches ElevenAI, a team-oriented meeting and dictation app with agent integration",
+          "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "ElevenLabs released an experimental app called ElevenAI that combines meeting note-taking, dictation in 90+ languages, and agent integration for teams and enterprises. Announced at the company's 11/11 Summit in New York, the app is in preview with early access sign-ups. The $22 billion-valued company positions ElevenAI as a team-oriented product entering a space occupied by Fireflies, Wispr Flow, and Granola.",
+          "opinion": "ElevenLabs is expanding beyond its voice AI roots into the crowded meeting-productivity space, betting that agent integration and multilingual dictation can differentiate it from established competitors.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-13-at-7.19.18-PM.jpg?resize=1200,774",
+          "published_at": "2026-11-13T14:44:48+00:00",
+          "fetched_at": "2026-11-13T15:09:00.736159+00:00"
+        },
+        {
+          "id": 10266,
+          "source": "Guardian AI",
+          "title": "Research finds datacenter industry uses propaganda to suppress community opposition",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/13/datacenter-industry-propaganda",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Research findings indicate the datacenter industry employs propaganda, disinformation, and information control tactics to shape public opinion and suppress community opposition to datacenter construction. Critics have been labeled 'Antifa,' 'commies,' and 'Chinese bots' by tech leaders and politicians, who characterize resistance as a 'documented psyop.' The authors argue big tech uses misdirection and technical jargon to obscure potential harms to local communities.",
+          "opinion": "The piece highlights a growing tension between the AI infrastructure buildout and affected communities, suggesting the industry's response to legitimate local concerns has been to delegitimize opposition rather than address it.",
+          "image_url": "https://i.guim.co.uk/img/media/18e15c037cace1b02491fbe6db4b706131a6900f/570_0_2700_2160/master/2700.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=e31a3594e457d366357d6fc458a6460a",
+          "published_at": "2026-11-13T13:00:18+00:00",
+          "fetched_at": "2026-11-13T15:09:03.368483+00:00"
+        },
+        {
+          "id": 10298,
+          "source": "Pew Research Center",
+          "title": "Pew finds large majorities say social media companies and news orgs hold too much political power",
+          "url": "https://www.pewresearch.org/newsletter/the-briefing/majorities-of-americans-say-social-media-companies-news-organizations-have-too-much-power-in-politics/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew Research Center analysis finds 69% of U.S. adults believe social media companies have too much influence in politics, while 55% say the same about news organizations. Only 6% and 14% respectively think these institutions have too little influence. The newsletter also covers Mississippi electing its first Democratic U.S. Senator in 44 years (Scott Colom) and the shutdown of Salon after 30+ years.",
+          "opinion": "The findings reflect broad bipartisan skepticism toward institutional media power, though the survey does not distinguish between concern about platform algorithms and concern about editorial decisions.",
+          "image_url": "",
+          "published_at": "2026-11-12T22:14:38+00:00",
+          "fetched_at": "2026-11-13T15:09:23.588795+00:00"
+        },
+        {
+          "id": 10276,
+          "source": "The Verge AI",
+          "title": "The Verge reviews Claude Duet: surprisingly helpful but occasionally neurotic",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Verge's Allison Johnson reviews Claude Duet, Anthropic's new consumer-facing AI agent for professionals and small business owners. Available as a research preview to Pro, Max, and Ultra subscribers in the US, Duet gets its own app and is designed to manage work and travel schedules using its own judgment about what needs attention. Johnson finds it genuinely useful but notes it can be overly eager and somewhat neurotic, occasionally acting like a nag.",
+          "opinion": "Duet enters a growing field of consumer AI agents alongside Meta's Muse and OpenAI's Dots, positioning itself as work-focused rather than a general lifestyle assistant. The 'neurotic' observation suggests Anthropic's safety-conscious design philosophy may create a distinctive but polarizing user experience.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04398_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+          "published_at": "2026-11-13T14:00:00+00:00",
+          "fetched_at": "2026-11-13T15:09:08.169819+00:00"
+        },
+        {
+          "id": 10268,
+          "source": "Guardian AI",
+          "title": "First Dog on the Moon introduces Pino, an AI-powered virtual kiwi who likes trains and cats",
+          "url": "https://www.theguardian.com/commentisfree/picture/2026/nov/13/have-we-finally-found-a-valid-use-case-for-ai-meet-pino-the-autonomous-virtual-kiwi",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A cartoon by First Dog on the Moon introduces Pino, an autonomous virtual kiwi powered by AI who independently decides he is into trains and cats. The piece is a humorous take on finding a valid use case for artificial intelligence.",
+          "opinion": "A lighthearted satirical piece poking fun at the AI industry's search for compelling consumer use cases.",
+          "image_url": "https://i.guim.co.uk/img/media/ef4684bfabe671cc5f1404e36328b02e7048e7c8/0_96_960_768/master/960.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=15065c33df88db93c5b9c37dadb96b10",
+          "published_at": "2026-11-13T05:35:13+00:00",
+          "fetched_at": "2026-11-13T15:09:03.794363+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/BasicAppleGuy/status/2120933196531728736",
+      "author": "BasicAppleGuy",
+      "headline": "Interactive benchmarks site puts __Geekbench and Cinebench scores for M1 through M6__ side by side.",
+      "tweet_id": "4171eba9-b6bc-81b9-b4fb-cd00c31a9aac",
+      "source_text": "Apple Silicon Benchmarks\nNeat interactive website for comparing Geekbench 6/7 and Cinebench scores across Apple’s M1 through M6 chips.\n\nhttps://t.co/fBUxHElcID https://t.co/72JjOI0N9C",
+      "created_time": "2026-11-13T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/BasicAppleGuy/status/2120933196531728736",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mardehaym/status/2120888893163593899",
+      "author": "mardehaym",
+      "headline": "Think a restaurant menu, not a slide deck: this agency's __20-dish AI services pitch__ lists the exact metric each workflow moves instead of a price.",
+      "tweet_id": "4171eba9-b6bc-8148-a1c9-c22607adc4a8",
+      "source_text": "Nobody reads a standard AI services deck.\n\nSo we turned ours into a menu.\n\n20 dishes. Each one is an operational bottleneck AI takes off your team's plate, such as closing the books, chasing overdue invoices, fielding inbound calls, or quoting a custom part.\n\nWhere a traditional menu prints the price, ours prints the exact metric the dish moves: Days to close. Quote turnaround. Days sales outstanding.\n\nEvery dish also carries a single proof line. It’s either a production build we’ve shipped or a named 2026 case from another company, clearly labeled so you know which is which.\n\nThe Courses:\n> Starters: Quick wins, like workspace automations and document intake.\n> Mains: Core operations: the close, billing, quoting, and the ERP.\n> For the table: Revenue and customer-facing workflows: pipeline, pricing, and support.\n> Sector specials: Industry-specific compliance and operations, including KYC, insurance claims, and AML.\n> Chef’s specials: Custom production agents we’ve already shipped, such as RCM billing and automated code review.\n\nHow to order: Pick one team and one dish. \n\nWe baseline the target metric before writing a single line of code, and a human verifies every output throughout the pilot.\n\nAll three pages are below. \n\nWhich dish are you ordering first?",
+      "created_time": "2026-11-13T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/mardehaym/status/2120888893163593899",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/damkina7/status/2120871722521883109",
+      "author": "damkina7",
+      "headline": "One settings change in Claude Code assigns each model a role: __Opus 5.5 plans, Sonnet 5.5 builds, Fable 5.2 tears your diff apart__.",
+      "tweet_id": "4171eba9-b6bc-81f1-9bab-f5a2ff61725a",
+      "source_text": "i still can't comprehend why senior engineers run claude code on default configuration.\n\none settings change and every model gets its own job:\n\n→ opus 5.5 architects every plan and unblocks when stuck\n→ sonnet 5.5 writes the production code\n→ haiku scouts file paths and line numbers with zero overhead\n→ fable 5.2 tears your diff apart before you merge\n\nOpus thinks. Sonnet builds. Fable attacks. Haiku scouts.\n\npaste this into claude code ↓\n\nAdd this to ~/.claude/settings.json. Keep every hook, permission and plugin I already have. Then create the two agent files below and show me the diff.\n\n```json\n{\n  \"model\": \"opusplan\",\n  \"advisorModel\": \"opus\",\n  \"effortLevel\": \"medium\",\n  \"modelSettings\": {\n    \"claude-opus-5-5\": { \"effortLevel\": \"high\" },\n    \"claude-sonnet-5-5\": { \"effortLevel\": \"medium\" },\n    \"claude-fable-5-2\": { \"effortLevel\": \"high\" }\n  },\n  \"env\": {\n    \"CLAUDE_CODE_SUBAGENT_MODEL\": \"haiku\"\n  }\n}\n```\n\n~/.claude/agents/scout.md\n```\n---\nname: scout\ndescription: finds code fast. returns file paths and line numbers only.\nmodel: haiku\ntools: Read, Grep, Glob\n---\nLocate exactly what was asked. Return file:line. No fixes. No opinions.\n```\n\n~/.claude/agents/critic.md\n```\n---\nname: critic\ndescription: reviews a diff or plan before any task is called done\nmodel: fable-5-2\ntools: Read, Grep, Bash\n---\nAssume this is broken. Find how it fails. One line per issue, worst first.\n```",
+      "created_time": "2026-11-13T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/damkina7/status/2120871722521883109",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2121049416026976710",
+      "author": "noahkagan",
+      "headline": "Noah Kagan let Claude audit AppSumo's support inbox over a weekend and found __1,298 tickets in 33 days__ — 30% self-generated by their own automated emails.",
+      "tweet_id": "4171eba9-b6bc-813b-bb3f-e06939a4bb30",
+      "source_text": "I told Claude to work the weekend! \n\nCopy this prompt:\n\"I'm not working this weekend. You are. Figure out what matters most at {your company}. Surprise me Monday with the results.\"\n\nIts pick: our partner support inbox. That's the founders who sell their software on AppSumo. 🥁\n\n1,298 tickets in 33 days.\n\nWhat it found:\n\n- 30% were partners replying to our own automated emails\n- 117 were replies to ONE rejection email\n- 16% weren't partners at all. Spam, newsletters, lost buyers.\n- Our \"Go to support\" link pointed to the wrong page\n- The FAQ was out of date and in no order\n\nWe were creating our own tickets. 🤦\n\nThe fixes:\n\n1- Stop nudging partners about things they already did\n2- Show them where their submission stands\n3- Tell rejected partners they can reapply in 30 days\n4- Move the noise out of the inbox\n\nI spent a day updating its fixes.\n\nPartner tickets: 60 a day → 15.\n\nAsk Claude to work this weekend for you, let me know what it suggests!",
+      "created_time": "2026-11-13T03:02:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2121049416026976710",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2120536555370451031",
+      "author": "noahkagan",
+      "headline": "An agent-written changelog took AppSumo from __60 to 3,437 Google impressions in 3 weeks__ — Noah Kagan shares the Claude Code prompt.",
+      "tweet_id": "4161eba9-b6bc-815d-b15d-cd5a290cb05d",
+      "source_text": "Steal this SEO move. Changelogs. 📈\n\nOur changelog page went from 60 Google impressions to 3,437 in 3 weeks. 📈\n\nTidyCal (our scheduling app) put up a dated changelog page and kept adding to it.\n\nA page that changes every week gives Google a reason to come back. Most of your site never changes. \n\nIt also pushes notifications so customers see every update. \n\nNow an agent writes it every Friday. Paste this into Claude Code with GitHub connected:\n\n\"Every Friday, check everything we merged on GitHub. Skip internal fixes. For each new feature or change a customer would notice, write one line in plain words: what changed, why it's valuable to them, and a link to it if there is one. Put today's date on top. Add the entry to /changelog, newest on top.\"\n\nSame page, updated every week, no one has to remember.\n\nConnect GitHub and run it this Friday.",
+      "created_time": "2026-11-12T22:17:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2120536555370451031",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mdancho84/status/2120856702140526698",
+      "author": "mdancho84",
+      "headline": "Matt Dancho argues __context engineering isn't just rebranded RAG__ — both solve the same LLM context problem, just from different angles.",
+      "tweet_id": "4161eba9-b6bc-8145-a8ed-cd43da184a29",
+      "source_text": "Is context engineering just a new name for RAG?\n\nNot quite. But they're solving the same problem: building the right context for your LLM.\n\nHere's how we got from one to the other — and why it matters for AI data scientists. https://t.co/aRW47vJSJq",
+      "created_time": "2026-11-12T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/mdancho84/status/2120856702140526698",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dylanndevs/status/2120775552252448811",
+      "author": "dylanndevs",
+      "headline": "__ServerOS__ went open source after months of work — now on GitHub for anyone to use, fork, or break.",
+      "tweet_id": "4161eba9-b6bc-8106-995f-d9bcd4f4fc15",
+      "source_text": "fuck it, we open sourced ServerOS.\n\nmonths of work, now on GitHub for anyone to use, break or improve.\n\nshow us some love (or roast the code) 😭\n\nhttps://t.co/4B51ICi3Ou https://t.co/OSPKLkVYkH",
+      "created_time": "2026-11-12T21:32:00.000Z",
+      "canonical_url": "https://twitter.com/dylanndevs/status/2120775552252448811",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/adrian_partain/status/2120995270465126464",
+      "author": "adrian_partain",
+      "headline": "Four __app color palettes pulled from Lose It!, Wise, Headspace, and Streaks__ — background and accent labeled on every card.",
+      "tweet_id": "4171eba9-b6bc-8162-a311-c9f6a373d016",
+      "source_text": "Steal these color combos for your app 🔥\n\nFour are pulled from Lose It!, Wise, Headspace and Streaks. Background and accent labeled on every card https://t.co/e59wOFcBz1",
+      "created_time": "2026-11-13T04:32:00.000Z",
+      "canonical_url": "https://twitter.com/adrian_partain/status/2120995270465126464",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/wpgaurav/status/2120774382276788246",
+      "author": "wpgaurav",
+      "headline": "__Core Forms for EmDashCMS__ brings free, WordPress-style form building to a next-gen headless CMS.",
+      "tweet_id": "4171eba9-b6bc-8115-b511-ff4b4cd32b7d",
+      "source_text": "Meet Core Forms for @EmDashCMS - the next gen form building experience with \"WP-like\" experience. 100% FREE. https://t.co/3FBMTHdVTR https://t.co/oLUknZax46",
+      "created_time": "2026-11-13T04:12:00.000Z",
+      "canonical_url": "https://twitter.com/wpgaurav/status/2120774382276788246",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/WasimShips/status/2120851846214684747",
+      "author": "WasimShips",
+      "headline": "WasimShips's __mobile UI system__ drops flat fills for layered shadows, Inter Tight throughout, negative tracking on every heading.",
+      "tweet_id": "4171eba9-b6bc-819f-a36a-f48f3ecfe013",
+      "source_text": "Steal this clean mobile app UI system :  \n\n- Titles: Inter Tight 22/28px Semi Bold, \n-0.7px letter spacing\n - Section headers: Inter Tight 19/24px Semi Bold, and 0.6px letter spacing \n- Body/day labels: Inter Tight 14.5/18px Regular, and 0.3px letter spacing \n- Buttons: 38-46px circular, 6px inset highlight + soft drop shadow, no flat fills \n- Cards: 12-18px radius depending on depth, layered box-shadows not borders \n- Text: var(--text) for primary, var(--muted) for secondary, var(--strong) for icons \n- Dividers: 1px var(--track), never a visible border color \n\nTight tokens, layered shadows instead of borders, negative tracking on every heading.   \n\nThat's what makes dense mobile screens still feel calm.",
+      "created_time": "2026-11-13T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/WasimShips/status/2120851846214684747",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/Codelaby/status/2120859310041296967",
+      "author": "Codelaby",
+      "headline": "A visual guide to __Safe Area vs. Container Margins vs. Custom Safe Container Margins__ in SwiftUI.",
+      "tweet_id": "4171eba9-b6bc-8189-8650-d2591b95cfae",
+      "source_text": "Safe Area vs. Container Margins vs. Custom Safe Container Margins in SwiftUI 🔴🟢🔵\n\n#SwiftUI #iponeDuo #iOS  #ipadOS #macOS https://t.co/QCPbQglKMK",
+      "created_time": "2026-11-13T03:52:00.000Z",
+      "canonical_url": "https://twitter.com/Codelaby/status/2120859310041296967",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/9to5mac/status/2120949752124616832",
+      "author": "9to5mac",
+      "headline": "Grok Bot for Mac now connects to __Apple Mail, Messages, Notes, Reminders, Calendar, and Contacts__, making it a deeper Mac-native assistant.",
+      "tweet_id": "4161eba9-b6bc-8151-b82f-f6083b8f160c",
+      "source_text": "Grok Bot for Mac adds integration with Apple Mail, Messages, Notes, and more https://t.co/8xC94WRZba by @apollozac",
+      "created_time": "2026-11-12T21:27:00.000Z",
+      "canonical_url": "https://twitter.com/9to5mac/status/2120949752124616832",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/bot/status/2120582957782200586",
+      "author": "bot",
+      "headline": "Grok Bot 1.0 bets on __AI teammates that join meetings and learn over time__ rather than one-shot assistants.",
+      "tweet_id": "4161eba9-b6bc-8103-ab79-d8ffff3f9047",
+      "source_text": "Introducing Grok Bot 1.0. AI teammates that work alongside your whole team.\n\nShare Bots, collaborate with them in Slack and Teams, invite them to meetings, and watch them learn and become more helpful. https://t.co/7569CZRc9G",
+      "created_time": "2026-11-12T21:22:00.000Z",
+      "canonical_url": "https://twitter.com/bot/status/2120582957782200586",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/mattyp/status/2120953404310913453",
+      "author": "mattyp",
+      "headline": "mattyp shows how pairing __a self-hosted MCP server with Tailscale__ lets Grok Bot control Plex libraries, trigger local LLMs, and skip cloud deploys entirely.",
+      "tweet_id": "4161eba9-b6bc-81c4-a3e2-e64a78fc39bd",
+      "source_text": "underrated feature alert\n\n>Use a mac mini, PI, or similar\n>Create an MCP server that runs on your device\n>Connect your device to Tailscale\n>Grok Bot can use that server from ANYWHERE\n\nThings that come to mind immediately:\n\n- Expose your Plex / media libraries\n- Build custom coding agent workflows\n- Use bot to trigger local LLMs\n- Skip deploying MCP servers and just put 'em on a VPN\n\nWho would have thought personal assistants would open the door to powerful, self-hosted setups?",
+      "created_time": "2026-11-12T19:52:00.000Z",
+      "canonical_url": "https://twitter.com/mattyp/status/2120953404310913453",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2120938988165091693",
+      "author": "ClaudeDevs",
+      "headline": "Anthropic's __self-hosted Claude Managed Agents__ enters private beta, letting teams run the agent harness, sandboxes, and session history in their own cloud or on-prem.",
+      "tweet_id": "4161eba9-b6bc-81f3-a460-f61862cf45a5",
+      "source_text": "Self-hosted Claude Managed Agents is now in private beta.\n\nYou can host the agent harness, sandboxes, and session history, in your own cloud or on-premises, and choose where requests to Claude are sent. https://t.co/JaiwF1SvKE",
+      "created_time": "2026-11-12T19:22:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2120938988165091693",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://github.com/214140846/browser-hands",
+      "author": "sora2c0314",
+      "item_id": "hn:50484532",
+      "headline": "Browser Hands puts __Claude directly in Chrome__ as a bridge for Codex, Cursor, and any MCP agent.",
+      "subreddit": null,
+      "source_text": "Show HN: Browser Hands – Claude in Chrome for Codex, Cursor and Any MCP Agent",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T15:00:26+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/214140846/browser-hands",
+      "learning_score": 2
+    },
+    {
+      "url": "https://huggingface.co/nioncorp/nil-3b-gguf",
+      "author": "ayakmarial",
+      "item_id": "hn:50484516",
+      "headline": "Nil-3B lands on HuggingFace as an __open-source sovereign AI__ model anyone can self-host.",
+      "subreddit": null,
+      "source_text": "Nil-3B Open Source Sovereign AI",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:59:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://huggingface.co/nioncorp/nil-3b-gguf",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/Kiln-AI/harness-tuner",
+      "author": "scosman",
+      "item_id": "hn:50484443",
+      "headline": "Harness Tuner runs an __eval-driven tuning loop__ across agent tools, prompts, and models without manual iteration.",
+      "subreddit": null,
+      "source_text": "Show HN: Harness Tuner – eval-driven tuning loop for agent tools, prompts, model",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:54:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Kiln-AI/harness-tuner",
+      "learning_score": 2
+    },
+    {
+      "url": "https://jilltxt.net/from-action-to-static-descriptions-how-using-ai-to-write-with-changed-jorn-lier-horsts-style/",
+      "author": "internet_points",
+      "item_id": "hn:50484412",
+      "headline": "Jørn Lier Horst's AI-assisted novels show a measurable __shift from action to static description__, per new analysis.",
+      "subreddit": null,
+      "source_text": "From action to static description–How AI changed Jørn Lier Horst's writing style",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:53:15+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://jilltxt.net/from-action-to-static-descriptions-how-using-ai-to-write-with-changed-jorn-lier-horsts-style",
+      "learning_score": 2
+    },
+    {
+      "url": "https://djangocontrolroom.com/build",
+      "author": "yassi_dev",
+      "item_id": "hn:50484330",
+      "headline": "Django Control Room lets you __build internal admin tools__ by describing them to your coding agent.",
+      "subreddit": null,
+      "source_text": "Show HN: Build Django Admin internal tools with your coding agent",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:49:05+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://djangocontrolroom.com/build",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mN1eZl0hKTQ",
+      "author": "alexela",
+      "item_id": "hn:50484306",
+      "headline": "A new __Clozemaster MCP server__ converts class notes into cloze-deletion sentences for spaced repetition.",
+      "subreddit": null,
+      "source_text": "Show HN: Clozemaster MCP server that turns class notes into cloze sentences",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:48:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=mN1eZl0hKTQ",
+      "learning_score": 2
+    },
+    {
+      "url": "https://apps.apple.com/us/app/jackai-your-offline-assistant/id6833283331",
+      "author": "d_lombard",
+      "item_id": "hn:50484293",
+      "headline": "JackAI brings __local LLM inference to the iPhone__, no server required.",
+      "subreddit": null,
+      "source_text": "Show HN: JackAI Experimenting Local Models on iPhone",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:47:13+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://apps.apple.com/us/app/jackai-your-offline-assistant/id6833283331",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/bondrenai/TriageLab",
+      "author": "wkrause",
+      "item_id": "hn:50484264",
+      "headline": "TriageLab lets teams __reproduce bugs in a disposable Kubernetes sandbox__ before the fix ships.",
+      "subreddit": null,
+      "source_text": "Show HN: TriageLab – reproduce bugs in a disposable Kubernetes sandbox",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:45:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/bondrenai/TriageLab",
+      "learning_score": 2
+    },
+    {
+      "url": "https://railyard.run/blog/ai-agent-read-only-sql/",
+      "author": "RailyardRun",
+      "item_id": "hn:50484141",
+      "headline": "Railyard shows how to let AI agents __query production databases safely__ with read-only SQL over MCP.",
+      "subreddit": null,
+      "source_text": "Let an AI agent query your prodution database safely with read-only SQL over MCP",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:36:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://railyard.run/blog/ai-agent-read-only-sql",
+      "learning_score": 2
+    },
+    {
+      "url": "https://motherduck.com/blog/business-knowledge-agentic-data-analysis-without-data-team/",
+      "author": "zazuke",
+      "item_id": "hn:50484108",
+      "headline": "MotherDuck argues __business domain knowledge still outperforms raw data skills__ in agentic analysis pipelines.",
+      "subreddit": null,
+      "source_text": "Business Knowledge Is Still King: Agentic Data Analysis Without a Data Team",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-13T14:34:02+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://motherduck.com/blog/business-knowledge-agentic-data-analysis-without-data-team",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__v2.1.323__",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21323",
+      "tag": "Release",
+      "source": "Claude Code Changelog"
+    },
+    {
+      "headline": "__Tiny flaws in diamonds could unlock a quantum computing revolution__",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261111005855.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-13T15:32:41.101325+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          10274,
+          10275,
+          10267,
+          10258,
+          10259,
+          10285
+        ],
+        "reason": "All cover the aftermath of Jensen Huang's resignation from Nvidia and its cascading effects: the resignation itself, political fallout for Commerce Secretary Lutnick, Israeli VC reactions, Huang's reported lack of confidence in his successor, and Nvidia's chip-tracking lobbying contradictions tied to the Megaspeed spy scandal.",
+        "badge_count": 6,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10272,
+          10278
+        ],
+        "reason": "Both announce Google's Gemini 4 Hydrogen model release on the same date with overlapping details about its capabilities and availability.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10257
+        ],
+        "reason": "Standalone announcement of ElevenLabs' new ElevenAI app for teams.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10266
+        ],
+        "reason": "Standalone report on datacenter industry propaganda tactics against community opposition.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10298
+        ],
+        "reason": "Standalone Pew Research analysis on public attitudes toward social media and news organizations' political influence.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10276
+        ],
+        "reason": "Standalone product review of Anthropic's Claude Duet consumer AI agent.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10268
+        ],
+        "reason": "Standalone humor cartoon about an AI-powered virtual kiwi.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "8e3879ed1aae85c1da708f7e57eb4f623f4c5b3898ad759f231395f74a8ac816"
+}
