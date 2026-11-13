@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-12T00:00:00Z",
-  "issueCount": 186,
+  "generatedAt": "2026-11-13T00:00:00Z",
+  "issueCount": 187,
   "latestIssue": {
-    "slug": "2026-11-12",
-    "digestDate": "2026-11-12",
-    "displayDate": "Nov 12, 2026",
-    "issueNumber": "61112",
-    "subject": "ISSUE 61112 \u00b7 10 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is bracing for a seismic leadership shakeup as Nvidia's board reportedly moves to oust CEO Jensen Huang \u2014 a stunning development that has already wiped over $427 billion in market value and raises hard questions about how much of the AI boom rests on the shoulders of a few powerful individuals. Beyond the boardroom drama, today's digest spans the full spectrum: from a cyberattack exposing Notion users' AI chat transcripts and United Airlines drawing a line against AI booking agents, to a record $4 billion fund betting big on AI's next wave and new research showing Americans want AI in their doctor's office \u2014 but not calling the shots.",
-    "articleCount": 10,
-    "urlPath": "/issues/2026-11-12.html",
-    "contentHash": "6886631062ca9591534f96e42e6fb6016b2925932aa4bca6e0ca6911db0cf422"
+    "slug": "2026-11-13",
+    "digestDate": "2026-11-13",
+    "displayDate": "Nov 13, 2026",
+    "issueNumber": "61113",
+    "subject": "ISSUE 61113 \u00b7 7 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is reeling today after Jensen Huang's sudden resignation from Nvidia, capping a scandal that has spiraled from tabloid shock into a full-blown national security crisis involving alleged Chinese intelligence ties and GPU smuggling \u2014 and the political fallout is still spreading. But the industry isn't standing still: Google dropped Gemini 4 Hydrogen as its new speed-first model across Search and its entire product ecosystem, ElevenLabs unveiled a team-oriented AI meeting app, and The Verge gave Anthropic's new Claude Duet agent a verdict of \"surprisingly helpful but occasionally neurotic.\" It's one of those days where the biggest story in AI isn't about a model launch \u2014 it's about the man who made the GPUs they all run on walking out the door.",
+    "articleCount": 7,
+    "urlPath": "/issues/2026-11-13.html",
+    "contentHash": "8e3879ed1aae85c1da708f7e57eb4f623f4c5b3898ad759f231395f74a8ac816"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-13",
+      "digestDate": "2026-11-13",
+      "displayDate": "Nov 13, 2026",
+      "issueNumber": "61113",
+      "subject": "ISSUE 61113 \u00b7 7 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is reeling today after Jensen Huang's sudden resignation from Nvidia, capping a scandal that has spiraled from tabloid shock into a full-blown national security crisis involving alleged Chinese intelligence ties and GPU smuggling \u2014 and the political fallout is still spreading. But the industry isn't standing still: Google dropped Gemini 4 Hydrogen as its new speed-first model across Search and its entire product ecosystem, ElevenLabs unveiled a team-oriented AI meeting app, and The Verge gave Anthropic's new Claude Duet agent a verdict of \"surprisingly helpful but occasionally neurotic.\" It's one of those days where the biggest story in AI isn't about a model launch \u2014 it's about the man who made the GPUs they all run on walking out the door.",
+      "articleCount": 7,
+      "urlPath": "/issues/2026-11-13.html",
+      "contentHash": "8e3879ed1aae85c1da708f7e57eb4f623f4c5b3898ad759f231395f74a8ac816"
+    },
     {
       "slug": "2026-11-12",
       "digestDate": "2026-11-12",
@@ -133,17 +144,6 @@
       "articleCount": 11,
       "urlPath": "/issues/2026-11-02.html",
       "contentHash": "97dd2f6f24f26283b00dc12681e1374c430b5709828fe5aec28d7bc5e24d4bfb"
-    },
-    {
-      "slug": "2026-11-01",
-      "digestDate": "2026-11-01",
-      "displayDate": "Nov 01, 2026",
-      "issueNumber": "61101",
-      "subject": "ISSUE 61101 \u00b7 7 STORIES \u00b7 11 MIN READ",
-      "intro": "Today's AI news carries a unmistakable theme: pushback. From thousands of Australian artists \u2014 including Indigenous creators calling AI-generated art \"Temu slop\" \u2014 rallying against proposed copyright changes, to Apple's new CEO insisting the company won't \"ship AI for AI's sake,\" to a federal judge greenlighting an NAACP pollution lawsuit against xAI's data center, the humans are pushing back on all fronts. We've also got a Senate bill proposing two years of income support for AI-displaced workers, a Goldman Sachs finding that those workers are struggling to land new jobs, and \u2014 on the lighter side \u2014 a journalist who beat Meta to market by building a $50 DIY AI Tamagotchi with a dev kit and some vibe coding.",
-      "articleCount": 7,
-      "urlPath": "/issues/2026-11-01.html",
-      "contentHash": "ee099b5137f6e2b3ea361480f020e3807ebb1a264d67bc6e8e21027cba83d007"
     }
   ]
 }
