@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-13T00:00:00Z",
-  "issueCount": 187,
+  "generatedAt": "2026-11-14T00:00:00Z",
+  "issueCount": 188,
   "latestIssue": {
-    "slug": "2026-11-13",
-    "digestDate": "2026-11-13",
-    "displayDate": "Nov 13, 2026",
-    "issueNumber": "61113",
-    "subject": "ISSUE 61113 \u00b7 7 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is reeling today after Jensen Huang's sudden resignation from Nvidia, capping a scandal that has spiraled from tabloid shock into a full-blown national security crisis involving alleged Chinese intelligence ties and GPU smuggling \u2014 and the political fallout is still spreading. But the industry isn't standing still: Google dropped Gemini 4 Hydrogen as its new speed-first model across Search and its entire product ecosystem, ElevenLabs unveiled a team-oriented AI meeting app, and The Verge gave Anthropic's new Claude Duet agent a verdict of \"surprisingly helpful but occasionally neurotic.\" It's one of those days where the biggest story in AI isn't about a model launch \u2014 it's about the man who made the GPUs they all run on walking out the door.",
-    "articleCount": 7,
-    "urlPath": "/issues/2026-11-13.html",
-    "contentHash": "8e3879ed1aae85c1da708f7e57eb4f623f4c5b3898ad759f231395f74a8ac816"
+    "slug": "2026-11-14",
+    "digestDate": "2026-11-14",
+    "displayDate": "Nov 14, 2026",
+    "issueNumber": "61114",
+    "subject": "ISSUE 61114 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is reeling today after Jensen Huang's stunning resignation from Nvidia, a departure that threatens to reshape startup funding, chip enforcement, and the power dynamics of the entire industry \u2014 all while revelations surface that China's top AI models were trained on the very chips they were banned from buying. But the shockwaves don't stop there: OpenAI is giving AI agents your credit card, Amazon wants to index every product on the internet, and LangChain just landed a $3 billion valuation betting that someone needs to wrangle all these agents. It's one of those days where the future feels like it lurched forward and sideways at the same time.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-11-14.html",
+    "contentHash": "cb1188d58877fb97dbe75c2289f305a80f28226a459a1b3c281c35bd2e0e0f6d"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-14",
+      "digestDate": "2026-11-14",
+      "displayDate": "Nov 14, 2026",
+      "issueNumber": "61114",
+      "subject": "ISSUE 61114 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is reeling today after Jensen Huang's stunning resignation from Nvidia, a departure that threatens to reshape startup funding, chip enforcement, and the power dynamics of the entire industry \u2014 all while revelations surface that China's top AI models were trained on the very chips they were banned from buying. But the shockwaves don't stop there: OpenAI is giving AI agents your credit card, Amazon wants to index every product on the internet, and LangChain just landed a $3 billion valuation betting that someone needs to wrangle all these agents. It's one of those days where the future feels like it lurched forward and sideways at the same time.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-11-14.html",
+      "contentHash": "cb1188d58877fb97dbe75c2289f305a80f28226a459a1b3c281c35bd2e0e0f6d"
+    },
     {
       "slug": "2026-11-13",
       "digestDate": "2026-11-13",
@@ -133,17 +144,6 @@
       "articleCount": 14,
       "urlPath": "/issues/2026-11-03.html",
       "contentHash": "45369a6b2bf08e6138ab56cb615933a4eedb427274f99223a716b108c24b8634"
-    },
-    {
-      "slug": "2026-11-02",
-      "digestDate": "2026-11-02",
-      "displayDate": "Nov 02, 2026",
-      "issueNumber": "61102",
-      "subject": "ISSUE 61102 \u00b7 11 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI agent revolution is officially here \u2014 MIT Tech Review declares the \"agentic web\" has arrived, Figma's PMs are running 31 shared Claude Code skills, and benchmarks are pitting personal AI agents head-to-head \u2014 but so is the reality check. From Musk throttling Grok Bot over \"unsustainably high\" serving costs to Uber burning its entire 2026 AI budget by April to 20 US communities voting on data center bans, today's stories paint a picture of an industry sprinting forward while the bills come due. We've also got a Guardian investigation catching NHS trusts barely touching their \u00a3330M Palantir platform, a startup claiming it can predict human behavior, and Ryanair eyeing AI to dodge fuel costs.",
-      "articleCount": 11,
-      "urlPath": "/issues/2026-11-02.html",
-      "contentHash": "97dd2f6f24f26283b00dc12681e1374c430b5709828fe5aec28d7bc5e24d4bfb"
     }
   ]
 }
