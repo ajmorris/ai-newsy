@@ -1,0 +1,561 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-14",
+  "issue_id": "20261114",
+  "subject_line": "ISSUE 61114 · 8 STORIES · 11 MIN READ",
+  "intro": "The AI world is reeling today after Jensen Huang's stunning resignation from Nvidia, a departure that threatens to reshape startup funding, chip enforcement, and the power dynamics of the entire industry — all while revelations surface that China's top AI models were trained on the very chips they were banned from buying. But the shockwaves don't stop there: OpenAI is giving AI agents your credit card, Amazon wants to index every product on the internet, and LangChain just landed a $3 billion valuation betting that someone needs to wrangle all these agents. It's one of those days where the future feels like it lurched forward and sideways at the same time.",
+  "article_count": 8,
+  "stories": [
+    {
+      "id": 10301,
+      "source": "TechCrunch AI",
+      "title": "Huang resignation fallout: AI startup funding in doubt, banned Nvidia chips found powering China's best models",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Jensen Huang's resignation as Nvidia CEO after 33 years is sending shockwaves across the AI ecosystem. Nvidia had been one of the most prolific AI startup investors, participating in 105 rounds in 2026 with key investments in CoreWeave, Hugging Face, Mistral AI, and others — most driven by Huang personally. Interim CEO Colette Kress is expected to be more conservative, and VCs fear smaller checks and lower valuations. Separately, new research by former OpenAI researcher Will DePue shows China's most advanced AI models — including DeepSeek V4 and Kimi K3 — were trained on export-banned Nvidia Blackwell GPUs, with an estimated two million advanced chips reaching China in 2024–2025. The Verge frames Huang as potentially the last 'visionary showman founder CEO,' noting Nvidia had grown to be the first $5 trillion company with roughly 6% of the S&P 500 but had no succession plan, with about 60 employees reporting directly to Huang. US Commerce Secretary Howard Lutnick continues to face criticism for apparent inaction on the spy scandal.",
+      "opinion": "The startup funding angle may prove the most consequential near-term disruption — Nvidia wasn't just a chipmaker but a de facto venture arm for the entire AI infrastructure stack. The banned-chips research also undermines the entire rationale for US export controls, suggesting the policy has failed at its core objective. Where coverage differs: The Verge reports Huang had 'three extramarital affairs including one with an alleged Chinese spy'; Guardian says 'affairs with an Nvidia executive and a woman alleged to be a Chinese spy' without specifying three; TechCrunch mentions only 'a relationship with Alice Huang, an executive at Megaspeed' The Verge describes Nvidia as 'the first $5 trillion company'; TechCrunch does not cite a specific market cap",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2301327883.jpg?resize=1200,795",
+      "published_at": "2026-11-13T18:40:30+00:00",
+      "fetched_at": "2026-11-14T13:58:29.698058+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10301,
+            "source": "TechCrunch AI",
+            "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+            "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+          },
+          {
+            "id": 10299,
+            "source": "TechCrunch AI",
+            "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+            "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+          },
+          {
+            "id": 10313,
+            "source": "The Verge AI",
+            "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+            "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo"
+          },
+          {
+            "id": 10309,
+            "source": "Guardian AI",
+            "title": "Why the Nvidia scandal is far from over – The Latest",
+            "url": "https://www.theguardian.com/news/audio/2026/nov/13/why-the-nvidia-scandal-is-far-from-over-the-latest"
+          }
+        ],
+        "badge_count": 4,
+        "conflicts": [
+          "The Verge reports Huang had 'three extramarital affairs including one with an alleged Chinese spy'; Guardian says 'affairs with an Nvidia executive and a woman alleged to be a Chinese spy' without specifying three; TechCrunch mentions only 'a relationship with Alice Huang, an executive at Megaspeed'",
+          "The Verge describes Nvidia as 'the first $5 trillion company'; TechCrunch does not cite a specific market cap"
+        ],
+        "is_update": true,
+        "reason": "All cover Jensen Huang's resignation from Nvidia and the widening scandal, from different angles: startup funding impact (TechCrunch), the end of visionary founder CEOs (The Verge), the ongoing political fallout (Guardian), and new research showing banned Nvidia chips powering China's top AI models (TechCrunch)."
+      }
+    },
+    {
+      "id": 10316,
+      "source": "Ars Technica AI",
+      "title": "Windows zero-day 'SignDrop' gives attackers System-level privileges via Defender interaction",
+      "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A security researcher using the pseudonym 'Nightmare Eclipse' has publicly disclosed a Windows zero-day called 'SignDrop' that lets local users escalate to full System rights. The exploit abuses an interaction between the Common Log File System (CLFS) and Windows Defender: an attacker tricks Defender into opening a crafted CLFS log container, and when an associated authentication file is missing, CLFS creates it using Defender's System-level privileges with attacker-controlled permissions. Ironically, the flaw stems from a security mitigation Microsoft added in October 2025 to prevent other CLFS exploits. It affects Windows 11 26H2 and Windows Server 2025, though researcher Will Dormann confirmed it requires a system running 26H2 for more than 90 days.",
+      "opinion": "A security fix introducing a new exploitable vulnerability is a painful irony for Microsoft. The 90-day requirement limits immediate mass exploitation, but any unpatched local privilege escalation to System is serious, especially on servers.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-1152x648-1783631068.jpg",
+      "published_at": "2026-11-13T16:26:32+00:00",
+      "fetched_at": "2026-11-14T13:58:38.189797+00:00"
+    },
+    {
+      "id": 10305,
+      "source": "Guardian AI",
+      "title": "Young people describe feeling locked out of careers in new Guardian series",
+      "url": "https://www.theguardian.com/business/2026/nov/14/young-people-shut-out-of-work-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian profiles four young people who feel shut out of career opportunities, describing a demoralizing cycle of mass applications, interviews that lead nowhere, and companies that don't send rejection emails. It is the first in a series following eight young people through their job searches, highlighting a sense that the traditional promise of working hard and getting hired no longer holds.",
+      "opinion": "A human-interest series rather than breaking news, but it captures a widely felt frustration among younger workers navigating an increasingly opaque and automated hiring landscape.",
+      "image_url": "https://i.guim.co.uk/img/media/860911eab1a0affc10c2e4feb5a296c6527679b1/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a9075a53f1c1206200ca26c9e6b8329a",
+      "published_at": "2026-11-14T10:00:42+00:00",
+      "fetched_at": "2026-11-14T13:58:31.974547+00:00"
+    },
+    {
+      "id": 10333,
+      "source": "Pew Research Center",
+      "title": "Pew study links Americans' news sources to their levels of civic and political engagement",
+      "url": "https://www.pewresearch.org/short-reads/2026/11/13/where-americans-get-news-relates-to-how-they-engage-in-public-life/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew Research Center analysis from the Pew-Knight Initiative categorizes Americans into four engagement groups — Mobilizers, Connectors, Spectators, and Outsiders — and finds that news sources heavily covering politics (CNN, Fox News, NYT) attract disproportionately high shares of the most engaged citizens. These audiences also differ by partisanship and education level. TV news audiences tend to more closely resemble Americans overall in engagement levels.",
+      "opinion": "The finding that politically focused outlets attract already-engaged audiences raises chicken-and-egg questions about whether news drives engagement or engaged people seek out news — a distinction with real implications for media strategy.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/SR_26.11.13_engagebrands_featured.png?w=1200&h=628&crop=1",
+      "published_at": "2026-11-13T15:54:33+00:00",
+      "fetched_at": "2026-11-14T13:58:53.641913+00:00"
+    },
+    {
+      "id": 10306,
+      "source": "Guardian AI",
+      "title": "AI-generated writing roils publishing world, costing authors deals and prize spots",
+      "url": "https://www.theguardian.com/books/ng-interactive/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Guardian explores how AI-generated writing has disrupted the literary world, with authors losing book deals and writers removed from prize shortlists over accusations of AI use. It discusses the case of romance novelist Coral Hart and broader tensions in publishing as machine-generated content becomes harder to detect, raising questions about authenticity and the industry's ability to respond.",
+      "opinion": "Publishing's AI problem is distinct from other creative industries because detection is inherently harder for text than images or video. The chilling effect on legitimate authors accused of AI use may prove as damaging as actual AI-generated content.",
+      "image_url": "https://i.guim.co.uk/img/media/b8a39bdb32dea0bb0e41f2a5aa45ffef61974668/725_1297_5935_4748/master/5935.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=117c27a2f9da3e1c4f06abfc82b06ffb",
+      "published_at": "2026-11-14T09:00:40+00:00",
+      "fetched_at": "2026-11-14T13:58:32.204231+00:00"
+    },
+    {
+      "id": 10300,
+      "source": "TechCrunch AI",
+      "title": "LangChain raises $300M Series C at $3B valuation for AI agent management",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "LangChain raised a $300 million Series C at a $3 billion valuation led by CapitalG, more than doubling its previous $1.25 billion valuation from about a year ago. Originally an open-source project helping LLMs with tasks like web searching, the company has pivoted to AI agent management through its LangSmith platform, which claims 7,000 customers including Harvey, Rippling, Nvidia, Toyota, and Salesforce. LangChain differentiates by being model and platform agnostic.",
+      "opinion": "The pivot from open-source LLM tooling to enterprise agent management has clearly resonated with the market. The model-agnostic positioning is smart given how fast the model landscape shifts, though the 'agent management' category is getting crowded.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Raising-money.jpg?resize=1200,829",
+      "published_at": "2026-11-13T19:37:57+00:00",
+      "fetched_at": "2026-11-14T13:58:29.503234+00:00"
+    },
+    {
+      "id": 10314,
+      "source": "The Verge AI",
+      "title": "Amazon building 'World Product Graph' to index every product sold online",
+      "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Amazon is developing a project called the 'World Product Graph' to index data on every product sold anywhere on the internet, including items not sold on Amazon. The goal is to keep shoppers from leaving to research on Google or Reddit, and to ensure AI shopping agents route through Amazon's data. The company has begun linking to outside retailers via its 'shop direct' feature and wants to improve its AI shopping assistant (formerly Rufus, now Alexa for Shopping), which internal documents admit gives factually wrong or incomplete answers.",
+      "opinion": "This is Amazon's defensive play against AI agents becoming the new shopping interface — if agents need product data, Amazon wants to be the canonical source. The acknowledgment that their own AI assistant gives wrong answers adds urgency to the data-first strategy.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/acastro_STK103__03.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-13T23:49:11+00:00",
+      "fetched_at": "2026-11-14T13:58:37.005864+00:00"
+    },
+    {
+      "id": 10315,
+      "source": "The Verge AI",
+      "title": "OpenAI launches ChatGPT Wallet, letting Dots AI agents make purchases with user approval",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI is launching ChatGPT Wallet, a payment feature for its Dots AI agents platform, rolling out to ChatGPT Pro subscribers in the US. The wallet lets Dots agents make purchases on behalf of users, with every transaction requiring user approval and biometric verification. OpenAI uses payment tokens rather than sharing actual card details with agents or merchants. It supports eligible US-issued American Express, Chase, Mastercard, and Visa cards. OpenAI plans to eventually let users delegate purchases by setting spending limits and categories, though some retailers like Amazon block AI agents.",
+      "opinion": "Giving AI agents a wallet is a logical but significant step — the biometric approval and tokenization suggest OpenAI is being cautious about the obvious fraud and liability risks. The Amazon blocking detail is notable given Amazon's own AI shopping ambitions reported today.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-13T20:45:10+00:00",
+      "fetched_at": "2026-11-14T13:58:37.240301+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10301,
+          "source": "TechCrunch AI",
+          "title": "Huang resignation fallout: AI startup funding in doubt, banned Nvidia chips found powering China's best models",
+          "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Jensen Huang's resignation as Nvidia CEO after 33 years is sending shockwaves across the AI ecosystem. Nvidia had been one of the most prolific AI startup investors, participating in 105 rounds in 2026 with key investments in CoreWeave, Hugging Face, Mistral AI, and others — most driven by Huang personally. Interim CEO Colette Kress is expected to be more conservative, and VCs fear smaller checks and lower valuations. Separately, new research by former OpenAI researcher Will DePue shows China's most advanced AI models — including DeepSeek V4 and Kimi K3 — were trained on export-banned Nvidia Blackwell GPUs, with an estimated two million advanced chips reaching China in 2024–2025. The Verge frames Huang as potentially the last 'visionary showman founder CEO,' noting Nvidia had grown to be the first $5 trillion company with roughly 6% of the S&P 500 but had no succession plan, with about 60 employees reporting directly to Huang. US Commerce Secretary Howard Lutnick continues to face criticism for apparent inaction on the spy scandal.",
+          "opinion": "The startup funding angle may prove the most consequential near-term disruption — Nvidia wasn't just a chipmaker but a de facto venture arm for the entire AI infrastructure stack. The banned-chips research also undermines the entire rationale for US export controls, suggesting the policy has failed at its core objective. Where coverage differs: The Verge reports Huang had 'three extramarital affairs including one with an alleged Chinese spy'; Guardian says 'affairs with an Nvidia executive and a woman alleged to be a Chinese spy' without specifying three; TechCrunch mentions only 'a relationship with Alice Huang, an executive at Megaspeed' The Verge describes Nvidia as 'the first $5 trillion company'; TechCrunch does not cite a specific market cap",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2301327883.jpg?resize=1200,795",
+          "published_at": "2026-11-13T18:40:30+00:00",
+          "fetched_at": "2026-11-14T13:58:29.698058+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10301,
+                "source": "TechCrunch AI",
+                "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+                "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+              },
+              {
+                "id": 10299,
+                "source": "TechCrunch AI",
+                "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+                "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+              },
+              {
+                "id": 10313,
+                "source": "The Verge AI",
+                "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+                "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo"
+              },
+              {
+                "id": 10309,
+                "source": "Guardian AI",
+                "title": "Why the Nvidia scandal is far from over – The Latest",
+                "url": "https://www.theguardian.com/news/audio/2026/nov/13/why-the-nvidia-scandal-is-far-from-over-the-latest"
+              }
+            ],
+            "badge_count": 4,
+            "conflicts": [
+              "The Verge reports Huang had 'three extramarital affairs including one with an alleged Chinese spy'; Guardian says 'affairs with an Nvidia executive and a woman alleged to be a Chinese spy' without specifying three; TechCrunch mentions only 'a relationship with Alice Huang, an executive at Megaspeed'",
+              "The Verge describes Nvidia as 'the first $5 trillion company'; TechCrunch does not cite a specific market cap"
+            ],
+            "is_update": true,
+            "reason": "All cover Jensen Huang's resignation from Nvidia and the widening scandal, from different angles: startup funding impact (TechCrunch), the end of visionary founder CEOs (The Verge), the ongoing political fallout (Guardian), and new research showing banned Nvidia chips powering China's top AI models (TechCrunch)."
+          }
+        },
+        {
+          "id": 10316,
+          "source": "Ars Technica AI",
+          "title": "Windows zero-day 'SignDrop' gives attackers System-level privileges via Defender interaction",
+          "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A security researcher using the pseudonym 'Nightmare Eclipse' has publicly disclosed a Windows zero-day called 'SignDrop' that lets local users escalate to full System rights. The exploit abuses an interaction between the Common Log File System (CLFS) and Windows Defender: an attacker tricks Defender into opening a crafted CLFS log container, and when an associated authentication file is missing, CLFS creates it using Defender's System-level privileges with attacker-controlled permissions. Ironically, the flaw stems from a security mitigation Microsoft added in October 2025 to prevent other CLFS exploits. It affects Windows 11 26H2 and Windows Server 2025, though researcher Will Dormann confirmed it requires a system running 26H2 for more than 90 days.",
+          "opinion": "A security fix introducing a new exploitable vulnerability is a painful irony for Microsoft. The 90-day requirement limits immediate mass exploitation, but any unpatched local privilege escalation to System is serious, especially on servers.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-1152x648-1783631068.jpg",
+          "published_at": "2026-11-13T16:26:32+00:00",
+          "fetched_at": "2026-11-14T13:58:38.189797+00:00"
+        },
+        {
+          "id": 10305,
+          "source": "Guardian AI",
+          "title": "Young people describe feeling locked out of careers in new Guardian series",
+          "url": "https://www.theguardian.com/business/2026/nov/14/young-people-shut-out-of-work-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian profiles four young people who feel shut out of career opportunities, describing a demoralizing cycle of mass applications, interviews that lead nowhere, and companies that don't send rejection emails. It is the first in a series following eight young people through their job searches, highlighting a sense that the traditional promise of working hard and getting hired no longer holds.",
+          "opinion": "A human-interest series rather than breaking news, but it captures a widely felt frustration among younger workers navigating an increasingly opaque and automated hiring landscape.",
+          "image_url": "https://i.guim.co.uk/img/media/860911eab1a0affc10c2e4feb5a296c6527679b1/0_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a9075a53f1c1206200ca26c9e6b8329a",
+          "published_at": "2026-11-14T10:00:42+00:00",
+          "fetched_at": "2026-11-14T13:58:31.974547+00:00"
+        },
+        {
+          "id": 10333,
+          "source": "Pew Research Center",
+          "title": "Pew study links Americans' news sources to their levels of civic and political engagement",
+          "url": "https://www.pewresearch.org/short-reads/2026/11/13/where-americans-get-news-relates-to-how-they-engage-in-public-life/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew Research Center analysis from the Pew-Knight Initiative categorizes Americans into four engagement groups — Mobilizers, Connectors, Spectators, and Outsiders — and finds that news sources heavily covering politics (CNN, Fox News, NYT) attract disproportionately high shares of the most engaged citizens. These audiences also differ by partisanship and education level. TV news audiences tend to more closely resemble Americans overall in engagement levels.",
+          "opinion": "The finding that politically focused outlets attract already-engaged audiences raises chicken-and-egg questions about whether news drives engagement or engaged people seek out news — a distinction with real implications for media strategy.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/SR_26.11.13_engagebrands_featured.png?w=1200&h=628&crop=1",
+          "published_at": "2026-11-13T15:54:33+00:00",
+          "fetched_at": "2026-11-14T13:58:53.641913+00:00"
+        },
+        {
+          "id": 10306,
+          "source": "Guardian AI",
+          "title": "AI-generated writing roils publishing world, costing authors deals and prize spots",
+          "url": "https://www.theguardian.com/books/ng-interactive/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Guardian explores how AI-generated writing has disrupted the literary world, with authors losing book deals and writers removed from prize shortlists over accusations of AI use. It discusses the case of romance novelist Coral Hart and broader tensions in publishing as machine-generated content becomes harder to detect, raising questions about authenticity and the industry's ability to respond.",
+          "opinion": "Publishing's AI problem is distinct from other creative industries because detection is inherently harder for text than images or video. The chilling effect on legitimate authors accused of AI use may prove as damaging as actual AI-generated content.",
+          "image_url": "https://i.guim.co.uk/img/media/b8a39bdb32dea0bb0e41f2a5aa45ffef61974668/725_1297_5935_4748/master/5935.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=117c27a2f9da3e1c4f06abfc82b06ffb",
+          "published_at": "2026-11-14T09:00:40+00:00",
+          "fetched_at": "2026-11-14T13:58:32.204231+00:00"
+        },
+        {
+          "id": 10300,
+          "source": "TechCrunch AI",
+          "title": "LangChain raises $300M Series C at $3B valuation for AI agent management",
+          "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "LangChain raised a $300 million Series C at a $3 billion valuation led by CapitalG, more than doubling its previous $1.25 billion valuation from about a year ago. Originally an open-source project helping LLMs with tasks like web searching, the company has pivoted to AI agent management through its LangSmith platform, which claims 7,000 customers including Harvey, Rippling, Nvidia, Toyota, and Salesforce. LangChain differentiates by being model and platform agnostic.",
+          "opinion": "The pivot from open-source LLM tooling to enterprise agent management has clearly resonated with the market. The model-agnostic positioning is smart given how fast the model landscape shifts, though the 'agent management' category is getting crowded.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Raising-money.jpg?resize=1200,829",
+          "published_at": "2026-11-13T19:37:57+00:00",
+          "fetched_at": "2026-11-14T13:58:29.503234+00:00"
+        },
+        {
+          "id": 10314,
+          "source": "The Verge AI",
+          "title": "Amazon building 'World Product Graph' to index every product sold online",
+          "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Amazon is developing a project called the 'World Product Graph' to index data on every product sold anywhere on the internet, including items not sold on Amazon. The goal is to keep shoppers from leaving to research on Google or Reddit, and to ensure AI shopping agents route through Amazon's data. The company has begun linking to outside retailers via its 'shop direct' feature and wants to improve its AI shopping assistant (formerly Rufus, now Alexa for Shopping), which internal documents admit gives factually wrong or incomplete answers.",
+          "opinion": "This is Amazon's defensive play against AI agents becoming the new shopping interface — if agents need product data, Amazon wants to be the canonical source. The acknowledgment that their own AI assistant gives wrong answers adds urgency to the data-first strategy.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/acastro_STK103__03.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-13T23:49:11+00:00",
+          "fetched_at": "2026-11-14T13:58:37.005864+00:00"
+        },
+        {
+          "id": 10315,
+          "source": "The Verge AI",
+          "title": "OpenAI launches ChatGPT Wallet, letting Dots AI agents make purchases with user approval",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI is launching ChatGPT Wallet, a payment feature for its Dots AI agents platform, rolling out to ChatGPT Pro subscribers in the US. The wallet lets Dots agents make purchases on behalf of users, with every transaction requiring user approval and biometric verification. OpenAI uses payment tokens rather than sharing actual card details with agents or merchants. It supports eligible US-issued American Express, Chase, Mastercard, and Visa cards. OpenAI plans to eventually let users delegate purchases by setting spending limits and categories, though some retailers like Amazon block AI agents.",
+          "opinion": "Giving AI agents a wallet is a logical but significant step — the biometric approval and tokenization suggest OpenAI is being cautious about the obvious fraud and liability risks. The Amazon blocking detail is notable given Amazon's own AI shopping ambitions reported today.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-13T20:45:10+00:00",
+          "fetched_at": "2026-11-14T13:58:37.240301+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/BuzzMalx/status/2121258804998545539",
+      "author": "BuzzMalx",
+      "headline": "BuzzMalx shares a prompt that __bans AI slop words and phrases__ to make your AI writing sound more human.",
+      "tweet_id": "4181eba9-b6bc-816e-a27d-df1e74387c70",
+      "source_text": "If you want to humanize & improve your AI writing\n\nsend it this prompt (it bans most of the AI slop words & phrases) https://t.co/UzL1ooyBBg https://t.co/xyIPr7GoUs",
+      "created_time": "2026-11-14T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/BuzzMalx/status/2121258804998545539",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://www.youtube.com/watch?v=drjltnetKtQ",
+      "author": "somenameforme",
+      "item_id": "hn:50496985",
+      "headline": "Vyrma's \"Herhlaup\" is fully AI-generated — __music, visuals, and audio__ all synthesized — as a showcase of what's now possible.",
+      "subreddit": null,
+      "source_text": "Vyrma – Herhlaup (100% AI music/visuals/audio showing what's possible) [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:44:16+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=drjltnetKtQ",
+      "learning_score": 3
+    },
+    {
+      "url": "https://py-code.org/blog/new-pypi-packages-imports/",
+      "author": "aidotguru",
+      "item_id": "hn:50496859",
+      "headline": "New PyPI data shows builders converging on __LLM libs, httpx, and pydantic v2__ as the default Python AI stack.",
+      "subreddit": null,
+      "source_text": "What new PyPI packages import: LLM, httpx, pydantic v2",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:28:13+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://py-code.org/blog/new-pypi-packages-imports",
+      "learning_score": 3
+    },
+    {
+      "url": "https://foss.life/notes/2026/the-myth-of-neutral-code/",
+      "author": "birdculture",
+      "item_id": "hn:50497041",
+      "headline": "The case that __code is never politically neutral__ — it embeds the values of its authors, intended or not.",
+      "subreddit": null,
+      "source_text": "The Myth of Neutral Code",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:52:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://foss.life/notes/2026/the-myth-of-neutral-code",
+      "learning_score": 2
+    },
+    {
+      "url": "https://opendotlet.com/",
+      "author": "peter-machona",
+      "item_id": "hn:50497038",
+      "headline": "__Open.Dotlet__ is a 30-key physical keypad built to trigger saved Codex tasks with a single press.",
+      "subreddit": null,
+      "source_text": "Open.Dotlet – a 30-key keypad for saved Codex tasks",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:51:36+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://opendotlet.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.elastic.co/security-labs/threat-command/sansar-linux-cryptomining-malware",
+      "author": "torutofu",
+      "item_id": "hn:50497032",
+      "headline": "Elastic Security Labs breaks down __SANSAR__, a Linux cryptomining toolkit designed for persistent cloud infiltration.",
+      "subreddit": null,
+      "source_text": "Linux cryptomining malware: Inside the SANSAR toolkit",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:50:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://elastic.co/security-labs/threat-command/sansar-linux-cryptomining-malware",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+      "author": "giuliomagnifico",
+      "item_id": "hn:50497009",
+      "headline": "Italy hits Meta with an __$887M fine__ for routing Android users' data without adequate consent.",
+      "subreddit": null,
+      "source_text": "Italy fines Meta $887M over Android users' data access",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:48:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14",
+      "learning_score": 2
+    },
+    {
+      "url": "https://varinomics.com/logonomic/",
+      "author": "imakris",
+      "item_id": "hn:50496986",
+      "headline": "Logonomic says __AI agent managers__ have quietly become load-bearing infrastructure, not just a convenience layer.",
+      "subreddit": null,
+      "source_text": "Show HN: Yet another agent manager (but we needed it)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:44:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://varinomics.com/logonomic",
+      "learning_score": 2
+    },
+    {
+      "url": "https://kerkour.com/rust-supply-chain-security-stdx",
+      "author": "znano",
+      "item_id": "hn:50496972",
+      "headline": "A proposal to harden Rust against supply-chain attacks by folding __security-critical utilities into stdx__, an extended standard library.",
+      "subreddit": null,
+      "source_text": "Securing Rust's supply chain with an extended standard library",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:43:05+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://kerkour.com/rust-supply-chain-security-stdx",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.sunsetlint.com",
+      "author": "karthikgenz",
+      "item_id": "hn:50496956",
+      "headline": "__SunsetLint__ scans your repos for deprecated AI model IDs before they silently break in production.",
+      "subreddit": null,
+      "source_text": "Show HN: SunsetLint – find retiring AI model IDs in your GitHub repos",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:41:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sunsetlint.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://cursor.com/blog/security-incident-update",
+      "author": "dsr12",
+      "item_id": "hn:50496937",
+      "headline": "Cursor posts a security incident update disclosing what happened to __user session data__ and what's been patched.",
+      "subreddit": null,
+      "source_text": "Cursor - An update on our recent security incident",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:38:45+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://cursor.com/blog/security-incident-update",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.netmeister.org/blog/claude-delusion.html",
+      "author": "janvdberg",
+      "item_id": "hn:50496921",
+      "headline": "netmeister makes the case that Claude's confident tone is __doing more work than its accuracy__ — a sharp warning on AI over-trust.",
+      "subreddit": null,
+      "source_text": "The Claude Delusion",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:36:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://netmeister.org/blog/claude-delusion.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://aatishb.com/myriad/how-brains-learn/",
+      "author": "aatish",
+      "item_id": "hn:50496885",
+      "headline": "Aatish Bhatia's __visual explainer on reinforcement learning__ bridges the math and how biological brains actually build behavior.",
+      "subreddit": null,
+      "source_text": "A visual explanation of reinforcement learning",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-14T13:31:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://aatishb.com/myriad/how-brains-learn",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__Notable changes in anthropics/claude-code__",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md#21325",
+      "tag": "Release",
+      "source": "Claude Code Changelog"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-14T14:12:54.950555+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          10299,
+          10313,
+          10309,
+          10301
+        ],
+        "reason": "All cover Jensen Huang's resignation from Nvidia and the widening scandal, from different angles: startup funding impact (TechCrunch), the end of visionary founder CEOs (The Verge), the ongoing political fallout (Guardian), and new research showing banned Nvidia chips powering China's top AI models (TechCrunch).",
+        "badge_count": 4,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10316
+        ],
+        "reason": "Standalone report on a newly disclosed Windows zero-day privilege escalation vulnerability.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10305
+        ],
+        "reason": "Standalone Guardian feature on young people struggling to enter the workforce.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10333
+        ],
+        "reason": "Standalone Pew Research analysis on how news sources relate to civic engagement patterns, distinct from yesterday's Pew study on perceived political power of media.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10306
+        ],
+        "reason": "Standalone report on AI-generated writing disrupting the publishing industry.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10300
+        ],
+        "reason": "Standalone funding announcement for LangChain.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10314
+        ],
+        "reason": "Standalone report on Amazon's internal product data initiative.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10315
+        ],
+        "reason": "Standalone announcement of OpenAI's payment feature for AI agents.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-14T14:13:36.497687",
+      "send_completed_at": "2026-11-14T14:13:43.480852",
+      "event_name": "schedule",
+      "github_run_id": "43602354836",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "cb1188d58877fb97dbe75c2289f305a80f28226a459a1b3c281c35bd2e0e0f6d"
+}
