@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-14T00:00:00Z",
-  "issueCount": 188,
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "issueCount": 189,
   "latestIssue": {
-    "slug": "2026-11-14",
-    "digestDate": "2026-11-14",
-    "displayDate": "Nov 14, 2026",
-    "issueNumber": "61114",
-    "subject": "ISSUE 61114 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is reeling today after Jensen Huang's stunning resignation from Nvidia, a departure that threatens to reshape startup funding, chip enforcement, and the power dynamics of the entire industry \u2014 all while revelations surface that China's top AI models were trained on the very chips they were banned from buying. But the shockwaves don't stop there: OpenAI is giving AI agents your credit card, Amazon wants to index every product on the internet, and LangChain just landed a $3 billion valuation betting that someone needs to wrangle all these agents. It's one of those days where the future feels like it lurched forward and sideways at the same time.",
+    "slug": "2026-11-15",
+    "digestDate": "2026-11-15",
+    "displayDate": "Nov 15, 2026",
+    "issueNumber": "61115",
+    "subject": "ISSUE 61115 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI world is in upheaval over Nvidia's boardroom drama, with over 115,000 signatures \u2014 including from Elon Musk and thousands of Nvidia employees \u2014 demanding Jensen Huang's reinstatement while Asian governments scramble to secure their chip pipelines. But the question of who we trust to steer AI doesn't stop there: today's digest also brings a former OpenAI board member warning that CEO accountability mechanisms are fundamentally broken, a sobering catalog of AI's growing graveyard (42% of corporate AI projects end up abandoned), and a jaw-dropping exam cheating scandal out of South Korea that has the country on edge ahead of its biggest test of the year.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-11-14.html",
-    "contentHash": "cb1188d58877fb97dbe75c2289f305a80f28226a459a1b3c281c35bd2e0e0f6d"
+    "urlPath": "/issues/2026-11-15.html",
+    "contentHash": "700932f867d467ff6e2dd606b35dc1ec693f8bb3786136472f1b4cd5754bb5cd"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-15",
+      "digestDate": "2026-11-15",
+      "displayDate": "Nov 15, 2026",
+      "issueNumber": "61115",
+      "subject": "ISSUE 61115 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI world is in upheaval over Nvidia's boardroom drama, with over 115,000 signatures \u2014 including from Elon Musk and thousands of Nvidia employees \u2014 demanding Jensen Huang's reinstatement while Asian governments scramble to secure their chip pipelines. But the question of who we trust to steer AI doesn't stop there: today's digest also brings a former OpenAI board member warning that CEO accountability mechanisms are fundamentally broken, a sobering catalog of AI's growing graveyard (42% of corporate AI projects end up abandoned), and a jaw-dropping exam cheating scandal out of South Korea that has the country on edge ahead of its biggest test of the year.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-11-15.html",
+      "contentHash": "700932f867d467ff6e2dd606b35dc1ec693f8bb3786136472f1b4cd5754bb5cd"
+    },
     {
       "slug": "2026-11-14",
       "digestDate": "2026-11-14",
@@ -133,17 +144,6 @@
       "articleCount": 13,
       "urlPath": "/issues/2026-11-04.html",
       "contentHash": "c71aedcd3ce8cda86bf1fc78efe6f685d11068ebd862b8b0dd4b3ace534f6c65"
-    },
-    {
-      "slug": "2026-11-03",
-      "digestDate": "2026-11-03",
-      "displayDate": "Nov 03, 2026",
-      "issueNumber": "61103",
-      "subject": "ISSUE 61103 \u00b7 14 STORIES \u00b7 11 MIN READ",
-      "intro": "Today's biggest headline sounds like science fiction: MIT researchers demonstrated that GPT-6 Astra can reach into another AI model's brain and rewrite its internal weights \u2014 no retraining required \u2014 turning a 7.9% math score into 48.1% by tweaking just 0.016% of the model's parameters. Meanwhile, the AI industry's insatiable appetite for power is reshaping the physical world, with OpenAI pledging 1,000 MW of emergency backup power in Georgia and the UK's dirtiest power plant cutting a \u00a320 billion deal to become its largest AI data center. From a Kentucky college granting religious accommodation to an AI objector to a UK prosecutor citing an AI-hallucinated case in a child rape trial, today's digest is a vivid snapshot of a technology moving faster than the institutions trying to keep up.",
-      "articleCount": 14,
-      "urlPath": "/issues/2026-11-03.html",
-      "contentHash": "45369a6b2bf08e6138ab56cb615933a4eedb427274f99223a716b108c24b8634"
     }
   ]
 }
