@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-15T00:00:00Z",
-  "issueCount": 189,
+  "generatedAt": "2026-11-16T00:00:00Z",
+  "issueCount": 190,
   "latestIssue": {
-    "slug": "2026-11-15",
-    "digestDate": "2026-11-15",
-    "displayDate": "Nov 15, 2026",
-    "issueNumber": "61115",
-    "subject": "ISSUE 61115 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "The AI world is in upheaval over Nvidia's boardroom drama, with over 115,000 signatures \u2014 including from Elon Musk and thousands of Nvidia employees \u2014 demanding Jensen Huang's reinstatement while Asian governments scramble to secure their chip pipelines. But the question of who we trust to steer AI doesn't stop there: today's digest also brings a former OpenAI board member warning that CEO accountability mechanisms are fundamentally broken, a sobering catalog of AI's growing graveyard (42% of corporate AI projects end up abandoned), and a jaw-dropping exam cheating scandal out of South Korea that has the country on edge ahead of its biggest test of the year.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-11-15.html",
-    "contentHash": "700932f867d467ff6e2dd606b35dc1ec693f8bb3786136472f1b4cd5754bb5cd"
+    "slug": "2026-11-16",
+    "digestDate": "2026-11-16",
+    "displayDate": "Nov 16, 2026",
+    "issueNumber": "61116",
+    "subject": "ISSUE 61116 \u00b7 12 STORIES \u00b7 11 MIN READ",
+    "intro": "The AI chip world is in full upheaval today: Jensen Huang is reportedly mulling a return to Nvidia as a 165,000-signature petition (with Elon Musk's name on it) pressures the board, while the Trump administration rolls out sweeping new export controls that would require licenses for AI chip shipments to data centers worldwide \u2014 a one-two punch that has the entire industry holding its breath. Beyond the drama at the top of the supply chain, we're also digging into a troubling UN study showing AI models buckle under the slightest pushback on climate science, Google Maps' new AI trip planner, and a sharp analysis asking the uncomfortable question: if models keep getting cheaper, who's actually going to pay for all this infrastructure?",
+    "articleCount": 12,
+    "urlPath": "/issues/2026-11-16.html",
+    "contentHash": "1ecf632b45e34ebfad4cd1b3d78683a23f1dcbccd71af0a2a95a6e9f2a8936a9"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-16",
+      "digestDate": "2026-11-16",
+      "displayDate": "Nov 16, 2026",
+      "issueNumber": "61116",
+      "subject": "ISSUE 61116 \u00b7 12 STORIES \u00b7 11 MIN READ",
+      "intro": "The AI chip world is in full upheaval today: Jensen Huang is reportedly mulling a return to Nvidia as a 165,000-signature petition (with Elon Musk's name on it) pressures the board, while the Trump administration rolls out sweeping new export controls that would require licenses for AI chip shipments to data centers worldwide \u2014 a one-two punch that has the entire industry holding its breath. Beyond the drama at the top of the supply chain, we're also digging into a troubling UN study showing AI models buckle under the slightest pushback on climate science, Google Maps' new AI trip planner, and a sharp analysis asking the uncomfortable question: if models keep getting cheaper, who's actually going to pay for all this infrastructure?",
+      "articleCount": 12,
+      "urlPath": "/issues/2026-11-16.html",
+      "contentHash": "1ecf632b45e34ebfad4cd1b3d78683a23f1dcbccd71af0a2a95a6e9f2a8936a9"
+    },
     {
       "slug": "2026-11-15",
       "digestDate": "2026-11-15",
@@ -133,17 +144,6 @@
       "articleCount": 16,
       "urlPath": "/issues/2026-11-05.html",
       "contentHash": "043b4c8392cdceaa2c977001f6ad3740b2570cdfd70eab58e269aa642a255f41"
-    },
-    {
-      "slug": "2026-11-04",
-      "digestDate": "2026-11-04",
-      "displayDate": "Nov 04, 2026",
-      "issueNumber": "61104",
-      "subject": "ISSUE 61104 \u00b7 13 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI boom's growing pains are getting harder to ignore: Google is watching its search cash cow stumble as AI Mode queries surge but don't pay the bills, Canva just cut 22% of its workforce in a gut-punch restructuring, and data centers are now literally bolting retired jet engines from Boeing 747s onto their facilities because the power grid can't keep up. Meanwhile, the governance alarms are ringing louder \u2014 from Australia warning it's \"sleepwalking into another robodebt\" with unchecked government AI, to Anthropic building cryptographic proof systems so you can verify which model actually produced an output \u2014 today's digest is a snapshot of an industry sprinting forward while scrambling to build the guardrails behind it.",
-      "articleCount": 13,
-      "urlPath": "/issues/2026-11-04.html",
-      "contentHash": "c71aedcd3ce8cda86bf1fc78efe6f685d11068ebd862b8b0dd4b3ace534f6c65"
     }
   ]
 }
