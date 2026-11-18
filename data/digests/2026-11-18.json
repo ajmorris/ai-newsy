@@ -1,0 +1,746 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-18",
+  "issue_id": "20261118",
+  "subject_line": "ISSUE 61118 · 11 STORIES · 11 MIN READ",
+  "intro": "Nvidia is dominating today's headlines from every angle — interim CEO Colette Kress is reshaping the company's direction after Jensen Huang's dramatic exit, cutting off advanced chip sales to China, tightening financing for data center partners, and still posting staggering $64.9 billion in quarterly net income even after summer's frontier training pause proved to be a blip. Beyond the Nvidia saga, today's digest spans the delightfully unexpected, from a physicist building robot tutors to teach wild sparrows forgotten songs to a startup claiming its AI can now smell as well as you can. Dive in — it's one of those days where the AI world feels like it's moving in every direction at once.",
+  "article_count": 11,
+  "stories": [
+    {
+      "id": 10630,
+      "source": "Pew Research Center",
+      "title": "Pew projects Muslims will surpass Christians as world's largest religious group by 2070",
+      "url": "https://www.pewresearch.org/religion/2026/11/18/the-future-of-world-religions-population-growth-projections-2020-2070/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A 2026 Pew Research Center report projects changes in seven major religious groups across 201 countries from 2020 to 2070, finding Muslims are on track to become the world's largest religious group. The methodology uses cohort-component demographic projections estimating births, deaths, migration, and religious switching. Fertility differences are the primary global driver: Muslims average 3.1 children per woman vs. 1.6 for Buddhists. In the U.S. and Europe, religious switching from Christianity to no religion is a substantial factor. Unpredictable events like wars and epidemics are not modeled.",
+      "opinion": "A rigorous demographic exercise, though the 44-year projection horizon means compounding assumptions about switching rates and fertility trends that could diverge significantly from reality.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/pr_2026.11.18_religious-projections_feature.png?w=1200&h=628&crop=1",
+      "published_at": "2026-11-18T14:19:32+00:00",
+      "fetched_at": "2026-11-18T16:14:44.873477+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10630,
+            "source": "Pew Research Center",
+            "title": "The Future of World Religions: Population Growth Projections, 2020-2070",
+            "url": "https://www.pewresearch.org/religion/2026/11/18/the-future-of-world-religions-population-growth-projections-2020-2070/"
+          },
+          {
+            "id": 10629,
+            "source": "Pew Research Center",
+            "title": "Q&A: How Pew Research Center Projects Religious Groups’ Future Growth or Decline",
+            "url": "https://www.pewresearch.org/short-reads/2026/11/18/qa-how-pew-research-center-projects-religious-groups-future-growth-or-decline/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [],
+        "is_update": false,
+        "reason": "Both are Pew Research Center publications about the same 2020-2070 religious population projection report — one is the full report, the other is a Q&A explaining the methodology behind it."
+      }
+    },
+    {
+      "id": 10568,
+      "source": "TechCrunch AI",
+      "title": "Nvidia's Kress tightens neocloud financing, says loan guarantees only kick in after facilities are built",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia interim CEO Colette Kress clarified that the company's loan guarantees for neocloud data centers only take effect once customers have independently secured financing, built the facility, and installed Nvidia equipment. This follows ousted CEO Jensen Huang's aggressive dealmaking including a $105 billion backstop for OpenAI's Ohio campus — reportedly reduced from $250 billion by Kress. Nvidia reported $64.9 billion in Q3 net income and said it would continue financing data center buildouts but be far more selective going forward.",
+      "opinion": "Kress is clearly trying to rein in Huang's freewheeling dealmaking while still signaling commitment to the neocloud ecosystem — a tricky needle to thread when investors are already jittery.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/dollar-signs-data-center.png?w=1024",
+      "published_at": "2026-11-18T13:00:00+00:00",
+      "fetched_at": "2026-11-18T16:14:21.395509+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10568,
+            "source": "TechCrunch AI",
+            "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+            "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Standalone report on Nvidia interim CEO Colette Kress clarifying neocloud financing policy during the Q3 earnings call."
+      }
+    },
+    {
+      "id": 10583,
+      "source": "The Verge AI",
+      "title": "Nvidia halts all advanced AI chip sales to China despite prior White House approval",
+      "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia has ceased shipping H200 AI chips to China, despite having received White House approval in December 2025. Interim CEO Colette Kress announced the decision during an earnings call without explanation. The shift follows Jensen Huang's resignation amid reports of an extramarital affair with a woman suspected by US intelligence of being a Chinese spy, concerns about inadequate vetting of Chinese companies, and approximately 600,000 H200 chips stuck in Hong Kong after Beijing withheld import approval.",
+      "opinion": "The unexplained halt suggests the China business became politically untenable for Nvidia's new leadership, especially given the espionage allegations around Huang. The 600,000 chips in Hong Kong limbo underscore how messy this situation has become.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/STK083_NVIDIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-18T13:01:05+00:00",
+      "fetched_at": "2026-11-18T16:14:27.43776+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10583,
+            "source": "The Verge AI",
+            "title": "Nvidia isn’t selling any more AI chips to China",
+            "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [],
+        "is_update": true,
+        "reason": "Standalone report on Nvidia halting H200 chip sales to China, announced during the same earnings call."
+      }
+    },
+    {
+      "id": 10581,
+      "source": "The Verge AI",
+      "title": "Summer frontier AI training pause proved irrelevant to chip demand as spending shifted to inference",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Despite a brief frontier AI training pause this past summer — triggered by OpenAI's agents hacking Hugging Face and concerns about models finding security exploits — chip companies like Nvidia and AMD are posting record earnings. OpenAI paused its largest training run but restarted after about 10 days. Anthropic CEO Dario Amodei called for slowing frontier model advances, but Anthropic itself released upgraded Fable and Mythos frontier models in November 2026. Nvidia data center revenue rose 110% year-over-year to $107.6 billion. The key takeaway: pausing frontier training doesn't shrink AI chip demand, as spending reallocates to inference, fine-tuning, and other workloads.",
+      "opinion": "The piece effectively argues that the AI pause was more symbolic than structural — chip demand is now diversified across enough workloads that a training moratorium barely registers.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Vera-Rubin-NVL72.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-18T15:44:02+00:00",
+      "fetched_at": "2026-11-18T16:14:27.020484+00:00"
+    },
+    {
+      "id": 10590,
+      "source": "MIT Tech Review AI",
+      "title": "MIT Tech Review catalogs how AI has become inescapable in daily life",
+      "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "MIT Technology Review's AI Hype Index column observes AI pervading everything from Google's AI Overviews (costing billions in lost ad revenue) to humanoid robots cleaning apartments to AI-assisted cyberattacks disrupting supermarkets. Cultural saturation includes Andrew Garfield playing Sam Altman in a movie and Elon Musk releasing a Grok-generated version of The Odyssey. The author compares modern life to Odysseus navigating 'machine gods and monsters.'",
+      "opinion": "More cultural barometer than news, but effectively captures the ambient anxiety around AI ubiquity that harder-news stories miss.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/11-Hype-thumb2.jpg?resize=1200,600",
+      "published_at": "2026-11-18T14:42:44+00:00",
+      "fetched_at": "2026-11-18T16:14:29.74317+00:00"
+    },
+    {
+      "id": 10591,
+      "source": "MIT Tech Review AI",
+      "title": "Osmo claims its AI smell model has reached human-level olfactory ability",
+      "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Osmo, spun out of Google Brain in 2023, claims its foundation model for smell has achieved 'human-level olfactory intelligence' — detecting and discriminating smells as well as an average person and creating scents at a junior perfumer's level. The company built a proprietary dataset of over 10 million human labels and 800 million 'scent tokens' using ~100 trained labelers. Osmo's model is reportedly outperforming in-house perfumers at a major consumer goods company, with envisioned applications in airport threat detection and medical diagnostics.",
+      "opinion": "Bold claims that need independent verification, but the proprietary dataset and fragrance-industry traction suggest Osmo may be onto something genuinely novel in an underexplored AI domain.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/osmo-nose2.jpg?resize=1200,600",
+      "published_at": "2026-11-18T10:20:30+00:00",
+      "fetched_at": "2026-11-18T16:14:29.936814+00:00"
+    },
+    {
+      "id": 10618,
+      "source": "Aeon",
+      "title": "Physicist builds robotic tutors to teach wild sparrows songs lost over decades",
+      "url": "https://aeon.co/videos/a-physicists-audacious-plan-to-teach-birds-long-lost-songs",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Argentine physicist Gabriel Mindlin discovered that some rufous-collared sparrow melodies had disappeared by comparing modern recordings with 1960s hand-transcribed songs. Using mathematical models, his team reconstructed the vanished songs and built robotic song tutors placed in the wild to teach young birds the lost tunes. A short documentary by Martín Benchimol follows the experiment tracking whether birds adopt the revived melodies.",
+      "opinion": "A charming intersection of physics, ornithology, and cultural preservation — though the deeper question of whether reviving lost bird songs constitutes restoration or intervention remains open.",
+      "image_url": "https://images.aeonmedia.co/images/f6569bab-ec9d-4c43-b83d-aba8d9e34b4d/dreams-of-birds-cover.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-18T11:01:00+00:00",
+      "fetched_at": "2026-11-18T16:14:42.589079+00:00"
+    },
+    {
+      "id": 10596,
+      "source": "Lenny's Newsletter",
+      "title": "Lenny's Newsletter adds OpenRouter, LangChain, Sentry, and two more to its free-tools-for-subscribers program",
+      "url": "https://www.lennysnewsletter.com/p/35-premium-tools-free-for-a-yearnow",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Lenny Rachitsky's newsletter added five tools to its Product Pass program: OpenRouter ($650 value, recently acquired by Stripe), Ploy ($600), Sentry ($360), TextExpander ($300), and LangSmith by LangChain ($468). This brings the total to 35 premium tools offered free for a year to paid subscribers, worth over $41,000 for Insider subscribers. Codes are limited and first-come, first-served.",
+      "opinion": "Clever subscriber retention strategy — the bundled value far exceeds the subscription cost, though the actual utility depends on whether subscribers need these specific tools.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!_4Bo!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e03312c-6e52-4564-9749-ae529a239aff_1456x970.png",
+      "published_at": "2026-11-17T18:02:02+00:00",
+      "fetched_at": "2026-11-18T16:14:32.123912+00:00"
+    },
+    {
+      "id": 10569,
+      "source": "TechCrunch AI",
+      "title": "Unsiloed AI raises $7.5M to make complex enterprise documents usable by AI agents",
+      "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Unsiloed AI, a seven-person startup by IIT Kharagpur alumni, raised $7.5 million in seed funding led by Felicis with participation from Y Combinator and others. The company extracts structured data from complex enterprise documents using 'dual-stream' vision models processing text and image data separately, 'heat map-based chunking,' and specialized decoders for industry terminology. The YC Fall 2025 batch company has customers in finance, legal, and healthcare.",
+      "opinion": "Competitive space with Reducto, Microsoft, and Amazon already in the mix, but the dual-stream approach and industry-specific decoders suggest meaningful technical differentiation.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/unsiloed-AI-founders-adnan-abbas-aman-mishra.jpg?resize=1200,800",
+      "published_at": "2026-11-18T12:00:00+00:00",
+      "fetched_at": "2026-11-18T16:14:21.658098+00:00"
+    },
+    {
+      "id": 10582,
+      "source": "The Verge AI",
+      "title": "Will Wright's next game uses AI to turn players' personal memories into explorable toy worlds",
+      "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "SimCity and Sims creator Will Wright is developing MyMems through Gallium Studios, an AI-powered mobile game described as a 'social simulation.' Players speak short stories into their phones, which are generated into placeable pieces on a game map including AI-powered avatars representing people from the player's life. The goal is creating a 'map of your psyche' similar to Inside Out. Worlds can be kept private or shared.",
+      "opinion": "Wright's track record makes this worth watching, though the concept of turning personal memories into shared game assets raises interesting questions about privacy and emotional vulnerability in play.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Grand-Canyon-Family-Portrait.png?quality=90&strip=all&crop=0%2C23.821989528796%2C100%2C52.356020942408&w=1200",
+      "published_at": "2026-11-18T14:00:00+00:00",
+      "fetched_at": "2026-11-18T16:14:27.217074+00:00"
+    },
+    {
+      "id": 10570,
+      "source": "TechCrunch AI",
+      "title": "India's Humyn Labs raises $47M to supply real-world training data for U.S. robotics companies",
+      "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Humyn Labs, founded in February 2026 by former Nazara CEO Manish Agarwal and ex-AB InBev executive Ishank Gupta, raised $47 million in Series A ($26M equity led by Accel, $21M venture debt led by Lighthouse Canton). The startup uses proprietary two-camera hardware to record people performing everyday tasks across 20+ countries, then processes and labels the footage for AI training. With 12 customers and ~90% U.S. revenue, it generated $10M between April and October 2026 with $20M in signed contracts.",
+      "opinion": "Impressive early traction and revenue velocity for a company less than a year old — the venture debt component smartly addresses the cash-flow mismatch inherent in data-collection businesses.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/humyn-labs-co-founders_164602.jpg?resize=1200,800",
+      "published_at": "2026-11-18T11:30:00+00:00",
+      "fetched_at": "2026-11-18T16:14:21.845165+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10630,
+          "source": "Pew Research Center",
+          "title": "Pew projects Muslims will surpass Christians as world's largest religious group by 2070",
+          "url": "https://www.pewresearch.org/religion/2026/11/18/the-future-of-world-religions-population-growth-projections-2020-2070/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A 2026 Pew Research Center report projects changes in seven major religious groups across 201 countries from 2020 to 2070, finding Muslims are on track to become the world's largest religious group. The methodology uses cohort-component demographic projections estimating births, deaths, migration, and religious switching. Fertility differences are the primary global driver: Muslims average 3.1 children per woman vs. 1.6 for Buddhists. In the U.S. and Europe, religious switching from Christianity to no religion is a substantial factor. Unpredictable events like wars and epidemics are not modeled.",
+          "opinion": "A rigorous demographic exercise, though the 44-year projection horizon means compounding assumptions about switching rates and fertility trends that could diverge significantly from reality.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/pr_2026.11.18_religious-projections_feature.png?w=1200&h=628&crop=1",
+          "published_at": "2026-11-18T14:19:32+00:00",
+          "fetched_at": "2026-11-18T16:14:44.873477+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10630,
+                "source": "Pew Research Center",
+                "title": "The Future of World Religions: Population Growth Projections, 2020-2070",
+                "url": "https://www.pewresearch.org/religion/2026/11/18/the-future-of-world-religions-population-growth-projections-2020-2070/"
+              },
+              {
+                "id": 10629,
+                "source": "Pew Research Center",
+                "title": "Q&A: How Pew Research Center Projects Religious Groups’ Future Growth or Decline",
+                "url": "https://www.pewresearch.org/short-reads/2026/11/18/qa-how-pew-research-center-projects-religious-groups-future-growth-or-decline/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [],
+            "is_update": false,
+            "reason": "Both are Pew Research Center publications about the same 2020-2070 religious population projection report — one is the full report, the other is a Q&A explaining the methodology behind it."
+          }
+        },
+        {
+          "id": 10568,
+          "source": "TechCrunch AI",
+          "title": "Nvidia's Kress tightens neocloud financing, says loan guarantees only kick in after facilities are built",
+          "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia interim CEO Colette Kress clarified that the company's loan guarantees for neocloud data centers only take effect once customers have independently secured financing, built the facility, and installed Nvidia equipment. This follows ousted CEO Jensen Huang's aggressive dealmaking including a $105 billion backstop for OpenAI's Ohio campus — reportedly reduced from $250 billion by Kress. Nvidia reported $64.9 billion in Q3 net income and said it would continue financing data center buildouts but be far more selective going forward.",
+          "opinion": "Kress is clearly trying to rein in Huang's freewheeling dealmaking while still signaling commitment to the neocloud ecosystem — a tricky needle to thread when investors are already jittery.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/04/dollar-signs-data-center.png?w=1024",
+          "published_at": "2026-11-18T13:00:00+00:00",
+          "fetched_at": "2026-11-18T16:14:21.395509+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10568,
+                "source": "TechCrunch AI",
+                "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+                "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Standalone report on Nvidia interim CEO Colette Kress clarifying neocloud financing policy during the Q3 earnings call."
+          }
+        },
+        {
+          "id": 10583,
+          "source": "The Verge AI",
+          "title": "Nvidia halts all advanced AI chip sales to China despite prior White House approval",
+          "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia has ceased shipping H200 AI chips to China, despite having received White House approval in December 2025. Interim CEO Colette Kress announced the decision during an earnings call without explanation. The shift follows Jensen Huang's resignation amid reports of an extramarital affair with a woman suspected by US intelligence of being a Chinese spy, concerns about inadequate vetting of Chinese companies, and approximately 600,000 H200 chips stuck in Hong Kong after Beijing withheld import approval.",
+          "opinion": "The unexplained halt suggests the China business became politically untenable for Nvidia's new leadership, especially given the espionage allegations around Huang. The 600,000 chips in Hong Kong limbo underscore how messy this situation has become.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/STK083_NVIDIA_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-18T13:01:05+00:00",
+          "fetched_at": "2026-11-18T16:14:27.43776+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10583,
+                "source": "The Verge AI",
+                "title": "Nvidia isn’t selling any more AI chips to China",
+                "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [],
+            "is_update": true,
+            "reason": "Standalone report on Nvidia halting H200 chip sales to China, announced during the same earnings call."
+          }
+        },
+        {
+          "id": 10581,
+          "source": "The Verge AI",
+          "title": "Summer frontier AI training pause proved irrelevant to chip demand as spending shifted to inference",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Despite a brief frontier AI training pause this past summer — triggered by OpenAI's agents hacking Hugging Face and concerns about models finding security exploits — chip companies like Nvidia and AMD are posting record earnings. OpenAI paused its largest training run but restarted after about 10 days. Anthropic CEO Dario Amodei called for slowing frontier model advances, but Anthropic itself released upgraded Fable and Mythos frontier models in November 2026. Nvidia data center revenue rose 110% year-over-year to $107.6 billion. The key takeaway: pausing frontier training doesn't shrink AI chip demand, as spending reallocates to inference, fine-tuning, and other workloads.",
+          "opinion": "The piece effectively argues that the AI pause was more symbolic than structural — chip demand is now diversified across enough workloads that a training moratorium barely registers.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Vera-Rubin-NVL72.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-18T15:44:02+00:00",
+          "fetched_at": "2026-11-18T16:14:27.020484+00:00"
+        },
+        {
+          "id": 10590,
+          "source": "MIT Tech Review AI",
+          "title": "MIT Tech Review catalogs how AI has become inescapable in daily life",
+          "url": "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "MIT Technology Review's AI Hype Index column observes AI pervading everything from Google's AI Overviews (costing billions in lost ad revenue) to humanoid robots cleaning apartments to AI-assisted cyberattacks disrupting supermarkets. Cultural saturation includes Andrew Garfield playing Sam Altman in a movie and Elon Musk releasing a Grok-generated version of The Odyssey. The author compares modern life to Odysseus navigating 'machine gods and monsters.'",
+          "opinion": "More cultural barometer than news, but effectively captures the ambient anxiety around AI ubiquity that harder-news stories miss.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/11-Hype-thumb2.jpg?resize=1200,600",
+          "published_at": "2026-11-18T14:42:44+00:00",
+          "fetched_at": "2026-11-18T16:14:29.74317+00:00"
+        },
+        {
+          "id": 10591,
+          "source": "MIT Tech Review AI",
+          "title": "Osmo claims its AI smell model has reached human-level olfactory ability",
+          "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Osmo, spun out of Google Brain in 2023, claims its foundation model for smell has achieved 'human-level olfactory intelligence' — detecting and discriminating smells as well as an average person and creating scents at a junior perfumer's level. The company built a proprietary dataset of over 10 million human labels and 800 million 'scent tokens' using ~100 trained labelers. Osmo's model is reportedly outperforming in-house perfumers at a major consumer goods company, with envisioned applications in airport threat detection and medical diagnostics.",
+          "opinion": "Bold claims that need independent verification, but the proprietary dataset and fragrance-industry traction suggest Osmo may be onto something genuinely novel in an underexplored AI domain.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/osmo-nose2.jpg?resize=1200,600",
+          "published_at": "2026-11-18T10:20:30+00:00",
+          "fetched_at": "2026-11-18T16:14:29.936814+00:00"
+        },
+        {
+          "id": 10618,
+          "source": "Aeon",
+          "title": "Physicist builds robotic tutors to teach wild sparrows songs lost over decades",
+          "url": "https://aeon.co/videos/a-physicists-audacious-plan-to-teach-birds-long-lost-songs",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Argentine physicist Gabriel Mindlin discovered that some rufous-collared sparrow melodies had disappeared by comparing modern recordings with 1960s hand-transcribed songs. Using mathematical models, his team reconstructed the vanished songs and built robotic song tutors placed in the wild to teach young birds the lost tunes. A short documentary by Martín Benchimol follows the experiment tracking whether birds adopt the revived melodies.",
+          "opinion": "A charming intersection of physics, ornithology, and cultural preservation — though the deeper question of whether reviving lost bird songs constitutes restoration or intervention remains open.",
+          "image_url": "https://images.aeonmedia.co/images/f6569bab-ec9d-4c43-b83d-aba8d9e34b4d/dreams-of-birds-cover.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-18T11:01:00+00:00",
+          "fetched_at": "2026-11-18T16:14:42.589079+00:00"
+        },
+        {
+          "id": 10596,
+          "source": "Lenny's Newsletter",
+          "title": "Lenny's Newsletter adds OpenRouter, LangChain, Sentry, and two more to its free-tools-for-subscribers program",
+          "url": "https://www.lennysnewsletter.com/p/35-premium-tools-free-for-a-yearnow",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Lenny Rachitsky's newsletter added five tools to its Product Pass program: OpenRouter ($650 value, recently acquired by Stripe), Ploy ($600), Sentry ($360), TextExpander ($300), and LangSmith by LangChain ($468). This brings the total to 35 premium tools offered free for a year to paid subscribers, worth over $41,000 for Insider subscribers. Codes are limited and first-come, first-served.",
+          "opinion": "Clever subscriber retention strategy — the bundled value far exceeds the subscription cost, though the actual utility depends on whether subscribers need these specific tools.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!_4Bo!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e03312c-6e52-4564-9749-ae529a239aff_1456x970.png",
+          "published_at": "2026-11-17T18:02:02+00:00",
+          "fetched_at": "2026-11-18T16:14:32.123912+00:00"
+        },
+        {
+          "id": 10569,
+          "source": "TechCrunch AI",
+          "title": "Unsiloed AI raises $7.5M to make complex enterprise documents usable by AI agents",
+          "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Unsiloed AI, a seven-person startup by IIT Kharagpur alumni, raised $7.5 million in seed funding led by Felicis with participation from Y Combinator and others. The company extracts structured data from complex enterprise documents using 'dual-stream' vision models processing text and image data separately, 'heat map-based chunking,' and specialized decoders for industry terminology. The YC Fall 2025 batch company has customers in finance, legal, and healthcare.",
+          "opinion": "Competitive space with Reducto, Microsoft, and Amazon already in the mix, but the dual-stream approach and industry-specific decoders suggest meaningful technical differentiation.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/unsiloed-AI-founders-adnan-abbas-aman-mishra.jpg?resize=1200,800",
+          "published_at": "2026-11-18T12:00:00+00:00",
+          "fetched_at": "2026-11-18T16:14:21.658098+00:00"
+        },
+        {
+          "id": 10582,
+          "source": "The Verge AI",
+          "title": "Will Wright's next game uses AI to turn players' personal memories into explorable toy worlds",
+          "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "SimCity and Sims creator Will Wright is developing MyMems through Gallium Studios, an AI-powered mobile game described as a 'social simulation.' Players speak short stories into their phones, which are generated into placeable pieces on a game map including AI-powered avatars representing people from the player's life. The goal is creating a 'map of your psyche' similar to Inside Out. Worlds can be kept private or shared.",
+          "opinion": "Wright's track record makes this worth watching, though the concept of turning personal memories into shared game assets raises interesting questions about privacy and emotional vulnerability in play.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Grand-Canyon-Family-Portrait.png?quality=90&strip=all&crop=0%2C23.821989528796%2C100%2C52.356020942408&w=1200",
+          "published_at": "2026-11-18T14:00:00+00:00",
+          "fetched_at": "2026-11-18T16:14:27.217074+00:00"
+        },
+        {
+          "id": 10570,
+          "source": "TechCrunch AI",
+          "title": "India's Humyn Labs raises $47M to supply real-world training data for U.S. robotics companies",
+          "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Humyn Labs, founded in February 2026 by former Nazara CEO Manish Agarwal and ex-AB InBev executive Ishank Gupta, raised $47 million in Series A ($26M equity led by Accel, $21M venture debt led by Lighthouse Canton). The startup uses proprietary two-camera hardware to record people performing everyday tasks across 20+ countries, then processes and labels the footage for AI training. With 12 customers and ~90% U.S. revenue, it generated $10M between April and October 2026 with $20M in signed contracts.",
+          "opinion": "Impressive early traction and revenue velocity for a company less than a year old — the venture debt component smartly addresses the cash-flow mismatch inherent in data-collection businesses.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/humyn-labs-co-founders_164602.jpg?resize=1200,800",
+          "published_at": "2026-11-18T11:30:00+00:00",
+          "fetched_at": "2026-11-18T16:14:21.845165+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2122964531383271813",
+      "author": "Zephyr_hg",
+      "headline": "This Claude Opus 5.5 prompt interviews you, __kills every task that doesn't make money__, and hands back your top 3.",
+      "tweet_id": "41c1eba9-b6bc-81d7-b2bc-d8d70d06cc0b",
+      "source_text": "Most people ask AI for a to-do list. This prompt does the opposite.\n\nIt interviews you, kills every task that doesn't make money or keep a client, and hands back your top 3, the one Claude takes over and the drop list.\n\nSend it to Claude Opus 5.5 and answer its 5 questions.\n\nThe full prompt is in the image ↓",
+      "created_time": "2026-11-18T14:07:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2122964531383271813",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xEikichi/status/2122811541913256324",
+      "author": "0xEikichi",
+      "headline": "Claude Code's new __Code Mode__ chains your tools into one script, runs commands in parallel, and keeps working while you chat — live across all models.",
+      "tweet_id": "41c1eba9-b6bc-816e-85fd-ee2885ad2eec",
+      "source_text": "do you realize what just happened...\n\nClaude Code just stopped working one tool at a time\n\nit's called Code Mode\n\nbefore:\nrun a command → read it → run the next → read it\n\nnow:\nClaude writes one script that chains all your tools\n→ runs commands in parallel\n→ feeds one result into the next\n→ only reads the part it needs\n\nand you can keep talking to it while a 2-hour build runs in the background\n\nworks with Fable 5.2, Opus, Sonnet and Haiku\n\nhow to turn it on is in the reply↓",
+      "created_time": "2026-11-18T14:07:00.000Z",
+      "canonical_url": "https://twitter.com/0xEikichi/status/2122811541913256324",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/bot/status/2122771386456551516",
+      "author": "bot",
+      "headline": "__Five AI bots__ now hold full-time accounting roles at one company, handling everything from customer provisioning to payment collection.",
+      "tweet_id": "41c1eba9-b6bc-81c5-8a50-ea3dd2d37b19",
+      "source_text": "Five Bots now have full-time roles on our accounting team. We onboard, train, and manage them just like human teammates.\n\nHere's how we built them to handle the order-to-cash process, from provisioning customer accounts to collecting payments.\n\nhttps://t.co/v3uuGoLWhP",
+      "created_time": "2026-11-18T13:37:00.000Z",
+      "canonical_url": "https://twitter.com/bot/status/2122771386456551516",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/alexmichael/status/2123038549821755901",
+      "author": "alexmichael",
+      "headline": "Stop polling news every 5 minutes — point an RSS watcher at your feeds so your __Grok Bot wakes up only for real stories__.",
+      "tweet_id": "41c1eba9-b6bc-8129-89a3-d31231d52117",
+      "source_text": "Grok Bot webhook tip part 2👇\n\nDon't have your Bot check the news every 5 minutes, that's 288 runs a day even when nothing is new\n\n> Point an RSS watcher or a tiny script at your feeds\n\n> When a new story drops it POSTs the title and link to your routine\n\n> Your Bot only wakes up for real news and sums it up for you\n\nSame news for a fraction of the usage",
+      "created_time": "2026-11-18T14:07:00.000Z",
+      "canonical_url": "https://twitter.com/alexmichael/status/2123038549821755901",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/markgurman/status/2122870209216225388",
+      "author": "markgurman",
+      "headline": "Two months after Siri AI launched, Mark Gurman says Apple has been __completely jettisoned__ from the AI race — again — with Meta and Google running laps.",
+      "tweet_id": "41c1eba9-b6bc-8140-bf2e-d91bacf8920b",
+      "source_text": "Two months after launching Siri AI, Apple has been completely jettisoned yet again in the space. The “real” AI for humans is here. It’s not just labs running laps here, it’s Apple’s two biggest competitors in Meta and Google. https://t.co/9w7R1Y2W5j",
+      "created_time": "2026-11-18T13:32:00.000Z",
+      "canonical_url": "https://twitter.com/markgurman/status/2122870209216225388",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/benln/status/2122695018167017591",
+      "author": "benln",
+      "headline": "The YC team compiled their __recent startup ideas__ in one place — solid reading list if you're figuring out what to build next.",
+      "tweet_id": "41c1eba9-b6bc-81f2-a895-f3de3d741edc",
+      "source_text": "All of the startup ideas the @ycombinator team shared recently: https://t.co/dzYXLTuTX9",
+      "created_time": "2026-11-18T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/benln/status/2122695018167017591",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/distortgeekin/status/2122668627849613789",
+      "author": "distortgeekin",
+      "headline": "Claude Haiku outscored Opus on __84 real tasks__ — 27.7% vs. 22.0% — using just a SKILL.md file. The gap wasn't the model, it was writing the work down.",
+      "tweet_id": "41c1eba9-b6bc-81b4-b546-d32a3d5f89d0",
+      "source_text": "Claude's smallest model just beat Claude Opus with one text file\n\n84 real tasks: Haiku with skills 27.7%, Opus without them 22.0%\n\nThe difference wasn't the model, it was writing the work down once\n\n6 parts, 6 broken skills and a SKILL.md you can copy ↓ https://t.co/AfkuzTIpei",
+      "created_time": "2026-11-18T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/distortgeekin/status/2122668627849613789",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/arthuryuzbashev/status/2122649878367178989",
+      "author": "arthuryuzbashev",
+      "headline": "Arthur Yuzbashev's free GitHub repo __audits your app against 2026 App Store rules__ before you submit — built after two back-to-back rejections.",
+      "tweet_id": "41c1eba9-b6bc-8194-8295-cbd3e06bfa9b",
+      "source_text": "Apple rejected my first app twice\n\nThere’s a free GitHub repo that would’ve saved me both times\n\napp-store-compliance:\n- every common rejection reason, mapped\n- checks your app against 2026 rules\n- AI agent audits your code before you submit\n\nUse it before your next submit! https://t.co/EMpKPJtqQB",
+      "created_time": "2026-11-18T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/arthuryuzbashev/status/2122649878367178989",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://voxoria.ai/web-search-api-pricing/",
+      "author": "sanj001",
+      "item_id": "hn:50548015",
+      "headline": "A side-by-side comparison of __pricing across 100 web search APIs__ — worth checking before you commit to one for production.",
+      "subreddit": null,
+      "source_text": "Show HN: Comparing pricing across 100 web search APIs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:07:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://voxoria.ai/web-search-api-pricing",
+      "learning_score": 3
+    },
+    {
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "author": "zerocool0101",
+      "item_id": "hn:50547980",
+      "headline": "__ExitPath__ maps open-source alternatives to Slack, Notion, and Microsoft 365 for teams eyeing a SaaS exit.",
+      "subreddit": null,
+      "source_text": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:04:43+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://exitpath-ruddy.vercel.app",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.nextplatform.com/compute/2026/11/14/cerebras-readies-cs-5-systems-for-2027-launch-as-it-bags-another-hyperscaler/5309932",
+      "author": "rbanffy",
+      "item_id": "hn:50547969",
+      "headline": "Cerebras is lining up __CS-5 systems for a 2027 launch__ after landing another hyperscaler deal.",
+      "subreddit": null,
+      "source_text": "Cerebras Readies CS-5 Systems for 2027 Launch as It Bags Another Hyperscaler",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:04:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nextplatform.com/compute/2026/11/14/cerebras-readies-cs-5-systems-for-2027-launch-as-it-bags-another-hyperscaler/5309932",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.myaladdin.app/opt-tracker",
+      "author": "marvin_x",
+      "item_id": "hn:50547930",
+      "headline": "Built after a __$5,000 OPT filing mistake__, this free tracker helps international students stay on top of their immigration paperwork.",
+      "subreddit": null,
+      "source_text": "Show HN: Free OPT tracker, built after a $5k filing mistake",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:01:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://myaladdin.app/opt-tracker",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.openmetropolitan.com",
+      "author": "graslowsnail",
+      "item_id": "hn:50547778",
+      "headline": "An infinite canvas lets you __explore 340,000 artworks from The Met__ — no pagination, no load screens.",
+      "subreddit": null,
+      "source_text": "Show HN: I built an infinite canvas to explore 340k artworks from The Met",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T15:49:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://openmetropolitan.com",
+      "learning_score": 3
+    },
+    {
+      "url": "https://polypane.app/automation/",
+      "author": "kilian",
+      "item_id": "hn:50548065",
+      "headline": "Polypane's browser can now __automate workflows via MCP__, making it controllable from any AI coding agent.",
+      "subreddit": null,
+      "source_text": "Polypane browser now has an Automation MCP",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:12:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://polypane.app/automation",
+      "learning_score": 2
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
+      "author": "gmays",
+      "item_id": "hn:50548064",
+      "headline": "Nvidia details how __co-designing sparse attention__ can cut inference costs for long-context models without sacrificing accuracy.",
+      "subreddit": null,
+      "source_text": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:12:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
+      "author": "ChrisArchitect",
+      "item_id": "hn:50548048",
+      "headline": "The NYT makes the case that __nobody is ready for this AI future__ — and nobody is stopping it either.",
+      "subreddit": null,
+      "source_text": "Nobody Is Ready for This Future. But Nobody Is Stopping It",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:10:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://support.last.fm/t/api-keys-will-require-pro-from-1st-december/121030",
+      "author": "imalerba",
+      "item_id": "hn:50548026",
+      "headline": "Last.fm is __locking API access behind a Pro subscription__ starting December 1st, cutting off free-tier developers.",
+      "subreddit": null,
+      "source_text": "Last.fm API keys will require Pro from first December",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:08:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://support.last.fm/t/api-keys-will-require-pro-from-1st-december/121030",
+      "learning_score": 2
+    },
+    {
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "author": "gmays",
+      "item_id": "hn:50548021",
+      "headline": "Microsoft unveiled __seven new AI models at Ignite 2026__, targeting a range of price-performance trade-offs.",
+      "subreddit": null,
+      "source_text": "Microsoft AI: Seven new world-class models at scalable price-performance",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:08:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://microsoft.ai/news/microsoft-ignite-2026",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/manamaliahmad/redcat",
+      "author": "manamaliahmed",
+      "item_id": "hn:50548013",
+      "headline": "RedCat is an __open-source AI agent for the desktop__ that runs local tasks without phoning home.",
+      "subreddit": null,
+      "source_text": "Show HN: RedCat an open-source AI agent for your desktop",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:07:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/manamaliahmad/redcat",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.terra.security/blog/kvm-guest-to-host-escape",
+      "author": "Kozmik1",
+      "item_id": "hn:50548004",
+      "headline": "__CVE-2026-99312__ is a KVM guest-to-host escape — if you're running virtualized workloads, patch now.",
+      "subreddit": null,
+      "source_text": "CVE-2026-99312: KVM Guest-to-Host Escape",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-18T16:06:21+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://terra.security/blog/kvm-guest-to-host-escape",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__OpenAI’s newest release lands to rough reviews__",
+      "url": "https://therundownai.beehiiv.com/p/openai-newest-release-lands-to-rough-reviews",
+      "tag": "Release",
+      "source": "The Rundown AI"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-18T16:36:56.133753+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          10629,
+          10630
+        ],
+        "reason": "Both are Pew Research Center publications about the same 2020-2070 religious population projection report — one is the full report, the other is a Q&A explaining the methodology behind it.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10568
+        ],
+        "reason": "Standalone report on Nvidia interim CEO Colette Kress clarifying neocloud financing policy during the Q3 earnings call.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10583
+        ],
+        "reason": "Standalone report on Nvidia halting H200 chip sales to China, announced during the same earnings call.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10581
+        ],
+        "reason": "Analysis piece examining how the summer frontier AI training pause had no lasting impact on chip demand, referencing multiple already-covered events but constituting a distinct analytical story.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10590
+        ],
+        "reason": "Standalone cultural commentary from MIT Technology Review cataloging AI's pervasiveness in daily life.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10591
+        ],
+        "reason": "Standalone story about Osmo's AI smell model reaching claimed human-level olfactory intelligence.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10618
+        ],
+        "reason": "Standalone feature about an Argentine physicist using robotic song tutors to revive lost bird melodies.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10596
+        ],
+        "reason": "Standalone announcement about Lenny's Newsletter adding five new tools to its subscriber Product Pass program.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10569
+        ],
+        "reason": "Standalone funding announcement for Unsiloed AI's document-processing seed round.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10582
+        ],
+        "reason": "Standalone story about Will Wright developing a new AI-powered game that turns player memories into explorable worlds.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10570
+        ],
+        "reason": "Standalone funding announcement for India's Humyn Labs supplying robotics training data.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "883485de205070cbab90d00f4ad2594b635248f06283499669424f740a3c7ada"
+}
