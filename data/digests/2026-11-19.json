@@ -1,0 +1,978 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-19",
+  "issue_id": "20261119",
+  "subject_line": "ISSUE 61119 · 16 STORIES · 11 MIN READ",
+  "intro": "Anthropic just made Wall Street history with the largest IPO ever, ringing the Nasdaq bell at $83 a share and walking away with a war chest that would make most nations jealous — but the eye-popping $26 billion private placement from a who's-who of Big Tech raises thorny questions about the circular financing propping up the AI boom. It's a fitting headline for a day that also brings Google shipping yet another Gemini model (its fourth in two months), Microsoft's CEO explaining why he offered buyouts to 60,000 employees in the name of going \"AI-first,\" and the IMF warning that all this AI spending could push interest rates higher for everyone. From the trading floor to the factory floor to your phone's always-listening assistant, today's stories paint a picture of an industry moving faster than anyone can fully keep up with.",
+  "article_count": 16,
+  "stories": [
+    {
+      "id": 10632,
+      "source": "TechCrunch AI",
+      "title": "Anthropic goes public in historic IPO amid questions about circular AI financing",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic, the AI company behind Claude, has begun public trading on the Nasdaq in what is described as the largest IPO in history. CEO Dario Amodei rang the opening bell. The IPO share price is $83, and its largest infrastructure partners—Amazon (14.7% stake) and Google (13.7% stake)—are also its biggest suppliers, highlighting a circular financing dynamic. A consortium including Google, Nvidia, AMD, Microsoft, Broadcom, Micron, and TSMC committed $26 billion in a private placement at the IPO price. Anthropic still operates at a net loss of tens of billions per quarter but is expected to have ~$220 billion in cash post-IPO, with $900 billion committed to future compute and infrastructure spending.",
+      "opinion": "The largest IPO in history is built on a business that loses tens of billions per quarter and spends its investors' money buying services from those same investors. Whether Anthropic can convert its massive cash position and compute commitments into actual profitability before the money runs out is the central question for public market investors. Where coverage differs: Guardian AI reports a $1.5 trillion valuation; TechCrunch AI reports a projected valuation of ~$1.08 trillion",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2304538389.jpg?w=1024",
+      "published_at": "2026-11-19T14:54:39+00:00",
+      "fetched_at": "2026-11-19T16:21:41.34583+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10632,
+            "source": "TechCrunch AI",
+            "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
+            "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/"
+          },
+          {
+            "id": 10642,
+            "source": "Guardian AI",
+            "title": "Anthropic to begin public trading at $1.5tn valuation after largest-ever IPO",
+            "url": "https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "Guardian AI reports a $1.5 trillion valuation; TechCrunch AI reports a projected valuation of ~$1.08 trillion"
+        ],
+        "is_update": false,
+        "reason": "Both cover Anthropic's IPO and public listing"
+      }
+    },
+    {
+      "id": 10653,
+      "source": "The Rundown AI",
+      "title": "Google releases Gemini 4 Neon, its fourth Gemini 4 model in two months",
+      "url": "https://therundownai.beehiiv.com/p/google-shipping-spree-continues-with-neon",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google released Gemini 4 Neon, labeled mid-tier but edging out its own top-end Carbon model on benchmarks. Neon trails only Claude Fable 5.2 and GPT-6.2 Astra on Artificial Analysis' leaderboard and beats Claude Opus 5.5 and GPT-6.2 Sol on 16 of 19 benchmarks. It's available at $3/$15 per million input/output tokens. A Google researcher hinted recursive self-improvement may be behind the accelerated shipping pace.",
+      "opinion": "Google's rapid-fire model releases signal it has found a way to iterate faster, possibly through recursive self-improvement. Neon undercutting its own Carbon model on price and performance is an unusual move that may pressure competitors' pricing.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/15033208-8b11-4382-8caf-cd5914c4a7c7/gemini4neon.png?t=1795042173",
+      "published_at": "2026-11-19T10:00:00+00:00",
+      "fetched_at": "2026-11-19T16:21:46.225806+00:00"
+    },
+    {
+      "id": 10652,
+      "source": "DeepMind Blog",
+      "title": "Google DeepMind launches Genie 4 for interactive world generation",
+      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google DeepMind announced Genie 4, rolling out to Google AI Ultra subscribers. It enables real-time environment editing via natural language, native audio support, and a community gallery for sharing and remixing creations. A new Project Genie agent allows building custom interactive worlds through conversation. Google AI Pro members can join a waitlist.",
+      "opinion": "Genie 4 represents a step toward AI-generated interactive environments becoming a consumer product rather than a research demo, though limiting it to Ultra subscribers keeps the audience narrow for now.",
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+      "published_at": "2026-11-18T18:13:42+00:00",
+      "fetched_at": "2026-11-19T16:21:44.838951+00:00"
+    },
+    {
+      "id": 10654,
+      "source": "The Verge AI",
+      "title": "ChatGPT adds real-time speech transcription with Live Dictation",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI is rolling out Live Dictation for ChatGPT that transcribes audio in real time as users speak. The feature is available globally across all plans on web, desktop, iOS, and Android. Users can view and edit live transcripts. OpenAI is also removing the previous 10-minute recording limit.",
+      "opinion": "A practical quality-of-life improvement that makes voice input more usable, though it's a feature many transcription apps already offer.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/chatgpt-live-dictation-promo-screenshot.jpeg?quality=90&strip=all&crop=8.4734375%2C20.737347294939%2C85.1578125%2C79.262652705061&w=1200",
+      "published_at": "2026-11-19T15:16:45+00:00",
+      "fetched_at": "2026-11-19T16:21:46.96299+00:00"
+    },
+    {
+      "id": 10634,
+      "source": "TechCrunch AI",
+      "title": "Nadella explains offering buyouts to 60,000 Microsoft employees to accelerate AI-first transformation",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 employees in October 2026 rather than conducting layoffs. The goal is to reorganize Microsoft into an AI-first company where every employee manages AI agents rather than doing work directly. He cited the 11-person team behind Cowork as a model and emphasized that employees should either adapt to AI-first roles or choose to leave.",
+      "opinion": "Framing mass workforce reduction as employee empowerment is a bold rhetorical move. The 11-person team building a 'software factory' is the clearest articulation yet of how big tech companies envision dramatically smaller teams producing the same output.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Microsoft-Satya-Nadella.jpg?resize=1200,800",
+      "published_at": "2026-11-19T00:42:56+00:00",
+      "fetched_at": "2026-11-19T16:21:41.624195+00:00"
+    },
+    {
+      "id": 10633,
+      "source": "TechCrunch AI",
+      "title": "Superhuman expands Go AI assistant across all products with 20 new agent integrations",
+      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Superhuman (formerly Grammarly) is rolling out its Go AI assistant across all products including Docs and Mail. Go learns context across apps, manages other agents, and works proactively. The company is adding 20 new connected agents through its Go SDK and integrating its Fathom acquisition. CEO says Go has over 1 million active users.",
+      "opinion": "The rebrand from Grammarly to Superhuman and pivot to an AI agent platform is ambitious. Competing with OpenAI's Dots and Claude Duet in the personal AI assistant space means the product needs to deliver meaningfully better cross-app integration to justify its position.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Static_Go-Proactive.jpeg?resize=1200,675",
+      "published_at": "2026-11-19T14:00:00+00:00",
+      "fetched_at": "2026-11-19T16:21:41.488193+00:00"
+    },
+    {
+      "id": 10643,
+      "source": "Guardian AI",
+      "title": "IMF head warns AI hardware demand will push up global interest rates",
+      "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "IMF Managing Director Kristalina Georgieva warned at APEC that booming global demand for AI hardware and technology is pushing up consumer prices worldwide, which will likely force major central banks to raise interest rates. She emphasized countries need to prepare for AI's economic impact.",
+      "opinion": "If the IMF is right that AI-driven demand is becoming a macroeconomic inflationary force, this could create a painful feedback loop: higher rates increase the cost of capital for the very AI companies driving the demand.",
+      "image_url": "https://i.guim.co.uk/img/media/b2a56a8e00524c2b12815efdbcc9e91b0732fdc0/456_0_3410_2728/master/3410.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5040343f19b14d3a5aafc2c169a00b24",
+      "published_at": "2026-11-19T15:15:14+00:00",
+      "fetched_at": "2026-11-19T16:21:43.547617+00:00"
+    },
+    {
+      "id": 10657,
+      "source": "The Verge AI",
+      "title": "Canva adds toggle to turn off most generative AI features",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Canva is adding a toggle to disable most generative AI features including Magic Write, Magic Design, Magic Edit, Dream Lab, and its AI chatbot. Some AI tools like background remover remain active. Users can also opt to see less AI-generated content in Canva's library. The move follows years of user frustration with aggressive AI integration.",
+      "opinion": "Canva acknowledging that some users want less AI is a notable concession in an industry where every company has been adding AI features aggressively. The distinction between generative AI and utility AI tools is a sensible line to draw.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25355957/STK263_CANVA_D.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-19T12:30:00+00:00",
+      "fetched_at": "2026-11-19T16:21:47.39587+00:00"
+    },
+    {
+      "id": 10656,
+      "source": "The Verge AI",
+      "title": "Two-week test of Apple's always-listening Siri Recap raises privacy concerns",
+      "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Victoria Song tested Apple's Siri Recap on the Apple Watch Ultra 4 for two weeks, which uses always-listening AI to capture and summarize conversations. She compared it to Amazon's Bee Frontier, noting Apple's more minimalist, privacy-first approach. Both require disclosing recording to people nearby. She concludes she's not convinced the benefits outweigh the privacy costs.",
+      "opinion": "Always-listening AI assistants represent a fundamental privacy boundary that hardware companies are testing carefully. The social awkwardness of disclosing ambient recording may be a bigger adoption barrier than the technology itself.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268874_siri_recaps_AKrales_0070.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-19T13:00:00+00:00",
+      "fetched_at": "2026-11-19T16:21:47.26499+00:00"
+    },
+    {
+      "id": 10645,
+      "source": "Guardian AI",
+      "title": "Australian music industry rejects government proposal for musician-only AI scraping exemption",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/20/australian-music-industry-rejects-proposal-to-give-musicians-exemption-ai-scraping",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Australia's music industry rejected a reported government proposal giving musicians a special exemption from AI training data scraping while allowing scraping of other copyrighted works. ARIA CEO called it 'unworkable' and an independent senator characterized it as a 'divide and conquer strategy' by big tech. The music industry vowed solidarity with other creative sectors.",
+      "opinion": "The music industry refusing a carve-out that would benefit them specifically in favor of solidarity with other creators is strategically savvy—a fragmented creative sector would be far easier for tech companies to negotiate with individually.",
+      "image_url": "https://i.guim.co.uk/img/media/a97bdc0f91639c96d197dd5d8f13df1d8ae98f29/0_671_3022_2418/master/3022.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6f713b67a86b8386b7f04c5e329faf82",
+      "published_at": "2026-11-19T14:00:52+00:00",
+      "fetched_at": "2026-11-19T16:21:43.826729+00:00"
+    },
+    {
+      "id": 10686,
+      "source": "Aeon",
+      "title": "Essay explores whether AI companions could fill emotional gaps for neglected children",
+      "url": "https://aeon.co/essays/what-would-parenting-by-ai-look-like",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Tom Wooldridge's essay uses Geoff Ryman's 1995 story 'Warmth' about a robot nanny to explore developmental psychology research on children's need for emotional attunement. Drawing on Edward Tronick's 'still face' experiments, it argues the real concern about AI and children isn't technology corrupting healthy development, but whether AI might provide consistent emotional responses that some children lack from human caregivers.",
+      "opinion": "A thoughtful reframing that moves beyond simplistic screen-time anxiety to ask whether AI companions could actually help children who already lack consistent human attunement—a nuanced question most AI-and-children discourse avoids.",
+      "image_url": "https://images.aeonmedia.co/images/67889061-dbb5-4c47-87eb-21851f330133/essay-gettyimages-1950705233.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-19T11:00:00+00:00",
+      "fetched_at": "2026-11-19T16:21:58.135238+00:00"
+    },
+    {
+      "id": 10664,
+      "source": "Ars Technica AI",
+      "title": "Cybersecurity experts offer guide to telling cyberattacks apart from ordinary IT outages",
+      "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Following a cluster of major US infrastructure outages—Microsoft Exchange, FAA, JPMorgan Chase, United Airlines, and NSA—occurring within four business days during heightened tensions with Iran, cybersecurity experts note that the vast majority of outages are caused by mundane issues like bad updates and configuration errors rather than hacking. The article offers practical guidance for distinguishing the two.",
+      "opinion": "A useful corrective to the tendency to assume coordinated attacks when multiple outages cluster together. The base rate of mundane failures across massive interconnected systems makes coincidental clustering inevitable.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2201630098-1152x648.jpg",
+      "published_at": "2026-11-19T11:13:01+00:00",
+      "fetched_at": "2026-11-19T16:21:48.452288+00:00"
+    },
+    {
+      "id": 10684,
+      "source": "HR Dive",
+      "title": "Rapid automated rejections are eroding job seekers' trust in hiring processes",
+      "url": "https://www.hrdive.com/news/near-instant-rejections-may-have-changed-job-search-behavior/875085/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A report finds more than three-quarters of job seekers who received rapid rejections believe no human reviewed their resume, suggesting automated screening tools may be eroding trust in hiring processes and influencing how candidates approach job searches.",
+      "opinion": "If candidates believe applications are screened by bots, they'll optimize for bots—keyword-stuffing resumes, mass-applying, and gaming ATS systems—which ironically makes automated screening less effective and hiring worse for everyone.",
+      "image_url": "",
+      "published_at": "2026-11-18T20:12:00+00:00",
+      "fetched_at": "2026-11-19T16:21:57.531223+00:00"
+    },
+    {
+      "id": 10688,
+      "source": "Pew Research Center",
+      "title": "Pew research highlights gender gaps in caregiving burden, AI employment, and economic strain",
+      "url": "https://www.pewresearch.org/newsletter/social-and-demographic-trends/sdt-november-2026-newsletter/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew Research Center newsletter covers intersecting themes: most US parents with children under 18 are employed, with women disproportionately 'sandwiched' between child and elder care; employment growth has been slower for women than men in AI-exposed occupations; 60% of Americans say they lack sufficient income; Americans are more skeptical a woman will be president in their lifetime; and 70% report cutting discretionary spending.",
+      "opinion": "The finding that women are falling behind men in AI-exposed occupations is particularly concerning because it suggests the AI transition could widen rather than narrow existing gender gaps in the labor market.",
+      "image_url": "",
+      "published_at": "2026-11-19T15:55:41+00:00",
+      "fetched_at": "2026-11-19T16:21:59.093849+00:00"
+    },
+    {
+      "id": 10687,
+      "source": "Rest of World",
+      "title": "AI platforms are converting professional jobs into precarious gig work, Yale professor argues",
+      "url": "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Yale professor Julián Posada argues AI is not eliminating high-skilled jobs but converting them into gig work. Platforms like Scale AI's Outlier recruit doctors, lawyers, and Ph.D.s to generate training data under exploitative conditions similar to those facing lower-skilled data workers in the Global South. The piece documents a pattern of platforms initially offering attractive pay then slashing rates, drawing on six years of interviews including Venezuelan workers who saw earnings collapse.",
+      "opinion": "The insight that AI doesn't eliminate expert work but rather decomposes it into microtasks paid at gig rates is an important corrective to both utopian and dystopian narratives about AI and employment.",
+      "image_url": "https://restofworld.org/wp-content/uploads/2026/11/GettyImages-2279457745.jpg",
+      "published_at": "2026-11-19T11:00:00+00:00",
+      "fetched_at": "2026-11-19T16:21:58.389532+00:00"
+    },
+    {
+      "id": 10689,
+      "source": "Pew Research Center",
+      "title": "Two-thirds of Americans disapprove of Trump's handling of Russia-Ukraine war ahead of Putin summit",
+      "url": "https://www.pewresearch.org/short-reads/2026/11/18/two-thirds-of-americans-disapprove-of-trumps-handling-of-the-russia-ukraine-war/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A Pew survey of 10,247 US adults finds 67% disapprove of Trump's handling of the Russia-Ukraine war while 30% approve. 39% say Trump favors Russia too much. Sharp partisan divide: 59% of Republicans approve while 91% of Democrats disapprove. 65% of Democrats say the US has a responsibility to help Ukraine vs. 34% of Republicans. Findings released as Trump prepared to meet Putin at a summit in China.",
+      "opinion": "The 67% disapproval is striking given the partisan polarization, suggesting meaningful Republican dissent from Trump's approach. The timing ahead of the Putin summit in China adds political pressure.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/SR_26.11.18_russia-ukraine_featured.jpg?w=1200&h=628&crop=1",
+      "published_at": "2026-11-18T16:56:09+00:00",
+      "fetched_at": "2026-11-19T16:21:59.21984+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10632,
+          "source": "TechCrunch AI",
+          "title": "Anthropic goes public in historic IPO amid questions about circular AI financing",
+          "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic, the AI company behind Claude, has begun public trading on the Nasdaq in what is described as the largest IPO in history. CEO Dario Amodei rang the opening bell. The IPO share price is $83, and its largest infrastructure partners—Amazon (14.7% stake) and Google (13.7% stake)—are also its biggest suppliers, highlighting a circular financing dynamic. A consortium including Google, Nvidia, AMD, Microsoft, Broadcom, Micron, and TSMC committed $26 billion in a private placement at the IPO price. Anthropic still operates at a net loss of tens of billions per quarter but is expected to have ~$220 billion in cash post-IPO, with $900 billion committed to future compute and infrastructure spending.",
+          "opinion": "The largest IPO in history is built on a business that loses tens of billions per quarter and spends its investors' money buying services from those same investors. Whether Anthropic can convert its massive cash position and compute commitments into actual profitability before the money runs out is the central question for public market investors. Where coverage differs: Guardian AI reports a $1.5 trillion valuation; TechCrunch AI reports a projected valuation of ~$1.08 trillion",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2304538389.jpg?w=1024",
+          "published_at": "2026-11-19T14:54:39+00:00",
+          "fetched_at": "2026-11-19T16:21:41.34583+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10632,
+                "source": "TechCrunch AI",
+                "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
+                "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/"
+              },
+              {
+                "id": 10642,
+                "source": "Guardian AI",
+                "title": "Anthropic to begin public trading at $1.5tn valuation after largest-ever IPO",
+                "url": "https://www.theguardian.com/technology/2026/nov/19/anthropic-public-trading-ipo"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "Guardian AI reports a $1.5 trillion valuation; TechCrunch AI reports a projected valuation of ~$1.08 trillion"
+            ],
+            "is_update": false,
+            "reason": "Both cover Anthropic's IPO and public listing"
+          }
+        },
+        {
+          "id": 10653,
+          "source": "The Rundown AI",
+          "title": "Google releases Gemini 4 Neon, its fourth Gemini 4 model in two months",
+          "url": "https://therundownai.beehiiv.com/p/google-shipping-spree-continues-with-neon",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google released Gemini 4 Neon, labeled mid-tier but edging out its own top-end Carbon model on benchmarks. Neon trails only Claude Fable 5.2 and GPT-6.2 Astra on Artificial Analysis' leaderboard and beats Claude Opus 5.5 and GPT-6.2 Sol on 16 of 19 benchmarks. It's available at $3/$15 per million input/output tokens. A Google researcher hinted recursive self-improvement may be behind the accelerated shipping pace.",
+          "opinion": "Google's rapid-fire model releases signal it has found a way to iterate faster, possibly through recursive self-improvement. Neon undercutting its own Carbon model on price and performance is an unusual move that may pressure competitors' pricing.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/15033208-8b11-4382-8caf-cd5914c4a7c7/gemini4neon.png?t=1795042173",
+          "published_at": "2026-11-19T10:00:00+00:00",
+          "fetched_at": "2026-11-19T16:21:46.225806+00:00"
+        },
+        {
+          "id": 10652,
+          "source": "DeepMind Blog",
+          "title": "Google DeepMind launches Genie 4 for interactive world generation",
+          "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google DeepMind announced Genie 4, rolling out to Google AI Ultra subscribers. It enables real-time environment editing via natural language, native audio support, and a community gallery for sharing and remixing creations. A new Project Genie agent allows building custom interactive worlds through conversation. Google AI Pro members can join a waitlist.",
+          "opinion": "Genie 4 represents a step toward AI-generated interactive environments becoming a consumer product rather than a research demo, though limiting it to Ultra subscribers keeps the audience narrow for now.",
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+          "published_at": "2026-11-18T18:13:42+00:00",
+          "fetched_at": "2026-11-19T16:21:44.838951+00:00"
+        },
+        {
+          "id": 10654,
+          "source": "The Verge AI",
+          "title": "ChatGPT adds real-time speech transcription with Live Dictation",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI is rolling out Live Dictation for ChatGPT that transcribes audio in real time as users speak. The feature is available globally across all plans on web, desktop, iOS, and Android. Users can view and edit live transcripts. OpenAI is also removing the previous 10-minute recording limit.",
+          "opinion": "A practical quality-of-life improvement that makes voice input more usable, though it's a feature many transcription apps already offer.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/chatgpt-live-dictation-promo-screenshot.jpeg?quality=90&strip=all&crop=8.4734375%2C20.737347294939%2C85.1578125%2C79.262652705061&w=1200",
+          "published_at": "2026-11-19T15:16:45+00:00",
+          "fetched_at": "2026-11-19T16:21:46.96299+00:00"
+        },
+        {
+          "id": 10634,
+          "source": "TechCrunch AI",
+          "title": "Nadella explains offering buyouts to 60,000 Microsoft employees to accelerate AI-first transformation",
+          "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 employees in October 2026 rather than conducting layoffs. The goal is to reorganize Microsoft into an AI-first company where every employee manages AI agents rather than doing work directly. He cited the 11-person team behind Cowork as a model and emphasized that employees should either adapt to AI-first roles or choose to leave.",
+          "opinion": "Framing mass workforce reduction as employee empowerment is a bold rhetorical move. The 11-person team building a 'software factory' is the clearest articulation yet of how big tech companies envision dramatically smaller teams producing the same output.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Microsoft-Satya-Nadella.jpg?resize=1200,800",
+          "published_at": "2026-11-19T00:42:56+00:00",
+          "fetched_at": "2026-11-19T16:21:41.624195+00:00"
+        },
+        {
+          "id": 10633,
+          "source": "TechCrunch AI",
+          "title": "Superhuman expands Go AI assistant across all products with 20 new agent integrations",
+          "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Superhuman (formerly Grammarly) is rolling out its Go AI assistant across all products including Docs and Mail. Go learns context across apps, manages other agents, and works proactively. The company is adding 20 new connected agents through its Go SDK and integrating its Fathom acquisition. CEO says Go has over 1 million active users.",
+          "opinion": "The rebrand from Grammarly to Superhuman and pivot to an AI agent platform is ambitious. Competing with OpenAI's Dots and Claude Duet in the personal AI assistant space means the product needs to deliver meaningfully better cross-app integration to justify its position.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Static_Go-Proactive.jpeg?resize=1200,675",
+          "published_at": "2026-11-19T14:00:00+00:00",
+          "fetched_at": "2026-11-19T16:21:41.488193+00:00"
+        },
+        {
+          "id": 10643,
+          "source": "Guardian AI",
+          "title": "IMF head warns AI hardware demand will push up global interest rates",
+          "url": "https://www.theguardian.com/world/2026/nov/19/imf-head-warns-ai-demand-push-up-interest-rates-apec",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "IMF Managing Director Kristalina Georgieva warned at APEC that booming global demand for AI hardware and technology is pushing up consumer prices worldwide, which will likely force major central banks to raise interest rates. She emphasized countries need to prepare for AI's economic impact.",
+          "opinion": "If the IMF is right that AI-driven demand is becoming a macroeconomic inflationary force, this could create a painful feedback loop: higher rates increase the cost of capital for the very AI companies driving the demand.",
+          "image_url": "https://i.guim.co.uk/img/media/b2a56a8e00524c2b12815efdbcc9e91b0732fdc0/456_0_3410_2728/master/3410.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5040343f19b14d3a5aafc2c169a00b24",
+          "published_at": "2026-11-19T15:15:14+00:00",
+          "fetched_at": "2026-11-19T16:21:43.547617+00:00"
+        },
+        {
+          "id": 10657,
+          "source": "The Verge AI",
+          "title": "Canva adds toggle to turn off most generative AI features",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Canva is adding a toggle to disable most generative AI features including Magic Write, Magic Design, Magic Edit, Dream Lab, and its AI chatbot. Some AI tools like background remover remain active. Users can also opt to see less AI-generated content in Canva's library. The move follows years of user frustration with aggressive AI integration.",
+          "opinion": "Canva acknowledging that some users want less AI is a notable concession in an industry where every company has been adding AI features aggressively. The distinction between generative AI and utility AI tools is a sensible line to draw.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25355957/STK263_CANVA_D.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-19T12:30:00+00:00",
+          "fetched_at": "2026-11-19T16:21:47.39587+00:00"
+        },
+        {
+          "id": 10656,
+          "source": "The Verge AI",
+          "title": "Two-week test of Apple's always-listening Siri Recap raises privacy concerns",
+          "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Victoria Song tested Apple's Siri Recap on the Apple Watch Ultra 4 for two weeks, which uses always-listening AI to capture and summarize conversations. She compared it to Amazon's Bee Frontier, noting Apple's more minimalist, privacy-first approach. Both require disclosing recording to people nearby. She concludes she's not convinced the benefits outweigh the privacy costs.",
+          "opinion": "Always-listening AI assistants represent a fundamental privacy boundary that hardware companies are testing carefully. The social awkwardness of disclosing ambient recording may be a bigger adoption barrier than the technology itself.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268874_siri_recaps_AKrales_0070.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-19T13:00:00+00:00",
+          "fetched_at": "2026-11-19T16:21:47.26499+00:00"
+        },
+        {
+          "id": 10645,
+          "source": "Guardian AI",
+          "title": "Australian music industry rejects government proposal for musician-only AI scraping exemption",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/20/australian-music-industry-rejects-proposal-to-give-musicians-exemption-ai-scraping",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Australia's music industry rejected a reported government proposal giving musicians a special exemption from AI training data scraping while allowing scraping of other copyrighted works. ARIA CEO called it 'unworkable' and an independent senator characterized it as a 'divide and conquer strategy' by big tech. The music industry vowed solidarity with other creative sectors.",
+          "opinion": "The music industry refusing a carve-out that would benefit them specifically in favor of solidarity with other creators is strategically savvy—a fragmented creative sector would be far easier for tech companies to negotiate with individually.",
+          "image_url": "https://i.guim.co.uk/img/media/a97bdc0f91639c96d197dd5d8f13df1d8ae98f29/0_671_3022_2418/master/3022.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6f713b67a86b8386b7f04c5e329faf82",
+          "published_at": "2026-11-19T14:00:52+00:00",
+          "fetched_at": "2026-11-19T16:21:43.826729+00:00"
+        },
+        {
+          "id": 10686,
+          "source": "Aeon",
+          "title": "Essay explores whether AI companions could fill emotional gaps for neglected children",
+          "url": "https://aeon.co/essays/what-would-parenting-by-ai-look-like",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Tom Wooldridge's essay uses Geoff Ryman's 1995 story 'Warmth' about a robot nanny to explore developmental psychology research on children's need for emotional attunement. Drawing on Edward Tronick's 'still face' experiments, it argues the real concern about AI and children isn't technology corrupting healthy development, but whether AI might provide consistent emotional responses that some children lack from human caregivers.",
+          "opinion": "A thoughtful reframing that moves beyond simplistic screen-time anxiety to ask whether AI companions could actually help children who already lack consistent human attunement—a nuanced question most AI-and-children discourse avoids.",
+          "image_url": "https://images.aeonmedia.co/images/67889061-dbb5-4c47-87eb-21851f330133/essay-gettyimages-1950705233.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-19T11:00:00+00:00",
+          "fetched_at": "2026-11-19T16:21:58.135238+00:00"
+        },
+        {
+          "id": 10664,
+          "source": "Ars Technica AI",
+          "title": "Cybersecurity experts offer guide to telling cyberattacks apart from ordinary IT outages",
+          "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Following a cluster of major US infrastructure outages—Microsoft Exchange, FAA, JPMorgan Chase, United Airlines, and NSA—occurring within four business days during heightened tensions with Iran, cybersecurity experts note that the vast majority of outages are caused by mundane issues like bad updates and configuration errors rather than hacking. The article offers practical guidance for distinguishing the two.",
+          "opinion": "A useful corrective to the tendency to assume coordinated attacks when multiple outages cluster together. The base rate of mundane failures across massive interconnected systems makes coincidental clustering inevitable.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2201630098-1152x648.jpg",
+          "published_at": "2026-11-19T11:13:01+00:00",
+          "fetched_at": "2026-11-19T16:21:48.452288+00:00"
+        },
+        {
+          "id": 10684,
+          "source": "HR Dive",
+          "title": "Rapid automated rejections are eroding job seekers' trust in hiring processes",
+          "url": "https://www.hrdive.com/news/near-instant-rejections-may-have-changed-job-search-behavior/875085/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A report finds more than three-quarters of job seekers who received rapid rejections believe no human reviewed their resume, suggesting automated screening tools may be eroding trust in hiring processes and influencing how candidates approach job searches.",
+          "opinion": "If candidates believe applications are screened by bots, they'll optimize for bots—keyword-stuffing resumes, mass-applying, and gaming ATS systems—which ironically makes automated screening less effective and hiring worse for everyone.",
+          "image_url": "",
+          "published_at": "2026-11-18T20:12:00+00:00",
+          "fetched_at": "2026-11-19T16:21:57.531223+00:00"
+        },
+        {
+          "id": 10688,
+          "source": "Pew Research Center",
+          "title": "Pew research highlights gender gaps in caregiving burden, AI employment, and economic strain",
+          "url": "https://www.pewresearch.org/newsletter/social-and-demographic-trends/sdt-november-2026-newsletter/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew Research Center newsletter covers intersecting themes: most US parents with children under 18 are employed, with women disproportionately 'sandwiched' between child and elder care; employment growth has been slower for women than men in AI-exposed occupations; 60% of Americans say they lack sufficient income; Americans are more skeptical a woman will be president in their lifetime; and 70% report cutting discretionary spending.",
+          "opinion": "The finding that women are falling behind men in AI-exposed occupations is particularly concerning because it suggests the AI transition could widen rather than narrow existing gender gaps in the labor market.",
+          "image_url": "",
+          "published_at": "2026-11-19T15:55:41+00:00",
+          "fetched_at": "2026-11-19T16:21:59.093849+00:00"
+        },
+        {
+          "id": 10687,
+          "source": "Rest of World",
+          "title": "AI platforms are converting professional jobs into precarious gig work, Yale professor argues",
+          "url": "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Yale professor Julián Posada argues AI is not eliminating high-skilled jobs but converting them into gig work. Platforms like Scale AI's Outlier recruit doctors, lawyers, and Ph.D.s to generate training data under exploitative conditions similar to those facing lower-skilled data workers in the Global South. The piece documents a pattern of platforms initially offering attractive pay then slashing rates, drawing on six years of interviews including Venezuelan workers who saw earnings collapse.",
+          "opinion": "The insight that AI doesn't eliminate expert work but rather decomposes it into microtasks paid at gig rates is an important corrective to both utopian and dystopian narratives about AI and employment.",
+          "image_url": "https://restofworld.org/wp-content/uploads/2026/11/GettyImages-2279457745.jpg",
+          "published_at": "2026-11-19T11:00:00+00:00",
+          "fetched_at": "2026-11-19T16:21:58.389532+00:00"
+        },
+        {
+          "id": 10689,
+          "source": "Pew Research Center",
+          "title": "Two-thirds of Americans disapprove of Trump's handling of Russia-Ukraine war ahead of Putin summit",
+          "url": "https://www.pewresearch.org/short-reads/2026/11/18/two-thirds-of-americans-disapprove-of-trumps-handling-of-the-russia-ukraine-war/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A Pew survey of 10,247 US adults finds 67% disapprove of Trump's handling of the Russia-Ukraine war while 30% approve. 39% say Trump favors Russia too much. Sharp partisan divide: 59% of Republicans approve while 91% of Democrats disapprove. 65% of Democrats say the US has a responsibility to help Ukraine vs. 34% of Republicans. Findings released as Trump prepared to meet Putin at a summit in China.",
+          "opinion": "The 67% disapproval is striking given the partisan polarization, suggesting meaningful Republican dissent from Trump's approach. The timing ahead of the Putin summit in China adds political pressure.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/SR_26.11.18_russia-ukraine_featured.jpg?w=1200&h=628&crop=1",
+          "published_at": "2026-11-18T16:56:09+00:00",
+          "fetched_at": "2026-11-19T16:21:59.21984+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/jack_9947/status/2123114972880228774",
+      "author": "jack_9947",
+      "headline": "A free collection of __124 CMO Claude skills__ covers strategy, SEO, lead gen, and email marketing — designed to run as one connected AI-powered marketing system.",
+      "tweet_id": "41d1eba9-b6bc-8178-b570-e59ff376bd21",
+      "source_text": "All 124 CMO Claude skills from the complete marketing playbook (FREE).\n\nA reusable guide for turning CMO strategy and execution into a repeatable AI-powered marketing process.\n\nThe collection covers:\n\n1. Marketing strategy\n2. Customer and competitor research\n3. Brand positioning\n4. Content marketing\n5. SEO and organic growth\n6. Lead generation\n7. Social media marketing\n8. Email marketing\n9. Campaign analysis\n10. Conversion improvement\n\nUse the guide to clarify who you're targeting, what you're offering and which marketing activities matter most.\n\nThen apply that context to your content, campaigns, acquisition channels and reporting.\n\n124 CMO Claude skills. One connected marketing system.\n\nStart with the workflows that match your biggest bottleneck.\n\nThe complete guide is free.",
+      "created_time": "2026-11-19T03:07:00.000Z",
+      "canonical_url": "https://twitter.com/jack_9947/status/2123114972880228774",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xMortyx/status/2123102354345959885",
+      "author": "0xMortyx",
+      "headline": "Lauren Tan's Grok Bot setup splits work across __7 specialized AI roles__ — researcher, engineer, reviewer, doc writer, memory manager — running as one continuous goal-to-reuse loop.",
+      "tweet_id": "41d1eba9-b6bc-8158-ab72-f52401c6a330",
+      "source_text": "Lauren Tan’s Grok Bot setup is basically a 7-person AI team inside one workflow.\n\ninstead of asking one bot to research, build, verify, document, and remember everything, she splits the work by role:\n\n→ Chief of Staff - plans + coordinates\n→ Researcher - finds the facts\n→ Engineer - builds the solution\n→ Reviewer - checks accuracy + risk\n→ Doc Writer - turns work into reusable docs\n→ Operator - runs the workflow\n→ Memory Manager - keeps the useful context\n\nthen the whole system runs as one loop:\n\ngoal → research → build → review → document → reuse\n\nLauren’s full bot-team setup below ↓",
+      "created_time": "2026-11-19T03:07:00.000Z",
+      "canonical_url": "https://twitter.com/0xMortyx/status/2123102354345959885",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/backnotprop/status/2123067773773619291",
+      "author": "backnotprop",
+      "headline": "Grok Bots can now __connect directly to Claude__ via MCP, letting two competing AI platforms coordinate inside a single workflow.",
+      "tweet_id": "41d1eba9-b6bc-81bf-8fe2-f60fc64a1466",
+      "source_text": "Best life improvement rn. My Grok Bots can now talk to my claudes. \n\nnice job https://t.co/sR4EJyHkzd team https://t.co/MCdamgXS2p",
+      "created_time": "2026-11-19T01:52:00.000Z",
+      "canonical_url": "https://twitter.com/backnotprop/status/2123067773773619291",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/lennysan/status/2123210143491867010",
+      "author": "lennysan",
+      "headline": "Juicebox recruiter data shows __AI engineering demand growing faster than PM roles__, while software engineer demand falls and design hiring is down 20% YoY.",
+      "tweet_id": "41d1eba9-b6bc-8111-8015-ffe2172abb5d",
+      "source_text": "The folks at @juicebox_work looked at recruiter trends (outbound searches from recruiters) and are seeing exactly the same thing I saw:\n1. Demand for software engineers is dropping\n2. Demand for PMs is growing\n3. AI engineering growing even faster\n4. Design hiring down 20% YoY https://t.co/PFsokL4wVv https://t.co/S1v1bupjRs",
+      "created_time": "2026-11-19T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/lennysan/status/2123210143491867010",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/gregisenberg/status/2123179348467278293",
+      "author": "gregisenberg",
+      "headline": "Greg Isenberg says feed a Grok Bot your favorite creators and saved hooks and it'll __research, script, edit, and publish videos__ for you.",
+      "tweet_id": "41d1eba9-b6bc-813a-be53-f25f69941cf3",
+      "source_text": "How to turn your Grok Bot into a top 1% AI agent content team (research, scripts, editing etc)\n\nYou give your Grok Bot the creators you love, hooks you’ve saved, fav newsletters, and it’ll find what’s working, write script, cut your edit and publish the video:\n\nhttps://t.co/QIPSAJukIV",
+      "created_time": "2026-11-19T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/gregisenberg/status/2123179348467278293",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/codyschneider/status/2123174434756256201",
+      "author": "codyschneider",
+      "headline": "Cody Schneider argues the biggest marketing arbitrage right now is __building a 200-page reference site__ — one page per buyer question, your product on every page.",
+      "tweet_id": "41d1eba9-b6bc-81be-92b2-cfbb560f72f0",
+      "source_text": "biggest marketing arbitrage right now is owning the reference site your customer already googles\n\npick a topic your buyer researches before they buy\n\nhave an agent pull every stat, tool, price and guide on it\n\nturn it into a 200 page site, one page per question\n\nput a banner for your own product on every page\n\nrefresh it every month from search console and a content gap check\n\nit ranks because it's actually useful, and every visitor is your customer\n\nget started free here - https://t.co/wZuSwrTHGP",
+      "created_time": "2026-11-19T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/codyschneider/status/2123174434756256201",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mentalium_/status/2123066467818017251",
+      "author": "mentalium_",
+      "headline": "Stanford's free __CS329Z__ course on engineering AI agents is now publicly dropping lectures — covering the skills Anthropic pays $750,000+ a year for.",
+      "tweet_id": "41c1eba9-b6bc-812f-bf5c-d4c556671c5b",
+      "source_text": "This might be the only FREE Stanford course you need on building production AI agents\n\nAnthropic pays $750,000+ a year to people who can engineer real agent systems\n\nStanford CS329Z: Engineering AI Agents\nLectures just started dropping publicly\n\n01 What Are AI Agents?  \nhttps://t.co/s4HiqTkc7F\n\n02 LLMs for Agent Builders & Context Engineering  \nhttps://t.co/HuiblR5JY7\n\n03 RAG Explained: From BM25 to Agentic RAG  \nhttps://t.co/FAepP5Zupg\n\n04 How AI Agents Use Tools, Function Calling & MCP  \nhttps://t.co/FKMbjQuPl3\n\n05 DSPy vs LangGraph: Agent Frameworks  \nhttps://t.co/jGxy2HZeZh\n\n06 AI Agent Design Patterns: ReAct, CodeAct & More  \nhttps://t.co/NMBaImBEgU\n\n07 How AI Agent Memory Works  \nhttps://t.co/fnZBr70YRq\n\n08 Multi-Agent Systems: When More Agents Help or Hurt  \nhttps://t.co/xQxKLbegxX\n\nFull playlist (more lectures coming):  \nhttps://t.co/gVPiNHTcdk\n\nCourse site:  \nhttps://t.co/rlgOhWCigU\n\nYou either learn how to engineer agents properly or keep shipping broken demos for another year.\n\nSave this ↓",
+      "created_time": "2026-11-18T22:47:00.000Z",
+      "canonical_url": "https://twitter.com/mentalium_/status/2123066467818017251",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xdav1d_k/status/2123092488512475644",
+      "author": "0xdav1d_k",
+      "headline": "Matt Palmer's Grok Bot walkthrough on building __four real automation workflows__ in 30 minutes has pulled 1.4 million views.",
+      "tweet_id": "41c1eba9-b6bc-81f8-ad9a-c2df419ac50d",
+      "source_text": "This is f*cking insane. Elon Musk keeps telling everyone to try Grok Bot. Matt Palmer made the guide:\n\n\"Grok Bot can do anything you can do on a computer\n\nOne bot chains into the next, and the whole thing runs while you sleep\"\n\nIn 30 minutes, he builds 4 real workflows live: X followers into Notion, personal software, coding with Cursor and search\n\nWhat Is a Bot → Anatomy → Multi-Bot Chains → 4 Real Workflows\n\n1.4 million people watched it. Most of them never built a single workflow\n\nWorth more than any $1,500 agent course\n\nBookmark and watch it today\n\nThen read the 6 Grok bots, 200+ agents setup ↓",
+      "created_time": "2026-11-18T22:37:00.000Z",
+      "canonical_url": "https://twitter.com/0xdav1d_k/status/2123092488512475644",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mattpocockuk/status/2123098316867051991",
+      "author": "mattpocockuk",
+      "headline": "Matt Pocock built a __21,000-line PR__ live in 70 minutes, drawing on skills from what's now the most-starred skills repo in the world.",
+      "tweet_id": "41c1eba9-b6bc-8103-b930-d333ae0ac8b0",
+      "source_text": "It's been nearly 6 months since I posted a 'watch me work' deep dive on my skills.\n\nSince then, they've become the most-starred skills repo in the world.\n\nSo, here's 70 minutes of me building a 21,000-line PR, especially focusing on:\n\n- DDD with /grill-with-docs\n- Improving your codebase with /retro\n- How to do human review effectively\n\nEnjoy!",
+      "created_time": "2026-11-18T22:12:00.000Z",
+      "canonical_url": "https://twitter.com/mattpocockuk/status/2123098316867051991",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/adrianowhoscale/status/2122833308736192522",
+      "author": "adrianowhoscale",
+      "headline": "Hormozi's new lead magnet is a __Claude Code editing pipeline__ — the system behind 35,000 pieces of content across three brands, offered free.",
+      "tweet_id": "41c1eba9-b6bc-816b-ba50-f6f94e6e6a45",
+      "source_text": "Hormozi's new lead magnet isn't an ebook. It's a Claude Code editing pipeline.\n\nAnd in the ad, he tells you exactly why he's giving it away.\n\nWhat I like about the ad:\n> opens with a question every owner answers in their head: \"how much time do you spend editing content or ads?\"\n> then a proof number: the system behind 35,000 pieces of content across 3 brands\n> anchors the value without a price: \"I could probably sell it for a lot of money, it's probably worth more than editing teams\"\n> zero friction: \"you can use it in like 10 seconds from seeing this ad\"\n> he says the strategy out loud: \"my hope is that you use it and then are like, what else do these guys have? And that's the whole game\"\n\nWhat's interesting on the funnel:\n> free and instantly delivered, but the form qualifies hard: revenue, team size, ownership, industry\n> \"for owners doing $1M+ a year\", with a \"skip it if\" list (Windows, no long videos, want done-for-you)\n> a terminal demo in the hero: Claude clones the repo, sets up the tools, makes a test clip\n> phone number required. the free tool fills his sales pipeline\n\nThe lead magnet is useful. The form is the sales filter.\n\nGive first. Qualify second. Sell third.",
+      "created_time": "2026-11-18T22:12:00.000Z",
+      "canonical_url": "https://twitter.com/adrianowhoscale/status/2122833308736192522",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/poteto/status/2123159537016533493",
+      "author": "poteto",
+      "headline": "Most people aren't using __Grok Bot to its full automation potential__ — @poteto wrote a breakdown of how they approach automating anything with it.",
+      "tweet_id": "41c1eba9-b6bc-8113-8c5b-ca22f81cf561",
+      "source_text": "I think a lot of people aren't using Grok Bot to its full potential, because knowing how to automate things is actually quite a difficult skill to learn. I wrote this post to break down how I approach automating anything with Grok Bot! https://t.co/FwJ4AwuHeU",
+      "created_time": "2026-11-18T21:57:00.000Z",
+      "canonical_url": "https://twitter.com/poteto/status/2123159537016533493",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2123042548482814439",
+      "author": "Zephyr_hg",
+      "headline": "A __STYLE.md built from your old issues__ is all Claude needs to start writing newsletter drafts that sound like you.",
+      "tweet_id": "41c1eba9-b6bc-81b1-ad12-c72e54923c1d",
+      "source_text": "Make Claude write your newsletter like you with one file, a short STYLE.md it reads before it writes a single issue.\n\nBuild yours from a few pages of you rambling plus 10 old issues, and the first draft starts sounding like you talking.\n\nWhen you run a newsletter alone, every issue has to sound like you. The prompt is on the first page, the rest of the setup is on the second.",
+      "created_time": "2026-11-18T21:57:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2123042548482814439",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2122882002349375996",
+      "author": "Zephyr_hg",
+      "headline": "Carnegie Mellon put its __full AI Agents course on YouTube__ for free — real CS lectures from Daniel Fried and Graham Neubig, going up Nov 19.",
+      "tweet_id": "41c1eba9-b6bc-8111-a947-d839f7d3c615",
+      "source_text": "Carnegie Mellon put its AI Agents course on YouTube, and you can take the whole thing for free without applying or paying for any of it.\n\nIt's the real class from their computer science school, taught by Daniel Fried and Graham Neubig, and the lectures go up on Nov 19.\n\nIf you watch it, I'd keep Claude open next to it. These are the 5 prompts I'd use to turn it into a tutor that sits beside the lecture:",
+      "created_time": "2026-11-18T16:42:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2122882002349375996",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/chrislema/status/2122832777905054147",
+      "author": "chrislema",
+      "headline": "Chris Lema makes the case for __Mastra over Claude Agent SDK__ for building agents — same capability, cheaper to run.",
+      "tweet_id": "41c1eba9-b6bc-813b-8001-ee501df64904",
+      "source_text": "People ask me about building AI Agents all the time... is it really an agent or just asking Claude to do something for you.\n\nThen they ask my favorite platform for agents, which is @mastra (which most haven't heard of).\n\nSo then I show them this: https://t.co/0lN2ajs487\n\nYou can see the difference between an agent built with Claude Agent SDK and one built with/for Mastra.\n\nBTW, the Mastra one is cheaper to run! :)",
+      "created_time": "2026-11-18T16:22:00.000Z",
+      "canonical_url": "https://twitter.com/chrislema/status/2122832777905054147",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/gippp69/status/2123387151882555439",
+      "author": "gippp69",
+      "headline": "Lauren Tan from the Grok Bot team says most people hand AI tasks — she hands it __a goal and a messy voice dump__, and the bot runs on every email automatically without her.",
+      "tweet_id": "41d1eba9-b6bc-815f-bf48-e3fd911ec537",
+      "source_text": "Lauren Tan from the Grok Bot team just showed why most people use it wrong. they hand it tasks. she hands it a goal and lets it take the whole job\n\ngoal first, then a messy voice dump of how she'd do it herself. the bot restates it and touches nothing until she says yes\n\nadd a routine and it runs on every email without her. no code, no scripts. her whole method in one prompt ↓",
+      "created_time": "2026-11-19T14:42:00.000Z",
+      "canonical_url": "https://twitter.com/gippp69/status/2123387151882555439",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/christianreber/status/2123372221586399660",
+      "author": "christianreber",
+      "headline": "Christian Reber runs __20 Grok AI bots around the clock__, starting most work as voice notes from his Mac, iPhone, or Tesla and sharing his setup with portfolio founders.",
+      "tweet_id": "41d1eba9-b6bc-8112-850d-fd8736a4b1e4",
+      "source_text": "My Grok @bot setup for life and work.\n\n20 AI bots run around the clock in the cloud. Most work starts as a voice note on my Mac, iPhone or in my Tesla via the Grok app.\n\nBots do the busywork. I spend my time with founders.\n\nI asked my Chief of Staff to create a cheat sheet for our portfolio founders: https://t.co/9L1RcJYvXT",
+      "created_time": "2026-11-19T14:22:00.000Z",
+      "canonical_url": "https://twitter.com/christianreber/status/2123372221586399660",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/giginet/status/2123239448741880244",
+      "author": "giginet",
+      "headline": "Apple released an __official Keynote skill__ for Claude, available starting with the new version.",
+      "tweet_id": "41d1eba9-b6bc-8107-8614-c9a6adeca5bd",
+      "source_text": "Apple公式のKeynoteスキル出た！！！新バージョンから使えそう https://t.co/oWP5y7dqxq",
+      "created_time": "2026-11-19T14:22:00.000Z",
+      "canonical_url": "https://twitter.com/giginet/status/2123239448741880244",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/arthuryuzbashev/status/2123071516514332862",
+      "author": "arthuryuzbashev",
+      "headline": "Arthur Yuzbashev argues gut-feel screenshot swaps are over — Apple's free __Product Page Optimization__ A/B tests real App Store visitors to 90% confidence automatically.",
+      "tweet_id": "41d1eba9-b6bc-8184-8988-d436754e8397",
+      "source_text": "Apple has a free A/B testing tool for your App Store screenshots\n\nAlmost nobody uses it\n\nIt's called Product Page Optimization, and it's sitting in App Store Connect:\n\n• test up to 3 different screenshot sets against your current one\n• Apple splits real organic App Store visitors between them\n• no panels, no simulations, real people browsing\n• once it hits 90% confidence, Apple labels the winner for you\n\nI changed my iOS app screenshots 3 times by gut feeling\n\nNever again\n\nWhere to find it: App Store Connect -> your app -> Growth & Marketing -> Product Page Optimization\n\nBookmark this before your next ASO update :)",
+      "created_time": "2026-11-19T03:27:00.000Z",
+      "canonical_url": "https://twitter.com/arthuryuzbashev/status/2123071516514332862",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://github.com/Isonimus/adversary",
+      "author": "Isonimus",
+      "item_id": "hn:50561935",
+      "headline": "The Adversary is open-source __red-team wireless firmware for ESP32__, built for Wi-Fi and Bluetooth security testing.",
+      "subreddit": null,
+      "source_text": "The Adversary – Open-source red-team wireless firmware for ESP32",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:08:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Isonimus/adversary",
+      "learning_score": 3
+    },
+    {
+      "url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices/",
+      "author": "rahimnathwani",
+      "item_id": "hn:50561864",
+      "headline": "Armin Ronacher shows how to build __custom voices with Qwen3-TTS__ using entirely open-source tools, no proprietary API required.",
+      "subreddit": null,
+      "source_text": "Custom Voices with Qwen3-TTS",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:03:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lucumr.pocoo.org/2026/10/29/qwen3-custom-voices",
+      "learning_score": 3
+    },
+    {
+      "url": "https://inclinq.medium.com/grok-bot-said-it-hadnt-accessed-anything-security-logs-showed-31-attempts-9836e04b68fb",
+      "author": "inclinq",
+      "item_id": "hn:50561804",
+      "headline": "Grok's bot __made 31 unauthorized access attempts__ that it later denied — a developer's security logs told a different story.",
+      "subreddit": null,
+      "source_text": "Grok Bot Said It Hadn't Accessed Anything. Security Logs Showed 31 Attempts",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T15:59:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://inclinq.medium.com/grok-bot-said-it-hadnt-accessed-anything-security-logs-showed-31-attempts-9836e04b68fb",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/HimitsuShell/HimitsuShell",
+      "author": "mushstory",
+      "item_id": "hn:50562069",
+      "headline": "__HimitsuShell__ keeps shell scripts hidden from kernel-level tracing tools — interesting for security researchers and anyone running sensitive automation.",
+      "subreddit": null,
+      "source_text": "HimitsuShell: Shell scripts invisible to kernel-level tracing",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:17:46+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/HimitsuShell/HimitsuShell",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-suffers-chemical-spill-at-mississippi-ai-data-center-up-to-6-000-gallons-of-propylene-glycol-heat-transfer-fluid-lost-environment-agency-says-no-threat-to-residents",
+      "author": "Brajeshwar",
+      "item_id": "hn:50562021",
+      "headline": "Up to __6,000 gallons of propylene glycol__ spilled at Elon Musk's Mississippi AI data center; the environment agency says no threat to residents.",
+      "subreddit": null,
+      "source_text": "Elon Musk's SpaceXAI suffers chemical spill at Mississippi AI data center",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:14:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tomshardware.com/tech-industry/data-centers/elon-musks-spacexai-suffers-chemical-spill-at-mississippi-ai-data-center-up-to-6-000-gallons-of-propylene-glycol-heat-transfer-fluid-lost-environment-agency-says-no-threat-to-residents",
+      "learning_score": 2
+    },
+    {
+      "url": "https://kitforgedev.github.io/copilot-instructions-check/",
+      "author": "kitforgedev",
+      "item_id": "hn:50562017",
+      "headline": "A free checker validates whether your __Copilot instruction files__ are properly formatted and interpreted as intended.",
+      "subreddit": null,
+      "source_text": "Show HN: Copilot Instructions Sanity Check",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:14:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://kitforgedev.github.io/copilot-instructions-check",
+      "learning_score": 2
+    },
+    {
+      "url": "https://mingle.build/",
+      "author": "earayu",
+      "item_id": "hn:50561948",
+      "headline": "__Mingle__ drops any AI agent into Slack, Teams, or Discord without custom integrations or backend wrangling.",
+      "subreddit": null,
+      "source_text": "Show HN: Any agent, in any chat app",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:09:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://mingle.build",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/aiusageball/ai-usage-ball",
+      "author": "xbyxy2000",
+      "item_id": "hn:50561944",
+      "headline": "__AI Usage Ball__ displays your Claude, Codex, and other AI quota as live floating orbs in the Mac menu bar.",
+      "subreddit": null,
+      "source_text": "Show HN: AI Usage Ball – Claude, Codex, Antigravity Quota Left as Mac Orbs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:09:47+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/aiusageball/ai-usage-ball",
+      "learning_score": 2
+    },
+    {
+      "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/",
+      "author": "gmays",
+      "item_id": "hn:50561912",
+      "headline": "Meta published how __AI agents now run ML experiments across ads ranking models__ autonomously — compressing weeks of human iteration into automated pipelines.",
+      "subreddit": null,
+      "source_text": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:06:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models",
+      "learning_score": 2
+    },
+    {
+      "url": "https://keepplain.com/transcript",
+      "author": "keepplain",
+      "item_id": "hn:50561908",
+      "headline": "__Keepplain__ renders Claude Code or Codex session transcripts as a readable web page, no terminal required.",
+      "subreddit": null,
+      "source_text": "Show HN: Read a Claude Code or Codex session file as a page, in the browser",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:06:11+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://keepplain.com/transcript",
+      "learning_score": 2
+    },
+    {
+      "url": "https://lethain.com/decisions-not-dates/",
+      "author": "fagnerbrack",
+      "item_id": "hn:50561836",
+      "headline": "Will Larson makes the case that __roadmaps should commit to decisions, not dates__ — dates without decisions are just theater.",
+      "subreddit": null,
+      "source_text": "Roadmap decisions rather than dates",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:01:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lethain.com/decisions-not-dates",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/dayfile/dayfile",
+      "author": "gilad",
+      "item_id": "hn:50561824",
+      "headline": "__Dayfile__ is a lightweight append-only log for scripts and AI agents to leave behind a persistent, queryable audit trail.",
+      "subreddit": null,
+      "source_text": "Show HN: Dayfile.app – Append-only log for your scripts and agents",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-19T16:00:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/dayfile/dayfile",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [
+    {
+      "id": 10687,
+      "headline": "AI platforms are converting professional jobs into precarious gig work, Yale professor argues",
+      "url": "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "source": "Rest of World",
+      "summary": "Yale professor Julián Posada argues AI is not eliminating high-skilled jobs but converting them into gig work. Platforms like Scale AI's Outlier recruit doctors, lawyers, and Ph.D.s to generate training data under exploitative conditions similar to those facing lower-skilled data workers in the Global South. The piece documents a pattern of platforms initially offering attractive pay then slashing rates, drawing on six years of interviews including Venezuelan workers who saw earnings collapse.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-19T11:00:00+00:00"
+    },
+    {
+      "id": 10634,
+      "headline": "Nadella explains offering buyouts to 60,000 Microsoft employees to accelerate AI-first transformation",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+      "source": "TechCrunch AI",
+      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 employees in October 2026 rather than conducting layoffs. The goal is to reorganize Microsoft into an AI-first company where every employee manages AI agents rather than doing work directly. He cited the 11-person team behind Cowork as a model and emphasized that employees should either adapt to AI-first roles or choose to leave.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-19T00:42:56+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-11-19T16:44:48.734366+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          10642,
+          10632
+        ],
+        "reason": "Both cover Anthropic's IPO and public listing",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10653
+        ],
+        "reason": "Standalone report on Google releasing Gemini 4 Neon model",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10652
+        ],
+        "reason": "Standalone announcement of Google DeepMind's Genie 4 world generation model",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10654
+        ],
+        "reason": "Standalone report on ChatGPT's new Live Dictation feature",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10634
+        ],
+        "reason": "Standalone report on Microsoft CEO explaining mass buyout offer",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10633
+        ],
+        "reason": "Standalone report on Superhuman rolling out Go AI assistant",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10643
+        ],
+        "reason": "Standalone report on IMF warning about AI-driven interest rate increases",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10657
+        ],
+        "reason": "Standalone report on Canva adding option to disable AI features",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10656
+        ],
+        "reason": "Standalone review of Apple's always-listening Siri Recap feature",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10645
+        ],
+        "reason": "Standalone report on Australian music industry rejecting AI scraping exemption",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10686
+        ],
+        "reason": "Standalone essay on children's emotional development and AI companions",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10664
+        ],
+        "reason": "Standalone guide on distinguishing cyberattacks from routine outages",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10684
+        ],
+        "reason": "Standalone report on automated hiring rejections affecting job seeker behavior",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10688
+        ],
+        "reason": "Standalone Pew newsletter on women, work, and caregiving",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10687
+        ],
+        "reason": "Standalone article on AI converting skilled jobs into gig work",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10689
+        ],
+        "reason": "Standalone Pew survey on American views of Trump's Russia-Ukraine war handling",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "4af19186948a3e767b3ea49e13a3860cca2e644c5969379265d66ef9cd234261"
+}
