@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-18T00:00:00Z",
-  "issueCount": 192,
+  "generatedAt": "2026-11-19T00:00:00Z",
+  "issueCount": 193,
   "latestIssue": {
-    "slug": "2026-11-18",
-    "digestDate": "2026-11-18",
-    "displayDate": "Nov 18, 2026",
-    "issueNumber": "61118",
-    "subject": "ISSUE 61118 \u00b7 11 STORIES \u00b7 11 MIN READ",
-    "intro": "Nvidia is dominating today's headlines from every angle \u2014 interim CEO Colette Kress is reshaping the company's direction after Jensen Huang's dramatic exit, cutting off advanced chip sales to China, tightening financing for data center partners, and still posting staggering $64.9 billion in quarterly net income even after summer's frontier training pause proved to be a blip. Beyond the Nvidia saga, today's digest spans the delightfully unexpected, from a physicist building robot tutors to teach wild sparrows forgotten songs to a startup claiming its AI can now smell as well as you can. Dive in \u2014 it's one of those days where the AI world feels like it's moving in every direction at once.",
-    "articleCount": 11,
-    "urlPath": "/issues/2026-11-18.html",
-    "contentHash": "883485de205070cbab90d00f4ad2594b635248f06283499669424f740a3c7ada"
+    "slug": "2026-11-19",
+    "digestDate": "2026-11-19",
+    "displayDate": "Nov 19, 2026",
+    "issueNumber": "61119",
+    "subject": "ISSUE 61119 \u00b7 16 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic just made Wall Street history with the largest IPO ever, ringing the Nasdaq bell at $83 a share and walking away with a war chest that would make most nations jealous \u2014 but the eye-popping $26 billion private placement from a who's-who of Big Tech raises thorny questions about the circular financing propping up the AI boom. It's a fitting headline for a day that also brings Google shipping yet another Gemini model (its fourth in two months), Microsoft's CEO explaining why he offered buyouts to 60,000 employees in the name of going \"AI-first,\" and the IMF warning that all this AI spending could push interest rates higher for everyone. From the trading floor to the factory floor to your phone's always-listening assistant, today's stories paint a picture of an industry moving faster than anyone can fully keep up with.",
+    "articleCount": 16,
+    "urlPath": "/issues/2026-11-19.html",
+    "contentHash": "4af19186948a3e767b3ea49e13a3860cca2e644c5969379265d66ef9cd234261"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-19",
+      "digestDate": "2026-11-19",
+      "displayDate": "Nov 19, 2026",
+      "issueNumber": "61119",
+      "subject": "ISSUE 61119 \u00b7 16 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic just made Wall Street history with the largest IPO ever, ringing the Nasdaq bell at $83 a share and walking away with a war chest that would make most nations jealous \u2014 but the eye-popping $26 billion private placement from a who's-who of Big Tech raises thorny questions about the circular financing propping up the AI boom. It's a fitting headline for a day that also brings Google shipping yet another Gemini model (its fourth in two months), Microsoft's CEO explaining why he offered buyouts to 60,000 employees in the name of going \"AI-first,\" and the IMF warning that all this AI spending could push interest rates higher for everyone. From the trading floor to the factory floor to your phone's always-listening assistant, today's stories paint a picture of an industry moving faster than anyone can fully keep up with.",
+      "articleCount": 16,
+      "urlPath": "/issues/2026-11-19.html",
+      "contentHash": "4af19186948a3e767b3ea49e13a3860cca2e644c5969379265d66ef9cd234261"
+    },
     {
       "slug": "2026-11-18",
       "digestDate": "2026-11-18",
@@ -133,17 +144,6 @@
       "articleCount": 9,
       "urlPath": "/issues/2026-11-08.html",
       "contentHash": "39a84d77bd8d3a0bd491744dba3fb2460caab2c07722567f4c764c79d6df121d"
-    },
-    {
-      "slug": "2026-11-07",
-      "digestDate": "2026-11-07",
-      "displayDate": "Nov 07, 2026",
-      "issueNumber": "61107",
-      "subject": "ISSUE 61107 \u00b7 9 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI industry is swimming in money and drowning in contradictions. OpenAI just raised $11 billion at a staggering $1.25 trillion valuation \u2014 even as midterm voters signaled deep skepticism about AI's unchecked expansion \u2014 while a new METR report from inside Anthropic reveals AI development is accelerating twice as fast as last year, with the technology increasingly building itself. Today's digest is a snapshot of an industry sprinting forward on every front: Google pouring $17 billion into data centers, data center developers quietly abandoning their green energy promises, China allegedly planting spies near Nvidia's CEO, and a major blockchain firm exposing FBI credentials to hackers.",
-      "articleCount": 9,
-      "urlPath": "/issues/2026-11-07.html",
-      "contentHash": "9e74801404cc895782dd89d1ff145a33157e75d2977fd530f9d40d363023c6aa"
     }
   ]
 }
