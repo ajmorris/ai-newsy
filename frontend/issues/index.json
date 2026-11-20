@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-19T00:00:00Z",
-  "issueCount": 193,
+  "generatedAt": "2026-11-20T00:00:00Z",
+  "issueCount": 194,
   "latestIssue": {
-    "slug": "2026-11-19",
-    "digestDate": "2026-11-19",
-    "displayDate": "Nov 19, 2026",
-    "issueNumber": "61119",
-    "subject": "ISSUE 61119 \u00b7 16 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic just made Wall Street history with the largest IPO ever, ringing the Nasdaq bell at $83 a share and walking away with a war chest that would make most nations jealous \u2014 but the eye-popping $26 billion private placement from a who's-who of Big Tech raises thorny questions about the circular financing propping up the AI boom. It's a fitting headline for a day that also brings Google shipping yet another Gemini model (its fourth in two months), Microsoft's CEO explaining why he offered buyouts to 60,000 employees in the name of going \"AI-first,\" and the IMF warning that all this AI spending could push interest rates higher for everyone. From the trading floor to the factory floor to your phone's always-listening assistant, today's stories paint a picture of an industry moving faster than anyone can fully keep up with.",
-    "articleCount": 16,
-    "urlPath": "/issues/2026-11-19.html",
-    "contentHash": "4af19186948a3e767b3ea49e13a3860cca2e644c5969379265d66ef9cd234261"
+    "slug": "2026-11-20",
+    "digestDate": "2026-11-20",
+    "displayDate": "Nov 20, 2026",
+    "issueNumber": "61120",
+    "subject": "ISSUE 61120 \u00b7 10 STORIES \u00b7 11 MIN READ",
+    "intro": "Anthropic just shattered IPO records with an $81.3 billion raise that briefly pushed the company toward a $2 trillion valuation \u2014 only to watch shares tumble the next day as a global AI sell-off reminded everyone that gravity still applies, even in the age of artificial intelligence. Beyond the market drama, today's digest is packed with colliding forces: Signal is locking its doors against AI agents reading your screen, Apple is building its own Mac-operating AI while quietly kneecapping the competition, and new research shows the people paying the highest cognitive price for the AI revolution are the ones who can least afford it. Buckle in \u2014 it's one of those days where the future feels like it's arriving faster than anyone planned for.",
+    "articleCount": 10,
+    "urlPath": "/issues/2026-11-20.html",
+    "contentHash": "4e63f57505543026e8efc9e75ffcb36bba6fe1c1f9a16a384b9c8e1f3cda57c5"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-20",
+      "digestDate": "2026-11-20",
+      "displayDate": "Nov 20, 2026",
+      "issueNumber": "61120",
+      "subject": "ISSUE 61120 \u00b7 10 STORIES \u00b7 11 MIN READ",
+      "intro": "Anthropic just shattered IPO records with an $81.3 billion raise that briefly pushed the company toward a $2 trillion valuation \u2014 only to watch shares tumble the next day as a global AI sell-off reminded everyone that gravity still applies, even in the age of artificial intelligence. Beyond the market drama, today's digest is packed with colliding forces: Signal is locking its doors against AI agents reading your screen, Apple is building its own Mac-operating AI while quietly kneecapping the competition, and new research shows the people paying the highest cognitive price for the AI revolution are the ones who can least afford it. Buckle in \u2014 it's one of those days where the future feels like it's arriving faster than anyone planned for.",
+      "articleCount": 10,
+      "urlPath": "/issues/2026-11-20.html",
+      "contentHash": "4e63f57505543026e8efc9e75ffcb36bba6fe1c1f9a16a384b9c8e1f3cda57c5"
+    },
     {
       "slug": "2026-11-19",
       "digestDate": "2026-11-19",
@@ -133,17 +144,6 @@
       "articleCount": 11,
       "urlPath": "/issues/2026-11-09.html",
       "contentHash": "9aa6ccb60d9c00fca95214eee6da8aaf012a382f7409e4d7ba5a0315eacb4320"
-    },
-    {
-      "slug": "2026-11-08",
-      "digestDate": "2026-11-08",
-      "displayDate": "Nov 08, 2026",
-      "issueNumber": "61108",
-      "subject": "ISSUE 61108 \u00b7 9 STORIES \u00b7 11 MIN READ",
-      "intro": "The 2026 midterms sent shockwaves through the AI industry this week, as voters across the country passed measures restricting data center construction and Texas \u2014 now home to Elon Musk's corporate empire \u2014 turned blue, proving that backlash against Big Tech's physical footprint has become a genuinely bipartisan force. Meanwhile, the global tug-of-war over AI's boundaries continues on multiple fronts, from Australia's copyright fight with the music industry to troubling new details about alleged Chinese espionage targeting Nvidia's CEO and a shell company quietly buying advanced American chips. It's a day that reminds us the biggest AI stories aren't always about the models themselves \u2014 they're about the power struggles surrounding them.",
-      "articleCount": 9,
-      "urlPath": "/issues/2026-11-08.html",
-      "contentHash": "39a84d77bd8d3a0bd491744dba3fb2460caab2c07722567f4c764c79d6df121d"
     }
   ]
 }
