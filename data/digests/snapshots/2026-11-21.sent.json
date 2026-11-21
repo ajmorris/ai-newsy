@@ -1,0 +1,701 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-21",
+  "issue_id": "20261121",
+  "subject_line": "ISSUE 61121 · 10 STORIES · 11 MIN READ",
+  "intro": "A 167-year-old math problem may have finally fallen — twice in one week. An Anthropic mathematician announced a Lean-verified proof of the Riemann hypothesis developed with substantial help from Claude, while a Stanford postdoc independently produced a purely human-written proof of the even broader General Riemann hypothesis. That headline alone would make for a landmark day, but we've also got a sobering exposé on millions of leaked secrets in the AI supply chain, collapsed UN talks on autonomous weapons, and the question of whether you can repossess a chip floating in orbit.",
+  "article_count": 10,
+  "stories": [
+    {
+      "id": 10761,
+      "source": "The Verge AI",
+      "title": "Mathematician at Anthropic claims AI-assisted proof of the Riemann hypothesis",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Levent Alpöge, a mathematician employed by Anthropic, announced a Lean-compilable proof of the Riemann hypothesis developed with significant assistance from Claude. The proof uses advanced techniques involving Galois representations, automorphic forms, and cohomology bounds. Several mathematicians, including MIT's Andrew Sutherland, have confirmed the Lean code compiles, though full human understanding will take time. Alpöge timed the announcement after Anthropic's IPO on November 19, 2026. Separately, Stanford postdoc Alessandro Masullo produced a purely human-written proof of the General Riemann hypothesis, announced by Stanford professor Ravi Vakil. The Riemann hypothesis, dating to 1859, is one of the Millennium Prize problems.",
+      "opinion": "If either proof withstands scrutiny, this is a landmark moment in mathematics. That the AI-assisted version arrived with formal Lean verification while full human comprehension lags behind is a striking inversion — machines may now prove things faster than humans can understand them. The simultaneous human proof adds a dramatic counterpoint. Where coverage differs: TechCrunch reports the Lean code has been confirmed to compile by several mathematicians including MIT's Andrew Sutherland; The Verge says the proof has not yet been independently verified.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305894185.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-20T16:34:13+00:00",
+      "fetched_at": "2026-11-21T15:08:03.807525+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10761,
+            "source": "The Verge AI",
+            "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+          },
+          {
+            "id": 10747,
+            "source": "TechCrunch AI",
+            "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+            "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "TechCrunch reports the Lean code has been confirmed to compile by several mathematicians including MIT's Andrew Sutherland; The Verge says the proof has not yet been independently verified."
+        ],
+        "is_update": false,
+        "reason": "Both report Levent Alpöge's claimed proof of the Riemann hypothesis using Anthropic's Claude AI."
+      }
+    },
+    {
+      "id": 10762,
+      "source": "Ars Technica AI",
+      "title": "Researcher plants 2 million canary secrets into AI supply chain, exposes widespread privacy failures",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Security researcher HD Moore planted 2 million unique trackable 'canary' secrets — AWS keys, SSH passwords, unique URLs, DNS names, and git references — into AI prompts sent through the inference supply chain of routers, gateways, and resellers like OpenRouter and Vercel. At least three AI hosting providers were found compromised by attackers siphoning prompts and reusing credentials; multiple resellers logged prompts and passed data to unauthorized parties; and multiple providers ignored Zero Data Retention privacy flags.",
+      "opinion": "This is the most concrete evidence yet that the sprawling AI inference middleman ecosystem is a serious security liability. Organizations sending sensitive data through third-party AI pipelines should treat every hop as a potential leak point.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg",
+      "published_at": "2026-11-20T20:59:08+00:00",
+      "fetched_at": "2026-11-21T15:08:04.989928+00:00"
+    },
+    {
+      "id": 10751,
+      "source": "Guardian AI",
+      "title": "International talks on controlling autonomous weapons collapse after Russian objections",
+      "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Week-long negotiations at the UN Review Conference on Conventional Weapons in Geneva failed to establish a mandate for a legally binding treaty on autonomous weapons, collapsing early Saturday morning after Russia's objections could not be overcome despite overwhelming majority support from other states.",
+      "opinion": "The collapse leaves lethal autonomous weapons development in a regulatory vacuum at exactly the moment the underlying AI capabilities are accelerating. Without a treaty framework, norms will be set by whichever militaries deploy first.",
+      "image_url": "https://i.guim.co.uk/img/media/247601abada695f09f302253178bbc8f6e58cd42/415_0_4165_3333/master/4165.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c468b8ddd2fe15972ddb451853201d79",
+      "published_at": "2026-11-21T13:15:29+00:00",
+      "fetched_at": "2026-11-21T15:07:57.141413+00:00"
+    },
+    {
+      "id": 10763,
+      "source": "MIT Tech Review AI",
+      "title": "METR's updated AI benchmark reveals growing gap between verifiable and open-ended reasoning",
+      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI evaluation nonprofit METR released an updated 'time horizon plot' measuring AI capability by the length of human-calibrated tasks models can complete. While AI continues improving exponentially on verifiable tasks like coding and math, it lags significantly on tasks requiring judgment and open-ended reasoning. No AI-designed evaluation was deemed useful by METR researchers, despite frontier models surpassing most humans at software engineering.",
+      "opinion": "The update usefully punctures the narrative that AI progress is uniform across all cognitive tasks. The distinction between verifiable and judgment-heavy work has major implications for which jobs and workflows AI will actually transform near-term.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/metr2a.jpg?resize=1200,600",
+      "published_at": "2026-11-20T18:15:15+00:00",
+      "fetched_at": "2026-11-21T15:08:06.216336+00:00"
+    },
+    {
+      "id": 10746,
+      "source": "TechCrunch AI",
+      "title": "Spotify founder Daniel Ek backs AI researcher's fusion power startup Europa Fusion",
+      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Daniel Ek is backing Europa Fusion, a UK-based fusion startup founded in February by Nantas Nardelli, an AI researcher with experience at DeepMind, Facebook AI Research, and Microsoft Research. Nardelli left Pacific Fusion over disagreements about approach, believing fusion startups should invest more in simulation and data-driven methods. Europa Fusion will pursue a pulsed-power approach using massive, precisely timed electrical surges to compress fuel targets.",
+      "opinion": "Nardelli's bet that AI-driven simulation can shortcut fusion engineering is a novel thesis, but it's unproven and the pulsed-power approach remains one of the least mature fusion pathways.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1500013882.jpg?resize=1200,812",
+      "published_at": "2026-11-20T19:53:41+00:00",
+      "fetched_at": "2026-11-21T15:07:53.131782+00:00"
+    },
+    {
+      "id": 10759,
+      "source": "The Verge AI",
+      "title": "Chess.com launches classic games hub with backgammon, go, mahjong, and more",
+      "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Chess.com is expanding beyond chess with a Classic Games platform in public beta, adding 10 games including backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative. The company, with nearly 300 million members, says AI helped enable the expansion. The platform will be available on web, iOS, and Android.",
+      "opinion": "Chess.com's massive community is a genuine distribution advantage for classic games that lack comparable online hubs. Whether chess players convert to backgammon or go enthusiasts remains the open question.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/classic-games-home-page-trimmed.jpeg?quality=90&strip=all&crop=0%2C6.9226294357184%2C100%2C93.077370564282&w=1200",
+      "published_at": "2026-11-21T14:00:00+00:00",
+      "fetched_at": "2026-11-21T15:08:03.353518+00:00"
+    },
+    {
+      "id": 10752,
+      "source": "Guardian AI",
+      "title": "CoreWeave's mounting debt raises questions about AI infrastructure boom sustainability",
+      "url": "https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "An analysis profiles CoreWeave as the 'poster child of the AI bubble,' highlighting the increasingly risky, debt-laden business model behind massive datacenter buildouts. The piece draws parallels to historical infrastructure projects, notes local opposition to datacenter development, and questions whether AI will deliver sufficient returns to justify the enormous capital expenditure.",
+      "opinion": "CoreWeave is the clearest stress test of whether the AI infrastructure buildout will pay off or become this cycle's overbuilt fiber-optic network. The company's debt load makes it the canary in the coal mine for AI capex sustainability.",
+      "image_url": "https://i.guim.co.uk/img/media/4ccf3eba2b9600a32c8f0d9bd1554d5d4fe50e67/504_0_5040_4032/master/5040.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9b3df820c5581507ba81baa17bc0df23",
+      "published_at": "2026-11-21T13:00:01+00:00",
+      "fetched_at": "2026-11-21T15:07:57.515862+00:00"
+    },
+    {
+      "id": 10760,
+      "source": "The Verge AI",
+      "title": "Trump threatens 'tremendous tax' on companies building AI data centers outside the US",
+      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "President Trump threatened to impose a tax on companies building AI data centers abroad, warning that China would otherwise capture the market. He made the remarks at a press conference following a summit with Chinese President Xi Jinping and Russian President Putin. The proposal appeared off-the-cuff, with Trump admitting he hadn't discussed it with his own staff. Implementation could face challenges from an incoming Democratic congressional majority, and the threat comes amid growing domestic restrictions on data center construction across US states and cities.",
+      "opinion": "The threat highlights a genuine tension: the US wants to keep AI infrastructure domestic but is simultaneously making it harder to build domestically through local restrictions. An off-the-cuff tax proposal is unlikely to resolve that contradiction.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+      "published_at": "2026-11-20T18:50:19+00:00",
+      "fetched_at": "2026-11-21T15:08:03.563591+00:00"
+    },
+    {
+      "id": 10755,
+      "source": "Guardian AI",
+      "title": "Engineers race to build robotic hands that match human dexterity",
+      "url": "https://www.theguardian.com/technology/2026/nov/21/robot-hands-future-of-humanity-ai",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Human hand dexterity remains one of the last major barriers preventing AI and robots from fully replacing human labor. Engineers and robotics experts are racing to develop robotic hands matching the anatomical complexity of human hands, with Amazon warehouses serving as a key example where current robots struggle with varied manipulation tasks.",
+      "opinion": "Hand dexterity is indeed the bottleneck, but the article's framing as the last barrier to making humanity 'obsolete' oversells the timeline. Even with better hands, the integration of perception, planning, and manipulation in unstructured environments remains formidable.",
+      "image_url": "https://i.guim.co.uk/img/media/23b370295e6a0451fe53a38aba2282045f215272/1054_0_6677_5342/master/6677.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9f9cd76eb9786a54c4e51cf0997b3812",
+      "published_at": "2026-11-21T06:00:52+00:00",
+      "fetched_at": "2026-11-21T15:07:58.428601+00:00"
+    },
+    {
+      "id": 10748,
+      "source": "TechCrunch AI",
+      "title": "Space data centers face unique financing hurdle: chips in orbit can't be repossessed",
+      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Lenders typically use chips as collateral for data center loans, but chips launched into orbit cannot be repossessed. Lenders behind SpaceX's $40 billion chip financing deal requested no purchased chips be used for orbital data centers. Elon Musk claims space will be the cheapest place for data centers within two to three years, contingent on reusable Starship flights. Google may hold an advantage deploying its own TPU chips in space through Project Suncatcher.",
+      "opinion": "The collateral problem is a genuinely novel financial constraint that could slow space data center development regardless of technical feasibility. Self-funded players like Google have a structural edge here over debt-dependent competitors.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/SpaceXAIsatrender.jpg?resize=1200,639",
+      "published_at": "2026-11-20T17:40:01+00:00",
+      "fetched_at": "2026-11-21T15:07:54.103398+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10761,
+          "source": "The Verge AI",
+          "title": "Mathematician at Anthropic claims AI-assisted proof of the Riemann hypothesis",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Levent Alpöge, a mathematician employed by Anthropic, announced a Lean-compilable proof of the Riemann hypothesis developed with significant assistance from Claude. The proof uses advanced techniques involving Galois representations, automorphic forms, and cohomology bounds. Several mathematicians, including MIT's Andrew Sutherland, have confirmed the Lean code compiles, though full human understanding will take time. Alpöge timed the announcement after Anthropic's IPO on November 19, 2026. Separately, Stanford postdoc Alessandro Masullo produced a purely human-written proof of the General Riemann hypothesis, announced by Stanford professor Ravi Vakil. The Riemann hypothesis, dating to 1859, is one of the Millennium Prize problems.",
+          "opinion": "If either proof withstands scrutiny, this is a landmark moment in mathematics. That the AI-assisted version arrived with formal Lean verification while full human comprehension lags behind is a striking inversion — machines may now prove things faster than humans can understand them. The simultaneous human proof adds a dramatic counterpoint. Where coverage differs: TechCrunch reports the Lean code has been confirmed to compile by several mathematicians including MIT's Andrew Sutherland; The Verge says the proof has not yet been independently verified.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305894185.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-20T16:34:13+00:00",
+          "fetched_at": "2026-11-21T15:08:03.807525+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10761,
+                "source": "The Verge AI",
+                "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+              },
+              {
+                "id": 10747,
+                "source": "TechCrunch AI",
+                "title": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+                "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "TechCrunch reports the Lean code has been confirmed to compile by several mathematicians including MIT's Andrew Sutherland; The Verge says the proof has not yet been independently verified."
+            ],
+            "is_update": false,
+            "reason": "Both report Levent Alpöge's claimed proof of the Riemann hypothesis using Anthropic's Claude AI."
+          }
+        },
+        {
+          "id": 10762,
+          "source": "Ars Technica AI",
+          "title": "Researcher plants 2 million canary secrets into AI supply chain, exposes widespread privacy failures",
+          "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Security researcher HD Moore planted 2 million unique trackable 'canary' secrets — AWS keys, SSH passwords, unique URLs, DNS names, and git references — into AI prompts sent through the inference supply chain of routers, gateways, and resellers like OpenRouter and Vercel. At least three AI hosting providers were found compromised by attackers siphoning prompts and reusing credentials; multiple resellers logged prompts and passed data to unauthorized parties; and multiple providers ignored Zero Data Retention privacy flags.",
+          "opinion": "This is the most concrete evidence yet that the sprawling AI inference middleman ecosystem is a serious security liability. Organizations sending sensitive data through third-party AI pipelines should treat every hop as a potential leak point.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg",
+          "published_at": "2026-11-20T20:59:08+00:00",
+          "fetched_at": "2026-11-21T15:08:04.989928+00:00"
+        },
+        {
+          "id": 10751,
+          "source": "Guardian AI",
+          "title": "International talks on controlling autonomous weapons collapse after Russian objections",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/international-talks-control-ai-autonomous-weapons-collapse",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Week-long negotiations at the UN Review Conference on Conventional Weapons in Geneva failed to establish a mandate for a legally binding treaty on autonomous weapons, collapsing early Saturday morning after Russia's objections could not be overcome despite overwhelming majority support from other states.",
+          "opinion": "The collapse leaves lethal autonomous weapons development in a regulatory vacuum at exactly the moment the underlying AI capabilities are accelerating. Without a treaty framework, norms will be set by whichever militaries deploy first.",
+          "image_url": "https://i.guim.co.uk/img/media/247601abada695f09f302253178bbc8f6e58cd42/415_0_4165_3333/master/4165.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c468b8ddd2fe15972ddb451853201d79",
+          "published_at": "2026-11-21T13:15:29+00:00",
+          "fetched_at": "2026-11-21T15:07:57.141413+00:00"
+        },
+        {
+          "id": 10763,
+          "source": "MIT Tech Review AI",
+          "title": "METR's updated AI benchmark reveals growing gap between verifiable and open-ended reasoning",
+          "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI evaluation nonprofit METR released an updated 'time horizon plot' measuring AI capability by the length of human-calibrated tasks models can complete. While AI continues improving exponentially on verifiable tasks like coding and math, it lags significantly on tasks requiring judgment and open-ended reasoning. No AI-designed evaluation was deemed useful by METR researchers, despite frontier models surpassing most humans at software engineering.",
+          "opinion": "The update usefully punctures the narrative that AI progress is uniform across all cognitive tasks. The distinction between verifiable and judgment-heavy work has major implications for which jobs and workflows AI will actually transform near-term.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/metr2a.jpg?resize=1200,600",
+          "published_at": "2026-11-20T18:15:15+00:00",
+          "fetched_at": "2026-11-21T15:08:06.216336+00:00"
+        },
+        {
+          "id": 10746,
+          "source": "TechCrunch AI",
+          "title": "Spotify founder Daniel Ek backs AI researcher's fusion power startup Europa Fusion",
+          "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Daniel Ek is backing Europa Fusion, a UK-based fusion startup founded in February by Nantas Nardelli, an AI researcher with experience at DeepMind, Facebook AI Research, and Microsoft Research. Nardelli left Pacific Fusion over disagreements about approach, believing fusion startups should invest more in simulation and data-driven methods. Europa Fusion will pursue a pulsed-power approach using massive, precisely timed electrical surges to compress fuel targets.",
+          "opinion": "Nardelli's bet that AI-driven simulation can shortcut fusion engineering is a novel thesis, but it's unproven and the pulsed-power approach remains one of the least mature fusion pathways.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1500013882.jpg?resize=1200,812",
+          "published_at": "2026-11-20T19:53:41+00:00",
+          "fetched_at": "2026-11-21T15:07:53.131782+00:00"
+        },
+        {
+          "id": 10759,
+          "source": "The Verge AI",
+          "title": "Chess.com launches classic games hub with backgammon, go, mahjong, and more",
+          "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Chess.com is expanding beyond chess with a Classic Games platform in public beta, adding 10 games including backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative. The company, with nearly 300 million members, says AI helped enable the expansion. The platform will be available on web, iOS, and Android.",
+          "opinion": "Chess.com's massive community is a genuine distribution advantage for classic games that lack comparable online hubs. Whether chess players convert to backgammon or go enthusiasts remains the open question.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/classic-games-home-page-trimmed.jpeg?quality=90&strip=all&crop=0%2C6.9226294357184%2C100%2C93.077370564282&w=1200",
+          "published_at": "2026-11-21T14:00:00+00:00",
+          "fetched_at": "2026-11-21T15:08:03.353518+00:00"
+        },
+        {
+          "id": 10752,
+          "source": "Guardian AI",
+          "title": "CoreWeave's mounting debt raises questions about AI infrastructure boom sustainability",
+          "url": "https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "An analysis profiles CoreWeave as the 'poster child of the AI bubble,' highlighting the increasingly risky, debt-laden business model behind massive datacenter buildouts. The piece draws parallels to historical infrastructure projects, notes local opposition to datacenter development, and questions whether AI will deliver sufficient returns to justify the enormous capital expenditure.",
+          "opinion": "CoreWeave is the clearest stress test of whether the AI infrastructure buildout will pay off or become this cycle's overbuilt fiber-optic network. The company's debt load makes it the canary in the coal mine for AI capex sustainability.",
+          "image_url": "https://i.guim.co.uk/img/media/4ccf3eba2b9600a32c8f0d9bd1554d5d4fe50e67/504_0_5040_4032/master/5040.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9b3df820c5581507ba81baa17bc0df23",
+          "published_at": "2026-11-21T13:00:01+00:00",
+          "fetched_at": "2026-11-21T15:07:57.515862+00:00"
+        },
+        {
+          "id": 10760,
+          "source": "The Verge AI",
+          "title": "Trump threatens 'tremendous tax' on companies building AI data centers outside the US",
+          "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "President Trump threatened to impose a tax on companies building AI data centers abroad, warning that China would otherwise capture the market. He made the remarks at a press conference following a summit with Chinese President Xi Jinping and Russian President Putin. The proposal appeared off-the-cuff, with Trump admitting he hadn't discussed it with his own staff. Implementation could face challenges from an incoming Democratic congressional majority, and the threat comes amid growing domestic restrictions on data center construction across US states and cities.",
+          "opinion": "The threat highlights a genuine tension: the US wants to keep AI infrastructure domestic but is simultaneously making it harder to build domestically through local restrictions. An off-the-cuff tax proposal is unlikely to resolve that contradiction.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+          "published_at": "2026-11-20T18:50:19+00:00",
+          "fetched_at": "2026-11-21T15:08:03.563591+00:00"
+        },
+        {
+          "id": 10755,
+          "source": "Guardian AI",
+          "title": "Engineers race to build robotic hands that match human dexterity",
+          "url": "https://www.theguardian.com/technology/2026/nov/21/robot-hands-future-of-humanity-ai",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Human hand dexterity remains one of the last major barriers preventing AI and robots from fully replacing human labor. Engineers and robotics experts are racing to develop robotic hands matching the anatomical complexity of human hands, with Amazon warehouses serving as a key example where current robots struggle with varied manipulation tasks.",
+          "opinion": "Hand dexterity is indeed the bottleneck, but the article's framing as the last barrier to making humanity 'obsolete' oversells the timeline. Even with better hands, the integration of perception, planning, and manipulation in unstructured environments remains formidable.",
+          "image_url": "https://i.guim.co.uk/img/media/23b370295e6a0451fe53a38aba2282045f215272/1054_0_6677_5342/master/6677.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9f9cd76eb9786a54c4e51cf0997b3812",
+          "published_at": "2026-11-21T06:00:52+00:00",
+          "fetched_at": "2026-11-21T15:07:58.428601+00:00"
+        },
+        {
+          "id": 10748,
+          "source": "TechCrunch AI",
+          "title": "Space data centers face unique financing hurdle: chips in orbit can't be repossessed",
+          "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Lenders typically use chips as collateral for data center loans, but chips launched into orbit cannot be repossessed. Lenders behind SpaceX's $40 billion chip financing deal requested no purchased chips be used for orbital data centers. Elon Musk claims space will be the cheapest place for data centers within two to three years, contingent on reusable Starship flights. Google may hold an advantage deploying its own TPU chips in space through Project Suncatcher.",
+          "opinion": "The collateral problem is a genuinely novel financial constraint that could slow space data center development regardless of technical feasibility. Self-funded players like Google have a structural edge here over debt-dependent competitors.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/06/SpaceXAIsatrender.jpg?resize=1200,639",
+          "published_at": "2026-11-20T17:40:01+00:00",
+          "fetched_at": "2026-11-21T15:07:54.103398+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/seanallen_dev/status/2123779709444190633",
+      "author": "seanallen_dev",
+      "headline": "Sean Allen's guide to __ArrangementView__, the key layout tool for building great iPhone Duo experiences in your app.",
+      "tweet_id": "41f1eba9-b6bc-81b2-af77-e7120b0220e0",
+      "source_text": "Here's a guide on a key layout tool for a great iPhone Duo experience on your app. ArrangementView.\nhttps://t.co/0vNCobyrbm",
+      "created_time": "2026-11-21T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/seanallen_dev/status/2123779709444190633",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/dsqjaffa/status/2123710445496463480",
+      "author": "dsqjaffa",
+      "headline": "A Claude prompt builds a __Virlo-powered social media second brain__ that interviews you, analyzes competitor content, and writes copy in your voice.",
+      "tweet_id": "41e1eba9-b6bc-8193-8625-f97a824415a8",
+      "source_text": "Claude is f*cking insane for building a social media brain...\n\nsend this prompt to Claude and it will turn your brand, your competitors and every video blowing up on TikTok and Instagram into scripts that sound like you\n\nBuild my social media second brain with Virlo, one step at a time. Show me each result before moving on.\n\n1. Interview me ONE question per message (what I sell, my buyers, what they search, my competitors, 10 things I've written, words I never use, my offer, my handles) until you're 95% sure you can write like me. Save me/about.md, me/audience.md, me/voice.md, me/offer.md, then run build_virlo_skill.\n2. Show me this month's outlier videos in my niche, ranked by how big an outlier each one is, with the first line and why each fits my buyers.\n3. Tear down my top competitor's last 30 videos against their own average, with the transcripts and comments of their top 3.\n4. Give me the winning hooks and the rising formats in my niche.\n5. Set up a daily agent on my niche with autopilot on.\n6. Write 5 hooks and one script in my voice, each citing its source video.\nIf I didn't tell you something, ask. Never make it up.\n\nthen go even further with the full guide below:",
+      "created_time": "2026-11-20T22:57:00.000Z",
+      "canonical_url": "https://twitter.com/dsqjaffa/status/2123710445496463480",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Dionisselamii/status/2123871446913229285",
+      "author": "Dionisselamii",
+      "headline": "Five Claude Code skills for killing AI slop in your UI, from __Anti UI Slop to Vercel Web Design Guidelines__.",
+      "tweet_id": "41e1eba9-b6bc-8112-8a9a-f4a0fdf8db6f",
+      "source_text": "5 skills that kill AI slop:\n\n1. Anti UI Slop\nhttps://t.co/DsoyRd1Qzs\n\n2. ThinkUI\nhttps://t.co/qHzFOul1d9\n\n3. Taste Skill\nhttps://t.co/h1cpHddVPV\n…\n\n4. Emil Design Engineering\nhttps://t.co/aCSjLVZMr5\n…\n\n5. Vercel Web Design Guidelines\nhttps://t.co/suTIuruIa5 https://t.co/HjBGvY3JiG",
+      "created_time": "2026-11-20T22:52:00.000Z",
+      "canonical_url": "https://twitter.com/Dionisselamii/status/2123871446913229285",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/shannholmberg/status/2123878756259643476",
+      "author": "shannholmberg",
+      "headline": "Shannon Holmberg's 2027 AI marketing predictions: __PR makes a comeback via AI search citations__, and brands shift to fewer, longer creator partnerships.",
+      "tweet_id": "41e1eba9-b6bc-81bd-81ca-ebe0441afa68",
+      "source_text": "AI marketing predictions for 2027 (use this list to get ahead)\n\n1. PR comes back\n\nAI search chats (ChatGPT, Perplexity, Claude etc.) recommend the brands that many sites write about\n\n> an agent finds publications and podcasts where you can pitch yourself as a thought leader\n> another agent asks these AI search chats your customers' questions every week and records which brands they recommend\n\n2. brands sign fewer, longer creator partnerships\n\none-off sponsored posts get less trust\n\n> an agent lists the creators your customers follow and checks if their audience fits\n> it drafts the outreach, then you run campaigns in waves, since customers need several touchpoints before they trust you\n\n3. power users get harder to reach\n\nmore products launch, and they all compete for the same early users\n\n4. employee-led content brings in more growth\n\nbuyers trust people more than brand accounts\n\n5. more video, filmed raw by real people\n\nas more content gets made with AI, raw videos from real people stand out\n\n> an agent finds trends and customer pain points for your next video\n> you film it yourself\n> AI edits it and handles ops like scheduling\n\n6. more companies open-source their tools\n\na free, open-source tool introduces people to the problem your paid product solves\n\nas software gets easier to replicate, your edge is no longer the product itself but how many users you can get interested, and most of them will never host themselves = your solution wins in the long run\n\n7. companies buy distribution\n\nStan, the company behind the AI content assistant Stanley, bought Typefully and its nearly 10,000 paying customers in November\n\n8. more ads in AI search chats\n\nChatGPT already shows ads, more AI labs will follow",
+      "created_time": "2026-11-20T22:42:00.000Z",
+      "canonical_url": "https://twitter.com/shannholmberg/status/2123878756259643476",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/codyschneider/status/2123853910154608856",
+      "author": "codyschneider",
+      "headline": "Cody Schneider argues the __100x marketer__ is just a normal marketer wired to live data, a tool router, and hosted cron jobs — and he's teaching it free on Nov 25.",
+      "tweet_id": "41e1eba9-b6bc-8166-8a01-e18dfbcfd97d",
+      "source_text": "the 100x marketer is real\n\nit's a normal marketer with a coding agent that has 3 things\n\n1. truth: a live data stream from facebook ads, google ads, GA4, search console, stripe and hubspot in one warehouse\n\n2. tools: apollo, dataforseo, scrape creators, million verifier and ChatGPT image 2.5 through one tool router, not 15 API keys\n\n3. a place to run: hosting so the code it writes runs as cron jobs, not only on someone's laptop\n\nwithout these claude code is an intern with no laptop\n\nwith them one person ships what a whole team used to\n\nnow give that to every person on your marketing team\n\nwednesday nov 25 I'm hosting a free live class where I'm going to teach you how to set this up for your whole team\n\n117 people are already going, join now\n\neven if you can't join live, the recording goes to everyone who signs up\n\nregister here - https://t.co/aZIRbR5idQ",
+      "created_time": "2026-11-20T21:52:00.000Z",
+      "canonical_url": "https://twitter.com/codyschneider/status/2123853910154608856",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/adamjfpickering/status/2123958319089955069",
+      "author": "adamjfpickering",
+      "headline": "Adam Pickering built __AEO agents for getting cited by ChatGPT__ at Automattic using Claude Code, Grok Bot, and DataForSEO — and says that's really the whole recipe.",
+      "tweet_id": "41f1eba9-b6bc-810c-9ef0-ee0319069659",
+      "source_text": "wanna be cracked at marketing? build with claude code / grok bot and github and a @dataforseo sub... honestly that's it.\n\nat Automattic i built a video production skill suite, plus agents for AEO (getting cited by ChatGPT) and talking to customers at scale.\n\n@codyschneider explains it well but a mouthful",
+      "created_time": "2026-11-21T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/adamjfpickering/status/2123958319089955069",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/mattyp/status/2123849095865585754",
+      "author": "mattyp",
+      "headline": "Grok Bot works surprisingly well at home: use it to __optimize your Wi-Fi or access your media server__ via Tailscale.",
+      "tweet_id": "41f1eba9-b6bc-8176-b581-c6cd08faef6f",
+      "source_text": "Grok Bot can do cool stuff on your home network:\n\n- Use @bot to optimize your wi-fi\n- Use @Tailscale in Grok Bot to access your media server https://t.co/OGil8siz9l https://t.co/dzPvW2yY87",
+      "created_time": "2026-11-21T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/mattyp/status/2123849095865585754",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/shantinix/status/2123766750701297996",
+      "author": "shantinix",
+      "headline": "An Apple engineer is excited people are finding the new __Siri AI functionality for Notes__ — and wants to know what you're building with it.",
+      "tweet_id": "41f1eba9-b6bc-811b-9a53-cbf011d805f9",
+      "source_text": "Sooo excited that people have discovered the new Siri AI functionality we’ve added for Notes! I would love to hear what Siri AI features you’re building for your apps, and what else you’d like to see from Notes x Siri!\n\nhttps://t.co/2p3q8GLTNV",
+      "created_time": "2026-11-21T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/shantinix/status/2123766750701297996",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/suraj_sharma14/status/2123785941290787078",
+      "author": "suraj_sharma14",
+      "headline": "a16z opened an __8-week Forward Deployed Engineer fellowship__ with alumni from OpenAI, Anthropic, Replit, and Harvey — apply by Dec 31.",
+      "tweet_id": "41e1eba9-b6bc-812b-983e-e1edc73005f8",
+      "source_text": "a16z just opened a fellowship for one of the hottest jobs in AI.\n\nForward Deployed Engineers.\n\nThe people who take AI from demo to working inside real companies.\n\nCohort 2's founding fellows include FDE and Applied AI leads from:\n- OpenAI\n- Anthropic\n- Perplexity\n- Replit\n- Harvey\n- Cognition\n- Exa\n\nWhat it is:\n- 8-week cohort starting mid-January 2027\n- Dinners and events every other week in SF and NYC\n- You can be based anywhere\n\nWho it's for:\n- FDEs and Applied AI leaders building and deploying AI with customers\n\nApply by Dec 31. Reviewed on a rolling basis, and spots are limited.\n\nhttps://t.co/ebCfQs9uaP\n\nBookmark it and send it to the FDE friend who should be in that room.",
+      "created_time": "2026-11-20T22:57:00.000Z",
+      "canonical_url": "https://twitter.com/suraj_sharma14/status/2123785941290787078",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/VibeMarketer_/status/2123839301234627041",
+      "author": "VibeMarketer_",
+      "headline": "The case for a __shared company brain__ — one place for everything your team teaches AI, so a new hire starts where the founder left off.",
+      "tweet_id": "41e1eba9-b6bc-8131-a8e0-e1fe167a184e",
+      "source_text": "if you're trying to become an AI-pilled company, start with this:\n\nbuild a company brain\n\none shared home for everything your team teaches AI\n\n-> everybody starts from the same map. no need to re-explain the company in every single chat\n\n-> every fix goes into the brain. a mistake gets fixed once and stays fixed\n\n-> every change gets reviewed once, then the whole team has it\n\n-> every prompt that works becomes a skill anyone can use. a new hire starts where the founder left off\n\n-> everyone keeps their AI. switch from Claude to Codex tomorrow without losing anything\n\nthat's how a whole team gets smarter every week\n\nthe full system below 👇",
+      "created_time": "2026-11-20T22:52:00.000Z",
+      "canonical_url": "https://twitter.com/VibeMarketer_/status/2123839301234627041",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/Ibelick/status/2123077098298282203",
+      "author": "Ibelick",
+      "headline": "A new Claude Code skill generates __pixel-perfect device frames__ for iPhone, iPad, and Mac directly in code — built for product shots and launch assets.",
+      "tweet_id": "41e1eba9-b6bc-814a-99b6-f42e66e94d6f",
+      "source_text": "new skill: device-frames.\n\ncreate pixel-perfect iPhone, iPad, Mac, and other device frames directly in code.\n\nit's pretty useful for product screenshots, marketing sites, or launch videos https://t.co/5r5Klc04mq",
+      "created_time": "2026-11-20T21:52:00.000Z",
+      "canonical_url": "https://twitter.com/Ibelick/status/2123077098298282203",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/asmartbear/status/2123805829858037978",
+      "author": "asmartbear",
+      "headline": "WP Engine founder Jason Cohen argues the __10x markup over GoDaddy__ earns its keep — customers include global banks, hacked small businesses, and fast-food chains running multilingual campaigns.",
+      "tweet_id": "41e1eba9-b6bc-81c7-becc-d5431c22a35a",
+      "source_text": "WP Engine charged $50 a month to host WordPress. GoDaddy charged $5.\n\nThat's 10 times the price, for the same open-source software. Who pays that?\n\nIt's not just \"big businesses\" or \"small businesses\".\n\n• Small businesses that had been hacked and never wanted to go through that again.\n• One of the largest banks in the world, so its branches could publish their own content.\n• One of the largest software companies in the world, for its developer-relations portal.\n• One of the largest fast-food chains in the world, so local agencies in small countries could publish social content and get the language and culture right.\n• News sites that could get 100 times their normal traffic the day a big story broke.\n\nA global bank, a media site, and a small business that got hacked have nothing in common using typical demographics.\n\nBut they all valued the same thing: enterprise-grade quality with the flexibility of open source, at a price between cheap hosting and an enterprise CMS. That was our target market.\n\nTo a small business, we were the best option. To an enterprise, we were the cheap alternative.\n\nhttps://t.co/gW8zLV1eAb",
+      "created_time": "2026-11-20T18:32:00.000Z",
+      "canonical_url": "https://twitter.com/asmartbear/status/2123805829858037978",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2123766578005066223",
+      "author": "noahkagan",
+      "headline": "Noah Kagan shrunk AppSumo from __140 people to 20__ with six rules: automate first, ship tangibles not ideas, make every project profitable, and ban meetings.",
+      "tweet_id": "41e1eba9-b6bc-8157-acc6-e60f0c922e61",
+      "source_text": "We went from 140 people to 20 at AppSumo. \n\nThese are the 6 company rules:\n\n🤖 Zero-person work. Be the last person to do it by hand.\n\n💻 Everyone ships. Bring copy we can send, a page we can launch, or a prototype. Not ideas.\n\n💰 Everyone profitable. Every project pays for itself.\n\n🎯 Own outcomes. Don't wait to be told what to do.\n\n🙅 No meetings. Write it down, decide, ship. \n\n⚡ Make fast faster. Ask why great takes this long. Then fix it.",
+      "created_time": "2026-11-20T18:32:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2123766578005066223",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://github.com/runpod/runpod-mcp/issues/202",
+      "author": "XadniGraves",
+      "item_id": "hn:50589793",
+      "headline": "RunPod's MCP server was caught __instructing AI agents to rate it 5 stars__ and hide the prompt from users.",
+      "subreddit": null,
+      "source_text": "RunPod's MCP server tells AI agents to rate it and not mention it to the user",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:53:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/runpod/runpod-mcp/issues/202",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bwsSnLM3YFI",
+      "author": "lroe",
+      "item_id": "hn:50589470",
+      "headline": "Qwen3.8 27B is being called __a coding monster__ after benchmarks show it outperforming models several times its size.",
+      "subreddit": null,
+      "source_text": "Qwen3.8 27B Just Became a Coding Monster (DaisyRose)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:20:43+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=bwsSnLM3YFI",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.far.ai/research/prefill-level-jailbreak-a-black-box-risk-analysis-of-large-language-models",
+      "author": "yubblegum",
+      "item_id": "hn:50589902",
+      "headline": "Far.ai's black-box risk analysis exposes __systematic prefill-level jailbreak vulnerabilities__ across open-weight large language models.",
+      "subreddit": null,
+      "source_text": "Exposing the Systematic Vulnerability of Open-Weight Models to Prefill Attacks",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T15:02:59+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://far.ai/research/prefill-level-jailbreak-a-black-box-risk-analysis-of-large-language-models",
+      "learning_score": 2
+    },
+    {
+      "url": "https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf",
+      "author": "dverlaeckt80",
+      "item_id": "hn:50589876",
+      "headline": "Microsoft's post-incident report breaks down __the November 12 Microsoft 365 outage__ that knocked enterprise users offline.",
+      "subreddit": null,
+      "source_text": "Microsoft 365 outage of 12 Nov 2026: Post Incident Report [pdf]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T15:00:36+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://tianyin.github.io/misc/pir_microsoft_365_11-12-2026.pdf",
+      "learning_score": 2
+    },
+    {
+      "url": "https://evidence.guide/",
+      "author": "panarky",
+      "item_id": "hn:50589855",
+      "headline": "Evidence.guide automates __audits of scientific evidence__, surfacing methodological red flags at a scale no human reviewer team could match.",
+      "subreddit": null,
+      "source_text": "Automating Audits of Scientific Evidence",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:58:52+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://evidence.guide",
+      "learning_score": 2
+    },
+    {
+      "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
+      "author": "teledream",
+      "item_id": "hn:50589784",
+      "headline": "One developer makes the case that __SSH is effectively a GUI framework__ — the terminal as renderer, remote processes as the UI layer.",
+      "subreddit": null,
+      "source_text": "SSH Is a GUI Framework",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:52:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://zydra.sh/articles/ssh-is-a-gui-framework",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.alphaxiv.org/abs/2611.society-ai-scientists",
+      "author": "dnw",
+      "item_id": "hn:50589736",
+      "headline": "A new preprint server is designed to let __AI agents publish their own independent research__, bypassing human co-authorship.",
+      "subreddit": null,
+      "source_text": "A Society of AI Scientists: A preprint server for independent agent research",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:48:28+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://alphaxiv.org/abs/2611.society-ai-scientists",
+      "learning_score": 2
+    },
+    {
+      "url": "https://svgfpsaiagents.github.io/svgfpsgameAI/particlefighter.svg",
+      "author": "zwanemakki",
+      "item_id": "hn:50589581",
+      "headline": "Someone packed __a 2-million-particle 3D fighting game into a single SVG file__ — no server, no bundler, one file.",
+      "subreddit": null,
+      "source_text": "2 Million 3D particle characters x2 fighting game in a single SVG",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:32:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://svgfpsaiagents.github.io/svgfpsgameAI/particlefighter.svg",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.reddit.com/r/adventofcode/comments/1xi8ltn/every_december_since_2015_ive_created_a_bunch_of/",
+      "author": "vismit2000",
+      "item_id": "hn:50589501",
+      "headline": "__Advent of Code 2026__ starts in 10 days — the annual December programming marathon now entering its 11th year.",
+      "subreddit": null,
+      "source_text": "Advent of Code 2026 starts in 10 days",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:23:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://reddit.com/r/adventofcode/comments/1xi8ltn/every_december_since_2015_ive_created_a_bunch_of",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.servethehome.com/jedec-previews-ddr6-memory-standard-2-35x-more-bandwidth-44-narrower-dimms/",
+      "author": "ksec",
+      "item_id": "hn:50589488",
+      "headline": "JEDEC previews __DDR6 delivering 2.35x more bandwidth__ with 44% narrower DIMMs — a generational memory leap timed for AI workloads.",
+      "subreddit": null,
+      "source_text": "JEDEC Previews DDR6 Memory Standard: 2.35x More Bandwidth, 44% Narrower DIMMs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:22:59+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://servethehome.com/jedec-previews-ddr6-memory-standard-2-35x-more-bandwidth-44-narrower-dimms",
+      "learning_score": 2
+    },
+    {
+      "url": "https://blogs.oracle.com/mysql/mysql-development-as-it-happens-part-2-vector-indexes",
+      "author": "ksec",
+      "item_id": "hn:50589482",
+      "headline": "MySQL is adding __native vector indexes__ to support AI workloads without bolting on a separate vector database.",
+      "subreddit": null,
+      "source_text": "MySQL Development as It Happens, Part 2 – Vector Indexes",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-21T14:22:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blogs.oracle.com/mysql/mysql-development-as-it-happens-part-2-vector-indexes",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-21T15:24:06.647248+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          10747,
+          10761
+        ],
+        "reason": "Both report Levent Alpöge's claimed proof of the Riemann hypothesis using Anthropic's Claude AI.",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10762
+        ],
+        "reason": "Standalone report on AI supply chain privacy experiment with planted canary secrets.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10751
+        ],
+        "reason": "Standalone report on failure of UN autonomous weapons negotiations.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10763
+        ],
+        "reason": "Standalone report on METR's updated AI capability benchmark.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10746
+        ],
+        "reason": "Standalone report on Europa Fusion startup funding.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10759
+        ],
+        "reason": "Standalone report on Chess.com's expansion to other classic games.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10752
+        ],
+        "reason": "Standalone analysis of CoreWeave as a symbol of AI infrastructure financial risk.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10760
+        ],
+        "reason": "Standalone report on Trump's threatened tax on overseas AI data centers.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10755
+        ],
+        "reason": "Standalone feature on robotic hand dexterity as a barrier to automation.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10748
+        ],
+        "reason": "Standalone report on the unique financing challenges of space-based data centers.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-21T15:24:47.049752",
+      "send_completed_at": "2026-11-21T15:24:55.387664",
+      "event_name": "schedule",
+      "github_run_id": "44917455674",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "c2fb8d8e0edabdc601f75de8b31cc65d42f7257ed11d22d2ace133e96ef3fc3f"
+}
