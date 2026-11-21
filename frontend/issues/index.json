@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-20T00:00:00Z",
-  "issueCount": 194,
+  "generatedAt": "2026-11-21T00:00:00Z",
+  "issueCount": 195,
   "latestIssue": {
-    "slug": "2026-11-20",
-    "digestDate": "2026-11-20",
-    "displayDate": "Nov 20, 2026",
-    "issueNumber": "61120",
-    "subject": "ISSUE 61120 \u00b7 10 STORIES \u00b7 11 MIN READ",
-    "intro": "Anthropic just shattered IPO records with an $81.3 billion raise that briefly pushed the company toward a $2 trillion valuation \u2014 only to watch shares tumble the next day as a global AI sell-off reminded everyone that gravity still applies, even in the age of artificial intelligence. Beyond the market drama, today's digest is packed with colliding forces: Signal is locking its doors against AI agents reading your screen, Apple is building its own Mac-operating AI while quietly kneecapping the competition, and new research shows the people paying the highest cognitive price for the AI revolution are the ones who can least afford it. Buckle in \u2014 it's one of those days where the future feels like it's arriving faster than anyone planned for.",
+    "slug": "2026-11-21",
+    "digestDate": "2026-11-21",
+    "displayDate": "Nov 21, 2026",
+    "issueNumber": "61121",
+    "subject": "ISSUE 61121 \u00b7 10 STORIES \u00b7 11 MIN READ",
+    "intro": "A 167-year-old math problem may have finally fallen \u2014 twice in one week. An Anthropic mathematician announced a Lean-verified proof of the Riemann hypothesis developed with substantial help from Claude, while a Stanford postdoc independently produced a purely human-written proof of the even broader General Riemann hypothesis. That headline alone would make for a landmark day, but we've also got a sobering expos\u00e9 on millions of leaked secrets in the AI supply chain, collapsed UN talks on autonomous weapons, and the question of whether you can repossess a chip floating in orbit.",
     "articleCount": 10,
-    "urlPath": "/issues/2026-11-20.html",
-    "contentHash": "4e63f57505543026e8efc9e75ffcb36bba6fe1c1f9a16a384b9c8e1f3cda57c5"
+    "urlPath": "/issues/2026-11-21.html",
+    "contentHash": "c2fb8d8e0edabdc601f75de8b31cc65d42f7257ed11d22d2ace133e96ef3fc3f"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-21",
+      "digestDate": "2026-11-21",
+      "displayDate": "Nov 21, 2026",
+      "issueNumber": "61121",
+      "subject": "ISSUE 61121 \u00b7 10 STORIES \u00b7 11 MIN READ",
+      "intro": "A 167-year-old math problem may have finally fallen \u2014 twice in one week. An Anthropic mathematician announced a Lean-verified proof of the Riemann hypothesis developed with substantial help from Claude, while a Stanford postdoc independently produced a purely human-written proof of the even broader General Riemann hypothesis. That headline alone would make for a landmark day, but we've also got a sobering expos\u00e9 on millions of leaked secrets in the AI supply chain, collapsed UN talks on autonomous weapons, and the question of whether you can repossess a chip floating in orbit.",
+      "articleCount": 10,
+      "urlPath": "/issues/2026-11-21.html",
+      "contentHash": "c2fb8d8e0edabdc601f75de8b31cc65d42f7257ed11d22d2ace133e96ef3fc3f"
+    },
     {
       "slug": "2026-11-20",
       "digestDate": "2026-11-20",
@@ -133,17 +144,6 @@
       "articleCount": 12,
       "urlPath": "/issues/2026-11-10.html",
       "contentHash": "78276980bbca89f95828f4fb01fce2986bb91f0928994cb7fedfe1f1a0151670"
-    },
-    {
-      "slug": "2026-11-09",
-      "digestDate": "2026-11-09",
-      "displayDate": "Nov 09, 2026",
-      "issueNumber": "61109",
-      "subject": "ISSUE 61109 \u00b7 11 STORIES \u00b7 11 MIN READ",
-      "intro": "Anti-AI populism stealing headlines from the algorithms themselves \u2014 that's the story this Monday. From voters rejecting datacenter projects across nine states to Google strong-arming schools into accepting its AI tools, today's roundup captures a growing tension between the AI industry's ambitions and the public's appetite for pushing back. We've also got Anthropic dropping $3.4 billion on gas turbines, Trump weighing in on AI safety, and a founder running his company with Lord of the Rings-themed AI agents \u2014 because of course someone is.",
-      "articleCount": 11,
-      "urlPath": "/issues/2026-11-09.html",
-      "contentHash": "9aa6ccb60d9c00fca95214eee6da8aaf012a382f7409e4d7ba5a0315eacb4320"
     }
   ]
 }
