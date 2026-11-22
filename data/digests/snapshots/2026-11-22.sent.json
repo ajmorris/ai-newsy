@@ -1,0 +1,690 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-22",
+  "issue_id": "20261122",
+  "subject_line": "ISSUE 61122 · 8 STORIES · 11 MIN READ",
+  "intro": "From the UN failing to agree on autonomous weapons rules to Signal scrambling to block AI surveillance and a South Korean minister resigning over an AI cheating scandal, today's big theme is institutions racing — and often failing — to keep up with AI's reach into every corner of life. But it's not all friction: everyday tinkerers are using AI coding tools to hack their own gadgets, and a new wave of AI agents living in your text messages wants to handle your errands. Buckle in — today's digest covers the full spectrum, from geopolitical standoffs to the AI assistant that books your dinner reservations over SMS.",
+  "article_count": 8,
+  "stories": [
+    {
+      "id": 10785,
+      "source": "Guardian AI",
+      "title": "Australia's fragile bipartisan AI regulation agreement faces end-of-year parliamentary test",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/23/will-fragile-bipartisanship-on-ai-survive-silly-season-or-is-parliament-heading-for-a-holiday-meltdown-the-agenda",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Australia's parliament enters its final 2026 sitting week with a joint select committee report on AI expected Monday, signaling Labor's direction on AI regulation including datacentres and copyright. Whether fragile bipartisan agreement survives the legislative rush remains uncertain.",
+      "opinion": "Useful signal on how a mid-sized democracy is approaching AI governance, though the outcome is still unknown.",
+      "image_url": "https://i.guim.co.uk/img/media/0703852cd8009754ed16a9c2bbad6d2d80b6fedd/864_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=ae53c78aa6f1109fd02df283bb90cc3d",
+      "published_at": "2026-11-22T14:00:32+00:00",
+      "fetched_at": "2026-11-22T15:05:26.667232+00:00"
+    },
+    {
+      "id": 10775,
+      "source": "TechCrunch AI",
+      "title": "Signal restricts mobile screenshots to counter AI surveillance threat",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Signal is restricting screenshot capabilities on Android and iOS in response to what president Meredith Whittaker calls the 'existential threat' of OS-level agentic AI surveillance. AI agents built into Windows, Android, and macOS/iOS can scan screen content, undermining Signal's privacy guarantees. Users can disable the setting, and Whittaker concedes the solution is 'incomplete.'",
+      "opinion": "A concrete, technically grounded move that highlights the fundamental tension between OS-level AI agents and end-to-end encrypted messaging. The acknowledged incompleteness makes it honest rather than performative.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800",
+      "published_at": "2026-11-21T21:37:10+00:00",
+      "fetched_at": "2026-11-22T15:05:21.804664+00:00"
+    },
+    {
+      "id": 10803,
+      "source": "The Verge AI",
+      "title": "Everyday users are using AI coding tools to hack and customize their gadgets",
+      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A growing trend sees ordinary users employing AI coding tools like Claude Code and Codex to modify software on physical devices — TVs, cameras, and other gadgets. LLMs have dramatically lowered the barrier to hardware customization, as illustrated by a developer who used Claude Code to remove bloatware and redesign the interface on a Xiaomi Android TV over Wi-Fi.",
+      "opinion": "A vivid illustration of how AI coding tools are democratizing hardware tinkering, though the long-term implications for device security and warranty models are worth watching.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/AI_vibe_coding_hacker_hardware.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-22T13:00:00+00:00",
+      "fetched_at": "2026-11-22T15:05:33.804876+00:00"
+    },
+    {
+      "id": 10786,
+      "source": "Guardian AI",
+      "title": "South Korean education minister resigns after AI cheating scandal hits university exams",
+      "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "South Korea's education minister Choi Kyo-jin resigned after an AI-assisted cheating scandal in university entrance exams. The crisis began when the top scorer on a national tax accountancy exam confessed to using a miniature camera and smartphone to cheat, sparking widespread fears about AI-enabled exam fraud.",
+      "opinion": "A striking early example of AI-enabled cheating causing real political consequences, likely a preview of challenges education systems worldwide will face.",
+      "image_url": "https://i.guim.co.uk/img/media/3d9052371f434580f71c25a962110e47f2e6a076/605_0_6228_4986/master/6228.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d3f07b25c72631f8072873e52093f91c",
+      "published_at": "2026-11-22T12:12:08+00:00",
+      "fetched_at": "2026-11-22T15:05:27.099188+00:00"
+    },
+    {
+      "id": 10776,
+      "source": "TechCrunch AI",
+      "title": "Nvidia faces contrasting narratives: strong earnings versus leadership uncertainty and China crackdown",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia reported strong earnings with soaring revenue and impressive guidance under interim CEO Colette Kress, but prominent tech figures including Elon Musk are circulating a petition to bring back former CEO Jensen Huang, who says he's prepared to return. Nvidia's stock continues falling. Separately, Nvidia announced it will stop selling H200 chips to China and crack down on workarounds where Chinese companies remotely accessed chips in nearby countries like Malaysia, potentially affecting roughly 20% of Nvidia's business.",
+      "opinion": "A significant business story on multiple fronts — the leadership vacuum, the China enforcement, and the market's unease all compound into real strategic uncertainty for the most important AI hardware company.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+      "published_at": "2026-11-21T21:07:42+00:00",
+      "fetched_at": "2026-11-22T15:05:22.344633+00:00"
+    },
+    {
+      "id": 10804,
+      "source": "The Verge AI",
+      "title": "UN fails to agree on rules regulating autonomous weapons",
+      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "UN diplomats in Geneva failed to produce legally binding rules on autonomous weapons, agreeing only to 'start discussing options.' Russia, Israel, and the US were the primary obstacles. A compromise gives countries two years to merely propose regulations, with actual negotiations expected to take much longer. The ICRC, UN Secretary-General, and Pope Leo had urged binding rules within one year.",
+      "opinion": "The added detail on US and Israeli obstruction alongside Russia, and the weak two-year compromise, makes the picture even bleaker than yesterday's report suggested. Where coverage differs: Guardian reports the talks 'collapsed' early Saturday after Russian objections could not be overcome; The Verge reports a compromise was reached giving countries two years to propose regulations, with Russia, Israel, and the US all cited as obstacles",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0%2C11.089604074363%2C100%2C77.820791851273&w=1200",
+      "published_at": "2026-11-21T20:03:37+00:00",
+      "fetched_at": "2026-11-22T15:05:34.015851+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10804,
+            "source": "The Verge AI",
+            "title": "The UN fails to agree on rules regulating ‘killer robots’",
+            "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [
+          "Guardian reports the talks 'collapsed' early Saturday after Russian objections could not be overcome; The Verge reports a compromise was reached giving countries two years to propose regulations, with Russia, Israel, and the US all cited as obstacles"
+        ],
+        "is_update": true,
+        "reason": "Same event as yesterday:2 — the UN Geneva negotiations on autonomous weapons. Yesterday's Guardian reported the collapse after Russian objections; The Verge now adds detail on Russia, Israel, and the US as obstacles, the two-year compromise timeline, and humanitarian organizations' reactions."
+      }
+    },
+    {
+      "id": 10787,
+      "source": "Guardian AI",
+      "title": "Column: GTA VI offers escape as real-world systems falter",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/22/grand-theft-auto-vi-gaming",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Dave Schilling reflects on the release of Grand Theft Auto VI, drawing a parallel between real-world tech outages and systemic dysfunction and the appeal of escaping into a virtual world where players have some sense of control.",
+      "opinion": "A cultural commentary column loosely connected to tech; more about gaming culture than AI or technology news.",
+      "image_url": "https://i.guim.co.uk/img/media/e7eaa186311ea0c3bdedb5ad98b467111917fadf/1_0_2999_2400/master/2999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f6b5a8171eb2d472f31d4806c6e2bef9",
+      "published_at": "2026-11-22T12:00:29+00:00",
+      "fetched_at": "2026-11-22T15:05:27.459582+00:00"
+    },
+    {
+      "id": 10777,
+      "source": "TechCrunch AI",
+      "title": "AI agents that live in your text messages are a growing category",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "TechCrunch profiles several AI agents that work through text messaging rather than dedicated apps, including Ask Proxy, Caddy, Comma, Fambot, and the buzzy Instinct (valued at $10 billion after raising $1 billion). These agents handle scheduling, research, reservations, shopping, and task management through ordinary SMS, iMessage, RCS, Signal, and other messaging apps.",
+      "opinion": "The text-message-native AI agent space is heating up fast, with Instinct's $10B valuation signaling serious investor conviction that the messaging interface may win over dedicated apps.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+      "published_at": "2026-11-21T17:00:00+00:00",
+      "fetched_at": "2026-11-22T15:05:22.906876+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10785,
+          "source": "Guardian AI",
+          "title": "Australia's fragile bipartisan AI regulation agreement faces end-of-year parliamentary test",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/23/will-fragile-bipartisanship-on-ai-survive-silly-season-or-is-parliament-heading-for-a-holiday-meltdown-the-agenda",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Australia's parliament enters its final 2026 sitting week with a joint select committee report on AI expected Monday, signaling Labor's direction on AI regulation including datacentres and copyright. Whether fragile bipartisan agreement survives the legislative rush remains uncertain.",
+          "opinion": "Useful signal on how a mid-sized democracy is approaching AI governance, though the outcome is still unknown.",
+          "image_url": "https://i.guim.co.uk/img/media/0703852cd8009754ed16a9c2bbad6d2d80b6fedd/864_0_6880_5504/master/6880.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=ae53c78aa6f1109fd02df283bb90cc3d",
+          "published_at": "2026-11-22T14:00:32+00:00",
+          "fetched_at": "2026-11-22T15:05:26.667232+00:00"
+        },
+        {
+          "id": 10775,
+          "source": "TechCrunch AI",
+          "title": "Signal restricts mobile screenshots to counter AI surveillance threat",
+          "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Signal is restricting screenshot capabilities on Android and iOS in response to what president Meredith Whittaker calls the 'existential threat' of OS-level agentic AI surveillance. AI agents built into Windows, Android, and macOS/iOS can scan screen content, undermining Signal's privacy guarantees. Users can disable the setting, and Whittaker concedes the solution is 'incomplete.'",
+          "opinion": "A concrete, technically grounded move that highlights the fundamental tension between OS-level AI agents and end-to-end encrypted messaging. The acknowledged incompleteness makes it honest rather than performative.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800",
+          "published_at": "2026-11-21T21:37:10+00:00",
+          "fetched_at": "2026-11-22T15:05:21.804664+00:00"
+        },
+        {
+          "id": 10803,
+          "source": "The Verge AI",
+          "title": "Everyday users are using AI coding tools to hack and customize their gadgets",
+          "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A growing trend sees ordinary users employing AI coding tools like Claude Code and Codex to modify software on physical devices — TVs, cameras, and other gadgets. LLMs have dramatically lowered the barrier to hardware customization, as illustrated by a developer who used Claude Code to remove bloatware and redesign the interface on a Xiaomi Android TV over Wi-Fi.",
+          "opinion": "A vivid illustration of how AI coding tools are democratizing hardware tinkering, though the long-term implications for device security and warranty models are worth watching.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/AI_vibe_coding_hacker_hardware.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-22T13:00:00+00:00",
+          "fetched_at": "2026-11-22T15:05:33.804876+00:00"
+        },
+        {
+          "id": 10786,
+          "source": "Guardian AI",
+          "title": "South Korean education minister resigns after AI cheating scandal hits university exams",
+          "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "South Korea's education minister Choi Kyo-jin resigned after an AI-assisted cheating scandal in university entrance exams. The crisis began when the top scorer on a national tax accountancy exam confessed to using a miniature camera and smartphone to cheat, sparking widespread fears about AI-enabled exam fraud.",
+          "opinion": "A striking early example of AI-enabled cheating causing real political consequences, likely a preview of challenges education systems worldwide will face.",
+          "image_url": "https://i.guim.co.uk/img/media/3d9052371f434580f71c25a962110e47f2e6a076/605_0_6228_4986/master/6228.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d3f07b25c72631f8072873e52093f91c",
+          "published_at": "2026-11-22T12:12:08+00:00",
+          "fetched_at": "2026-11-22T15:05:27.099188+00:00"
+        },
+        {
+          "id": 10776,
+          "source": "TechCrunch AI",
+          "title": "Nvidia faces contrasting narratives: strong earnings versus leadership uncertainty and China crackdown",
+          "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia reported strong earnings with soaring revenue and impressive guidance under interim CEO Colette Kress, but prominent tech figures including Elon Musk are circulating a petition to bring back former CEO Jensen Huang, who says he's prepared to return. Nvidia's stock continues falling. Separately, Nvidia announced it will stop selling H200 chips to China and crack down on workarounds where Chinese companies remotely accessed chips in nearby countries like Malaysia, potentially affecting roughly 20% of Nvidia's business.",
+          "opinion": "A significant business story on multiple fronts — the leadership vacuum, the China enforcement, and the market's unease all compound into real strategic uncertainty for the most important AI hardware company.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+          "published_at": "2026-11-21T21:07:42+00:00",
+          "fetched_at": "2026-11-22T15:05:22.344633+00:00"
+        },
+        {
+          "id": 10804,
+          "source": "The Verge AI",
+          "title": "UN fails to agree on rules regulating autonomous weapons",
+          "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "UN diplomats in Geneva failed to produce legally binding rules on autonomous weapons, agreeing only to 'start discussing options.' Russia, Israel, and the US were the primary obstacles. A compromise gives countries two years to merely propose regulations, with actual negotiations expected to take much longer. The ICRC, UN Secretary-General, and Pope Leo had urged binding rules within one year.",
+          "opinion": "The added detail on US and Israeli obstruction alongside Russia, and the weak two-year compromise, makes the picture even bleaker than yesterday's report suggested. Where coverage differs: Guardian reports the talks 'collapsed' early Saturday after Russian objections could not be overcome; The Verge reports a compromise was reached giving countries two years to propose regulations, with Russia, Israel, and the US all cited as obstacles",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0%2C11.089604074363%2C100%2C77.820791851273&w=1200",
+          "published_at": "2026-11-21T20:03:37+00:00",
+          "fetched_at": "2026-11-22T15:05:34.015851+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10804,
+                "source": "The Verge AI",
+                "title": "The UN fails to agree on rules regulating ‘killer robots’",
+                "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [
+              "Guardian reports the talks 'collapsed' early Saturday after Russian objections could not be overcome; The Verge reports a compromise was reached giving countries two years to propose regulations, with Russia, Israel, and the US all cited as obstacles"
+            ],
+            "is_update": true,
+            "reason": "Same event as yesterday:2 — the UN Geneva negotiations on autonomous weapons. Yesterday's Guardian reported the collapse after Russian objections; The Verge now adds detail on Russia, Israel, and the US as obstacles, the two-year compromise timeline, and humanitarian organizations' reactions."
+          }
+        },
+        {
+          "id": 10787,
+          "source": "Guardian AI",
+          "title": "Column: GTA VI offers escape as real-world systems falter",
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/22/grand-theft-auto-vi-gaming",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Dave Schilling reflects on the release of Grand Theft Auto VI, drawing a parallel between real-world tech outages and systemic dysfunction and the appeal of escaping into a virtual world where players have some sense of control.",
+          "opinion": "A cultural commentary column loosely connected to tech; more about gaming culture than AI or technology news.",
+          "image_url": "https://i.guim.co.uk/img/media/e7eaa186311ea0c3bdedb5ad98b467111917fadf/1_0_2999_2400/master/2999.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=f6b5a8171eb2d472f31d4806c6e2bef9",
+          "published_at": "2026-11-22T12:00:29+00:00",
+          "fetched_at": "2026-11-22T15:05:27.459582+00:00"
+        },
+        {
+          "id": 10777,
+          "source": "TechCrunch AI",
+          "title": "AI agents that live in your text messages are a growing category",
+          "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "TechCrunch profiles several AI agents that work through text messaging rather than dedicated apps, including Ask Proxy, Caddy, Comma, Fambot, and the buzzy Instinct (valued at $10 billion after raising $1 billion). These agents handle scheduling, research, reservations, shopping, and task management through ordinary SMS, iMessage, RCS, Signal, and other messaging apps.",
+          "opinion": "The text-message-native AI agent space is heating up fast, with Instinct's $10B valuation signaling serious investor conviction that the messaging interface may win over dedicated apps.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+          "published_at": "2026-11-21T17:00:00+00:00",
+          "fetched_at": "2026-11-22T15:05:22.906876+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/nexor404/status/2124197356681695403",
+      "author": "nexor404",
+      "headline": "A Grok bot sent __\"do not sell or share\" requests to 186 companies and apps__ in a single session; 171 confirmed within two weeks.",
+      "tweet_id": "4201eba9-b6bc-81a8-882e-fbe51bbc2e6a",
+      "source_text": "GROK BOT SENT ONE \"DO NOT SELL OR SHARE\" REQUEST TO EVERY APP AND COMPANY ON MY PHONE. 186 OF THEM. 171 CONFIRMED\n\nmost states now give you the right to stop companies from selling or sharing your data\n\nthe catch: you have to ask each one. a form here, an email there, a phone line for some\n\ni had 112 apps on my phone and 74 more companies in my email\n\nwhat grok bot did:\n→ found the \"do not sell or share\" page for every one\n→ sent 112 web forms, 33 emails, 21 calls and 20 privacy signals\n→ kept a list of who confirmed and who didn't\n→ sent reminders to the ones that went quiet\n\ncompanies get about 2 weeks to reply. over 14 days, 171 confirmed\n\nthe other 15 got a second request this morning\n\nthe prompt: \"find every app on my phone and every company in my email. send each one a 'do not sell or share my personal information' request the way they accept it. track confirmations and follow up after 15 days.\"\n\nthe setup is in the article below ↓",
+      "created_time": "2026-11-22T02:47:00.000Z",
+      "canonical_url": "https://twitter.com/nexor404/status/2124197356681695403",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/crazyMLguy/status/2124170693567017400",
+      "author": "crazyMLguy",
+      "headline": "OpenUncensored abliterated Inkling 2 Mini's refusals by __modifying just 20 attention projection tensors__ — MMLU score barely moved, 78.95% → 79.47%.",
+      "tweet_id": "4201eba9-b6bc-81fb-b9ee-c2b9f8b64750",
+      "source_text": "𝗜𝗻𝗸𝗹𝗶𝗻𝗴 𝟮 𝗠𝗶𝗻𝗶 𝗨𝗻𝗰𝗲𝗻𝘀𝗼𝗿𝗲𝗱: 𝗥𝗲𝗺𝗼𝘃𝗶𝗻𝗴 𝗟𝗟𝗠 𝗥𝗲𝗳𝘂𝘀𝗮𝗹𝘀 𝗪𝗶𝘁𝗵𝗼𝘂𝘁 𝗥𝗲𝘁𝗿𝗮𝗶𝗻𝗶𝗻𝗴\n\nOpenUncensored has released an abliterated version of Thinking Machine's Inkling 2 Mini.\n\nWhat's interesting is the engineering behind it:\n\nUses directional ablation to remove refusal behavior.\nModifies just 20 attention projection tensors.\nPreserves the original 26B MoE architecture with 3.4B active parameters.\nMMLU score remains virtually unchanged: 78.95% → 79.47%.\nSupports vision and 1M-token context.\n\nIn their evaluation, refusals dropped from 32/32 to 0/32 tested prompts.\n\nAn interesting demonstration of how targeted weight modifications can change model behavior without traditional fine-tuning.\n\nModel: https://t.co/wJqXxWn51T\n\n#LLM #OpenSource #AI #MachineLearning",
+      "created_time": "2026-11-22T02:42:00.000Z",
+      "canonical_url": "https://twitter.com/crazyMLguy/status/2124170693567017400",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/JacksonAtkinsX/status/2124165894188511501",
+      "author": "JacksonAtkinsX",
+      "headline": "Jackson Atkins published code delivering a __4× speedup in Inkling-2-mini prefill__ and 37% faster decode — hardware results welcome.",
+      "tweet_id": "4201eba9-b6bc-8146-a2ed-fd0454c4230e",
+      "source_text": "Inkling-2-mini codes like a monster but it is SLOW.\n\nNow its not. \n\n4x speedup in prefill.\n\n37% speedup in decode.\n\nLink to the code below. \n\nTry it on your hardware. Let me know your results. https://t.co/zRtkiTHt6v",
+      "created_time": "2026-11-22T02:42:00.000Z",
+      "canonical_url": "https://twitter.com/JacksonAtkinsX/status/2124165894188511501",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/orenoa7/status/2124024630558208183",
+      "author": "orenoa7",
+      "headline": "orenoa7's RTX 5090 benchmarks show Inkling 2 Mini fires __~6× more GPU kernel calls per token than Gemma__ — the likely reason its MoE advantage doesn't translate to speed yet.",
+      "tweet_id": "4201eba9-b6bc-8144-9cbd-c1d3e7445c23",
+      "source_text": "Inkling 2 Mini 26B A5Bを早速実測！同じサイズ帯のGemma 4 26B-A4B、Qwen3.8 27BとRTX5090で比較\n\n結果としてはMoEだから爆速！とはならず現状のllama.cpp実装だと速度がQwen3.8 27B Denseと同等の速度となった\n\n■ Inklingの計測結果\n256K入力時\n・Prefill：1630 tok/s\n・Prose：43 tok/s\n・Code：57 tok/s\n\nGemma 4 26B-A4B比：\nPrefill 49% / Prose 32% / Code 32%\nQwen3.8 27B比：\nPrefill 120% / Prose 82% / Code 82%\n\n今回llama.cppでそのまま動かしたが最適化しだいで改善の余地はありそう\nRTX 3060 12GBとDGX SparkのInklingは計測中\n\n■ なぜInklingは高速にならないのか\nInklingは中央12層を3回ループ実行する構造でアクティブ3.4Bに対しループ込みでは5.4B相当\nそれでもGemmaよりかなり遅い理由をnsysで調べた\n\nPrefill\n・Gemma4 26B A4Bにはない非量子化の行列演算が存在\n・CPUからGPUへattentionの参照表の転送が発生していると推測\n\nDecode\n・1トークンあたりの kernel 呼び出しが Gemma の約6倍（約7370回に対してGemmaは約1,260回）\n\nこれらが速度差の一因になっている可能性がある\n\n■ 256K Prefillの処理時間内訳\n・Gemma：attentionが約8割\n・Inkling：attentionは約2割で、残りはattention以外の処理\n・実際に8K→256KでのPrefill低下は\nGemma -69%（10948→3350 tok/s）\nInkling -22%（2082→1630 tok/s）\n\n■ 前提条件\nモデル：\nUnsloth GGUF\n・Inkling 2 Mini (UD-Q4_K_XL 17.6GB)\n・Gemma 4 26B-A4B (QAT UD-Q4_K_XL 14.2GB)\n・Qwen3.8 27B (UD-Q4_K_XL 17.7GB)\n\nドラフト：\n3モデルともON\n・Inkling：公式dspark\n・Gemma / Qwen：MTP\n\n推論エンジン：\nunsloth/llama.cpp b12588-mix-c0c3de8\n(Inkling対応版をビルド / 3モデル共通)\n\nハードウェア：\nRTX 5090 32GB (400W) / 全てGPU\n\n計測：\n1リクエスト / 出力1024 / greedy\n思考OFF / ctx 262144\n入力は文章とコード / 各点5回の中央値\nKV：f16\n・Qwenだけq8_0\n・f16だと256KでVRAM 32GBに入らない",
+      "created_time": "2026-11-22T02:42:00.000Z",
+      "canonical_url": "https://twitter.com/orenoa7/status/2124024630558208183",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/rskjr/status/2123984046506344759",
+      "author": "rskjr",
+      "headline": "rskjr's coding benchmark puts Inkling 2 Mini at __.92 versus Qwen3.8's .95__ — and it's markedly slower, with llama.cpp implementation carrying significant perf issues.",
+      "tweet_id": "4201eba9-b6bc-8192-b7d5-c800b33f0ac6",
+      "source_text": "Inkling 2 mini not looking good for coding\n\non the first 47 tasks in on my benchmark:\n\nInkling 2 mini: .92 in 3.3 hours\n\n35b-a3b: .88 in 1.9 hours\n3.8 27b: .95 in 2.0 hours\nqfn: .96 in 2.3 hours\n\nvery slow. 48 tok/s\n\nllama impl has significant perf issues",
+      "created_time": "2026-11-22T02:42:00.000Z",
+      "canonical_url": "https://twitter.com/rskjr/status/2123984046506344759",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AIDuckLabs/status/2123919819930042737",
+      "author": "AIDuckLabs",
+      "headline": "SpaceX AI engineer Lauren Tan makes the case for __fewer, sharper bots__ — she cut from 100 down to 12, and says those 12 outperform everything that came before.",
+      "tweet_id": "4201eba9-b6bc-8108-a597-d73870667241",
+      "source_text": "HOLY F*CK. she joins a call and her lights just turn on. her bot figured out how, no manual\n\nSpaceXAI engineer Lauren Tan:\n\n\"most people still just ask their bot questions. that's why it never actually does anything for them. I went from 0 bots to 100, then back down to 12. and those 12 get more done than the 100 ever did\"\n\n76-minute talk. she goes from asking a chatbot stuff to 12 bots running her work, her meetings and her house\n\nOne Bot Per Problem - Bots In Your Meetings - Bots Running Cursor Agents - A Business That Runs Itself\n\nbetter than any $5,000 AI agents bootcamp\n\nskip netflix, watch it tonight, then tell me - what would you give a bot first?",
+      "created_time": "2026-11-22T02:42:00.000Z",
+      "canonical_url": "https://twitter.com/AIDuckLabs/status/2123919819930042737",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/p0/status/2124249202389843982",
+      "author": "p0",
+      "headline": "Independent benchmarks rank Inkling 2 Mini __#1 on cost efficiency__ at $25.80 per correct answer — and it gains more from adding web search than any other model tested.",
+      "tweet_id": "4201eba9-b6bc-815f-8601-f6e4bfa5a9f6",
+      "source_text": "NEW: Inkling 2 Mini is the most efficient model we've tested:\n\n- #1 on efficiency (cost vs. intelligence)\n- #9 on intelligence (78.4) overall\n- #1 on intelligence among open-weights models\n- Lowest cost per correct answer ($25.80)\n- Biggest accuracy gain from adding web search\n\nIt uses a looped transformer, which runs its middle layers three times for every token. That lets a 26B-parameter model reason more without generating more tokens, which keeps costs low. A model that size can't store as many facts, so it relies on search to fill the gaps, and that's where it gains the most.",
+      "created_time": "2026-11-22T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/p0/status/2124249202389843982",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xnicc0/status/2124118193564201071",
+      "author": "0xnicc0",
+      "headline": "Nine free repos to give __Fable 5.2-generated animations__ professional motion timing, beat sync, and word-perfect captions.",
+      "tweet_id": "4201eba9-b6bc-813c-8929-ca98cbfabffd",
+      "source_text": "this is f*cking gold for Fable 5.2\n\n9 free repos that make your animations look like a $10,000 studio made them\n\nrebuild. timing. sound. beat. captions. export.\n\n01 reanimate → rebuild any animation you see, frame by frame\nhttps://t.co/alBIEnjVxo\n\n02 motion-design-skill → timing and easing like a trained animator\nhttps://t.co/MNwuF0ahvK\n\n03 cinetic → launch films straight from code\nhttps://t.co/Z75N3h577q\n\n04 Tweakpane → sliders for every tiny detail\nhttps://t.co/TsYsqqXQkw\n\n05 Openverse → free sounds and music for every scene\nhttps://t.co/RRB9GBRJha\n\n06 librosa → finds the beat so your motion follows it\nhttps://t.co/ku60cz0L70\n\n07 WhisperX → word-perfect captions, timed to the millisecond\nhttps://t.co/X89UGt5KRu\n\n08 Remotion Skills → official video skills for any coding agent\nhttps://t.co/omniaicbTZ\n\n09 FFmpeg → turns your animation into a real video file\nhttps://t.co/D1qZhDrOYO\n\nreference → timing → film → sound → beat → captions → MP4\n\nStudio crew: weeks of work and a big invoice\nThese 9 repos: one afternoon and $0\n\nBookmark this, future you will thank you\n\nThen read the full motion design course for Fable 5.2 in the article below ↓",
+      "created_time": "2026-11-22T02:32:00.000Z",
+      "canonical_url": "https://twitter.com/0xnicc0/status/2124118193564201071",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/sermakarevich/status/2124210425331921148",
+      "author": "sermakarevich",
+      "headline": "A breakdown of __16 LLM eval frameworks__ mapping what each scores — answers, tool calls, paths, conversations, and cost — and how they gate quality.",
+      "tweet_id": "4201eba9-b6bc-8128-936f-f751e1c2a3ad",
+      "source_text": "An overview of 16 eval frameworks - what each proposes to score: answers, steps, tool calls, paths, conversations, cost. How they grade and gate. https://t.co/EVky7nOHyx",
+      "created_time": "2026-11-22T02:22:00.000Z",
+      "canonical_url": "https://twitter.com/sermakarevich/status/2124210425331921148",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/atomic_chat_hq/status/2124147181418602912",
+      "author": "atomic_chat_hq",
+      "headline": "Uncensored Inkling 2 Mini Runs on a __12 GB Laptop__ With Zero Refusals and 98% Benchmark Accuracy",
+      "tweet_id": "4201eba9-b6bc-812e-9f98-eada5d5d0439",
+      "source_text": "Run UNCENSORED Inkling 2 Mini (26.4B) locally on a 12 GB laptop 🔥\n\nRefusals dropped from 100% to 0% in our test and kept 98% of its original accuracy on MMLU\n\nWe released 3 GGUFs from 8.67 to 16.53 GB\n\nGet quants here 👇\nhttps://t.co/7LlAlFw7rV",
+      "created_time": "2026-11-22T02:22:00.000Z",
+      "canonical_url": "https://twitter.com/atomic_chat_hq/status/2124147181418602912",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0x0SojalSec/status/2124253762466513175",
+      "author": "0x0SojalSec",
+      "headline": "A 26B Local Model __Outperforms Claude Sonnet 5.5__ on Apple Silicon in Real-World Benchmarks",
+      "tweet_id": "4201eba9-b6bc-8144-9cfa-ec2d3a88e920",
+      "source_text": "A 26B model just beat Claude Sonnet 5.5 on locally at MacBook.\n\n- EXO Labs' benchmarks of Inkling 2 Mini \n- 210 tok/s decode | 3620 tok/s prefill M5 Ultra\n- 125 tok/s decode | 1750 tok/s prefill M5 Max MacBook Pro\n- Built a native weather app 1.8× faster than Sonnet 5.5\n\nLooping layers are extremely well suited to memory-constrained local devices. https://t.co/E5w5iSuAMv",
+      "created_time": "2026-11-22T02:17:00.000Z",
+      "canonical_url": "https://twitter.com/0x0SojalSec/status/2124253762466513175",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mr_kozh/status/2124127941688688648",
+      "author": "mr_kozh",
+      "headline": "__The Gap Between Watching AI Demos and Rebuilding One Workflow for Yourself__ Is Where the Advantage Lives",
+      "tweet_id": "4201eba9-b6bc-81f8-bdb5-ffc447794f07",
+      "source_text": "Holy f*ck, 1.4 million people watched Matt Palmer build a Grok Bot team in 30 minutes and most still use AI one prompt at a time.\n\nMatt starts with one bot that can operate its own cloud computer, then connects specialists into complete workflows.\n\nDuring the demo, they move X followers into Notion, research information, build personal software and send coding tasks into Cursor.\n\nThe important part is not the four individual examples. One bot can finish its step, pass the result to the next bot and keep the workflow running after you close the laptop.\n\nThat is the difference between asking AI for help and giving an AI team responsibility for the outcome.\n\nMost people watched the demonstration as entertainment. The advantage belongs to those who rebuild one workflow for their own work.\n\nThese five free guides show how to start:\n\nGrok Bot 101 - build your first bot and connect specialists\nhttps://t.co/RKVGcjoHnb\n\nEngineering - run a fleet of coding bots\nhttps://t.co/FAsQKrl1Qa\n\nMultiple teams - coordinate several Grok Bot projects\nhttps://t.co/KiMPqRWxxZ\n\nDesign - use always-on agents for visual work\nhttps://t.co/6ygBGt8hfo\n\nMarketing - research, positioning, ads and website updates\nhttps://t.co/gYlXtqiAAQ\n\nDo not begin by building an imaginary company with 50 bots.\n\nTake one repetitive task, teach it to one bot and add the second only when the first handoff becomes reliable.\n\nBookmark this and build the workflow that the other 1.4 million viewers only watched.\n\nThen read the full 6 Grok Bots and 200+ agents setup below ↓",
+      "created_time": "2026-11-22T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/mr_kozh/status/2124127941688688648",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/NielsRogge/status/2124094216926015549",
+      "author": "NielsRogge",
+      "headline": "__Exactly How Much RAM You Need__ to Run Inkling-2-Mini on Your Laptop, by Quantization Level",
+      "tweet_id": "4201eba9-b6bc-81bc-ad59-e0995bf68c87",
+      "source_text": "For folks wondering whether your laptop can run Inkling-2-Mini, there's a nice guide by @UnslothAI \n\nNote that you can run it on devices with as little as 9 GB of RAM, depending on the size you choose! Here are the memory requirements by size (expressed as bits):\n\n1-bit: 9 GB\n2-bit: 10-11 GB\n3-bit: 13-15 GB\n4-bit: 17-18 GB\n8-bit: 24 GB\n\nA larger size (more bits) means better performance but also uses more memory, which can slow it down.\n\nPersonally, I run the 3-bit version on my MacBook :)",
+      "created_time": "2026-11-22T02:12:00.000Z",
+      "canonical_url": "https://twitter.com/NielsRogge/status/2124094216926015549",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/startupideaspod/status/2124227570292117977",
+      "author": "startupideaspod",
+      "headline": "A guide to __designing an agent harness__ — the structural layer that keeps AI agent workflows from turning into spaghetti.",
+      "tweet_id": "4201eba9-b6bc-8174-864d-e196b0a9dc63",
+      "source_text": "How to design an agent harness https://t.co/aU9yRY4e7L https://t.co/pcv80CNLpv",
+      "created_time": "2026-11-22T01:57:00.000Z",
+      "canonical_url": "https://twitter.com/startupideaspod/status/2124227570292117977",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/codyschneider/status/2123914296425955763",
+      "author": "codyschneider",
+      "headline": "Cody Schneider says agency owners waste __a full work week each month__ on client reports clients barely read anyway — he's hosting a free class on automating it with agents.",
+      "tweet_id": "41f1eba9-b6bc-81e0-aabc-ccb1d224544f",
+      "source_text": "client reporting is the most expensive copy paste job in marketing\n\nsomeone on reddit did the math: 2-3 hours per client per month, times 10 clients, is a full work week every month logging into GA4, meta and google ads and pasting screenshots into google docs\n\nand agency owners in the same threads said clients barely open the polished reports anyway. what gets read is a one page note with the 3-4 numbers that mattered and what changed\n\nan agent can write that note for every client before your team logs on monday\n\n- pulls meta, google ads, GA4 and hubspot for every client from one warehouse\n\n- finds what changed week over week and why\n\n- writes the one page note in your agency's voice\n\n- posts it in the client's slack channel\n\ntuesday nov 24 I'm hosting a free live class where I'm going to teach you how to automate client reporting and the rest of the middle work\n\n117 people are already going, join now\n\neven if you can't join live, the recording goes to everyone who signs up\n\nregister here - https://t.co/aZIRbR5idQ",
+      "created_time": "2026-11-21T19:12:00.000Z",
+      "canonical_url": "https://twitter.com/codyschneider/status/2123914296425955763",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/PawelHuryn/status/2124143958120968366",
+      "author": "PawelHuryn",
+      "headline": "Pawel Huryn found that __55–85% of his Claude usage__ was the agent re-reading its own history — his fix: start each phase fresh with a shared STATUS.md file.",
+      "tweet_id": "41f1eba9-b6bc-81e6-8730-f98fde662fb8",
+      "source_text": "In case long agent sessions are eating your Claude usage:\nIn mine, 55% to 85% of it was the agent re-reading its own history.\n\nNow each phase of a long build starts in a fresh session, with my free /flight-deck skill: https://t.co/VSLGyLdeCP\n\nWhy it pays off: in one long session, every turn re-reads the whole conversation. 2x the length costs about 4x to re-read.\n\nWhy not just compact? Compaction lives inside one session of one tool, in the provider's format. My builds run across Claude Code, Codex and fresh review sessions. So the state lives in a file I own: STATUS.md, rewritten at the end of each phase with what's running, what's blocked and what's next. Any session in any tool can read it.\n\nMIT. If it helps, star the repo.",
+      "created_time": "2026-11-21T15:57:00.000Z",
+      "canonical_url": "https://twitter.com/PawelHuryn/status/2124143958120968366",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/minchoi/status/2124175417292795922",
+      "author": "minchoi",
+      "headline": "Thinking Machines' Inkling 2 Mini __built a playable flight simulator offline__ on a MacBook Pro — 26B params, open weights, no cloud required.",
+      "tweet_id": "4201eba9-b6bc-81ce-a2dc-c12052a0ae95",
+      "source_text": "Thinking Machines' new open model built a playable flight simulator offline on a MacBook Pro, mid-flight\n\nInkling 2 Mini runs its middle layers 3x per token, so it reasons more and writes less. Fits in ~20GB.\n\nOpen weights. Agentic coding, no cloud. https://t.co/gOnbrMfrDT https://t.co/Mz71u29DEw",
+      "created_time": "2026-11-22T02:52:00.000Z",
+      "canonical_url": "https://twitter.com/minchoi/status/2124175417292795922",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/lmstudio/status/2123958452808765580",
+      "author": "lmstudio",
+      "headline": "Inkling 2 Mini lands in LM Studio and leads sub-100B models on __DeepSWE v1.1 at 48.2%__ — Apache 2.0, ~18 GB to run locally.",
+      "tweet_id": "4201eba9-b6bc-8183-8d41-d4f7b9f1428d",
+      "source_text": "Inkling 2 Mini by @thinkymachines is now in LM Studio! \n\nIt's a 26B looped transformer. Requires ~18GB to run locally, Apache 2.0 licensed.\n\nLeads among <100B models on DeepSWE v1.1 (48.2%) and Vals Index v2.2 (46.5%)\n\n🚀🚀🚀 https://t.co/FoZYIbWBZP",
+      "created_time": "2026-11-22T02:47:00.000Z",
+      "canonical_url": "https://twitter.com/lmstudio/status/2123958452808765580",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://martinfowler.com/bliki/ArchitectureDecisionRecord.html",
+      "author": "ghassenfaidi",
+      "item_id": "hn:50600300",
+      "headline": "Martin Fowler refreshed his guide to __writing Architecture Decision Records__ — still the clearest take in the field.",
+      "subreddit": null,
+      "source_text": "Tips for writing ADRs by Martin Fowler (2026)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:57:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://martinfowler.com/bliki/ArchitectureDecisionRecord.html",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.kadoa.com/energy-prices/insights/fossil-co2-2026",
+      "author": "hubraumhugo",
+      "item_id": "hn:50599989",
+      "headline": "__Global fossil CO2 emissions__ are projected to fall 0.4% in 2026, per new analysis.",
+      "subreddit": null,
+      "source_text": "Global fossil CO2 emissions are projected to fall 0.4% in 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:23:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://kadoa.com/energy-prices/insights/fossil-co2-2026",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+      "author": "mgh2",
+      "item_id": "hn:50600317",
+      "headline": "Lenny's Newsletter breaks down the __state of the tech job market__ heading into late 2026.",
+      "subreddit": null,
+      "source_text": "State of the tech job market: late 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:59:50+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/relaticle/relaticle",
+      "author": "manukminasyan",
+      "item_id": "hn:50600315",
+      "headline": "__Relaticle__ is an open-source CRM built for AI agents — Claude and ChatGPT can operate directly inside it.",
+      "subreddit": null,
+      "source_text": "Show HN: Relaticle, an open-source CRM that Claude and ChatGPT can work in",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:59:49+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/relaticle/relaticle",
+      "learning_score": 2
+    },
+    {
+      "url": "https://fi-le.net/verification/",
+      "author": "fi-le",
+      "item_id": "hn:50600280",
+      "headline": "A step-by-step guide walks through __formal software verification__ from first principles.",
+      "subreddit": null,
+      "source_text": "How to Formally Verify Everything",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:55:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://fi-le.net/verification",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/VishnuSrivatsava/SocketSweep",
+      "author": "mathcuber",
+      "item_id": "hn:50600263",
+      "headline": "__SocketSweep__ brings WizTree-style fast storage visualization to Android via ADB.",
+      "subreddit": null,
+      "source_text": "Show HN: SocketSweep – WizTree-style fast Android storage analyzer over ADB",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:54:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/VishnuSrivatsava/SocketSweep",
+      "learning_score": 2
+    },
+    {
+      "url": "https://ew.4ier.icu/en/",
+      "author": "4ier",
+      "item_id": "hn:50600256",
+      "headline": "__Elephant Walk__ is a local-first KVM that runs across macOS, Windows, Linux (Wayland), and Android.",
+      "subreddit": null,
+      "source_text": "Show HN: Elephant Walk – Local KVM for macOS, Windows, Linux (Wayland), Android",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:53:57+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ew.4ier.icu/en",
+      "learning_score": 2
+    },
+    {
+      "url": "https://sustainabilitydialogue.uchicago.edu/news/data-centers-pollution-and-the-communities-left-behind/",
+      "author": "thelastgallon",
+      "item_id": "hn:50600228",
+      "headline": "A UChicago report details how __data center pollution__ is hitting nearby communities hardest.",
+      "subreddit": null,
+      "source_text": "Data Centers, Pollution, and the Communities Left Behind",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:51:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sustainabilitydialogue.uchicago.edu/news/data-centers-pollution-and-the-communities-left-behind",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.seangoedecke.com/why-output-caching-doesnt-work/",
+      "author": "aray07",
+      "item_id": "hn:50600215",
+      "headline": "Sean Goedecke explains why __LLM output caching__ fails in practice despite its theoretical appeal.",
+      "subreddit": null,
+      "source_text": "Why output caching doesn't work",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:50:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://seangoedecke.com/why-output-caching-doesnt-work",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/Vitruves/carquet",
+      "author": "Vitruves",
+      "item_id": "hn:50600202",
+      "headline": "__Carquet__ is a 500 KB C library that reads Parquet files faster than Arrow, Polars, and DuckDB.",
+      "subreddit": null,
+      "source_text": "A 500 KB C library that reads Parquet faster than Arrow, polars, FP, and DuckDB",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:47:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Vitruves/carquet",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/L00PLeGeNd/Witnis",
+      "author": "loopisme",
+      "item_id": "hn:50600064",
+      "headline": "__Witnis__ maps code blast radius through inheritance chains — where grep stops, it keeps going.",
+      "subreddit": null,
+      "source_text": "Show HN: Witnis – blast radius that follows inheritance where grep stops",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:32:33+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/L00PLeGeNd/Witnis",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/AndreKfm/NeverSharp",
+      "author": "andrekaufmann",
+      "item_id": "hn:50600036",
+      "headline": "__NeverSharp__ is a TypeScript compiler written in C#, benchmarked against Go and Rust.",
+      "subreddit": null,
+      "source_text": "NeverSharp: TypeScript compiler in C#, benchmarked against Go and Rust",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-22T14:28:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/AndreKfm/NeverSharp",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__AI may not work like the human brain after all, scientists discover__",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120075701.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-22T15:18:31.146533+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          10785
+        ],
+        "reason": "Standalone article about Australian parliament's AI regulation debate during end-of-year legislative session.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10775
+        ],
+        "reason": "Standalone article about Signal's new mobile screenshot restrictions in response to OS-level AI agent surveillance.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10803
+        ],
+        "reason": "Standalone article about everyday users using AI coding tools to modify software on physical gadgets.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10786
+        ],
+        "reason": "Standalone article about South Korea's education minister resigning over AI-assisted exam cheating.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10776
+        ],
+        "reason": "Standalone article contrasting Nvidia's strong earnings with leadership turmoil and China export restrictions.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10804
+        ],
+        "reason": "Same event as yesterday:2 — the UN Geneva negotiations on autonomous weapons. Yesterday's Guardian reported the collapse after Russian objections; The Verge now adds detail on Russia, Israel, and the US as obstacles, the two-year compromise timeline, and humanitarian organizations' reactions.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10787
+        ],
+        "reason": "Standalone opinion column on GTA VI's release and the appeal of virtual escape from real-world dysfunction.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10777
+        ],
+        "reason": "Standalone article listing notable AI agents that operate through text messaging platforms.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-22T15:19:09.816947",
+      "send_completed_at": "2026-11-22T15:19:17.573614",
+      "event_name": "schedule",
+      "github_run_id": "45036256008",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "ef6e62305143278da34f4cefbf7e271cca5b31e8a7dac6dc47353f9a673da79c"
+}
