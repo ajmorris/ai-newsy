@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-21T00:00:00Z",
-  "issueCount": 195,
+  "generatedAt": "2026-11-22T00:00:00Z",
+  "issueCount": 196,
   "latestIssue": {
-    "slug": "2026-11-21",
-    "digestDate": "2026-11-21",
-    "displayDate": "Nov 21, 2026",
-    "issueNumber": "61121",
-    "subject": "ISSUE 61121 \u00b7 10 STORIES \u00b7 11 MIN READ",
-    "intro": "A 167-year-old math problem may have finally fallen \u2014 twice in one week. An Anthropic mathematician announced a Lean-verified proof of the Riemann hypothesis developed with substantial help from Claude, while a Stanford postdoc independently produced a purely human-written proof of the even broader General Riemann hypothesis. That headline alone would make for a landmark day, but we've also got a sobering expos\u00e9 on millions of leaked secrets in the AI supply chain, collapsed UN talks on autonomous weapons, and the question of whether you can repossess a chip floating in orbit.",
-    "articleCount": 10,
-    "urlPath": "/issues/2026-11-21.html",
-    "contentHash": "c2fb8d8e0edabdc601f75de8b31cc65d42f7257ed11d22d2ace133e96ef3fc3f"
+    "slug": "2026-11-22",
+    "digestDate": "2026-11-22",
+    "displayDate": "Nov 22, 2026",
+    "issueNumber": "61122",
+    "subject": "ISSUE 61122 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "From the UN failing to agree on autonomous weapons rules to Signal scrambling to block AI surveillance and a South Korean minister resigning over an AI cheating scandal, today's big theme is institutions racing \u2014 and often failing \u2014 to keep up with AI's reach into every corner of life. But it's not all friction: everyday tinkerers are using AI coding tools to hack their own gadgets, and a new wave of AI agents living in your text messages wants to handle your errands. Buckle in \u2014 today's digest covers the full spectrum, from geopolitical standoffs to the AI assistant that books your dinner reservations over SMS.",
+    "articleCount": 8,
+    "urlPath": "/issues/2026-11-22.html",
+    "contentHash": "ef6e62305143278da34f4cefbf7e271cca5b31e8a7dac6dc47353f9a673da79c"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-22",
+      "digestDate": "2026-11-22",
+      "displayDate": "Nov 22, 2026",
+      "issueNumber": "61122",
+      "subject": "ISSUE 61122 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "From the UN failing to agree on autonomous weapons rules to Signal scrambling to block AI surveillance and a South Korean minister resigning over an AI cheating scandal, today's big theme is institutions racing \u2014 and often failing \u2014 to keep up with AI's reach into every corner of life. But it's not all friction: everyday tinkerers are using AI coding tools to hack their own gadgets, and a new wave of AI agents living in your text messages wants to handle your errands. Buckle in \u2014 today's digest covers the full spectrum, from geopolitical standoffs to the AI assistant that books your dinner reservations over SMS.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-11-22.html",
+      "contentHash": "ef6e62305143278da34f4cefbf7e271cca5b31e8a7dac6dc47353f9a673da79c"
+    },
     {
       "slug": "2026-11-21",
       "digestDate": "2026-11-21",
@@ -133,17 +144,6 @@
       "articleCount": 10,
       "urlPath": "/issues/2026-11-11.html",
       "contentHash": "26c2704249425c55623fdebd49c599386574f011e1f099702f44982fcc4c64cb"
-    },
-    {
-      "slug": "2026-11-10",
-      "digestDate": "2026-11-10",
-      "displayDate": "Nov 10, 2026",
-      "issueNumber": "61110",
-      "subject": "ISSUE 61110 \u00b7 12 STORIES \u00b7 11 MIN READ",
-      "intro": "Anthropic is having a week for the history books \u2014 hot on the heels of Claude Fable 5.2 claiming the top spot on AI leaderboards, the company has set its IPO price range at a staggering $1.4 trillion valuation, which would make it one of the largest public offerings ever. Meanwhile, Adobe is betting big on agentic AI with sweeping Creative Cloud integrations, a critical SSH vulnerability dubbed \"sshole\" is being actively exploited in the wild, and the tech job market is sending mixed signals with PM roles surging while engineering hiring flatlines. Grab your coffee \u2014 there's a lot to unpack today.",
-      "articleCount": 12,
-      "urlPath": "/issues/2026-11-10.html",
-      "contentHash": "78276980bbca89f95828f4fb01fce2986bb91f0928994cb7fedfe1f1a0151670"
     }
   ]
 }
