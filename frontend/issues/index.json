@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-22T00:00:00Z",
-  "issueCount": 196,
+  "generatedAt": "2026-11-23T00:00:00Z",
+  "issueCount": 197,
   "latestIssue": {
-    "slug": "2026-11-22",
-    "digestDate": "2026-11-22",
-    "displayDate": "Nov 22, 2026",
-    "issueNumber": "61122",
-    "subject": "ISSUE 61122 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "From the UN failing to agree on autonomous weapons rules to Signal scrambling to block AI surveillance and a South Korean minister resigning over an AI cheating scandal, today's big theme is institutions racing \u2014 and often failing \u2014 to keep up with AI's reach into every corner of life. But it's not all friction: everyday tinkerers are using AI coding tools to hack their own gadgets, and a new wave of AI agents living in your text messages wants to handle your errands. Buckle in \u2014 today's digest covers the full spectrum, from geopolitical standoffs to the AI assistant that books your dinner reservations over SMS.",
+    "slug": "2026-11-23",
+    "digestDate": "2026-11-23",
+    "displayDate": "Nov 23, 2026",
+    "issueNumber": "61123",
+    "subject": "ISSUE 61123 \u00b7 8 STORIES \u00b7 11 MIN READ",
+    "intro": "A 167-year-old math problem may have finally fallen \u2014 and it was an AI that knocked it down. Anthropic's Claude reportedly cracked the Riemann hypothesis, one of mathematics' greatest unsolved puzzles, though the 17-million-line proof has already sparked fierce debate about what \"understanding\" even means when a machine does the solving. Meanwhile, today's digest spans everything from Trump personally calling Nvidia's board to reinstate Jensen Huang, to Amazon's $7.5 billion bet on challenging Nvidia's chip dominance, to one CTO's $600-a-month AI assistant that calls his coworkers when they ignore Slack messages.",
     "articleCount": 8,
-    "urlPath": "/issues/2026-11-22.html",
-    "contentHash": "ef6e62305143278da34f4cefbf7e271cca5b31e8a7dac6dc47353f9a673da79c"
+    "urlPath": "/issues/2026-11-23.html",
+    "contentHash": "5f97f7de69b2db6c5112fc5d974d977096d570d371808430e3d5452acd5c8f9e"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-23",
+      "digestDate": "2026-11-23",
+      "displayDate": "Nov 23, 2026",
+      "issueNumber": "61123",
+      "subject": "ISSUE 61123 \u00b7 8 STORIES \u00b7 11 MIN READ",
+      "intro": "A 167-year-old math problem may have finally fallen \u2014 and it was an AI that knocked it down. Anthropic's Claude reportedly cracked the Riemann hypothesis, one of mathematics' greatest unsolved puzzles, though the 17-million-line proof has already sparked fierce debate about what \"understanding\" even means when a machine does the solving. Meanwhile, today's digest spans everything from Trump personally calling Nvidia's board to reinstate Jensen Huang, to Amazon's $7.5 billion bet on challenging Nvidia's chip dominance, to one CTO's $600-a-month AI assistant that calls his coworkers when they ignore Slack messages.",
+      "articleCount": 8,
+      "urlPath": "/issues/2026-11-23.html",
+      "contentHash": "5f97f7de69b2db6c5112fc5d974d977096d570d371808430e3d5452acd5c8f9e"
+    },
     {
       "slug": "2026-11-22",
       "digestDate": "2026-11-22",
@@ -133,17 +144,6 @@
       "articleCount": 10,
       "urlPath": "/issues/2026-11-12.html",
       "contentHash": "6886631062ca9591534f96e42e6fb6016b2925932aa4bca6e0ca6911db0cf422"
-    },
-    {
-      "slug": "2026-11-11",
-      "digestDate": "2026-11-11",
-      "displayDate": "Nov 11, 2026",
-      "issueNumber": "61111",
-      "subject": "ISSUE 61111 \u00b7 10 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is reeling today as Nvidia CEO Jensen Huang's admission of an affair with a suspected Chinese spy sent the chipmaker's stock tumbling and raised urgent questions about the security of America's most critical AI infrastructure. But the industry isn't standing still \u2014 Google DeepMind is making Gemini 4 Carbon widely available, OpenAI is turning ChatGPT into a storefront with verified Business Agents, and a staggering 181GW of gas-fired power plants are being planned just to keep AI's lights on. It's a day that captures the full spectrum of AI's current moment: geopolitical risk, fierce competition, and an energy appetite that's reshaping the grid.",
-      "articleCount": 10,
-      "urlPath": "/issues/2026-11-11.html",
-      "contentHash": "26c2704249425c55623fdebd49c599386574f011e1f099702f44982fcc4c64cb"
     }
   ]
 }
