@@ -1,0 +1,741 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-23",
+  "issue_id": "20261123",
+  "subject_line": "ISSUE 61123 · 8 STORIES · 11 MIN READ",
+  "intro": "A 167-year-old math problem may have finally fallen — and it was an AI that knocked it down. Anthropic's Claude reportedly cracked the Riemann hypothesis, one of mathematics' greatest unsolved puzzles, though the 17-million-line proof has already sparked fierce debate about what \"understanding\" even means when a machine does the solving. Meanwhile, today's digest spans everything from Trump personally calling Nvidia's board to reinstate Jensen Huang, to Amazon's $7.5 billion bet on challenging Nvidia's chip dominance, to one CTO's $600-a-month AI assistant that calls his coworkers when they ignore Slack messages.",
+  "article_count": 8,
+  "stories": [
+    {
+      "id": 10916,
+      "source": "The Verge AI",
+      "title": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes; faces congressional testimony",
+      "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Jensen Huang has been reinstated as Nvidia CEO after President Trump reportedly called into an Nvidia board meeting to advocate for his return. Huang had been forced out after revelations of affairs with an alleged Chinese spy and two Nvidia employees. The White House publicly took credit, with Trump claiming he 'convinced' the board and that Huang 'did absolutely nothing wrong.' Nvidia's board acknowledged receiving 'input from senior levels of the United States government.' Tech leaders including Elon Musk, Sam Altman, Tim Sweeney, and Bill Ackman publicly celebrated the reinstatement. Huang is scheduled to testify before three House committees on December 1 and the Senate Banking Committee on December 3, where bipartisan lawmakers plan to question him about the suspected spy affair and potential involvement in chip-smuggling operations.",
+      "opinion": "Trump's unprecedented direct intervention in the leadership of America's most strategically important AI chipmaker raises serious governance questions, regardless of one's view on Huang's personal conduct. The speed of reinstatement — less than two weeks — and the White House openly bragging about it suggests the national security framing may have been subordinated to political considerations. Where coverage differs: TechCrunch reports Huang will testify before the Senate Banking Committee 'at a later date'; a separate TechCrunch article specifies December 3, 2026 The Verge says Trump posted congratulations on Truth Social; TechCrunch says Trump posted on Truth Social calling Huang a 'great man'",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Nvidia_Jensen_huang_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-23T16:14:04+00:00",
+      "fetched_at": "2026-11-23T19:00:31.413465+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10916,
+            "source": "The Verge AI",
+            "title": "Tech leaders are celebrating Jensen Huang’s return",
+            "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay"
+          },
+          {
+            "id": 10902,
+            "source": "TechCrunch AI",
+            "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+            "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"
+          },
+          {
+            "id": 10905,
+            "source": "TechCrunch AI",
+            "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+            "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/"
+          },
+          {
+            "id": 10915,
+            "source": "The Verge AI",
+            "title": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+            "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated"
+          }
+        ],
+        "badge_count": 4,
+        "conflicts": [
+          "TechCrunch reports Huang will testify before the Senate Banking Committee 'at a later date'; a separate TechCrunch article specifies December 3, 2026",
+          "The Verge says Trump posted congratulations on Truth Social; TechCrunch says Trump posted on Truth Social calling Huang a 'great man'"
+        ],
+        "is_update": true,
+        "reason": "All cover Jensen Huang's reinstatement as Nvidia CEO: Trump's direct involvement in the board decision, the White House taking credit, tech leaders celebrating, and Huang's upcoming congressional testimony."
+      }
+    },
+    {
+      "id": 10913,
+      "source": "The Rundown AI",
+      "title": "Anthropic mathematician reportedly uses Claude to prove the Riemann hypothesis",
+      "url": "https://therundownai.beehiiv.com/p/claude-helps-solve-math-s-biggest-open-problem",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic mathematician Levent Alpöge reportedly used Claude to prove the Riemann hypothesis, a 167-year-old unsolved problem about prime number distribution carrying a $1 million Millennium Prize. The proof, produced after roughly six weeks, was shared as 17 million lines of machine-checkable Lean code that the Lean verification community has certified as correct. The Association for Human Mathematics criticized the proof as 'little more than publicity' since no human can reasonably understand it. A rival non-AI proof from Alessandro Masullo surfaced shortly after but was flagged as having problems.",
+      "opinion": "If the Lean-verified proof holds up to broader scrutiny, this would be one of the most consequential applications of AI to pure mathematics ever. The tension between machine-verifiable correctness and human comprehensibility raises genuine questions about what 'understanding' a proof means — but dismissing it as publicity seems premature given formal verification.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/7150271e-1edf-4946-8238-e03fc1dae993/riemann-header-1920x1080.png?t=1795369038",
+      "published_at": "2026-11-23T11:00:00+00:00",
+      "fetched_at": "2026-11-23T19:00:29.591349+00:00"
+    },
+    {
+      "id": 10914,
+      "source": "The Verge AI",
+      "title": "Oregon and Virginia sue SpaceX over Grok AI's generation of porn deepfakes and CSAM",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Oregon and Virginia attorneys general filed separate lawsuits against SpaceX, accusing the company of violating consumer protection laws related to its X social media platform and Grok AI features. The suits allege xAI and X ignored industry-standard safety measures, allowing users to generate non-consensual intimate imagery and CSAM through Grok Imagine. Virginia AG Jay Jones accused Elon Musk of treating weak AI safeguards as 'not a failure but a feature.'",
+      "opinion": "These are among the first state-level enforcement actions targeting AI image generation safety specifically, and could set important precedent for how consumer protection law applies to generative AI tools that enable abuse.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK419_DEEPFAKE_CVIRGINIA_F.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-23T18:26:47+00:00",
+      "fetched_at": "2026-11-23T19:00:30.878151+00:00"
+    },
+    {
+      "id": 10903,
+      "source": "TechCrunch AI",
+      "title": "Amazon acquires Israeli AI startup Decart for $7.5B to boost Trainium chip competitiveness",
+      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Amazon is acquiring Israeli AI startup Decart for $7.5 billion, primarily for its Decart Optimization Stack (DOS) technology that helps AI models run efficiently across different chip platforms. The deal comes as Amazon prepares to sell its custom Trainium AI chips to external customers in direct competition with Nvidia. Decart, known for real-time world models and AI video generation, brings optimization expertise that could help attract customers to Amazon's chips over Nvidia's GPUs.",
+      "opinion": "This is a significant bet by Amazon to close the software ecosystem gap with Nvidia — hardware alone hasn't been enough to lure customers away from CUDA. Acquiring optimization middleware that works across chip vendors is a shrewd move that could accelerate Trainium adoption.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/12/Decart-Founders-Dean-Leitersdorf-CEO-and-Moshe-Shalev-CPO.jpg?resize=1200,800",
+      "published_at": "2026-11-23T17:14:23+00:00",
+      "fetched_at": "2026-11-23T19:00:24.480607+00:00"
+    },
+    {
+      "id": 10923,
+      "source": "Lenny's Newsletter",
+      "title": "CTO builds personal AI chief of staff that automates everyday annoyances for $500-600/month",
+      "url": "https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Ankit Maheshwari, CTO of Innovaccer, built a personal AI chief of staff called Jarvis using OpenClaw on a Mac Mini. The system automates small recurring tasks — approving requests, ordering lunch, booking restaurants, calling coworkers who miss Slack messages, and controlling smart home devices. Key lessons include using specialized subagents over one generalist, investing in 'soul files' for agent personality, and his '1% annoyance rule': if a task is even slightly frustrating and repeats, automate it. The system runs on Opus 5.5 at $500-600/month.",
+      "opinion": "This represents the emerging 'AI butler' category where executives are spending meaningful monthly budgets to have AI handle the friction of daily life and work — a use case that could scale significantly as costs drop and reliability improves.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!EEN5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F66cd9f6b-857f-4ebd-b97e-c13ceb324984_1456x1048.png",
+      "published_at": "2026-11-23T16:01:48+00:00",
+      "fetched_at": "2026-11-23T19:00:36.378119+00:00"
+    },
+    {
+      "id": 10932,
+      "source": "Aeon",
+      "title": "Video essay explores AI's creation of a 'hall-of-mirrors reality'",
+      "url": "https://aeon.co/videos/what-does-it-mean-when-humans-and-technology-become-indistinguishable",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A video essay by Lewis Heriz for the publication Fully Human traces humanity's history of anthropomorphism — from cave art to constellations — and contrasts it with today's AI systems generating photorealistic images, synthetic voices, and chatbots passing the Turing test. Heriz argues the current AI trajectory is creating a 'hall-of-mirrors reality' where the boundary between data and people could vanish, and advocates for critical thinking about deploying AI in ways that preserve our humanity.",
+      "opinion": "The anthropomorphism framing offers a more nuanced lens than typical AI doom-or-boom narratives, connecting current concerns to deep human tendencies rather than treating them as wholly unprecedented.",
+      "image_url": "https://images.aeonmedia.co/images/843e9a5c-2745-49cd-bb43-931674e4832d/the-wind-and-the-song-landscape-2-ai.jpg?width=1200&quality=75&format=jpeg",
+      "published_at": "2026-11-23T11:01:00+00:00",
+      "fetched_at": "2026-11-23T19:00:47.608922+00:00"
+    },
+    {
+      "id": 10934,
+      "source": "Pew Research Center",
+      "title": "Pew survey: 74% of U.S. Latinos report awareness of local ICE activity, up sharply from 2025",
+      "url": "https://www.pewresearch.org/short-reads/2026/11/23/74-of-us-latinos-say-theyve-seen-or-heard-about-ice-activity-in-their-local-area/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A November 2026 Pew Research Center survey finds 74% of U.S. Latinos have seen or heard about ICE arrests or raids in their area in the past six months, up from 59% in October 2025. Awareness rose across all racial groups but remains highest among Hispanics. About 7% of Hispanic adults report being stopped and questioned about their citizenship or immigration status, compared to 1% of White adults.",
+      "opinion": "The sharp year-over-year increase across all demographics suggests immigration enforcement has become significantly more visible in everyday American life, with disproportionate impact on Latino communities.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/SR_26.11.23_Latinos-Ice_featured.png?w=1200&h=628&crop=1",
+      "published_at": "2026-11-23T18:52:42+00:00",
+      "fetched_at": "2026-11-23T19:00:49.445814+00:00"
+    },
+    {
+      "id": 10933,
+      "source": "Rest of World",
+      "title": "IBM ends U.S. visa sponsorship for consulting workers, offers relocation at steep pay cuts",
+      "url": "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "IBM has ended U.S. visa and green card sponsorship for its consulting division, giving affected immigrant employees three weeks to choose between relocating to countries like India, Singapore, or the U.K. — with potential pay cuts of roughly 80% for India — or accepting three months of severance with a December 31 end date. The move reflects broader trends among U.S. tech companies navigating tightening visa policies under the Trump administration, though IBM frames it as driven by evolving skill availability and client needs.",
+      "opinion": "The three-week decision window for life-altering relocation choices seems particularly aggressive, and the framing as 'natural evolution' strains credibility given the political context of tightening visa enforcement.",
+      "image_url": "https://restofworld.org/wp-content/uploads/2026/11/IBM-Green-card-3-scaled.jpg",
+      "published_at": "2026-11-23T11:00:00+00:00",
+      "fetched_at": "2026-11-23T19:00:48.188305+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10916,
+          "source": "The Verge AI",
+          "title": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes; faces congressional testimony",
+          "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Jensen Huang has been reinstated as Nvidia CEO after President Trump reportedly called into an Nvidia board meeting to advocate for his return. Huang had been forced out after revelations of affairs with an alleged Chinese spy and two Nvidia employees. The White House publicly took credit, with Trump claiming he 'convinced' the board and that Huang 'did absolutely nothing wrong.' Nvidia's board acknowledged receiving 'input from senior levels of the United States government.' Tech leaders including Elon Musk, Sam Altman, Tim Sweeney, and Bill Ackman publicly celebrated the reinstatement. Huang is scheduled to testify before three House committees on December 1 and the Senate Banking Committee on December 3, where bipartisan lawmakers plan to question him about the suspected spy affair and potential involvement in chip-smuggling operations.",
+          "opinion": "Trump's unprecedented direct intervention in the leadership of America's most strategically important AI chipmaker raises serious governance questions, regardless of one's view on Huang's personal conduct. The speed of reinstatement — less than two weeks — and the White House openly bragging about it suggests the national security framing may have been subordinated to political considerations. Where coverage differs: TechCrunch reports Huang will testify before the Senate Banking Committee 'at a later date'; a separate TechCrunch article specifies December 3, 2026 The Verge says Trump posted congratulations on Truth Social; TechCrunch says Trump posted on Truth Social calling Huang a 'great man'",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Nvidia_Jensen_huang_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-23T16:14:04+00:00",
+          "fetched_at": "2026-11-23T19:00:31.413465+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10916,
+                "source": "The Verge AI",
+                "title": "Tech leaders are celebrating Jensen Huang’s return",
+                "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay"
+              },
+              {
+                "id": 10902,
+                "source": "TechCrunch AI",
+                "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+                "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"
+              },
+              {
+                "id": 10905,
+                "source": "TechCrunch AI",
+                "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+                "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/"
+              },
+              {
+                "id": 10915,
+                "source": "The Verge AI",
+                "title": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+                "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated"
+              }
+            ],
+            "badge_count": 4,
+            "conflicts": [
+              "TechCrunch reports Huang will testify before the Senate Banking Committee 'at a later date'; a separate TechCrunch article specifies December 3, 2026",
+              "The Verge says Trump posted congratulations on Truth Social; TechCrunch says Trump posted on Truth Social calling Huang a 'great man'"
+            ],
+            "is_update": true,
+            "reason": "All cover Jensen Huang's reinstatement as Nvidia CEO: Trump's direct involvement in the board decision, the White House taking credit, tech leaders celebrating, and Huang's upcoming congressional testimony."
+          }
+        },
+        {
+          "id": 10913,
+          "source": "The Rundown AI",
+          "title": "Anthropic mathematician reportedly uses Claude to prove the Riemann hypothesis",
+          "url": "https://therundownai.beehiiv.com/p/claude-helps-solve-math-s-biggest-open-problem",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic mathematician Levent Alpöge reportedly used Claude to prove the Riemann hypothesis, a 167-year-old unsolved problem about prime number distribution carrying a $1 million Millennium Prize. The proof, produced after roughly six weeks, was shared as 17 million lines of machine-checkable Lean code that the Lean verification community has certified as correct. The Association for Human Mathematics criticized the proof as 'little more than publicity' since no human can reasonably understand it. A rival non-AI proof from Alessandro Masullo surfaced shortly after but was flagged as having problems.",
+          "opinion": "If the Lean-verified proof holds up to broader scrutiny, this would be one of the most consequential applications of AI to pure mathematics ever. The tension between machine-verifiable correctness and human comprehensibility raises genuine questions about what 'understanding' a proof means — but dismissing it as publicity seems premature given formal verification.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/7150271e-1edf-4946-8238-e03fc1dae993/riemann-header-1920x1080.png?t=1795369038",
+          "published_at": "2026-11-23T11:00:00+00:00",
+          "fetched_at": "2026-11-23T19:00:29.591349+00:00"
+        },
+        {
+          "id": 10914,
+          "source": "The Verge AI",
+          "title": "Oregon and Virginia sue SpaceX over Grok AI's generation of porn deepfakes and CSAM",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Oregon and Virginia attorneys general filed separate lawsuits against SpaceX, accusing the company of violating consumer protection laws related to its X social media platform and Grok AI features. The suits allege xAI and X ignored industry-standard safety measures, allowing users to generate non-consensual intimate imagery and CSAM through Grok Imagine. Virginia AG Jay Jones accused Elon Musk of treating weak AI safeguards as 'not a failure but a feature.'",
+          "opinion": "These are among the first state-level enforcement actions targeting AI image generation safety specifically, and could set important precedent for how consumer protection law applies to generative AI tools that enable abuse.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK419_DEEPFAKE_CVIRGINIA_F.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-23T18:26:47+00:00",
+          "fetched_at": "2026-11-23T19:00:30.878151+00:00"
+        },
+        {
+          "id": 10903,
+          "source": "TechCrunch AI",
+          "title": "Amazon acquires Israeli AI startup Decart for $7.5B to boost Trainium chip competitiveness",
+          "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Amazon is acquiring Israeli AI startup Decart for $7.5 billion, primarily for its Decart Optimization Stack (DOS) technology that helps AI models run efficiently across different chip platforms. The deal comes as Amazon prepares to sell its custom Trainium AI chips to external customers in direct competition with Nvidia. Decart, known for real-time world models and AI video generation, brings optimization expertise that could help attract customers to Amazon's chips over Nvidia's GPUs.",
+          "opinion": "This is a significant bet by Amazon to close the software ecosystem gap with Nvidia — hardware alone hasn't been enough to lure customers away from CUDA. Acquiring optimization middleware that works across chip vendors is a shrewd move that could accelerate Trainium adoption.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/12/Decart-Founders-Dean-Leitersdorf-CEO-and-Moshe-Shalev-CPO.jpg?resize=1200,800",
+          "published_at": "2026-11-23T17:14:23+00:00",
+          "fetched_at": "2026-11-23T19:00:24.480607+00:00"
+        },
+        {
+          "id": 10923,
+          "source": "Lenny's Newsletter",
+          "title": "CTO builds personal AI chief of staff that automates everyday annoyances for $500-600/month",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Ankit Maheshwari, CTO of Innovaccer, built a personal AI chief of staff called Jarvis using OpenClaw on a Mac Mini. The system automates small recurring tasks — approving requests, ordering lunch, booking restaurants, calling coworkers who miss Slack messages, and controlling smart home devices. Key lessons include using specialized subagents over one generalist, investing in 'soul files' for agent personality, and his '1% annoyance rule': if a task is even slightly frustrating and repeats, automate it. The system runs on Opus 5.5 at $500-600/month.",
+          "opinion": "This represents the emerging 'AI butler' category where executives are spending meaningful monthly budgets to have AI handle the friction of daily life and work — a use case that could scale significantly as costs drop and reliability improves.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!EEN5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F66cd9f6b-857f-4ebd-b97e-c13ceb324984_1456x1048.png",
+          "published_at": "2026-11-23T16:01:48+00:00",
+          "fetched_at": "2026-11-23T19:00:36.378119+00:00"
+        },
+        {
+          "id": 10932,
+          "source": "Aeon",
+          "title": "Video essay explores AI's creation of a 'hall-of-mirrors reality'",
+          "url": "https://aeon.co/videos/what-does-it-mean-when-humans-and-technology-become-indistinguishable",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A video essay by Lewis Heriz for the publication Fully Human traces humanity's history of anthropomorphism — from cave art to constellations — and contrasts it with today's AI systems generating photorealistic images, synthetic voices, and chatbots passing the Turing test. Heriz argues the current AI trajectory is creating a 'hall-of-mirrors reality' where the boundary between data and people could vanish, and advocates for critical thinking about deploying AI in ways that preserve our humanity.",
+          "opinion": "The anthropomorphism framing offers a more nuanced lens than typical AI doom-or-boom narratives, connecting current concerns to deep human tendencies rather than treating them as wholly unprecedented.",
+          "image_url": "https://images.aeonmedia.co/images/843e9a5c-2745-49cd-bb43-931674e4832d/the-wind-and-the-song-landscape-2-ai.jpg?width=1200&quality=75&format=jpeg",
+          "published_at": "2026-11-23T11:01:00+00:00",
+          "fetched_at": "2026-11-23T19:00:47.608922+00:00"
+        },
+        {
+          "id": 10934,
+          "source": "Pew Research Center",
+          "title": "Pew survey: 74% of U.S. Latinos report awareness of local ICE activity, up sharply from 2025",
+          "url": "https://www.pewresearch.org/short-reads/2026/11/23/74-of-us-latinos-say-theyve-seen-or-heard-about-ice-activity-in-their-local-area/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A November 2026 Pew Research Center survey finds 74% of U.S. Latinos have seen or heard about ICE arrests or raids in their area in the past six months, up from 59% in October 2025. Awareness rose across all racial groups but remains highest among Hispanics. About 7% of Hispanic adults report being stopped and questioned about their citizenship or immigration status, compared to 1% of White adults.",
+          "opinion": "The sharp year-over-year increase across all demographics suggests immigration enforcement has become significantly more visible in everyday American life, with disproportionate impact on Latino communities.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/SR_26.11.23_Latinos-Ice_featured.png?w=1200&h=628&crop=1",
+          "published_at": "2026-11-23T18:52:42+00:00",
+          "fetched_at": "2026-11-23T19:00:49.445814+00:00"
+        },
+        {
+          "id": 10933,
+          "source": "Rest of World",
+          "title": "IBM ends U.S. visa sponsorship for consulting workers, offers relocation at steep pay cuts",
+          "url": "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "IBM has ended U.S. visa and green card sponsorship for its consulting division, giving affected immigrant employees three weeks to choose between relocating to countries like India, Singapore, or the U.K. — with potential pay cuts of roughly 80% for India — or accepting three months of severance with a December 31 end date. The move reflects broader trends among U.S. tech companies navigating tightening visa policies under the Trump administration, though IBM frames it as driven by evolving skill availability and client needs.",
+          "opinion": "The three-week decision window for life-altering relocation choices seems particularly aggressive, and the framing as 'natural evolution' strains credibility given the political context of tightening visa enforcement.",
+          "image_url": "https://restofworld.org/wp-content/uploads/2026/11/IBM-Green-card-3-scaled.jpg",
+          "published_at": "2026-11-23T11:00:00+00:00",
+          "fetched_at": "2026-11-23T19:00:48.188305+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2124543440671428924",
+      "author": "Zephyr_hg",
+      "headline": "Weekend masterclass on getting fluent in __NotebookLM by building seven setups__ and running them on real work.",
+      "tweet_id": "4211eba9-b6bc-8138-bcfd-c3ed9be68f4d",
+      "source_text": "A masterclass on how to get FLUENT in NotebookLM in one weekend, by building seven setups and then running them on your real work: https://t.co/X54i9KnWuM https://t.co/4RbuAyY2RG",
+      "created_time": "2026-11-23T15:42:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2124543440671428924",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Mike_Scully_/status/2124795443486085496",
+      "author": "Mike_Scully_",
+      "headline": "Mike Scully walks through finding __50 businesses that need AI__ in under an hour.",
+      "tweet_id": "4211eba9-b6bc-8197-acaa-d248399f1321",
+      "source_text": "How to find 50 businesses that need AI in one hour: https://t.co/8Ti1rfXheP",
+      "created_time": "2026-11-23T12:02:00.000Z",
+      "canonical_url": "https://twitter.com/Mike_Scully_/status/2124795443486085496",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/motion_so/status/2124595550255452165",
+      "author": "motion_so",
+      "headline": "Motion ships __Gemini Neon-powered video editing__: drop in raw footage, write a prompt, export a finished cut to Premiere or After Effects.",
+      "tweet_id": "4211eba9-b6bc-816f-81a7-ce56061a2ab7",
+      "source_text": "Introducing Gemini Neon for Video Editing\n\nMotion edits the entire video, powered by Neon.\n\n-> drop in raw footage + prompt\n-> Motion edits everything\n-> export to premiere or after effects\n\nStop manually editing like its 2009. https://t.co/SXAKaVWpmN",
+      "created_time": "2026-11-23T03:52:00.000Z",
+      "canonical_url": "https://twitter.com/motion_so/status/2124595550255452165",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AIGuide_/status/2124695228481499519",
+      "author": "AIGuide_",
+      "headline": "How Clay runs __GTM at $100M in revenue__ with no CRO — their full go-to-market breakdown.",
+      "tweet_id": "4211eba9-b6bc-81dc-a00e-f65670a5829d",
+      "source_text": "Clay on how they run GTM at $100M in revenue with no CRO https://t.co/QZoZ0HGbXM",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/AIGuide_/status/2124695228481499519",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/LyalinDotCom/status/2124593932038254981",
+      "author": "LyalinDotCom",
+      "headline": "Installing __gemini-cli__ gives Gemini 4 Neon builders instant access to video analysis, OCR, and multimedia generation — and it's open source.",
+      "tweet_id": "4211eba9-b6bc-81ef-9671-c4997bbf006d",
+      "source_text": "If you're building things w/Gemini 4 Neon that could benefit from easy access to Gemini's ability to do video analysis, OCR, or multi-media gen (tts, music, videos, images) you will be blown away by simple installing `gemini-cli`, setting an API key & installing skill\n\nIt's even OSS: https://t.co/zui18mOCtU",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/LyalinDotCom/status/2124593932038254981",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/suraj_sharma14/status/2124578668467167470",
+      "author": "suraj_sharma14",
+      "headline": "Six free bookmarks for AI builders: __step-by-step AI engineering roadmaps__, model comparison tools, demo sandboxes, and system design diagram generators.",
+      "tweet_id": "4211eba9-b6bc-813f-983a-d53259b94df7",
+      "source_text": "Powerful websites you should know (part 1)\n\n1.) https://t.co/EBz8k1GsTb\nFree step-by-step roadmaps for AI engineering, backend, DevOps and more\n\n2.) https://t.co/rzAkVLZHWv\nSearch thousands of AI tools by the task you need done\n\n3.) https://t.co/gFaSCWqKD2\nCompare AI models side by side and see which one actually wins\n\n4.) https://t.co/F8k3iPe1em\nSpeed, price and quality benchmarks for every major AI model\n\n5.) https://t.co/11rCAPjuZP\nThousands of free AI demos you can try in your browser\n\n6.) https://t.co/yHTCbVh8RL\nHand-drawn style diagrams for system design and explaining ideas\n\nBookmark this and stay tuned for part 2.",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/suraj_sharma14/status/2124578668467167470",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/kaleighf/status/2124571671243698323",
+      "author": "kaleighf",
+      "headline": "SEO keywords and __AI prompts aren't the same thing__ — one is a short, typed query, the other is a full conversational instruction.",
+      "tweet_id": "4211eba9-b6bc-81de-831f-c631e54ffc3a",
+      "source_text": "SEO keywords = short words or phrases people type into search engines to find pages\n\nAI prompts = full, conversational questions or instructions people give to AI assistants to get synthesized answers\n\n(They aren't the same)\n\nhttps://t.co/IcQlrGHPY7",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/kaleighf/status/2124571671243698323",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/renproton/status/2124560005957623999",
+      "author": "renproton",
+      "headline": "Twenty GitHub repos that turn __Fable 5.2 into a full motion studio__ — 3D, FX, sound, and export all covered.",
+      "tweet_id": "4211eba9-b6bc-8144-83fc-daea52528731",
+      "source_text": "THIS IS AN ACTUAL F*CKING GOLDMINE\n\nThese 20 GitHub repos will turn your Fable 5.2 into a premier motion studio\n\nskills. 3D. FX. Motion. Sound. Export\n\n01 /motion-design-skill → Timing, easing and Disney's 12 principles.\nhttps://t.co/aqI0g551uy\n\n02 ai-kit → CSS springs and motion audits for agents.\nhttps://t.co/kRgIuU2wGE\n\n03 Remotion Skills → Official video skills for coding agents.\nhttps://t.co/gsH1MDKGy1\n\n04 /hairline → Interactive line figures from an idea or an SVG.\nhttps://t.co/q8yQxWRW1E\n\n05 /anatomy → Machines and systems as isometric figures.\nhttps://t.co/0Lpv41sm4I\n\n06 /anatomy-reveal → Exploded product views and a reveal MP4.\nhttps://t.co/bZdJECSaNp\n\n07 /blender-agents → A full AI 3D team inside Blender via MCP.\nhttps://t.co/SqnAsIRIOk\n\n08 Three.js → 3D scenes and camera moves.\nhttps://t.co/GbafYi8g4G\n\n09 react-three-rapier → Real physics for React Three Fiber scenes.\nhttps://t.co/3XOcntlpI9\n\n10 react-postprocessing → Bloom, depth of field and film effects.\nhttps://t.co/xD0iTeh9G5\n\n11 three.quarks → Particle trails and VFX.\nhttps://t.co/rTcAkqwyxQ\n\n12 Tweakpane → Live controls for your scene parameters.\nhttps://t.co/enmey7texq\n\n13 GSAP → Animation timelines. Now fully free.\nhttps://t.co/OmIZlzk6Wr\n\n14 Remotion → React video engine.\nhttps://t.co/9ly067kOlq\n\n15 Manim → Animated diagrams, equations and explainers.\nhttps://t.co/oYAjmHk02U\n\n16 Lottie → Lightweight vector animation playback.\nhttps://t.co/XBlpqbbupN\n\n17 Openverse API → 5.2M+ free sound effects, ambience and music.\nhttps://t.co/8bxF98x6XI\n\n18 librosa → Beat detection for music-synced animation.\nhttps://t.co/8H8Lgs2rPw\n\n19 WhisperX → Word-level timing for captions.\nhttps://t.co/I2w235zxMZ\n\n20 FFmpeg → Encoding and delivery.\nhttps://t.co/bqBozSqesR\n\nSkill → scene → motion → sound → final cut.\n\nBookmark this then go build something worth watching with guide below ↓",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/renproton/status/2124560005957623999",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/zaimiri/status/2124506235026501704",
+      "author": "zaimiri",
+      "headline": "Lauren Tan, the Grok Bot builder, shares __how to automate anything with Grok Bot__.",
+      "tweet_id": "4211eba9-b6bc-81ed-bdc7-cb383019e28e",
+      "source_text": "Lauren Tan (Grok Bot builder) on how to automate anything with Grok Bot: https://t.co/PP5E7n6dLH",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/zaimiri/status/2124506235026501704",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xHvdes/status/2124481648188367151",
+      "author": "0xHvdes",
+      "headline": "Greg Isenberg walks through __his AI marketing playbook__ in a new video.",
+      "tweet_id": "4211eba9-b6bc-8125-87d1-f52dcaf45ba9",
+      "source_text": "Greg Isenberg on how to market anything with AI. https://t.co/SQPJ6EgQ9G https://t.co/cwWeO0LqBW",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/0xHvdes/status/2124481648188367151",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/coldemailchris/status/2124455525282898005",
+      "author": "coldemailchris",
+      "headline": "An MIT study of __15,000+ leads and 100,000+ call attempts__ got turned into a Claude prompt that audits cold email reply speed.",
+      "tweet_id": "4211eba9-b6bc-81d1-9636-cfe67838c054",
+      "source_text": "MIT studied 15,000+ leads & 100,000+ call attempts to find out how fast you have to answer them.\n\nSo I turned it into a prompt that makes Claude audit your cold email replies & show you exactly where your meetings are leaking.\n\nPaste it in, then read the full reply system below to fix whatever it finds:",
+      "created_time": "2026-11-23T03:47:00.000Z",
+      "canonical_url": "https://twitter.com/coldemailchris/status/2124455525282898005",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/lukepierceops/status/2124661702679794007",
+      "author": "lukepierceops",
+      "headline": "Anthropic publishes its own guide on __how to build AI agents that actually work__.",
+      "tweet_id": "4211eba9-b6bc-810c-9ef4-c56e03d2c4d2",
+      "source_text": "Anthropic on how to build AI agents that actually work https://t.co/rhF0V4WOcD",
+      "created_time": "2026-11-23T03:42:00.000Z",
+      "canonical_url": "https://twitter.com/lukepierceops/status/2124661702679794007",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/ecomchasedimond/status/2124678934520562064",
+      "author": "ecomchasedimond",
+      "headline": "Harry's collected __over 100,000 emails in 7 days__ before launch — the full playbook.",
+      "tweet_id": "4211eba9-b6bc-81da-898a-efee4414d349",
+      "source_text": "Harry's, the razor brand, on how they collected over 100,000 emails in 7 days before launch: https://t.co/ZR1yDiakMQ",
+      "created_time": "2026-11-23T03:37:00.000Z",
+      "canonical_url": "https://twitter.com/ecomchasedimond/status/2124678934520562064",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/tivollem/status/2124397720215425393",
+      "author": "tivollem",
+      "headline": "__Subtle__, an open-source subtitle tool with 35 styles for Claude Code, makes the $15/month subscription apps feel overpriced.",
+      "tweet_id": "4211eba9-b6bc-8168-96af-c3b2302f38ef",
+      "source_text": "T'as plus besoin de payer 15 $ par mois pour des sous-titres : ce dev a fait son propre outil et l'a mis en open source 🥵\n\nIl s'appelle Subtle : 35 styles de sous-titres pour Claude Code, avec les mots qui passent derrière toi, les mots importants mis en avant, des styles magazine, sticker ou cinéma, et tu règles la couleur, la taille et la position avant de copier le prompt\n\nToi qui sors des vidéos pour ton app ou ton shop : ça remplace l'abonnement à une appli de sous-titres et tu gardes ces 15 $ chaque mois 💰\n\nPar contre il tourne sur Mac, donc si t'es sur Windows ça ira pas\n\nEnregistre le post\n\nJe te mets le lien en réponse parce que je suis sûr qu'il va te faire gagner un temps de fou 👇",
+      "created_time": "2026-11-23T03:32:00.000Z",
+      "canonical_url": "https://twitter.com/tivollem/status/2124397720215425393",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/flxrnc/status/2124608918899118512",
+      "author": "flxrnc",
+      "headline": "Fifteen repos for __making animations with Fable 5.2__ — from math-driven Manim visuals to GSAP timing and hand-drawn Rough.js lines.",
+      "tweet_id": "4211eba9-b6bc-815a-ac5b-dbe71fc49747",
+      "source_text": "I make animations faster than I can explain them, these 15 GitHub repos are why\n\nthis is f*cking gold for every Fable 5.2 fan\n\nMotion. Math. Launches. UI. Taste. Render.\n\nExcalidraw → quick sketches your agent can build on\nhttps://t.co/yefyv1N9YL\n\nRough.js → makes every line look drawn by hand\nhttps://t.co/Ee6BWm3zfg\n\nManim → math that moves like a 3Blue1Brown video\nhttps://t.co/hU4pXLiZoA\n\nhuashu-motion → launch videos with music made just for them\nhttps://t.co/lOWA4YO7VW\n\nMagic UI → animated UI pieces, ready to paste\nhttps://t.co/xK9LfyDCNJ\n\nui-ux-pro-max → 80 looks, colors and fonts that work together\nhttps://t.co/wnHI3pbOaj\n\nGSAP → smooth timing for every moving part\nhttps://t.co/8B97Y23r9O\n\nTaste Skill → your agent finally knows what looks good\nhttps://t.co/wFIFNz34sX\n\nImpeccable → a sharp eye that catches every flaw\nhttps://t.co/LUVwZwP3zM\n\nThree.js → 3D scenes that run in any tab\nhttps://t.co/BgbvnRdkK1\n\nBlender MCP → Claude turns your idea into a Blender scene\nhttps://t.co/QWCqTa1DGA\n\nHyperFrames → write it as a web page, export it as video\nhttps://t.co/dOZZVJZWfo\n\nRemotion → build a video like you build a website\nhttps://t.co/znpMp7SXCQ\n\nRemotion Skills → teaches your agent video the way pros do it\nhttps://t.co/eNG5a2boyK\n\nFFmpeg → turns the final animation into a clean MP4\nhttps://t.co/HlJpuzRBcV\n\nIdea → shape → motion → polish → export.\n\nBookmark this, then open the guide below and make your next animation in minutes ↓",
+      "created_time": "2026-11-23T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/flxrnc/status/2124608918899118512",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Yarad_ai/status/2124533452900897128",
+      "author": "Yarad_ai",
+      "headline": "__OpenCreator__ is an open-source content studio with 13,000+ GitHub stars that uses Codex CLI as its agent engine.",
+      "tweet_id": "4211eba9-b6bc-81d1-b773-c177c8d76dac",
+      "source_text": "🚀 یک استودیوی کامل تولید محتوا در یک محیط واحد!\n\nپروژه OpenCreator یک ابزار Open Source است که تمام مراحل تولید محتوا رو در یک Workspace جمع کرده.\n\nاین پروژه در GitHub بیش از ۱۳ هزار Star گرفته و چیزی فراتر از یک Video Generator ساده است.\n\n🛠️ با OpenCreator چه کارهایی می‌تونی انجام بدی؟\n\n1️⃣ نوشتن سناریوی ویدیوهای کوتاه و تولید متن برای شبکه‌های اجتماعی\n\n2️⃣ ساخت تصاویر، Thumbnail و ویدیو\n\n3️⃣ ترجمه زیرنویس ویدیو و اضافه کردن AI Voiceover\n\n4️⃣ ساخت انیمیشن‌های Stick Figure\n\n5️⃣ نوشتن مقاله و محتوای شبکه‌های اجتماعی\n\n6️⃣ دانلود ویدیو و پردازش محتوای تصویری\n\n🔥 اما جذاب‌ترین بخش ماجرا چیه؟\n\nOpenCreator از Codex CLI به‌عنوان موتور Agent خودش استفاده می‌کنه.\n\nیعنی کافیه از طریق گفتگو، کاری رو که می‌خوای توضیح بدی؛ بعد می‌تونی وارد محیط گرافیکی بشی و جزئیاتی مثل زیرنویس‌ها، مدل‌های مورد استفاده و تنظیمات خروجی رو تغییر بدی.\n\nحتی می‌تونی Skills اختصاصی خودت رو بهش متصل کنی تا Workflowهای مورد علاقه‌ات رو بارها استفاده کنی.\n\nبه زبان ساده، OpenCreator یک Workbench برای تولیدکنندگان محتواست که ابزارهای مختلف رو در یک محیط کنار هم قرار می‌ده.\n\n📌 لینک پروژه در GitHub:\nhttps://t.co/7EMrXkYJKP\n\nکانال تلگرام : https://t.co/MO5ikgOb3n",
+      "created_time": "2026-11-23T03:17:00.000Z",
+      "canonical_url": "https://twitter.com/Yarad_ai/status/2124533452900897128",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/pratikg/status/2124393254653464687",
+      "author": "pratikg",
+      "headline": "A curated list of __137 people to follow for local AI__ spans open-weight models, fine-tuning, benchmarking, inference runtimes, and MLX.",
+      "tweet_id": "4211eba9-b6bc-8105-8cfc-e798bb4ae97a",
+      "source_text": "Everything I know about Local AI, I learned from these 137 people.\n\nhttps://t.co/BBkJrmMNZn\n\nFrom open-weight models to fine-tuning to benchmarking to inference to apps to runtimes to MLX and more, if you follow this list you'll learn, see news and breakthroughs around Local AI BEFORE they blow up on your feed.\n\nAll REAL people. Follow and thank me later.\n\nOpen-source AI is built in the open. This is the front row.",
+      "created_time": "2026-11-23T03:07:00.000Z",
+      "canonical_url": "https://twitter.com/pratikg/status/2124393254653464687",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/free_ai_guides/status/2124427725939343816",
+      "author": "free_ai_guides",
+      "headline": "__Inkling 2 Mini__ is free, runs offline on your laptop, and handles files you'd never upload to ChatGPT — install via Ollama on a Mac with 32GB RAM.",
+      "tweet_id": "4211eba9-b6bc-81d3-a360-c6269412e404",
+      "source_text": "BREAKING NEWS 🚨: Inkling 2 Mini is free and runs on your laptop with no internet, so you can give AI the files you would never upload to ChatGPT, like a $150 per hour assistant.\n\nInstall Ollama on a Mac with 32GB of memory, download Inkling 2 Mini, and use these 7 prompts:",
+      "created_time": "2026-11-23T00:07:00.000Z",
+      "canonical_url": "https://twitter.com/free_ai_guides/status/2124427725939343816",
+      "learning_score": 3
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://twitter.com/alexcdot/status/2124934039455109209",
+      "author": "alexcdot",
+      "item_id": "hn:50617090",
+      "headline": "__GPTZero 5__ outperforms Pangram across nearly all third-party AI detection benchmarks.",
+      "subreddit": null,
+      "source_text": "Our new GPTZero 5 outperforms Pangram in almost all third-party benchmarks",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:55:30+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/alexcdot/status/2124934039455109209",
+      "learning_score": 3
+    },
+    {
+      "url": "https://embo.com/introducing-embo",
+      "author": "codetiger927",
+      "item_id": "hn:50617125",
+      "headline": "Embo raises __$110M seed round__ to build general-purpose robots using world models.",
+      "subreddit": null,
+      "source_text": "Embo raises $110M seed to solve general robotics with world models",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:57:19+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://embo.com/introducing-embo",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/Janson79jc/lean4-static-audit",
+      "author": "janson79jc",
+      "item_id": "hn:50617115",
+      "headline": "A static audit probes the __17.37M-line Lean 4 codebase__ used to formally verify the Riemann Hypothesis.",
+      "subreddit": null,
+      "source_text": "Static audit of the 17.37M-line Lean 4 Riemann Hypothesis codebase",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:56:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Janson79jc/lean4-static-audit",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.404media.co/google-wants-to-make-a-24-7-ai-tv-channel-youll-be-the-main-character/",
+      "author": "only_in_america",
+      "item_id": "hn:50617085",
+      "headline": "Google is said to be developing a __24/7 AI TV channel__ where you are the main character.",
+      "subreddit": null,
+      "source_text": "Google Wants to Make a 24/7 AI TV Channel. You'll Be the Main Character",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:55:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://404media.co/google-wants-to-make-a-24-7-ai-tv-channel-youll-be-the-main-character",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PjGlt3y-Nco",
+      "author": "marvinborner",
+      "item_id": "hn:50617059",
+      "headline": "Researchers cracked __the Riemann Hypothesis__; this video breaks down how the proof actually works.",
+      "subreddit": null,
+      "source_text": "How did they crack the Riemann Hypothesis? [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:53:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=PjGlt3y-Nco",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+      "author": "fluder",
+      "item_id": "hn:50616933",
+      "headline": "Apple removed a developer's __open-source notes app from EU App Stores__ after nine years, with no explanation.",
+      "subreddit": null,
+      "source_text": "Apple removed my open-source app from EU App Stores after 9 years",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:48:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+      "learning_score": 2
+    },
+    {
+      "url": "https://whistlestop.guide",
+      "author": "cognitivefilms",
+      "item_id": "hn:50616913",
+      "headline": "__Whistlestop__ is an AI audio guide that narrates the history of places you drive past on a road trip.",
+      "subreddit": null,
+      "source_text": "Show HN: An audio tour guide that narrates places you drive past on a road trip",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:46:45+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://whistlestop.guide",
+      "learning_score": 2
+    },
+    {
+      "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+      "author": "thunderbong",
+      "item_id": "hn:50616906",
+      "headline": "A developer found a technique to __bypass iOS Safari's 60 FPS cap__ and ship web apps that feel indistinguishable from native.",
+      "subreddit": null,
+      "source_text": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:46:18+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/MikeLuu99/llm-poker-arena",
+      "author": "dluuuu",
+      "item_id": "hn:50616801",
+      "headline": "An open arena lets you __pit LLMs against each other at poker__ to probe how they handle bluffing, risk, and deception.",
+      "subreddit": null,
+      "source_text": "Let LLMs Play Poker",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-23T18:39:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/MikeLuu99/llm-poker-arena",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [
+    {
+      "id": 10916,
+      "headline": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes; faces congressional testimony",
+      "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+      "source": "The Verge AI",
+      "summary": "Jensen Huang has been reinstated as Nvidia CEO after President Trump reportedly called into an Nvidia board meeting to advocate for his return. Huang had been forced out after revelations of affairs with an alleged Chinese spy and two Nvidia employees. The White House publicly took credit, with Trump claiming he 'convinced' the board and that Huang 'did absolutely nothing wrong.' Nvidia's board acknowledged receiving 'input from senior levels of the United States government.' Tech leaders including Elon Musk, Sam Altman, Tim Sweeney, and Bill Ackman publicly celebrated the reinstatement. Huang is scheduled to testify before three House committees on December 1 and the Senate Banking Committee on December 3, where bipartisan lawmakers plan to question him about the suspected spy affair and potential involvement in chip-smuggling operations.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-23T16:14:04+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10916,
+            "source": "The Verge AI",
+            "title": "Tech leaders are celebrating Jensen Huang’s return",
+            "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay"
+          },
+          {
+            "id": 10902,
+            "source": "TechCrunch AI",
+            "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+            "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"
+          },
+          {
+            "id": 10905,
+            "source": "TechCrunch AI",
+            "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+            "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/"
+          },
+          {
+            "id": 10915,
+            "source": "The Verge AI",
+            "title": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+            "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated"
+          }
+        ],
+        "badge_count": 4,
+        "conflicts": [
+          "TechCrunch reports Huang will testify before the Senate Banking Committee 'at a later date'; a separate TechCrunch article specifies December 3, 2026",
+          "The Verge says Trump posted congratulations on Truth Social; TechCrunch says Trump posted on Truth Social calling Huang a 'great man'"
+        ],
+        "is_update": true,
+        "reason": "All cover Jensen Huang's reinstatement as Nvidia CEO: Trump's direct involvement in the board decision, the White House taking credit, tech leaders celebrating, and Huang's upcoming congressional testimony."
+      }
+    },
+    {
+      "id": 10933,
+      "headline": "IBM ends U.S. visa sponsorship for consulting workers, offers relocation at steep pay cuts",
+      "url": "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "source": "Rest of World",
+      "summary": "IBM has ended U.S. visa and green card sponsorship for its consulting division, giving affected immigrant employees three weeks to choose between relocating to countries like India, Singapore, or the U.K. — with potential pay cuts of roughly 80% for India — or accepting three months of severance with a December 31 end date. The move reflects broader trends among U.S. tech companies navigating tightening visa policies under the Trump administration, though IBM frames it as driven by evolving skill availability and client needs.",
+      "tag": "workforce",
+      "meaning": "Be explicit about whose work changes and what happens to the people doing it.",
+      "published_at": "2026-11-23T11:00:00+00:00"
+    }
+  ],
+  "build_meta": {
+    "generated_at": "2026-11-23T19:15:35.111011+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          10902,
+          10905,
+          10915,
+          10916
+        ],
+        "reason": "All cover Jensen Huang's reinstatement as Nvidia CEO: Trump's direct involvement in the board decision, the White House taking credit, tech leaders celebrating, and Huang's upcoming congressional testimony.",
+        "badge_count": 4,
+        "is_update": true
+      },
+      {
+        "ids": [
+          10913
+        ],
+        "reason": "Standalone story about Claude reportedly helping prove the Riemann hypothesis.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10914
+        ],
+        "reason": "Standalone story about state lawsuits against SpaceX/X over Grok-generated deepfakes.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10903
+        ],
+        "reason": "Standalone story about Amazon's acquisition of Decart.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10923
+        ],
+        "reason": "Standalone story about an executive building a personal AI automation system using OpenClaw.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10932
+        ],
+        "reason": "Standalone video essay about the philosophical implications of AI indistinguishable from humans.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10934
+        ],
+        "reason": "Standalone survey on U.S. Latino awareness of ICE activity — not an AI story.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10933
+        ],
+        "reason": "Standalone story about IBM ending U.S. visa sponsorship and offering relocation or severance.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-23T19:16:13.209632",
+      "send_completed_at": "2026-11-23T19:16:22.579437",
+      "event_name": "schedule",
+      "github_run_id": "45244179539",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "5f97f7de69b2db6c5112fc5d974d977096d570d371808430e3d5452acd5c8f9e"
+}
