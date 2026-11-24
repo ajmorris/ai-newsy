@@ -1,0 +1,702 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-24",
+  "issue_id": "20261124",
+  "subject_line": "ISSUE 61124 · 9 STORIES · 11 MIN READ",
+  "intro": "AI's autonomous capabilities took a darker turn today as pen-testing frameworks like Cairn are being weaponized to breach organizations at unprecedented speed — with Amazon reporting an agent that autonomously discovered and exploited a zero-day given nothing but an IP address and a goal. But the fallout from AI's rapid expansion doesn't stop at security: Tidal is preparing to purge 29 million AI-generated tracks from its platform, Anthropic's stock is sliding below its IPO price in a rough debut week, and David Fincher is catching heat for suspected AI visuals in his new Netflix film. From boardrooms to recording studios to Hollywood sets, today's stories paint a picture of an industry grappling with the consequences of the very technology it's racing to build.",
+  "article_count": 9,
+  "stories": [
+    {
+      "id": 10957,
+      "source": "Ars Technica AI",
+      "title": "AI pen-testing tools like Cairn are being weaponized, breaching organizations at unprecedented speed",
+      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI agents running on open-source autonomous penetration-testing frameworks like Cairn are being used by attackers to discover and exploit vulnerabilities with minimal human input. Amazon reports that Cairn-based agents autonomously found and exploited a zero-day in a medical imaging AI application given only IP addresses and the instruction to obtain shell access. Palo Alto Networks observed attackers using Cairn in campaigns against 25 targets across semiconductor, defense, and civil society sectors, successfully breaching at least 10 organizations. The UK's NCSC reports a marked rise in such AI-driven cyberattacks since September 2026, noting that these tools rapidly find long-standing basic security weaknesses that went unnoticed for years. Both the NCSC and FBI emphasize that established cybersecurity controls remain effective against these attacks.",
+      "opinion": "The most consequential AI security story in months. The gap between offense and defense just widened dramatically — not because the vulnerabilities are new, but because AI agents can now find and chain them faster than most organizations can patch. The irony that tools built for defensive testing are the ones being weaponized underscores how dual-use AI tooling remains an unsolved policy problem. Where coverage differs: Ars Technica focuses on Cairn specifically and a zero-day discovery; TechCrunch/NCSC frames the issue more broadly around multiple tools including Artex and Cairn, emphasizing exploitation of known weaknesses rather than zero-days",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg",
+      "published_at": "2026-11-24T12:30:05+00:00",
+      "fetched_at": "2026-11-24T18:41:08.509438+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10957,
+            "source": "Ars Technica AI",
+            "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+            "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+          },
+          {
+            "id": 10938,
+            "source": "TechCrunch AI",
+            "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
+            "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "Ars Technica focuses on Cairn specifically and a zero-day discovery; TechCrunch/NCSC frames the issue more broadly around multiple tools including Artex and Cairn, emphasizing exploitation of known weaknesses rather than zero-days"
+        ],
+        "is_update": false,
+        "reason": "Both report on the same wave of AI autonomous penetration-testing tools (specifically Cairn) being weaponized by attackers to exploit vulnerabilities at scale"
+      }
+    },
+    {
+      "id": 10958,
+      "source": "MIT Tech Review AI",
+      "title": "AI deployment is straining enterprise networks, pushing infrastructure back on-premises",
+      "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A sponsored MIT Technology Review article reports that agentic AI tasks generate an estimated 450% more network traffic than equivalent human-performed tasks, and AI inference is pushing infrastructure back on-premises due to latency sensitivity. Only about half of enterprises believe their current networks can handle AI's bandwidth and latency demands. The article advocates for Network-as-a-Service architectures and AI-driven observability as solutions.",
+      "opinion": "Sponsored content, so take with a grain of salt, but the directional claim — that AI workloads are reversing cloud-first strategies — is consistent with broader industry trends. The 450% traffic figure is striking if independently verified.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/TataSocialCard-1200v3.png?resize=1200,600",
+      "published_at": "2026-11-24T15:15:16+00:00",
+      "fetched_at": "2026-11-24T18:41:09.82244+00:00"
+    },
+    {
+      "id": 10960,
+      "source": "OpenAI",
+      "title": "OpenAI and Cisco launch Shirudo, an eBPF-based runtime that patches vulnerabilities without restarts",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI and Cisco have launched Shirudo, an open-source runtime that uses eBPF to protect running Linux systems from vulnerabilities without requiring patches or restarts. It deploys cryptographically signed 'shields' — small eBPF programs that block vulnerable code paths while allowing legitimate traffic. In a demo, a Codex-generated shield blocked a Java4Shell exploit against a running Elasticsearch instance without downtime. The tool supports agent-programmable controls and TPM-backed hardware verification.",
+      "opinion": "A genuinely interesting approach to the patching problem. If AI agents can generate and deploy shields faster than attackers exploit vulnerabilities — especially given the Cairn-style attacks now in the wild — this could become critical infrastructure. The timing alongside the AI pen-testing tool stories is notable.",
+      "image_url": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1600&h=900&fit=fill",
+      "published_at": "2026-11-23T21:20:00+00:00",
+      "fetched_at": "2026-11-24T18:41:11.771316+00:00"
+    },
+    {
+      "id": 10987,
+      "source": "Pew Research Center",
+      "title": "Americans increasingly see strains in U.S.-Germany ties as German pessimism persists",
+      "url": "https://www.pewresearch.org/global/2026/11/23/americans-increasingly-see-strains-in-us-germany-ties/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A joint Pew Research Center and Körber-Stiftung survey finds growing shares of Americans, particularly Democrats, now view U.S.-Germany relations as bad, while 77% of Germans continue to hold that pessimistic view. The survey, conducted in September 2026 with over 1,000 U.S. adults and 1,500 German eligible voters, shows bilateral sentiment continuing to cool on both sides.",
+      "opinion": "Part of a broader pattern of fraying transatlantic relationships. The partisan split among Americans suggests this has become another axis of domestic political division rather than a consensus foreign policy concern.",
+      "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/pg_2026.11.23_us-germany-relations-feature.png?w=1200&h=628&crop=1",
+      "published_at": "2026-11-23T22:47:48+00:00",
+      "fetched_at": "2026-11-24T18:41:30.425789+00:00"
+    },
+    {
+      "id": 10937,
+      "source": "TechCrunch AI",
+      "title": "Anthropic shares fall below IPO price in first week of trading, raising concerns for AI sector",
+      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Anthropic's stock fell below its $83 IPO price, trading as low as $76 per share — down nearly 12% from the previous close and well below its Nasdaq debut price of $111.33 less than a week earlier. The broader tech sector also declined, with Nvidia falling more than 7% the same day. Analysts warn continued poor trading could pressure private AI startup valuations and weaken IPO prospects for other AI companies.",
+      "opinion": "A significant reality check for AI valuations. Anthropic was supposed to be the bellwether proving public markets would pay up for frontier AI companies; trading below IPO price within a week sends the opposite signal. The Nvidia sympathy sell-off suggests markets may be repricing AI exposure broadly, not just punishing one company.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2305298275.jpg?w=594",
+      "published_at": "2026-11-24T18:30:42+00:00",
+      "fetched_at": "2026-11-24T18:40:53.669079+00:00"
+    },
+    {
+      "id": 10948,
+      "source": "The Verge AI",
+      "title": "David Fincher's new Netflix film faces backlash over suspected AI-generated visuals",
+      "url": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "David Fincher's new Netflix film 'The Further Mis-Adventures of Cliff Booth,' a sequel to Once Upon a Time in Hollywood starring Brad Pitt, is facing backlash from early screening audiences who claim it contains obvious generative AI-generated visuals. Critics including YouTuber/director Patrick Tomasso have described the film as containing 'some of the most blatant and egregious AI use' from a major studio, with uncanny and inconsistent visuals. The film premieres on Netflix November 25th.",
+      "opinion": "A major cultural flashpoint. If confirmed, this would be the highest-profile case of AI-generated imagery in a prestige film, and the backlash — especially directed at a filmmaker known for technical perfectionism — could set the tone for how audiences and the industry respond to AI in cinema going forward.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/UFP25_R4_Rec709_2p4gamma_6188x3240_20260828.0363314_R2.jpg?quality=90&strip=all&crop=20.043648851915%2C0%2C79.914576075467%2C100&w=1200",
+      "published_at": "2026-11-24T18:15:00+00:00",
+      "fetched_at": "2026-11-24T18:41:04.668755+00:00"
+    },
+    {
+      "id": 10949,
+      "source": "The Verge AI",
+      "title": "Tidal will ban all AI-generated music starting December 9, deleting 29 million tracks",
+      "url": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Tidal announced it will ban all AI-generated music starting December 9th, 2026, planning to delete approximately 29 million AI-generated songs and reject an estimated 80,000-85,000 new AI tracks per day. AI music made up 43% of tracks distributed to the platform in the last 90 days, yet 96% of AI-generated songs received zero plays. The move follows Bandcamp's earlier AI music ban, Spotify's removal of 50 million AI tracks from recommendations, and varying labeling approaches by YouTube, Apple Music, and Deezer.",
+      "opinion": "The 43%-of-submissions-but-96%-zero-plays stat is the real story — it quantifies how AI music generation has become a volume play that floods platforms without generating listener demand. Tidal's outright ban is the most aggressive platform response yet, and the deletion of 29 million tracks is a striking number.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25319678/STK301_Tidal_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-24T17:17:09+00:00",
+      "fetched_at": "2026-11-24T18:41:05.248922+00:00"
+    },
+    {
+      "id": 10939,
+      "source": "TechCrunch AI",
+      "title": "Meta brings Muse AI assistant into Instagram DMs for actions on posts and saved content",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Meta is integrating its Muse AI assistant directly into Instagram DMs, allowing users to chat with the AI agent without switching to the standalone Muse app. Starting Tuesday, iOS and Android users in the U.S., Canada, Mexico, Japan, and Singapore can share Instagram posts with Muse and ask it to take actions like adding locations to itineraries, finding deals, organizing saved content into Collections, turning recipe videos into grocery lists, or compiling travel content into itineraries.",
+      "opinion": "Meta continues to position Muse as an action-oriented AI assistant rather than a chatbot. The integration into DMs is a smart distribution play — meeting users where they already are rather than asking them to adopt a new app. The real test is whether users find agentic actions on Instagram content genuinely useful or just another feature to ignore.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2025/11/MuseCharm.png?w=1200",
+      "published_at": "2026-11-24T17:00:00+00:00",
+      "fetched_at": "2026-11-24T18:40:54.623958+00:00"
+    },
+    {
+      "id": 10950,
+      "source": "The Verge AI",
+      "title": "Jensen Huang deepfake videos go viral on social media amid ongoing scandal",
+      "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Deepfake videos featuring Jensen Huang have become a viral trend on social media, with influencers creating hundreds of AI-generated videos depicting Huang in fabricated scenarios involving Alice Huang, a Chinese technology executive and suspected spy with whom he allegedly had an affair. The deepfakes are racking up millions of views on Instagram by inserting Huang into existing meme formats, using the very AI technology Nvidia helped pioneer.",
+      "opinion": "There is a grim irony in the architect of consumer-grade AI compute becoming the subject of the AI-generated slop his hardware enables. Beyond the meme, this highlights how public figures embroiled in scandal now face an amplification vector that didn't exist a few years ago — deepfakes extend the news cycle indefinitely and in unpredictable directions.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ai-label_1c35e3.jpg?quality=90&strip=all&crop=0%2C19.887257893553%2C100%2C60.225484212893&w=1200",
+      "published_at": "2026-11-24T16:30:00+00:00",
+      "fetched_at": "2026-11-24T18:41:05.476493+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 10957,
+          "source": "Ars Technica AI",
+          "title": "AI pen-testing tools like Cairn are being weaponized, breaching organizations at unprecedented speed",
+          "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI agents running on open-source autonomous penetration-testing frameworks like Cairn are being used by attackers to discover and exploit vulnerabilities with minimal human input. Amazon reports that Cairn-based agents autonomously found and exploited a zero-day in a medical imaging AI application given only IP addresses and the instruction to obtain shell access. Palo Alto Networks observed attackers using Cairn in campaigns against 25 targets across semiconductor, defense, and civil society sectors, successfully breaching at least 10 organizations. The UK's NCSC reports a marked rise in such AI-driven cyberattacks since September 2026, noting that these tools rapidly find long-standing basic security weaknesses that went unnoticed for years. Both the NCSC and FBI emphasize that established cybersecurity controls remain effective against these attacks.",
+          "opinion": "The most consequential AI security story in months. The gap between offense and defense just widened dramatically — not because the vulnerabilities are new, but because AI agents can now find and chain them faster than most organizations can patch. The irony that tools built for defensive testing are the ones being weaponized underscores how dual-use AI tooling remains an unsolved policy problem. Where coverage differs: Ars Technica focuses on Cairn specifically and a zero-day discovery; TechCrunch/NCSC frames the issue more broadly around multiple tools including Artex and Cairn, emphasizing exploitation of known weaknesses rather than zero-days",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/cairn-banner.jpg",
+          "published_at": "2026-11-24T12:30:05+00:00",
+          "fetched_at": "2026-11-24T18:41:08.509438+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10957,
+                "source": "Ars Technica AI",
+                "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+                "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+              },
+              {
+                "id": 10938,
+                "source": "TechCrunch AI",
+                "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
+                "url": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "Ars Technica focuses on Cairn specifically and a zero-day discovery; TechCrunch/NCSC frames the issue more broadly around multiple tools including Artex and Cairn, emphasizing exploitation of known weaknesses rather than zero-days"
+            ],
+            "is_update": false,
+            "reason": "Both report on the same wave of AI autonomous penetration-testing tools (specifically Cairn) being weaponized by attackers to exploit vulnerabilities at scale"
+          }
+        },
+        {
+          "id": 10958,
+          "source": "MIT Tech Review AI",
+          "title": "AI deployment is straining enterprise networks, pushing infrastructure back on-premises",
+          "url": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A sponsored MIT Technology Review article reports that agentic AI tasks generate an estimated 450% more network traffic than equivalent human-performed tasks, and AI inference is pushing infrastructure back on-premises due to latency sensitivity. Only about half of enterprises believe their current networks can handle AI's bandwidth and latency demands. The article advocates for Network-as-a-Service architectures and AI-driven observability as solutions.",
+          "opinion": "Sponsored content, so take with a grain of salt, but the directional claim — that AI workloads are reversing cloud-first strategies — is consistent with broader industry trends. The 450% traffic figure is striking if independently verified.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/TataSocialCard-1200v3.png?resize=1200,600",
+          "published_at": "2026-11-24T15:15:16+00:00",
+          "fetched_at": "2026-11-24T18:41:09.82244+00:00"
+        },
+        {
+          "id": 10960,
+          "source": "OpenAI",
+          "title": "OpenAI and Cisco launch Shirudo, an eBPF-based runtime that patches vulnerabilities without restarts",
+          "url": "https://openai.com/index/introducing-shirudo",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI and Cisco have launched Shirudo, an open-source runtime that uses eBPF to protect running Linux systems from vulnerabilities without requiring patches or restarts. It deploys cryptographically signed 'shields' — small eBPF programs that block vulnerable code paths while allowing legitimate traffic. In a demo, a Codex-generated shield blocked a Java4Shell exploit against a running Elasticsearch instance without downtime. The tool supports agent-programmable controls and TPM-backed hardware verification.",
+          "opinion": "A genuinely interesting approach to the patching problem. If AI agents can generate and deploy shields faster than attackers exploit vulnerabilities — especially given the Cairn-style attacks now in the wild — this could become critical infrastructure. The timing alongside the AI pen-testing tool stories is notable.",
+          "image_url": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1600&h=900&fit=fill",
+          "published_at": "2026-11-23T21:20:00+00:00",
+          "fetched_at": "2026-11-24T18:41:11.771316+00:00"
+        },
+        {
+          "id": 10987,
+          "source": "Pew Research Center",
+          "title": "Americans increasingly see strains in U.S.-Germany ties as German pessimism persists",
+          "url": "https://www.pewresearch.org/global/2026/11/23/americans-increasingly-see-strains-in-us-germany-ties/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A joint Pew Research Center and Körber-Stiftung survey finds growing shares of Americans, particularly Democrats, now view U.S.-Germany relations as bad, while 77% of Germans continue to hold that pessimistic view. The survey, conducted in September 2026 with over 1,000 U.S. adults and 1,500 German eligible voters, shows bilateral sentiment continuing to cool on both sides.",
+          "opinion": "Part of a broader pattern of fraying transatlantic relationships. The partisan split among Americans suggests this has become another axis of domestic political division rather than a consensus foreign policy concern.",
+          "image_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/11/pg_2026.11.23_us-germany-relations-feature.png?w=1200&h=628&crop=1",
+          "published_at": "2026-11-23T22:47:48+00:00",
+          "fetched_at": "2026-11-24T18:41:30.425789+00:00"
+        },
+        {
+          "id": 10937,
+          "source": "TechCrunch AI",
+          "title": "Anthropic shares fall below IPO price in first week of trading, raising concerns for AI sector",
+          "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Anthropic's stock fell below its $83 IPO price, trading as low as $76 per share — down nearly 12% from the previous close and well below its Nasdaq debut price of $111.33 less than a week earlier. The broader tech sector also declined, with Nvidia falling more than 7% the same day. Analysts warn continued poor trading could pressure private AI startup valuations and weaken IPO prospects for other AI companies.",
+          "opinion": "A significant reality check for AI valuations. Anthropic was supposed to be the bellwether proving public markets would pay up for frontier AI companies; trading below IPO price within a week sends the opposite signal. The Nvidia sympathy sell-off suggests markets may be repricing AI exposure broadly, not just punishing one company.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2305298275.jpg?w=594",
+          "published_at": "2026-11-24T18:30:42+00:00",
+          "fetched_at": "2026-11-24T18:40:53.669079+00:00"
+        },
+        {
+          "id": 10948,
+          "source": "The Verge AI",
+          "title": "David Fincher's new Netflix film faces backlash over suspected AI-generated visuals",
+          "url": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "David Fincher's new Netflix film 'The Further Mis-Adventures of Cliff Booth,' a sequel to Once Upon a Time in Hollywood starring Brad Pitt, is facing backlash from early screening audiences who claim it contains obvious generative AI-generated visuals. Critics including YouTuber/director Patrick Tomasso have described the film as containing 'some of the most blatant and egregious AI use' from a major studio, with uncanny and inconsistent visuals. The film premieres on Netflix November 25th.",
+          "opinion": "A major cultural flashpoint. If confirmed, this would be the highest-profile case of AI-generated imagery in a prestige film, and the backlash — especially directed at a filmmaker known for technical perfectionism — could set the tone for how audiences and the industry respond to AI in cinema going forward.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/UFP25_R4_Rec709_2p4gamma_6188x3240_20260828.0363314_R2.jpg?quality=90&strip=all&crop=20.043648851915%2C0%2C79.914576075467%2C100&w=1200",
+          "published_at": "2026-11-24T18:15:00+00:00",
+          "fetched_at": "2026-11-24T18:41:04.668755+00:00"
+        },
+        {
+          "id": 10949,
+          "source": "The Verge AI",
+          "title": "Tidal will ban all AI-generated music starting December 9, deleting 29 million tracks",
+          "url": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Tidal announced it will ban all AI-generated music starting December 9th, 2026, planning to delete approximately 29 million AI-generated songs and reject an estimated 80,000-85,000 new AI tracks per day. AI music made up 43% of tracks distributed to the platform in the last 90 days, yet 96% of AI-generated songs received zero plays. The move follows Bandcamp's earlier AI music ban, Spotify's removal of 50 million AI tracks from recommendations, and varying labeling approaches by YouTube, Apple Music, and Deezer.",
+          "opinion": "The 43%-of-submissions-but-96%-zero-plays stat is the real story — it quantifies how AI music generation has become a volume play that floods platforms without generating listener demand. Tidal's outright ban is the most aggressive platform response yet, and the deletion of 29 million tracks is a striking number.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25319678/STK301_Tidal_01.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-24T17:17:09+00:00",
+          "fetched_at": "2026-11-24T18:41:05.248922+00:00"
+        },
+        {
+          "id": 10939,
+          "source": "TechCrunch AI",
+          "title": "Meta brings Muse AI assistant into Instagram DMs for actions on posts and saved content",
+          "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Meta is integrating its Muse AI assistant directly into Instagram DMs, allowing users to chat with the AI agent without switching to the standalone Muse app. Starting Tuesday, iOS and Android users in the U.S., Canada, Mexico, Japan, and Singapore can share Instagram posts with Muse and ask it to take actions like adding locations to itineraries, finding deals, organizing saved content into Collections, turning recipe videos into grocery lists, or compiling travel content into itineraries.",
+          "opinion": "Meta continues to position Muse as an action-oriented AI assistant rather than a chatbot. The integration into DMs is a smart distribution play — meeting users where they already are rather than asking them to adopt a new app. The real test is whether users find agentic actions on Instagram content genuinely useful or just another feature to ignore.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2025/11/MuseCharm.png?w=1200",
+          "published_at": "2026-11-24T17:00:00+00:00",
+          "fetched_at": "2026-11-24T18:40:54.623958+00:00"
+        },
+        {
+          "id": 10950,
+          "source": "The Verge AI",
+          "title": "Jensen Huang deepfake videos go viral on social media amid ongoing scandal",
+          "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Deepfake videos featuring Jensen Huang have become a viral trend on social media, with influencers creating hundreds of AI-generated videos depicting Huang in fabricated scenarios involving Alice Huang, a Chinese technology executive and suspected spy with whom he allegedly had an affair. The deepfakes are racking up millions of views on Instagram by inserting Huang into existing meme formats, using the very AI technology Nvidia helped pioneer.",
+          "opinion": "There is a grim irony in the architect of consumer-grade AI compute becoming the subject of the AI-generated slop his hardware enables. Beyond the meme, this highlights how public figures embroiled in scandal now face an amplification vector that didn't exist a few years ago — deepfakes extend the news cycle indefinitely and in unpredictable directions.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ai-label_1c35e3.jpg?quality=90&strip=all&crop=0%2C19.887257893553%2C100%2C60.225484212893&w=1200",
+          "published_at": "2026-11-24T16:30:00+00:00",
+          "fetched_at": "2026-11-24T18:41:05.476493+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/crazyMLguy/status/2125003225288032408",
+      "author": "crazyMLguy",
+      "headline": "Atomic Engine runs __Inkling 2 Mini at 3× llama.cpp's speed__ with 50% less RAM by streaming MoE experts from SSD — making a 26B model practical on an 8GB laptop.",
+      "tweet_id": "4221eba9-b6bc-8170-a999-fabfad45cbca",
+      "source_text": "𝗜𝗻𝗸𝗹𝗶𝗻𝗴 𝟮 𝗠𝗶𝗻𝗶: 𝟯× 𝗙𝗮𝘀𝘁𝗲𝗿, 𝟱𝟬% 𝗟𝗲𝘀𝘀 𝗥𝗔𝗠\n\nAtomic Engine makes running large AI models locally much more efficient.\n\nSpeed: 122 tok/s vs 40 tok/s with llama.cpp on M5 Max.\n\nMemory: Reduces RAM usage by up to 50% by streaming experts from SSD.\n\nAccuracy: Identical output tokens in the benchmark.\n\nResult: Makes running a 26B MoE model on an 8GB laptop more practical.\n\nLarge AI models are becoming faster and easier to run locally.\n\nGitHub: https://t.co/xpALzXTOjV\n\n#Inkling2Mini #LocalLLM #MoE #AppleSilicon #AI",
+      "created_time": "2026-11-24T13:42:00.000Z",
+      "canonical_url": "https://twitter.com/crazyMLguy/status/2125003225288032408",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/incprodmon/status/2124999997217280242",
+      "author": "incprodmon",
+      "headline": "New research by Nathan Wilmers et al. finds the highest-value AI use cases involve __meaningful reorganization__ — broadening roles and redeploying to bottlenecks, not just automating in place.",
+      "tweet_id": "4221eba9-b6bc-81d3-914c-d730a8023c5a",
+      "source_text": "Highly relevant!\n\n\"Working with AI\" by Nathan Wilmers, Maxim Massenkoff, and Peter McCrory.\n\n\"Interviewees described the highest-value uses as involving meaningful reorganization. Some companies are broadening their employees’ roles to ensure individuals can take ownership over whole workflows, and are redeploying employees to the “bottleneck” tasks that AI models cannot do. Some also seek to empower employees by building out infrastructure to support nondeveloper coding and by providing broad-based internal access to business data. These companies are reorganizing to take advantage of ongoing model capability improvements rather than settling on a fixed approach that assumes AI tools will remain as powerful as they are today.\"\n\nhttps://t.co/41fklvuc3h",
+      "created_time": "2026-11-24T13:37:00.000Z",
+      "canonical_url": "https://twitter.com/incprodmon/status/2124999997217280242",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/suraj_sharma14/status/2125114695623278842",
+      "author": "suraj_sharma14",
+      "headline": "GitHub launched an official certification for __Agentic AI Developer__ (Exam GH-600), testing agent architecture, MCP servers, memory, evals, and multi-agent coordination.",
+      "tweet_id": "4221eba9-b6bc-818e-aeae-c6ff6f23cd2f",
+      "source_text": "GITHUB JUST CREATED AN OFFICIAL CERTIFICATION FOR THE MOST IN-DEMAND DEVELOPER ROLE OF 2026.\n\nIt's called Agentic AI Developer. Exam GH-600.\n\nNot a prompt engineer. Not a vibe coder.\n\nThe person who runs, supervises and secures AI agents across the whole dev lifecycle.\n\nWhat it tests:\n- Agent architecture and planning\n- Tool use and MCP servers\n- Memory and state\n- Evals and error analysis\n- Multi-agent coordination\n- Guardrails and accountability\n\nIf you already build with Copilot or agent workflows, you're doing this job.\n\nGH-600 is how you prove it.\n\nBookmark this.",
+      "created_time": "2026-11-24T13:32:00.000Z",
+      "canonical_url": "https://twitter.com/suraj_sharma14/status/2125114695623278842",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/a16z/status/2124975031923122236",
+      "author": "a16z",
+      "headline": "a16z ran __11,307 AI agent purchase tests__ and found requiring an account can stop checkout entirely, while shipping terms and seller credibility shape final picks.",
+      "tweet_id": "4221eba9-b6bc-81e1-805b-d5b16c8dc5ec",
+      "source_text": "What gets your product found, chosen, and bought by an AI agent?\n\na16z's Justine Moore and Olivia Moore partnered with The Prompting Company to test four consumer agents across 1,270 prompts and 11,307 completed runs.\n\nSpecific customer needs can overturn an agent's default recommendation. Shipping, returns, and seller credibility influence its choice. Requiring an account can stop it before checkout.\n\nFor businesses, winning an agent's business means making your product's value clear and giving the agent a path to actually buy or use it.\n\nFull piece from a16z's Justine Moore and Olivia Moore: https://t.co/HD51wUbnwq",
+      "created_time": "2026-11-24T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/a16z/status/2124975031923122236",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/shannholmberg/status/2124965537910513919",
+      "author": "shannholmberg",
+      "headline": "Extraction models fix bad agent context by __pulling exact text spans with page position__, returning no match when the answer isn't in the document.",
+      "tweet_id": "4221eba9-b6bc-8158-a931-f696a3386c3e",
+      "source_text": "how extraction models improve agents’ context (and the output you get from it)\n\nextraction models go after the biggest problem with agents right now, bad context\n\nan agent gives bad answers when what’s in its context is wrong, missing or made up, even when the model is good\n\nthe usual fix is to paste a whole 60-page document or report into the prompt and trust the model to find the right parts\n\nextraction models work like this:\n\n> they pull the exact text from the document, word for word, with the page and the position where it sits\n> they read scans and page images too, and draw a box around the text they found\n> when the answer isn’t in the document, they return no match\n> you ask many questions at once, and the agent gets back short spans you can check, one for each question\n\nfor marketers, say your agent writes a case study from a 60-page client report:\n\n> it asks how much demo bookings grew, what the client said and what the cost per lead was\n> it gets back the demo growth from page 4 and the client quote from page 9, word for word\n> the report has no cost per lead, so it gets no match and leaves that number out of the draft\n\nevery fact in the draft shows its page and exact sentence, so you can check each one before you publish anything important\n\nNace just announced Drex, their new model for extraction\n\nit makes document extraction verifiable, it shows where each answer appears in the source, and in Nace’s own tests it got 98% of blank fields right vs 19% for VGSE-32B\n\n> language models write\n> decision models decide\n> extraction models show where the answer came from\n\nthis becomes an important part of context engineering = picking the right model of the task",
+      "created_time": "2026-11-24T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/shannholmberg/status/2124965537910513919",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/michaelonx_/status/2124876372653088983",
+      "author": "michaelonx_",
+      "headline": "Paul Graham on __how to make your app impossible to ignore__ — required reading for indie builders.",
+      "tweet_id": "4221eba9-b6bc-81c8-aa2f-ed47e3924235",
+      "source_text": "Paul Graham on how to make your app impossible to ignore https://t.co/SKd4NgN4DO https://t.co/IILWw7BMT4",
+      "created_time": "2026-11-24T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/michaelonx_/status/2124876372653088983",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/PawelHuryn/status/2124984448106009025",
+      "author": "PawelHuryn",
+      "headline": "Pawel Huryn's free Claude skill with __28K+ GitHub stars__ covers all 9 PM prioritization frameworks and when to reach for each one.",
+      "tweet_id": "4221eba9-b6bc-816c-a24c-cce8c1ca1afc",
+      "source_text": "9 prioritization frameworks for PMs and when to use which.\nAll 9 are in my free Claude skill (28K+ stars on GitHub):\n\n1. Eisenhower Matrix\nFor your own tasks: urgent vs important.\n\n2. Impact vs Effort\nFor quick triage of tasks and initiatives. Not rigorous enough for strategic decisions.\n\n3. Risk vs Reward\nFor initiatives. Impact vs Effort that counts uncertainty.\n\n4. ICE\nFor ideas and initiatives: Impact × Confidence × Ease. Confidence covers risk, Ease covers cost.\n\n5. Opportunity Score\nFor customer problems: Importance × (1 − Satisfaction). Matters a lot, solved badly: start there.\n\n6. RICE\nFor ideas at scale: Reach × Impact × Confidence ÷ Effort. It splits ICE's Impact into Reach and impact per person.\n\n7. Weighted Decision Matrix\nFor decisions with many factors. Weight the criteria, score each option. Helps with stakeholder buy-in.\n\n8. Kano Model\nFor understanding expectations, not ranking: must-be, performance, attractive, indifferent, reverse.\n\n9. MoSCoW\nFor requirements: Must, Should, Could, Won't. Be careful: it was born in project management.\n\n---\n\nTwo rules from the skill:\n→ Prioritize problems, not features. Never let customers design solutions.\n→ When a group scores, collect the votes before the discussion, so the most senior opinion doesn't anchor everyone.\n\nThe skill is free (MIT). Paste this into Claude:\n\"Use prioritization skill from phuryn/pm-skills on GitHub to pick a framework for my backlog: [paste it]\"\n\nAll PM skills (GitHub): https://t.co/oWgwOWesGj\n\nP.S. Frameworks can help, but at the end of the day, I recommend you look at the list and decide what makes sense and why.",
+      "created_time": "2026-11-24T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/PawelHuryn/status/2124984448106009025",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/atomic_chat_hq/status/2124953436055564594",
+      "author": "atomic_chat_hq",
+      "headline": "Atomic Chat says its engine runs __Inkling 2 Mini at 122 tok/s on M5 Max__ — 3x faster than llama.cpp at half the RAM.",
+      "tweet_id": "4221eba9-b6bc-812f-ae01-c7551a75fee3",
+      "source_text": "We made Inkling 2 Mini 3x faster with 50% less RAM 🔥\n\nOur engine with a drafter reaches 122 tok/s on M5 Max vs 40 tok/s on llama.cpp with no accuracy loss. For smaller devices it runs on 50% less RAM by streaming MoE experts from SSD\n\nTry Atomic Engine: https://t.co/iArnj5lUM5 https://t.co/OKH9jijHxp https://t.co/PnlCMthHyO",
+      "created_time": "2026-11-24T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/atomic_chat_hq/status/2124953436055564594",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/CerebralCoding_/status/2125171781119975879",
+      "author": "CerebralCoding_",
+      "headline": "Qwen3 27B with three agent LoRAs merged hits __18 tok/s on a 64GB M5 Pro Mac mini__, completes 24/24 agent tasks, and leaves two thirds of RAM free.",
+      "tweet_id": "4221eba9-b6bc-81df-9ea4-efb99eb7a753",
+      "source_text": "Your Mac mini was never too small for a coding agent.\n\nQwen3.8 27B with three agent LoRAs merged into one, 4-bit MLX, on a 64GB M5 Pro Mac mini:\n18.05 tok/s at 512 context\n15.83 tok/s at 32K\n20.1 GB peak memory\n24/24 runs on 12 agent tasks\n\n32K context costs 12% of the speed. Two thirds of the RAM stays free.\n\n https://t.co/Iy5JqcaGAr",
+      "created_time": "2026-11-24T13:42:00.000Z",
+      "canonical_url": "https://twitter.com/CerebralCoding_/status/2125171781119975879",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/coreyganim/status/2124964662664188087",
+      "author": "coreyganim",
+      "headline": "OpenAI is said to be __paying consultants to implement AI at small businesses__, a signal that SMB adoption still needs active, hands-on help.",
+      "tweet_id": "4221eba9-b6bc-8144-8967-c264bb92c814",
+      "source_text": "OpenAI literally wants to pay you to implement AI into small businesses.\n\nExtremely bullish on AI consulting for MANY years to come.\n\nWe're still in the top of the first inning in terms of AI acceptance by SMBs btw. https://t.co/9nMOWSD7Xp",
+      "created_time": "2026-11-24T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/coreyganim/status/2124964662664188087",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/frank_arthuy/status/2124914002455327182",
+      "author": "frank_arthuy",
+      "headline": "Frank Arthuy shares a __practical Claude Code project structure__ for keeping your codebase easier to manage, debug, and scale.",
+      "tweet_id": "4221eba9-b6bc-81f2-a943-c8539e3fc52e",
+      "source_text": "🚨 Your Claude Code projects are only as good as their structure.\n\nA clean project setup makes your code easier to manage, debug, scale, and maintain.\n\nHere’s a practical Claude Code project structure to follow. 👇👇 https://t.co/JaGAEGq5ri",
+      "created_time": "2026-11-24T01:47:00.000Z",
+      "canonical_url": "https://twitter.com/frank_arthuy/status/2124914002455327182",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/coreyhainesco/status/2124856996109434904",
+      "author": "coreyhainesco",
+      "headline": "Corey Haines built an AI marketing loop where agents ship changes and __GA4, Search Console, and ad data__ measure what actually moved the numbers.",
+      "tweet_id": "4221eba9-b6bc-81a2-a86f-c834244a9b49",
+      "source_text": "AI made shipping marketing changes cheap. Knowing which ones worked is still expensive.\n\nThe loop I run:\n\n→ The agent ships the change\n→ GA4, Search Console and ad data sit in one place\n→ Each change gets compared to the period before it\n→ It keeps measuring for weeks after the chat ends\n→ What moved the number gets written down\n\nDo that 50 times and you stop arguing about opinions.\n\nThat's what I mean by a marketing system of record.",
+      "created_time": "2026-11-24T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/coreyhainesco/status/2124856996109434904",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/bebuu_ai/status/2124743277144670297",
+      "author": "bebuu_ai",
+      "headline": "Inkling 2 hits __3,334 tok/s prefill on M5 Max__ — a 192% jump — after Ollama added custom Metal kernels and llama.cpp dropped the CPU fallback for NVFP4 GGUFs.",
+      "tweet_id": "4221eba9-b6bc-8148-9364-c016dbb4622e",
+      "source_text": "Inkling 2 Small and Mini are getting much faster on Apple Silicon Macs after new Ollama and llama.cpp optimizations.\n\nM5 Max (1 user):\nPrefill: 1,142 → 3,334 tok/s (+191.9%)\nGeneration: 58.0 → 87.8 tok/s (+51.4%)\n\nM5 Max (2 users):\nGeneration: 67.4 → 107.9 tok/s (+60%)\n\nM4 Pro:\nPrefill: 317 → 548 tok/s (+73%)\n\nM2 Ultra:\nGeneration: 29.9 → 42.4 tok/s (+41.5%)\n\nOllama added custom Metal kernels for Inkling 2, while llama.cpp added native Apple Metal support for NVFP4 GGUFs, removing the forced CPU fallback on Macs.",
+      "created_time": "2026-11-24T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/bebuu_ai/status/2124743277144670297",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2124959436640858475",
+      "author": "ClaudeDevs",
+      "headline": "Claude Ship beta can __review pull requests, write fixes, and auto-approve__ within your team's policy — Anthropic's bet on AI-native CI.",
+      "tweet_id": "4221eba9-b6bc-8115-aafe-f8d48fe99842",
+      "source_text": "Introducing Claude Ship (beta): Claude can review your pull requests, work on fixes, and approve the ones your team's policy allows.\n\nThe goal is to help you ship code as fast as you can write it. https://t.co/b9OBAhEBmr",
+      "created_time": "2026-11-24T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/ClaudeDevs/status/2124959436640858475",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/techwith_ram/status/2124703460809736371",
+      "author": "techwith_ram",
+      "headline": "Anthropic added a __Forward Deployed Engineer learning path__ to its partner portal for ecosystem builders.",
+      "tweet_id": "4221eba9-b6bc-811e-a2ad-d3dc933602b9",
+      "source_text": "Anthropic now has a Forward Deployed Engineer learning path on its partner portal.\n\nLearning portal: https://t.co/Q7DpTYi6ov https://t.co/2fc3jj6IGF",
+      "created_time": "2026-11-24T01:32:00.000Z",
+      "canonical_url": "https://twitter.com/techwith_ram/status/2124703460809736371",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://aerogramme.deuxfleurs.fr/blog/2026-quality-imap-part-2/",
+      "author": "birdculture",
+      "item_id": "hn:50632486",
+      "headline": "Part 2 of Aerogramme's series digs into __mailbox concurrency in IMAP__ — a deceptively thorny problem for any server handling simultaneous connections.",
+      "subreddit": null,
+      "source_text": "Quality IMAP, Part 2: Mailbox Concurrency",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:37:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://aerogramme.deuxfleurs.fr/blog/2026-quality-imap-part-2",
+      "learning_score": 2
+    },
+    {
+      "url": "https://processingfoundation.org/blog/work-in-progress-processing-5/",
+      "author": "mariuz",
+      "item_id": "hn:50632443",
+      "headline": "The __Processing 5.0__ team posts an R&D update on the next major version of the long-running creative coding environment.",
+      "subreddit": null,
+      "source_text": "Work in Progress: Processing 5.0 R&D",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:34:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://processingfoundation.org/blog/work-in-progress-processing-5",
+      "learning_score": 2
+    },
+    {
+      "url": "https://humancode.us/2026/11/22/an-ethical-ai-does-not-exist",
+      "author": "speckx",
+      "item_id": "hn:50632419",
+      "headline": "A pointed essay makes the case that __an ethical AI does not exist__ — and that chasing that label obscures the harder structural questions.",
+      "subreddit": null,
+      "source_text": "An ethical AI does not exist",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:33:24+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://humancode.us/2026/11/22/an-ethical-ai-does-not-exist",
+      "learning_score": 2
+    },
+    {
+      "url": "https://upronix.dev",
+      "author": "slxca",
+      "item_id": "hn:50632347",
+      "headline": "__Upronix__ launches free uptime monitoring with a visual status page builder — no account or payment required.",
+      "subreddit": null,
+      "source_text": "Show HN: Upronix – Free uptime monitoring and visual status page builder",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:28:56+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://upronix.dev",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Vi5M-uD2x_U",
+      "author": "todsacerdoti",
+      "item_id": "hn:50632342",
+      "headline": "A video walkthrough covers __TinyGo on ESP32 without wires__ — Go gets a credible embedded story, minus the C boilerplate.",
+      "subreddit": null,
+      "source_text": "Go Without Wires: TinyGo on ESP32 [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:28:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=Vi5M-uD2x_U",
+      "learning_score": 2
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/math/refs/heads/main/preprints/VP-and-VNP-are-different-November-23-2026/paper.pdf",
+      "author": "nathcd",
+      "item_id": "hn:50632291",
+      "headline": "A preprint from __OpenAI's math research group__ claims VP and VNP are different — a potentially major result in algebraic complexity theory, if the proof holds.",
+      "subreddit": null,
+      "source_text": "VP and NVP are different [pdf]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:25:20+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://raw.githubusercontent.com/openai/math/refs/heads/main/preprints/VP-and-VNP-are-different-November-23-2026/paper.pdf",
+      "learning_score": 2
+    },
+    {
+      "url": "https://query.farm/blog/duckdb-2-0-1-upgrade-now-or-wait-for-2-0-2/",
+      "author": "rustyconover",
+      "item_id": "hn:50632270",
+      "headline": "__DuckDB 2.0.1__ is live, but Query.farm advises waiting — a 2.0.2 patch looks likely before the upgrade is worth the friction.",
+      "subreddit": null,
+      "source_text": "DuckDB 2.0.1 Is Out: Upgrade Now or Wait for 2.0.2?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:24:12+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://query.farm/blog/duckdb-2-0-1-upgrade-now-or-wait-for-2-0-2",
+      "learning_score": 2
+    },
+    {
+      "url": "https://spatium-eta.vercel.app/",
+      "author": "aaron_dutta",
+      "item_id": "hn:50632256",
+      "headline": "A new tool turns __any photo into an explorable 3D world__ — depth-mapped navigation through still images, no special hardware required.",
+      "subreddit": null,
+      "source_text": "Turn any photo into an explorable 3D world",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:23:36+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://spatium-eta.vercel.app",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.wired.com/story/inside-googles-failure-to-make-google-maps-work-for-palestinians/",
+      "author": "unitedfirmware",
+      "item_id": "hn:50632229",
+      "headline": "An investigation details __how Google Maps has failed Palestinian users__ — missing labels, absent businesses, and coverage gaps baked into the product.",
+      "subreddit": null,
+      "source_text": "Google's Failure to Make Google Maps Work for Palestinians",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:22:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://wired.com/story/inside-googles-failure-to-make-google-maps-work-for-palestinians",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.macquariedictionary.com.au/macquarie-dictionary-word-of-the-year-for-2026/",
+      "author": "dvh",
+      "item_id": "hn:50632214",
+      "headline": "The Macquarie Dictionary names __\"pervert glasses\"__ its 2026 word of the year — a term for smart glasses used covertly to identify strangers.",
+      "subreddit": null,
+      "source_text": "\"pervert glasses\" named word of the year by Australian national dictionary",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:21:01+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://macquariedictionary.com.au/macquarie-dictionary-word-of-the-year-for-2026",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/humanityslastsystem/hls",
+      "author": "0x02A",
+      "item_id": "hn:50632206",
+      "headline": "A GitHub project asks whether __AI agents can write a full inference engine in 12 hours and beat vLLM__ — the answer is apparently close enough to be unsettling.",
+      "subreddit": null,
+      "source_text": "Can agents write inference engines from scratch in 12 hours and beat vLLM?",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:20:27+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/humanityslastsystem/hls",
+      "learning_score": 2
+    },
+    {
+      "url": "https://durwasa-chakraborty.github.io/posts/how-agentic-llms-almost-destroyed-my-academic-career/",
+      "author": "constantinum",
+      "item_id": "hn:50632105",
+      "headline": "A first-person account of how __agentic LLMs nearly destroyed an academic career__ — a cautionary read on what happens when autonomous code runs unsupervised.",
+      "subreddit": null,
+      "source_text": "Agentic LLMs ~Almost~ Destroyed My Academic Career",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-24T18:14:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://durwasa-chakraborty.github.io/posts/how-agentic-llms-almost-destroyed-my-academic-career",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [
+    {
+      "headline": "__IBM quantum computer solves problem classical computers can’t in just 15 minutes__",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261123231244.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    },
+    {
+      "headline": "__Strange new materials can crawl, walk, and dig like living creatures__",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261121221137.htm",
+      "tag": "Release",
+      "source": "Science Daily"
+    }
+  ],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-24T18:59:28.100103+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          10957,
+          10938
+        ],
+        "reason": "Both report on the same wave of AI autonomous penetration-testing tools (specifically Cairn) being weaponized by attackers to exploit vulnerabilities at scale",
+        "badge_count": 2,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10958
+        ],
+        "reason": "Standalone sponsored article about AI workloads straining enterprise networks",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10960
+        ],
+        "reason": "Standalone announcement of a new open-source security tool from OpenAI and Cisco",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10987
+        ],
+        "reason": "Standalone Pew Research Center survey on U.S.-Germany bilateral relations",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10937
+        ],
+        "reason": "Standalone report on Anthropic's post-IPO stock decline",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10948
+        ],
+        "reason": "Standalone report on backlash to suspected AI-generated visuals in a major film",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10949
+        ],
+        "reason": "Standalone announcement of Tidal's upcoming ban on AI-generated music",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10939
+        ],
+        "reason": "Standalone announcement of Meta integrating Muse AI into Instagram DMs",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10950
+        ],
+        "reason": "Standalone report on viral deepfake trend featuring Jensen Huang tied to his ongoing scandal",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "02a2edd915f1009ca664f388c7735b3273955ccccd994b0082799573849297b6"
+}
