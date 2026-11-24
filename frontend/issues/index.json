@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-23T00:00:00Z",
-  "issueCount": 197,
+  "generatedAt": "2026-11-24T00:00:00Z",
+  "issueCount": 198,
   "latestIssue": {
-    "slug": "2026-11-23",
-    "digestDate": "2026-11-23",
-    "displayDate": "Nov 23, 2026",
-    "issueNumber": "61123",
-    "subject": "ISSUE 61123 \u00b7 8 STORIES \u00b7 11 MIN READ",
-    "intro": "A 167-year-old math problem may have finally fallen \u2014 and it was an AI that knocked it down. Anthropic's Claude reportedly cracked the Riemann hypothesis, one of mathematics' greatest unsolved puzzles, though the 17-million-line proof has already sparked fierce debate about what \"understanding\" even means when a machine does the solving. Meanwhile, today's digest spans everything from Trump personally calling Nvidia's board to reinstate Jensen Huang, to Amazon's $7.5 billion bet on challenging Nvidia's chip dominance, to one CTO's $600-a-month AI assistant that calls his coworkers when they ignore Slack messages.",
-    "articleCount": 8,
-    "urlPath": "/issues/2026-11-23.html",
-    "contentHash": "5f97f7de69b2db6c5112fc5d974d977096d570d371808430e3d5452acd5c8f9e"
+    "slug": "2026-11-24",
+    "digestDate": "2026-11-24",
+    "displayDate": "Nov 24, 2026",
+    "issueNumber": "61124",
+    "subject": "ISSUE 61124 \u00b7 9 STORIES \u00b7 11 MIN READ",
+    "intro": "AI's autonomous capabilities took a darker turn today as pen-testing frameworks like Cairn are being weaponized to breach organizations at unprecedented speed \u2014 with Amazon reporting an agent that autonomously discovered and exploited a zero-day given nothing but an IP address and a goal. But the fallout from AI's rapid expansion doesn't stop at security: Tidal is preparing to purge 29 million AI-generated tracks from its platform, Anthropic's stock is sliding below its IPO price in a rough debut week, and David Fincher is catching heat for suspected AI visuals in his new Netflix film. From boardrooms to recording studios to Hollywood sets, today's stories paint a picture of an industry grappling with the consequences of the very technology it's racing to build.",
+    "articleCount": 9,
+    "urlPath": "/issues/2026-11-24.html",
+    "contentHash": "02a2edd915f1009ca664f388c7735b3273955ccccd994b0082799573849297b6"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-24",
+      "digestDate": "2026-11-24",
+      "displayDate": "Nov 24, 2026",
+      "issueNumber": "61124",
+      "subject": "ISSUE 61124 \u00b7 9 STORIES \u00b7 11 MIN READ",
+      "intro": "AI's autonomous capabilities took a darker turn today as pen-testing frameworks like Cairn are being weaponized to breach organizations at unprecedented speed \u2014 with Amazon reporting an agent that autonomously discovered and exploited a zero-day given nothing but an IP address and a goal. But the fallout from AI's rapid expansion doesn't stop at security: Tidal is preparing to purge 29 million AI-generated tracks from its platform, Anthropic's stock is sliding below its IPO price in a rough debut week, and David Fincher is catching heat for suspected AI visuals in his new Netflix film. From boardrooms to recording studios to Hollywood sets, today's stories paint a picture of an industry grappling with the consequences of the very technology it's racing to build.",
+      "articleCount": 9,
+      "urlPath": "/issues/2026-11-24.html",
+      "contentHash": "02a2edd915f1009ca664f388c7735b3273955ccccd994b0082799573849297b6"
+    },
     {
       "slug": "2026-11-23",
       "digestDate": "2026-11-23",
@@ -133,17 +144,6 @@
       "articleCount": 7,
       "urlPath": "/issues/2026-11-13.html",
       "contentHash": "8e3879ed1aae85c1da708f7e57eb4f623f4c5b3898ad759f231395f74a8ac816"
-    },
-    {
-      "slug": "2026-11-12",
-      "digestDate": "2026-11-12",
-      "displayDate": "Nov 12, 2026",
-      "issueNumber": "61112",
-      "subject": "ISSUE 61112 \u00b7 10 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is bracing for a seismic leadership shakeup as Nvidia's board reportedly moves to oust CEO Jensen Huang \u2014 a stunning development that has already wiped over $427 billion in market value and raises hard questions about how much of the AI boom rests on the shoulders of a few powerful individuals. Beyond the boardroom drama, today's digest spans the full spectrum: from a cyberattack exposing Notion users' AI chat transcripts and United Airlines drawing a line against AI booking agents, to a record $4 billion fund betting big on AI's next wave and new research showing Americans want AI in their doctor's office \u2014 but not calling the shots.",
-      "articleCount": 10,
-      "urlPath": "/issues/2026-11-12.html",
-      "contentHash": "6886631062ca9591534f96e42e6fb6016b2925932aa4bca6e0ca6911db0cf422"
     }
   ]
 }
