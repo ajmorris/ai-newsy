@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-24T00:00:00Z",
-  "issueCount": 198,
+  "generatedAt": "2026-11-25T00:00:00Z",
+  "issueCount": 199,
   "latestIssue": {
-    "slug": "2026-11-24",
-    "digestDate": "2026-11-24",
-    "displayDate": "Nov 24, 2026",
-    "issueNumber": "61124",
-    "subject": "ISSUE 61124 \u00b7 9 STORIES \u00b7 11 MIN READ",
-    "intro": "AI's autonomous capabilities took a darker turn today as pen-testing frameworks like Cairn are being weaponized to breach organizations at unprecedented speed \u2014 with Amazon reporting an agent that autonomously discovered and exploited a zero-day given nothing but an IP address and a goal. But the fallout from AI's rapid expansion doesn't stop at security: Tidal is preparing to purge 29 million AI-generated tracks from its platform, Anthropic's stock is sliding below its IPO price in a rough debut week, and David Fincher is catching heat for suspected AI visuals in his new Netflix film. From boardrooms to recording studios to Hollywood sets, today's stories paint a picture of an industry grappling with the consequences of the very technology it's racing to build.",
+    "slug": "2026-11-25",
+    "digestDate": "2026-11-25",
+    "displayDate": "Nov 25, 2026",
+    "issueNumber": "61125",
+    "subject": "ISSUE 61125 \u00b7 9 STORIES \u00b7 11 MIN READ",
+    "intro": "AI's physical footprint is expanding in ways that would have sounded like science fiction a year ago \u2014 the FCC just greenlit SpaceX to deploy up to *one million* AI-chip-equipped satellites, while back on Earth, the data center boom is hitting real-world friction that could trigger a shakeout by 2027. Meanwhile, the human stakes of AI keep climbing too, with 42 state attorneys general scrambling to stop Character.AI from auctioning millions of users' private chat histories \u2014 including those of minors \u2014 to an anonymous shell company formed the day before it placed its bid.",
     "articleCount": 9,
-    "urlPath": "/issues/2026-11-24.html",
-    "contentHash": "02a2edd915f1009ca664f388c7735b3273955ccccd994b0082799573849297b6"
+    "urlPath": "/issues/2026-11-25.html",
+    "contentHash": "2a58b31cf1e578d1ace6b875a405db1908e506481a76c3e8d9ca44163a8dc5ba"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-25",
+      "digestDate": "2026-11-25",
+      "displayDate": "Nov 25, 2026",
+      "issueNumber": "61125",
+      "subject": "ISSUE 61125 \u00b7 9 STORIES \u00b7 11 MIN READ",
+      "intro": "AI's physical footprint is expanding in ways that would have sounded like science fiction a year ago \u2014 the FCC just greenlit SpaceX to deploy up to *one million* AI-chip-equipped satellites, while back on Earth, the data center boom is hitting real-world friction that could trigger a shakeout by 2027. Meanwhile, the human stakes of AI keep climbing too, with 42 state attorneys general scrambling to stop Character.AI from auctioning millions of users' private chat histories \u2014 including those of minors \u2014 to an anonymous shell company formed the day before it placed its bid.",
+      "articleCount": 9,
+      "urlPath": "/issues/2026-11-25.html",
+      "contentHash": "2a58b31cf1e578d1ace6b875a405db1908e506481a76c3e8d9ca44163a8dc5ba"
+    },
     {
       "slug": "2026-11-24",
       "digestDate": "2026-11-24",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-11-14.html",
       "contentHash": "cb1188d58877fb97dbe75c2289f305a80f28226a459a1b3c281c35bd2e0e0f6d"
-    },
-    {
-      "slug": "2026-11-13",
-      "digestDate": "2026-11-13",
-      "displayDate": "Nov 13, 2026",
-      "issueNumber": "61113",
-      "subject": "ISSUE 61113 \u00b7 7 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is reeling today after Jensen Huang's sudden resignation from Nvidia, capping a scandal that has spiraled from tabloid shock into a full-blown national security crisis involving alleged Chinese intelligence ties and GPU smuggling \u2014 and the political fallout is still spreading. But the industry isn't standing still: Google dropped Gemini 4 Hydrogen as its new speed-first model across Search and its entire product ecosystem, ElevenLabs unveiled a team-oriented AI meeting app, and The Verge gave Anthropic's new Claude Duet agent a verdict of \"surprisingly helpful but occasionally neurotic.\" It's one of those days where the biggest story in AI isn't about a model launch \u2014 it's about the man who made the GPUs they all run on walking out the door.",
-      "articleCount": 7,
-      "urlPath": "/issues/2026-11-13.html",
-      "contentHash": "8e3879ed1aae85c1da708f7e57eb4f623f4c5b3898ad759f231395f74a8ac816"
     }
   ]
 }
