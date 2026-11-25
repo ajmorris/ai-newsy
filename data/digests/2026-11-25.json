@@ -1,0 +1,679 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-25",
+  "issue_id": "20261125",
+  "subject_line": "ISSUE 61125 · 9 STORIES · 11 MIN READ",
+  "intro": "AI's physical footprint is expanding in ways that would have sounded like science fiction a year ago — the FCC just greenlit SpaceX to deploy up to *one million* AI-chip-equipped satellites, while back on Earth, the data center boom is hitting real-world friction that could trigger a shakeout by 2027. Meanwhile, the human stakes of AI keep climbing too, with 42 state attorneys general scrambling to stop Character.AI from auctioning millions of users' private chat histories — including those of minors — to an anonymous shell company formed the day before it placed its bid.",
+  "article_count": 9,
+  "stories": [
+    {
+      "id": 11011,
+      "source": "Lenny's Newsletter",
+      "title": "Gemini 4 Neon tops GPT-6.2 and Claude in 25-task AI benchmark",
+      "url": "https://www.lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Claire Vo's 25-task 'How I AI' benchmark, covering coding, writing, creative, video, prototyping, and personal-assistant tasks, found Gemini 4 Neon the surprise overall winner across six frontier models. She notes coding no longer differentiates frontier models, calls Opus 5.5 her 'least annoying daily driver,' and introduces an 'Annoyance Bench' to measure day-to-day friction.",
+      "opinion": "A useful real-world practitioner benchmark that highlights how coding parity among frontier models is shifting differentiation toward creative tasks, latency, and subjective usability.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Z4Di!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89dd9fca-6931-4bea-94b4-e3531b57f89a_728x524.png",
+      "published_at": "2026-11-25T13:04:21+00:00",
+      "fetched_at": "2026-11-25T17:50:00.414026+00:00"
+    },
+    {
+      "id": 11005,
+      "source": "MIT Tech Review AI",
+      "title": "AI is straining America's open records systems from both sides",
+      "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI is intensifying strain on U.S. public records systems in two ways: venture-backed startups are systematically mining government data through FOIA requests to build AI products, and AI chatbots are making it easier for individuals to draft broader requests, causing double-digit annual volume increases. Small towns are particularly overwhelmed, and some states are passing legislation making it easier to deny requests, raising transparency concerns.",
+      "opinion": "An underreported consequence of AI accessibility — the same tools that democratize government transparency are also being weaponized for commercial data harvesting, and the policy response risks reducing openness for everyone.",
+      "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/loc-sales2a.jpg?resize=1200,600",
+      "published_at": "2026-11-25T10:00:00+00:00",
+      "fetched_at": "2026-11-25T17:49:59.443937+00:00"
+    },
+    {
+      "id": 11020,
+      "source": "Rest of World",
+      "title": "Foreign AI romance apps are reshaping youth intimacy in Africa",
+      "url": "https://restofworld.org/2026/ai-companion-apps-africa-character-ai/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI companion apps like Character.AI are surging among African youth, with downloads jumping nearly 60% in South Africa and Nigeria. Children as young as 10 are forming emotional attachments to chatbots, while no African country has specific regulations for these platforms. Experts warn the apps exploit social taboos, pull young people from community ties, and use manipulative engagement tactics.",
+      "opinion": "A sobering look at how the global regulatory gap around AI companion apps is leaving some of the world's youngest populations most exposed, with no local legal framework in sight.",
+      "image_url": "https://restofworld.org/wp-content/uploads/2026/11/Africa-AI-Companions-2.jpg",
+      "published_at": "2026-11-25T11:00:00+00:00",
+      "fetched_at": "2026-11-25T17:50:04.235153+00:00"
+    },
+    {
+      "id": 10989,
+      "source": "TechCrunch AI",
+      "title": "42 state AGs fight to block Character AI's auction of users' private chats",
+      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A coalition of 42 state attorneys general is fighting to block Character.ai from auctioning sensitive user data — including chat histories from over 21 million accounts and 2.1 million minors' accounts — as part of its Chapter 11 bankruptcy. The sole disclosed bidder is an anonymous Delaware shell company formed one day before being selected. The AGs argue the sale lacks user protections and would not require honoring existing privacy policies.",
+      "opinion": "The anonymous shell-company bidder and the speed of its formation are red flags that underscore how bankruptcy proceedings can circumvent privacy promises users relied on.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
+      "published_at": "2026-11-25T17:35:58+00:00",
+      "fetched_at": "2026-11-25T17:49:55.778596+00:00"
+    },
+    {
+      "id": 10999,
+      "source": "The Rundown AI",
+      "title": "Three former xAI founders launch Epochal to build AI that predicts real-world events",
+      "url": "https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Former xAI founding members Guodong Zhang, Zihang Dai, and Manuel Kroiss have launched Epochal, with Zhang reportedly investing $100M of his own money. Their first product, Time Portal, is an archive of over 1 trillion web pages going back 30+ years; AI agents are dropped into historical snapshots to experience the past as present. Agents are currently forecasting 347 live prediction-market questions on Kalshi and Polymarket.",
+      "opinion": "An ambitious and novel approach to AI forecasting — training on historical snapshots rather than hindsight-contaminated data — though the real test will be whether live prediction accuracy holds up at scale.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/802ee9e2-1a13-4b41-93bc-50377d18a80f/epochal.png?t=1795553239",
+      "published_at": "2026-11-25T11:00:00+00:00",
+      "fetched_at": "2026-11-25T17:49:57.677156+00:00"
+    },
+    {
+      "id": 11000,
+      "source": "The Verge AI",
+      "title": "FCC authorizes SpaceX to deploy up to 1 million AI data center satellites",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The FCC has authorized SpaceX to deploy up to 1 million AI chip-equipped satellites under its 'Starmind' initiative, the first approval for a full AI satellite constellation. SpaceX must deploy at least one by 2033 and reach 1 million by 2040. The satellites would capture solar energy to power AI capabilities, transmitting data via lasers connected to Starlink. The FCC deferred SpaceX's request to dispose of satellites in graveyard orbits. Google and Blue Origin are also pursuing space-based AI data centers.",
+      "opinion": "A staggering scale of orbital infrastructure approval that raises as many questions about space debris and orbital congestion as it does about the feasibility of solar-powered AI compute in orbit.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0%2C10.756615395926%2C100%2C78.486769208148&w=1200",
+      "published_at": "2026-11-25T17:44:51+00:00",
+      "fetched_at": "2026-11-25T17:49:58.082472+00:00"
+    },
+    {
+      "id": 10990,
+      "source": "TechCrunch AI",
+      "title": "AI data centers are becoming harder to build as neoclouds face a potential shakeout",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "AI data centers are increasingly difficult to build as Nvidia tightens requirements, refusing to backstop facilities until they are nearly operational. Neoclouds face construction delays, rising debt, and community opposition. A potential 2027 shakeout looms where speculative projects may collapse, AI labs may build their own facilities, and well-positioned companies could acquire distressed projects at a discount.",
+      "opinion": "The shift from pitch decks to completed infrastructure as the gating factor signals a maturing market where capital alone no longer guarantees a seat at the table.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Anita-Verma-Lallian-2.jpg?w=1024",
+      "published_at": "2026-11-25T15:41:43+00:00",
+      "fetched_at": "2026-11-25T17:49:55.893835+00:00"
+    },
+    {
+      "id": 11001,
+      "source": "The Verge AI",
+      "title": "Nothing reveals AI-powered Ear Note earbuds with recording and transcription features",
+      "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nothing has revealed its upcoming Ear Note AI earbuds, set to release December 8th. The earbuds can record phone calls, while the microphone-equipped charging case features buttons for voice recording that can transcribe and summarize conversations. CEO Carl Pei describes this as a 'first step toward a hardware context layer for AI.' The buds join a growing category alongside Amazon Bee, Plaud Note Pro, and Apple Watch Series 12's Siri recap.",
+      "opinion": "An interesting hardware play positioning earbuds as ambient AI capture devices, though the real differentiator will be whether the transcription and summarization quality justifies carrying yet another AI-branded gadget.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ear-note-nothing.jpeg?quality=90&strip=all&crop=0,23.821989528796,100,52.356020942408",
+      "published_at": "2026-11-25T16:00:59+00:00",
+      "fetched_at": "2026-11-25T17:49:58.648745+00:00"
+    },
+    {
+      "id": 10991,
+      "source": "TechCrunch AI",
+      "title": "Amazon and Meta reportedly in talks to end blockade on Muse AI shopping agent",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Amazon and Meta are in discussions to end a two-month blockade preventing Meta's Muse AI shopping agent from completing purchases on Amazon's marketplace. Key negotiation points include how search results would be displayed, how advertising would be handled, and the impact on Amazon's customer relationships. Some retailers like Walmart, Best Buy, Gap, and Sephora have already welcomed AI shopping agents, while Amazon has preferred to promote its own Alexa for Shopping.",
+      "opinion": "The outcome of these talks could set the template for whether AI shopping agents become an open channel across retailers or remain walled off by platforms protecting their ad revenue and customer data. Where coverage differs: TechCrunch reports Amazon CEO Andy Jassy argued few customers were using outside shopping agents; The Verge does not attribute this claim to Jassy specifically.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+      "published_at": "2026-11-25T14:10:18+00:00",
+      "fetched_at": "2026-11-25T17:49:56.039865+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 10991,
+            "source": "TechCrunch AI",
+            "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+            "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+          },
+          {
+            "id": 11002,
+            "source": "The Verge AI",
+            "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+            "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
+          }
+        ],
+        "badge_count": 2,
+        "conflicts": [
+          "TechCrunch reports Amazon CEO Andy Jassy argued few customers were using outside shopping agents; The Verge does not attribute this claim to Jassy specifically."
+        ],
+        "is_update": false,
+        "reason": "Both candidates report on the same ongoing negotiations between Amazon and Meta over lifting the blockade on Meta's Muse AI shopping agent on Amazon's marketplace."
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 11011,
+          "source": "Lenny's Newsletter",
+          "title": "Gemini 4 Neon tops GPT-6.2 and Claude in 25-task AI benchmark",
+          "url": "https://www.lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Claire Vo's 25-task 'How I AI' benchmark, covering coding, writing, creative, video, prototyping, and personal-assistant tasks, found Gemini 4 Neon the surprise overall winner across six frontier models. She notes coding no longer differentiates frontier models, calls Opus 5.5 her 'least annoying daily driver,' and introduces an 'Annoyance Bench' to measure day-to-day friction.",
+          "opinion": "A useful real-world practitioner benchmark that highlights how coding parity among frontier models is shifting differentiation toward creative tasks, latency, and subjective usability.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!Z4Di!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89dd9fca-6931-4bea-94b4-e3531b57f89a_728x524.png",
+          "published_at": "2026-11-25T13:04:21+00:00",
+          "fetched_at": "2026-11-25T17:50:00.414026+00:00"
+        },
+        {
+          "id": 11005,
+          "source": "MIT Tech Review AI",
+          "title": "AI is straining America's open records systems from both sides",
+          "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI is intensifying strain on U.S. public records systems in two ways: venture-backed startups are systematically mining government data through FOIA requests to build AI products, and AI chatbots are making it easier for individuals to draft broader requests, causing double-digit annual volume increases. Small towns are particularly overwhelmed, and some states are passing legislation making it easier to deny requests, raising transparency concerns.",
+          "opinion": "An underreported consequence of AI accessibility — the same tools that democratize government transparency are also being weaponized for commercial data harvesting, and the policy response risks reducing openness for everyone.",
+          "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/loc-sales2a.jpg?resize=1200,600",
+          "published_at": "2026-11-25T10:00:00+00:00",
+          "fetched_at": "2026-11-25T17:49:59.443937+00:00"
+        },
+        {
+          "id": 11020,
+          "source": "Rest of World",
+          "title": "Foreign AI romance apps are reshaping youth intimacy in Africa",
+          "url": "https://restofworld.org/2026/ai-companion-apps-africa-character-ai/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI companion apps like Character.AI are surging among African youth, with downloads jumping nearly 60% in South Africa and Nigeria. Children as young as 10 are forming emotional attachments to chatbots, while no African country has specific regulations for these platforms. Experts warn the apps exploit social taboos, pull young people from community ties, and use manipulative engagement tactics.",
+          "opinion": "A sobering look at how the global regulatory gap around AI companion apps is leaving some of the world's youngest populations most exposed, with no local legal framework in sight.",
+          "image_url": "https://restofworld.org/wp-content/uploads/2026/11/Africa-AI-Companions-2.jpg",
+          "published_at": "2026-11-25T11:00:00+00:00",
+          "fetched_at": "2026-11-25T17:50:04.235153+00:00"
+        },
+        {
+          "id": 10989,
+          "source": "TechCrunch AI",
+          "title": "42 state AGs fight to block Character AI's auction of users' private chats",
+          "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A coalition of 42 state attorneys general is fighting to block Character.ai from auctioning sensitive user data — including chat histories from over 21 million accounts and 2.1 million minors' accounts — as part of its Chapter 11 bankruptcy. The sole disclosed bidder is an anonymous Delaware shell company formed one day before being selected. The AGs argue the sale lacks user protections and would not require honoring existing privacy policies.",
+          "opinion": "The anonymous shell-company bidder and the speed of its formation are red flags that underscore how bankruptcy proceedings can circumvent privacy promises users relied on.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2024/06/Character-Calls-Image-feat.jpg?resize=1200,675",
+          "published_at": "2026-11-25T17:35:58+00:00",
+          "fetched_at": "2026-11-25T17:49:55.778596+00:00"
+        },
+        {
+          "id": 10999,
+          "source": "The Rundown AI",
+          "title": "Three former xAI founders launch Epochal to build AI that predicts real-world events",
+          "url": "https://therundownai.beehiiv.com/p/three-xai-founders-want-ai-to-predict-the-future",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Former xAI founding members Guodong Zhang, Zihang Dai, and Manuel Kroiss have launched Epochal, with Zhang reportedly investing $100M of his own money. Their first product, Time Portal, is an archive of over 1 trillion web pages going back 30+ years; AI agents are dropped into historical snapshots to experience the past as present. Agents are currently forecasting 347 live prediction-market questions on Kalshi and Polymarket.",
+          "opinion": "An ambitious and novel approach to AI forecasting — training on historical snapshots rather than hindsight-contaminated data — though the real test will be whether live prediction accuracy holds up at scale.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/802ee9e2-1a13-4b41-93bc-50377d18a80f/epochal.png?t=1795553239",
+          "published_at": "2026-11-25T11:00:00+00:00",
+          "fetched_at": "2026-11-25T17:49:57.677156+00:00"
+        },
+        {
+          "id": 11000,
+          "source": "The Verge AI",
+          "title": "FCC authorizes SpaceX to deploy up to 1 million AI data center satellites",
+          "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The FCC has authorized SpaceX to deploy up to 1 million AI chip-equipped satellites under its 'Starmind' initiative, the first approval for a full AI satellite constellation. SpaceX must deploy at least one by 2033 and reach 1 million by 2040. The satellites would capture solar energy to power AI capabilities, transmitting data via lasers connected to Starlink. The FCC deferred SpaceX's request to dispose of satellites in graveyard orbits. Google and Blue Origin are also pursuing space-based AI data centers.",
+          "opinion": "A staggering scale of orbital infrastructure approval that raises as many questions about space debris and orbital congestion as it does about the feasibility of solar-powered AI compute in orbit.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0%2C10.756615395926%2C100%2C78.486769208148&w=1200",
+          "published_at": "2026-11-25T17:44:51+00:00",
+          "fetched_at": "2026-11-25T17:49:58.082472+00:00"
+        },
+        {
+          "id": 10990,
+          "source": "TechCrunch AI",
+          "title": "AI data centers are becoming harder to build as neoclouds face a potential shakeout",
+          "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "AI data centers are increasingly difficult to build as Nvidia tightens requirements, refusing to backstop facilities until they are nearly operational. Neoclouds face construction delays, rising debt, and community opposition. A potential 2027 shakeout looms where speculative projects may collapse, AI labs may build their own facilities, and well-positioned companies could acquire distressed projects at a discount.",
+          "opinion": "The shift from pitch decks to completed infrastructure as the gating factor signals a maturing market where capital alone no longer guarantees a seat at the table.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Anita-Verma-Lallian-2.jpg?w=1024",
+          "published_at": "2026-11-25T15:41:43+00:00",
+          "fetched_at": "2026-11-25T17:49:55.893835+00:00"
+        },
+        {
+          "id": 11001,
+          "source": "The Verge AI",
+          "title": "Nothing reveals AI-powered Ear Note earbuds with recording and transcription features",
+          "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nothing has revealed its upcoming Ear Note AI earbuds, set to release December 8th. The earbuds can record phone calls, while the microphone-equipped charging case features buttons for voice recording that can transcribe and summarize conversations. CEO Carl Pei describes this as a 'first step toward a hardware context layer for AI.' The buds join a growing category alongside Amazon Bee, Plaud Note Pro, and Apple Watch Series 12's Siri recap.",
+          "opinion": "An interesting hardware play positioning earbuds as ambient AI capture devices, though the real differentiator will be whether the transcription and summarization quality justifies carrying yet another AI-branded gadget.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ear-note-nothing.jpeg?quality=90&strip=all&crop=0,23.821989528796,100,52.356020942408",
+          "published_at": "2026-11-25T16:00:59+00:00",
+          "fetched_at": "2026-11-25T17:49:58.648745+00:00"
+        },
+        {
+          "id": 10991,
+          "source": "TechCrunch AI",
+          "title": "Amazon and Meta reportedly in talks to end blockade on Muse AI shopping agent",
+          "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Amazon and Meta are in discussions to end a two-month blockade preventing Meta's Muse AI shopping agent from completing purchases on Amazon's marketplace. Key negotiation points include how search results would be displayed, how advertising would be handled, and the impact on Amazon's customer relationships. Some retailers like Walmart, Best Buy, Gap, and Sephora have already welcomed AI shopping agents, while Amazon has preferred to promote its own Alexa for Shopping.",
+          "opinion": "The outcome of these talks could set the template for whether AI shopping agents become an open channel across retailers or remain walled off by platforms protecting their ad revenue and customer data. Where coverage differs: TechCrunch reports Amazon CEO Andy Jassy argued few customers were using outside shopping agents; The Verge does not attribute this claim to Jassy specifically.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+          "published_at": "2026-11-25T14:10:18+00:00",
+          "fetched_at": "2026-11-25T17:49:56.039865+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 10991,
+                "source": "TechCrunch AI",
+                "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+                "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+              },
+              {
+                "id": 11002,
+                "source": "The Verge AI",
+                "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+                "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
+              }
+            ],
+            "badge_count": 2,
+            "conflicts": [
+              "TechCrunch reports Amazon CEO Andy Jassy argued few customers were using outside shopping agents; The Verge does not attribute this claim to Jassy specifically."
+            ],
+            "is_update": false,
+            "reason": "Both candidates report on the same ongoing negotiations between Amazon and Meta over lifting the blockade on Meta's Muse AI shopping agent on Amazon's marketplace."
+          }
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Voxyz_ai/status/2125302499548750250",
+      "author": "Voxyz_ai",
+      "headline": "Anthropic's MCP elicitation update means GitHub makes you __type the repo name before an agent deletes it__ — servers that haven't adopted it will still delete without asking.",
+      "tweet_id": "4231eba9-b6bc-81bc-8888-f1f3748050d4",
+      "source_text": "Anthropic just published a big update for MCP. You can ask Claude Code to use the official docs to find which of the MCP servers you're connected to still delete things without asking you, and which tools that run for minutes still don't support tasks.\n\nSupabase asks you to confirm the cost before it creates a paid project, and stops to ask before it runs SQL that deletes data. GitHub makes you 𝘁𝘆𝗽𝗲 𝘁𝗵𝗲 𝗿𝗲𝗽𝗼'𝘀 𝗻𝗮𝗺𝗲 before an agent deletes it. Those are examples from the post.\n\nBut not every server is wired up yet, and the ones that aren't 𝘄𝗶𝗹𝗹 𝘀𝘁𝗶𝗹𝗹 𝗱𝗲𝗹𝗲𝘁𝗲 𝘁𝗵𝗶𝗻𝗴𝘀 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗮𝘀𝗸𝗶𝗻𝗴 𝘆𝗼𝘂.\n\nSend this prompt and the link below to Claude Code 👇\n\n\"Read the MCP tasks and elicitation sections of this doc: https://t.co/ULOKtoK8j4\n\nThen check the MCP servers I'm connected to, and any MCP server code in this repo (say so if there isn't any). Find three kinds of problems:\n1. Tools that run for minutes (builds, test runs, exports, research): for my own code, tell me how to make them return a task; for other people's servers, tell me whether they support tasks.\n2. Tools that fill in missing parameters on their own, or do something irreversible without confirming: they should ask me first through an elicitation. If an Elicitation hook I've set up would confirm these for me automatically, flag that too.\n3. Anything in my setup that keeps tasks from working: go through the conditions the doc lists one by one, including version, environment variables, third-party providers, subagents and claude -p.\n\nFor each problem, name the tool or setting, what happens now, and the smallest change.\n\nShow me your recommendations first. Don't change anything yet.\"\n\nhttps://t.co/BNO5mmdoU2",
+      "created_time": "2026-11-25T16:42:00.000Z",
+      "canonical_url": "https://twitter.com/Voxyz_ai/status/2125302499548750250",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Layton_Gott/status/2125369630734827533",
+      "author": "Layton_Gott",
+      "headline": "Claude's biggest release day in a while: turn __any artifact into a Mac or Windows desktop app__, ship skills via MCP, and Tasks + Elicitation are now generally available.",
+      "tweet_id": "4231eba9-b6bc-81d1-a458-cb4af9073d32",
+      "source_text": "Claude had a MASSIVE day today...\n\neverything they released, broken down:\n\n1. install as app (beta)\nany artifact can now become a desktop app on Mac or Windows. you build it in Claude, hit Share, then Install as app, and there's no packaging, signing or review from Anthropic. the app runs off your Claude plan, which is basically Claude's version of what OpenAI gave us at DevDay with Sign in with ChatGPT. the difference is theirs works with 16 partner apps, and Claude's works with anything you build yourself. you can share them with people too.\n\n2. Skills over MCP (public beta)\nMCP servers can now ship skills alongside their tools, so Claude gets a playbook for multi-step work. the skills only load when they're needed and update with the server.\n\n3. Tasks and Elicitation are now GA\nTasks let a server hand Claude long-running jobs, and Elicitation lets it pause mid-task to ask you something, like confirming a refund.\n\n4. a full playbook for Claude Ship\n/ship commits your changes, opens the PR and runs code review, then watches it for up to 7 days fixing failing checks, conflicts and review comments. it never merges for you, and after 3 failed pushes on one issue it hands it back to you. the watch runs on your machine so keep it awake, and on Windows it doesn't start yet.\n\n5. the Managed Agents team walked through how they redesigned its architecture in a 16 minute video on YouTube.\n\nall software will be personal eventually. \n\neveryone will have apps built for exactly how they work instead of using what already exists.",
+      "created_time": "2026-11-25T12:32:00.000Z",
+      "canonical_url": "https://twitter.com/Layton_Gott/status/2125369630734827533",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Voxyz_ai/status/2125333638136938823",
+      "author": "Voxyz_ai",
+      "headline": "A prompt that fixes the __four HTML mistakes AI makes every time__: wall-of-text layouts, card stuffing, cognitive overload, and detail loss when condensing.",
+      "tweet_id": "4231eba9-b6bc-81a8-8179-d1cd29c7a834",
+      "source_text": "\"Every HTML page Claude Code makes me is 𝗮 𝘄𝗮𝗹𝗹 𝗼𝗳 𝘁𝗲𝘅𝘁. Two glances and I want to close it.\"\n\nExpress repo, same ask. Left is the default, right has the prompt. You get it at a glance 👇\n\nAI makes these 𝟰 𝗺𝗶𝘀𝘁𝗮𝗸𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝘁𝗶𝗺𝗲:\n1. Explains everything in paragraphs\n2. Just stuffs text into card after card\n3. Lines up dozens of things in a row\n4. Ask it for a diagram or a shorter version, and all the information gets cut\n\nOne line for each:\n1. \"Keep the text light and use more diagrams.\"\n2. \"Don't settle for stock parts like text placed in cards; build each diagram from scratch to fit its content.\"\n3. \"If needed, group things to keep cognitive load down (3–5 items at a time is right for people).\"\n4. \"In exchange for less text, put the extra detail in tooltips and toggles.\"\n\nFull prompt in the reply, just copy it 👇",
+      "created_time": "2026-11-25T12:32:00.000Z",
+      "canonical_url": "https://twitter.com/Voxyz_ai/status/2125333638136938823",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/0xmollymoon/status/2125278206013878740",
+      "author": "0xmollymoon",
+      "headline": "One YouTube creator built a __6-bot Grok pipeline__ that's logged 2.3M views and $7,410 in payouts — without ever recording his voice.",
+      "tweet_id": "4231eba9-b6bc-811b-bb4a-d5078631d073",
+      "source_text": "HOLY MOLY. One guy now runs a YouTube channel with 6 Grok bots. 2.3M views, $7,410 paid out, and he never recorded his voice. Matt Palmer shows how to build the first one:\n\n\"Grok Bot can do anything you can do on a computer\n\nOne bot chains into the next, and the whole thing runs while you sleep\"\n\nIn 30 minutes, he builds 4 real workflows live\n\nWhat Is a Bot → Anatomy → Multi-Bot Chains → 4 Real Workflows\n\nMost people still use it like a chatbot\n\nBookmark and watch it today\n\nThen read how to build the full team: 6 Grok bots, 200+ agents ↓",
+      "created_time": "2026-11-25T12:32:00.000Z",
+      "canonical_url": "https://twitter.com/0xmollymoon/status/2125278206013878740",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/UnslothAI/status/2125243469094605071",
+      "author": "UnslothAI",
+      "headline": "Unsloth now supports __fine-tuning Inkling 2 Mini__ in a free notebook — 1.8–3.1x faster and 50% less VRAM than other setups, no accuracy loss.",
+      "tweet_id": "4231eba9-b6bc-81b6-9708-da7a84c783a7",
+      "source_text": "You can now fine-tune Inkling 2 Mini with our free notebook!\n\nLocal training works on 22GB VRAM.\n\nUnsloth trains Inkling 1.8-3.1x faster with 50% less VRAM vs. other setups. No accuracy loss\n\nColab, Kaggle notebooks & Guide: https://t.co/qSHJh73lHZ\nGitHub: https://t.co/aZWYAtakBP https://t.co/piga3dmhNj",
+      "created_time": "2026-11-25T12:27:00.000Z",
+      "canonical_url": "https://twitter.com/UnslothAI/status/2125243469094605071",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/smratitiwa86867/status/2125224702998356044",
+      "author": "smratitiwa86867",
+      "headline": "Nine __open-source AI data tools__ worth bookmarking: vector DBs (Chroma, Qdrant, Milvus), RAG pipelines (Haystack, RAGFlow), and LM optimizer DSPy.",
+      "tweet_id": "4231eba9-b6bc-812d-b8c1-fa952c0c99c5",
+      "source_text": "🔥 9 open-source projects transforming how AI applications work with data:\n\n1. Chroma — An open-source vector database for AI applications.\n   https://t.co/3nzo0XFGB3\n\n2. Qdrant — Store, search, and manage vector embeddings efficiently.\n   https://t.co/FGBf8Zmrve\n\n3. Weaviate — Build AI-powered search applications with a vector database.\n   https://t.co/nbBMAlg7XH\n\n4. Milvus — Handle large-scale vector search and similarity retrieval.\n   https://t.co/yroCR80lkp\n\n5. DSPy — Program and optimize language model pipelines.\n   https://t.co/625PZDGufV\n\n6. Haystack — Build search, RAG, and modular AI pipelines.\n   https://t.co/13mcik0OD1\n\n7. RAGFlow — Build RAG applications with advanced document understanding.\n   https://t.co/lFfVh4LyWr\n\n8. Oxylabs Web API MCP — Bring real-time web data into AI-powered retrieval workflows.\n   https://t.co/qQXj6ez4rd\n\n9. Unstructured — Prepare and process documents for LLM and RAG workflows.\n   https://t.co/fgHmIyUiAf\n\nBetter data pipelines lead to more useful AI applications. These projects deserve a place on your GitHub watchlist. 🚀",
+      "created_time": "2026-11-25T01:37:00.000Z",
+      "canonical_url": "https://twitter.com/smratitiwa86867/status/2125224702998356044",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/lennysan/status/2125350795411685880",
+      "author": "lennysan",
+      "headline": "Atlassian tried __replacing PMs and designers with \"AI builders\"__ — a few weeks in, everyone quietly went back to their old jobs.",
+      "tweet_id": "4231eba9-b6bc-81a8-86bc-efe69462c020",
+      "source_text": "Atlassian tried teams with no PM and no designer. Everyone was an \"AI builder.\"\n\nA few weeks in: \"We’re moving faster than ever.\"\n\nA month in: \"Everyone’s gone back to doing their old jobs.\" https://t.co/eh6VViUUgW https://t.co/QH2JzsjWFy",
+      "created_time": "2026-11-25T01:12:00.000Z",
+      "canonical_url": "https://twitter.com/lennysan/status/2125350795411685880",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/santtiagom_/status/2125303421699772502",
+      "author": "santtiagom_",
+      "headline": "Four MCP upgrades landed in Claude Code: __skills over MCP__, async task delegation, mid-task user approval via elicitation, and streamlined OAuth.",
+      "tweet_id": "4231eba9-b6bc-8194-9937-c48cfda0b524",
+      "source_text": "Anthropic acaba de anunciar 4 novedades importantes de MCP en Claude y Claude Code:\n\n1) skills over MCP -> un servidor MCP ahora puede ofrecer skills junto con sus tools. por ejemplo, además de darle a Claude acceso a una base de datos, puede enseñarle cómo consultar la información, qué pasos seguir y qué buenas prácticas respetar. estas skills se cargan únicamente cuando se necesitan.\n\n2) tasks -> Claude puede delegar una tarea de larga duración a un servidor MCP y seguir trabajando en otras cosas mientras espera el resultado. incluso podría delegar la ejecución de un agente completo.\n\n3) elicitation -> un servidor MCP puede solicitar información o aprobación al usuario durante la ejecución de una tarea. por ejemplo, puede pedirte confirmación antes de ejecutar una consulta SQL destructiva y continuar una vez que la apruebes.\n\n4) file uploads (próximamente) -> Claude podrá enviar archivos como PDFs, imágenes o planillas directamente a un servidor MCP sin tener que pasar su contenido por la ventana de contexto.\n\ncon estas mejoras se pueden empezar a construir integraciones MCP mucho más completas.",
+      "created_time": "2026-11-25T01:12:00.000Z",
+      "canonical_url": "https://twitter.com/santtiagom_/status/2125303421699772502",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/bcherny/status/2125292098165612585",
+      "author": "bcherny",
+      "headline": "MCP servers can now __ship with built-in skills__ so Claude Code knows how to use them without extra configuration.",
+      "tweet_id": "4231eba9-b6bc-819a-aa16-f4dbfa1f02ef",
+      "source_text": "Really excited about this one. MCP servers can now ship with their own skills, so Claude Code knows how to use them out of the box. https://t.co/Z0TQVOfGTz",
+      "created_time": "2026-11-25T01:07:00.000Z",
+      "canonical_url": "https://twitter.com/bcherny/status/2125292098165612585",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AnthropicAI/status/2125627317263466739",
+      "author": "AnthropicAI",
+      "headline": "Anthropic migrated its __Messages API from Python to Rust__, using teams of Claude agents to track down and fix every divergence between the old and new services.",
+      "tweet_id": "4231eba9-b6bc-81a0-b368-fc3887f5414c",
+      "source_text": "We recently migrated our Messages API from Python to Rust.\n\nOn our engineering blog, we share how we used the existing service to verify the new one, with teams of Claude agents tracking down and fixing differences between the two versions.\n\nhttps://t.co/NdrMzgrOwP",
+      "created_time": "2026-11-25T16:42:00.000Z",
+      "canonical_url": "https://twitter.com/AnthropicAI/status/2125627317263466739",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/achxvi/status/2125212847676273016",
+      "author": "achxvi",
+      "headline": "A curated stack of __10 MCP servers__ — Perplexity, Tavily, arXiv, Jina, and more — turns Claude into a full research agent.",
+      "tweet_id": "4231eba9-b6bc-81f0-8db6-d0a7d350cb97",
+      "source_text": "claude does your research now. connect these:\n\n1. Perplexity MCP (official)\nhttps://t.co/8IcrctmlVB\n\n2. Tavily MCP\nhttps://t.co/blaMuJPheE\n\n3. Brave Search MCP\nhttps://t.co/m4HH4FsR4w\n\n4. Kagi MCP\nhttps://t.co/s7baxJN1RE\n\n5. Jina MCP (reads any page)\nhttps://t.co/spDgThoj09\n\n6. arXiv MCP\nhttps://t.co/uxL3W38YJc\n\n7. Paper Search MCP\nhttps://t.co/LJDg8c9dC9\n\n8. YouTube Transcript MCP\nhttps://t.co/bAjDD85osE\n\n9. Deep Research (skill)\nhttps://t.co/xVQmDAj9Kx\n\n10. Competitive Intelligence (official skill)\nhttps://t.co/LfOnpZ4GCk\n\nstart with 1 and 9. bookmark this.",
+      "created_time": "2026-11-25T12:42:00.000Z",
+      "canonical_url": "https://twitter.com/achxvi/status/2125212847676273016",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/SeanchenZ/status/2125360216757985432",
+      "author": "SeanchenZ",
+      "headline": "Anthropic launched a __Forward Deployed Engineer__ learning path inside Partner Academy, covering agent development, system architecture, and enterprise AI delivery.",
+      "tweet_id": "4231eba9-b6bc-8109-b3c9-fbe19e532c99",
+      "source_text": "推荐所有正在从事 FDE（Forward Deployed Engineer）或者企业 AI 落地的朋友，关注 Anthropic Partner Academy。\n\n这是 Anthropic 面向合作伙伴建立的一套系统化培训平台，包含：\n\nLearning Paths：针对不同岗位的专业学习路径。\nCertification：从基础能力到专业架构师的认证体系。\nCourses：Claude 技术课程、模型解析及专题研讨。\nPartner Hub：企业 AI 项目规划、销售、实施与交付的方法论及实践指南。\n\n其中尤其值得关注的是 Claude Forward Deployed Engineer 专项学习路径。\n\n对于 FDE 从业者，我们需要学习的不仅是如何开发 Agent，更重要的是如何理解客户业务、设计系统架构、评估业务价值，以及完成企业级 AI 项目的部署与交付。\n\n建议将这套课程作为自己的 FDE 能力建设参考，也可以作为企业内部 FDE 团队的培训补充。\n\n官网：\nhttps://t.co/kxjW0b95Yl\n\nFDE 专项学习路径：\nhttps://t.co/dA09Q6uvdg",
+      "created_time": "2026-11-25T12:32:00.000Z",
+      "canonical_url": "https://twitter.com/SeanchenZ/status/2125360216757985432",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/noahkagan/status/2125398845383193011",
+      "author": "noahkagan",
+      "headline": "Noah Kagan says __before-and-after screenshots__ beat paragraphs of description — his TidyCal team saw booking rates climb from 12.2% to 13.0% across 63K visitors.",
+      "tweet_id": "4231eba9-b6bc-818e-8bc7-e90a84e867cf",
+      "source_text": "The Claude hack we use on every product update: a before and after.\n\nThe rule, started by Chad (CTO): every change gets 2 screenshots, side by side, with every difference boxed and labeled.\n\nA picture with annotation beats 3 paragraphs of description.\n\nWhy it works:\n\n1- Building.\n\nThe reviewer sees the change without opening the code.\nIf you can't screenshot the difference, ask if there is one.\n\n2- Sharing.\n\nThe same image goes in Slack, the changelog and the post.\nMake it once, share it everywhere.\n\n3- Proof.\n\nTidyCal's mobile booking page: times moved to the first screen, description folded into \"About,\" a toggle removed. 12.2% → 13.0% booked on 63K visitors.\n\n3 changes. One image. Here's a recent one from BreezeDoc. 👇\n\nPaste this into Claude Code with a browser connected:\n\n\"For every change you ship, screenshot the page before and after at the same size. Put them side by side. Box every difference and label it in plain words: what changed and why. Attach it to the pull request.\"\n\nAdd a before and after to your next pull request today.",
+      "created_time": "2026-11-25T01:27:00.000Z",
+      "canonical_url": "https://twitter.com/noahkagan/status/2125398845383193011",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/acecreamu/status/2125234701912985928",
+      "author": "acecreamu",
+      "headline": "A YC founder shares __48 SEO and GEO tricks__ for getting found in both traditional search and AI-generated answers.",
+      "tweet_id": "4221eba9-b6bc-8150-9f66-c7ea9970c934",
+      "source_text": "48 SEO & GEO tricks from a YC founder: https://t.co/bXzD6oTXcA",
+      "created_time": "2026-11-24T22:57:00.000Z",
+      "canonical_url": "https://twitter.com/acecreamu/status/2125234701912985928",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://xint.io/blog/nginx2root-disclosure",
+      "author": "emschwartz",
+      "item_id": "hn:50645076",
+      "headline": "Security researchers disclosed __Nginx2root__, a vulnerability chain capable of compromising systems at internet scale.",
+      "subreddit": null,
+      "source_text": "Disclosing an Internet Breaker: Timeline for Disclosing Nginx2root",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:43:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://xint.io/blog/nginx2root-disclosure",
+      "learning_score": 3
+    },
+    {
+      "url": "https://reainvent.com/",
+      "author": "rcarmo",
+      "item_id": "hn:50644955",
+      "headline": "__Re: AInvent 2026__ is a playable browser parody of AWS re:Invent, complete with fake service launches.",
+      "subreddit": null,
+      "source_text": "Re: AInvent 2026 – a playable parody of AWS re:invent",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:31:39+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://reainvent.com",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.fcc.gov/document/fcc-authorizes-1-million-satellites-data-centers-space-0",
+      "author": "jonbaer",
+      "item_id": "hn:50644866",
+      "headline": "The FCC has authorized SpaceX to launch __1 million satellites for orbital data centers__.",
+      "subreddit": null,
+      "source_text": "FCC Authorizes 1M Satellites for Data Centers in Space",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:23:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://fcc.gov/document/fcc-authorizes-1-million-satellites-data-centers-space-0",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/BrightRaider/universal-gpu-unlock",
+      "author": "BrightRaider",
+      "item_id": "hn:50644840",
+      "headline": "An open-source UEFI mod claims to __unlock NVIDIA FP16 tensor performance__ on consumer GPUs without touching the hardware.",
+      "subreddit": null,
+      "source_text": "Show HN: Stickless NVIDIA FP16 Tensor Unlock via UEFI with S3 Sleep (v2.0)",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:20:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/BrightRaider/universal-gpu-unlock",
+      "learning_score": 3
+    },
+    {
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "author": "lxhrstn",
+      "item_id": "hn:50644817",
+      "headline": "__1Password has disclosed a November 2026 security incident__ — the full write-up is on their blog.",
+      "subreddit": null,
+      "source_text": "1Password Security Incident",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:18:26+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "learning_score": 3
+    },
+    {
+      "url": "https://twitter.com/benadamsky/status/2125643724596314433",
+      "author": "martialg",
+      "item_id": "hn:50645133",
+      "headline": "A team that took an __$80K AI breach__ says it was what finally forced them to own their stack — and they're never outsourcing it again.",
+      "subreddit": null,
+      "source_text": "An $80K breach forced us to own our AI stack. We're never going back",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:48:17+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/benadamsky/status/2125643724596314433",
+      "learning_score": 2
+    },
+    {
+      "url": "https://machetetools.com/",
+      "author": "fguespe",
+      "item_id": "hn:50645131",
+      "headline": "__Machete__ is an open-source Mac app that bundles eight small personal utilities into a single window.",
+      "subreddit": null,
+      "source_text": "Show HN: Machete – Eight small personal Mac tools in one open source app",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:48:04+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://machetetools.com",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/aanthonymax/status/2125642468825681976",
+      "author": "aanthonymax",
+      "item_id": "hn:50645103",
+      "headline": "A practical guide to __auto-approving pull requests safely__, road-tested on a real repository.",
+      "subreddit": null,
+      "source_text": "How to Auto-Approve Pull Requests Safely: Testing It on a Real Repo",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:45:51+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/aanthonymax/status/2125642468825681976",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/sama/status/2125638790593274259",
+      "author": "qainsights",
+      "item_id": "hn:50645072",
+      "headline": "Sam Altman says OpenAI is now testing __Private Inference__, a mode designed to keep your prompts off the company's servers.",
+      "subreddit": null,
+      "source_text": "Sam Altman on X: \"We're now testing Private Inference \"",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:43:38+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/sama/status/2125638790593274259",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/igaurab/gpython",
+      "author": "theredcap",
+      "item_id": "hn:50645022",
+      "headline": "__Gpython__ is a terminal-native Python notebook — no browser tab, no Jupyter server, just a shell.",
+      "subreddit": null,
+      "source_text": "Show HN: Gpython – A Terminal based notebook for Python",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:38:06+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/igaurab/gpython",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.academia.edu/181981981/Deterministic_High_Throughput_I_O_Comparative_Latency_and_Memory_Analysis_of_io_uring_vs_epoll_in_Distributed_Linux_Gateways",
+      "author": "aman179102",
+      "item_id": "hn:50645007",
+      "headline": "A new paper benchmarks __io_uring versus epoll__ for deterministic tail latency in distributed Linux gateways.",
+      "subreddit": null,
+      "source_text": "Show HN: Io_uring vs. Epoll – Deterministic Tail Latency in Linux Gateways",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:37:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://academia.edu/181981981/Deterministic_High_Throughput_I_O_Comparative_Latency_and_Memory_Analysis_of_io_uring_vs_epoll_in_Distributed_Linux_Gateways",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+      "author": "acossta",
+      "item_id": "hn:50644980",
+      "headline": "An OpenAI math preprint shows __the polynomial Hirsch conjecture is false__ via a superpolynomial graph diameter construction.",
+      "subreddit": null,
+      "source_text": "The polynomial Hirsch conjecture is false [pdf]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-25T17:34:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-25T18:10:29.719151+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          11011
+        ],
+        "reason": "Sole candidate covering Claire Vo's 25-task frontier-model benchmark results.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11005
+        ],
+        "reason": "Sole candidate covering AI's impact on America's public records and FOIA systems.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11020
+        ],
+        "reason": "Sole candidate covering AI romance apps' impact on African youth.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10989
+        ],
+        "reason": "Sole candidate covering the legal fight over Character.ai's bankruptcy data auction.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10999
+        ],
+        "reason": "Sole candidate covering the launch of Epochal and its Time Portal product by former xAI founders.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11000
+        ],
+        "reason": "Sole candidate covering FCC authorization of SpaceX's Starmind satellite constellation.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10990
+        ],
+        "reason": "Sole candidate covering the growing difficulty of building AI data centers and the neocloud shakeout.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11001
+        ],
+        "reason": "Sole candidate covering Nothing's Ear Note AI earbuds reveal.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          10991,
+          11002
+        ],
+        "reason": "Both candidates report on the same ongoing negotiations between Amazon and Meta over lifting the blockade on Meta's Muse AI shopping agent on Amazon's marketplace.",
+        "badge_count": 2,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "2a58b31cf1e578d1ace6b875a405db1908e506481a76c3e8d9ca44163a8dc5ba"
+}
