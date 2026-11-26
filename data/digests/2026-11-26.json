@@ -1,0 +1,638 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-26",
+  "issue_id": "20261126",
+  "subject_line": "ISSUE 61126 · 7 STORIES · 11 MIN READ",
+  "intro": "Today marks a collision of eras: Anthropic just pulled off the largest IPO in history at $81.3 billion while Grand Theft Auto VI — built by 5,000 humans over 13 years without a single generative AI tool — launched to record-shattering reviews and nearly $4 billion in day-one sales. Meanwhile, the cracks in AI's breakneck expansion are showing, from 42 state attorneys general fighting to keep millions of users' private chats off the auction block in Character.AI's bankruptcy, to S&P eyeing a credit downgrade for Nvidia amid the Jensen Huang leadership turmoil. It's a lot — grab your coffee and let's get into it.",
+  "article_count": 7,
+  "stories": [
+    {
+      "id": 11028,
+      "source": "The Verge AI",
+      "title": "42 state AGs fight to block Character.AI's auction of users' private chats",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "A bipartisan coalition of 42 state attorneys general is trying to block Character.AI from auctioning over 21 million users' chat histories, including 2.1 million minors' accounts, during its Chapter 11 bankruptcy. The leading bidder was incorporated just days before being selected, with no disclosed parent company. The AGs argue the sale lacks safeguards: no requirement to honor existing privacy policies, no user data deletion mechanism, and no limits on further resale.",
+      "opinion": "The mystery bidder detail makes this increasingly suspicious — a shell company formed the day before selection, bidding on intimate conversations of millions of minors, with no transparency requirements. This may become a landmark case for data rights in bankruptcy. Where coverage differs: TechCrunch reports the shell company was 'formed one day before being selected'; The Verge says it was 'only incorporated on November 13, 2026'",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25557391/STK278_character_ai_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "published_at": "2026-11-26T09:54:40+00:00",
+      "fetched_at": "2026-11-26T17:34:06.089062+00:00",
+      "cluster": {
+        "sources": [
+          {
+            "id": 11028,
+            "source": "The Verge AI",
+            "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+            "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+          }
+        ],
+        "badge_count": 1,
+        "conflicts": [
+          "TechCrunch reports the shell company was 'formed one day before being selected'; The Verge says it was 'only incorporated on November 13, 2026'"
+        ],
+        "is_update": true,
+        "reason": "Same event as yesterday:3 — 42 state AGs opposing Character.AI's auction of user chat data in bankruptcy. The Verge adds detail about the leading bidder's incorporation date and the Disney acquihire deal."
+      }
+    },
+    {
+      "id": 11021,
+      "source": "TechCrunch AI",
+      "title": "Anthropic's record $81.3B IPO coincides with GTA VI launch, the last monument to pre-AI game development",
+      "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "On November 26, 2026, Anthropic's $81.3 billion IPO — the largest ever — coincided with the launch of Grand Theft Auto VI, which earned $3.79 billion on release day and became the highest-rated game on Metacritic. GTA VI was made entirely without generative AI by roughly 5,000 people over 13 years, with 30,000 unique handcrafted NPCs. The piece frames GTA VI as likely the last game of its kind, a monument to human craftsmanship at the dawn of the AI efficiency era.",
+      "opinion": "A striking symbolic coincidence. The juxtaposition powerfully illustrates the tension between efficiency-driven AI and painstaking human artistry — and raises the question of whether audiences will eventually notice or care about the difference.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Jason_and_Lucia_17.117_b11r13mg5.jpg?resize=1200,675",
+      "published_at": "2026-11-26T16:00:00+00:00",
+      "fetched_at": "2026-11-26T17:34:00.828134+00:00"
+    },
+    {
+      "id": 11022,
+      "source": "TechCrunch AI",
+      "title": "S&P considers Nvidia credit downgrade over governance and 'key man' risks after Huang turmoil",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "S&P Global Ratings is considering downgrading Nvidia's credit rating from AA to AA- due to governance concerns following CEO Jensen Huang's ouster and reinstatement. The agency cites weak executive oversight, lack of succession planning, and heavy reliance on Huang. A decision is expected within 90 days. A downgrade could increase borrowing costs for Nvidia and for neoclouds and infrastructure companies whose debt Nvidia backstops, as Nvidia has arranged $500 billion in AI infrastructure financing where lenders were already pushing for larger guarantees.",
+      "opinion": "The ripple effects matter more than the one-notch downgrade itself — Nvidia's $500B in infrastructure financing means its credit rating is load-bearing for the entire AI buildout supply chain.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+      "published_at": "2026-11-25T22:44:32+00:00",
+      "fetched_at": "2026-11-26T17:34:01.270704+00:00"
+    },
+    {
+      "id": 11023,
+      "source": "TechCrunch AI",
+      "title": "OpenAI merges Chat and Work into a single ChatGPT interface with shared usage limits",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "OpenAI is merging its Chat and Work experiences in ChatGPT into a unified interface with a shared usage meter, rolling out first to Pro subscribers with broader availability in December. The company acknowledges its heaviest users may hit limits sooner, though Instant model conversations remain unlimited. Some subscribers are concerned the merger reduces access to advanced reasoning models. The move mirrors Anthropic's merger of Claude chat and Cowork interfaces in September.",
+      "opinion": "Framing a consolidation that may reduce power users' effective access as a UX improvement is a bold choice. The subscriber backlash will be worth watching, especially since the pricing hasn't changed.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/openai-chatgpt.jpg?resize=1200,800",
+      "published_at": "2026-11-25T20:03:27+00:00",
+      "fetched_at": "2026-11-26T17:34:01.508382+00:00"
+    },
+    {
+      "id": 11027,
+      "source": "The Rundown AI",
+      "title": "The Rundown's Thanksgiving AI cheat sheet covers Huang saga, hacking surge, and math breakthroughs",
+      "url": "https://therundownai.beehiiv.com/p/your-ai-cheat-sheet-for-thanksgiving-dinner",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The Rundown's Thanksgiving edition provides a conversational guide to recent AI developments: Nvidia/Jensen Huang's temporary departure and return (adding $1T in stock value) amid Alice Huang spy allegations and Megaspeed chip diversion concerns; a surge in hacking as AI finds software bugs faster than they can be patched; major AI math breakthroughs including Anthropic's claimed Riemann Hypothesis solution and OpenAI's Navier-Stokes solution; a DIY system using AI vision to auto-mute TV ads during live sports for ~5 cents per game; and Stripe Atlas data showing 42% of new startups are building AI.",
+      "opinion": "A useful snapshot of how AI stories are filtering into mainstream dinner-table conversation. The breadth of topics — from trillion-dollar stock swings to a 5-cent ad-muter — captures how unevenly AI is landing across society.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/592e973e-692b-41cb-a463-3ea37b86b4df/AI_Thanksgiving_Feast_in_Autumn_Glow.png?t=1795631723",
+      "published_at": "2026-11-26T11:00:00+00:00",
+      "fetched_at": "2026-11-26T17:34:05.012789+00:00"
+    },
+    {
+      "id": 11029,
+      "source": "The Verge AI",
+      "title": "Google patent describes system for generating personalized AI video feeds and ads",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Google filed a patent for 'My Channel,' a system that would generate personalized AI video feeds and advertisements using demographic data, viewing history, IP addresses, GPS locations, age, and contextual signals. The system would use LLMs to create prompts and generate tailored AI videos — including entire movies — on Google's servers. The patent has been rejected but Google could appeal or resubmit. It was filed in May 2025 and published last week.",
+      "opinion": "Even as a rejected patent, it's a revealing look at where Google's product thinking is headed — fully synthetic, hyper-personalized content streams that blur the line between entertainment and advertising in ways that make today's algorithmic feeds look quaint.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&strip=all&crop=2.859375%2C11.97652241473%2C93.788122558594%2C75.148782257541&w=1200",
+      "published_at": "2026-11-25T21:51:26+00:00",
+      "fetched_at": "2026-11-26T17:34:06.278763+00:00"
+    },
+    {
+      "id": 11030,
+      "source": "Ars Technica AI",
+      "title": "Backblaze reveals it has been sharing customer data with advertisers since December 2025",
+      "url": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Backblaze's new privacy policy, effective December 1, 2026, reveals the company has been collecting and sharing customer personal information — including identifiers, commercial information, geolocation, and internet activity — with advertising and marketing partners since December 2025. Backblaze told Ars Technica the policy's table format reads more broadly than intended and that disclosures relate to website and marketing cookies, not customer backup files. The company says its legal team will review the table for clarity.",
+      "opinion": "A cloud backup company quietly sharing customer data with advertisers for a year before updating its privacy policy is exactly the kind of trust erosion that drives customers to competitors — especially in a category where trust is the entire product.",
+      "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1219679299-1152x648.jpg",
+      "published_at": "2026-11-25T18:38:29+00:00",
+      "fetched_at": "2026-11-26T17:34:07.312373+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 11028,
+          "source": "The Verge AI",
+          "title": "42 state AGs fight to block Character.AI's auction of users' private chats",
+          "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "A bipartisan coalition of 42 state attorneys general is trying to block Character.AI from auctioning over 21 million users' chat histories, including 2.1 million minors' accounts, during its Chapter 11 bankruptcy. The leading bidder was incorporated just days before being selected, with no disclosed parent company. The AGs argue the sale lacks safeguards: no requirement to honor existing privacy policies, no user data deletion mechanism, and no limits on further resale.",
+          "opinion": "The mystery bidder detail makes this increasingly suspicious — a shell company formed the day before selection, bidding on intimate conversations of millions of minors, with no transparency requirements. This may become a landmark case for data rights in bankruptcy. Where coverage differs: TechCrunch reports the shell company was 'formed one day before being selected'; The Verge says it was 'only incorporated on November 13, 2026'",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25557391/STK278_character_ai_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+          "published_at": "2026-11-26T09:54:40+00:00",
+          "fetched_at": "2026-11-26T17:34:06.089062+00:00",
+          "cluster": {
+            "sources": [
+              {
+                "id": 11028,
+                "source": "The Verge AI",
+                "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+                "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+              }
+            ],
+            "badge_count": 1,
+            "conflicts": [
+              "TechCrunch reports the shell company was 'formed one day before being selected'; The Verge says it was 'only incorporated on November 13, 2026'"
+            ],
+            "is_update": true,
+            "reason": "Same event as yesterday:3 — 42 state AGs opposing Character.AI's auction of user chat data in bankruptcy. The Verge adds detail about the leading bidder's incorporation date and the Disney acquihire deal."
+          }
+        },
+        {
+          "id": 11021,
+          "source": "TechCrunch AI",
+          "title": "Anthropic's record $81.3B IPO coincides with GTA VI launch, the last monument to pre-AI game development",
+          "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "On November 26, 2026, Anthropic's $81.3 billion IPO — the largest ever — coincided with the launch of Grand Theft Auto VI, which earned $3.79 billion on release day and became the highest-rated game on Metacritic. GTA VI was made entirely without generative AI by roughly 5,000 people over 13 years, with 30,000 unique handcrafted NPCs. The piece frames GTA VI as likely the last game of its kind, a monument to human craftsmanship at the dawn of the AI efficiency era.",
+          "opinion": "A striking symbolic coincidence. The juxtaposition powerfully illustrates the tension between efficiency-driven AI and painstaking human artistry — and raises the question of whether audiences will eventually notice or care about the difference.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Jason_and_Lucia_17.117_b11r13mg5.jpg?resize=1200,675",
+          "published_at": "2026-11-26T16:00:00+00:00",
+          "fetched_at": "2026-11-26T17:34:00.828134+00:00"
+        },
+        {
+          "id": 11022,
+          "source": "TechCrunch AI",
+          "title": "S&P considers Nvidia credit downgrade over governance and 'key man' risks after Huang turmoil",
+          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "S&P Global Ratings is considering downgrading Nvidia's credit rating from AA to AA- due to governance concerns following CEO Jensen Huang's ouster and reinstatement. The agency cites weak executive oversight, lack of succession planning, and heavy reliance on Huang. A decision is expected within 90 days. A downgrade could increase borrowing costs for Nvidia and for neoclouds and infrastructure companies whose debt Nvidia backstops, as Nvidia has arranged $500 billion in AI infrastructure financing where lenders were already pushing for larger guarantees.",
+          "opinion": "The ripple effects matter more than the one-notch downgrade itself — Nvidia's $500B in infrastructure financing means its credit rating is load-bearing for the entire AI buildout supply chain.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+          "published_at": "2026-11-25T22:44:32+00:00",
+          "fetched_at": "2026-11-26T17:34:01.270704+00:00"
+        },
+        {
+          "id": 11023,
+          "source": "TechCrunch AI",
+          "title": "OpenAI merges Chat and Work into a single ChatGPT interface with shared usage limits",
+          "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "OpenAI is merging its Chat and Work experiences in ChatGPT into a unified interface with a shared usage meter, rolling out first to Pro subscribers with broader availability in December. The company acknowledges its heaviest users may hit limits sooner, though Instant model conversations remain unlimited. Some subscribers are concerned the merger reduces access to advanced reasoning models. The move mirrors Anthropic's merger of Claude chat and Cowork interfaces in September.",
+          "opinion": "Framing a consolidation that may reduce power users' effective access as a UX improvement is a bold choice. The subscriber backlash will be worth watching, especially since the pricing hasn't changed.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/openai-chatgpt.jpg?resize=1200,800",
+          "published_at": "2026-11-25T20:03:27+00:00",
+          "fetched_at": "2026-11-26T17:34:01.508382+00:00"
+        },
+        {
+          "id": 11027,
+          "source": "The Rundown AI",
+          "title": "The Rundown's Thanksgiving AI cheat sheet covers Huang saga, hacking surge, and math breakthroughs",
+          "url": "https://therundownai.beehiiv.com/p/your-ai-cheat-sheet-for-thanksgiving-dinner",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The Rundown's Thanksgiving edition provides a conversational guide to recent AI developments: Nvidia/Jensen Huang's temporary departure and return (adding $1T in stock value) amid Alice Huang spy allegations and Megaspeed chip diversion concerns; a surge in hacking as AI finds software bugs faster than they can be patched; major AI math breakthroughs including Anthropic's claimed Riemann Hypothesis solution and OpenAI's Navier-Stokes solution; a DIY system using AI vision to auto-mute TV ads during live sports for ~5 cents per game; and Stripe Atlas data showing 42% of new startups are building AI.",
+          "opinion": "A useful snapshot of how AI stories are filtering into mainstream dinner-table conversation. The breadth of topics — from trillion-dollar stock swings to a 5-cent ad-muter — captures how unevenly AI is landing across society.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/592e973e-692b-41cb-a463-3ea37b86b4df/AI_Thanksgiving_Feast_in_Autumn_Glow.png?t=1795631723",
+          "published_at": "2026-11-26T11:00:00+00:00",
+          "fetched_at": "2026-11-26T17:34:05.012789+00:00"
+        },
+        {
+          "id": 11029,
+          "source": "The Verge AI",
+          "title": "Google patent describes system for generating personalized AI video feeds and ads",
+          "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Google filed a patent for 'My Channel,' a system that would generate personalized AI video feeds and advertisements using demographic data, viewing history, IP addresses, GPS locations, age, and contextual signals. The system would use LLMs to create prompts and generate tailored AI videos — including entire movies — on Google's servers. The patent has been rejected but Google could appeal or resubmit. It was filed in May 2025 and published last week.",
+          "opinion": "Even as a rejected patent, it's a revealing look at where Google's product thinking is headed — fully synthetic, hyper-personalized content streams that blur the line between entertainment and advertising in ways that make today's algorithmic feeds look quaint.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&strip=all&crop=2.859375%2C11.97652241473%2C93.788122558594%2C75.148782257541&w=1200",
+          "published_at": "2026-11-25T21:51:26+00:00",
+          "fetched_at": "2026-11-26T17:34:06.278763+00:00"
+        },
+        {
+          "id": 11030,
+          "source": "Ars Technica AI",
+          "title": "Backblaze reveals it has been sharing customer data with advertisers since December 2025",
+          "url": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Backblaze's new privacy policy, effective December 1, 2026, reveals the company has been collecting and sharing customer personal information — including identifiers, commercial information, geolocation, and internet activity — with advertising and marketing partners since December 2025. Backblaze told Ars Technica the policy's table format reads more broadly than intended and that disclosures relate to website and marketing cookies, not customer backup files. The company says its legal team will review the table for clarity.",
+          "opinion": "A cloud backup company quietly sharing customer data with advertisers for a year before updating its privacy policy is exactly the kind of trust erosion that drives customers to competitors — especially in a category where trust is the entire product.",
+          "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-1219679299-1152x648.jpg",
+          "published_at": "2026-11-25T18:38:29+00:00",
+          "fetched_at": "2026-11-26T17:34:07.312373+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/Zephyr_hg/status/2125862161037852878",
+      "author": "Zephyr_hg",
+      "headline": "A Claude prompt that __interviews you to surface recurring weekly jobs__ and turns each into a scheduled task — with your sign-off before anything goes out.",
+      "tweet_id": "4241eba9-b6bc-81f8-acdb-f4f4460b307b",
+      "source_text": "Send this prompt to Claude.\n\nIt interviews you, finds the three jobs that land on the same day every week, and turns each one into a scheduled task that checks with you before anything goes out.\n\nYou're welcome: https://t.co/mqt9SyOhyI https://t.co/GVkQMAMNus",
+      "created_time": "2026-11-26T16:57:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2125862161037852878",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/pvergadia/status/2125849856334090279",
+      "author": "pvergadia",
+      "headline": "How __Anthropic builds software with AI__: a step-by-step breakdown of their entire SDLC process.",
+      "tweet_id": "4241eba9-b6bc-816a-a894-c2bc7aff95d5",
+      "source_text": "How Anthropic Builds Software with AI, step-by-step process to rebuild your SDLC! https://t.co/fa1zX6tw9a",
+      "created_time": "2026-11-26T16:57:00.000Z",
+      "canonical_url": "https://twitter.com/pvergadia/status/2125849856334090279",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/mika_systems/status/2125674200405098675",
+      "author": "mika_systems",
+      "headline": "A __10-page prompt that claims to turn Claude Desktop into a no-cost app studio__ is making the rounds — steal it before it becomes a $99 course.",
+      "tweet_id": "4241eba9-b6bc-8109-9f3a-cdd2ab79ddc3",
+      "source_text": "THIS IS F*CKING INSANE. YOU DON'T NEED A $5,000 DEVELOPER ANYMORE, I MADE A 10 PAGE PROMPT THAT TURNS CLAUDE INTO YOUR OWN APP STUDIO FOR $0\n\npaste a page into Claude Desktop and get a real app in your Dock\n\nfind your app below ↓ steal it before it's sold as a course https://t.co/kp9AoKmqjr https://t.co/3kyl9YO2mV",
+      "created_time": "2026-11-26T02:17:00.000Z",
+      "canonical_url": "https://twitter.com/mika_systems/status/2125674200405098675",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/hetmehtaa/status/2125611160808599996",
+      "author": "hetmehtaa",
+      "headline": "Before dropping cash on a paid AI security course, __these free practice resources__ are where to start.",
+      "tweet_id": "4241eba9-b6bc-81e8-a53a-d9e5118409a9",
+      "source_text": "Skip the paid AI security course for now. \nPractice on these first:\n\nhttps://t.co/wn300dYa8I\nhttps://t.co/i2d4LjBAx0\nhttps://t.co/mERV5kX1nV\nhttps://t.co/PtJ62ZW2y8",
+      "created_time": "2026-11-26T02:02:00.000Z",
+      "canonical_url": "https://twitter.com/hetmehtaa/status/2125611160808599996",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/EdgeFillAI/status/2125663600673001490",
+      "author": "EdgeFillAI",
+      "headline": "Hugging Face is offering a __free AI agent certification__ covering smolagents, LlamaIndex, LangGraph, and evals — no deadline, no cost, 35k GitHub stars.",
+      "tweet_id": "4241eba9-b6bc-8199-b8e7-fac25e4f4a91",
+      "source_text": "Holy f*ck, Hugging Face is handing out AI agent certificates for $0\n\nA full course on building agents. Free to take, free to certify, no deadline\n\nsmolagents. LlamaIndex. LangGraph. Agentic RAG. Function calling. Evals.\n\n35k stars on GitHub. About 3 to 4 hours a week\n\nThe whole path:\n\n0 Onboarding\nhttps://t.co/Alqqn0VDRd\n1 Agent fundamentals (finish it and the first certificate is yours)\nhttps://t.co/3kzLz4xJ0k\n2 Frameworks\nhttps://t.co/VV6If5Q9Mp\n2.1 smolagents\nhttps://t.co/l009ekmVl2\n2.2 LlamaIndex\nhttps://t.co/XoXD00sao3\n2.3 LangGraph\nhttps://t.co/GYpJ3ADDHP\n3 Agentic RAG use case\nhttps://t.co/PwQo4vWQLV\n4 Final project: your agent takes a benchmark and lands on a student leaderboard\nhttps://t.co/tUATGESc7P\n\nBONUS\nB1 Fine-tune an LLM for function calling\nhttps://t.co/SjISDvnBqs\nB2 Observability and evaluation\nhttps://t.co/Ta5xvv5TvK\nB3 Agents that play Pokémon battles\nhttps://t.co/qajSc4Yojn\n\nCertificate 1: finish Unit 1\nCertificate 2: Unit 1 + one use case + the final challenge\n\nMost people collect agent tutorials. This one ends with your agent ranked against everyone else's\n\nDo Unit 1 this weekend and walk away with the first certificate\n\nThe rest of my AI setup is in the article below ↓",
+      "created_time": "2026-11-26T01:57:00.000Z",
+      "canonical_url": "https://twitter.com/EdgeFillAI/status/2125663600673001490",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/hwbhatti/status/2125638995984236886",
+      "author": "hwbhatti",
+      "headline": "The case for a __Company SDK__: every organization needs to capture its own primitives before it can call itself truly AI-native.",
+      "tweet_id": "4241eba9-b6bc-810e-89e0-ed667abb7cdf",
+      "source_text": "Every organization will need a Company SDK.\n\nEach company expresses itself uniquely through its own primitives.  \n\nUntil you capture them you are not AI native. \n\nMore on our belief below 👇 https://t.co/4Sf90gr04Z",
+      "created_time": "2026-11-26T01:57:00.000Z",
+      "canonical_url": "https://twitter.com/hwbhatti/status/2125638995984236886",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/DianaChimes/status/2125628049605394549",
+      "author": "DianaChimes",
+      "headline": "Polygon is hiring a __forward deployed engineer for payments__ with unlimited AI tool spend and a mandate to cut integration timelines from weeks to hours.",
+      "tweet_id": "4241eba9-b6bc-81f3-a1be-e128fc7e90eb",
+      "source_text": "New open role at polygon: forward deployed engineer, payments\n\nThe role: Your job is to cut integrations timeline from weeks to days, even hours. You design it, build it with the customer, and find what breaks in the logs before it reaches our core engineers. What you build for one customer becomes the SDKs, docs, and agents that make the next one faster.\n\nSenior IC, no reports. Remote from the US, Canada, or LATAM. \n\nOther benefits include:\n- $1500 home office stipend\n- unlimited ai spend with all the latest tools\n- $200 for AI personal use\n- remote, global team (no need to go into an office)\n- unlimited vacation policy (dont tell our ceo this)\n\nKnow someone? Send them our way. \n\nApply here:\nhttps://t.co/LF0alwn9xL",
+      "created_time": "2026-11-26T00:47:00.000Z",
+      "canonical_url": "https://twitter.com/DianaChimes/status/2125628049605394549",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AISystems_hq/status/2125636393628262759",
+      "author": "AISystems_hq",
+      "headline": "Anthropic shares __how to keep an agent inside its sandbox__ — a practical guide to the guardrails that matter.",
+      "tweet_id": "4231eba9-b6bc-810c-8bd2-f68da40d9b3a",
+      "source_text": "Anthropic on how to keep an agent inside its sandbox. https://t.co/uQlHC6ADDk https://t.co/xEE6RLeVS5",
+      "created_time": "2026-11-25T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/AISystems_hq/status/2125636393628262759",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/distortgeekin/status/2125584444064993429",
+      "author": "distortgeekin",
+      "headline": "Six Grok bots running in shifts earned __$14,212 on Etsy before Black Friday even started__ — 2,318 orders, zero boxes packed by hand.",
+      "tweet_id": "4231eba9-b6bc-8154-a79c-cb089d3431fc",
+      "source_text": "F*ck YES... Grok Bot runs my Etsy shop now, 2,318 orders in 5 weeks and I've never packed a single box\n\nElon Musk says Grok Bot can find you the real Black Friday deals, mine is the one selling them, and Etsy paid me $14,212 before Black Friday even started\n\n6 bots, a shift each, I haven't drawn a single design:\n\n→ 6 AM: Scout reads what climbed in Etsy search overnight and picks 3 gift ideas\n→ 8 AM: Designer makes 40 ornaments in Grok Imagine and turns every pet photo a buyer sends into a custom one in 4 minutes\n→ 10 AM: Lister writes the title and all 13 tags, then puts each design on a mockup photo\n→ 1 PM: Pricer runs a real 30% off, never a fake \"was\" price, the deal bots catch those now\n→ 4 PM: Concierge answers every buyer message in under 10 minutes\n→ Midnight: Analyst kills every listing with 0 sales in 14 days and clones the winners\n\nPrintify prints and ships every order, I never touch one\n\nWhy Etsy never pulled the shop: line 1 of every listing says it was made with AI, the shops that hide it lose everything\n\nGive your first bot one gift idea and the Scout job tonight, the other 5 can wait\n\nFrom that first bot to a crew of 6, the whole setup is in the guide below ↓",
+      "created_time": "2026-11-25T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/distortgeekin/status/2125584444064993429",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Dionisselamii/status/2125608317187682479",
+      "author": "Dionisselamii",
+      "headline": "A curated five-skill list — from __ThinkUI to Vercel Web Design Guidelines__ — takes aim at AI slop in UI design.",
+      "tweet_id": "4231eba9-b6bc-8154-8d7c-f50ee5fcbaee",
+      "source_text": "5 skills that kill AI slop:\n\n1. ThinkUI\nhttps://t.co/qHzFOuktnB\n\n2. Anti UI Slop\nhttps://t.co/DsoyRd1iJU\n\n3. Taste Skill\nhttps://t.co/gKTaoGCIiS\n\n4. Emil Design Engineering\nhttps://t.co/QlM85EfiZd\n\n5. Vercel Web Design Guidelines\nhttps://t.co/XcnMO8jDcA https://t.co/gWmHooe0og",
+      "created_time": "2026-11-25T21:12:00.000Z",
+      "canonical_url": "https://twitter.com/Dionisselamii/status/2125608317187682479",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/TeksEdge/status/2125663762627912109",
+      "author": "TeksEdge",
+      "headline": "Inco AI's Splash 1.7.3 pushes Inkling 2 Mini's __context window to 261K tokens__ on a 36GB M5 Max, up from 101K, with vision support and 79 tps on coding prompts.",
+      "tweet_id": "4231eba9-b6bc-813a-9057-ee6b44c5f760",
+      "source_text": "🍎 A 24GB Mac is running Inkling 2 Mini with 👀 vision, 160K context, and up to 79 tps on coding prompts.\n\nAnd on another Mac, someone pushed a conversation from 101K to 261K tokens before running out of memory.\n\nInco AI released Splash 1.7.3, bringing new local inference optimizations for Thinking Machines Lab's Inkling 2 Mini.\n\nOn a 24GB M6 Mac ...\n\n🔥 Coding decode → up to 79 tps\n👁️ Vision support → Images + text\n🧠 Vision-enabled context → 160K tokens\n💻 Local inference with GGUF + MLX\n☁️ No cloud required\n\nOn a separate 36GB M5 Max system, the developer tested a long-running Inkling 2 Mini conversation.\n\nBefore the update:\n🔴 Memory exhausted at 101K tokens\nAfter Splash 1.7.3:\n🟢 Conversation reached 261K tokens\n\nThe release also includes ...\n✅ New Inkling 2 Mini vision support\n✅ Improved memory management\n✅ MLX checkpoint-loading fixes\n✅ Support for additional quantized builds\n✅ Better handling of long-running conversations\n\nLong conversations and large codebases can consume enormous amounts of memory, especially when you want to keep everything local.\n\nGetting more usable context and multimodal capabilities out of the same unified memory is a big deal.\n\nNow we're squeezing substantially more context out of the same hardware (along with tokens).\n\nAnyone running Inkling 2 Mini on an M5 or M6 Mac?\n\nLink in ALT. Image Source: notebookcheck",
+      "created_time": "2026-11-25T21:07:00.000Z",
+      "canonical_url": "https://twitter.com/TeksEdge/status/2125663762627912109",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/IndianAppGuy/status/2125439676945182863",
+      "author": "IndianAppGuy",
+      "headline": "By applying to startup programs, IndianAppGuy landed __$10,000 in Cloudflare credits__ plus free Claude Team for 12 months — and xAI now has a similar program.",
+      "tweet_id": "4231eba9-b6bc-815a-a630-e04e737026ea",
+      "source_text": "I got $10,000 in Cloudflare credits and Claude Team free for 12 months, just by applying to startup programs.\n\nxAI now has one too: one balance across Grok, Grok Build, Grok Bot and the API. I applied. Here's how 🧵 https://t.co/vbMsvK6vFM",
+      "created_time": "2026-11-25T20:27:00.000Z",
+      "canonical_url": "https://twitter.com/IndianAppGuy/status/2125439676945182863",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/alexmichael/status/2125630925098860904",
+      "author": "alexmichael",
+      "headline": "Anthropic reportedly had Claude rewrite its entire API __from Python to Rust in a week__, cutting CPU usage by 70%, memory by 80%, and time-to-first-token by ~20%.",
+      "tweet_id": "4231eba9-b6bc-816b-ade6-faf655bf579e",
+      "source_text": "Anthropic just had Claude rewrite its entire API from Python to Rust in a week\n\nThis resulted in 70% less CPU per request, 80%+ less memory, and ~20% faster time to first token https://t.co/1CfUVjFTo6 https://t.co/dBJbPQvXEM",
+      "created_time": "2026-11-25T20:12:00.000Z",
+      "canonical_url": "https://twitter.com/alexmichael/status/2125630925098860904",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2125620824074019236",
+      "author": "Zephyr_hg",
+      "headline": "Robbie Tilton's free Mac app turns Claude and ChatGPT into a __video editing studio__ with its own cursor on your timeline.",
+      "tweet_id": "4231eba9-b6bc-81eb-93a6-d02d485fd374",
+      "source_text": "A designer (Robbie Tilton) released a free Mac app that turns Claude & ChatGPT into a video editing studio.\n\nIt gets its own cursor on your timeline…\n\nconnect it to your Claude plan in Settings › Magic. Then copy the 5 edit prompts in the image. https://t.co/k6rOKIGwLx https://t.co/hv6ivxatwD",
+      "created_time": "2026-11-25T20:12:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2125620824074019236",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/jack_9947/status/2125631949825781873",
+      "author": "jack_9947",
+      "headline": "A free guide breaks down __a 19-agent Claude SEO workflow__ covering keyword research, content production, technical audits, and link strategy.",
+      "tweet_id": "4231eba9-b6bc-81b2-aeb9-e62f61513200",
+      "source_text": "We've split an entire SEO workflow between 19 specialised Claude agents...\n\nand each agent handles a different part of researching, optimising and monitoring your website.\n\nSo I broke down the ENTIRE system in a free guide...\n\nCovering everything from keyword research to technical SEO and AI search visibility.\n\nHere's what's included inside the guide:\n\n> The SEO strategy\n(SEO Strategist, Competitor Analyst and SEO Planner)\n\n> The keyword research\n(Keyword Researcher and SERP Analyst)\n\n> The content production\n(Brief Writer and SEO Writer)\n\n> The content optimisation\n(On-Page Reviewer and Content Refresher)\n\n> The technical audit\n(Technical Auditor and Indexing Analyst)\n\n> The website structure\n(Schema Reviewer and Site Architect)\n\n> The link strategy\n(Internal Linker and Backlink Analyst)\n\n> The search visibility\n(Local SEO Analyst, AI Search Analyst and Search Console Analyst)\n\n> The performance reporting\n(SEO Reporter)\n\nAll 19 agents have a defined responsibility, with recommendations for your team to review.\n\nLike + comment \"AUDIT\" and I'll send it over\n\n(Must be following me to receive it)",
+      "created_time": "2026-11-25T18:22:00.000Z",
+      "canonical_url": "https://twitter.com/jack_9947/status/2125631949825781873",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/milesdeutscher/status/2125304199554719954",
+      "author": "milesdeutscher",
+      "headline": "Miles Deutscher calls __Gemini 4 Neon the best AI release of the year__ and published his ultimate vibe coding prompt for it.",
+      "tweet_id": "4231eba9-b6bc-8158-80eb-fb8161a70096",
+      "source_text": "Gemini 4 Neon might just be the best AI release of the year.\n\nHands down, the best daily model on the market right now.\n\nI put together the ultimate Gemini 4 Neon vibe coding prompt.\n\nBookmark it: https://t.co/XOFjobBHjU https://t.co/HdQtAF23fm",
+      "created_time": "2026-11-25T18:17:00.000Z",
+      "canonical_url": "https://twitter.com/milesdeutscher/status/2125304199554719954",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/googlegemma/status/2125631619692429690",
+      "author": "googlegemma",
+      "headline": "Google's Gemma fine-tuning hub is live with __17 guides and 40+ illustrations__ covering the full training pipeline, from LoRA to GRPO.",
+      "tweet_id": "4231eba9-b6bc-81bd-b279-d6c883aed3b0",
+      "source_text": "Want to fine-tune Gemma 4 on your own data, audio, receipts, or reasoning tasks?\n\nOur new fine-tuning hub is live on https://t.co/0LtUIr7f3X: 17 guides and 40+ illustrations covering the entire training pipeline. Ranging from continued pre-training and custom chat templates, all the way to (Q)LoRA and GRPO.",
+      "created_time": "2026-11-25T18:12:00.000Z",
+      "canonical_url": "https://twitter.com/googlegemma/status/2125631619692429690",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/zuess05/status/2125505442164150288",
+      "author": "zuess05",
+      "headline": "\"Paying $200/month for Claude to build apps that make $0/month __is a hell of a hobby__\" — the most relatable AI tweet of the week.",
+      "tweet_id": "4231eba9-b6bc-819e-9c04-d0d7b86ede71",
+      "source_text": "Paying $200/month for Claude to build apps that make $0/month is a hell of a hobby.",
+      "created_time": "2026-11-25T21:47:00.000Z",
+      "canonical_url": "https://twitter.com/zuess05/status/2125505442164150288",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://k-adam.github.io/CSS3D-Renderer/demos/lights-out/index.html",
+      "author": "k-adam",
+      "item_id": "hn:50657424",
+      "headline": "__Real-time 3D lights and shadows in CSS__, with no JavaScript at runtime — a browser-only rendering demo worth bookmarking.",
+      "subreddit": null,
+      "source_text": "Show HN: Real-time lights and shadows in CSS 3D, no runtime JavaScript",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:26:45+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://k-adam.github.io/CSS3D-Renderer/demos/lights-out/index.html",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.nocoly.com/landing/benchsaas/",
+      "author": "philren",
+      "item_id": "hn:50657224",
+      "headline": "BenchSaaS ran __30 LLM configs across 8,850 live ERP/CRM tasks__ to benchmark which models actually hold up in enterprise software.",
+      "subreddit": null,
+      "source_text": "Show HN: BenchSaaS – 30 LLM configs across 8,850 live ERP/CRM runs",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:05:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nocoly.com/landing/benchsaas",
+      "learning_score": 3
+    },
+    {
+      "url": "https://nlp.elvissaravia.com/p/top-10-rsi-papers-of-2026",
+      "author": "omarsar",
+      "item_id": "hn:50657443",
+      "headline": "Elvis Saravia's NLP newsletter rounds up __the top RSI papers of 2026__ — required reading for anyone tracking AI research.",
+      "subreddit": null,
+      "source_text": "Top RSI Papers of 2026",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:28:41+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nlp.elvissaravia.com/p/top-10-rsi-papers-of-2026",
+      "learning_score": 2
+    },
+    {
+      "url": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/",
+      "author": "Bender",
+      "item_id": "hn:50657396",
+      "headline": "Backblaze says it's __sharing customer data with advertisers__ to stay price-competitive — a trade-off customers didn't sign up for.",
+      "subreddit": null,
+      "source_text": "Backblaze explains why it's sharing customer information with advertisers",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:24:53+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers",
+      "learning_score": 2
+    },
+    {
+      "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+      "author": "krembo",
+      "item_id": "hn:50657393",
+      "headline": "Amazon's Trainium chip is reportedly __taking aim at Nvidia's AI training dominance__, per SemiAnalysis.",
+      "subreddit": null,
+      "source_text": "Amazon's Trainium Takes a Strike at the Training King",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:24:40+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+      "learning_score": 2
+    },
+    {
+      "url": "https://marcvscouto.itch.io/agi-robots-awake",
+      "author": "mvbrasil",
+      "item_id": "hn:50657373",
+      "headline": "First-time developer ships __AGI: Robots Awake__, a vibecoded indie shooter — proof that AI tooling is lowering the game-dev floor.",
+      "subreddit": null,
+      "source_text": "Show HN: AGI – Robots Awake, my first (vibecoded) indie shooter",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:22:37+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://marcvscouto.itch.io/agi-robots-awake",
+      "learning_score": 2
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.33896",
+      "author": "E-Reverance",
+      "item_id": "hn:50657370",
+      "headline": "New research shows __looped transformer models__ can predict multiple tokens simultaneously, cutting inference overhead.",
+      "subreddit": null,
+      "source_text": "Looped Models Are Fast Multi-Token Predictors",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:22:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://arxiv.org/abs/2611.33896",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-math",
+      "author": "Bluestein",
+      "item_id": "hn:50657355",
+      "headline": "DeepSeekMath pushes __the limits of mathematical reasoning in LLMs__ by training on 120 billion math-related tokens.",
+      "subreddit": null,
+      "source_text": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:21:14+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/deepseek-ai/deepseek-math",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y2xs7ZLtxJE",
+      "author": "charliercrvta",
+      "item_id": "hn:50657303",
+      "headline": "Independent review __catches coding agent wrong assumptions__ before they ship — a compelling case for the AI code review layer.",
+      "subreddit": null,
+      "source_text": "Independent reviews catches coding agent wrong assumptions [video]",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:16:10+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://youtube.com/watch?v=Y2xs7ZLtxJE",
+      "learning_score": 2
+    },
+    {
+      "url": "https://openjsf.org/blog/introducing-the-openjs-ad-network",
+      "author": "nsdfg",
+      "item_id": "hn:50657292",
+      "headline": "The OpenJS Foundation is __launching an ad network__ to fund JavaScript infrastructure — a new take on open source sustainability.",
+      "subreddit": null,
+      "source_text": "The OpenJS Ad Network",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:14:31+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://openjsf.org/blog/introducing-the-openjs-ad-network",
+      "learning_score": 2
+    },
+    {
+      "url": "https://progrium.xyz/articles/2026/single-binary-postgres/",
+      "author": "theanonymousone",
+      "item_id": "hn:50657288",
+      "headline": "One engineer explains how they got __all of Postgres into a single binary__ without sacrificing functionality.",
+      "subreddit": null,
+      "source_text": "How I Got Postgres into a Single Binary",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:14:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://progrium.xyz/articles/2026/single-binary-postgres",
+      "learning_score": 2
+    },
+    {
+      "url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/work_items/5485",
+      "author": "dclavijo",
+      "item_id": "hn:50657264",
+      "headline": "A vibecoded fuzzer found __a SIGSEGV in GStreamer__ — accidentally making the case for AI-assisted security research.",
+      "subreddit": null,
+      "source_text": "We found a SIGSEV in GStreamer with a vibecoded fuzzer",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-26T17:11:23+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/work_items/5485",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-26T17:43:52.094343+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "canonical",
+    "cluster_log": [
+      {
+        "ids": [
+          11028
+        ],
+        "reason": "Same event as yesterday:3 — 42 state AGs opposing Character.AI's auction of user chat data in bankruptcy. The Verge adds detail about the leading bidder's incorporation date and the Disney acquihire deal.",
+        "badge_count": 1,
+        "is_update": true
+      },
+      {
+        "ids": [
+          11021
+        ],
+        "reason": "Standalone story contrasting Anthropic's IPO with GTA VI's launch as a human craftsmanship vs. AI efficiency moment.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11022
+        ],
+        "reason": "Standalone story about S&P considering an Nvidia credit downgrade tied to governance and key-man risk after the Huang leadership turmoil.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11023
+        ],
+        "reason": "Standalone story about OpenAI merging its Chat and Work interfaces with a shared usage meter.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11027
+        ],
+        "reason": "Standalone Thanksgiving-themed AI roundup newsletter covering multiple distinct topics as a holiday conversation guide.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11029
+        ],
+        "reason": "Standalone story about a Google patent for personalized AI-generated video feeds and advertisements.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11030
+        ],
+        "reason": "Standalone story about Backblaze's updated privacy policy revealing customer data sharing with advertisers.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ]
+  },
+  "content_hash": "764f4652af1ec949c9c7a4ba36d8e6a42dae6fa8e68f474939cdb82f243d4189"
+}
