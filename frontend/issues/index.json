@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-25T00:00:00Z",
-  "issueCount": 199,
+  "generatedAt": "2026-11-26T00:00:00Z",
+  "issueCount": 200,
   "latestIssue": {
-    "slug": "2026-11-25",
-    "digestDate": "2026-11-25",
-    "displayDate": "Nov 25, 2026",
-    "issueNumber": "61125",
-    "subject": "ISSUE 61125 \u00b7 9 STORIES \u00b7 11 MIN READ",
-    "intro": "AI's physical footprint is expanding in ways that would have sounded like science fiction a year ago \u2014 the FCC just greenlit SpaceX to deploy up to *one million* AI-chip-equipped satellites, while back on Earth, the data center boom is hitting real-world friction that could trigger a shakeout by 2027. Meanwhile, the human stakes of AI keep climbing too, with 42 state attorneys general scrambling to stop Character.AI from auctioning millions of users' private chat histories \u2014 including those of minors \u2014 to an anonymous shell company formed the day before it placed its bid.",
-    "articleCount": 9,
-    "urlPath": "/issues/2026-11-25.html",
-    "contentHash": "2a58b31cf1e578d1ace6b875a405db1908e506481a76c3e8d9ca44163a8dc5ba"
+    "slug": "2026-11-26",
+    "digestDate": "2026-11-26",
+    "displayDate": "Nov 26, 2026",
+    "issueNumber": "61126",
+    "subject": "ISSUE 61126 \u00b7 7 STORIES \u00b7 11 MIN READ",
+    "intro": "Today marks a collision of eras: Anthropic just pulled off the largest IPO in history at $81.3 billion while Grand Theft Auto VI \u2014 built by 5,000 humans over 13 years without a single generative AI tool \u2014 launched to record-shattering reviews and nearly $4 billion in day-one sales. Meanwhile, the cracks in AI's breakneck expansion are showing, from 42 state attorneys general fighting to keep millions of users' private chats off the auction block in Character.AI's bankruptcy, to S&P eyeing a credit downgrade for Nvidia amid the Jensen Huang leadership turmoil. It's a lot \u2014 grab your coffee and let's get into it.",
+    "articleCount": 7,
+    "urlPath": "/issues/2026-11-26.html",
+    "contentHash": "764f4652af1ec949c9c7a4ba36d8e6a42dae6fa8e68f474939cdb82f243d4189"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-26",
+      "digestDate": "2026-11-26",
+      "displayDate": "Nov 26, 2026",
+      "issueNumber": "61126",
+      "subject": "ISSUE 61126 \u00b7 7 STORIES \u00b7 11 MIN READ",
+      "intro": "Today marks a collision of eras: Anthropic just pulled off the largest IPO in history at $81.3 billion while Grand Theft Auto VI \u2014 built by 5,000 humans over 13 years without a single generative AI tool \u2014 launched to record-shattering reviews and nearly $4 billion in day-one sales. Meanwhile, the cracks in AI's breakneck expansion are showing, from 42 state attorneys general fighting to keep millions of users' private chats off the auction block in Character.AI's bankruptcy, to S&P eyeing a credit downgrade for Nvidia amid the Jensen Huang leadership turmoil. It's a lot \u2014 grab your coffee and let's get into it.",
+      "articleCount": 7,
+      "urlPath": "/issues/2026-11-26.html",
+      "contentHash": "764f4652af1ec949c9c7a4ba36d8e6a42dae6fa8e68f474939cdb82f243d4189"
+    },
     {
       "slug": "2026-11-25",
       "digestDate": "2026-11-25",
@@ -133,17 +144,6 @@
       "articleCount": 8,
       "urlPath": "/issues/2026-11-15.html",
       "contentHash": "700932f867d467ff6e2dd606b35dc1ec693f8bb3786136472f1b4cd5754bb5cd"
-    },
-    {
-      "slug": "2026-11-14",
-      "digestDate": "2026-11-14",
-      "displayDate": "Nov 14, 2026",
-      "issueNumber": "61114",
-      "subject": "ISSUE 61114 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is reeling today after Jensen Huang's stunning resignation from Nvidia, a departure that threatens to reshape startup funding, chip enforcement, and the power dynamics of the entire industry \u2014 all while revelations surface that China's top AI models were trained on the very chips they were banned from buying. But the shockwaves don't stop there: OpenAI is giving AI agents your credit card, Amazon wants to index every product on the internet, and LangChain just landed a $3 billion valuation betting that someone needs to wrangle all these agents. It's one of those days where the future feels like it lurched forward and sideways at the same time.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-11-14.html",
-      "contentHash": "cb1188d58877fb97dbe75c2289f305a80f28226a459a1b3c281c35bd2e0e0f6d"
     }
   ]
 }
