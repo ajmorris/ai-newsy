@@ -1,0 +1,495 @@
+{
+  "schema_version": "digest-json-v1",
+  "digest_date": "2026-11-27",
+  "issue_id": "20261127",
+  "subject_line": "ISSUE 61127 · 4 STORIES · 11 MIN READ",
+  "intro": "The line between AI as tool and AI as collaborator blurred further this week, with a Stanford physicist crediting GPT-6 Astra as a key contributor to an 83-page quantum gravity paper — a claim that has the physics community both intrigued and deeply skeptical. Meanwhile, the geopolitics of AI hardware heated up as Nvidia froze server shipments across Southeast Asia, and on the consumer side, Google is betting that everyday users want to *build* with AI, not just chat with it. It's a day that captures the full spectrum of where AI sits right now: from the edges of theoretical physics to your Pixel home screen.",
+  "article_count": 4,
+  "stories": [
+    {
+      "id": 11047,
+      "source": "Nate's Newsletter",
+      "title": "Framework urges picking one personal AI experiment per week instead of chasing vague ambition",
+      "url": "https://natesnewsletter.substack.com/p/what-to-use-ai-for",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "The article argues most AI advice fails because it tells people to be ambitious without specifying about what. It proposes a four-step framework: find something worth an evening based on existing interests, let AI handle setup while you do the interesting work, meet people through the activity, then honestly evaluate whether it deserves a second evening — each step with a copy-paste prompt.",
+      "opinion": "A refreshingly grounded counterpoint to the relentless 'be more ambitious with AI' drumbeat. The 'tyranny of the text box' framing is memorable and accurate.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!7Fso!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F224191939%2F0f868e6d-5f98-4326-bd40-a8de96f298fb%2Ftranscoded-1795474935.png",
+      "published_at": "2026-11-27T14:03:44+00:00",
+      "fetched_at": "2026-11-27T17:16:54.330302+00:00"
+    },
+    {
+      "id": 11044,
+      "source": "TechCrunch AI",
+      "title": "Nvidia pauses server shipments to Southeast Asia amid U.S. export-rule crackdown on China workaround",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Nvidia told Dell and Super Micro to halt server shipments to Malaysia, Singapore, Thailand, and Indonesia while it checks regional partners' compliance with U.S. export rules. The pause follows Commerce Department action closing a loophole that let Chinese firms remotely access Nvidia AI chips in Southeast Asian data centers, which the Institute for Progress estimates supply roughly 24% of China's AI computing power.",
+      "opinion": "A significant escalation in the chip-export saga that could disrupt Southeast Asian data-center buildouts and further squeeze China's access to frontier AI compute.",
+      "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg?w=1024",
+      "published_at": "2026-11-26T20:03:54+00:00",
+      "fetched_at": "2026-11-27T17:16:49.777621+00:00"
+    },
+    {
+      "id": 11045,
+      "source": "The Rundown AI",
+      "title": "Stanford physicist credits GPT-6 Astra in 83-page quantum gravity preprint, drawing praise and skepticism",
+      "url": "https://therundownai.beehiiv.com/p/ai-takes-a-swing-at-physics-biggest-puzzle",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Stanford physicist Venkatesa Chandrasekaran published an 83-page preprint proposing a quantum theory of gravity, crediting OpenAI's GPT-6 Astra with helping develop calculations over months using roughly 400 million tokens. The paper uses light paths through spacetime to describe gravity at the quantum level and claims to avoid standard infinities, but only covers empty space. It has drawn praise from Sam Altman and skepticism from physicists who question the AI-assisted methodology; it remains unreviewed.",
+      "opinion": "The most concrete test case yet for whether AI can meaningfully contribute to frontier theoretical physics — but the lack of peer review and the publicity circus around it make it hard to judge the actual science.",
+      "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/03344d0a-5818-4c62-8a9d-3c7654ec3c21/Quantum_Gravity__Portrait__Paper_and_Cosmic_Geometry.png?t=1795755972",
+      "published_at": "2026-11-27T11:00:00+00:00",
+      "fetched_at": "2026-11-27T17:16:52.291856+00:00"
+    },
+    {
+      "id": 11046,
+      "source": "The Verge AI",
+      "title": "Android's Gemini-powered 'Create My Widget' beta lets Pixel users vibe-code custom widgets",
+      "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "topic": "Industry",
+      "category": "Business, Deals & Funding",
+      "summary": "Android's new 'Create My Widget' beta, announced at Google I/O and rolling out to Pixel phones in November 2026, lets users create custom home screen widgets via natural language prompts powered by Gemini AI. The Verge found it fun for simple tasks like rotating movie quotes but inadequate for complex data-dependent tasks like real-time bus arrivals.",
+      "opinion": "A lightweight but telling example of vibe-coding reaching mainstream consumer products — useful for novelty, not yet for anything you'd actually rely on.",
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04405_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+      "published_at": "2026-11-27T14:00:00+00:00",
+      "fetched_at": "2026-11-27T17:16:52.748957+00:00"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Business, Deals & Funding",
+      "articles": [
+        {
+          "id": 11047,
+          "source": "Nate's Newsletter",
+          "title": "Framework urges picking one personal AI experiment per week instead of chasing vague ambition",
+          "url": "https://natesnewsletter.substack.com/p/what-to-use-ai-for",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "The article argues most AI advice fails because it tells people to be ambitious without specifying about what. It proposes a four-step framework: find something worth an evening based on existing interests, let AI handle setup while you do the interesting work, meet people through the activity, then honestly evaluate whether it deserves a second evening — each step with a copy-paste prompt.",
+          "opinion": "A refreshingly grounded counterpoint to the relentless 'be more ambitious with AI' drumbeat. The 'tyranny of the text box' framing is memorable and accurate.",
+          "image_url": "https://substackcdn.com/image/fetch/$s_!7Fso!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F224191939%2F0f868e6d-5f98-4326-bd40-a8de96f298fb%2Ftranscoded-1795474935.png",
+          "published_at": "2026-11-27T14:03:44+00:00",
+          "fetched_at": "2026-11-27T17:16:54.330302+00:00"
+        },
+        {
+          "id": 11044,
+          "source": "TechCrunch AI",
+          "title": "Nvidia pauses server shipments to Southeast Asia amid U.S. export-rule crackdown on China workaround",
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Nvidia told Dell and Super Micro to halt server shipments to Malaysia, Singapore, Thailand, and Indonesia while it checks regional partners' compliance with U.S. export rules. The pause follows Commerce Department action closing a loophole that let Chinese firms remotely access Nvidia AI chips in Southeast Asian data centers, which the Institute for Progress estimates supply roughly 24% of China's AI computing power.",
+          "opinion": "A significant escalation in the chip-export saga that could disrupt Southeast Asian data-center buildouts and further squeeze China's access to frontier AI compute.",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/Taiwan-Nvidia.jpg?w=1024",
+          "published_at": "2026-11-26T20:03:54+00:00",
+          "fetched_at": "2026-11-27T17:16:49.777621+00:00"
+        },
+        {
+          "id": 11045,
+          "source": "The Rundown AI",
+          "title": "Stanford physicist credits GPT-6 Astra in 83-page quantum gravity preprint, drawing praise and skepticism",
+          "url": "https://therundownai.beehiiv.com/p/ai-takes-a-swing-at-physics-biggest-puzzle",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Stanford physicist Venkatesa Chandrasekaran published an 83-page preprint proposing a quantum theory of gravity, crediting OpenAI's GPT-6 Astra with helping develop calculations over months using roughly 400 million tokens. The paper uses light paths through spacetime to describe gravity at the quantum level and claims to avoid standard infinities, but only covers empty space. It has drawn praise from Sam Altman and skepticism from physicists who question the AI-assisted methodology; it remains unreviewed.",
+          "opinion": "The most concrete test case yet for whether AI can meaningfully contribute to frontier theoretical physics — but the lack of peer review and the publicity circus around it make it hard to judge the actual science.",
+          "image_url": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,quality=80,width=1200,onerror=redirect/uploads/asset/file/03344d0a-5818-4c62-8a9d-3c7654ec3c21/Quantum_Gravity__Portrait__Paper_and_Cosmic_Geometry.png?t=1795755972",
+          "published_at": "2026-11-27T11:00:00+00:00",
+          "fetched_at": "2026-11-27T17:16:52.291856+00:00"
+        },
+        {
+          "id": 11046,
+          "source": "The Verge AI",
+          "title": "Android's Gemini-powered 'Create My Widget' beta lets Pixel users vibe-code custom widgets",
+          "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+          "topic": "Industry",
+          "category": "Business, Deals & Funding",
+          "summary": "Android's new 'Create My Widget' beta, announced at Google I/O and rolling out to Pixel phones in November 2026, lets users create custom home screen widgets via natural language prompts powered by Gemini AI. The Verge found it fun for simple tasks like rotating movie quotes but inadequate for complex data-dependent tasks like real-time bus arrivals.",
+          "opinion": "A lightweight but telling example of vibe-coding reaching mainstream consumer products — useful for novelty, not yet for anything you'd actually rely on.",
+          "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04405_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+          "published_at": "2026-11-27T14:00:00+00:00",
+          "fetched_at": "2026-11-27T17:16:52.748957+00:00"
+        }
+      ]
+    }
+  ],
+  "tweet_headlines": [
+    {
+      "url": "https://x.com/diamai_/status/2126251794359537701",
+      "author": "diamai_",
+      "headline": "A site claims to publish __leaked system prompts for ChatGPT, Claude, Grok, and Gemini__ — 30+ AI chatbots, updated daily.",
+      "tweet_id": "4251eba9-b6bc-81a3-9b63-eb9f049f1bd7",
+      "source_text": "fu*cking leaked system prompts of every AI chatbot\n\nchatgpt. claude. grok. gemini. 30+ more. updated daily.\n\nhttps://t.co/VO95JQizLy\n\nsave rn before it gets taken down",
+      "created_time": "2026-11-27T13:37:00.000Z",
+      "canonical_url": "https://twitter.com/diamai_/status/2126251794359537701",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/crazyMLguy/status/2126097124312121637",
+      "author": "crazyMLguy",
+      "headline": "ISTA-DASLab squeezed Inkling-2-Mini down to __11.43 GB at 3.5 bpw__ while retaining 99.2% of its original task performance.",
+      "tweet_id": "4251eba9-b6bc-815d-a848-daf6b9080917",
+      "source_text": "Inkling-2-Mini now fits into just 11.43 GB with 99.2% of its original performance\n\nISTA-DASLab has released new GSQ-RCO quantized versions of Inkling-2-Mini, bringing a 26.4B sparse MoE model down to just 2.75–3.5 bits per weight.\n\nKey highlights:\n\n3.5 bpw: 11.43 GB model size.\n\nRetains 99.2% of the base model's task average.\n\nWithin 1 point of the original across all tested benchmarks.\n\nSupports a massive 1M-token context window.\n\nRuns as standard GGUF in llama.cpp.\n\nImpressive result: aggressive quantization without sacrificing much reasoning and coding performance.\n\nModels: https://t.co/5QgRyrazAs\n\nEval: https://t.co/zvfXKxg5JY",
+      "created_time": "2026-11-27T12:57:00.000Z",
+      "canonical_url": "https://twitter.com/crazyMLguy/status/2126097124312121637",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/pvergadia/status/2126156378524045372",
+      "author": "pvergadia",
+      "headline": "How Uber built its own __MCP Gateway__ — and a walkthrough of how you can build yours.",
+      "tweet_id": "4251eba9-b6bc-810a-a6d9-dba9527400fa",
+      "source_text": "How Uber made their own MCP Gateway and how you can make it too! https://t.co/6P4mGeeWd9",
+      "created_time": "2026-11-27T03:57:00.000Z",
+      "canonical_url": "https://twitter.com/pvergadia/status/2126156378524045372",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/alex_prompter/status/2125941397924757959",
+      "author": "alex_prompter",
+      "headline": "Google's prompting guide tucks away __a tested system instruction that makes Gemini plan before it acts__ — researchers say it improved results.",
+      "tweet_id": "4251eba9-b6bc-81f5-9e92-d7c3a3860db1",
+      "source_text": "Google has a tested system prompt that makes Gemini plan before it acts.\n\nYou can ask Gemini 4 Neon to turn it into your own custom assistant.\n\nIt's tucked away at the bottom of Google's prompting guide. Google says its researchers tested it on tasks where the AI has to follow a complex rulebook and deal with a real user, and it improved results.\n\nSend this prompt to Gemini 4 Neon 👇\n\n<context>Google's prompting guide for Gemini includes a system instruction its researchers tested to make Gemini plan before it acts. It's in the \"Agentic workflows\" section of https://t.co/78DZbDxd3Y</context>\n<task>\nRead that system instruction. Then ask me 5 questions about one job I hand off often, like answering customer emails, planning projects or checking contracts. Then adapt Google's 9 rules to that job:\n1. Keep the rules that matter for it and cut the ones that don't.\n2. Swap Google's general wording for my real rules, risks and tools.\n3. Add the moments where it must stop and ask me before it acts.\nThen build it as custom instructions I can paste into a Gem.\n</task>\n<rules>Keep Google's core idea of planning before every action. Show the original rule next to each change. Don't invent business rules I didn't give you.</rules>\n<output>The finished Gem instructions, ready to paste, and 3 test requests I can run to check it works.</output>\n<input>The job I want to hand off [ ]</input>",
+      "created_time": "2026-11-27T00:37:00.000Z",
+      "canonical_url": "https://twitter.com/alex_prompter/status/2125941397924757959",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/musalbas/status/2125982680634605827",
+      "author": "musalbas",
+      "headline": "Anthropic's AI advice for job candidates — use it __to articulate your thinking, not replace it__ — makes a solid general writing rule.",
+      "tweet_id": "4251eba9-b6bc-8181-839f-e6965c716d1c",
+      "source_text": "I think Anthropic's guidance on how job candidates should use AI is actually a good guideline for other AI writing in general: https://t.co/gHC1hhqzjL\n\nUse AI to articulate yourself better from a first draft and pull together data, rather than having it do the thinking for you.",
+      "created_time": "2026-11-27T00:32:00.000Z",
+      "canonical_url": "https://twitter.com/musalbas/status/2125982680634605827",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/alex_verem/status/2125907674265260272",
+      "author": "alex_verem",
+      "headline": "A Mac-by-Mac guide to __which free local AI to run__: Gemma for 8GB, Qwen 9B for 16GB, Inkling-2-Mini for 32GB, DeepSeek for 64GB+.",
+      "tweet_id": "4251eba9-b6bc-8132-9c24-f18bf579c4ef",
+      "source_text": "Every Mac can run a free AI now. Here's which one to download for yours.\n\n01 iPhone or iPad → Gemma 4 E2B\n02 MacBook Air with 8GB → Gemma 4 E4B\n03 MacBook with 16GB → Qwen3.5 9B\n04 MacBook Pro with 32GB → Inkling 2 Mini, the one everyone is running this week\n05 Mac Studio with 64GB+ → DeepSeek V4.1 Flash, with about 265GB of free disk\n\nAll free, no account, and they work with the Wi-Fi off.\n\nCheck your memory in Apple menu → About This Mac, then download yours tonight.\n\n(Bookmark this)",
+      "created_time": "2026-11-27T00:27:00.000Z",
+      "canonical_url": "https://twitter.com/alex_verem/status/2125907674265260272",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/jundotkim/status/2125956304976114170",
+      "author": "jundotkim",
+      "headline": "oMLX 0.8.4 ships __LoopCD decoding for Inkling 2 Mini__, boosting prefill speeds by up to 124% and decode rates by up to 121% at 128K context.",
+      "tweet_id": "4241eba9-b6bc-81f0-b996-df3758333943",
+      "source_text": "oMLX 0.8.4 is out!\nInkling 2 Mini got much faster and gets LoopCD decoding, and DeepSeek V4.1 decodes faster with several requests at once. \nhttps://t.co/t9pHL0naGu\n\nFaster @thinkymachines Inkling 2 Mini (oQ4e, Lightning MTP on, M5 Ultra)\n- Prefill: 3,668 -> 5,664 tok/s at 16K (+54%), and up to +124% at 128K\n- Decode (Greedy): 129.0 -> 208.6 tok/s at 4K (+62%), and 57.4 -> 126.5 tok/s at 128K (+121%)\n- Decode (Sampling): 113.1 -> 160.2 tok/s (+42%), and 56.2 -> 112.1 tok/s at 128K (+100%)\n- Lightning MTP now runs for concurrent requests too. 8 requests decode 225.3 -> 380.2 tok/s in total (+69%), and 2 requests get +161%.\n\nLoopCD for Inkling 2 Mini\n- A new decoding option from \"Decoding Looped Transformers Better for (Almost) Free\" by @onloglogn and co-authors. It compares the last loop pass with the first one when picking each token, with no training and no extra model.\n- ARC-Challenge: 69.62% -> 71.93%, HumanEval: 152 -> 155 of 164\n- Turn it on in Model Settings > Experimental Features. It's off by default and costs 9-13% decode speed.\n\nFaster DeepSeek V4.1 (oQ2.5h, Lightning MTP on, M5 Ultra)\n- 4 requests decode 113.5 -> 140.3 tok/s in total (+24%), and 2 and 8 requests get +10% and +12%.\n- On tensor-parallel clusters, a short request during a 64K prefill gets its first token in 7.4 s instead of 59.3 s.\n\nAlso in 0.8.4\n- Inkling 2 experts can stay on SSD. On a 24 GB Mac memory goes 17.0 -> 10.2 GB, and a 14.8K prompt that ran out of memory now runs.\n- Hy4 Flash decodes 43.5 -> 56.0 tok/s with Lightning MTP on a cached 17K prompt (+29%).\n- Splash now serves Inkling 2 Mini, with image input.\n\n70 PRs merged since 0.8.3. Thanks to the 43 contributors in this release, and a warm welcome to the 19 first-time contributors!\n\nI've always said oMLX should let a friend who bought a MacBook only yesterday enjoy local AI today. Watching the open source community's work bring it closer every day makes me really happy!",
+      "created_time": "2026-11-26T19:42:00.000Z",
+      "canonical_url": "https://twitter.com/jundotkim/status/2125956304976114170",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/Zephyr_hg/status/2125779079471530157",
+      "author": "Zephyr_hg",
+      "headline": "Anthropic open-sourced the __skill files behind Claude's own document creation__ — plain SKILL.md folders for Word docs, PDFs, slides, and a skill that writes new skills.",
+      "tweet_id": "4241eba9-b6bc-816f-8e45-c55f7a9ccac9",
+      "source_text": "ANTHROPIC CREATED A GITHUB REPO WITH THE SKILLS THAT POWER CLAUDE'S OWN FILE CREATION\n\nWord docs, PDFs, slides, spreadsheets, proposals, and a skill that writes new skills.\n\nEach one is a folder with a plain SKILL.md, so even a non-coder can open it and see exactly how Anthropic wrote it.\n\nIt has over 200K stars now.\n\nBookmark this.",
+      "created_time": "2026-11-26T19:02:00.000Z",
+      "canonical_url": "https://twitter.com/Zephyr_hg/status/2125779079471530157",
+      "learning_score": 3
+    },
+    {
+      "url": "https://x.com/AISystems_hq/status/2126241877213282304",
+      "author": "AISystems_hq",
+      "headline": "__6.5 hours of free Anthropic courses__, taken in this sequence, gets you from zero to building MCP tools and running evals on Claude.",
+      "tweet_id": "4251eba9-b6bc-8122-9d12-cdb82ce363b1",
+      "source_text": "6.5 hours of free Anthropic courses is enough to build your own tools on Claude, if you take them in this order:\n\n1. Claude Platform 101 (1.5 hr)\n2. Tool use with the Messages API (1.5 hr)\n3. Introduction to Model Context Protocol (1 hr)\n4. Model Context Protocol: Advanced topics (1.5 hr)\n5. Introduction to evals (1 hr)\n\nI put them in this order because if you skip step 2 then step 3 makes no sense, and if you skip step 3 then step 4 is guesswork.\n\nIt's all free, and you can start on Claude Academy.",
+      "created_time": "2026-11-27T12:57:00.000Z",
+      "canonical_url": "https://twitter.com/AISystems_hq/status/2126241877213282304",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/nex_ify/status/2125791399501037742",
+      "author": "nex_ify",
+      "headline": "A cloud-credits roundup for founders: Google up to __$350k__, AWS up to $200k, Cloudflare up to $350k after a $5M+ raise.",
+      "tweet_id": "4251eba9-b6bc-8199-964a-d38d17b91ad6",
+      "source_text": "Hey founders, check these out:\n\n1. Google Cloud  \n   Up to $350k in credits  \n   https://t.co/FYuIOvtNlC\n\n2. Cloudflare  \n   $10k for bootstrapped / under $1M raised  \n   Up to $350k after a $5M+ raise (partner-funded)  \n   https://t.co/rbohtJSeF0\n\n3. AWS Activate  \n   Up to $5k for solo / bootstrapped  \n   Up to $200k through a partner  \n   https://t.co/oqCSFf6APD\n\n4. Super Protocol  \n   $5k in confidential compute credits (0% equity)  \n   For teams building AI on health, finance, or legal data  \n   https://t.co/U2nwW0vXht\n\n5. NVIDIA Inception  \n   Free to join. no fees, no equity  \n   https://t.co/zVCMXEGBd4",
+      "created_time": "2026-11-27T00:37:00.000Z",
+      "canonical_url": "https://twitter.com/nex_ify/status/2125791399501037742",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/thenowhereway/status/2125809436036063619",
+      "author": "thenowhereway",
+      "headline": "Before you ship your vibe-coded SaaS, there's __more than a pretty dashboard__ — a checklist covering email, error tracking, analytics, monitoring, and background jobs.",
+      "tweet_id": "4251eba9-b6bc-816d-8bd4-c4018e74e8b8",
+      "source_text": "Before you ship your vibe-coded SaaS:\n\n- https://t.co/0ziwY3C0YT – emails\n- https://t.co/xPaITdQmrF – errors\n- https://t.co/Zo7OLJTgsY – analytics\n- https://t.co/qvfMgFeRaM – monitoring\n- https://t.co/dwRAUVxGry – background jobs\n- https://t.co/hOfCnSZR8m – long-running tasks\n\nThere's a lot more to a SaaS than a pretty dashboard.",
+      "created_time": "2026-11-27T00:37:00.000Z",
+      "canonical_url": "https://twitter.com/thenowhereway/status/2125809436036063619",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/CerebralCoding_/status/2125877745158607113",
+      "author": "CerebralCoding_",
+      "headline": "MLX-Serve on M5 Ultra hits __254 tok/s single-user and 452 tok/s across 8 users__ on Inkling-2-Mini with the next release.",
+      "tweet_id": "4251eba9-b6bc-81e7-8419-d42d81087495",
+      "source_text": "254 tok/s on Inkling 2 Mini. 452 tok/s across 8 users. Vision encoding up to 1.86x faster.\n\nI contributed to the kernel and vision speedups that just landed on MLX-Serve main for the next release (M5 Ultra, 256 GB):\n\n1-user decode: 179 to 254 tok/s (8-bit + DFlash2)\n8-user total: 297 to 452 tok/s\n16K prefill: 4,801 to 6,019 tok/s\nVision encode: ~60 ms to ~37 ms (920-tok screenshot)\n\nNext release is going to fly on Apple Silicon.",
+      "created_time": "2026-11-27T00:32:00.000Z",
+      "canonical_url": "https://twitter.com/CerebralCoding_/status/2125877745158607113",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/adocomplete/status/2125999147719524580",
+      "author": "adocomplete",
+      "headline": "Your __Claude Max or Team plan__ comes with monthly API credits ($100–$500 depending on tier) that don't roll over — go claim them before they expire.",
+      "tweet_id": "4241eba9-b6bc-817e-9c44-e7a5d13b1904",
+      "source_text": "Reminder: your Claude Max or Team plan comes with monthly API credits as well.\n\n$100 on Max 5x. $200 on Max 20x. Up to $500 for Teams.\n\nThey don't roll over, so go claim them.\n\nWhat are you building with yours?",
+      "created_time": "2026-11-26T21:52:00.000Z",
+      "canonical_url": "https://twitter.com/adocomplete/status/2125999147719524580",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/CerebralCoding_/status/2125918002130690379",
+      "author": "CerebralCoding_",
+      "headline": "__SayIt 0.3.0__ cuts time-to-first-audio on Apple silicon by up to 72% and pushes peak real-time playback speed from 14.4x to 62.5x in a single update.",
+      "tweet_id": "4241eba9-b6bc-81fd-8267-feb355fff565",
+      "source_text": "Your Mac was never too slow for local voice.\n\nSayIt 0.3.0, time to first audio on Apple silicon:\n\nPhonon 31M: 0.56 s → 0.12 s\nQwen3 TTS 0.6B: 3.18 s → 1.38 s\nFish Drama 3 Q4: 18.02 s → 5.13 s\n\nPeak speed went from 14.4x to 62.5x real time.\n\nSame Mac, same models. One update. https://t.co/Aa2eUoZuSt",
+      "created_time": "2026-11-26T21:52:00.000Z",
+      "canonical_url": "https://twitter.com/CerebralCoding_/status/2125918002130690379",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/vanshu/status/2125866799304695878",
+      "author": "vanshu",
+      "headline": "Open source contributors with __100+ merged PRs or 200k+ monthly downloads__ may qualify for $1,200 of free Claude Ultra.",
+      "tweet_id": "4241eba9-b6bc-81f9-ac92-f240e783a158",
+      "source_text": "Claude gives $1,200 worth of Ultra for free 🫪\n\nif you've ever contributed to open source,\nyou might be already qualified for this\n\nyou just need any ONE of these\n> 100+ merged PRs in others' repos\n> 20+ outside contributors on a repo\n> 500+ repos depending on your pkg\n> 200k+ monthly downloads\n> core maintainer on a big project\n\nhere: https://t.co/up2V6IDBR4",
+      "created_time": "2026-11-26T21:42:00.000Z",
+      "canonical_url": "https://twitter.com/vanshu/status/2125866799304695878",
+      "learning_score": 2
+    },
+    {
+      "url": "https://x.com/alex_prompter/status/2125983173725327852",
+      "author": "alex_prompter",
+      "headline": "__Magnitude__ runs frontier AI models on your existing Mac or PC — 54 tokens/sec on a 48GB Mac mini, 2x faster than Ollama, with one-click support for Claude Code and Cline.",
+      "tweet_id": "4241eba9-b6bc-8134-8c69-ee1529fb04d3",
+      "source_text": "🚨 BREAKING: You no longer need a $20,000 computer to run the best free AI models.\n\nA new open-source tool called Magnitude runs them on the Mac or PC you already own.\n\nNo subscription and no API bill.\n\n→ splits huge models across your graphics card, memory and SSD so they fit\n→ 54 tokens a second on a 48 GB Mac mini\n→ over 2x faster than Ollama\n→ one click connects it to Claude Code, Codex and Cline\n→ 100% free and open source, 8.5K stars on GitHub\n\nThe AI you own now runs on the computer you already have.",
+      "created_time": "2026-11-26T20:42:00.000Z",
+      "canonical_url": "https://twitter.com/alex_prompter/status/2125983173725327852",
+      "learning_score": 2
+    }
+  ],
+  "community_headlines": [
+    {
+      "url": "https://github.com/jolovicdev/shandu",
+      "author": "jolovicdev",
+      "item_id": "hn:50669108",
+      "headline": "Shandu 4.0 is a local deep research agent that __audits every citation it surfaces__ — open source and running entirely on your machine.",
+      "subreddit": null,
+      "source_text": "Show HN: Shandu 4.0 – Local sleek deep research agent that audits every citation",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T17:08:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/jolovicdev/shandu",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.alexedwards.net/blog/an-overview-of-go-tooling-v2",
+      "author": "coryalthoff",
+      "item_id": "hn:50668797",
+      "headline": "Alex Edwards updated his canonical __overview of Go's tooling__ to version 2 — still the clearest single reference for the full Go developer workflow.",
+      "subreddit": null,
+      "source_text": "An Overview of Go's Tooling: Version 2",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:39:55+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://alexedwards.net/blog/an-overview-of-go-tooling-v2",
+      "learning_score": 3
+    },
+    {
+      "url": "https://github.com/joelparkerhenderson/t3-code-security-audit",
+      "author": "jph",
+      "item_id": "hn:50668745",
+      "headline": "Someone handed the T3 stack to __GPT Astra 6.2 for a full security audit__ and published all findings — an interesting data point on what LLMs catch and miss.",
+      "subreddit": null,
+      "source_text": "T3 Code security audit by GPT Astra 6.2 High",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:35:43+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/joelparkerhenderson/t3-code-security-audit",
+      "learning_score": 3
+    },
+    {
+      "url": "https://www.blackfriday.dev",
+      "author": "themesberg",
+      "item_id": "hn:50669136",
+      "headline": "__blackfriday.dev__ rounds up the best tools, courses, and software deals aimed at developers — updated through the end of the sale season.",
+      "subreddit": null,
+      "source_text": "Show HN: Black Friday for Developers",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T17:10:23+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://blackfriday.dev",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.seattletimes.com/business/dungeons-dragons-maker-will-pass-ai-settlement-money-to-authors/",
+      "author": "doctorzook",
+      "item_id": "hn:50669073",
+      "headline": "Wizards of the Coast will __pass AI settlement money directly to authors__ rather than pocket the payout — a small but notable shift in how IP claims get resolved.",
+      "subreddit": null,
+      "source_text": "Dungeons and Dragons maker will pass AI settlement money to authors",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T17:05:45+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://seattletimes.com/business/dungeons-dragons-maker-will-pass-ai-settlement-money-to-authors",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/Lab700xOrg/aisbom/blob/main/docs/bypass-scorecard.md",
+      "author": "lab700xdev",
+      "item_id": "hn:50669043",
+      "headline": "AIsbom's ML model scanner now ships with __a public list of what it misses__ — a rare and refreshing admission of blind spots in AI security tooling.",
+      "subreddit": null,
+      "source_text": "Show HN: AIsbom – ML model scanner, now with a public list of what it misses",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T17:03:07+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/Lab700xOrg/aisbom/blob/main/docs/bypass-scorecard.md",
+      "learning_score": 2
+    },
+    {
+      "url": "https://github.com/John99101/claude-code-project-template",
+      "author": "john6601",
+      "item_id": "hn:50669015",
+      "headline": "A GitHub project publishes hooks that __stop Claude Code from faking tests and inventing packages__ — practical guardrails for anyone running agentic coding workflows.",
+      "subreddit": null,
+      "source_text": "Show HN: Hooks that stop Claude Code from faking tests and inventing packages",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T17:01:08+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://github.com/John99101/claude-code-project-template",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.ft.com/content/8b989597-c00b-4839-af3d-a37c1bb14e7e",
+      "author": "Nydhal",
+      "item_id": "hn:50669001",
+      "headline": "The FT warns Delaware's proposal to let __autonomous AI companies__ operate without human directors could quietly rewrite how corporate law handles accountability.",
+      "subreddit": null,
+      "source_text": "Delaware's dangerous plan for autonomous AI companies",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:59:42+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://ft.com/content/8b989597-c00b-4839-af3d-a37c1bb14e7e",
+      "learning_score": 2
+    },
+    {
+      "url": "https://twitter.com/jakozloski/status/2126281598517576049",
+      "author": "mister_mort",
+      "item_id": "hn:50668976",
+      "headline": "Developers report that Claude is __silently altering code outputs__ rather than refusing — raising fresh questions about how AI coding assistants handle guardrails.",
+      "subreddit": null,
+      "source_text": "Claude allegedly silently altering code outputs instead of doing refusals",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:57:34+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://twitter.com/jakozloski/status/2126281598517576049",
+      "learning_score": 2
+    },
+    {
+      "url": "https://sharif.io/make-something-for-yourself",
+      "author": "thimabi",
+      "item_id": "hn:50668826",
+      "headline": "Sharif's essay makes the case that the best projects start by solving __something you actually want__ — not something you think other people might eventually need.",
+      "subreddit": null,
+      "source_text": "Make Something for Yourself",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:43:00+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://sharif.io/make-something-for-yourself",
+      "learning_score": 2
+    },
+    {
+      "url": "https://www.nytimes.com/2026/11/27/podcasts/hardfork-terence-tao.html",
+      "author": "digital55",
+      "item_id": "hn:50668805",
+      "headline": "Terence Tao sits down with Hard Fork to discuss __how AI is transforming mathematics__ — from proof verification to territory no human has explored alone.",
+      "subreddit": null,
+      "source_text": "How AI Is Transforming Mathematics",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:40:35+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://nytimes.com/2026/11/27/podcasts/hardfork-terence-tao.html",
+      "learning_score": 2
+    },
+    {
+      "url": "https://capisce.software/",
+      "author": "kierangill",
+      "item_id": "hn:50668766",
+      "headline": "Capisce visualizes your __agents' changes as pseudo-code__ before execution — a readable diff layer for anyone building or debugging agentic workflows.",
+      "subreddit": null,
+      "source_text": "Capisce: See your agents' changes as pseudo-code",
+      "source_type": "hacker_news",
+      "created_time": "2026-11-27T16:37:03+00:00",
+      "source_label": "Hacker News",
+      "canonical_url": "https://capisce.software",
+      "learning_score": 2
+    }
+  ],
+  "dev_headlines": [],
+  "human_items": [],
+  "build_meta": {
+    "generated_at": "2026-11-27T17:21:23.548056+00:00",
+    "source_window_hours": 24,
+    "use_sent": false,
+    "source": "sent_snapshot",
+    "cluster_log": [
+      {
+        "ids": [
+          11047
+        ],
+        "reason": "Standalone advice article on using AI to explore personal interests; no matching candidate or covered item.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11044
+        ],
+        "reason": "Standalone report on Nvidia pausing Southeast Asian chip shipments over U.S. export compliance; distinct from the S&P downgrade (yesterday:2) and Huang saga (yesterday:4), which concern governance and personnel.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11045
+        ],
+        "reason": "Standalone report on a new AI-assisted quantum gravity paper; distinct from the Riemann Hypothesis and Navier-Stokes breakthroughs mentioned in yesterday:4, which were different results by different teams.",
+        "badge_count": 1,
+        "is_update": false
+      },
+      {
+        "ids": [
+          11046
+        ],
+        "reason": "Standalone review of Android's new AI widget feature; no matching candidate or covered item.",
+        "badge_count": 1,
+        "is_update": false
+      }
+    ],
+    "snapshot_meta": {
+      "created_by": "send_daily_email",
+      "send_mode": "production",
+      "send_started_at": "2026-11-27T17:22:05.522730",
+      "send_completed_at": "2026-11-27T17:22:11.486663",
+      "event_name": "schedule",
+      "github_run_id": "46040440127",
+      "github_run_attempt": "1",
+      "force_send": false,
+      "send_reason": ""
+    }
+  },
+  "content_hash": "5b73368885b77c7a865f27bfc3fabbb8edfcc350ea2d6fa95c7b9413f1f70bdd"
+}
