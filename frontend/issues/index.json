@@ -1,18 +1,29 @@
 {
-  "generatedAt": "2026-11-26T00:00:00Z",
-  "issueCount": 200,
+  "generatedAt": "2026-11-27T00:00:00Z",
+  "issueCount": 201,
   "latestIssue": {
-    "slug": "2026-11-26",
-    "digestDate": "2026-11-26",
-    "displayDate": "Nov 26, 2026",
-    "issueNumber": "61126",
-    "subject": "ISSUE 61126 \u00b7 7 STORIES \u00b7 11 MIN READ",
-    "intro": "Today marks a collision of eras: Anthropic just pulled off the largest IPO in history at $81.3 billion while Grand Theft Auto VI \u2014 built by 5,000 humans over 13 years without a single generative AI tool \u2014 launched to record-shattering reviews and nearly $4 billion in day-one sales. Meanwhile, the cracks in AI's breakneck expansion are showing, from 42 state attorneys general fighting to keep millions of users' private chats off the auction block in Character.AI's bankruptcy, to S&P eyeing a credit downgrade for Nvidia amid the Jensen Huang leadership turmoil. It's a lot \u2014 grab your coffee and let's get into it.",
-    "articleCount": 7,
-    "urlPath": "/issues/2026-11-26.html",
-    "contentHash": "764f4652af1ec949c9c7a4ba36d8e6a42dae6fa8e68f474939cdb82f243d4189"
+    "slug": "2026-11-27",
+    "digestDate": "2026-11-27",
+    "displayDate": "Nov 27, 2026",
+    "issueNumber": "61127",
+    "subject": "ISSUE 61127 \u00b7 4 STORIES \u00b7 11 MIN READ",
+    "intro": "The line between AI as tool and AI as collaborator blurred further this week, with a Stanford physicist crediting GPT-6 Astra as a key contributor to an 83-page quantum gravity paper \u2014 a claim that has the physics community both intrigued and deeply skeptical. Meanwhile, the geopolitics of AI hardware heated up as Nvidia froze server shipments across Southeast Asia, and on the consumer side, Google is betting that everyday users want to *build* with AI, not just chat with it. It's a day that captures the full spectrum of where AI sits right now: from the edges of theoretical physics to your Pixel home screen.",
+    "articleCount": 4,
+    "urlPath": "/issues/2026-11-27.html",
+    "contentHash": "5b73368885b77c7a865f27bfc3fabbb8edfcc350ea2d6fa95c7b9413f1f70bdd"
   },
   "recentIssues": [
+    {
+      "slug": "2026-11-27",
+      "digestDate": "2026-11-27",
+      "displayDate": "Nov 27, 2026",
+      "issueNumber": "61127",
+      "subject": "ISSUE 61127 \u00b7 4 STORIES \u00b7 11 MIN READ",
+      "intro": "The line between AI as tool and AI as collaborator blurred further this week, with a Stanford physicist crediting GPT-6 Astra as a key contributor to an 83-page quantum gravity paper \u2014 a claim that has the physics community both intrigued and deeply skeptical. Meanwhile, the geopolitics of AI hardware heated up as Nvidia froze server shipments across Southeast Asia, and on the consumer side, Google is betting that everyday users want to *build* with AI, not just chat with it. It's a day that captures the full spectrum of where AI sits right now: from the edges of theoretical physics to your Pixel home screen.",
+      "articleCount": 4,
+      "urlPath": "/issues/2026-11-27.html",
+      "contentHash": "5b73368885b77c7a865f27bfc3fabbb8edfcc350ea2d6fa95c7b9413f1f70bdd"
+    },
     {
       "slug": "2026-11-26",
       "digestDate": "2026-11-26",
@@ -133,17 +144,6 @@
       "articleCount": 12,
       "urlPath": "/issues/2026-11-16.html",
       "contentHash": "1ecf632b45e34ebfad4cd1b3d78683a23f1dcbccd71af0a2a95a6e9f2a8936a9"
-    },
-    {
-      "slug": "2026-11-15",
-      "digestDate": "2026-11-15",
-      "displayDate": "Nov 15, 2026",
-      "issueNumber": "61115",
-      "subject": "ISSUE 61115 \u00b7 8 STORIES \u00b7 11 MIN READ",
-      "intro": "The AI world is in upheaval over Nvidia's boardroom drama, with over 115,000 signatures \u2014 including from Elon Musk and thousands of Nvidia employees \u2014 demanding Jensen Huang's reinstatement while Asian governments scramble to secure their chip pipelines. But the question of who we trust to steer AI doesn't stop there: today's digest also brings a former OpenAI board member warning that CEO accountability mechanisms are fundamentally broken, a sobering catalog of AI's growing graveyard (42% of corporate AI projects end up abandoned), and a jaw-dropping exam cheating scandal out of South Korea that has the country on edge ahead of its biggest test of the year.",
-      "articleCount": 8,
-      "urlPath": "/issues/2026-11-15.html",
-      "contentHash": "700932f867d467ff6e2dd606b35dc1ec693f8bb3786136472f1b4cd5754bb5cd"
     }
   ]
 }
